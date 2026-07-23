@@ -1,0 +1,44 @@
+---
+source_path: "/en/contributing/writing-for-github-docs/about-githubs-documentation-fundamentals"
+title: "About GitHub's documentation fundamentals"
+intro: "All content published on GitHub Docs must meet these fundamental requirements."
+product: "Contribute to GitHub Docs"
+document_type: "article"
+breadcrumbs:
+  - title: "Contribute to GitHub Docs"
+    href: "/en/contributing"
+  - title: "Writing for GitHub Docs"
+    href: "/en/contributing/writing-for-github-docs"
+  - title: "Documentation fundamentals"
+    href: "/en/contributing/writing-for-github-docs/about-githubs-documentation-fundamentals"
+---
+
+# About GitHub's documentation fundamentals
+
+All content published on GitHub Docs must meet these fundamental requirements.
+
+## About GitHub's documentation fundamentals
+
+These fundamentals are required for GitHub documentation. Use the lists below to help ensure your contributions are accurate, accessible and inclusive, and consistent.
+
+## Accurate
+
+Documentation is correct and accurate.
+
+* Ensure that the content is free from factual errors.
+* Ensure that the content is free from spelling and formatting errors.
+
+## Accessible and inclusive
+
+Documentation is up to date with the latest accessibility standards, and is written to be inclusive and translation-friendly.
+
+* Ensure content adheres to the accessibility and screenshot guidelines. For more information, see [Creating screenshots](/en/contributing/writing-for-github-docs/creating-screenshots).
+* Ensure content can be successfully translated. For more information, see [Writing content to be translated](/en/contributing/writing-for-github-docs/writing-content-to-be-translated).
+
+## Consistent
+
+Documentation maintains a consistent voice, tone, and style throughout, creating a cohesive experience for readers.
+
+* Ensure content adheres to the GitHub Docs style guide. For more information, see [Style guide](/en/contributing/style-guide-and-content-model/style-guide).
+* Apply consistent terminology and naming conventions.
+* Use branding elements (for example, product and feature names, logos, color schemes) consistently in the content.

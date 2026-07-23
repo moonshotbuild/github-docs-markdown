@@ -1,0 +1,32 @@
+---
+source_path: "/en/code-security/reference/supply-chain-security/dependabot-security-updates"
+title: "Dependabot security updates reference"
+intro: "Find usage information for Dependabot security updates."
+product: "Security and code quality"
+document_type: "article"
+breadcrumbs:
+  - title: "Security and code quality"
+    href: "/en/code-security"
+  - title: "Reference"
+    href: "/en/code-security/reference"
+  - title: "Supply chain security"
+    href: "/en/code-security/reference/supply-chain-security"
+  - title: "Dependabot security updates"
+    href: "/en/code-security/reference/supply-chain-security/dependabot-security-updates"
+---
+
+# Dependabot security updates reference
+
+Find usage information for Dependabot security updates.
+
+## Priority of grouped security update settings
+
+Settings for grouped Dependabot security updates are applied in the following order, from highest to lowest priority:
+
+1. Settings defined in a `dependabot.yml` file. See [About the `dependabot.yml` file](/en/code-security/reference/supply-chain-security/dependabot-options-reference#about-the-dependabotyml-file).
+2. Repository-level settings defined in the UI
+3. Organization-level settings defined in the UI
+
+## Enablement for forked repositories
+
+If you create a fork of a repository that has security updates enabled, GitHub will automatically disable Dependabot security updates for the fork. You can then decide whether to enable Dependabot security updates on the specific fork.

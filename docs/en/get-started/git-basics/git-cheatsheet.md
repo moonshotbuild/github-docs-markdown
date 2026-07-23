@@ -1,0 +1,22 @@
+---
+source_path: "/en/get-started/git-basics/git-cheatsheet"
+title: "Git cheatsheet"
+intro: "This Git cheat sheet is a time saver when you forget a command or don't want to use help in the CLI."
+product: "Get started"
+document_type: "article"
+breadcrumbs:
+  - title: "Get started"
+    href: "/en/get-started"
+  - title: "Git basics"
+    href: "/en/get-started/git-basics"
+  - title: "Git cheatsheet"
+    href: "/en/get-started/git-basics/git-cheatsheet"
+---
+
+# Git cheatsheet
+
+This Git cheat sheet is a time saver when you forget a command or don't want to use help in the CLI.
+
+Learning all available Git commands at once can be a daunting task. You can use [Git Cheat Sheets](https://training.github.com/) for a quick reference to frequently used commands. The "Using Git" cheat sheet is available in several languages.
+
+In addition, take a look at our [Git and GitHub learning resources](/en/get-started/start-your-journey/git-and-github-learning-resources) page that links to guides, videos and more.

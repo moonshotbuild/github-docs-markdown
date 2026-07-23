@@ -1,0 +1,73 @@
+---
+source_path: "/en/code-security/how-tos/maintain-quality-code/set-pr-thresholds"
+title: "Setting code quality thresholds for pull requests"
+intro: "Enforce your code quality standards automatically by blocking pull requests that fall below the thresholds you set, at the repository or organization level."
+product: "Security and code quality"
+document_type: "article"
+breadcrumbs:
+  - title: "Security and code quality"
+    href: "/en/code-security"
+  - title: "How-tos"
+    href: "/en/code-security/how-tos"
+  - title: "Maintain quality code"
+    href: "/en/code-security/how-tos/maintain-quality-code"
+  - title: "Set quality thresholds"
+    href: "/en/code-security/how-tos/maintain-quality-code/set-pr-thresholds"
+---
+
+# Setting code quality thresholds for pull requests
+
+Enforce your code quality standards automatically by blocking pull requests that fall below the thresholds you set, at the repository or organization level.
+
+You can block pull requests that don't meet your code quality standards by adding Code Quality thresholds to a ruleset. If a pull request doesn't meet a threshold, it can't be merged.
+
+You can set thresholds for:
+
+* **CodeQL findings**, by the lowest severity of results you require to be resolved.
+* **Code coverage**, by the minimum percentage of code that must be covered by tests.
+
+You can enforce these thresholds at the **repository** level, or at the **organization** level to apply the same standard across many repositories at once. Choose the organization level when you want a consistent quality bar across teams, and the repository level when a single project needs its own standard. Code Quality AI detections cannot be set as a threshold.
+
+## Prerequisites
+
+* Code Quality is enabled. See [Enabling GitHub Code Quality](/en/code-security/how-tos/maintain-quality-code/enable-code-quality?utm_campaign=code-quality-ga-july-2026\&utm_medium=docs\&utm_source=docs-set-quality-thresholds-enable-cq)
+* Code in a supported language. See [Supported languages](/en/code-security/concepts/code-quality/code-quality#supported-languages).
+
+> \[!NOTE]
+> The threshold will have an impact only if the repository has code in one or more of the supported languages, see [Enabling GitHub Code Quality](/en/code-security/how-tos/maintain-quality-code/enable-code-quality).
+
+## Confirming Code Quality runs successfully on pull requests
+
+Before you add or update a ruleset to include a threshold for Code Quality, confirm that the Code Quality workflow is running and reporting results back to pull requests. Otherwise, the ruleset could block the merging of **all** pull requests.
+
+1. Open a recent pull request and scroll to the "Checks" summary at the bottom of the pull request.
+2. Confirm that the "CodeQL - Code Quality" check ran successfully and reported its status.
+
+For more information, see [CodeQL-powered analysis for Code Quality](/en/code-security/reference/code-quality/codeql-detection).
+
+## Adding or updating a ruleset to include Code Quality
+
+The following steps create or update a ruleset at the repository level. To enforce the same threshold across multiple repositories at once, create an organization ruleset with the same **Require code quality results** rule instead. See [Creating rulesets for repositories in your organization](/en/organizations/managing-organization-settings/creating-rulesets-for-repositories-in-your-organization).
+
+1. Navigate to the "Settings" tab of your repository.
+2. In the left sidebar, under "Code and automation", expand <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-repo-push" aria-label="repo-push" role="img"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0V1.5h-8a1 1 0 0 0-1 1v6.708A2.493 2.493 0 0 1 4.5 9h2.25a.75.75 0 0 1 0 1.5H4.5a1 1 0 0 0 0 2h4.75a.75.75 0 0 1 0 1.5H4.5A2.5 2.5 0 0 1 2 11.5Zm12.23 7.79h-.001l-1.224-1.224v6.184a.75.75 0 0 1-1.5 0V9.066L10.28 10.29a.75.75 0 0 1-1.06-1.061l2.505-2.504a.75.75 0 0 1 1.06 0L15.29 9.23a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018Z"></path></svg> **Rules**, then click **Rulesets**.
+3. If you don't already have a ruleset to protect your default branch, expand **New ruleset** and click **New branch ruleset**. Alternatively, open your existing ruleset for the default branch and move to step 5.
+4. If you are creating a new ruleset:
+   * Define a name for the ruleset.
+   * Set the "Enforcement status" to "Active."
+   * Under "Target branches" add a target of "Include default branch."
+5. Under "Branch rules", enable "Require code quality results".
+6. Set "Severity" to define the lowest severity of code quality results that must be resolved before a pull request can be merged into the default branch. For example:
+   * Set "Errors" to block pull requests with unresolved code quality **errors** being merged.
+   * Set "Warnings and higher" to block pull requests with unresolved code quality **warnings** or **errors** being merged.
+   * Set "Notes and higher" to block pull requests with unresolved code quality **notes**, **warnings** or **errors** being merged.
+   * Set "All" to block pull requests with **any** unresolved code quality results being merged.
+7. When you have finished defining or editing the ruleset, click **Create** or **Save changes**.
+
+## Setting a code coverage threshold
+
+You can also block pull requests that fall below a code coverage threshold. This uses a separate **Restrict code coverage** rule, not the **Require code quality results** rule used above, and your repository must upload code coverage data first. For the full procedure, see [Setting code coverage thresholds for pull requests](/en/code-security/how-tos/maintain-quality-code/restrict-code-coverage).
+
+## Next steps
+
+Learn how GitHub Code Quality works on pull requests to prevent code quality issues from reaching your default branch. See [Preventing code quality issues from reaching your default branch](/en/code-security/tutorials/improve-code-quality/catch-issues-before-merge).

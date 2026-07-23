@@ -1,0 +1,26 @@
+---
+source_path: "/en/authentication/troubleshooting-ssh/error-host-key-verification-failed"
+title: "Error: Host key verification failed"
+intro: "As a security precaution, SSH keeps track of which hosts it has previously seen."
+product: "Authentication"
+document_type: "article"
+breadcrumbs:
+  - title: "Authentication"
+    href: "/en/authentication"
+  - title: "Troubleshooting SSH"
+    href: "/en/authentication/troubleshooting-ssh"
+  - title: "Error: Host key verification failed"
+    href: "/en/authentication/troubleshooting-ssh/error-host-key-verification-failed"
+---
+
+# Error: Host key verification failed
+
+As a security precaution, SSH keeps track of which hosts it has previously seen.
+
+This error means that the server to which you're connecting presented a key that doesn't match the keys seen for this server in the past.
+
+You may see this error if the server has changed its keys unexpectedly, in which case you should be able to find an official report from a trustworthy source announcing the change. If GitHub changes its SSH host key, this will be announced on the GitHub Blog at [github.blog](https://github.blog/).
+
+You can find an up-to-date list of GitHub's public SSH keys on GitHub Docs. You may need to add these keys to your `known_hosts` file. For more information, see [GitHub's SSH key fingerprints](/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints).
+
+If you are encountering the error but can't find an official source for the server's keys, it is safest not to connect, because you may be connecting to a server other than your intended server. You may want to contact your IT department or the server's support team for help. If the server is being impersonated, the owner of the server will appreciate you informing them.
