@@ -1,0 +1,14 @@
+# Ignore everything by default
+*
+
+# Re-include the docs tree so git descends into it. A negated file has no
+# effect while its parent directory is still ignored, so the directories
+# themselves must be un-ignored before the files inside them.
+!/docs/
+!/docs/**/
+
+# Keep the docs we actually want to track
+!/docs/**/*.md
+!/docs/llms.txt
+!/.gitignore
+!/README.md
