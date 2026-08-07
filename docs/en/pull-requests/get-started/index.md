@@ -21,6 +21,10 @@ Propose, review, and merge your first changes with pull requests.
 
   Use pull requests to propose, discuss, and merge changes on GitHub.
 
+* [About stacked pull requests](/en/pull-requests/get-started/about-stacked-prs)
+
+  Break large code changes into a chain of smaller, dependent pull requests you can review and merge independently.
+
 * [About forks](/en/pull-requests/get-started/about-forks)
 
   Use forks to make changes in your own copy of a repository and propose them back to the original project.
@@ -28,6 +32,10 @@ Propose, review, and merge your first changes with pull requests.
 * [Quickstart for pull requests](/en/pull-requests/get-started/pull-request-quickstart)
 
   Propose your first change and take it all the way from your first commit to a merged pull request.
+
+* [Quickstart for stacked pull requests](/en/pull-requests/get-started/stacked-prs-quickstart)
+
+  Install the gh stack extension in GitHub CLI and create your first set of stacked pull requests.
 
 * [Quickstart for reviewing pull requests](/en/pull-requests/get-started/reviewing-pull-requests-quickstart)
 

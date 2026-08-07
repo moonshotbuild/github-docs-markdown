@@ -30,7 +30,7 @@ Once you complete this project, you should understand how to build your own Java
 To ensure your JavaScript actions are compatible with all GitHub-hosted runners (Ubuntu, Windows, and macOS), the packaged JavaScript code you write should be pure JavaScript and not rely on other binaries. JavaScript actions run directly on the runner and use binaries that already exist in the runner image.
 
 > \[!WARNING]
-> When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#understanding-the-risk-of-script-injections).
+> When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#good-practices-for-mitigating-script-injection-attacks).
 
 ## Prerequisites
 

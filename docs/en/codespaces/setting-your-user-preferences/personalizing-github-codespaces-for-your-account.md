@@ -187,6 +187,6 @@ You can also personalize GitHub Codespaces using additional options in [your per
 ## Further reading
 
 * [Creating a new repository](/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
-* [Deep dive into GitHub Codespaces](/en/codespaces/about-codespaces/deep-dive#personalizing-your-codespace-with-extensions-or-plugins)
+* [Deep dive into GitHub Codespaces](/en/codespaces/about-codespaces/deep-dive#personalizing-your-codespace-with-extensions)
 * [Customizing your codespace](/en/codespaces/customizing-your-codespace)
 * [Managing your codespaces](/en/codespaces/managing-your-codespaces)

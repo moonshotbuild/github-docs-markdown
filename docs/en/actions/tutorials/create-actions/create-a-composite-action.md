@@ -26,7 +26,7 @@ In this guide, you'll learn about the basic components needed to create and use 
 Once you complete this project, you should understand how to build your own composite action and test it in a workflow.
 
 > \[!WARNING]
-> When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#understanding-the-risk-of-script-injections).
+> When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#good-practices-for-mitigating-script-injection-attacks).
 
 ### Composite actions and reusable workflows
 
@@ -168,7 +168,7 @@ Before you begin, you'll create a repository on GitHub.
    git push
    ```
 
-3. From your terminal, add a tag. This example uses a tag called `v1`. For more information, see [About custom actions](/en/actions/concepts/workflows-and-actions/custom-actions#using-release-management-for-actions).
+3. From your terminal, add a tag. This example uses a tag called `v1`. For more information, see [Managing custom actions](/en/actions/how-tos/create-and-publish-actions/manage-custom-actions#using-release-management-for-actions).
 
    ```shell copy
    git tag -a -m "Description of this release" v1

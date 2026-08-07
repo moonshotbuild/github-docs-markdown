@@ -32,9 +32,7 @@ As a repository administrator, you can configure MCP servers for use within your
 This repository-level MCP configuration is shared by Copilot cloud agent and Copilot code review. For information on disabling use of MCP servers by Copilot code review, see [Disabling MCP tools for Copilot code review](#disabling-mcp-tools-for-code-review).
 
 > \[!NOTE]
->
-> * Support for agent skills and MCP servers with Copilot code review is in public preview and subject to change.
-> * Existing repository MCP configurations that were previously managed under Copilot cloud agent settings were automatically moved to the new shared MCP settings page. No migration action is required.
+> Existing repository MCP configurations that were previously managed under Copilot cloud agent settings were automatically moved to the new shared MCP settings page. No migration action is required.
 
 The GitHub MCP server and Playwright MCP server are enabled by default. You can add your own MCP servers alongside these defaults.
 
@@ -408,9 +406,6 @@ If you want to allow Copilot to access data outside the current repository, you 
 For information on using the GitHub MCP server in other environments, see [Using the GitHub MCP Server in your IDE](/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/use-the-github-mcp-server).
 
 ## Disabling MCP tools for code review
-
-> \[!NOTE]
-> Support for agent skills and MCP servers with Copilot code review is in public preview and subject to change.
 
 In repository settings, use of MCP tools by Copilot code review is enabled by default.
 

@@ -19,6 +19,10 @@ breadcrumbs:
 
 You can create and manage a classroom for each course that you teach using GitHub Classroom.
 
+> \[!WARNING]
+> **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
+> For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
+
 ## About classrooms
 
 A classroom in GitHub Classroom is where teachers and students interact during a course. Teachers can create a student roster for the classroom, then create, assign, review, and grade assignments within the classroom.

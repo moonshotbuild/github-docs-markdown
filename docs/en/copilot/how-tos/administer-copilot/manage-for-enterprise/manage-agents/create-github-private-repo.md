@@ -49,6 +49,10 @@ You can create a `.github-private` repository using a template or from scratch.
 
 The "Configuration summary" on the settings page will display the settings taken from this repository.
 
+## Protecting your governance repository
+
+To control who can propose and merge changes to the governance settings stored here, you can create a repository ruleset that targets the branches and files in your `.github-private` repository. See [Creating rulesets for a repository](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository).
+
 ## Next steps
 
 * [Preparing to use custom agents in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/prepare-for-custom-agents)

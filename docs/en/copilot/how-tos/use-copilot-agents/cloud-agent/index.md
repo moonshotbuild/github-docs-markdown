@@ -29,9 +29,13 @@ Find out how Copilot can research a repository, plan and make code changes, and 
 
   Create and manage automations to run Copilot cloud agent on a schedule or in response to events.
 
+* [Managing rationale, confidence, and approvals for issues](/en/copilot/how-tos/use-copilot-agents/cloud-agent/manage-rationale-confidence-approvals)
+
+  Set up and manage rationale, confidence, and approvals for issues handled by automation.
+
 * [Changing the AI model for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model)
 
-  In supported entrypoints, when starting a task with Copilot cloud agent, you can select the model used.
+  In supported entrypoints, when starting a task with Copilot cloud agent, you can select the model used, and, for supported models, the reasoning level.
 
 * [Configuring settings for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/configuring-agent-settings)
 
@@ -83,7 +87,7 @@ Find out how Copilot can research a repository, plan and make code changes, and 
 
 * [Integrating Copilot cloud agent with Linear](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-linear)
 
-  Use the Copilot integration in Linear to provide context and open pull requests, all from within your Linear workspace.
+  Use the Copilot integration in Linear to provide context, customize how the agent runs, and open pull requests, all from within your Linear workspace.
 
 * [Integrating Copilot cloud agent with Azure Boards](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-azure-boards)
 

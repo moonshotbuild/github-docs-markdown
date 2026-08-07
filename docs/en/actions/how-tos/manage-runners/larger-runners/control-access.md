@@ -41,7 +41,7 @@ For example, the following diagram has a runner group named `grp-ubuntu-24.04-16
 > If you are using a Fixed IP range, we recommend that you only use larger runners with private repositories. Forks of your repository can potentially run dangerous code on your larger runner by creating a pull request that executes the code in a workflow.
 
 > \[!NOTE]
-> When creating a runner group, you must choose a policy that defines which repositories have access to the runner group. To change which repositories and workflows can access the runner group, organization owners can set a policy for the organization. For more information, see [Enforcing policies for GitHub Actions in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise#disabling-repository-level-self-hosted-runners).
+> When creating a runner group, you must choose a policy that defines which repositories have access to the runner group. To change which repositories and workflows can access the runner group, organization owners can set a policy for the organization. For more information, see [Managing access to self-hosted runners using groups](/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access#changing-which-repositories-can-access-a-runner-group).
 
 All organizations have a single default runner group. Organization owners using the GitHub Team plan can create additional organization-level runner groups.
 

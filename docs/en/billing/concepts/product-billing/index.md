@@ -43,17 +43,13 @@ Learn how product costs are calculated if you exceed the usage included in your 
 
   Learn how licenses for Copilot work, including usage measurement and managing your budget.
 
-* [GitHub Models billing](/en/billing/concepts/product-billing/github-models)
-
-  If you want to use GitHub Models beyond the free usage included in your account, you can choose to opt in to paid usage.
-
 * [GitHub Packages billing](/en/billing/concepts/product-billing/github-packages)
 
   Learn how usage of GitHub Packages is measured against your free allowance and how to pay for additional use.
 
 * [Billing for cloud and local sandboxes for GitHub Copilot](/en/billing/concepts/product-billing/cloud-and-local-sandboxes)
 
-  Learn how usage of cloud and local sandboxes for GitHub Copilot is measured and billed.
+  Learn how usage of Copilot cloud and local sandboxes is measured and billed.
 
 * [Git Large File Storage billing](/en/billing/concepts/product-billing/git-lfs)
 

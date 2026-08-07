@@ -27,6 +27,6 @@ You can also consider Enterprise Managed Users. If you choose to use Enterprise 
 
 ## Adding users to your organization
 
-1. Provide each person instructions to [create a personal account](/en/get-started/start-your-journey/creating-an-account-on-github).
+1. Provide each person instructions to [create a personal account](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github).
 2. Ask for the username of each person you want to give organization membership to.
 3. [Invite the new personal accounts to join](/en/organizations/managing-membership-in-your-organization/inviting-users-to-join-your-organization) your organization. Use [organization roles](/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization) and [repository permissions](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization) to limit the access of each account.

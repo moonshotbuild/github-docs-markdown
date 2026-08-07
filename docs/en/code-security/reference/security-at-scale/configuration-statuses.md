@@ -51,7 +51,7 @@ To prevent repositories from reaching a `removed` status, enable enforcement on 
 
 ## Tracking configuration status changes with the audit log
 
-Your organization's audit log records `repository_security_configuration` events whenever a configuration status changes. You can search for these events using the `action:repository_security_configuration` filter. For more information, see [Audit log events for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/audit-log-events-for-your-organization#repository_security_configuration).
+Your organization's audit log records `repository_security_configuration` events whenever a configuration status changes. You can search for these events using the `action:repository_security_configuration` filter. For more information, see [Audit log events for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/audit-log-events-for-your-organization).
 
 ## Further reading
 

@@ -47,7 +47,7 @@ You will receive an email notification if:
 * You have enabled notifications for "All Activity", or for custom "Security alerts" on the repository.
 * In your notification settings, under "Subscriptions", then under "Watching", you have selected to receive notifications by email.
 
-In addition, you will receive a notification if someone assigns a code scanning or a secret scanning alert to you, see [Assigning alerts](/en/code-security/concepts/security-at-scale/about-security-campaigns#assigning-alerts).
+In addition, you will receive a notification if someone assigns a code scanning or a secret scanning alert to you, see [Assigning alerts](/en/code-security/concepts/security-at-scale/about-security-campaigns#about-assigning-alerts-to-users-and-copilot-cloud-agent).
 
 1. On GitHub, navigate to the main page of the repository.
 

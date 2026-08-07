@@ -19,29 +19,22 @@ breadcrumbs:
 
 Enterprise administrators can centrally define plugin policies for users, ensuring consistent plugin availability.
 
-> \[!NOTE] This feature is in public preview and subject to change.
-
-Enterprise-managed plugin standards allow administrators to **define and enforce policies for plugin availability**. By configuring a `managed-settings.json` file in the enterprise's `.github-private` repository, administrators can specify which plugin marketplaces are available to users and which plugins are installed automatically.
+Enterprise-managed plugin standards allow administrators to **define and enforce policies for plugin availability**. By configuring a `managed-settings.json` file, administrators can specify which plugin marketplaces are available to users and which plugins are installed automatically.
 
 ## Where plugin standards apply
 
-Plugin standards apply to all users on the enterprise's Copilot plan, across the following clients:
-
-* **Copilot CLI and Copilot cloud agent**: see [About GitHub Copilot plugins](/en/copilot/concepts/agents/about-plugins)
-* **VS Code** (version 1.122 and later): see [Agent plugins in VS Code](https://code.visualstudio.com/docs/agent-customization/agent-plugins) in the VS Code documentation
+Plugin standards apply to all users on the enterprise's Copilot plan, across supported clients. See [Enterprise managed settings](/en/copilot/reference/enterprise-managed-settings-reference#supported-keys).
 
 Users must upgrade to a supported client version for these standards to be applied.
 
 ## How plugin standards work
 
-Enterprise plugin standards use a configuration file stored in your enterprise's `.github-private` repository. The configuration is defined in a `managed-settings.json` file at the following path: `copilot/managed-settings.json`. The legacy file path of `.github/copilot/settings.json` is also supported.
-
-For plugin standards, the file can define:
+For plugin standards, the `managed-settings.json` file can define:
 
 * **Known marketplaces**. Plugin marketplaces that are available to users for browsing and installing plugins.
 * **Default-enabled plugins**. Specific plugins that are automatically installed when users authenticate.
 
-When a user authenticates to Copilot in a supported client, the client queries an API endpoint that reads the `managed-settings.json` file. The policies defined in the file are then applied to the user's session.
+When a user authenticates to Copilot in a supported client, the client queries the `managed-settings.json` file. The policies defined in the file are then applied to the user's session.
 
 ## Why use enterprise-managed plugin standards
 

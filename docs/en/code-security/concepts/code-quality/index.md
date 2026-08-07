@@ -26,3 +26,7 @@ Learn core concepts for GitHub Code Quality.
 * [Code Quality enablement across organizations and enterprises](/en/code-security/concepts/code-quality/enablement-at-scale)
 
   GitHub Code Quality can cover one repository or thousands from a single control point, giving every team the same quality baseline and giving you the guardrails to keep it there.
+
+* [Automatic code coverage setup](/en/code-security/concepts/code-quality/automatic-code-coverage-setup)
+
+  An AI-powered agent can analyze your repository and generate a working code coverage workflow, so you can start tracking test coverage without manually authoring CI configuration.

@@ -19,6 +19,10 @@ Learn about the AI models available for GitHub Copilot.
 
 ## Links
 
+* [About default availability of Copilot models](/en/copilot/concepts/models/default-availability)
+
+  A policy controls whether unconfigured models default to enabled or disabled.
+
 * [Bring your own key for GitHub Copilot](/en/copilot/concepts/models/bring-your-own-key)
 
   Use your existing LLM provider with GitHub Copilot to save costs or consolidate billing.

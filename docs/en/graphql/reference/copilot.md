@@ -39,6 +39,7 @@ Copilot endpoint information.
 ### Fields for `CopilotEndpoints`
 
 * `api` (String!): Copilot API endpoint.
+* `exp` (String): Copilot experimentation (edge TAS) endpoint.
 * `originTracker` (String!): Copilot origin tracker endpoint.
 * `proxy` (String!): Copilot proxy endpoint.
 * `telemetry` (String!): Copilot telemetry endpoint.

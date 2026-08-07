@@ -45,11 +45,11 @@ You suspect a token or key has been stolen or exploited, received a secret scann
 
 ### Key tools
 
-| Tool                                                                                                                | Purpose                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| [Audit log](/en/code-security/reference/security-incident-response/investigation-tools#audit-logs)                  | Trace token usage                                                                                        |
-| [Security overview](/en/code-security/reference/security-incident-response/investigation-tools#security-overview)   | View organization- or enterprise-level security alerts and activity, particularly secret scanning alerts |
-| [GitHub code search](/en/code-security/reference/security-incident-response/investigation-tools#github-code-search) | Search for exposed credentials in code                                                                   |
+| Tool                                                                                                                                  | Purpose                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| [Audit log](/en/code-security/reference/security-incident-response/investigation-tools#audit-logs)                                    | Trace token usage                                                                                        |
+| [Security overview](/en/code-security/reference/security-incident-response/investigation-tools#security-overview-and-security-alerts) | View organization- or enterprise-level security alerts and activity, particularly secret scanning alerts |
+| [GitHub code search](/en/code-security/reference/security-incident-response/investigation-tools#github-code-search)                   | Search for exposed credentials in code                                                                   |
 
 ### Key resources
 
@@ -159,14 +159,14 @@ You received a malware or dependency alert, suspect a malicious package, or noti
 
 ### Key tools
 
-| Tool                                                                                                                  | Purpose                                                            |
-| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [GitHub code search](/en/code-security/reference/security-incident-response/investigation-tools#github-code-search)   | Search for references to the suspected package or Action           |
-| [Dependency graph](/en/code-security/reference/security-incident-response/investigation-tools#dependency-graph)       | Visualize and review dependencies                                  |
-| [Dependabot alerts](/en/code-security/how-tos/manage-security-alerts/manage-dependabot-alerts/view-dependabot-alerts) | Review for alerts relating to vulnerable dependencies              |
-| [GitHub Advisory Database](https://github.com/advisories)                                                             | Search for `type:malware`                                          |
-| [Activity view](/en/code-security/reference/security-incident-response/investigation-tools#activity-view)             | Review recent pushes to repositories                               |
-| [Security overview](/en/code-security/reference/security-incident-response/investigation-tools#security-overview)     | Review recent security alerts across an organization or enterprise |
+| Tool                                                                                                                                  | Purpose                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [GitHub code search](/en/code-security/reference/security-incident-response/investigation-tools#github-code-search)                   | Search for references to the suspected package or Action           |
+| [Dependency graph](/en/code-security/reference/security-incident-response/investigation-tools#dependency-graph)                       | Visualize and review dependencies                                  |
+| [Dependabot alerts](/en/code-security/how-tos/manage-security-alerts/manage-dependabot-alerts/view-dependabot-alerts)                 | Review for alerts relating to vulnerable dependencies              |
+| [GitHub Advisory Database](https://github.com/advisories)                                                                             | Search for `type:malware`                                          |
+| [Activity view](/en/code-security/reference/security-incident-response/investigation-tools#activity-view)                             | Review recent pushes to repositories                               |
+| [Security overview](/en/code-security/reference/security-incident-response/investigation-tools#security-overview-and-security-alerts) | Review recent security alerts across an organization or enterprise |
 
 ### Key resources
 

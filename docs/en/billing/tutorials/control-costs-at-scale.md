@@ -104,7 +104,7 @@ Create one budget for each product, SKU, or group of SKUs that you want to contr
 
 4. Click **Next: Configure budget** to display "Budget scope" and set the scope of spending for this budget to the cost center you created earlier.
 
-5. Under "Budget", set a budget amount. To stop any usage and further spending once the budget limit is reached, select **Stop usage when budget limit is reached**. This option is available for metered products and for Advanced Security SKU-level budgets. For more information about how hard budgets work for Advanced Security, see [Budgets and alerts](/en/billing/concepts/budgets-and-alerts#hard-budgets-for-github-advanced-security-skus).
+5. Under "Budget", set a budget amount. To stop any usage and further spending once the budget limit is reached, select **Stop usage when budget limit is reached**. This option is available for metered products and for Advanced Security SKU-level budgets. For more information about how hard budgets work for Advanced Security, see [Budgets and alerts](/en/billing/concepts/budgets-and-alerts).
 
 6. To receive an alert when usage reaches 75%, 90%, and 100% of the budget target, select **Receive budget threshold alerts** under "Alerts".  Account owners, billing managers, and any additional specified recipients will be notified via email. You may opt out at any time.
 

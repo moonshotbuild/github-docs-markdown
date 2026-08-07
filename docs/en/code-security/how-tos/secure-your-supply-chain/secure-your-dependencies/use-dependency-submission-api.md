@@ -87,7 +87,7 @@ jobs:
             go-build-target: go-example/cmd/octocat.go
 ```
 
-For more information about these actions, see [Dependency graph supported package ecosystems](/en/code-security/reference/supply-chain-security/dependency-graph-supported-package-ecosystems#package-ecosystems-supported-via-dependency-submission-actions).
+For more information about these actions, see [Dependency graph supported package ecosystems](/en/code-security/reference/supply-chain-security/dependency-graph-supported-package-ecosystems#supported-package-ecosystems).
 
 ### Creating your own action
 

@@ -33,7 +33,7 @@ You need to use specific syntax to tell GitHub to evaluate an expression rather 
 > The exception to this rule is when you are using expressions in an `if` clause, where, optionally, you can usually omit `${{` and `}}`. For more information about `if` conditionals, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idif).
 
 > \[!WARNING]
-> When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#understanding-the-risk-of-script-injections).
+> When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#good-practices-for-mitigating-script-injection-attacks).
 
 ### Example setting an environment variable
 

@@ -227,7 +227,7 @@ Some customers might attempt to partially mitigate these risks by implementing s
 To improve runner registration security, you can use the REST API to create ephemeral, just-in-time (JIT) runners. These self-hosted runners perform at most one job before being automatically removed from the repository, organization, or enterprise. For more information about configuring JIT runners, see [REST API endpoints for self-hosted runners](/en/rest/actions/self-hosted-runners#create-configuration-for-a-just-in-time-runner-for-an-organization).
 
 > \[!NOTE]
-> Re-using hardware to host JIT runners can risk exposing information from the environment. Use automation to ensure the JIT runner uses a clean environment. For more information, see [Self-hosted runners reference](/en/actions/reference/runners/self-hosted-runners#using-ephemeral-runners-for-autoscaling).
+> Re-using hardware to host JIT runners can risk exposing information from the environment. Use automation to ensure the JIT runner uses a clean environment. For more information, see [Self-hosted runners reference](/en/actions/reference/runners/self-hosted-runners#ephemeral-runners-for-autoscaling).
 
 Once you have the config file from the REST API response, you can pass it to the runner at startup.
 
@@ -329,7 +329,7 @@ The following features can automatically update the actions in your workflows.
 > * Dependabot updates the version documentation of GitHub Actions when the comment is on the same line, such as `actions/checkout@<commit> #<tag or link>` or `actions/checkout@<tag> #<tag or link>`.
 > * If the commit you use is not associated with any tag, Dependabot will update the GitHub Actions to the latest commit (which might differ from the latest release).
 > * Docker Hub and GitHub Packages Container registry URLs are currently not supported. For example, references to Docker container actions using `docker://` syntax aren't supported.
-> * Dependabot supports both public and private repositories for GitHub Actions. For private registry configuration options, see "`git`" in [Dependabot options reference](/en/code-security/reference/supply-chain-security/dependabot-options-reference#git).
+> * Dependabot supports both public and private repositories for GitHub Actions. For private registry configuration options, see "`git`" in [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#git).
 
 For information on how to configure Dependabot version updates, see [Configuring Dependabot version updates](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-version-updates).
 

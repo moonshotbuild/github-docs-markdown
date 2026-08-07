@@ -21,7 +21,7 @@ You can use Copilot in Windows Terminal to get suggestions and explanations for 
 
 ## Prerequisites
 
-* **Access to GitHub Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#getting-access-to-copilot).
+* **Access to GitHub Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#get-access).
 * **Windows Terminal Canary installed**. For installation instructions, see [Installing Windows Terminal Canary](https://github.com/microsoft/terminal?tab=readme-ov-file#installing-windows-terminal-canary).
 * **GitHub Copilot connected to Terminal Chat**. See [Quickstart for GitHub Copilot](/en/copilot/get-started/quickstart?tool=windowsterminal).
 

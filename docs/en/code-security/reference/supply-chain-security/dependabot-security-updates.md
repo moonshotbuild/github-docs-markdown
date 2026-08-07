@@ -23,7 +23,7 @@ Find usage information for Dependabot security updates.
 
 Settings for grouped Dependabot security updates are applied in the following order, from highest to lowest priority:
 
-1. Settings defined in a `dependabot.yml` file. See [About the `dependabot.yml` file](/en/code-security/reference/supply-chain-security/dependabot-options-reference#about-the-dependabotyml-file).
+1. Settings defined in a `dependabot.yml` file. See [About the `dependabot.yml` file](/en/code-security/concepts/supply-chain-security/about-the-dependabot-yml-file).
 2. Repository-level settings defined in the UI
 3. Organization-level settings defined in the UI
 

@@ -69,7 +69,7 @@ Usage of premium requests is tracked monthly and is based on the following facto
 
 When you use Copilot cloud agent, including any Copilot custom agents, both **GitHub Actions minutes** and **premium requests** are consumed:
 
-* **GitHub Actions minutes** come from your account’s monthly allowance of free minutes for GitHub-hosted runners. This allowance is shared with all GitHub Actions workflows. See [GitHub Actions billing](/en/billing/concepts/product-billing/github-actions#included-storage-and-minutes).
+* **GitHub Actions minutes** come from your account’s monthly allowance of free minutes for GitHub-hosted runners. This allowance is shared with all GitHub Actions workflows. See [GitHub Actions billing](/en/billing/concepts/product-billing/github-actions#free-use-of-github-actions).
 * **Premium requests** come from the monthly allowance associated with your Copilot license. This allowance is shared with other features, such as Copilot Chat.
 
 Each cloud agent **session** consumes one premium request. A session begins when you:

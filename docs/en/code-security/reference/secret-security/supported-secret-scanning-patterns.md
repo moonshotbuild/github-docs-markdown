@@ -115,7 +115,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Anthropic | Anthropic Admin API Key | anthropic_admin_api_key | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Anthropic | Anthropic API Key | anthropic_api_key, [Token versions](#token-versions) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Anthropic | Anthropic Session ID | anthropic_session_id | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| APIclub | APIclub API Key | apiclub_api_key | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ |
+| APIclub | APIclub API Key | apiclub_api_key | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Apify | Apify Actor Run API Token | apify_actor_run_api_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Apify | Apify Actor Run Proxy Password | apify_actor_run_proxy_password | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Apify | Apify API Token | apify_api_token | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
@@ -241,7 +241,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Cloudflare | Cloudflare User API Token | cloudflare_user_api_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Cloudsmith | Cloudsmith API Key | cloudsmith_api_key | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
 | Cockroach Labs | CockroachDB Cloud API Key | ccdb_api_key | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
-| Cohere | Cohere API Key | cohere_api_key | ✗ | ✓ | ✓ | ✓ | ✗ | ✗ |
+| Cohere | Cohere API Key | cohere_api_key | ✗ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Contentful | Contentful Personal Access Token | contentful_personal_access_token | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Contentful | Contentful Web Token | contentful_web_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Contributed Systems | Contributed Systems Credentials | contributed_systems_credentials | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
@@ -330,8 +330,8 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | GitLab | GitLab Runner Authentication Token | gitlab_runner_auth_token | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | GitLab | GitLab Runner Registration Token | gitlab_runner_registration_token | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | GitLab | GitLab SCIM Token | gitlab_scim_oauth_token | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| GoCardless | GoCardless Live Access Token | gocardless_live_access_token | ✓ | ✓ | ✗ | ✓ | ✗ | ✗ |
-| GoCardless | GoCardless Sandbox Access Token | gocardless_sandbox_access_token | ✓ | ✓ | ✗ | ✓ | ✗ | ✗ |
+| GoCardless | GoCardless Live Access Token | gocardless_live_access_token | ✓ | ✓ | ✗ | ✓ | ✓ | ✗ |
+| GoCardless | GoCardless Sandbox Access Token | gocardless_sandbox_access_token | ✓ | ✓ | ✗ | ✓ | ✓ | ✗ |
 | Google | Google API Key | google_api_key | ✓ | ✓ | ✗ | ✓ | ✗ | ✗ |
 | Google | Google Cloud Service Account Credentials | google_cloud_service_account_credentials | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Google | Google Cloud Storage Service Account Access Key ID | google_cloud_storage_access_key_secret, google_cloud_storage_service_account_access_key_id | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
@@ -419,7 +419,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Microsoft | Power Automate Webhook SAS | power_automate_webhook_sas | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
 | Midtrans | Midtrans Production Server Key | midtrans_production_server_key | ✗ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Midtrans | Midtrans Sandbox Server Key | midtrans_sandbox_server_key | ✗ | ✓ | ✗ | ✓ | ✗ | ✗ |
-| Mistral AI | Mistral AI API Key | mistral_ai_api_key | ✗ | ✓ | ✗ | ✓ | ✗ | ✗ |
+| Mistral AI | Mistral AI API Key | mistral_ai_api_key | ✗ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | MongoDB | MongoDB Atlas Database URI with credentials | mongodb_atlas_db_uri_with_credentials | ✓ | ✓ | ✗ | ✓ | ✓ | ✗ |
 | MongoDB | MongoDB Atlas Service Account Secret | mongodb_atlas_service_account_secret | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Naver Cloud | Naver Cloud Gov Access Key ID | navercloud_gov_access_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
@@ -487,7 +487,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Polar | Polar Refresh Token | polar_refresh_token, [Token versions](#token-versions) | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Polar | Polar User Session Token | polar_user_session_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | PostHog | PostHog Feature Flags Secure API Key | posthog_feature_flags_secure_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| PostHog | PostHog OAuth Access Token | posthog_oauth_access_token | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ |
+| PostHog | PostHog OAuth Access Token | posthog_oauth_access_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | PostHog | PostHog OAuth Refresh Token | posthog_oauth_refresh_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | PostHog | PostHog Personal API Key | posthog_personal_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Postman | Postman API Key | postman_api_key | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
@@ -510,10 +510,10 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | ReadMe | ReadMe API Key | readmeio_api_access_token | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | redirect.pizza | redirect.pizza API Token | redirect_pizza_api_token | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Replicate | Replicate API Token | replicate_api_token | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
-| Resend | Resend API Key | resend_api_key | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ |
+| Resend | Resend API Key | resend_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Rootly | Rootly API Key | rootly_api_key | ✗ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | RubyGems | RubyGems API Key | rubygems_api_key | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
-| RunPod | RunPod API Key | runpod_api_key | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
+| RunPod | RunPod API Key | runpod_api_key | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Salesforce | Salesforce Access Token | salesforce_access_token | ✗ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Salesforce | Salesforce Marketing Cloud API OAuth2 Token | salesforce_marketing_cloud_api_oauth2_token | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Salesforce | Salesforce OAuth2 Consumer Key | salesforce_oauth2_consumer_key, salesforce_oauth2_consumer_secret | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
@@ -521,7 +521,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Samsara | Samsara API Token | samsara_api_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Samsara | Samsara OAuth Access Token | samsara_oauth_access_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Scalr | Scalr API Token | scalr_api_token | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
-| Segment | Segment Public API Token | segment_public_api_token | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
+| Segment | Segment Public API Token | segment_public_api_token | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | SendGrid | SendGrid API Key | sendgrid_api_key | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Sentry | Sentry Integration Token | sentry_integration_token | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Sentry | Sentry Organization Token | sentry_organization_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
@@ -554,7 +554,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Sourcegraph | Sourcegraph Access Token with Instance Identifier | sourcegraph_instance_identifier_access_token | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Sourcegraph | Sourcegraph License Key Token | sourcegraph_license_key_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Sourcegraph | Sourcegraph Product Subscription Token | sourcegraph_product_subscription_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| Square | Square Access Token | square_access_token, [Token versions](#token-versions) | ✗ | ✓ | ✓ | ✓ | ✗ | ✗ |
+| Square | Square Access Token | square_access_token, [Token versions](#token-versions) | ✗ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Square | Square Production Application Secret | square_production_application_secret | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Square | Square Sandbox Application Secret | square_sandbox_application_secret | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | SSLMate | SSLMate API Key | sslmate_api_key, [Token versions](#token-versions) | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |

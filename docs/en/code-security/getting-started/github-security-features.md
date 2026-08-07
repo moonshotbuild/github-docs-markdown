@@ -101,7 +101,7 @@ GitHub Secret Protection includes features that help you detect and prevent cred
 These features are available for all repository types. Some of these features are available for public repositories free of charge, meaning that you don't need to purchase GitHub Secret Protection to enable the feature on a public repository.
 
 <!--Hiding information on setting up a trial for now, as there is no available link for fpt yet. Needs versioning for fpt, ghec and ghes.
-For information about how you can try GitHub Secret Protection for free, see [AUTOTITLE](/billing/managing-billing-for-your-products/managing-billing-for-github-advanced-security/setting-up-a-trial-of-github-advanced-security).
+For information about how you can try GitHub Secret Protection for free, see [AUTOTITLE](/code-security/tutorials/trialing-github-advanced-security/trial-advanced-security).
 -->
 
 ### Secret scanning alerts for users
@@ -150,7 +150,7 @@ These features are available for all repository types. Some of these features ar
 
 <!--Hiding information on setting up a trial for now, as there is no available link for fpt yet. Needs versioning for fpt, ghec & ghes.
 
-For information about how you can try GitHub Code Security for free, see [AUTOTITLE](/billing/managing-billing-for-your-products/managing-billing-for-github-advanced-security/setting-up-a-trial-of-github-advanced-security).
+For information about how you can try GitHub Code Security for free, see [AUTOTITLE](/code-security/tutorials/trialing-github-advanced-security/trial-advanced-security).
 
 -->
 

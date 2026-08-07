@@ -51,4 +51,4 @@ During an **Enterprise Managed User trial**, you can use metered products up to 
 
 > \[!IMPORTANT] If you don't use Enterprise Managed Users in your trial of GitHub Enterprise Cloud, connecting an Azure subscription will immediately end your trial and begin paid usage.
 
-For more information, see [Connecting an Azure subscription](/en/billing/how-tos/set-up-payment/connect-azure-sub#connecting-your-azure-subscription-to-your-enterprise-account).
+For more information, see [Connecting an Azure subscription](/en/billing/how-tos/set-up-payment/connect-azure-sub#connecting-your-azure-subscription-to-an-organization-or-enterprise-account).

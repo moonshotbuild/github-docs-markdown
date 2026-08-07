@@ -31,7 +31,7 @@ This guide gives an overview of how to configure HashiCorp Vault to trust GitHub
 
 * To learn the basic concepts of how GitHub uses OpenID Connect (OIDC), and its architecture and benefits, see [OpenID Connect](/en/actions/concepts/security/openid-connect).
 
-* Before proceeding, you must plan your security strategy to ensure that access tokens are only allocated in a predictable way. To control how your cloud provider issues access tokens, you **must** define at least one condition, so that untrusted repositories can’t request access tokens for your cloud resources. For more information, see [OpenID Connect](/en/actions/concepts/security/openid-connect#configuring-the-oidc-trust-with-the-cloud).
+* Before proceeding, you must plan your security strategy to ensure that access tokens are only allocated in a predictable way. To control how your cloud provider issues access tokens, you **must** define at least one condition, so that untrusted repositories can’t request access tokens for your cloud resources. For more information, see [OpenID Connect reference](/en/actions/reference/security/oidc#oidc-claims-used-to-define-trust-conditions-on-cloud-roles).
 
 ## Adding the identity provider to HashiCorp Vault
 
@@ -83,7 +83,7 @@ To configure your Vault server to accept JSON Web Tokens (JWT) for authenticatio
 * `ttl` defines the validity of the resulting access token.
 * Ensure that the `bound_claims` parameter is defined for your security requirements, and has at least one condition. Optionally, you can also set the `bound_subject` as well as the `bound_audiences` parameter.
 * To check arbitrary claims in the received JWT payload, the `bound_claims` parameter contains a set of claims and their required values. In the above example, the role will accept any incoming authentication requests from the `repo-name` repository owned by the `user-or-org-name` account.
-* To see all the available claims supported by GitHub's OIDC provider, see [OpenID Connect](/en/actions/concepts/security/openid-connect#configuring-the-oidc-trust-with-the-cloud).
+* To see all the available claims supported by GitHub's OIDC provider, see [OpenID Connect reference](/en/actions/reference/security/oidc#oidc-token-claims).
 
 For more information, see the HashiCorp Vault [documentation](https://www.vaultproject.io/docs/auth/jwt).
 
@@ -95,7 +95,7 @@ To update your workflows for OIDC, you will need to make two changes to your YAM
 2. Use the [`hashicorp/vault-action`](https://github.com/hashicorp/vault-action) action to exchange the OIDC token (JWT) for a cloud access token.
 
 > \[!NOTE]
-> When environments are used in workflows or in OIDC policies, we recommend adding protection rules to the environment for additional security. For example, you can configure deployment rules on an environment to restrict which branches and tags can deploy to the environment or access environment secrets. For more information, see [Managing environments for deployment](/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments#deployment-protection-rules).
+> When environments are used in workflows or in OIDC policies, we recommend adding protection rules to the environment for additional security. For example, you can configure deployment rules on an environment to restrict which branches and tags can deploy to the environment or access environment secrets. For more information, see [Managing environments for deployment](/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments).
 
 To add OIDC integration to your workflows that allow them to access secrets in Vault, you will need to add the following code changes:
 

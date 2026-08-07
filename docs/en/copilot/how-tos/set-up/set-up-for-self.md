@@ -69,4 +69,6 @@ If you have your own Copilot plan (instead of using your organization or enterpr
 
 Start using Copilot to help you write code faster and more efficiently. For all the ways you can use Copilot, see [How-tos for GitHub Copilot](/en/copilot/how-tos). Copilot code suggestions, Copilot Chat in GitHub, and Copilot Chat in your IDE are a great place to start.
 
+To get started with agent-driven development in the GitHub Copilot app, see [Getting started with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/getting-started).
+
 To learn how to best use Copilot, see [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices) and [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering).

@@ -33,7 +33,7 @@ If you currently pay for your GitHub Enterprise licenses by invoice with a volum
 
 Although you can sync licenses with GitHub Enterprise Server, usage-based licensing is a cloud-first license model where users must first be added to an organization on GitHub Enterprise Cloud.
 
-For a detailed comparison between usage-based and volume licensing models, see [Combined GitHub Enterprise cloud and server use](/en/billing/concepts/enterprise-billing/combined-enterprise-use#about-licensing-models).
+For a detailed comparison between usage-based and volume licensing models, see [Combined GitHub Enterprise cloud and server use](/en/billing/concepts/enterprise-billing/combined-enterprise-use#usage-based-and-volume-licensing).
 
 ## Can I use a Visual Studio bundle?
 

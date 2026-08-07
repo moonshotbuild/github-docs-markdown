@@ -537,6 +537,11 @@ Array of `Issue Event`:
 * `blocking`: any of:
   * **null**
   * **Issue Reference** (see above)
+* `intent`: any of:
+  * **null**
+  * **Issue Event Intent**
+    * `rationale`: string or null
+    * `confidence`: string or null, enum: `LOW`, `MEDIUM`, `HIGH`, `null`
 * `author_association`: string, enum: `COLLABORATOR`, `CONTRIBUTOR`, `FIRST_TIMER`, `FIRST_TIME_CONTRIBUTOR`, `MANNEQUIN`, `MEMBER`, `NONE`, `OWNER`
 * `lock_reason`: string or null
 * `performed_via_github_app`: any of:
@@ -1050,6 +1055,11 @@ curl -L \
 * `blocking`: any of:
   * **null**
   * **Issue Reference** (see above)
+* `intent`: any of:
+  * **null**
+  * **Issue Event Intent**
+    * `rationale`: string or null
+    * `confidence`: string or null, enum: `LOW`, `MEDIUM`, `HIGH`, `null`
 * `author_association`: string, enum: `COLLABORATOR`, `CONTRIBUTOR`, `FIRST_TIMER`, `FIRST_TIME_CONTRIBUTOR`, `MANNEQUIN`, `MEMBER`, `NONE`, `OWNER`
 * `lock_reason`: string or null
 * `performed_via_github_app`: any of:
@@ -1180,6 +1190,11 @@ Array of `Issue Event for Issue` objects: any of:
   * `label`: required, object:
     * `name`: required, string
     * `color`: required, string
+  * `intent`: any of:
+    * **null**
+    * **Issue Event Intent**
+      * `rationale`: string or null
+      * `confidence`: string or null, enum: `LOW`, `MEDIUM`, `HIGH`, `null`
 * **Unlabeled Issue Event**
   * `id`: required, integer
   * `node_id`: required, string
@@ -1195,6 +1210,9 @@ Array of `Issue Event for Issue` objects: any of:
   * `label`: required, object:
     * `name`: required, string
     * `color`: required, string
+  * `intent`: any of:
+    * **null**
+    * **Issue Event Intent** (see above)
 * **Assigned Issue Event**
   * `id`: required, integer
   * `node_id`: required, string
@@ -1207,6 +1225,9 @@ Array of `Issue Event for Issue` objects: any of:
   * `performed_via_github_app`: required, `GitHub app` (see above)
   * `assignee`: required, `Simple User` (see above)
   * `assigner`: required, `Simple User` (see above)
+  * `intent`: any of:
+    * **null**
+    * **Issue Event Intent** (see above)
 * **Unassigned Issue Event**
   * `id`: required, integer
   * `node_id`: required, string
@@ -1455,6 +1476,9 @@ Array of `Issue Event for Issue` objects: any of:
     * `id`: required, integer
     * `name`: required, string
     * `color`: string or null, enum: `gray`, `blue`, `green`, `yellow`, `orange`, `red`, `pink`, `purple`, `null`
+  * `intent`: any of:
+    * **null**
+    * **Issue Event Intent** (see above)
 * **Issue Type Removed Issue Event**
   * `id`: required, integer
   * `node_id`: required, string
@@ -1468,6 +1492,9 @@ Array of `Issue Event for Issue` objects: any of:
     * **null**
     * **GitHub app** (see above)
   * `prev_issue_type`: required, `Issue Type` (see above)
+  * `intent`: any of:
+    * **null**
+    * **Issue Event Intent** (see above)
 * **Issue Type Changed Issue Event**
   * `id`: required, integer
   * `node_id`: required, string
@@ -1482,6 +1509,9 @@ Array of `Issue Event for Issue` objects: any of:
     * **GitHub app** (see above)
   * `issue_type`: required, `Issue Type` (see above)
   * `prev_issue_type`: required, `Issue Type` (see above)
+  * `intent`: any of:
+    * **null**
+    * **Issue Event Intent** (see above)
 * **Sub-issue Added Issue Event**
   * `id`: required, integer
   * `node_id`: required, string

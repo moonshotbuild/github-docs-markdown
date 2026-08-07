@@ -31,9 +31,9 @@ Using GitHub-hosted runners within Azure VNET allows you to perform the followin
 
 ## About using larger runners with Azure VNET
 
-2-64 vCPU Ubuntu and Windows runners are supported with Azure VNET. For more information on these runner types, see [Larger runners](/en/actions/concepts/runners/larger-runners#about-ubuntu-and-windows-larger-runners).
+2-64 vCPU Ubuntu and Windows runners are supported with Azure VNET. For more information on these runner types, see [Larger runners reference](/en/actions/reference/runners/larger-runners#specifications-for-general-larger-runners).
 
-Private networking for GitHub-hosted runners does not support static IP addresses for larger runners. You must use dynamic IP addresses, which is the default configuration for larger runners. For more information about networking for larger runners, see [Larger runners](/en/actions/concepts/runners/larger-runners#networking-for-larger-runners).
+Private networking for GitHub-hosted runners does not support static IP addresses for larger runners. You must use dynamic IP addresses, which is the default configuration for larger runners. For more information about networking for larger runners, see [Larger runners reference](/en/actions/reference/runners/larger-runners#networking-for-larger-runners).
 
 ## About network communication
 

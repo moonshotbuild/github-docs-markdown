@@ -22,7 +22,7 @@ Troubleshooting help for connecting to GitHub Codespaces.
 Codespaces are set to stop after 30 minutes without any activity. If you try to interact with a codespace after it has stopped, you may see a `503 service unavailable` error.
 
 * If a **Start** button is shown in Visual Studio Code or in your browser window, click **Start** to reconnect to the codespace.
-* Reset your codespace by reloading the window. From the [Command Palette](/en/codespaces/reference/using-the-vs-code-command-palette-in-codespaces#accessing-the-command-palette) in Visual Studio Code, click **Developer: Reload Window**.
+* Reset your codespace by reloading the window. From the [Command Palette](/en/codespaces/reference/using-the-vs-code-command-palette-in-codespaces#accessing-the-vs-code-command-palette) in Visual Studio Code, click **Developer: Reload Window**.
 
 ## Browser cannot connect
 

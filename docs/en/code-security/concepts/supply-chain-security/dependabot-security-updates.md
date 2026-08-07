@@ -43,10 +43,10 @@ GitHub may send Dependabot alerts to repositories affected by a vulnerability di
 
 Dependabot checks whether it's possible to upgrade the vulnerable dependency to a fixed version without disrupting the dependency graph for the repository. Then Dependabot raises a pull request to update the dependency to the minimum version that includes the patch and links the pull request to the Dependabot alert, or reports an error on the alert. For more information, see [Dependabot errors](/en/code-security/reference/supply-chain-security/troubleshoot-dependabot/dependabot-errors).
 
-The Dependabot security updates feature is available for repositories where you have enabled the dependency graph and Dependabot alerts. You will see a Dependabot alert for every vulnerable dependency identified in your full dependency graph. However, security updates are triggered only for dependencies that are specified in a manifest or lock file. For more information, see [Dependency graph](/en/code-security/concepts/supply-chain-security/dependency-graph#dependencies-included).
+The Dependabot security updates feature is available for repositories where you have enabled the dependency graph and Dependabot alerts. You will see a Dependabot alert for every vulnerable dependency identified in your full dependency graph. However, security updates are triggered only for dependencies that are specified in a manifest or lock file. For more information, see [Dependency graph](/en/code-security/concepts/supply-chain-security/dependency-graph).
 
 > \[!NOTE]
-> For npm, Dependabot will raise a pull request to update an explicitly defined dependency to a secure version, even if it means updating the parent dependency or dependencies, or even removing a sub-dependency that is no longer needed by the parent. For other ecosystems, Dependabot is unable to update an indirect or transitive dependency if it would also require an update to the parent dependency. For more information, see [Dependabot errors](/en/code-security/reference/supply-chain-security/troubleshoot-dependabot/dependabot-errors#dependabot-tries-to-update-dependencies-without-an-alert).
+> For npm, Dependabot will raise a pull request to update an explicitly defined dependency to a secure version, even if it means updating the parent dependency or dependencies, or even removing a sub-dependency that is no longer needed by the parent. For other ecosystems, Dependabot is unable to update an indirect or transitive dependency if it would also require an update to the parent dependency. For more information, see [Dependabot errors](/en/code-security/reference/supply-chain-security/troubleshoot-dependabot/dependabot-errors#updates-dependencies-without-an-alert).
 
 You can enable a related feature, Dependabot version updates, so that Dependabot raises pull requests to update the manifest to the latest version of the dependency, whenever it detects an outdated dependency. For more information, see [Dependabot version updates](/en/code-security/concepts/supply-chain-security/dependabot-version-updates).
 
@@ -75,7 +75,7 @@ You can enable grouped pull requests for Dependabot security updates in one, or 
 > \[!NOTE]
 > If you have configured group rules for Dependabot security updates in a `dependabot.yml` file, all available updates will be grouped according to the rules you've specified. Dependabot will only group across those directories not configured in your `dependabot.yml` if the setting for grouped security updates at the organization or repository level is also enabled.
 
-For more information, see [Configuring Dependabot security updates](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-security-updates#grouping-into-a-single-pull-request).
+For more information, see [Configuring Dependabot security updates](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-security-updates#grouping-dependabot-security-updates-into-a-single-pull-request).
 
 ## About compatibility scores
 
@@ -87,4 +87,4 @@ When maintainers of a repository stop interacting with Dependabot pull requests,
 
 ## About notifications for Dependabot security updates
 
-You can filter your notifications on GitHub to show Dependabot security updates. For more information, see [Inbox filters](/en/subscriptions-and-notifications/reference/inbox-filters#custom-filters).
+You can filter your notifications on GitHub to show Dependabot security updates. For more information, see [Inbox filters](/en/subscriptions-and-notifications/reference/inbox-filters).

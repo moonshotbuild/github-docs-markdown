@@ -23,7 +23,7 @@ GitHub Discussions is an open forum for conversation among maintainers and the c
 
 ## Marking a comment as an answer
 
-You can mark a comment in the discussion as an answer to the discussion if a discussion is within a category that accepts answers. For more information, see [About discussions](/en/discussions/collaborating-with-your-community-using-discussions/about-discussions#about-categories-and-formats-for-discussions).
+You can mark a comment in the discussion as an answer to the discussion if a discussion is within a category that accepts answers. For more information, see [About discussions](/en/discussions/collaborating-with-your-community-using-discussions/about-discussions).
 
 When you mark a question as an answer, GitHub will highlight the comment and replies to the comment to help visitors quickly find the answer.
 

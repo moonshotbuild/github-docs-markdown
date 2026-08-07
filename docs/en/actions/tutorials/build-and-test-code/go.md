@@ -23,7 +23,7 @@ Learn how to create a continuous integration (CI) workflow to build and test you
 
 This guide shows you how to build, test, and publish a Go package.
 
-GitHub-hosted runners have a tools cache with preinstalled software, which includes the dependencies for Go. For a full list of up-to-date software and the preinstalled versions of Go, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#preinstalled-software).
+GitHub-hosted runners have a tools cache with preinstalled software, which includes the dependencies for Go. For a full list of up-to-date software and the preinstalled versions of Go, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#preinstalled-software-for-github-owned-images).
 
 ## Prerequisites
 

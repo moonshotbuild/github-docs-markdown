@@ -117,7 +117,7 @@ For full details of the script that's run when you add the `nvidia-cuda` feature
    ![Screenshot of the Command Palette with a search for "rebuild container" and the "Codespace: Rebuild Container" option highlighted in the dropdown.](/assets/images/help/codespaces/codespaces-rebuild.png)
 
    > \[!TIP]
-   > You may occasionally want to perform a full rebuild to clear your cache and rebuild your container with fresh images. For more information, see [Rebuilding the container in a codespace](/en/codespaces/developing-in-a-codespace/rebuilding-the-container-in-a-codespace#about-rebuilding-a-container).
+   > You may occasionally want to perform a full rebuild to clear your cache and rebuild your container with fresh images. For more information, see [Rebuilding the container in a codespace](/en/codespaces/developing-in-a-codespace/rebuilding-the-container-in-a-codespace#rebuilding-a-container).
    > The codespace container will be rebuilt. This will take several minutes. When the rebuild is complete the codespace is automatically reopened.
 
 5. Publish your change to a repository so that CUDA will be installed in any new codespaces you create from this repository in future. For more information, see [Creating a codespace from a template](/en/codespaces/developing-in-a-codespace/creating-a-codespace-from-a-template#publishing-from-vs-code).

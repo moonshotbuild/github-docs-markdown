@@ -1,7 +1,7 @@
 ---
 source_path: "/en/code-security/concepts/code-scanning/autofix-for-code-scanning"
 title: "About autofix for code scanning"
-intro: "Autofix provides targeted recommendations to help you fix code scanning alerts and avoid introducing new security vulnerabilities."
+intro: "Autofix automatically generates fixes for code scanning alerts, helping you remediate existing vulnerabilities."
 product: "Security and code quality"
 document_type: "article"
 breadcrumbs:
@@ -17,7 +17,7 @@ breadcrumbs:
 
 # About autofix for code scanning
 
-Autofix provides targeted recommendations to help you fix code scanning alerts and avoid introducing new security vulnerabilities.
+Autofix automatically generates fixes for code scanning alerts, helping you remediate existing vulnerabilities.
 
 Autofix provides you with targeted recommendations to help you fix code scanning alerts so you can avoid introducing new security vulnerabilities. The potential fixes are generated automatically by large language models (LLMs) using data from the codebase and from code scanning analysis.
 
@@ -46,6 +46,6 @@ Copilot Autofix generates a single suggested fix for an alert, which you review 
 
 You do not need a subscription to GitHub Copilot to use GitHub Copilot Autofix, and it does not consume AI credits. Copilot Autofix is available to all public repositories on GitHub.com, as well as internal or private repositories owned by organizations and enterprises that have a license for GitHub Code Security.
 
-Copilot Autofix is allowed by default and enabled for every repository that uses CodeQL, regardless of whether it uses default or advanced setup for code scanning. There is no separate step to enable Copilot Autofix: enabling code scanning with CodeQL is sufficient. See [Configuring default setup for code scanning](/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning).
+Copilot Autofix is allowed by default and enabled for every repository that uses CodeQL, regardless of whether it uses default or advanced setup for code scanning. There is no separate step to enable Copilot Autofix: enabling code scanning with CodeQL is sufficient. See [Configuring default setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning).
 
 Administrators at the enterprise, organization, and repository levels can choose to disable Copilot Autofix. If Copilot Autofix has been disabled at your level, you can re-enable it by following the same steps used to disable it and selecting the option to allow Copilot Autofix. To learn how to manage Copilot Autofix at each level, see [Disabling autofix for code scanning security alerts](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/disabling-autofix-for-code-scanning).

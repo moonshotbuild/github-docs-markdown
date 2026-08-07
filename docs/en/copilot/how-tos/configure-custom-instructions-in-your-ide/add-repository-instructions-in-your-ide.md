@@ -230,7 +230,7 @@ Repository custom instructions let you provide Copilot with repository-specific 
 
 ## Creating custom instructions
 
-Visual Studio supports two types of custom instructions. For details of which GitHub Copilot features support these types of instructions, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization?tool=visualstudio#support-for-repository-custom-instructions-2).
+Visual Studio supports two types of custom instructions. For details of which GitHub Copilot features support these types of instructions, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization?tool=visualstudio).
 
 * **Repository-wide custom instructions**, which apply to all requests made in the context of a repository.
 

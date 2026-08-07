@@ -65,11 +65,11 @@ To **track progress** towards a project goal or release, use `milestone` to asso
 
 For detailed guidance, see [Associating pull requests with a milestone](/en/code-security/tutorials/secure-your-dependencies/customizing-dependabot-prs#associating-pull-requests-with-a-milestone).
 
-## Changing the separator in the pull request branch name
+## Customizing pull request branch names
 
-To ensure your **branch names align** with your team's existing conventions, use `pull-request-branch-name.separator` to specify the separator you want Dependabot to use for branch names.
+To ensure your **branch names align** with your team's existing conventions, use `pull-request-branch-name` to customize how Dependabot generates branch names—including the separator, prefix, length, casing, and format.
 
-For detailed guidance, see [Changing the separator in the pull request branch name](/en/code-security/tutorials/secure-your-dependencies/customizing-dependabot-prs#changing-the-separator-in-the-pull-request-branch-name).
+For detailed guidance, see [Customizing pull request branch names](/en/code-security/tutorials/secure-your-dependencies/customizing-dependabot-prs#customizing-pull-request-branch-names).
 
 ## Example 1: configuration for security updates only
 

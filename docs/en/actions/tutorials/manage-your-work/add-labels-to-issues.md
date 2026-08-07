@@ -58,7 +58,7 @@ In the tutorial, you will first make a workflow file that uses the GitHub CLI. T
 
 4. Customize the `env` values in your workflow file:
    * The `GH_TOKEN`, `GH_REPO`, and `NUMBER` values are automatically set using the `github` and `secrets` contexts. You do not need to change these.
-   * Change the value for `LABELS` to the list of labels that you want to add to the issue. The label(s) must exist for your repository. Separate multiple labels with commas. For example, `help wanted,good first issue`. For more information about labels, see [Managing labels](/en/issues/using-labels-and-milestones-to-track-work/managing-labels#applying-labels-to-issues-and-pull-requests).
+   * Change the value for `LABELS` to the list of labels that you want to add to the issue. The label(s) must exist for your repository. Separate multiple labels with commas. For example, `help wanted,good first issue`. For more information about labels, see [Managing labels](/en/issues/using-labels-and-milestones-to-track-work/managing-labels).
 
 5. Commit your workflow file to the default branch of your repository. For more information, see [Creating new files](/en/repositories/working-with-files/managing-files/creating-new-files).
 

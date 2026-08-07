@@ -20,7 +20,7 @@ It's not possible to convert an organization into a personal account, but you ca
 > \[!NOTE]
 > After an account is deleted, the username at the time of deletion becomes unavailable for reuse for 90 days. To reuse an organization's username immediately, you must change the username before you delete the organization.
 
-1. [Sign up](/en/get-started/start-your-journey/creating-an-account-on-github) for a new account on GitHub.
+1. [Sign up](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github) for a new account on GitHub.
 2. [Have the user's role changed to an owner](/en/organizations/managing-peoples-access-to-your-organization-with-roles/maintaining-ownership-continuity-for-your-organization).
 3. Sign in to the new personal account.
 4. [Transfer each organization repository](/en/repositories/creating-and-managing-repositories/transferring-a-repository) to the new personal account.

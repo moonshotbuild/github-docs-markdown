@@ -85,7 +85,7 @@ GET /meta
 ```
 
 Returns meta information about GitHub, including a list of GitHub's IP addresses. For more information, see "About GitHub's IP addresses."
-The API's response also includes a list of GitHub's domain names.
+The API's response also includes a list of GitHub's domain names, and the public keys used by GitHub to sign commits made through the web UI.
 The values shown in the documentation's response are example values. You must always query the API directly to get the latest values.
 Note
 
@@ -131,11 +131,13 @@ curl -L \
 * `codespaces`: array of string
 * `dependabot`: array of string
 * `copilot`: array of string
+* `commit_signing_keys`: array of string
 * `domains`: object:
   * `website`: array of string
   * `codespaces`: array of string
   * `copilot`: array of string
   * `packages`: array of string
+  * `storage`: array of string
   * `actions`: array of string
   * `actions_inbound`: object:
     * `full_domains`: array of string

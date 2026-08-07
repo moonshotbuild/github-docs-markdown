@@ -233,4 +233,4 @@ Copilot doesn't replace you as a developer—you still need to be involved at ev
 
 ## Next steps
 
-Read this case study on the GitHub blog: [How the GitHub billing team uses the cloud agent in GitHub Copilot to continuously burn down technical debt](https://github.blog/ai-and-ml/github-copilot/how-the-github-billing-team-uses-the-cloud-agent-in-github-copilot-to-continuously-burn-down-technical-debt/).
+Read this case study on the GitHub blog: [How the GitHub billing team uses the cloud agent in GitHub Copilot to continuously burn down technical debt](https://github.blog/ai-and-ml/github-copilot/how-the-github-billing-team-uses-the-coding-agent-in-github-copilot-to-continuously-burn-down-technical-debt/).

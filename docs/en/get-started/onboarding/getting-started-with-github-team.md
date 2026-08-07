@@ -29,13 +29,13 @@ Organizations are shared accounts where businesses and open-source projects can 
 
 ### 2. Creating an organization and signing up for GitHub Team
 
-Before creating an organization, you will need to create a personal account or log in to your existing account on GitHub.com. For more information, see [Creating an account on GitHub](/en/get-started/start-your-journey/creating-an-account-on-github).
+Before creating an organization, you will need to create a personal account or log in to your existing account on GitHub.com. For more information, see [Creating an account on GitHub](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github).
 
 Once your personal account is set up, you can create an organization and pick a plan. This is where you can choose a GitHub Team subscription for your organization. For more information, see [Creating a new organization from scratch](/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch).
 
 ### 3. Managing billing for an organization
 
-You must manage billing settings, payment method, and paid features and products for each of your personal accounts and organizations separately. You can switch between settings for your different accounts using the context switcher in your settings. For more information, see [How GitHub billing works](/en/billing/get-started/how-billing-works#switching-between-settings-for-your-different-accounts).
+You must manage billing settings, payment method, and paid features and products for each of your personal accounts and organizations separately. You can switch between settings for your different accounts using the context switcher in your settings. For more information, see [How GitHub billing works](/en/billing/get-started/how-billing-works).
 
 Your organization's billing settings page allows you to manage settings like your payment method, billing cycle and billing email, or view information such as your subscription, billing date and payment history. You can also view and upgrade your storage and GitHub Actions minutes. For more information on managing your billing settings, see [Get started with billing](/en/billing/get-started).
 

@@ -44,6 +44,7 @@ The exact command you need to use depends on which extension of the GitHub CLI t
 * [Reclaiming mannequins with the GEI extension](#reclaiming-mannequins-with-the-gei-extension)
 * [Reclaiming mannequins with the ADO2GH extension](#reclaiming-mannequins-with-the-ado2gh-extension)
 * [Reclaiming mannequins with the BBS2GH extension](#reclaiming-mannequins-with-the-bbs2gh-extension)
+* [Reclaiming mannequins with the GL2GH extension](#reclaiming-mannequins-with-the-gl2gh-extension)
 
 #### Reclaiming mannequins with the GEI extension
 
@@ -89,7 +90,7 @@ By default, the organization member will receive an invitation via email, and th
 
 If your migration source is Azure DevOps, you can reclaim mannequins with the ADO2GH extension of the GitHub CLI.
 
-* If you don't already have a `GH_PAT` environment variable set for a personal access token with access to the destination organization, add `--github-target-pat TOKEN` to each of the commands below, replacing `TOKEN` with the personal access token. For personal access token requirements, see [Manage access](/en/migrations/ado/manage-access#required-scopes-for-personal-access-tokens).
+* If you don't already have a `GH_PAT` environment variable set for a personal access token with access to the destination organization, add `--github-target-pat TOKEN` to each of the commands below, replacing `TOKEN` with the personal access token. For personal access token requirements, see [Manage access](/en/migrations/ado/manage-access).
 * If you're migrating to GHE.com, add `--target-api-url TARGET-API-URL`, where TARGET-API-URL is the base API URL for your enterprise's subdomain. For example: `https://api.octocorp.ghe.com`.
 
 1. Optionally, to reclaim mannequins in bulk, create a CSV file that maps mannequins to organization members.
@@ -161,6 +162,46 @@ If your migration source is Bitbucket Server, you can reclaim mannequins with th
 
      ```shell copy
      gh bbs2gh reclaim-mannequin --github-org DESTINATION --mannequin-user MANNEQUIN --target-user USERNAME
+     ```
+
+By default, the organization member will receive an invitation via email, and the mannequin will not be reclaimed until the member accepts the invitation.
+
+#### Reclaiming mannequins with the GL2GH extension
+
+If your migration source is GitLab, you can reclaim mannequins with the GL2GH extension of the GitHub CLI.
+
+* If you don't already have a `GH_PAT` environment variable set for a personal access token with access to the destination organization, add `--github-pat TOKEN` to each command below, replacing `TOKEN` with the personal access token. For personal access token requirements, see [Manage access for a migration from GitLab to GitHub](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab/manage-access).
+* If you're migrating to GHE.com, add `--target-api-url TARGET-API-URL`, where TARGET-API-URL is the base API URL for your enterprise's subdomain. For example: `https://api.octocorp.ghe.com`.
+
+1. Optionally, to reclaim mannequins in bulk, create a CSV file that maps mannequins to organization members.
+
+   * To generate a CSV file with a list of mannequins for an organization, use the `gh gl2gh generate-mannequin-csv` command, replacing DESTINATION with the destination organization and FILENAME with a file name for the resulting CSV file.
+
+     Optionally, to include mannequins that have already been reclaimed, add the `--include-reclaimed` flag.
+
+     ```shell copy
+     gh gl2gh generate-mannequin-csv --github-org DESTINATION --output FILENAME.csv
+     ```
+
+   * Edit the CSV file, adding the username of the organization member that corresponds to each mannequin.
+
+   * Save the file.
+2. To reclaim mannequins, use the `gh gl2gh reclaim-mannequin` command.
+
+   * To reclaim mannequins in bulk with the mapping file you created earlier, replace DESTINATION with the destination organization and FILENAME with the file name of the mapping file.
+
+     ```shell copy
+     gh gl2gh reclaim-mannequin --github-org DESTINATION --csv FILENAME.csv
+     ```
+
+   * To reclaim an individual mannequin, replace DESTINATION with the destination organization, MANNEQUIN with the login of mannequin, and USERNAME with the username of the organization member that corresponds to the mannequin.
+
+     If there are multiple mannequins with the same login, you can replace `--mannequin-user MANNEQUIN` with `--mannequin-ID ID`, replacing ID with the ID of the mannequin.
+
+     If your organization uses Enterprise Managed Users and you want to skip the attribution invitation to reclaim the mannequin immediately, add the `--skip-invitation` argument.
+
+     ```shell copy
+     gh gl2gh reclaim-mannequin --github-org DESTINATION --mannequin-user MANNEQUIN --target-user USERNAME
      ```
 
 By default, the organization member will receive an invitation via email, and the mannequin will not be reclaimed until the member accepts the invitation.

@@ -120,6 +120,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /orgs/{org}/dependabot/repository-access/default-level` | write | UAT, IAT | ✗ |
 | `PUT /orgs/{org}/interaction-limits` | write | UAT, IAT | ✗ |
 | `DELETE /orgs/{org}/interaction-limits` | write | UAT, IAT | ✗ |
+| `GET /orgs/{org}/interaction-limits/pulls/creation-cap` | write | UAT, IAT | ✗ |
+| `PATCH /orgs/{org}/interaction-limits/pulls/creation-cap` | write | UAT, IAT | ✗ |
 | `GET /orgs/{org}/rulesets` | write | UAT, IAT | ✗ |
 | `POST /orgs/{org}/rulesets` | write | UAT, IAT | ✗ |
 | `GET /orgs/{org}/rulesets/rule-suites` | write | UAT, IAT | ✗ |
@@ -812,7 +814,9 @@ Some endpoints require more than one permission. Other endpoints work with any o
 |----------|--------|--------|------------------------|
 | `POST /orgs/{org}/artifacts/metadata/deployment-record` | write | UAT, IAT | ✗ |
 | `POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}` | write | UAT, IAT | ✗ |
+| `POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs` | write | UAT, IAT | ✗ |
 | `POST /orgs/{org}/artifacts/metadata/storage-record` | write | UAT, IAT | ✗ |
+| `GET /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs/{job_id}` | read | UAT, IAT | ✗ |
 | `GET /orgs/{org}/artifacts/{subject_digest}/metadata/deployment-records` | read | UAT, IAT | ✗ |
 | `GET /orgs/{org}/artifacts/{subject_digest}/metadata/storage-records` | read | UAT, IAT | ✗ |
 
@@ -961,6 +965,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `POST /repos/{owner}/{repo}/merge-upstream` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/merges` | write | UAT, IAT | ✗ |
 | `PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge` | write | UAT, IAT | ✗ |
+| `PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge-async` | write | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/pulls/{pull_number}/merge-async/{uuid}` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/releases` | write | UAT, IAT | ✓ |
 | `POST /repos/{owner}/{repo}/releases` | write | UAT, IAT | ✓ |
 | `PATCH /repos/{owner}/{repo}/releases/assets/{asset_id}` | write | UAT, IAT | ✗ |
@@ -970,6 +976,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PATCH /repos/{owner}/{repo}/releases/{release_id}` | write | UAT, IAT | ✓ |
 | `DELETE /repos/{owner}/{repo}/releases/{release_id}` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/secret-scanning/push-protection-bypasses` | write | UAT | ✗ |
+| `GET /repos/{owner}/{repo}/stargazers` | write | UAT, IAT | ✓ |
+| `GET /repos/{owner}/{repo}/subscribers` | write | UAT, IAT | ✓ |
 | `POST /markdown` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/activity` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/branches` | read | UAT, IAT | ✗ |
@@ -1104,6 +1112,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/sub_issue` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/issues/{issue_number}/sub_issues` | write | UAT, IAT | ✗ |
 | `PATCH /repos/{owner}/{repo}/issues/{issue_number}/sub_issues/priority` | write | UAT, IAT | ✗ |
+| `POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/approve` | write | UAT, IAT | ✓ |
+| `POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/dismiss` | write | UAT, IAT | ✓ |
 | `POST /repos/{owner}/{repo}/labels` | write | UAT, IAT | ✓ |
 | `PATCH /repos/{owner}/{repo}/labels/{name}` | write | UAT, IAT | ✓ |
 | `DELETE /repos/{owner}/{repo}/labels/{name}` | write | UAT, IAT | ✓ |
@@ -1129,6 +1139,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/parent` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/reactions` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/sub_issues` | read | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/suggestions` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/timeline` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/labels` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/labels/{name}` | read | UAT, IAT | ✓ |
@@ -1161,13 +1172,11 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/rules/branches/{branch}` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/rulesets` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/rulesets/{ruleset_id}` | read | UAT, IAT | ✗ |
-| `GET /repos/{owner}/{repo}/stargazers` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/code_frequency` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/commit_activity` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/contributors` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/participation` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/punch_card` | read | UAT, IAT | ✗ |
-| `GET /repos/{owner}/{repo}/subscribers` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/tags` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/topics` | read | UAT, IAT | ✗ |
 | `GET /repositories` | read | UAT, IAT | ✗ |
@@ -1212,6 +1221,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/labels/{name}` | write | UAT, IAT | ✓ |
 | `PUT /repos/{owner}/{repo}/issues/{issue_number}/lock` | write | UAT, IAT | ✓ |
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/lock` | write | UAT, IAT | ✓ |
+| `POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/approve` | write | UAT, IAT | ✓ |
+| `POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/dismiss` | write | UAT, IAT | ✓ |
 | `POST /repos/{owner}/{repo}/labels` | write | UAT, IAT | ✓ |
 | `PATCH /repos/{owner}/{repo}/labels/{name}` | write | UAT, IAT | ✓ |
 | `DELETE /repos/{owner}/{repo}/labels/{name}` | write | UAT, IAT | ✓ |
@@ -1234,6 +1245,9 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/dismissals` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/events` | write | UAT, IAT | ✗ |
 | `PUT /repos/{owner}/{repo}/pulls/{pull_number}/update-branch` | write | UAT, IAT | ✗ |
+| `POST /repos/{owner}/{repo}/stacks` | write | UAT, IAT | ✗ |
+| `POST /repos/{owner}/{repo}/stacks/{stack_number}/add` | write | UAT, IAT | ✗ |
+| `POST /repos/{owner}/{repo}/stacks/{stack_number}/unstack` | write | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/assignees` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/assignees/{assignee}` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/commits/{commit_sha}/pulls` | read | UAT, IAT | ✗ |
@@ -1244,6 +1258,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/comments` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/events` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/labels` | read | UAT, IAT | ✓ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/suggestions` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/timeline` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/labels` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/labels/{name}` | read | UAT, IAT | ✓ |
@@ -1263,6 +1278,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments` | read | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/stacks` | read | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/stacks/{stack_number}` | read | UAT, IAT | ✗ |
 
 ## Repository permissions for "Repository security advisories"
 

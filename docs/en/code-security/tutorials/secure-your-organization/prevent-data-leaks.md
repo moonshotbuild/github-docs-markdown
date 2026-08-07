@@ -110,7 +110,7 @@ If you're unable to coordinate directly with the repository owner to remove data
 
 ### Revoke exposed tokens
 
-If credentials have been exposed in a GitHub repository, GitHub secret scanning can be used to report and revoke the credentials. For more information, see [Resolving alerts from secret scanning](/en/code-security/how-tos/manage-security-alerts/manage-secret-scanning-alerts/resolving-alerts#reporting-a-leaked-secret).
+If credentials have been exposed in a GitHub repository, GitHub secret scanning can be used to report and revoke the credentials. For more information, see [Resolving alerts from secret scanning](/en/code-security/how-tos/manage-security-alerts/manage-secret-scanning-alerts/resolving-alerts#reporting-a-leaked-secret-in-a-private-repository).
 
 You can also revoke exposed credentials that you do not own and have been exposed outside of GitHub repositories. By doing this, you are contributing to the overall security of the GitHub community and can quickly limit the impact of these credentials. The API supports revoking:
 

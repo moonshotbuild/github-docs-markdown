@@ -28,7 +28,7 @@ You can choose to receive notifications:
 * In your inbox, as web notifications. A web notification is sent when Dependabot is enabled for a repository, when a new manifest file is committed to the repository, and when a new vulnerability with a critical or high severity is found (**On GitHub** option).
 * By email. An email is sent when Dependabot is enabled for a repository, when a new manifest file is committed to the repository, and when a new vulnerability with a critical or high severity is found (**Email** option).
 * On the command line. Warnings are displayed as callbacks when you push to repositories with any insecure dependencies (**CLI** option).
-* On GitHub Mobile, as web notifications. For more information, see [Configuring notifications](/en/subscriptions-and-notifications/get-started/configuring-notifications#enabling-push-notifications-with-github-mobile).
+* On GitHub Mobile, as web notifications. For more information, see [Configuring notifications](/en/subscriptions-and-notifications/get-started/configuring-notifications#managing-your-notification-settings-with-github-mobile).
 
 > \[!NOTE]
 > The email and web/GitHub Mobile notifications are:
@@ -59,6 +59,6 @@ You will receive an email notification if:
 * You have enabled notifications for "All Activity", or for custom "Security alerts" on the repository.
 * In your notification settings, under "Subscriptions", then under "Watching", you have selected to receive notifications by email.
 
-In addition, you will receive a notification if someone assigns a code scanning or a secret scanning alert to you, see [Assigning alerts](/en/code-security/concepts/security-at-scale/about-security-campaigns#assigning-alerts).
+In addition, you will receive a notification if someone assigns a code scanning or a secret scanning alert to you, see [Assigning alerts](/en/code-security/concepts/security-at-scale/about-security-campaigns#about-assigning-alerts-to-users-and-copilot-cloud-agent).
 
 For more information on how to configure notifications for secret scanning alerts, see [Monitoring alerts from secret scanning](/en/code-security/how-tos/manage-security-alerts/manage-secret-scanning-alerts/monitoring-alerts).

@@ -126,7 +126,7 @@ jobs:
         shell: cmd
 ```
 
-For more information, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#using-a-specific-shell).
+For more information, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstepsshell).
 
 ## Migrating conditionals and expression syntax
 

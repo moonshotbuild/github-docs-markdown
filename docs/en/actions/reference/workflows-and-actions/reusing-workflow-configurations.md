@@ -21,7 +21,9 @@ Find information about avoiding duplication when creating a workflow by reusing 
 
 ## Reusable workflows
 
-Reference information for reusable workflows.
+This article provides reference information for reusable workflows and workflow templates, including access rules, limitations, supported keywords, and runner behavior.
+
+You can centralize deterministic, repeatable logic in reusable workflows, and use agentic workflows for tasks that require contextual judgment about your repository's content such as analysis, summaries, and recommendations. For more information, see [Creating GitHub Agentic Workflows](/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows).
 
 ### Access to reusable workflows
 
@@ -248,7 +250,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ env.NODE_VERSION }}
       - run: npm test

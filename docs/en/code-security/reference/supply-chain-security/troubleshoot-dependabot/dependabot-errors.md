@@ -232,7 +232,7 @@ Dependabot will show the failed update in your logs, as well as in the job summa
 If you want to ignore updates for the dependency, you must do one of the following.
 
 * Configure an `ignore` rule for the dependency in the `dependabot.yml` file. For more information, see [Dependabot options reference](/en/code-security/reference/supply-chain-security/dependabot-options-reference#ignore--).
-* Use the `@dependabot ignore` comment command for the dependency in the pull request for the grouped updates. For more information, see [Managing pull requests for dependency updates](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/manage-dependabot-prs#managing-dependabot-pull-requests-for-grouped-updates-with-comment-commands).
+* Use the `@dependabot ignore` comment command for the dependency in the pull request for the grouped updates. For more information, see [Managing pull requests for dependency updates](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/manage-dependabot-prs#managing-dependabot-pull-requests-with-comment-commands).
 
 #### Security updates
 
@@ -243,7 +243,7 @@ If a grouped pull request for security updates fails or is unable to be merged, 
 If you want to ignore updates for the dependency, you must do one of the following.
 
 * Configure an `ignore` rule for the dependency in the `dependabot.yml` file. For more information, see [Dependabot options reference](/en/code-security/reference/supply-chain-security/dependabot-options-reference#ignore--).
-* Use the `@dependabot ignore` comment command for the dependency in the pull request for the grouped updates. For more information, see [Managing pull requests for dependency updates](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/manage-dependabot-prs#managing-dependabot-pull-requests-for-grouped-updates-with-comment-commands).
+* Use the `@dependabot ignore` comment command for the dependency in the pull request for the grouped updates. For more information, see [Managing pull requests for dependency updates](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/manage-dependabot-prs#managing-dependabot-pull-requests-with-comment-commands).
 
 ### Continuous integration fails on grouped pull request
 
@@ -258,7 +258,7 @@ If the failure is due to a single dependency, use the `exclude-patterns` configu
 If you want to ignore updates for the dependency, you must do one of the following.
 
 * Configure an `ignore` rule for the dependency in the `dependabot.yml` file. For more information, see [Dependabot options reference](/en/code-security/reference/supply-chain-security/dependabot-options-reference#ignore--).
-* Use the `@dependabot ignore` comment command for the dependency in the pull request for the grouped updates. For more information, see [Managing pull requests for dependency updates](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/manage-dependabot-prs#managing-dependabot-pull-requests-for-grouped-updates-with-comment-commands).
+* Use the `@dependabot ignore` comment command for the dependency in the pull request for the grouped updates. For more information, see [Managing pull requests for dependency updates](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/manage-dependabot-prs#managing-dependabot-pull-requests-with-comment-commands).
 
 If you continue to see CI failures, remove the group configuration so that Dependabot reverts to raising individual pull requests for each dependency. Then, check and confirm that the update works correctly for each individual pull request.
 

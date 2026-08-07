@@ -97,7 +97,7 @@ This allows you to update the configuration in a single location, but use the wo
 
 By default, users request a review from Copilot in the same way as they do from human reviewers. However, you can update or create an organization-level branch ruleset to automatically add Copilot as a reviewer to all pull requests made to selected branches in all or selected repositories. See [Configuring automatic code review by GitHub Copilot](/en/enterprise-cloud@latest/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review) in the GitHub Enterprise Cloud documentation.
 
-Copilot leaves a review comment on each pull request it reviews, without approving the pull request or requesting changes. This ensures that its review is advisory and will not block development work. Similarly, you should not enforce the resolution of suggestions made by Copilot because AI suggestions have known limitations, see [Application card: GitHub Copilot Agents](/en/enterprise-cloud@latest/copilot/responsible-use/agents#limitations-of-github-copilot-code-review) in the GitHub Enterprise Cloud documentation.
+Copilot leaves a review comment on each pull request it reviews, without approving the pull request or requesting changes. This ensures that its review is advisory and will not block development work. Similarly, you should not enforce the resolution of suggestions made by Copilot because AI suggestions have known limitations, see [Application card: GitHub Copilot Agents](/en/enterprise-cloud@latest/copilot/responsible-use/agents#7-limitations) in the GitHub Enterprise Cloud documentation.
 
 ## Define where Copilot Autofix is allowed and enabled
 

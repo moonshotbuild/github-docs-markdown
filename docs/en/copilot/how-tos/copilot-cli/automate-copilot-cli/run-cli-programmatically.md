@@ -46,7 +46,7 @@ To use Copilot CLI programmatically you can do either of the following.
 
 * **Provide precise prompts** — clear, unambiguous instructions produce better results than vague requests. The more context you give—file names, function names, the exact change—the less guesswork Copilot has to do.
 * **Quote prompts carefully** — use single quotes around your prompt if you want to avoid shell interpretation of special characters.
-* **Always give minimal permissions** — use the `--allow-tool=[TOOLS...]` and `--allow-url=[URLs...]` command-line options to give Copilot permission to use only the tools and access that are necessary to complete the task. Avoid using overly permissive options (such as `--allow-all`) unless you are working in a sandbox environment.
+* **Always give minimal permissions** — use the `--allow-tool=[TOOLS...]` and `--allow-url=[URLs...]` command-line options to give Copilot permission to use only the tools and access that are necessary to complete the task. Avoid using overly permissive options (such as `--allow-all`) unless you are working in a sandbox environment. For more information, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
 * **Use `-s` (silent)** when capturing output. This suppresses session metadata so you get clean text.
 * **Use `--no-ask-user`** to prevent the agent from attempting to ask clarifying questions.
 * **Set a model explicitly** with `--model` for consistent behavior across environments.

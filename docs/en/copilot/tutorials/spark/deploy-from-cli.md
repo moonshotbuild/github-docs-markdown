@@ -21,11 +21,14 @@ Learn how to deploy your Spark app from the command line.
 
 ## Introduction
 
+> \[!NOTE]
+> Beginning August 4, 2026, GitHub Spark will no longer accept new users or allow the creation of new apps. Existing users can continue to access and use apps they have already created. Open Spark workbench for your app, select "..." and "Create repository" to save your app code before August 31, 2026.
+
 If you’re developing your spark further in a GitHub codespace, you can deploy it directly from the command line using the Spark CLI, an extension of the GitHub CLI.
 
 ### Prerequisites
 
-* **Access to GitHub Copilot**. You need a Copilot Pro+, Copilot Max, or Copilot Enterprise license to use Spark. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#getting-access-to-copilot).
+* **Access to GitHub Copilot**. You need a Copilot Pro+, Copilot Max, or Copilot Enterprise license to use Spark. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#get-access).
 * You must have **built a Spark app** (a "spark"). To start building, navigate to [Spark](https://github.com/spark).
 * You have **created a repository** for your spark on GitHub. For instructions, see [Building and deploying AI-powered apps with GitHub Spark](/en/copilot/tutorials/spark/build-apps-with-spark#step-8-invite-collaborators-with-a-repository).
 

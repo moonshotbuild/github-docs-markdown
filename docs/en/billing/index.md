@@ -51,14 +51,6 @@ Learn about the different components of your bill, and how you can view and mana
 
   You can upgrade the plan for a personal account or organization on GitHub at any time.
 
-## Links
-
-### Getting started
-
-* [How GitHub billing works](/en/billing/get-started/how-billing-works)
-
-  Learn what you'll be charged for, when charges occur, and how to track your usage on GitHub to avoid billing surprises.
-
 ## Articles
 
 * [How GitHub billing works](/en/billing/get-started/how-billing-works)
@@ -99,7 +91,7 @@ Learn about the different components of your bill, and how you can view and mana
 
 * [Billing for GitHub Enterprise](/en/billing/concepts/enterprise-billing/billing-for-enterprises)
 
-  Learn how your bill is calculated based on how many GitHub Enterprise licenses you use.
+  Understand what makes up your enterprise bill so you can better forecast and manage costs.
 
 * [Usage-based billing for enterprise licenses](/en/billing/concepts/enterprise-billing/usage-based-licenses)
 
@@ -145,17 +137,13 @@ Learn about the different components of your bill, and how you can view and mana
 
   Learn how licenses for Copilot work, including usage measurement and managing your budget.
 
-* [GitHub Models billing](/en/billing/concepts/product-billing/github-models)
-
-  If you want to use GitHub Models beyond the free usage included in your account, you can choose to opt in to paid usage.
-
 * [GitHub Packages billing](/en/billing/concepts/product-billing/github-packages)
 
   Learn how usage of GitHub Packages is measured against your free allowance and how to pay for additional use.
 
 * [Billing for cloud and local sandboxes for GitHub Copilot](/en/billing/concepts/product-billing/cloud-and-local-sandboxes)
 
-  Learn how usage of cloud and local sandboxes for GitHub Copilot is measured and billed.
+  Learn how usage of Copilot cloud and local sandboxes is measured and billed.
 
 * [Git Large File Storage billing](/en/billing/concepts/product-billing/git-lfs)
 
@@ -344,10 +332,6 @@ Learn about the different components of your bill, and how you can view and mana
 * [Cost center allocation for different products](/en/billing/reference/cost-center-allocation)
 
   Learn how your spending is assigned to cost centers for licensed and metered products.
-
-* [Costs and multipliers for using GitHub Models directly](/en/billing/reference/costs-for-github-models)
-
-  Reference information for calculating the cost of using different GitHub Models directly (outside GitHub Copilot).
 
 * [License troubleshooting information for GitHub Enterprise](/en/enterprise-license-troubleshooting)
 

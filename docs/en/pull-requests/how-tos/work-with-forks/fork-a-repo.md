@@ -46,7 +46,7 @@ You might fork a project to propose changes to the upstream repository. In this 
 7. Click **Create fork**.
 
 > \[!NOTE]
-> If you want to copy additional branches from the upstream repository, you can do so from the **Branches** page. See [Managing branches within your repository](/en/pull-requests/how-tos/create-pull-requests/creating-and-deleting-branches-within-your-repository).
+> If you want to copy additional branches from the upstream repository, you can do so from the **Branches** page. See [Managing branches within your repository](/en/pull-requests/how-tos/commit-changes/managing-branches-within-your-repository).
 
 </div>
 
@@ -254,7 +254,7 @@ gh repo fork REPOSITORY --remote-name "main-remote-repo"
 
 You can make any changes to a fork, including:
 
-* **Creating branches:** [*Branches*](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) allow you to build new features or test out ideas without putting your main project at risk.
+* **Creating branches:** [*Branches*](/en/pull-requests/how-tos/commit-changes/managing-branches-within-your-repository) allow you to build new features or test out ideas without putting your main project at risk.
 * **Opening pull requests:** If you want to contribute back to the upstream repository, you can submit a pull request to ask the original author to pull your fork into their repository. See [Creating a pull request from a fork](/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request-from-a-fork).
 
 ## Find another repository to fork
@@ -284,6 +284,6 @@ You have now forked a repository, practiced cloning your fork, and configured an
 
 * You can also create a new repository to store your projects and share the code on GitHub. Creating a repository for your project allows you to store code in GitHub. This provides a backup of your work that you can choose to share with other developers. For more information, see [Quickstart for repositories](/en/repositories/creating-and-managing-repositories/quickstart-for-repositories).
 
-* Each repository on GitHub is owned by a person or an organization. You can interact with the people, repositories, and organizations by connecting and following them on GitHub. For more information, see [Finding inspiration on GitHub](/en/get-started/start-your-journey/finding-inspiration-on-github).
+* Each repository on GitHub is owned by a person or an organization. You can interact with the people, repositories, and organizations by connecting and following them on GitHub. For more information, see [Discovering projects on GitHub](/en/get-started/exploring-projects-on-github/discovering-projects-on-github).
 
 * GitHub has a great support community where you can ask for help and talk to people from around the world. Join the conversation on [GitHub Community](https://github.com/orgs/community/discussions).

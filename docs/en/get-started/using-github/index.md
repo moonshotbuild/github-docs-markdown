@@ -17,6 +17,10 @@ Explore GitHub's products from different platforms and devices.
 
 ## Links
 
+* [Hello World](/en/get-started/using-github/hello-world)
+
+  Follow this Hello World exercise to learn GitHub's pull request workflow.
+
 * [GitHub flow](/en/get-started/using-github/github-flow)
 
   Follow GitHub flow to collaborate on projects.

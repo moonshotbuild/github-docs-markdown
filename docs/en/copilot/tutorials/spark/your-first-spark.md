@@ -22,9 +22,12 @@ Learn how to build your first GitHub Spark app in minutes, without writing any c
 Have you ever had a great idea for an app, but you didn't have the tools to build it? With the help of AI, you can now bring your app ideas to life in minutes using only natural language. In this article, we'll use GitHub Spark to build, improve, and share a word search app without writing a single line of code ourselves.
 
 > \[!NOTE]
-> GitHub Spark is in public preview with [data protection](https://gh.io/dpa) and subject to change.
+> Beginning August 4, 2026, GitHub Spark will no longer accept new users or allow the creation of new apps. Existing users can continue to access and use apps they have already created. Open Spark workbench for your app, select "..." and "Create repository" to save your app code before August 31, 2026.
 
 ## Creating a prototype of your app
+
+> \[!NOTE]
+> GitHub Spark is in public preview with [data protection](https://gh.io/dpa) and subject to change.
 
 Let's start by generating an initial, basic version of our app that we can build on later.
 

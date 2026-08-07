@@ -1209,6 +1209,8 @@ mergeable field for more details on the mergeability of the pull request.
   * `last` (Int): Returns the last n elements from the list.
   * `states` ([PullRequestReviewState!]): A list of states to filter the reviews.
 
+* `stack` (PullRequestStack): The stack this Pull Request belongs to, or null if it is not part of a stack.
+* `stackEntry` (PullRequestStackEntry): The stack entry for this Pull Request, or null if it is not part of a stack.
 * `state` (PullRequestState!): Identifies the state of the pull request.
 * `statusCheckRollup` (StatusCheckRollup): Check and Status rollup information for the PR's head ref.
 * `suggestedActors` (AssigneeConnection!): A list of suggested actors to assign to this object.
@@ -1784,6 +1786,53 @@ Represents the latest point in the pull request timeline for which the viewer ha
 * `lastSeenCommit` (Commit!): The last commit the viewer has seen.
 * `pullRequest` (PullRequest!): The pull request to which the marker belongs.
 
+## PullRequestStack - object
+
+A stack of PullRequests.
+
+**Implements:** Node
+
+### Fields for `PullRequestStack`
+
+* `baseRefName` (String!): The branch that the stack's pull requests target.
+* `entries` (PullRequestStackEntryConnection!): The entries in the stack. _(Pagination: `after`, `before`, `first`, `last`)_
+* `id` (ID!): The Node ID of the PullRequestStack object.
+* `number` (Int!): A number uniquely identifying the stack within its repository.
+* `size` (Int!): The total number of pull requests in the stack.
+
+## PullRequestStackEntry - object
+
+A member of a PullRequestStack.
+
+**Implements:** Node
+
+### Fields for `PullRequestStackEntry`
+
+* `id` (ID!): The Node ID of the PullRequestStackEntry object.
+* `position` (Int!): This entry's position in the stack, where 1 is the closest to the base branch, 2 is stacked on top of 1, etc.
+* `pullRequest` (PullRequest): The pull request that occupies this position in the stack.
+* `stack` (PullRequestStack): The stack that this entry is a part of.
+
+## PullRequestStackEntryConnection - object
+
+Entries in a pull request stack.
+
+### Fields for `PullRequestStackEntryConnection`
+
+* `edges` ([PullRequestStackEntryEdge]): A list of edges.
+* `nodes` ([PullRequestStackEntry]): A list of nodes.
+* `pageInfo` (PageInfo!): Information to aid in pagination.
+* `totalCount` (Int!): Identifies the total count of items in the connection.
+
+## PullRequestStackEntryEdge - object
+
+An edge in a connection.
+
+### Fields for `PullRequestStackEntryEdge`
+
+* `cursor` (String!): A cursor for use in pagination.
+* `node` (PullRequestStackEntry): The item at the end of the edge.
+
 ## PullRequestState - enum
 
 The possible states of a pull request.
@@ -2003,6 +2052,93 @@ An edge in a connection.
 
 * `cursor` (String!): A cursor for use in pagination.
 * `node` (PullRequestTimelineItems): The item at the end of the edge.
+
+## PullRequestTimelineItemsItemType - enum
+
+The possible item types found in a timeline.
+
+### Values for `PullRequestTimelineItemsItemType`
+
+* `ADDED_TO_MERGE_QUEUE_EVENT`: Represents anadded_to_merge_queueevent on a given pull request.
+* `ADDED_TO_PROJECT_EVENT`: Represents aadded_to_projectevent on a given issue or pull request.
+* `ADDED_TO_PROJECT_V2_EVENT`: Represents aadded_to_project_v2event on a given issue or pull request.
+* `ARCHIVED_EVENT`: Represents anarchivedevent on a given pull request.
+* `ASSIGNED_EVENT`: Represents anassignedevent on any assignable object.
+* `AUTOMATIC_BASE_CHANGE_FAILED_EVENT`: Represents aautomatic_base_change_failedevent on a given pull request.
+* `AUTOMATIC_BASE_CHANGE_SUCCEEDED_EVENT`: Represents aautomatic_base_change_succeededevent on a given pull request.
+* `AUTO_MERGE_DISABLED_EVENT`: Represents aauto_merge_disabledevent on a given pull request.
+* `AUTO_MERGE_ENABLED_EVENT`: Represents aauto_merge_enabledevent on a given pull request.
+* `AUTO_REBASE_ENABLED_EVENT`: Represents aauto_rebase_enabledevent on a given pull request.
+* `AUTO_SQUASH_ENABLED_EVENT`: Represents aauto_squash_enabledevent on a given pull request.
+* `BASE_REF_CHANGED_EVENT`: Represents abase_ref_changedevent on a given issue or pull request.
+* `BASE_REF_DELETED_EVENT`: Represents abase_ref_deletedevent on a given pull request.
+* `BASE_REF_FORCE_PUSHED_EVENT`: Represents abase_ref_force_pushedevent on a given pull request.
+* `BLOCKED_BY_ADDED_EVENT`: Represents ablocked_by_addedevent on a given issue.
+* `BLOCKED_BY_REMOVED_EVENT`: Represents ablocked_by_removedevent on a given issue.
+* `BLOCKING_ADDED_EVENT`: Represents ablocking_addedevent on a given issue.
+* `BLOCKING_REMOVED_EVENT`: Represents ablocking_removedevent on a given issue.
+* `CLOSED_EVENT`: Represents aclosedevent on any Closable.
+* `COMMENT_DELETED_EVENT`: Represents acomment_deletedevent on a given issue or pull request.
+* `CONNECTED_EVENT`: Represents aconnectedevent on a given issue or pull request.
+* `CONVERTED_FROM_DRAFT_EVENT`: Represents aconverted_from_draftevent on a given issue or pull request.
+* `CONVERTED_NOTE_TO_ISSUE_EVENT`: Represents aconverted_note_to_issueevent on a given issue or pull request.
+* `CONVERTED_TO_DISCUSSION_EVENT`: Represents aconverted_to_discussionevent on a given issue.
+* `CONVERT_TO_DRAFT_EVENT`: Represents aconvert_to_draftevent on a given pull request.
+* `CROSS_REFERENCED_EVENT`: Represents a mention made by one issue or pull request to another.
+* `DEMILESTONED_EVENT`: Represents ademilestonedevent on a given issue or pull request.
+* `DEPLOYED_EVENT`: Represents adeployedevent on a given pull request.
+* `DEPLOYMENT_ENVIRONMENT_CHANGED_EVENT`: Represents adeployment_environment_changedevent on a given pull request.
+* `DISCONNECTED_EVENT`: Represents adisconnectedevent on a given issue or pull request.
+* `HEAD_REF_DELETED_EVENT`: Represents ahead_ref_deletedevent on a given pull request.
+* `HEAD_REF_FORCE_PUSHED_EVENT`: Represents ahead_ref_force_pushedevent on a given pull request.
+* `HEAD_REF_RESTORED_EVENT`: Represents ahead_ref_restoredevent on a given pull request.
+* `ISSUE_COMMENT`: Represents a comment on an Issue.
+* `ISSUE_COMMENT_PINNED_EVENT`: Represents aissue_comment_pinnedevent on a given issue.
+* `ISSUE_COMMENT_UNPINNED_EVENT`: Represents aissue_comment_unpinnedevent on a given issue.
+* `ISSUE_FIELD_ADDED_EVENT`: Represents aissue_field_addedevent on a given issue.
+* `ISSUE_FIELD_CHANGED_EVENT`: Represents aissue_field_changedevent on a given issue.
+* `ISSUE_FIELD_REMOVED_EVENT`: Represents aissue_field_removedevent on a given issue.
+* `ISSUE_TYPE_ADDED_EVENT`: Represents aissue_type_addedevent on a given issue.
+* `ISSUE_TYPE_CHANGED_EVENT`: Represents aissue_type_changedevent on a given issue.
+* `ISSUE_TYPE_REMOVED_EVENT`: Represents aissue_type_removedevent on a given issue.
+* `LABELED_EVENT`: Represents alabeledevent on a given issue or pull request.
+* `LOCKED_EVENT`: Represents alockedevent on a given issue or pull request.
+* `MARKED_AS_DUPLICATE_EVENT`: Represents amarked_as_duplicateevent on a given issue or pull request.
+* `MENTIONED_EVENT`: Represents amentionedevent on a given issue or pull request.
+* `MERGED_EVENT`: Represents amergedevent on a given pull request.
+* `MILESTONED_EVENT`: Represents amilestonedevent on a given issue or pull request.
+* `MOVED_COLUMNS_IN_PROJECT_EVENT`: Represents amoved_columns_in_projectevent on a given issue or pull request.
+* `PARENT_ISSUE_ADDED_EVENT`: Represents aparent_issue_addedevent on a given issue.
+* `PARENT_ISSUE_REMOVED_EVENT`: Represents aparent_issue_removedevent on a given issue.
+* `PINNED_EVENT`: Represents apinnedevent on a given issue or pull request.
+* `PROJECT_V2_ITEM_STATUS_CHANGED_EVENT`: Represents aproject_v2_item_status_changedevent on a given issue or pull request.
+* `PULL_REQUEST_COMMIT`: Represents a Git commit part of a pull request.
+* `PULL_REQUEST_COMMIT_COMMENT_THREAD`: Represents a commit comment thread part of a pull request.
+* `PULL_REQUEST_REVIEW`: A review object for a given pull request.
+* `PULL_REQUEST_REVIEW_THREAD`: A threaded list of comments for a given pull request.
+* `PULL_REQUEST_REVISION_MARKER`: Represents the latest point in the pull request timeline for which the viewer has seen the pull request's commits.
+* `READY_FOR_REVIEW_EVENT`: Represents aready_for_reviewevent on a given pull request.
+* `REFERENCED_EVENT`: Represents areferencedevent on a given ReferencedSubject.
+* `REMOVED_FROM_MERGE_QUEUE_EVENT`: Represents aremoved_from_merge_queueevent on a given pull request.
+* `REMOVED_FROM_PROJECT_EVENT`: Represents aremoved_from_projectevent on a given issue or pull request.
+* `REMOVED_FROM_PROJECT_V2_EVENT`: Represents aremoved_from_project_v2event on a given issue or pull request.
+* `RENAMED_TITLE_EVENT`: Represents arenamedevent on a given issue or pull request.
+* `REOPENED_EVENT`: Represents areopenedevent on any Closable.
+* `REVIEW_DISMISSED_EVENT`: Represents areview_dismissedevent on a given issue or pull request.
+* `REVIEW_REQUESTED_EVENT`: Represents anreview_requestedevent on a given pull request.
+* `REVIEW_REQUEST_REMOVED_EVENT`: Represents anreview_request_removedevent on a given pull request.
+* `SUBSCRIBED_EVENT`: Represents asubscribedevent on a given Subscribable.
+* `SUB_ISSUE_ADDED_EVENT`: Represents asub_issue_addedevent on a given issue.
+* `SUB_ISSUE_REMOVED_EVENT`: Represents asub_issue_removedevent on a given issue.
+* `TRANSFERRED_EVENT`: Represents atransferredevent on a given issue or pull request.
+* `UNARCHIVED_EVENT`: Represents anunarchivedevent on a given pull request.
+* `UNASSIGNED_EVENT`: Represents anunassignedevent on any assignable object.
+* `UNLABELED_EVENT`: Represents anunlabeledevent on a given issue or pull request.
+* `UNLOCKED_EVENT`: Represents anunlockedevent on a given issue or pull request.
+* `UNMARKED_AS_DUPLICATE_EVENT`: Represents anunmarked_as_duplicateevent on a given issue or pull request.
+* `UNPINNED_EVENT`: Represents anunpinnedevent on a given issue or pull request.
+* `UNSUBSCRIBED_EVENT`: Represents anunsubscribedevent on a given Subscribable.
+* `USER_BLOCKED_EVENT`: Represents auser_blockedevent on a given user.
 
 ## PullRequestUpdateState - enum
 

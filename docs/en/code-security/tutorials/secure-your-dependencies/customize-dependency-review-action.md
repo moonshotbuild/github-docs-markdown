@@ -29,7 +29,7 @@ This guide shows you how to add three very common customizations: failing builds
 
 This guide assumes that:
 
-* Dependency graph is enabled for the repository. For more information, see [Enabling the dependency graph](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/enable-dependency-graph#enabling-and-disabling-the-dependency-graph).
+* Dependency graph is enabled for the repository. For more information, see [Enabling the dependency graph](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/enable-dependency-graph#enabling-the-dependency-graph-for-a-repository).
 * GitHub Actions is enabled for the repository. For more information, see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository).
 
 ## Step 1: Adding the dependency review action

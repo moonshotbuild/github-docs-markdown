@@ -350,7 +350,7 @@ gh bbs2gh generate-script --bbs-server-url BBS-SERVER-URL \
   --use-github-storage
 ```
 
-If you want the script to download the migration log for each migrated repository, add the `--download-migration-logs` flag. For more information about migration logs, see [Accessing your migration logs for GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/completing-your-migration-with-github-enterprise-importer/accessing-your-migration-logs-for-github-enterprise-importer#downloading-all-migration-logs-for-an-organization).
+If you want the script to download the migration log for each migrated repository, add the `--download-migration-logs` flag. For more information about migration logs, see [Accessing your migration logs for GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/completing-your-migration-with-github-enterprise-importer/accessing-your-migration-logs-for-github-enterprise-importer#downloading-all-the-repository-migration-logs-for-a-migration-script).
 
 Replace the placeholders in the command above with the following values.
 

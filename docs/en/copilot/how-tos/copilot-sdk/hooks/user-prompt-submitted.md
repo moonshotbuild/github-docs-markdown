@@ -428,11 +428,11 @@ const session = await client.createSession({
 });
 ```
 
-### Rate limiting
+### Usage threshold notices
 
 ```typescript
 const promptTimestamps: number[] = [];
-const RATE_LIMIT = 10; // prompts
+const NOTICE_THRESHOLD = 10; // prompts
 const RATE_WINDOW = 60000; // 1 minute
 
 const session = await client.createSession({
@@ -444,15 +444,16 @@ const session = await client.createSession({
       while (promptTimestamps.length > 0 && promptTimestamps[0] < now - RATE_WINDOW) {
         promptTimestamps.shift();
       }
-      
-      if (promptTimestamps.length >= RATE_LIMIT) {
+
+      promptTimestamps.push(now);
+      if (promptTimestamps.length >= NOTICE_THRESHOLD) {
+        // This is advisory context for the model, not an enforced rate limit.
+        // Enforce hard limits before calling session.send().
         return {
-          reject: true,
-          rejectReason: `Rate limit exceeded. Please wait before sending more prompts.`,
+          additionalContext: `The user has sent ${promptTimestamps.length} prompts in the last minute. Suggest waiting before sending more.`,
         };
       }
-      
-      promptTimestamps.push(now);
+
       return null;
     },
   },
@@ -503,7 +504,7 @@ const session = await client.createSession({
 
 3. **Use `additionalContext` over `modifiedPrompt`** - Adding context is less intrusive than rewriting the prompt.
 
-4. **Provide clear rejection reasons** - When rejecting prompts, explain why and how to fix it.
+4. **Use `additionalContext` for advisory guidance**: This hook cannot reject a prompt or enforce policy. Enforce hard limits before calling `session.send()`.
 
 5. **Keep processing fast** - This hook runs on every user message. Avoid slow operations.
 

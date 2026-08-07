@@ -19,13 +19,25 @@ Learn how to use the search functions available on GitHub to find different type
 
   Our integrated search covers the many repositories, users, and lines of code on GitHub.
 
+* [About GitHub Code Search](/en/search-github/github-code-search/about-github-code-search)
+
+  You can search, navigate and understand code across GitHub with code search.
+
 * [Understanding the search syntax](/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax)
 
   When searching GitHub, you can construct queries that match specific numbers and words.
 
+* [Understanding GitHub Code Search syntax](/en/search-github/github-code-search/understanding-github-code-search-syntax)
+
+  You can build search queries for the results you want with specialized code qualifiers, regular expressions, and boolean operations.
+
+* [Using GitHub Code Search](/en/search-github/github-code-search/using-github-code-search)
+
+  You can use suggestions, completions and saved searches in the upgraded search interface to quickly find what you are looking for across GitHub.
+
 * [Finding files on GitHub](/en/search-github/searching-on-github/finding-files-on-github)
 
-  You can search for a file in a repository using the file finder. To search for a file in multiple repositories on GitHub, use the filename code search qualifier.
+  You can search for a file in a repository using the file finder. To search for a file in multiple repositories on GitHub, use the path code search qualifier.
 
 * [Searching issues and pull requests](/en/search-github/searching-on-github/searching-issues-and-pull-requests)
 
@@ -100,10 +112,6 @@ Learn how to use the search functions available on GitHub to find different type
 * [Searching GitHub Marketplace](/en/search-github/searching-on-github/searching-github-marketplace)
 
   You can search for apps and actions that are available on GitHub Marketplace.
-
-* [Searching GitHub Models](/en/search-github/searching-on-github/searching-github-models)
-
-  You can search for models that are available on GitHub Models.
 
 * [Searching users](/en/search-github/searching-on-github/searching-users)
 

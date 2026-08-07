@@ -51,7 +51,7 @@ If you allow GitHub Copilot to make suggestions that match publicly available co
 
 References to matching code are only generated if you use a product that does not support "Block" mode, or if Copilot is configured to allow suggestions that match publicly available code. This is configured in either your personal or  organization settings.
 
-For more information, see [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#enabling-or-disabling-suggestions-matching-public-code) or  [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies#policies-for-suggestion-matching).
+For more information, see [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#enabling-or-disabling-suggestions-matching-public-code) or  [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies#enabling-copilot-features-and-models-in-your-organization).
 
 <div class="ghd-tool jetbrains">
 

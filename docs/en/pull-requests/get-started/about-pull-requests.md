@@ -32,6 +32,7 @@ Pull requests turn a set of code changes into a conversation. Instead of merging
 Pull requests make your changes easy to review and validate. With a pull request, you can:
 
 * Propose changes from a branch or a fork.
+* Use stacked pull requests to break large code changes into a chain of smaller, dependent pull requests that you can review and merge independently.
 * Discuss and review the proposed changes, line by line.
 * Run automated checks, such as tests, builds, and code scanning, against the changes.
 * Respond to feedback and update the pull request as it evolves.

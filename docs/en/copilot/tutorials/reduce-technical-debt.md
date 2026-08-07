@@ -181,7 +181,7 @@ Examples include:
 
 7. Approve and merge the pull request.
 
-For more information, see [Starting GitHub Copilot sessions](/en/copilot/how-tos/use-copilot-agents/cloud-agent/start-copilot-sessions#assigning-an-issue-to-copilot) and [Review output from Copilot](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/review-copilot-output).
+For more information, see [Starting GitHub Copilot sessions](/en/copilot/how-tos/use-copilot-agents/cloud-agent/start-copilot-sessions) and [Review output from Copilot](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/review-copilot-output).
 
 ### Safety guardrails
 
@@ -396,4 +396,4 @@ After reading this tutorial, do you feel confident you can use Copilot to reduce
 * [GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent)
 * [Refactoring code with GitHub Copilot](/en/copilot/tutorials/refactor-code)
 * [How to use GitHub Copilot in your IDE: Tips, tricks, and best practices](https://github.blog/developer-skills/github/how-to-use-github-copilot-in-your-ide-tips-tricks-and-best-practices/) in the GitHub blog
-* [5 ways to integrate GitHub Copilot cloud agent into your workflow](https://github.blog/ai-and-ml/github-copilot/5-ways-to-integrate-github-copilot-cloud-agent-into-your-workflow/) in the GitHub blog
+* [5 ways to integrate GitHub Copilot cloud agent into your workflow](https://github.blog/ai-and-ml/github-copilot/5-ways-to-integrate-github-copilot-coding-agent-into-your-workflow/) in the GitHub blog

@@ -33,7 +33,7 @@ This article shows you how to set trusted directories, configure access for tool
 
 ## Setting trusted directories
 
-Trusted directories control where Copilot CLI can read, modify, and execute files. Trusting a directory has security implications, see [Security considerations](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli#trusted-directories).
+Trusted directories control where Copilot CLI can read, modify, and execute files. Trusting a directory has security implications, see [Security considerations](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli#security-considerations).
 
 ### Choosing to trust a directory
 
@@ -63,7 +63,7 @@ You can change the config location by setting the `COPILOT_HOME` environment var
 
 You can control which tools Copilot CLI can use, either by responding to approval prompts when Copilot attempts to use a tool, or by specifying permissions via command-line flags.
 
-Be aware that allowing tool access has security implications, see [Security considerations](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli#allowed-tools).
+Be aware that allowing tool access has security implications, see [Security considerations](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli#security-considerations).
 
 In this section, you can learn how to:
 
@@ -280,6 +280,12 @@ This flag combines:
 During an interactive session, you can also enable all permissions with the `/allow-all` or `/yolo` slash commands.
 
 > \[!NOTE] If you have a Copilot Business or Copilot Enterprise license, these commands may be blocked by an enterprise administrator.
+
+## Restrict access to files
+
+The various `--allow-all...` options save you from having to decide whether to allow Copilot to access individual tools, files, and URLs. However, using them widens the scope for Copilot to perform actions that you might not want it to—for example, altering files outside of the repository you are working in.
+
+To mitigate this risk, you can instruct the CLI to sandbox its commands (local sandboxing), or you can run the entire Copilot CLI session within a remote, sandboxed environment (cloud sandboxing). For more information, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
 
 ## Further reading
 

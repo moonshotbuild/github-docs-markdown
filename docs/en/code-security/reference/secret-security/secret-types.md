@@ -121,7 +121,7 @@ Organization-level secrets:
 * Actions secrets are not available to workflows initiated by Dependabot.
 * Actions secrets are not passed to workflows that are triggered by a pull request from a fork.
 * GitHub Actions automatically redacts the contents of all GitHub secrets that are printed to workflow logs.
-* You can store up to 1,000 organization secrets, 100 repository secrets, and 100 environment secrets. Secrets are limited to 48 KB in size. For more information, see [Limits for secrets](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets#limits-for-secrets).
+* You can store up to 1,000 organization secrets, 100 repository secrets, and 100 environment secrets. Secrets are limited to 48 KB in size. For more information, see [Limits for secrets](/en/actions/reference/security/secrets#limits-for-secrets).
 
 ## Codespaces secrets
 
@@ -173,6 +173,6 @@ Organization-level secrets:
 ## Further reading
 
 * [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#storing-credentials-for-dependabot-to-use)
-* [Using secrets in GitHub Actions](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets)
+* [Secrets reference](/en/actions/reference/security/secrets#limits-for-secrets)
 * [Managing development environment secrets for your repository or organization](/en/codespaces/managing-codespaces-for-your-organization/managing-development-environment-secrets-for-your-repository-or-organization)
 * [Managing your account-specific secrets for GitHub Codespaces](/en/codespaces/managing-your-codespaces/managing-your-account-specific-secrets-for-github-codespaces)

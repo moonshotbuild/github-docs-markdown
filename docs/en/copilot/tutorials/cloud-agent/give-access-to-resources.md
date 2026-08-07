@@ -112,7 +112,7 @@ A developer creates a workflow to install the Node dependencies defined in a rep
            uses: actions/checkout@v6
 
          - name: Set up Node.js
-           uses: actions/setup-node@v4
+           uses: actions/setup-node@v7
            with:
              node-version: "20"
              cache: "npm"
@@ -133,3 +133,4 @@ Now you have seen how access to resources is controlled at the repository and or
 2. **Consider who gets admin access** to these repositories. You can control this at the organization level by creating a team with the **All-repository admin** custom role. These users will be able to manage configuration *settings*, such as MCP configuration and Agents secrets and variables, in every repository.
 3. **Use rulesets and CODEOWNERS files** to control edits of configuration *files*, such as `copilot-setup-steps.yml`, which anyone with write access can edit by default.
 4. **Review the default firewall**. The firewall doesn't affect connections to MCP servers or setup steps in `copilot-setup-steps.yml`, but it does limit Copilot's access to the Internet during task execution. See [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-firewall).
+5. **Define plugin standards**. Plugins are installable packages that extend Copilot with reusable agents, skills, hooks, and integrations. You can control which plugins and marketplaces are permitted in an enterprise's `managed-settings.json` file. See [About enterprise-managed plugin standards](/en/copilot/concepts/agents/about-enterprise-plugin-standards).

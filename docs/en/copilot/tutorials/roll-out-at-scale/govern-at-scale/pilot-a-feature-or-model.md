@@ -25,7 +25,7 @@ This tutorial walks you through running a pilot end to end: setting a budget, en
 
 ## Before you start your pilot
 
-Before you enable anything, make sure you've evaluated the feature or model and confirmed it meets your compliance requirements. See [Preparing for new features and models](/en/copilot/concepts/preparing-for-new-features-and-models).
+Before you enable anything, make sure you've evaluated the feature or model and confirmed it meets your compliance requirements. See [Learning about new features and models](/en/copilot/concepts/preparing-for-new-features-and-models).
 
 If you're not sure whether a feature or model is safe to enable, check with security and compliance teams at your company before you start the pilot.
 
@@ -114,6 +114,9 @@ Use Copilot usage metrics to see how many of your pilot users are active, how of
 * To understand what the metrics cover and how to interpret them, see [GitHub Copilot usage metrics](/en/copilot/concepts/copilot-usage-metrics/copilot-metrics).
 * To view the dashboard for your organization or enterprise, see [Viewing the Copilot usage metrics dashboard](/en/copilot/how-tos/administer-copilot/view-usage-and-adoption).
 
+> \[!TIP]
+> A rising active-user count doesn't tell you whether that usage is meaningful, especially for an agentic feature. To see whether pilot participants are progressing to deeper, agent-driven usage, see [Viewing the Copilot impact dashboard](/en/copilot/how-tos/administer-copilot/view-impact-dashboard).
+
 ### Collect developer feedback from your pilot group
 
 Metrics tell you *whether* people use the feature, but not *why* or how well it works for them. Gather qualitative feedback to fill that gap. Run short surveys, hold regular check-ins, or set up a dedicated channel where pilot users can report what's working and what isn't.
@@ -139,6 +142,7 @@ Pilot usage draws from the shared pool first (at no extra cost) before metered b
 You're ready to decide when you have:
 
 * Adoption metrics that show a stable pattern rather than a single early burst.
+* For agentic features, adoption cohort data showing whether participants are progressing to deeper usage rather than plateauing.
 * Actual cost data, spanning at least one billing cycle, that you can compare against your estimate.
 * Feedback from a representative range of your pilot users.
 

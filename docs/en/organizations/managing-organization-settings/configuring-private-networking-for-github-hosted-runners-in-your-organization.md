@@ -74,7 +74,7 @@ If you control outbound access using IP addresses during the transition period, 
 
 The `.bicep` file we provide contains the minimal set of rules to use GitHub-hosted runners with Azure VNET. You may need to add rules for your specific use case.
 
-If you use GitHub Enterprise Cloud with data residency, in the `AllowOutBoundGitHub` section, you must also include the ingress IP ranges for GHE.com. See [Network details for GHE.com](/en/enterprise-cloud@latest/admin/data-residency/network-details-for-ghecom#ranges-for-ingress-traffic).
+If you use GitHub Enterprise Cloud with data residency, in the `AllowOutBoundGitHub` section, you must also include the ingress IP ranges for GHE.com. See [Network details for GHE.com](/en/enterprise-cloud@latest/admin/data-residency/network-details-for-ghecom#githubs-ip-addresses).
 
 ```bicep copy
 @description('NSG for outbound rules')

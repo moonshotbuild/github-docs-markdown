@@ -38,7 +38,7 @@ Start and track Copilot cloud agent sessions from the Raycast launcher.
 4. Select the repository you want Copilot to work in.
 5. Optionally, select a base branch for Copilot's pull request. Copilot will create a new branch based on this branch, then push the changes to a pull request targeting that branch.
 6. Optionally, select a custom agent with specialized behavior and tools from the dropdown menu. For more information, see [Creating custom agents for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents).
-7. Optionally, you can use the dropdown menu to select the model that Copilot will use. For more information, see [Changing the AI model for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model).
+7. Optionally, you can use the dropdown menu to select the model that Copilot will use. If the selected model supports configurable reasoning, you can also use the dropdown menu to select the reasoning level. For more information, see [Changing the AI model for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model).
 8. Press <kbd>Command</kbd>+<kbd>Enter</kbd> (macOS) or <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (Windows) to start the task.
 
    Copilot will start a new session. Copilot will work on the task and push changes to its pull request, then add you as a reviewer when it has finished, triggering a notification.
@@ -55,7 +55,7 @@ Start and track Copilot cloud agent sessions from the Raycast launcher.
 4. Select the issue you want to assign to Copilot.
 5. Optionally, select a base branch for Copilot's pull request. Copilot will create a new branch based on this branch, then push the changes to a pull request targeting that branch.
 6. Optionally, select a custom agent with specialized behavior and tools from the dropdown menu. For more information, see [Creating custom agents for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents).
-7. Optionally, you can use the dropdown menu to select the model that Copilot will use. For more information, see [Changing the AI model for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model).
+7. Optionally, you can use the dropdown menu to select the model that Copilot will use. If the selected model supports configurable reasoning, you can also use the dropdown menu to select the reasoning level. For more information, see [Changing the AI model for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model).
 8. Optionally, provide additional instructions. These will be passed to Copilot alongside your issue contents.
 9. Press <kbd>Command</kbd>+<kbd>Enter</kbd> (macOS) or <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (Windows) to assign the issue.
 

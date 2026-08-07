@@ -87,6 +87,12 @@ Private MCP registries apply to Copilot CLI and IDEs, but not to cloud agents th
 
 For more information, see [MCP server usage in your company](/en/copilot/concepts/mcp-management).
 
+## Enterprise-managed settings
+
+The `managed-settings.json` file allows enterprises to control how users can interact with agents across Copilot clients. For example: which plugins can people install, and can people use "allow all" commands that let agents run commands without asking for permission? This file can be hosted on GitHub or installed directly on users' machines.
+
+For more information, see [Configuring enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-managed-settings).
+
 ## Agent mode in the IDE
 
 Enterprise and organization owners can separately control whether their users have access to agent mode in IDE chat, independently from the "Chat in IDE" policy. This gives you finer-grained control over agentic capabilities in your developers' IDEs.

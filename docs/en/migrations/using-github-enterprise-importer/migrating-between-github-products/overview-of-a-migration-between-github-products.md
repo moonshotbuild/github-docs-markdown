@@ -121,7 +121,7 @@ Even if you change your organizational structure, you can still prepare a script
 > \[!NOTE]
 > You can run multiple batches simultaneously. For example, if you're batching by teams, you could run the migrations for multiple teams in the same time window.
 
-1. Decide what your new organization structural will be.
+1. Decide what your new organization structure will be.
 2. Decide if you need to break up your migration effort into smaller batches.
 3. If so, decide how you want to break up your migrations.
 
@@ -226,12 +226,12 @@ If you were using larger runners, self-hosted runners, or encrypted secrets, you
    * To use runners at the organization or enterprise level, update your workflows. For more information, see [Using self-hosted runners in a workflow](/en/actions/how-tos/manage-runners/self-hosted-runners/use-in-a-workflow).
 2. If you use larger runners, reconfigure your runners.
 
-   * Configure runner groups to control access to your runners. For more information, see [Controlling access to larger runners](/en/actions/using-github-hosted-runners/controlling-access-to-larger-runners).
-   * Set up your larger runners. For more information, see [Managing larger runners](/en/actions/using-github-hosted-runners/managing-larger-runners).
-   * Update your workflows to point to your runners. For more information, see [Running jobs on larger runners](/en/actions/using-github-hosted-runners/running-jobs-on-larger-runners).
+   * Configure runner groups to control access to your runners. For more information, see [Controlling access to larger runners](/en/actions/how-tos/manage-runners/larger-runners/control-access).
+   * Set up your larger runners. For more information, see [Managing larger runners](/en/actions/how-tos/manage-runners/larger-runners/manage-larger-runners).
+   * Update your workflows to point to your runners. For more information, see [Running jobs on larger runners](/en/actions/how-tos/manage-runners/larger-runners/use-larger-runners).
 3. Re-add any encrypted secrets.
 
-   * To use the browser, see [Using secrets in GitHub Actions](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets#creating-encrypted-secrets-for-a-repository).
+   * To use the browser, see [Using secrets in GitHub Actions](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets#creating-secrets-for-a-repository).
    * To use GitHub CLI, see [`gh secret`](https://cli.github.com/manual/gh_secret) in the GitHub CLI documentation.
 4. Reconfigure environments. For more information, see [Managing environments for deployment](/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments).
 

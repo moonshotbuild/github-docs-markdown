@@ -34,7 +34,7 @@ If your CodeQL analysis scans fewer lines of code than expected, you can try cha
 ## Change to a `manual` build process
 
 Replace the `autobuild` process with the same build commands you would use in production. This makes sure that CodeQL knows exactly how to compile all of the source files you want to scan.
-For more information about defining build steps, see [CodeQL code scanning for compiled languages](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#using-build-mode-manual-and-specifying-build-steps).
+For more information about defining build steps, see [CodeQL code scanning for compiled languages](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#specify-build-steps-manually).
 
 ## Inspect the copy of the source files in the CodeQL database
 

@@ -407,6 +407,10 @@ Build skills and knowledge about GitHub Copilot through examples and hands-on ac
 
   Use Copilot to automate refactoring and maintenance tasks, freeing your team to focus on feature development.
 
+* [Stack AI-generated code in pull requests](/en/copilot/tutorials/stack-ai-generated-code-in-pull-requests)
+
+  Create a stack of small, dependent pull requests that can be quickly reviewed.
+
 * [Review AI-generated code](/en/copilot/tutorials/review-ai-generated-code)
 
   Learn techniques to verify and validate AI-generated code, and how Copilot Chat can help.

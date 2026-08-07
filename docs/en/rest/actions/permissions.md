@@ -19,7 +19,7 @@ Use the REST API to interact with permissions for GitHub Actions.
 
 ## About permissions for GitHub Actions
 
-You can use the REST API to set permissions for the organizations and repositories that are allowed to run GitHub Actions, and the actions and reusable workflows that are allowed to run. For more information, see [Billing and usage](/en/actions/concepts/billing-and-usage#disabling-or-limiting-github-actions-for-your-repository-or-organization).
+You can use the REST API to set permissions for the organizations and repositories that are allowed to run GitHub Actions, and the actions and reusable workflows that are allowed to run. For more information, see [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization), and [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository).
 
 > \[!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.

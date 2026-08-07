@@ -71,5 +71,5 @@ If you're rolling out the feature across many teams, we recommend you pilot on a
 
 ## Next steps
 
-* **Add code coverage:** Upload reported code coverage from your test suite to see coverage results directly on pull requests. See [Setting up code coverage for your repository](/en/code-security/how-tos/maintain-quality-code/set-up-code-coverage).
+* **Add code coverage:** Upload reported code coverage from your test suite to see coverage results directly on pull requests. You can use the automatic setup option to generate a workflow with an AI-powered agent, or configure your workflow manually. See [Setting up code coverage for your repository](/en/code-security/how-tos/maintain-quality-code/set-up-code-coverage).
 * **For your organization:** Understand the code health of your repositories at a glance. See [Exploring GitHub Code Quality results in your organization](/en/code-security/how-tos/maintain-quality-code/explore-code-quality).

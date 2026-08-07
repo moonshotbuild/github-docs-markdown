@@ -31,7 +31,7 @@ This guide gives an overview of how to configure PyPI to trust GitHub's OIDC as 
 
 * To learn the basic concepts of how GitHub uses OpenID Connect (OIDC), and its architecture and benefits, see [OpenID Connect](/en/actions/concepts/security/openid-connect).
 
-* Before proceeding, you must plan your security strategy to ensure that access tokens are only allocated in a predictable way. To control how your cloud provider issues access tokens, you **must** define at least one condition, so that untrusted repositories can’t request access tokens for your cloud resources. For more information, see [OpenID Connect](/en/actions/concepts/security/openid-connect#configuring-the-oidc-trust-with-the-cloud).
+* Before proceeding, you must plan your security strategy to ensure that access tokens are only allocated in a predictable way. To control how your cloud provider issues access tokens, you **must** define at least one condition, so that untrusted repositories can’t request access tokens for your cloud resources. For more information, see [OpenID Connect reference](/en/actions/reference/security/oidc#oidc-claims-used-to-define-trust-conditions-on-cloud-roles).
 
 ## Adding the identity provider to PyPI
 
@@ -54,7 +54,7 @@ To use OIDC with PyPI, add a trust configuration that links each project on PyPI
 Once your trusted publisher is registered on PyPI, you can update your release workflow to use trusted publishing.
 
 > \[!NOTE]
-> When environments are used in workflows or in OIDC policies, we recommend adding protection rules to the environment for additional security. For example, you can configure deployment rules on an environment to restrict which branches and tags can deploy to the environment or access environment secrets. For more information, see [Managing environments for deployment](/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments#deployment-protection-rules).
+> When environments are used in workflows or in OIDC policies, we recommend adding protection rules to the environment for additional security. For example, you can configure deployment rules on an environment to restrict which branches and tags can deploy to the environment or access environment secrets. For more information, see [Managing environments for deployment](/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments).
 
 The [`pypa/gh-action-pypi-publish`](https://github.com/marketplace/actions/pypi-publish) action has built-in support for trusted publishing, which can be enabled by giving its containing job the `id-token: write` permission and omitting `username` and `password`.
 

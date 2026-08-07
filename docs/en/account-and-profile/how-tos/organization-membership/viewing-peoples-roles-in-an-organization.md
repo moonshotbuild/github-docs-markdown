@@ -28,7 +28,7 @@ You can view a list of the people in your organization and filter by their role.
 
    ![Screenshot of the list of organization members. In the header of the list, a dropdown menu, labeled "Role," is outlined in dark orange.](/assets/images/help/organizations/view-list-of-people-in-org-by-role.png)
 
-If your organization uses GitHub Enterprise Cloud, you can also view the enterprise owners who manage billing settings and policies for all your enterprise's organizations. For more information, see [the GitHub Enterprise Cloud documentation](/en/enterprise-cloud@latest/account-and-profile/how-tos/organization-membership/viewing-peoples-roles-in-an-organization#view-enterprise-owners-and-their-roles-in-an-organization).
+If your organization uses GitHub Enterprise Cloud, you can also view the enterprise owners who manage billing settings and policies for all your enterprise's organizations. For more information, see [the GitHub Enterprise Cloud documentation](/en/enterprise-cloud@latest/account-and-profile/how-tos/organization-membership/viewing-peoples-roles-in-an-organization#viewing-enterprise-owners-and-their-roles-in-an-organization).
 
 ## Next steps
 

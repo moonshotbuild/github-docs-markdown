@@ -49,7 +49,7 @@ GitHub Apps are the officially recommended way to integrate with GitHub because 
 
 When you have finished creating your app, you can share it with other users by publishing it to GitHub Marketplace. In summary, the process is:
 
-1. Review your app carefully to ensure that it will behave as expected in other repositories and that it follows best practice guidelines. For more information, see [Security best practices for apps on GitHub Marketplace](/en/apps/github-marketplace/creating-apps-for-github-marketplace/security-best-practices-for-apps-on-github-marketplace) and [Requirements for listing an app](/en/apps/github-marketplace/creating-apps-for-github-marketplace/requirements-for-listing-an-app#best-practice-for-customer-experience).
+1. Review your app carefully to ensure that it will behave as expected in other repositories and that it follows best practice guidelines. For more information, see [Security best practices for apps on GitHub Marketplace](/en/apps/github-marketplace/creating-apps-for-github-marketplace/security-best-practices-for-apps-on-github-marketplace) and [Requirements for listing an app](/en/apps/github-marketplace/creating-apps-for-github-marketplace/requirements-for-listing-an-app).
 
 2. Add webhook events to the app to track user billing requests. For more information about the GitHub Marketplace API, webhook events, and billing requests, see [Using the GitHub Marketplace API in your app](/en/apps/github-marketplace/using-the-github-marketplace-api-in-your-app).
 

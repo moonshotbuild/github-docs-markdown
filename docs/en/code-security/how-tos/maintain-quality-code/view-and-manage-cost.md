@@ -27,7 +27,7 @@ Code Quality usage adds up from three types of cost across your organization:
 
 * **License usage**, based on the number of unique, active committers to repositories where Code Quality is enabled.
 * **GitHub Actions minutes**, consumed each time a scan runs (unless you use self-hosted runners).
-* **GitHub AI Credits**, consumed by Code Quality's AI features: the fixes it generates for findings, and the AI detections scans if you turn that page on.
+* **GitHub AI Credits**, consumed by Code Quality's AI features: the fixes it generates for findings, and the scans on the **AI findings** page if you turn it on.
 
 For exactly how each cost is measured, see [GitHub Code Quality billing](/en/billing/concepts/product-billing/github-code-quality?utm_campaign=code-quality-ga-july-2026\&utm_medium=docs\&utm_source=docs-view-manage-cost-billing).
 
@@ -59,9 +59,7 @@ You have several levers to keep spend in check. In rough order of impact:
 * **Enable selectively.** Turn Code Quality on where it adds value rather than across every repository at once. See [Enabling GitHub Code Quality](/en/code-security/how-tos/maintain-quality-code/enable-code-quality).
 * **Disable low-value repositories.** Disabling Code Quality on a repository frees the licenses for committers unique to it, and stops its scans and AI usage. See [Disabling GitHub Code Quality](/en/code-security/how-tos/maintain-quality-code/disable-code-quality).
 * **Set a budget.** A budget for Code Quality stops your spending automatically once you hit your limit, because the hard stop is mandatory (see below).
-* **Keep the AI detections page off.** This page is **off by default** and stays in public preview, so it only draws down AI credits if you turn it on. Repositories that enabled it during the preview keep it on, so turn it off there if you don't want the usage.
-
-<!-- VERIFY before GA: exact path to turn off the AI detections page for a repo that enabled it during preview. (Default-off-at-GA confirmed in github/security-products#2357.) -->
+* **Keep the AI findings page off.** This page is **off by default** and stays in public preview, so it only draws down AI credits if you turn it on. Repositories that enabled it during the preview keep it on. To turn it off for a repository, disable **AI findings** on the repository's **Code quality** settings page.
 
 ### Setting a budget
 

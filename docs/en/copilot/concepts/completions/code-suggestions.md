@@ -103,7 +103,7 @@ GitHub Copilot in Eclipse provides two kinds of code suggestions:
 * **Ghost text suggestions**
   * Copilot offers coding suggestions as you type. You can also describe something you want to do using natural language within a comment, and Copilot will suggest the code to accomplish your goal.
 * **Next edit suggestions (public preview)**
-  * Based on the edits you are making, Copilot will predict the location of the next edit you are likely to make and suggest a completion for it. Suggestions may span a single symbol, an entire line, or multiple lines, depending on the scope of the potential change. To enable next edit suggestions, see [Configuring GitHub Copilot in your environment](/en/copilot/how-tos/configure-personal-settings/configure-in-ide?tool=eclipse#enabling-next-edit-suggestions-3).
+  * Based on the edits you are making, Copilot will predict the location of the next edit you are likely to make and suggest a completion for it. Suggestions may span a single symbol, an entire line, or multiple lines, depending on the scope of the potential change. To enable next edit suggestions, see [Configuring GitHub Copilot in your environment](/en/copilot/how-tos/configure-personal-settings/configure-in-ide?tool=eclipse#enabling-next-edit-suggestions-2).
 
 GitHub Copilot provides suggestions for numerous languages and a wide variety of frameworks, but works especially well for Python, JavaScript, TypeScript, Ruby, Go, C# and C++. GitHub Copilot can also assist in query generation for databases, generating suggestions for APIs and frameworks, and can help with infrastructure as code development.
 
@@ -134,7 +134,7 @@ Changing the model that's used for Copilot inline suggestions does not affect th
 
 There are no changes to the data collection and usage policy if you change the AI model.
 
-If you are on a Copilot Free plan, all completions count against your completions quota regardless of the model used. See [Plans for GitHub Copilot](/en/copilot/get-started/plans#comparing-copilot-subscriptions).
+If you are on a Copilot Free plan, all completions count against your completions quota regardless of the model used. See [Plans for GitHub Copilot](/en/copilot/get-started/plans#comparing-copilot-plans).
 
 The setting to enable or disable suggestions that match public code is applied irrespective of which model you choose. See [Finding public code that matches GitHub Copilot suggestions](/en/copilot/how-tos/get-code-suggestions/find-matching-code).
 
@@ -142,7 +142,7 @@ The setting to enable or disable suggestions that match public code is applied i
 
 If you have a Copilot Free or Copilot Pro plan, the model switcher for Copilot inline suggestions is automatically enabled.
 
-If you're using a Copilot Business or Copilot Enterprise plan, the organization or enterprise that provides your plan must enable the **Editor preview features** setting. See [Managing policies and features for GitHub Copilot in your organization](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies#enabling-copilot-features-in-your-organization) or [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies#configuring-policies-for-github-copilot).
+If you're using a Copilot Business or Copilot Enterprise plan, the organization or enterprise that provides your plan must enable the **Editor preview features** setting. See [Managing policies and features for GitHub Copilot in your organization](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies#enabling-copilot-features-and-models-in-your-organization) or [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies#defining-policies-for-your-enterprise).
 
 </div>
 
@@ -165,7 +165,7 @@ Changing the model that's used for Copilot inline suggestions does not affect th
 
 There are no changes to the data collection and usage policy if you change the AI model.
 
-If you are on a Copilot Free plan, all completions count against your completions quota regardless of the model used. See [Plans for GitHub Copilot](/en/copilot/get-started/plans#comparing-copilot-subscriptions).
+If you are on a Copilot Free plan, all completions count against your completions quota regardless of the model used. See [Plans for GitHub Copilot](/en/copilot/get-started/plans#comparing-copilot-plans).
 
 The setting to enable or disable suggestions that match public code is applied irrespective of which model you choose. See [Finding public code that matches GitHub Copilot suggestions](/en/copilot/how-tos/get-code-suggestions/find-matching-code).
 
@@ -173,7 +173,7 @@ The setting to enable or disable suggestions that match public code is applied i
 
 If you have a Copilot Free or Copilot Pro plan, the model switcher for Copilot inline suggestions is automatically enabled.
 
-If you're using a Copilot Business or Copilot Enterprise plan, the organization or enterprise that provides your plan must enable the **Editor preview features** setting. See [Managing policies and features for GitHub Copilot in your organization](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies#enabling-copilot-features-in-your-organization) or [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies#configuring-policies-for-github-copilot).
+If you're using a Copilot Business or Copilot Enterprise plan, the organization or enterprise that provides your plan must enable the **Editor preview features** setting. See [Managing policies and features for GitHub Copilot in your organization](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies#enabling-copilot-features-and-models-in-your-organization) or [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies#defining-policies-for-your-enterprise).
 
 </div>
 
@@ -196,7 +196,7 @@ Changing the model that's used for Copilot inline suggestions does not affect th
 
 There are no changes to the data collection and usage policy if you change the AI model.
 
-If you are on a Copilot Free plan, all completions count against your completions quota regardless of the model used. See [Plans for GitHub Copilot](/en/copilot/get-started/plans#comparing-copilot-subscriptions).
+If you are on a Copilot Free plan, all completions count against your completions quota regardless of the model used. See [Plans for GitHub Copilot](/en/copilot/get-started/plans#comparing-copilot-plans).
 
 The setting to enable or disable suggestions that match public code is applied irrespective of which model you choose. See [Finding public code that matches GitHub Copilot suggestions](/en/copilot/how-tos/get-code-suggestions/find-matching-code).
 
@@ -204,7 +204,7 @@ The setting to enable or disable suggestions that match public code is applied i
 
 If you have a Copilot Free or Copilot Pro plan, the model switcher for Copilot inline suggestions is automatically enabled.
 
-If you're using a Copilot Business or Copilot Enterprise plan, the organization or enterprise that provides your plan must enable the **Editor preview features** setting. See [Managing policies and features for GitHub Copilot in your organization](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies#enabling-copilot-features-in-your-organization) or [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies#configuring-policies-for-github-copilot).
+If you're using a Copilot Business or Copilot Enterprise plan, the organization or enterprise that provides your plan must enable the **Editor preview features** setting. See [Managing policies and features for GitHub Copilot in your organization](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies#enabling-copilot-features-and-models-in-your-organization) or [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies#defining-policies-for-your-enterprise).
 
 </div>
 

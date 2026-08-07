@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization"
-title: "Enabling or disabling cloud sandboxes for your organization"
-intro: "You can control whether members of your organization can use cloud sandboxes by managing the sandbox access policy in your organization settings."
+title: "Enabling or disabling cloud sandboxes for your organization or enterprise"
+intro: "You can control whether members of your organization or enterprise can use cloud sandboxes by managing the cloud sandbox access policy in your organization or enterprise settings."
 product: "GitHub Copilot"
 document_type: "article"
 breadcrumbs:
@@ -9,28 +9,26 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "How-tos"
     href: "/en/copilot/how-tos"
-  - title: "Cloud and local sandboxes for GitHub Copilot"
+  - title: "Sandbox Copilot"
     href: "/en/copilot/how-tos/cloud-and-local-sandboxes"
   - title: "Enable or disable cloud sandboxes"
     href: "/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization"
 ---
 
-# Enabling or disabling cloud sandboxes for your organization
+# Enabling or disabling cloud sandboxes for your organization or enterprise
 
-You can control whether members of your organization can use cloud sandboxes by managing the sandbox access policy in your organization settings.
+You can control whether members of your organization or enterprise can use cloud sandboxes by managing the cloud sandbox access policy in your organization or enterprise settings.
 
 > \[!NOTE]
-> Cloud and local sandboxes for GitHub Copilot is in public preview and subject to change.
+> Cloud and local sandboxes for GitHub Copilot are in public preview and subject to change.
 
 ## About enabling and disabling cloud sandboxes
 
-Organization owners can control whether members of their organization have access to cloud sandboxes by configuring the sandbox access policy. By default, sandbox access is disabled for organization members.
-
-When cloud sandbox access is **Disabled**, cloud sandboxes are not available for any organization members. When cloud sandbox access is **Enabled for all members**, all organization members can use cloud sandboxes.
+Organization owners can control whether members of their organization have access to cloud sandboxes by configuring the cloud sandbox access policy. Enterprise owners can control cloud sandbox access for all organizations in the enterprise. By default, cloud sandbox access is disabled.
 
 For more information about cloud sandboxes, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
 
-## Enabling or disabling cloud sandboxes
+## Enabling or disabling cloud sandboxes for your organization
 
 1. In the upper-right corner of GitHub, click your profile picture, then click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-organization" aria-label="organization" role="img"><path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path></svg> Organizations**.
 2. Select an organization by clicking on it.
@@ -38,10 +36,23 @@ For more information about cloud sandboxes, see [About cloud and local sandboxes
 
    ![Screenshot of the tabs in an organization's profile. The "Settings" tab is outlined in dark orange.](/assets/images/help/discussions/org-settings-global-nav-update.png)
 4. In the sidebar, under "Code, planning, and automation", click **Sandboxes**.
-5. Under "Sandbox access," select your preferred setting:
-   * **Disabled**: Sandboxes are not available for organization members.
-   * **Enabled for all members**: All organization members can use sandboxes for GitHub Copilot.
+5. Under "Cloud sandbox access", select your preferred setting:
+   * **Disabled**: Cloud sandbox access is not available for organization members.
+   * **Enabled**: Members of this organization can use cloud sandboxes.
 6. Click **Save**.
+
+## Enabling or disabling cloud sandboxes for your enterprise
+
+Enterprise owners can control cloud sandbox access for all organizations in the enterprise from the **Policies** tab of the enterprise settings. By default, cloud sandbox access is disabled for all organizations in the enterprise.
+
+1. Navigate to your enterprise. For example, from the [Enterprises](https://github.com/settings/enterprises?ref_product=ghec\&ref_type=engagement\&ref_style=text) page on GitHub.com.
+2. At the top of the page, click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-law" aria-label="law" role="img"><path d="M8.75.75V2h.985c.304 0 .603.08.867.231l1.29.736c.038.022.08.033.124.033h2.234a.75.75 0 0 1 0 1.5h-.427l2.111 4.692a.75.75 0 0 1-.154.838l-.53-.53.529.531-.001.002-.002.002-.006.006-.006.005-.01.01-.045.04c-.21.176-.441.327-.686.45C14.556 10.78 13.88 11 13 11a4.498 4.498 0 0 1-2.023-.454 3.544 3.544 0 0 1-.686-.45l-.045-.04-.016-.015-.006-.006-.004-.004v-.001a.75.75 0 0 1-.154-.838L12.178 4.5h-.162c-.305 0-.604-.079-.868-.231l-1.29-.736a.245.245 0 0 0-.124-.033H8.75V13h2.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5h2.5V3.5h-.984a.245.245 0 0 0-.124.033l-1.289.737c-.265.15-.564.23-.869.23h-.162l2.112 4.692a.75.75 0 0 1-.154.838l-.53-.53.529.531-.001.002-.002.002-.006.006-.016.015-.045.04c-.21.176-.441.327-.686.45C4.556 10.78 3.88 11 3 11a4.498 4.498 0 0 1-2.023-.454 3.544 3.544 0 0 1-.686-.45l-.045-.04-.016-.015-.006-.006-.004-.004v-.001a.75.75 0 0 1-.154-.838L2.178 4.5H1.75a.75.75 0 0 1 0-1.5h2.234a.249.249 0 0 0 .125-.033l1.288-.737c.265-.15.564-.23.869-.23h.984V.75a.75.75 0 0 1 1.5 0Zm2.945 8.477c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327Zm-10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327Z"></path></svg> Policies**.
+3. Click **Sandboxes**.
+4. Under "Cloud sandbox access", select your preferred setting:
+   * **Disabled**: Cloud sandbox access is not available for any organizations in this enterprise.
+   * **Let organizations enable (opt-in)**: Organization owners can choose to enable cloud sandbox access for their members. New organizations default to disabled.
+   * **Enabled by default for all organizations (opt-out)**: Cloud sandbox access is enabled for all organizations. Organization owners can still disable access for their organization if needed.
+5. Click **Save**.
 
 ## Further reading
 

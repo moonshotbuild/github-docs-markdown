@@ -641,18 +641,6 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to review, backup, or migrate your user data stored on GitHub.
 
-* [REST API endpoints for models catalog](/en/rest/models/catalog)
-
-  Use the REST API to get a list of models available for use, including details like ID, supported input/output modalities, and rate limits.
-
-* [REST API endpoints for model embeddings](/en/rest/models/embeddings)
-
-  Use the REST API to work with embedding requests for models.
-
-* [REST API endpoints for models inference](/en/rest/models/inference)
-
-  Use the REST API to submit a chat completion request to a specified model, with or without organizational attribution.
-
 * [REST API endpoints for OAuth app authorizations](/en/oauth-authorizations)
 
   Use the REST API to manage the access OAuth apps have to your account.
@@ -769,13 +757,13 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to manage Project views
 
-* [REST API endpoints for pull requests](/en/rest/pulls/pulls)
-
-  Use the REST API to interact with pull requests.
-
 * [REST API endpoints for pull request review comments](/en/rest/pulls/comments)
 
   Use the REST API to interact with pull request review comments.
+
+* [REST API endpoints for pull requests](/en/rest/pulls/pulls)
+
+  Use the REST API to interact with pull requests.
 
 * [REST API endpoints for review requests](/en/rest/pulls/review-requests)
 
@@ -784,6 +772,10 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 * [REST API endpoints for pull request reviews](/en/rest/pulls/reviews)
 
   Use the REST API to interact with pull request reviews.
+
+* [REST API endpoints for stacked pull requests](/en/rest/pulls/stacks)
+
+  Use the REST API to interact with stacked pull requests.
 
 * [REST API endpoints for rate limits](/en/rest/rate-limit/rate-limit)
 

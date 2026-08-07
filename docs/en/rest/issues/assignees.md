@@ -174,7 +174,7 @@ Adds up to 10 assignees to an issue. Users already assigned to an issue are not 
 
 #### Body parameters
 
-- **`assignees`** (array of strings)
+- **`assignees`** (array)
   Usernames of people to assign this issue to. NOTE: Only users with push access can add assignees to an issue. Assignees are silently ignored otherwise.
 
 ### HTTP response status codes

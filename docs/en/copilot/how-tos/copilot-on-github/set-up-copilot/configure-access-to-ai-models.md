@@ -38,7 +38,7 @@ For individual Copilot plans, you can use AI models directly within Copilot with
 
 ## Setup for organization and enterprise plans
 
-As an enterprise or organization owner, you can enable or disable access to AI models for members with a Copilot Enterprise or Copilot Business seat. See [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies) and [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies).
+As an enterprise or organization owner, you can enable or disable access to AI models for members with a Copilot Enterprise or Copilot Business seat. See [Managing availability of models in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-availability-of-default-models) or [Managing the availability of models in an organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-default-models).
 
 ## Custom models
 

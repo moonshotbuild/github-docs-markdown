@@ -33,7 +33,7 @@ Learn core concepts for GitHub's code scanning features.
 
 * [About autofix for code scanning](/en/code-security/concepts/code-scanning/autofix-for-code-scanning)
 
-  Autofix provides targeted recommendations to help you fix code scanning alerts and avoid introducing new security vulnerabilities.
+  Autofix automatically generates fixes for code scanning alerts, helping you remediate existing vulnerabilities.
 
 * [AI-powered security detections in pull requests](/en/code-security/concepts/code-scanning/ai-powered-security-detections)
 

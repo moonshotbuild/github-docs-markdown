@@ -76,3 +76,7 @@ These guides cover the capabilities you can add to your Copilot SDK application.
 * [Streaming session events](/en/copilot/how-tos/copilot-sdk/features/streaming-events)
 
   Every action the Copilot agent takes—thinking, writing code, running tools—is emitted as a session event you can subscribe to. This guide is a field-level reference for each event type so you know exactly what data to expect without reading the SDK source.
+
+* [Usage and billing metrics](/en/copilot/how-tos/copilot-sdk/features/usage-and-billing)
+
+  This guide shows how to read token counts, context-window utilization, AI credit cost, and account quota from a Copilot SDK application. Examples are shown for TypeScript, Python, Go, .NET, Java, and Rust.

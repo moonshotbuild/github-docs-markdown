@@ -33,6 +33,8 @@ Agent skills are folders of instructions, scripts, and resources that Copilot ca
 
 For more information about agent skills, see [About agent skills](/en/copilot/concepts/agents/about-agent-skills).
 
+For a GitHub-provided built-in skills reference, see [Built-in skills for the GitHub Copilot app](/en/copilot/reference/github-copilot-app-reference/built-in-skills).
+
 ## Configuring MCP servers
 
 MCP servers connect the agent to external tools and data sources. Any MCP servers configured for your repositories or Copilot CLI are automatically available in the GitHub Copilot app. You can also add and manage additional MCP servers in the app settings under **MCP Servers**. The app includes a catalog of popular servers, or you can add a custom server.
@@ -58,3 +60,9 @@ For more information, see [About GitHub Copilot plugins](/en/copilot/concepts/ag
 ## Working with canvas extensions
 
 Use canvas extensions to build shared, agent-driven artifacts and interfaces for team or personal workflows. In a session, use `/create-canvas` to scaffold a canvas extension, then iterate on the canvas with the agent. For more information, see [Working with canvas extensions in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/working-with-canvas-extensions).
+
+## Organization and enterprise management
+
+Enterprise and organization owners can set policies to govern how Copilot is used across surfaces. For the major policies supported by the GitHub Copilot app, see [Supported surfaces for GitHub Copilot policies](/en/copilot/reference/supported-surfaces-for-policies).
+
+Enterprises can also define a `managed-settings.json` file to control which actions users can take in supported Copilot clients, such as which plugins users can install and whether "YOLO-style" commands are permitted. See [Configuring enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-managed-settings).

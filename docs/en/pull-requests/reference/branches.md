@@ -23,7 +23,7 @@ Branches let you develop features, fix bugs, or safely experiment with new ideas
 
 You always create a branch from an existing branch. Typically, you might create a new branch from the default branch of your repository. You can then work on this new branch in isolation from changes that other people are making to the repository.
 
-A branch you create to build a feature is commonly called a feature branch or topic branch. See [Managing branches within your repository](/en/pull-requests/how-tos/create-pull-requests/creating-and-deleting-branches-within-your-repository).
+A branch you create to build a feature is commonly called a feature branch or topic branch. See [Managing branches within your repository](/en/pull-requests/how-tos/commit-changes/managing-branches-within-your-repository).
 
 You can also use a branch to publish a GitHub Pages site. See [What is GitHub Pages?](/en/pages/getting-started-with-github-pages/what-is-github-pages).
 
@@ -37,7 +37,7 @@ By default, GitHub names the default branch `main` in any new repository.
 
 You can change the default branch for an existing repository. For more information, see [Changing the default branch](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/changing-the-default-branch).
 
-You can set the name of the default branch for new repositories. For more information, see [Managing the default branch name for your repositories](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-the-default-branch-name-for-your-repositories), [Managing the default branch name for repositories in your organization](/en/organizations/managing-organization-settings/managing-the-default-branch-name-for-repositories-in-your-organization), and [Enforcing repository management policies in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-on-the-default-branch-name).
+You can set the name of the default branch for new repositories. For more information, see [Managing the default branch name for your repositories](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-the-default-branch-name-for-your-repositories), [Managing the default branch name for repositories in your organization](/en/organizations/managing-organization-settings/managing-the-default-branch-name-for-repositories-in-your-organization), and [Enforcing repository management policies in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-for-the-default-branch-name).
 
 ## Working with protected branches
 

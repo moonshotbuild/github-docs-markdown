@@ -21,7 +21,7 @@ You can install GitHub Desktop on supported Windows or macOS operating systems.
 
 ## About GitHub Desktop installation
 
-You can install GitHub Desktop on supported operating systems, which currently include macOS 12.0 or later and Windows 10 64-bit or later. If you have a GitHub or GitHub Enterprise account, you can connect your account to GitHub Desktop. For more information about creating an account, see [Creating an account on GitHub](/en/get-started/start-your-journey/creating-an-account-on-github).
+You can install GitHub Desktop on supported operating systems, which currently include macOS 12.0 or later and Windows 10 64-bit or later. If you have a GitHub or GitHub Enterprise account, you can connect your account to GitHub Desktop. For more information about creating an account, see [Creating an account on GitHub](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github).
 
 <div class="ghd-tool windows">
 

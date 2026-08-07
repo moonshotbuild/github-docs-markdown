@@ -188,7 +188,3 @@ Organization owners can change several settings, including the names of reposito
 * [Managing custom properties for repositories in your organization](/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization)
 
   With custom properties, you can add metadata to repositories in your organization. You can use those properties to target repositories with rulesets.
-
-* [Managing or restricting GitHub Models in your organization](/en/organizations/managing-organization-settings/managing-or-restricting-github-models-for-your-organization)
-
-  You can enable, disable, and restrict the use of GitHub Models for an organization.

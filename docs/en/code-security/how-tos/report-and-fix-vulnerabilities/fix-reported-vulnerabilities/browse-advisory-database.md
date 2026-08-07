@@ -72,11 +72,11 @@ When you search for a date, you can use greater than, less than, and range quali
 | `created:YYYY-MM-DD`  | [`created:2021-01-13`](https://github.com/advisories?utf8=%E2%9C%93\&query=created%3A2021-01-13) will show only advisories created on this date. |
 | `updated:YYYY-MM-DD`  | [`updated:2021-01-13`](https://github.com/advisories?utf8=%E2%9C%93\&query=updated%3A2021-01-13) will show only advisories updated on this date. |
 
-A `GHSA-ID` qualifier is a unique ID that we at GitHub automatically assign to every advisory in the GitHub Advisory Database. For more information about these identifiers, see [About the GitHub Advisory Database](/en/code-security/concepts/vulnerability-reporting-and-management/github-advisory-database#about-ghsa-ids).
+A `GHSA-ID` qualifier is a unique ID that we at GitHub automatically assign to every advisory in the GitHub Advisory Database. For more information about these identifiers, see [About the GitHub Advisory Database](/en/code-security/concepts/vulnerability-reporting-and-management/github-advisory-database#ghsa-ids).
 
 ## Viewing your vulnerable repositories
 
-For any GitHub-reviewed advisory in the GitHub Advisory Database, you can see which of your repositories are affected by that security vulnerability or malware. To see a vulnerable repository, you must have access to Dependabot alerts for that repository. For more information, see [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts#access-to-dependabot-alerts).
+For any GitHub-reviewed advisory in the GitHub Advisory Database, you can see which of your repositories are affected by that security vulnerability or malware. To see a vulnerable repository, you must have access to Dependabot alerts for that repository. For more information, see [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts).
 
 1. Navigate to [https://github.com/advisories](https://github.com/advisories?ref_product=security-advisories\&ref_type=engagement\&ref_style=text).
 2. Click an advisory.

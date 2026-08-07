@@ -23,7 +23,7 @@ Learn how to create a continuous integration (CI) workflow to build and test you
 
 This guide shows you how to build, test, and publish a Python package.
 
-GitHub-hosted runners have a tools cache with pre-installed software, which includes Python and PyPy. You don't have to install anything! For a full list of up-to-date software and the pre-installed versions of Python and PyPy, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#supported-software).
+GitHub-hosted runners have a tools cache with pre-installed software, which includes Python and PyPy. You don't have to install anything! For a full list of up-to-date software and the pre-installed versions of Python and PyPy, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#preinstalled-software-for-github-owned-images).
 
 ## Prerequisites
 

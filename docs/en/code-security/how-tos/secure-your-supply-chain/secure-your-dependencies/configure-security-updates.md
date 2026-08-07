@@ -44,7 +44,7 @@ In order to use grouped security updates, you must first enable the following fe
 
 * **Dependency graph**. For more information, see [Enabling the dependency graph](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/enable-dependency-graph).
 * **Dependabot alerts**. For more information, see [Configuring Dependabot alerts](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-dependabot-alerts).
-* **Dependabot security updates**. For more information, see [Configuring Dependabot security updates](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-security-updates#managing-for-your-repositories).
+* **Dependabot security updates**. For more information, see [Configuring Dependabot security updates](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-security-updates#managing-dependabot-security-updates-for-your-repositories).
 
 > \[!NOTE]
 > When grouped security updates are first enabled, Dependabot will immediately try to create grouped pull requests. You may notice Dependabot closing old pull requests and opening new ones.

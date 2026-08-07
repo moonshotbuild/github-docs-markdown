@@ -35,7 +35,7 @@ Working directly on GitHub.com is often the quickest way to contribute to a repo
 * If you're already signed in to GitHub, you have access to any repository where you have the necessary permissions, so you don't need to set up any additional authentication on your computer.
 * You can commit changes in the user interface, so you don't need to use the command line or memorize any Git commands.
 
-For a tutorial to help you get started with making changes in the browser, see [Hello World](/en/get-started/start-your-journey/hello-world).
+For a tutorial to help you get started with making changes in the browser, see [Hello World](/en/get-started/using-github/hello-world).
 
 ## Making more complex changes in the browser
 
@@ -72,7 +72,7 @@ For more information about how to authenticate to GitHub with each of these tool
 
 | Tool                                | Use case                                                                                                                                                                                                                                                                                                                      | Browser or desktop |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| **On GitHub.com**                   | You want a visual interface and need to make quick, simple changes, typically involving a single commit. For an introduction, see [Hello World](/en/get-started/start-your-journey/hello-world).                                                                                                                              | Browser            |
+| **On GitHub.com**                   | You want a visual interface and need to make quick, simple changes, typically involving a single commit. For an introduction, see [Hello World](/en/get-started/using-github/hello-world).                                                                                                                                    | Browser            |
 |                                     |                                                                                                                                                                                                                                                                                                                               |                    |
 | **github.dev**                      | You want to make more complex changes to a repository than is possible on GitHub.com, but don't need to work with a terminal or tools you have installed on your computer. For more information, see [The github.dev web-based editor](/en/codespaces/the-githubdev-web-based-editor#opening-the-githubdev-editor).           | Browser            |
 | **GitHub Codespaces**               | You need the resources of a computer to do things like run scripts, create a test build of your project, or install dependencies, and you want to get started quickly by working in a cloud-based environment. For more information, see [Quickstart for GitHub Codespaces](/en/codespaces/quickstart).                       | Browser or desktop |

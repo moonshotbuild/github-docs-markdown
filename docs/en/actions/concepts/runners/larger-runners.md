@@ -21,7 +21,7 @@ Organize and govern your workflows with GitHub-hosted larger runners using runne
 
 ## About larger runners
 
-Larger runners are managed virtual machines with more resources than [standard GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#supported-runners-and-hardware-resources). They offer the following advanced features:
+Larger runners are managed virtual machines with more resources than [standard GitHub-hosted runners](/en/actions/reference/runners/github-hosted-runners#supported-runners-and-hardware-resources). They offer the following advanced features:
 
 * More RAM, CPU, and disk space
 * Static IP addresses

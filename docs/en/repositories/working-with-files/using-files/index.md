@@ -38,3 +38,7 @@ You can navigate and track changes in the code in your files.
 * [Working with non-code files](/en/repositories/working-with-files/using-files/working-with-non-code-files)
 
   GitHub supports rendering and diffing in a number of non-code file formats.
+
+* [Downloading files from GitHub](/en/repositories/working-with-files/using-files/downloading-files-from-github)
+
+  Learn how to download files from GitHub, and understand the difference between downloading, cloning, and forking.

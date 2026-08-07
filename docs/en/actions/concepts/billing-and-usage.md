@@ -29,7 +29,7 @@ GitHub Actions is available on all GitHub products, but GitHub Actions is not av
 
 There are several limits on GitHub Actions usage when using GitHub-hosted runners. See [Actions limits](/en/actions/reference/limits).
 
-In addition to the usage limits, you must ensure that you use GitHub Actions within the [GitHub Terms of Service](/en/site-policy/github-terms/github-terms-of-service). For more information on GitHub Actions-specific terms, see the [GitHub Additional Product Terms](/en/site-policy/github-terms/github-terms-for-additional-products-and-features#a-actions-usage).
+In addition to the usage limits, you must ensure that you use GitHub Actions within the [GitHub Terms of Service](/en/site-policy/github-terms/github-terms-of-service). For more information on GitHub Actions-specific terms, see the [GitHub Additional Product Terms](/en/site-policy/github-terms/github-terms-for-additional-products-and-features#actions).
 
 ## GitHub Actions usage metrics
 

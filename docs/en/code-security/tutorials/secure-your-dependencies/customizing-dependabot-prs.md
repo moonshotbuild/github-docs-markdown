@@ -108,7 +108,7 @@ To specify your preferences explicitly, use `commit-message` together with the f
   * Prefix is also added to the start of the pull request title.
 * `prefix-development`:
   * Specifies a separate prefix for all commit messages that update development dependencies, as defined by the package manager or ecosystem.
-  * Supported for `bundler`, `composer`, `mix`, `maven`, `npm`, and `pip`.
+  * Supported for `bundler`, `composer`, `mix`, `maven`, `npm`, `pip`, and `uv`.
 * `include: "scope"`:
   * Specifies that any prefix is followed by the dependency types (`deps` or `deps-dev`) updated in the commit.
 
@@ -183,23 +183,22 @@ Setting this option will also affect pull requests for security updates to the m
 
 See also [`milestone`](/en/code-security/reference/supply-chain-security/dependabot-options-reference#milestone--) and [About milestones](/en/issues/using-labels-and-milestones-to-track-work/about-milestones).
 
-## Changing the separator in the pull request branch name
+## Customizing pull request branch names
 
 Dependabot generates a branch for each pull request. Each branch name includes `dependabot`, as well as the name of the package manager and the dependency to be updated. By default, these parts of the branch name are separated by a `/` symbol, for example:
 
 * `dependabot/npm_and_yarn/next_js/acorn-6.4.1`
 
-To maintain supportability or consistency with your existing processes, you may need to ensure your branch names align with your team's existing conventions. In this case, you can use `pull-request-branch-name.separator` to specify a different separator, choosing either `_`, `/`, or `"-"`.
+You can customize branch names using the `pull-request-branch-name` option with the following parameters: `separator`, `prefix`, `max-length`, `word-separator`, `branch-name-case`, and `template`. All options are composable, and you can combine any of them. For the full reference of each parameter, see [`pull-request-branch-name`](/en/code-security/reference/supply-chain-security/dependabot-options-reference#pull-request-branch-name--).
 
-In the below example, the npm configuration changes the default separator from `/` to `"-"`, so that it would appear as such:
+### Combining formatting options
 
-* Default (`/`): `dependabot/npm_and_yarn/next_js/acorn-6.4.1`
-* Customized (`"-"`): `dependabot-npm_and_yarn-next_js-acorn-6.4.1`
+You can combine `separator`, `word-separator`, `branch-name-case`, `max-length`, and `template` to produce branch names that meet your system's requirements. For example, Docker tag compatibility, Azure Container Registry naming, or Kubernetes branch length limits.
 
-Note that the hyphen symbol (`"-"`) must be surrounded by quotation marks so that it's not interpreted as starting an empty YAML list.
+When `template` is set alongside other options, formatting is applied as post-processing after template rendering in this order: separator replacement, word-separator replacement, case transformation, then max-length truncation.
 
 ```yaml copy
-# Specify a different separator for branch names
+# Combine template with formatting options
 
 version: 2
 updates:
@@ -208,13 +207,106 @@ updates:
     schedule:
       interval: "weekly"
     pull-request-branch-name:
-      # Change the default separator (/) to a hyphen (-)
+      template: "{prefix}/{package_manager}/{dependency}-{version}"
       separator: "-"
+      word-separator: "-"
+      branch-name-case: "lowercase"
+      max-length: 80
 ```
 
-Setting this option will also affect pull requests for security updates to the manifest files of this package manager, unless you use `target-branch` to check for version updates on a non-default branch.
+* **Before** (default): `dependabot/npm_and_yarn/Lodash-4.17.21`
+* **After** (with above config): `dependabot-npm-and-yarn-lodash-4.17.21`
 
-See also [`pull-request-branch-name.separator`](/en/code-security/reference/supply-chain-security/dependabot-options-reference#pull-request-branch-nameseparator--).
+When a branch name exceeds `max-length`, it is truncated with a hash suffix to preserve uniqueness.
+
+### Full example with multi-ecosystem groups
+
+The following `dependabot.yml` demonstrates all available options across different ecosystems, including multi-ecosystem group configuration:
+
+```yaml copy
+# Full example demonstrating all branch name options
+
+version: 2
+
+multi-ecosystem-groups:
+  infrastructure:
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      template: "{prefix}/infra/{name}"
+      word-separator: "-"
+      branch-name-case: "lowercase"
+
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+      word-separator: "-"
+      branch-name-case: "lowercase"
+    groups:
+      frontend-deps:
+        patterns: ["react*", "next*"]
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    pull-request-branch-name:
+      template: "{prefix}/{package_manager}/{dependency}-{version}"
+      max-length: 60
+
+  - package-ecosystem: "pip"
+    directory: "/backend"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      prefix: "deps"
+      branch-name-case: "lowercase"
+    groups:
+      django-deps:
+        patterns: ["django*"]
+
+  # These entries participate in the "infrastructure" multi-ecosystem group
+  - package-ecosystem: "docker"
+    directory: "/infra"
+    patterns: ["nginx", "redis", "postgres"]
+    multi-ecosystem-group: "infrastructure"
+
+  - package-ecosystem: "terraform"
+    directory: "/infra"
+    patterns: ["hashicorp/*"]
+    multi-ecosystem-group: "infrastructure"
+```
+
+This configuration produces the following branch names:
+
+| Scenario                                                  | Strategy        | Branch name                                        |
+| --------------------------------------------------------- | --------------- | -------------------------------------------------- |
+| lodash npm update                                         | Solo            | `dependabot-npm-and-yarn-lodash-4.17.21`           |
+| npm frontend-deps group update                            | Grouped         | `dependabot-npm-and-yarn-frontend-deps-fc93691fd4` |
+| nginx solo Docker update                                  | Solo            | `dependabot/docker/nginx-1.25.0`                   |
+| pip Django update                                         | Solo            | `deps/pip/django-4.2.1`                            |
+| pip django-deps group update                              | Grouped         | `deps/pip/django-deps-a1b2c3d4e5`                  |
+| Cross-ecosystem infrastructure group (Docker + Terraform) | Multi-ecosystem | `dependabot/infra/infrastructure-fc93691fd4`       |
+
+> \[!NOTE]
+> For multi-ecosystem groups:
+>
+> * The `pull-request-branch-name` on the `multi-ecosystem-groups` entry controls the grouped cross-ecosystem PR branch name.
+> * Individual `updates` entries that specify `multi-ecosystem-group` **cannot** have their own `pull-request-branch-name`. The group-level configuration takes precedence and is the only one used for those entries.
+> * `{package_manager}` is not available in multi-ecosystem group templates because the group spans multiple ecosystems.
+> * A content digest is always auto-appended to multi-ecosystem group branches to guarantee uniqueness.
+
+### How branch name configuration applies
+
+* **Configuration is per-update entry**: Each standalone `package-ecosystem` entry can have its own branch name configuration. Entries assigned to a multi-ecosystem group use the group-level configuration instead.
+* **Existing PRs are not affected**: Changes only apply to newly created PRs.
+* **Default behavior is unchanged**: If you don't configure any options, branch names remain exactly as they are today.
+
+Setting this option will also affect pull requests for security updates to the manifest files of this package manager, unless you use `target-branch` to check for version updates on a non-default branch.
 
 ## Targeting pull requests against a non-default branch
 

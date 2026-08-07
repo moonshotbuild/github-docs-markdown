@@ -25,7 +25,7 @@ This guide shows you how to use PowerShell for CI. It describes how to use Peste
 
 GitHub-hosted runners have a tools cache with pre-installed software, which includes PowerShell and Pester.
 
-For a full list of up-to-date software and the pre-installed versions of PowerShell and Pester, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#supported-software).
+For a full list of up-to-date software and the pre-installed versions of PowerShell and Pester, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#preinstalled-software-for-github-owned-images).
 
 ## Prerequisites
 
@@ -208,7 +208,7 @@ jobs:
     if: ${{ always() }}
 ```
 
-The `always()` function configures the job to continue processing even if there are test failures. For more information, see [Contexts reference](/en/actions/reference/workflows-and-actions/contexts#always).
+The `always()` function configures the job to continue processing even if there are test failures. For more information, see [Evaluate expressions in workflows and actions](/en/actions/reference/workflows-and-actions/expressions#always).
 
 ## Publishing to PowerShell Gallery
 

@@ -387,7 +387,7 @@ In some situations, GitHub Actions applies limits that change how filtered workf
 
 If you observe these behaviors, you might need to make your filters more specific, or change how you work with pushes and pull requests to generate simpler diffs.
 
-For more information, see [Branches](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests).
+For more information, see [Branches](/en/pull-requests/reference/branches).
 
 ### Using filters to target specific branches for workflow run events
 

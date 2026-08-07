@@ -53,7 +53,7 @@ GitHub Actions automatically redacts the contents of all GitHub secrets that are
 
 GitHub Actions also redacts information that is recognized as sensitive, but is not stored as a secret. For a list of automatically redacted secrets, see [Secrets reference](/en/actions/reference/security/secrets#automatically-redacted-secrets).
 
-Because there are multiple ways a secret value can be transformed, this redaction is not guaranteed. Additionally, the runner can only redact secrets used within the current job. As a result, there are certain security proactive steps you should follow to help ensure secrets are redacted, and to limit other risks associated with secrets. For a reference list of security best practices with secrets, see [Secrets reference](/en/actions/reference/security/secrets#security-best-practices).
+Because there are multiple ways a secret value can be transformed, this redaction is not guaranteed. Additionally, the runner can only redact secrets used within the current job. As a result, there are certain security proactive steps you should follow to help ensure secrets are redacted, and to limit other risks associated with secrets. For a reference list of security best practices with secrets, see [Secure use reference](/en/actions/reference/security/secure-use#use-secrets-for-sensitive-information).
 
 ## Further reading
 

@@ -278,7 +278,23 @@ For more information, see [Using hooks with GitHub Copilot CLI](/en/copilot/how-
 
 Copilot CLI comes with the GitHub MCP server already configured. This MCP server allows you to interact with resources on GitHub.com—for example, allowing you to merge pull requests from the CLI.
 
-To extend the functionality available to you in Copilot CLI, you can add more MCP servers:
+To extend the functionality available to you in Copilot CLI, you can add more MCP servers.
+
+To add a remote HTTP server directly from your terminal without starting an interactive session, use:
+
+```shell copy
+copilot mcp add --transport http SERVER-NAME URL
+```
+
+For example:
+
+```shell copy
+copilot mcp add --transport http sentry https://mcp.sentry.dev/mcp
+```
+
+For local servers and additional options, see [Adding MCP servers for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/add-mcp-servers#using-the-copilot-mcp-add-subcommand).
+
+Alternatively, add a server from an interactive session:
 
 1. Use the following slash command:
 
@@ -312,9 +328,11 @@ GitHub Copilot CLI automatically compresses your history in the background when 
 
 For situations where you trust Copilot to run freely, you can use the `--allow-all` or `--yolo` flags to enable all permissions at once.
 
-### Run in a sandbox
+### Use sandboxing
 
-You can run Copilot CLI sessions inside a sandbox to restrict access to your filesystem, network, and system capabilities. To enable local sandboxing, enter `/sandbox enable` inside a session. To start a cloud-backed session instead, run `copilot --cloud`. For more information, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
+You can use sandboxing to restrict what Copilot can access. Local sandboxing does not run the CLI itself in a sandbox; instead, the commands and tools that Copilot CLI runs on your behalf are restricted, limiting their access to your filesystem, network, and system capabilities. To enable local sandboxing, enter `/sandbox enable` inside a session.
+
+Alternatively, with cloud sandboxing, the entire Copilot CLI session runs remotely in an isolated environment. To start a Copilot CLI session in the cloud, run `copilot ‑‑cloud`. For more information, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
 
 ### Toggle reasoning visibility
 

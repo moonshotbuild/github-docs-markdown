@@ -79,7 +79,7 @@ jobs:
       matrix:
         version: ${{ github.event.client_payload.versions }}
     steps:
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.version }}
 ```

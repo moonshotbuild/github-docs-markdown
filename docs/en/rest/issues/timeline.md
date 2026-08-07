@@ -62,6 +62,9 @@ List all timeline events for an issue.
   The page number of the results to fetch. For more information, see "Using pagination in the REST API."
   Default: `1`
 
+* **`exclude`** (string)
+  A comma-separated list of timeline event names to exclude from the response.
+
 ### HTTP response status codes
 
 * **200** - OK
@@ -156,6 +159,11 @@ Array of `Timeline Event` objects: any of:
   * `label`: required, object:
     * `name`: required, string
     * `color`: required, string
+  * `intent`: any of:
+    * **null**
+    * **Issue Event Intent**
+      * `rationale`: string or null
+      * `confidence`: string or null, enum: `LOW`, `MEDIUM`, `HIGH`, `null`
 * **Unlabeled Issue Event**
   * `id`: required, integer
   * `node_id`: required, string
@@ -171,6 +179,9 @@ Array of `Timeline Event` objects: any of:
   * `label`: required, object:
     * `name`: required, string
     * `color`: required, string
+  * `intent`: any of:
+    * **null**
+    * **Issue Event Intent** (see above)
 * **Milestoned Issue Event**
   * `id`: required, integer
   * `node_id`: required, string
@@ -778,6 +789,9 @@ Array of `Timeline Event` objects: any of:
     * **null**
     * **GitHub app** (see above)
   * `assignee`: required, `Simple User` (see above)
+  * `intent`: any of:
+    * **null**
+    * **Issue Event Intent** (see above)
 * **Timeline Unassigned Issue Event**
   * `id`: required, integer
   * `node_id`: required, string
@@ -804,6 +818,9 @@ Array of `Timeline Event` objects: any of:
     * **null**
     * **GitHub app** (see above)
   * `state_reason`: string or null
+  * `intent`: any of:
+    * **null**
+    * **Issue Event Intent** (see above)
 * **Issue Type Added Issue Event**
   * `id`: required, integer
   * `node_id`: required, string
@@ -817,6 +834,9 @@ Array of `Timeline Event` objects: any of:
     * **null**
     * **GitHub app** (see above)
   * `issue_type`: required, `Issue Type` (see above)
+  * `intent`: any of:
+    * **null**
+    * **Issue Event Intent** (see above)
 * **Issue Type Removed Issue Event**
   * `id`: required, integer
   * `node_id`: required, string
@@ -830,6 +850,9 @@ Array of `Timeline Event` objects: any of:
     * **null**
     * **GitHub app** (see above)
   * `prev_issue_type`: required, `Issue Type` (see above)
+  * `intent`: any of:
+    * **null**
+    * **Issue Event Intent** (see above)
 * **Issue Type Changed Issue Event**
   * `id`: required, integer
   * `node_id`: required, string
@@ -844,6 +867,9 @@ Array of `Timeline Event` objects: any of:
     * **GitHub app** (see above)
   * `issue_type`: required, `Issue Type` (see above)
   * `prev_issue_type`: required, `Issue Type` (see above)
+  * `intent`: any of:
+    * **null**
+    * **Issue Event Intent** (see above)
 * **Sub-issue Added Issue Event**
   * `id`: required, integer
   * `node_id`: required, string

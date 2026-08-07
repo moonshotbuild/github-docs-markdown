@@ -64,7 +64,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
 
       - name: Install Copilot CLI
         run: npm install -g @github/copilot
@@ -123,7 +123,7 @@ In this example, the workflow installs GitHub Copilot CLI globally with npm.
 
 ```yaml copy
 - name: Set up Node.js environment
-  uses: actions/setup-node@v4
+  uses: actions/setup-node@v7
 
 - name: Install Copilot CLI
   run: npm install -g @github/copilot

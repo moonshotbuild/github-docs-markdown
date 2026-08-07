@@ -91,7 +91,7 @@ jobs:
       group: build-runners
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '14'
       - run: npm install -g bats
@@ -114,7 +114,7 @@ jobs:
       labels: ubuntu-24.04-16core
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '14'
       - run: npm install -g bats

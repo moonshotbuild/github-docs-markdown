@@ -272,6 +272,7 @@ Represents the different GitHub Enterprise Importer (GEI) migration sources.
 * `AZURE_DEVOPS`: An Azure DevOps migration source.
 * `BITBUCKET_SERVER`: A Bitbucket Server migration source.
 * `GITHUB_ARCHIVE`: A GitHub Migration API source.
+* `GITLAB`: A GitLab migration source.
 
 ## MigrationState - enum
 

@@ -19,6 +19,9 @@ breadcrumbs:
 
 Learn how to get the best results when you are describing your app idea to Spark.
 
+> [!NOTE]
+> Beginning August 4, 2026, GitHub Spark will no longer accept new users or allow the creation of new apps. Existing users can continue to access and use apps they have already created. Open Spark workbench for your app, select "..." and "Create repository" to save your app code before August 31, 2026.
+
 ## Introduction
 
 Spark can build a publishable web app from a single natural language prompt.

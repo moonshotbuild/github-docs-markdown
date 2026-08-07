@@ -51,7 +51,7 @@ In order to use ARC, ensure you have the following.
 
    For additional Helm configuration options, see [`values.yaml`](https://github.com/actions/actions-runner-controller/blob/master/charts/gha-runner-scale-set-controller/values.yaml) in the ARC documentation.
 
-2. To enable ARC to authenticate to GitHub, generate a personal access token (classic). For more information, see [Authenticating ARC to the GitHub API](/en/actions/how-tos/manage-runners/use-actions-runner-controller/authenticate-to-the-api#deploying-using-personal-access-token-classic-authentication).
+2. To enable ARC to authenticate to GitHub, generate a personal access token (classic). For more information, see [Authenticating ARC to the GitHub API](/en/actions/how-tos/manage-runners/use-actions-runner-controller/authenticate-to-the-api#authenticating-arc-with-a-personal-access-token-classic).
 
 ## Configuring a runner scale set
 

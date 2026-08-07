@@ -29,6 +29,10 @@ You can migrate your enterprise to GitHub Enterprise Cloud with GitHub Enterpris
 
   With GitHub Enterprise Importer, you can migrate from GitHub Enterprise Server to GitHub Enterprise Cloud, or migrate between accounts on GitHub Enterprise Cloud.
 
+* [Migrating from GitLab to GitHub](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab)
+
+  Plan and execute a migration from GitLab to GitHub Enterprise Cloud. This guide explains how to configure access, migrate, and the follow-up tasks needed to get your repositories ready for work.
+
 * [Completing your migration with GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/completing-your-migration-with-github-enterprise-importer)
 
   After you migrate repositories to GitHub, you can access migration logs and reclaim mannequins.

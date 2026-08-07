@@ -17,6 +17,8 @@ breadcrumbs:
 
 Learn about building and deploying intelligent apps with natural language using GitHub Spark.
 
+Beginning August 4, 2026, GitHub Spark will no longer accept new users or allow the creation of new apps. Existing users can continue to access and use apps they have already created. Open Spark workbench for your app, select "..." and "Create repository" to save your app code before August 31, 2026.
+
 ## Overview
 
 With GitHub Spark, you can describe what you want in natural language and get a fullstack web app with data storage, AI features, and GitHub authentication built in. You can iterate using prompts, visual tools, or code, and then deploy with a click to a fully managed runtime.

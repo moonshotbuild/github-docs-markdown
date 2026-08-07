@@ -23,7 +23,7 @@ When you perform an action related to GitHub Codespaces in repositories owned by
 
 ![Screenshot of the "Security log" page for the "Octo Mona" user, showing the "Recent events" list.](/assets/images/help/codespaces/codespaces-audit-log.png)
 
-The security log includes details on what action occurred and when you performed it. For information about GitHub Codespaces actions, see [Reviewing your security log](/en/authentication/keeping-your-account-and-data-secure/reviewing-your-security-log#codespaces).
+The security log includes details on what action occurred and when you performed it. For information about GitHub Codespaces actions, see [Reviewing your security log](/en/authentication/keeping-your-account-and-data-secure/reviewing-your-security-log).
 
 ## Further reading
 

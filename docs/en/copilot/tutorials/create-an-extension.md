@@ -35,7 +35,7 @@ Both examples rely only on the SDK that's bundled with the Copilot CLI, so there
 ## Prerequisites
 
 * **GitHub Copilot CLI**: You need Copilot CLI installed and set up. See [Getting started with GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/cli-getting-started).
-* **Experimental features enabled**: Extensions are currently an experimental feature. The steps in this tutorial turn on experimental features each time you start the CLI, using the `--experimental` command line option.
+* **Experimental features enabled**: Extensions are currently an experimental feature. The steps in this tutorial turn on experimental features each time you start the CLI, using the `‑‑experimental` command line option.
 * **JavaScript**: Extensions are written in JavaScript, so you'll need to be familiar with this language to create your own extensions.
 * **A repository**: The second example adds a project-level extension, so you'll need a local copy of a Git repository in which to add the extension.
 
@@ -132,7 +132,7 @@ To ensure a tool is used by the CLI, the tool must do something the CLI can't do
 1. Start an interactive session with experimental features enabled:
 
    ```shell copy
-   copilot --experimental
+   copilot ‑‑experimental
    ```
 
    Because the extension lives under `~/.copilot/extensions/`, you can start the CLI from any directory and the extension will be available.
@@ -292,7 +292,7 @@ The extension keeps a running total of tokens used in the session by subscribing
 Start an interactive session from the same repository, with experimental features enabled:
 
 ```shell copy
-copilot --experimental
+copilot ‑‑experimental
 ```
 
 If you already had a session open, you can run `/clear` to start a fresh session, which reloads extensions from disk.

@@ -74,7 +74,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '20.x'
           registry-url: 'https://registry.npmjs.org'
@@ -138,7 +138,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       # Setup .npmrc file to publish to GitHub Packages
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '20.x'
           registry-url: 'https://npm.pkg.github.com'
@@ -173,7 +173,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '20.x'
           registry-url: 'https://registry.npmjs.org'

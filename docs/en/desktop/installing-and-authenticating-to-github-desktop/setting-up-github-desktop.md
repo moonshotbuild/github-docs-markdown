@@ -29,7 +29,7 @@ If you have an account on GitHub or GitHub Enterprise, you can use GitHub Deskto
 
 ### Creating an account
 
-If you do not already have an account on GitHub, create one now. For more information, see [Creating an account on GitHub](/en/get-started/start-your-journey/creating-an-account-on-github).
+If you do not already have an account on GitHub, create one now. For more information, see [Creating an account on GitHub](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github).
 
 ### Authenticating to GitHub
 

@@ -37,7 +37,7 @@ Control which Copilot features are available in your organization. See [Managing
 
 If your organization members connect through an HTTP proxy server or firewall, add the required URLs to the allowlist. See [Copilot allowlist reference](/en/copilot/reference/copilot-allowlist-reference).
 
-If your environment uses custom SSL certificates, install them on your members' machines. See [Configuring network settings for GitHub Copilot](/en/copilot/how-tos/configure-personal-settings/configure-network-settings#-installing-custom-certificates).
+If your environment uses custom SSL certificates, install them on your members' machines. See [Configuring network settings for GitHub Copilot](/en/copilot/how-tos/configure-personal-settings/configure-network-settings#installing-custom-certificates).
 
 ## Grant access to members
 
@@ -50,5 +50,5 @@ Enable Copilot for some or all members of your organization. Consider starting w
 * **Set a governance posture that supports adoption**. Avoid over-restricting Copilot by delegating administration, enabling vetted features promptly, and aligning spend controls with your goals. See [Governing Copilot to support developer productivity](/en/copilot/tutorials/roll-out-at-scale/govern-at-scale/govern-for-adoption).
 * **Explore self-service license management options**. Many successful rollouts use a self-service model where developers can claim a license without approval. See [Setting up a self-serve process for GitHub Copilot licenses](/en/copilot/tutorials/roll-out-at-scale/assign-licenses/set-up-self-serve-licenses).
 * **Learn how to plan and implement an effective enablement process to drive Copilot adoption**. See [Driving GitHub Copilot adoption in your company](/en/copilot/tutorials/roll-out-at-scale/enable-developers/drive-adoption).
-* **Enhance the development experience by enabling and training developers on the latest features**. For example, share context with Copilot Spaces, enable Copilot code review on pull requests, and allow developers to experiment with prompts using GitHub Models. For an example showing how these features fit together, see [Integrating agentic AI into your enterprise's software development lifecycle](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents).
+* **Enhance the development experience by enabling and training developers on the latest features**. For example, share context with Copilot Spaces and enable Copilot code review on pull requests. For an example showing how these features fit together, see [Integrating agentic AI into your enterprise's software development lifecycle](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents).
 * **Add Copilot cloud agent as a team member for asynchronous issue work**. See [Piloting GitHub Copilot cloud agent in your organization](/en/copilot/tutorials/cloud-agent/pilot-cloud-agent).

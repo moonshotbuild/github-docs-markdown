@@ -109,6 +109,10 @@ Make GitHub work best for you by customizing your personal account settings and 
 
   If you use one workstation to contribute to projects for more than one account, you can modify your Git configuration to simplify the contribution process.
 
+* [Creating an account on GitHub](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github)
+
+  Create a personal account to get started with GitHub.
+
 * [Merging multiple personal accounts](/en/account-and-profile/how-tos/account-management/merging-multiple-personal-accounts)
 
   If you have separate accounts for work and personal use, you can merge the accounts.

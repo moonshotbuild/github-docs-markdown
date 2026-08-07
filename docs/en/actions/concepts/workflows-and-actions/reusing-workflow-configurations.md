@@ -23,6 +23,8 @@ Learn how to avoid duplication when creating a workflow.
 
 Rather than copying and pasting from one workflow to another, you can make workflows reusable. You and anyone with access to the reusable workflow can then call the reusable workflow from another workflow.
 
+Reusable workflows also complement agentic workflows: an agentic workflow can call approved, deterministic reusable workflows rather than duplicating logic. For more information, see [Creating GitHub Agentic Workflows](/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows).
+
 Reusing workflows avoids duplication. This makes workflows easier to maintain and allows you to create new workflows more quickly by building on the work of others, just as you do with actions. Workflow reuse also promotes best practice by helping you to use workflows that are well designed, have already been tested, and have been proven to be effective. Your organization can build up a library of reusable workflows that can be centrally maintained.
 
 The diagram below shows an in-progress workflow run that uses a reusable workflow.
@@ -84,6 +86,8 @@ GitHub provides ready-to-use workflow templates for the following high level cat
 Use these workflows as a starting place to build your custom workflow or use them as-is. You can browse the full list of workflow templates in the [actions/starter-workflows](https://github.com/actions/starter-workflows) repository.
 
 For more information, see [Creating workflow templates for your organization](/en/actions/how-tos/reuse-automations/create-workflow-templates).
+
+Organizations can also share and govern approved agentic workflows templates alongside shared actions and reusable workflows. To create templates with GitHub Agentic Workflows, see [Creating GitHub Agentic Workflows](/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows).
 
 ## YAML anchors and aliases
 

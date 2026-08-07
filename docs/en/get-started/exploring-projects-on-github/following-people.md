@@ -19,7 +19,7 @@ You can follow people on GitHub to receive notifications about their activity.
 
 ## About followers
 
-When you follow people, you'll see their public activity on your personal dashboard. If someone you follow stars a public repository, GitHub may recommend the repository to you. For more information, see [Quickstart for your personal dashboard](/en/account-and-profile/get-started/personal-dashboard-quickstart#staying-updated-with-activity-from-the-community).
+When you follow people, you'll see their public activity on your personal dashboard. If someone you follow stars a public repository, GitHub may recommend the repository to you. For more information, see [Quickstart for your personal dashboard](/en/account-and-profile/get-started/personal-dashboard-quickstart#staying-up-to-date-with-activity-from-the-community).
 
 You can unfollow someone if you do not wish to see their public activity on GitHub.
 

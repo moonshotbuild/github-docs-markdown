@@ -36,7 +36,7 @@ Sometimes you might just want to update the version of one dependency in a manif
 
 By checking the dependency reviews in a pull request, and changing any dependencies that are flagged as vulnerable, you can avoid vulnerabilities being added to your project. For more information about how dependency review works, see [Reviewing dependency changes in a pull request](/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-dependency-changes-in-a-pull-request).
 
-Dependabot alerts will find vulnerabilities that are already in your dependencies, but it's much better to avoid introducing potential problems than to fix problems at a later date. For more information about Dependabot alerts, see [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts#dependabot-alerts-for-vulnerable-dependencies).
+Dependabot alerts will find vulnerabilities that are already in your dependencies, but it's much better to avoid introducing potential problems than to fix problems at a later date. For more information about Dependabot alerts, see [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts).
 
 Dependency review supports the same languages and package management ecosystems as the dependency graph. For more information, see [Dependency graph supported package ecosystems](/en/code-security/reference/supply-chain-security/dependency-graph-supported-package-ecosystems#supported-package-ecosystems).
 

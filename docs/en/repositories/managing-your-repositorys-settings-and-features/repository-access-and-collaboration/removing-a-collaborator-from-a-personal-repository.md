@@ -30,4 +30,4 @@ You can remove a collaborator from your personal repository at any time.
 
 ## Next steps
 
-* For reference information, see [Permission levels for a personal account repository](/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/permission-levels-for-a-personal-account-repository#removing-a-collaborator).
+* For reference information, see [Permission levels for a personal account repository](/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/permission-levels-for-a-personal-account-repository#access-after-removing-a-collaborator).

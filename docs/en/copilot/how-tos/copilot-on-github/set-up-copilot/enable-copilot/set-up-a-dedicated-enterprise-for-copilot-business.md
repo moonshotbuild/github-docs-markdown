@@ -38,7 +38,7 @@ Do not create any organizations during setup. Adding users to organizations assi
 
 ### Enterprise with personal accounts
 
-Invite users directly to your enterprise. For detailed steps, see [Inviting users to your enterprise directly](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/invite-users-directly).
+Invite users directly to your enterprise. For detailed steps, see [Adding users to your enterprise](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/invite-users-directly).
 
 ### Enterprise with managed users
 
@@ -65,6 +65,15 @@ To begin using Copilot Business after your trial, convert to a paid enterprise a
 Give people access to Copilot by assigning Copilot Business licenses to users or enterprise teams.
 
 For detailed steps, see [Granting users access to GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access#assigning-licenses-to-users-or-teams).
+
+## Govern the use of Copilot in your enterprise
+
+After you assign licenses, you can centrally govern how members use Copilot:
+
+* **Policies**. Control feature availability with policies in AI Controls.
+* **Enterprise managed settings**. Distribute client governance and extensibility configuration from a centrally defined source. You can apply permission seetings like disabling bypass mode, restrict plugins, and set the default model for new conversations to Copilot CLI and VS Code. See [Configuring enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-managed-settings).
+
+To use server-managed settings, you need an organization and a `.github-private` repository, which requires a GitHub Enterprise license for the user who creates them. Alternatively, you can deploy managed settings through MDM or a file-based deployment without creating an organization.
 
 ## Next steps
 

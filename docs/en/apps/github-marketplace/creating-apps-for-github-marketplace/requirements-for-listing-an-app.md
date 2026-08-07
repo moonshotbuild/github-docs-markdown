@@ -77,7 +77,7 @@ To publish a paid app (or an app that offers a paid plan), you must also meet th
 When you are ready to publish the app on GitHub Marketplace you must request verification for the app listing.
 
 > \[!NOTE]
-> If you want to sell an app that's owned by your personal account, first you'll need to transfer the app to an organization, and then request verification for a listing created by the organization. For information on how to transfer an app to an organization, see: [Submitting your listing for publication](/en/apps/github-marketplace/listing-an-app-on-github-marketplace/submitting-your-listing-for-publication#transferring-an-app-to-an-organization-before-you-submit).
+> If you want to sell an app that's owned by your personal account, first you'll need to transfer the app to an organization, and then request verification for a listing created by the organization. For information on how to transfer an app to an organization, see: [Applying for publisher verification for your organization](/en/apps/github-marketplace/github-marketplace-overview/applying-for-publisher-verification-for-your-organization).
 
 ## Billing requirements for paid apps
 

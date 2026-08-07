@@ -51,7 +51,7 @@ The workspace dependency model affects how packs are installed and published.
 * During installation, dependencies found in the workspace are not downloaded into the package cache and are not written to the `codeql-pack.lock.yml` file.
 * During publishing, dependencies provided by the workspace are bundled using their local source content rather than versions from the package cache.
 
-For example, running `codeql pack install` in a pack directory within a workspace uses any dependencies found in the workspace instead of downloading them into the package cache or recording them in the `codeql-pack.lock.yml` file. See [Creating and working with CodeQL packs](/en/code-security/tutorials/customize-code-scanning/create-and-work-with-codeql-packs#adding-and-installing-dependencies).
+For example, running `codeql pack install` in a pack directory within a workspace uses any dependencies found in the workspace instead of downloading them into the package cache or recording them in the `codeql-pack.lock.yml` file. See [Creating and working with CodeQL packs](/en/code-security/tutorials/customize-code-scanning/create-and-work-with-codeql-packs#adding-and-installing-dependencies-on-a-codeql-pack).
 
 ### Example
 
@@ -100,7 +100,7 @@ A CodeQL workspace is defined by a YAML file named `codeql-workspace.yml`. This 
 
 * The `ignore` block contains a list of glob patterns that define CodeQL packs that are not available in the workspace.
 
-* The `registries` block contains a list of GHES URLs and package patterns that control which container registry is used for publishing CodeQL packs. See [Publishing and using CodeQL packs](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/scan-from-the-command-line/publish-and-use-packs#working-with-codeql-packs-on-ghes).
+* The `registries` block contains a list of GHES URLs and package patterns that control which container registry is used for publishing CodeQL packs. See [Publishing and using CodeQL packs](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/scan-from-the-command-line/publish-and-use-packs).
 
 Each entry in the `provide` or `ignore` section must map to the location of a `qlpack.yml` file. All glob patterns are defined relative to the directory that contains the workspace file. For a list of patterns accepted in this file, see [@actions/glob](https://github.com/actions/toolkit/tree/main/packages/glob#patterns).
 

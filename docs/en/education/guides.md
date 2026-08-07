@@ -19,7 +19,7 @@ These guides for GitHub Education help you teach and learn both GitHub and softw
 
 Teachers, students, and researchers can use tools from GitHub to enrich a software development curriculum and develop real-world collaboration skills.
 
-* [Creating an account on GitHub](/en/get-started/start-your-journey/creating-an-account-on-github)
+* [Creating an account on GitHub](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github)
 * [Git and GitHub quickstart](/en/get-started/start-your-journey)
 
 ## Applying for GitHub Education

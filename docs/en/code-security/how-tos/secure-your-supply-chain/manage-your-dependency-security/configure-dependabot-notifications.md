@@ -21,7 +21,7 @@ breadcrumbs:
 
 Optimize how you receive notifications about Dependabot alerts.
 
-By default, GitHub sends notifications about new alerts by email to people with write, maintain, or admin permissions to a repository. See [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts#notifications-for-alerts).
+By default, GitHub sends notifications about new alerts by email to people with write, maintain, or admin permissions to a repository. See [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts#how-alert-notifications-work).
 
 ## Configuring notifications for Dependabot alerts
 
@@ -32,7 +32,7 @@ You can choose to receive notifications:
 * In your inbox, as web notifications. A web notification is sent when Dependabot is enabled for a repository, when a new manifest file is committed to the repository, and when a new vulnerability with a critical or high severity is found (**On GitHub** option).
 * By email. An email is sent when Dependabot is enabled for a repository, when a new manifest file is committed to the repository, and when a new vulnerability with a critical or high severity is found (**Email** option).
 * On the command line. Warnings are displayed as callbacks when you push to repositories with any insecure dependencies (**CLI** option).
-* On GitHub Mobile, as web notifications. For more information, see [Configuring notifications](/en/subscriptions-and-notifications/get-started/configuring-notifications#enabling-push-notifications-with-github-mobile).
+* On GitHub Mobile, as web notifications. For more information, see [Configuring notifications](/en/subscriptions-and-notifications/get-started/configuring-notifications#managing-your-notification-settings-with-github-mobile).
 
 > \[!NOTE]
 > The email and web/GitHub Mobile notifications are:
@@ -46,11 +46,11 @@ You can customize the way you are notified about Dependabot alerts. For example,
 ![Screenshot of the notification options for Dependabot alerts. A dropdown menu with frequency options is outlined in orange.](/assets/images/help/dependabot/dependabot-notification-frequency.png)
 
 > \[!NOTE]
-> You can filter your notifications on GitHub to show Dependabot alerts. For more information, see [Managing notifications from your inbox](/en/subscriptions-and-notifications/how-tos/viewing-and-triaging-notifications/managing-notifications-from-your-inbox#dependabot-custom-filters).
+> You can filter your notifications on GitHub to show Dependabot alerts. For more information, see [Inbox filters](/en/subscriptions-and-notifications/reference/inbox-filters#dependabot-custom-filters).
 
-Email notifications for Dependabot alerts that affect one or more repositories include the `X-GitHub-Severity` header field. You can use the value of the `X-GitHub-Severity` header field to filter email notifications for Dependabot alerts. For more information, see [Configuring notifications](/en/subscriptions-and-notifications/get-started/configuring-notifications#filtering-email-notifications).
+Email notifications for Dependabot alerts that affect one or more repositories include the `X-GitHub-Severity` header field. You can use the value of the `X-GitHub-Severity` header field to filter email notifications for Dependabot alerts. For more information, see [Email notification headers](/en/subscriptions-and-notifications/reference/email-notification-headers).
 
 ## Further reading
 
 * [Configuring notifications](/en/subscriptions-and-notifications/get-started/configuring-notifications)
-* [Managing notifications from your inbox](/en/subscriptions-and-notifications/how-tos/viewing-and-triaging-notifications/managing-notifications-from-your-inbox#supported-is-queries)
+* [Inbox filters](/en/subscriptions-and-notifications/reference/inbox-filters#supported-is-queries)

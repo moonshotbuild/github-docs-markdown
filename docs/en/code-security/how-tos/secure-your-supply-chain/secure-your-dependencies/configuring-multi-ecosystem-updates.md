@@ -99,7 +99,7 @@ updates:
     multi-ecosystem-group: "infrastructure"
 ```
 
-For a complete list of available options, see [Dependabot options reference](/en/code-security/reference/supply-chain-security/dependabot-options-reference#multi-ecosystem-groups).
+For a complete list of available options, see [Dependabot options reference](/en/code-security/reference/supply-chain-security/dependabot-options-reference#multi-ecosystem-groups-).
 
 ## 5. Verify your configuration
 

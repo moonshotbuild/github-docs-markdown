@@ -66,7 +66,3 @@ You can choose the way your repository functions by managing repository settings
 * [Managing the automatic closing of issues in your repository](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-auto-closing-issues)
 
   You can select whether merged linked pull requests will auto-close your issues.
-
-* [Managing GitHub Models in your repository](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-github-models-in-your-repository)
-
-  You can enable or disable GitHub Models in your repository.

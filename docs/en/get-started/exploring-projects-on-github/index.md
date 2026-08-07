@@ -17,6 +17,14 @@ Discover interesting projects on GitHub and contribute to open source by collabo
 
 ## Links
 
+* [Discovering projects on GitHub](/en/get-started/exploring-projects-on-github/discovering-projects-on-github)
+
+  You can discover repositories, topics, and communities on GitHub to support your learning and inspire your own projects.
+
+* [Contributing to a project](/en/get-started/exploring-projects-on-github/contributing-to-a-project)
+
+  Learn how to contribute to a project through forking.
+
 * [Finding ways to contribute to open source on GitHub](/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github)
 
   You can find ways to contribute to open source projects on GitHub that are relevant to you.
@@ -28,10 +36,6 @@ Discover interesting projects on GitHub and contribute to open source by collabo
 * [Using GitHub Copilot to explore projects](/en/get-started/exploring-projects-on-github/using-github-copilot-to-explore-projects)
 
   This guide will help you use Copilot to explore projects on GitHub.
-
-* [Contributing to a project](/en/get-started/exploring-projects-on-github/contributing-to-a-project)
-
-  Learn how to contribute to a project through forking.
 
 * [Saving repositories with stars](/en/get-started/exploring-projects-on-github/saving-repositories-with-stars)
 

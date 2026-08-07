@@ -97,7 +97,7 @@ If the blame view for a file shows **Ignoring revisions in .git-blame-ignore-rev
 
 ## Understanding files with Copilot
 
-> \[!NOTE] You'll need access to GitHub Copilot. For more information, see [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#getting-access-to-copilot).
+> \[!NOTE] You'll need access to GitHub Copilot. For more information, see [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#get-access).
 
 You can also use Copilot to ask about specific lines of code in a file, helping you understand how the code works and reducing the risk of introducing new problems.
 

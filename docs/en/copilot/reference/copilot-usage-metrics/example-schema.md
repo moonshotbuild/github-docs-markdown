@@ -26,14 +26,14 @@ The following are example schemas for the user-level, enterprise-level, and repo
 ```json copy
 [{
   "ai_credits_used": 12.5,
-  "code_acceptance_activity_count": 1,
-  "code_generation_activity_count": 1,
+  "code_acceptance_activity_count": 3,
+  "code_generation_activity_count": 3,
   "day": "2025-10-01",
   "enterprise_id": "1",
-  "loc_added_sum": 8,
-  "loc_deleted_sum": 0,
-  "loc_suggested_to_add_sum": 10,
-  "loc_suggested_to_delete_sum": 0,
+  "loc_added_sum": 32,
+  "loc_deleted_sum": 6,
+  "loc_suggested_to_add_sum": 34,
+  "loc_suggested_to_delete_sum": 6,
   "totals_by_cli": {
     "last_known_cli_version": {
       "cli_version": "1.0.8",
@@ -48,6 +48,16 @@ The following are example schemas for the user-level, enterprise-level, and repo
       "prompt_tokens_sum": 3800
     }
   },
+  "totals_by_copilot_app": {
+    "prompt_count": 1,
+    "request_count": 3,
+    "session_count": 1,
+    "token_usage": {
+      "avg_tokens_per_request": 3200.0,
+      "output_tokens_sum": 4200,
+      "prompt_tokens_sum": 5400
+    }
+  },
   "totals_by_feature": [{
     "code_acceptance_activity_count": 1,
     "code_generation_activity_count": 1,
@@ -57,6 +67,15 @@ The following are example schemas for the user-level, enterprise-level, and repo
     "loc_suggested_to_add_sum": 10,
     "loc_suggested_to_delete_sum": 0,
     "user_initiated_interaction_count": 0
+  }, {
+    "code_acceptance_activity_count": 2,
+    "code_generation_activity_count": 2,
+    "feature": "copilot_app",
+    "loc_added_sum": 24,
+    "loc_deleted_sum": 6,
+    "loc_suggested_to_add_sum": 24,
+    "loc_suggested_to_delete_sum": 6,
+    "user_initiated_interaction_count": 1
   }],
   "totals_by_ide": [{
     "code_acceptance_activity_count": 1,
@@ -86,15 +105,25 @@ The following are example schemas for the user-level, enterprise-level, and repo
     "loc_deleted_sum": 0,
     "loc_suggested_to_add_sum": 10,
     "loc_suggested_to_delete_sum": 0
+  }, {
+    "code_acceptance_activity_count": 2,
+    "code_generation_activity_count": 2,
+    "feature": "copilot_app",
+    "language": "markdown",
+    "loc_added_sum": 24,
+    "loc_deleted_sum": 6,
+    "loc_suggested_to_add_sum": 24,
+    "loc_suggested_to_delete_sum": 6
   }],
   "totals_by_language_model": [],
   "totals_by_model_feature": [],
   "used_agent": false,
   "used_chat": false,
   "used_cli": true,
+  "used_copilot_app": true,
   "user_id": 1,
   "user_login": "login1",
-  "user_initiated_interaction_count": 0,
+  "user_initiated_interaction_count": 1,
   "etl_id": "green",
   "day_partition": "2025-10-01",
   "entity_id_partition": 1
@@ -106,16 +135,17 @@ The following are example schemas for the user-level, enterprise-level, and repo
 ```json copy
 [ {
   "day_totals" : [ {
-    "code_acceptance_activity_count" : 2,
-    "code_generation_activity_count" : 2,
+    "code_acceptance_activity_count" : 4,
+    "code_generation_activity_count" : 4,
     "daily_active_cli_users" : 2,
+    "daily_active_copilot_app_users" : 1,
     "daily_active_users" : 2,
     "day" : "2025-10-01",
     "enterprise_id" : "1",
-    "loc_added_sum" : 30,
-    "loc_deleted_sum" : 0,
-    "loc_suggested_to_add_sum" : 35,
-    "loc_suggested_to_delete_sum" : 0,
+    "loc_added_sum" : 54,
+    "loc_deleted_sum" : 6,
+    "loc_suggested_to_add_sum" : 59,
+    "loc_suggested_to_delete_sum" : 6,
     "monthly_active_agent_users" : 0,
     "monthly_active_chat_users" : 0,
     "monthly_active_users" : 2,
@@ -145,6 +175,16 @@ The following are example schemas for the user-level, enterprise-level, and repo
         "prompt_tokens_sum" : 5300
       }
     },
+    "totals_by_copilot_app" : {
+      "prompt_count" : 2,
+      "request_count" : 6,
+      "session_count" : 2,
+      "token_usage" : {
+        "avg_tokens_per_request" : 2466.67,
+        "output_tokens_sum" : 6200,
+        "prompt_tokens_sum" : 8600
+      }
+    },
     "totals_by_feature" : [ {
       "code_acceptance_activity_count" : 2,
       "code_generation_activity_count" : 2,
@@ -154,6 +194,15 @@ The following are example schemas for the user-level, enterprise-level, and repo
       "loc_suggested_to_add_sum" : 35,
       "loc_suggested_to_delete_sum" : 0,
       "user_initiated_interaction_count" : 0
+    }, {
+      "code_acceptance_activity_count" : 2,
+      "code_generation_activity_count" : 2,
+      "feature" : "copilot_app",
+      "loc_added_sum" : 24,
+      "loc_deleted_sum" : 6,
+      "loc_suggested_to_add_sum" : 24,
+      "loc_suggested_to_delete_sum" : 6,
+      "user_initiated_interaction_count" : 1
     } ],
     "totals_by_ide" : [ {
       "code_acceptance_activity_count" : 2,
@@ -174,10 +223,19 @@ The following are example schemas for the user-level, enterprise-level, and repo
       "loc_deleted_sum" : 0,
       "loc_suggested_to_add_sum" : 35,
       "loc_suggested_to_delete_sum" : 0
+    }, {
+      "code_acceptance_activity_count" : 2,
+      "code_generation_activity_count" : 2,
+      "feature" : "copilot_app",
+      "language" : "markdown",
+      "loc_added_sum" : 24,
+      "loc_deleted_sum" : 6,
+      "loc_suggested_to_add_sum" : 24,
+      "loc_suggested_to_delete_sum" : 6
     } ],
     "totals_by_language_model" : [ ],
     "totals_by_model_feature" : [ ],
-    "user_initiated_interaction_count" : 0,
+    "user_initiated_interaction_count" : 1,
     "weekly_active_users" : 2
   } ],
   "enterprise_id" : "1",
@@ -188,15 +246,15 @@ The following are example schemas for the user-level, enterprise-level, and repo
   "entity_id_partition" : 1
 }, {
   "day_totals" : [ {
-    "code_acceptance_activity_count" : 1,
-    "code_generation_activity_count" : 2,
+    "code_acceptance_activity_count" : 2,
+    "code_generation_activity_count" : 3,
     "daily_active_users" : 2,
     "day" : "2025-10-01",
     "enterprise_id" : "2",
-    "loc_added_sum" : 38,
-    "loc_deleted_sum" : 0,
-    "loc_suggested_to_add_sum" : 40,
-    "loc_suggested_to_delete_sum" : 0,
+    "loc_added_sum" : 50,
+    "loc_deleted_sum" : 3,
+    "loc_suggested_to_add_sum" : 52,
+    "loc_suggested_to_delete_sum" : 3,
     "monthly_active_agent_users" : 0,
     "monthly_active_chat_users" : 0,
     "monthly_active_users" : 2,
@@ -222,6 +280,15 @@ The following are example schemas for the user-level, enterprise-level, and repo
       "loc_suggested_to_add_sum" : 40,
       "loc_suggested_to_delete_sum" : 0,
       "user_initiated_interaction_count" : 0
+    }, {
+      "code_acceptance_activity_count" : 1,
+      "code_generation_activity_count" : 1,
+      "feature" : "copilot_app",
+      "loc_added_sum" : 12,
+      "loc_deleted_sum" : 3,
+      "loc_suggested_to_add_sum" : 12,
+      "loc_suggested_to_delete_sum" : 3,
+      "user_initiated_interaction_count" : 1
     } ],
     "totals_by_ide" : [ {
       "code_acceptance_activity_count" : 1,
@@ -242,10 +309,19 @@ The following are example schemas for the user-level, enterprise-level, and repo
       "loc_deleted_sum" : 0,
       "loc_suggested_to_add_sum" : 40,
       "loc_suggested_to_delete_sum" : 0
+    }, {
+      "code_acceptance_activity_count" : 1,
+      "code_generation_activity_count" : 1,
+      "feature" : "copilot_app",
+      "language" : "markdown",
+      "loc_added_sum" : 12,
+      "loc_deleted_sum" : 3,
+      "loc_suggested_to_add_sum" : 12,
+      "loc_suggested_to_delete_sum" : 3
     } ],
     "totals_by_language_model" : [ ],
     "totals_by_model_feature" : [ ],
-    "user_initiated_interaction_count" : 0,
+    "user_initiated_interaction_count" : 1,
     "weekly_active_users" : 2
   } ],
   "enterprise_id" : "2",
@@ -329,7 +405,100 @@ The following user-teams report examples are returned by the `user-teams-1-day` 
 The following repository-level report example is returned in the NDJSON files downloaded from the `repos-1-day` endpoints. Each row represents one repository with pull request activity on the requested day. Both enterprise- and organization-scoped rows populate `organization_id` (the organization that owns each repository). Enterprise-scoped rows also populate `enterprise_id`, and organization-scoped rows populate `enterprise_id` only for organizations owned by an enterprise. For the field reference, see [Data available in Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/copilot-usage-metrics#repository-level-fields-api-only).
 
 ```json copy
-{"day":"2026-07-14","enterprise_id":"1001","organization_id":"2002","repo_id":900000001,"repo_owner_name":"octodemo-metrics","repo_name":"example-service-alpha","repo_visibility":"INTERNAL","pull_requests":{"total_reviewed":1,"total_created":1,"total_created_by_copilot":1,"total_reviewed_by_copilot":1,"total_merged":1,"median_minutes_to_merge":372.62,"total_suggestions":0,"total_applied_suggestions":0,"total_merged_created_by_copilot":1,"median_minutes_to_merge_copilot_authored":372.62,"total_copilot_suggestions":0,"total_copilot_applied_suggestions":0,"total_merged_reviewed_by_copilot":1,"median_minutes_to_merge_copilot_reviewed":372.62,"copilot_suggestions_by_comment_type":[]}}
-{"day":"2026-07-14","enterprise_id":"1001","organization_id":"2002","repo_id":900000003,"repo_owner_name":"octodemo-metrics","repo_name":"example-service-gamma","repo_visibility":"INTERNAL","pull_requests":{"total_reviewed":1,"total_created":0,"total_created_by_copilot":0,"total_reviewed_by_copilot":1,"total_merged":1,"median_minutes_to_merge":1020.53,"total_suggestions":0,"total_applied_suggestions":1,"total_merged_created_by_copilot":0,"total_copilot_suggestions":0,"total_copilot_applied_suggestions":1,"total_merged_reviewed_by_copilot":1,"median_minutes_to_merge_copilot_reviewed":1020.53,"copilot_suggestions_by_comment_type":[{"comment_type":"spelling","total_copilot_suggestions":0,"total_copilot_applied_suggestions":1}]}}
-{"day":"2026-07-14","organization_id":"3003","enterprise_id":"","repo_id":900000010,"repo_owner_name":"octodemo-metrics","repo_name":"example-service-delta","repo_visibility":"PRIVATE","pull_requests":{"total_reviewed":1,"total_created":0,"total_created_by_copilot":0,"total_reviewed_by_copilot":1,"total_merged":2,"median_minutes_to_merge":1332.96,"total_suggestions":1,"total_applied_suggestions":2,"total_merged_created_by_copilot":1,"median_minutes_to_merge_copilot_authored":1329.47,"total_copilot_suggestions":1,"total_copilot_applied_suggestions":2,"total_merged_reviewed_by_copilot":2,"median_minutes_to_merge_copilot_reviewed":1332.96,"copilot_suggestions_by_comment_type":[{"comment_type":"documentation","total_copilot_suggestions":1,"total_copilot_applied_suggestions":1},{"comment_type":"spelling","total_copilot_suggestions":0,"total_copilot_applied_suggestions":1}]}}
+[
+  {
+    "day": "2026-07-14",
+    "enterprise_id": "1001",
+    "organization_id": "2002",
+    "repo_id": 900000001,
+    "repo_owner_name": "octodemo-metrics",
+    "repo_name": "example-service-alpha",
+    "repo_visibility": "INTERNAL",
+    "pull_requests": {
+      "total_reviewed": 1,
+      "total_created": 1,
+      "total_created_by_copilot": 1,
+      "total_reviewed_by_copilot": 1,
+      "total_merged": 1,
+      "median_minutes_to_merge": 372.62,
+      "total_suggestions": 0,
+      "total_applied_suggestions": 0,
+      "total_merged_created_by_copilot": 1,
+      "median_minutes_to_merge_copilot_authored": 372.62,
+      "total_copilot_suggestions": 0,
+      "total_copilot_applied_suggestions": 0,
+      "total_merged_reviewed_by_copilot": 1,
+      "median_minutes_to_merge_copilot_reviewed": 372.62,
+      "copilot_suggestions_by_comment_type": []
+    }
+  },
+  {
+    "day": "2026-07-14",
+    "enterprise_id": "1001",
+    "organization_id": "2002",
+    "repo_id": 900000003,
+    "repo_owner_name": "octodemo-metrics",
+    "repo_name": "example-service-gamma",
+    "repo_visibility": "INTERNAL",
+    "pull_requests": {
+      "total_reviewed": 1,
+      "total_created": 0,
+      "total_created_by_copilot": 0,
+      "total_reviewed_by_copilot": 1,
+      "total_merged": 1,
+      "median_minutes_to_merge": 1020.53,
+      "total_suggestions": 0,
+      "total_applied_suggestions": 1,
+      "total_merged_created_by_copilot": 0,
+      "total_copilot_suggestions": 0,
+      "total_copilot_applied_suggestions": 1,
+      "total_merged_reviewed_by_copilot": 1,
+      "median_minutes_to_merge_copilot_reviewed": 1020.53,
+      "copilot_suggestions_by_comment_type": [
+        {
+          "comment_type": "spelling",
+          "total_copilot_suggestions": 0,
+          "total_copilot_applied_suggestions": 1
+        }
+      ]
+    }
+  },
+  {
+    "day": "2026-07-14",
+    "organization_id": "3003",
+    "enterprise_id": "",
+    "repo_id": 900000010,
+    "repo_owner_name": "octodemo-metrics",
+    "repo_name": "example-service-delta",
+    "repo_visibility": "PRIVATE",
+    "pull_requests": {
+      "total_reviewed": 1,
+      "total_created": 0,
+      "total_created_by_copilot": 0,
+      "total_reviewed_by_copilot": 1,
+      "total_merged": 2,
+      "median_minutes_to_merge": 1332.96,
+      "total_suggestions": 1,
+      "total_applied_suggestions": 2,
+      "total_merged_created_by_copilot": 1,
+      "median_minutes_to_merge_copilot_authored": 1329.47,
+      "total_copilot_suggestions": 1,
+      "total_copilot_applied_suggestions": 2,
+      "total_merged_reviewed_by_copilot": 2,
+      "median_minutes_to_merge_copilot_reviewed": 1332.96,
+      "copilot_suggestions_by_comment_type": [
+        {
+          "comment_type": "documentation",
+          "total_copilot_suggestions": 1,
+          "total_copilot_applied_suggestions": 1
+        },
+        {
+          "comment_type": "spelling",
+          "total_copilot_suggestions": 0,
+          "total_copilot_applied_suggestions": 1
+        }
+      ]
+    }
+  }
+]
 ```

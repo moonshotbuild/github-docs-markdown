@@ -45,7 +45,7 @@ Organization owners can subscribe to Copilot, manage Copilot for their organizat
 
   Configure the repository that stores custom agents for your organization.
 
-* [Managing default models](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-default-models)
+* [Managing the availability of models in an organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-default-models)
 
   Configure which default Copilot models are available to members of your organization.
 

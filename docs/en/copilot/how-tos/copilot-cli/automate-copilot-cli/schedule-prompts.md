@@ -22,7 +22,7 @@ breadcrumbs:
 Use the /every and /after slash commands to submit a prompt to Copilot on a recurring schedule, or after a specified delay.
 
 > \[!NOTE]
-> The `/every` and `/after` commands are currently experimental features and are only available if you have used the `/experimental on` slash command, or the `--experimental` command line option.
+> The `/every` and `/after` commands are currently experimental features and are only available if you have used the `/experimental on` slash command, or the `‑‑experimental` command line option.
 
 In an interactive Copilot CLI session you can schedule a prompt to be submitted automatically. This is useful when you want Copilot to repeat a task at a regular cadence or to perform a one-off task after a delay, without you having to remember to submit the prompt manually.
 

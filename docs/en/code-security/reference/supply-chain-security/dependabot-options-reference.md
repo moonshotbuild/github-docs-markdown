@@ -516,7 +516,9 @@ Change the limit on the maximum number of pull requests for version updates open
 Dependabot default behavior:
 
 * If five pull requests with version updates are open, no further pull requests are raised until some of those open requests are merged or closed.
-* Security updates have a separate, internal limit of ten open pull requests which cannot be changed.
+
+> \[!NOTE]
+> *Security update* pull requests are not subject to this limit and do not count toward it. There is no limit on the number of open pull requests for security updates.
 
 When `open-pull-requests-limit` is defined:
 
@@ -529,85 +531,165 @@ When `open-pull-requests-limit` is defined:
 
 **Required option.** Define one `package-ecosystem` element for each package manager that you want Dependabot to monitor for new versions. The repository must also contain a dependency manifest or lock file for each package manager, see [Example `dependabot.yml` file](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-version-updates#example-dependabotyml-file).
 
-| Package manager | YAML value       | Supported versions |
-| --------------- | ---------------- | :----------------: |
-|                 |                  |                    |
-| Bazel           | `bazel`          |     v7, v8, v9     |
-|                 |                  |                    |
-| Bun             | `bun`            |      >=v1.2.5      |
-| Bundler         | `bundler`        |         v2         |
-| Cargo           | `cargo`          |         v1         |
-| Composer        | `composer`       |         v2         |
-|                 |                  |                    |
-| Conda           | `conda`          |   Not applicable   |
-|                 |                  |                    |
-|                 |                  |                    |
-| Deno            | `deno`           |        >=v2        |
-|                 |                  |                    |
-| Dev containers  | `devcontainers`  |   Not applicable   |
-| Docker          | `docker`         |         v1         |
-| Docker Compose  | `docker-compose` |       v2, v3       |
-| .NET SDK        | `dotnet-sdk`     |   >=.NET Core 3.1  |
-|                 |                  |                    |
-| Helm Charts     | `helm`           |         v3         |
-|                 |                  |                    |
-| Hex             | `mix`            |         v1         |
-|                 |                  |                    |
-| Julia           | `julia`          |       >=v1.10      |
-|                 |                  |                    |
-| elm-package     | `elm`            |        v0.19       |
-| git submodule   | `gitsubmodule`   |   Not applicable   |
-| GitHub Actions  | `github-actions` |   Not applicable   |
-| Go modules      | `gomod`          |         v1         |
-| Gradle          | `gradle`         |   Not applicable   |
-| Maven           | `maven`          |   Not applicable   |
-|                 |                  |                    |
-| Nix flakes      | `nix`            |   Not applicable   |
-|                 |                  |                    |
-| npm             | `npm`            |   v7, v8, v9, v10  |
-| NuGet           | `nuget`          |      <=6.12.0      |
-|                 |                  |                    |
-| OpenTofu        | `opentofu`       |   Not applicable   |
-|                 |                  |                    |
-| pip             | `pip`            |        24.2        |
-| pip-compile     | `pip`            |        7.5.3       |
-| pipenv          | `pip`            |     <= 2024.4.1    |
-| pnpm            | `npm`            |   v7, v8, v9, v10  |
-| poetry          | `pip`            |         v2         |
-|                 |                  |                    |
-| pre-commit      | `pre-commit`     |   Not applicable   |
-|                 |                  |                    |
-| pub             | `pub`            |         v2         |
-|                 |                  |                    |
-| Rust toolchain  | `rust-toolchain` |   Not applicable   |
-|                 |                  |                    |
-|                 |                  |                    |
-| sbt             | `sbt`            |   Not applicable   |
-|                 |                  |                    |
-| Swift           | `swift`          |         v5         |
-| Terraform       | `terraform`      | >= 0.13, <= 1.10.x |
-| uv              | `uv`             |         v0         |
-|                 |                  |                    |
-| vcpkg           | `vcpkg`          |   Not applicable   |
-|                 |                  |                    |
-| yarn            | `npm`            |   v1, v2, v3, v4   |
+| Package manager | YAML value       |  Supported versions  |
+| --------------- | ---------------- | :------------------: |
+|                 |                  |                      |
+| Bazel           | `bazel`          |      v7, v8, v9      |
+|                 |                  |                      |
+| Bun             | `bun`            |       >=v1.1.39      |
+| Bundler         | `bundler`        |          v2          |
+| Cargo           | `cargo`          |          v1          |
+| Composer        | `composer`       |          v2          |
+|                 |                  |                      |
+| Conda           | `conda`          |    Not applicable    |
+|                 |                  |                      |
+|                 |                  |                      |
+| Deno            | `deno`           |         >=v2         |
+|                 |                  |                      |
+| Dev containers  | `devcontainers`  |    Not applicable    |
+| Docker          | `docker`         |          v1          |
+| Docker Compose  | `docker-compose` |        v2, v3        |
+| .NET SDK        | `dotnet-sdk`     |    >=.NET Core 3.1   |
+|                 |                  |                      |
+| Helm Charts     | `helm`           |          v3          |
+|                 |                  |                      |
+| Hex             | `mix`            |          v1          |
+|                 |                  |                      |
+| Julia           | `julia`          |        >=v1.10       |
+|                 |                  |                      |
+| elm-package     | `elm`            |         v0.19        |
+| git submodule   | `gitsubmodule`   |    Not applicable    |
+| GitHub Actions  | `github-actions` |    Not applicable    |
+| Go modules      | `gomod`          |          v1          |
+| Gradle          | `gradle`         |    Not applicable    |
+| Maven           | `maven`          |    Not applicable    |
+|                 |                  |                      |
+| Nix flakes      | `nix`            |    Not applicable    |
+|                 |                  |                      |
+| npm             | `npm`            | v7, v8, v9, v10, v11 |
+| NuGet           | `nuget`          |       <=6.12.0       |
+|                 |                  |                      |
+| OpenTofu        | `opentofu`       |    Not applicable    |
+|                 |                  |                      |
+| pip             | `pip`            |        26.1.1        |
+| pip-compile     | `pip`            |         7.5.3        |
+| pipenv          | `pip`            |       2024.4.1       |
+| pnpm            | `npm`            |    v7, v8, v9, v10   |
+| poetry          | `pip`            |          v2          |
+|                 |                  |                      |
+| pre-commit      | `pre-commit`     |    Not applicable    |
+|                 |                  |                      |
+| pub             | `pub`            |          v2          |
+|                 |                  |                      |
+| Rust toolchain  | `rust-toolchain` |    Not applicable    |
+|                 |                  |                      |
+|                 |                  |                      |
+| sbt             | `sbt`            |    Not applicable    |
+|                 |                  |                      |
+| Swift           | `swift`          |          v5          |
+| Terraform       | `terraform`      |  >= 0.13, <= 1.15.x  |
+| uv              | `uv`             |          v0          |
+|                 |                  |                      |
+| vcpkg           | `vcpkg`          |    Not applicable    |
+|                 |                  |                      |
+| yarn            | `npm`            |    v1, v2, v3, v4    |
 
-## `pull-request-branch-name.separator` <svg version="1.1" width="24" height="24" viewBox="0 0 24 24" class="octicon octicon-versions" aria-label="Version updates" role="img"><path d="M10 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2Zm-.5-2a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H10a.5.5 0 0 0-.5.5ZM6.17 4.165a.75.75 0 0 1-.335 1.006c-.228.114-.295.177-.315.201a.035.035 0 0 0-.008.016.423.423 0 0 0-.012.112v13c0 .07.008.102.012.112a.03.03 0 0 0 .008.016c.02.024.087.087.315.201a.749.749 0 1 1-.67 1.342c-.272-.136-.58-.315-.81-.598C4.1 19.259 4 18.893 4 18.5v-13c0-.393.1-.759.355-1.073.23-.283.538-.462.81-.598a.75.75 0 0 1 1.006.336ZM2.15 5.624a.75.75 0 0 1-.274 1.025c-.15.087-.257.17-.32.245C1.5 6.96 1.5 6.99 1.5 7v10c0 .01 0 .04.056.106.063.074.17.158.32.245a.75.75 0 0 1-.752 1.298C.73 18.421 0 17.907 0 17V7c0-.907.73-1.42 1.124-1.65a.75.75 0 0 1 1.025.274Z"></path></svg> <svg version="1.1" width="24" height="24" viewBox="0 0 24 24" class="octicon octicon-shield-check" aria-label="Security updates" role="img"><path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"></path><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"></path></svg>
+## `pull-request-branch-name` <svg version="1.1" width="24" height="24" viewBox="0 0 24 24" class="octicon octicon-versions" aria-label="Version updates" role="img"><path d="M10 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2Zm-.5-2a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H10a.5.5 0 0 0-.5.5ZM6.17 4.165a.75.75 0 0 1-.335 1.006c-.228.114-.295.177-.315.201a.035.035 0 0 0-.008.016.423.423 0 0 0-.012.112v13c0 .07.008.102.012.112a.03.03 0 0 0 .008.016c.02.024.087.087.315.201a.749.749 0 1 1-.67 1.342c-.272-.136-.58-.315-.81-.598C4.1 19.259 4 18.893 4 18.5v-13c0-.393.1-.759.355-1.073.23-.283.538-.462.81-.598a.75.75 0 0 1 1.006.336ZM2.15 5.624a.75.75 0 0 1-.274 1.025c-.15.087-.257.17-.32.245C1.5 6.96 1.5 6.99 1.5 7v10c0 .01 0 .04.056.106.063.074.17.158.32.245a.75.75 0 0 1-.752 1.298C.73 18.421 0 17.907 0 17V7c0-.907.73-1.42 1.124-1.65a.75.75 0 0 1 1.025.274Z"></path></svg> <svg version="1.1" width="24" height="24" viewBox="0 0 24 24" class="octicon octicon-shield-check" aria-label="Security updates" role="img"><path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"></path><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"></path></svg>
 
-Specify a separator to use when generating branch names. For examples, see [Customizing Dependabot pull requests to fit your processes](/en/code-security/tutorials/secure-your-dependencies/customizing-dependabot-prs).
+Configure how Dependabot generates branch names for pull requests. You can customize the separator, prefix, length, casing, word separator, and provide a custom template. For examples, see [Customizing Dependabot pull requests to fit your processes](/en/code-security/tutorials/secure-your-dependencies/customizing-dependabot-prs).
 
 Dependabot default behavior:
 
-* Generate branch names of the form: `dependabot/PACKAGE_MANAGER/DEPENDENCY`
+* Generate branch names of the form: `dependabot/PACKAGE-MANAGER/DEPENDENCY`
 
-When `pull-request-branch-name.separator` is defined:
+| Parameter                               | Type                        | Default        | Description                                                                     |
+| --------------------------------------- | --------------------------- | -------------- | ------------------------------------------------------------------------------- |
+| [`separator`](#separator)               | String                      | `"/"`          | Character used between segments of the branch name.                             |
+| [`prefix`](#prefix)                     | String (max 50 characters)  | `"dependabot"` | String prepended to the branch name.                                            |
+| [`max-length`](#max-length)             | Integer (20–244)            | `100`          | Maximum character length of the branch name.                                    |
+| [`word-separator`](#word-separator)     | String                      | Not set        | Character to replace underscores (`_`) in branch name content after the prefix. |
+| [`branch-name-case`](#branch-name-case) | String                      | Not set        | Apply case transformation to the branch name content after the prefix.          |
+| [`template`](#template)                 | String (max 200 characters) | Not set        | Custom format template using placeholders.                                      |
 
-* Use the specified character in place of `/`.
+All options are composable. When `template` is set alongside simple options, the processing order is:
 
-Supported values: `"-"`, `_`,  `/`
+1. Template rendering (placeholder substitution)
+2. Separator replacement (`/` replaced with configured separator)
+3. Word-separator replacement (`_` replaced with configured word-separator)
+4. Case transformation applied to content after the prefix
+5. Max-length truncation
+
+### `separator`
+
+Specify a character to use in place of `/` between branch name segments.
+
+Supported values: `"-"`, `_`, `/`
+
+For example, with `separator: "-"`: `dependabot/npm_and_yarn/lodash-4.17.21` becomes `dependabot-npm_and_yarn-lodash-4.17.21`.
 
 > \[!TIP]
 > The hyphen symbol must be escaped so it is not interpreted as starting an empty YAML list.
+
+### `prefix`
+
+Specify a custom string to use at the start of the branch name instead of the default `dependabot`.
+
+The value can be up to 50 characters.
+
+For example, with `prefix: "deps"`: `dependabot/npm_and_yarn/lodash-4.17.21` becomes `deps/npm_and_yarn/lodash-4.17.21`.
+
+### `max-length`
+
+Set the maximum allowed length for generated branch names.
+
+* Minimum value: `20`.
+* Maximum value: `244`.
+* Default value: `100`.
+* When a branch name exceeds this limit, it is truncated and a hash suffix is appended to preserve uniqueness.
+
+For example, with `max-length: 40`, a branch name like `dependabot/npm_and_yarn/some-long-dependency-name-1.0.0` is truncated to 40 characters with a hash suffix.
+
+### `word-separator`
+
+Specify a character to replace underscores (`_`) in all branch name content after the prefix—including package manager names, dependency names, group names, and directory paths.
+
+For example, with `word-separator: "-"`:
+
+* `npm_and_yarn` → `npm-and-yarn`
+* `front_end_dir` → `front-end-dir`
+
+### `branch-name-case`
+
+Apply a case transformation to the branch name content after the prefix.
+
+Supported values: `"lowercase"`, `"uppercase"`
+
+For example, with `branch-name-case: "lowercase"`: `dependabot/npm_and_yarn/Lodash-4.17.21` becomes `dependabot/npm_and_yarn/lodash-4.17.21`.
+
+### `template`
+
+Define a custom branch name format using placeholders. The template gives you full control over the structure of generated branch names. For examples, see [Customizing Dependabot pull requests to fit your processes](/en/code-security/tutorials/secure-your-dependencies/customizing-dependabot-prs).
+
+Available placeholders depend on the update strategy:
+
+| Placeholder         |                                                                                                                                                                                                             Solo updates                                                                                                                                                                                                            |                                                                                                                                                                                                           Grouped updates                                                                                                                                                                                                           |                                                                                                                                                                                                        Multi-ecosystem groups                                                                                                                                                                                                       | Description                                                                                         |
+| ------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------------------- |
+| `{prefix}`          |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      | The configured prefix (default `dependabot`).                                                       |
+| `{package_manager}` |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-x" aria-label="Not available" role="img"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg> | The package ecosystem identifier (for example, `npm_and_yarn`).                                     |
+| `{directory}`       |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-x" aria-label="Not available" role="img"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg> | The dependency file directory.                                                                      |
+| `{target_branch}`   |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      | The target branch if configured.                                                                    |
+| `{dependency}`      |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-x" aria-label="Not available" role="img"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg> | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-x" aria-label="Not available" role="img"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg> | The dependency name(s).                                                                             |
+| `{version}`         |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-x" aria-label="Not available" role="img"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg> | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-x" aria-label="Not available" role="img"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg> | The new version or ref.                                                                             |
+| `{group_name}`      | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-x" aria-label="Not available" role="img"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg> |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      | The configured group name.                                                                          |
+| `{name}`            |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      |                                                       <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Available" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                      | Strategy-appropriate name: dependency and version for solo updates, group name for grouped updates. |
+
+Template validation rules:
+
+* All placeholders must be recognized and allowed for the update strategy in use.
+* Braces must be well-formed (no unclosed `{` or `}`).
+* Using `{package_manager}` in a multi-ecosystem group template raises a validation error because no single package manager applies.
+* The rendered branch name must be a valid Git reference name. Characters such as spaces, `~`, `^`, `:`, `?`, `*`, `[`, and `\` are not allowed, and sequences like `..` or `@{` are rejected.
+* For grouped and multi-ecosystem updates, a 10-character digest is automatically appended to the branch name to guarantee uniqueness. This is not user-controlled.
 
 ## `rebase-strategy` <svg version="1.1" width="24" height="24" viewBox="0 0 24 24" class="octicon octicon-versions" aria-label="Version updates" role="img"><path d="M10 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2Zm-.5-2a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H10a.5.5 0 0 0-.5.5ZM6.17 4.165a.75.75 0 0 1-.335 1.006c-.228.114-.295.177-.315.201a.035.035 0 0 0-.008.016.423.423 0 0 0-.012.112v13c0 .07.008.102.012.112a.03.03 0 0 0 .008.016c.02.024.087.087.315.201a.749.749 0 1 1-.67 1.342c-.272-.136-.58-.315-.81-.598C4.1 19.259 4 18.893 4 18.5v-13c0-.393.1-.759.355-1.073.23-.283.538-.462.81-.598a.75.75 0 0 1 1.006.336ZM2.15 5.624a.75.75 0 0 1-.274 1.025c-.15.087-.257.17-.32.245C1.5 6.96 1.5 6.99 1.5 7v10c0 .01 0 .04.056.106.063.074.17.158.32.245a.75.75 0 0 1-.752 1.298C.73 18.421 0 17.907 0 17V7c0-.907.73-1.42 1.124-1.65a.75.75 0 0 1 1.025.274Z"></path></svg> <svg version="1.1" width="24" height="24" viewBox="0 0 24 24" class="octicon octicon-shield-check" aria-label="Security updates" role="img"><path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"></path><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"></path></svg>
 

@@ -37,7 +37,7 @@ With GitHub Mobile you can:
 
 The following documentation contains more information about using GitHub features on GitHub Mobile.
 
-* Notifications for GitHub Mobile, see [Configuring notifications](/en/subscriptions-and-notifications/get-started/configuring-notifications#enabling-push-notifications-with-github-mobile).
+* Notifications for GitHub Mobile, see [Configuring notifications](/en/subscriptions-and-notifications/get-started/configuring-notifications#managing-your-notification-settings-with-github-mobile).
 * Using GitHub code search on GitHub Mobile, see [Using GitHub Code Search](/en/search-github/github-code-search/using-github-code-search#using-github-code-search-on-github-mobile).
 * Two-factor authentication using GitHub Mobile, see [Configuring two-factor authentication](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-github-mobile) and [Authenticating using GitHub Mobile](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/accessing-github-using-two-factor-authentication#verifying-with-github-mobile).
 * Using GitHub Copilot Chat in GitHub Mobile, see [Asking GitHub Copilot questions in GitHub Mobile](/en/copilot/how-tos/copilot-on-github/chat-with-copilot/chat-in-mobile).
@@ -70,7 +70,7 @@ To access accounts on GitHub Enterprise Cloud with data residency using GitHub M
 
 You must install GitHub Mobile 1.4 or later on your device to use GitHub Mobile with GitHub Enterprise Server.
 
-To use GitHub Mobile with GitHub Enterprise Server, GitHub must be version 3.0 or greater, and your enterprise owner must enable mobile support for your enterprise. For more information, see [Managing GitHub Mobile for your enterprise](/en/enterprise-server@3.21/admin/configuration/configuring-your-enterprise/managing-github-mobile-for-your-enterprise) in the GitHub Enterprise Server documentation.
+To use GitHub Mobile with GitHub Enterprise Server, GitHub must be version 3.0 or greater, and your enterprise owner must enable mobile support for your enterprise. For more information, see [Managing GitHub Mobile for your enterprise](/en/enterprise-server@3.21/admin/configuring-settings/configuring-user-applications-for-your-enterprise/managing-github-mobile-for-your-enterprise) in the GitHub Enterprise Server documentation.
 
 During the public preview for GitHub Mobile with GitHub Enterprise Server, you must be signed in with a personal account on GitHub.com.
 

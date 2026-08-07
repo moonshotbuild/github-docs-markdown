@@ -73,6 +73,6 @@ If your organization has a Copilot Business or Copilot Enterprise plan and you e
 
 ## Further reading
 
-* [Managing default models](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-default-models)
-* [Managing availability of default models](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-availability-of-default-models)
+* [Managing the availability of models in an organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-default-models)
+* [Managing availability of models in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-availability-of-default-models)
 * [Supported surfaces for GitHub Copilot policies](/en/copilot/reference/supported-surfaces-for-policies)

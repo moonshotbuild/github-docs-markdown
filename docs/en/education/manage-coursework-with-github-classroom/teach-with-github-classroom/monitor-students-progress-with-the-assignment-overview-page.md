@@ -19,6 +19,10 @@ breadcrumbs:
 
 You can use the assignment overview page to track the progress of each student or team on an assignment.
 
+> [!WARNING]
+> **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
+> For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
+
 ## About the assignment overview page
 
 Each assignment you create on GitHub Classroom has an assignment overview page. The assignment overview page provides an overview of your assignment acceptances and student progress. You may see different summary information on an assignment overview page based on the configurations of your assignments.

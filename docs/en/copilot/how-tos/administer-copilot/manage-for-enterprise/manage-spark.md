@@ -23,14 +23,18 @@ Enable and manage GitHub Spark for your enterprise.
 
 > \[!NOTE]
 >
-> * GitHub Spark is in public preview with [data protection](https://gh.io/dpa) and subject to change.
-> * GitHub Spark is not currently available for enterprises that use GitHub Enterprise Cloud with data residency.
+> * Beginning August 4, 2026, GitHub Spark will no longer accept new users or allow the creation of new apps. Existing users can continue to access and use apps they have already created. Open Spark workbench for your app, select "..." and "Create repository" to save your app code before August 31, 2026.
 
 ## About Spark
 
 Spark allows users to build intelligent applications using natural-language prompts. Spark includes advanced controls and built-in design tools for customization. Once published, applications can be shared with teammates or deployed to production.
 
 For details about benefits, development experience, billing, and enterprise considerations, see [About GitHub Spark](/en/copilot/concepts/spark#enterprise-considerations).
+
+> \[!NOTE]
+>
+> * GitHub Spark is in public preview with [data protection](https://gh.io/dpa) and subject to change.
+> * GitHub Spark is not currently available for enterprises that use GitHub Enterprise Cloud with data residency.
 
 ## Prerequisites
 

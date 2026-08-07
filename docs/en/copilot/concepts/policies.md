@@ -47,6 +47,8 @@ Policies can apply to any surface where users authenticate to Copilot, including
 
 However, not all policies apply to every surface. See [Supported surfaces for GitHub Copilot policies](/en/copilot/reference/supported-surfaces-for-policies).
 
+The GitHub Copilot app and Copilot CLI are governed by separate, independent client policies, so you can allow one without allowing the other.
+
 ## How can I prevent policy drift?
 
 If too many people have access to policy settings and your enterprise's governance posture isn't clearly communicated, policy settings can drift over time. This is a risk for enterprises with strict compliance requirements.

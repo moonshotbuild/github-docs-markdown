@@ -31,7 +31,7 @@ Copilot code review uses GitHub Actions to run agentic capabilities. For more in
 
 <div class="ghd-tool webui">
 
-Copilot code review is also available for organization members without a Copilot license, when enabled by an enterprise administrator or organization owner. See [Copilot code review for organization members without a Copilot license](/en/copilot/concepts/agents/code-review#copilot-code-review-for-organization-members-without-a-copilot-license).
+Copilot code review is also available for organization members without a Copilot license, when enabled by an enterprise administrator or organization owner. See [Copilot code review for organization members without a Copilot license](/en/copilot/concepts/agents/code-review#copilot-code-review-without-a-copilot-license).
 
 ## Using Copilot code review
 
@@ -111,9 +111,6 @@ When performing a code review, focus on readability and avoid nested ternary ope
 
 ## MCP servers and agent skills
 
-> \[!NOTE]
-> Support for agent skills and MCP servers with Copilot code review is in public preview and subject to change.
-
 Copilot code review can use agent skills and MCP servers configured in the repository, when they are relevant to the code being reviewed.
 
 To make these available for Copilot code review on GitHub, configure:
@@ -127,7 +124,7 @@ Copilot code review is more likely to use this context when:
 * Your agent skills or custom instructions explicitly tell Copilot code review to use specific MCP context.
 * Pull request descriptions reference items available through configured MCP servers, such as issue keys or incident IDs.
 
-To verify which MCP context Copilot code review used for a specific review, open the linked review session from the pull request timeline, then check the session logs to see which MCP servers and tools were called.
+To verify which MCP context Copilot code review used for a specific review, check if there are attributions at the bottom of each review comment. These attributions reference the specific agent skill or MCP server that Copilot code review used to generate that comment. You can also open the linked review session from the pull request timeline, then check the session logs to see which MCP servers and tools were called.
 
 In repository settings, **Allow Copilot to use MCP tools when reviewing pull requests** is enabled by default. Disable this setting if you want MCP servers available only for Copilot cloud agent, and not for Copilot code review. For step-by-step instructions, see [Configure MCP servers for your repository](/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers#disabling-mcp-tools-for-code-review).
 
@@ -309,7 +306,7 @@ These instructions explain how to use Copilot code review in Xcode. To see instr
 
 ## Prerequisites
 
-* **Access to Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#getting-access-to-copilot).
+* **Access to Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#get-access).
 
 * **Compatible JetBrains IDE**. To use GitHub Copilot in JetBrains, you must have a compatible JetBrains IDE installed. GitHub Copilot is compatible with the following IDEs:
 
@@ -355,7 +352,7 @@ These instructions explain how to use Copilot code review in JetBrains IDEs. To 
 
 ## Prerequisites
 
-* **Access to Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#getting-access-to-copilot).
+* **Access to Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#get-access).
 * **GitHub CLI**. You must have the GitHub CLI installed and authenticated. See [GitHub CLI quickstart](/en/github-cli/github-cli/quickstart).
 
 ## Using Copilot code review

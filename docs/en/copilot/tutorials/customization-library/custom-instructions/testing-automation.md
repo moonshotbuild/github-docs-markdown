@@ -27,7 +27,7 @@ File-specific instructions for writing unit tests.
 > * For community-contributed examples of custom instructions for specific languages and scenarios, see the [Awesome GitHub Copilot Customizations](https://github.com/github/awesome-copilot/blob/main/docs/README.instructions.md) repository.
 > * You can apply custom instructions across different scopes, depending on the platform or IDE where you are creating them. For more information, see "[About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization)."
 
-This example shows a path-specific `python-tests.instructions.md` file that applies only to Python test files in your repository, using the `applyTo` field. For more information about path-specific instructions files, see [Adding repository custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions#using-one-or-more-instructionsmd-files).
+This example shows a path-specific `python-tests.instructions.md` file that applies only to Python test files in your repository, using the `applyTo` field. For more information about path-specific instructions files, see [Adding repository custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions#creating-path-specific-custom-instructions).
 
 ````text copy
 ---

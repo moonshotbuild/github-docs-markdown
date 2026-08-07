@@ -27,7 +27,7 @@ Instructions for comprehensive web accessibility testing and compliance.
 > * For community-contributed examples of custom instructions for specific languages and scenarios, see the [Awesome GitHub Copilot Customizations](https://github.com/github/awesome-copilot/blob/main/docs/README.instructions.md) repository.
 > * You can apply custom instructions across different scopes, depending on the platform or IDE where you are creating them. For more information, see "[About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization)."
 
-The following example shows a path-specific `accessibility.instructions.md` file that applies only to HTML files in your repository, and guides GitHub Copilot to generate accessible, inclusive HTML that follows WCAG guidelines. For more information about path-specific instructions files, see [Adding repository custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions#using-one-or-more-instructionsmd-files).
+The following example shows a path-specific `accessibility.instructions.md` file that applies only to HTML files in your repository, and guides GitHub Copilot to generate accessible, inclusive HTML that follows WCAG guidelines. For more information about path-specific instructions files, see [Adding repository custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions#creating-path-specific-custom-instructions).
 
 ````text copy
 ---

@@ -23,7 +23,7 @@ GitHub Apps are tools that extend GitHub's functionality. GitHub Apps can do thi
 
 ## Finding GitHub Apps
 
-You can discover GitHub Apps on [GitHub Marketplace](https://github.com/marketplace).
+You can discover GitHub Apps on [GitHub Marketplace](https://github.com/marketplace). Developers can also share a link to their public app directly, even if it's not in the GitHub Marketplace.
 
 You can also build your own GitHub App. For more information, see [About creating GitHub Apps](/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps).
 

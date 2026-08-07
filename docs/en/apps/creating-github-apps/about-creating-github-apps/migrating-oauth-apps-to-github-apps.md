@@ -28,7 +28,7 @@ GitHub Apps are the recommended way to integrate with GitHub. GitHub Apps offer 
 * Scalable rate limits
 * Built-in webhooks
 
-For more information, see [About creating GitHub Apps](/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps#using-a-github-app-instead-of-an-oauth-app).
+For more information, see [About creating GitHub Apps](/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps).
 
 ## Converting an OAuth app to a GitHub App
 

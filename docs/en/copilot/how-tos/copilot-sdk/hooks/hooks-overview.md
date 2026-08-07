@@ -33,15 +33,16 @@ Hooks allow you to intercept and customize the behavior of Copilot sessions at k
 
 ## Available hooks
 
-| Hook                                                                                             | Trigger                                           | Use Case                                |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------- | --------------------------------------- |
-| [Pre-tool use hook](/en/copilot/how-tos/copilot-sdk/hooks/pre-tool-use)                          | Before a tool executes                            | Permission control, argument validation |
-| [Post-tool use hook](/en/copilot/how-tos/copilot-sdk/hooks/post-tool-use)                        | After a tool executes (success only)              | Result transformation, logging          |
-| [Post-tool use hook](/en/copilot/how-tos/copilot-sdk/hooks/post-tool-use#failure-variant)        | After a tool execution whose result was a failure | Inject retry guidance, log failures     |
-| [User prompt submitted hook](/en/copilot/how-tos/copilot-sdk/hooks/user-prompt-submitted)        | When user sends a message                         | Prompt modification, filtering          |
-| [Session lifecycle hooks](/en/copilot/how-tos/copilot-sdk/hooks/session-lifecycle#session-start) | Session begins                                    | Add context, configure session          |
-| [Session lifecycle hooks](/en/copilot/how-tos/copilot-sdk/hooks/session-lifecycle#session-end)   | Session ends                                      | Cleanup, analytics                      |
-| [Error handling hook](/en/copilot/how-tos/copilot-sdk/hooks/error-handling)                      | Error happens                                     | Custom error handling                   |
+| Hook                                                                                             | Trigger                                           | Use Case                                    |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------- |
+| [Pre-tool use hook](/en/copilot/how-tos/copilot-sdk/hooks/pre-tool-use)                          | Before a tool executes                            | Permission control, argument validation     |
+| [Post-tool use hook](/en/copilot/how-tos/copilot-sdk/hooks/post-tool-use)                        | After a tool executes (success only)              | Result transformation, logging              |
+| [Post-tool use hook](/en/copilot/how-tos/copilot-sdk/hooks/post-tool-use#failure-variant)        | After a tool execution whose result was a failure | Inject retry guidance, log failures         |
+| [User prompt submitted hook](/en/copilot/how-tos/copilot-sdk/hooks/user-prompt-submitted)        | When user sends a message                         | Prompt modification, filtering              |
+| [Session lifecycle hooks](/en/copilot/how-tos/copilot-sdk/hooks/session-lifecycle#session-start) | Session begins                                    | Add context, configure session              |
+| [Session lifecycle hooks](/en/copilot/how-tos/copilot-sdk/hooks/session-lifecycle#session-end)   | Session ends                                      | Cleanup, analytics                          |
+| [Error handling hook](/en/copilot/how-tos/copilot-sdk/hooks/error-handling)                      | Error happens                                     | Custom error handling                       |
+| [Session lifecycle hooks](/en/copilot/how-tos/copilot-sdk/hooks/session-lifecycle#agent-stop)    | Top-level agent naturally stops                   | Validate completion or request another turn |
 
 ## Quick start
 
@@ -284,6 +285,7 @@ const session = await client.createSession({
 * **[Post-tool use hook](/en/copilot/how-tos/copilot-sdk/hooks/post-tool-use)** - Transform tool results
 * **[User prompt submitted hook](/en/copilot/how-tos/copilot-sdk/hooks/user-prompt-submitted)** - Modify user prompts
 * **[Session lifecycle hooks](/en/copilot/how-tos/copilot-sdk/hooks/session-lifecycle)** - Session start and end
+* **[Session lifecycle hooks](/en/copilot/how-tos/copilot-sdk/hooks/session-lifecycle#agent-stop)** - Validate completion before the agent stops
 * **[Error handling hook](/en/copilot/how-tos/copilot-sdk/hooks/error-handling)** - Custom error handling
 
 ## See also

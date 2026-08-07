@@ -54,7 +54,7 @@ When you call the [Start an organization migration](/en/rest/migrations/orgs#sta
 
 If you lock a repository via this endpoint, you can unlock the repository using the [Unlock an organization repository](/en/rest/migrations/orgs#unlock-an-organization-repository) endpoint.
 
-If the repository is stored on GitHub Enterprise Server, a site administrator can also unlock the repository using the site admin dashboard. For more information, see [Locking a repository](/en/enterprise-server@3.21/admin/user-management/managing-repositories-in-your-enterprise/locking-a-repository) in the GitHub Enterprise Server documentation.
+If the repository is stored on GitHub Enterprise Server, a site administrator can also unlock the repository using the site admin dashboard. For more information, see [Locking a repository](/en/enterprise-server@3.21/admin/managing-accounts-and-repositories/managing-repositories-in-your-enterprise/locking-a-repository) in the GitHub Enterprise Server documentation.
 
 ## Repositories locked by `ghe-migrator`
 
@@ -64,7 +64,7 @@ If the import succeeded, you can unlock the repository with the `ghe-migrator un
 
 If the import failed, not all of your data has been migrated, and we recommend deleting the repository and retrying the migration, to prevent data loss.
 
-If you're sure you want to use the repository, a site administrator can unlock the repository using the site admin dashboard. For more information, see [Locking a repository](/en/enterprise-server@3.21/admin/user-management/managing-repositories-in-your-enterprise/locking-a-repository) in the GitHub Enterprise Server documentation.
+If you're sure you want to use the repository, a site administrator can unlock the repository using the site admin dashboard. For more information, see [Locking a repository](/en/enterprise-server@3.21/admin/managing-accounts-and-repositories/managing-repositories-in-your-enterprise/locking-a-repository) in the GitHub Enterprise Server documentation.
 
 The source repository is not locked by default, only if the `--lock` argument is specified when preparing the repository for export with the `ghe-migrator add` command. To unlock the repository, use the `ghe-migrator unlock` command. For more information, see [Migrating data to GitHub Enterprise Server](/en/migrations/using-ghe-migrator/migrating-data-to-github-enterprise-server#unlocking-repositories-on-the-source).
 

@@ -103,9 +103,9 @@ For **SkuPricing** budgets or to query usage by SKU, use one of the following va
 
 ### Cloud and local sandboxes for GitHub Copilot SKUs
 
-* `sandbox_linux` - Sandboxes for GitHub Copilot Linux
-* `sandbox_memory` - Sandboxes for GitHub Copilot Memory
-* `sandbox_snapshot` - Sandboxes for GitHub Copilot Snapshot
+* `sandbox_linux` - Sandboxes for GitHub Copilot: Linux
+* `sandbox_memory` - Sandboxes for GitHub Copilot: Memory
+* `sandbox_snapshot` - Sandboxes for GitHub Copilot: Snapshot
 
 ### Other SKUs
 

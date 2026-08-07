@@ -30,12 +30,12 @@ In this quickstart, you will:
 ## Prerequisites
 
 * A GitHub account.
-* Access to Copilot or a configured model provider.
+* A Copilot plan, or you can configure your own model provider.
   * If you use your own model provider, you will need provider credentials such as an API key. For setup steps, see [Using your own LLM models in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/use-byok-models).
 * [Git](https://github.com/git-guides/install-git) installed on your computer.
 
 > \[!NOTE]
-> If you use Copilot Business or Copilot Enterprise, your plan administrator will need to enable the **Copilot CLI** policy. For more information, see [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies) or [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies).
+> For Copilot Business and Copilot Enterprise users, the GitHub Copilot app policy must remain enabled. This policy is enabled by default and is separate from the Copilot CLI policy. See [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies) or [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies).
 
 ## Installing the GitHub Copilot app
 
@@ -101,4 +101,5 @@ Find out more about using the GitHub Copilot app:
 * [Working with canvas extensions in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/working-with-canvas-extensions)
 * [Managing issues and pull requests with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/managing-issues-and-pull-requests)
 * [Using automations in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/using-automations)
-* [Using deep links to open the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/open-with-deep-links)
+* [Slash commands for the GitHub Copilot app](/en/copilot/reference/github-copilot-app-reference/slash-commands)
+* [Built-in skills for the GitHub Copilot app](/en/copilot/reference/github-copilot-app-reference/built-in-skills)

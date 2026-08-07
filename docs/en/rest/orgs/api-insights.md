@@ -27,6 +27,7 @@ GET /orgs/{org}/insights/api/route-stats/{actor_type}/{actor_id}
 ```
 
 Get API request count statistics for an actor broken down by route within a specified time frame.
+Under normal conditions, you can expect API data to appear within 4–6 hours after making a request. During incidents or periods of unusually high volume, it may take longer to show up.
 
 ### Parameters
 
@@ -105,6 +106,7 @@ GET /orgs/{org}/insights/api/subject-stats
 ```
 
 Get API request statistics for all subjects within an organization within a specified time frame. Subjects can be users or GitHub Apps.
+Under normal conditions, you can expect API data to appear within 4–6 hours after making a request. During incidents or periods of unusually high volume, it may take longer to show up.
 
 ### Parameters
 
@@ -177,6 +179,7 @@ GET /orgs/{org}/insights/api/summary-stats
 ```
 
 Get overall statistics of API requests made within an organization by all users and apps within a specified time frame.
+Under normal conditions, you can expect API data to appear within 4–6 hours after making a request. During incidents or periods of unusually high volume, it may take longer to show up.
 
 ### Parameters
 
@@ -224,6 +227,7 @@ GET /orgs/{org}/insights/api/summary-stats/users/{user_id}
 ```
 
 Get overall statistics of API requests within the organization for a user.
+Under normal conditions, you can expect API data to appear within 4–6 hours after making a request. During incidents or periods of unusually high volume, it may take longer to show up.
 
 ### Parameters
 
@@ -273,6 +277,7 @@ GET /orgs/{org}/insights/api/summary-stats/{actor_type}/{actor_id}
 ```
 
 Get overall statistics of API requests within the organization made by a specific actor. Actors can be GitHub App installations, OAuth apps or other tokens on behalf of a user.
+Under normal conditions, you can expect API data to appear within 4–6 hours after making a request. During incidents or periods of unusually high volume, it may take longer to show up.
 
 ### Parameters
 
@@ -326,6 +331,7 @@ GET /orgs/{org}/insights/api/time-stats
 ```
 
 Get the number of API requests and rate-limited requests made within an organization over a specified time period.
+Under normal conditions, you can expect API data to appear within 4–6 hours after making a request. During incidents or periods of unusually high volume, it may take longer to show up.
 
 ### Parameters
 
@@ -378,6 +384,7 @@ GET /orgs/{org}/insights/api/time-stats/users/{user_id}
 ```
 
 Get the number of API requests and rate-limited requests made within an organization by a specific user over a specified time period.
+Under normal conditions, you can expect API data to appear within 4–6 hours after making a request. During incidents or periods of unusually high volume, it may take longer to show up.
 
 ### Parameters
 
@@ -430,6 +437,7 @@ GET /orgs/{org}/insights/api/time-stats/{actor_type}/{actor_id}
 ```
 
 Get the number of API requests and rate-limited requests made within an organization by a specific actor within a specified time period.
+Under normal conditions, you can expect API data to appear within 4–6 hours after making a request. During incidents or periods of unusually high volume, it may take longer to show up.
 
 ### Parameters
 
@@ -486,6 +494,7 @@ GET /orgs/{org}/insights/api/user-stats/{user_id}
 ```
 
 Get API usage statistics within an organization for a user broken down by the type of access.
+Under normal conditions, you can expect API data to appear within 4–6 hours after making a request. During incidents or periods of unusually high volume, it may take longer to show up.
 
 ### Parameters
 

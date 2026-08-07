@@ -20,9 +20,7 @@ breadcrumbs:
 Learn how to build and deploy an intelligent web app with natural language using GitHub Spark.
 
 > \[!NOTE]
->
-> * GitHub Spark is in public preview with [data protection](https://gh.io/dpa) and subject to change.
-> * The GitHub Copilot setting that blocks suggestions matching public code may not work as intended when using Spark. See [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#enabling-or-disabling-suggestions-matching-public-code).
+> Beginning August 4, 2026, GitHub Spark will no longer accept new users or allow the creation of new apps. Existing users can continue to access and use apps they have already created. Open Spark workbench for your app, select "..." and "Create repository" to save your app code before August 31, 2026.
 
 ## Introduction
 
@@ -31,6 +29,11 @@ With GitHub Spark, you can describe what you want in natural language and get a 
 Spark is seamlessly integrated with GitHub so you can develop your spark via a synced GitHub codespace with Copilot for advanced editing. You can also create a repository for team collaboration, and leverage GitHub's ecosystem of tools and integrations.
 
 This tutorial will guide you through the full lifecycle of building and deploying an app with Spark and exploring its features.
+
+> \[!NOTE]
+>
+> * GitHub Spark is in public preview with [data protection](https://gh.io/dpa) and subject to change.
+> * The GitHub Copilot setting that blocks suggestions matching public code may not work as intended when using Spark. See [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#enabling-or-disabling-suggestions-matching-public-code).
 
 ### Prerequisites
 

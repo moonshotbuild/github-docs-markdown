@@ -31,7 +31,7 @@ You can configure self-hosted runners that Dependabot uses to access your privat
 1. Provision self-hosted runners, at the repository or organization level. For more information, see [Self-hosted runners](/en/actions/concepts/runners/self-hosted-runners) and [Adding self-hosted runners](/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners).
 2. Configure your environment and runners to meet the requirements for Dependabot. See [Requirements for using Dependabot with self-hosted runners](/en/code-security/reference/supply-chain-security/dependabot-on-actions#requirements-for-using-dependabot-with-self-hosted-runners).
 3. If you are configuring self-hosted runners for your organization, you can create and assign a custom label for your runners. Otherwise, if you are configuring self-hosted runners for a standalone repository, you need to apply the `dependabot` label. See [Using labels with self-hosted runners](/en/actions/how-tos/manage-runners/self-hosted-runners/apply-labels).
-4. Optionally, enable workflows triggered by Dependabot to use more than read-only permissions and to have access to any secrets that are normally available. For more information, see [Troubleshooting Dependabot on GitHub Actions](/en/code-security/reference/supply-chain-security/troubleshoot-dependabot/dependabot-on-actions#restrictions-when-dependabot-triggers-events).
+4. Optionally, enable workflows triggered by Dependabot to use more than read-only permissions and to have access to any secrets that are normally available. For more information, see [Troubleshooting Dependabot on GitHub Actions](/en/code-security/reference/supply-chain-security/troubleshoot-dependabot/dependabot-on-actions).
 
 ## Enabling self-hosted runners for Dependabot updates
 

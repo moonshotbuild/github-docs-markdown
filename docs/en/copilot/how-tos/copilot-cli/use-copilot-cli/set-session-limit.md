@@ -75,4 +75,4 @@ When the limit is hit, the agent stops cleanly and lets you know.
 ## Further reading
 
 * [Optimizing your AI usage to maximize efficiency and reduce cost](/en/copilot/tutorials/optimize-ai-usage)
-* [What are GitHub AI Credits](/en/copilot/concepts/billing/usage-based-billing-for-individuals#what-are--data-variablesproductprodname_ai_credits-)
+* [What are GitHub AI Credits](/en/copilot/concepts/billing/usage-based-billing-for-individuals#what-are-github-ai-credits)

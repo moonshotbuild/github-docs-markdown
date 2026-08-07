@@ -19,7 +19,7 @@ Use the REST API to interact with the cache for repositories in GitHub Actions.
 
 ## About the cache in GitHub Actions
 
-You can use the REST API to query and manage the cache for repositories in GitHub Actions. You can also install a GitHub CLI extension to manage your caches from the command line. For more information, see [Dependency caching reference](/en/actions/reference/workflows-and-actions/dependency-caching#managing-caches).
+You can use the REST API to query and manage the cache for repositories in GitHub Actions. You can also install a GitHub CLI extension to manage your caches from the command line. For more information, see [Dependency caching reference](/en/actions/reference/workflows-and-actions/dependency-caching).
 
 > \[!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.

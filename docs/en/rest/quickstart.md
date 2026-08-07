@@ -134,7 +134,7 @@ You can use Octokit.js to interact with the GitHub REST API in your JavaScript s
    });
    ```
 
-5. Use `octokit.request` to execute your request. Send the HTTP method and path as the first argument. Specify any path, query, and body parameters in an object as the second argument. For more information about parameters, see [Getting started with the REST API](/en/rest/using-the-rest-api/getting-started-with-the-rest-api#using-parameters).
+5. Use `octokit.request` to execute your request. Send the HTTP method and path as the first argument. Specify any path, query, and body parameters in an object as the second argument. For more information about parameters, see [Getting started with the REST API](/en/rest/using-the-rest-api/getting-started-with-the-rest-api#parameters).
 
    For example, in the following request the HTTP method is `GET`, the path is `/repos/{owner}/{repo}/issues`, and the parameters are `owner: "octocat"` and `repo: "Spoon-Knife"`.
 
@@ -173,7 +173,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: '16.17.0'
           cache: npm
@@ -231,7 +231,7 @@ If you are authenticating with a GitHub App, you can create an installation acce
            uses: actions/checkout@v6
 
          - name: Setup Node
-           uses: actions/setup-node@v4
+           uses: actions/setup-node@v7
            with:
              node-version: '16.17.0'
              cache: npm

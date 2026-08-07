@@ -1,7 +1,7 @@
 ---
 source_path: "/en/pull-requests/how-tos/commit-changes"
 title: "Commit changes"
-intro: "Create, modify, compare, and troubleshoot branches and commits to streamline collaboration in your pull requests."
+intro: "Create, modify, compare, and troubleshoot branches and commits."
 product: "Pull requests"
 document_type: "subcategory"
 breadcrumbs:
@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Commit changes
 
-Create, modify, compare, and troubleshoot branches and commits to streamline collaboration in your pull requests.
+Create, modify, compare, and troubleshoot branches and commits.
 
 ## Links
 

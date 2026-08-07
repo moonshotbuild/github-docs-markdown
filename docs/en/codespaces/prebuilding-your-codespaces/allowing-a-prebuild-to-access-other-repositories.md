@@ -39,7 +39,7 @@ You will need to create a new personal account and then use this account to crea
 1. Create a new personal account on GitHub.
 
    > \[!WARNING]
-   > Although you can generate the personal access token (classic) using your existing personal account, we strongly recommend creating a new account with access only to the target repositories required for your scenario. This is because the access token's `repository` permission grants access to all of the repositories that the account has access to. For more information, see [Creating an account on GitHub](/en/get-started/start-your-journey/creating-an-account-on-github) and [Secure use reference](/en/actions/reference/security/secure-use#allowing-workflows-to-access-internal-and-private-repositories).
+   > Although you can generate the personal access token (classic) using your existing personal account, we strongly recommend creating a new account with access only to the target repositories required for your scenario. This is because the access token's `repository` permission grants access to all of the repositories that the account has access to. For more information, see [Creating an account on GitHub](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github) and [Secure use reference](/en/actions/reference/security/secure-use).
 
 2. Give the new account read access to the required repositories. For more information, see [Managing an individual's access to an organization repository](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/managing-an-individuals-access-to-an-organization-repository).
 

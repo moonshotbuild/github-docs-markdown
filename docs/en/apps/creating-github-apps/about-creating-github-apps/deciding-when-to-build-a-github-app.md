@@ -83,7 +83,7 @@ GitHub Apps and GitHub Actions both provide ways to build automation and workflo
 
 *GitHub Apps* run persistently on a server or compute infrastructure that you provide or run on a user device. They can react to GitHub webhook events as well as events from outside the GitHub ecosystem. They are a good option for operations that span multiple repositories or organizations, or for providing hosted services to other organizations and enterprises. A GitHub App is the best choice when building a tool with functions that occur primarily outside of GitHub or require more execution time or permissions than what a GitHub Actions workflow is allotted.
 
-For more information about comparing GitHub Actions to GitHub Apps, see [GitHub Actions vs GitHub Apps](/en/actions/get-started/actions-vs-apps#comparing-github-actions-to-github-apps).
+For more information about comparing GitHub Actions to GitHub Apps, see [GitHub Actions vs GitHub Apps](/en/actions/get-started/actions-vs-apps).
 
 You can use a GitHub App to authenticate in a GitHub Actions
 workflow if the built in `GITHUB_TOKEN` does not have sufficient permissions. For more information, see [Making authenticated API requests with a GitHub App in a GitHub Actions workflow](/en/apps/creating-github-apps/authenticating-with-a-github-app/making-authenticated-api-requests-with-a-github-app-in-a-github-actions-workflow).

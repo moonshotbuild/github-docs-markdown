@@ -57,7 +57,7 @@ document_type: "homepage"
 
 * [Pull requests documentation](/en/pull-requests)
 
-  Discover how to create, review, and merge pull requests, resolve merge conflicts, and collaborate effectively on GitHub projects.
+  Discover how to create, review, and merge pull requests, resolve merge conflicts, and work with forks.
 
 * [GitHub Issues documentation](/en/issues)
 
@@ -147,7 +147,7 @@ document_type: "homepage"
 
 * [GitHub Models](/en/github-models)
 
-  Find and experiment with AI models for free.
+  GitHub Models has been retired.
 
 * [GitHub for Nonprofits documentation](/en/nonprofit)
 

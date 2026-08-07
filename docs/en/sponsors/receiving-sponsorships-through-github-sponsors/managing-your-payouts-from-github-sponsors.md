@@ -23,7 +23,7 @@ You can view and manage your payouts from GitHub Sponsors. For more information 
 
 If you use a fiscal host to receive payouts, you can view your current payout and next estimated payout but you cannot edit your payout information except by contacting support.
 
-For information about timing for payments from GitHub Sponsors, see [GitHub Sponsors Additional Terms](/en/site-policy/github-terms/github-sponsors-additional-terms#43-payment-timing).
+For information about timing for payments from GitHub Sponsors, see [GitHub Sponsors Additional Terms](/en/site-policy/github-terms/github-sponsors-additional-terms#33-payment-timing).
 
 ## Viewing and editing payout information
 

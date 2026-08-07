@@ -31,7 +31,7 @@ Enable Copilot cloud agent for your members and control the repositories where i
 
 Copilot cloud agent and use of third-party MCP servers are disabled by default for organization members assigned a GitHub Copilot Enterprise or Copilot Business license by your organization.
 
-Organizations with Copilot Enterprise or Copilot Business can enable these features for members on the Copilot policies page for their organization. See [Enabling Copilot features in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies#enabling-copilot-features-in-your-organization).
+Organizations with Copilot Enterprise or Copilot Business can enable these features for members on the Copilot policies page for their organization. See [Enabling Copilot features in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies#enabling-copilot-features-and-models-in-your-organization).
 
 * For the "Copilot cloud agent" policy, select "Enabled".
 * For the "MCP servers on GitHub.com" policy, select "Enabled".

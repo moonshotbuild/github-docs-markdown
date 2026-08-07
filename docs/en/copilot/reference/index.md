@@ -41,6 +41,10 @@ Find information to apply to your work with GitHub Copilot.
 
   Find information on options and settings for Copilot CLI.
 
+* [GitHub Copilot app reference](/en/copilot/reference/github-copilot-app-reference)
+
+  Find reference information for repository configuration, slash commands, and GitHub-provided built-in skills in the GitHub Copilot app.
+
 * [Custom agents configuration](/en/copilot/reference/custom-agents-configuration)
 
   Reference for configuring custom agents.
@@ -53,25 +57,13 @@ Find information to apply to your work with GitHub Copilot.
 
   Find hook events, configuration formats, and input payloads for hooks in Copilot CLI and Copilot cloud agent.
 
-* [Feature availability when GitHub Copilot policies conflict in organizations](/en/copilot/reference/policy-conflicts)
-
-  Learn how delegating Copilot policy decisions to organizations affects users granted a license by organizations with different policies.
-
 * [Supported surfaces for GitHub Copilot policies](/en/copilot/reference/supported-surfaces-for-policies)
 
   Which policies affect which Copilot features and surfaces?
 
-* [Enterprise managed settings reference](/en/copilot/reference/enterprise-managed-settings-reference)
-
-  Reference for the enterprise managed settings schema used by Copilot clients.
-
 * [Copilot allowlist reference](/en/copilot/reference/copilot-allowlist-reference)
 
   Learn how to allow certain traffic through your firewall or proxy server for Copilot to work as intended in your organization.
-
-* [MCP allowlist enforcement](/en/copilot/reference/mcp-allowlist-enforcement)
-
-  Understand the logic and limitations of MCP allowlist enforcement.
 
 * [Metrics data properties for GitHub Copilot](/en/copilot/reference/metrics-data)
 
@@ -81,14 +73,6 @@ Find information to apply to your work with GitHub Copilot.
 
   Find billing information about GitHub Copilot.
 
-* [Audit log events for agents](/en/copilot/reference/agentic-audit-log-events)
-
-  Understand the structure of audit log events for agents in your enterprise.
-
-* [Available filters for agent sessions](/en/copilot/reference/agent-session-filters)
-
-  Search agentic activity in your enterprise with filters for agent sessions.
-
 * [Files excluded from GitHub Copilot code review](/en/copilot/reference/review-excluded-files)
 
   Understand the types of files that are excluded from a review by Copilot.
@@ -96,3 +80,7 @@ Find information to apply to your work with GitHub Copilot.
 * [GitHub Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics)
 
   Find information about usage metrics for GitHub Copilot.
+
+* [Enterprise administrators](/en/copilot/reference/enterprise-administrators)
+
+  Find information to apply to your work as an enterprise administrator for GitHub Copilot.

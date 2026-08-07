@@ -59,7 +59,7 @@ Each finding includes a description of the security issue and an explanation of 
 
 AI-powered security detections are designed to cover languages and frameworks that are not currently supported by CodeQL. This includes, but is not limited to, languages such as PHP, Shell/Bash, Terraform configuration (HCL), and Dockerfiles, as well as framework coverage gaps such as JSP for Java and Blazor for C#.
 
-For a full list of languages supported by CodeQL, see [Code scanning with CodeQL](/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql#supported-languages-and-frameworks).
+For a full list of languages supported by CodeQL, see [Code scanning with CodeQL](/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql).
 
 ## Detection categories
 

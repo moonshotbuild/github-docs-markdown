@@ -41,7 +41,7 @@ If access to a resource requires paired credentials, then secret scanning will c
 
 ## What are the supported secrets
 
-For information about the secrets and service providers supported by push protection, see [Supported secret scanning patterns](/en/code-security/reference/secret-security/supported-secret-scanning-patterns#supported-secrets).
+For information about the secrets and service providers supported by push protection, see [Supported secret scanning patterns](/en/code-security/reference/secret-security/supported-secret-scanning-patterns).
 
 ## Further reading
 

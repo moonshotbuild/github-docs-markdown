@@ -37,6 +37,10 @@ Learn how Copilot cloud agent can carry out research, planning and coding tasks 
 
   Automations let you run Copilot cloud agent automatically, on a schedule or in response to events in a repository.
 
+* [About rationale, confidence, and approvals for issues](/en/copilot/concepts/agents/cloud-agent/about-automation-rationale-and-approvals)
+
+  When automations triage issues, it explains each change, rates its confidence, and holds lower-confidence changes for your review.
+
 * [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/access-management)
 
   Find out about Copilot cloud agent policies available for GitHub Copilot Enterprise and GitHub Copilot Business, and about disabling the agent for specific repositories.

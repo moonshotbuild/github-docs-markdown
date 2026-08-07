@@ -65,7 +65,6 @@ A few things to know about how organization-level enablement behaves, so you can
 
 * Your **Repository access** choice applies to **both existing and future repositories**, so repositories created later inherit your choice automatically. This is true for **All repositories**, **Matching a filter**, and **No repositories**.
 * Turn on **Enforce access** for a guaranteed baseline that repository administrators can't override. Leave it off, or choose **Let repositories decide**, to let teams opt in on their own timeline.
-* Enabling Code Quality does **not** automatically turn on **code coverage**. Coverage is opt-in per repository. It starts reporting only after someone adds a workflow that uploads coverage data, so teams can adopt Code Quality first and add coverage later. See [Setting up code coverage for your repository](/en/code-security/how-tos/maintain-quality-code/set-up-code-coverage).
 
 For the full list of access options and how enforcement works, see [Code Quality enablement across organizations and enterprises](/en/code-security/concepts/code-quality/enablement-at-scale#organization-level-repository-access).
 
@@ -75,6 +74,14 @@ For most rollouts, enabling through the UI is the best starting point: it lets y
 
 If you need automation around your rollout, you can fetch Code Quality findings through the REST API, which is useful for reporting on progress as you expand. You can also enable Code Quality on repositories through the REST API, so you can script enablement across your organization instead of enabling each repository in the UI. See [REST API endpoints for code quality](/en/rest/code-quality/code-quality).
 
+## Set up code coverage
+
+**Add code coverage once your thresholds are tuned.** Code coverage is separate from the quality thresholds you rolled out in the previous steps, so you can turn it on whenever it suits your teams, or skip it entirely if you don't want it.
+
+Enabling Code Quality does not automatically turn on code coverage. Coverage is opt-in per repository, and it starts reporting only after a workflow that uploads coverage data is added to the repository. This means teams can adopt Code Quality first and add coverage later.
+
+To set up coverage for a repository, see [Setting up code coverage for your repository](/en/code-security/how-tos/maintain-quality-code/set-up-code-coverage).
+
 ## Next steps
 
-* **Assess health across your organization.** See [Exploring GitHub Code Quality results in your organization](/en/code-security/how-tos/maintain-quality-code/explore-code-quality).
+Now that you've rolled out Code Quality across your organization, you can assess the health of your repositories at a glance and decide where to focus. See [Exploring GitHub Code Quality results in your organization](/en/code-security/how-tos/maintain-quality-code/explore-code-quality).

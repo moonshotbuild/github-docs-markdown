@@ -44,9 +44,9 @@ You can create an example workflow in your repository that automatically trigger
        runs-on: ubuntu-latest
        steps:
          - uses: actions/checkout@v6
-         - uses: actions/setup-node@v4
+         - uses: actions/setup-node@v7
            with:
-             node-version: '20'
+             node-version: '24'
          - run: npm install -g bats
          - run: bats -v
    ```
@@ -84,10 +84,10 @@ jobs:
 # The `uses` keyword specifies that this step will run the `actions/checkout@v6` action. This is an action that checks out your repository onto the runner, allowing you to run scripts or other actions against your code (such as build and test tools). You should use the checkout action any time your workflow will use the repository's code.
       - uses: actions/checkout@v6
 
-# This step uses the `actions/setup-node@v4` action to install the specified version of the Node.js. (This example uses version 20.) This puts both the `node` and `npm` commands in your `PATH`.
-      - uses: actions/setup-node@v4
+# This step uses the `actions/setup-node@v7` action to install the specified version of the Node.js. (This example uses version 24.) This puts both the `node` and `npm` commands in your `PATH`.
+      - uses: actions/setup-node@v7
         with:
-          node-version: '20'
+          node-version: '24'
 
 # The `run` keyword tells the job to execute a command on the runner. In this case, you are using `npm` to install the `bats` software testing package.
       - run: npm install -g bats

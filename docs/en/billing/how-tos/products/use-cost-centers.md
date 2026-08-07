@@ -24,7 +24,7 @@ Learn how to create and use cost centers to manage costs across your company's d
 ## Creating a cost center
 
 > \[!NOTE]
-> An enterprise can create up to 500 cost centers.
+> An enterprise can create up to 1,000 cost centers.
 
 Create cost centers to monitor and manage expenses for specific organizations or repositories. A single cost center can include multiple resources of any type, such as organizations, repositories, users, and enterprise teams.
 

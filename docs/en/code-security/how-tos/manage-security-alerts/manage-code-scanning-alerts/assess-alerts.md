@@ -52,7 +52,7 @@ By default, the code scanning alerts page is filtered to show alerts for the def
 
 7. Alerts from CodeQL analysis include a description of the problem. Click **Show more** for guidance on how to fix your code.
 
-8. Optionally, assign the alert to someone to fix using the **Assignees** control shown on the right, see [Assigning alerts](/en/code-security/concepts/security-at-scale/about-security-campaigns#assigning-alerts).
+8. Optionally, assign the alert to someone to fix using the **Assignees** control shown on the right, see [Assigning alerts](/en/code-security/concepts/security-at-scale/about-security-campaigns#about-assigning-alerts-to-users-and-copilot-cloud-agent).
 
 For more information, see [Code scanning alerts](/en/code-security/concepts/code-scanning/code-scanning-alerts).
 

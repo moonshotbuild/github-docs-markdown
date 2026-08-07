@@ -31,7 +31,7 @@ Alternatively, you can add your own custom configuration files. See [Creating a 
 
 You can define a single dev container configuration for a repository, different configurations for different branches, or multiple configurations. When multiple configurations are available, users can choose their preferred configuration when they create a codespace. This is particularly useful for large repositories that contain source code in different programming languages or for different projects. You can create a choice of configurations that allow different teams to work in a codespace that's set up appropriately for the work they are doing.
 
-When you create a codespace from a template, you might start with one or more dev container configuration files in your workspace. To configure your environment further, you can add or remove settings from these files and rebuild the container to apply the changes to the codespace you're working in. If you publish your codespace to a repository on GitHub, then any codespaces created from that repository will share the configuration you've defined. See [Applying configuration changes to a codespace](#applying-configuration-changes-to-a-codespace) and [Creating a codespace from a template](/en/codespaces/developing-in-a-codespace/creating-a-codespace-from-a-template#publishing-to-a-remote-repository).
+When you create a codespace from a template, you might start with one or more dev container configuration files in your workspace. To configure your environment further, you can add or remove settings from these files and rebuild the container to apply the changes to the codespace you're working in. If you publish your codespace to a repository on GitHub, then any codespaces created from that repository will share the configuration you've defined. See [Applying configuration changes to a codespace](#applying-configuration-changes-to-a-codespace) and [Creating a codespace from a template](/en/codespaces/developing-in-a-codespace/creating-a-codespace-from-a-template#publishing-to-a-repository-on-github).
 
 ### devcontainer.json
 
@@ -239,7 +239,7 @@ Changes to a configuration will be applied the next time you create a codespace.
    ![Screenshot of the Command Palette with a search for "rebuild container" and the "Codespace: Rebuild Container" option highlighted in the dropdown.](/assets/images/help/codespaces/codespaces-rebuild.png)
 
    > \[!TIP]
-   > You may occasionally want to perform a full rebuild to clear your cache and rebuild your container with fresh images. For more information, see [Rebuilding the container in a codespace](/en/codespaces/developing-in-a-codespace/rebuilding-the-container-in-a-codespace#about-rebuilding-a-container).
+   > You may occasionally want to perform a full rebuild to clear your cache and rebuild your container with fresh images. For more information, see [Rebuilding the container in a codespace](/en/codespaces/developing-in-a-codespace/rebuilding-the-container-in-a-codespace#rebuilding-a-container).
 2. If changes to your dev container configuration cause a container error, your codespace will run in recovery mode, and you will see an error message.
 
    ![Screenshot of a message saying that the codespace is running in recovery mode. Below the message are buttons labeled "Cancel" and "View creation log."](/assets/images/help/codespaces/recovery-mode-error-message.png)

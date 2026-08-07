@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model"
 title: "Changing the AI model for GitHub Copilot cloud agent"
-intro: "In supported entrypoints, when starting a task with Copilot cloud agent, you can select the model used."
+intro: "In supported entrypoints, when starting a task with Copilot cloud agent, you can select the model used, and, for supported models, the reasoning level."
 product: "GitHub Copilot"
 document_type: "article"
 breadcrumbs:
@@ -19,7 +19,7 @@ breadcrumbs:
 
 # Changing the AI model for GitHub Copilot cloud agent
 
-In supported entrypoints, when starting a task with Copilot cloud agent, you can select the model used.
+In supported entrypoints, when starting a task with Copilot cloud agent, you can select the model used, and, for supported models, the reasoning level.
 
 > \[!NOTE]
 > For an overview of Copilot cloud agent, see [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent).
@@ -40,6 +40,7 @@ The following options are currently available:
 * Auto
 * Claude Sonnet 4.5
 * Claude Opus 4.7
+* Claude Opus 5
 * Claude Haiku 4.5
 * Gemini 3.1 Pro
 * Gemini 3.5 Flash
@@ -48,6 +49,13 @@ The following options are currently available:
 * GPT-5.6 Luna
 * GPT-5.6 Sol
 * GPT-5.6 Terra
+* Grok 4.5
 * MAI-Code-1-Flash
 
 > \[!NOTE] If you select **Auto**, Copilot auto model selection will select the best model based on availability and to help reduce rate limiting. See [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection).
+
+## Reasoning level
+
+Some models support configurable reasoning levels, which control how much time and effort the model spends reasoning before it responds. Higher reasoning levels can improve the quality of responses to complex tasks, but may take longer and use more AI credits.
+
+If you select a model that supports configurable reasoning, a second dropdown menu appears so you can choose the reasoning level you want Copilot cloud agent to use for that task. For more information about which models support configurable reasoning, see [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#models-with-extended-capabilities).

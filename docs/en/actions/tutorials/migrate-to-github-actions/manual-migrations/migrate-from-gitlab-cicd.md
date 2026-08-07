@@ -223,7 +223,7 @@ For more information, see [Workflow syntax for GitHub Actions](/en/actions/refer
 
 Both GitLab CI/CD and GitHub Actions allow you to run workflows at a specific interval. In GitLab CI/CD, pipeline schedules are configured with the UI, while in GitHub Actions you can trigger a workflow on a scheduled interval with the "on" key.
 
-For more information, see [Events that trigger workflows](/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#scheduled-events).
+For more information, see [Events that trigger workflows](/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
 
 ## Variables and secrets
 

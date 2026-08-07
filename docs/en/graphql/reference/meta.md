@@ -279,11 +279,13 @@ An object with an ID.
 * ProjectV2Item
 * ProjectV2ItemFieldDateValue
 * ProjectV2ItemFieldIterationValue
+* ProjectV2ItemFieldMultiSelectValue
 * ProjectV2ItemFieldNumberValue
 * ProjectV2ItemFieldSingleSelectValue
 * ProjectV2ItemFieldTextValue
 * ProjectV2ItemStatusChangedEvent
 * ProjectV2IterationField
+* ProjectV2MultiSelectField
 * ProjectV2SingleSelectField
 * ProjectV2StatusUpdate
 * ProjectV2View
@@ -319,6 +321,8 @@ An object with an ID.
 * PullRequestReview
 * PullRequestReviewComment
 * PullRequestReviewThread
+* PullRequestStack
+* PullRequestStackEntry
 * PullRequestThread
 * ReadyForReviewEvent
 * RemovedFromMergeQueueEvent

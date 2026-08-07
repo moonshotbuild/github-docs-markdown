@@ -159,7 +159,7 @@ steps:
 
 ## Specify build steps manually
 
-You can only specify manual build steps if you have enabled advanced setup, see [Configuring advanced setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configuring-advanced-setup-for-code-scanning#configuring-advanced-setup-for-a-repository).
+You can only specify manual build steps if you have enabled advanced setup, see [Configuring advanced setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configuring-advanced-setup-for-code-scanning#configuring-advanced-setup-for-code-scanning-with-codeql).
 
 If `autobuild` fails, or you want to analyze a different set of source files from those built by the `autobuild` process, you'll need to do the following:
 

@@ -101,7 +101,7 @@ To stop private contributions from counting toward your Achievements, or to turn
 
 ## Profile name changes for enterprise with managed users
 
-If you're a member of an enterprise with managed users, any changes to your profile name must be made through your identity provider instead of GitHub. For more information, see [Types of GitHub accounts](/en/get-started/learning-about-github/types-of-github-accounts#enterprise-managed-users).
+If you're a member of an enterprise with managed users, any changes to your profile name must be made through your identity provider instead of GitHub. For more information, see [Types of GitHub accounts](/en/get-started/learning-about-github/types-of-github-accounts#managed-user-accounts).
 
 If you `@mention` an organization you're a member of in your bio, that organization will be featured first in your activity overview.
 

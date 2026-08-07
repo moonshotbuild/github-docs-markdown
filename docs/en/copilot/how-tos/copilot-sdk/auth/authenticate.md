@@ -27,12 +27,13 @@ The GitHub Copilot SDK supports multiple authentication methods to fit different
 
 ## Authentication methods
 
-| Method                                                                 | Use Case                                                     | Copilot Subscription Required |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------------- |
-| [GitHub Signed-in User](#github-signed-in-user)                        | Interactive apps where users sign in with GitHub             | Yes                           |
-| [OAuth GitHub App](#oauth-github-app)                                  | Apps acting on behalf of users via OAuth                     | Yes                           |
-| [Environment Variables](#environment-variables)                        | CI/CD, automation, server-to-server                          | Yes                           |
-| [BYOK (bring your own key)](/en/copilot/how-tos/copilot-sdk/auth/byok) | Using your own API keys (Azure AI Foundry, OpenAI, and more) | No                            |
+| Method                                                                                          | Use Case                                                           | Copilot Subscription Required                      |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | -------------------------------------------------- |
+| [GitHub Signed-in User](#github-signed-in-user)                                                 | Interactive apps where users sign in with GitHub                   | Yes                                                |
+| [OAuth GitHub App](#oauth-github-app)                                                           | Apps acting on behalf of users via OAuth                           | Yes                                                |
+| [Environment Variables](#environment-variables)                                                 | CI/CD, automation, server-to-server                                | Yes                                                |
+| [Server-to-server authentication](/en/copilot/how-tos/copilot-sdk/auth/server-to-server-tokens) | Organization-attributed automation and direct organization billing | No user subscription; organization policy required |
+| [BYOK (bring your own key)](/en/copilot/how-tos/copilot-sdk/auth/byok)                          | Using your own API keys (Microsoft Foundry, OpenAI, and more)      | No                                                 |
 
 ## GitHub signed-in user
 
@@ -256,6 +257,8 @@ client.start().get();
 
 For automation, CI/CD pipelines, and server-to-server scenarios, you can authenticate using environment variables.
 
+For organization-attributed automation that should not use a user's personal access token, see [Server-to-server authentication](/en/copilot/how-tos/copilot-sdk/auth/server-to-server-tokens).
+
 **Supported environment variables (in priority order):**
 
 1. `COPILOT_GITHUB_TOKEN` - Recommended for explicit Copilot usage
@@ -306,18 +309,18 @@ await client.start()
 
 ## BYOK (bring your own key)
 
-BYOK allows you to use your own API keys from model providers like Azure AI Foundry, OpenAI, or Anthropic. This bypasses GitHub Copilot authentication entirely.
+BYOK allows you to use your own API keys from model providers like Microsoft Foundry, OpenAI, or Anthropic. This bypasses GitHub Copilot authentication entirely.
 
 **Key benefits:**
 
 * No GitHub Copilot subscription required
 * Use enterprise model deployments
 * Direct billing with your model provider
-* Support for Azure AI Foundry, OpenAI, Anthropic, and OpenAI-compatible endpoints
+* Support for Microsoft Foundry, OpenAI, Anthropic, and OpenAI-compatible endpoints
 
 **See the [BYOK (bring your own key)](/en/copilot/how-tos/copilot-sdk/auth/byok) for complete details**, including:
 
-* Azure AI Foundry setup
+* Microsoft Foundry setup
 * Provider configuration options
 * Limitations and considerations
 * Complete code examples

@@ -108,7 +108,7 @@ git push --set-upstream origin my-branch
 
 ### Example: Start a new repository and publish it to GitHub
 
-First, you will need to create a new repository on GitHub. For more information, see [Hello World](/en/get-started/start-your-journey/hello-world). **Do not** initialize the repository with a README, .gitignore or License file. This empty repository will await your code.
+First, you will need to create a new repository on GitHub. For more information, see [Hello World](/en/get-started/using-github/hello-world). **Do not** initialize the repository with a README, .gitignore or License file. This empty repository will await your code.
 
 ```bash
 # create a new directory, and initialize it with git-specific functions

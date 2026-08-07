@@ -41,7 +41,7 @@ After you have installed GitHub Desktop, you can authenticate the application wi
 
 <div class="ghd-tool mac">
 
-1. Before you can authenticate to GitHub or GitHub Enterprise, you will need an account. For more information, see [Creating an account on GitHub](/en/get-started/start-your-journey/creating-an-account-on-github).
+1. Before you can authenticate to GitHub or GitHub Enterprise, you will need an account. For more information, see [Creating an account on GitHub](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github).
 2. In the menu bar, select **GitHub Desktop**, then click **Settings**.
 
    ![Screenshot of the menu bar on a Mac. Under the open "GitHub Desktop" dropdown menu, the cursor hovers over "Settings", which is highlighted in blue.](/assets/images/help/desktop/mac-choose-settings.png)
@@ -54,7 +54,7 @@ After you have installed GitHub Desktop, you can authenticate the application wi
 
 <div class="ghd-tool windows">
 
-1. Before you can authenticate to GitHub or GitHub Enterprise, you will need an account. For more information, see [Creating an account on GitHub](/en/get-started/start-your-journey/creating-an-account-on-github).
+1. Before you can authenticate to GitHub or GitHub Enterprise, you will need an account. For more information, see [Creating an account on GitHub](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github).
 2. Use the **File** menu, then click **Options**.
 
    ![Screenshot of the "GitHub Desktop" menu bar on Windows. In the expanded "File" dropdown menu, the "Options" item is outlined in orange.](/assets/images/help/desktop/windows-choose-options.png)

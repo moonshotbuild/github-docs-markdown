@@ -27,7 +27,7 @@ Generate and improve GitHub Actions workflows.
 > * For community-contributed examples of custom instructions for specific languages and scenarios, see the [Awesome GitHub Copilot Customizations](https://github.com/github/awesome-copilot/blob/main/docs/README.instructions.md) repository.
 > * You can apply custom instructions across different scopes, depending on the platform or IDE where you are creating them. For more information, see "[About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization)."
 
-The following example shows a path-specific `actions.instructions.md` file that applies only to GitHub Actions workflow files in your repository, using the `applyTo` field. For more information about path-specific instructions files, see [Adding repository custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions#using-one-or-more-instructionsmd-files).
+The following example shows a path-specific `actions.instructions.md` file that applies only to GitHub Actions workflow files in your repository, using the `applyTo` field. For more information about path-specific instructions files, see [Adding repository custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions#creating-path-specific-custom-instructions).
 
 ````text copy
 ---
@@ -62,7 +62,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 20
           cache: npm

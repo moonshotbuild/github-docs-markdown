@@ -43,7 +43,6 @@ Anytime you search across all of GitHub, you can filter the results to see match
 
 ## Further reading
 
-* [Searching GitHub Models](/en/search-github/searching-on-github/searching-github-models)
 * [Using pre-written building blocks in your workflow](/en/actions/how-tos/write-workflows/choose-what-workflows-do/find-and-customize-actions)
 * [Installing a GitHub App from GitHub Marketplace for your personal account](/en/apps/using-github-apps/installing-a-github-app-from-github-marketplace-for-your-personal-account)
 * [Installing a GitHub App from GitHub Marketplace for your organizations](/en/apps/using-github-apps/installing-a-github-app-from-github-marketplace-for-your-organizations)

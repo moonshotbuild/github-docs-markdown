@@ -21,8 +21,7 @@ breadcrumbs:
 
 Increase your governance over your Dependabot alerts with delegated alert dismissal.
 
-> \[!NOTE]
-> The implementation of this approval process can potentially cause some friction, so it's important to ensure that the team of security managers has adequate coverage to review dismissal requests regularly before proceeding.
+> \[!NOTE] The implementation of this approval process can potentially cause some friction, so it's important to ensure that the team of security managers has adequate coverage to review dismissal requests regularly before proceeding.
 
 ## Configuring delegated dismissal for a repository
 
@@ -39,7 +38,7 @@ Increase your governance over your Dependabot alerts with delegated alert dismis
 
 You must configure delegated dismissal for your organization using a custom security configuration. You can then apply the security configuration to all (or selected) repositories in your organization.
 
-1. Start creating or editing a custom security configuration. See [Creating a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/create-custom-configuration#creating-a-custom-security-configuration).
+1. Start creating or editing a custom security configuration. See [Creating a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/create-custom-configuration).
 2. In the "Dependency scanning" section of your security configuration, set "Prevent direct alert dismissals" to **Enabled**.
 3. Click **Save configuration**.
 4. Apply the security configuration to repositories in your organization. See [Applying a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/apply-custom-configuration).

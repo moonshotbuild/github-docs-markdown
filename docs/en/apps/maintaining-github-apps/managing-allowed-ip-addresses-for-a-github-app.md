@@ -19,7 +19,7 @@ You can add an IP allow list to your GitHub App registration to prevent your app
 
 ## About IP address allow lists for GitHub Apps
 
-Enterprise and organization owners can restrict access to assets by configuring an IP address allow list. This list specifies the IP addresses that actors can use to access their resources. For more information, see [Enforcing policies for security settings in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-security-settings-in-your-enterprise#managing-allowed-ip-addresses-for-organizations-in-your-enterprise).
+Enterprise and organization owners can restrict access to assets by configuring an IP address allow list. This list specifies the IP addresses that actors can use to access their resources. For more information, see [Restricting network traffic to your enterprise with an IP allow list](/en/enterprise-cloud@latest/admin/configuring-settings/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list#about-githubs-ip-allow-list).
 
 When an organization or enterprise has an allow list, third-party applications that connect via a GitHub App will be denied access unless either of the following condition sets are true:
 

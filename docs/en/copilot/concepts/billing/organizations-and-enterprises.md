@@ -37,7 +37,7 @@ With GitHub Enterprise Cloud:
 
 * An enterprise owner chooses the plan for each organization in the enterprise. For guidance on choosing a plan, see [Choosing your enterprise's plan for GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/assign-licenses/choose-enterprise-plan).
 
-* Data-resident and FedRAMP-compliant Copilot requests include a 10% model multiplier increase. See [GitHub Copilot with data residency](/en/enterprise-cloud@latest/admin/data-residency/github-copilot-with-data-residency#pricing-for-data-resident-copilot).
+* Data-resident and FedRAMP-compliant Copilot requests include a 10% model multiplier increase. See [GitHub Copilot with data residency](/en/enterprise-cloud@latest/admin/data-residency/github-copilot-with-data-residency#pricing-changes).
 
 ## GitHub AI Credits
 

@@ -1,7 +1,7 @@
 ---
 source_path: "/en/pull-requests/how-tos/review-pull-requests"
 title: "Review pull requests"
-intro: "Review, comment on, approve, and manage pull requests effectively, including filtering files, reviewing dependency changes, and incorporating feedback."
+intro: "Review, comment, approve, and manage pull requests effectively to incorporate feedback."
 product: "Pull requests"
 document_type: "subcategory"
 breadcrumbs:
@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Review pull requests
 
-Review, comment on, approve, and manage pull requests effectively, including filtering files, reviewing dependency changes, and incorporating feedback.
+Review, comment, approve, and manage pull requests effectively to incorporate feedback.
 
 ## Links
 
@@ -26,6 +26,10 @@ Review, comment on, approve, and manage pull requests effectively, including fil
 * [Reviewing proposed changes in a pull request](/en/pull-requests/how-tos/review-pull-requests/reviewing-proposed-changes-in-a-pull-request)
 
   Review commits, file changes, and diffs in pull requests to provide feedback, approve changes, or request updates before merging.
+
+* [Reviewing stacked pull requests](/en/pull-requests/how-tos/review-pull-requests/reviewing-stacked-pull-requests)
+
+  Address review feedback on a pull request anywhere in a stack and cascade your changes through the rest of the stack.
 
 * [Reviewing dependency changes in a pull request](/en/pull-requests/how-tos/review-pull-requests/reviewing-dependency-changes-in-a-pull-request)
 

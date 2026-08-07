@@ -60,7 +60,7 @@ To rebuild your container, [access the VS Code Command Palette](#accessing-the-v
 ![Screenshot of the Command Palette with the search text "rebuild" and the option "Codespaces: Rebuild Container."](/assets/images/help/codespaces/codespaces-rebuild.png)
 
 > \[!TIP]
-> You may occasionally want to perform a full rebuild to clear your cache and rebuild your container with fresh images. For more information, see [Rebuilding the container in a codespace](/en/codespaces/developing-in-a-codespace/rebuilding-the-container-in-a-codespace#about-rebuilding-a-container).
+> You may occasionally want to perform a full rebuild to clear your cache and rebuild your container with fresh images. For more information, see [Rebuilding the container in a codespace](/en/codespaces/developing-in-a-codespace/rebuilding-the-container-in-a-codespace#rebuilding-a-container).
 
 ### Codespaces logs
 

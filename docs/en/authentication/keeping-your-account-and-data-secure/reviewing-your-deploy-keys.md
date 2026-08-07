@@ -28,4 +28,4 @@ For more information, see [Managing deploy keys](/en/authentication/connecting-t
 
 ## Further reading
 
-* [Configuring notifications](/en/subscriptions-and-notifications/get-started/configuring-notifications#organization-alerts-notification-options)
+* [Configuring notifications](/en/subscriptions-and-notifications/get-started/configuring-notifications)

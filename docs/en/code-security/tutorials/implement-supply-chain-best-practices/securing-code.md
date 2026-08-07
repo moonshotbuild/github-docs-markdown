@@ -55,7 +55,7 @@ Dependabot can help you by monitoring your dependencies and notifying you when t
 
 ### Automatic detection of vulnerabilities in pull requests
 
-The dependency review action enforces a dependency review on your pull requests, making it easy for you to see if a pull request will introduce a vulnerable version of a dependency to your repository. When a vulnerability is detected, the dependency review action can block the pull request from merging. For more information, see [Dependency review](/en/code-security/concepts/supply-chain-security/dependency-review#the-dependency-review-action).
+The dependency review action enforces a dependency review on your pull requests, making it easy for you to see if a pull request will introduce a vulnerable version of a dependency to your repository. When a vulnerability is detected, the dependency review action can block the pull request from merging. For more information, see [Dependency review](/en/code-security/concepts/supply-chain-security/dependency-review#about-the-dependency-review-action).
 
 ### Assessment of exposure to risk from a vulnerable dependency
 

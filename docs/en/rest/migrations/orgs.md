@@ -19,7 +19,7 @@ Use the REST API to export one or more repositories so you can move them to  Git
 
 ## About organization migrations
 
-These endpoints are only available to authenticated organization owners. For more information, see [Roles in an organization](/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#permission-levels-for-an-organization) and [Authenticating to the REST API](/en/rest/authentication/authenticating-to-the-rest-api).
+These endpoints are only available to authenticated organization owners. For more information, see [Roles in an organization](/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#organization-owners) and [Authenticating to the REST API](/en/rest/authentication/authenticating-to-the-rest-api).
 
 You can use these endpoints to export one or more repositories so you can move them to a GitHub Enterprise Server instance. For more information, see [Exporting migration data from GitHub.com](/en/migrations/using-ghe-migrator/exporting-migration-data-from-githubcom).
 

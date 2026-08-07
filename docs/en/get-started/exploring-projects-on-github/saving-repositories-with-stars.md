@@ -17,11 +17,11 @@ breadcrumbs:
 
 You can star repositories and topics to keep track of projects you find interesting.
 
-You can search, sort, and filter your starred repositories and topics on your [stars page](https://github.com/stars).
+You can search, sort, and filter your starred repositories and topics on your [stars page](https://github.com/stars?ref_product=github\&ref_type=engagement\&ref_style=text).
 
 ## About stars
 
-Starring makes it easy to find a repository or topic again later. You can see all the repositories and topics you have starred by going to your [stars page](https://github.com/stars).
+Starring makes it easy to find a repository or topic again later. You can see all the repositories and topics you have starred by going to your [stars page](https://github.com/stars?ref_product=github\&ref_type=engagement\&ref_style=text).
 
 You can star repositories and topics to discover similar projects on GitHub. For example, after you star [GitHub's Green Software Directory](https://github.com/github/GreenSoftwareDirectory), you will see other content related to green software on your personal dashboard.
 
@@ -104,7 +104,7 @@ You can add a repository to an existing or new list wherever you see a repositor
 
 ## Searching starred repositories and topics
 
-You can use the search bar on your [stars page](https://github.com/stars) to quickly find repositories and topics you've starred.
+You can use the search bar on your [stars page](https://github.com/stars?ref_product=github\&ref_type=engagement\&ref_style=text) to quickly find repositories and topics you've starred.
 
 1. In the upper-right corner of any page, click your profile picture, then click **Your stars**.
 

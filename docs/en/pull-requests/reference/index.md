@@ -1,7 +1,7 @@
 ---
 source_path: "/en/pull-requests/reference"
 title: "Reference for pull requests"
-intro: "Find detailed guidance on managing pull requests, including reviews, merges, branches, and resolving conflicts."
+intro: "Find detailed reference information on managing pull requests, including reviews, merges, branches, and resolving conflicts."
 product: "Pull requests"
 document_type: "category"
 breadcrumbs:
@@ -13,13 +13,25 @@ breadcrumbs:
 
 # Reference for pull requests
 
-Find detailed guidance on managing pull requests, including reviews, merges, branches, and resolving conflicts.
+Find detailed reference information on managing pull requests, including reviews, merges, branches, and resolving conflicts.
 
 ## Links
 
 * [Pull requests](/en/pull-requests/reference/pull-requests)
 
   Propose, review, and merge code changes using pull requests to collaborate effectively and maintain code quality.
+
+* [Stacked pull requests](/en/pull-requests/reference/stacked-pull-requests)
+
+  Rules and requirements for how stacked pull requests function on GitHub.
+
+* [Stacked pull requests CLI commands](/en/pull-requests/reference/stacked-prs-cli-commands)
+
+  Find every command, flag, and exit code for the gh stack extension in GitHub CLI.
+
+* [Stacked pull requests APIs and webhooks](/en/pull-requests/reference/stacked-pull-requests-apis-and-webhooks)
+
+  Read and manage stacked pull requests programmatically with the GitHub REST and GraphQL APIs, and webhooks.
 
 * [Branches](/en/pull-requests/reference/branches)
 
@@ -32,6 +44,10 @@ Find detailed guidance on managing pull requests, including reviews, merges, bra
 * [Commits](/en/pull-requests/reference/commits)
 
   Learn how commits save changes to your files, track authorship, and organize your project's history in GitHub.
+
+* [Use other tools with stacked pull requests](/en/pull-requests/reference/use-other-tools-with-stacked-pull-requests)
+
+  Use stacked pull requests with tools like Jujutsu, Sapling, or git-town.
 
 * [Using query parameters to create a pull request](/en/pull-requests/reference/using-query-parameters-to-create-a-pull-request)
 

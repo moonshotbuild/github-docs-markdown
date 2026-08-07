@@ -35,4 +35,4 @@ Your integration can use webhooks to learn when specific events happen on GitHub
 
 If your integration is a GitHub App or custom action, you can publish your integration on GitHub Marketplace. For more information, see [About GitHub Marketplace for apps](/en/apps/github-marketplace/github-marketplace-overview/about-github-marketplace-for-apps) and [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
-If your integration uses generative AI, you can find and experiment with AI models for free on GitHub. See [Prototyping with AI models](/en/github-models/use-github-models/prototyping-with-ai-models).
+If your integration uses generative AI, you can build AI-powered workflows on GitHub with GitHub Copilot. See [GitHub Copilot documentation](/en/copilot).

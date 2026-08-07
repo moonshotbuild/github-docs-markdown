@@ -28,6 +28,8 @@ In this tutorial, you'll create the repository you'll use throughout this series
 
 * An account on GitHub. To sign up, go to [https://github.com/signup](https://github.com/signup?ref_product=github\&ref_type=engagement\&ref_style=text).
 
+If you use Enterprise Managed Users or GitHub Enterprise Server, contact your enterprise or site administrator for information about your account on GitHub Enterprise.
+
 ## What is a repository?
 
 A repository is where you keep code and files for a software project on GitHub. It stores your files, tracks each change as a commit, and gives collaborators a shared place to work. Most software projects—from a single web page to a large application—live in their own repository.

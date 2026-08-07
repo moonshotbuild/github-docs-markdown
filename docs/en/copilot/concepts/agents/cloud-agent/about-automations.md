@@ -88,6 +88,8 @@ You can manually select the tools you want to enable, or you can use the **Sugge
 
 An automation can only take action in the single repository it is scoped to.
 
+When an automation changes an issue, it can explain each change and rate its confidence, applying high-confidence changes automatically and proposing others for your review. See [About rationale, confidence, and approvals for issues](/en/copilot/concepts/agents/cloud-agent/about-automation-rationale-and-approvals).
+
 ## Configuration inherited from the repository
 
 Automations use the Copilot cloud agent configuration for the repository they are scoped to, including:
@@ -109,7 +111,7 @@ Because sessions and their logs are visible to others, you should not include se
 
 ## Billing
 
-Each time an automation runs, it starts a Copilot cloud agent session that uses GitHub Actions minutes and GitHub AI Credits. This usage is billed to the user who created the automation. For more information, see [GitHub Copilot licenses](/en/billing/concepts/product-billing/github-copilot-licenses#allowance-usage-for-copilot-cloud-agent).
+Each time an automation runs, it starts a Copilot cloud agent session that uses GitHub Actions minutes and GitHub AI Credits. This usage is billed to the user who created the automation. For more information, see [GitHub Copilot licenses](/en/billing/concepts/product-billing/github-copilot-licenses).
 
 ## Security and safety
 

@@ -31,7 +31,7 @@ Learn the core concepts that you'll need to understand GitHub Copilot.
 
 * [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes)
 
-  Cloud and local sandboxes for GitHub Copilot provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine or in fully isolated cloud environments.
+  Cloud and local sandboxes provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine or in fully isolated cloud environments.
 
 * [About GitHub Spark](/en/copilot/concepts/spark)
 
@@ -81,6 +81,6 @@ Learn the core concepts that you'll need to understand GitHub Copilot.
 
   You can connect to GitHub Copilot through an HTTP proxy and use custom certificates.
 
-* [Preparing for new features and models](/en/copilot/concepts/preparing-for-new-features-and-models)
+* [Learning about new features and models](/en/copilot/concepts/learning-about-new-features-and-models)
 
   Stay informed about GitHub Copilot features and models, and make confident decisions about enabling them for your enterprise.

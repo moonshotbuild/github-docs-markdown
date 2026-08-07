@@ -45,7 +45,7 @@ Create a codespace to start developing in a secure, configurable, and dedicated 
 
 * [Enabling or disabling GitHub Codespaces for your organization](/en/codespaces/managing-codespaces-for-your-organization/enabling-or-disabling-github-codespaces-for-your-organization)
 
-  You can control which users can use GitHub Codespaces in your organization's private and internal repositories.
+  You can control which users can use GitHub Codespaces in your organization's private repositories.
 
 * [Security in GitHub Codespaces](/en/codespaces/reference/security-in-github-codespaces)
 

@@ -75,10 +75,6 @@ GitHub's security features help you keep track of your projects' dependencies an
 
   The dependabot.yml controls automated dependency updates in your repository.
 
-* [Automatic Dependabot access to GitHub-hosted registries](/en/code-security/concepts/supply-chain-security/automatic-dependabot-access-to-github-registries)
-
-  Keep your private dependencies up to date reliably by granting Dependabot automatic access to GitHub Packages and Container registry, so you never need to create or rotate credentials for these registries.
-
 * [Dependabot auto-triage rules](/en/code-security/concepts/supply-chain-security/dependabot-auto-triage-rules)
 
   Control how Dependabot handles security alerts, including filtering, ignoring, snoozing, or triggering security updates.

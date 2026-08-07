@@ -26,7 +26,7 @@ You can reclaim used GitHub Actions storage by deleting artifacts before they ex
 
 Write access to the repository is required to perform these steps.
 
-By default, GitHub stores build logs and artifacts for 90 days, and this retention period can be customized. For more information, see [Billing and usage](/en/actions/concepts/billing-and-usage#artifact-and-log-retention-policy).
+By default, GitHub stores build logs and artifacts for 90 days, and this retention period can be customized. For more information, see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-repository).
 
 1. On GitHub, navigate to the main page of the repository.
 2. Under your repository name, click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-play" aria-label="play" role="img"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm4.879-2.773 4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559V5.442a.25.25 0 0 1 .379-.215Z"></path></svg> Actions**.

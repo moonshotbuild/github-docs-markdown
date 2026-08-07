@@ -23,6 +23,8 @@ Use Copilot Chat in your editor to give you code suggestions, explain code, gene
 
 This guide describes how to use Copilot Chat and agents to automate coding tasks by breaking them into steps, using tools to read files, edit code, and run commands, and self-correcting when something goes wrong. You can also ask general questions about software development, or specific questions about the code in your project. For more information, see [About GitHub Copilot Chat](/en/copilot/concepts/chat).
 
+To learn how to use Copilot for agent-driven workflows in a desktop app, see [Getting started with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/getting-started).
+
 <!-- --------------------- -->
 
 <!-- VS Code -->
@@ -33,9 +35,9 @@ This guide describes how to use Copilot Chat and agents to automate coding tasks
 
 ## Prerequisites
 
-* **Access to GitHub Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#getting-access-to-copilot).
+* **Access to GitHub Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#get-access).
 * **Latest version of Visual Studio Code**. See the [Visual Studio Code download page](https://code.visualstudio.com/Download?ref_product=copilot\&ref_type=engagement\&ref_style=text).
-* **Sign in to GitHub in Visual Studio Code**. If you experience authentication issues, see [Troubleshooting common issues with GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-common-issues#troubleshooting-authentication-issues-in-your-editor).
+* **Sign in to GitHub in Visual Studio Code**. If you experience authentication issues, see [Troubleshooting common issues with GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-common-issues#authentication-problems-in-visual-studio-code).
 
 If you have access to GitHub Copilot via your organization, you won't be able to use GitHub Copilot Chat if your organization owner has disabled chat. See [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies).
 
@@ -92,7 +94,7 @@ Subagents use the same tools and AI model as the main session, but they cannot c
 1. In the Copilot Chat window, click the tools icon.
 2. Enable the `runSubagent` tool.
 
-If you use custom prompt files or custom agents, ensure you specify the `runSubagent` tool in the `tools` frontmatter property. See [Creating custom agents for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents#creating-a-custom-agent-profile-in-visual-studio-code), and [Use prompt files in VS Code](https://code.visualstudio.com/docs/copilot/customization/prompt-files) in the Visual Studio Code documentation.
+If you use custom prompt files or custom agents, ensure you specify the `runSubagent` tool in the `tools` frontmatter property. See [Creating custom agents for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents#configuring-an-agent-profile), and [Use prompt files in VS Code](https://code.visualstudio.com/docs/copilot/customization/prompt-files) in the Visual Studio Code documentation.
 
 #### Invoking subagents
 
@@ -276,7 +278,7 @@ To leave feedback about the GitHub Copilot Chat extension, open an issue in the 
 ## Further reading
 
 * [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
-* [Using Copilot Chat in VS Code](https://code.visualstudio.com/docs/copilot/copilot-chat) and [Getting started with GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/getting-started) in the Visual Studio Code documentation
+* [Using Copilot Chat in VS Code](https://code.visualstudio.com/docs/copilot/copilot-chat) in the Visual Studio Code documentation
 * [Managing agent sessions](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/manage-and-track-agents)
 * [Asking GitHub Copilot questions in GitHub](/en/copilot/how-tos/copilot-on-github/chat-with-copilot/chat-in-github)
 * [Application card: GitHub Copilot Chat](/en/copilot/responsible-use/chat)
@@ -296,7 +298,7 @@ To leave feedback about the GitHub Copilot Chat extension, open an issue in the 
 
 ## Prerequisites
 
-* **Access to GitHub Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#getting-access-to-copilot).
+* **Access to GitHub Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#get-access).
 * **Visual Studio 2022 version 17.8 or later**. See [Install Visual Studio](https://learn.microsoft.com/visualstudio/install/install-visual-studio) in the Visual Studio documentation.
 
   * *For Visual Studio 17.8 and 17.9:*
@@ -304,7 +306,7 @@ To leave feedback about the GitHub Copilot Chat extension, open an issue in the 
     * **GitHub Copilot Chat extension**. See [Install GitHub Copilot in Visual Studio](https://learn.microsoft.com/visualstudio/ide/visual-studio-github-copilot-install-and-states?ref_product=copilot\&ref_type=engagement\&ref_style=text) in the Visual Studio documentation.
 
   *Visual Studio 17.10 and later have the GitHub Copilot and GitHub Copilot Chat extensions built in. You don't need to install them separately.*
-* **Sign in to GitHub in Visual Studio**. If you experience authentication issues, see [Troubleshooting common issues with GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-common-issues#troubleshooting-authentication-issues-in-your-editor).
+* **Sign in to GitHub in Visual Studio**. If you experience authentication issues, see [Troubleshooting common issues with GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-common-issues#authentication-problems-in-visual-studio).
 
 If you have access to GitHub Copilot via your organization, you won't be able to use GitHub Copilot Chat if your organization owner has disabled chat. See [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies).
 
@@ -452,7 +454,7 @@ To share feedback about Copilot Chat, you can use the **Send feedback** button i
 
 ## Prerequisites
 
-* **Access to GitHub Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#getting-access-to-copilot).
+* **Access to GitHub Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#get-access).
 * **Compatible JetBrains IDE**. GitHub Copilot is compatible with the following IDEs:
 
   * IntelliJ IDEA (Ultimate, Community, Educational)
@@ -698,9 +700,9 @@ To share feedback about Copilot Chat, you can use the **share feedback** link in
 
 ## Prerequisites
 
-* **Access to GitHub Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#getting-access-to-copilot).
+* **Access to GitHub Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#get-access).
 * **Latest version of the GitHub Copilot extension**. For installation instructions, see [Installing the GitHub Copilot extension in your environment](/en/copilot/how-tos/set-up/install-copilot-extension).
-* **Sign in to GitHub in Xcode**. If you experience authentication issues, see [Troubleshooting common issues with GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-common-issues#troubleshooting-authentication-issues-in-your-editor).
+* **Sign in to GitHub in Xcode**.
 
 If you have access to GitHub Copilot via your organization, you won't be able to use GitHub Copilot Chat if your organization owner has disabled chat. See [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies).
 
@@ -863,11 +865,11 @@ To indicate whether a response was helpful, use <svg version="1.1" width="16" he
 
 ## Prerequisites
 
-* **Access to Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#getting-access-to-copilot).
+* **Access to Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#get-access).
 * **Compatible version of Eclipse**. To use the GitHub Copilot extension, you must have Eclipse version 2024-09 or above. See the [Eclipse download page](https://www.eclipse.org/downloads/packages/).
 * If you are a member of an organization or enterprise with a Copilot Business or Copilot Enterprise plan, the "MCP servers in Copilot" policy must be enabled in order to use MCP with Copilot.
 * **Latest version of the GitHub Copilot extension**. Download this from the [Eclipse Marketplace](https://aka.ms/copiloteclipse?ref_product=copilot\&ref_type=engagement\&ref_style=text). For more information, see [Installing the GitHub Copilot extension in your environment](/en/copilot/how-tos/set-up/install-copilot-extension?tool=eclipse).
-* **Sign in to GitHub in Eclipse**. If you experience authentication issues, see [Troubleshooting common issues with GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-common-issues#troubleshooting-authentication-issues-in-your-editor).
+* **Sign in to GitHub in Eclipse**.
 
 If you have access to GitHub Copilot via your organization, you won't be able to use GitHub Copilot Chat if your organization owner has disabled chat. See [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies).
 

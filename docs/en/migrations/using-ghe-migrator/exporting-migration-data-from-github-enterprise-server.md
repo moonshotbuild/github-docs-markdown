@@ -19,7 +19,7 @@ To change platforms or move from a trial instance to a production instance, you 
 
 ## Preparing the GitHub Enterprise Server source instance
 
-1. Verify that you are a site administrator on the GitHub Enterprise Server source. The best way to do this is to verify that you can [SSH into the instance](/en/enterprise-server@3.21/admin/configuration/configuring-your-enterprise/accessing-the-administrative-shell-ssh).
+1. Verify that you are a site administrator on the GitHub Enterprise Server source. The best way to do this is to verify that you can [SSH into the instance](/en/enterprise-server@3.21/admin/administering-your-instance/administering-your-instance-from-the-command-line/accessing-the-administrative-shell-ssh).
 
 2. [Generate an access token](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with the `repo` and `admin:org` scopes on the GitHub Enterprise Server source instance.
 
@@ -32,7 +32,7 @@ To change platforms or move from a trial instance to a production instance, you 
 >
 > If you're performing a trial run, you do not need to lock the repository. When you migrate data from a repository that's in use, GitHub strongly recommends locking the repository. For more information, see [About ghe-migrator](/en/migrations/using-ghe-migrator/about-ghe-migrator#types-of-migrations).
 
-1. SSH into GitHub.com. If your instance comprises multiple nodes, for example if high availability or geo-replication are configured, SSH into the primary node. If you use a cluster, you can SSH into any node. Replace HOSTNAME with the hostname for your instance, or the hostname or IP address of a node. For more information, see [Accessing the administrative shell (SSH)](/en/enterprise-server@3.21/admin/configuration/configuring-your-enterprise/accessing-the-administrative-shell-ssh).
+1. SSH into GitHub.com. If your instance comprises multiple nodes, for example if high availability or geo-replication are configured, SSH into the primary node. If you use a cluster, you can SSH into any node. Replace HOSTNAME with the hostname for your instance, or the hostname or IP address of a node. For more information, see [Accessing the administrative shell (SSH)](/en/enterprise-server@3.21/admin/administering-your-instance/administering-your-instance-from-the-command-line/accessing-the-administrative-shell-ssh).
 
    ```shell copy
    ssh -p 122 admin@HOSTNAME

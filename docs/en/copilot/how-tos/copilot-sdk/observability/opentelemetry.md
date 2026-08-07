@@ -67,7 +67,7 @@ client = CopilotClient(
 <!-- docs-validate: skip -->
 
 ```golang
-client, err := copilot.NewClient(copilot.ClientOptions{
+client := copilot.NewClient(&copilot.ClientOptions{
     Telemetry: &copilot.TelemetryConfig{
         OTLPEndpoint: "http://localhost:4318",
     },

@@ -36,7 +36,7 @@ For more information, see the following articles.
 * [Transferring organization ownership](/en/organizations/managing-organization-settings/transferring-organization-ownership)
 * [Deleting an organization account](/en/organizations/managing-organization-settings/deleting-an-organization-account)
 * [Removing yourself from an organization](/en/account-and-profile/how-tos/organization-membership/removing-yourself-from-an-organization)
-* [Personal account reference](/en/account-and-profile/reference/personal-account-reference#account-deletion)
+* [Personal account reference](/en/account-and-profile/reference/personal-account-reference#side-effects-of-account-deletion)
 
 To delete your personal account, see [Deleting your personal account](/en/account-and-profile/how-tos/account-management/deleting-your-personal-account).
 
@@ -61,7 +61,7 @@ In some cases, you may need to use multiple accounts on GitHub. For example, you
 
 To learn how to manage multiple accounts, see [Managing multiple accounts](/en/account-and-profile/how-tos/account-management/managing-multiple-accounts).
 
-You cannot use a managed user account to contribute to public projects on GitHub.com, so you must contribute to those resources using your personal account. For more information, see [About Enterprise Managed Users](/en/enterprise-cloud@latest/admin/identity-and-access-management/using-enterprise-managed-users-for-iam/about-enterprise-managed-users#abilities-and-restrictions-of-managed-user-accounts) in the GitHub Enterprise Cloud documentation.
+You cannot use a managed user account to contribute to public projects on GitHub.com, so you must contribute to those resources using your personal account. For more information, see [About Enterprise Managed Users](/en/enterprise-cloud@latest/admin/identity-and-access-management/using-enterprise-managed-users-for-iam/about-enterprise-managed-users) in the GitHub Enterprise Cloud documentation.
 
 If you need to use multiple accounts, you can stay signed in to your accounts and switch between them. For example, switching between a personal account and a service account. For more information, see [Switching between accounts](/en/authentication/keeping-your-account-and-data-secure/switching-between-accounts).
 

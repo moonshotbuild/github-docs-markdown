@@ -28,7 +28,7 @@ By default, GitHub does not display the source IP address for events in your org
 
 You are responsible for meeting any legal obligations that accompany the viewing or storage of IP addresses displayed within your organization's audit log.
 
-When anyone creates an account on GitHub, the person agrees to GitHub's collection of basic information about connections to GitHub's services, including source IP address. For more information, see [GitHub General Privacy Statement](/en/site-policy/privacy-policies/github-general-privacy-statement#usage-information).
+When anyone creates an account on GitHub, the person agrees to GitHub's collection of basic information about connections to GitHub's services, including source IP address. For more information, see [GitHub General Privacy Statement](/en/site-policy/privacy-policies/github-general-privacy-statement).
 
 After you enable the feature, you can access the audit log to view events that include IP addresses. For more information, see [Reviewing the audit log for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization).
 

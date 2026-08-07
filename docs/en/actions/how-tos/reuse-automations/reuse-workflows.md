@@ -131,12 +131,13 @@ You call a reusable workflow by using the `uses` keyword. Unlike when you are us
 
 You reference reusable workflow files using one of the following syntaxes:
 
+* `$/.github/workflows/{filename}` for a reusable workflow in the same repository. This is the recommended syntax for referencing a reusable workflow in the same repository. This syntax is not available in GitHub Enterprise Server.
 * `{owner}/{repo}/.github/workflows/{filename}@{ref}` for reusable workflows in public and private repositories.
 * `./.github/workflows/{filename}` for reusable workflows in the same repository.
 
-In the first option, `{ref}` can be a SHA, a release tag, or a branch name. If a release tag and a branch have the same name, the release tag takes precedence over the branch name. Using the commit SHA is the safest option for stability and security. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#reusing-third-party-workflows).
+When you reference a reusable workflow with `{owner}/{repo}` and `@{ref}`, the `{ref}` can be a SHA, a release tag, or a branch name. If a release tag and a branch have the same name, the release tag takes precedence over the branch name. Using the commit SHA is the safest option for stability and security. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#reusing-third-party-workflows).
 
-If you use the second syntax option (without `{owner}/{repo}` and `@{ref}`) the called workflow is from the same commit as the caller workflow. Ref prefixes such as `refs/heads` and `refs/tags` are not allowed. You cannot use contexts or expressions in this keyword.
+When you reference a reusable workflow in the same repository using `$/` or `./` (without `{owner}/{repo}` and `@{ref}`), the called workflow is from the same commit as the caller workflow. A `$/` reference must not include an `@{ref}` suffix, and `$/` is not available in GitHub Enterprise Server. Ref prefixes such as `refs/heads` and `refs/tags` are not allowed. You cannot use contexts or expressions in this keyword.
 
 You can call multiple workflows, referencing each in a separate job.
 
@@ -146,6 +147,9 @@ jobs:
     uses: octo-org/this-repo/.github/workflows/workflow-1.yml@172239021f7ba04fe7327647b213799853a9eb89
   call-workflow-2-in-local-repo:
     uses: ./.github/workflows/workflow-2.yml
+  # The `$/` syntax is not available in GitHub Enterprise Server.
+  call-workflow-in-same-repo-at-running-commit:
+    uses: $/.github/workflows/workflow-2.yml
   call-workflow-in-another-repo:
     uses: octo-org/another-repo/.github/workflows/workflow.yml@v1
 ```
@@ -274,7 +278,7 @@ The following reusable workflow has a single job containing two steps. In each o
 
 The `value` must be set to the value of a job-level output within the called workflow. Step-level outputs must first be mapped to job-level outputs as shown below.
 
-For more information, see [Passing information between jobs](/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs#overview) and [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#onworkflow_calloutputs).
+For more information, see [Passing information between jobs](/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs) and [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#onworkflow_calloutputs).
 
 ```yaml copy
 name: Reusable workflow

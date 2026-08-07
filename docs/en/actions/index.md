@@ -35,10 +35,6 @@ Automate, customize, and execute your software development workflows right in yo
 
   You can configure your workflows to run when specific activity on GitHub happens, at a scheduled time, or when an event outside of GitHub occurs.
 
-* [Using artifact attestations to establish provenance for builds](/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations)
-
-  Artifact attestations enable you to increase the supply chain security of your builds by establishing where and how your software was built.
-
 * [Migrating to GitHub Actions](/en/actions/tutorials/migrate-to-github-actions)
 
   Learn how to migrate your existing CI/CD workflows to GitHub Actions.
@@ -46,10 +42,6 @@ Automate, customize, and execute your software development workflows right in yo
 * [Reuse workflows](/en/actions/how-tos/reuse-automations/reuse-workflows)
 
   Learn how to avoid duplication when creating a workflow by reusing existing workflows.
-
-* [Viewing GitHub Actions metrics](/en/actions/how-tos/administer/view-metrics)
-
-  You can view metrics to monitor where your organization or repositories use GitHub Actions and how they are performing.
 
 ## Links
 

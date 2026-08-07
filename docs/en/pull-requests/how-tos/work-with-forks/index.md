@@ -1,7 +1,7 @@
 ---
 source_path: "/en/pull-requests/how-tos/work-with-forks"
 title: "Work with forks"
-intro: "Fork repositories, sync changes, and manage pull request branches effectively using forks."
+intro: "Fork repositories, sync changes, and manage pull requests effectively when using forks."
 product: "Pull requests"
 document_type: "subcategory"
 breadcrumbs:
@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Work with forks
 
-Fork repositories, sync changes, and manage pull request branches effectively using forks.
+Fork repositories, sync changes, and manage pull requests effectively when using forks.
 
 ## Links
 

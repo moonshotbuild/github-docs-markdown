@@ -23,7 +23,7 @@ GitHub flow is a lightweight, branch-based workflow. The GitHub flow is useful f
 
 ## Prerequisites
 
-To follow GitHub flow, you will need a GitHub account and a repository. For information on how to create an account, see [Creating an account on GitHub](/en/get-started/start-your-journey/creating-an-account-on-github). For information on how to create a repository, see [Quickstart for repositories](/en/repositories/creating-and-managing-repositories/quickstart-for-repositories). For information on how to find an existing repository to contribute to, see [Finding ways to contribute to open source on GitHub](/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github).
+To follow GitHub flow, you will need a GitHub account and a repository. For information on how to create an account, see [Creating an account on GitHub](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github). For information on how to create a repository, see [Quickstart for repositories](/en/repositories/creating-and-managing-repositories/quickstart-for-repositories). For information on how to find an existing repository to contribute to, see [Finding ways to contribute to open source on GitHub](/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github).
 
 ## Following GitHub flow
 

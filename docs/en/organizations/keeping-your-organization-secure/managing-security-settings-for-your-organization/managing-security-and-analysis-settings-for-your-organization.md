@@ -37,11 +37,11 @@ By default, Dependabot can't update dependencies that are located in private rep
 
 If your code depends on packages in a private registry, you can allow Dependabot to update the versions of these dependencies by configuring this at the repository level. You do this by adding authentication details to the `dependabot.yml` file for the repository. For more information, see [Top-level `registries` key](/en/code-security/reference/supply-chain-security/dependabot-options-reference#top-level-registries-key).
 
-For more information on how to grant Dependabot access to private dependencies, see [Configuring global security settings for your organization](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/configure-global-settings#granting-dependabot-access-to-private-and-internal-repositories).
+For more information on how to grant Dependabot access to private dependencies, see [Configuring global security settings for your organization](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/configure-global-settings#granting-dependabot-access-to-private-repositories).
 
 ## Removing access to GitHub Advanced Security features from individual repositories in an organization
 
-You can use security configurations to remove access to GitHub Advanced Security features from individual repositories in an organization. For more information, see [Managing your paid use of Advanced Security](/en/code-security/how-tos/secure-at-scale/configure-organization-security/manage-usage-and-access/managing-your-github-advanced-security-license-usage#turning-off-github-advanced-security-features-on-select-repositories-in-your-organization).
+You can use security configurations to remove access to GitHub Advanced Security features from individual repositories in an organization. For more information, see [Managing your paid use of Advanced Security](/en/code-security/how-tos/secure-at-scale/configure-organization-security/manage-usage-and-access/managing-your-github-advanced-security-license-usage#turning-off-secret-protection-or-code-security).
 
 ## Further reading
 

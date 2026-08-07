@@ -127,7 +127,7 @@ will provide several `key_identifier` and public keys. You can determine which p
 key to use based on the value of `Github-Public-Key-Identifier`.
 
 > \[!NOTE]
-> When you send a request to the public key endpoint above, you may hit rate limits. To avoid hitting rate limits, you can use a personal access token (classic) (no scopes required) or a fine-grained personal access token (only the automatic public repositories read access required) as suggested in the samples below, or use a conditional request. For more information, see [Getting started with the REST API](/en/rest/using-the-rest-api/getting-started-with-the-rest-api#conditional-requests).
+> When you send a request to the public key endpoint above, you may hit rate limits. To avoid hitting rate limits, you can use a personal access token (classic) (no scopes required) or a fine-grained personal access token (only the automatic public repositories read access required) as suggested in the samples below, or use a conditional request. For more information, see [Best practices for using the REST API](/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api#use-conditional-requests-if-appropriate).
 
 > \[!NOTE]
 > The signature was generated using the raw message body. So it's important you also use the raw message body for signature validation, instead of parsing and stringifying the JSON, to avoid rearranging the message or changing spacing.

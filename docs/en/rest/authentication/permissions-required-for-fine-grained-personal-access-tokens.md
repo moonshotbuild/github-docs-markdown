@@ -85,6 +85,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /orgs/{org}/dependabot/repository-access/default-level` | write | PAT | ✗ |
 | `PUT /orgs/{org}/interaction-limits` | write | PAT | ✗ |
 | `DELETE /orgs/{org}/interaction-limits` | write | PAT | ✗ |
+| `GET /orgs/{org}/interaction-limits/pulls/creation-cap` | write | PAT | ✗ |
+| `PATCH /orgs/{org}/interaction-limits/pulls/creation-cap` | write | PAT | ✗ |
 | `GET /orgs/{org}/rulesets` | write | PAT | ✗ |
 | `POST /orgs/{org}/rulesets` | write | PAT | ✗ |
 | `GET /orgs/{org}/rulesets/rule-suites` | write | PAT | ✗ |
@@ -757,7 +759,9 @@ Some endpoints require more than one permission. Other endpoints work with any o
 |----------|--------|--------|------------------------|
 | `POST /orgs/{org}/artifacts/metadata/deployment-record` | write | PAT | ✗ |
 | `POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}` | write | PAT | ✗ |
+| `POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs` | write | PAT | ✗ |
 | `POST /orgs/{org}/artifacts/metadata/storage-record` | write | PAT | ✗ |
+| `GET /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs/{job_id}` | read | PAT | ✗ |
 | `GET /orgs/{org}/artifacts/{subject_digest}/metadata/deployment-records` | read | PAT | ✗ |
 | `GET /orgs/{org}/artifacts/{subject_digest}/metadata/storage-records` | read | PAT | ✗ |
 
@@ -889,6 +893,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `POST /repos/{owner}/{repo}/merge-upstream` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/merges` | write | PAT | ✗ |
 | `PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge` | write | PAT | ✗ |
+| `PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge-async` | write | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/pulls/{pull_number}/merge-async/{uuid}` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/releases` | write | PAT | ✓ |
 | `POST /repos/{owner}/{repo}/releases` | write | PAT | ✓ |
 | `PATCH /repos/{owner}/{repo}/releases/assets/{asset_id}` | write | PAT | ✗ |
@@ -898,6 +904,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PATCH /repos/{owner}/{repo}/releases/{release_id}` | write | PAT | ✓ |
 | `DELETE /repos/{owner}/{repo}/releases/{release_id}` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/secret-scanning/push-protection-bypasses` | write | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/stargazers` | write | PAT | ✓ |
+| `GET /repos/{owner}/{repo}/subscribers` | write | PAT | ✓ |
 | `POST /markdown` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/activity` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/branches` | read | PAT | ✗ |
@@ -1031,6 +1039,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/sub_issue` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/issues/{issue_number}/sub_issues` | write | PAT | ✗ |
 | `PATCH /repos/{owner}/{repo}/issues/{issue_number}/sub_issues/priority` | write | PAT | ✗ |
+| `POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/approve` | write | PAT | ✓ |
+| `POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/dismiss` | write | PAT | ✓ |
 | `POST /repos/{owner}/{repo}/labels` | write | PAT | ✓ |
 | `PATCH /repos/{owner}/{repo}/labels/{name}` | write | PAT | ✓ |
 | `DELETE /repos/{owner}/{repo}/labels/{name}` | write | PAT | ✓ |
@@ -1056,6 +1066,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/parent` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/reactions` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/sub_issues` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/suggestions` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/timeline` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/labels` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/labels/{name}` | read | PAT | ✓ |
@@ -1088,13 +1099,11 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/rules/branches/{branch}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/rulesets` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/rulesets/{ruleset_id}` | read | PAT | ✗ |
-| `GET /repos/{owner}/{repo}/stargazers` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/code_frequency` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/commit_activity` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/contributors` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/participation` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/punch_card` | read | PAT | ✗ |
-| `GET /repos/{owner}/{repo}/subscribers` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/tags` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/topics` | read | PAT | ✗ |
 | `GET /repositories` | read | PAT | ✗ |
@@ -1138,6 +1147,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/labels/{name}` | write | PAT | ✓ |
 | `PUT /repos/{owner}/{repo}/issues/{issue_number}/lock` | write | PAT | ✓ |
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/lock` | write | PAT | ✓ |
+| `POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/approve` | write | PAT | ✓ |
+| `POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/dismiss` | write | PAT | ✓ |
 | `POST /repos/{owner}/{repo}/labels` | write | PAT | ✓ |
 | `PATCH /repos/{owner}/{repo}/labels/{name}` | write | PAT | ✓ |
 | `DELETE /repos/{owner}/{repo}/labels/{name}` | write | PAT | ✓ |
@@ -1160,6 +1171,9 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/dismissals` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/events` | write | PAT | ✗ |
 | `PUT /repos/{owner}/{repo}/pulls/{pull_number}/update-branch` | write | PAT | ✗ |
+| `POST /repos/{owner}/{repo}/stacks` | write | PAT | ✗ |
+| `POST /repos/{owner}/{repo}/stacks/{stack_number}/add` | write | PAT | ✗ |
+| `POST /repos/{owner}/{repo}/stacks/{stack_number}/unstack` | write | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/assignees` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/assignees/{assignee}` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/commits/{commit_sha}/pulls` | read | PAT | ✗ |
@@ -1170,6 +1184,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/comments` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/events` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/labels` | read | PAT | ✓ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/suggestions` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/timeline` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/labels` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/labels/{name}` | read | PAT | ✓ |
@@ -1189,6 +1204,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/stacks` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/stacks/{stack_number}` | read | PAT | ✗ |
 
 ## Repository permissions for "Repository security advisories"
 

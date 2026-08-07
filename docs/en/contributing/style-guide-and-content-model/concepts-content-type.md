@@ -51,5 +51,5 @@ Headers of conceptual sections in articles start with "About \[subject]”.
   * [About GitHub Sponsors](/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors)
   * [About Enterprise accounts](/en/enterprise-cloud@latest/admin/concepts/enterprise-fundamentals/enterprise-accounts)
 * Conceptual sections within other articles
-  * "About security policies" in [Adding a security policy to your repository](/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/add-security-policy#about-security-policies)
+  * "About security policies" in [Creating a default community health file](/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file#about-security-policies)
   * "About maintenance mode" in [Enabling and scheduling maintenance mode](/en/enterprise-server@3.21/admin/administering-your-instance/configuring-maintenance-mode/enabling-and-scheduling-maintenance-mode#about-maintenance-mode)

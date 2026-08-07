@@ -185,7 +185,7 @@ Most of these commands are available only on the home page of the repository. If
 | `New discussion`               | Create a new discussion in the repository. For more information, see [Quickstart for GitHub Discussions](/en/discussions/quickstart#creating-a-new-discussion).                                                           |
 | `New file`                     | Create a new file from any page in the repository. For more information, see [Adding a file to a repository](/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).                           |
 | `New issue`                    | Open a new issue from any page in the repository. For more information, see [Creating an issue](/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue).                                                |
-| `Open in github.dev editor`    | Open the current repository in the github.dev editor. For more information, see [The github.dev web-based editor](/en/codespaces/the-githubdev-web-based-editor#opening-the-web-based-editor).                            |
+| `Open in github.dev editor`    | Open the current repository in the github.dev editor. For more information, see [The github.dev web-based editor](/en/codespaces/the-githubdev-web-based-editor#opening-the-githubdev-editor).                            |
 
 ### File commands
 
@@ -194,7 +194,7 @@ These commands are available only when you open the command palette from a file 
 | Command                     | Behavior                                                                                                                                                                                                                                                                                               |
 | :-------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Copy permalink`            | Create a link to the file that includes the current commit SHA and copy the link to the clipboard. For more information, see [Getting permanent links to files](/en/repositories/working-with-files/using-files/getting-permanent-links-to-files#press-y-to-permalink-to-a-file-in-a-specific-commit). |
-| `Open in github.dev editor` | Open the currently displayed file in github.dev editor. For more information, see [The github.dev web-based editor](/en/codespaces/the-githubdev-web-based-editor#opening-the-web-based-editor).                                                                                                       |
+| `Open in github.dev editor` | Open the currently displayed file in github.dev editor. For more information, see [The github.dev web-based editor](/en/codespaces/the-githubdev-web-based-editor#opening-the-githubdev-editor).                                                                                                       |
 
 ### Discussion commands
 

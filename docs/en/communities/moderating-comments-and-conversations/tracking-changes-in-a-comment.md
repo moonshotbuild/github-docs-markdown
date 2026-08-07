@@ -55,6 +55,10 @@ When you delete sensitive information from the comment's edit history, the perso
 
 5. To confirm deletion, click **OK**.
 
+## Editing history limits
+
+A 100-edit maximum applies to issues, issue comments, pull requests, pull request review comments, and commit comments. GitHub retains a maximum of 100 edits per content item. When an item exceeds this limit, the oldest intermediate edits are automatically removed, while the original content and the most recent 99 edits are always preserved.
+
 ## Further reading
 
 * [Reporting abuse or spam](/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam)

@@ -71,5 +71,6 @@ After a pull request is merged or closed, its head branch is often no longer nee
 ## Further reading
 
 * [Merging a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-a-pull-request)
+* [Merging stacked pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-stacked-pull-requests)
 * [Status checks](/en/pull-requests/reference/status-checks)
 * [Managing environments for deployment](/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments)

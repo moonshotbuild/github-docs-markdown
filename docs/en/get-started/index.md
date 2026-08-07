@@ -23,15 +23,11 @@ Learn how to start building, shipping, and maintaining software with GitHub. Exp
 
   Learn how GitHub and Copilot can help you build programming skills, write better code, and ship secure projects.
 
-* [Creating an account on GitHub](/en/get-started/start-your-journey/creating-an-account-on-github)
-
-  Create a personal account to get started with GitHub.
-
 * [Set up Git](/en/get-started/git-basics/set-up-git)
 
   At the heart of GitHub is an open-source version control system (VCS) called Git. Git is responsible for everything GitHub-related that happens locally on your computer.
 
-* [Hello World](/en/get-started/start-your-journey/hello-world)
+* [Hello World](/en/get-started/using-github/hello-world)
 
   Follow this Hello World exercise to learn GitHub's pull request workflow.
 
@@ -55,7 +51,7 @@ Learn how to start building, shipping, and maintaining software with GitHub. Exp
 
 ### Getting started
 
-* [Hello World](/en/get-started/start-your-journey/hello-world)
+* [Hello World](/en/get-started/using-github/hello-world)
 
   Follow this Hello World exercise to learn GitHub's pull request workflow.
 
@@ -69,33 +65,9 @@ Learn how to start building, shipping, and maintaining software with GitHub. Exp
 
   GitHub is a platform that supports your entire software development process, from planning work to deploying and operating software.
 
-* [Creating an account on GitHub](/en/get-started/start-your-journey/creating-an-account-on-github)
-
-  Create a personal account to get started with GitHub.
-
-* [Hello World](/en/get-started/start-your-journey/hello-world)
-
-  Follow this Hello World exercise to learn GitHub's pull request workflow.
-
-* [Setting up your profile](/en/get-started/start-your-journey/setting-up-your-profile)
-
-  Your profile tells people who you are and what you're interested in.
-
-* [Finding inspiration on GitHub](/en/get-started/start-your-journey/finding-inspiration-on-github)
-
-  You can find inspiration for your own projects and learning on GitHub and connect with a community.
-
-* [Downloading files from GitHub](/en/get-started/start-your-journey/downloading-files-from-github)
-
-  Learn how to download files from GitHub, and understand the difference between downloading, cloning, and forking.
-
-* [Uploading a project to GitHub](/en/get-started/start-your-journey/uploading-a-project-to-github)
-
-  Learn how to upload the files for your project to GitHub.
-
 * [Git and GitHub learning resources](/en/get-started/start-your-journey/git-and-github-learning-resources)
 
-  There are a lot of helpful Git and GitHub resources available.
+  Discover essential Git and GitHub resources, including tutorials, online courses, and community support to enhance your skills.
 
 * [Creating a repository for your project on GitHub](/en/get-started/start-your-journey/creating-a-repository-for-your-project-on-github)
 
@@ -140,6 +112,10 @@ Learn how to start building, shipping, and maintaining software with GitHub. Exp
 * [Getting started with GitHub Enterprise Server](/en/getting-started-with-github-enterprise-server)
 
   Get started with setting up and managing GitHub.com.
+
+* [Hello World](/en/get-started/using-github/hello-world)
+
+  Follow this Hello World exercise to learn GitHub's pull request workflow.
 
 * [GitHub flow](/en/get-started/using-github/github-flow)
 
@@ -341,6 +317,14 @@ Learn how to start building, shipping, and maintaining software with GitHub. Exp
 
   You can moderate comments on gists by turning them off or deleting unwanted entries.
 
+* [Discovering projects on GitHub](/en/get-started/exploring-projects-on-github/discovering-projects-on-github)
+
+  You can discover repositories, topics, and communities on GitHub to support your learning and inspire your own projects.
+
+* [Contributing to a project](/en/get-started/exploring-projects-on-github/contributing-to-a-project)
+
+  Learn how to contribute to a project through forking.
+
 * [Finding ways to contribute to open source on GitHub](/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github)
 
   You can find ways to contribute to open source projects on GitHub that are relevant to you.
@@ -352,10 +336,6 @@ Learn how to start building, shipping, and maintaining software with GitHub. Exp
 * [Using GitHub Copilot to explore projects](/en/get-started/exploring-projects-on-github/using-github-copilot-to-explore-projects)
 
   This guide will help you use Copilot to explore projects on GitHub.
-
-* [Contributing to a project](/en/get-started/exploring-projects-on-github/contributing-to-a-project)
-
-  Learn how to contribute to a project through forking.
 
 * [Saving repositories with stars](/en/get-started/exploring-projects-on-github/saving-repositories-with-stars)
 

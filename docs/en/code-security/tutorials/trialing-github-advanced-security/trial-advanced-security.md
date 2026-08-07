@@ -63,4 +63,4 @@ Note that GitHub may apply a temporary authorization hold for the value of the u
 > \[!TIP]
 > If you pay for GitHub using volume/subscription billing, you will also need define how many licenses to purchase.
 >
-> * Under "How many committers do you want to include?", enter the number of committers you want to purchase licenses for. See [Active committers and unique committers](/en/billing/concepts/product-billing/github-advanced-security#active-committers-and-unique-committers).
+> * Under "How many committers do you want to include?", enter the number of committers you want to purchase licenses for. See [Active committers and unique committers](/en/billing/concepts/product-billing/github-advanced-security#active-and-unique-committers).

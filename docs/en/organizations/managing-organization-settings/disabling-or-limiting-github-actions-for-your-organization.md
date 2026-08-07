@@ -56,7 +56,7 @@ You can choose to disable GitHub Actions for all repositories in your organizati
 
 ### Allowing select actions and reusable workflows to run
 
-When you choose **Allow *OWNER*, and select non-*OWNER*, actions and reusable workflows**, local actions and reusable workflows are allowed, and there are additional options for allowing other specific actions and reusable workflows:
+When you choose **Allow *OWNER*, and select non-*OWNER*, actions and reusable workflows**, local actions (`./` and `$/`) and reusable workflows are allowed, and there are additional options for allowing other specific actions and reusable workflows:
 
 > \[!NOTE]
 > You might not be able to manage these settings if your organization has an overriding policy or is managed by an enterprise that has overriding policy. For more information, see [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization) or [Enforcing policies for GitHub Actions in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise).

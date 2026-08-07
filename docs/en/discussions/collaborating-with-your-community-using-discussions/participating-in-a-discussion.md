@@ -89,7 +89,7 @@ GitHub Discussions must be enabled for the repository or organization for you to
 Discussion authors and users with the triage role or greater for a repository can mark a comment as the answer to a discussion in the repository.
 Similarly, discussion authors and users with the triage role or greater for the source repository for organization discussions can mark a comment as the answer to a discussion in the organization.
 
-You can mark a comment in the discussion as an answer to the discussion if a discussion is within a category that accepts answers. For more information, see [About discussions](/en/discussions/collaborating-with-your-community-using-discussions/about-discussions#about-categories-and-formats-for-discussions).
+You can mark a comment in the discussion as an answer to the discussion if a discussion is within a category that accepts answers. For more information, see [About discussions](/en/discussions/collaborating-with-your-community-using-discussions/about-discussions).
 
 When you mark a question as an answer, GitHub will highlight the comment and replies to the comment to help visitors quickly find the answer.
 

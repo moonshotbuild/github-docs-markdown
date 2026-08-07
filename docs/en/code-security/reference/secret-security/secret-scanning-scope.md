@@ -37,7 +37,7 @@ For GitHub tokens, we check the validity of the secret to determine whether the 
 
 ## Push protection limitations
 
-If push protection did not detect a secret that you think should have been detected, then you should first check that push protection supports the secret type in the list of supported secrets. For further information, see [Supported secret scanning patterns](/en/code-security/reference/secret-security/supported-secret-scanning-patterns#supported-secrets).
+If push protection did not detect a secret that you think should have been detected, then you should first check that push protection supports the secret type in the list of supported secrets. For further information, see [Supported secret scanning patterns](/en/code-security/reference/secret-security/supported-secret-scanning-patterns).
 
 If your secret is in the supported list, there are various reasons why push protection may not detect it.
 

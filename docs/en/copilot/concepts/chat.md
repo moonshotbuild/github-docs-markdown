@@ -29,6 +29,7 @@ GitHub Copilot Chat is available in various environments:
 * A range of IDEs such as Visual Studio Code, Xcode, and JetBrains IDEs
 * GitHub Mobile
 * GitHub Copilot CLI
+* GitHub Copilot app
 
 Different environments may have different features and capabilities, but the core functionality remains consistent across platforms. To explore the functionality available in each environment, see the [GitHub Copilot Chat](/en/copilot/how-tos/chat-with-copilot) how-to guides and the [Tutorials for GitHub Copilot](/en/copilot/tutorials).
 

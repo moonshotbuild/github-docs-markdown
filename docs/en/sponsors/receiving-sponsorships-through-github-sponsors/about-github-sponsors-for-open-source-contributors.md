@@ -57,7 +57,7 @@ GitHub Sponsors does not charge any fees for sponsorships from personal accounts
 
 Organizations can save the 3% credit card processing fee by switching to invoiced billing for sponsorships. For more information, see [Paying for GitHub Sponsors by invoice](/en/sponsors/sponsoring-open-source-contributors/paying-for-github-sponsors-by-invoice).
 
-For information about timing for payments from GitHub Sponsors, see [GitHub Sponsors Additional Terms](/en/site-policy/github-terms/github-sponsors-additional-terms#43-payment-timing).
+For information about timing for payments from GitHub Sponsors, see [GitHub Sponsors Additional Terms](/en/site-policy/github-terms/github-sponsors-additional-terms#33-payment-timing).
 
 For more information, see [Managing your payouts from GitHub Sponsors](/en/sponsors/receiving-sponsorships-through-github-sponsors/managing-your-payouts-from-github-sponsors).
 

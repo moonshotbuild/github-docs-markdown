@@ -27,7 +27,7 @@ GitHub Pages sites are subject to the following usage limits:
 
 * You can only create one user or organization site for each account on GitHub.
 
-* GitHub Pages source repositories have a recommended limit of 1 GB. For more information, see [About large files on GitHub](/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-and-repository-size-limitations).
+* GitHub Pages source repositories have a recommended limit of 1 GB. For more information, see [About large files on GitHub](/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 * Published GitHub Pages sites may be no larger than 1 GB.
 

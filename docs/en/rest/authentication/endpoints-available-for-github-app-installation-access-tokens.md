@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Endpoints available for GitHub App installation access tokens
 
-<p>Your GitHub App can make requests to the following REST endpoints with an installation access token.</p>
+Your GitHub App can make requests to the following REST endpoints with an installation access token.
 
 ## actions
 
@@ -1109,6 +1109,10 @@ breadcrumbs:
 
 * [`DELETE /orgs/{org}/interaction-limits`](/en/rest/interactions/orgs#remove-interaction-restrictions-for-an-organization)
 
+* [`GET /orgs/{org}/interaction-limits/pulls/creation-cap`](/en/rest/interactions/orgs#get-pull-request-creation-cap-for-an-org)
+
+* [`PATCH /orgs/{org}/interaction-limits/pulls/creation-cap`](/en/rest/interactions/orgs#update-pull-request-creation-cap-for-an-org)
+
 * [`GET /repos/{owner}/{repo}/interaction-limits`](/en/rest/interactions/repos#get-interaction-restrictions-for-a-repository)
 
 * [`PUT /repos/{owner}/{repo}/interaction-limits`](/en/rest/interactions/repos#set-interaction-restrictions-for-a-repository)
@@ -1207,6 +1211,12 @@ breadcrumbs:
 
 * [`PATCH /repos/{owner}/{repo}/issues/{issue_number}/sub_issues/priority`](/en/rest/issues/sub-issues#reprioritize-sub-issue)
 
+* [`GET /repos/{owner}/{repo}/issues/{issue_number}/suggestions`](/en/rest/issues/issues#list-issue-suggestions)
+
+* [`POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/approve`](/en/rest/issues/issues#approve-an-issue-suggestion)
+
+* [`POST /repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/dismiss`](/en/rest/issues/issues#dismiss-an-issue-suggestion)
+
 * [`GET /repos/{owner}/{repo}/issues/{issue_number}/timeline`](/en/rest/issues/timeline#list-timeline-events-for-an-issue)
 
 * [`GET /repos/{owner}/{repo}/labels`](/en/rest/issues/labels#list-labels-for-a-repository)
@@ -1292,6 +1302,10 @@ breadcrumbs:
 * [`POST /orgs/{org}/artifacts/metadata/deployment-record`](/en/rest/orgs/artifact-metadata#create-an-artifact-deployment-record)
 
 * [`POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}`](/en/rest/orgs/artifact-metadata#set-cluster-deployment-records)
+
+* [`POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs`](/en/rest/orgs/artifact-metadata#create-a-cluster-deployment-records-job)
+
+* [`GET /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs/{job_id}`](/en/rest/orgs/artifact-metadata#get-cluster-deployment-records-job-status)
 
 * [`POST /orgs/{org}/artifacts/metadata/storage-record`](/en/rest/orgs/artifact-metadata#create-artifact-metadata-storage-record)
 
@@ -1665,6 +1679,10 @@ breadcrumbs:
 
 * [`PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge`](/en/rest/pulls/pulls#merge-a-pull-request)
 
+* [`PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge-async`](/en/rest/pulls/pulls#merge-a-pull-request-asynchronously)
+
+* [`GET /repos/{owner}/{repo}/pulls/{pull_number}/merge-async/{uuid}`](/en/rest/pulls/pulls#get-the-result-of-an-asynchronous-merge)
+
 * [`GET /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers`](/en/rest/pulls/review-requests#get-all-requested-reviewers-for-a-pull-request)
 
 * [`POST /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers`](/en/rest/pulls/review-requests#request-reviewers-for-a-pull-request)
@@ -1688,6 +1706,16 @@ breadcrumbs:
 * [`POST /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/events`](/en/rest/pulls/reviews#submit-a-review-for-a-pull-request)
 
 * [`PUT /repos/{owner}/{repo}/pulls/{pull_number}/update-branch`](/en/rest/pulls/pulls#update-a-pull-request-branch)
+
+* [`GET /repos/{owner}/{repo}/stacks`](/en/rest/pulls/stacks#list-pull-request-stacks)
+
+* [`POST /repos/{owner}/{repo}/stacks`](/en/rest/pulls/stacks#create-a-pull-request-stack)
+
+* [`GET /repos/{owner}/{repo}/stacks/{stack_number}`](/en/rest/pulls/stacks#get-a-pull-request-stack)
+
+* [`POST /repos/{owner}/{repo}/stacks/{stack_number}/add`](/en/rest/pulls/stacks#add-pull-requests-to-a-pull-request-stack)
+
+* [`POST /repos/{owner}/{repo}/stacks/{stack_number}/unstack`](/en/rest/pulls/stacks#remove-pull-requests-from-a-pull-request-stack)
 
 ## rate-limit
 

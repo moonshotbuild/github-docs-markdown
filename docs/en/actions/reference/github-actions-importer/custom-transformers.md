@@ -100,7 +100,7 @@ You can customize the mapping between runners in your source CI/CD instance and 
 GitHub Actions Importer uses custom transformers that are defined using a DSL built on top of Ruby. To create custom transformers for runners:
 
 * The custom transformer file must have at least one `runner` method.
-* The `runner` method accepts two parameters. The first parameter is the source CI/CD instance's runner label, and the second parameter is the corresponding GitHub Actions runner label. For more information on GitHub Actions runners, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#supported-runners-and-hardware-resources).
+* The `runner` method accepts two parameters. The first parameter is the source CI/CD instance's runner label, and the second parameter is the corresponding GitHub Actions runner label. For more information on GitHub Actions runners, see [GitHub-hosted runners reference](/en/actions/reference/runners/github-hosted-runners#supported-runners-and-hardware-resources).
 
 ### Example custom transformers for runners
 

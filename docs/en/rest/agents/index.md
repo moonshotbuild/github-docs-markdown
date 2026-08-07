@@ -6,7 +6,7 @@ document_type: "category"
 breadcrumbs:
   - title: "REST API"
     href: "/en/rest"
-  - title: "REST endpoints for agents"
+  - title: "Agents"
     href: "/en/rest/agents"
 ---
 

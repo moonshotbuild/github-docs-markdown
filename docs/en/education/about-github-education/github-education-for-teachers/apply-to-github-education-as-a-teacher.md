@@ -28,7 +28,7 @@ To apply for teacher benefits and GitHub Education access, you must meet the fol
 * Upload documents that prove your school affiliation.
 * Have a personal account on GitHub.
 
-For more information about personal accounts on GitHub, see [Creating an account on GitHub](/en/get-started/start-your-journey/creating-an-account-on-github).
+For more information about personal accounts on GitHub, see [Creating an account on GitHub](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github).
 
 ## Applying to GitHub Education
 

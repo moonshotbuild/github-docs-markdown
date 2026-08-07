@@ -131,7 +131,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
           cache: "npm"
@@ -179,7 +179,7 @@ By default, Copilot works in a standard GitHub Actions runner. You can upgrade t
 
 You can run Copilot cloud agent on self-hosted runners. You may want to do this to match how you run CI/CD workflows on GitHub Actions, or to give Copilot access to internal resources on your network.
 
-We recommend that you only use Copilot cloud agent with ephemeral, single-use runners that are not reused for multiple jobs. Most customers set this up using ARC (Actions Runner Controller) or the GitHub Actions Runner Scale Set Client. For more information, see [Self-hosted runners reference](/en/actions/reference/runners/self-hosted-runners#supported-autoscaling-solutions).
+We recommend that you only use Copilot cloud agent with ephemeral, single-use runners that are not reused for multiple jobs. Most customers set this up using ARC (Actions Runner Controller) or the GitHub Actions Runner Scale Set Client. For more information, see [Self-hosted runners reference](/en/actions/reference/runners/self-hosted-runners#autoscaling).
 
 > \[!NOTE]
 > Copilot cloud agent is only compatible with Ubuntu x64 and Windows 64-bit runners. Runners with macOS or other operating systems are not supported.

@@ -33,7 +33,7 @@ Enterprise owners can set up a Copilot Enterprise or Copilot Business plan for t
 ## Next steps
 
 * To finish setting up Copilot for your enterprise, see [Setting up GitHub Copilot for your enterprise](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-enterprise).
-* For billing information, see [GitHub Copilot licenses](/en/billing/concepts/product-billing/github-copilot-licenses#about-billing-for-github-copilot-business-and-github-copilot-enterprise) and [Get started with billing](/en/billing/get-started).
+* For billing information, see [GitHub Copilot licenses](/en/billing/concepts/product-billing/github-copilot-licenses) and [Get started with billing](/en/billing/get-started).
 
 ## Further reading
 

@@ -50,7 +50,7 @@ For information on disabling Copilot cloud agent in some or all repositories own
 
 For information on disabling Copilot cloud agent in all repositories owned by an enterprise, see [Blocking agentic features in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/block-agentic-features).
 
-For information on disabling Copilot cloud agent in repositories owned by your personal user account, see [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#enabling-or-disabling-copilot-cloud-agent).
+For information on disabling Copilot cloud agent in repositories owned by your personal user account, see [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#disabling-or-enabling-copilot-cloud-agent-in-your-repositories).
 
 ## Managing access to Automations
 

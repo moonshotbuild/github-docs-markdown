@@ -52,13 +52,13 @@ If you want to update the analysis to also include Kotlin files, then CodeQL wil
 1. Wait until the Kotlin code is merged into the default branch for the repository.
 2. Disable and then re-enable default setup on the "Settings" page for your repository.
 
-This will trigger a new analysis using automatic build detection. See [Configuring default setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning) and [Building Java and Kotlin](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#building-java-and-kotlin).
+This will trigger a new analysis using automatic build detection. See [Configuring default setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning) and [Building Java and Kotlin](/en/code-security/reference/code-scanning/codeql/build-options-for-compiled-languages#building-java-and-kotlin).
 
 If the automatic build detection fails, you will need to use advanced setup with the correct build commands for the project to analyze both languages.
 
 ### Code scanning advanced setup
 
-If you already use advanced setup, you can edit the CodeQL workflow and change the build mode for `java-kotlin` from `none` to either `autobuild` to automatically build your project, or `manual` to specify your own build steps. [Building Java and Kotlin](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#building-java-and-kotlin).
+If you already use advanced setup, you can edit the CodeQL workflow and change the build mode for `java-kotlin` from `none` to either `autobuild` to automatically build your project, or `manual` to specify your own build steps. [Building Java and Kotlin](/en/code-security/reference/code-scanning/codeql/build-options-for-compiled-languages#building-java-and-kotlin).
 
 If you need to convert from default setup to advanced setup, you need enable advanced setup on the on the "Settings" page for your repository and create a CodeQL workflow. Then you can define a `manual` build mode for `java-kotlin` and define the build commands for the project.
 
@@ -69,5 +69,5 @@ Update your calls to run the CodeQL CLI for the repository and pull requests to 
 ## Further reading
 
 * [Configuring advanced setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configuring-advanced-setup-for-code-scanning)
-* [Building Java and Kotlin](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#building-java-and-kotlin)
-* [CodeQL build modes](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#codeql-build-modes)
+* [Building Java and Kotlin](/en/code-security/reference/code-scanning/codeql/build-options-for-compiled-languages#building-java-and-kotlin)
+* [CodeQL build modes](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#compare-build-modes)

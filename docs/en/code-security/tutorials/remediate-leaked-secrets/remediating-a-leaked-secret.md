@@ -61,7 +61,7 @@ Review the secret scanning alert associated with the leak, checking the alert la
 1. Check the secret's **validity status** to determine if the secret is still active. The alert will include a status that describes whether the secret is active, inactive, or if its validity is unknown.
    > \[!NOTE]
    >
-   > * Validity checks are only available for certain secret types. To check if your secret type is supported, see [Supported secret scanning patterns](/en/code-security/reference/secret-security/supported-secret-scanning-patterns#default-patterns).
+   > * Validity checks are only available for certain secret types. To check if your secret type is supported, see [Supported secret scanning patterns](/en/code-security/reference/secret-security/supported-secret-scanning-patterns).
    > * The secret provider is always the most reliable source of truth for determining the validity of a secret.
 2. Check for the `public exposure` label to determine if the secret was leaked in a public repository.
 3. Check for the `multiple leaks` label to determine if the secret is exposed in multiple locations.

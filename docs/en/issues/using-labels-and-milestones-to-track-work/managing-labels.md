@@ -104,4 +104,4 @@ Deleting a label will remove the label from issues and pull requests.
 * [Filtering and searching issues and pull requests](/en/issues/tracking-your-work-with-issues/using-issues/filtering-and-searching-issues-and-pull-requests)
 * [Managing default labels for repositories in your organization](/en/organizations/managing-organization-settings/managing-default-labels-for-repositories-in-your-organization)
 * [Encouraging helpful contributions to your project with labels](/en/communities/setting-up-your-project-for-healthy-contributions/encouraging-helpful-contributions-to-your-project-with-labels)
-* [Basic writing and formatting syntax](/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#using-emoji)
+* [Basic writing and formatting syntax](/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#using-emojis)

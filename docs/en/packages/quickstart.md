@@ -72,7 +72,7 @@ In this guide, you'll create a GitHub Actions workflow to test your code and the
        runs-on: ubuntu-latest
        steps:
          - uses: actions/checkout@v6
-         - uses: actions/setup-node@v4
+         - uses: actions/setup-node@v7
            with:
              node-version: 20
          - run: npm ci
@@ -86,7 +86,7 @@ In this guide, you'll create a GitHub Actions workflow to test your code and the
          contents: read
        steps:
          - uses: actions/checkout@v6
-         - uses: actions/setup-node@v4
+         - uses: actions/setup-node@v7
            with:
              node-version: 20
              registry-url: https://npm.pkg.github.com/

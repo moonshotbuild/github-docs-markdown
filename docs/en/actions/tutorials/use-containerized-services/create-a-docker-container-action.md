@@ -25,10 +25,10 @@ In this guide, you'll learn about the basic components needed to create and use 
 
 Once you complete this project, you should understand how to build your own Docker container action and test it in a workflow.
 
-Self-hosted runners must use a Linux operating system and have Docker installed to run Docker container actions. For more information about the requirements of self-hosted runners, see [Self-hosted runners](/en/actions/concepts/runners/self-hosted-runners#requirements-for-self-hosted-runner-machines).
+Self-hosted runners must use a Linux operating system and have Docker installed to run Docker container actions. For more information about the requirements of self-hosted runners, see [Self-hosted runners reference](/en/actions/reference/runners/self-hosted-runners#requirements-for-self-hosted-runner-machines).
 
 > \[!WARNING]
-> When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#understanding-the-risk-of-script-injections).
+> When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#good-practices-for-mitigating-script-injection-attacks).
 
 ## Prerequisites
 

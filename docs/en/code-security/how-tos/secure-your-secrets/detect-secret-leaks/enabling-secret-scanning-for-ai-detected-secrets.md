@@ -41,7 +41,7 @@ You can enable generic secret detection in the security settings page of your re
 
 You must configure generic secret detection for your organization using a custom security configuration. You can then apply the security configuration to all (or selected) repositories in your organization.
 
-1. Create a new custom security configuration, or edit an existing one. See [Creating a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/create-custom-configuration#creating-a-custom-security-configuration).
+1. Create a new custom security configuration, or edit an existing one. See [Creating a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/create-custom-configuration).
 2. When creating the custom security configuration, ensure that "Secret Protection" is set to **Enabled**, and that the dropdown menu for "Scan for AI-detected secrets" is also set to **Enabled**.
 3. Apply the custom security configuration to one or more repositories. For more information, see [Applying a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/apply-custom-configuration).
 

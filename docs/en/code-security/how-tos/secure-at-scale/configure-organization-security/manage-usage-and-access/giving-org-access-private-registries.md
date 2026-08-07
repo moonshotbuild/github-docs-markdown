@@ -25,7 +25,7 @@ If your organization uses private registries, you can improve the results of cod
 
 ## About the importance of providing access to private registries
 
-When code in a repository has dependencies that are stored in a private registry, some security features need access to the registry to enable them to work effectively. Without access to all the dependencies of a repository, the effectiveness of Code Quality (public preview), code scanning default setup and Dependabot are limited.
+When code in a repository has dependencies that are stored in a private registry, some security features need access to the registry to enable them to work effectively. Without access to all the dependencies of a repository, the effectiveness of Code Quality, code scanning default setup and Dependabot are limited.
 
 ## Code scanning default setup access to private registries
 
@@ -40,6 +40,8 @@ Code scanning default setup supports the following registry types:
 | C#       | NuGet Feed                 |
 | Go       | GOPROXY server, Git Source |
 | Java     | Maven Repository           |
+
+Additionally, *Git Source* registries are supported for granting code scanning access to configuration files in private repositories. For more information about customizing code scanning using custom configuration files, see [Workflow configuration options for code scanning](/en/code-security/reference/code-scanning/workflow-configuration-options#custom-configuration-files).
 
 > \[!TIP]
 > You can define one of each type of registry for each organization. If the codebases in your organization use more than one registry of a given type, you should set up a unified access point or define access to the most important registry for the codebases in that organization.
@@ -92,16 +94,6 @@ Dependabot cannot check for security or version updates for code stored in a pri
 
 When you configure access to one or more private registries, Dependabot can propose pull requests to upgrade a vulnerable dependency or to maintain a dependency, see [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries) and [Guidance for the configuration of private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-private-registries).
 
-### Automatic access to GitHub-hosted registries
-
-For packages stored in GitHub Packages and Container registry, Dependabot can authenticate automatically without personal access tokens or `dependabot.yml` registry configuration.
-
-Dependabot uses its `GITHUB_TOKEN` to request read access, reusing the same package access grants that GitHub Actions workflows use.
-
-To enable this, grant the repository **Read** access to each package in the package settings. Once access is granted, Dependabot can pull from those packages automatically, and you can remove any personal access token-based registry entries you previously configured for them.
-
-See [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#configuring-private-github-hosted-registries).
-
 ### Configuring OIDC authentication for a private registry
 
 OIDC (OpenID Connect) authentication allows Dependabot to use short-lived credentials from your cloud identity provider to access private registries, eliminating the need to store long-lived secrets. With OIDC, credentials are generated dynamically for each Dependabot update job. You must configure a trust relationship between your cloud provider and GitHub before Dependabot can authenticate.
@@ -122,14 +114,6 @@ The authentication type of a private registry cannot be changed after creation. 
 For more information about how OIDC works, see [OpenID Connect](/en/actions/concepts/security/openid-connect).
 
 ## Code Quality access to private registries
-
-<!-- expires 2026-07-20 -->
-
-> \[!NOTE]
-> GitHub Code Quality is currently in public preview and will become generally available on July 20, 2026.
-> During public preview, Code Quality will not be billed, although Code Quality scans will consume GitHub Actions minutes. From July 20, 2026, usage will incur charges. See [GitHub Code Quality billing](/en/billing/concepts/product-billing/github-code-quality).
-
-<!-- end expires 2026-07-20 -->
 
 GitHub Code Quality can use any of the organization-level private registries that are available when it is enabled for a repository.
 

@@ -37,7 +37,7 @@ For more information, see [Understanding GitHub Actions](/en/actions/get-started
 When migrating from CircleCI, consider the following differences:
 
 * CircleCI’s automatic test parallelism automatically groups tests according to user-specified rules or historical timing information. This functionality is not built into GitHub Actions.
-* Actions that execute in Docker containers are sensitive to permissions problems since containers have a different mapping of users. You can avoid many of these problems by not using the `USER` instruction in your *Dockerfile*. For more information about the Docker filesystem on GitHub-hosted runners, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#docker-container-filesystem).
+* Actions that execute in Docker containers are sensitive to permissions problems since containers have a different mapping of users. You can avoid many of these problems by not using the `USER` instruction in your *Dockerfile*. For more information about the Docker filesystem on GitHub-hosted runners, see [GitHub-hosted runners reference](/en/actions/reference/runners/github-hosted-runners#docker-container-filesystem).
 
 ## Migrating workflows and jobs
 
@@ -59,9 +59,9 @@ CircleCI provides a set of pre-built images with common dependencies. These imag
 
 We recommend that you move away from CircleCI's pre-built images when you migrate to GitHub Actions. In many cases, you can use actions to install the additional dependencies you need.
 
-For more information about the Docker filesystem, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#docker-container-filesystem).
+For more information about the Docker filesystem, see [GitHub-hosted runners reference](/en/actions/reference/runners/github-hosted-runners#docker-container-filesystem).
 
-For more information about the tools and packages available on GitHub-hosted runner images, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#supported-software).
+For more information about the tools and packages available on GitHub-hosted runner images, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#preinstalled-software-for-github-owned-images).
 
 ## Using variables and secrets
 

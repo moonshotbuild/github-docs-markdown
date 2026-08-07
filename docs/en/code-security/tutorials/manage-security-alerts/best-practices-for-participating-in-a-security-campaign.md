@@ -46,7 +46,7 @@ Start by reviewing campaign updates and deadlines so you can plan your work effe
 
 You'll automatically receive email updates about security campaigns for any repositories you have **write** access to, so you can stay informed about relevant updates.
 
-In addition, you will receive a notification if someone assigns a code scanning or a secret scanning alert to you, see [Assigning alerts](/en/code-security/concepts/security-at-scale/about-security-campaigns#assigning-alerts).
+In addition, you will receive a notification if someone assigns a code scanning or a secret scanning alert to you, see [Assigning alerts](/en/code-security/concepts/security-at-scale/about-security-campaigns#about-assigning-alerts-to-users-and-copilot-cloud-agent).
 
 ### View campaign details
 

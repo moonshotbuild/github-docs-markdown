@@ -19,6 +19,10 @@ breadcrumbs:
 
 You can leave feedback for your students in a special pull request within the repository for each assignment.
 
+> \[!WARNING]
+> **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
+> For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
+
 ## About feedback pull requests for assignments
 
 You can automatically create a pull request where you can provide feedback and answer a student's questions about an assignment. For more information about the review of changes in a pull request, see [Review pull requests](/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests).

@@ -48,11 +48,11 @@ Once a workflow reaches a job that references an environment that has the custom
 
 Custom deployment protection rules are not compatible when a workflow job's environment is set to `deployment: false`. For more information, see [Deploying with GitHub Actions](/en/actions/how-tos/deploy/configure-and-manage-deployments/control-deployments#interaction-with-protection-rules).
 
-1. Validate the incoming `POST` request. For more information, see [Validating webhook deliveries](/en/webhooks/using-webhooks/validating-webhook-deliveries#validating-payloads-from-github).
+1. Validate the incoming `POST` request. For more information, see [Validating webhook deliveries](/en/webhooks/using-webhooks/validating-webhook-deliveries#validating-webhook-deliveries).
 
 2. Use a JSON Web Token to authenticate as a GitHub App. For more information, see [Authenticating as a GitHub App](/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app#about-authentication-as-a-github-app).
 
-3. Using the installation ID from the `deployment_protection_rule` webhook payload, generate an install token. For more information, see [About authentication with a GitHub App](/en/apps/creating-github-apps/authenticating-with-a-github-app/about-authentication-with-a-github-app#authenticating-as-a-github-app).
+3. Using the installation ID from the `deployment_protection_rule` webhook payload, generate an install token. For more information, see [About authentication with a GitHub App](/en/apps/creating-github-apps/authenticating-with-a-github-app/about-authentication-with-a-github-app#authentication-as-a-github-app).
 
    ```shell
    curl --request POST \

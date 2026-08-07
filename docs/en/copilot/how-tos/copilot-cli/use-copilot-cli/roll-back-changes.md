@@ -33,7 +33,7 @@ Copilot CLI supports two rewind behaviors:
 * **Tools-based rewind**: lets you rewind conversation history only, or rewind conversation history and restore files that Copilot changed.
 
 > \[!NOTE]
-> Tools-based rewind is currently an experimental feature and is only available if you have used the `/experimental on` slash command, or the `--experimental` command line option.
+> Tools-based rewind is currently an experimental feature and is only available if you have used the `/experimental on` slash command, or the `‑‑experimental` command line option.
 
 Copilot CLI automatically chooses one of these rewind behaviors based on your environment to provide the best possible rewind experience.
 

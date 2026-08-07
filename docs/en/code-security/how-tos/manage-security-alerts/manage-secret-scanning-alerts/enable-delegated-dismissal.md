@@ -23,6 +23,8 @@ You can use delegated alert dismissal to control who can dismiss an alert found 
 
 > \[!NOTE]
 > The implementation of this approval process can potentially cause some friction, so it's important to ensure that the team of security managers has adequate coverage to review dismissal requests regularly before proceeding.
+>
+> Alert dismissal requests expire after 1 week. After this, dismissal requests must be resubmitted.
 
 ## Configuring delegated dismissal for a repository
 

@@ -109,7 +109,7 @@ Custom agents can be used in the following ways:
   Enter `/agent` in interactive mode and choose from the list of available custom agents. Then enter a prompt that will be passed to the selected agent.
 
   > \[!NOTE]
-  > The CLI's default agents are not included in this list. For more information about the default agents, see [Use GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli#use-custom-agents).
+  > The CLI's default agents are not included in this list. For more information about the default agents, see [About custom agents](/en/copilot/concepts/agents/copilot-cli/about-custom-agents#built-in-agents).
 
 * **Explicit instruction**
 

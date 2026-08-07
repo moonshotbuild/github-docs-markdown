@@ -105,7 +105,7 @@ This community maintainer started a discussion to welcome the community, and to 
 
 ## Using Copilot to gain context
 
-> \[!NOTE] You'll need access to GitHub Copilot. For more information, see [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#getting-access-to-copilot).
+> \[!NOTE] You'll need access to GitHub Copilot. For more information, see [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#get-access).
 
 If you need more context or clarity on a specific issue or discussion, you can use GitHub Copilot to help answer your questions. This enables you to quickly gain insights, understand complex threads, and stay aligned with the project’s goals, fostering collaboration and knowledge sharing within the community.
 
@@ -131,7 +131,7 @@ To ask a question about an issue or discussion:
 
 These examples showed you how to decide which is the best tool for your conversations on GitHub. But this is only the beginning; there is so much more you can do to tailor these tools to your needs.
 
-For issues, for example, you can tag issues with labels for quicker searching and create issue templates to help contributors open meaningful issues. For more information, see [About issues](/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues#working-with-issues) and [About issue and pull request templates](/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates).
+For issues, for example, you can tag issues with labels for quicker searching and create issue templates to help contributors open meaningful issues. For more information, see [About issues](/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues) and [About issue and pull request templates](/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates).
 
 For pull requests, you can create draft pull requests if your proposed changes are still a work in progress. Draft pull requests cannot be merged until they're marked as ready for review. For more information, see [Pull requests](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests).
 

@@ -1,7 +1,7 @@
 ---
 source_path: "/en/pull-requests/concepts"
 title: "Concepts for pull requests"
-intro: "Understand the foundational concepts of pull requests, including branches, forks, commits, reviews, and merges to streamline collaboration on GitHub."
+intro: "Understand how pull requests help you write code and collaborate effectively on GitHub."
 product: "Pull requests"
 document_type: "category"
 breadcrumbs:
@@ -13,7 +13,7 @@ breadcrumbs:
 
 # Concepts for pull requests
 
-Understand the foundational concepts of pull requests, including branches, forks, commits, reviews, and merges to streamline collaboration on GitHub.
+Understand how pull requests help you write code and collaborate effectively on GitHub.
 
 ## Links
 

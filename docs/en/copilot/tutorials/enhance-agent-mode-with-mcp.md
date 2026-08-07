@@ -55,7 +55,7 @@ Follow these best practices to get the most out of combining MCP servers with ag
 
 ### Security considerations
 
-* **Use OAuth when available**: For MCP servers like GitHub MCP, prefer OAuth authentication over personal access tokens. See [Using the GitHub MCP Server in your IDE](/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/use-the-github-mcp-server#remote-mcp-server-configuration-with-oauth).
+* **Use OAuth when available**: For MCP servers like GitHub MCP, prefer OAuth authentication over personal access tokens. See [Setting up the GitHub MCP Server](/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server#remote-mcp-server-configuration-with-oauth).
 * **Limit permissions**: Only grant MCP servers the minimum permissions necessary for your tasks.
 * **Review connections**: Regularly audit which MCP servers have access to your development environment.
 * **Monitor activity**: Keep track of what actions Copilot performs through MCP servers.

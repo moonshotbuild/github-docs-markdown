@@ -72,7 +72,7 @@ If Dependabot alerts are enabled for a repository, you can view Dependabot alert
 
    ![Screenshot showing the list of Dependabot alerts for the demo repository.](/assets/images/help/repository/dependabot-alerts-list-demo-repo.png)
 
-   You can filter Dependabot alerts in the list, using a variety of filters or labels. For more information, see [Viewing and updating Dependabot alerts](/en/code-security/how-tos/manage-security-alerts/manage-dependabot-alerts/view-dependabot-alerts#prioritizing-dependabot-alerts). You can also use Dependabot auto-triage rules to filter out false positive alerts or alerts you're not interested in. For more information, see [Dependabot auto-triage rules](/en/code-security/concepts/supply-chain-security/dependabot-auto-triage-rules).
+   You can filter Dependabot alerts in the list, using a variety of filters or labels. For more information, see [Viewing and updating Dependabot alerts](/en/code-security/how-tos/manage-security-alerts/manage-dependabot-alerts/view-dependabot-alerts#tips-for-prioritizing-alerts). You can also use Dependabot auto-triage rules to filter out false positive alerts or alerts you're not interested in. For more information, see [Dependabot auto-triage rules](/en/code-security/concepts/supply-chain-security/dependabot-auto-triage-rules).
 
 5. Click the "Command Injection in lodash" alert on the `javascript/package-lock.json` file. The details page for the alert will show the following information (note that some information may not apply to all alerts):
 
@@ -87,11 +87,11 @@ If Dependabot alerts are enabled for a repository, you can view Dependabot alert
 6. Optionally, you can also explore the information on the right-side of the page. Some of the information shown in the screenshot may not apply to every alert.
 
    * Severity
-   * CVSS metrics: We use CVSS levels to assign severity levels. For more information, see [GitHub Advisory database](/en/code-security/concepts/vulnerability-reporting-and-management/github-advisory-database#about-cvss-levels).
+   * CVSS metrics: We use CVSS levels to assign severity levels. For more information, see [GitHub Advisory database](/en/code-security/concepts/vulnerability-reporting-and-management/github-advisory-database#cvss-levels).
    * Tags
    * Weaknesses: List of CWEs related to the vulnerability, if applicable
    * CVE ID: Unique CVE identifier for the vulnerability, if applicable
-   * GHSA ID: Unique identifier of the corresponding advisory on the GitHub Advisory Database. For more information, see [GitHub Advisory database](/en/code-security/concepts/vulnerability-reporting-and-management/github-advisory-database#about-ghsa-ids).
+   * GHSA ID: Unique identifier of the corresponding advisory on the GitHub Advisory Database. For more information, see [GitHub Advisory database](/en/code-security/concepts/vulnerability-reporting-and-management/github-advisory-database#ghsa-ids).
    * Option to navigate to the advisory on the GitHub Advisory Database
    * Option to see all of your repositories that are affected by this vulnerability
    * Option to suggest improvements for this advisory on the GitHub Advisory Database

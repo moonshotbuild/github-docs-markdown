@@ -27,7 +27,7 @@ Depending on your configuration, code scanning results may appear as check resul
 
 For all configurations of code scanning, the check that contains the results of code scanning is: **Code scanning results**. The results for each analysis tool used are shown separately. Any new alerts on lines of code changed in the pull request are shown as annotations.
 
-To see the full set of alerts for the analyzed branch, click **View all branch alerts**. This opens the full alert view where you can filter all the alerts on the branch by type, severity, tag, etc. For more information, see [Assessing code scanning alerts for your repository](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/assess-alerts#filtering-and-searching-for-code-scanning-alerts).
+To see the full set of alerts for the analyzed branch, click **View all branch alerts**. This opens the full alert view where you can filter all the alerts on the branch by type, severity, tag, etc. For more information, see [Assessing code scanning alerts for your repository](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/assess-alerts#filtering-code-scanning-alerts).
 
 ![Screenshot of the Code scanning results check on a pull request. The "View all branch alerts" link is highlighted with a dark orange outline.](/assets/images/help/repository/code-scanning-results-check.png)
 
@@ -37,7 +37,7 @@ If the code scanning results check finds any problems with a severity of `error`
 
 ![Screenshot of the merge box for a pull request. The "Code scanning results / CodeQL" check has "1 new alert including 1 high severity security v..."](/assets/images/help/repository/code-scanning-check-failure.png)
 
-You can override the default behavior in your repository settings, by specifying the level of severities and security severities that will cause a pull request check failure. For more information, see [Workflow configuration options for code scanning](/en/code-security/reference/code-scanning/workflow-configuration-options#defining-the-severities-causing-pull-request-check-failure).
+You can override the default behavior in your repository settings, by specifying the level of severities and security severities that will cause a pull request check failure. For more information, see [Editing your configuration of default setup](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/edit-default-setup#defining-the-alert-severities-that-cause-a-check-failure-for-a-pull-request).
 
 ## Diagnosing issues with your code scanning configuration
 
@@ -97,7 +97,7 @@ When Copilot Autofix is enabled for a repository, alerts are displayed in pull r
 > * Copilot Autofix supports a subset of CodeQL queries. For information about the availability of Copilot Autofix, see the query tables linked from [Queries for CodeQL analysis](/en/code-security/reference/code-scanning/codeql/codeql-queries).
 > * When analysis is complete, all relevant results are published to the pull request at once. If at least one alert in your pull request has an Copilot Autofix suggestion, you should assume that the LLM has finished identifying potential fixes for your code.
 > * On alerts generated from queries that are not supported by Copilot Autofix, you will see a note telling you that the query is not supported. If a suggestion for a supported query fails to generate, you will see a note on the alert prompting you to try pushing another commit or to contact support.
-> * Copilot Autofix for code scanning alerts won't be able to generate a fix for every alert in every situation. The feature operates on a best-effort basis and is not guaranteed to succeed 100% of the time. For information about the limitations of automatically generated fixes, see [Limitations of suggestions](/en/code-security/responsible-use/security-and-quality-ai-features#limitations-of-suggestions).
+> * Copilot Autofix for code scanning alerts won't be able to generate a fix for every alert in every situation. The feature operates on a best-effort basis and is not guaranteed to succeed 100% of the time. For information about the limitations of automatically generated fixes, see [Limitations of suggestions](/en/code-security/responsible-use/security-and-quality-ai-features#7-limitations).
 
 Usually, when you suggest changes to a pull request, your comment contains changes for a single file that is changed in the pull request. The following screenshot shows an Copilot Autofix comment that suggests changes to the `index.js` file where the alert is displayed. Since the potential fix requires a new dependency on `escape-html`, the comment also suggests adding this dependency to the `package.json` file, even though the original pull request makes no changes to this file.
 
@@ -105,7 +105,7 @@ Usually, when you suggest changes to a pull request, your comment contains chang
 
 ### Assessing and committing an Copilot Autofix suggestion
 
-Each Copilot Autofix suggestion demonstrates a potential solution for a code scanning alert in your codebase. You must assess the suggested changes to determine whether they are a good solution for your codebase and to ensure that they maintain the intended behavior. For information about the limitations of Copilot Autofix suggestions, see [Limitations of suggestions](/en/code-security/responsible-use/security-and-quality-ai-features#limitations-of-suggestions) and [Mitigating the limitations of suggestions](/en/code-security/responsible-use/security-and-quality-ai-features#mitigating-the-limitations-of-suggestions) in "Responsible use of Copilot Autofix for code scanning."
+Each Copilot Autofix suggestion demonstrates a potential solution for a code scanning alert in your codebase. You must assess the suggested changes to determine whether they are a good solution for your codebase and to ensure that they maintain the intended behavior. For information about the limitations of Copilot Autofix suggestions, see [Limitations of suggestions](/en/code-security/responsible-use/security-and-quality-ai-features#7-limitations) and [Mitigating the limitations of suggestions](/en/code-security/responsible-use/security-and-quality-ai-features#9-safety-components-and-mitigations) in "Responsible use of Copilot Autofix for code scanning."
 
 1. Click **Edit** to display the editing options and select your preferred method.
    * Under **Edit with GitHub CLI**, follow the instructions for checking out the pull request locally and applying the suggested fix.

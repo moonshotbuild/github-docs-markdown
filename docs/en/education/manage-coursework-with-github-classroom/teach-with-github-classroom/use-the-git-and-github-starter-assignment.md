@@ -19,6 +19,10 @@ breadcrumbs:
 
 You can use the Git & GitHub starter assignment to give students an overview of Git and GitHub fundamentals.
 
+> \[!WARNING]
+> **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
+> For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
+
 The Git & GitHub starter assignment is a pre-made course that summarizes the basics of Git and GitHub and links students to resources to learn more about specific topics.
 
 ## Prerequisites

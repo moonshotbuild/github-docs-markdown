@@ -1,7 +1,7 @@
 ---
 source_path: "/en/pull-requests/how-tos/merge-and-close-pull-requests"
 title: "Merge and close pull requests"
-intro: "Merge, revert, and close pull requests, resolve merge conflicts, and troubleshoot status checks effectively on GitHub."
+intro: "Resolve merge conflicts, and troubleshoot effectively before merging. Then merge, revert, or close pull requests  on GitHub."
 product: "Pull requests"
 document_type: "subcategory"
 breadcrumbs:
@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Merge and close pull requests
 
-Merge, revert, and close pull requests, resolve merge conflicts, and troubleshoot status checks effectively on GitHub.
+Resolve merge conflicts, and troubleshoot effectively before merging. Then merge, revert, or close pull requests  on GitHub.
 
 ## Links
 
@@ -31,6 +31,10 @@ Merge, revert, and close pull requests, resolve merge conflicts, and troubleshoo
 
   Resolve common errors and unblock merging or pushing to protected branches by troubleshooting required status checks.
 
+* [Troubleshooting stacked pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-stacked-pull-requests)
+
+  Resolve common problems with stacked pull requests, including rebase conflicts, blocked merges, interrupted operations, and merge queue issues.
+
 * [Merging a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-a-pull-request)
 
   Merge pull requests into the upstream branch, choose merge methods, and meet repository requirements like reviews or status checks.
@@ -42,6 +46,14 @@ Merge, revert, and close pull requests, resolve merge conflicts, and troubleshoo
 * [Automatically merging a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/automatically-merging-a-pull-request)
 
   Enable or disable auto-merge for pull requests to streamline your workflow and automatically merge changes once all requirements are met.
+
+* [Merging stacked pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-stacked-pull-requests)
+
+  Merge a stack from the bottom up, individually, or in contiguous groups.
+
+* [Optimizing CI for stacked pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests/optimizing-ci-for-stacked-pull-requests)
+
+  Understand how GitHub Actions workflows run for a stack, access stack metadata in your workflows, and reduce redundant CI usage.
 
 * [Reverting a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/reverting-a-pull-request)
 

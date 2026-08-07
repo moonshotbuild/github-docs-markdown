@@ -49,4 +49,4 @@ Brand new to GitHub? Learn the basics here.
 
 * [Git and GitHub learning resources](/en/get-started/start-your-journey/git-and-github-learning-resources)
 
-  There are a lot of helpful Git and GitHub resources available.
+  Discover essential Git and GitHub resources, including tutorials, online courses, and community support to enhance your skills.

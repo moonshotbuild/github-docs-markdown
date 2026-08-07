@@ -64,6 +64,9 @@ Once licenses are active, focus on the metrics that indicate healthy early adopt
 
 Healthy early adoption usually looks like 60–80% of assigned users showing activity within the first month.
 
+> \[!TIP]
+> These signals show whether developers are trying Copilot, but not whether that usage is deepening into agent-driven workflows. For a cohort-based view of adoption depth, see [Viewing the Copilot impact dashboard](/en/copilot/how-tos/administer-copilot/view-impact-dashboard).
+
 ## Step 4: Act on limited adoption signals
 
 If your metrics show limited adoption, try one of the following strategies.
@@ -102,5 +105,6 @@ In some cases, you may need user-level activity data for deeper analysis or to i
 
 ## Further reading
 
+* [Viewing the Copilot impact dashboard](/en/copilot/how-tos/administer-copilot/view-impact-dashboard)
 * [Reminding inactive users to use their GitHub Copilot license](/en/copilot/tutorials/roll-out-at-scale/assign-licenses/remind-inactive-users)
 * [Driving GitHub Copilot adoption in your company](/en/copilot/tutorials/roll-out-at-scale/enable-developers/drive-adoption)

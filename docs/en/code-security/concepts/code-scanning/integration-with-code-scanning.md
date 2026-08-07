@@ -23,7 +23,7 @@ You can perform code scanning externally and then display the results in GitHub,
 
 As an alternative to running code scanning within GitHub, you can perform analysis elsewhere, using the CodeQL CLI or another static analysis tool, and then upload the results. For more information, see [Using code scanning with your existing CI system](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/integrate-with-existing-tools/use-with-existing-ci-system).
 
-If you run code scanning using multiple configurations, an alert will sometimes have multiple analysis origins. If an alert has multiple analysis origins, you can view the status of the alert for each analysis origin on the alert page. For more information, see [Code scanning alerts](/en/code-security/concepts/code-scanning/code-scanning-alerts#about-analysis-origins).
+If you run code scanning using multiple configurations, an alert will sometimes have multiple analysis origins. If an alert has multiple analysis origins, you can view the status of the alert for each analysis origin on the alert page. For more information, see [Code scanning alerts](/en/code-security/concepts/code-scanning/code-scanning-alerts#about-alerts-from-multiple-configurations).
 
 ## Integrations with webhooks
 

@@ -31,7 +31,7 @@ Each CodeQL pack requires a `qlpack.yml` file in its root directory that specifi
 * Dependencies on other CodeQL packs and libraries
 * Query suite definitions
 
-For more information about `qlpack.yml` properties, see [Customizing analysis with CodeQL packs](/en/code-security/tutorials/customize-code-scanning/customize-analysis#codeqlpack-yml-properties).
+For more information about `qlpack.yml` properties, see [Customizing analysis with CodeQL packs](/en/code-security/tutorials/customize-code-scanning/customize-analysis).
 
 Additionally, a CodeQL pack can contain:
 

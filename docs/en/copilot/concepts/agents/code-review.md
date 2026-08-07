@@ -102,7 +102,7 @@ If your organization has disabled GitHub-hosted runners, the agentic capabilitie
 
 For more information on configuring runners, see [Configuring runners for GitHub Copilot code review](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-runners).
 
-You can view the GitHub Actions minutes associated with Copilot code review runs. For more information, see [GitHub Actions minutes for code review](/en/copilot/reference/copilot-billing/models-and-pricing#github-actions-minutes-for-code-review).
+You can view the GitHub Actions minutes associated with Copilot code review runs. For more information, see [GitHub Actions minutes for code review](/en/copilot/reference/copilot-billing/models-and-pricing#pricing-and-usage-cost-considerations-for-copilot-code-review).
 
 ## Review effort level
 
@@ -153,9 +153,6 @@ Copilot code review is a purpose-built product that uses a carefully tuned mix o
 > Since Copilot code review is generally available, all model usage will be subject to the generally available terms. See [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies).
 
 ## MCP servers and agent skills for code review
-
-> \[!NOTE]
-> Support for agent skills and MCP servers with Copilot code review is in public preview and subject to change.
 
 Copilot code review can use repository-level agent skills and MCP servers when they are relevant to the review.
 

@@ -28,7 +28,7 @@ This guide shows you how to create a continuous integration (CI) workflow that b
 We recommend that you have a basic understanding of Node.js, YAML, workflow configuration options, and how to create a workflow file. For more information, see:
 
 * [Writing workflows](/en/actions/how-tos/write-workflows)
-* [Getting started with Node.js](https://nodejs.org/en/docs/guides/getting-started-guide/)
+* [Getting started with Node.js](https://nodejs.org/learn/getting-started/introduction-to-nodejs)
 
 ## Using a Node.js workflow template
 
@@ -74,7 +74,7 @@ strategy:
 steps:
 - uses: actions/checkout@v6
 - name: Use Node.js ${{ matrix.node-version }}
-  uses: actions/setup-node@v4
+  uses: actions/setup-node@v7
   with:
     node-version: ${{ matrix.node-version }}
 ```
@@ -102,7 +102,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: '20.x'
       - run: npm ci
@@ -111,7 +111,7 @@ jobs:
 ```
 
 If you don't specify a Node.js version, GitHub uses the environment's default Node.js version.
-For more information, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#supported-software).
+For more information, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#preinstalled-software-for-github-owned-images).
 
 ## Installing dependencies
 
@@ -127,7 +127,7 @@ This example installs the versions in the `package-lock.json` or `npm-shrinkwrap
 steps:
 - uses: actions/checkout@v6
 - name: Use Node.js
-  uses: actions/setup-node@v4
+  uses: actions/setup-node@v7
   with:
     node-version: '20.x'
 - name: Install dependencies
@@ -140,7 +140,7 @@ Using `npm install` installs the dependencies defined in the `package.json` file
 steps:
 - uses: actions/checkout@v6
 - name: Use Node.js
-  uses: actions/setup-node@v4
+  uses: actions/setup-node@v7
   with:
     node-version: '20.x'
 - name: Install dependencies
@@ -155,7 +155,7 @@ This example installs the dependencies defined in the `yarn.lock` file and preve
 steps:
 - uses: actions/checkout@v6
 - name: Use Node.js
-  uses: actions/setup-node@v4
+  uses: actions/setup-node@v7
   with:
     node-version: '20.x'
 - name: Install dependencies
@@ -168,7 +168,7 @@ Alternatively, you can install the dependencies defined in the `package.json` fi
 steps:
 - uses: actions/checkout@v6
 - name: Use Node.js
-  uses: actions/setup-node@v4
+  uses: actions/setup-node@v7
   with:
     node-version: '20.x'
 - name: Install dependencies
@@ -189,7 +189,7 @@ Before installing dependencies, use the `setup-node` action to create the `.npmr
 steps:
 - uses: actions/checkout@v6
 - name: Use Node.js
-  uses: actions/setup-node@v4
+  uses: actions/setup-node@v7
   with:
     always-auth: true
     node-version: '20.x'
@@ -218,7 +218,7 @@ The following example caches dependencies for npm.
 ```yaml copy
 steps:
 - uses: actions/checkout@v6
-- uses: actions/setup-node@v4
+- uses: actions/setup-node@v7
   with:
     node-version: '20'
     cache: 'npm'
@@ -231,7 +231,7 @@ The following example caches dependencies for Yarn.
 ```yaml copy
 steps:
 - uses: actions/checkout@v6
-- uses: actions/setup-node@v4
+- uses: actions/setup-node@v7
   with:
     node-version: '20'
     cache: 'yarn'
@@ -254,7 +254,7 @@ steps:
 - uses: pnpm/action-setup@0609f0983b7a228f052f81ef4c3d6510cae254ad
   with:
     version: 6.10.0
-- uses: actions/setup-node@v4
+- uses: actions/setup-node@v7
   with:
     node-version: '20'
     cache: 'pnpm'
@@ -272,7 +272,7 @@ You can use the same commands that you use locally to build and test your code. 
 steps:
 - uses: actions/checkout@v6
 - name: Use Node.js
-  uses: actions/setup-node@v4
+  uses: actions/setup-node@v7
   with:
     node-version: '20.x'
 - run: npm install

@@ -2127,6 +2127,53 @@ The targets supported for rulesets.
 * `REPOSITORY`: repository.
 * `TAG`: Tag.
 
+## RepositoryRuleType - enum
+
+The rule types supported in rulesets.
+
+### Values for `RepositoryRuleType`
+
+* `AUTHORIZATION`: Authorization.
+* `BRANCH_NAME_PATTERN`: Branch name pattern.
+* `CODE_SCANNING`: Choose which tools must provide code scanning results before the reference is
+updated. When configured, code scanning must be enabled and have results for
+both the commit and the reference being updated.
+* `COMMITTER_EMAIL_PATTERN`: Committer email pattern.
+* `COMMIT_AUTHOR_EMAIL_PATTERN`: Commit author email pattern.
+* `COMMIT_MESSAGE_PATTERN`: Commit message pattern.
+* `COPILOT_CODE_REVIEW`: Request Copilot code review for new pull requests automatically if the author
+has access to Copilot code review and their premium requests quota has not
+reached the limit.
+* `CREATION`: Only allow users with bypass permission to create matching refs.
+* `DELETION`: Only allow users with bypass permissions to delete matching refs.
+* `FILE_EXTENSION_RESTRICTION`: Prevent commits that include files with specified file extensions from being pushed to the commit graph.
+* `FILE_PATH_RESTRICTION`: Prevent commits that include changes in specified file and folder paths from
+being pushed to the commit graph. This includes absolute paths that contain file names.
+* `LICENSE_COMPLIANCE_SCANNING`: Enforce any added or changed dependencies to comply with the organization's license policy.
+* `LOCK_BRANCH`: Branch is read-only. Users cannot push to the branch.
+* `MAX_FILE_PATH_LENGTH`: Prevent commits that include file paths that exceed the specified character limit from being pushed to the commit graph.
+* `MAX_FILE_SIZE`: Prevent commits with individual files that exceed the specified limit from being pushed to the commit graph.
+* `MAX_REF_UPDATES`: Max ref updates.
+* `MERGE_QUEUE`: Merges must be performed via a merge queue.
+* `MERGE_QUEUE_LOCKED_REF`: Merge queue locked ref.
+* `NON_FAST_FORWARD`: Prevent users with push access from force pushing to refs.
+* `PULL_REQUEST`: Require all commits be made to a non-target branch and submitted via a pull request before they can be merged.
+* `REQUIRED_DEPLOYMENTS`: Choose which environments must be successfully deployed to before refs can be pushed into a ref that matches this rule.
+* `REQUIRED_LINEAR_HISTORY`: Prevent merge commits from being pushed to matching refs.
+* `REQUIRED_REVIEW_THREAD_RESOLUTION`: When enabled, all conversations on code must be resolved before a pull request
+can be merged into a branch that matches this rule.
+* `REQUIRED_SIGNATURES`: Commits pushed to matching refs must have verified signatures.
+* `REQUIRED_STATUS_CHECKS`: Choose which status checks must pass before the ref is updated. When enabled,
+commits must first be pushed to another ref where the checks pass.
+* `REQUIRED_WORKFLOW_STATUS_CHECKS`: Require all commits be made to a non-target branch and submitted via a pull
+request and required workflow checks to pass before they can be merged.
+* `SECRET_SCANNING`: Secret scanning.
+* `TAG`: Tag.
+* `TAG_NAME_PATTERN`: Tag name pattern.
+* `UPDATE`: Only allow users with bypass permission to update matching refs.
+* `WORKFLOWS`: Require all changes made to a targeted branch to pass the specified workflows before they can be merged.
+* `WORKFLOW_UPDATES`: Workflow files cannot be modified.
+
 ## RepositorySuggestedActorFilter - enum
 
 The possible filters for suggested actors in a repository.
@@ -2189,6 +2236,54 @@ The level of enforcement for a rule or ruleset.
 * `DISABLED`: Do not evaluate or enforce rules.
 * `EVALUATE`: Allow admins to test rules before enforcing them. Admins can view insights on
 the Rule Insights page (evaluate is only available with GitHub Enterprise).
+
+## RuleParameters - union
+
+Types which can be parameters for RepositoryRule objects.
+
+### Possible types for `RuleParameters`
+
+* BranchNamePatternParameters
+* CodeScanningParameters
+* CommitAuthorEmailPatternParameters
+* CommitMessagePatternParameters
+* CommitterEmailPatternParameters
+* CopilotCodeReviewParameters
+* FileExtensionRestrictionParameters
+* FilePathRestrictionParameters
+* MaxFilePathLengthParameters
+* MaxFileSizeParameters
+* MergeQueueParameters
+* PullRequestParameters
+* RequiredDeploymentsParameters
+* RequiredStatusChecksParameters
+* TagNamePatternParameters
+* UpdateParameters
+* WorkflowsParameters
+
+## RuleParametersInput - input object
+
+Specifies the parameters for a RepositoryRule object. Only one of the fields should be specified.
+
+### Input fields for `RuleParametersInput`
+
+* `branchNamePattern` (BranchNamePatternParametersInput): Parameters used for the branch_name_pattern rule type.
+* `codeScanning` (CodeScanningParametersInput): Parameters used for the code_scanning rule type.
+* `commitAuthorEmailPattern` (CommitAuthorEmailPatternParametersInput): Parameters used for the commit_author_email_pattern rule type.
+* `commitMessagePattern` (CommitMessagePatternParametersInput): Parameters used for the commit_message_pattern rule type.
+* `committerEmailPattern` (CommitterEmailPatternParametersInput): Parameters used for the committer_email_pattern rule type.
+* `copilotCodeReview` (CopilotCodeReviewParametersInput): Parameters used for the copilot_code_review rule type.
+* `fileExtensionRestriction` (FileExtensionRestrictionParametersInput): Parameters used for the file_extension_restriction rule type.
+* `filePathRestriction` (FilePathRestrictionParametersInput): Parameters used for the file_path_restriction rule type.
+* `maxFilePathLength` (MaxFilePathLengthParametersInput): Parameters used for the max_file_path_length rule type.
+* `maxFileSize` (MaxFileSizeParametersInput): Parameters used for the max_file_size rule type.
+* `mergeQueue` (MergeQueueParametersInput): Parameters used for the merge_queue rule type.
+* `pullRequest` (PullRequestParametersInput): Parameters used for the pull_request rule type.
+* `requiredDeployments` (RequiredDeploymentsParametersInput): Parameters used for the required_deployments rule type.
+* `requiredStatusChecks` (RequiredStatusChecksParametersInput): Parameters used for the required_status_checks rule type.
+* `tagNamePattern` (TagNamePatternParametersInput): Parameters used for the tag_name_pattern rule type.
+* `update` (UpdateParametersInput): Parameters used for the update rule type.
+* `workflows` (WorkflowsParametersInput): Parameters used for the workflows rule type.
 
 ## RuleSource - union
 

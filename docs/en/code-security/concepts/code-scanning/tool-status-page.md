@@ -64,7 +64,7 @@ CodeQL reports a file as scanned if some lines of code in that file were process
 
 ### Compiled languages
 
-The tool status page reports files present before running autobuild or manual build steps. Files generated during the build process are not shown. See [CodeQL code scanning for compiled languages](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#about-autobuild-for-codeql).
+The tool status page reports files present before running autobuild or manual build steps. Files generated during the build process are not shown. See [CodeQL code scanning for compiled languages](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#use-autobuild-for-codeql).
 
 ### Coverage calculation
 
@@ -76,7 +76,7 @@ Use file coverage percentages to debug and improve your analysis:
 
 * **High percentage**: Code scanning is working as expected for that language
 * **Low percentage**: Investigate diagnostic output. See [CodeQL scanned fewer lines than expected](/en/code-security/reference/code-scanning/troubleshoot-analysis-errors/fewer-lines-scanned-than-expected)
-* **Zero percentage**: You may have code in languages not currently being analyzed. Update your setup to include these languages. See [Workflow configuration options for code scanning](/en/code-security/reference/code-scanning/workflow-configuration-options#changing-the-languages-that-are-analyzed)
+* **Zero percentage**: You may have code in languages not currently being analyzed. Update your setup to include these languages. See [Workflow configuration options for code scanning](/en/code-security/reference/code-scanning/workflow-configuration-options)
 
 > \[!NOTE]
 > If you set up both advanced setup and default setup, the tool status page only shows default setup.

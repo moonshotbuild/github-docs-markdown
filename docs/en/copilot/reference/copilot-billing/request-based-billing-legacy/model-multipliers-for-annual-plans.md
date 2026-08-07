@@ -65,10 +65,6 @@ The following table shows the model multipliers per supported model.
 |                    |            |
 | Claude Sonnet 4.6  |          9 |
 |                    |            |
-| Gemini 2.5 Pro     |          1 |
-|                    |            |
-| Gemini 3 Flash     |       0.33 |
-|                    |            |
 | Gemini 3 Pro       |          6 |
 |                    |            |
 | Gemini 3.1 Pro     |          6 |

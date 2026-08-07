@@ -105,19 +105,19 @@ Using actions to run code scanning will use minutes. For more information, see [
 
 6. When you have finished defining your configuration, add the new workflow to your default branch.
 
-   For more information, see [Using workflow templates](/en/actions/how-tos/write-workflows/use-workflow-templates#choosing-and-using-a-starter-workflow) and [Workflow configuration options for code scanning](/en/code-security/reference/code-scanning/workflow-configuration-options).
+   For more information, see [Using workflow templates](/en/actions/how-tos/write-workflows/use-workflow-templates#choosing-and-using-a-workflow-template) and [Workflow configuration options for code scanning](/en/code-security/reference/code-scanning/workflow-configuration-options).
 
 ## Next steps
 
 After your workflow runs successfully at least once, you are ready to start examining and resolving code scanning alerts. For more information on code scanning alerts, see [Code scanning alerts](/en/code-security/concepts/code-scanning/code-scanning-alerts) and [Assessing code scanning alerts for your repository](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/assess-alerts).
 
-Learn how code scanning runs behave as checks on pull requests, see [Triaging code scanning alerts in pull requests](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/triage-alerts-in-pull-requests#about-code-scanning-as-a-pull-request-check).
+Learn how code scanning runs behave as checks on pull requests, see [Triaging code scanning alerts in pull requests](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/triage-alerts-in-pull-requests).
 
 You can find detailed information about your code scanning configuration, including timestamps for each scan and the percentage of files scanned, on the tool status page. For more information, see [Use the tool status page for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/use-the-tools-status-page-for-code-scanning).
 
 ### Further reading
 
 * [Triaging code scanning alerts in pull requests](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/triage-alerts-in-pull-requests).
-* [Configuring notifications](/en/subscriptions-and-notifications/get-started/configuring-notifications#github-actions-notification-options).
+* [Managing GitHub Actions notifications](/en/subscriptions-and-notifications/how-tos/managing-github-actions-notifications).
 * [Workflow configuration options for code scanning](/en/code-security/reference/code-scanning/workflow-configuration-options).
 * [Viewing code scanning logs from GitHub Actions](/en/code-security/how-tos/view-and-interpret-data/view-code-scanning-logs).

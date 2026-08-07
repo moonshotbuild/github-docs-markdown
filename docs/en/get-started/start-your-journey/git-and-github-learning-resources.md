@@ -1,7 +1,7 @@
 ---
 source_path: "/en/get-started/start-your-journey/git-and-github-learning-resources"
 title: "Git and GitHub learning resources"
-intro: "There are a lot of helpful Git and GitHub resources available."
+intro: "Discover essential Git and GitHub resources, including tutorials, online courses, and community support to enhance your skills."
 product: "Get started"
 document_type: "article"
 breadcrumbs:
@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Git and GitHub learning resources
 
-There are a lot of helpful Git and GitHub resources available.
+Discover essential Git and GitHub resources, including tutorials, online courses, and community support to enhance your skills.
 
 ## Using GitHub
 
@@ -25,36 +25,35 @@ Become better acquainted with GitHub through our [Using GitHub](/en/get-started/
 * To learn about the various tools for working with repositories hosted on GitHub, and how to choose a tool that best suits your needs, see [Connecting to GitHub](/en/get-started/using-github/connecting-to-github).
 * To understand the different communication tools on GitHub, such as GitHub Issues, GitHub Discussions, and pull requests, see [Communicating on GitHub](/en/get-started/using-github/communicating-on-github).
 
+You can also check out our [GitHub for Beginners YouTube series](https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f).
+
 ## Using Git
 
 Familiarize yourself with Git through our series of articles:
 
-* [Git basics](/en/get-started/git-basics).
-* [Using Git](/en/get-started/using-git).
+* [Git basics](/en/get-started/git-basics)
+* [Using Git](/en/get-started/using-git)
 
-There are also lots of other online reading resources to help you learn Git:
+There are also other online reading resources to help you learn Git:
 
-* [Official Git project site](https://git-scm.com).
-* [ProGit book](http://git-scm.com/book).
-* [Git command list](https://git-scm.com/docs).
+* [Official Git project site](https://git-scm.com)
+* [ProGit book](https://git-scm.com/book)
+* [Git command list](https://git-scm.com/docs)
+* [Git Guides](https://github.com/git-guides)
 
 ## Online courses
 
 * GitHub Skills offers free interactive courses that are built into GitHub with instant automated feedback and help. Learn to open your first pull request, make your first open source contribution, create a GitHub Pages site, and more. For more information about course offerings, see [GitHub Skills](https://skills.github.com/).
 
-* [Git branching](http://learngitbranching.js.org/) is a free interactive tool for learning and practising Git concepts.
+* [GitHub Learn](https://learn.github.com/) is GitHub's unified learning hub for courses, GitHub Skills, videos, and GitHub Certifications.
 
-* An interactive [online Git course](https://www.pluralsight.com/courses/code-school-git-real) from [Pluralsight](https://www.pluralsight.com/codeschool) can also teach you the basics of Git.
+* [Microsoft Learn training for GitHub](https://learn.microsoft.com/en-us/training/github/) offers GitHub-authored, free training paths.
+
+* [Git branching](https://learngitbranching.js.org/) is a free interactive tool for learning and practising Git concepts.
 
 ## Training
 
-### GitHub's web-based educational programs
-
-GitHub offers live [trainings](https://services.github.com/#upcoming-events) with a hands-on, project-based approach for those who love the command line and those who don't.
-
-### Training for your company
-
-GitHub offers [in-person classes](https://services.github.com/#offerings) taught by our highly-experienced educators. [Contact us](https://services.github.com/#contact) to ask your training-related questions.
+GitHub offers [GitHub Expert Services](https://github.com/services), with hands-on, project-based training for teams and individuals.
 
 ## Community
 

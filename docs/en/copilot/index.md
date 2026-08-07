@@ -79,6 +79,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Automations let you run Copilot cloud agent automatically, on a schedule or in response to events in a repository.
 
+* [About rationale, confidence, and approvals for issues](/en/copilot/concepts/agents/cloud-agent/about-automation-rationale-and-approvals)
+
+  When automations triage issues, it explains each change, rates its confidence, and holds lower-confidence changes for your review.
+
 * [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/access-management)
 
   Find out about Copilot cloud agent policies available for GitHub Copilot Enterprise and GitHub Copilot Business, and about disabling the agent for specific repositories.
@@ -205,7 +209,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes)
 
-  Cloud and local sandboxes for GitHub Copilot provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine or in fully isolated cloud environments.
+  Cloud and local sandboxes provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine or in fully isolated cloud environments.
 
 * [About GitHub Spark](/en/copilot/concepts/spark)
 
@@ -246,6 +250,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [About Copilot integrations](/en/copilot/concepts/tools/about-copilot-integrations)
 
   Integrate Copilot with other tools and platforms to streamline your workflow.
+
+* [About default availability of Copilot models](/en/copilot/concepts/models/default-availability)
+
+  A policy controls whether unconfigured models default to enabled or disabled.
 
 * [Bring your own key for GitHub Copilot](/en/copilot/concepts/models/bring-your-own-key)
 
@@ -307,7 +315,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   You can connect to GitHub Copilot through an HTTP proxy and use custom certificates.
 
-* [Preparing for new features and models](/en/copilot/concepts/preparing-for-new-features-and-models)
+* [Learning about new features and models](/en/copilot/concepts/learning-about-new-features-and-models)
 
   Stay informed about GitHub Copilot features and models, and make confident decisions about enabling them for your enterprise.
 
@@ -607,6 +615,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Run Copilot CLI in a GitHub Actions workflow using the built-in `GITHUB_TOKEN`, without a personal access token.
 
+* [Using local sandboxing](/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing)
+
+  Enable local sandboxing so that Copilot CLI runs the commands and tools it invokes on your behalf inside an operating-system sandbox.
+
 * [Configuring local sandbox settings](/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings)
 
   Use the `/sandbox` slash command in Copilot CLI to control how the local sandbox restricts filesystem access, network connectivity, and system capabilities.
@@ -654,6 +666,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [BYOK (bring your own key)](/en/copilot/how-tos/copilot-sdk/auth/byok)
 
   BYOK allows you to use the Copilot SDK with your own API keys from model providers, bypassing GitHub Copilot authentication. This is useful for enterprise deployments, custom model hosting, or when you want direct billing with your model provider.
+
+* [Server-to-server authentication](/en/copilot/how-tos/copilot-sdk/auth/server-to-server-tokens)
+
+  Use a short-lived installation access token when a service needs to make Copilot requests on behalf of an organization without a user's credentials. In GitHub Actions, use the built-in `GITHUB_TOKEN` instead.
 
 * [The agent loop](/en/copilot/how-tos/copilot-sdk/features/agent-loop)
 
@@ -710,6 +726,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Streaming session events](/en/copilot/how-tos/copilot-sdk/features/streaming-events)
 
   Every action the Copilot agent takes—thinking, writing code, running tools—is emitted as a **session event** you can subscribe to. This guide is a field-level reference for each event type so you know exactly what data to expect without reading the SDK source.
+
+* [Usage and billing metrics](/en/copilot/how-tos/copilot-sdk/features/usage-and-billing)
+
+  This guide shows how to read token counts, context-window utilization, AI credit cost, and account quota from a Copilot SDK application. Examples are shown for TypeScript, Python, Go, .NET, Java, and Rust.
 
 * [Error handling hook](/en/copilot/how-tos/copilot-sdk/hooks/error-handling)
 
@@ -795,9 +815,13 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Create and manage automations to run Copilot cloud agent on a schedule or in response to events.
 
+* [Managing rationale, confidence, and approvals for issues](/en/copilot/how-tos/use-copilot-agents/cloud-agent/manage-rationale-confidence-approvals)
+
+  Set up and manage rationale, confidence, and approvals for issues handled by automation.
+
 * [Changing the AI model for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model)
 
-  In supported entrypoints, when starting a task with Copilot cloud agent, you can select the model used.
+  In supported entrypoints, when starting a task with Copilot cloud agent, you can select the model used, and, for supported models, the reasoning level.
 
 * [Configuring settings for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/configuring-agent-settings)
 
@@ -849,7 +873,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Integrating Copilot cloud agent with Linear](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-linear)
 
-  Use the Copilot integration in Linear to provide context and open pull requests, all from within your Linear workspace.
+  Use the Copilot integration in Linear to provide context, customize how the agent runs, and open pull requests, all from within your Linear workspace.
 
 * [Integrating Copilot cloud agent with Azure Boards](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-azure-boards)
 
@@ -999,7 +1023,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Configure the repository that stores custom agents for your organization.
 
-* [Managing default models](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-default-models)
+* [Managing the availability of models in an organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-default-models)
 
   Configure which default Copilot models are available to members of your organization.
 
@@ -1079,9 +1103,9 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Enable and manage GitHub Spark for your enterprise.
 
-* [Managing availability of default models](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-availability-of-default-models)
+* [Managing availability of models in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-availability-of-default-models)
 
-  You can control which Copilot models are available to specific organizations.
+  Control which Copilot models are available to users.
 
 * [Enabling custom models for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/enable-custom-models)
 
@@ -1110,6 +1134,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Viewing the code generation dashboard](/en/copilot/how-tos/administer-copilot/view-code-generation)
 
   The code generation dashboard shows how Copilot generates code across your enterprise, including activity from both users and agents.
+
+* [Viewing the Copilot impact dashboard](/en/copilot/how-tos/administer-copilot/view-impact-dashboard)
+
+  The impact dashboard shows how deeply your organization has adopted Copilot, and how that adoption connects to pull request output.
 
 * [Troubleshooting common issues with GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-common-issues)
 
@@ -1183,6 +1211,18 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Find information about the `~/.copilot` directory, where Copilot CLI stores configuration, session data, and customizations.
 
+* [Repository configuration for the GitHub Copilot app](/en/copilot/reference/github-copilot-app-reference/repository-configuration)
+
+  Define repository-specific instructions, scripts, and automation behavior for the GitHub Copilot app.
+
+* [Slash commands for the GitHub Copilot app](/en/copilot/reference/github-copilot-app-reference/slash-commands)
+
+  Use slash commands in the GitHub Copilot app to switch modes, run common workflows, and manage sessions without writing a long prompt.
+
+* [Built-in skills for the GitHub Copilot app](/en/copilot/reference/github-copilot-app-reference/built-in-skills)
+
+  Use this reference to find built-in agent skills available in the GitHub Copilot app.
+
 * [Custom agents configuration](/en/copilot/reference/custom-agents-configuration)
 
   Reference for configuring custom agents.
@@ -1195,25 +1235,13 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Find hook events, configuration formats, and input payloads for hooks in Copilot CLI and Copilot cloud agent.
 
-* [Feature availability when GitHub Copilot policies conflict in organizations](/en/copilot/reference/policy-conflicts)
-
-  Learn how delegating Copilot policy decisions to organizations affects users granted a license by organizations with different policies.
-
 * [Supported surfaces for GitHub Copilot policies](/en/copilot/reference/supported-surfaces-for-policies)
 
   Which policies affect which Copilot features and surfaces?
 
-* [Enterprise managed settings reference](/en/copilot/reference/enterprise-managed-settings-reference)
-
-  Reference for the enterprise managed settings schema used by Copilot clients.
-
 * [Copilot allowlist reference](/en/copilot/reference/copilot-allowlist-reference)
 
   Learn how to allow certain traffic through your firewall or proxy server for Copilot to work as intended in your organization.
-
-* [MCP allowlist enforcement](/en/copilot/reference/mcp-allowlist-enforcement)
-
-  Understand the logic and limitations of MCP allowlist enforcement.
 
 * [Metrics data properties for GitHub Copilot](/en/copilot/reference/metrics-data)
 
@@ -1255,14 +1283,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Model multipliers for Copilot Pro and Copilot Pro+ subscribers staying on annual plans under request-based billing.
 
-* [Audit log events for agents](/en/copilot/reference/agentic-audit-log-events)
-
-  Understand the structure of audit log events for agents in your enterprise.
-
-* [Available filters for agent sessions](/en/copilot/reference/agent-session-filters)
-
-  Search agentic activity in your enterprise with filters for agent sessions.
-
 * [Files excluded from GitHub Copilot code review](/en/copilot/reference/review-excluded-files)
 
   Understand the types of files that are excluded from a review by Copilot.
@@ -1290,6 +1310,26 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Example schema for Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/example-schema)
 
   See an example schema of the data returned by the Copilot usage metrics API.
+
+* [Available filters for agent sessions](/en/copilot/reference/enterprise-administrators/agent-session-filters)
+
+  Search agentic activity in your enterprise with filters for agent sessions.
+
+* [Audit log events for agents](/en/copilot/reference/enterprise-administrators/agentic-audit-log-events)
+
+  Understand the structure of audit log events for agents in your enterprise.
+
+* [Enterprise managed settings](/en/copilot/reference/enterprise-administrators/enterprise-managed-settings)
+
+  Understand the enterprise managed settings schema used by Copilot clients.
+
+* [MCP allowlist enforcement](/en/copilot/reference/enterprise-administrators/mcp-allowlist-enforcement)
+
+  Understand the logic and limitations of MCP allowlist enforcement.
+
+* [Feature availability when GitHub Copilot policies conflict in organizations](/en/copilot/reference/enterprise-administrators/policy-conflicts)
+
+  Delegating Copilot policy decisions to organizations affects users granted a license by organizations with different policies.
 
 * [Creating templates](/en/copilot/tutorials/copilot-cookbook/communicate-effectively/creating-templates)
 

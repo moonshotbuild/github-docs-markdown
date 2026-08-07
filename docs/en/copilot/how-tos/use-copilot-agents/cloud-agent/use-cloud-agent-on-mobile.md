@@ -32,7 +32,7 @@ Start and track Copilot cloud agent sessions from the GitHub Mobile app.
    If you want Copilot to open a pull request, you can ask in your prompt, for example `Open a pull request to implement a user friendly message for common errors.`
 4. Optionally, select a base branch for Copilot's changes. Copilot will create a new branch based on this branch.
 5. Optionally, select a custom agent with specialized behavior and tools from the dropdown menu. For more information, see [Creating custom agents for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents).
-6. Optionally, you can use the dropdown menu to select the model that Copilot will use. For more information, see [Changing the AI model for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model).
+6. Optionally, you can use the dropdown menu to select the model that Copilot will use. If the selected model supports configurable reasoning, you can also use the dropdown menu to select the reasoning level. For more information, see [Changing the AI model for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model).
 7. Click the submit button.
 
    Copilot will start a new session, work on the task, and push any code changes.

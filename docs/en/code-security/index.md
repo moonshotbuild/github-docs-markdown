@@ -139,7 +139,7 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [About autofix for code scanning](/en/code-security/concepts/code-scanning/autofix-for-code-scanning)
 
-  Autofix provides targeted recommendations to help you fix code scanning alerts and avoid introducing new security vulnerabilities.
+  Autofix automatically generates fixes for code scanning alerts, helping you remediate existing vulnerabilities.
 
 * [AI-powered security detections in pull requests](/en/code-security/concepts/code-scanning/ai-powered-security-detections)
 
@@ -273,10 +273,6 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   The `dependabot.yml` controls automated dependency updates in your repository.
 
-* [Automatic Dependabot access to GitHub-hosted registries](/en/code-security/concepts/supply-chain-security/automatic-dependabot-access-to-github-registries)
-
-  Keep your private dependencies up to date reliably by granting Dependabot automatic access to GitHub Packages and Container registry, so you never need to create or rotate credentials for these registries.
-
 * [Dependabot auto-triage rules](/en/code-security/concepts/supply-chain-security/dependabot-auto-triage-rules)
 
   Control how Dependabot handles security alerts, including filtering, ignoring, snoozing, or triggering security updates.
@@ -304,6 +300,10 @@ Build security and code quality into your GitHub workflow with integrated toolin
 * [Code Quality enablement across organizations and enterprises](/en/code-security/concepts/code-quality/enablement-at-scale)
 
   GitHub Code Quality can cover one repository or thousands from a single control point, giving every team the same quality baseline and giving you the guardrails to keep it there.
+
+* [Automatic code coverage setup](/en/code-security/concepts/code-quality/automatic-code-coverage-setup)
+
+  An AI-powered agent can analyze your repository and generate a working code coverage workflow, so you can start tracking test coverage without manually authoring CI configuration.
 
 * [GitHub Advisory database](/en/code-security/concepts/vulnerability-reporting-and-management/github-advisory-database)
 

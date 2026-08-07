@@ -19,6 +19,9 @@ breadcrumbs:
 
 This guide describes common issues with Spark and how to resolve them.
 
+> [!NOTE]
+> Beginning August 4, 2026, GitHub Spark will no longer accept new users or allow the creation of new apps. Existing users can continue to access and use apps they have already created. Open Spark workbench for your app, select "..." and "Create repository" to save your app code before August 31, 2026.
+
 ## Error: "Live preview is interrupted. Try refreshing the page to reconnect."
 
 There is a known compatibility issue between Apple's Safari browser and the way Spark renders its live preview.

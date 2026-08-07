@@ -24,7 +24,7 @@ Authenticate Actions Runner Controller to the GitHub API.
 You can authenticate Actions Runner Controller (ARC) to the GitHub API by using a GitHub App or by using a personal access token (classic).
 
 > \[!NOTE]
-> You cannot authenticate using a GitHub App for runners at the enterprise level. For more information, see [Managing access to self-hosted runners using groups](/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access#about-runner-groups).
+> You cannot authenticate using a GitHub App for runners at the enterprise level. For more information, see [Managing access to self-hosted runners using groups](/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access).
 
 ## Authenticating ARC with a GitHub App
 

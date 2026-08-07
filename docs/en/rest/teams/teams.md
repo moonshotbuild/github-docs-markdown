@@ -181,6 +181,9 @@ Can be one of: `notifications_enabled`, `notifications_disabled`
 * **`parent_team_id`** (integer)
   The ID of a team to set as the parent team.
 
+* **`parent_team_slug`** (string)
+  The slug of a team to set as the parent team. Ignored when parent\_team\_id is also provided.
+
 ### HTTP response status codes
 
 * **201** - Created
@@ -412,6 +415,9 @@ Can be one of: `notifications_enabled`, `notifications_disabled`
 * **`parent_team_id`** (integer or null)
   The ID of a team to set as the parent team.
 
+* **`parent_team_slug`** (string or null)
+  The slug of a team to set as the parent team. Ignored when parent\_team\_id is also provided.
+
 ### HTTP response status codes
 
 * **200** - Response when the updated information already exists
@@ -520,6 +526,7 @@ GET /orgs/{org}/teams/{team_slug}/repos
 ```
 
 Lists a team's repositories visible to the authenticated user.
+OAuth app tokens and personal access tokens (classic) need the read:org or repo scope to use this endpoint.
 Note
 
 You can also specify a team by org\_id and team\_id using the route GET /organizations/{org\_id}/team/{team\_id}/repos.
@@ -1167,6 +1174,9 @@ Can be one of: `notifications_enabled`, `notifications_disabled`
 
 * **`parent_team_id`** (integer or null)
   The ID of a team to set as the parent team.
+
+* **`parent_team_slug`** (string or null)
+  The slug of a team to set as the parent team. Ignored when parent\_team\_id is also provided.
 
 ### HTTP response status codes
 

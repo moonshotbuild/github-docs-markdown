@@ -40,3 +40,18 @@ After changing your password, you should perform these actions to make sure that
 * Review recent commits made to your repositories.
 
 * Review the list of collaborators for each repository.
+
+## Troubleshooting
+
+### Account is restricted after suspected compromise
+
+If GitHub detects suspicious activity, your personal account may be temporarily restricted while you can still sign in. During this time, your profile URL, contribution graph, search visibility, or sensitive account actions may be unavailable. Alternatively, we may suspend the account for security reasons. If you’re unable to access your account at all, please contact GitHub Support.
+
+If you see restrictions on your account, complete the following steps to secure your account:
+
+1. Change your GitHub password. For more information, see [Updating your GitHub access credentials](/en/authentication/keeping-your-account-and-data-secure/updating-your-github-access-credentials#changing-an-existing-password).
+2. Review your security settings and remove unfamiliar apps, keys, and other credentials.
+3. Secure the email account associated with GitHub and make sure you can access it.
+4. Check your inbox (and spam folder) for security emails from GitHub and follow any instructions.
+
+If restrictions remain after you secure your account, contact GitHub Support.

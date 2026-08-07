@@ -98,7 +98,9 @@ For details of the supported tool kinds, see [GitHub Copilot CLI command referen
 
 The following command-line options give Copilot CLI permission to use all available tools.
 
-> \[!NOTE] If you have a Copilot Business or Copilot Enterprise license, these commands may be blocked by an enterprise administrator.
+If you have a Copilot Business or Copilot Enterprise license, these commands may be blocked by an enterprise administrator.
+
+Before you grant Copilot wide-ranging permissions with an allow-all option, consider using local sandboxing, or running the session in a cloud sandbox, to limit what Copilot can access. For more information, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
 
 * `--allow-all-tools` — Full access to the available tools.
 
@@ -106,8 +108,8 @@ The following command-line options give Copilot CLI permission to use all availa
 
   Within an interactive session, you can use the `/allow-all` or `/yolo` slash commands to allow all tools without needing to restart the session.
 
-  > \[!NOTE]
-  > It is strongly recommended that you only use these options in an isolated environment. You should never use an alias to apply one of these options every time you start Copilot CLI, as doing so would allow Copilot to use any tool without your explicit permission every time you use the CLI, which could lead to unintended consequences.
+> \[!CAUTION]
+> It is strongly recommended that you only use these options in an isolated environment. You should never use an alias to apply one of these options every time you start Copilot CLI, as doing so would allow Copilot to use any tool without your explicit permission every time you use the CLI, which could lead to unintended consequences.
 
 ## Resetting permissions
 

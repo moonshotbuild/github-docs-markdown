@@ -53,7 +53,7 @@ jobs:
 
 Runner scale set names are unique within the runner group they belong to. To deploy multiple runner scale sets with the same name, they must belong to different runner groups. For more information about specifying runner scale set names, see [Deploying runner scale sets with Actions Runner Controller](/en/actions/how-tos/manage-runners/use-actions-runner-controller/deploy-runner-scale-sets).
 
-You can use the installation name of the runner scale set, or define the value of the `runnerScaleSetName` field in your [`values.yaml`](https://github.com/actions/actions-runner-controller/blob/master/charts/gha-runner-scale-set/values.yaml) file, as your `runs-on` target. You can also assign multiple labels to a scale set to enable more flexible job routing. To configure labels for a runner scale set, set the `runnerScaleSetLabels` value in your `values.yaml` file. For more information, see [Deploying runner scale sets with Actions Runner Controller](/en/actions/how-tos/manage-runners/use-actions-runner-controller/deploy-runner-scale-sets#scaling-runners).
+You can use the installation name of the runner scale set, or define the value of the `runnerScaleSetName` field in your [`values.yaml`](https://github.com/actions/actions-runner-controller/blob/master/charts/gha-runner-scale-set/values.yaml) file, as your `runs-on` target. You can also assign multiple labels to a scale set to enable more flexible job routing. To configure labels for a runner scale set, set the `runnerScaleSetLabels` value in your `values.yaml` file. For more information, see [Deploying runner scale sets with Actions Runner Controller](/en/actions/how-tos/manage-runners/use-actions-runner-controller/deploy-runner-scale-sets).
 
 ## Using labels to target runner scale sets
 

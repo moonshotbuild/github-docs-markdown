@@ -68,12 +68,12 @@ Alternatively, you can use a script to output command-line options and pipe this
 > \[!CAUTION]
 > If you use an automatic approval option such as `--allow-all-tools`, Copilot has the same access as you do to files on your computer, and can run any shell commands that you can run, without getting your prior approval. See [Security considerations](#security-considerations), later in this article.
 
-## Running in a sandbox with cloud and local sandboxes for GitHub Copilot
+## Running Copilot CLI commands in a sandbox
 
 > \[!NOTE]
-> Cloud and local sandboxes for GitHub Copilot is in public preview and subject to change.
+> Cloud and local sandboxes for GitHub Copilot are in public preview and subject to change.
 
-Cloud and local sandboxes for GitHub Copilot provides isolated execution environments for Copilot CLI, both locally and in the cloud. For more information, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
+To prevent Copilot from modifying files you don't want it to touch, you can force agents to run commands within a local sandboxed environment. Alternatively, you can run an entire CLI session in an isolated environment in the cloud. For more information, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
 
 ### Local sandboxing
 
@@ -86,7 +86,7 @@ You can start a Copilot CLI session inside an isolated, cloud-hosted environment
 To start a cloud-backed session, run:
 
 ```bash copy
-copilot --cloud
+copilot ‑‑cloud
 ```
 
 ## Use cases for GitHub Copilot CLI
@@ -316,7 +316,7 @@ You can control which tools Copilot CLI can use by responding to approval prompt
 
 ### Risk mitigation
 
-You can mitigate the risks associated with using the automatic approval options by running Copilot CLI in a sandboxed environment. Cloud and local sandboxes for GitHub Copilot provides a first-party solution for this, with local sandboxing to restrict access on your machine and cloud sandboxing for fully isolated execution. For more information, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
+You can mitigate the risks associated with using the automatic approval options by running Copilot CLI in a sandboxed environment. GitHub provides first-party sandboxing for this, with local sandboxing to restrict access on your machine and cloud sandboxing for fully isolated execution. For more information, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
 
 Alternatively, you can run Copilot CLI in a virtual machine, container, or dedicated system with tightly controlled permissions and network access.
 

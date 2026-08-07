@@ -25,6 +25,9 @@ Workflow files use YAML syntax, and must have either a `.yml` or `.yaml` file ex
 
 You must store workflow files in the `.github/workflows` directory of your repository.
 
+> \[!TIP]
+> Unlike traditional GitHub Actions workflows that require you to script every decision as YAML job steps, GitHub Agentic Workflows use YAML frontmatter for triggers and configuration, but let you describe what you want in natural-language Markdown—so you don't need to anticipate and encode every scenario in advance. For more information, see [Creating GitHub Agentic Workflows](/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows).
+
 ## `name`
 
 The name of the workflow. GitHub displays the names of your workflows under your repository's "Actions" tab. If you omit `name`, GitHub displays the workflow file path relative to the root of the repository.
@@ -129,7 +132,7 @@ on:
 
 Use `on.<event_name>.types` to define the type of activity that will trigger a workflow run. Most GitHub events are triggered by more than one type of activity. For example, the `label` is triggered when a label is `created`, `edited`, or `deleted`. The `types` keyword enables you to narrow down activity that causes the workflow to run. When only one activity type triggers a webhook event, the `types` keyword is unnecessary.
 
-You can use an array of event `types`. For more information about each event and their activity types, see [Events that trigger workflows](/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#available-events).
+You can use an array of event `types`. For more information about each event and their activity types, see [Events that trigger workflows](/en/actions/reference/workflows-and-actions/events-that-trigger-workflows).
 
 ```yaml
 on:
@@ -364,7 +367,7 @@ In some situations, GitHub Actions applies limits that change how filtered workf
 
 If you observe these behaviors, you might need to make your filters more specific, or change how you work with pushes and pull requests to generate simpler diffs.
 
-For more information, see [Branches](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests).
+For more information, see [Branches](/en/pull-requests/reference/branches).
 
 ## `on.schedule`
 
@@ -678,12 +681,9 @@ Available permissions and details of what each allows an action to do:
 | `deployments`          | Work with deployments. For example, `deployments: write` permits an action to create a new deployment. For more information, see [Permissions required for GitHub Apps](/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-deployments).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | `discussions`          | Work with GitHub Discussions. For example, `discussions: write` permits an action to close or delete a discussion. For more information, see [Using the GraphQL API for Discussions](/en/graphql/guides/using-the-graphql-api-for-discussions).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| `id-token`             | Fetch an OpenID Connect (OIDC) token. This requires `id-token: write`. For more information, see [OpenID Connect](/en/actions/concepts/security/openid-connect#updating-your-actions-for-oidc)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `id-token`             | Fetch an OpenID Connect (OIDC) token. This requires `id-token: write`. For more information, see [OpenID Connect](/en/actions/concepts/security/openid-connect#updating-your-workflows-for-oidc)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | `issues`               | Work with issues. For example, `issues: write` permits an action to add a comment to an issue. For more information, see [Permissions required for GitHub Apps](/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-issues).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| `models`               | Generate AI inference responses with GitHub Models. For example, `models: read` permits an action to use the GitHub Models inference API. See [Prototyping with AI models](/en/github-models/use-github-models/prototyping-with-ai-models).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | `packages`             | Work with GitHub Packages. For example, `packages: write` permits an action to upload and publish packages on GitHub Packages. For more information, see [About permissions for GitHub Packages](/en/packages/learn-github-packages/about-permissions-for-github-packages#about-scopes-and-permissions-for-package-registries).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | `pages`                | Work with GitHub Pages. For example, `pages: write` permits an action to request a GitHub Pages build. For more information, see [Permissions required for GitHub Apps](/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-pages).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | `pull-requests`        | Work with pull requests. For example, `pull-requests: write` permits an action to add a label to a pull request. For more information, see [Permissions required for GitHub Apps](/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-pull-requests).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -708,7 +708,6 @@ permissions:
   deployments: read|write|none
   id-token: write|none
   issues: read|write|none
-  models: read|none
   discussions: read|write|none
   packages: read|write|none
   pages: read|write|none
@@ -739,7 +738,7 @@ permissions: {}
 
 #### Changing the permissions in a forked repository
 
-You can use the `permissions` key to add and remove read permissions for forked repositories, but typically you can't grant write access. The exception to this behavior is where an admin user has selected the **Send write tokens to workflows from pull requests** option in the GitHub Actions settings. For more information, see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-private-repository-forks).
+You can use the `permissions` key to add and remove read permissions for forked repositories, but typically you can't grant write access. The exception to this behavior is where an admin user has selected the **Send write tokens to workflows from pull requests** option in the GitHub Actions settings. For more information, see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-forks-of-private-repositories).
 
 ## How permissions are calculated for a workflow job
 
@@ -766,7 +765,7 @@ jobs:
 
 ### Using the `permissions` key for forked repositories
 
-You can use the `permissions` key to add and remove `read` permissions for forked repositories, but typically you can't grant `write` access. The exception to this behavior is where an admin user has selected the **Send write tokens to workflows from pull requests** option in the GitHub Actions settings. For more information, see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-private-repository-forks).
+You can use the `permissions` key to add and remove `read` permissions for forked repositories, but typically you can't grant `write` access. The exception to this behavior is where an admin user has selected the **Send write tokens to workflows from pull requests** option in the GitHub Actions settings. For more information, see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-forks-of-private-repositories).
 
 ### Permissions for workflow runs triggered by Dependabot
 
@@ -1046,12 +1045,9 @@ Available permissions and details of what each allows an action to do:
 | `deployments`          | Work with deployments. For example, `deployments: write` permits an action to create a new deployment. For more information, see [Permissions required for GitHub Apps](/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-deployments).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | `discussions`          | Work with GitHub Discussions. For example, `discussions: write` permits an action to close or delete a discussion. For more information, see [Using the GraphQL API for Discussions](/en/graphql/guides/using-the-graphql-api-for-discussions).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| `id-token`             | Fetch an OpenID Connect (OIDC) token. This requires `id-token: write`. For more information, see [OpenID Connect](/en/actions/concepts/security/openid-connect#updating-your-actions-for-oidc)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `id-token`             | Fetch an OpenID Connect (OIDC) token. This requires `id-token: write`. For more information, see [OpenID Connect](/en/actions/concepts/security/openid-connect#updating-your-workflows-for-oidc)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | `issues`               | Work with issues. For example, `issues: write` permits an action to add a comment to an issue. For more information, see [Permissions required for GitHub Apps](/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-issues).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| `models`               | Generate AI inference responses with GitHub Models. For example, `models: read` permits an action to use the GitHub Models inference API. See [Prototyping with AI models](/en/github-models/use-github-models/prototyping-with-ai-models).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | `packages`             | Work with GitHub Packages. For example, `packages: write` permits an action to upload and publish packages on GitHub Packages. For more information, see [About permissions for GitHub Packages](/en/packages/learn-github-packages/about-permissions-for-github-packages#about-scopes-and-permissions-for-package-registries).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | `pages`                | Work with GitHub Pages. For example, `pages: write` permits an action to request a GitHub Pages build. For more information, see [Permissions required for GitHub Apps](/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-pages).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | `pull-requests`        | Work with pull requests. For example, `pull-requests: write` permits an action to add a label to a pull request. For more information, see [Permissions required for GitHub Apps](/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-pull-requests).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -1076,7 +1072,6 @@ permissions:
   deployments: read|write|none
   id-token: write|none
   issues: read|write|none
-  models: read|none
   discussions: read|write|none
   packages: read|write|none
   pages: read|write|none
@@ -1107,7 +1102,7 @@ permissions: {}
 
 #### Changing the permissions in a forked repository
 
-You can use the `permissions` key to add and remove read permissions for forked repositories, but typically you can't grant write access. The exception to this behavior is where an admin user has selected the **Send write tokens to workflows from pull requests** option in the GitHub Actions settings. For more information, see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-private-repository-forks).
+You can use the `permissions` key to add and remove read permissions for forked repositories, but typically you can't grant write access. The exception to this behavior is where an admin user has selected the **Send write tokens to workflows from pull requests** option in the GitHub Actions settings. For more information, see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-forks-of-private-repositories).
 
 #### Example: Setting the `GITHUB_TOKEN` permissions for one job in a workflow
 
@@ -1193,7 +1188,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '14'
       - run: npm install -g bats
@@ -1509,7 +1504,7 @@ jobs:
       group: build-runners
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '14'
       - run: npm install -g bats
@@ -1532,7 +1527,7 @@ jobs:
       labels: ubuntu-24.04-16core
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '14'
       - run: npm install -g bats
@@ -2059,11 +2054,42 @@ jobs:
         uses: actions/aws/ec2@main
 ```
 
+### Example: Using an action in the same repository as the workflow at the running commit (recommended)
+
+`$/path/to/action`
+
+The `$/` prefix is the self repository reference. It references an action stored in the same repository as the workflow or action that is currently running, and resolves to that repository at the running commit (the same SHA as the running workflow or action). You do not need to check out the repository first, so it is the recommended way to reference an action within its own repository.
+
+The `$/` syntax is not available in GitHub Enterprise Server.
+
+A `$/` reference must not include an `@{ref}` suffix. The ref is always the commit the running workflow or action is using, so a reference such as `$/actions/my-action@v1` is invalid.
+
+`$/` always resolves against the repository of the file it appears in, not the repository that called it. For example, if a reusable workflow in one repository is called by a workflow in another repository, a `$/` reference in the called workflow resolves to the called workflow's repository, not the calling workflow's repository. This makes `$/` reliable for action composition, where a relative `./` path would instead resolve against whatever is checked out in the caller's workspace. For using `$/` in a composite action's steps, see [Metadata syntax reference](/en/actions/reference/workflows-and-actions/metadata-syntax#runsstepsuses).
+
+The following table compares the ways to reference an action.
+
+| Syntax                 | Resolves to                                                                                                         | Recommended for                |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| `$/path/to/action`     | The same repository as the running workflow or action, at the running commit                                        | Actions in the same repository |
+| `{owner}/{repo}@{ref}` | The specified repository at the specified ref                                                                       | Actions in another repository  |
+| `./path/to/action`     | A path in the runner's checked-out workspace, relative to the default working directory (`${{ github.workspace }}`) | Edge cases only                |
+
+```yaml
+on: [push]
+
+jobs:
+  my_first_job:
+    runs-on: ubuntu-latest
+    steps:
+      # References an action in the same repository at the running commit
+      - uses: $/.github/actions/hello-world-action
+```
+
 ### Example: Using an action in the same repository as the workflow
 
 `./path/to/dir`
 
-The path to the directory that contains the action in your workflow's repository. You must check out your repository before using the action.
+The path to the directory that contains the action in your workflow's repository. You must check out your repository before using the action, and the `./` path resolves against the runner's workspace rather than the repository of the running workflow. For most cases, use the `$/` syntax shown above instead.
 
 Example repository file structure:
 
@@ -2138,7 +2164,7 @@ jobs:
 
 ### Example: Using an action inside a different private repository than the workflow
 
-If the action is in an internal repository, or in a private repository configured to allow access from your workflow's repository, you can reference the action directly. For more information, see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#allowing-access-to-components-in-an-internal-repository) and [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#allowing-access-to-components-in-a-private-repository).
+If the action is in an internal repository, or in a private repository configured to allow access from your workflow's repository, you can reference the action directly. For more information, see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) and [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#allowing-access-to-components-in-a-private-repository).
 
 If the action isn't in a repository configured to allow access, you need to check out the repository and reference the action locally. Generate a personal access token and add the token as a secret. The following example shows this method for referencing an action. For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) and [Using secrets in GitHub Actions](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets).
 
@@ -2539,7 +2565,7 @@ The group above is equivalent to declaring each step with `background: true` fol
 
 The maximum number of minutes to let a job run before GitHub automatically cancels it. Default: 360
 
-If the timeout exceeds the job execution time limit for the runner, the job will be canceled when the execution time limit is met instead. For more information about job execution time limits, see [Billing and usage](/en/actions/concepts/billing-and-usage#usage-limits) for GitHub-hosted runners and [Actions limits](/en/actions/reference/limits) for self-hosted runner usage limits.
+If the timeout exceeds the job execution time limit for the runner, the job will be canceled when the execution time limit is met instead. For more information about job execution time limits, see [Billing and usage](/en/actions/concepts/billing-and-usage#usage-limits-and-policy) for GitHub-hosted runners and [Actions limits](/en/actions/reference/limits) for self-hosted runner usage limits.
 
 > \[!NOTE]
 > The `GITHUB_TOKEN` expires when a job finishes or after a maximum of 24 hours. For self-hosted runners, the token may be the limiting factor if the job timeout is greater than 24 hours. For more information on the `GITHUB_TOKEN`, see [Use GITHUB\_TOKEN for authentication in workflows](/en/actions/tutorials/authenticate-with-github_token).
@@ -2569,7 +2595,7 @@ jobs:
       matrix:
         version: [10, 12, 14]
     steps:
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.version }}
 ```
@@ -2594,7 +2620,7 @@ jobs:
         version: [10, 12, 14]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.version }}
 ```
@@ -2648,7 +2674,7 @@ jobs:
             npm: 6
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node }}
       - if: ${{ matrix.npm }}
@@ -2993,12 +3019,13 @@ services:
 
 The location and version of a reusable workflow file to run as a job. Use one of the following syntaxes:
 
+* `$/.github/workflows/{filename}` for a reusable workflow in the same repository. This is the recommended syntax for referencing a reusable workflow in the same repository. This syntax is not available in GitHub Enterprise Server.
 * `{owner}/{repo}/.github/workflows/{filename}@{ref}` for reusable workflows in public and private repositories.
 * `./.github/workflows/{filename}` for reusable workflows in the same repository.
 
-In the first option, `{ref}` can be a SHA, a release tag, or a branch name. If a release tag and a branch have the same name, the release tag takes precedence over the branch name. Using the commit SHA is the safest option for stability and security. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#reusing-third-party-workflows).
+When you reference a reusable workflow with `{owner}/{repo}` and `@{ref}`, the `{ref}` can be a SHA, a release tag, or a branch name. If a release tag and a branch have the same name, the release tag takes precedence over the branch name. Using the commit SHA is the safest option for stability and security. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#reusing-third-party-workflows).
 
-If you use the second syntax option (without `{owner}/{repo}` and `@{ref}`) the called workflow is from the same commit as the caller workflow. Ref prefixes such as `refs/heads` and `refs/tags` are not allowed. You cannot use contexts or expressions in this keyword.
+When you reference a reusable workflow in the same repository using `$/` or `./` (without `{owner}/{repo}` and `@{ref}`), the called workflow is from the same commit as the caller workflow. A `$/` reference must not include an `@{ref}` suffix, and `$/` is not available in GitHub Enterprise Server. Ref prefixes such as `refs/heads` and `refs/tags` are not allowed. You cannot use contexts or expressions in this keyword.
 
 ### Example of `jobs.<job_id>.uses`
 
@@ -3008,6 +3035,9 @@ jobs:
     uses: octo-org/this-repo/.github/workflows/workflow-1.yml@172239021f7ba04fe7327647b213799853a9eb89
   call-workflow-2-in-local-repo:
     uses: ./.github/workflows/workflow-2.yml
+  # The `$/` syntax is not available in GitHub Enterprise Server.
+  call-workflow-in-same-repo-at-running-commit:
+    uses: $/.github/workflows/workflow-2.yml
   call-workflow-in-another-repo:
     uses: octo-org/another-repo/.github/workflows/workflow.yml@v1
 ```

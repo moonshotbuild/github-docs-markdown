@@ -75,9 +75,9 @@ The scopes that are required for your GitHub personal access token (classic) dep
 | Task                                                      | Organization owner              | Migrator                                                                                                                                                                                                                             |
 | --------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Assigning the migrator role for repository migrations     | `admin:org`                     | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-dash" aria-label="Not applicable" role="img"><path d="M2 7.75A.75.75 0 0 1 2.75 7h10a.75.75 0 0 1 0 1.5h-10A.75.75 0 0 1 2 7.75Z"></path></svg> |
-| Running a repository migration (destination organization) | `repo`, `admin:org`, `workflow` | `repo`, `read:org`, `workflow`                                                                                                                                                                                                       |
-| Downloading a migration log                               | `repo`, `admin:org`, `workflow` | `repo`, `read:org`, `workflow`                                                                                                                                                                                                       |
-| Reclaiming mannequins                                     | `admin:org`                     | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-dash" aria-label="Not applicable" role="img"><path d="M2 7.75A.75.75 0 0 1 2.75 7h10a.75.75 0 0 1 0 1.5h-10A.75.75 0 0 1 2 7.75Z"></path></svg> |
+| Running a repository migration (destination organization) | `repo`, `workflow`, `admin:org` | `repo`, `workflow`, `read:org`                                                                                                                                                                                                       |
+| Downloading a migration log                               | `repo`, `workflow`, `admin:org` | `repo`, `workflow`, `read:org`                                                                                                                                                                                                       |
+| Reclaiming mannequins                                     | `repo`, `workflow`, `admin:org` | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-dash" aria-label="Not applicable" role="img"><path d="M2 7.75A.75.75 0 0 1 2.75 7h10a.75.75 0 0 1 0 1.5h-10A.75.75 0 0 1 2 7.75Z"></path></svg> |
 
 ## Required permissions for Bitbucket Server
 
@@ -145,7 +145,7 @@ To grant the migrator role using the CLI, you must have installed the BBS2GH ext
    gh bbs2gh grant-migrator-role --github-org ORGANIZATION --actor ACTOR --actor-type TYPE
    ```
 
-   > \[!NOTE] If you're the granting the migrator role for GHE.com, you must also include the target API URL for your enterprise's subdomain. For example: `--target-api-url https://api.octocorp.ghe.com`.
+   > \[!NOTE] If you're granting the migrator role for GHE.com, you must also include the target API URL for your enterprise's subdomain. For example: `--target-api-url https://api.octocorp.ghe.com`.
 
 ### Granting the migrator role with the GraphQL API
 
@@ -251,7 +251,7 @@ For the ranges to add, see [Network details for GHE.com](/en/enterprise-cloud@la
 
 In addition, if you are using a blob storage account with firewall rules:
 
-* You must allow access to the egress IP ranges for GHE.com. See [Network details for GHE.com](/en/enterprise-cloud@latest/admin/data-residency/network-details-for-ghecom#ranges-for-egress-traffic).
+* You must allow access to the egress IP ranges for GHE.com. See [Network details for GHE.com](/en/enterprise-cloud@latest/admin/data-residency/network-details-for-ghecom#githubs-ip-addresses).
 * If you are using Azure Blob Storage you may need to perform some additional network configuration. This may occur if your Azure Blob Storage happens to be located in the same region as the GitHub Enterprise Importer service's compute. Please contact [GitHub Support](https://support.github.com).
 
 ## Further reading

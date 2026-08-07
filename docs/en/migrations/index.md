@@ -209,6 +209,42 @@ If you're moving to GitHub from another code hosting platform or moving between 
 
   You can migrate organizations from GitHub.com to GitHub Enterprise Cloud, using the GitHub CLI or the GraphQL API.
 
+* [Understand migrations from GitLab to GitHub](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab/understand-migrations)
+
+  GitHub Enterprise Importer automates migrations from GitLab.
+
+* [Plan your migration from GitLab to GitHub](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab/plan-your-migration)
+
+  Plan your migration by understanding your timeline, what data will be migrated, and your organizational structure.
+
+* [Manage access for a migration from GitLab to GitHub](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab/manage-access)
+
+  Set up the required access for migrating from GitLab to GitHub.
+
+* [Install and configure GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab/install-and-configure-github-enterprise-importer)
+
+  Install the GL2GH extension of the GitHub CLI and configure your environment for the migration.
+
+* [Configure blob storage](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab/configure-storage)
+
+  Archives from GitLab need to be temporarily stored so GitHub can read them.
+
+* [Migrate your repositories from GitLab to GitHub](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab/migrate-your-repositories)
+
+  Perform a trial run and then migrate your repositories from GitLab to GitHub.
+
+* [Follow-up tasks](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab/follow-up-tasks)
+
+  After each migration has finished, you'll need to complete some additional tasks before the repository is ready for work.
+
+* [Use GraphQL to migrate repositories from GitLab to GitHub Enterprise Cloud](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab/use-graphql)
+
+  You can build your own tooling to migrate repositories from GitLab to GitHub Enterprise Cloud using the GraphQL API.
+
+* [Granting the migrator role](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab/grant-the-migrator-role)
+
+  The migrator role gives a user or team the ability to run migrations on behalf of an organization.
+
 * [Accessing your migration logs for GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/completing-your-migration-with-github-enterprise-importer/accessing-your-migration-logs-for-github-enterprise-importer)
 
   After running a migration, you should review the migration log to check for data that didn't migrate as expected.

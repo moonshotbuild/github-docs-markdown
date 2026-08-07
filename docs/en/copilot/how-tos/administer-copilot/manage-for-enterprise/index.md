@@ -41,9 +41,9 @@ Manage and govern GitHub Copilot across your enterprise by controlling licensing
 
   Enable and manage GitHub Spark for your enterprise.
 
-* [Managing availability of default models](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-availability-of-default-models)
+* [Managing availability of models in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-availability-of-default-models)
 
-  You can control which Copilot models are available to specific organizations.
+  Control which Copilot models are available to users.
 
 * [Enabling custom models for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/enable-custom-models)
 

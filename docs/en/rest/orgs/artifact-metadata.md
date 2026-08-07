@@ -331,6 +331,162 @@ curl -L \
     * `tags`: object, additional properties: string
     * `runtime_risks`: array of string
 
+## Create a cluster deployment records job
+
+```
+POST /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs
+```
+
+Create a background job to set deployment records for a given cluster.
+Performs validation and permission checks synchronously, returning rejected
+deployments immediately, then enqueues a background job for the actual
+deployment updates. Use the companion GET endpoint to poll for job status.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`org`** (string) (required)
+  The organization name. The name is not case sensitive.
+
+* **`cluster`** (string) (required)
+  The cluster name.
+
+#### Body parameters
+
+* **`logical_environment`** (string) (required)
+  The stage of the deployment.
+
+* **`physical_environment`** (string)
+  The physical region of the deployment.
+
+* **`deployments`** (array of objects) (required)
+  The list of deployments to record.
+  * **`name`** (string) (required)
+    The name of the artifact.
+  * **`digest`** (string) (required)
+    The hex encoded digest of the artifact.
+  * **`version`** (string)
+    The artifact version.
+  * **`status`** (string)
+    The deployment status of the artifact.
+    Default: `deployed`
+    Can be one of: `deployed`, `decommissioned`
+  * **`deployment_name`** (string) (required)
+    The unique identifier for the deployment represented by the new record.
+  * **`github_repository`** (string)
+    The name of the GitHub repository associated with the artifact.
+  * **`tags`** (object)
+    Key-value pairs to tag the deployment record.
+  * **`runtime_risks`** (array of strings)
+    A list of runtime risks associated with the deployment.
+    Supported values are: critical-resource, internet-exposed, lateral-movement, sensitive-data
+
+### HTTP response status codes
+
+* **202** - Job created successfully. Authorized deployments will be processed in the background.
+
+* **400** - Bad Request
+
+* **403** - Forbidden
+
+* **404** - Resource not found
+
+* **409** - A job is already in progress for this cluster.
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X POST \
+  https://api.github.com/orgs/ORG/artifacts/metadata/deployment-record/cluster/CLUSTER/jobs \
+  -d '{
+  "logical_environment": "prod",
+  "physical_environment": "pacific-east",
+  "deployments": [
+    {
+      "name": "awesome-image",
+      "digest": "sha256:1bb1e949e55dcefc6353e7b36c8897d2a107d8e8dca49d4e3c0ea8493fc0bc72",
+      "version": "2.1.0",
+      "status": "deployed",
+      "deployment_name": "deployment-pod",
+      "tags": {
+        "owning-team": "platform"
+      },
+      "runtime_risks": [
+        "sensitive-data"
+      ]
+    }
+  ]
+}'
+```
+
+**Response schema (Status: 202):**
+
+* `job_id`: required, integer
+* `errors`: array of object
+
+## Get cluster deployment records job status
+
+```
+GET /orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}/jobs/{job_id}
+```
+
+Get the status and results of a previously created cluster deployment records job.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`org`** (string) (required)
+  The organization name. The name is not case sensitive.
+
+* **`cluster`** (string) (required)
+  The cluster name.
+
+* **`job_id`** (integer) (required)
+  The ID of the job.
+
+### HTTP response status codes
+
+* **200** - Job status retrieved successfully.
+
+* **404** - Resource not found
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X GET \
+  https://api.github.com/orgs/ORG/artifacts/metadata/deployment-record/cluster/CLUSTER/jobs/JOB_ID
+```
+
+**Response schema (Status: 200):**
+
+* `job_id`: required, integer
+* `status`: required, string, enum: `pending`, `processing`, `completed`, `failed`
+* `started_at`: string, format: date-time
+* `total_count`: integer
+* `errors`: array of object
+
 ## Create artifact metadata storage record
 
 ```

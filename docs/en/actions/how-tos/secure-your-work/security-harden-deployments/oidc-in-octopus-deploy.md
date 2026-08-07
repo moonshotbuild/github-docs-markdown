@@ -31,7 +31,7 @@ This guide provides an overview of how to configure Octopus Deploy to trust GitH
 
 * To learn the basic concepts of how GitHub uses OpenID Connect (OIDC), and its architecture and benefits, see [OpenID Connect](/en/actions/concepts/security/openid-connect).
 
-* Before proceeding, you must plan your security strategy to ensure that access tokens are only allocated in a predictable way. To control how your cloud provider issues access tokens, you **must** define at least one condition, so that untrusted repositories can’t request access tokens for your cloud resources. For more information, see [OpenID Connect](/en/actions/concepts/security/openid-connect#configuring-the-oidc-trust-with-the-cloud).
+* Before proceeding, you must plan your security strategy to ensure that access tokens are only allocated in a predictable way. To control how your cloud provider issues access tokens, you **must** define at least one condition, so that untrusted repositories can’t request access tokens for your cloud resources. For more information, see [OpenID Connect reference](/en/actions/reference/security/oidc#oidc-claims-used-to-define-trust-conditions-on-cloud-roles).
 
 ## Adding the identity provider to Octopus Deploy
 
@@ -49,7 +49,7 @@ To update your workflows for OIDC, you will need to make two changes to your YAM
 2. Use the [`OctopusDeploy/login`](https://github.com/OctopusDeploy/login) action to exchange the OIDC token (JWT) for a cloud access token.
 
 > \[!NOTE]
-> When environments are used in workflows or in OIDC policies, we recommend adding protection rules to the environment for additional security. For example, you can configure deployment rules on an environment to restrict which branches and tags can deploy to the environment or access environment secrets. For more information, see [Managing environments for deployment](/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments#deployment-protection-rules).
+> When environments are used in workflows or in OIDC policies, we recommend adding protection rules to the environment for additional security. For example, you can configure deployment rules on an environment to restrict which branches and tags can deploy to the environment or access environment secrets. For more information, see [Managing environments for deployment](/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments).
 
 ### Adding permissions settings
 

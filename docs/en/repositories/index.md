@@ -265,10 +265,6 @@ Learn to use and manage the repositories that allow you to store and collaborate
 
   You can select whether merged linked pull requests will auto-close your issues.
 
-* [Managing GitHub Models in your repository](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-github-models-in-your-repository)
-
-  You can enable or disable GitHub Models in your repository.
-
 * [Viewing branches in your repository](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/viewing-branches-in-your-repository)
 
   Branches are central to collaboration on GitHub, and the best way to view them is the branches page.
@@ -392,6 +388,10 @@ Learn to use and manage the repositories that allow you to store and collaborate
 * [Working with non-code files](/en/repositories/working-with-files/using-files/working-with-non-code-files)
 
   GitHub supports rendering and diffing in a number of non-code file formats.
+
+* [Downloading files from GitHub](/en/repositories/working-with-files/using-files/downloading-files-from-github)
+
+  Learn how to download files from GitHub, and understand the difference between downloading, cloning, and forking.
 
 * [About large files on GitHub](/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)
 

@@ -42,3 +42,7 @@ Manage GitHub Copilot for your team by configuring settings, monitoring usage, a
 * [Viewing the code generation dashboard](/en/copilot/how-tos/administer-copilot/view-code-generation)
 
   The code generation dashboard shows how Copilot generates code across your enterprise, including activity from both users and agents.
+
+* [Viewing the Copilot impact dashboard](/en/copilot/how-tos/administer-copilot/view-impact-dashboard)
+
+  The impact dashboard shows how deeply your organization has adopted Copilot, and how that adoption connects to pull request output.

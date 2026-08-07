@@ -67,7 +67,7 @@ If access to a resource requires paired credentials, then secret scanning will c
 > \[!NOTE]
 > You can also enable push protection for your personal account, called "push protection for users", which prevents you from accidentally pushing supported secrets to *any* public repository. Alerts are *not* created if you choose to bypass your user-based push protection only. Alerts are only created if the repository itself has push protection enabled. For more information, see [Managing push protection for users](/en/code-security/how-tos/secure-your-secrets/prevent-future-leaks/manage-user-push-protection).
 >
-> Older versions of certain tokens may not be supported by push protection as these tokens may generate a higher number of false positives than their most recent version. Push protection may also not apply to legacy tokens. For tokens such as Azure Storage Keys, GitHub only supports *recently created* tokens, not tokens that match the legacy patterns. For more information about push protection limitations, see [Secret scanning detection scope](/en/code-security/reference/secret-security/secret-scanning-scope#push-protection-and-pattern-versions).
+> Older versions of certain tokens may not be supported by push protection as these tokens may generate a higher number of false positives than their most recent version. Push protection may also not apply to legacy tokens. For tokens such as Azure Storage Keys, GitHub only supports *recently created* tokens, not tokens that match the legacy patterns. For more information about push protection limitations, see [Secret scanning detection scope](/en/code-security/reference/secret-security/secret-scanning-scope).
 
 ## About partner alerts
 

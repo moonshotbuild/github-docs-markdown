@@ -42,37 +42,39 @@ All prices are **per 1 million tokens**.
 
 > \[!NOTE] Models with a **Long context** tier, offer extended capabilities and longer context windows. See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#models-with-extended-capabilities)
 
-| Model         | Release status | Category    | Tier         | Threshold (input tokens) |  Input | Cached input | Output |
-| ------------- | -------------- | ----------- | ------------ | ------------------------ | -----: | -----------: | -----: |
-|               |                |             |              |                          |        |              |        |
-| GPT-5 mini    | GA             | Lightweight | Default      | Not applicable           |  $0.25 |       $0.025 |  $2.00 |
-|               |                |             |              |                          |        |              |        |
-| GPT-5.3-Codex | GA             | Powerful    | Default      | Not applicable           |  $1.75 |       $0.175 | $14.00 |
-|               |                |             |              |                          |        |              |        |
-| GPT-5.4       | GA             | Versatile   | Default      | ≤ 272K                   |  $2.50 |        $0.25 | $15.00 |
-|               |                |             |              |                          |        |              |        |
-| GPT-5.4       | GA             | Versatile   | Long context | > 272K                   |  $5.00 |        $0.50 | $22.50 |
-|               |                |             |              |                          |        |              |        |
-| GPT-5.4 mini  | GA             | Lightweight | Default      | Not applicable           |  $0.75 |       $0.075 |  $4.50 |
-|               |                |             |              |                          |        |              |        |
-| GPT-5.4 nano  | GA             | Lightweight | Default      | Not applicable           |  $0.20 |        $0.02 |  $1.25 |
-|               |                |             |              |                          |        |              |        |
-| GPT-5.5       | GA             | Powerful    | Default      | ≤ 272K                   |  $5.00 |        $0.50 | $30.00 |
-|               |                |             |              |                          |        |              |        |
-| GPT-5.5       | GA             | Powerful    | Long context | > 272K                   | $10.00 |        $1.00 | $45.00 |
-|               |                |             |              |                          |        |              |        |
-| GPT-5.6 Luna  | GA             | Lightweight | Default      | ≤ 200K                   |  $1.00 |        $0.10 |  $6.00 |
-|               |                |             |              |                          |        |              |        |
-| GPT-5.6 Luna  | GA             | Lightweight | Long context | > 200K                   |  $2.00 |        $0.20 |  $9.00 |
-|               |                |             |              |                          |        |              |        |
-| GPT-5.6 Sol   | GA             | Powerful    | Default      | ≤ 272K                   |  $5.00 |        $0.50 | $30.00 |
-|               |                |             |              |                          |        |              |        |
-| GPT-5.6 Sol   | GA             | Powerful    | Long context | > 272K                   | $10.00 |        $1.00 | $45.00 |
-|               |                |             |              |                          |        |              |        |
-| GPT-5.6 Terra | GA             | Versatile   | Default      | ≤ 272K                   |  $2.50 |        $0.25 | $15.00 |
-|               |                |             |              |                          |        |              |        |
-| GPT-5.6 Terra | GA             | Versatile   | Long context | > 272K                   |  $5.00 |        $0.50 | $22.50 |
-|               |                |             |              |                          |        |              |        |
+GPT-5.6 Sol, GPT-5.6 Terra, and GPT-5.6 Luna include a cache write cost in addition to cached input. Earlier OpenAI models have no cache write cost.
+
+| Model         | Release status | Category    | Tier         | Threshold (input tokens) |  Input | Cached input |    Cache write | Output |
+| ------------- | -------------- | ----------- | ------------ | ------------------------ | -----: | -----------: | -------------: | -----: |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5 mini    | GA             | Lightweight | Default      | Not applicable           |  $0.25 |       $0.025 | Not applicable |  $2.00 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5.3-Codex | GA             | Powerful    | Default      | Not applicable           |  $1.75 |       $0.175 | Not applicable | $14.00 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5.4       | GA             | Versatile   | Default      | ≤ 272K                   |  $2.50 |        $0.25 | Not applicable | $15.00 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5.4       | GA             | Versatile   | Long context | > 272K                   |  $5.00 |        $0.50 | Not applicable | $22.50 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5.4 mini  | GA             | Lightweight | Default      | Not applicable           |  $0.75 |       $0.075 | Not applicable |  $4.50 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5.4 nano  | GA             | Lightweight | Default      | Not applicable           |  $0.20 |        $0.02 | Not applicable |  $1.25 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5.5       | GA             | Powerful    | Default      | ≤ 272K                   |  $5.00 |        $0.50 | Not applicable | $30.00 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5.5       | GA             | Powerful    | Long context | > 272K                   | $10.00 |        $1.00 | Not applicable | $45.00 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5.6 Luna  | GA             | Lightweight | Default      | ≤ 200K                   |  $0.20 |        $0.02 |          $0.25 |  $1.20 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5.6 Luna  | GA             | Lightweight | Long context | > 200K                   |  $0.40 |        $0.04 |          $0.50 |  $1.80 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5.6 Sol   | GA             | Powerful    | Default      | ≤ 272K                   |  $5.00 |        $0.50 |          $6.25 | $30.00 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5.6 Sol   | GA             | Powerful    | Long context | > 272K                   | $10.00 |        $1.00 |         $12.50 | $45.00 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5.6 Terra | GA             | Versatile   | Default      | ≤ 272K                   |  $2.00 |        $0.20 |          $2.50 | $12.00 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-5.6 Terra | GA             | Versatile   | Long context | > 272K                   |  $4.00 |        $0.40 |          $5.00 | $18.00 |
+|               |                |             |              |                          |        |              |                |        |
 
 ### Anthropic
 
@@ -97,6 +99,8 @@ Anthropic models include a cache write cost in addition to cached input.
 |                                       |                |           |        |              |             |        |
 | Claude Opus 4.8                       | GA             | Powerful  |  $5.00 |        $0.50 |       $6.25 | $25.00 |
 |                                       |                |           |        |              |             |        |
+| Claude Opus 5                         | GA             | Powerful  |  $5.00 |        $0.50 |       $6.25 | $25.00 |
+|                                       |                |           |        |              |             |        |
 | Claude Sonnet 5[^sonnet-5-promo]      | GA             | Versatile |  $2.00 |        $0.20 |       $2.50 | $10.00 |
 |                                       |                |           |        |              |             |        |
 | Claude Opus 4.8 (fast mode) (preview) | GA             | Powerful  | $10.00 |        $1.00 |      $12.50 | $50.00 |
@@ -110,10 +114,6 @@ Anthropic models include a cache write cost in addition to cached input.
 
 | Model            | Release status | Category    | Tier         | Threshold (input tokens) | Input | Cached input | Output |
 | ---------------- | -------------- | ----------- | ------------ | ------------------------ | ----: | -----------: | -----: |
-|                  |                |             |              |                          |       |              |        |
-| Gemini 2.5 Pro   | GA             | Powerful    | Default      | Not applicable           | $1.25 |       $0.125 | $10.00 |
-|                  |                |             |              |                          |       |              |        |
-| Gemini 3 Flash   | Public preview | Lightweight | Default      | Not applicable           | $0.50 |        $0.05 |  $3.00 |
 |                  |                |             |              |                          |       |              |        |
 | Gemini 3.1 Pro   | Public preview | Powerful    | Default      | ≤ 200K                   | $2.00 |        $0.20 | $12.00 |
 |                  |                |             |              |                          |       |              |        |
@@ -139,6 +139,18 @@ Anthropic models include a cache write cost in addition to cached input.
 |                  |                |             |       |              |        |
 | MAI-Code-1-Flash | GA             | Lightweight | $0.75 |       $0.075 |  $4.50 |
 |                  |                |             |       |              |        |
+
+### xAI
+
+> \[!NOTE] Models with a **Long context** tier, offer extended capabilities and longer context windows. See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#models-with-extended-capabilities)
+
+| Model    | Release status | Category  | Tier         | Threshold (input tokens) | Input | Cached input | Output |
+| -------- | -------------- | --------- | ------------ | ------------------------ | ----: | -----------: | -----: |
+|          |                |           |              |                          |       |              |        |
+| Grok 4.5 | GA             | Versatile | Default      | ≤ 200K                   | $2.00 |        $0.50 |  $6.00 |
+|          |                |           |              |                          |       |              |        |
+| Grok 4.5 | GA             | Versatile | Long context | > 200K                   | $4.00 |        $1.00 | $12.00 |
+|          |                |           |              |                          |       |              |        |
 
 ### Moonshot AI
 

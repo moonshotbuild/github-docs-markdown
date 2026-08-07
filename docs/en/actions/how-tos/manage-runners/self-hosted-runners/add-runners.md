@@ -134,7 +134,7 @@ The self-hosted runner application must be active for the runner to accept jobs.
 For more information, see [Monitoring and troubleshooting self-hosted runners](/en/actions/how-tos/manage-runners/self-hosted-runners/monitor-and-troubleshoot).
 
 > \[!NOTE]
-> For security reasons, public repositories can't use runners in a runner group by default, but you can override this in the runner group's settings. For more information, see [Managing access to self-hosted runners using groups](/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access#changing-the-access-policy-of-a-self-hosted-runner-group).
+> For security reasons, public repositories can't use runners in a runner group by default, but you can override this in the runner group's settings. For more information, see [Managing access to self-hosted runners using groups](/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access#changing-which-repositories-can-access-a-runner-group).
 
 ## Adding a self-hosted runner to an enterprise
 

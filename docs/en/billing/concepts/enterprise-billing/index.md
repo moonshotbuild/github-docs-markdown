@@ -21,7 +21,7 @@ Understanding the concepts used in billing for the GitHub Enterprise plan.
 
 * [Billing for GitHub Enterprise](/en/billing/concepts/enterprise-billing/billing-for-enterprises)
 
-  Learn how your bill is calculated based on how many GitHub Enterprise licenses you use.
+  Understand what makes up your enterprise bill so you can better forecast and manage costs.
 
 * [Usage-based billing for enterprise licenses](/en/billing/concepts/enterprise-billing/usage-based-licenses)
 

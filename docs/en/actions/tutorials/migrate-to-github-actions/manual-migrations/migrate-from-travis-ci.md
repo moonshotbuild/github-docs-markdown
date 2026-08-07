@@ -30,7 +30,7 @@ This guide helps you migrate from Travis CI to GitHub Actions. It compares their
 Before starting your migration to GitHub Actions, it would be useful to become familiar with how it works:
 
 * For a quick example that demonstrates a GitHub Actions job, see [Quickstart for GitHub Actions](/en/actions/get-started/quickstart).
-* To learn the essential GitHub Actions concepts, see [Understanding GitHub Actions](/en/actions/get-started/understand-github-actions).
+* To learn the essential GitHub Actions concepts, see [Store and share data with workflow artifacts](/en/actions/tutorials/store-and-share-data#passing-data-between-jobs-in-a-workflow).
 
 ## Comparing job execution
 
@@ -54,7 +54,7 @@ Travis CI and GitHub Actions both include default environment variables that you
 
 ### Parallel job processing
 
-Travis CI can use `stages` to run jobs in parallel. Similarly, GitHub Actions runs `jobs` in parallel. For more information, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjobidneeds).
+Travis CI can use `stages` to run jobs in parallel. Similarly, GitHub Actions runs `jobs` in parallel. For more information, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idneeds).
 
 ### Status badges
 
@@ -171,7 +171,7 @@ GitHub Actions allows you to store secrets and reference them in your jobs. GitH
 
 ### Sharing files between jobs and workflows
 
-GitHub Actions includes integrated support for artifact storage, allowing you to share files between jobs in a workflow. You can also save the resulting files and share them with other workflows. For more information, see [Understanding GitHub Actions](/en/actions/get-started/understand-github-actions#sharing-data-between-jobs).
+GitHub Actions includes integrated support for artifact storage, allowing you to share files between jobs in a workflow. You can also save the resulting files and share them with other workflows. For more information, see [Understanding GitHub Actions](/en/actions/get-started/understand-github-actions).
 
 ### Hosting your own runners
 
@@ -327,7 +327,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: '16.x'
       - run: npm install

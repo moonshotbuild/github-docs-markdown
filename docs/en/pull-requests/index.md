@@ -1,7 +1,7 @@
 ---
 source_path: "/en/pull-requests"
 title: "Pull requests documentation"
-intro: "Discover how to create, review, and merge pull requests, resolve merge conflicts, and collaborate effectively on GitHub projects."
+intro: "Discover how to create, review, and merge pull requests, resolve merge conflicts, and work with forks."
 product: "Pull requests"
 document_type: "product"
 breadcrumbs:
@@ -11,13 +11,13 @@ breadcrumbs:
 
 # Pull requests documentation
 
-Discover how to create, review, and merge pull requests, resolve merge conflicts, and collaborate effectively on GitHub projects.
+Discover how to create, review, and merge pull requests, resolve merge conflicts, and work with forks.
 
 ## Recommended
 
-* [Pull requests](/en/pull-requests/reference/pull-requests)
+* [About pull requests](/en/pull-requests/get-started/about-pull-requests)
 
-  Propose, review, and merge code changes using pull requests to collaborate effectively and maintain code quality.
+  Use pull requests to propose, discuss, and merge changes on GitHub.
 
 * [Branches](/en/pull-requests/reference/branches)
 
@@ -43,10 +43,6 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 
   Fork a repository on GitHub to propose changes, collaborate on projects, and manage your own copy of the codebase.
 
-* [Syncing a fork](/en/pull-requests/how-tos/work-with-forks/syncing-a-fork)
-
-  Sync a forked repository with its upstream repository using the web interface, GitHub CLI, or command line.
-
 * [Commits](/en/pull-requests/reference/commits)
 
   Learn how commits save changes to your files, track authorship, and organize your project's history in GitHub.
@@ -65,6 +61,10 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 
   Use pull requests to propose, discuss, and merge changes on GitHub.
 
+* [About stacked pull requests](/en/pull-requests/get-started/about-stacked-prs)
+
+  Break large code changes into a chain of smaller, dependent pull requests you can review and merge independently.
+
 * [About forks](/en/pull-requests/get-started/about-forks)
 
   Use forks to make changes in your own copy of a repository and propose them back to the original project.
@@ -72,6 +72,10 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 * [Quickstart for pull requests](/en/pull-requests/get-started/pull-request-quickstart)
 
   Propose your first change and take it all the way from your first commit to a merged pull request.
+
+* [Quickstart for stacked pull requests](/en/pull-requests/get-started/stacked-prs-quickstart)
+
+  Install the `gh stack` extension in GitHub CLI and create your first set of stacked pull requests.
 
 * [Quickstart for reviewing pull requests](/en/pull-requests/get-started/reviewing-pull-requests-quickstart)
 
@@ -125,6 +129,10 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 
   Create a pull request to propose changes to the code in a repository.
 
+* [Creating stacked pull requests](/en/pull-requests/how-tos/create-pull-requests/creating-stacked-pull-requests)
+
+  Create a stack of dependent pull requests using the `gh stack` extension in GitHub CLI or directly on GitHub.
+
 * [Creating a pull request from a fork](/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request-from-a-fork)
 
   Create a pull request from a fork to propose changes to an upstream repository and collaborate on code effectively.
@@ -133,9 +141,9 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 
   Mark a draft pull request as ready for review or convert an open pull request back to a draft to manage your workflow effectively.
 
-* [Requesting a pull request review](/en/pull-requests/how-tos/create-pull-requests/requesting-a-pull-request-review)
+* [Managing stacked pull requests](/en/pull-requests/how-tos/create-pull-requests/managing-stacked-pull-requests)
 
-  Request reviews for your pull requests from individuals or teams to ensure thorough feedback and collaboration.
+  Restructure stacked pull requests, rebase their branches, and make changes to lower layers using GitHub CLI.
 
 * [Keeping your pull request in sync with the base branch](/en/pull-requests/how-tos/create-pull-requests/keeping-your-pull-request-in-sync-with-the-base-branch)
 
@@ -145,6 +153,14 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 
   Modify the base branch of an open pull request to compare changes against a different branch and ensure accurate updates.
 
+* [Requesting a pull request review](/en/pull-requests/how-tos/create-pull-requests/requesting-a-pull-request-review)
+
+  Request reviews for your pull requests from individuals or teams to ensure thorough feedback and collaboration.
+
+* [Stacked pull requests](/en/pull-requests/how-tos/stacked-pull-requests)
+
+  Use stacked pull requests to break large code changes into a chain of smaller, dependent pull requests you can review and merge independently.
+
 * [Checking out pull requests locally](/en/pull-requests/how-tos/review-pull-requests/checking-out-pull-requests-locally)
 
   Check out pull requests locally to resolve merge conflicts, test changes, or modify code.
@@ -152,6 +168,10 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 * [Reviewing proposed changes in a pull request](/en/pull-requests/how-tos/review-pull-requests/reviewing-proposed-changes-in-a-pull-request)
 
   Review commits, file changes, and diffs in pull requests to provide feedback, approve changes, or request updates before merging.
+
+* [Reviewing stacked pull requests](/en/pull-requests/how-tos/review-pull-requests/reviewing-stacked-pull-requests)
+
+  Address review feedback on a pull request anywhere in a stack and cascade your changes through the rest of the stack.
 
 * [Reviewing dependency changes in a pull request](/en/pull-requests/how-tos/review-pull-requests/reviewing-dependency-changes-in-a-pull-request)
 
@@ -189,6 +209,10 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 
   Resolve common errors and unblock merging or pushing to protected branches by troubleshooting required status checks.
 
+* [Troubleshooting stacked pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-stacked-pull-requests)
+
+  Resolve common problems with stacked pull requests, including rebase conflicts, blocked merges, interrupted operations, and merge queue issues.
+
 * [Merging a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-a-pull-request)
 
   Merge pull requests into the upstream branch, choose merge methods, and meet repository requirements like reviews or status checks.
@@ -200,6 +224,14 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 * [Automatically merging a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/automatically-merging-a-pull-request)
 
   Enable or disable auto-merge for pull requests to streamline your workflow and automatically merge changes once all requirements are met.
+
+* [Merging stacked pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-stacked-pull-requests)
+
+  Merge a stack from the bottom up, individually, or in contiguous groups.
+
+* [Optimizing CI for stacked pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests/optimizing-ci-for-stacked-pull-requests)
+
+  Understand how GitHub Actions workflows run for a stack, access stack metadata in your workflows, and reduce redundant CI usage.
 
 * [Reverting a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/reverting-a-pull-request)
 
@@ -233,6 +265,18 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 
   Propose, review, and merge code changes using pull requests to collaborate effectively and maintain code quality.
 
+* [Stacked pull requests](/en/pull-requests/reference/stacked-pull-requests)
+
+  Rules and requirements for how stacked pull requests function on GitHub.
+
+* [Stacked pull requests CLI commands](/en/pull-requests/reference/stacked-prs-cli-commands)
+
+  Find every command, flag, and exit code for the `gh stack` extension in GitHub CLI.
+
+* [Stacked pull requests APIs and webhooks](/en/pull-requests/reference/stacked-pull-requests-apis-and-webhooks)
+
+  Read and manage stacked pull requests programmatically with the GitHub REST and GraphQL APIs, and webhooks.
+
 * [Branches](/en/pull-requests/reference/branches)
 
   Use branches in GitHub to isolate development work, manage default branches, and collaborate effectively using pull requests and branch protections.
@@ -244,6 +288,10 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 * [Commits](/en/pull-requests/reference/commits)
 
   Learn how commits save changes to your files, track authorship, and organize your project's history in GitHub.
+
+* [Use other tools with stacked pull requests](/en/pull-requests/reference/use-other-tools-with-stacked-pull-requests)
+
+  Use stacked pull requests with tools like Jujutsu, Sapling, or git-town.
 
 * [Using query parameters to create a pull request](/en/pull-requests/reference/using-query-parameters-to-create-a-pull-request)
 
@@ -272,3 +320,7 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 * [Working with pre-receive hooks](/en/working-with-pre-receive-hooks)
 
   Enforce repository policies and prevent issues like secrets or invalid commits using pre-receive hooks on GitHub Enterprise Server.
+
+* [Roll out stacked pull requests to your organization](/en/pull-requests/tutorials/roll-out-stacked-prs)
+
+  Stacked pull requests help your organization maintain review quality as teams deliver large changes in small, reviewable layers, while keeping required reviews and status checks in place.

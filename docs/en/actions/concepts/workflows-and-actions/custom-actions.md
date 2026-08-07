@@ -48,7 +48,7 @@ Docker containers package the environment with the GitHub Actions code. This cre
 
 A Docker container allows you to use specific versions of an operating system, dependencies, tools, and code. For actions that must run in a specific environment configuration, Docker is an ideal option because you can customize the operating system and tools. Because of the latency to build and retrieve the container, Docker container actions are slower than JavaScript actions.
 
-Docker container actions can only execute on runners with a Linux operating system. Self-hosted runners must use a Linux operating system and have Docker installed to run Docker container actions. For more information about the requirements of self-hosted runners, see [Self-hosted runners](/en/actions/concepts/runners/self-hosted-runners#requirements-for-self-hosted-runner-machines).
+Docker container actions can only execute on runners with a Linux operating system. Self-hosted runners must use a Linux operating system and have Docker installed to run Docker container actions. For more information about the requirements of self-hosted runners, see [Self-hosted runners reference](/en/actions/reference/runners/self-hosted-runners#requirements-for-self-hosted-runner-machines).
 
 ### JavaScript actions
 

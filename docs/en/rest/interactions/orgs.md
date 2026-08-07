@@ -170,3 +170,116 @@ curl -L \
 ```
 
 **Response schema (Status: 204):**
+
+## Get pull request creation cap for an org
+
+```
+GET /orgs/{org}/interaction-limits/pulls/creation-cap
+```
+
+Gets the pull request creation cap configuration for an organization.
+The cap limits the total number of open pull requests a user can have across all public
+repositories in the organization at one time.
+Only users with admin access to the organization can view the cap configuration.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`org`** (string) (required)
+  The organization name. The name is not case sensitive.
+
+### HTTP response status codes
+
+* **200** - OK
+
+* **403** - Forbidden
+
+* **404** - Resource not found
+
+* **405** - Method Not Allowed
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X GET \
+  https://api.github.com/orgs/ORG/interaction-limits/pulls/creation-cap
+```
+
+**Response schema (Status: 200):**
+
+* `enabled`: required, boolean
+* `max_open_pull_requests`: required, integer, minimum: 1, maximum: 1000
+
+## Update pull request creation cap for an org
+
+```
+PATCH /orgs/{org}/interaction-limits/pulls/creation-cap
+```
+
+Updates the pull request creation cap for an organization. The cap limits the total number
+of open pull requests a user can have across all public repositories in the organization
+at one time.
+Only users with admin access to the organization can configure the cap.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`org`** (string) (required)
+  The organization name. The name is not case sensitive.
+
+#### Body parameters
+
+* **`enabled`** (boolean) (required)
+  Whether the pull request creation cap is enabled
+
+* **`max_open_pull_requests`** (integer)
+  The maximum number of open pull requests a user can have at one time
+
+### HTTP response status codes
+
+* **200** - OK
+
+* **403** - Forbidden
+
+* **404** - Resource not found
+
+* **405** - Method Not Allowed
+
+* **422** - Validation failed, or the endpoint has been spammed.
+
+### Code examples
+
+#### Example request body
+
+**Request:**
+
+```curl
+curl -L \
+  -X PATCH \
+  https://api.github.com/orgs/ORG/interaction-limits/pulls/creation-cap \
+  -d '{
+  "enabled": true,
+  "max_open_pull_requests": 1
+}'
+```
+
+**Response schema (Status: 200):**
+
+Same response schema as [Get pull request creation cap for an org](#get-pull-request-creation-cap-for-an-org).

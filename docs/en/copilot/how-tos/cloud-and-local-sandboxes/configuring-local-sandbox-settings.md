@@ -9,7 +9,7 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "How-tos"
     href: "/en/copilot/how-tos"
-  - title: "Cloud and local sandboxes for GitHub Copilot"
+  - title: "Sandbox Copilot"
     href: "/en/copilot/how-tos/cloud-and-local-sandboxes"
   - title: "Configure local sandbox"
     href: "/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings"
@@ -20,18 +20,16 @@ breadcrumbs:
 Use the /sandbox slash command in Copilot CLI to control how the local sandbox restricts filesystem access, network connectivity, and system capabilities.
 
 > \[!NOTE]
-> Cloud and local sandboxes for GitHub Copilot is in public preview and subject to change.
+> Local sandboxes for GitHub Copilot are in public preview and subject to change.
 
 > \[!IMPORTANT]
 > Local sandboxing on Windows requires a Windows Insiders build.
 
 ## About local sandbox configuration
 
-When you enable local sandboxing in Copilot CLI, shell commands that Copilot runs on your behalf execute inside an isolated sandbox. You can fine-tune the sandbox's behavior—controlling filesystem paths, network access, and general settings—using the `/sandbox` slash command.
+You can use the `/sandbox` slash command to grant extra paths, adjust network access, or turn sandboxing on or off.
 
-Settings are stored in `settings.json` under the `sandbox` key in your Copilot CLI configuration directory. For more information about the configuration directory, see [GitHub Copilot CLI configuration directory](/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference).
-
-For a conceptual overview of cloud and local sandboxes for GitHub Copilot, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
+For a conceptual overview of cloud and local sandboxes for Copilot, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
 
 ## Opening the sandbox configuration
 
@@ -42,58 +40,68 @@ For a conceptual overview of cloud and local sandboxes for GitHub Copilot, see [
 
 ## Configuring general settings
 
-The **General** tab controls the top-level sandbox behavior.
+The **General** tab controls the top-level sandbox behavior. When enterprise managed settings enforce a value, the dialog labels the setting as `(managed)` and prevents you from changing it.
 
-| Setting                   | Description                                                                                                                                                                                                                           |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Sandboxing enabled**    | When turned on, shell commands that Copilot executes run inside the sandbox. You can also toggle this with `/sandbox enable` and `/sandbox disable`.                                                                                  |
-| **Allow keychain access** | When turned on, sandboxed commands can use the macOS Keychain—for example, to access credentials used by `git` and `gh` credential helpers. Turn this off if you want to prevent sandboxed processes from reading stored credentials. |
+| Setting                   | Description                                                                                                                                                                                                                         |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Enable sandbox**        | Run shell commands inside the sandbox. You can also toggle this with `/sandbox enable` and `/sandbox disable`.                                                                                                                      |
+| **Allow sandbox bypass**  | Let the model request that individual commands run outside the sandbox, subject to approval. Turned on by default. For more information, see [Allowing sandbox bypass](#allowing-sandbox-bypass).                                   |
+| **Sandbox MCP servers**   | Run MCP servers inside the sandbox. Turned on by default.                                                                                                                                                                           |
+| **Sandbox LSP servers**   | Run language servers (LSP servers) inside the sandbox. Turned on by default.                                                                                                                                                        |
+| **Authenticate git**      | Inject a GitHub token so authenticated HTTPS `git` works inside the sandbox without a credential helper. Turned on by default.                                                                                                      |
+| **Authenticate gh**       | Export `GH_TOKEN` so that GitHub CLI (note: the `gh` CLI, not `copilot`) works inside the sandbox without reaching its stored credentials (configuration directory or OS keychain), which the sandbox blocks. Turned on by default. |
+| **Allow keychain access** | Available on macOS only. Let sandboxed commands use the macOS Keychain—for example, to access credentials used by `git` and `gh` credential helpers. Turned off by default.                                                         |
+
+### Allowing sandbox bypass
+
+The **Allow sandbox bypass** setting controls what happens when Copilot can't run a command successfully inside the sandbox.
+
+* **On (default)**: If a command fails inside the sandbox, you are prompted to allow Copilot to run the command outside the sandbox. Your response to this prompt applies to this specific attempt to run the command. Optionally, you can choose to disable the sandbox for the rest of the session (if permitted by your enterprise), or you can enter an instruction for Copilot to work on instead.
+* **Off**: If Copilot can't run a command successfully in the sandbox, it stops working on the task and reports the failure.
 
 ## Configuring filesystem settings
 
-The **Filesystem** tab controls which directories and files the sandboxed process can access. By default, the sandbox restricts writes outside your working directory.
+The **Filesystem** tab controls which directories and files the sandboxed process can access.
 
-| Setting                       | Description                                                                                                                                                                                                                         |
-| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Include working directory** | When turned on, the current working directory is automatically added to the list of read/write paths. This means sandboxed commands can read and write files in your project directory without manually adding it to the path list. |
-| **Clear policy on exit**      | When turned on, all filesystem permissions are reset when the sandbox exits. This ensures that each session starts with a clean set of permissions.                                                                                 |
+By default, Copilot is granted read/write permission to everything in and below the current working directory. If you are in a Git repository, Copilot is also granted:
+
+* Read/write permission to everything in and below the repository's `.git` directory.
+* On Windows and macOS, read permission for everything else in the repository above the current working directory.
+* On Linux, read/write permission for files above the current working directory in the repository.
+
+| Setting                       | Description                                                                                                                                                                                                                                                                                                                         |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Include working directory** | Turned on by default. The current working directory (and the enclosing repository's `.git` directory, if any) is automatically added to the list of read/write paths. Unselect this option if you don't want the working directory to be granted read/write access automatically, and then manually allow access to specific paths. |
+
+> \[!IMPORTANT]
+> Unselecting **Include working directory** removes access to everything in and below the `.git` directory of a Git repository. As a result, Git operations such as `status`, `add`, `commit`, and `diff` will fail unless you manually add access for this directory.
 
 ### Adding filesystem path rules
 
-You can add specific path rules to grant the sandbox read-only or read/write access to directories and files outside the working directory.
+You can specify paths that you want to add to the sandbox. This allows you to grant read-only or read/write access to directories and files outside the working directory. You can also deny access, to exclude directories and files from the sandbox.
 
 1. In the **Filesystem** tab, press <kbd>A</kbd> to add a new path rule.
-2. Enter the file or directory path.
-3. Set the permission level for the path.
 
-Use <kbd>Enter</kbd> to edit an existing path rule, and <kbd>D</kbd> to delete one.
+2. Type a file or directory path. Use an absolute path—for example, `/Users/octocat/projects/app` on macOS or Linux, or `C:\Users\octocat\projects\app` on Windows. Then press <kbd>Enter</kbd>.
+
+   > \[!NOTE]
+   > Adding a directory includes it entire subtree. Wildcards are not supported.
+
+3. Use the left and right arrow keys on your keyboard to navigate between the permissions options: **Read/Write**, **Read-Only**, **Denied**. Then press <kbd>Enter</kbd> to select an option.
+
+After you have added filesystem paths, you can edit or delete them.
+
+1. Use the up and down arrow keys to select a path.
+2. Press <kbd>Enter</kbd> to edit the path, or <kbd>D</kbd> to delete it.
 
 ## Configuring network settings
 
 The **Network** tab controls whether sandboxed processes can make network connections.
 
-| Setting                        | Description                                                                                                                                  |
-| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Allow outbound connections** | When turned on, the sandboxed process can reach external hosts on the internet. Turn this off to fully isolate the sandbox from the network. |
-| **Allow local network**        | When turned on, the sandboxed process can reach hosts on your local network (for example, `localhost` or other devices on your LAN).         |
-
-### Adding network host rules
-
-> \[!WARNING]
-> Per-host network filtering with `allowedHosts` and `blockedHosts` is currently not reliable across platforms. Do not rely on host rules to enforce network isolation.
-
-The `/sandbox` UI allows you to add host rules, but these rules have known platform limitations:
-
-* **macOS**: `allowedHosts` rules silently degrade to unrestricted outbound access, and `blockedHosts` rules are not supported.
-* **Linux**: Host rules are not a reliable way to allow selected hosts when outbound connections are disabled.
-
-If the UI presents host rule options, you can add them using the steps below, but they are not suitable for security enforcement.
-
-1. In the **Network** tab, press <kbd>A</kbd> to add a new host rule.
-2. Enter the hostname.
-3. Set whether to allow or block access to the host.
-
-Use <kbd>Enter</kbd> to edit an existing host rule, and <kbd>D</kbd> to delete one.
+| Setting                        | Description                                                                                                                                                                                                                                    |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Allow outbound connections** | Turned on by default. When turned on, the sandboxed process can reach external hosts on the internet. Turn this off to fully isolate the sandbox from the network.                                                                             |
+| **Allow local network**        | Turned on by default. When turned on, the sandboxed process can reach hosts on your local network (for example, `localhost` or other devices on your LAN). Turn this off to block the sandbox from reaching local or private network services. |
 
 ## Enabling and disabling the sandbox quickly
 
@@ -102,10 +110,21 @@ You can toggle the sandbox on or off without opening the full configuration inte
 * **Enable**: Enter `/sandbox enable` in the Copilot CLI session.
 * **Disable**: Enter `/sandbox disable` in the Copilot CLI session.
 
-These commands change the **Sandboxing enabled** setting on the **General** tab.
+These commands change the **Enable sandbox** setting on the **General** tab.
+
+## Viewing your current sandbox settings
+
+Settings are stored in `settings.json` under the `sandbox` key in your Copilot CLI configuration directory. For more information about the configuration directory, see [GitHub Copilot CLI configuration directory](/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference).
+
+You can view your current sandbox settings from within a Copilot CLI session.
+
+1. Enter `/settings`.
+2. Press <kbd>/</kbd> to search for settings.
+3. Type `sandbox` to filter the list of settings.
 
 ## Further reading
 
 * [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes)
-* [Enabling or disabling cloud sandboxes for your organization](/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization)
+* [Using local sandboxing](/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing)
+* [Enabling or disabling cloud sandboxes for your organization or enterprise](/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization)
 * [Configuring GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/configure-copilot-cli)

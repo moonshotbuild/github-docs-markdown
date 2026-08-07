@@ -23,7 +23,7 @@ If a current member of your organization only needs access to certain repositori
 
 You can convert a member of an organization to an outside collaborator. For more information about outside collaborators, see [Adding outside collaborators to repositories in your organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/adding-outside-collaborators-to-repositories-in-your-organization).
 
-If the organization is owned by an enterprise, converting an organization member to an outside collaborator may be restricted. For more information, see [Enforcing repository management policies in your enterprise](/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-for-inviting-outside-collaborators-to-repositories) in the GitHub Enterprise Cloud documentation.
+If the organization is owned by an enterprise, converting an organization member to an outside collaborator may be restricted. For more information, see [Enforcing repository management policies in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-for-inviting-outside-collaborators-to-repositories) in the GitHub Enterprise Cloud documentation.
 
 Unless you are on a free plan, adding an outside collaborator to a private repository will use one of your paid licenses. For more information, see "[About per-user pricing](/en/billing/reference/github-license-users)." When you add an outside collaborator to a repository, you'll also need to add them to any forks of the repository you'd like them to access.
 

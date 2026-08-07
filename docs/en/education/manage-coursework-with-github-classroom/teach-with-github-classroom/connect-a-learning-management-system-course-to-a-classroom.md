@@ -19,6 +19,10 @@ breadcrumbs:
 
 You can configure an LTI-compliant learning management system (LMS) course to connect to GitHub Classroom so that you can import a roster for your classroom.
 
+> \[!WARNING]
+> **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
+> For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
+
 ## About connecting an LMS to your classroom
 
 You can connect a learning management system (LMS) to GitHub Classroom and import a roster of student identifiers from the LMS.

@@ -247,6 +247,7 @@ release-assets.githubusercontent.com
 
 ```shell copy
 api.snapcraft.io
+*.core.windows.net
 ```
 
 In addition, your workflow may require access to other network resources.

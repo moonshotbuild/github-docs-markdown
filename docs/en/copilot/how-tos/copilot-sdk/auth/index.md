@@ -28,3 +28,7 @@ Choose the authentication method that best fits your deployment scenario for the
 * [BYOK (bring your own key)](/en/copilot/how-tos/copilot-sdk/auth/byok)
 
   BYOK allows you to use the Copilot SDK with your own API keys from model providers, bypassing GitHub Copilot authentication. This is useful for enterprise deployments, custom model hosting, or when you want direct billing with your model provider.
+
+* [Server-to-server authentication](/en/copilot/how-tos/copilot-sdk/auth/server-to-server-tokens)
+
+  Use a short-lived installation access token when a service needs to make Copilot requests on behalf of an organization without a user's credentials. In GitHub Actions, use the built-in GITHUB\_TOKEN instead.

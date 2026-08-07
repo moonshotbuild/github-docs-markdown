@@ -30,7 +30,7 @@ By default, GitHub Actions workflow runs that are triggered by Dependabot from `
 There are three ways to resolve this problem:
 
 1. You can update your workflows so that they are no longer triggered by Dependabot using an expression like: `if: github.actor != 'dependabot[bot]'`. For more information, see [Evaluate expressions in workflows and actions](/en/actions/reference/workflows-and-actions/expressions).
-2. You can modify your workflows to use a two-step process that includes `pull_request_target` which does not have these limitations. For more information, see [Troubleshooting Dependabot on GitHub Actions](/en/code-security/reference/supply-chain-security/troubleshoot-dependabot/dependabot-on-actions#restrictions-when-dependabot-triggers-events).
+2. You can modify your workflows to use a two-step process that includes `pull_request_target` which does not have these limitations. For more information, see [Troubleshooting Dependabot on GitHub Actions](/en/code-security/reference/supply-chain-security/troubleshoot-dependabot/dependabot-on-actions).
 3. You can provide workflows triggered by Dependabot access to secrets and allow the `permissions` term to increase the default scope of the `GITHUB_TOKEN`.
 
 Some troubleshooting advice is provided in this article. You can also see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idpermissions).
@@ -39,7 +39,7 @@ Some troubleshooting advice is provided in this article. You can also see [Workf
 
 When a Dependabot event triggers a workflow, the only secrets available to the workflow are Dependabot secrets. GitHub Actions secrets are **not available**. You must therefore store any secrets that are used by a workflow triggered by Dependabot events as Dependabot secrets. For more information, see [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#storing-credentials-for-dependabot-to-use).
 
-Dependabot secrets are added to the `secrets` context and referenced using exactly the same syntax as secrets for GitHub Actions. For more information, see [Using secrets in GitHub Actions](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets#using-encrypted-secrets-in-a-workflow).
+Dependabot secrets are added to the `secrets` context and referenced using exactly the same syntax as secrets for GitHub Actions. For more information, see [Using secrets in GitHub Actions](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets#using-secrets-in-a-workflow).
 
 If you have a workflow that will be triggered by Dependabot and also by other actors, the simplest solution is to store the token with the permissions required in an action and in a Dependabot secret with identical names. Then the workflow can include a single call to these secrets. If the secret for Dependabot has a different name, use conditions to specify the correct secrets for different actors to use.
 

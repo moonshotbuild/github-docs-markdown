@@ -171,7 +171,7 @@ run: echo "${{ env.Greeting }} ${{ env.First_Name }}. Today is ${{ env.DAY_OF_WE
 > Contexts are usually denoted using the dollar sign and curly braces, as `${{ context.property }}`. In an `if` conditional, the `${{` and `}}` are optional, but if you use them they must enclose the entire comparison statement, as shown above.
 
 > \[!WARNING]
-> When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#understanding-the-risk-of-script-injections).
+> When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#good-practices-for-mitigating-script-injection-attacks).
 
 ### Using the `vars` context to access configuration variable values
 

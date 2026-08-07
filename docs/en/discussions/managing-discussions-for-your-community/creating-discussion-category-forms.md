@@ -27,7 +27,7 @@ To use a discussion category form in your repository, you must create a new file
 
 You can also create discussion category forms for your organization. For more information, see [Creating a default community health file](/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
 
-Discussion category forms are not supported for polls. For more information about polls, see [About discussions](/en/discussions/collaborating-with-your-community-using-discussions/about-discussions#about-polls).
+Discussion category forms are not supported for polls. For more information about polls, see [About discussions](/en/discussions/collaborating-with-your-community-using-discussions/about-discussions).
 
 Here is the rendered version of the issue form.
 

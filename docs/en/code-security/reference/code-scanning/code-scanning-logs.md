@@ -44,7 +44,7 @@ Extractor diagnostics only cover files that were seen during the analysis, metri
 * Number of files that generated extractor errors during database creation
 * Number of files that generated extractor warnings during database creation
 
-You can see more detailed information about CodeQL extractor errors and warnings that occurred during database creation by enabling debug logging. See [Logs are not detailed enough](/en/code-security/reference/code-scanning/troubleshoot-analysis-errors/logs-not-detailed-enough#creating-codeql-debugging-artifacts-by-re-running-jobs-with-debug-logging-enabled).
+You can see more detailed information about CodeQL extractor errors and warnings that occurred during database creation by enabling debug logging. See [Logs are not detailed enough](/en/code-security/reference/code-scanning/troubleshoot-analysis-errors/logs-not-detailed-enough#re-running-jobs-with-debug-logging-enabled).
 
 ### Diagnostic information for private package registries
 

@@ -22,7 +22,7 @@ You can follow organizations on GitHub to receive notifications about their acti
 
 ## About followers
 
-When you follow organizations on GitHub, you'll see their public activity on your personal dashboard. This activity includes new discussions, sponsorships, and repositories. For more information, see [Quickstart for your personal dashboard](/en/account-and-profile/get-started/personal-dashboard-quickstart#staying-updated-with-activity-from-the-community).
+When you follow organizations on GitHub, you'll see their public activity on your personal dashboard. This activity includes new discussions, sponsorships, and repositories. For more information, see [Quickstart for your personal dashboard](/en/account-and-profile/get-started/personal-dashboard-quickstart#staying-up-to-date-with-activity-from-the-community).
 
 You can unfollow an organization if you do not wish to see their public activity on GitHub.
 

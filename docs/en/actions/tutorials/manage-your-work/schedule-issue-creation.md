@@ -89,7 +89,7 @@ In the tutorial, you will first make a workflow file that uses the GitHub CLI. T
    ```
 
 4. Customize the parameters in your workflow file:
-   * Change the value for `on.schedule` to dictate when you want this workflow to run. In the example above, the workflow will run every Monday at 7:20 UTC. For more information about scheduled workflows, see [Events that trigger workflows](/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#scheduled-events).
+   * Change the value for `on.schedule` to dictate when you want this workflow to run. In the example above, the workflow will run every Monday at 7:20 UTC. For more information about scheduled workflows, see [Events that trigger workflows](/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
    * Change the value for `ASSIGNEES` to the list of GitHub usernames that you want to assign to the issue.
    * Change the value for `LABELS` to the list of labels that you want to apply to the issue.
    * Change the value for `TITLE` to the title that you want the issue to have.

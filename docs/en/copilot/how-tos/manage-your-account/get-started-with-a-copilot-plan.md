@@ -98,4 +98,18 @@ You can subscribe to Copilot Pro, Copilot Pro+, or Copilot Max at any time to un
 
 5. Follow the steps to enter and confirm your billing information and payment details, then click **Submit**.
 
+   During checkout, GitHub may place a temporary authorization hold on your payment method to verify it. This hold is not the subscription charge.
+
+   If payment method verification does not succeed, or if you do not complete the activation step on the next screen, your plan will not activate.
+
 6. After reviewing your plan details, click **Activate Copilot Pro/Copilot Pro+/Copilot Max**.
+
+## Troubleshooting
+
+### Account still shows Copilot Free after checkout
+
+If the plan does not appear after following the checkout steps [when subscribing](#subscribing-to-copilot-pro-copilot-pro-or-copilot-max), follow these further steps to confirm and recover your subscription.
+
+1. Confirm that the plan appears in your GitHub Copilot settings or in your personal account settings under **Billing & licensing**. For more information, see [Viewing and changing your GitHub Copilot plan](/en/copilot/how-tos/manage-your-account/view-and-change-your-copilot-plan).
+2. If payment method verification failed or you did not complete the activation step, retry the checkout flow.
+3. If you completed activation and the plan still does not appear, contact [GitHub Support](https://support.github.com).

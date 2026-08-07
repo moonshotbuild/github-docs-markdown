@@ -55,7 +55,7 @@ For additional information on your preferred funding, please click on any of the
 Alternatively, enterprises and organizations may opt to be billed by recurring invoice. For additional information on billing by invoice, please click on [Paying for GitHub Sponsors by invoice](/en/sponsors/sponsoring-open-source-contributors/paying-for-github-sponsors-by-invoice).
 
 > \[!WARNING]
-> As of February 23, 2023, GitHub Sponsors does not support PayPal. While this only affects GitHub Sponsors, please note that it is still possible to fund GitHub Pro, GitHub Copilot, Actions and Packages, Storage, Codespaces and Git LFS Data using PayPal.
+> As of February 23, 2023, GitHub Sponsors does not support PayPal. While this only affects GitHub Sponsors, please note that it is still possible to fund GitHub Pro, GitHub Copilot, Actions, GitHub Packages, Storage, Codespaces and Git LFS Data using PayPal.
 
 ## Using the sponsorships dashboard for organizations
 

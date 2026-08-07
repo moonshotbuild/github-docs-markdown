@@ -49,10 +49,6 @@ You can use qualifiers to narrow your search and focus on specific categories of
 
   You can search for apps and actions that are available on GitHub Marketplace.
 
-* [Searching GitHub Models](/en/search-github/searching-on-github/searching-github-models)
-
-  You can search for models that are available on GitHub Models.
-
 * [Searching users](/en/search-github/searching-on-github/searching-users)
 
   You can search for users on GitHub and narrow the results using these user search qualifiers in any combination.

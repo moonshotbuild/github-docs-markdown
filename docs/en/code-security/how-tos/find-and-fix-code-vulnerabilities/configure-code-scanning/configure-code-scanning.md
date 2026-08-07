@@ -82,7 +82,7 @@ To assign a self-hosted runner for default setup, you can use the default `code-
 
 Once you've assigned custom labels to self-hosted runners, your repositories can use those runners for code scanning default setup.
 
-You can also use security configurations to assign labels to self-hosted runners for code scanning. See [Creating a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/create-custom-configuration#creating-a-custom-security-configuration).
+You can also use security configurations to assign labels to self-hosted runners for code scanning. See [Creating a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/create-custom-configuration).
 
 ### Assigning larger runners
 

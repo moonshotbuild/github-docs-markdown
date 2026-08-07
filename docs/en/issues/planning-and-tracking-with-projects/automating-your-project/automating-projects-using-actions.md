@@ -33,6 +33,8 @@ For more information about other changes you can make to your project through th
 
 You may also want to use the **actions/add-to-project** workflow, which is maintained by GitHub and will add the current issue or pull request to the project specified. For more information, see the [actions/add-to-project](https://github.com/actions/add-to-project) repository and README.
 
+For project management tasks that require understanding repository context—such as triaging new issues, summarizing backlogs, classifying issues by type or priority, and recommending field values—agentic workflows are a better fit than traditional GitHub Actions workflows. Unlike fixed workflow steps, agentic workflows let you describe what you want in natural language, and an AI coding agent handles the reasoning and decision-making.  For more information, see [Creating GitHub Agentic Workflows](/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows).
+
 > \[!NOTE]
 > `GITHUB_TOKEN` is scoped to the repository level and cannot access projects. To access projects you can either create a GitHub App (recommended for organization projects) or a personal access token (recommended for user projects). Workflow examples for both approaches are shown below.
 
@@ -47,7 +49,7 @@ For more information about authenticating in a GitHub Actions workflow with a Gi
    > \[!NOTE]
    > You can control your app's permission to organization projects and to repository projects. You must give permission to read and write organization projects; permission to read and write repository projects will not be sufficient.
 
-3. Install the GitHub App in your organization. Install it for all repositories that your project needs to access. For more information, see [Installing your own GitHub App](/en/apps/using-github-apps/installing-your-own-github-app#installing-your-private-github-app-on-your-repository).
+3. Install the GitHub App in your organization. Install it for all repositories that your project needs to access. For more information, see [Installing your own GitHub App](/en/apps/using-github-apps/installing-your-own-github-app).
 
 4. Store your GitHub App's client ID as a configuration variable in your repository or organization. In the following workflow, replace `APP_CLIENT_ID` with the name of the configuration variable. You can find your client ID on the settings page for your app or through the App API. For more information, see [REST API endpoints for apps](/en/rest/apps#get-an-app). For more information about configuration variables, see [Store information in variables](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables#defining-configuration-variables-for-multiple-workflows).
 

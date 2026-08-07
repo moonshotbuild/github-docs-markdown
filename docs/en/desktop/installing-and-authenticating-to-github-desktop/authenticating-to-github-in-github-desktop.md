@@ -21,7 +21,7 @@ You can securely access your account's resources on GitHub Desktop by authentica
 
 To keep your account secure, you must authenticate before you can use GitHub Desktop to access resources on GitHub.
 
-Before you authenticate, you must already have an account on GitHub. For more information, see [Creating an account on GitHub](/en/get-started/start-your-journey/creating-an-account-on-github).
+Before you authenticate, you must already have an account on GitHub. For more information, see [Creating an account on GitHub](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github).
 
 <div class="ghd-tool mac">
 

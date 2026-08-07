@@ -41,10 +41,6 @@ Find information to support your use of billing.
 
   Learn how your spending is assigned to cost centers for licensed and metered products.
 
-* [Costs and multipliers for using GitHub Models directly](/en/billing/reference/costs-for-github-models)
-
-  Reference information for calculating the cost of using different GitHub Models directly (outside GitHub Copilot).
-
 * [License troubleshooting information for GitHub Enterprise](/en/enterprise-license-troubleshooting)
 
   Troubleshoot license usage for your enterprise by understanding consumption criteria and auditing license reports.

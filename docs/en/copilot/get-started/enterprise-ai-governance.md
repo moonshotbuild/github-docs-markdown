@@ -97,7 +97,7 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
 ### Adopting new features
 
-* [Preparing for new features and models](/en/copilot/concepts/preparing-for-new-features-and-models)
+* [Learning about new features and models](/en/copilot/concepts/learning-about-new-features-and-models)
 
   Stay informed about GitHub Copilot features and models, and make confident decisions about enabling them for your enterprise.
 

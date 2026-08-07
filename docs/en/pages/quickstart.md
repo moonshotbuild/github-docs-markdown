@@ -1,7 +1,7 @@
 ---
 source_path: "/en/pages/quickstart"
 title: "Quickstart for GitHub Pages"
-intro: "You can use GitHub Pages to showcase some open source projects, host a blog, or even share your résumé. This guide will help get you started on creating your next website."
+intro: "You can use GitHub Pages to showcase open source projects, host a blog, or even share your résumé. This guide will help get you started on creating your next website."
 product: "GitHub Pages"
 document_type: "article"
 breadcrumbs:
@@ -13,7 +13,7 @@ breadcrumbs:
 
 # Quickstart for GitHub Pages
 
-You can use GitHub Pages to showcase some open source projects, host a blog, or even share your résumé. This guide will help get you started on creating your next website.
+You can use GitHub Pages to showcase open source projects, host a blog, or even share your résumé. This guide will help get you started on creating your next website.
 
 ## Introduction
 
@@ -61,9 +61,9 @@ By default, the title of your site is `username.github.io`. You can change the t
 
 6. When you are finished editing the file, click **Commit changes**.
 
-## Next Steps
+## Next steps
 
-You've successfully created, personalized, and published your first GitHub Pages website but there's so much more to explore! Here are some helpful resources for taking your next steps with GitHub Pages:
+You've successfully created, personalized, and published your first GitHub Pages website, but there's so much more to explore! Here are some helpful resources for taking your next steps with GitHub Pages:
 
 * [Adding content to your GitHub Pages site using Jekyll](/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll#about-content-in-jekyll-sites): This guide explains how to add additional pages to your site.
 * [Configuring a custom domain for your GitHub Pages site](/en/pages/configuring-a-custom-domain-for-your-github-pages-site): You can host your site on GitHub's `github.io` domain or your own custom domain.

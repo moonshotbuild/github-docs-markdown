@@ -81,7 +81,7 @@ Additional default filters for code scanning alerts:
 * `autofilter:true` includes only alerts that appear to be in application code.
 * `autofix:supported` includes only alerts that are for rules that are supported for GitHub Copilot Autofix.
 
-For more information about filtering alerts, see [Running a security campaign to fix alerts at scale](/en/code-security/tutorials/secure-your-organization/best-practice-fix-alerts-at-scale#selecting-security-alerts-for-remediation) and [Filtering alerts in security overview](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview).
+For more information about filtering alerts, see [Running a security campaign to fix alerts at scale](/en/code-security/tutorials/secure-your-organization/best-practice-fix-alerts-at-scale#2-select-alerts-for-your-campaign) and [Filtering alerts in security overview](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview).
 
 #### Code scanning alert filters
 
@@ -96,7 +96,7 @@ In addition to the core filters, you will usually want to add a filter to limit 
 In addition to the core filters, you will usually want to add a filter to limit results to a specific provider, secret type, or secrets that bypassed push protection (enterprise accounts only).
 
 * `is:open provider:azure` to show only alerts for the token provider Azure.
-* `is:open secret-type:azure_ai_services_key,azure_cognitive_services_key` to show only alerts for the tokens "azure\_ai\_services\_key" and "azure\_cognitive\_services\_key". See [Supported secret scanning patterns](/en/code-security/reference/secret-security/supported-secret-scanning-patterns#supported-secrets).
+* `is:open secret-type:azure_ai_services_key,azure_cognitive_services_key` to show only alerts for the tokens "azure\_ai\_services\_key" and "azure\_cognitive\_services\_key". See [Supported secret scanning patterns](/en/code-security/reference/secret-security/supported-secret-scanning-patterns#supported-provider-patterns).
 * `is:open props.BusinessPriority:Urgent` to show only alerts for repositories where the custom property "BusinessPriority" has the value "Urgent". See [Managing custom properties for repositories in your organization](/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization).
 
 ## Launching a security campaign
@@ -111,13 +111,13 @@ The new campaign is shown in the sidebar of the **<svg version="1.1" width="16" 
 * **Secret campaigns**: Anyone with access to see the alert list view for a repository included in the campaign is notified.
 
 > \[!TIP]
-> You can assign a campaign alert to anyone with **write** access to the repository, see [Assigning alerts](/en/code-security/concepts/security-at-scale/about-security-campaigns#assigning-alerts).
+> You can assign a campaign alert to anyone with **write** access to the repository, see [Assigning alerts](/en/code-security/concepts/security-at-scale/about-security-campaigns#about-assigning-alerts-to-users-and-copilot-cloud-agent).
 
 For more information about the developer experience, see [Fixing alerts in a security campaign](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/fixing-alerts-in-security-campaign).
 
 ### How to increase engagement with the security campaign
 
-The best way to increase engagement with a campaign is to publicize it to the teams you want to collaborate with to remediate alerts. For example, you might work with engineering managers to choose a quieter development period to run a series of security campaigns, each focused on a different type of alert, with associated training sessions. For more ideas, see [Running a security campaign to fix alerts at scale](/en/code-security/tutorials/secure-your-organization/best-practice-fix-alerts-at-scale).
+The best way to increase engagement with a campaign is to publicize it to the teams you want to collaborate with to remediate alerts. For example, you might work with engineering managers to choose a quieter development period to run a series of security campaigns, each focused on a different type of alert, with associated training sessions. For more ideas, see [Running a security campaign to fix alerts at scale](/en/code-security/tutorials/secure-your-organization/best-practice-fix-alerts-at-scale#2-select-alerts-for-your-campaign).
 
 ## Editing security campaign details
 

@@ -128,7 +128,7 @@ For pull requests for grouped updates, you can also use `@dependabot unignore` c
 * Un-ignore a specific dependency
 * Un-ignore all ignore conditions for all dependencies in a Dependabot pull request
 
-For more information, see [Managing pull requests for dependency updates](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/manage-dependabot-prs#managing-dependabot-pull-requests-for-grouped-updates-with-comment-commands).
+For more information, see [Managing pull requests for dependency updates](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/manage-dependabot-prs#managing-dependabot-pull-requests-with-comment-commands).
 
 ## Allowing specific dependencies to be updated
 

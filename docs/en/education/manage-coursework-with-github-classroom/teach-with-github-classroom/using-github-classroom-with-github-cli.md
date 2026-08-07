@@ -19,6 +19,10 @@ breadcrumbs:
 
 You can use gh, the GitHub command line interface, to work with GitHub Classroom directly from your command line.
 
+> \[!WARNING]
+> **Closing down:** This `gh` extension is closing down. The GitHub Classroom application will be retired on August 28, 2026.
+> For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
+
 ## About GitHub Classroom CLI <!-- omit in toc -->
 
 GitHub CLI is an open source tool for using GitHub from your computer's command line. When you're working from the command line, you can use the GitHub CLI to save time and avoid switching context. For more information, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).

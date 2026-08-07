@@ -35,8 +35,8 @@ If your codespace fails to pick up configuration settings from dotfiles, you sho
 
 If the configuration from your dotfiles is correctly picked up, but part of the configuration is incompatible with codespaces, use the `$CODESPACES` environment variable to add conditional logic for codespace-specific configuration settings. For more information about configuration that may be incompatible with codespaces, see:
 
-* [Troubleshooting authentication to a repository](/en/codespaces/troubleshooting/troubleshooting-authentication-to-a-repository#problems-with-the-repository-from-which-you-created-the-codespace)
-* [Troubleshooting GPG verification for GitHub Codespaces](/en/codespaces/troubleshooting/troubleshooting-gpg-verification-for-github-codespaces#errors-caused-by-conflicting-configuration)
+* [Troubleshooting authentication to a repository](/en/codespaces/troubleshooting/troubleshooting-authentication-to-a-repository#authenticating-to-the-repository-you-created-the-codespace-from)
+* [Troubleshooting GPG verification for GitHub Codespaces](/en/codespaces/troubleshooting/troubleshooting-gpg-verification-for-github-codespaces#errors-caused-by-conflicting-git-configuration)
 
 ## Troubleshooting Settings Sync
 

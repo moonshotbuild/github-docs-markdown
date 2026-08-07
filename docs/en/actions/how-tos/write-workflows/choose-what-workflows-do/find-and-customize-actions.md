@@ -59,7 +59,7 @@ You can also enable Dependabot version updates for the actions that you add to y
 
 ### Adding an action from the same repository
 
-If an action is defined in the same repository where your workflow file uses the action, you can reference the action with either the ‌`{owner}/{repo}@{ref}` or `./path/to/dir` syntax in your workflow file.
+If an action is defined in the same repository where your workflow file uses the action, you can reference the action with the `$/path/to/dir` self repository reference, or with the `{owner}/{repo}@{ref}` or `./path/to/dir` syntax in your workflow file. The `$/` syntax is not available in GitHub Enterprise Server.
 
 Example repository file structure:
 
@@ -73,9 +73,24 @@ Example repository file structure:
 |               └── action.yml
 ```
 
-The path is relative (`./`) to the default working directory (`github.workspace`, `$GITHUB_WORKSPACE`). If the action checks out the repository to a location different than the workflow, the relative path used for local actions must be updated.
+We recommend referencing the action with the `$/path/to/dir` self repository reference. This resolves to the same repository at the running commit, so you do not need to check out the repository first. For more information about how `$/` compares to `{owner}/{repo}@{ref}` and `./`, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#example-using-an-action-in-the-same-repository-as-the-workflow-at-the-running-commit-recommended).
 
-Example workflow file:
+Example workflow file using `$/`:
+
+```yaml
+jobs:
+  my_first_job:
+    runs-on: ubuntu-latest
+    steps:
+      # This step references an action in the same repository at the
+      # running commit. No repository checkout is required.
+      - name: Use hello-world-action
+        uses: $/.github/actions/hello-world-action
+```
+
+You can also reference the action with the relative `./path/to/dir` syntax, but it is more error-prone. The path is relative (`./`) to the default working directory (`github.workspace`, `$GITHUB_WORKSPACE`), so it requires a checkout step, and if the action checks out the repository to a location different than the workflow, the relative path must be updated.
+
+Example workflow file using `./`:
 
 ```yaml
 jobs:
@@ -103,7 +118,7 @@ jobs:
   my_first_job:
     steps:
       - name: My first step
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
 ```
 
 ### Referencing a container on Docker Hub
@@ -160,7 +175,7 @@ steps:
   - uses: actions/javascript-action@main
 ```
 
-For more information, see [About custom actions](/en/actions/concepts/workflows-and-actions/custom-actions#using-release-management-for-actions).
+For more information, see [Managing custom actions](/en/actions/how-tos/create-and-publish-actions/manage-custom-actions#using-release-management-for-actions).
 
 ## Using inputs and outputs with an action
 

@@ -31,7 +31,7 @@ This guide gives an overview of how to configure GCP to trust GitHub's OIDC as a
 
 * To learn the basic concepts of how GitHub uses OpenID Connect (OIDC), and its architecture and benefits, see [OpenID Connect](/en/actions/concepts/security/openid-connect).
 
-* Before proceeding, you must plan your security strategy to ensure that access tokens are only allocated in a predictable way. To control how your cloud provider issues access tokens, you **must** define at least one condition, so that untrusted repositories can’t request access tokens for your cloud resources. For more information, see [OpenID Connect](/en/actions/concepts/security/openid-connect#configuring-the-oidc-trust-with-the-cloud).
+* Before proceeding, you must plan your security strategy to ensure that access tokens are only allocated in a predictable way. To control how your cloud provider issues access tokens, you **must** define at least one condition, so that untrusted repositories can’t request access tokens for your cloud resources. For more information, see [OpenID Connect reference](/en/actions/reference/security/oidc#oidc-claims-used-to-define-trust-conditions-on-cloud-roles).
 
 For repositories created after July 15, 2026, and repository renames or transfers after that date, use an immutable default OIDC `sub` claim that includes owner and repository IDs (not available on GitHub Enterprise Server). Existing repositories keep the previous format unless they opt in. For more information, see [OpenID Connect reference](/en/actions/reference/security/oidc#immutable-subject-claims).
 
@@ -45,7 +45,7 @@ To configure the OIDC identity provider in GCP, you will need to perform the fol
 
 Additional guidance for configuring the identity provider:
 
-* For security hardening, make sure you've reviewed [Configuring the OIDC trust with the cloud](/en/actions/concepts/security/openid-connect#configuring-the-oidc-trust-with-the-cloud). For an example, see [Configuring the subject in your cloud provider](/en/actions/concepts/security/openid-connect#configuring-the-subject-in-your-cloud-provider).
+* For security hardening, make sure you've reviewed [OpenID Connect reference](/en/actions/reference/security/oidc#oidc-claims-used-to-define-trust-conditions-on-cloud-roles). For an example, see [OpenID Connect reference](/en/actions/reference/security/oidc#configuring-the-subject-in-your-cloud-provider).
 * For the service account to be available for configuration, it needs to be assigned to the `roles/iam.workloadIdentityUser` role. For more information, see [the GCP documentation](https://cloud.google.com/iam/docs/workload-identity-federation?_ga=2.114275588.-285296507.1634918453#conditions).
 * The Issuer URL to use: `https://token.actions.githubusercontent.com`
 
@@ -57,7 +57,7 @@ To update your workflows for OIDC, you will need to make two changes to your YAM
 2. Use the [`google-github-actions/auth`](https://github.com/google-github-actions/auth) action to exchange the OIDC token (JWT) for a cloud access token.
 
 > \[!NOTE]
-> When environments are used in workflows or in OIDC policies, we recommend adding protection rules to the environment for additional security. For example, you can configure deployment rules on an environment to restrict which branches and tags can deploy to the environment or access environment secrets. For more information, see [Managing environments for deployment](/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments#deployment-protection-rules).
+> When environments are used in workflows or in OIDC policies, we recommend adding protection rules to the environment for additional security. For example, you can configure deployment rules on an environment to restrict which branches and tags can deploy to the environment or access environment secrets. For more information, see [Managing environments for deployment](/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments).
 
 ### Adding permissions settings
 

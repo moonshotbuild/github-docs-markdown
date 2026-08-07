@@ -36,7 +36,7 @@ Dependabot metrics offer detailed information about vulnerabilities detected in 
 
 For more information about these metrics, see [Metrics for Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alert-metrics).
 
-Additionally, you can specify complex filters, which are combinations of the individual filters that are available. For more information about filters, see [Dependabot dashboard view filters](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview#dependabot-dashboard-view-filters).
+Additionally, you can specify complex filters, which are combinations of the individual filters that are available. For more information about filters, see [Dependabot dashboard view filters](/en/code-security/reference/security-at-scale/overview-dashboard-filters#dependabot-dashboard-filters).
 
 ## Steps to prioritize alerts
 

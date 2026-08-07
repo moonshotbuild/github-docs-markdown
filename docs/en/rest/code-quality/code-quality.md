@@ -235,6 +235,7 @@ curl -L \
 * `runner_label`: string or null
 * `updated_at`: string or null, format: date-time
 * `schedule`: string or null, enum: `weekly`, `null`
+* `ai_findings_option`: string or null, enum: `disabled`, `on_push`, `null`
 
 ## Update a code quality setup configuration
 
@@ -276,6 +277,10 @@ OAuth app tokens and personal access tokens (classic) need the repo scope to use
 - **`languages`** (array of strings)
   Languages to be analyzed.
 Supported values are: csharp, go, java-kotlin, javascript-typescript, python, ruby
+
+- **`ai_findings_option`** (string)
+  Whether AI findings run for Code Quality on this repository.
+  Can be one of: `disabled`, `on_push`
 
 ### HTTP response status codes
 

@@ -19,6 +19,10 @@ breadcrumbs:
 
 You can create an assignment from a template repository to provide starter code, documentation, and other resources to your students.
 
+> \[!WARNING]
+> **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
+> For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
+
 You can use a template repository on GitHub as starter code for an assignment on GitHub Classroom. Your template repository can contain boilerplate code, documentation, and other resources for your students. For more information, see [Creating a template repository](/en/repositories/creating-and-managing-repositories/creating-a-template-repository).
 
 To use the template repository for your assignment, the template repository must be owned by your organization, or the visibility of the template repository must be public.

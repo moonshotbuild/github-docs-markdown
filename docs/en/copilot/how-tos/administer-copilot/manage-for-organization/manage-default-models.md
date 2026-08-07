@@ -1,6 +1,6 @@
 ---
 source_path: "/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-default-models"
-title: "Managing default models"
+title: "Managing the availability of models in an organization"
 intro: "Configure which default Copilot models are available to members of your organization."
 product: "GitHub Copilot"
 document_type: "article"
@@ -17,21 +17,32 @@ breadcrumbs:
     href: "/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-default-models"
 ---
 
-# Managing default models
+# Managing the availability of models in an organization
 
 Configure which default Copilot models are available to members of your organization.
 
-> \[!NOTE]
-> Managing default models at the organization level is in public preview and subject to change.
+> \[!IMPORTANT] If your enterprise has opted in to the **enterprise teams model access** preview, your organization will not be able to access model settings. See [Managing availability of models in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-availability-of-default-models).
 
 ## Which models can I configure?
 
 If your organization is part of an enterprise, the enterprise owner controls which Copilot models are available and how they can be configured at the organization level.
 
+<!-- expires 2026-08-26 -->
+
+<!-- unconfigured label will no longer exist -->
+
 When viewing the model settings for your organization, you may see the following statuses:
 
 * **Enabled** or **Disabled** with a <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-shield" aria-label="shield" role="img"><path d="M7.467.133a1.748 1.748 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667Zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.196.196 0 0 0 .154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.251.251 0 0 0-.174-.237l-5.25-1.68ZM8.75 4.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 1.5 0ZM9 10.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg> icon: The enterprise owner has enforced this setting. You cannot change the availability of this model.
 * **Enabled**, **Disabled**, or **Unconfigured** in a dropdown menu: The enterprise owner has made this model optional. You can configure the availability for your organization.
+
+> \[!IMPORTANT] <!-- expires 2026-08-26 -->
+>
+> On Copilot Business and Copilot Enterprise plans, a new policy will control whether unconfigured generally available (GA) models default to enabled or disabled. For more information, see [About default availability of Copilot models](/en/copilot/concepts/models/automatic-enablement).
+>
+> <!-- end expires 2026-08-26 -->
+
+<!-- end expires 2026-08-26 -->
 
 ## Configuring model availability for your organization
 
@@ -47,6 +58,8 @@ If the enterprise owner has set a model to **Optional**, you can enable or disab
 6. Next to a model in the list, click the dropdown menu and select an option:
    * **Enabled**: The model is available to members of your organization.
    * **Disabled**: The model is not available to members of your organization.
+
+On this page, you can also configure the **Default availability for released models** policy to choose the default setting for unconfigured models.
 
 ## Further reading
 

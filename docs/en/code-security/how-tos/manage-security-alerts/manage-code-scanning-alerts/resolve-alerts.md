@@ -68,7 +68,7 @@ You can also use the Autofix API for historical alerts endpoints to generate, ge
 * [Get the status of an autofix for a code scanning alert](/en/rest/code-scanning/code-scanning#get-the-status-of-an-autofix-for-a-code-scanning-alert)
 * [Commit an autofix for a code scanning alert](/en/rest/code-scanning/code-scanning#commit-an-autofix-for-a-code-scanning-alert)
 
-Copilot Autofix for code scanning alerts won't be able to generate a fix for every alert in every situation. The feature operates on a best-effort basis and is not guaranteed to succeed 100% of the time. For information about the limitations of automatically generated fixes, see [Limitations of suggestions](/en/code-security/code-scanning/managing-code-scanning-alerts/about-autofix-for-codeql-code-scanning#limitations-of-suggestions).
+Copilot Autofix for code scanning alerts won't be able to generate a fix for every alert in every situation. The feature operates on a best-effort basis and is not guaranteed to succeed 100% of the time. For information about the limitations of automatically generated fixes, see [Limitations of suggestions](/en/code-security/responsible-use/security-and-quality-ai-features#7-limitations).
 
 ## Fixing an alert manually
 
@@ -144,7 +144,7 @@ You may have multiple code scanning configurations on a single repository. When 
 
 7. Once you have removed any unwanted configurations and confirmed the expected configurations are displayed, click **Save changes**.
 
-   If you save your changes after accidentally deleting a configuration, re-run the configuration to update the alert. For more information on re-running configurations that use GitHub Actions, see [Re-running workflows and jobs](/en/actions/managing-workflow-runs/re-running-workflows-and-jobs#re-running-all-the-jobs-in-a-workflow).
+   If you save your changes after accidentally deleting a configuration, re-run the configuration to update the alert. For more information on re-running configurations that use GitHub Actions, see [Re-running workflows and jobs](/en/actions/how-tos/manage-workflow-runs/re-run-workflows-and-jobs#re-running-all-the-jobs-in-a-workflow).
 
 > \[!NOTE]
 >
@@ -154,5 +154,5 @@ You may have multiple code scanning configurations on a single repository. When 
 ## Further reading
 
 * [Triaging code scanning alerts in pull requests](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/triage-alerts-in-pull-requests)
-* [Configuring default setup for code scanning](/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning)
-* [Integration with code scanning](/en/code-security/code-scanning/integrating-with-code-scanning/about-integration-with-code-scanning)
+* [Configuring default setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning)
+* [Integration with code scanning](/en/code-security/concepts/code-scanning/integration-with-code-scanning)

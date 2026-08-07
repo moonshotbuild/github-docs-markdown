@@ -44,7 +44,7 @@ Additionally, when an `on:push` scan returns results that can be mapped to an op
 
 ### Scanning pull requests
 
-The default CodeQL analysis workflow uses the `pull_request` event to trigger a code scan on pull requests targeted against the default branch. If a pull request is from a private fork, the `pull_request` event will only be triggered if you've selected the "Run workflows from fork pull requests" option in the repository settings. For more information, see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-private-repository-forks).
+The default CodeQL analysis workflow uses the `pull_request` event to trigger a code scan on pull requests targeted against the default branch. If a pull request is from a private fork, the `pull_request` event will only be triggered if you've selected the "Run workflows from fork pull requests" option in the repository settings. For more information, see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-forks-of-private-repositories).
 
 For more information about the `pull_request` event, see [Events that trigger workflows](/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request).
 
@@ -106,7 +106,7 @@ This workflow scans:
 
 > \[!NOTE]
 >
-> * Code scanning of Swift code uses macOS runners by default. GitHub-hosted macOS runners are more expensive than Linux and Windows runners, so you should consider only scanning the build step. For more information about configuring code scanning for Swift, see [CodeQL code scanning for compiled languages](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#considerations-for-building-swift). For more information about pricing for GitHub-hosted runners, see [GitHub Actions billing](/en/billing/concepts/product-billing/github-actions).
+> * Code scanning of Swift code uses macOS runners by default. GitHub-hosted macOS runners are more expensive than Linux and Windows runners, so you should consider only scanning the build step. For more information about configuring code scanning for Swift, see [CodeQL code scanning for compiled languages](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages). For more information about pricing for GitHub-hosted runners, see [GitHub Actions billing](/en/billing/concepts/product-billing/github-actions).
 >
 > * Code scanning of Swift code is not supported for runners that are part of an Actions Runner Controller (ARC), because ARC runners only use Linux and Swift requires macOS runners. However, you can have a mixture of both ARC runners and self-hosted macOS runners. For more information, see [Actions Runner Controller](/en/actions/concepts/runners/actions-runner-controller).
 
@@ -227,7 +227,7 @@ jobs:
             build-mode: none
 ```
 
-For compiled languages, the matrix can also be used to configure which build mode should be used for analysis by changing the value of the `build-mode` property. For more information about build modes, see [CodeQL code scanning for compiled languages](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#about-build-mode-none-for-codeql).
+For compiled languages, the matrix can also be used to configure which build mode should be used for analysis by changing the value of the `build-mode` property. For more information about build modes, see [CodeQL code scanning for compiled languages](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#use-none-build-mode-for-codeql).
 
 If your workflow does not provide an argument to the `languages` input of the `init` action, then CodeQL is configured to run analyses sequentially. In this case, CodeQL automatically detects, and attempts to analyze, any supported languages in the repository. Depending on the size of the repository and the number of languages, this may take a long time. If analysis for one language fails in this mode, then the analysis for all languages fails. Therefore, we do not recommend this configuration.
 
@@ -271,7 +271,7 @@ Your specified category will not overwrite the details of the `runAutomationDeta
 
 ## CodeQL model packs
 
-If your codebase depends on a library or framework that is not recognized by the standard queries in CodeQL, you can extend the CodeQL coverage in your code scanning workflow by specifying published CodeQL model packs. For more information about creating your own model packs, see [Creating and working with CodeQL packs](/en/code-security/tutorials/customize-code-scanning/create-and-work-with-codeql-packs#creating-a-model-pack).
+If your codebase depends on a library or framework that is not recognized by the standard queries in CodeQL, you can extend the CodeQL coverage in your code scanning workflow by specifying published CodeQL model packs. For more information about creating your own model packs, see [Creating and working with CodeQL packs](/en/code-security/tutorials/customize-code-scanning/create-and-work-with-codeql-packs#creating-a-codeql-model-pack).
 
 > \[!NOTE]
 > CodeQL model packs are currently in public preview and subject to change. Model packs are supported for C/C++, C#, Java/Kotlin, Python, Ruby, and Rust analysis.
@@ -299,7 +299,7 @@ When you use CodeQL to scan code, the CodeQL analysis engine generates a databas
 > \[!TIP]
 > You can also specify the queries you want to exclude from analysis, or include in the analysis. This requires the use of a custom configuration file. For more information, see [Custom configuration files](#custom-configuration-files) and [Excluding specific queries from analysis](#excluding-specific-queries-from-analysis) below.
 
-You can run extra queries if they are part of a CodeQL pack published to the GitHub Container registry or a CodeQL pack stored in a repository. For more information, see [Code scanning with CodeQL](/en/code-security/concepts/code-scanning/codeql/codeql-code-scanning#about-codeql-queries).
+You can run extra queries if they are part of a CodeQL pack published to the GitHub Container registry or a CodeQL pack stored in a repository. For more information, see [Code scanning with CodeQL](/en/code-security/concepts/code-scanning/codeql/codeql-code-scanning#running-additional-queries).
 
 The options available to specify the additional queries you want to run are:
 
@@ -428,9 +428,11 @@ In the workflow file, use the `config-file` parameter of the `init` action to sp
     config-file: ./.github/codeql/codeql-config.yml
 ```
 
-The configuration file can be located within the repository you are analyzing, or in an external repository. Using an external repository allows you to specify configuration options for multiple repositories in a single place. When you reference a configuration file located in an external repository, you can use the *OWNER/REPOSITORY/FILENAME\@BRANCH* syntax. For example, *octo-org/shared/codeql-config.yml\@main*.
+The configuration file can be located within the repository you are analyzing, or in an external repository. Using an external repository allows you to specify configuration options for multiple repositories in a single place. When you reference a configuration file located in an external repository, you can use the `remote=OWNER/REPOSITORY@REF:FILEPATH` syntax. For example, `remote=octo-org/shared@main:codeql-config.yml` will use `codeql-config.yml` from the `main` branch of the `octo-org/shared` repository. All components of this syntax, except for the repository name, are optional. For example, `remote=shared` will use `.github/codeql-config.yml` from the `main` branch of the `shared` repository in the same organization as the repository being analyzed.
 
-If the configuration file is located in an external private repository, use the `external-repository-token` parameter of the `init` action to specify a token that has access to the private repository.
+If the configuration file is located in an external private repository and you want to use it for a code scanning default setup analysis, you can set up a *Git Source* private registry configuration for your organization with credentials that allow access to the private repository containing the configuration file. For information about how to set up a private registry configuration, see [Giving security features access to private registries](/en/code-security/how-tos/secure-at-scale/configure-organization-security/manage-usage-and-access/giving-org-access-private-registries).
+
+If the configuration file is located in an external private repository and you are using code scanning advanced setup, use the `external-repository-token` parameter of the `init` action to specify a token that has access to the private repository.
 
 ```yaml copy
 - uses: github/codeql-action/init@v4
@@ -549,7 +551,7 @@ paths-ignore:
 > * The filter pattern characters `?`, `+`, `[`, `]`, and `!` are not supported and will be matched literally.
 > * `**` characters can only be at the start or end of a line, or surrounded by slashes, and you can't mix `**` and other characters. For example, `foo/**`, `**/foo`, and `foo/**/bar` are all allowed syntax, but `**foo` isn't. However you can use single stars along with other characters, as shown in the example. You'll need to quote anything that contains a `*` character.
 
-For analysis where code is built, if you want to limit code scanning to specific directories in your project, you must specify appropriate build steps in the workflow. The commands you need to use to exclude a directory from the build will depend on your build system. For more information, see [CodeQL code scanning for compiled languages](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#adding-build-steps-for-a-compiled-language).
+For analysis where code is built, if you want to limit code scanning to specific directories in your project, you must specify appropriate build steps in the workflow. The commands you need to use to exclude a directory from the build will depend on your build system. For more information, see [CodeQL code scanning for compiled languages](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#specify-build-steps-manually).
 
 You can quickly analyze small portions of a monorepo when you modify code in specific directories. You'll need to both exclude directories in your build steps and use the `paths-ignore` and `paths` keywords for [`on.<push|pull_request>`](/en/actions/reference/workflows-and-actions/workflow-syntax#onpushpull_requestpull_request_targetpathspaths-ignore) in your workflow.
 

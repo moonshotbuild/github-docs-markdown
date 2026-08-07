@@ -7,7 +7,7 @@ document_type: "article"
 breadcrumbs:
   - title: "REST API"
     href: "/en/rest"
-  - title: "REST endpoints for agents"
+  - title: "Agents"
     href: "/en/rest/agents"
   - title: "Variables"
     href: "/en/rest/agents/variables"
