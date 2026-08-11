@@ -39,10 +39,6 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   Find and fix vulnerable dependencies you rely on with Dependabot.
 
-* [GitHub Code Quality](/en/code-security/concepts/code-quality/code-quality)
-
-  GitHub Code Quality catches quality issues before merge, delivers one-click Copilot-powered fixes inline, and checks your code coverage.
-
 * [Best practices for preventing data leaks in your organization](/en/code-security/tutorials/secure-your-organization/prevent-data-leaks)
 
   Learn guidance and recommendations to help you avoid private or sensitive data present in your organization from being exposed.
@@ -50,6 +46,14 @@ Build security and code quality into your GitHub workflow with integrated toolin
 * [Best practices for maintaining dependencies](/en/code-security/concepts/supply-chain-security/best-practices-for-maintaining-dependencies)
 
   Guidance and recommendations for maintaining the dependencies you use, including GitHub's security products that can help.
+
+## Links
+
+### Getting started
+
+* [GitHub security features](/en/code-security/getting-started/github-security-features)
+
+  An overview of GitHub's security features.
 
 ## Articles
 
@@ -379,7 +383,7 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [Allowing use of GitHub Code Quality in your enterprise](/en/code-security/how-tos/secure-at-scale/configure-enterprise-security/configure-specific-tools/allow-github-code-quality-in-enterprise)
 
-  Control Code Quality enablement for your repositories by defining policies.
+  Set enterprise policies for Code Quality to give organizations access while keeping repository enablement under your control.
 
 * [](/en/configuring-code-scanning-for-your-appliance)
 
@@ -891,11 +895,11 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [Setting code quality thresholds for pull requests](/en/code-security/how-tos/maintain-quality-code/set-pr-thresholds)
 
-  Enforce your code quality standards automatically by blocking pull requests that fall below the thresholds you set, at the repository or organization level.
+  Keep low-quality changes out of your codebase by using Code Quality thresholds to block pull requests that don't meet your standards.
 
 * [Setting up code coverage for your repository](/en/code-security/how-tos/maintain-quality-code/set-up-code-coverage)
 
-  Give your teams visibility into code coverage directly on pull requests, without paying for or maintaining a separate third-party coverage service.
+  Use built-in code coverage from Code Quality to find untested code on pull requests, without paying for or maintaining a separate third-party service.
 
 * [Setting code coverage thresholds for pull requests](/en/code-security/how-tos/maintain-quality-code/restrict-code-coverage)
 
@@ -923,11 +927,11 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [Interpreting the code quality results for your repository](/en/code-security/how-tos/maintain-quality-code/interpret-results)
 
-  Understand the maintainability and reliability of your codebase so you can prioritize where your teams focus remediation effort.
+  Use Code Quality results to assess the maintainability and reliability of your codebase, so your teams can focus remediation where it matters most.
 
 * [Exploring GitHub Code Quality results in your organization](/en/code-security/how-tos/maintain-quality-code/explore-code-quality)
 
-  Understand your organization's code health at a glance with the organization-level dashboard for Code Quality.
+  Use the organization-level Code Quality dashboard to spot repositories that need attention and track your organization's code health at a glance.
 
 * [Viewing and managing GitHub Code Quality costs](/en/code-security/how-tos/maintain-quality-code/view-and-manage-cost)
 
@@ -1749,6 +1753,10 @@ Build security and code quality into your GitHub workflow with integrated toolin
 * [Secure your secrets at scale with GitHub](/en/code-security/tutorials/secret-protection-adoption-path)
 
   Leaked credentials expose your organization to data breaches. GitHub Secret Protection detects and prevents secret leaks automatically. Follow this adoption path to assess risk, pilot the solution, and scale protection organization-wide.
+
+* [Improve code quality at scale with GitHub](/en/code-security/tutorials/code-quality-adoption-path)
+
+  Inconsistent code quality slows every team down and adds risk you can't easily see. GitHub Code Quality catches issues before they merge and reports on code health across your organization. Follow this adoption path to evaluate the feature, run a pilot, prove its value, and roll it out at scale.
 
 * [Planning a trial of GitHub Advanced Security](/en/code-security/tutorials/trialing-github-advanced-security/planning-a-trial-of-ghas)
 

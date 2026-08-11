@@ -159,6 +159,8 @@ Anthropic models include a cache write cost in addition to cached input.
 |                |                |           |       |              |        |
 | Kimi K2.7 Code | GA             | Versatile | $0.95 |        $0.19 |  $4.00 |
 |                |                |           |       |              |        |
+| Kimi K3        | GA             | Powerful  | $3.00 |        $0.30 | $15.00 |
+|                |                |           |       |              |        |
 
 ## Code completions
 

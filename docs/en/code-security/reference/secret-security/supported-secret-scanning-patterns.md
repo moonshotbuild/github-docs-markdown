@@ -419,7 +419,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Microsoft | Power Automate Webhook SAS | power_automate_webhook_sas | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
 | Midtrans | Midtrans Production Server Key | midtrans_production_server_key | ✗ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Midtrans | Midtrans Sandbox Server Key | midtrans_sandbox_server_key | ✗ | ✓ | ✗ | ✓ | ✗ | ✗ |
-| Mistral AI | Mistral AI API Key | mistral_ai_api_key | ✗ | ✓ | ✓ | ✓ | ✗ | ✗ |
+| Mistral AI | Mistral AI API Key | mistral_ai_api_key | ✗ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | MongoDB | MongoDB Atlas Database URI with credentials | mongodb_atlas_db_uri_with_credentials | ✓ | ✓ | ✗ | ✓ | ✓ | ✗ |
 | MongoDB | MongoDB Atlas Service Account Secret | mongodb_atlas_service_account_secret | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Naver Cloud | Naver Cloud Gov Access Key ID | navercloud_gov_access_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |

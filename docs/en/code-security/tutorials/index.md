@@ -21,6 +21,10 @@ Build skills and knowledge about GitHub's security and code quality features thr
 
   Leaked credentials expose your organization to data breaches. GitHub Secret Protection detects and prevents secret leaks automatically. Follow this adoption path to assess risk, pilot the solution, and scale protection organization-wide.
 
+* [Improve code quality at scale with GitHub](/en/code-security/tutorials/code-quality-adoption-path)
+
+  Inconsistent code quality slows every team down and adds risk you can't easily see. GitHub Code Quality catches issues before they merge and reports on code health across your organization. Follow this adoption path to evaluate the feature, run a pilot, prove its value, and roll it out at scale.
+
 * [Trialing GitHub Advanced Security](/en/code-security/tutorials/trialing-github-advanced-security)
 
   Determine how you can meet your security goals using GitHub Secret Protection and GitHub Code Security.

@@ -65,9 +65,9 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
   Configure your enterprise so that Copilot cloud agent will operate in a secure, compliant environment.
 
-* [MCP server usage in your company](/en/copilot/concepts/mcp-management)
+* [Configuring an MCP server allowlist for your enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-enterprise-allowlist)
 
-  You can manage MCP server usage to provide your developers with valuable tools while maintaining security and compliance.
+  Define which MCP servers your users can and cannot use without the need for a private registry.
 
 ### Enabling agents
 

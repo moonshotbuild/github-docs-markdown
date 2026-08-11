@@ -60,3 +60,7 @@ Build skills and knowledge about GitHub Actions through hands-on activities.
 * [Actions Runner Controller](/en/actions/tutorials/use-actions-runner-controller)
 
   You can use Actions Runner Controller to host your own runners in a Kubernetes cluster.
+
+* [Develop agentic workflows in GitHub Actions](/en/actions/tutorials/develop-agentic-workflows-in-github-actions)
+
+  Use GitHub Agentic Workflows to turn Markdown instructions into automations powered by third-party coding agents.

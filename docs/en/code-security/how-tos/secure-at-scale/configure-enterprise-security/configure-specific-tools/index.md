@@ -29,7 +29,7 @@ Learn how to configure specific GitHub security and quality tools—such as the 
 
 * [Allowing use of GitHub Code Quality in your enterprise](/en/code-security/how-tos/secure-at-scale/configure-enterprise-security/configure-specific-tools/allow-github-code-quality-in-enterprise)
 
-  Control Code Quality enablement for your repositories by defining policies.
+  Set enterprise policies for Code Quality to give organizations access while keeping repository enablement under your control.
 
 * [](/en/configuring-code-scanning-for-your-appliance)
 

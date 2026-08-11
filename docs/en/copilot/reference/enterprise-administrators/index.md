@@ -31,9 +31,9 @@ Find information to apply to your work as an enterprise administrator for GitHub
 
   Understand the enterprise managed settings schema used by Copilot clients.
 
-* [MCP allowlist enforcement](/en/copilot/reference/enterprise-administrators/mcp-allowlist-enforcement)
+* [MCP private registry enforcement](/en/copilot/reference/enterprise-administrators/mcp-private-registry-enforcement)
 
-  Understand the logic and limitations of MCP allowlist enforcement.
+  Understand the logic and limitations of MCP private registry enforcement using a private registry server.
 
 * [Feature availability when GitHub Copilot policies conflict in organizations](/en/copilot/reference/enterprise-administrators/policy-conflicts)
 

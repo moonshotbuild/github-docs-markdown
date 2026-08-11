@@ -27,7 +27,7 @@ Learn about GitHub's migration tooling options and how to plan your migration.
 
 * [Planning your migration to GitHub](/en/migrations/overview/planning-your-migration-to-github)
 
-  Learn how to plan and execute a successful migration to GitHub or between GitHub products.
+  Plan and execute a successful migration to GitHub or between GitHub products.
 
 * [Migration paths to GitHub](/en/migrations/overview/migration-paths-to-github)
 

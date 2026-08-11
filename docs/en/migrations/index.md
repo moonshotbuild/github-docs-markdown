@@ -17,7 +17,7 @@ If you're moving to GitHub from another code hosting platform or moving between 
 
 * [Planning your migration to GitHub](/en/migrations/overview/planning-your-migration-to-github)
 
-  Learn how to plan and execute a successful migration to GitHub or between GitHub products.
+  Plan and execute a successful migration to GitHub or between GitHub products.
 
 * [About GitHub's migration tooling](/en/migrations/overview/about-githubs-migration-tooling)
 
@@ -61,7 +61,7 @@ If you're moving to GitHub from another code hosting platform or moving between 
 
 * [Planning your migration to GitHub](/en/migrations/overview/planning-your-migration-to-github)
 
-  Learn how to plan and execute a successful migration to GitHub or between GitHub products.
+  Plan and execute a successful migration to GitHub or between GitHub products.
 
 ## Articles
 
@@ -75,7 +75,7 @@ If you're moving to GitHub from another code hosting platform or moving between 
 
 * [Planning your migration to GitHub](/en/migrations/overview/planning-your-migration-to-github)
 
-  Learn how to plan and execute a successful migration to GitHub or between GitHub products.
+  Plan and execute a successful migration to GitHub or between GitHub products.
 
 * [Migration paths to GitHub](/en/migrations/overview/migration-paths-to-github)
 

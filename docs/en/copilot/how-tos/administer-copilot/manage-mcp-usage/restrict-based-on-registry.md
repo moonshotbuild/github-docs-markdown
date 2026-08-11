@@ -1,6 +1,6 @@
 ---
-source_path: "/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-server-access"
-title: "Configure MCP server access for your organization or enterprise"
+source_path: "/en/copilot/how-tos/administer-copilot/manage-mcp-usage/restrict-based-on-registry"
+title: "Restrict MCP server access to a custom registry"
 intro: "You can configure an MCP registry URL and access control policy to determine which MCP servers developers can discover and use in supported IDEs and Copilot CLI."
 product: "GitHub Copilot"
 document_type: "article"
@@ -13,16 +13,15 @@ breadcrumbs:
     href: "/en/copilot/how-tos/administer-copilot"
   - title: "Manage MCP usage"
     href: "/en/copilot/how-tos/administer-copilot/manage-mcp-usage"
-  - title: "Configure MCP server access"
-    href: "/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-server-access"
+  - title: "Restrict based on registry"
+    href: "/en/copilot/how-tos/administer-copilot/manage-mcp-usage/restrict-based-on-registry"
 ---
 
-# Configure MCP server access for your organization or enterprise
+# Restrict MCP server access to a custom registry
 
 You can configure an MCP registry URL and access control policy to determine which MCP servers developers can discover and use in supported IDEs and Copilot CLI.
 
-> \[!NOTE]
-> The MCP registry URL and allowlist are in public preview and subject to change.
+> \[!IMPORTANT] This feature is in public preview and is not the recommended method for restricting access to MCP servers. The more secure, generally available method is to define settings in your enterprise's `managed-settings.json` file. See [Configuring an MCP server allowlist for your enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-enterprise-allowlist).
 
 ## Prerequisites
 
@@ -104,7 +103,7 @@ To ensure uniform access, you can set and maintain your MCP registry URL and all
 
 ## Next steps
 
-For detailed information on MCP allowlist enforcement and limitations, see [MCP allowlist enforcement](/en/copilot/reference/mcp-allowlist-enforcement).
+For detailed information on MCP allowlist enforcement and limitations, see [MCP private registry enforcement](/en/copilot/reference/mcp-allowlist-enforcement).
 
 ## Further reading
 

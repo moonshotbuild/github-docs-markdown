@@ -144,7 +144,7 @@ You can run Copilot CLI in offline mode to prevent it from contacting GitHub's s
    export COPILOT_OFFLINE=true
    ```
 
-3. Start Copilot CLI.
+3. 1. Start Copilot CLI.
 
 ```bash
 copilot

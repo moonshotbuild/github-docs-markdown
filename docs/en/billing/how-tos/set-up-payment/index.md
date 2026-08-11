@@ -43,6 +43,6 @@ Learn how to change your payment method, view your payment history, and manage i
 
   You can view, pay, or download a current invoice for your enterprise, and you can view your payment history.
 
-* [One-time payments for customers in India](/en/billing/how-tos/set-up-payment/india-one-time-payments)
+* [Payments for customers in India](/en/billing/how-tos/set-up-payment/india-one-time-payments)
 
-  Customers in India who have been impacted by the Reserve Bank of India's recurring payment regulation can now make one-time payments for their GitHub subscriptions and services.
+  Customers in India who have been impacted by the Reserve Bank of India's recurring payment regulation can use RBI-compliant payment mandates with eligible credit card payment methods or make one-time payments for their GitHub subscriptions and services.

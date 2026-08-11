@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Endpoints available for GitHub App user access tokens
 
-<p>Your GitHub App can make requests to the following REST endpoints with a user access token.</p>
+Your GitHub App can make requests to the following REST endpoints with a user access token.
 
 ## actions
 

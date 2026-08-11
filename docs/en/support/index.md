@@ -27,14 +27,6 @@ GitHub offers different levels of support with each product, including community
 
   You can use Copilot in GitHub Support to find an answer to your question before submitting a support ticket.
 
-* [About GitHub Premium Support](/en/support/learning-about-github-support/about-github-premium-support)
-
-  GitHub Premium Support is a paid, supplemental support offering for GitHub Enterprise customers.
-
-* [Getting your enterprise started with the GitHub Support portal](/en/support/contacting-github-support/getting-your-enterprise-started-with-the-github-support-portal)
-
-  Learn how to start using the GitHub Support portal for issues related to your enterprise.
-
 * [Viewing and updating support tickets](/en/support/contacting-github-support/viewing-and-updating-support-tickets)
 
   You can view your support tickets and respond to GitHub Support using the GitHub Support portal.

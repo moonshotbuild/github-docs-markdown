@@ -33,11 +33,11 @@ Learn how to use GitHub's code security and code quality features to maintain hi
 
 * [Setting code quality thresholds for pull requests](/en/code-security/how-tos/maintain-quality-code/set-pr-thresholds)
 
-  Enforce your code quality standards automatically by blocking pull requests that fall below the thresholds you set, at the repository or organization level.
+  Keep low-quality changes out of your codebase by using Code Quality thresholds to block pull requests that don't meet your standards.
 
 * [Setting up code coverage for your repository](/en/code-security/how-tos/maintain-quality-code/set-up-code-coverage)
 
-  Give your teams visibility into code coverage directly on pull requests, without paying for or maintaining a separate third-party coverage service.
+  Use built-in code coverage from Code Quality to find untested code on pull requests, without paying for or maintaining a separate third-party service.
 
 * [Setting code coverage thresholds for pull requests](/en/code-security/how-tos/maintain-quality-code/restrict-code-coverage)
 
@@ -65,11 +65,11 @@ Learn how to use GitHub's code security and code quality features to maintain hi
 
 * [Interpreting the code quality results for your repository](/en/code-security/how-tos/maintain-quality-code/interpret-results)
 
-  Understand the maintainability and reliability of your codebase so you can prioritize where your teams focus remediation effort.
+  Use Code Quality results to assess the maintainability and reliability of your codebase, so your teams can focus remediation where it matters most.
 
 * [Exploring GitHub Code Quality results in your organization](/en/code-security/how-tos/maintain-quality-code/explore-code-quality)
 
-  Understand your organization's code health at a glance with the organization-level dashboard for Code Quality.
+  Use the organization-level Code Quality dashboard to spot repositories that need attention and track your organization's code health at a glance.
 
 * [Viewing and managing GitHub Code Quality costs](/en/code-security/how-tos/maintain-quality-code/view-and-manage-cost)
 

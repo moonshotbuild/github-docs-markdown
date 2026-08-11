@@ -1115,11 +1115,15 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Check for changes to settings or licenses in your Copilot plan.
 
+* [Configuring an MCP server allowlist for your enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-enterprise-allowlist)
+
+  Define which MCP servers your users can and cannot use without the need for a private registry.
+
 * [Configure an MCP registry for your organization or enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-registry)
 
   Create and host a list of MCP servers that your developers can access.
 
-* [Configure MCP server access for your organization or enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-server-access)
+* [Restrict MCP server access to a custom registry](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/restrict-based-on-registry)
 
   You can configure an MCP registry URL and access control policy to determine which MCP servers developers can discover and use in supported IDEs and Copilot CLI.
 
@@ -1323,9 +1327,9 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Understand the enterprise managed settings schema used by Copilot clients.
 
-* [MCP allowlist enforcement](/en/copilot/reference/enterprise-administrators/mcp-allowlist-enforcement)
+* [MCP private registry enforcement](/en/copilot/reference/enterprise-administrators/mcp-private-registry-enforcement)
 
-  Understand the logic and limitations of MCP allowlist enforcement.
+  Understand the logic and limitations of MCP private registry enforcement using a private registry server.
 
 * [Feature availability when GitHub Copilot policies conflict in organizations](/en/copilot/reference/enterprise-administrators/policy-conflicts)
 
@@ -1690,6 +1694,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Optimizing your AI usage to maximize efficiency and reduce cost](/en/copilot/tutorials/optimize-ai-usage)
 
   Learn how to choose the right models, structure your prompts, and add guardrails so that Copilot completes tasks more efficiently and uses fewer AI credits.
+
+* [Optimize GitHub Copilot Chat context to reduce AI credit usage](/en/copilot/tutorials/optimize-chat-usage)
+
+  Keep Copilot Chat responses focused and reduce AI credits usage by knowing when to continue a conversation and when to start a new one.
 
 * [Build an optimized review process with Copilot](/en/copilot/tutorials/optimize-code-reviews)
 

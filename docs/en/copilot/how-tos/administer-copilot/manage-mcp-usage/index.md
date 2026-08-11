@@ -21,10 +21,14 @@ Organization and enterprise owners can control the availability of MCP servers f
 
 ## Links
 
+* [Configuring an MCP server allowlist for your enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-enterprise-allowlist)
+
+  Define which MCP servers your users can and cannot use without the need for a private registry.
+
 * [Configure an MCP registry for your organization or enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-registry)
 
   Create and host a list of MCP servers that your developers can access.
 
-* [Configure MCP server access for your organization or enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-server-access)
+* [Restrict MCP server access to a custom registry](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/restrict-based-on-registry)
 
   You can configure an MCP registry URL and access control policy to determine which MCP servers developers can discover and use in supported IDEs and Copilot CLI.

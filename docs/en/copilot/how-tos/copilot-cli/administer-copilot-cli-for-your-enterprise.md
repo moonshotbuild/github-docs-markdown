@@ -55,7 +55,7 @@ Enterprise-configured custom agents are available to use with Copilot CLI.
 
 ### MCP server policies
 
-Enterprise and organization MCP policies apply to Copilot CLI. You can configure an MCP registry URL so developers can discover approved servers, and set an allowlist policy to restrict which MCP servers can run. For more information, see [Configure MCP server access for your organization or enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-server-access).
+Enterprise and organization MCP policies apply to Copilot CLI. You can configure an MCP registry URL so developers can discover approved servers, and set an allowlist policy to restrict which MCP servers can run. For more information, see [Restrict MCP server access to a custom registry](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-server-access).
 
 ### Copilot cloud agent enablement
 

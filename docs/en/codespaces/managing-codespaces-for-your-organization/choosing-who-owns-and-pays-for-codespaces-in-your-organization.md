@@ -40,7 +40,7 @@ If an organization chooses for codespaces to be **user-owned**, a user who creat
 If an organization chooses for codespaces to be **organization-owned**, the organization will pay for a codespace if all the following things are true:
 
 * The organization has no budget defined for GitHub Codespaces or has set a non-zero budget.
-* The codespace is created from one of the organization's repositories, or from a fork of one of the organization's repositories. This includes both public and private repositories.
+* The codespace is created from one of the organization's repositories, or from an organization-owned fork of a repository. This includes both public and private repositories.
 * The user creating the codespace is a member or collaborator of the organization, and the organization has enabled GitHub Codespaces for this user. This can include all members and collaborators if the organization has chosen to enable Codespaces for all users. If Codespaces isn't enabled for a user, they can still create codespaces from public repositories in the organization, but the user will pay for these codespaces.
 
 For more information about enabling GitHub Codespaces for members and collaborators, see [Enabling or disabling GitHub Codespaces for your organization](/en/codespaces/managing-codespaces-for-your-organization/enabling-or-disabling-github-codespaces-for-your-organization).

@@ -15,41 +15,17 @@ Learn about the different components of your bill, and how you can view and mana
 
 ## Recommended
 
-* [How GitHub billing works](/en/billing/get-started/how-billing-works)
-
-  Learn what you'll be charged for, when charges occur, and how to track your usage on GitHub to avoid billing surprises.
-
-* [Introduction to billing and licensing](/en/billing/get-started/introduction-to-billing)
-
-  Learn about the billing platform's key functionalities, and how they can help you manage your spending more effectively.
-
-* [Billing manager onboarding](/en/billing/get-started/billing-manager-onboard)
-
-  A quick overview of your role and how you can work with organization and enterprise owners to control and track costs in GitHub.
-
-* [Managing your payment and billing information](/en/billing/how-tos/set-up-payment/manage-payment-info)
-
-  Learn how to view, modify, and remove your payment information and billing contacts using the new billing platform.
-
 * [Viewing your usage of metered products and licenses](/en/billing/how-tos/products/view-productlicense-use)
 
   Explore your use of features that are billed by usage and see how they contribute to your bill.
 
-* [Viewing and estimating your spending](/en/billing/how-tos/products/estimate-spending)
+## Links
 
-  View current usage and spending trends across paid GitHub products, so you can estimate costs and make informed budgeting decisions.
+### Getting started
 
-* [Controlling and tracking costs at scale](/en/billing/tutorials/control-costs-at-scale)
+* [Billing for GitHub Enterprise](/en/billing/concepts/enterprise-billing/billing-for-enterprises)
 
-  Control costs and provide granular reporting for your enterprise by mapping your company's financial structures to cost centers and setting budgets at scale.
-
-* [GitHub Copilot licenses](/en/billing/concepts/product-billing/github-copilot-licenses)
-
-  Learn how licenses for Copilot work, including usage measurement and managing your budget.
-
-* [Upgrading your account's plan](/en/billing/how-tos/manage-plan-and-licenses/upgrade-plan)
-
-  You can upgrade the plan for a personal account or organization on GitHub at any time.
+  Understand what makes up your enterprise bill so you can better forecast and manage costs.
 
 ## Articles
 
@@ -185,9 +161,9 @@ Learn about the different components of your bill, and how you can view and mana
 
   You can view, pay, or download a current invoice for your enterprise, and you can view your payment history.
 
-* [One-time payments for customers in India](/en/billing/how-tos/set-up-payment/india-one-time-payments)
+* [Payments for customers in India](/en/billing/how-tos/set-up-payment/india-one-time-payments)
 
-  Customers in India who have been impacted by the Reserve Bank of India's recurring payment regulation can now make one-time payments for their GitHub subscriptions and services.
+  Customers in India who have been impacted by the Reserve Bank of India's recurring payment regulation can use RBI-compliant payment mandates with eligible credit card payment methods or make one-time payments for their GitHub subscriptions and services.
 
 * [Upgrading your account's plan](/en/billing/how-tos/manage-plan-and-licenses/upgrade-plan)
 

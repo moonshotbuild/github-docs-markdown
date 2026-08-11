@@ -399,6 +399,10 @@ Build skills and knowledge about GitHub Copilot through examples and hands-on ac
 
   Learn how to choose the right models, structure your prompts, and add guardrails so that Copilot completes tasks more efficiently and uses fewer AI credits.
 
+* [Optimize GitHub Copilot Chat context to reduce AI credit usage](/en/copilot/tutorials/optimize-chat-usage)
+
+  Keep Copilot Chat responses focused and reduce AI credits usage by knowing when to continue a conversation and when to start a new one.
+
 * [Build an optimized review process with Copilot](/en/copilot/tutorials/optimize-code-reviews)
 
   Automate reviews with Copilot to optimize and improve your review process.
