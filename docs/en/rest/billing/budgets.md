@@ -116,6 +116,7 @@ curl -L \
   * `budget_scope`: required, string, enum: `enterprise`, `organization`, `repository`, `cost_center`, `multi_user_customer`, `multi_user_cost_center`, `user`
   * `budget_entity_name`: string
   * `user`: string
+  * `consumed_amount`: number
   * `budget_product_sku`: required, string
   * `budget_alerting`: required, object:
     * `will_alert`: required, boolean
@@ -150,6 +151,7 @@ curl -L \
   * `budget_scope`: required, string, enum: `enterprise`, `organization`, `repository`, `cost_center`, `multi_user_customer`, `multi_user_cost_center`, `user`
   * `budget_entity_name`: string
   * `user`: string
+  * `consumed_amount`: number
   * `budget_product_sku`: required, string
   * `budget_alerting`: required, object:
     * `will_alert`: required, boolean
@@ -193,9 +195,9 @@ organization admin or billing manager.
 
 - **`budget_alerting`** (object)
   - **`will_alert`** (boolean)
-    Whether alerts are enabled for this budget
+    Whether alerts are enabled for this budget. Rejected for user-scope as alerting is always disabled for them.
   - **`alert_recipients`** (array of strings)
-    Array of user login names who will receive alerts
+    Array of user login names who will receive alerts. Rejected for user-scope as alerting is always disabled for them.
 
 - **`budget_scope`** (string)
   The scope of the budget for this organization.
@@ -381,9 +383,9 @@ Updates an existing budget for an organization. The authenticated user must be a
 
 - **`budget_alerting`** (object)
   - **`will_alert`** (boolean)
-    Whether alerts are enabled for this budget
+    Whether alerts are enabled for this budget. Ignored for user-scopes as alerting is always disabled for them.
   - **`alert_recipients`** (array of strings)
-    Array of user login names who will receive alerts
+    Array of user login names who will receive alerts. Ignored for user-scopes as alerting is always disabled for them.
 
 - **`budget_scope`** (string)
   The scope of the budget for this organization.

@@ -43,6 +43,10 @@ You can use organizations to collaborate with a large number of people across ma
 
   You can customize access to each repository in your organization by assigning granular roles, giving people access to the features and tasks they need.
 
+* [Governing how people use repositories in your organization](/en/organizations/managing-organization-settings/governing-how-people-use-repositories-in-your-organization)
+
+  Create a repository policy to control who can do things like create and delete repositories.
+
 * [Reviewing the audit log for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization)
 
   The audit log allows organization admins to quickly review the actions performed by members of your organization. It includes details such as who performed the action, what the action was, and when it was performed.

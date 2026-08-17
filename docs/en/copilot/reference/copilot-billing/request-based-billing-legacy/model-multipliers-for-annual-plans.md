@@ -97,6 +97,8 @@ The following table shows the model multipliers per supported model.
 |                    |            |
 | MAI-Code-1-Flash   |       0.33 |
 |                    |            |
+| MAI-Code-1.1-Flash |       0.25 |
+|                    |            |
 
 ### Model multiplier for Copilot code review
 

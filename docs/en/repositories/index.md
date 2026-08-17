@@ -333,6 +333,10 @@ Learn to use and manage the repositories that allow you to store and collaborate
 
   You can edit, monitor, and delete existing rulesets in a repository to alter how people can interact with specific branches and tags.
 
+* [Converting branch protections to rulesets](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/converting-branch-protections-to-rulesets)
+
+  Use rulesets to gain clearer visibility and control over your repository protections while preserving their existing behavior.
+
 * [Available rules for rulesets](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets)
 
   Learn which rules you can add to a ruleset to protect specific branches and tags in a repository.

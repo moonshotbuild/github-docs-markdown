@@ -21,11 +21,11 @@ Good release notes provide administrators the necessary information to plan syst
 
 Writers source, edit, and publish release notes in collaboration with product DRIs, feature owners, and individual engineers at GitHub. For each individual release, we group release notes by predefined types.
 
-We publish the release notes for [GitHub Enterprise Server](/en/enterprise-server@3.21/admin/release-notes) on GitHub Docs, in the "Enterprise administrators" documentation set.
+We publish the release notes for [GitHub Enterprise Server](/en/enterprise-server@3.22/admin/release-notes) on GitHub Docs, in the "Enterprise administrators" documentation set.
 
 ## Types of releases
 
-GitHub Docs provides release notes for feature releases and patch releases of GitHub Enterprise Server. For more information, see [About upgrades to new releases](/en/enterprise-server@3.21/admin/overview/about-upgrades-to-new-releases) in the GitHub Enterprise Server documentation.
+GitHub Docs provides release notes for feature releases and patch releases of GitHub Enterprise Server. For more information, see [About upgrades to new releases](/en/enterprise-server@3.22/admin/overview/about-upgrades-to-new-releases) in the GitHub Enterprise Server documentation.
 
 ## Guidance and example release notes
 

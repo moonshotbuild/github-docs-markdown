@@ -161,10 +161,10 @@ curl -L \
 
 * `total_count`: required, integer
 * `workflow_runs`: required, array of `Workflow Run`:
-  * `id`: required, integer
+  * `id`: required, integer, format: int64
   * `name`: string or null
   * `node_id`: required, string
-  * `check_suite_id`: integer
+  * `check_suite_id`: integer, format: int64
   * `check_suite_node_id`: string
   * `head_branch`: required, string or null
   * `head_sha`: required, string
@@ -426,10 +426,10 @@ curl -L \
 
 **Response schema (Status: 200):**
 
-* `id`: required, integer
+* `id`: required, integer, format: int64
 * `name`: string or null
 * `node_id`: required, string
-* `check_suite_id`: integer
+* `check_suite_id`: integer, format: int64
 * `check_suite_node_id`: string
 * `head_branch`: required, string or null
 * `head_sha`: required, string

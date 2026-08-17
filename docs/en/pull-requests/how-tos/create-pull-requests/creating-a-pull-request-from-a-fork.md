@@ -52,10 +52,10 @@ In a pull request from a fork, the base branch is where you want to merge your c
    > If your fork contains GitHub Actions workflows, the option is **Allow edits and access to secrets by maintainers**. Allowing edits on a fork's branch that contains GitHub Actions workflows also allows a maintainer to edit the forked repository's workflows, which can potentially reveal values of secrets and grant access to other branches.
 
 8. To create a pull request that is ready for review, click **Create Pull Request**.
-   To create a draft pull request, use the drop-down and select **Create Draft Pull Request**, then click **Draft Pull Request**. If you are the member of an organization, you may need to request access to draft pull requests from an organization owner. See [Pull requests](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests).
+   To create a draft pull request, use the drop-down and select **Create Draft Pull Request**, then click **Draft Pull Request**. If you are the member of an organization, you may need to request access to draft pull requests from an organization owner. See [Pull requests](/en/pull-requests/reference/pull-requests#draft-pull-requests).
 
 > \[!TIP]
-> After you create a pull request, you can ask a specific person to review your proposed changes. See [Requesting a pull request review](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review).
+> After you create a pull request, you can ask a specific person to review your proposed changes. See [Requesting a pull request review](/en/pull-requests/how-tos/create-pull-requests/requesting-a-pull-request-review).
 
 ## Further reading
 

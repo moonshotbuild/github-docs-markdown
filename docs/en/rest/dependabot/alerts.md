@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/dependabot/alerts"
 ---
 
-# REST API endpoints for Dependabot alerts
+# REST API endpoints for {% data variables.product.prodname\_dependabot\_alerts %}
 
 Use the REST API to interact with Dependabot alerts for a repository.
 
@@ -90,6 +90,12 @@ Filters the list of alerts based on EPSS percentages. If specified, only alerts 
 * **`scope`** (string)
   The scope of the vulnerable dependency. If specified, only alerts with this scope will be returned.
   Can be one of: `development`, `runtime`
+
+* **`relationship`** (string)
+  A comma-separated list of relationships of the vulnerable dependency to your project. If specified, only alerts with these relationships will be returned.
+  Note
+
+We are rolling out support for dependency relationship across ecosystems. This value will be "unknown" for all dependencies in unsupported ecosystems.
 
 * **`sort`** (string)
   The property by which to sort the results.
@@ -360,6 +366,12 @@ Filters the list of alerts based on EPSS percentages. If specified, only alerts 
   The scope of the vulnerable dependency. If specified, only alerts with this scope will be returned.
   Can be one of: `development`, `runtime`
 
+* **`relationship`** (string)
+  A comma-separated list of relationships of the vulnerable dependency to your project. If specified, only alerts with these relationships will be returned.
+  Note
+
+We are rolling out support for dependency relationship across ecosystems. This value will be "unknown" for all dependencies in unsupported ecosystems.
+
 * **`sort`** (string)
   The property by which to sort the results.
   created means when the alert was created.
@@ -479,6 +491,12 @@ Filters the list of alerts based on EPSS percentages. If specified, only alerts 
 * **`scope`** (string)
   The scope of the vulnerable dependency. If specified, only alerts with this scope will be returned.
   Can be one of: `development`, `runtime`
+
+* **`relationship`** (string)
+  A comma-separated list of relationships of the vulnerable dependency to your project. If specified, only alerts with these relationships will be returned.
+  Note
+
+We are rolling out support for dependency relationship across ecosystems. This value will be "unknown" for all dependencies in unsupported ecosystems.
 
 * **`sort`** (string)
   The property by which to sort the results.

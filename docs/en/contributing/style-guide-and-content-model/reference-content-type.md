@@ -57,4 +57,4 @@ For the reference content template, see [Templates](/en/contributing/writing-for
   * [Reference](/en/graphql/reference) in the GraphQL API documentation
 * Reference sections within other articles
   * "Supported languages" in [GitHub Mobile](/en/get-started/using-github/github-mobile#supported-languages-for-github-mobile)
-  * "Hardware considerations" in [Installing GitHub Enterprise Server on AWS](/en/enterprise-server@3.21/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/installing-github-enterprise-server-on-aws#hardware-considerations)
+  * "Hardware considerations" in [Installing GitHub Enterprise Server on AWS](/en/enterprise-server@3.22/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/installing-github-enterprise-server-on-aws#hardware-considerations)

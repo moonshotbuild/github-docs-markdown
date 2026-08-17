@@ -146,7 +146,7 @@ Array of objects:
     * `starred_at`: string
     * `user_view_type`: string
 * `dismissed_at`: required, string or null, format: date-time, read-only
-* `dismissed_reason`: required, string or null, enum: `false positive`, `won't fix`, `used in tests`, `null`
+* `dismissed_reason`: required, string or null, enum: `false positive`, `won't fix`, `used in tests`, `mitigated`, `null`
 * `dismissed_comment`: string or null, maxLength: 280
 * `rule`: required, object:
   * `id`: string or null
@@ -369,7 +369,7 @@ Array of objects:
     * `starred_at`: string
     * `user_view_type`: string
 * `dismissed_at`: required, string or null, format: date-time, read-only
-* `dismissed_reason`: required, string or null, enum: `false positive`, `won't fix`, `used in tests`, `null`
+* `dismissed_reason`: required, string or null, enum: `false positive`, `won't fix`, `used in tests`, `mitigated`, `null`
 * `dismissed_comment`: string or null, maxLength: 280
 * `rule`: required, object:
   * `id`: string or null
@@ -495,7 +495,7 @@ curl -L \
     * `starred_at`: string
     * `user_view_type`: string
 * `dismissed_at`: required, string or null, format: date-time, read-only
-* `dismissed_reason`: required, string or null, enum: `false positive`, `won't fix`, `used in tests`, `null`
+* `dismissed_reason`: required, string or null, enum: `false positive`, `won't fix`, `used in tests`, `mitigated`, `null`
 * `dismissed_comment`: string or null, maxLength: 280
 * `rule`: required, object:
   * `id`: string or null
@@ -819,7 +819,7 @@ OAuth app tokens and personal access tokens (classic) need the security\_events 
 
 * **`dismissed_reason`** (string or null)
   Required when the state is dismissed. The reason for dismissing or closing the alert.
-  Can be one of: `false positive`, `won't fix`, `used in tests`, `null`
+  Can be one of: `false positive`, `won't fix`, `used in tests`, `mitigated`, `null`
 
 * **`dismissed_comment`** (string or null)
   The dismissal comment associated with the dismissal of the alert.

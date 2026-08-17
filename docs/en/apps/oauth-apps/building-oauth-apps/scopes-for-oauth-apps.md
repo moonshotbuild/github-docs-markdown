@@ -25,9 +25,7 @@ Scopes let you specify exactly what type of access you need. Scopes limit access
 When setting up an OAuth app on GitHub, requested scopes are displayed to the user on the authorization form.
 
 > \[!NOTE]
-> If you're building a GitHub App, you don’t need to provide scopes in your authorization request. For more on this, see [Authenticating with a GitHub App on behalf of a user](/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-with-a-github-app-on-behalf-of-a-user).
-
-If your OAuth app doesn't have access to a browser, such as a CLI tool, then you don't need to specify a scope for users to authenticate to your app. For more information, see [Authorizing OAuth apps](/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow).
+> If you're building a GitHub App, you don’t provide scopes in your authorization request. For more on this, see [Authenticating with a GitHub App on behalf of a user](/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-with-a-github-app-on-behalf-of-a-user).
 
 Check headers to see what OAuth scopes you have, and what the API action accepts:
 
@@ -80,9 +78,10 @@ X-Accepted-OAuth-Scopes: user
 | **`codespace`**        | Grants the ability to create and manage codespaces. Codespaces can expose a GITHUB\_TOKEN which may have a different set of scopes. For more information, see [Security in GitHub Codespaces](/en/codespaces/reference/security-in-github-codespaces#authentication).                                                                                                                                                                                                                                  |
 | **`workflow`**         | Grants the ability to add and update GitHub Actions workflow files. Workflow files can be committed without this scope if the same file (with both the same path and contents) exists on another branch in the same repository. Workflow files can expose `GITHUB_TOKEN` which may have a different set of scopes. For more information, see [Use GITHUB\_TOKEN for authentication in workflows](/en/actions/tutorials/authenticate-with-github_token#modifying-the-permissions-for-the-github_token). |
 | **`read:audit_log`**   | Read audit log data.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **`offline_access`**   | Requests an expiring access token and a refresh token, even if your OAuth app is not configured to use expiring tokens. Use this scope to test and gradually roll out support for expiring tokens. For more information, see [Authorizing OAuth apps](/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#expiring-access-tokens).                                                                                                                                                          |
 
 > \[!NOTE]
-> Your OAuth app can request the scopes in the initial redirection. You can specify multiple scopes by separating them with a space using `%20`:
+> Your OAuth app can request the scopes in the initial authorization request. You can specify multiple scopes by separating them with a space using `%20`:
 >
 > ```text
 > https://github.com/login/oauth/authorize?

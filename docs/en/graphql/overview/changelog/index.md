@@ -21,6 +21,58 @@ Breaking changes include changes that will break existing queries or could affec
 
 **2026** · [2025](2025) · [2024](2024) · [2023](2023) · [2022](2022) · [2021](2021) · [2020](2020) · [2019](2019) · [2018](2018) · [2017](2017)
 
+## Schema changes for 2026-08-13
+
+### The GraphQL schema includes these changes:
+
+* Field innersourceVulnerabilities was added to object type Enterprise
+* Argument after: String added to field Enterprise.innersourceVulnerabilities
+* Argument before: String added to field Enterprise.innersourceVulnerabilities
+* Argument ecosystem: SecurityAdvisoryEcosystem added to field Enterprise.innersourceVulnerabilities
+* Argument first: Int added to field Enterprise.innersourceVulnerabilities
+* Argument last: Int added to field Enterprise.innersourceVulnerabilities
+* Argument orderBy: SecurityVulnerabilityOrder (with default value) added to field Enterprise.innersourceVulnerabilities
+* Argument package: String added to field Enterprise.innersourceVulnerabilities
+* Argument 'severities: \[SecurityAdvisorySeverity!]added to fieldEnterprise.innersourceVulnerabilities'
+* Field innersourceVulnerabilities was added to object type Organization
+* Argument after: String added to field Organization.innersourceVulnerabilities
+* Argument before: String added to field Organization.innersourceVulnerabilities
+* Argument ecosystem: SecurityAdvisoryEcosystem added to field Organization.innersourceVulnerabilities
+* Argument first: Int added to field Organization.innersourceVulnerabilities
+* Argument last: Int added to field Organization.innersourceVulnerabilities
+* Argument orderBy: SecurityVulnerabilityOrder (with default value) added to field Organization.innersourceVulnerabilities
+* Argument package: String added to field Organization.innersourceVulnerabilities
+* Argument 'severities: \[SecurityAdvisorySeverity!]added to fieldOrganization.innersourceVulnerabilities'
+
+## Schema changes for 2026-08-12
+
+### The GraphQL schema includes these changes:
+
+* Type IssueFieldValueFilter was added
+* Input field dateValue of type String was added to input object type IssueFieldValueFilter
+* Input field fieldId of type ID was added to input object type IssueFieldValueFilter
+* Input field fieldName of type String was added to input object type IssueFieldValueFilter
+* Input field multiSelectOptionIds of type '\[ID!]was added to input object typeIssueFieldValueFilter'
+* Input field multiSelectOptionValues of type '\[String!]was added to input object typeIssueFieldValueFilter'
+* Input field numberValue of type Float was added to input object type IssueFieldValueFilter
+* Input field singleSelectOptionId of type ID was added to input object type IssueFieldValueFilter
+* Input field singleSelectOptionValue of type String was added to input object type IssueFieldValueFilter
+* Input field textValue of type String was added to input object type IssueFieldValueFilter
+* Input field issueFieldValues of type '\[IssueFieldValueFilter!]was added to input object typeIssueFilters'
+* Field pinnedIssueFields was added to object type Organization
+* Argument after: String added to field Organization.pinnedIssueFields
+* Argument before: String added to field Organization.pinnedIssueFields
+* Argument first: Int added to field Organization.pinnedIssueFields
+* Argument last: Int added to field Organization.pinnedIssueFields
+* Field isIssueField was added to object type 'ProjectV2Field'
+* Field issueField was added to object type 'ProjectV2Field'
+* Field isIssueField was added to interface 'ProjectV2FieldCommon'
+* Field isIssueField was added to object type 'ProjectV2IterationField'
+* Field isIssueField was added to object type 'ProjectV2MultiSelectField'
+* Field issueField was added to object type 'ProjectV2MultiSelectField'
+* Field isIssueField was added to object type 'ProjectV2SingleSelectField'
+* Field issueField was added to object type 'ProjectV2SingleSelectField'
+
 ## Schema changes for 2026-07-31
 
 ### The GraphQL schema includes these changes:

@@ -36,7 +36,7 @@ GitHub does not render some Git LFS objects in pull requests. Only the pointer f
 
 For more information about pointer files, see [About Git Large File Storage](/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage#pointer-file-format).
 
-To view changes made to large files, check out the pull request locally to review the diff. For more information, see [Checking out pull requests locally](/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally).
+To view changes made to large files, check out the pull request locally to review the diff. For more information, see [Checking out pull requests locally](/en/pull-requests/how-tos/review-pull-requests/checking-out-pull-requests-locally).
 
 ## Pushing large files to forks
 

@@ -69,7 +69,7 @@ The [advanced search](https://github.com/search/advanced) page provides a visual
 
 ## Searching repositories on GitHub.com from your private enterprise environment
 
-If you use GitHub.com or GHE.com as well as GitHub Enterprise Server, and an enterprise owner has enabled unified search, you can search across both environments at the same time from GitHub Enterprise Server. For more information, see [About searching on GitHub](/en/enterprise-server@3.21/search-github/getting-started-with-searching-on-github/about-searching-on-github#searching-repositories-on-githubcom-from-your-private-enterprise-environment) in the GitHub Enterprise Server documentation.
+If you use GitHub.com or GHE.com as well as GitHub Enterprise Server, and an enterprise owner has enabled unified search, you can search across both environments at the same time from GitHub Enterprise Server. For more information, see [About searching on GitHub](/en/enterprise-server@3.22/search-github/getting-started-with-searching-on-github/about-searching-on-github#searching-repositories-on-githubcom-from-your-private-enterprise-environment) in the GitHub Enterprise Server documentation.
 
 ## Further reading
 

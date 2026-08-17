@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Endpoints available for GitHub App installation access tokens
 
-<p>Your GitHub App can make requests to the following REST endpoints with an installation access token.</p>
+Your GitHub App can make requests to the following REST endpoints with an installation access token.
 
 ## actions
 

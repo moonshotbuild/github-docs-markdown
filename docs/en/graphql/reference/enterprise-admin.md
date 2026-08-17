@@ -411,6 +411,16 @@ An account to manage multiple organizations with consolidated policy and billing
   * `query` (String): The search string to look for.
 
 * `id` (ID!): The Node ID of the Enterprise object.
+* `innersourceVulnerabilities` (SecurityVulnerabilityConnection!): Innersource security vulnerabilities scoped to this enterprise.
+  * `after` (String): Returns the elements in the list that come after the specified cursor.
+  * `before` (String): Returns the elements in the list that come before the specified cursor.
+  * `ecosystem` (SecurityAdvisoryEcosystem): An ecosystem to filter vulnerabilities by.
+  * `first` (Int): Returns the first n elements from the list.
+  * `last` (Int): Returns the last n elements from the list.
+  * `orderBy` (SecurityVulnerabilityOrder): Ordering options for the returned vulnerabilities.
+  * `package` (String): A package name to filter vulnerabilities by.
+  * `severities` ([SecurityAdvisorySeverity!]): A list of severities to filter vulnerabilities by.
+
 * `location` (String): The location of the enterprise.
 * `members` (EnterpriseMemberConnection!): A list of users who are members of this enterprise.
   * `after` (String): Returns the elements in the list that come after the specified cursor.

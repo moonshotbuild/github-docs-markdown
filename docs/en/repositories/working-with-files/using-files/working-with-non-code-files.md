@@ -174,7 +174,7 @@ We provide a tooltip describing changes to attributes that, unlike words, would 
 
 ### Commenting on changes
 
-[Commit comments](/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request) can only
+[Commit comments](/en/pull-requests/how-tos/review-pull-requests/commenting-on-a-pull-request) can only
 be added to files within the *source* view, on a line-by-line basis.
 
 ### Linking to headers

@@ -80,3 +80,7 @@ Learn how you can use GitHub Copilot in your terminal.
 * [Loading tools on demand with tool search](/en/copilot/concepts/agents/copilot-cli/tool-search)
 
   Tool search keeps your context small by letting Copilot CLI load external tools only when a task needs them.
+
+* [Understanding filesystem policies for local sandboxing in GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/understanding-local-sandboxing)
+
+  When local sandboxing is enabled, Copilot CLI runs each sandboxed process or operation under a filesystem policy that controls which files and directories it can read and write. Learn how that policy is built and how to check the access it grants.

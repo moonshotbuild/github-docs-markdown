@@ -129,10 +129,10 @@ Additionally, these insights are available via the rule suites [REST API](/en/re
 
    ![Screenshot of the "Rule Insights" page. To the right of an event labeled "not-allowed," an icon of three horizontal dots is outlined in orange.](/assets/images/help/repository/view-rule-runs.png)
 
-### Rule insights dashboard
+### Viewing the rule insights dashboard
 
 > \[!NOTE]
-> The rule insights dashboard is in public preview and subject to change. It is available for GitHub Team and GitHub Enterprise Cloud plans.
+> The rule insights dashboard is available for GitHub Team and GitHub Enterprise Cloud plans.
 
 The rule insights dashboard gives you a visual, high-level summary of rule evaluation activity for your repository, including:
 
@@ -149,3 +149,5 @@ To view the dashboard:
    ![Screenshot of a repository header showing the tabs. The "Settings" tab is highlighted by a dark orange outline.](/assets/images/help/repository/repo-actions-settings.png)
 3. In the left sidebar, under "Code and automation," click **Rules**, then click **Insights**.
 4. At the top of the "Rule Insights" page, view the dashboard charts for an overview of rule evaluation activity.
+
+At the organization level, you can view the rule insights dashboard to review the evaluation activity of rulesets across your organization. See [Managing rulesets for repositories in your organization](/en/organizations/managing-organization-settings/managing-rulesets-for-repositories-in-your-organization#viewing-the-rule-insights-dashboard).

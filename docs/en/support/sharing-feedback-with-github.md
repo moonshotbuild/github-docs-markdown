@@ -16,7 +16,7 @@ breadcrumbs:
 You can share your ideas, thoughts, and feedback with GitHub's Product team and upvote feedback left by others.
 
 > \[!IMPORTANT]
-> If you're a GitHub Enterprise customer, contact GitHub Support who will share your feedback with the Product team. For more information, see "Creating a support ticket" in either the [GitHub Enterprise Cloud documentation](/en/enterprise-cloud@latest/support/contacting-github-support/creating-a-support-ticket) or [GitHub Enterprise Server documentation](/en/enterprise-server@3.21/support/contacting-github-support/creating-a-support-ticket).
+> If you're a GitHub Enterprise customer, contact GitHub Support who will share your feedback with the Product team. For more information, see "Creating a support ticket" in either the [GitHub Enterprise Cloud documentation](/en/enterprise-cloud@latest/support/contacting-github-support/creating-a-support-ticket) or [GitHub Enterprise Server documentation](/en/enterprise-server@3.22/support/contacting-github-support/creating-a-support-ticket).
 
 ## About sharing feedback
 

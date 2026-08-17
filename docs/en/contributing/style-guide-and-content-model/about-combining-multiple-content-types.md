@@ -39,4 +39,4 @@ Often, it's helpful to group information in context to help people complete a co
 * [Setting repository visibility](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)
 * [Enforcing repository management policies in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise)
 * [Upgrading your account's plan](/en/billing/how-tos/manage-plan-and-licenses/upgrade-plan)
-* [Enabling and scheduling maintenance mode](/en/enterprise-server@3.21/admin/administering-your-instance/configuring-maintenance-mode/enabling-and-scheduling-maintenance-mode)
+* [Enabling and scheduling maintenance mode](/en/enterprise-server@3.22/admin/administering-your-instance/configuring-maintenance-mode/enabling-and-scheduling-maintenance-mode)

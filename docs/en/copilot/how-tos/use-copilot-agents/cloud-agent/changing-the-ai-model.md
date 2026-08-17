@@ -45,12 +45,15 @@ The following options are currently available:
 * Gemini 3.1 Pro
 * Gemini 3.5 Flash
 * Gemini 3.6 Flash
+* Gemini 3.7 Flash
 * GPT-5.4 mini
 * GPT-5.6 Luna
 * GPT-5.6 Sol
 * GPT-5.6 Terra
 * Grok 4.5
+* Grok 4.6
 * MAI-Code-1-Flash
+* MAI-Code-1.1-Flash
 
 > \[!NOTE] If you select **Auto**, Copilot auto model selection will select the best model based on availability and to help reduce rate limiting. See [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection).
 

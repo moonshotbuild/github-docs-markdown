@@ -145,8 +145,8 @@ Prerequisites are information that people need to know before proceeding with a 
 
 ### Examples of articles with prerequisites sections
 
-* [Installing GitHub Enterprise Server on AWS](/en/enterprise-server@3.21/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/installing-github-enterprise-server-on-aws)
-* [Enabling subdomain isolation](/en/enterprise-server@3.21/admin/configuring-settings/hardening-security-for-your-enterprise/enabling-subdomain-isolation)
+* [Installing GitHub Enterprise Server on AWS](/en/enterprise-server@3.22/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/installing-github-enterprise-server-on-aws)
+* [Enabling subdomain isolation](/en/enterprise-server@3.22/admin/configuring-settings/hardening-security-for-your-enterprise/enabling-subdomain-isolation)
 
 ## How-to content
 

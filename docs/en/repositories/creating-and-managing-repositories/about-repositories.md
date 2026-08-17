@@ -53,7 +53,7 @@ You can use repositories to manage your work and collaborate with others.
 
 * You can use issues to collect user feedback, report software bugs, and organize tasks you'd like to accomplish. For more information, see [About issues](/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues).
 * You can use GitHub Discussions to ask and answer questions, share information, make announcements, and conduct or participate in conversations about a project. For more information, see [About discussions](/en/discussions/collaborating-with-your-community-using-discussions/about-discussions).
-* You can use pull requests to propose changes to a repository. For more information, see [Pull requests](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+* You can use pull requests to propose changes to a repository. For more information, see [Pull requests](/en/pull-requests/reference/pull-requests).
 * You can use Projects to organize and prioritize your issues and pull requests. For more information, see [About Projects](/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects).
 
 With GitHub Free for personal accounts and organizations, you can work with unlimited collaborators on unlimited public repositories with a full feature set, or unlimited private repositories with a limited feature set. To get advanced tooling for private repositories, you can upgrade to GitHub Pro, GitHub Team, or GitHub Enterprise Cloud. See [GitHub's plans](/en/get-started/learning-about-github/githubs-plans).
@@ -85,5 +85,5 @@ Here are some helpful resources for taking your next steps with repositories.
 
 * [Best practices for repositories](/en/repositories/creating-and-managing-repositories/best-practices-for-repositories): Learn how to use repositories most effectively.
 * [Creating a new repository](/en/repositories/creating-and-managing-repositories/creating-a-new-repository): Create a new repository.
-* [Managing branches within your repository](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository): Learn how to create and delete branches within your repository.
-* [Creating a pull request](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request): Create a pull request to propose and collaborate on changes to a repository.
+* [Managing branches within your repository](/en/pull-requests/how-tos/commit-changes/managing-branches-within-your-repository): Learn how to create and delete branches within your repository.
+* [Creating a pull request](/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request): Create a pull request to propose and collaborate on changes to a repository.

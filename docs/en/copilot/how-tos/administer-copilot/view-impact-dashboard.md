@@ -35,8 +35,3 @@ To access Copilot usage metrics, the **"Copilot usage metrics"** policy must be 
 1. Navigate to your enterprise. For example, from the [Enterprises](https://github.com/settings/enterprises?ref_product=ghec\&ref_type=engagement\&ref_style=text) page on GitHub.com.
 2. Click the **Insights** tab.
 3. In the left sidebar, click **Copilot impact**.
-
-## Next steps
-
-* To learn how to interpret cohort shifts and what action to take, see [Interpreting usage and adoption metrics for GitHub Copilot](/en/copilot/reference/copilot-usage-metrics/interpret-copilot-metrics#reviewing-adoption-cohorts).
-* For raw per-team NDJSON data, such as for custom BI reporting, see [Team-level Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/team-level-metrics).

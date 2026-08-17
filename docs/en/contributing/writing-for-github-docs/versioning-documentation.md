@@ -193,7 +193,7 @@ You can include the liquid versioning on its own line and use whitespace control
 
 When you document any new change or feature, use feature-based versioning.
 
-A small minority of features and changes will only ever apply to one product. The majority of features come to GitHub.com and eventually reach all products. In general, changes "flow" from GitHub.com (including GitHub Enterprise Cloud) [to GitHub Enterprise Server](/en/enterprise-server@3.21/admin/overview/about-upgrades-to-new-releases).
+A small minority of features and changes will only ever apply to one product. The majority of features come to GitHub.com and eventually reach all products. In general, changes "flow" from GitHub.com (including GitHub Enterprise Cloud) [to GitHub Enterprise Server](/en/enterprise-server@3.22/admin/overview/about-upgrades-to-new-releases).
 
 Feature-based versioning provides named "feature flags" that simplify the maintenance and versioning of documentation. You can use a single feature name (or "flag") to group and version prose throughout content. When a feature comes to additional products, you only need to make a change to the YAML versioning in the file within `data/features/`.
 

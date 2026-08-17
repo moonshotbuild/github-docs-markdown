@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/concepts/about-enterprise-accounts-for-copilot-business"
 title: "About enterprise accounts for Copilot Business"
-intro: "Learn about the option to create an enterprise account to manage only Copilot Business licenses without adopting GitHub Enterprise."
+intro: "An enterprise account lets you manage only Copilot Business licenses, without consuming GitHub Enterprise Cloud licenses."
 product: "GitHub Copilot"
 document_type: "article"
 breadcrumbs:
@@ -15,13 +15,20 @@ breadcrumbs:
 
 # About enterprise accounts for Copilot Business
 
-Learn about the option to create an enterprise account to manage only Copilot Business licenses without adopting GitHub Enterprise.
+An enterprise account lets you manage only Copilot Business licenses, without consuming GitHub Enterprise Cloud licenses.
 
 ## How can my enterprise use GitHub Copilot only?
 
 To use GitHub Copilot, a user must authenticate to an account on GitHub that has a license for Copilot. You can assign a license to a user through a Copilot Business subscription if they're a member of an organization or enterprise that you administer.
 
 If you don't already manage users through an organization or enterprise, you can create an enterprise account specifically for allocating Copilot Business licenses. This gives you access to enterprise-grade integrations with identity providers for authentication and provisioning, without needing to pay for GitHub Enterprise licenses.
+
+You don't need a special type of enterprise account to do this. In any enterprise account, members who don't belong to an organization don't usually consume a GitHub Enterprise Cloud license, but they can be added to enterprise teams and be assigned a Copilot license directly from the enterprise. See [Abilities of roles in an enterprise](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-roles-in-your-enterprise/abilities-of-roles#unaffiliated-users).
+
+This means that in an enterprise with no organizations, you are only billed for Copilot Business. As soon as a user joins an organization, that user consumes a GitHub Enterprise Cloud license. If your enterprise already contains an organization, its members are already consuming licenses, even if you don't add anyone else. See [People who consume a license in an organization](/en/billing/reference/github-license-users#organizations-on-github-enterprise-cloud).
+
+> \[!NOTE]
+> GitHub no longer provisions a special kind of enterprise account for Copilot Business. You can achieve the same result yourself in a standard enterprise account without organizations.
 
 ## How will I manage access for users?
 
@@ -43,4 +50,4 @@ When you create your enterprise account, you will choose whether your enterprise
 
 ## Getting started
 
-To get started, see [Setting up a dedicated enterprise for GitHub Copilot Business](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-a-dedicated-enterprise-for-copilot-business).
+To get started, see [Setting up an enterprise for GitHub Copilot Business only](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-a-dedicated-enterprise-for-copilot-business).

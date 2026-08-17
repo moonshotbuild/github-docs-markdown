@@ -404,6 +404,7 @@ POST /repos/{owner}/{repo}/commits/{commit_sha}/comments
 ```
 
 Create a comment for a commit using its :commit\_sha.
+Access to commit comments can be controlled by organization owners. For more information, see "Managing commit comments for your organization".
 This endpoint triggers notifications. Creating content too quickly using this endpoint may result in secondary rate limiting. For more information, see "Rate limits for the API" and "Best practices for using the REST API."
 This endpoint supports the following custom media types. For more information, see "Media types."
 

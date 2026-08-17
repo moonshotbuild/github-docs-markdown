@@ -53,7 +53,7 @@ This limit is **per reminder configuration** and **per repository owner**. If yo
 12. Under "Tracked repositories," choose which repositories you'd like the team to receive pull request review reminders for.
     * To receive reminders for all repositories that the chosen team has access to, click **All repositories**.
     * To receive reminders for a subset of repositories, click **Only select repositories**, then select one or more repositories that the chosen team has access to.
-13. Optionally, to exclude draft pull requests from scheduled reminders, select **Ignore drafts**. For more information, see [Pull requests](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests).
+13. Optionally, to exclude draft pull requests from scheduled reminders, select **Ignore drafts**. For more information, see [Pull requests](/en/pull-requests/reference/pull-requests#draft-pull-requests).
 14. Optionally, to only include pull requests where a review is specifically requested from the team or a team member, select **Require review requests**. If you don't select this option, all pull requests are included in the scheduled reminder.
 15. Optionally, to send reminders to the pull request authors after the review requests have been fulfilled, select **Remind authors after reviews** and choose the number of reviews required before a reminder is sent.
 16. Optionally, to turn off scheduled reminders for pull requests that have already been reviewed and approved, select **Ignore approved pull requests**. Then, click **Ignore with 1 or more approvals** to choose how many approvals a pull request must have to be ignored.

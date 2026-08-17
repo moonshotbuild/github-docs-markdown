@@ -143,7 +143,7 @@ Go deeper with GitHub by integrating with our APIs and webhooks, customizing you
 
 * [About the user authorization callback URL](/en/apps/creating-github-apps/registering-a-github-app/about-the-user-authorization-callback-url)
 
-  You can specify a URL that users will be redirected to after they authorize a GitHub App.
+  You can specify URLs that users can be redirected to after they authorize a GitHub App.
 
 * [About the setup URL](/en/apps/creating-github-apps/registering-a-github-app/about-the-setup-url)
 

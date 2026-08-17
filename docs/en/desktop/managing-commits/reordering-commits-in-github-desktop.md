@@ -53,7 +53,7 @@ When you reorder commits, you may see one of the following notifications or erro
 
      ![Screenshot of a notification about conflicts. At the end of the message, a link, labeled "View commits", is highlighted with an orange outline.](/assets/images/help/desktop/reorder-resolve-conflicts.png)
 
-  2. Resolve any merge conflicts in your preferred way, using a text editor, the command line, or another tool. For more information, see [Merge and close pull requests](/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts).
+  2. Resolve any merge conflicts in your preferred way, using a text editor, the command line, or another tool. For more information, see [Merge and close pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests).
 
   3. When all conflicts are resolved, you can reorder your commits.
 

@@ -70,8 +70,8 @@ curl -L \
 
 **Response schema (Status: 200):**
 
-* `id`: required, integer
-* `run_id`: required, integer
+* `id`: required, integer, format: int64
+* `run_id`: required, integer, format: int64
 * `run_url`: required, string
 * `run_attempt`: integer
 * `node_id`: required, string
@@ -209,8 +209,8 @@ curl -L \
 
 * `total_count`: required, integer
 * `jobs`: required, array of `Job`:
-  * `id`: required, integer
-  * `run_id`: required, integer
+  * `id`: required, integer, format: int64
+  * `run_id`: required, integer, format: int64
   * `run_url`: required, string
   * `run_attempt`: integer
   * `node_id`: required, string

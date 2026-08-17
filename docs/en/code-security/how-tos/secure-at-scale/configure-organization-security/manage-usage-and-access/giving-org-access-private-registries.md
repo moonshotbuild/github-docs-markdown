@@ -41,7 +41,7 @@ Code scanning default setup supports the following registry types:
 | Go       | GOPROXY server, Git Source |
 | Java     | Maven Repository           |
 
-Additionally, *Git Source* registries are supported for granting code scanning access to configuration files in private repositories. For more information about customizing code scanning using custom configuration files, see [Workflow configuration options for code scanning](/en/code-security/reference/code-scanning/workflow-configuration-options#custom-configuration-files).
+Additionally, *Git Source* registries are supported for granting code scanning access to configuration files in internal or private repositories. For more information about customizing code scanning using custom configuration files, see [Workflow configuration options for code scanning](/en/code-security/reference/code-scanning/workflow-configuration-options#custom-configuration-files).
 
 > \[!TIP]
 > You can define one of each type of registry for each organization. If the codebases in your organization use more than one registry of a given type, you should set up a unified access point or define access to the most important registry for the codebases in that organization.
@@ -59,7 +59,7 @@ You need to be an **organization owner** to set up access to private registries 
 5. Select the authentication method for the registry:
    * **Token**: Enter the token used to authenticate with the registry.
 
-   * **Username and password**: Enter the username and password used to authenticate with the registry. Some types of authentication tokens, such as a GitHub Personal Access Token, are tied to a particular user identity. Select this option for these and enter the relevant username as **Username** and the token as **Password**.
+   * **Username and password**: Enter the username and password used to authenticate with the registry. Some types of authentication tokens, such as a GitHub Personal Access Token, are tied to a particular user identity. Select this option for these and enter the name of the user who created the token as **Username** and the token itself as **Password**.
 
    * **OIDC (OpenID Connect)**: Use short-lived credentials from a cloud identity provider instead of storing long-lived secrets. When you select this option, choose a provider and fill in the provider-specific fields. For more information, see [Configuring OIDC authentication for a private registry](#configuring-oidc-authentication-for-a-private-registry).
 6. Define which repositories in the organization can access the private registry using these details: all, private and internal, or selected repositories only.

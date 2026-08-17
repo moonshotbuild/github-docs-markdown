@@ -204,10 +204,6 @@ Only the default branch is considered. In most cases, this will be the master br
 Only files smaller than 384 KB are searchable.
 You must always include at least one search term when searching source code. For example, searching for language:go is not valid, while amazing language:go is.
 
-Note
-
-repository.description, repository.owner.type, and repository.owner.node\_id are closing down on this endpoint and will return null in a future API version. Use the Get a repository endpoint (GET /repos/{owner}/{repo}) to retrieve full repository metadata.
-
 This endpoint requires you to authenticate and limits you to 10 requests per minute.
 
 ### Parameters

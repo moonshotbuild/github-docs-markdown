@@ -36,4 +36,4 @@ If you create an invalid URL using query parameters, or if you don’t have the 
 ## Further reading
 
 * [Creating an issue](/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue#creating-an-issue-from-a-url-query)
-* [Using query parameters to create a pull request](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/using-query-parameters-to-create-a-pull-request)
+* [Using query parameters to create a pull request](/en/pull-requests/reference/using-query-parameters-to-create-a-pull-request)

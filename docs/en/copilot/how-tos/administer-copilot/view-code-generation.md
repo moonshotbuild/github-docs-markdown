@@ -42,7 +42,3 @@ To access Copilot usage metrics, the **"Copilot usage metrics"** policy must be 
 1. Navigate to your enterprise. For example, from the [Enterprises](https://github.com/settings/enterprises?ref_product=ghec\&ref_type=engagement\&ref_style=text) page on GitHub.com.
 2. Click the **Insights** tab.
 3. In the left sidebar, click **Code generation**.
-
-## Next steps
-
-To learn how to interpret the data in each chart and act on usage trends, see [Interpreting usage and adoption metrics for GitHub Copilot](/en/copilot/reference/copilot-usage-metrics/interpret-copilot-metrics).

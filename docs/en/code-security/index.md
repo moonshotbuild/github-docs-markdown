@@ -39,6 +39,10 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   Find and fix vulnerable dependencies you rely on with Dependabot.
 
+* [Improve code quality at scale with GitHub](/en/code-security/tutorials/code-quality-adoption-path)
+
+  Inconsistent code quality slows every team down and adds risk you can't easily see. GitHub Code Quality catches issues before they merge and reports on code health across your organization. Follow this adoption path to evaluate the feature, run a pilot, prove its value, and roll it out at scale.
+
 * [Best practices for preventing data leaks in your organization](/en/code-security/tutorials/secure-your-organization/prevent-data-leaks)
 
   Learn guidance and recommendations to help you avoid private or sensitive data present in your organization from being exposed.
@@ -46,14 +50,6 @@ Build security and code quality into your GitHub workflow with integrated toolin
 * [Best practices for maintaining dependencies](/en/code-security/concepts/supply-chain-security/best-practices-for-maintaining-dependencies)
 
   Guidance and recommendations for maintaining the dependencies you use, including GitHub's security products that can help.
-
-## Links
-
-### Getting started
-
-* [GitHub security features](/en/code-security/getting-started/github-security-features)
-
-  An overview of GitHub's security features.
 
 ## Articles
 

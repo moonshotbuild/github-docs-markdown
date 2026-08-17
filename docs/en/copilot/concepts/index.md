@@ -67,7 +67,7 @@ Learn the core concepts that you'll need to understand GitHub Copilot.
 
 * [About enterprise accounts for Copilot Business](/en/copilot/concepts/about-enterprise-accounts-for-copilot-business)
 
-  Learn about the option to create an enterprise account to manage only Copilot Business licenses without adopting GitHub Enterprise.
+  An enterprise account lets you manage only Copilot Business licenses, without consuming GitHub Enterprise Cloud licenses.
 
 * [GitHub Copilot policies for enterprises and organizations](/en/copilot/concepts/policies)
 

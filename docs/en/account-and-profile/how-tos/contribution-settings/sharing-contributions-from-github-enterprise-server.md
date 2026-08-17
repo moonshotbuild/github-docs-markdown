@@ -26,4 +26,4 @@ You can send contribution counts from GitHub Enterprise Server to your profile o
 
 Before you can connect your GitHub Enterprise Server profile to your GitHub.com or GHE.com profile, your enterprise owner must enable GitHub Connect and enable contribution sharing between the environments. For more information, contact your enterprise owner.
 
-To share contributions from GitHub Enterprise Server, switch to the [GitHub Enterprise Server version of this article](/en/enterprise-server@3.21/account-and-profile/how-tos/contribution-settings/sharing-contributions-from-github-enterprise-server).
+To share contributions from GitHub Enterprise Server, switch to the [GitHub Enterprise Server version of this article](/en/enterprise-server@3.22/account-and-profile/how-tos/contribution-settings/sharing-contributions-from-github-enterprise-server).

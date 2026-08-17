@@ -35,6 +35,22 @@ To authorize your OAuth app, consider which authorization flow best fits your ap
 * [web application flow](#web-application-flow): Used to authorize users for standard OAuth apps that run in the browser. (The [implicit grant type](https://tools.ietf.org/html/rfc6749#section-4.2) is not supported.)
 * [device flow](#device-flow): Used for headless apps, such as CLI tools.
 
+## Expiring access tokens
+
+To enforce regular token rotation and reduce the impact of a compromised token, you can configure your OAuth app to get access tokens that expire. When your app uses access tokens that expire, you will also receive a refresh token with your access token. Both the web application flow and the device flow support expiring tokens.
+
+The access token expires after eight hours, and the refresh token expires after six months without use. You can use the refresh token to generate a new access token and a new refresh token. For more information, see [Refreshing an access token with a refresh token](#refreshing-an-access-token-with-a-refresh-token).
+
+### Opting in to expiring tokens at runtime
+
+To test and gradually roll out support for expiring tokens, you can opt in to receive an expiring token and a refresh token for an individual sign-in by requesting the `offline_access` scope in addition to your other scopes. When you request the `offline_access` scope, you will receive an expiring access token and a refresh token even if your app is not configured to use expiring tokens.
+
+If your app supports both GitHub Enterprise Server and GitHub.com, you should be prepared for the `offline_access` scope to have no effect, because the GitHub Enterprise Server instance may not yet support expiring tokens. In this case, you will receive a non-expiring token and no refresh token, so your app should not assume that a refresh token is always returned.
+
+### Requiring expiring tokens for your app
+
+Once you have updated your app to use refresh tokens to handle token expiration, you can force token expiration for your app globally. This will cause all new tokens to be issued with an expiration and refresh token. Enabling this feature does not cause existing tokens to expire—they will continue to be long-lived. If you want to switch to expiring tokens, have the user sign in again. To configure this setting for your app, see [Activating optional features for OAuth apps](/en/apps/oauth-apps/maintaining-oauth-apps/activating-optional-features-for-oauth-apps).
+
 ## Web application flow
 
 > \[!NOTE]
@@ -54,19 +70,19 @@ GET https://github.com/login/oauth/authorize
 
 This endpoint takes the following input parameters.
 
-| Query parameter         | Type     | Required?            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| ----------------------- | -------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `client_id`             | `string` | Required             | The client ID you received from GitHub when you [registered](https://github.com/settings/applications/new).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| `redirect_uri`          | `string` | Strongly recommended | The URL in your application where users will be sent after authorization. See details below about [redirect urls](#redirect-urls).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| `login`                 | `string` | Optional             | Suggests a specific account to use for signing in and authorizing the app.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| `scope`                 | `string` | Context dependent    | A space-delimited list of [scopes](/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps). If not provided, `scope` defaults to an empty list for users that have not authorized any scopes for the application. For users who have authorized scopes for the application, the user won't be shown the OAuth authorization page with the list of scopes. Instead, this step of the flow will automatically complete with the set of scopes the user has authorized for the application. For example, if a user has already performed the web flow twice and has authorized one token with `user` scope and another token with `repo` scope, a third web flow that does not provide a `scope` will receive a token with `user` and `repo` scope. |
-| `state`                 | `string` | Strongly recommended | An unguessable random string. It is used to protect against cross-site request forgery attacks.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|                         |          |                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| `code_challenge`        | `string` | Strongly recommended | Used to secure the authentication flow with PKCE (Proof Key for Code Exchange). Required if `code_challenge_method` is included. Must be a 43 character SHA-256 hash of a random string generated by the client. See the [PKCE RFC](https://datatracker.ietf.org/doc/html/rfc7636) for more details about this security extension.                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| `code_challenge_method` | `string` | Strongly recommended | Used to secure the authentication flow with PKCE (Proof Key for Code Exchange). Required if `code_challenge` is included. Must be `S256` - the `plain` code challenge method is not supported.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|                         |          |                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| `allow_signup`          | `string` | Optional             | Whether or not unauthenticated users will be offered an option to sign up for GitHub during the OAuth flow. The default is `true`. Use `false` when a policy prohibits signups.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| `prompt`                | `string` | Optional             | Forces the account picker to appear if set to `select_account`. The account picker will also appear if the application has a non-HTTP redirect URI or if the user has multiple accounts signed in.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Query parameter         | Type     | Required?            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ----------------------- | -------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `client_id`             | `string` | Required             | The client ID you received from GitHub when you [registered](https://github.com/settings/applications/new).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| `redirect_uri`          | `string` | Strongly recommended | The URL in your application where users will be sent after authorization. See details below about [redirect urls](#redirect-urls).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `login`                 | `string` | Optional             | Suggests a specific account to use for signing in and authorizing the app.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `scope`                 | `string` | Context dependent    | A space-delimited list of [scopes](/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps). If not provided, `scope` defaults to an empty list for users that have not authorized any scopes for the application. For users who have authorized scopes for the application, the user won't be shown the OAuth authorization page with the list of scopes. Instead, this step of the flow will automatically complete with the set of scopes the user has authorized for the application. For example, if a user has already performed the web flow twice and has authorized one token with `user` scope and another token with `repo` scope, a third web flow that does not provide a `scope` will receive a token with `user` and `repo` scope. Use of the `offline_access` scope to get an expiring token will not alter the scope behavior—it is not tracked as a typical scope like `repo` or `user`, and will not cause additional prompts to appear if used. |
+| `state`                 | `string` | Strongly recommended | An unguessable random string. It is used to protect against cross-site request forgery attacks.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                         |          |                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `code_challenge`        | `string` | Strongly recommended | Used to secure the authentication flow with PKCE (Proof Key for Code Exchange). Required if `code_challenge_method` is included. Must be a 43 character SHA-256 hash of a random string generated by the client. See the [PKCE RFC](https://datatracker.ietf.org/doc/html/rfc7636) for more details about this security extension.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `code_challenge_method` | `string` | Strongly recommended | Used to secure the authentication flow with PKCE (Proof Key for Code Exchange). Required if `code_challenge` is included. Must be `S256` - the `plain` code challenge method is not supported.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|                         |          |                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `allow_signup`          | `string` | Optional             | Whether or not unauthenticated users will be offered an option to sign up for GitHub during the OAuth flow. The default is `true`. Use `false` when a policy prohibits signups.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `prompt`                | `string` | Optional             | Forces the account picker to appear if set to `select_account`. The account picker will also appear if the application has a non-HTTP redirect URI or if the user has multiple accounts signed in.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 CORS pre-flight requests (OPTIONS) are not supported at this time.
 
@@ -95,7 +111,9 @@ This endpoint takes the following input parameters.
 By default, the response takes the following form:
 
 ```shell
-access_token=gho_16C7e42F292c6912E7710c838347Ae178B4a&scope=repo%2Cgist&token_type=bearer
+access_token=gho_16C7e42F292c6912E7710c838347Ae178B4a
+&scope=repo%2Cgist
+&token_type=bearer
 ```
 
 You can also receive the response in different formats if you provide the format in the `Accept` header. For example, `Accept: application/json` or `Accept: application/xml`:
@@ -116,6 +134,19 @@ Accept: application/xml
   <scope>repo,gist</scope>
   <access_token>gho_16C7e42F292c6912E7710c838347Ae178B4a</access_token>
 </OAuth>
+```
+
+If your OAuth app uses expiring access tokens, or if you requested the `offline_access` scope, the response also includes a `refresh_token`, along with the `expires_in` and `refresh_token_expires_in` values that indicate when each token expires (as seconds from the current time). For more information, see [Expiring access tokens](#expiring-access-tokens).
+
+By default, the response takes the following form:
+
+```shell
+access_token=gho_16C7e42F292c6912E7710c838347Ae178B4a
+&expires_in=28800
+&refresh_token=ghr_1B4a2e77838347a7E420ce178F2E7c6912E169246c34E1ccbF66C46812d16D5B1A9Dc86A1498
+&refresh_token_expires_in=15897600
+&scope=repo%2Cgist
+&token_type=bearer
 ```
 
 ### 3. Use the access token to access the API
@@ -165,7 +196,11 @@ The endpoint takes the following input parameters.
 By default, the response takes the following form:
 
 ```shell
-device_code=3584d83530557fdd1f46af8289938c8ef79f9dc5&expires_in=900&interval=5&user_code=WDJB-MJHT&verification_uri=https%3A%2F%2Fgithub.com%2Flogin%2Fdevice
+device_code=3584d83530557fdd1f46af8289938c8ef79f9dc5
+&expires_in=900
+&interval=5
+&user_code=WDJB-MJHT
+&verification_uri=https%3A%2F%2Fgithub.com%2Flogin%2Fdevice
 ```
 
 | Parameter name     | Type      | Description                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -227,7 +262,9 @@ The endpoint takes the following input parameters.
 By default, the response takes the following form:
 
 ```shell
-access_token=gho_16C7e42F292c6912E7710c838347Ae178B4a&token_type=bearer&scope=repo%2Cgist
+access_token=gho_16C7e42F292c6912E7710c838347Ae178B4a
+&token_type=bearer
+&scope=repo%2Cgist
 ```
 
 You can also receive the response in different formats if you provide the format in the `Accept` header. For example, `Accept: application/json` or `Accept: application/xml`:
@@ -248,6 +285,17 @@ Accept: application/xml
   <token_type>bearer</token_type>
   <scope>gist,repo</scope>
 </OAuth>
+```
+
+If your OAuth app uses expiring access tokens, or if you requested the `offline_access` scope, the response also includes a `refresh_token`, along with the `expires_in` and `refresh_token_expires_in` values that indicate when each token expires. For more information, see [Expiring access tokens](#expiring-access-tokens).
+
+```shell
+access_token=gho_16C7e42F292c6912E7710c838347Ae178B4a
+&expires_in=28800
+&refresh_token=ghr_1B4a2e77838347a7E420ce178F2E7c6912E169246c34E1ccbF66C46812d16D5B1A9Dc86A1498
+&refresh_token_expires_in=15897600
+&token_type=bearer
+&scope=repo%2Cgist
 ```
 
 ### Rate limits for the device flow
@@ -271,6 +319,40 @@ If you make more than one access token request (`POST https://github.com/login/o
 
 For more information, see the [OAuth 2.0 Device Authorization Grant](https://tools.ietf.org/html/rfc8628#section-3.5).
 
+## Refreshing an access token with a refresh token
+
+If your OAuth app uses expiring access tokens, you can use the refresh token to generate a new access token and a new refresh token. Once you use a refresh token, that refresh token and the old access token will no longer work. For more information about expiring tokens, see [Expiring access tokens](#expiring-access-tokens).
+
+If your refresh token expires before you use it, you must send the user through the web application flow or device flow again to get a new token pair.
+
+To refresh an access token, make a `POST` request to the following URL, along with the input parameters below.
+
+```
+POST https://github.com/login/oauth/access_token
+```
+
+| Parameter name  | Type     | Required?                                                     | Description                                                        |
+| --------------- | -------- | ------------------------------------------------------------- | ------------------------------------------------------------------ |
+| `client_id`     | `string` | Required                                                      | The client ID you received from GitHub for your OAuth app.         |
+| `client_secret` | `string` | Required unless the token was generated using the device flow | The client secret you received from GitHub for your OAuth app.     |
+| `grant_type`    | `string` | Required                                                      | The value must be `refresh_token`.                                 |
+| `refresh_token` | `string` | Required                                                      | The refresh token you received when you generated an access token. |
+
+By default, the response takes the following form:
+
+```shell
+access_token=gho_16C7e42F292c6912E7710c838347Ae178B4a
+&expires_in=28800
+&refresh_token=ghr_1B4a2e77838347a7E420ce178F2E7c6912E169246c34E1ccbF66C46812d16D5B1A9Dc86A1498
+&refresh_token_expires_in=15897600
+&scope=repo%2Cgist
+&token_type=bearer
+```
+
+The scopes on the new access token will match the scopes of the previous token. You cannot provide a `scope` parameter during token refresh in order to change the access of the resulting token.
+
+If the refresh token that you specified is invalid or expired, you will receive a `bad_refresh_token` error. To resolve this error, send the user through the web application flow or device flow again to get a new access token and refresh token.
+
 ## Non-Web application flow
 
 Non-web authentication is available for limited situations like testing. If you need to, you can use [Basic Authentication](/en/rest/authentication/authenticating-to-the-rest-api#using-basic-authentication) to create a personal access token using your [personal access tokens settings page](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). This technique enables the user to revoke access at any time.
@@ -278,24 +360,31 @@ Non-web authentication is available for limited situations like testing. If you 
 ## Redirect URLs
 
 The `redirect_uri` parameter is optional. If left out, GitHub will
-redirect users to the callback URL configured in the OAuth app
-settings. If provided, the redirect URL's host (excluding sub-domains) and port must exactly
-match the callback URL. The redirect URL's path must reference a
-subdirectory of the callback URL.
+redirect users to the first callback URL configured in the OAuth app
+settings.
+
+If required, you may enable wildcard matching for a callback URL. When wildcard matching is enabled, the redirect URL's host (excluding subdomains) and port must exactly match the callback URL, and the redirect URL's path must reference a subdirectory of the callback URL. This means that any subdomain or subdirectory of the callback URL will match and be allowed as a callback URL. For example, if wildcard matching is enabled for the callback URL `https://example.com/path`:
 
 ```
-CALLBACK: http://example.com/path
+CALLBACK: https://example.com/path
 
-GOOD: http://example.com/path
-GOOD: http://example.com/path/subdir/other
-GOOD: http://oauth.example.com/path
-GOOD: http://oauth.example.com/path/subdir/other
-BAD:  http://example.com/bar
-BAD:  http://example.com/
-BAD:  http://example.com:8080/path
-BAD:  http://oauth.example.com:8080/path
-BAD:  http://example.org
+MATCH: https://example.com/path
+MATCH: https://example.com/path/subdir/other
+MATCH: https://oauth.example.com/path
+MATCH: https://oauth.example.com/path/subdir/other
+FAIL:  https://example.com/bar
+FAIL:  https://example.com/
+FAIL:  https://example.com:8080/path
+FAIL:  https://oauth.example.com:8080/path
+FAIL:  https://example.org
 ```
+
+When wildcard matching is disabled, the redirect URL must exactly match the callback URL. You can enable or disable wildcard matching for each callback URL in your app's settings.
+
+> \[!WARNING]
+> Enabling wildcard matching can expose your app to security risks, because it allows an attacker to send authorization codes to any subdomain or subdirectory of the callback URL. Only enable wildcard matching if you absolutely need it and you are entirely certain that you control all possible subdomains and paths of the callback URL. For more information, see the [OAuth 2.0 Security Best Current Practice](https://www.rfc-editor.org/info/rfc9700/#section-4.1.1-11).
+
+Apps that had a single callback URL enabled prior to August 3, 2026 have wildcard matching enabled for that callback URL. This preserves the redirect behavior that existed before wildcard matching became a configurable setting, and is why all OAuth apps and some GitHub Apps created before that date have wildcard matching enabled. If your app does not need wildcard matching, we recommend that you disable it.
 
 ### Loopback redirect urls
 

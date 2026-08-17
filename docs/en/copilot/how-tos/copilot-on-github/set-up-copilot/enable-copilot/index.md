@@ -35,9 +35,9 @@ Get started with GitHub Copilot for yourself, your organization, or your enterpr
 
   Enable GitHub Copilot across your enterprise so developers can write code faster.
 
-* [Setting up a dedicated enterprise for GitHub Copilot Business](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-a-dedicated-enterprise-for-copilot-business)
+* [Setting up an enterprise for GitHub Copilot Business only](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-a-dedicated-enterprise-for-copilot-business)
 
-  Create an enterprise account for managing Copilot Business licenses without adopting GitHub Enterprise.
+  Use an enterprise account to manage Copilot Business licenses without consuming GitHub Enterprise Cloud licenses.
 
 * [Access GitHub Copilot for free as a student](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students)
 

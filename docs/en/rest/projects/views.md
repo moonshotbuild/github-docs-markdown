@@ -59,6 +59,15 @@ Create a new view in an organization-owned project. Views allow you to customize
   visible_fields is not applicable to roadmap layout views.
 For table and board layouts, this represents the field IDs that should be visible in the view. If not provided, the default visible fields will be used.
 
+- **`sort_by`** (array of arrays)
+  Sorting configuration for the view. Each element is a two-element array of [field_id, direction] where direction is "asc" or "desc". Supports multiple sort criteria applied in order.
+
+- **`group_by`** (array of integers)
+  The field IDs to group items by (horizontal grouping). Supports a single field. The field must support grouping; fields such as Title, Reviewers, Linked pull requests, Sub-issues progress, Tracked by, and Tracks cannot be grouped on.
+
+- **`vertical_group_by`** (array of integers)
+  The field IDs to use as columns in board layout (vertical grouping). Supports a single field. The field must support grouping; fields such as Title, Reviewers, Linked pull requests, Sub-issues progress, Tracked by, and Tracks cannot be grouped on.
+
 ### HTTP response status codes
 
 - **201** - Response for creating a view in an organization-owned project.
@@ -292,6 +301,15 @@ Create a new view in a user-owned project. Views allow you to customize how item
 - **`visible_fields`** (array of integers)
   visible_fields is not applicable to roadmap layout views.
 For table and board layouts, this represents the field IDs that should be visible in the view. If not provided, the default visible fields will be used.
+
+- **`sort_by`** (array of arrays)
+  Sorting configuration for the view. Each element is a two-element array of [field_id, direction] where direction is "asc" or "desc". Supports multiple sort criteria applied in order.
+
+- **`group_by`** (array of integers)
+  The field IDs to group items by (horizontal grouping). Supports a single field. The field must support grouping; fields such as Title, Reviewers, Linked pull requests, Sub-issues progress, Tracked by, and Tracks cannot be grouped on.
+
+- **`vertical_group_by`** (array of integers)
+  The field IDs to use as columns in board layout (vertical grouping). Supports a single field. The field must support grouping; fields such as Title, Reviewers, Linked pull requests, Sub-issues progress, Tracked by, and Tracks cannot be grouped on.
 
 ### HTTP response status codes
 

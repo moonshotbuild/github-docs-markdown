@@ -33,4 +33,4 @@ You can also see deployment information on the "Conversation" tab of a pull requ
 
 ## Further reading
 
-* [Pull requests](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+* [Pull requests](/en/pull-requests/reference/pull-requests)

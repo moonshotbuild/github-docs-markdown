@@ -1730,6 +1730,22 @@ An edge in a connection.
 * `cursor` (String!): A cursor for use in pagination.
 * `node` (IssueFieldValue): The item at the end of the edge.
 
+## IssueFieldValueFilter - input object
+
+A filter for matching an issue field value. Exactly one value argument should be provided.
+
+### Input fields for `IssueFieldValueFilter`
+
+* `dateValue` (String): Matches a date issue field value (YYYY-MM-DD).
+* `fieldId` (ID): The ID of the issue field to filter by. Exactly one of fieldId or fieldName must be provided.
+* `fieldName` (String): The name of the issue field to filter by. Exactly one of fieldId or fieldName must be provided.
+* `multiSelectOptionIds` ([ID!]): Matches issues containing all of the multi-select issue field option IDs.
+* `multiSelectOptionValues` ([String!]): Matches issues containing all of the multi-select issue field option names.
+* `numberValue` (Float): Matches a numeric issue field value.
+* `singleSelectOptionId` (ID): Matches a single-select issue field option by ID.
+* `singleSelectOptionValue` (String): Matches a single-select issue field option by name.
+* `textValue` (String): Matches a text issue field value.
+
 ## IssueFieldVisibility - enum
 
 The visibility of an issue field.
@@ -1748,6 +1764,7 @@ Ways in which to filter lists of issues.
 * `assignee` (String): List issues assigned to given name. Pass in null for issues with no assigned
 user, and * for issues assigned to any user.
 * `createdBy` (String): List issues created by given name.
+* `issueFieldValues` ([IssueFieldValueFilter!]): List issues where each supplied issue field value filter matches.
 * `labels` ([String!]): List issues where the list of label names exist on the issue.
 * `mentioned` (String): List issues where the given name is mentioned in the issue.
 * `milestone` (String): List issues by given milestone argument. If an string representation of an

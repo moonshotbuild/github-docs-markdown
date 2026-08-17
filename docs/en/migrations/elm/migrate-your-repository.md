@@ -52,7 +52,7 @@ You must authenticate with a personal access token (classic) for both the source
 
 You must set some configuration on the GitHub Enterprise Server instance before performing a migration. These configuration values apply to all ELM migrations. Developers on GitHub Enterprise Server may experience a brief downtime when you apply the new configuration.
 
-1. Access the GitHub Enterprise Server administrative shell over SSH. See [Accessing the administrative shell (SSH)](/en/enterprise-server@3.21/admin/administering-your-instance/administering-your-instance-from-the-command-line/accessing-the-administrative-shell-ssh).
+1. Access the GitHub Enterprise Server administrative shell over SSH. See [Accessing the administrative shell (SSH)](/en/enterprise-server@3.22/admin/administering-your-instance/administering-your-instance-from-the-command-line/accessing-the-administrative-shell-ssh).
 
 2. Set the following configuration variables with `ghe-config`.
 

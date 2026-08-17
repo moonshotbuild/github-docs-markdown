@@ -25,7 +25,7 @@ Authenticate securely to GitHub with passwords, tokens, SSH keys, and more—and
 
 * [Managing commit signature verification](/en/authentication/managing-commit-signature-verification)
 
-  GitHub will verify GPG, SSH, or S/MIME signatures so other people will know that your commits come from a trusted source. GitHub will automatically sign commits you make using the web interface.
+  GitHub will verify GPG, SSH, or S/MIME signatures so other people will know that your commits come from a trusted source.
 
 * [Configuring two-factor authentication](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication)
 

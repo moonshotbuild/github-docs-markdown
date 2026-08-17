@@ -723,6 +723,8 @@ A field inside a project.
 * `dataType` (ProjectV2FieldType!): The field's type.
 * `databaseId` (Int): Identifies the primary key from the database.
 * `id` (ID!): The Node ID of the ProjectV2Field object.
+* `isIssueField` (Boolean!): Returns true if this field is associated with an organization issue field.
+* `issueField` (IssueFields): The organization issue field associated with this project field, if any.
 * `name` (String!): The project field's name.
 * `project` (ProjectV2!): The project that contains this field.
 * `updatedAt` (DateTime!): Identifies the date and time when the object was last updated.
@@ -737,6 +739,7 @@ Common fields across different project field types.
 * `dataType` (ProjectV2FieldType!): The field's type.
 * `databaseId` (Int): Identifies the primary key from the database.
 * `id` (ID!): The Node ID of the ProjectV2FieldCommon object.
+* `isIssueField` (Boolean!): Returns true if this field is associated with an organization issue field.
 * `name` (String!): The project field's name.
 * `project` (ProjectV2!): The project that contains this field.
 * `updatedAt` (DateTime!): Identifies the date and time when the object was last updated.
@@ -1274,6 +1277,7 @@ An iteration field inside a project.
 * `dataType` (ProjectV2FieldType!): The field's type.
 * `databaseId` (Int): Identifies the primary key from the database.
 * `id` (ID!): The Node ID of the ProjectV2IterationField object.
+* `isIssueField` (Boolean!): Returns true if this field is associated with an organization issue field.
 * `name` (String!): The project field's name.
 * `project` (ProjectV2!): The project that contains this field.
 * `updatedAt` (DateTime!): Identifies the date and time when the object was last updated.
@@ -1323,6 +1327,8 @@ A multi select field inside a project.
 * `dataType` (ProjectV2FieldType!): The field's type.
 * `databaseId` (Int): Identifies the primary key from the database.
 * `id` (ID!): The Node ID of the ProjectV2MultiSelectField object.
+* `isIssueField` (Boolean!): Returns true if this field is associated with an organization issue field.
+* `issueField` (IssueFields): The organization issue field associated with this project field, if any.
 * `multiSelectOptions` ([ProjectV2MultiSelectFieldOption!]!): Options for the multi select field.
   * `names` ([String!]): Filter returned options to only those matching these names, case insensitive.
 
@@ -1448,6 +1454,8 @@ A single select field inside a project.
 * `dataType` (ProjectV2FieldType!): The field's type.
 * `databaseId` (Int): Identifies the primary key from the database.
 * `id` (ID!): The Node ID of the ProjectV2SingleSelectField object.
+* `isIssueField` (Boolean!): Returns true if this field is associated with an organization issue field.
+* `issueField` (IssueFields): The organization issue field associated with this project field, if any.
 * `name` (String!): The project field's name.
 * `options` ([ProjectV2SingleSelectFieldOption!]!): Options for the single select field.
   * `names` ([String!]): Filter returned options to only those matching these names, case insensitive.

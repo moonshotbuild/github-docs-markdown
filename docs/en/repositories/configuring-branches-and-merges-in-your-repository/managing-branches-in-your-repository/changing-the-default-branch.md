@@ -21,7 +21,7 @@ If you have more than one branch in your repository, you can configure any branc
 
 ## About changing the default branch
 
-You can choose the default branch for a repository. The default branch is the base branch for pull requests and code commits. For more information about the default branch, see [Branches](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches#about-the-default-branch).
+You can choose the default branch for a repository. The default branch is the base branch for pull requests and code commits. For more information about the default branch, see [Branches](/en/pull-requests/reference/branches#about-the-default-branch).
 
 You can also rename the default branch. For more information, see [Renaming a branch](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/renaming-a-branch).
 
@@ -29,7 +29,7 @@ You can set the name of the default branch for new repositories. For more inform
 
 ## Prerequisites
 
-To change the default branch, your repository must have more than one branch. For more information, see [Managing branches within your repository](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch).
+To change the default branch, your repository must have more than one branch. For more information, see [Managing branches within your repository](/en/pull-requests/how-tos/commit-changes/managing-branches-within-your-repository#creating-a-branch).
 
 If organizational or enterprise rulesets target branches in your repository, changing the default branch requires an organization or enterprise administrator. Whether repository administrators can rename other targeted branches depends on the branch-rename setting or policy configured by your organization or enterprise. For more information, see [Allowing repository admins to rename branches with organization rulesets](/en/organizations/managing-organization-settings/allowing-repository-admins-to-rename-branches-with-organization-rulesets).
 

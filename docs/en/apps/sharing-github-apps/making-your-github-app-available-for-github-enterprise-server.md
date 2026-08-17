@@ -21,7 +21,7 @@ In order for GitHub Enterprise Server instances to use your GitHub App, you must
 
 If you want your GitHub App to be available to organizations in a GitHub Enterprise Server instance that you are not part of, you must take the following steps.
 
-If GitHub Enterprise Server access is important, consider whether a custom action for GitHub Actions will suit your needs instead. Public actions are available on GitHub Enterprise Server instances with GitHub Connect. For more information, see [Enabling automatic access to GitHub.com actions using GitHub Connect](/en/enterprise-server@3.21/admin/managing-github-actions-for-your-enterprise/managing-access-to-actions-from-githubcom/enabling-automatic-access-to-githubcom-actions-using-github-connect) in the GitHub Enterprise Server documentation.
+If GitHub Enterprise Server access is important, consider whether a custom action for GitHub Actions will suit your needs instead. Public actions are available on GitHub Enterprise Server instances with GitHub Connect. For more information, see [Enabling automatic access to GitHub.com actions using GitHub Connect](/en/enterprise-server@3.22/admin/managing-github-actions-for-your-enterprise/managing-access-to-actions-from-githubcom/enabling-automatic-access-to-githubcom-actions-using-github-connect) in the GitHub Enterprise Server documentation.
 
 ## Each GitHub Enterprise Server instance must register their own GitHub App
 

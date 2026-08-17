@@ -29,5 +29,5 @@ Anyone with admin permissions to a repository can enable or disable the automati
 
 ## Further reading
 
-* [Merging a pull request](/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request)
-* [Managing branches within your repository](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository)
+* [Merging a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-a-pull-request)
+* [Managing branches within your repository](/en/pull-requests/how-tos/commit-changes/managing-branches-within-your-repository)

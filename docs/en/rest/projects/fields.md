@@ -154,17 +154,17 @@ Add a field to an organization-owned project.
 
 - **`iteration_configuration`** (object) (required)
   The configuration for iteration fields.
-  - **`start_date`** (string)
+  - **`start_date`** (string) (required)
     The start date of the first iteration.
-  - **`duration`** (integer)
+  - **`duration`** (integer) (required)
     The default duration for iterations in days. Individual iterations can override this value.
   - **`iterations`** (array of objects)
     Zero or more iterations for the field.
-    - **`title`** (string)
+    - **`title`** (string) (required)
       The title of the iteration.
-    - **`start_date`** (string)
+    - **`start_date`** (string) (required)
       The start date of the iteration.
-    - **`duration`** (integer)
+    - **`duration`** (integer) (required)
       The duration of the iteration in days.
 
 ### HTTP response status codes
@@ -408,22 +408,16 @@ curl -L \
   "name": "Sprint",
   "data_type": "iteration",
   "iteration_configuration": {
-    "start_day": 1,
+    "start_date": "2022-07-01",
     "duration": 14,
     "iterations": [
       {
-        "title": {
-          "raw": "Sprint 1",
-          "html": "Sprint 1"
-        },
+        "title": "Sprint 1",
         "start_date": "2022-07-01",
         "duration": 14
       },
       {
-        "title": {
-          "raw": "Sprint 2",
-          "html": "Sprint 2"
-        },
+        "title": "Sprint 2",
         "start_date": "2022-07-15",
         "duration": 14
       }
@@ -618,17 +612,17 @@ Add a field to a specified user owned project.
 
 - **`iteration_configuration`** (object) (required)
   The configuration for iteration fields.
-  - **`start_date`** (string)
+  - **`start_date`** (string) (required)
     The start date of the first iteration.
-  - **`duration`** (integer)
+  - **`duration`** (integer) (required)
     The default duration for iterations in days. Individual iterations can override this value.
   - **`iterations`** (array of objects)
     Zero or more iterations for the field.
-    - **`title`** (string)
+    - **`title`** (string) (required)
       The title of the iteration.
-    - **`start_date`** (string)
+    - **`start_date`** (string) (required)
       The start date of the iteration.
-    - **`duration`** (integer)
+    - **`duration`** (integer) (required)
       The duration of the iteration in days.
 
 ### HTTP response status codes
@@ -764,22 +758,16 @@ curl -L \
   "name": "Sprint",
   "data_type": "iteration",
   "iteration_configuration": {
-    "start_day": 1,
+    "start_date": "2022-07-01",
     "duration": 14,
     "iterations": [
       {
-        "title": {
-          "raw": "Sprint 1",
-          "html": "Sprint 1"
-        },
+        "title": "Sprint 1",
         "start_date": "2022-07-01",
         "duration": 14
       },
       {
-        "title": {
-          "raw": "Sprint 2",
-          "html": "Sprint 2"
-        },
+        "title": "Sprint 2",
         "start_date": "2022-07-15",
         "duration": 14
       }

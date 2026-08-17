@@ -67,7 +67,7 @@ Payment plans for users and organizations that include set features for each typ
 
 ## bio
 
-The user-generated description found on a profile: [Adding a bio to your profile](/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile)
+The user-generated description found on a profile: [Adding a bio to your profile](/en/account-and-profile/tutorials/personalize-your-profile)
 
 ## blame
 
@@ -181,8 +181,8 @@ A document explaining how people should contribute to your project.
 
 Specific activities on GitHub that will:
 
-* Add a square to a user's contribution graph: [Viewing contributions on your profile](/en/account-and-profile/setting-up-and-managing-your-github-profile/managing-contribution-settings-on-your-profile/viewing-contributions-on-your-profile#what-counts-as-a-contribution)
-* Add activities to a user's timeline on their profile: [Viewing contributions on your profile](/en/account-and-profile/setting-up-and-managing-your-github-profile/managing-contribution-settings-on-your-profile/viewing-contributions-on-your-profile#contribution-activity)
+* Add a square to a user's contribution graph: [Viewing contributions on your profile](/en/account-and-profile/how-tos/contribution-settings/viewing-contributions-on-your-profile#what-counts-as-a-contribution)
+* Add activities to a user's timeline on their profile: [Viewing contributions on your profile](/en/account-and-profile/how-tos/contribution-settings/viewing-contributions-on-your-profile#contribution-activity)
 
 ## contributor
 
@@ -206,7 +206,7 @@ Used in command lines or scripts to transfer data.
 
 ## dashboard
 
-Your personal dashboard is the main hub of your activity on GitHub. From your personal dashboard, you can keep track of issues and pull requests you're following or working on, navigate to your top repositories and team pages, and learn about recent activity in repositories you're watching or participating in. You can also discover new repositories, which are recommended based on users you're following and repositories you have starred. To only view activity for a specific organization, visit your organization's dashboard. For more information, see [Quickstart for your personal dashboard](/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-personal-account-settings/about-your-personal-dashboard) or [About your organization dashboard](/en/organizations/collaborating-with-groups-in-organizations/about-your-organization-dashboard).
+Your personal dashboard is the main hub of your activity on GitHub. From your personal dashboard, you can keep track of issues and pull requests you're following or working on, navigate to your top repositories and team pages, and learn about recent activity in repositories you're watching or participating in. You can also discover new repositories, which are recommended based on users you're following and repositories you have starred. To only view activity for a specific organization, visit your organization's dashboard. For more information, see [Quickstart for your personal dashboard](/en/account-and-profile/get-started/personal-dashboard-quickstart) or [About your organization dashboard](/en/organizations/collaborating-with-groups-in-organizations/about-your-organization-dashboard).
 
 ## default branch
 
@@ -370,7 +370,7 @@ An organization's private copy of GitHub contained within a virtual machine that
 
 ## integration
 
-A third-party application that integrates with GitHub. These are often GitHub Apps, GitHub Actions, or custom actions. For more information, see [About building integrations](/en/get-started/exploring-integrations/about-building-integrations).
+A third-party application that integrates with GitHub. These are often GitHub Apps, GitHub Actions, or custom actions. For more information, see [About building integrations](/en/integrations/concepts/about-building-integrations).
 
 ## issue
 
@@ -758,7 +758,7 @@ A visual representation within a pull request that your commits meet the conditi
 
 ## status checks
 
-Status checks are external processes, such as continuous integration builds, which run for each commit you make in a repository. For more information, see [Status checks](/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks).
+Status checks are external processes, such as continuous integration builds, which run for each commit you make in a repository. For more information, see [Status checks](/en/pull-requests/reference/status-checks).
 
 ## subscription
 

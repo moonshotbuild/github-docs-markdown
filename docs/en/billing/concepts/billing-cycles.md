@@ -68,5 +68,5 @@ Find product-specific guidance on how usage is calculated and billed.
 * [GitHub Packages billing](/en/billing/concepts/product-billing/github-packages)
 * [GitHub Copilot licenses](/en/billing/concepts/product-billing/github-copilot-licenses)
 * [Billing for cloud and local sandboxes for GitHub Copilot](/en/billing/concepts/product-billing/cloud-and-local-sandboxes)
-* [About Visual Studio subscriptions with GitHub Enterprise](/en/billing/concepts/enterprise-billing/visual-studio-subs#about-licenses-for-visual-studio-subscriptions-with-github-enterprise-cloud)
+* [About Visual Studio subscriptions with GitHub Enterprise](/en/enterprise-cloud@latest/billing/concepts/enterprise-billing/visual-studio-subs#about-licenses-for-visual-studio-subscriptions-with-github-enterprise-cloud)
 * [Git Large File Storage billing](/en/billing/concepts/product-billing/git-lfs)

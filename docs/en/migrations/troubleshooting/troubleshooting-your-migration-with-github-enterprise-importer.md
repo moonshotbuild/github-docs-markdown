@@ -93,7 +93,7 @@ First, try excluding releases from the migration by using the `--skip-releases` 
 
 If that doesn't work, we'd recommend upgrading to GitHub Enterprise Server 3.8.0 or later. If you're unable to upgrade, another option is to generate your repository archives manually using `ghe-migrator`:
 
-1. Generate a migration archive for your repository. You must only export one repository at a time. For instructions, see [Exporting migration data from your enterprise](/en/enterprise-server@3.21/migrations/using-ghe-migrator/exporting-migration-data-from-github-enterprise-server) in the GitHub Enterprise Server documentation.
+1. Generate a migration archive for your repository. You must only export one repository at a time. For instructions, see [Exporting migration data from your enterprise](/en/enterprise-server@3.22/migrations/using-ghe-migrator/exporting-migration-data-from-github-enterprise-server) in the GitHub Enterprise Server documentation.
 2. Upload your migration archive to your choice of blob storage provider.
 3. Generate a short-lived URL for your migration archive which is accessible to GitHub, such as an AWS S3 pre-signed URL or Azure Blob Storage SAS URL.
 4. Call the `migrate-repo` command with the `--git-archive-url` and `--metadata-archive-url` flags both set to the URL of your archive from the previous step.
@@ -199,7 +199,7 @@ After a migration, you may find that your source or destination repositories are
 
 The process for unlocking a repository depends on the GitHub product where the repository is stored.
 
-* If the locked repository is on GitHub Enterprise Server, a site administrator can unlock the repository using the site admin dashboard. For more information, see [Locking a repository](/en/enterprise-server@3.21/admin/managing-accounts-and-repositories/managing-repositories-in-your-enterprise/locking-a-repository) in the GitHub Enterprise Server documentation.
+* If the locked repository is on GitHub Enterprise Server, a site administrator can unlock the repository using the site admin dashboard. For more information, see [Locking a repository](/en/enterprise-server@3.22/admin/managing-accounts-and-repositories/managing-repositories-in-your-enterprise/locking-a-repository) in the GitHub Enterprise Server documentation.
 * If the locked repository is on GitHub.com, you can contact us through the [GitHub Support portal](https://support.github.com) to unlock the repository.
 
 > \[!NOTE]

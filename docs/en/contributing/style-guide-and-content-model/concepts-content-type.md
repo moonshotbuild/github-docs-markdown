@@ -52,4 +52,4 @@ Headers of conceptual sections in articles start with "About \[subject]”.
   * [About Enterprise accounts](/en/enterprise-cloud@latest/admin/concepts/enterprise-fundamentals/enterprise-accounts)
 * Conceptual sections within other articles
   * "About security policies" in [Creating a default community health file](/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file#about-security-policies)
-  * "About maintenance mode" in [Enabling and scheduling maintenance mode](/en/enterprise-server@3.21/admin/administering-your-instance/configuring-maintenance-mode/enabling-and-scheduling-maintenance-mode#about-maintenance-mode)
+  * "About maintenance mode" in [Enabling and scheduling maintenance mode](/en/enterprise-server@3.22/admin/administering-your-instance/configuring-maintenance-mode/enabling-and-scheduling-maintenance-mode#about-maintenance-mode)

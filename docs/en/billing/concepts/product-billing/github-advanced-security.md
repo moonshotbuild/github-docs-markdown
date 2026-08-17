@@ -137,7 +137,7 @@ For more information about budgets, see [Budgets and alerts](/en/billing/concept
 
 > \[!NOTE] When you enable GitHub Secret Protection, GitHub Code Security, or GitHub Advanced Security, there is a delay of up to two hours before the change is shown in the usage data on the "Billing and licensing" tab.
 
-If your enterprise uses Advanced Security on both GitHub Enterprise Server and GitHub Enterprise Cloud, you can ensure users don't consume multiple licenses unnecessarily by synchronizing license usage between environments. See [Syncing license usage from GitHub Enterprise Server to Cloud](/en/billing/how-tos/manage-server-licenses/sync-license-usage).
+If your enterprise uses Advanced Security on both GitHub Enterprise Server and GitHub Enterprise Cloud, you can ensure users don't consume multiple licenses unnecessarily by synchronizing license usage between environments. See [Syncing license usage from GitHub Enterprise Server to Cloud](/en/enterprise-cloud@latest/billing/how-tos/manage-server-licenses/sync-license-usage).
 
 ### Volume/subscription billing
 

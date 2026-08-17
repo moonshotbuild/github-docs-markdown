@@ -51,6 +51,6 @@ Use known issues to explain the following situations.
 ## Examples of troubleshooting content
 
 * [Troubleshooting SSH](/en/authentication/troubleshooting-ssh)
-* [Using GitHub Enterprise Server with a load balancer](/en/enterprise-server@3.21/admin/configuring-settings/configuring-network-settings/using-github-enterprise-server-with-a-load-balancer#troubleshooting-connectivity-through-a-load-balancer)
+* [Using GitHub Enterprise Server with a load balancer](/en/enterprise-server@3.22/admin/configuring-settings/configuring-network-settings/using-github-enterprise-server-with-a-load-balancer#troubleshooting-connectivity-through-a-load-balancer)
 * [Known issues](/en/enterprise-server@3.7/admin/release-notes#3.7.8-known-issues) in the GitHub Enterprise Server release notes
 * [Error: We're doing an SSH key audit](/en/authentication/troubleshooting-ssh/error-were-doing-an-ssh-key-audit)

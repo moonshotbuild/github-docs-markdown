@@ -27,7 +27,7 @@ Repository rules or branch protection may require reviews, status checks, or an 
 
 As an alternative to branch protection rules, you can create rulesets. Rulesets have a few advantages over branch protection rules, such as statuses, and better discoverability without requiring admin access. You can also apply multiple rulesets at the same time. For more information, see [About rulesets](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets).
 
-You can configure a pull request to merge automatically when all merge requirements are met. For more information, see [Automatically merging a pull request](/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request).
+You can configure a pull request to merge automatically when all merge requirements are met. For more information, see [Automatically merging a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/automatically-merging-a-pull-request).
 
 If the base branch requires a merge queue, the available merge options differ from those described here. See [Merging a pull request with a merge queue](/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-a-pull-request-with-a-merge-queue).
 
@@ -67,7 +67,7 @@ If you don't want to merge the changes, you can [close the pull request](/en/pul
 
 4. If prompted, type a commit message, or accept the default message.
 
-   For information about the default commit messages for squash merges, see [Pull request merges](/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#merge-message-for-a-squash-merge).
+   For information about the default commit messages for squash merges, see [Pull request merges](/en/pull-requests/reference/pull-request-merges#merge-message-for-a-squash-merge).
 
 5. If you have more than one email address associated with your account on GitHub, click the email address drop-down menu and select the email address to use as the Git author email address. Only verified email addresses appear in this drop-down menu. If you enabled email address privacy, then a no-reply will be the default commit author email address. For more information about the exact form the no-reply email address can take, see [Setting your commit email address](/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).
 

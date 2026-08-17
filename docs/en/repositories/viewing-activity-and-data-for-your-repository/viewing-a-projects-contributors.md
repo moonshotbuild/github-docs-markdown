@@ -48,7 +48,7 @@ If you don't appear in a repository's contributors graph, it may be because:
 > \[!TIP]
 > To list all commit contributors in a repository, see [REST API endpoints for repositories](/en/rest/repos/repos#list-repository-contributors).
 
-If all your commits in the repository are on non-default branches, you won't be in the contributors graph. For example, commits on the `gh-pages` branch aren't included in the graph unless `gh-pages` is the repository's default branch. To have your commits merged into the default branch, you can create a pull request. For more information, see [Pull requests](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+If all your commits in the repository are on non-default branches, you won't be in the contributors graph. For example, commits on the `gh-pages` branch aren't included in the graph unless `gh-pages` is the repository's default branch. To have your commits merged into the default branch, you can create a pull request. For more information, see [Pull requests](/en/pull-requests/reference/pull-requests).
 
 If the email address you used to author the commits is not connected to your GitHub account, your commits won't be linked to your account, and you won't appear in the contributors graph. For more information, see [Setting your commit email address](/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address) and [Adding an email address to your GitHub account](/en/account-and-profile/how-tos/email-preferences/adding-an-email-address-to-your-github-account).
 

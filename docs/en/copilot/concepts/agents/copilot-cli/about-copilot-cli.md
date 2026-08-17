@@ -327,7 +327,7 @@ Copilot CLI can't currently support the following organization-level MCP server 
 * **MCP servers in Copilot**, which controls whether MCP servers can be used at all by Copilot.
 * **MCP Registry URL**, which controls which MCP registry Copilot will allow MCP servers to be used from.
 
-For more information about these policies, see [MCP server usage in your company](/en/copilot/concepts/mcp-management#mcp-policy-settings).
+For more information about these policies, see [MCP server usage in your company](/en/copilot/concepts/mcp-management#mcp-allowlists).
 
 ## Model usage
 

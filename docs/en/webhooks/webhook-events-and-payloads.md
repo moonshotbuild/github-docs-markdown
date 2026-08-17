@@ -645,12 +645,12 @@ A GitHub App installation was granted access to one or more repositories.
 
 #### Webhook payload object parameters
 
-| Name                   | Type               | Description                                                                                        |
-| ---------------------- | ------------------ | -------------------------------------------------------------------------------------------------- |
-| `repositories_added`   | `array of objects` | **Required.** An array of repository objects, which were added to the installation.                |
-| `repositories_removed` | `array of objects` | **Required.** An array of repository objects, which were removed from the installation.            |
-| `repository_selection` | `string`           | **Required.** Describe whether all repositories have been selected or there's a selection involved |
-| `requester`            | `object or null`   | **Required.**                                                                                      |
+| Name                   | Type               | Description                                                                                                                                                           |
+| ---------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `repositories_added`   | `array of objects` | **Required.** An array of repository objects, which were added to the installation.                                                                                   |
+| `repositories_removed` | `array of objects` | **Required.** An array of repository objects, which were removed from the installation. When repository\_selection changes from all to selected, this array is empty. |
+| `repository_selection` | `string`           | **Required.** Describe whether all repositories have been selected or there's a selection involved                                                                    |
+| `requester`            | `object or null`   | **Required.**                                                                                                                                                         |
 
 ## installation\_target
 

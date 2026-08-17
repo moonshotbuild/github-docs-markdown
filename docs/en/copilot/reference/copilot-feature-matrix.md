@@ -29,8 +29,6 @@ GitHub recommends using the latest stable IDE and Copilot extension versions to 
 * P = under preview
 * C = closing down
 
-<!-- Source for the following tables lives in data/tables/copilot/copilot-matrix.yml -->
-
 <div class="ghd-tool ides">
 
 ## Features by IDE

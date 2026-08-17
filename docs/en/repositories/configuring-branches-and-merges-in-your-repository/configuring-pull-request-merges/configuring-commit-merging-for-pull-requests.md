@@ -34,5 +34,5 @@ If you select more than one merge method, collaborators can choose which type of
 
 ## Further reading
 
-* [Pull request merges](/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges)
-* [Merging a pull request](/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request)
+* [Pull request merges](/en/pull-requests/reference/pull-request-merges)
+* [Merging a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-a-pull-request)

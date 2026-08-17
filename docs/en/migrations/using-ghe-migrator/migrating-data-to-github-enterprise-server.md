@@ -25,7 +25,7 @@ After generating a migration archive, you can import the data to your target Git
    scp -P 122 PATH-TO-MIGRATION-GUID.tar.gz admin@HOSTNAME:/home/admin/
    ```
 
-2. SSH into your target GitHub Enterprise Server instance. For more information, see [Accessing the administrative shell (SSH)](/en/enterprise-server@3.21/admin/administering-your-instance/administering-your-instance-from-the-command-line/accessing-the-administrative-shell-ssh).
+2. SSH into your target GitHub Enterprise Server instance. For more information, see [Accessing the administrative shell (SSH)](/en/enterprise-server@3.22/admin/administering-your-instance/administering-your-instance-from-the-command-line/accessing-the-administrative-shell-ssh).
 
    ```shell
    ssh -p 122 admin@HOSTNAME
@@ -163,7 +163,7 @@ The same process can be used to create mappings for each record that supports cu
 
 ## Applying the imported data on GitHub Enterprise Server
 
-1. SSH into your target GitHub Enterprise Server instance. For more information, see [Accessing the administrative shell (SSH)](/en/enterprise-server@3.21/admin/administering-your-instance/administering-your-instance-from-the-command-line/accessing-the-administrative-shell-ssh).
+1. SSH into your target GitHub Enterprise Server instance. For more information, see [Accessing the administrative shell (SSH)](/en/enterprise-server@3.22/admin/administering-your-instance/administering-your-instance-from-the-command-line/accessing-the-administrative-shell-ssh).
 
    ```shell
    ssh -p 122 admin@HOSTNAME
@@ -264,7 +264,7 @@ After your migration is applied to your target instance and you have reviewed th
 
 ## Unlocking repositories on the target instance
 
-1. SSH into GitHub.com. If your instance comprises multiple nodes, for example if high availability or geo-replication are configured, SSH into the primary node. If you use a cluster, you can SSH into any node. Replace HOSTNAME with the hostname for your instance, or the hostname or IP address of a node. For more information, see [Accessing the administrative shell (SSH)](/en/enterprise-server@3.21/admin/administering-your-instance/administering-your-instance-from-the-command-line/accessing-the-administrative-shell-ssh).
+1. SSH into GitHub.com. If your instance comprises multiple nodes, for example if high availability or geo-replication are configured, SSH into the primary node. If you use a cluster, you can SSH into any node. Replace HOSTNAME with the hostname for your instance, or the hostname or IP address of a node. For more information, see [Accessing the administrative shell (SSH)](/en/enterprise-server@3.22/admin/administering-your-instance/administering-your-instance-from-the-command-line/accessing-the-administrative-shell-ssh).
 
    ```shell copy
    ssh -p 122 admin@HOSTNAME
@@ -308,7 +308,7 @@ curl -H "Authorization: Bearer GITHUB_ACCESS_TOKEN" -X DELETE \
 
 ### Unlocking repositories from a GitHub Enterprise Server instance
 
-1. SSH into GitHub.com. If your instance comprises multiple nodes, for example if high availability or geo-replication are configured, SSH into the primary node. If you use a cluster, you can SSH into any node. Replace HOSTNAME with the hostname for your instance, or the hostname or IP address of a node. For more information, see [Accessing the administrative shell (SSH)](/en/enterprise-server@3.21/admin/administering-your-instance/administering-your-instance-from-the-command-line/accessing-the-administrative-shell-ssh).
+1. SSH into GitHub.com. If your instance comprises multiple nodes, for example if high availability or geo-replication are configured, SSH into the primary node. If you use a cluster, you can SSH into any node. Replace HOSTNAME with the hostname for your instance, or the hostname or IP address of a node. For more information, see [Accessing the administrative shell (SSH)](/en/enterprise-server@3.22/admin/administering-your-instance/administering-your-instance-from-the-command-line/accessing-the-administrative-shell-ssh).
 
    ```shell copy
    ssh -p 122 admin@HOSTNAME

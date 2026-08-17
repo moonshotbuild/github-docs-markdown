@@ -35,6 +35,10 @@ Learn how to manage a Copilot rollout in your organization or enterprise.
 
   Plan your rollout to achieve engineering goals and measure success.
 
+* [Measure and demonstrate the impact of GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/measure-copilot-impact)
+
+  Understanding how Copilot is used across your enterprise is the first step to demonstrating its value. Follow this path to establish a usage baseline, see how code is being generated, and connect adoption to measurable outcomes.
+
 * [Measuring the success of a GitHub Copilot trial](/en/copilot/tutorials/roll-out-at-scale/measure-success)
 
   Measure the success of a Copilot trial by analyzing adoption, engagement, and early usage patterns using Copilot usage metrics.

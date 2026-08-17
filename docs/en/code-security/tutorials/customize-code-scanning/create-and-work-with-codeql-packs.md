@@ -99,7 +99,7 @@ This command downloads all dependencies to the shared cache on the local disk.
 > \[!NOTE]
 >
 > * Running the `codeql pack add` and `codeql pack install` commands will generate or update the `codeql-pack.lock.yml` file. This file should be checked-in to version control. The `codeql-pack.lock.yml` file contains the precise version numbers used by the pack. For more information, see [About codeql-pack.lock.yml files](/en/code-security/reference/code-scanning/codeql/codeql-cli/codeql-query-packs#codeql-packlockyml-files).
-> * By default `codeql pack install` will install dependencies from the Container registry on GitHub.com. You can install dependencies from a GitHub Enterprise Server Container registry by creating a `qlconfig.yml` file. For more information, see [Publishing and using CodeQL packs](/en/enterprise-server@3.21/code-security/how-tos/find-and-fix-code-vulnerabilities/scan-from-the-command-line/publish-and-use-packs) in the GitHub Enterprise Server documentation.
+> * By default `codeql pack install` will install dependencies from the Container registry on GitHub.com. You can install dependencies from a GitHub Enterprise Server Container registry by creating a `qlconfig.yml` file. For more information, see [Publishing and using CodeQL packs](/en/enterprise-server@3.22/code-security/how-tos/find-and-fix-code-vulnerabilities/scan-from-the-command-line/publish-and-use-packs) in the GitHub Enterprise Server documentation.
 
 ## Organizing a CodeQL pack's directory structure
 

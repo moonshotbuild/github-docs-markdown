@@ -1047,7 +1047,7 @@ Follow standard American English punctuation rules. For more guidance, see “[P
 
 ## Release notes
 
-A set of release notes on GitHub Docs tell readers about administrator- or user-facing changes to a versioned release of a product like GitHub Enterprise Server (GHES). Release notes appear in the [Release notes](/en/enterprise-server@3.21/admin/release-notes).
+A set of release notes on GitHub Docs tell readers about administrator- or user-facing changes to a versioned release of a product like GitHub Enterprise Server (GHES). Release notes appear in the [Release notes](/en/enterprise-server@3.22/admin/release-notes).
 
 A good release note is a few sentences that sequentially answer the reader's questions about the change. For more information, see [Release note content type](/en/contributing/style-guide-and-content-model/release-note-content-type).
 
@@ -1685,7 +1685,7 @@ Unless the content is about administering an enterprise product, describe an ind
 With GitHub's enterprise products, administrators manage an enterprise account. An enterprise account can own multiple organizations, and people's user accounts can be members of the organizations. For more information, see the "Roles in an enterprise" article for each product.
 
 * [GitHub Enterprise Cloud](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-roles-in-your-enterprise/abilities-of-roles)
-* [GitHub Enterprise Server](/en/enterprise-server@3.21/admin/managing-accounts-and-repositories/managing-roles-in-your-enterprise/abilities-of-roles)
+* [GitHub Enterprise Server](/en/enterprise-server@3.22/admin/managing-accounts-and-repositories/managing-roles-in-your-enterprise/abilities-of-roles)
 
 If the reader manages an enterprise account, and you're describing the people's accounts that they manage, use "user account." This applies to the following products.
 

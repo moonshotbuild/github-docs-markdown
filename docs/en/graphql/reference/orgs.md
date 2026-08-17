@@ -317,6 +317,16 @@ An account on GitHub, with one or more owners, that has repositories, members an
 * `estimatedNextSponsorsPayoutInCents` (Int!): The estimated next GitHub Sponsors payout for this user/organization in cents (USD).
 * `hasSponsorsListing` (Boolean!): True if this user/organization has a GitHub Sponsors listing.
 * `id` (ID!): The Node ID of the Organization object.
+* `innersourceVulnerabilities` (SecurityVulnerabilityConnection!): Innersource security vulnerabilities scoped to this organization.
+  * `after` (String): Returns the elements in the list that come after the specified cursor.
+  * `before` (String): Returns the elements in the list that come before the specified cursor.
+  * `ecosystem` (SecurityAdvisoryEcosystem): An ecosystem to filter vulnerabilities by.
+  * `first` (Int): Returns the first n elements from the list.
+  * `last` (Int): Returns the last n elements from the list.
+  * `orderBy` (SecurityVulnerabilityOrder): Ordering options for the returned vulnerabilities.
+  * `package` (String): A package name to filter vulnerabilities by.
+  * `severities` ([SecurityAdvisorySeverity!]): A list of severities to filter vulnerabilities by.
+
 * `interactionAbility` (RepositoryInteractionAbility): The interaction ability settings for this organization.
 * `ipAllowListEnabledSetting` (IpAllowListEnabledSettingValue!): The setting value for whether the organization has an IP allow list enabled.
 * `ipAllowListEntries` (IpAllowListEntryConnection!): The IP addresses that are allowed to access resources owned by the organization.
@@ -399,6 +409,7 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
   * `last` (Int): Returns the last n elements from the list.
   * `types` ([PinnableItemType!]): Filter the types of pinnable items that are returned.
 
+* `pinnedIssueFields` (IssueFieldsConnection): An ordered list of issue fields pinned to issues when no type is selected. _(Pagination: `after`, `before`, `first`, `last`)_
 * `pinnedItems` (PinnableItemConnection!): A list of repositories and gists this profile owner has pinned to their profile.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
