@@ -110,19 +110,19 @@ Triggered when fine-grained personal access tokens can access organization resou
 
 A billing budget was created for a business or organization. Includes details about the budget limit, alerting preferences, and recipients.
 
-**Additional fields:** `actor_is_agent`, `alert_enabled`, `alert_recipient_user_ids`, `budget_limit_type`, `customer_id`, `exclude_cost_center_usage`, `oauth_application_id`, `pricing_target_id`, `pricing_target_type`, `status`, `target_amount`, `target_id`, `target_type`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `alert_enabled`, `alert_recipient_user_ids`, `budget_limit_type`, `customer_id`, `exclude_cost_center_usage`, `expires_at`, `oauth_application_id`, `pricing_target_id`, `pricing_target_type`, `status`, `target_amount`, `target_id`, `target_type`, `user_programmatic_access_name`
 
 #### `billing.budget_delete`
 
 A billing budget was deleted for a business or organization. Includes details about the removed budget and any alerting settings.
 
-**Additional fields:** `alert_enabled`, `budget_limit_type`, `customer_id`, `exclude_cost_center_usage`, `oauth_application_id`, `pricing_target_id`, `pricing_target_type`, `status`, `target_amount`, `target_type`, `user_programmatic_access_name`, `uuid`
+**Additional fields:** `alert_enabled`, `budget_limit_type`, `customer_id`, `exclude_cost_center_usage`, `expires_at`, `oauth_application_id`, `pricing_target_id`, `pricing_target_type`, `status`, `target_amount`, `target_type`, `user_programmatic_access_name`, `uuid`
 
 #### `billing.budget_update`
 
 A billing budget was updated for a business or organization. Includes details about the updated limit and alerting settings.
 
-**Additional fields:** `actor_is_agent`, `alert_enabled`, `budget_limit_type`, `customer_id`, `exclude_cost_center_usage`, `oauth_application_id`, `old_alert_enabled`, `old_budget_limit_type`, `old_pricing_target_id`, `old_pricing_target_type`, `old_target_amount`, `old_target_id`, `old_target_type`, `pricing_target_id`, `pricing_target_type`, `status`, `target_amount`, `target_id`, `target_type`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `alert_enabled`, `budget_limit_type`, `customer_id`, `exclude_cost_center_usage`, `expires_at`, `oauth_application_id`, `old_alert_enabled`, `old_budget_limit_type`, `old_pricing_target_id`, `old_pricing_target_type`, `old_target_amount`, `old_target_id`, `old_target_type`, `pricing_target_id`, `pricing_target_type`, `status`, `target_amount`, `target_id`, `target_type`, `user_programmatic_access_name`
 
 #### `billing.change_billing_type`
 

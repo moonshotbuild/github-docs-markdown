@@ -112,6 +112,51 @@ curl -L \
   * **array**
   * **array**
 
+## Get stargazer count
+
+```
+GET /repos/{owner}/{repo}/stargazers/count
+```
+
+Gets the current number of users who have starred the repository. Users who previously starred the repository but later removed their star are not included.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`owner`** (string) (required)
+  The account owner of the repository. The name is not case sensitive.
+
+* **`repo`** (string) (required)
+  The name of the repository without the .git extension. The name is not case sensitive.
+
+### HTTP response status codes
+
+* **200** - OK
+
+* **404** - Resource not found
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X GET \
+  https://api.github.com/repos/OWNER/REPO/stargazers/count
+```
+
+**Response schema (Status: 200):**
+
+* `count`: required, integer, minimum: 0
+
 ## List repositories starred by the authenticated user
 
 ```

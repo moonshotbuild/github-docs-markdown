@@ -155,7 +155,7 @@ When you try to merge two branches that contain different changes to the same pa
 There are two ways to handle merge conflicts:
 
 * Edit the file in your text editor and choose which changes to keep. Then commit the updated file to your topic branch from the command line.
-* [Resolving a merge conflict on GitHub](/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github).
+* [Resolving a merge conflict on GitHub](/en/pull-requests/how-tos/merge-and-close-pull-requests/resolving-a-merge-conflict-on-github).
 
 ### Resolving merge conflicts by editing the file and committing the changes
 
@@ -209,4 +209,4 @@ We recommend you open your pull request on GitHub early. Create the pull request
 > \[!NOTE]
 > You can quickly access pull requests you've created by clicking **Pull requests** at the top of every page on GitHub.
 
-For more information, see [Creating a pull request](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui#creating-the-pull-request).
+For more information, see [Creating a pull request](/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request?tool=webui#creating-the-pull-request).

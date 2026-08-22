@@ -67,6 +67,12 @@ Personal access tokens (classic) need the read:org scope to use this endpoint.
   The number of results per page (max 100). For more information, see "Using pagination in the REST API."
   Default: `30`
 
+- **`before`** (string)
+  A cursor, as given in the Link header. If specified, the query only searches for results before this cursor. For more information, see "Using pagination in the REST API."
+
+- **`after`** (string)
+  A cursor, as given in the Link header. If specified, the query only searches for results after this cursor. For more information, see "Using pagination in the REST API."
+
 ### HTTP response status codes
 
 - **200** - OK
@@ -426,6 +432,12 @@ OAuth app tokens and personal access tokens (classic) need the repo or security_
 - **`per_page`** (integer)
   The number of results per page (max 100). For more information, see "Using pagination in the REST API."
   Default: `30`
+
+- **`before`** (string)
+  A cursor, as given in the Link header. If specified, the query only searches for results before this cursor. For more information, see "Using pagination in the REST API."
+
+- **`after`** (string)
+  A cursor, as given in the Link header. If specified, the query only searches for results after this cursor. For more information, see "Using pagination in the REST API."
 
 ### HTTP response status codes
 

@@ -39,7 +39,7 @@ Find information to apply to your work with CodeQL code scanning.
 
 * [CodeQL CLI commands manual](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual)
 
-  Reference information for the commands available in the most recent release of CodeQL CLI.
+  Reference information for the commands available in the most recent release of   CodeQL CLI.
 
 * [CodeQL for Visual Studio Code reference](/en/code-security/reference/code-scanning/codeql/codeql-for-vs-code)
 

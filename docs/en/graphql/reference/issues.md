@@ -938,6 +938,7 @@ An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a projec
 * `closedByPullRequestsReferences` (PullRequestConnection): List of open pull requests referenced from this issue.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
+  * `excludeUserLinked` (Boolean): Exclude manually linked PRs.
   * `first` (Int): Returns the first n elements from the list.
   * `includeClosedPrs` (Boolean): Include closed PRs in results.
   * `last` (Int): Returns the last n elements from the list.

@@ -82,3 +82,7 @@ Learn how GitHub Copilot can independently execute tasks across the software dev
 * [Agent management for enterprises](/en/copilot/concepts/agents/enterprise-management)
 
   Maintain your enterprise's security and compliance standards and supercharge your developers by managing agents with AI Controls.
+
+* [OpenTelemetry for agent monitoring](/en/copilot/concepts/agents/opentelemetry)
+
+  Understand how Copilot agents perform and interact with models and tools.

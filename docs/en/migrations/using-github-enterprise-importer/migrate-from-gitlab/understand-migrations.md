@@ -30,7 +30,7 @@ Migrations are performed with the GL2GH extension of the GitHub CLI, a cross-pla
 3. **Uploads** the archive to blob storage that GitHub can read from (either GitHub-owned blob storage or a storage account you own in AWS S3 or Azure Blob Storage).
 4. **Imports** the archive into the destination organization, transforming GitLab entities into their GitHub equivalents.
 
-Before you create your enterprise account on GitHub, decide whether your enterprise will use Enterprise Managed Users. This affects how your members authenticate and how you manage identities and access. See [Choosing an enterprise type for GitHub Enterprise Cloud](/en/enterprise-cloud@latest/enterprise-onboarding/getting-started-with-your-enterprise/choose-an-enterprise-type).
+Before you create your enterprise account on GitHub, decide whether your enterprise will use Enterprise Managed Users. This affects how your members authenticate and how you manage identities and access. See [Choosing an enterprise type for GitHub Enterprise Cloud](/en/enterprise-cloud@latest/admin/concepts/enterprise-fundamentals/choose-an-enterprise-type).
 
 ## Supported GitLab versions
 

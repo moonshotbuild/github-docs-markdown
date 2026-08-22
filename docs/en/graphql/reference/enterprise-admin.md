@@ -2110,7 +2110,6 @@ The proof of presence (PoP) re-authentication requirement for sudo actions in an
 * `MFA`: Members must satisfy an MFA re-authentication.
 * `NO_POLICY`: Proof of presence is not required.
 * `REAUTH`: Members must complete a fresh re-authentication against the enterprise identity provider.
-* `SECURITY_KEY`: Members must satisfy a phishing-resistant security key re-authentication (Microsoft Entra only).
 
 ## regenerateEnterpriseIdentityProviderRecoveryCodes - mutation
 

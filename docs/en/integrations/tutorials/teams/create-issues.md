@@ -33,4 +33,4 @@ With the GitHub integration in Microsoft Teams, you can create issues in any rep
 
 1. Click **Create** to create the issue. You will receive a confirmation card in the channel from where you initiated the issue creation.
 
-Alternatively, you can create an issue by invoking `@GitHub Notifications` from the chat in your channel or personal app.
+Alternatively, you can create an issue by invoking `@GitHub` from the chat in your channel or personal app.

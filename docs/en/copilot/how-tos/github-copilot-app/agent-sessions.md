@@ -45,15 +45,26 @@ The session mode controls how much autonomy the agent has. You can set the mode 
 
 You can select a model and reasoning effort from the dropdowns below the prompt field. Higher reasoning effort gives the agent more time to think through complex problems but may take longer. You can change both settings at any time during a session.
 
-If you choose **Auto** in the model picker, the app automatically selects the optimal model for your task based on task complexity. After the session starts, the picker next to **Auto** shows which model handled each response. For more information, see [About Copilot auto model selection](/en/copilot/concepts/auto-model-selection).
+If you choose **Auto** in the model picker, the app automatically selects the optimal model for your task based on task complexity. After the session starts, the picker next to **Auto** shows which model handled each response. For more information, see [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection).
 
 If you configured your own model provider in the app, those models also appear in the picker. For setup steps, see [Using your own LLM models in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/use-byok-models).
 
 Hover over the <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-info" aria-label="the info icon" role="img"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg> icon in the model picker to see model details.
 
-## Using quick chats
+## Using chats
 
-**Quick chats** in the sidebar opens a conversation mode without creating a dedicated branch or worktree. Use it for brainstorming, asking questions, or exploring ideas before starting a session. Your chat history is saved and listed by conversation name.
+The **Chats** section in the sidebar opens a conversation mode without creating a dedicated branch or worktree. Use it for brainstorming, asking questions, or exploring ideas before starting a session. Your chat history is saved and listed by conversation name.
+
+To archive a chat without losing its history, right-click the chat in the sidebar to open its menu, then click **Archive chat**.
+
+## Managing sessions and chats
+
+Use **Manage sessions** to view, search, and filter sessions and chats, including archived chats. You can select multiple items to archive or delete, and restore chats that you previously archived. The view also shows separate, sortable columns for the disk space used by working files and chat history.
+
+1. Open the app settings, then select **Sessions**.
+2. Click **Manage sessions**.
+3. Search or filter to find the sessions or chats you want to manage.
+4. Select one or more sessions or chats, then archive or delete them. To restore an archived chat, find the chat, then restore it.
 
 ## Using `/security-review` in app sessions
 

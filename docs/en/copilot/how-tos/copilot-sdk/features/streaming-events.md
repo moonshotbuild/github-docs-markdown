@@ -74,21 +74,6 @@ session.on("assistant.message_delta", (event) => {
 <div class="ghd-codetab" data-lang="python" data-label="Python"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">Python</div>
 
 ```python
-from copilot import CopilotClient
-from copilot.session_events import SessionEventType
-
-client = CopilotClient()
-
-session = None  # assume session is created elsewhere
-
-def handle(event):
-    if event.type == SessionEventType.ASSISTANT_MESSAGE_DELTA:
-        print(event.data.delta_content, end="", flush=True)
-
-# session.on(handle)
-```
-
-```python
 from copilot.session_events import SessionEventType
 
 def handle(event):
@@ -103,37 +88,6 @@ session.on(handle)
 <div class="ghd-codetab" data-lang="go" data-label="Go"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">Go</div>
 
 ```golang
-package main
-
-import (
-	"context"
-	"fmt"
-	copilot "github.com/github/copilot-sdk/go"
-	"github.com/github/copilot-sdk/go/rpc"
-)
-
-func main() {
-	ctx := context.Background()
-	client := copilot.NewClient(nil)
-
-	session, _ := client.CreateSession(ctx, &copilot.SessionConfig{
-		Model:     "gpt-5.4",
-		Streaming: copilot.Bool(true),
-		OnPermissionRequest: func(req copilot.PermissionRequest, inv copilot.PermissionInvocation) (rpc.PermissionDecision, error) {
-			return &rpc.PermissionDecisionApproveOnce{}, nil
-		},
-	})
-
-	session.On(func(event copilot.SessionEvent) {
-		if d, ok := event.Data.(*copilot.AssistantMessageDeltaData); ok {
-			fmt.Print(d.DeltaContent)
-		}
-	})
-	_ = session
-}
-```
-
-```golang
 session.On(func(event copilot.SessionEvent) {
     if d, ok := event.Data.(*copilot.AssistantMessageDeltaData); ok {
         fmt.Print(d.DeltaContent)
@@ -144,24 +98,6 @@ session.On(func(event copilot.SessionEvent) {
 </div>
 
 <div class="ghd-codetab" data-lang="dotnet" data-label=".NET"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">.NET</div>
-
-```csharp
-using GitHub.Copilot;
-
-public static class StreamingEventsExample
-{
-    public static async Task Example(CopilotSession session)
-    {
-        session.On<SessionEvent>(evt =>
-        {
-            if (evt is AssistantMessageDeltaEvent delta)
-            {
-                Console.Write(delta.Data.DeltaContent);
-            }
-        });
-    }
-}
-```
 
 ```csharp
 session.On<SessionEvent>(evt =>
@@ -526,9 +462,9 @@ Emitted when the user explicitly requests a tool invocation (rather than the mod
 
 Ephemeral. The agent has finished all processing and is ready for the next message. This is the signal that a turn is fully complete.
 
-| Data Field        | Type              | Required | Description                                                       |
-| ----------------- | ----------------- | -------- | ----------------------------------------------------------------- |
-| `backgroundTasks` | `BackgroundTasks` |          | Background agents/shells still running when the agent became idle |
+| Data Field | Type      | Required | Description                                                 |
+| ---------- | --------- | -------- | ----------------------------------------------------------- |
+| `aborted`  | `boolean` |          | True when the preceding turn was cancelled via abort signal |
 
 ### `session.error`
 
@@ -938,7 +874,7 @@ This table lists key `data` payload fields. Common envelope fields are documente
 | `tool.execution_partial_result`      | ✅         | Tool          | `toolCallId`, `partialOutput`                                                                             |
 | `tool.execution_progress`            | ✅         | Tool          | `toolCallId`, `progressMessage`                                                                           |
 | `tool.execution_complete`            |           | Tool          | `toolCallId`, `success`, `result?`, `error?`                                                              |
-| `session.idle`                       | ✅         | Session       | `backgroundTasks?`                                                                                        |
+| `session.idle`                       | ✅         | Session       | `aborted?`                                                                                                |
 | `session.error`                      |           | Session       | `errorType`, `message`, `statusCode?`                                                                     |
 | `session.compaction_start`           |           | Session       | *(empty)*                                                                                                 |
 | `session.compaction_complete`        |           | Session       | `success`, `preCompactionTokens?`, `summaryContent?`                                                      |

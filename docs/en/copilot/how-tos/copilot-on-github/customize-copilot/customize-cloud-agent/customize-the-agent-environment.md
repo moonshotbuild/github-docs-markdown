@@ -40,7 +40,7 @@ Copilot code review also runs in an ephemeral development environment, and you c
 In addition, you can:
 
 * [Configure secrets and variables for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/configure-secrets-and-variables)
-* [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-firewall).
+* [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-the-firewall).
 
 > \[!NOTE]
 > Organization owners can configure the default runner type for Copilot cloud agent across all repositories in their organization, and choose whether repositories are allowed to override this default. For more information, see [Configuring runners for GitHub Copilot cloud agent in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/configure-runner-for-coding-agent).
@@ -200,7 +200,7 @@ We recommend that you only use Copilot cloud agent with ephemeral, single-use ru
      * `registry.npmjs.org`
      * `skimdb.npmjs.com`
 
-2. Disable Copilot cloud agent's integrated firewall in your repository settings. The firewall is not compatible with self-hosted runners. Unless this is disabled, use of Copilot cloud agent will be blocked. For more information, see [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-firewall).
+2. Disable Copilot cloud agent's integrated firewall in your repository settings. The firewall is not compatible with self-hosted runners. Unless this is disabled, use of Copilot cloud agent will be blocked. For more information, see [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-the-firewall).
 
 3. In your `copilot-setup-steps.yml` file, set the `runs-on` attribute to your ARC-managed scale set name:
 
@@ -258,4 +258,4 @@ jobs:
 ## Further reading
 
 * [Configure secrets and variables for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/configure-secrets-and-variables)
-* [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-firewall)
+* [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-the-firewall)

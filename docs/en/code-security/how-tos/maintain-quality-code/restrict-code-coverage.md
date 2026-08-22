@@ -27,6 +27,9 @@ Protect your code coverage by automatically blocking pull requests that fall bel
 * GitHub Code Quality is enabled on the repository.
 * Code coverage data is uploaded to GitHub for the pull request branch. See [Setting up code coverage for your repository](/en/code-security/how-tos/maintain-quality-code/set-up-code-coverage).
 
+> \[!NOTE]
+> Coverage thresholds are evaluated against **line coverage**. See [Code coverage reference](/en/code-security/reference/code-quality/code-coverage).
+
 ## Creating a coverage threshold rule
 
 1. On GitHub, navigate to the main page of the repository.
@@ -45,7 +48,7 @@ Protect your code coverage by automatically blocking pull requests that fall bel
 
 6. Expand **Additional settings** to configure thresholds. A value of 0 means that the threshold is disabled.
 
-   * **Minimum coverage percentage**: enter a value to block pull requests where aggregated coverage falls below this percentage.
-   * **Maximum coverage drop**: enter a value to block pull requests where coverage drops by more than this many percentage points relative to the default branch.
+   * **Minimum line coverage percentage**: enter a value to block pull requests where aggregated line coverage falls below this percentage.
+   * **Maximum line coverage drop**: enter a value to block pull requests where line coverage drops by more than this many percentage points relative to the default branch.
 
 7. Click **Create** or **Save changes**.

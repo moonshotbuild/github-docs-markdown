@@ -52,5 +52,5 @@ If you enable "Copilot in GitHub.com" from the "Copilot" page of the "AI Control
 
 ## Further reading
 
-* [Feature availability when GitHub Copilot policies conflict in organizations](/en/copilot/reference/policy-conflicts)
+* [Feature availability when GitHub Copilot policies conflict in organizations](/en/copilot/reference/enterprise-administrators/policy-conflicts)
 * [Supported surfaces for GitHub Copilot policies](/en/copilot/reference/supported-surfaces-for-policies)

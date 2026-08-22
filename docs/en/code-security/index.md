@@ -1480,6 +1480,8 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   \[Deep plumbing] Determine QL library path and dbscheme for a query.
 
+* [resolve library-paths](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/resolve-library-paths)
+
 * [resolve metadata](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/resolve-metadata)
 
   \[Deep plumbing] Resolve and return the key-value metadata pairs from a
@@ -1700,7 +1702,7 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [Code coverage reference](/en/code-security/reference/code-quality/code-coverage)
 
-  Code Quality shows how much of your code your tests actually exercise, so you can find untested code before you merge.
+  Code Quality shows what percentage of the lines of your code your tests actually exercise, so you can find untested code before you merge.
 
 * [CodeQL-powered analysis for Code Quality](/en/code-security/reference/code-quality/codeql-detection)
 

@@ -164,6 +164,9 @@ Sets auto model selection as the default for new conversations. See [About Copil
 * When you set `model` to `"auto"`, new sessions use Auto model unless the user specifies a different model on a per-conversation basis.
 * This key is overridable by enterprise team mapping. In your `managed-settings.json`, use the `{ "overridable": "auto" }` syntax to specialize the key's configuration on a per-team basis. You can then set `"model": "unmanaged"` in a team settings file, providing a specialization that takes precedence over `managed-settings.json` for members of the subject team.
 
+> \[!NOTE]
+> `model` was originally documented as `permissions.model`. Clients still read the nested `permissions.model` value when the top-level `model` key is absent, but you should use the top-level `model` key in new configurations.
+
 ## permissions
 
 ### disableBypassPermissionsMode

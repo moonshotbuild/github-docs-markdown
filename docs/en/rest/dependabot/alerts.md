@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/dependabot/alerts"
 ---
 
-# REST API endpoints for {% data variables.product.prodname\_dependabot\_alerts %}
+# REST API endpoints for Dependabot alerts
 
 Use the REST API to interact with Dependabot alerts for a repository.
 

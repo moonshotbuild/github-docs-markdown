@@ -46,12 +46,13 @@ To mitigate this risk, GitHub:
 * **Requires human review before merging.** Draft pull requests created by Copilot cloud agent must be reviewed and merged by a human. Copilot cloud agent cannot mark its pull requests as "Ready for review" and cannot approve or merge a pull request.
 * **Restricts GitHub Actions workflow runs.** By default, workflows are not triggered until Copilot cloud agent's code is reviewed and a user with write access to the repository clicks the **Approve and run workflows** button. Optionally, you can configure Copilot to allow workflows to run automatically. See [Review output from Copilot](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/review-copilot-output#manage-github-actions-workflow-runs).
 * **Prevents the user who asked Copilot cloud agent to create a pull request from approving it.** This maintains the expected controls in the "Required approvals" rule and branch protection. See [Available rules for rulesets](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets).
+* **Requires an additional approval when a pull request isn't attributed to a person.** When Copilot cloud agent opens a pull request under its own app identity, one more approval is required before it can be merged, as long as the repository already requires at least one approval. This is enabled by default in rulesets, where administrators can turn it off, and always applies to branch protection rules. See [Available rules for rulesets](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets#additional-approval-for-unattributed-copilot-pull-requests).
 
 ## Copilot cloud agent has access to sensitive information
 
 Copilot cloud agent has access to code and other sensitive information, and could leak it, either accidentally or due to malicious user input.
 
-To mitigate this risk, GitHub **restricts Copilot cloud agent's access to the internet**. See [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-firewall).
+To mitigate this risk, GitHub **restricts Copilot cloud agent's access to the internet**. See [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-the-firewall).
 
 ## AI prompts can be vulnerable to injection
 

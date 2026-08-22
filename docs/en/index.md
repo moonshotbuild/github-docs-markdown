@@ -15,10 +15,6 @@ document_type: "homepage"
 
   Learn how to start building, shipping, and maintaining software with GitHub. Explore our products, sign up for an account, and connect with the world's largest development community.
 
-* [Enterprise onboarding](enterprise-onboarding)
-
-  Onboard your company to GitHub Enterprise Cloud by following our recommended plan. You will set up teams with the access they need, create a policy framework to ensure compliance, and automate processes securely throughout your enterprise.
-
 * [Account and profile documentation](/en/account-and-profile)
 
   Make GitHub work best for you by customizing your personal account settings and personalizing your profile page.

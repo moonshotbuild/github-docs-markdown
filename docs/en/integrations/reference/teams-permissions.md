@@ -27,7 +27,7 @@ When you install the GitHub app in your Teams workspace, you are authorizing the
 |----------------|--------------|
 |Access private conversations between you and the App | To message you with instructions.  |
 |Add link previews to GitHub to messages| To render rich links to `github.com`.|
-|Add GitHub commands| To add the `@GitHub Notifications` command to your Teams channels. |
+|Add GitHub commands| To add the `@GitHub` command to your Teams channels. |
 |View the workspace or organization's name, email domain, and icon| To store subscriptions you set up.|
 |Post messages as the app| To notify you of activity that happens on GitHub, in Teams.|
 

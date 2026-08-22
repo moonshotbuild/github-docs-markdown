@@ -21,14 +21,21 @@ Learn how to integrate GitHub with Slack to improve collaboration and streamline
 
 ## About the GitHub integration for Slack
 
-The GitHub integration for Slack gives you and your teams full visibility into your GitHub projects directly in Slack channels. You can generate ideas, triage issues and collaborate with other teams to move projects forward, all without leaving Slack.
+The GitHub integration for Slack gives you and your teams full visibility into your GitHub projects directly in Slack channels. You can work with Copilot cloud agent to research, plan and triage in conversations, create artifacts such as issues and pull requests, start and steer agent sessions, and keep track of changes without leaving Slack.
 
 With the GitHub integration for Slack, you can:
 
 * Get **GitHub notifications** in Slack channels.
+
 * Use **slash commands** to take actions on GitHub.
+
 * Give your team **context** when sharing links to GitHub activities and properties.
-* Initiate a Copilot cloud agent session from Slack, using the context of a Slack thread.
+
+* **Initiate and steer Copilot cloud agent sessions** in a conversation. Teammates can collaborate with each other and the agent, add context, correct assumptions, continue an agent task, and review the resulting plan, issues, pull requests and other artifacts.
+
+  > \[!NOTE]
+  >
+  > * This feature is currently in public preview and subject to change.
 
 When you grant the GitHub app access to your Slack workspace, you are granting it certain permissions. The permissions provided are necessary for the app to function correctly and provide the features you expect. See [Permissions for GitHub in Slack](/en/integrations/reference/slack-permissions).
 
@@ -37,7 +44,13 @@ When you grant the GitHub app access to your Slack workspace, you are granting i
 To use the GitHub integration for Slack, you need:
 
 * A GitHub account.
+
 * A Slack workspace where you have permission to install apps.
+
+* To use Copilot cloud agent, you must have cloud sandboxes enabled for your Copilot plan. See [Cloud sandboxing for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes#cloud-sandboxing).
+
+  > \[!NOTE]
+  > Cloud sandbox policies share the same configuration as Copilot cloud agent policies. Members of an organization or enterprise, including an enterprise with managed users may need their owner to enable cloud sandboxes and Copilot cloud agent before they can use Copilot in Slack. See [Enabling or disabling cloud sandboxes for your organization or enterprise](/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization).
 
 ## Installing the GitHub integration for Slack in a single workspace
 
@@ -48,6 +61,9 @@ The GitHub integration for Slack only needs to be installed once per workspace, 
 3. If you're not already signed in to Slack, you'll be prompted to do so.
 4. Follow the prompts on screen to allow GitHub access to your Slack workspace.
 5. Once the integration is installed, you can invite the GitHub app to specific channels by typing `/invite @github` in the desired channel.
+6. Also once the integration is installed, to work with Copilot cloud agent, @mention the app by typing `@GitHub` in a Slack message or channel. Then, if prompted, connect your GitHub account.
+
+To see what else you can do with Copilot, in the thread, @mention the app by typing `@GitHub help`.
 
 ## Installing the GitHub integration for Slack on the Slack Enterprise Grid
 
@@ -61,3 +77,5 @@ If you are an admin or owner of a Slack Enterprise Grid organization, you can in
 ## Further reading
 
 * [Using GitHub in Slack](/en/integrations/how-tos/slack/use-github-in-slack) - Learn how to use the GitHub integration for Slack.
+
+* [Integrating Copilot cloud agent with Slack](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-slack) - Learn about Copilot cloud agent with Slack.

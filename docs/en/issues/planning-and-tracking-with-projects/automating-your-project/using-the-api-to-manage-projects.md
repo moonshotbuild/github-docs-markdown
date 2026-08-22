@@ -836,4 +836,4 @@ gh api graphql -f query='
 
 ## Using webhooks
 
-You can use webhooks to subscribe to events taking place in your project. For example, when an item is edited, GitHub can send a HTTP POST payload to the webhook's configured URL which can trigger automation on your server. For more information about webhooks, see [About webhooks](/en/webhooks/about-webhooks). To learn more about the `projects_v2_item` webhook event, see [Webhook events and payloads](/en/webhooks/webhook-events-and-payloads#projects_v2_item).
+You can use webhooks to subscribe to events taking place in your project. For example, when an item is edited, GitHub can send an HTTP POST payload to the webhook's configured URL which can trigger automation on your server. For more information about webhooks, see [About webhooks](/en/webhooks/about-webhooks). To learn more about the `projects_v2_item` webhook event, see [Webhook events and payloads](/en/webhooks/webhook-events-and-payloads#projects_v2_item).

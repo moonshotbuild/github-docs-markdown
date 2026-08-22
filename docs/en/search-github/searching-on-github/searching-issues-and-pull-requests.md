@@ -274,7 +274,7 @@ You can filter issues and pull requests by the number of reactions using the `re
 
 ## Search for draft pull requests
 
-You can filter for draft pull requests. For more information, see [Pull requests](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests).
+You can filter for draft pull requests. For more information, see [Pull requests](/en/pull-requests/reference/pull-requests#draft-pull-requests).
 
 | Qualifier     | Example                                                                                                                                                                |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -283,7 +283,7 @@ You can filter for draft pull requests. For more information, see [Pull requests
 
 ## Search by pull request review status and reviewer
 
-You can filter pull requests based on their [review status](/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews) (*none*, *required*, *approved*, or *changes requested*), by reviewer, and by requested reviewer.
+You can filter pull requests based on their [review status](/en/pull-requests/reference/pull-request-reviews) (*none*, *required*, *approved*, or *changes requested*), by reviewer, and by requested reviewer.
 
 | Qualifier                                                 | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

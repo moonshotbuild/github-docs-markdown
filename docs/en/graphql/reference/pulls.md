@@ -1089,6 +1089,7 @@ A repository pull request.
 * `closingIssuesReferences` (IssueConnection): List of issues that may be closed by this pull request.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
+  * `excludeUserLinked` (Boolean): Exclude manually linked Issues.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
   * `orderBy` (IssueOrder): Ordering options for issues returned from the connection.

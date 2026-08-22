@@ -19,7 +19,7 @@ You can search for commits on GitHub and narrow the results using these commit s
 
 You can search for commits globally across all of GitHub, or search for commits within a particular repository or organization. For more information, see [About searching on GitHub](/en/search-github/getting-started-with-searching-on-github/about-searching-on-github).
 
-When you search for commits, only the [default branch](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches) of a repository is searched.
+When you search for commits, only the [default branch](/en/pull-requests/reference/branches) of a repository is searched.
 
 > \[!TIP]
 >

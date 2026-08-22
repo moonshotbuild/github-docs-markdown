@@ -64,19 +64,6 @@ client = CopilotClient(log_level="debug")
 <div class="ghd-codetab" data-lang="go" data-label="Go"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">Go</div>
 
 ```golang
-package main
-
-import copilot "github.com/github/copilot-sdk/go"
-
-func main() {
-	client := copilot.NewClient(&copilot.ClientOptions{
-		LogLevel: "debug",
-	})
-	_ = client
-}
-```
-
-```golang
 import copilot "github.com/github/copilot-sdk/go"
 
 client := copilot.NewClient(&copilot.ClientOptions{
@@ -156,21 +143,6 @@ const client = new CopilotClient({
 <div class="ghd-codetab" data-lang="go" data-label="Go"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">Go</div>
 
 ```golang
-package main
-
-import copilot "github.com/github/copilot-sdk/go"
-
-func main() {
-	client := copilot.NewClient(&copilot.ClientOptions{
-		Connection: copilot.StdioConnection{
-			Args: []string{"--log-dir", "/path/to/logs"},
-		},
-	})
-	_ = client
-}
-```
-
-```golang
 client := copilot.NewClient(&copilot.ClientOptions{
     Connection: copilot.StdioConnection{
         Args: []string{"--log-dir", "/path/to/logs"},
@@ -213,7 +185,7 @@ var client = new CopilotClient(new CopilotClientOptions
 
 **Solution:**
 
-1. Install the CLI: [Installation guide](/en/copilot/how-tos/set-up/install-copilot-cli)
+1. Install the CLI: [Installation guide](/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli)
 
 2. Verify installation:
 

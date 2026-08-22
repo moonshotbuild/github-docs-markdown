@@ -19,7 +19,7 @@ When you add a pull request template to your repository, project contributors wi
 
 For more information, see [About issue and pull request templates](/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates).
 
-You can create a *PULL\_REQUEST\_TEMPLATE/* subdirectory in any of the supported folders to contain multiple pull request templates, and use the `template` query parameter to specify the template that will fill the pull request body. For more information, see [Using query parameters to create a pull request](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/using-query-parameters-to-create-a-pull-request).
+You can create a *PULL\_REQUEST\_TEMPLATE/* subdirectory in any of the supported folders to contain multiple pull request templates, and use the `template` query parameter to specify the template that will fill the pull request body. For more information, see [Using query parameters to create a pull request](/en/pull-requests/reference/using-query-parameters-to-create-a-pull-request).
 
 You can create default pull request templates for your organization or personal account. For more information, see [Creating a default community health file](/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
 
@@ -37,7 +37,7 @@ You can create default pull request templates for your organization or personal 
    * To make your pull request template visible in the repository's root directory, name the pull request template `pull_request_template.md`.
    * To make your pull request template visible in the repository's `docs` directory, name the pull request template `docs/pull_request_template.md`.
    * To store your file in a hidden directory, name the pull request template `.github/pull_request_template.md`.
-   * To create multiple pull request templates and use the `template` query parameter to specify a template to fill the pull request body, type *.github/PULL\_REQUEST\_TEMPLATE/*, then the name of your pull request template. For example, `.github/PULL_REQUEST_TEMPLATE/pull_request_template.md`. You can also store multiple pull request templates in a `PULL_REQUEST_TEMPLATE` subdirectory within the root or `docs/` directories. For more information, see [Using query parameters to create a pull request](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/using-query-parameters-to-create-a-pull-request).
+   * To create multiple pull request templates and use the `template` query parameter to specify a template to fill the pull request body, type *.github/PULL\_REQUEST\_TEMPLATE/*, then the name of your pull request template. For example, `.github/PULL_REQUEST_TEMPLATE/pull_request_template.md`. You can also store multiple pull request templates in a `PULL_REQUEST_TEMPLATE` subdirectory within the root or `docs/` directories. For more information, see [Using query parameters to create a pull request](/en/pull-requests/reference/using-query-parameters-to-create-a-pull-request).
 
 4. In the body of the new file, add your pull request template. This template could consist of asking to include:
    * A [reference to a related issue](/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#referencing-issues-and-pull-requests) in your repository.
@@ -58,4 +58,4 @@ You can create default pull request templates for your organization or personal 
 
 * [About issue and pull request templates](/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates)
 * [Creating an issue](/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue)
-* [Creating a pull request](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+* [Creating a pull request](/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request)

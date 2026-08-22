@@ -25,7 +25,7 @@ You always create a branch from an existing branch. Typically, you might create 
 
 You can also create a branch starting from a previous commit in a branch's history. This can be helpful if you need to return to an earlier view of the repository to investigate a bug, or to create a hot fix on top of your latest release.
 
-Once you're satisfied with your work, you can create a pull request to merge your changes in the current branch into another branch. For more information, see [Creating an issue or pull request from GitHub Desktop](/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request-from-github-desktop) and [Pull requests](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+Once you're satisfied with your work, you can create a pull request to merge your changes in the current branch into another branch. For more information, see [Creating an issue or pull request from GitHub Desktop](/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request-from-github-desktop) and [Pull requests](/en/pull-requests/reference/pull-requests).
 
 You can always create a branch in GitHub Desktop if you have read access to a repository, but you can only push the branch to GitHub if you have write access to the repository.
 
@@ -112,6 +112,6 @@ You can't delete a branch if it's currently associated with an open pull request
 
 * [Cloning a repository from GitHub to GitHub Desktop](/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop)
 * [GitHub glossary](/en/get-started/learning-about-github/github-glossary#branch) in the GitHub glossary
-* [Branches](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
+* [Branches](/en/pull-requests/reference/branches)
 * [Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) in the Git documentation
 * [Stashing changes in GitHub Desktop](/en/desktop/making-changes-in-a-branch/stashing-changes-in-github-desktop)

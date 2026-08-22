@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-linear"
+source_path: "/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-linear"
 title: "Integrating Copilot cloud agent with Linear"
 intro: "Use the Copilot integration in Linear to provide context, customize how the agent runs, and open pull requests, all from within your Linear workspace."
 product: "GitHub Copilot"
@@ -9,12 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "How-tos"
     href: "/en/copilot/how-tos"
-  - title: "Use Copilot agents"
-    href: "/en/copilot/how-tos/use-copilot-agents"
-  - title: "Cloud agent"
-    href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent"
+  - title: "Copilot integrations"
+    href: "/en/copilot/how-tos/copilot-integrations"
   - title: "Integrate cloud agent with Linear"
-    href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-linear"
+    href: "/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-linear"
 ---
 
 # Integrating Copilot cloud agent with Linear
@@ -22,7 +20,7 @@ breadcrumbs:
 Use the Copilot integration in Linear to provide context, customize how the agent runs, and open pull requests, all from within your Linear workspace.
 
 > \[!NOTE]
-> GitHub Copilot uses AI. Check for mistakes. See [Application card: GitHub Copilot Agents](/en/copilot/responsible-use/copilot-cloud-agent).
+> GitHub Copilot uses AI. Check for mistakes. See [Application card: GitHub Copilot Agents](/en/copilot/responsible-use/agents).
 
 The Copilot integration in Linear allows you to invoke Copilot cloud agent without leaving your Linear workspace. From within a Linear issue you can initiate cloud agent sessions, customize which model, custom agent, or branches the agent uses, steer a session, and open pull requests, all using the context of your issue description and comments.
 

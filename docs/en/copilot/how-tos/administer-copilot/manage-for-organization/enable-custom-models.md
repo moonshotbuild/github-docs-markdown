@@ -96,6 +96,6 @@ After you've added your key and selected one or more models, you and your organi
 
 ## Further reading
 
-* [Enabling custom models for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-your-own-api-keys) in our documentation for enterprise accounts.
+* [Enabling custom models for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/enable-custom-models) in our documentation for enterprise accounts.
 * [About GitHub Copilot Chat](/en/copilot/concepts/chat)
 * [Supported surfaces for GitHub Copilot policies](/en/copilot/reference/supported-surfaces-for-policies)

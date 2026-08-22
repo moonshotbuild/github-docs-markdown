@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-jira"
+source_path: "/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-jira"
 title: "Integrating Copilot cloud agent with Jira"
 intro: "You can use the GitHub integration in Jira to provide context and open pull requests, all from within your Jira workspace."
 product: "GitHub Copilot"
@@ -9,12 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "How-tos"
     href: "/en/copilot/how-tos"
-  - title: "Use Copilot agents"
-    href: "/en/copilot/how-tos/use-copilot-agents"
-  - title: "Cloud agent"
-    href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent"
+  - title: "Copilot integrations"
+    href: "/en/copilot/how-tos/copilot-integrations"
   - title: "Integrate cloud agent with Jira"
-    href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-jira"
+    href: "/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-jira"
 ---
 
 # Integrating Copilot cloud agent with Jira

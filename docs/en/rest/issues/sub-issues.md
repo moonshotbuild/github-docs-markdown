@@ -428,6 +428,8 @@ application/vnd.github.full+json: Returns raw, text, and HTML representations. R
 
 - **400** - Bad Request
 
+- **403** - Forbidden
+
 - **404** - Resource not found
 
 ### Code examples

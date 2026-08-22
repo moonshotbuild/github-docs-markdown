@@ -1,7 +1,7 @@
 ---
 source_path: "/en/code-security/reference/code-scanning/codeql/codeql-cli-manual"
 title: "CodeQL CLI commands manual"
-intro: "Reference information for the commands available in the most recent release of CodeQL CLI."
+intro: "Reference information for the commands available in the most recent release of   CodeQL CLI."
 product: "Security and code quality"
 document_type: "subcategory"
 breadcrumbs:
@@ -19,7 +19,7 @@ breadcrumbs:
 
 # CodeQL CLI commands manual
 
-Reference information for the commands available in the most recent release of CodeQL CLI.
+Reference information for the commands available in the most recent release of   CodeQL CLI.
 
 > [!NOTE]
 > This content describes the most recent release of the CodeQL CLI. For more information about this release, see https://github.com/github/codeql-cli-binaries/releases.

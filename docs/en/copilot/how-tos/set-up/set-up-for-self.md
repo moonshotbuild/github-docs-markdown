@@ -23,7 +23,7 @@ Follow these steps to start using Copilot.
 
 There are a few ways that you can get access to GitHub Copilot:
 
-* **Use Copilot Free**. Get a limited experience of Copilot with up to 2,000 inline suggestion requests and limited chat and agent usage-no paid plan required. See [About individual GitHub Copilot plans and benefits](/en/copilot/concepts/billing/individual-plans).
+* **Use Copilot Free**. Get a limited experience of Copilot with up to 2,000 inline suggestion requests and limited chat and agent usage-no paid plan required. See [Plans for GitHub Copilot](/en/copilot/concepts/billing/individual-plans).
 
 * **Sign up for a paid plan**. You can subscribe to one of these plans:
 

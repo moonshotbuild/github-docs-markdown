@@ -31,10 +31,6 @@ Understand billing and usage for GitHub Copilot.
 
   Under usage-based billing, budget controls at the user, organization, cost center, and enterprise levels determine how Copilot usage is served, metered, or blocked.
 
-* [About individual GitHub Copilot plans and benefits](/en/copilot/concepts/billing/individual-plans)
-
-  GitHub offers several Copilot plans for individual developers, each with different features, model access, and usage limits to support a wide range of coding needs.
-
 * [About billing for GitHub Copilot in organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises)
 
   Learn about pricing and billing cycles for Copilot.

@@ -133,7 +133,7 @@ Before you can add your local repository to GitHub using Git, you must authentic
    git push -u origin main
    ```
 
-   If your default branch is not named "main," replace "main" with the name of your default branch. For more information, see [Branches](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches#about-the-default-branch).
+   If your default branch is not named "main," replace "main" with the name of your default branch. For more information, see [Branches](/en/pull-requests/reference/branches#about-the-default-branch).
 
 </div>
 
@@ -169,7 +169,7 @@ Before you can add your local repository to GitHub using Git, you must authentic
    git push origin main
    ```
 
-   If your default branch is not named "main," replace "main" with the name of your default branch. For more information, see [Branches](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches#about-the-default-branch).
+   If your default branch is not named "main," replace "main" with the name of your default branch. For more information, see [Branches](/en/pull-requests/reference/branches#about-the-default-branch).
 
 </div>
 
@@ -205,7 +205,7 @@ Before you can add your local repository to GitHub using Git, you must authentic
    git push origin main
    ```
 
-   If your default branch is not named "main," replace "main" with the name of your default branch. For more information, see [Branches](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches#about-the-default-branch).
+   If your default branch is not named "main," replace "main" with the name of your default branch. For more information, see [Branches](/en/pull-requests/reference/branches#about-the-default-branch).
 
 </div>
 

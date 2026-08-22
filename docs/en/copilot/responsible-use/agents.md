@@ -414,7 +414,7 @@ For additional guidance on the responsible use of Copilot agentic features, we r
 
 * [Configure the development environment](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment)
 
-* [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-firewall)
+* [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-the-firewall)
 
 * [Build your first Copilot-powered app](/en/copilot/how-tos/copilot-sdk/getting-started)
 

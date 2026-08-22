@@ -33,7 +33,7 @@ Configuring a code scanning rule will not automatically enable code scanning. To
 
 > \[!NOTE]
 >
-> * Merge protection with rulesets is not related to status checks. For more information about status checks, see [Status checks](/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks).
+> * Merge protection with rulesets is not related to status checks. For more information about status checks, see [Status checks](/en/pull-requests/reference/status-checks).
 
 ## Availability
 

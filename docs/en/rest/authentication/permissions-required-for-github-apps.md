@@ -1172,6 +1172,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/rules/branches/{branch}` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/rulesets` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/rulesets/{ruleset_id}` | read | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/stargazers/count` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/code_frequency` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/commit_activity` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/contributors` | read | UAT, IAT | ✗ |

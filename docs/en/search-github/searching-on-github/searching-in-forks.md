@@ -43,6 +43,6 @@ GitHub code search uses `is:fork` instead of `fork:true` to include forked repos
 
 ## Further reading
 
-* [Forks](/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
+* [Forks](/en/pull-requests/reference/forks)
 * [Understanding connections between repositories](/en/repositories/viewing-activity-and-data-for-your-repository/understanding-connections-between-repositories#listing-the-forks-of-a-repository)
 * [About searching on GitHub](/en/search-github/getting-started-with-searching-on-github/about-searching-on-github)

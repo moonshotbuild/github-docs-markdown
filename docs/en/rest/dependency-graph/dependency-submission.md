@@ -87,7 +87,7 @@ OAuth app tokens and personal access tokens (classic) need the repo scope to use
     The url for the job.
 
 * **`sha`** (string) (required)
-  The commit SHA associated with this dependency snapshot. Maximum length: 40 characters.
+  The commit SHA associated with this dependency snapshot. Maximum length: 64 characters.
 
 * **`ref`** (string) (required)
   The repository branch that triggered this snapshot.

@@ -108,7 +108,7 @@ After your tests generate a Cobertura XML report, upload it to GitHub so coverag
 3. Replace the following values:
    * **`COVERAGE-FILE-PATH.xml`**: The path to your Cobertura XML report (for example, `coverage.xml` or `target/site/jacoco/cobertura.xml`).
    * **`LANGUAGE`**: The primary language of the code being covered (for example, `Python`, `Java`, `JavaScript`).
-   * **`LABEL`**: An optional label to identify this coverage report (for example, `code-coverage/pytest`).
+   * **`LABEL`**: A label to identify this coverage report (for example, `code-coverage/pytest`).
 
 4. Commit and push the workflow change.
 
@@ -170,5 +170,5 @@ jobs:
 
 1. Open a pull request (or push to an existing one) that triggers the workflow you configured.
 2. After the workflow completes, look for a comment from `github-code-quality[bot]` on the pull request. The comment includes:
-   * The aggregate coverage percentage for the pull request branch compared to the default branch.
+   * The aggregate line coverage percentage for the pull request branch compared to the default branch.
    * A per-file breakdown showing which files gained or lost coverage.

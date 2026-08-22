@@ -27,7 +27,7 @@ Learn how to sign up for and use GitHub Copilot.
 
 * [Plans for GitHub Copilot](/en/copilot/get-started/plans)
 
-  Learn about the available plans for Copilot.
+  Discover the plans available for Copilot.
 
 * [GitHub Copilot features](/en/copilot/get-started/features)
 

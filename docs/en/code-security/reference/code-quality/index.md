@@ -25,7 +25,7 @@ Find reference documentation for Code Quality.
 
 * [Code coverage reference](/en/code-security/reference/code-quality/code-coverage)
 
-  Code Quality shows how much of your code your tests actually exercise, so you can find untested code before you merge.
+  Code Quality shows what percentage of the lines of your code your tests actually exercise, so you can find untested code before you merge.
 
 * [CodeQL-powered analysis for Code Quality](/en/code-security/reference/code-quality/codeql-detection)
 

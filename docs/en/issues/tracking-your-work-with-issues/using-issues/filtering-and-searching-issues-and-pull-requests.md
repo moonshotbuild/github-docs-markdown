@@ -147,13 +147,13 @@ You can use filters to list pull requests by review status and to find pull requ
 
 You can filter a repository's list of pull requests to find:
 
-* Pull requests that haven't been [reviewed](/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews) yet
+* Pull requests that haven't been [reviewed](/en/pull-requests/reference/pull-request-reviews) yet
 * Pull requests that [require a review](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging) before they can be merged
 * Pull requests that a reviewer has approved
 * Pull requests in which a reviewer has asked for changes
 * Pull requests that you have reviewed
 * Pull requests that someone has asked you directly to review
-* Pull requests that [someone has asked you, or a team you're a member of, to review](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review)
+* Pull requests that [someone has asked you, or a team you're a member of, to review](/en/pull-requests/how-tos/create-pull-requests/requesting-a-pull-request-review)
 
 1. On GitHub, navigate to the main page of the repository.
 
@@ -232,20 +232,20 @@ For issues, you can also use search to:
 
 For pull requests, you can also use search to:
 
-* Filter [draft](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests) pull requests: `is:draft`
-* Filter pull requests that haven't been [reviewed](/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews) yet: `state:open is:pr review:none`
+* Filter [draft](/en/pull-requests/reference/pull-requests#draft-pull-requests) pull requests: `is:draft`
+* Filter pull requests that haven't been [reviewed](/en/pull-requests/reference/pull-request-reviews) yet: `state:open is:pr review:none`
 * Filter pull requests that [require a review](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging) before they can be merged: `state:open is:pr review:required`
 * Filter pull requests that a reviewer has approved: `state:open is:pr review:approved`
 * Filter pull requests in which a reviewer has asked for changes: `state:open is:pr review:changes_requested`
-* Filter pull requests by [reviewer](/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews): `state:open is:pr reviewed-by:octocat`
-* Filter pull requests by the specific user [requested for review](/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review): `state:open is:pr review-requested:octocat`
+* Filter pull requests by [reviewer](/en/pull-requests/reference/pull-request-reviews): `state:open is:pr reviewed-by:octocat`
+* Filter pull requests by the specific user [requested for review](/en/pull-requests/how-tos/create-pull-requests/requesting-a-pull-request-review): `state:open is:pr review-requested:octocat`
 * Filter pull requests that someone has asked you directly to review: `state:open is:pr user-review-requested:@me`
 * Filter pull requests by the team requested for review: `state:open is:pr team-review-requested:github/docs`
 * Filter for pull requests that are linked to an issue that the pull request may close: `linked:issue`
 * Filter pull requests where all statuses are successful: `status:success`
 * Filter pull requests with at least one error or failure status: `status:failure`
 * Filter pull requests with no statuses or at least one status in the pending state: `status:pending`
-* Filter pull requests by state of [merging](/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges): `is:merged` or `is:unmerged`
+* Filter pull requests by state of [merging](/en/pull-requests/reference/pull-request-merges): `is:merged` or `is:unmerged`
 
 ## Sorting issues and pull requests
 

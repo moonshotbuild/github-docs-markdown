@@ -19,7 +19,7 @@ Find information to apply to your use of GitHub integrations.
 
 * [Permissions for GitHub in Slack](/en/integrations/reference/slack-permissions)
 
-  Learn about the permissions required for the GitHub app in Slack to function.
+  Learn about the permissions required for the GitHub integration in Slack.
 
 * [Permissions for GitHub in Teams](/en/integrations/reference/teams-permissions)
 

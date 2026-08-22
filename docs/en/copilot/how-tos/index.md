@@ -57,6 +57,10 @@ Learn how to use GitHub Copilot.
 
   Learn how to use GitHub Copilot agents.
 
+* [GitHub Copilot integrations](/en/copilot/how-tos/copilot-integrations)
+
+  Learn how to use Copilot cloud agent from the chat and project management tools where you already work.
+
 * [AI models for GitHub Copilot](/en/copilot/how-tos/use-ai-models)
 
   Learn how to use alternative large language models for GitHub Copilot.

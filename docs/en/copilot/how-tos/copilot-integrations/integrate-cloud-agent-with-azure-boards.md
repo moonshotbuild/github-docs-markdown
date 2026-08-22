@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-azure-boards"
+source_path: "/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-azure-boards"
 title: "Integrating Copilot cloud agent with Azure Boards"
 intro: "Use the Copilot integration in Azure Boards to send work items directly to Copilot cloud agent and generate pull requests, all from within your Azure DevOps workspace."
 product: "GitHub Copilot"
@@ -9,12 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "How-tos"
     href: "/en/copilot/how-tos"
-  - title: "Use Copilot agents"
-    href: "/en/copilot/how-tos/use-copilot-agents"
-  - title: "Cloud agent"
-    href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent"
+  - title: "Copilot integrations"
+    href: "/en/copilot/how-tos/copilot-integrations"
   - title: "Integrate cloud agent with Azure Boards"
-    href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-azure-boards"
+    href: "/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-azure-boards"
 ---
 
 # Integrating Copilot cloud agent with Azure Boards

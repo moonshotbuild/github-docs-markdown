@@ -34,7 +34,7 @@ Clicking the notification will display a dialog with details about the checks. O
 
 ## Notifications for pull request reviews
 
-GitHub Desktop will surface a system notification when a teammate has approved, commented, or requested changes in your pull request. See [Pull request reviews](/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews) for more information on pull request reviews.
+GitHub Desktop will surface a system notification when a teammate has approved, commented, or requested changes in your pull request. See [Pull request reviews](/en/pull-requests/reference/pull-request-reviews) for more information on pull request reviews.
 
 Clicking the notification will switch application focus to GitHub Desktop and provide more context for the pull request review comment.
 

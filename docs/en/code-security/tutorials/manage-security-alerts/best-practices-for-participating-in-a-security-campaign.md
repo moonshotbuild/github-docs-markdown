@@ -115,7 +115,7 @@ Explain how this alert introduces a vulnerability into the code.
 
 ```
 
-If you don't already have access to Copilot Chat through your organization, you can sign up to GitHub Copilot Free. See [Getting started with a GitHub Copilot plan](/en/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-copilot-free/accessing-github-copilot-free).
+If you don't already have access to Copilot Chat through your organization, you can sign up to GitHub Copilot Free. See [Getting started with a GitHub Copilot plan](/en/copilot/how-tos/manage-your-account/get-started-with-a-copilot-plan).
 
 ## Next steps
 

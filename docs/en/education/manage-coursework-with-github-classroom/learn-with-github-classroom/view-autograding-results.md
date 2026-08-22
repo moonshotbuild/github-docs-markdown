@@ -41,4 +41,4 @@ You can click a specific test run to review log output, like compilation errors 
 
 ## Further reading
 
-* [Status checks](/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks)
+* [Status checks](/en/pull-requests/reference/status-checks)

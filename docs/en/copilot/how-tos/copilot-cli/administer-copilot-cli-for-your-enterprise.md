@@ -45,7 +45,7 @@ You can enable or disable Copilot CLI at the enterprise or organization level.
 
 Users can only access AI models that are enabled at the enterprise level. When you enable or disable models in your enterprise settings, those changes are reflected in Copilot CLI. Users can view which models are available to them using the `/model` command.
 
-Enterprise and organization owners can provide keys for custom models. Users can select these like any other model: with the Copilot CLI model selector, the `--model` flag, or environment variables. See [Enabling custom models for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-your-own-api-keys).
+Enterprise and organization owners can provide keys for custom models. Users can select these like any other model: with the Copilot CLI model selector, the `--model` flag, or environment variables. See [Enabling custom models for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/enable-custom-models).
 
 Separately, users can also provide their own LLM keys locally. This is not controlled by enterprise policies. See [Using your own LLM models in GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models).
 
@@ -55,7 +55,7 @@ Enterprise-configured custom agents are available to use with Copilot CLI.
 
 ### MCP server policies
 
-Enterprise and organization MCP policies apply to Copilot CLI. You can configure an MCP registry URL so developers can discover approved servers, and set an allowlist policy to restrict which MCP servers can run. For more information, see [Restrict MCP server access to a custom registry](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-server-access).
+Enterprise and organization MCP policies apply to Copilot CLI. You can configure an MCP registry URL so developers can discover approved servers, and set an allowlist policy to restrict which MCP servers can run. For more information, see [Restrict MCP server access to a custom registry](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/restrict-based-on-registry).
 
 ### Copilot cloud agent enablement
 

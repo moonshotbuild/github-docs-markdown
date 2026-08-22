@@ -139,39 +139,6 @@ response = await session.send_and_wait("Hello!")
 <div class="ghd-codetab" data-lang="go" data-label="Go"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">Go</div>
 
 ```golang
-package main
-
-import (
-	"context"
-	"fmt"
-	copilot "github.com/github/copilot-sdk/go"
-)
-
-func createClientForUser(userToken string) *copilot.Client {
-	return copilot.NewClient(&copilot.ClientOptions{
-		GitHubToken:     userToken,
-		UseLoggedInUser: copilot.Bool(false),
-	})
-}
-
-func main() {
-	ctx := context.Background()
-	userID := "user1"
-
-	client := createClientForUser("gho_user_access_token")
-	client.Start(ctx)
-	defer client.Stop()
-
-	session, _ := client.CreateSession(ctx, &copilot.SessionConfig{
-		SessionID: fmt.Sprintf("user-%s-session", userID),
-		Model:     "gpt-5.4",
-	})
-	response, _ := session.SendAndWait(ctx, copilot.MessageOptions{Prompt: "Hello!"})
-	_ = response
-}
-```
-
-```golang
 func createClientForUser(userToken string) *copilot.Client {
     return copilot.NewClient(&copilot.ClientOptions{
         GitHubToken:     userToken,
@@ -194,29 +161,6 @@ response, _ := session.SendAndWait(ctx, copilot.MessageOptions{Prompt: "Hello!"}
 </div>
 
 <div class="ghd-codetab" data-lang="dotnet" data-label=".NET"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">.NET</div>
-
-```csharp
-using GitHub.Copilot;
-
-CopilotClient CreateClientForUser(string userToken) =>
-    new CopilotClient(new CopilotClientOptions
-    {
-        GitHubToken = userToken,
-        UseLoggedInUser = false,
-    });
-
-var userId = "user1";
-
-await using var client = CreateClientForUser("gho_user_access_token");
-await using var session = await client.CreateSessionAsync(new SessionConfig
-{
-    SessionId = $"user-{userId}-session",
-    Model = "gpt-5.4",
-});
-
-var response = await session.SendAndWaitAsync(
-    new MessageOptions { Prompt = "Hello!" });
-```
 
 ```csharp
 CopilotClient CreateClientForUser(string userToken) =>

@@ -25,9 +25,17 @@ These guides cover the capabilities you can add to your Copilot SDK application.
 
   How the Copilot CLI processes a user message end-to-end: from prompt to session.idle.
 
+* [Citations](/en/copilot/how-tos/copilot-sdk/features/citations)
+
+  Citations link spans of an assistant response back to the sources that support them. Turn on enableCitations when you create or resume a session, then read the citations payload on assistant.message events to render footnotes, source lists, or inline links.
+
 * [Cloud sessions](/en/copilot/how-tos/copilot-sdk/features/cloud-sessions)
 
   Cloud sessions run Copilot work on GitHub-hosted compute through Mission Control. Use them when your app should create a session that executes remotely instead of starting a local Copilot CLI session on the user's machine or your server.
+
+* [Context clearing and terminal tools](/en/copilot/how-tos/copilot-sdk/features/context-management)
+
+  Use session.history.clearContext when a host needs to replace the current conversation context without replacing the session. Typical uses include handoffs and host-managed context lifecycle policies.
 
 * [Custom agents and sub-agent orchestration](/en/copilot/how-tos/copilot-sdk/features/custom-agents)
 

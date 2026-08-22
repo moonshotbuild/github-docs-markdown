@@ -44,3 +44,7 @@ Detailed API reference for each session hook in the GitHub Copilot SDK.
 * [User prompt submitted hook](/en/copilot/how-tos/copilot-sdk/hooks/user-prompt-submitted)
 
   The onUserPromptSubmitted hook is called when a user submits a message. Use it to:
+
+* [User prompt transformed hook](/en/copilot/how-tos/copilot-sdk/hooks/user-prompt-transformed)
+
+  The userPromptTransformed hook runs after the runtime adds generated context to a submitted prompt, but before the resulting content is persisted to session history or sent to the model.

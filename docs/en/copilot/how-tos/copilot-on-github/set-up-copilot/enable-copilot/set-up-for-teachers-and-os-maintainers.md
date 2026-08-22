@@ -32,12 +32,14 @@ There are two ways to qualify for free access to Copilot Pro:
 
 GitHub reevaluates your eligibility every month.
 
+If you have been granted free access to Copilot as a verified student, teacher, or maintainer of a popular open source project, you won’t be able to cancel your plan. For more information about managing your plan, see [Viewing and changing your GitHub Copilot plan](/en/copilot/how-tos/manage-your-account/view-and-change-your-copilot-plan).
+
 ## What if I don't qualify for free access to Copilot Pro?
 
 If you do not meet the previous criteria, you can do one of the following:
 
 * Subscribe to [Copilot Pro](https://github.com/github-copilot/signup?ref_product=copilot\&ref_type=purchase\&ref_style=text\&ref_plan=pro), [Copilot Pro+](https://github.com/github-copilot/signup?ref_product=copilot\&ref_type=purchase\&ref_style=text\&ref_plan=pro), or [Copilot Max](https://github.com/settings/billing/licensing?ref_product=copilot\&ref_type=purchase\&ref_style=text\&ref_plan=max) for a paid plan with access to premium models.
-* Set up Copilot Free to get a limited experience of Copilot without a paid plan. See [About individual GitHub Copilot plans and benefits](/en/copilot/concepts/billing/individual-plans).
+* Set up Copilot Free to get a limited experience of Copilot without a paid plan. See [Plans for GitHub Copilot](/en/copilot/concepts/billing/individual-plans).
 
 ## Accessing Copilot Pro for free
 

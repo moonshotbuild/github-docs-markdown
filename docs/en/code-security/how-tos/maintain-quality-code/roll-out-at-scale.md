@@ -23,7 +23,7 @@ Turning Code Quality on everywhere at once means every team starts seeing Code Q
 
 ## Prerequisites
 
-* An enterprise owner has allowed Code Quality in your enterprise. See [Allowing use of GitHub Code Quality in your enterprise](/en/code-security/code-quality/how-tos/allow-in-enterprise?utm_campaign=code-quality-ga-july-2026\&utm_medium=docs\&utm_source=docs-roll-out-at-scale-enable-cq).
+* An enterprise owner has allowed Code Quality in your enterprise. See [Allowing use of GitHub Code Quality in your enterprise](/en/code-security/how-tos/secure-at-scale/configure-enterprise-security/configure-specific-tools/allow-github-code-quality-in-enterprise?utm_campaign=code-quality-ga-july-2026\&utm_medium=docs\&utm_source=docs-roll-out-at-scale-enable-cq).
 * You're an organization owner, so you can enable Code Quality and configure rulesets at the organization level.
 
 ## Plan your pilot

@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Endpoints available for fine-grained personal access tokens
 
-Your {% data variables.product.pat\_v2 %} can make requests to the following REST endpoints.
+<p>Your fine-grained personal access token can make requests to the following REST endpoints.</p>
 
 ## actions
 
@@ -398,6 +398,8 @@ Your {% data variables.product.pat\_v2 %} can make requests to the following RES
 * [`GET /repos/{owner}/{repo}/events`](/en/rest/activity/events#list-repository-events)
 
 * [`GET /repos/{owner}/{repo}/stargazers`](/en/rest/activity/starring#list-stargazers)
+
+* [`GET /repos/{owner}/{repo}/stargazers/count`](/en/rest/activity/starring#get-stargazer-count)
 
 * [`GET /repos/{owner}/{repo}/subscribers`](/en/rest/activity/watching#list-watchers)
 

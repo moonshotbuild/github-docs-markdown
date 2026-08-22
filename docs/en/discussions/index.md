@@ -33,7 +33,7 @@ GitHub Discussions is a collaborative communication forum for the community arou
 
 * [Moderating discussions](/en/discussions/managing-discussions-for-your-community/moderating-discussions)
 
-  You can promote healthy collaboration by marking comments as answers, locking or unlocking discussions, converting issues to discussions, and editing or deleting comments, discussions, and categories that don't align with your.
+  You can promote healthy collaboration by marking comments as answers, locking or unlocking discussions, converting issues to discussions, and editing or deleting comments, discussions, and categories that don't align with your community's code of conduct.
 
 * [Managing categories for discussions](/en/discussions/managing-discussions-for-your-community/managing-categories-for-discussions)
 

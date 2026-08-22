@@ -1099,6 +1099,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/rules/branches/{branch}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/rulesets` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/rulesets/{ruleset_id}` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/stargazers/count` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/code_frequency` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/commit_activity` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/contributors` | read | PAT | ✗ |

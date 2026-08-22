@@ -40,7 +40,7 @@ To create and access the feedback pull request, you must enable the feedback pul
 3. In the list of assignments, click the assignment you want to view.
 4. Each student will have a submission row, press the Feedback link to navigate to the student's pull request.
 5. On the Feedback PR select the Files changed tab.
-6. Review the pull request. For more information, see [Commenting on a pull request](/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request).
+6. Review the pull request. For more information, see [Commenting on a pull request](/en/pull-requests/how-tos/review-pull-requests/commenting-on-a-pull-request).
 
 ## Further reading
 

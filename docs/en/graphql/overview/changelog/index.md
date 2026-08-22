@@ -21,6 +21,19 @@ Breaking changes include changes that will break existing queries or could affec
 
 **2026** · [2025](2025) · [2024](2024) · [2023](2023) · [2022](2022) · [2021](2021) · [2020](2020) · [2019](2019) · [2018](2018) · [2017](2017)
 
+## Schema changes for 2026-08-18
+
+### The GraphQL schema includes these changes:
+
+* Argument excludeUserLinked: Boolean (with default value) added to field Issue.closedByPullRequestsReferences
+* Argument excludeUserLinked: Boolean (with default value) added to field PullRequest.closingIssuesReferences
+
+## Schema changes for 2026-08-17
+
+### The GraphQL schema includes these changes:
+
+* Enum value 'SECURITY\_KEYwas removed from enumProofOfPresenceRequirement'
+
 ## Schema changes for 2026-08-13
 
 ### The GraphQL schema includes these changes:

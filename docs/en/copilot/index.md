@@ -37,7 +37,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Plans for GitHub Copilot](/en/copilot/get-started/plans)
 
-  Learn about the available plans for Copilot.
+  Discover the plans available for Copilot.
 
 * [GitHub Copilot features](/en/copilot/get-started/features)
 
@@ -211,6 +211,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Maintain your enterprise's security and compliance standards and supercharge your developers by managing agents with AI Controls.
 
+* [OpenTelemetry for agent monitoring](/en/copilot/concepts/agents/opentelemetry)
+
+  Understand how Copilot agents perform and interact with models and tools.
+
 * [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes)
 
   Cloud and local sandboxes provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine or in fully isolated cloud environments.
@@ -294,10 +298,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Budgets for usage-based billing](/en/copilot/concepts/billing/budgets-for-usage-based-billing)
 
   Under usage-based billing, budget controls at the user, organization, cost center, and enterprise levels determine how Copilot usage is served, metered, or blocked.
-
-* [About individual GitHub Copilot plans and benefits](/en/copilot/concepts/billing/individual-plans)
-
-  GitHub offers several Copilot plans for individual developers, each with different features, model access, and usage limits to support a wide range of coding needs.
 
 * [About billing for GitHub Copilot in organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises)
 
@@ -679,9 +679,17 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   How the Copilot CLI processes a user message end-to-end: from prompt to `session.idle`.
 
+* [Citations](/en/copilot/how-tos/copilot-sdk/features/citations)
+
+  Citations link spans of an assistant response back to the sources that support them. Turn on `enableCitations` when you create or resume a session, then read the `citations` payload on `assistant.message` events to render footnotes, source lists, or inline links.
+
 * [Cloud sessions](/en/copilot/how-tos/copilot-sdk/features/cloud-sessions)
 
   Cloud sessions run Copilot work on GitHub-hosted compute through Mission Control. Use them when your app should create a session that executes remotely instead of starting a local Copilot CLI session on the user's machine or your server.
+
+* [Context clearing and terminal tools](/en/copilot/how-tos/copilot-sdk/features/context-management)
+
+  Use `session.history.clearContext` when a host needs to replace the current conversation context without replacing the session. Typical uses include handoffs and host-managed context lifecycle policies.
 
 * [Custom agents and sub-agent orchestration](/en/copilot/how-tos/copilot-sdk/features/custom-agents)
 
@@ -758,6 +766,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [User prompt submitted hook](/en/copilot/how-tos/copilot-sdk/hooks/user-prompt-submitted)
 
   The `onUserPromptSubmitted` hook is called when a user submits a message. Use it to:
+
+* [User prompt transformed hook](/en/copilot/how-tos/copilot-sdk/hooks/user-prompt-transformed)
+
+  The `userPromptTransformed` hook runs after the runtime adds generated context to a submitted prompt, but before the resulting content is persisted to session history or sent to the model.
 
 * [Microsoft agent framework integration](/en/copilot/how-tos/copilot-sdk/integrations/microsoft-agent-framework)
 
@@ -863,26 +875,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Start Copilot cloud agent sessions from any IDE or agentic tool that supports Model Context Protocol (MCP).
 
-* [Integrating Copilot cloud agent with Jira](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-jira)
-
-  You can use the GitHub integration in Jira to provide context and open pull requests, all from within your Jira workspace.
-
-* [Integrating Copilot cloud agent with Slack](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-slack)
-
-  Provide context to the Copilot cloud agent and open pull requests, all from within your Slack workspace.
-
-* [Integrating Copilot cloud agent with Teams](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-teams)
-
-  You can use the GitHub integration in Teams to provide context and open pull requests all from within your Teams channels.
-
-* [Integrating Copilot cloud agent with Linear](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-linear)
-
-  Use the Copilot integration in Linear to provide context, customize how the agent runs, and open pull requests, all from within your Linear workspace.
-
-* [Integrating Copilot cloud agent with Azure Boards](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-azure-boards)
-
-  Use the Copilot integration in Azure Boards to send work items directly to Copilot cloud agent and generate pull requests, all from within your Azure DevOps workspace.
-
 * [Using Copilot cloud agent from Raycast](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-from-raycast)
 
   Start and track Copilot cloud agent sessions from the Raycast launcher.
@@ -902,6 +894,26 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Managing Copilot Memory for an organization or enterprise](/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-as-administrator)
 
   Manage Copilot Memory settings and stored memories for an organization or enterprise.
+
+* [Integrating Copilot cloud agent with Slack](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-slack)
+
+  Provide context to the Copilot cloud agent and open pull requests, all from within your Slack workspace.
+
+* [Integrating Copilot cloud agent with Teams](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-teams)
+
+  You can use the GitHub integration in Teams to provide context and open pull requests all from within your Teams channels.
+
+* [Integrating Copilot cloud agent with Jira](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-jira)
+
+  You can use the GitHub integration in Jira to provide context and open pull requests, all from within your Jira workspace.
+
+* [Integrating Copilot cloud agent with Linear](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-linear)
+
+  Use the Copilot integration in Linear to provide context, customize how the agent runs, and open pull requests, all from within your Linear workspace.
+
+* [Integrating Copilot cloud agent with Azure Boards](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-azure-boards)
+
+  Use the Copilot integration in Azure Boards to send work items directly to Copilot cloud agent and generate pull requests, all from within your Azure DevOps workspace.
 
 * [Changing the AI model for GitHub Copilot Chat](/en/copilot/how-tos/use-ai-models/change-the-chat-model)
 

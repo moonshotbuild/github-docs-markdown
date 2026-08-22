@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Endpoints available for GitHub App installation access tokens
 
-Your GitHub App can make requests to the following REST endpoints with an installation access token.
+<p>Your GitHub App can make requests to the following REST endpoints with an installation access token.</p>
 
 ## actions
 
@@ -422,6 +422,8 @@ Your GitHub App can make requests to the following REST endpoints with an instal
 * [`GET /repos/{owner}/{repo}/events`](/en/rest/activity/events#list-repository-events)
 
 * [`GET /repos/{owner}/{repo}/stargazers`](/en/rest/activity/starring#list-stargazers)
+
+* [`GET /repos/{owner}/{repo}/stargazers/count`](/en/rest/activity/starring#get-stargazer-count)
 
 * [`GET /repos/{owner}/{repo}/subscribers`](/en/rest/activity/watching#list-watchers)
 

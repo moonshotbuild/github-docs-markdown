@@ -155,7 +155,7 @@ A pull request proposes your branch's changes for review before they merge into 
 
 ## Further reading
 
-* [About individual GitHub Copilot plans and benefits](/en/copilot/concepts/billing/individual-plans)
+* [Plans for GitHub Copilot](/en/copilot/concepts/billing/individual-plans)
 * [Usage-based billing for individuals](/en/copilot/concepts/billing/usage-based-billing-for-individuals)
 * [Monitoring your GitHub AI Credits usage](/en/copilot/how-tos/manage-and-track-spending/monitor-ai-usage)
 

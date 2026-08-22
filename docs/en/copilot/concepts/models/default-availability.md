@@ -60,4 +60,4 @@ For instructions on managing model policies, see [Managing availability of model
 
 ## How do I prepare for new models?
 
-We recommend keeping up with new model releases so you can choose your enablement settings for each one. New models are announced on GitHub's changelog. For more information, see [Learning about new features and models](/en/copilot/concepts/preparing-for-new-features-and-models#learning-about-new-copilot-models).
+We recommend keeping up with new model releases so you can choose your enablement settings for each one. New models are announced on GitHub's changelog. For more information, see [Learning about new features and models](/en/copilot/concepts/learning-about-new-features-and-models#learning-about-new-copilot-models).
