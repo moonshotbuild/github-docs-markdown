@@ -143,7 +143,7 @@ For issues you're tackling yourself, use **Copilot Chat** for help analyzing log
 
 Before you start your next task, take a moment to identify the right tool to make your work faster and more efficient.
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 Do you feel prepared to identify the right AI tool for your next task?
 

@@ -31,6 +31,14 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Quickly learn how to use GitHub Copilot.
 
+* [Getting started with GitHub Copilot CLI](/en/copilot/get-started/cli-quickstart)
+
+  Quickly learn how to use GitHub Copilot CLI.
+
+* [Getting started with the GitHub Copilot app](/en/copilot/get-started/quickstart-copilot-app)
+
+  Sign in to the GitHub Copilot app, connect a repository or local folder, and create your first agent session to make code changes.
+
 * [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot)
 
   Learn what Copilot is and what you can do with it.
@@ -491,10 +499,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   You can use Copilot in Windows Terminal to get suggestions and explanations for the command line.
 
-* [Getting started with GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/cli-getting-started)
-
-  Quickly learn how to use GitHub Copilot CLI.
-
 * [Best practices for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/cli-best-practices)
 
   Learn how to get the most out of GitHub Copilot CLI.
@@ -626,10 +630,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Configuring local sandbox settings](/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings)
 
   Use the `/sandbox` slash command in Copilot CLI to control how the local sandbox restricts filesystem access, network connectivity, and system capabilities.
-
-* [Getting started with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/getting-started)
-
-  Sign in to the GitHub Copilot app, connect a repository or local folder, and create your first agent session to make code changes.
 
 * [Customizing the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/customize-github-copilot-app)
 

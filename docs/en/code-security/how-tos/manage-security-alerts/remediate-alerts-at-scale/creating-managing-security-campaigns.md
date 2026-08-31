@@ -64,7 +64,7 @@ In addition, you can use the REST API to create and interact with campaigns more
 
 The security campaign is created and the campaign overview page is displayed.
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 Did you successfully create a security campaign for your organization?
 

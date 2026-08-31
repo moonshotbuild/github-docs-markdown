@@ -1042,3 +1042,27 @@ Array of `Timeline Event` objects: any of:
   * `blocking`: required, any of:
     * **null**
     * **Issue Reference** (see above)
+* **Timeline Connected Event**
+  * `id`: required, integer
+  * `node_id`: required, string
+  * `url`: required, string
+  * `actor`: required, `Simple User` (see above)
+  * `event`: required, string
+  * `commit_id`: required, string or null
+  * `commit_url`: required, string or null
+  * `created_at`: required, string
+  * `performed_via_github_app`: required, any of:
+    * **null**
+    * **GitHub app** (see above)
+* **Timeline Disconnected Event**
+  * `id`: required, integer
+  * `node_id`: required, string
+  * `url`: required, string
+  * `actor`: required, `Simple User` (see above)
+  * `event`: required, string
+  * `commit_id`: required, string or null
+  * `commit_url`: required, string or null
+  * `created_at`: required, string
+  * `performed_via_github_app`: required, any of:
+    * **null**
+    * **GitHub app** (see above)

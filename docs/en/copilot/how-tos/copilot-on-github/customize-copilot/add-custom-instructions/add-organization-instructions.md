@@ -50,7 +50,7 @@ You can add organization custom instructions via your organization settings.
 
 To see your instructions in action, go to [https://github.com/copilot](https://github.com/copilot?ref_product=copilot\&ref_type=engagement\&ref_style=text) and start a conversation.
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 Did you successfully add custom instructions for your organization?
 

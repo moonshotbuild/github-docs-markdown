@@ -21,6 +21,14 @@ Learn how to sign up for and use GitHub Copilot.
 
   Quickly learn how to use GitHub Copilot.
 
+* [Getting started with GitHub Copilot CLI](/en/copilot/get-started/cli-quickstart)
+
+  Quickly learn how to use GitHub Copilot CLI.
+
+* [Getting started with the GitHub Copilot app](/en/copilot/get-started/quickstart-copilot-app)
+
+  Sign in to the GitHub Copilot app, connect a repository or local folder, and create your first agent session to make code changes.
+
 * [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot)
 
   Learn what Copilot is and what you can do with it.

@@ -19,10 +19,6 @@ A desktop application for agent-driven development that brings parallel workstre
 
 ## Articles
 
-* [Getting started with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/getting-started)
-
-  Sign in to the GitHub Copilot app, connect a repository or local folder, and create your first agent session to make code changes.
-
 * [Customizing the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/customize-github-copilot-app)
 
   Customize the GitHub Copilot app so it works the way you and your team do.

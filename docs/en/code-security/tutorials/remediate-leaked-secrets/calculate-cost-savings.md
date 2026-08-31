@@ -56,7 +56,7 @@ Push protection is a paid feature which is available with GitHub Secret Protecti
    * **Time saved**: Total hours saved by preventing these secrets, based on your input.
    * **Potential savings with push protection**: The total estimated labor cost avoided.
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 Did you successfully use the ROI calculator to estimate the cost savings of using push protection on your organization?
 

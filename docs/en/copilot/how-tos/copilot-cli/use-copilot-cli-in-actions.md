@@ -61,7 +61,7 @@ jobs:
       - name: Run Copilot
         run: copilot --yolo -p "Summarize the changes in this commit"
         env:
-          GITHUB_TOKEN: $
+          GITHUB_TOKEN: ${{ github.token }}
 ```
 
 Key details about this example:

@@ -49,7 +49,7 @@ You need to have generated a secret risk assessment for your organization. See [
      * The **per-committer rate** (for example, $19 per active committer).
 7. To proceed with enabling Secret Protection, click **Review and enable**.
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 Did you successfully use the pricing calculator to estimate the cost of using Secret Protection features on your organization?
 

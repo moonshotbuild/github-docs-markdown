@@ -29,6 +29,8 @@ If a branch or tag is targeted by rules restricting the metadata of commits, you
 
 When utilizing push rulesets, a maximum of 1000 reference updates are allowed per push. If your push exceeds this limit, it will be rejected. For more information see [Creating rulesets for a repository](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository#creating-a-push-ruleset).
 
+If your push is blocked by a rule restricting file paths or file size, check whether the ruleset defines allowed exceptions. A repository, organization, or enterprise administrator can add an allowed exception for a file that must remain pushable. See [Restrict file paths](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets#restrict-file-paths) and [Restrict file size](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets#restrict-file-size).
+
 Additionally, push rulesets apply to the "Create a blob", "Create a tree", and "Create or update file contents" endpoints in the REST API. See [REST API endpoints for Git blobs](/en/rest/git/blobs?apiVersion=2022-11-28#create-a-blob), [REST API endpoints for Git trees](/en/rest/git/trees?apiVersion=2022-11-28#create-a-tree), and [REST API endpoints for repository contents](/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents).
 
 ## Troubleshooting required status checks

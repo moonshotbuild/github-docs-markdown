@@ -33,10 +33,6 @@ Use Copilot directly from your terminal to answer questions, write and debug cod
 
 ## Articles
 
-* [Getting started with GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/cli-getting-started)
-
-  Quickly learn how to use GitHub Copilot CLI.
-
 * [Best practices for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/cli-best-practices)
 
   Learn how to get the most out of GitHub Copilot CLI.

@@ -44,14 +44,14 @@ To use Spark, your enterprise must be on a Copilot Enterprise plan.
 
 By default, Spark is **disabled** for users who receive a Copilot Enterprise license from an enterprise-owned organization.
 
-You can allow members to use Spark from the AI Controls tab for your enterprise. See [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies#defining-policies-for-your-enterprise).
+You can allow members to use Spark from the "Features & clients" page of the AI Controls tab for your enterprise. See [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies#defining-policies-for-your-enterprise).
 
 ### Next steps
 
 * If you selected **Enabled everywhere**, tell organization owners that these features are enabled for all members.
 * If you selected **Let organizations decide**, discuss member enablement with organization owners.
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 Was this article helpful in enabling and managing Spark for your enterprise?
 

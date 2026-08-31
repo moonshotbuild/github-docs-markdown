@@ -376,7 +376,7 @@ By automating routine refactoring and maintenance tasks, Copilot frees you to fo
 
 ### Quick survey
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 After reading this tutorial, do you feel confident you can use Copilot to reduce the technical debt in a codebase?
 

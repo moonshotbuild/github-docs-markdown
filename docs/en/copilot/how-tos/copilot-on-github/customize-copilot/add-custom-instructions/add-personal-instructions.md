@@ -61,7 +61,7 @@ To add personal custom instructions on GitHub:
 
 Your instructions are now active and remain active until you change or remove them.
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 Did you successfully add personal custom instructions?
 

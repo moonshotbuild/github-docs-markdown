@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/how-tos/github-copilot-app/getting-started"
+source_path: "/en/copilot/get-started/quickstart-copilot-app"
 title: "Getting started with the GitHub Copilot app"
 intro: "Sign in to the GitHub Copilot app, connect a repository or local folder, and create your first agent session to make code changes."
 product: "GitHub Copilot"
@@ -7,12 +7,10 @@ document_type: "article"
 breadcrumbs:
   - title: "GitHub Copilot"
     href: "/en/copilot"
-  - title: "How-tos"
-    href: "/en/copilot/how-tos"
-  - title: "GitHub Copilot app"
-    href: "/en/copilot/how-tos/github-copilot-app"
-  - title: "Quickstart"
-    href: "/en/copilot/how-tos/github-copilot-app/getting-started"
+  - title: "Get started"
+    href: "/en/copilot/get-started"
+  - title: "Copilot app quickstart"
+    href: "/en/copilot/get-started/quickstart-copilot-app"
 ---
 
 # Getting started with the GitHub Copilot app
@@ -90,6 +88,7 @@ The sidebar gives you access to the main areas of the app:
 
 * **[My work](https://github.com/copilot/app/launch?open=ghapp%3A%2F%2Fmywork)** — Browse and filter issues and pull requests from your repositories, check CI status, and leave reviews.
 * **[Automations](https://github.com/copilot/app/launch?open=ghapp%3A%2F%2Fautomations)** — Saved agent tasks that run on a schedule or on demand.
+* **Customize** — Discover and manage plugins, skills, MCP servers, and canvases.
 * **Search** — Search across your repositories directly from the app.
 * **Sessions** — Active agent sessions, grouped by project.
 * **Chats** — General conversations that do not require a dedicated branch or workspace.

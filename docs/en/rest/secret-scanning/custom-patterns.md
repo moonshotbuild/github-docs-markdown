@@ -59,14 +59,6 @@ Personal access tokens (classic) need the read:org scope to use this endpoint.
   Default: `desc`
   Can be one of: `asc`, `desc`
 
-- **`page`** (integer)
-  The page number of the results to fetch. For more information, see "Using pagination in the REST API."
-  Default: `1`
-
-- **`per_page`** (integer)
-  The number of results per page (max 100). For more information, see "Using pagination in the REST API."
-  Default: `30`
-
 - **`before`** (string)
   A cursor, as given in the Link header. If specified, the query only searches for results before this cursor. For more information, see "Using pagination in the REST API."
 
@@ -424,14 +416,6 @@ OAuth app tokens and personal access tokens (classic) need the repo or security_
   The direction to sort the results by.
   Default: `desc`
   Can be one of: `asc`, `desc`
-
-- **`page`** (integer)
-  The page number of the results to fetch. For more information, see "Using pagination in the REST API."
-  Default: `1`
-
-- **`per_page`** (integer)
-  The number of results per page (max 100). For more information, see "Using pagination in the REST API."
-  Default: `30`
 
 - **`before`** (string)
   A cursor, as given in the Link header. If specified, the query only searches for results before this cursor. For more information, see "Using pagination in the REST API."

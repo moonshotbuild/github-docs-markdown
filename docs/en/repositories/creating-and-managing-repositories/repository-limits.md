@@ -54,7 +54,7 @@ To avoid throttling and performance issues, we recommend staying within the foll
 
 * **Single object size**:
 
-  The recommended maximum limit is 1MB. This is enforced at 100MB. To track large files in a Git repository, we recommend using Git LFS. See [About Git Large File Storage](/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage).
+  The recommended maximum limit is 1MB. This is enforced at 100 MB. To track large files in a Git repository, we recommend using Git LFS. See [About Git Large File Storage](/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage).
 
 * **Git read operations (e.g. fetches, clones)**:
 

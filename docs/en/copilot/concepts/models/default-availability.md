@@ -19,32 +19,14 @@ breadcrumbs:
 
 A policy controls whether unconfigured models default to enabled or disabled.
 
-On Copilot Business and Copilot Enterprise plans, the **Default availability for released models** policy will control whether unconfigured generally available (GA) models default to enabled or disabled. If this policy is enabled, users will benefit from the latest models without the need for administrator intervention.
-
-<!-- expires 2026-08-26 -->
-
-To give you time to prepare, this policy can be configured but **does not currently affect model availability**. On August 26, 2026, new GA models and existing unconfigured GA models will automatically follow the default set in the policy. These are models that you have not explicitly chosen a setting for. They will be relabeled as "inherits default" in the UI.
-
-To prepare for this change, you can disable the policy or explicitly disable models you don't want to be enabled.
-
-<!-- end expires 2026-08-26 -->
+For enterprises with Copilot Business or Copilot Enterprise plans, the **Default availability for released models** policy controls whether unconfigured generally available (GA) models default to enabled or disabled. If this policy is enabled, users benefit from the latest models without the need for administrator intervention.
 
 ## Which models follow the policy?
 
-<!-- expires 2026-08-26 -->
+The default policy applies to models that you have not explicitly configured. These models are indicated in your enterprise or organization's model settings with the **Delegate to Default Policy** label. When a new model is released, it inherits the default until you explicitly configure it.
 
-New and existing unconfigured models will follow the default set in the policy. Unconfigured models are:
+The following models are **not** in scope. They are disabled by default, regardless of your "Default availability" policy setting.
 
-<!-- end expires 2026-08-26 -->
-
-* At the enterprise level, models that have not been added to the models list on the models configuration page.
-* At the organization level, models that have been made "optional" by an enterprise administrator, and that an organization owner has not explicitly enabled or disabled. (**Does not apply** if you are opted in to the enterprise teams model access preview.)
-
-When a new model is released, it is unconfigured by default.
-
-The following models are **not** eligible for default enablement, regardless of whether they are new or existing:
-
-* Models that have been explicitly disabled
 * Pre-GA models
 * Open weight models (DeepSeek, Kimi K2.7 Code, Kimi K3)
 * Models that are not covered by GitHub's data retention agreement (Claude Fable 5)

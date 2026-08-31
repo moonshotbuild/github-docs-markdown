@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/how-tos/copilot-cli/cli-getting-started"
+source_path: "/en/copilot/get-started/cli-quickstart"
 title: "Getting started with GitHub Copilot CLI"
 intro: "Quickly learn how to use GitHub Copilot CLI."
 product: "GitHub Copilot"
@@ -7,12 +7,10 @@ document_type: "article"
 breadcrumbs:
   - title: "GitHub Copilot"
     href: "/en/copilot"
-  - title: "How-tos"
-    href: "/en/copilot/how-tos"
-  - title: "Copilot CLI"
-    href: "/en/copilot/how-tos/copilot-cli"
+  - title: "Get started"
+    href: "/en/copilot/get-started"
   - title: "Copilot CLI quickstart"
-    href: "/en/copilot/how-tos/copilot-cli/cli-getting-started"
+    href: "/en/copilot/get-started/cli-quickstart"
 ---
 
 # Getting started with GitHub Copilot CLI
