@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Endpoints available for GitHub App user access tokens
 
-<p>Your GitHub App can make requests to the following REST endpoints with a user access token.</p>
+Your GitHub App can make requests to the following REST endpoints with a user access token.
 
 ## actions
 
@@ -1126,6 +1126,8 @@ breadcrumbs:
 * [`GET /emojis`](/en/rest/emojis/emojis#get-emojis)
 
 ## enterprise-teams
+
+* [`GET /enterprises/{enterprise}/members/{username}/teams`](/en/rest/enterprise-teams/enterprise-team-members#list-enterprise-teams-for-a-user)
 
 * [`GET /enterprises/{enterprise}/teams`](/en/rest/enterprise-teams/enterprise-teams#list-enterprise-teams)
 

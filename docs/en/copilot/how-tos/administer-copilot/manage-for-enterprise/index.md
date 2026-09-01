@@ -37,10 +37,6 @@ Manage and govern GitHub Copilot across your enterprise by controlling licensing
 
   Maintain your enterprise's security and compliance standards and empower your developers by managing your agents.
 
-* [Managing GitHub Spark in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-spark)
-
-  Enable and manage GitHub Spark for your enterprise.
-
 * [Managing availability of models in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-availability-of-default-models)
 
   Control which Copilot models are available to users.

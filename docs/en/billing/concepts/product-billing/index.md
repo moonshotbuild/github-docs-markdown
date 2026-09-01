@@ -54,7 +54,3 @@ Learn how product costs are calculated if you exceed the usage included in your 
 * [Git Large File Storage billing](/en/billing/concepts/product-billing/git-lfs)
 
   Learn how usage of Git Large File Storage is measured against your free allowance and how to pay for additional use.
-
-* [GitHub Spark billing](/en/billing/concepts/product-billing/github-spark)
-
-  Learn how GitHub Spark is billed for users.

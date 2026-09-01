@@ -30,6 +30,10 @@ This article gives details about the REST API endpoint.
 GET /repos/{owner}/{repo}/dependency-graph/sbom
 ```
 
+Warning
+
+Closing down notice: This operation is closing down and will not be accessible after November 13, 2026. Please migrate to the asynchronous flow. Use "Request generation of a software bill of materials (SBOM) for a repository" to trigger the report, then "Fetch a software bill of materials (SBOM) for a repository" to retrieve it. For more information, see the changelog.
+
 Exports the software bill of materials (SBOM) for a repository in SPDX JSON format.
 
 ### Parameters

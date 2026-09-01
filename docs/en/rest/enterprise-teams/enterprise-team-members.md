@@ -28,6 +28,80 @@ GitHub generates the enterprise team's `slug` from the team `name` and adds the 
 > \[!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
+## List enterprise teams for a user
+
+```
+GET /enterprises/{enterprise}/members/{username}/teams
+```
+
+Lists all enterprise teams that a user is a member of. This endpoint is available only for
+enterprises using the new enterprise teams experience.
+The authenticated user must be an enterprise owner or have the enterprise\_teams:read permission.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`enterprise`** (string) (required)
+  The slug version of the enterprise name.
+
+* **`username`** (string) (required)
+  The handle for the GitHub user account.
+
+* **`per_page`** (integer)
+  The number of results per page (max 100). For more information, see "Using pagination in the REST API."
+  Default: `30`
+
+* **`page`** (integer)
+  The page number of the results to fetch. For more information, see "Using pagination in the REST API."
+  Default: `1`
+
+### HTTP response status codes
+
+* **200** - OK
+
+* **401** - Requires authentication
+
+* **403** - Forbidden
+
+* **404** - Resource not found
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X GET \
+  https://api.github.com/enterprises/ENTERPRISE/members/USERNAME/teams
+```
+
+**Response schema (Status: 200):**
+
+Array of `Enterprise Team`:
+
+* `id`: required, integer, format: int64
+* `name`: required, string
+* `description`: string
+* `slug`: required, string
+* `url`: required, string, format: uri
+* `sync_to_organizations`: string
+* `organization_selection_type`: string
+* `group_id`: required, string or null
+* `group_name`: string or null
+* `html_url`: required, string, format: uri
+* `members_url`: required, string
+* `created_at`: required, string, format: date-time
+* `updated_at`: required, string, format: date-time
+* `notification_setting`: string, enum: `notifications_enabled`, `notifications_disabled`
+
 ## List members in an enterprise team
 
 ```

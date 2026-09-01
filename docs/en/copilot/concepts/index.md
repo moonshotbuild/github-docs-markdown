@@ -33,10 +33,6 @@ Learn the core concepts that you'll need to understand GitHub Copilot.
 
   Cloud and local sandboxes provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine or in fully isolated cloud environments.
 
-* [About GitHub Spark](/en/copilot/concepts/spark)
-
-  Learn about building and deploying intelligent apps with natural language using GitHub Spark.
-
 * [GitHub Copilot usage metrics](/en/copilot/concepts/copilot-usage-metrics)
 
   Track how your teams are using and adopting GitHub Copilot with detailed usage metrics.

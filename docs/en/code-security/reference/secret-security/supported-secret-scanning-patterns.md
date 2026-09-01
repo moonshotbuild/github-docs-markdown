@@ -486,7 +486,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Polar | Polar Personal Access Token | polar_personal_access_token, [Token versions](#token-versions) | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Polar | Polar Refresh Token | polar_refresh_token, [Token versions](#token-versions) | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Polar | Polar User Session Token | polar_user_session_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| PostHog | PostHog Feature Flags Secure API Key | posthog_feature_flags_secure_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
+| PostHog | PostHog Project Secret API Key | posthog_feature_flags_secure_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | PostHog | PostHog OAuth Access Token | posthog_oauth_access_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | PostHog | PostHog OAuth Refresh Token | posthog_oauth_refresh_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | PostHog | PostHog Personal API Key | posthog_personal_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |

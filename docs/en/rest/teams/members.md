@@ -129,6 +129,9 @@ GET /orgs/{org}/teams/{team_slug}/members
 Team members will include the members of child teams.
 Each member includes their role on the team (member or maintainer) and an inherited flag indicating whether the membership is inherited from a child team (true) or is a direct membership (false). These fields let you read a member's role and direct/inherited status without additional requests.
 To list members in a team, the team must be visible to the authenticated user.
+Note
+
+You can also specify a team by org\_id and team\_id using the route GET /organizations/{org\_id}/team/{team\_id}/members.
 
 ### Parameters
 

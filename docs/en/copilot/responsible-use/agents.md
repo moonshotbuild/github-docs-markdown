@@ -30,16 +30,10 @@ As part of its commitment to responsible AI, GitHub adheres to Microsoft's [six 
 GitHub Copilot includes several agentic features that go beyond suggestion and conversation—they can review code, take action on your behalf, and build applications. This card covers the following experiences:
 
 * **Copilot code review**: Reviews pull request diffs and metadata on GitHub.com, producing feedback comments and suggested changes.
-
 * **Copilot cloud agent**: An asynchronous agent on GitHub.com that can create branches, write code, and open pull requests in response to assigned issues. The cloud agent runs in an ephemeral, firewalled environment with automated security scanning.
-
 * **Copilot CLI**: A command-line tool that can create and modify files, execute commands, and perform multi-step tasks. All actions require explicit permission prompts and are scoped to the current directory.
-
 * **Copilot SDK**: A programmatic library that allows developers to build custom AI-powered applications using Copilot. The SDK communicates with Copilot CLI over JSON-RPC and supports custom agents, MCP server integrations, lifecycle hooks, and session management.
-
 * **GitHub Copilot app**: A desktop application for directing agent sessions across local repositories, git worktrees, and cloud sandboxes. The app uses GitHub Copilot CLI and GitHub Copilot SDK as its foundation and adds a user interface for parallel sessions, quick chats, GitHub issue and pull request workflows, automations, and canvases.
-
-* **GitHub Spark (preview)**: A managed app-building experience where an agent writes code and runs commands in a development environment. Spark provides a managed runtime and can add inference capabilities via the GitHub Models SDK.
 
 These features share common principles—human oversight, review of outputs, and responsible use—but differ in their execution environments, permissions, and data flows. The sections below describe each experience in context.
 
@@ -48,84 +42,44 @@ These features share common principles—human oversight, review of outputs, and
 The following list provides a glossary of key terms related to GitHub Copilot Agents:
 
 * **Code suggestion**: A specific code change proposed by Copilot code review as part of its feedback on a pull request. Code suggestions are presented as suggested changes that can be applied with a couple of clicks.
-
 * **Content filtering**: A safety system that scans prompts and responses to detect and block harmful, offensive, or insecure content before it is shown to the user.
-
 * **Custom instructions**: Natural language descriptions of coding style and best practices that a repository maintainer can configure to guide Copilot code review's feedback. Custom instructions help Copilot understand the conventions and standards of a specific codebase.
-
 * **Hallucination**: A phenomenon where a language model generates output that sounds plausible but is factually incorrect, unsupported by the provided context, or entirely fabricated. In code review, hallucination can manifest as feedback that highlights problems that do not exist or are based on misunderstandings of the code.
-
 * **Large language model (LLM)**: A type of neural network trained on a large body of text data that can generate, analyze, and transform natural language and code. Copilot Agents use one or more LLMs to process context and produce responses.
-
 * **Ephemeral development environment**: A temporary, isolated compute environment created for each cloud agent session. The environment is destroyed after the session ends, ensuring that no state persists between runs.
-
 * **Firewall**: A network-level control enabled by default for the cloud agent that prevents outbound connections to unauthorized hosts, protecting against accidental or malicious exfiltration of code or data.
-
 * **AI credit**: A unit of consumption for Copilot features. Each use of Copilot code review consumes AI credits.
-
 * **Permission prompt**: An interactive confirmation step in Copilot CLI that asks the user to approve an action—such as modifying a file, executing a command, or accessing files outside the current directory—before the agent proceeds. Permission prompts are a key safety mechanism for local agentic execution.
-
 * **Copilot SDK**: A programmatic library (`@github/copilot-sdk`) that lets developers build custom AI-powered applications by creating sessions, sending prompts, and receiving streaming responses from Copilot. The SDK communicates with Copilot CLI over JSON-RPC.
-
 * **JSON-RPC**: The communication protocol used between the Copilot SDK and Copilot CLI. The SDK sends structured requests to the CLI process, which handles model interaction and tool execution.
-
 * **Custom agent (SDK)**: A named agent configuration within the SDK that has its own system prompt, scoped tools, and optional MCP servers. The SDK runtime can automatically delegate to sub-agents based on user intent.
-
 * **Hooks (SDK)**: Lifecycle callbacks in the Copilot SDK that let developers inject custom logic at specific points during a session, such as before or after tool use, on session start or end, and on error.
-
-* **Managed runtime**: The fully managed hosting environment provided by GitHub Spark that scales with your application's needs and eliminates the need to manually manage infrastructure.
-
-* **Spark**: An application built using GitHub Spark. Sparks can range from simple utilities to full-stack web applications and can be deployed to the public internet with configurable visibility.
-
-* **Targeted edit**: A feature in GitHub Spark that allows you to select a specific element within your application and provide a focused prompt to refine its style, substance, or behavior, rather than applying a global change.
 
 ## 3. Key features or capabilities
 
 The key features and capabilities outlined here describe what GitHub Copilot Agents are designed to do and how they perform across supported tasks.
 
 * **Automated code review feedback**: When a user requests a review from Copilot, it scans the code changes plus additional relevant context and provides feedback on the code. Feedback may include natural language comments and specific code suggestions linked to particular lines and files.
-
 * **Customizable review guidance**: Copilot code review can be customized with custom instructions—natural language descriptions of coding style and best practices—so that feedback reflects a repository's conventions and standards.
-
 * **Autonomous pull request creation**: The Copilot cloud agent can pick up a task from an issue, a pull request comment, or Copilot Chat, create a branch, generate tailored code changes, and open a pull request. After the initial pull request is created, the agent can iterate based on your feedback and reviews.
-
 * **Ephemeral, firewalled execution**: While working on a task, the cloud agent has access to its own ephemeral development environment where it can make changes to code, execute automated tests, and run linters. A firewall is enabled by default to prevent data exfiltration.
-
 * **Automated security scanning**: During code generation, the cloud agent automatically analyzes newly generated code for security vulnerabilities using CodeQL, secret scanning, and dependency analysis, and attempts to resolve any issues before they are introduced.
-
 * **External integrations**: The cloud agent can receive information and context from MCP like workIQ and Microsoft 365, and external applications like Microsoft Teams, Linear, Slack, and Jira, enabling teams to assign tasks and track progress directly within their existing workflows.
-
 * **Local agentic execution (Copilot CLI)**: Copilot CLI provides a chat-like interface in the terminal that can autonomously create and modify files, execute commands, and perform multi-step tasks. All actions are scoped to the current directory and require explicit permission prompts before the agent modifies files or runs commands.
-
-* **Natural language app building (Spark)**: GitHub Spark offers a natural language-centric development environment for creating and deploying full-stack web applications without requiring users to write or deploy code manually. Spark provides a fully managed runtime environment that scales with your application's needs.
-
-* **Inference capabilities (Spark)**: Spark's SDK natively integrates with GitHub Models, allowing you to incorporate model inference into your application. If Spark determines that your application requires inference capabilities, it will add them using the Spark SDK.
 
 ## 4. Intended uses
 
 GitHub Copilot Agents can be used in multiple scenarios across a variety of industries. Some examples of use cases include:
 
 * **Supplementing human code review**: Copilot code review is intended to quickly provide feedback on a developer's code, enabling developers to get code ready to merge more quickly and increasing overall code quality.
-
 * **Codebase maintenance**: The cloud agent can tackle security-related fixes, dependency upgrades, and targeted refactoring.
-
 * **Feature development**: The cloud agent can implement incremental feature requests, develop additional test suites, and create or update documentation.
-
 * **Prototyping new projects**: The cloud agent and Copilot CLI can greenfield new concepts, helping developers explore ideas quickly.
-
 * **Setting up your environment (CLI)**: Copilot CLI can run commands in your terminal to set up your local environment to work on existing projects.
-
 * **Finding the right command (CLI)**: Copilot CLI can suggest commands to perform tasks you're trying to complete, and explain unfamiliar commands in natural language.
-
 * **Building custom AI applications (SDK)**: The Copilot SDK enables developers to build applications that leverage Copilot for code generation, natural language interaction, and task automation in their own products and workflows.
-
 * **Multi-agent orchestration (SDK)**: Using custom agents and sub-agents, developers can build sophisticated workflows where multiple specialized agents collaborate on complex tasks, with automatic delegation based on user intent.
-
 * **Extending applications with external tools (SDK)**: The SDK's MCP server support allows developers to connect their applications to external data sources and services, expanding the range of tasks their agents can perform.
-
-* **Building and deploying web applications (Spark)**: You can use GitHub Spark to build full-stack web applications using natural language. Spark's integrated runtime environment allows you to deploy these applications to the public internet with configurable visibility based on GitHub account permissions.
-
-* **Rapid prototyping (Spark)**: Spark helps developers, designers, product managers, and other builders rapidly prototype ideas without needing to build applications from scratch or construct complex mockups. Prototypes can be deployed for ease of sharing or remain unpublished.
 
 ## 5. Models and training data
 
@@ -138,8 +92,6 @@ The Copilot cloud agent uses a large language model to reason about tasks, gener
 Copilot CLI uses a large language model to reason about tasks, generate code, modify files, and execute commands in your local terminal environment. The agent has been evaluated across a variety of programming languages. English is the primary supported language for prompts and responses.
 
 The Copilot SDK communicates with Copilot CLI over JSON-RPC, using the same underlying models and capabilities. Applications built with the SDK use the same models available to the authenticated Copilot user or organization. Developers can also bring their own API keys (BYOK) to use custom model providers.
-
-GitHub Spark uses a large language model to power its agent within the development environment. The agent writes code and runs commands to build your application. Spark does not test the prompts you create within your application for inference—you must ensure that your included capabilities act as intended.
 
 ## 6. Performance
 
@@ -185,61 +137,27 @@ The Copilot SDK provides a programmatic interface to Copilot's agentic capabilit
 3. **Agent execution**: The language model reasons about the task and may invoke tools, delegate to sub-agents, or connect to MCP servers. Lifecycle hooks fire at each stage, allowing the application to inject custom logic.
 4. **Response streaming**: Responses are streamed back to the application, which can present them in any format appropriate for its interface. The SDK provides structured events for text, tool calls, errors, and completion signals.
 
-#### GitHub Spark
-
-GitHub Spark uses an agent-based approach to build and modify applications. This process can be broken down into a number of steps:
-
-1. **Input processing**: Input prompts are pre-processed by Copilot, augmented with contextual information from your current Spark inputs—including code from your current application, previous prompts, and any error logs from your development environment—and sent to a large language model-powered agent within your development environment. The system is designed to generate code based on submitted prompts and is not capable of conversational interactions. English is the preferred language for prompts.
-2. **Language model analysis**: The prompt is passed through a large language model, which is a neural network trained on a large body of text data. The language model analyzes the input prompt to help the agent reason about the task and leverage necessary tools.
-3. **Agent execution**: The agent runs in your development environment, accepting the prompt and additional context, and decides how to update your application. The agent can write code, run commands, and read execution outputs. All actions are taken to ensure functional, accurate code. The only output from the agent is your application code.
-
-Spark uses frameworks and SDKs that ensure modern design and secure deployments seamlessly integrated into Spark's runtime component. The design framework is flexible and modular, enabling you to modify the theme to match your desired look and feel. Spark's runtime integration uses best practices for web deployments to ensure secure, scalable deployments.
-
 ## 7. Limitations
 
 Understanding GitHub Copilot agentic features' limitations is crucial to determine they are used within safe and effective boundaries. While we encourage customers to leverage these features in their innovative solutions or applications, it's important to note that they were not designed for every possible scenario. We encourage users to refer to [GitHub Terms](/en/site-policy/github-terms) as well as the following considerations when choosing a use case:
 
 * **Missed code quality problems**: Copilot may not identify all of the problems that are present in code, especially where changes are large or complex. To ensure that all relevant problems are identified and corrected, Copilot code review should be supplemented with careful human code review.
-
 * **False positives**: Copilot code review has a risk of hallucination—it may highlight problems in reviewed code that do not exist or are based on misunderstandings of the code. Comments generated by Copilot code review should be carefully reviewed and considered before taking action and making changes.
-
 * **Inaccurate or insecure code suggestions**: As part of its comments, Copilot code review may provide specific code suggestions. The code generated may appear to be valid but may not actually be semantically or syntactically correct, or may not correctly resolve the problem identified in the comment. In addition, code generated by Copilot may contain security vulnerabilities or other issues. You should always carefully review and test code generated by Copilot.
-
 * **Potential biases**: Copilot's training data is drawn from existing code repositories, which may contain biases and errors that can be perpetuated by the tool. Additionally, Copilot code review may be biased toward certain programming languages or coding styles, which can lead to suboptimal or incomplete feedback.
-
 * **Limited scope (cloud agent)**: The language model used by the cloud agent has been trained on a large body of code but still has a limited scope and may not be able to handle certain code structures or obscure programming languages. For each language, the quality of suggestions depends on the volume and diversity of training data for that language.
-
 * **Inaccurate code (cloud agent)**: The cloud agent may generate code that appears to be valid but may not actually be semantically or syntactically correct, or may not accurately reflect the intent of the developer. You should carefully review and test generated code, particularly when dealing with critical or sensitive applications.
-
 * **Security risks (cloud agent)**: The cloud agent generates code and natural language based on the context of an issue or comment within a repository, which can potentially expose sensitive information or vulnerabilities if not used carefully. You should review all outputs generated by the agent thoroughly prior to merging.
-
 * **Public code matches (cloud agent)**: The cloud agent may generate code that is a match or near match of publicly available code, even if the "Suggestions matching public code" policy is set to "Block." If this happens, Copilot will show matches in the agent session logs with a link to display details of the matched code.
-
 * **Limited scope (CLI)**: The language model used by Copilot CLI has been trained on a large body of code but still has a limited scope and may not be able to handle certain code structures or obscure programming languages. For each language, the quality of suggestions depends on the volume and diversity of training data for that language.
-
 * **Inaccurate code (CLI)**: Copilot CLI may generate code that appears to be valid but may not actually be semantically or syntactically correct, or may not accurately reflect the intent of the developer. You should carefully review and test generated code, particularly when dealing with critical or sensitive applications.
-
 * **Security risks (CLI)**: Copilot CLI generates code and natural language based on the context of your local environment, which can potentially expose sensitive information or vulnerabilities if not used carefully. You should review all outputs generated by the agent thoroughly.
-
 * **Public code matches (CLI)**: Copilot CLI may generate code that is a match or near match of publicly available code, even if the "Suggestions matching public code" policy is set to "Block."
-
 * **Command execution risks (CLI)**: Additional caution is required when asking or allowing Copilot CLI to execute a command, particularly regarding the potential destructiveness of some suggested commands. You may encounter commands for file deletion or hard drive formatting, which can cause problems if used incorrectly. You are ultimately responsible for the commands executed by Copilot CLI.
-
 * **Inherited limitations (SDK)**: Because the Copilot SDK communicates with Copilot CLI, applications built with the SDK inherit the same model limitations, including limited scope for certain programming languages and the potential for inaccurate or insecure code generation.
-
 * **Custom agent complexity (SDK)**: Incorrectly configured custom agents, tools, or hooks may produce unexpected behavior. Developers are responsible for testing and validating the behavior of their custom agent configurations.
-
 * **MCP server trust (SDK)**: MCP servers connected through the SDK can expose tools and data from external sources. Developers must ensure that connected MCP servers are trustworthy, as malicious or misconfigured servers could introduce harmful behavior or expose sensitive data.
-
 * **BYOK model variance (SDK)**: When using bring-your-own-key configurations with third-party model providers, behavior may differ from GitHub-hosted models. Developers are responsible for evaluating the safety and quality of responses from their chosen provider.
-
-* **Interpretation of user intent (Spark)**: Spark is not always correct in its interpretation of your intent. You should always use Spark's provided preview to confirm accurate behavior within your application.
-
-* **Limited scope (Spark)**: Spark has been trained on a large body of code and relevant applications but may struggle with complex or truly novel applications. Spark performs best on common and personal application scenarios (for example, productivity tools, learning aids, life management utilities), and when the natural language instruction is provided in English.
-
-* **Public code matches (Spark)**: Spark may generate code that is a match or near match of publicly available code, even if the "Suggestions matching public code" policy is set to "Block." If this happens, Copilot will not provide code references pointing to the original source of the code.
-
-* **Security limitations (Spark)**: While Spark's runtime follows best practices for application deployment, it generates code probabilistically, which can potentially introduce vulnerabilities especially if those vulnerabilities are common in the training set. You should be careful when building applications that manage personal or sensitive data and always review and test the generated application thoroughly.
 
 ## 8. Evaluations
 
@@ -338,102 +256,50 @@ In offline mode, web-based tools such as `web_fetch` and GitHub Code Search are 
 
 If your model provider configuration is invalid, Copilot CLI exits with an error. It does not fall back to GitHub-hosted models. Common failures, such as connection refused, authentication errors, model not found, and timeouts, produce user-friendly messages with actionable guidance.
 
-### GitHub Spark
-
-* **Content protections**: Spark has built-in protections against harmful, hateful, or offensive content.
-* **Content reporting**: You can report problematic or offensive content via feedback, or report a spark as abuse or spam. Examples of offensive content should be reported to <copilot-safety@github.com> with the spark's URL.
-* **Secure runtime**: Spark's runtime integration uses best practices for web deployments to ensure secure, scalable deployments.
-
 ## 10. Best practices for deploying and adopting GitHub Copilot agentic features
 
 Responsible AI is a shared commitment between GitHub and its customers. While GitHub builds AI applications with safety, fairness, and transparency at the core, customers play a critical role in deploying and using these technologies responsibly within their own contexts. To support this partnership, we offer the following best practices for deployers and end users to help customers implement responsible AI effectively.
 
 * **Exercise caution and evaluate outcomes when using Copilot agentic features for consequential decisions or in sensitive domains**: <!-- Do not modify this text.-->
   Consequential decisions are those that may have a legal or significant impact on a person's access to education, employment, financial platforms, government benefits, healthcare, housing, insurance, legal platforms, or that could result in physical, psychological, or financial harm. Sensitive domains—such as financial platforms, healthcare, and housing—require particular care due to the potential for disproportionate impact on different groups of people. When using AI for decisions in these areas, make sure that impacted stakeholders can understand how decisions are made, appeal decisions, and update any relevant input data.
-
 * **Evaluate legal and regulatory considerations**: <!-- Do not modify this text.-->
   Customers need to evaluate potential specific legal and regulatory obligations when using any AI platforms and solutions, which may not be appropriate for use in every industry or scenario. Additionally, AI platforms or solutions are not designed for and may not be used in ways prohibited in applicable terms of service and relevant codes of conduct.
-
 * **Exercise human oversight when appropriate**: Human oversight is an important safeguard when interacting with AI applications. While we continuously improve our AI applications, AI might still make mistakes. The outputs generated may be inaccurate, incomplete, biased, misaligned, or irrelevant to your intended goals. This could happen due to various reasons, such as ambiguity in the inputs or limitations of the underlying models. As such, users should review the responses generated by Copilot agentic features and verify that they match their expectations and requirements.
-
 * **Be aware of the risk of overreliance**: <!-- Do not modify this text.-->
   Overreliance on AI happens when users accept incorrect or incomplete AI outputs, mainly because mistakes in AI outputs may be hard to detect. For the end-user, overreliance could result in decreased productivity, loss of trust, application abandonment, financial loss, psychological harm, physical harm, among others. (e.g. a doctor accepts an incorrect AI output).
-
 * **Exercise caution when designing agentic AI in sensitive domains**: <!-- Do not modify this text.-->
   Users should exercise caution when designing and/or deploying agentic AI applications in sensitive domains where agent actions are irreversible or highly consequential. Additional precautions should also be taken when creating autonomous agentic AI as described further in the [GitHub Terms](/en/site-policy/github-terms).
-
 * **Use Copilot code review to supplement human reviews, not to replace them**: While Copilot code review can be a powerful tool for improving code quality, it is important to use it as a tool, rather than to replace human reviews. You should always review and verify the feedback generated by Copilot code review, and supplement Copilot's feedback with careful human review to ensure your code meets your requirements.
-
 * **Provide feedback**: If you encounter any issues or limitations with Copilot code review, we recommend that you provide feedback by using the thumbs up and thumbs down buttons on Copilot's comments. This can help GitHub improve the tool and address any concerns or limitations.
-
 * **Configure custom instructions**: You can configure custom instructions to help Copilot understand your coding style and best practices, improving the relevance and quality of review feedback.
-
 * **Ensure cloud agent tasks are well-scoped**: The more clear and well-scoped the prompt you assign to the cloud agent, the better the results. An ideal issue includes a clear description of the problem, complete acceptance criteria, and hints on what files need to be changed.
-
 * **Customize the cloud agent with additional context**: The cloud agent has access to semantic code search, which helps it find relevant code based on meaning rather than just exact text matches, allowing it to complete tasks faster. To further enhance performance, implement custom Copilot instructions to help the agent better understand your project and how to build, test, and validate its changes.
-
 * **Use the cloud agent as a tool, not a replacement**: You should always review and test the content generated by the cloud agent to ensure that it meets your requirements and is free of errors or security concerns prior to merging.
-
 * **Use secure coding and code review practices with the cloud agent**: Although the cloud agent can generate syntactically correct code, it may not always be secure. Follow best practices for secure coding and code review. Take the same precautions as you would with any code that uses material you did not independently originate, including rigorous testing, IP scanning, and checking for security vulnerabilities.
-
 * **Stay up to date**: The cloud agent is an evolving technology. Stay up to date with any new security risks or best practices that may emerge.
-
 * **Use Copilot CLI as a tool, not a replacement**: You should always review and verify commands and code generated by Copilot CLI to ensure they meet your requirements and are free of errors or security concerns.
-
 * **Review commands before execution (CLI)**: Exercise particular caution when Copilot CLI suggests executing commands, especially those that modify or delete files. You are ultimately responsible for the commands you allow the agent to run.
-
 * **Keep CLI tasks well-scoped**: The more clear and well-scoped the prompt you provide, the better the results. Include a clear description of the problem, acceptance criteria, and hints on what files need to be changed.
-
 * **Provide feedback (CLI)**: If you encounter any issues or limitations with Copilot CLI, provide feedback using the `/feedback` command.
-
 * **Validate custom agent behavior (SDK)**: Thoroughly test custom agents, tools, and hooks before deploying applications built with the SDK to production. Ensure that tool configurations and system prompts produce safe, expected behavior.
-
 * **Audit MCP server connections (SDK)**: Only connect to MCP servers that you trust. Review the tools and data that each server exposes and ensure they align with your application's security requirements.
-
 * **Implement safety hooks (SDK)**: Use the SDK's lifecycle hooks to implement guardrails such as content filtering, audit logging, and tool approval workflows in your applications.
-
 * **Scope sessions appropriately (SDK)**: Configure each SDK session with only the tools, agents, and permissions required for the task at hand. Avoid granting broad access when narrow scoping is sufficient.
-
 * **Review BYOK provider policies (SDK)**: If using bring-your-own-key configurations, ensure your chosen model provider's terms of service and data handling policies meet your organization's requirements.
-
-* **Keep Spark prompts specific and on topic**: The more specific you can be about the intended behaviors and interactions, the better the output. Incorporating relevant context such as specific scenarios, mockups, or specifications will help Spark understand your intent. Spark incorporates context from previous prompts, so off-topic prompts may hinder performance on subsequent revisions.
-
-* **Use targeted edits in Spark**: Targeted edits allow you to specify elements within your application for focused refinement. Using targeted edits when possible—rather than global prompts—will result in more accurate changes and fewer side effects.
-
-* **Verify Spark's output**: Always use Spark's provided application preview to verify that your application behaves as intended in different scenarios. If you are comfortable with code, review the generated code to ensure it meets your quality standards.
-
-* **Ensure inference capabilities act as intended (Spark)**: If your Spark application uses inference capabilities via the GitHub Models SDK, you are responsible for testing the prompts you create to ensure they produce appropriate results.
 
 ## 11. Learn more about GitHub Copilot agentic features
 
 For additional guidance on the responsible use of Copilot agentic features, we recommend reviewing the following documentation:
 
 * [Using GitHub Copilot code review](/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)
-
 * [Best practices for using GitHub Copilot to work on tasks](/en/copilot/tutorials/cloud-agent/get-the-best-results)
-
 * [Configure the development environment](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment)
-
 * [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-the-firewall)
-
 * [Build your first Copilot-powered app](/en/copilot/how-tos/copilot-sdk/getting-started)
-
 * [Configure MCP servers for your repository](/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers)
-
 * [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli)
-
 * [About the GitHub Copilot app](/en/copilot/concepts/agents/github-copilot-app)
-
-* [Your first spark](/en/copilot/tutorials/spark/your-first-spark)
-
-* [Building and deploying AI-powered apps with GitHub Spark](/en/copilot/tutorials/spark/build-apps-with-spark)
-
-* [GitHub Spark billing](/en/billing/concepts/product-billing/github-spark)
-
-* [GitHub Pre-release License Terms](/en/site-policy/github-terms/github-pre-release-license-terms)
-
 * [GitHub Terms for Additional Products and Features](/en/site-policy/github-terms/github-terms-for-additional-products-and-features#github-copilot)
-
 * [Copilot Trust Center](https://copilot.github.trust.page/)
 
 ### Learn more about responsible AI

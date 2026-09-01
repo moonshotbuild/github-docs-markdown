@@ -227,10 +227,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Cloud and local sandboxes provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine or in fully isolated cloud environments.
 
-* [About GitHub Spark](/en/copilot/concepts/spark)
-
-  Learn about building and deploying intelligent apps with natural language using GitHub Spark.
-
 * [GitHub Copilot usage metrics](/en/copilot/concepts/copilot-usage-metrics/copilot-metrics)
 
   Copilot usage metrics provide visibility into how Copilot is adopted and used across your organization, including engagement, activity, code generation, and pull request lifecycle trends.
@@ -685,7 +681,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Cloud sessions](/en/copilot/how-tos/copilot-sdk/features/cloud-sessions)
 
-  Cloud sessions run Copilot work on GitHub-hosted compute through Mission Control. Use them when your app should create a session that executes remotely instead of starting a local Copilot CLI session on the user's machine or your server.
+  Cloud sessions run Copilot work on GitHub-hosted compute and appear in the agents panel on GitHub. Use them when your app should create a session that executes remotely instead of starting a local GitHub Copilot CLI session on the user's machine or your server.
 
 * [Context clearing and terminal tools](/en/copilot/how-tos/copilot-sdk/features/context-management)
 
@@ -717,7 +713,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Remote sessions](/en/copilot/how-tos/copilot-sdk/features/remote-sessions)
 
-  Remote sessions let users access their Copilot session from GitHub web and mobile via [Mission Control](https://github.com). When enabled, the SDK connects each session to Mission Control, producing a URL that can be shared as a link or QR code.
+  Remote sessions sync to GitHub so users can access locally running Copilot sessions from the agents panel or on mobile. When enabled, the SDK produces a URL to the session log that can be shared as a link or QR code.
 
 * [Session limits](/en/copilot/how-tos/copilot-sdk/features/session-limits)
 
@@ -1115,10 +1111,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Apply consistent standards by having Copilot review every pull request.
 
-* [Managing GitHub Spark in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-spark)
-
-  Enable and manage GitHub Spark for your enterprise.
-
 * [Managing availability of models in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-availability-of-default-models)
 
   Control which Copilot models are available to users.
@@ -1174,10 +1166,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Troubleshooting network errors for GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-network-errors)
 
   Resolve common errors related to proxies and custom certificates.
-
-* [Troubleshooting common issues with GitHub Spark](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-spark)
-
-  This guide describes common issues with Spark and how to resolve them.
 
 * [Troubleshooting slow responses from GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-copilot-slowness)
 
@@ -1594,22 +1582,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Optimizing your budget configuration](/en/copilot/tutorials/budgets/optimizing-your-budget-configuration)
 
   Find the right combination of budget controls for your organization based on your size, structure, and spending goals.
-
-* [Your first spark](/en/copilot/tutorials/spark/your-first-spark)
-
-  Learn how to build your first GitHub Spark app in minutes, without writing any code.
-
-* [Write effective prompts and provide useful context for Spark](/en/copilot/tutorials/spark/prompt-tips)
-
-  Learn how to get the best results when you are describing your app idea to Spark.
-
-* [Building and deploying AI-powered apps with GitHub Spark](/en/copilot/tutorials/spark/build-apps-with-spark)
-
-  Learn how to build and deploy an intelligent web app with natural language using GitHub Spark.
-
-* [Deploy your Spark app from the command line](/en/copilot/tutorials/spark/deploy-from-cli)
-
-  Learn how to deploy your Spark app from the command line.
 
 * [Using custom instructions to unlock the power of Copilot code review](/en/copilot/tutorials/customize-code-review)
 
