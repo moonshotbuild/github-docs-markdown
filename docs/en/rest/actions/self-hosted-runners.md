@@ -90,6 +90,54 @@ curl -L \
   * `ephemeral`: boolean
   * `version`: string or null
 
+## Get runner version end-of-life schedule for an organization
+
+```
+GET /orgs/{org}/actions/runners/deprecations/{version}
+```
+
+Gets the end-of-life schedule for a specific runner version in an organization. Returns the runner version
+and the dates when registration and runtime support will end.
+Authenticated users must have admin access to the organization to use this endpoint.
+OAuth app tokens and personal access tokens (classic) need the admin:org scope to use this endpoint.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`org`** (string) (required)
+  The organization name. The name is not case sensitive.
+
+* **`version`** (string) (required)
+  The runner version to look up.
+
+### HTTP response status codes
+
+* **200** - OK
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X GET \
+  https://api.github.com/orgs/ORG/actions/runners/deprecations/VERSION
+```
+
+**Response schema (Status: 200):**
+
+* `runner_version`: required, string
+* `registration_deprecates_at`: string or null, format: date-time
+* `runtime_deprecates_at`: string or null, format: date-time
+
 ## List runner applications for an organization
 
 ```
@@ -884,6 +932,55 @@ curl -L \
 **Response schema (Status: 200):**
 
 Same response schema as [List self-hosted runners for an organization](#list-self-hosted-runners-for-an-organization).
+
+## Get runner version end-of-life schedule for a repository
+
+```
+GET /repos/{owner}/{repo}/actions/runners/deprecations/{version}
+```
+
+Gets the end-of-life schedule for a specific runner version in a repository. Returns the runner version
+and the dates when registration and runtime support will end.
+Authenticated users must have admin access to the repository to use this endpoint.
+OAuth app tokens and personal access tokens (classic) need the repo scope to use this endpoint.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`owner`** (string) (required)
+  The account owner of the repository. The name is not case sensitive.
+
+* **`repo`** (string) (required)
+  The name of the repository without the .git extension. The name is not case sensitive.
+
+* **`version`** (string) (required)
+  The runner version to look up.
+
+### HTTP response status codes
+
+* **200** - OK
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X GET \
+  https://api.github.com/repos/OWNER/REPO/actions/runners/deprecations/VERSION
+```
+
+**Response schema (Status: 200):**
+
+Same response schema as [Get runner version end-of-life schedule for an organization](#get-runner-version-end-of-life-schedule-for-an-organization).
 
 ## List runner applications for a repository
 

@@ -911,6 +911,7 @@ The possible organization invitation sources.
 
 ### Values for `OrganizationInvitationSource`
 
+* `ENTERPRISE_ORGANIZATION_CREATION`: The invitation was created with an enterprise organization.
 * `MEMBER`: The invitation was created from the web interface or from API.
 * `SCIM`: The invitation was created from SCIM.
 * `UNKNOWN`: The invitation was sent before this feature was added.

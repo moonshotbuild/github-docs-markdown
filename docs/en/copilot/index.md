@@ -295,17 +295,17 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Your Copilot plan includes a monthly allowance of GitHub AI Credits. If you exhaust your AI credits, you can pay extra to keep working.
 
-* [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises)
+* [About billing for GitHub Copilot in organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/fundamentals)
+
+  Learn about pricing and billing cycles for Copilot.
+
+* [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing)
 
   Under usage-based billing, Copilot usage in organizations and enterprises is measured in AI credits.
 
 * [Budgets for usage-based billing](/en/copilot/concepts/billing/budgets-for-usage-based-billing)
 
   Under usage-based billing, budget controls at the user, organization, cost center, and enterprise levels determine how Copilot usage is served, metered, or blocked.
-
-* [About billing for GitHub Copilot in organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises)
-
-  Learn about pricing and billing cycles for Copilot.
 
 * [About enterprise accounts for Copilot Business](/en/copilot/concepts/about-enterprise-accounts-for-copilot-business)
 
@@ -355,9 +355,9 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Control which AI models your organization or enterprise can use with Copilot.
 
-* [Configuring automatic code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review)
+* [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review)
 
-  Set up Copilot to automatically review pull requests for you, a repository, or an organization.
+  Set up Copilot to review pull requests.
 
 * [Configuring runners for GitHub Copilot code review](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-runners)
 
@@ -534,6 +534,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Rolling back changes made during a GitHub Copilot CLI session](/en/copilot/how-tos/copilot-cli/use-copilot-cli/roll-back-changes)
 
   Rewind your Copilot CLI session to a previous prompt to undo changes in conversation history, and optionally restore files.
+
+* [Working with multiple GitHub Copilot CLI sessions](/en/copilot/how-tos/copilot-cli/use-copilot-cli/work-with-multiple-sessions)
+
+  Run several Copilot CLI sessions at once and use the sidebar to quickly move between them.
 
 * [Steering a GitHub Copilot CLI session from another device](/en/copilot/how-tos/copilot-cli/use-copilot-cli/steer-remotely)
 
@@ -998,6 +1002,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies)
 
   Find out how to change your personal settings on GitHub to configure GitHub Copilot's behavior.
+
+* [Subscribing to GitHub Copilot for your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-plan/subscribe)
+
+  Organization owners can set up a Copilot Business plan for their organization.
 
 * [Canceling GitHub Copilot for your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-plan/cancel)
 

@@ -35,10 +35,6 @@ These guides provide information for troubleshooting GitHub Copilot.
 
   Resolve common errors related to proxies and custom certificates.
 
-* [Troubleshooting common issues with GitHub Spark](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-spark)
-
-  This guide describes common issues with Spark and how to resolve them.
-
 * [Troubleshooting slow responses from GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-copilot-slowness)
 
   Troubleshooting help for slow responses from GitHub Copilot.

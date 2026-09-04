@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Endpoints available for GitHub App installation access tokens
 
-<p>Your GitHub App can make requests to the following REST endpoints with an installation access token.</p>
+Your GitHub App can make requests to the following REST endpoints with an installation access token.
 
 ## actions
 
@@ -161,6 +161,8 @@ breadcrumbs:
 
 * [`GET /orgs/{org}/actions/runners`](/en/rest/actions/self-hosted-runners#list-self-hosted-runners-for-an-organization)
 
+* [`GET /orgs/{org}/actions/runners/deprecations/{version}`](/en/rest/actions/self-hosted-runners#get-runner-version-end-of-life-schedule-for-an-organization)
+
 * [`GET /orgs/{org}/actions/runners/downloads`](/en/rest/actions/self-hosted-runners#list-runner-applications-for-an-organization)
 
 * [`POST /orgs/{org}/actions/runners/generate-jitconfig`](/en/rest/actions/self-hosted-runners#create-configuration-for-a-just-in-time-runner-for-an-organization)
@@ -290,6 +292,8 @@ breadcrumbs:
 * [`PUT /repos/{owner}/{repo}/actions/permissions/workflow`](/en/rest/actions/permissions#set-default-workflow-permissions-for-a-repository)
 
 * [`GET /repos/{owner}/{repo}/actions/runners`](/en/rest/actions/self-hosted-runners#list-self-hosted-runners-for-a-repository)
+
+* [`GET /repos/{owner}/{repo}/actions/runners/deprecations/{version}`](/en/rest/actions/self-hosted-runners#get-runner-version-end-of-life-schedule-for-a-repository)
 
 * [`GET /repos/{owner}/{repo}/actions/runners/downloads`](/en/rest/actions/self-hosted-runners#list-runner-applications-for-a-repository)
 
@@ -1034,6 +1038,8 @@ breadcrumbs:
 * [`GET /emojis`](/en/rest/emojis/emojis#get-emojis)
 
 ## enterprise-teams
+
+* [`GET /enterprises/{enterprise}/members/{username}/teams`](/en/rest/enterprise-teams/enterprise-team-members#list-enterprise-teams-for-a-user)
 
 * [`GET /enterprises/{enterprise}/teams`](/en/rest/enterprise-teams/enterprise-teams#list-enterprise-teams)
 

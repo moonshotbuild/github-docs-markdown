@@ -21,6 +21,14 @@ Breaking changes include changes that will break existing queries or could affec
 
 **2026** · [2025](2025) · [2024](2024) · [2023](2023) · [2022](2022) · [2021](2021) · [2020](2020) · [2019](2019) · [2018](2018) · [2017](2017)
 
+## Schema changes for 2026-09-02
+
+### The GraphQL schema includes these changes:
+
+* Enum value 'ENTERPRISE\_ORGANIZATION\_CREATIONwas added to enumOrganizationInvitationSource'
+* Enum value 'ADDED\_TO\_STACK\_EVENTwas added to enumPullRequestTimelineItemsItemType'
+* Enum value 'REMOVED\_FROM\_STACK\_EVENTwas added to enumPullRequestTimelineItemsItemType'
+
 ## Schema changes for 2026-08-26
 
 ### The GraphQL schema includes these changes:

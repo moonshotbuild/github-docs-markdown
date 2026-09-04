@@ -157,10 +157,6 @@ Learn about the different components of your bill, and how you can view and mana
 
   Learn how usage of Git Large File Storage is measured against your free allowance and how to pay for additional use.
 
-* [GitHub Spark billing](/en/billing/concepts/product-billing/github-spark)
-
-  Learn how GitHub Spark is billed for users.
-
 * [GitHub Sponsors billing](/en/billing/concepts/third-party-payments/github-sponsors)
 
   Understand how sponsorship payments appear in your billing, how they align with your existing payment method and billing date, and what fees apply.

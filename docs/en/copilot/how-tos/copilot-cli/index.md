@@ -85,6 +85,10 @@ Use Copilot directly from your terminal to answer questions, write and debug cod
 
   Rewind your Copilot CLI session to a previous prompt to undo changes in conversation history, and optionally restore files.
 
+* [Working with multiple GitHub Copilot CLI sessions](/en/copilot/how-tos/copilot-cli/use-copilot-cli/work-with-multiple-sessions)
+
+  Run several Copilot CLI sessions at once and use the sidebar to quickly move between them.
+
 * [Invoking custom agents](/en/copilot/how-tos/copilot-cli/use-copilot-cli/invoke-custom-agents)
 
   Use custom agents, skills, and MCP servers in Copilot CLI to extend its capabilities.

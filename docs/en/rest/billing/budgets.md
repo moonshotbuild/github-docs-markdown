@@ -121,6 +121,7 @@ curl -L \
   * `budget_alerting`: required, object:
     * `will_alert`: required, boolean
     * `alert_recipients`: required, array of string
+  * `expires_at`: string, format: date
 * `user`: string
 * `effective_budget`: object:
   * `id`: required, string
@@ -156,6 +157,7 @@ curl -L \
   * `budget_alerting`: required, object:
     * `will_alert`: required, boolean
     * `alert_recipients`: required, array of string
+  * `expires_at`: string, format: date
 * `user`: string
 * `effective_budget`: object:
   * `id`: required, string
@@ -228,6 +230,11 @@ SkuPricing: Covers a single, specific SKU. Set budget_product_sku to a SKU such 
 - **`user`** (string)
   The username of the user for user scope budgets. This field is required when budget_scope is user.
 
+- **`expires_at`** (string)
+  The date the budget will expire in YYYY-MM-DD format. Only dates in the future are accepted.
+If not provided, the budget will not expire.
+Only supported for budgets with budget_scope of user
+
 ### HTTP response status codes
 
 - **200** - Budget created successfully
@@ -284,6 +291,7 @@ curl -L \
   * `budget_alerting`: object:
     * `will_alert`: boolean
     * `alert_recipients`: array of string
+  * `expires_at`: string, format: date
 
 ## Get a budget by ID for an organization
 
@@ -412,6 +420,11 @@ SkuPricing: Covers a single, specific SKU. Set budget_product_sku to a SKU such 
 - **`user`** (string)
   The username of the user for user scope budgets.
 
+- **`expires_at`** (string or null or integer)
+  The date the budget will expire in YYYY-MM-DD format. Only dates in the future are accepted.
+If not set, the budget will not expire. Setting to null or 0 will remove the expiration date from a budget if set.
+Only supported for budgets with budget_scope of user
+
 ### HTTP response status codes
 
 - **200** - Budget updated successfully
@@ -466,6 +479,7 @@ curl -L \
   * `budget_alerting`: object:
     * `will_alert`: boolean
     * `alert_recipients`: array of string
+  * `expires_at`: string, format: date
 
 ## Delete a budget for an organization
 

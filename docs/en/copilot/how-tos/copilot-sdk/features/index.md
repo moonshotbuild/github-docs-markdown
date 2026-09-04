@@ -31,7 +31,7 @@ These guides cover the capabilities you can add to your Copilot SDK application.
 
 * [Cloud sessions](/en/copilot/how-tos/copilot-sdk/features/cloud-sessions)
 
-  Cloud sessions run Copilot work on GitHub-hosted compute through Mission Control. Use them when your app should create a session that executes remotely instead of starting a local Copilot CLI session on the user's machine or your server.
+  Cloud sessions run Copilot work on GitHub-hosted compute and appear in the agents panel on GitHub. Use them when your app should create a session that executes remotely instead of starting a local GitHub Copilot CLI session on the user's machine or your server.
 
 * [Context clearing and terminal tools](/en/copilot/how-tos/copilot-sdk/features/context-management)
 
@@ -63,7 +63,7 @@ These guides cover the capabilities you can add to your Copilot SDK application.
 
 * [Remote sessions](/en/copilot/how-tos/copilot-sdk/features/remote-sessions)
 
-  Remote sessions let users access their Copilot session from GitHub web and mobile via Mission Control. When enabled, the SDK connects each session to Mission Control, producing a URL that can be shared as a link or QR code.
+  Remote sessions sync to GitHub so users can access locally running Copilot sessions from the agents panel or on mobile. When enabled, the SDK produces a URL to the session log that can be shared as a link or QR code.
 
 * [Session limits](/en/copilot/how-tos/copilot-sdk/features/session-limits)
 

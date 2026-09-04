@@ -2073,6 +2073,7 @@ The possible item types found in a timeline.
 * `ADDED_TO_MERGE_QUEUE_EVENT`: Represents anadded_to_merge_queueevent on a given pull request.
 * `ADDED_TO_PROJECT_EVENT`: Represents aadded_to_projectevent on a given issue or pull request.
 * `ADDED_TO_PROJECT_V2_EVENT`: Represents aadded_to_project_v2event on a given issue or pull request.
+* `ADDED_TO_STACK_EVENT`: Represents anadded_to_stackevent on a given pull request.
 * `ARCHIVED_EVENT`: Represents anarchivedevent on a given pull request.
 * `ASSIGNED_EVENT`: Represents anassignedevent on any assignable object.
 * `AUTOMATIC_BASE_CHANGE_FAILED_EVENT`: Represents aautomatic_base_change_failedevent on a given pull request.
@@ -2133,6 +2134,7 @@ The possible item types found in a timeline.
 * `REMOVED_FROM_MERGE_QUEUE_EVENT`: Represents aremoved_from_merge_queueevent on a given pull request.
 * `REMOVED_FROM_PROJECT_EVENT`: Represents aremoved_from_projectevent on a given issue or pull request.
 * `REMOVED_FROM_PROJECT_V2_EVENT`: Represents aremoved_from_project_v2event on a given issue or pull request.
+* `REMOVED_FROM_STACK_EVENT`: Represents aremoved_from_stackevent on a given pull request.
 * `RENAMED_TITLE_EVENT`: Represents arenamedevent on a given issue or pull request.
 * `REOPENED_EVENT`: Represents areopenedevent on any Closable.
 * `REVIEW_DISMISSED_EVENT`: Represents areview_dismissedevent on a given issue or pull request.

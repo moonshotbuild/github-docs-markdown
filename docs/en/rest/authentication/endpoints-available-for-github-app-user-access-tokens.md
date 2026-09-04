@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Endpoints available for GitHub App user access tokens
 
-Your GitHub App can make requests to the following REST endpoints with a user access token.
+<p>Your GitHub App can make requests to the following REST endpoints with a user access token.</p>
 
 ## actions
 
@@ -161,6 +161,8 @@ Your GitHub App can make requests to the following REST endpoints with a user ac
 
 * [`GET /orgs/{org}/actions/runners`](/en/rest/actions/self-hosted-runners#list-self-hosted-runners-for-an-organization)
 
+* [`GET /orgs/{org}/actions/runners/deprecations/{version}`](/en/rest/actions/self-hosted-runners#get-runner-version-end-of-life-schedule-for-an-organization)
+
 * [`GET /orgs/{org}/actions/runners/downloads`](/en/rest/actions/self-hosted-runners#list-runner-applications-for-an-organization)
 
 * [`POST /orgs/{org}/actions/runners/generate-jitconfig`](/en/rest/actions/self-hosted-runners#create-configuration-for-a-just-in-time-runner-for-an-organization)
@@ -290,6 +292,8 @@ Your GitHub App can make requests to the following REST endpoints with a user ac
 * [`PUT /repos/{owner}/{repo}/actions/permissions/workflow`](/en/rest/actions/permissions#set-default-workflow-permissions-for-a-repository)
 
 * [`GET /repos/{owner}/{repo}/actions/runners`](/en/rest/actions/self-hosted-runners#list-self-hosted-runners-for-a-repository)
+
+* [`GET /repos/{owner}/{repo}/actions/runners/deprecations/{version}`](/en/rest/actions/self-hosted-runners#get-runner-version-end-of-life-schedule-for-a-repository)
 
 * [`GET /repos/{owner}/{repo}/actions/runners/downloads`](/en/rest/actions/self-hosted-runners#list-runner-applications-for-a-repository)
 

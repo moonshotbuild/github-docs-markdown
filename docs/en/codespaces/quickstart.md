@@ -121,5 +121,5 @@ You've successfully created, personalized, and run your first application within
 * [Enabling or disabling GitHub Codespaces for your organization](/en/codespaces/managing-codespaces-for-your-organization/enabling-or-disabling-github-codespaces-for-your-organization)
 * [Using GitHub Codespaces in Visual Studio Code](/en/codespaces/developing-in-a-codespace/using-github-codespaces-in-visual-studio-code)
 * [Using GitHub Codespaces with GitHub CLI](/en/codespaces/developing-in-a-codespace/using-github-codespaces-with-github-cli)
-* [Setting your default editor for GitHub Codespaces](/en/codespaces/setting-your-user-preferences/setting-your-default-editor-for-github-codespaces).
+* [Setting your default editor for GitHub Codespaces](/en/codespaces/setting-your-user-preferences/setting-your-default-editor-for-github-codespaces)
 * [Managing the cost of GitHub Codespaces in your organization](/en/codespaces/managing-codespaces-for-your-organization/managing-the-cost-of-github-codespaces-in-your-organization)

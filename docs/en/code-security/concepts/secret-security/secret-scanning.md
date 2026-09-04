@@ -59,7 +59,9 @@ Beyond the default detection of partner and provider secrets, you can expand and
 
 * **Validity checks.** Prioritize remediation by checking whether detected secrets are still active.
 
-* **AI-detected secrets.** Use AI to detect unstructured secrets like passwords, or to generate regular expressions for custom patterns.
+* **AI-detected secrets.** Use AI to detect unstructured secrets like passwords.
+
+* **AI-generated regular expressions.** Use AI to generate regular expressions for custom patterns.
 
 ### About validity checks
 

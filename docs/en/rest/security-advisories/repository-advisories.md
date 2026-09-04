@@ -405,7 +405,7 @@ OAuth app tokens and personal access tokens (classic) need the repo or repositor
 
 - **404** - Resource not found
 
-- **422** - Validation failed, or the endpoint has been spammed.
+- **422** - Validation failed.
 
 ### Code examples
 
@@ -685,7 +685,7 @@ See "Privately reporting a security vulnerability" for more information about pr
 
 - **404** - Resource not found
 
-- **422** - Validation failed, or the endpoint has been spammed.
+- **422** - Validation failed.
 
 ### Code examples
 

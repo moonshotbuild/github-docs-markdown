@@ -29,7 +29,7 @@ Go deeper with GitHub by integrating with our APIs and webhooks, customizing you
 
 * [Registering a GitHub App](/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app)
 
-  You can register a GitHub App under your personal account, any organization you own, or your enterprise .
+  You can register a GitHub App under your personal account or under any organization you own.
 
 * [About authentication with a GitHub App](/en/apps/creating-github-apps/authenticating-with-a-github-app/about-authentication-with-a-github-app)
 

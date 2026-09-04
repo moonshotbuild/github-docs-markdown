@@ -682,6 +682,9 @@ application/vnd.github.full+json: Returns raw, text, and HTML representations. R
 - **`type`** (string or null)
   The name of the issue type to associate with this issue. NOTE: Only users with push access can set the type for new issues. The type is silently dropped otherwise.
 
+- **`parent_issue_id`** (integer)
+  The id of the parent issue to add this issue to as a sub-issue. NOTE: Only users with triage access to both the parent issue's repository and this repository can set the parent issue.
+
 ### HTTP response status codes
 
 - **201** - Created

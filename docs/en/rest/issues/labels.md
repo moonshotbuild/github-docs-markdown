@@ -530,6 +530,9 @@ Updates a label using the given label name.
 - **`description`** (string)
   A short description of the label. Must be 100 characters or fewer.
 
+- **`archived`** (boolean)
+  Whether to archive or unarchive the label. Archived labels cannot be added to issues or pull requests. For more information, see "Archiving labels."
+
 ### HTTP response status codes
 
 - **200** - OK

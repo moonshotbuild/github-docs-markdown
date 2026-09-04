@@ -510,6 +510,7 @@ GET /users/{username}
 ```
 
 Provides publicly available information about someone with a GitHub account.
+The events_url value is a URI template. Replace {/privacy} with /public to retrieve only public events. Omit it to retrieve public events and, when authenticated as the user, private events. For more information, see "List events for the authenticated user."
 If you are requesting information about an Enterprise Managed User, or a GitHub App bot that is installed in an organization that uses Enterprise Managed Users, your requests must be authenticated as a user or GitHub App that has access to the organization to view that account's information. If you are not authorized, the request will return a 404 Not Found status.
 The email key in the following response is the publicly visible email address from your GitHub profile page. When setting up your profile, you can select a primary email address to be public which provides an email entry for this endpoint. If you do not set a public email address for email, then it will have a value of null. You only see publicly visible email addresses when authenticated with GitHub. For more information, see Authentication.
 The Emails API enables you to list all of your email addresses, and toggle a primary email to be visible publicly. For more information, see Emails API.

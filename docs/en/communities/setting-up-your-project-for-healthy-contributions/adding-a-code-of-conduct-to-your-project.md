@@ -24,13 +24,13 @@ Before adopting a code of conduct for your project:
 * Research different codes of conduct designed for open source projects. Choose one that reflects your community's standards.
 * Consider carefully whether you are willing and able to enforce it.
 
-You can add a code of conduct to your project by using a template or manually creating a custom code of conduct. Your code of conduct will be available either way, but "Code of conduct" will only be marked as complete in your repository's community profile if you use a template. If you use a code of conduct written by another person or organization, be sure to follow any attribution guidelines from the source. For more information about community profiles, see [About community profiles for public repositories](/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories).
+You can add a code of conduct to your project by using a template or manually creating a custom code of conduct. Your code of conduct will be available either way. In a public repository's community profile, "Code of conduct" is marked as added if the file is not empty and does not state that the project has no code of conduct. If you use a code of conduct written by another person or organization, be sure to follow any attribution guidelines from the source. For more information about community profiles, see [About community profiles for public repositories](/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories).
 
 You can create a default code of conduct for your organization or personal account. For more information, see [Creating a default community health file](/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
 
 ## Adding a code of conduct using a template
 
-GitHub provides templates for common codes of conduct to help you quickly add a code of conduct to your project.
+GitHub provides templates for common codes of conduct to help you quickly add a code of conduct to your project. To use a template, you must have write access to the repository.
 
 1. On GitHub, navigate to the main page of the repository.
 
@@ -75,10 +75,10 @@ If the code of conduct you want to use isn't available in the provided templates
 
    ![Screenshot of the main page of a repository highlighting both the "Add file" and the "plus sign" icon, described above, with an orange outline.](/assets/images/help/repository/add-file-buttons.png)
 
-3. In the file name field, type the name and extension for the file.
-   * To make your code of conduct visible in the repository's root directory, type *CODE\_OF\_CONDUCT* in the file name field.
-   * To make your code of conduct visible in the repository's `docs` directory, type *docs/CODE\_OF\_CONDUCT*.
-   * To make your code of conduct visible in the repository's `.github` directory, type *.github/CODE\_OF\_CONDUCT*.
+3. In the file name field, type the path and name for the file. GitHub looks for a code of conduct in the `.github` directory, then the root of the repository, then the `docs` directory, and uses the first file it finds.
+   * To add your code of conduct to the repository's `.github` directory, type *.github/CODE\_OF\_CONDUCT.md*.
+   * To add your code of conduct to the repository's root directory, type *CODE\_OF\_CONDUCT.md*.
+   * To add your code of conduct to the repository's `docs` directory, type *docs/CODE\_OF\_CONDUCT.md*.
 
 4. In the new file, add your custom code of conduct.
 

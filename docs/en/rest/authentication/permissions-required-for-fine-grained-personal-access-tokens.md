@@ -502,6 +502,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /orgs/{org}/actions/runner-groups/{runner_group_id}/repositories` | read | PAT | ✗ |
 | `GET /orgs/{org}/actions/runner-groups/{runner_group_id}/runners` | read | PAT | ✗ |
 | `GET /orgs/{org}/actions/runners` | read | PAT | ✗ |
+| `GET /orgs/{org}/actions/runners/deprecations/{version}` | read | PAT | ✗ |
 | `GET /orgs/{org}/actions/runners/downloads` | read | PAT | ✗ |
 | `GET /orgs/{org}/actions/runners/{runner_id}` | read | PAT | ✗ |
 | `GET /orgs/{org}/actions/runners/{runner_id}/labels` | read | PAT | ✗ |
@@ -697,6 +698,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/actions/permissions/selected-actions` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/permissions/workflow` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/runners` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/actions/runners/deprecations/{version}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/runners/downloads` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/runners/{runner_id}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/runners/{runner_id}/labels` | read | PAT | ✗ |

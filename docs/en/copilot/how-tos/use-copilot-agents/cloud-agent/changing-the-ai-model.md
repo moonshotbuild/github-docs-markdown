@@ -46,6 +46,7 @@ The following options are currently available:
 * Gemini 3.5 Flash
 * Gemini 3.6 Flash
 * Gemini 3.7 Flash
+* Gemini 3.8 Flash
 * GPT-5.4 mini
 * GPT-5.6 Luna
 * GPT-5.6 Sol

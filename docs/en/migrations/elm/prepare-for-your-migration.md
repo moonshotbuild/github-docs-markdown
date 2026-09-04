@@ -17,19 +17,17 @@ breadcrumbs:
 
 Key questions to consider before getting started with Enterprise Live Migrations.
 
-> \[!NOTE] Enterprise Live Migrations is in public preview and subject to change.
-
 ## Is our GitHub Enterprise Server instance ready?
 
 ELM is available in the latest patch releases for GitHub Enterprise Server 3.17 and later. This documentation assumes you are using the following patch version or later. The instructions may not work on earlier versions.
 
 <!-- Update this list when we backport a change that meaningfully affects the instructions in the docs -->
 
-* `3.21.2`
-* `3.20.4`
-* `3.19.8`
-* `3.18.11`
-* `3.17.17`
+* `3.21.3`
+* `3.20.5`
+* `3.19.9`
+* `3.18.12`
+* `3.17.18`
 
 Your GitHub Enterprise Server instance must also:
 

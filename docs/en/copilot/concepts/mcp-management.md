@@ -45,8 +45,6 @@ Alternatively, you can host your own MCP registry and restrict access to servers
 
 To configure an allowlist on GitHub, see [Configuring an MCP server allowlist for your enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-enterprise-allowlist).
 
-If you  create your own MCP registry, see
-
 ## Further reading
 
 * [Supported surfaces for GitHub Copilot policies](/en/copilot/reference/supported-surfaces-for-policies)

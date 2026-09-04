@@ -49,9 +49,20 @@ These instructions explain how to use Copilot code review in the GitHub website.
 
    ![Screenshot of a code review left by Copilot.](/assets/images/help/copilot/code-review/review-comment@2x.png)
 
-   Copilot always leaves a "Comment" review, not an "Approve" review or a "Request changes" review. This means that Copilot's reviews do not count toward required approvals for the pull request, and Copilot's reviews will not block merging changes. For more details, see [Approving a pull request with required reviews](/en/pull-requests/how-tos/review-pull-requests/approving-a-pull-request-with-required-reviews).
+   Copilot labels each comment with a severity level of "High," "Medium," or "Low" to help you prioritize the issues it finds based on their importance.
 
-5. Copilot's review comments behave like review comments from humans. You can add reactions to them, comment on them, resolve them and hide them.
+   By default, Copilot leaves a "Comment" review, not an "Approve" review or a "Request changes" review. This means that, by default, Copilot's reviews do not count toward required approvals for the pull request. However, if configured to do so, Copilot can leave "Approve" reviews. For more information, see [Pull request approvals from Copilot](#pull-request-approvals-from-copilot).
+
+5. Where possible, Copilot's feedback includes suggested changes which you can apply with a couple of clicks.
+
+   If you're happy with the changes, you can accept a single suggestion from Copilot and commit it, or accept a group of suggestions together in a single commit. For more information, see [Incorporating feedback in your pull request](/en/pull-requests/how-tos/review-pull-requests/incorporating-feedback-in-your-pull-request).
+
+   You can also invoke Copilot cloud agent to implement suggested changes. To do this, you must:
+
+   * Enable GitHub Copilot code review and Copilot cloud agent.
+   * On review comments from GitHub Copilot code review, click **Fix with Copilot**. This creates a draft comment on the pull request, where you can instruct Copilot to address specific feedback. You can then select whether Copilot will create a new pull request against your branch or a commit to the same pull request with the suggestions applied.
+
+6. Copilot's review comments behave like review comments from humans. You can add reactions to them, comment on them, resolve them and hide them.
 
    Any comments you add to Copilot's review comments will be visible to humans, but they won't be visible to Copilot, and Copilot won't reply.
 
@@ -59,29 +70,7 @@ You can also request a review from Copilot through the GitHub REST API by reques
 
 ## Enabling automatic reviews
 
-By default, you manually request a review from Copilot on each pull request, in the same way you would request a review from a human. However, you can set up Copilot to automatically review all pull requests. See [Configuring automatic code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review).
-
-## Choosing a review effort level
-
-Copilot code review supports multiple review effort levels, so you can choose the level of thoroughness that matches the criticality of your code.
-
-* **Lite**: Standard review that provides fast, targeted feedback on common issues such as bugs, security vulnerabilities, and style inconsistencies (default).
-* **Balanced**: Deeper analysis of complex logic, security-sensitive code, and cross-service changes, using a higher-reasoning model.
-
-You can select the review effort level in the pull request, under the **Reviewers** section where Copilot appears as a reviewer. Organization owners and repository administrators can also set a default effort level for automatic reviews.
-
-For more information, see [About GitHub Copilot code review](/en/copilot/concepts/agents/code-review#review-effort-level).
-
-## Working with suggested changes provided by Copilot
-
-Where possible, Copilot's feedback includes suggested changes which you can apply with a couple of clicks.
-
-If you're happy with the changes, you can accept a single suggestion from Copilot and commit it, or accept a group of suggestions together in a single commit. For more information, see [Incorporating feedback in your pull request](/en/pull-requests/how-tos/review-pull-requests/incorporating-feedback-in-your-pull-request).
-
-You can also invoke Copilot cloud agent to implement suggested changes. To do this, you must:
-
-* Enable GitHub Copilot code review and Copilot cloud agent.
-* On review comments from GitHub Copilot code review, click **Fix with Copilot**. This creates a draft comment on the pull request, where you can instruct Copilot to address specific feedback. You can then select whether Copilot will create a new pull request against your branch or a commit to the same pull request with the suggestions applied.
+By default, you manually request a review from Copilot on each pull request, in the same way you would request a review from a human. However, you can set up Copilot to automatically review all pull requests. See [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review).
 
 ## Requesting a re-review from Copilot
 
@@ -89,9 +78,31 @@ When you push changes to a pull request that Copilot has reviewed, it won't auto
 
 To manually request a re-review from Copilot, click the <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-sync" aria-label="Re-request review" role="img"><path d="M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z"></path></svg> button next to Copilot's name in the **Reviewers** menu. For more information, see [Requesting a pull request review](/en/pull-requests/how-tos/create-pull-requests/requesting-a-pull-request-review).
 
-To automatically request re-reviews from Copilot on every push, enable automatic code review for the repository and select **Review new pushes** in the ruleset settings. For more information, see [Configuring automatic code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review#configuring-automatic-code-review-for-repositories-in-an-organization).
+To automatically request re-reviews from Copilot on every push, enable automatic code review for the repository and select **Review new pushes** in the ruleset settings. For more information, see [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review#configuring-automatic-code-review-for-repositories-in-an-organization).
 
 > \[!NOTE] When re-reviewing a pull request, Copilot may repeat the same comments again, even if they have been dismissed with the "Resolve conversation" button or downvoted with the thumbs down (:-1:) button.
+
+## Choosing a review effort level
+
+With review effort levels, you can choose the level of thoroughness of Copilot's review that matches the criticality of your code.
+
+* **Lite**: Cost-efficient review that provides targeted feedback on glaring issues such as bugs, security vulnerabilities, and style inconsistencies.
+* **Balanced**: Deeper analysis of complex logic, security-sensitive code, and cross-service changes, using a higher-reasoning model.
+
+You can select the review effort level in the pull request before you request a review from Copilot, under the **Reviewers** section where Copilot appears as a reviewer. Organization owners and repository administrators can also set a default effort level for automatic reviews.
+
+For more information, see [About GitHub Copilot code review](/en/copilot/concepts/agents/code-review#review-effort-level).
+
+## Pull request approvals from Copilot
+
+> \[!NOTE]
+> Copilot approvals are in public preview and subject to change.
+
+Every Copilot code review includes an approval assessment in the overview comment, indicating whether Copilot considers the pull request ready to approve. On its own, this assessment does not count toward merge requirements.
+
+When approvals are enabled, Copilot can submit an approving review that satisfies your repository's required-approval rule the same way a teammate's approval would. If new commits are pushed after Copilot approves, the approval is dismissed, and you can re-request a review. For more details on required reviews, see [Approving a pull request with required reviews](/en/pull-requests/how-tos/review-pull-requests/approving-a-pull-request-with-required-reviews).
+
+Approvals are off by default and can be configured at the enterprise, organization, and repository levels. Repository administrators can also use file paths to control which Copilot approvals count toward merge requirements. For configuration steps, see [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review#customizing-copilot-code-review).
 
 ## Customizing Copilot's reviews with custom instructions
 
@@ -102,6 +113,8 @@ Use `.github/copilot-instructions.md` for repository-wide review guidance that s
 Use an `AGENTS.md` file in the root of your repository to provide additional repository context that helps Copilot better understand how your project works. For example, you can explain which patterns are intentional, which parts of the codebase need closer scrutiny, and what your team considers good architecture, testing, and implementation practices. This helps make reviews more relevant and aligned with the way your team builds software.
 
 Use `.github/instructions/**/*.instructions.md` files for path-specific instructions that only apply when reviewing matching files. This is useful when different parts of the repository follow different conventions, require specialized checks, or need review guidance tailored to a particular language, framework, or subsystem.
+
+Copilot code review also reads custom instructions from `CLAUDE.md`, `GEMINI.md`, and `REVIEW.md` files in your repository, if they exist.
 
 For more information, see [Adding repository custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions).
 
@@ -211,6 +224,8 @@ Use `.github/copilot-instructions.md` for repository-wide review guidance that s
 Use an `AGENTS.md` file in the root of your repository to provide additional repository context that helps Copilot better understand how your project works. For example, you can explain which patterns are intentional, which parts of the codebase need closer scrutiny, and what your team considers good architecture, testing, and implementation practices. This helps make reviews more relevant and aligned with the way your team builds software.
 
 Use `.github/instructions/**/*.instructions.md` files for path-specific instructions that only apply when reviewing matching files. This is useful when different parts of the repository follow different conventions, require specialized checks, or need review guidance tailored to a particular language, framework, or subsystem.
+
+Copilot code review also reads custom instructions from `CLAUDE.md`, `GEMINI.md`, and `REVIEW.md` files in your repository, if they exist.
 
 For more information, see [Adding repository custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions).
 

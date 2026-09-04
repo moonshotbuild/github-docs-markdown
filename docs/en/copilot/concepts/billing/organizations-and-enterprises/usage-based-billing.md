@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises"
+source_path: "/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing"
 title: "Usage-based billing for organizations and enterprises"
 intro: "Under usage-based billing, Copilot usage in organizations and enterprises is measured in AI credits."
 product: "GitHub Copilot"
@@ -11,8 +11,10 @@ breadcrumbs:
     href: "/en/copilot/concepts"
   - title: "Billing"
     href: "/en/copilot/concepts/billing"
-  - title: "Billing for organizations and enterprises"
-    href: "/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises"
+  - title: "Organizations and enterprises"
+    href: "/en/copilot/concepts/billing/organizations-and-enterprises"
+  - title: "Usage-based billing"
+    href: "/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing"
 ---
 
 # Usage-based billing for organizations and enterprises
@@ -67,7 +69,7 @@ After the promotional period, included usage returns to the standard amounts abo
 
 When your pooled AI credits are exhausted, what happens next depends on how you have configured policies for additional usage.
 
-* **Additional usage allowed**: Usage continues at published per-credit rates. The additional spend is charged to your organization or enterprise.
+* **Additional usage allowed**: Usage continues at published per-credit rates. The additional spend is charged to your organization or enterprise. Note that additional usage **may be capped**: if you hit the cap, you'll need to pay off any additional usage you've already consumed in order to continue.
 * **Additional usage not allowed**: Usage is blocked until the next billing cycle when monthly amounts are refreshed.
 
 > \[!NOTE]

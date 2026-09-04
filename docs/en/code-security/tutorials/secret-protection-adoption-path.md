@@ -1,7 +1,7 @@
 ---
 source_path: "/en/code-security/tutorials/secret-protection-adoption-path"
 title: "Secure your secrets at scale with GitHub"
-intro: "Leaked credentials expose your organization to data breaches. GitHub Secret Protection detects and prevents secret leaks automatically. Follow this adoption path to assess risk, pilot the solution, and scale protection organization-wide."
+intro: "Leaked credentials expose your organization to data breaches. GitHub Secret Protection detects and prevents secret leaks automatically. Follow this five-phase adoption path to assess your current risk, evaluate GitHub Secret Protection, run a pilot, monitor its value, and scale protection across your organization."
 product: "Security and code quality"
 document_type: "article"
 breadcrumbs:
@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Secure your secrets at scale with GitHub
 
-Leaked credentials expose your organization to data breaches. GitHub Secret Protection detects and prevents secret leaks automatically. Follow this adoption path to assess risk, pilot the solution, and scale protection organization-wide.
+Leaked credentials expose your organization to data breaches. GitHub Secret Protection detects and prevents secret leaks automatically. Follow this five-phase adoption path to assess your current risk, evaluate GitHub Secret Protection, run a pilot, monitor its value, and scale protection across your organization.
 
 ## Links
 

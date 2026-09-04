@@ -23,6 +23,10 @@ Organization owners can manage the Copilot plan for their organization.
 
 ## Links
 
+* [Subscribing to GitHub Copilot for your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-plan/subscribe)
+
+  Organization owners can set up a Copilot Business plan for their organization.
+
 * [Canceling GitHub Copilot for your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-plan/cancel)
 
   Removing all assigned GitHub Copilot seats in your organization will cancel your organization's Copilot plan.

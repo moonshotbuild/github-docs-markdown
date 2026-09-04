@@ -262,10 +262,10 @@ curl -L \
   * `avatar_url`: required, string
   * `description`: required, string or null
   * `name`: string
-  * `company`: string
-  * `blog`: string, format: uri
-  * `location`: string
-  * `email`: string, format: email
+  * `company`: string or null
+  * `blog`: string or null, format: uri
+  * `location`: string or null
+  * `email`: string or null, format: email
   * `twitter_username`: string or null
   * `is_verified`: boolean
   * `has_organization_projects`: required, boolean
@@ -1658,10 +1658,10 @@ Array of `Full Team`:
   * `avatar_url`: required, string
   * `description`: required, string or null
   * `name`: string
-  * `company`: string
-  * `blog`: string, format: uri
-  * `location`: string
-  * `email`: string, format: email
+  * `company`: string or null
+  * `blog`: string or null, format: uri
+  * `location`: string or null
+  * `email`: string or null, format: email
   * `twitter_username`: string or null
   * `is_verified`: boolean
   * `has_organization_projects`: required, boolean

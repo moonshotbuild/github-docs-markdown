@@ -163,7 +163,7 @@ Learn best practices for moderating and setting up collaborative, safe, and effe
 
 * [Viewing users you've blocked from your personal account](/en/communities/maintaining-your-safety-on-github/viewing-users-youve-blocked-from-your-personal-account)
 
-  You can view a list of all users you've blocked from your personal account.
+  You can find and review users you've blocked from your personal account, including private notes about why you blocked them.
 
 * [Unblocking a user from your personal account](/en/communities/maintaining-your-safety-on-github/unblocking-a-user-from-your-personal-account)
 
@@ -175,7 +175,7 @@ Learn best practices for moderating and setting up collaborative, safe, and effe
 
 * [Viewing users who are blocked from your organization](/en/communities/maintaining-your-safety-on-github/viewing-users-who-are-blocked-from-your-organization)
 
-  You can view a list of all users whom you or other owners have blocked from your organization. If a user was blocked for a specific amount of time, you can see the amount of time they were blocked for.
+  You can find and review users who are blocked from your organization, including details about why, when, and by whom.
 
 * [Unblocking a user from your organization](/en/communities/maintaining-your-safety-on-github/unblocking-a-user-from-your-organization)
 

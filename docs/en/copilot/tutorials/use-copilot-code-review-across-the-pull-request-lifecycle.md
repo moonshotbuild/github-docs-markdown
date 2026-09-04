@@ -38,7 +38,7 @@ Copilot code review can run manually, when you trigger it yourself, or automatic
 | Automatic review on draft pull requests | Teams that want earlier feedback loops            | Authors can fix issues before human review starts.                              |
 | Automatic review on new pushes          | Fast-moving pull requests with multiple revisions | Copilot reevaluates substantial updates as the pull request evolves.            |
 
-For setup steps, see [Using GitHub Copilot code review](/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review) and [Configuring automatic code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review).
+For setup steps, see [Using GitHub Copilot code review](/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review) and [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review).
 
 ### Use Copilot code review early on draft pull requests
 

@@ -215,7 +215,7 @@ Copilot will start a new session, which will appear in the list below the prompt
 
 6. Add your custom instructions in natural language, using Markdown format. Whitespace between instructions is ignored, so the instructions can be written as a single paragraph, each on a new line, or separated by blank lines for legibility.
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 Did you successfully add a custom instructions file to your repository?
 

@@ -121,7 +121,7 @@ VS Code supports three types of repository custom instructions. For details of w
 
 </div>
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 Did you successfully add a custom instructions file to your repository?
 
@@ -303,7 +303,7 @@ Visual Studio supports two types of custom instructions. For details of which Gi
 
 6. Add your custom instructions in natural language, using Markdown format. Whitespace between instructions is ignored, so the instructions can be written as a single paragraph, each on a new line, or separated by blank lines for legibility.
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 Did you successfully add a custom instructions file to your repository?
 
@@ -435,7 +435,7 @@ To apply the same instructions across all workspaces in JetBrains IDEs, you can 
 
 Once saved, these instructions will apply globally across all workspaces in JetBrains IDEs that you open with Copilot enabled.
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 Did you successfully add a custom instructions file to your repository?
 
@@ -528,7 +528,7 @@ Whitespace between instructions is ignored, so the instructions can be written a
 2. At the top of the application window, under **Settings**, click **Advanced**.
 3. To the right of "Custom Instructions", click **Current Workspace** or **Global** to choose whether the custom instructions apply to the current workspace or all workspaces.
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 Did you successfully add a custom instructions file to your repository?
 
@@ -593,7 +593,7 @@ Whitespace between instructions is ignored, so the instructions can be written a
 
 Once saved, these instructions will apply to the current project in Eclipse that you open with Copilot enabled.
 
-<div class="ghd-alert ghd-alert-accent ghd-spotlight-accent">
+<div class="border rounded-2 p-3">
 
 Did you successfully add a custom instructions file to your repository?
 

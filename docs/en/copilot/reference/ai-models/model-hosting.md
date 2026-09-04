@@ -58,9 +58,18 @@ Used for:
 * Claude Opus 4.8 (fast mode) (preview)
 * Claude Opus 5
 * Claude Fable 5
+* Claude Fable 5.1
 
 > \[!WARNING]
-> When Claude Fable 5 is used, Anthropic retains data, including prompts and outputs, to operate safety classifiers that detect harmful use. Other Claude models in GitHub Copilot remain covered by GitHub's existing data retention agreements, as documented below. Enterprise and business users need to enable the Claude Fable 5 model to make it available for your organization. You can read more about Anthropic's data handling practices for this model under section F of their [Service Specific Terms](https://www.anthropic.com/legal/service-specific-terms).
+> When Claude Fable 5 or Claude Fable 5.1 is used, Anthropic retains data, including prompts and outputs, by default to operate safety classifiers that detect harmful use.
+>
+> Customers can request to use Claude Fable 5 or Claude Fable 5.1 with zero data retention (ZDR) through the end of 2026 under a time-bound exemption while Anthropic rolls out Enterprise Frontier Safeguards (EFS). After that point, continued use of these models would require EFS, which will enable eligible customers to keep their data under their own control while also enabling automated safety monitoring. For an enterprise that has been approved and configured for this type of access, Claude Fable 5 and Claude Fable 5.1 requests will use the ZDR endpoint through the end of 2026 when the models are enabled.
+>
+> To learn whether your enterprise is eligible and request access, contact your GitHub account team.
+>
+> Approval for access does not automatically enable Claude Fable 5 or Claude Fable 5.1. An enterprise or organization administrator must still enable each model before users can access it. Other Claude models, except for Claude Fable 5 and Claude Fable 5.1, continue to operate under ZDR.
+>
+> Customers who enable a Fable model with ZDR agree to use this model only for internal operations, including to develop and evaluate products for their own customers. They may not make the model endpoints or outputs available externally.
 
 These models are hosted by Amazon Web Services, Anthropic PBC, and Google Cloud Platform. GitHub has provider agreements in place to ensure data is not used for training. Additional details for each provider are included below:
 
@@ -68,7 +77,7 @@ These models are hosted by Amazon Web Services, Anthropic PBC, and Google Cloud 
 
 <!-- markdownlint-disable GHD046 -->
 
-* Anthropic PBC: GitHub maintains a [zero data retention agreement](https://privacy.anthropic.com/en/articles/8956058-i-have-a-zero-retention-agreement-with-anthropic-what-products-does-it-apply-to) with Anthropic for generally available Anthropic features in GitHub Copilot. Some Anthropic features in beta or public preview—including tool search via the Messages API—are not covered by this agreement. For these features, data may be retained by Anthropic in accordance with [Anthropic's ZDR documentation](https://platform.claude.com/docs/en/build-with-claude/zero-data-retention). GitHub will update this page as ZDR coverage changes.
+* Anthropic PBC: GitHub maintains a [zero data retention agreement](https://privacy.anthropic.com/en/articles/8956058-i-have-a-zero-retention-agreement-with-anthropic-what-products-does-it-apply-to) with Anthropic for generally available Anthropic features in GitHub Copilot. Claude Fable 5 and Claude Fable 5.1 are not covered by this agreement by default. Enterprises that meet eligibility requirements can use Claude Fable 5 and Claude Fable 5.1 with zero data retention through the end of 2026 under a separate time-bound exemption; contact your account manager to learn more. Some Anthropic features in beta or public preview—including tool search via the Messages API—are also not covered by this agreement. For these features, data may be retained by Anthropic in accordance with [Anthropic's ZDR documentation](https://platform.claude.com/docs/en/build-with-claude/zero-data-retention). GitHub will update this page as ZDR coverage changes.
 
 <!-- markdownlint-enable GHD046 -->
 
@@ -86,6 +95,7 @@ Used for:
 * Gemini 3.5 Flash
 * Gemini 3.6 Flash
 * Gemini 3.7 Flash
+* Gemini 3.8 Flash
 
 GitHub Copilot uses Gemini models hosted on Google Cloud Platform (GCP). When using Gemini models, prompts and metadata are sent to GCP, which makes the [following data commitment](https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance): *Gemini doesn't use your prompts, or its responses, as data to train its models.*
 

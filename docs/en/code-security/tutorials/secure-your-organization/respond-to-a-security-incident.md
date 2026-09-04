@@ -227,7 +227,8 @@ This includes, but isn't limited to, checking for things like:
 
 Compromised dependencies can serve as an attack vector. Make sure you undertake a full audit of your dependencies and reinstall them from trusted sources.
 
-* Review Dependabot alerts for vulnerable dependencies and, where available, Dependabot malware alerts for malicious packages. (Dependabot malware alerts are currently available for the npm ecosystem.) To investigate additional malware advisories, search for `type:malware` in the GitHub Advisory Database and audit your dependency graph for matches.
+* Review Dependabot alerts for vulnerable dependencies and, where available, Dependabot malware alerts for malicious packages. For the current list of supported ecosystems, see [Dependabot malware alerts](/en/code-security/concepts/supply-chain-security/malware-alerts#availability).
+* To investigate additional malware advisories, search for `type:malware` in the GitHub Advisory Database and audit your dependency graph for matches.
 * Pin dependencies to known-good versions or commit SHAs, and reinstall from your package registry.
 
 ### Verify remediation

@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/billing/organizations-and-enterprises"
+source_path: "/en/copilot/concepts/billing/organizations-and-enterprises/fundamentals"
 title: "About billing for GitHub Copilot in organizations and enterprises"
 intro: "Learn about pricing and billing cycles for Copilot."
 product: "GitHub Copilot"
@@ -13,6 +13,8 @@ breadcrumbs:
     href: "/en/copilot/concepts/billing"
   - title: "Organizations and enterprises"
     href: "/en/copilot/concepts/billing/organizations-and-enterprises"
+  - title: "Fundamentals"
+    href: "/en/copilot/concepts/billing/organizations-and-enterprises/fundamentals"
 ---
 
 # About billing for GitHub Copilot in organizations and enterprises
@@ -29,7 +31,7 @@ GitHub offers the following plans for organization accounts:
 <!-- expires 2026-09-01 -->
 
 > \[!NOTE]
-> Existing customers receive higher included AI credits during the promotional period (June–August 2026). See [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises#promotional-amounts-for-existing-customers).
+> Existing customers receive higher included AI credits during the promotional period (June–August 2026). See [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing#promotional-amounts-for-existing-customers).
 
 <!-- end expires 2026-09-01 -->
 
@@ -49,7 +51,7 @@ For a full explanation of how AI credits work, including pooling, additional usa
 
 A Copilot seat is a license to use GitHub Copilot for a user. Each month, your organization or enterprise is billed for the number of assigned seats.
 
-Seat assignment is managed by organization owners. With GitHub Enterprise Cloud, an enterprise owner must have enabled GitHub Copilot for the organization before an organization owner can assign seats. See [Granting access to GitHub Copilot for members of your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-access/grant-access).
+Seat assignment is managed by enterprise or organization owners. With GitHub Enterprise Cloud, an enterprise owner must have enabled GitHub Copilot for the organization before an organization owner can assign seats. See [Granting users access to GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access) or [Granting access to GitHub Copilot for members of your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-access/grant-access).
 
 If a user receives a seat from multiple organizations in the same enterprise, the enterprise will be billed only once, and one organization is selected and billed for the seat. To determine which organization is billed for a given user, request a detailed usage report and refer to the `organization` column for the user's Copilot license. See [Billing reports reference](/en/billing/reference/billing-reports).
 
@@ -57,7 +59,7 @@ If a user receives a seat from multiple organizations in the same enterprise, th
 
 Billed users are calculated at the end of each billing cycle, based on the number of GitHub Copilot seats that are assigned. You can add or remove seats at any time during the billing cycle.
 
-When you add seats, you will be billed pro rata for those seats for the rest of the billing cycle. Included AI credits for the seats may also be prorated.
+When you add seats, you will be billed pro rata for those seats for the rest of the billing cycle. Included AI credits for the seats may also be prorated. If you pay by credit card or PayPal, you will need to pay a prorated amount upfront to cover the seats for the rest of the current billing cycle.
 
 When you remove seats, billing for those seats continues until the end of the current billing cycle.
 

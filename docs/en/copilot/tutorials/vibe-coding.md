@@ -440,4 +440,3 @@ After working with Copilot to build, extend and improve your time tracker, the a
 
 * Continue iterating on this project, making improvements to your time tracker.
 * Using the same methodology, create another application.
-* Find out about another way you can create applications without writing the code yourself. See [About GitHub Spark](/en/copilot/concepts/spark).

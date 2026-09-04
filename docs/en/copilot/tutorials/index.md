@@ -275,22 +275,6 @@ Build skills and knowledge about GitHub Copilot through examples and hands-on ac
 
   Find the right combination of budget controls for your organization based on your size, structure, and spending goals.
 
-* [Your first spark](/en/copilot/tutorials/spark/your-first-spark)
-
-  Learn how to build your first GitHub Spark app in minutes, without writing any code.
-
-* [Write effective prompts and provide useful context for Spark](/en/copilot/tutorials/spark/prompt-tips)
-
-  Learn how to get the best results when you are describing your app idea to Spark.
-
-* [Building and deploying AI-powered apps with GitHub Spark](/en/copilot/tutorials/spark/build-apps-with-spark)
-
-  Learn how to build and deploy an intelligent web app with natural language using GitHub Spark.
-
-* [Deploy your Spark app from the command line](/en/copilot/tutorials/spark/deploy-from-cli)
-
-  Learn how to deploy your Spark app from the command line.
-
 * [Using custom instructions to unlock the power of Copilot code review](/en/copilot/tutorials/customize-code-review)
 
   Learn how to write effective custom instructions that help GitHub Copilot provide more relevant and actionable code reviews.

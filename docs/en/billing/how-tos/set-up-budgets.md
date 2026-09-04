@@ -120,17 +120,25 @@ As the owner of an enterprise or organization account, or as a billing manager, 
      * Select a cost center to create a user-level budget that applies to every user in that cost center. This sets one per-user amount for all current and future members, and overrides the universal budget for them.
      * Select a specific user to create an individual budget that overrides both the universal budget and any cost center user-level budget for that user.
 
-4. Under "Budget", set a budget amount or license count.
+4. If you selected a specific user, optionally set an expiration date for the individual budget under "Expiration".
+
+   * **No expiration**: The budget applies until you edit or delete it. This is the default.
+   * **End of current billing cycle**: GitHub removes the budget when the current billing cycle ends.
+   * **Specific date**: GitHub removes the budget on the date you choose.
+
+   When an individual budget expires, GitHub removes it and the user falls back to the next budget that applies to them: their cost center user-level budget, if they have one, or otherwise the universal user-level budget. If neither budget is configured, no user-level budget applies. See [Budgets for usage-based billing](/en/copilot/concepts/billing/budgets-for-usage-based-billing#expiration-dates-for-individual-user-level-budgets).
+
+5. Under "Budget", set a budget amount or license count.
 
    To stop any usage and further spending once the budget limit is reached, select **Stop usage when budget limit is reached** or **Limit usage when budget limit is reached**, if available. **This option is available for metered products and for Advanced Security SKU-level budgets**. For Advanced Security, this option prevents new enablement on additional repositories. It doesn't disable Advanced Security on repositories where it is already active. See [GitHub Advanced Security license billing](/en/billing/concepts/product-billing/github-advanced-security#hard-budgets-for-github-advanced-security-skus).
 
    > \[!IMPORTANT] If you do not select one of these options, you will be notified by email if you exceed your budget, but usage **will not** be stopped.
 
-5. To receive an alert if your budget has reached 75%, 90% and 100% thresholds, select **Receive budget threshold alerts** under "Alerts". When the budget has reached the specific threshold, you will be notified via email and a banner on GitHub. You may opt out at any time.
+6. To receive an alert if your budget has reached 75%, 90% and 100% thresholds, select **Receive budget threshold alerts** under "Alerts". When the budget has reached the specific threshold, you will be notified via email and a banner on GitHub. You may opt out at any time.
 
    Under "Alert Recipients", select the people who will receive the alerts.
 
-6. Click **Create budget**.
+7. Click **Create budget**.
 
 ### Managing included usage alerts
 
@@ -144,6 +152,8 @@ GitHub can send email notifications when the included usage for your account rea
 > \[!IMPORTANT] Deleting a budget may remove any limits on spending, depending on your other existing budgets.
 
 You can edit or delete a budget at any time, but you cannot change the scope of a budget after creating it.
+
+For an individual user-level budget, you can also change or clear the expiration date at any time.
 
 1. Navigate to the "Budgets and alerts" view. See [Viewing budgets](#viewing-budgets).
 2. In the list of budgets, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-kebab-horizontal" aria-label="View actions" role="img"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg> next to the budget you want to edit, and click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-pencil" aria-label="pencil" role="img"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg> Edit** or **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-trash" aria-label="trash" role="img"><path d="M11 1.75V3h2.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75ZM4.496 6.675l.66 6.6a.25.25 0 0 0 .249.225h5.19a.25.25 0 0 0 .249-.225l.66-6.6a.75.75 0 0 1 1.492.149l-.66 6.6A1.748 1.748 0 0 1 10.595 15h-5.19a1.75 1.75 0 0 1-1.741-1.575l-.66-6.6a.75.75 0 1 1 1.492-.15ZM6.5 1.75V3h3V1.75a.25.25 0 0 0-.25-.25h-2.5a.25.25 0 0 0-.25.25Z"></path></svg> Delete**.

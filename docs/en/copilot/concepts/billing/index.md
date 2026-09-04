@@ -23,14 +23,10 @@ Understand billing and usage for GitHub Copilot.
 
   Your Copilot plan includes a monthly allowance of GitHub AI Credits. If you exhaust your AI credits, you can pay extra to keep working.
 
-* [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises)
+* [GitHub Copilot billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises)
 
-  Under usage-based billing, Copilot usage in organizations and enterprises is measured in AI credits.
+  Understand billing and usage for GitHub Copilot.
 
 * [Budgets for usage-based billing](/en/copilot/concepts/billing/budgets-for-usage-based-billing)
 
   Under usage-based billing, budget controls at the user, organization, cost center, and enterprise levels determine how Copilot usage is served, metered, or blocked.
-
-* [About billing for GitHub Copilot in organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises)
-
-  Learn about pricing and billing cycles for Copilot.

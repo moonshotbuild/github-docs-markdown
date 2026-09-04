@@ -229,7 +229,21 @@ curl -L \
 
 **Response schema (Status: 200):**
 
-Same response schema as [Create an enterprise team](#create-an-enterprise-team).
+* `id`: required, integer, format: int64
+* `name`: required, string
+* `description`: string
+* `slug`: required, string
+* `url`: required, string, format: uri
+* `sync_to_organizations`: string
+* `organization_selection_type`: string
+* `group_id`: required, string or null
+* `group_name`: string or null
+* `html_url`: required, string, format: uri
+* `members_url`: required, string
+* `members_count`: required, integer
+* `created_at`: required, string, format: date-time
+* `updated_at`: required, string, format: date-time
+* `notification_setting`: string, enum: `notifications_enabled`, `notifications_disabled`
 
 ## Update an enterprise team
 

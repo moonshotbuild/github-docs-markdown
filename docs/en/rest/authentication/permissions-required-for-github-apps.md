@@ -55,6 +55,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `DELETE /enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org}` | write | UAT, IAT | ✗ |
 | `PATCH /enterprises/{enterprise}/teams/{team_slug}` | write | UAT, IAT | ✗ |
 | `DELETE /enterprises/{enterprise}/teams/{team_slug}` | write | UAT, IAT | ✗ |
+| `GET /enterprises/{enterprise}/members/{username}/teams` | read | UAT, IAT | ✗ |
 | `GET /enterprises/{enterprise}/teams` | read | UAT, IAT | ✗ |
 | `GET /enterprises/{enterprise}/teams/{enterprise-team}/memberships` | read | UAT, IAT | ✗ |
 | `GET /enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username}` | read | UAT, IAT | ✗ |
@@ -555,6 +556,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /orgs/{org}/actions/runner-groups/{runner_group_id}/repositories` | read | UAT, IAT | ✗ |
 | `GET /orgs/{org}/actions/runner-groups/{runner_group_id}/runners` | read | UAT, IAT | ✗ |
 | `GET /orgs/{org}/actions/runners` | read | UAT, IAT | ✗ |
+| `GET /orgs/{org}/actions/runners/deprecations/{version}` | read | UAT, IAT | ✗ |
 | `GET /orgs/{org}/actions/runners/downloads` | read | UAT, IAT | ✗ |
 | `GET /orgs/{org}/actions/runners/{runner_id}` | read | UAT, IAT | ✗ |
 | `GET /orgs/{org}/actions/runners/{runner_id}/labels` | read | UAT, IAT | ✗ |
@@ -752,6 +754,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/actions/permissions/selected-actions` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/permissions/workflow` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/runners` | read | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/actions/runners/deprecations/{version}` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/runners/downloads` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/runners/{runner_id}` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/runners/{runner_id}/labels` | read | UAT, IAT | ✗ |

@@ -29,9 +29,9 @@ Enable GitHub Copilot and configure features on GitHub.
 
   Control which AI models your organization or enterprise can use with Copilot.
 
-* [Configuring automatic code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review)
+* [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review)
 
-  Set up Copilot to automatically review pull requests for you, a repository, or an organization.
+  Set up Copilot to review pull requests.
 
 * [Configuring runners for GitHub Copilot code review](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-runners)
 

@@ -108,13 +108,6 @@ Closing a pull request in the middle of a stack blocks all pull requests above i
 
 You can unstack from the GitHub website, or restructure the stack with `gh stack modify`. Unstacking removes only the open, draft, and closed pull requests; merged and queued pull requests remain in the stack. See [Managing stacked pull requests](/en/pull-requests/how-tos/create-pull-requests/managing-stacked-pull-requests#unstacking-from-the-github-website) and [Managing stacked pull requests](/en/pull-requests/how-tos/create-pull-requests/managing-stacked-pull-requests#restructuring-a-stack).
 
-## Commits aren't signed after a rebase
-
-A rebase triggered from the pull request runs on GitHub's servers, and those commits are **not** signed. If your repository requires signed commits, rebase from GitHub CLI instead.
-
-* Running `gh stack rebase` uses your local Git operations, so the generated commits follow your local Git commit signature configuration.
-* After rebasing, push the updated branches with `gh stack push`.
-
 ## You can't create a stack across forks
 
 Stacked pull requests require all branches to be in the same repository. Cross-fork stacks are not supported.

@@ -17,8 +17,6 @@ breadcrumbs:
 
 Which data and live updates are included in a live migration?
 
->[!NOTE] Enterprise Live Migrations is in public preview and subject to change.
-
 ## Data that is migrated
 
 ELM migrates almost all repository-level data. Organization-level resources, such as teams, projects, and organizations settings and webhooks, are excluded from the migration and must be configured manually on the target.
