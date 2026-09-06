@@ -29,11 +29,11 @@ You can start Copilot cloud agent from several clients. Choose the one that fits
 * [REST API](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-via-the-api)
 * [GitHub CLI](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-from-cli)
 * [GitHub MCP Server](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-with-mcp)
-* [Jira](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-jira)
-* [Slack](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-slack)
-* [Microsoft Teams](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-teams)
-* [Azure Boards](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-azure-boards)
-* [Linear](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-linear)
+* [Jira](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-jira)
+* [Slack](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-slack)
+* [Microsoft Teams](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-teams)
+* [Azure Boards](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-azure-boards)
+* [Linear](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-linear)
 * [Raycast](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-from-raycast)
 
 You can also start sessions automatically, on a schedule or in response to events such as an issue being opened, by setting up an automation. See [Creating automations with Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-automations).

@@ -27,7 +27,7 @@ The OpenAI Codex coding agent and the VS Code OpenAI Codex integration use the C
 
 ## OpenAI Codex coding agent
 
-Before you can assign tasks to OpenAI Codex coding agent, it must be enabled. See [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#enabling-or-disabling-third-party-coding-agents-in-your-repositories).
+Before you can assign tasks to OpenAI Codex coding agent, it must be enabled. See [About third-party coding agents](/en/copilot/concepts/agents/about-third-party-coding-agents#making-coding-agents-available).
 
 To learn more about using third-party agents on GitHub, see [About third-party coding agents](/en/copilot/concepts/agents/about-third-party-coding-agents).
 

@@ -34,6 +34,7 @@ Used for:
 * GPT-5.6 Luna
 * GPT-5.6 Sol
 * GPT-5.6 Terra
+* GPT-6 Astra
 
 These models are hosted by OpenAI and GitHub's Azure infrastructure.
 
@@ -48,11 +49,8 @@ All input requests and output responses processed by GitHub Copilot's models con
 Used for:
 
 * Claude Haiku 4.5
-* Claude Sonnet 4.5
 * Claude Sonnet 4.6
 * Claude Sonnet 5
-* Claude Opus 4.5
-* Claude Opus 4.6
 * Claude Opus 4.7
 * Claude Opus 4.8
 * Claude Opus 4.8 (fast mode) (preview)
@@ -91,7 +89,6 @@ When using Claude, input prompts and output completions continue to run through 
 
 Used for:
 
-* Gemini 3.1 Pro
 * Gemini 3.5 Flash
 * Gemini 3.6 Flash
 * Gemini 3.7 Flash
@@ -134,7 +131,6 @@ Used for:
 
 * MAI-Code-1-Flash
 * MAI-Code-1.1-Flash
-* Raptor mini
 
 MAI-Code-1-Flash and MAI-Code-1.1-Flash are first-party Microsoft models hosted on Azure in GitHub's tenant.
 

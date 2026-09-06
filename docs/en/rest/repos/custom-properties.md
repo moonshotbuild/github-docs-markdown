@@ -74,7 +74,7 @@ Array of `Custom Property Value`:
 
 * `property_name`: required, string
 * `value`: required, one of:
-  * **string**
+  * **string or null**
   * **array**
 
 ## Create or update custom property values for a repository

@@ -157,6 +157,63 @@ curl -L \
 
 * `count`: required, integer, minimum: 0
 
+## Get repository star history
+
+```
+GET /repos/{owner}/{repo}/stargazers/history
+```
+
+Returns repository stars grouped by calendar weeks, most recent first. Pages move backward toward the repository's creation week, and weeks within a page are ordered newest to oldest, so concatenating pages produces one continuous series. Weeks without stars contain zero counts. Week and day boundaries are not guaranteed to align with UTC. The days array contains the number of stars created on each day of the week, starting on Sunday.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`owner`** (string) (required)
+  The account owner of the repository. The name is not case sensitive.
+
+* **`repo`** (string) (required)
+  The name of the repository without the .git extension. The name is not case sensitive.
+
+* **`per_page`** (integer)
+  The number of results per page (max 30). For more information, see "Using pagination in the REST API."
+  Default: `30`
+
+* **`page`** (integer)
+  The page number of the results to fetch (max 100). For more information, see "Using pagination in the REST API."
+  Default: `1`
+
+### HTTP response status codes
+
+* **200** - Repository star history
+
+* **422** - Validation failed, or the endpoint has been spammed.
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X GET \
+  https://api.github.com/repos/OWNER/REPO/stargazers/history
+```
+
+**Response schema (Status: 200):**
+
+Array (maxItems: 30) of `Stargazer History`:
+
+* `days`: required, array of integer
+* `total`: required, integer
+* `week`: required, integer
+
 ## List repositories starred by the authenticated user
 
 ```
@@ -657,6 +714,7 @@ GET /users/{username}/starred
 ```
 
 Lists repositories a user has starred.
+If the specified user has a private profile, this endpoint returns an empty list unless the request is authenticated as that user. A request authenticated as the specified user returns starred repositories visible to the token even if the token has no OAuth scopes.
 This endpoint supports the following custom media types. For more information, see "Media types."
 
 application/vnd.github.star+json: Includes a timestamp of when the star was created.

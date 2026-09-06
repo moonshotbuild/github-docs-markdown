@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Endpoints available for GitHub App user access tokens
 
-<p>Your GitHub App can make requests to the following REST endpoints with a user access token.</p>
+Your GitHub App can make requests to the following REST endpoints with a user access token.
 
 ## actions
 
@@ -427,6 +427,8 @@ breadcrumbs:
 
 * [`GET /repos/{owner}/{repo}/stargazers/count`](/en/rest/activity/starring#get-stargazer-count)
 
+* [`GET /repos/{owner}/{repo}/stargazers/history`](/en/rest/activity/starring#get-repository-star-history)
+
 * [`GET /repos/{owner}/{repo}/subscribers`](/en/rest/activity/watching#list-watchers)
 
 * [`GET /user/starred`](/en/rest/activity/starring#list-repositories-starred-by-the-authenticated-user)
@@ -673,17 +675,17 @@ breadcrumbs:
 
 ## classroom
 
-* [`GET /assignments/{assignment_id}`](/en/rest/classroom/classroom#closing-down---get-an-assignment)
+* [`GET /assignments/{assignment_id}`](/en/rest/classroom/classroom#closed---get-an-assignment)
 
-* [`GET /assignments/{assignment_id}/accepted_assignments`](/en/rest/classroom/classroom#closing-down---list-accepted-assignments-for-an-assignment)
+* [`GET /assignments/{assignment_id}/accepted_assignments`](/en/rest/classroom/classroom#closed---list-accepted-assignments-for-an-assignment)
 
-* [`GET /assignments/{assignment_id}/grades`](/en/rest/classroom/classroom#closing-down---get-assignment-grades)
+* [`GET /assignments/{assignment_id}/grades`](/en/rest/classroom/classroom#closed---get-assignment-grades)
 
-* [`GET /classrooms`](/en/rest/classroom/classroom#closing-down---list-classrooms)
+* [`GET /classrooms`](/en/rest/classroom/classroom#closed---list-classrooms)
 
-* [`GET /classrooms/{classroom_id}`](/en/rest/classroom/classroom#closing-down---get-a-classroom)
+* [`GET /classrooms/{classroom_id}`](/en/rest/classroom/classroom#closed---get-a-classroom)
 
-* [`GET /classrooms/{classroom_id}/assignments`](/en/rest/classroom/classroom#closing-down---list-assignments-for-a-classroom)
+* [`GET /classrooms/{classroom_id}/assignments`](/en/rest/classroom/classroom#closed---list-assignments-for-a-classroom)
 
 ## code-quality
 

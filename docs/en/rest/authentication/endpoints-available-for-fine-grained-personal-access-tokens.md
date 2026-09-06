@@ -405,6 +405,8 @@ breadcrumbs:
 
 * [`GET /repos/{owner}/{repo}/stargazers/count`](/en/rest/activity/starring#get-stargazer-count)
 
+* [`GET /repos/{owner}/{repo}/stargazers/history`](/en/rest/activity/starring#get-repository-star-history)
+
 * [`GET /repos/{owner}/{repo}/subscribers`](/en/rest/activity/watching#list-watchers)
 
 * [`GET /user/starred`](/en/rest/activity/starring#list-repositories-starred-by-the-authenticated-user)

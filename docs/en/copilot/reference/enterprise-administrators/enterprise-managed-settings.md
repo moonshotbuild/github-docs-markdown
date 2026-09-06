@@ -146,6 +146,7 @@ The following example shows these keys in one managed settings file.
   ],
   "sandbox": {
     "enabled": true,
+    "failIfUnavailable": true,
     "allowBypass": false,
     "sandboxMcpServers": true,
     "sandboxLspServers": true
@@ -303,8 +304,9 @@ Enforces minimum local sandbox restrictions for Copilot CLI. Managed sandbox set
 
 The following sub-properties are supported:
 
-* `enabled`: `true` requires sandboxing and prevents users from disabling it.
-* `allowBypass`: `false` prevents the model from requesting that an individual command run outside the sandbox.
+* `enabled`: `true` requires sandboxing by default. Users cannot disable it through their configuration, the `--no-sandbox` command line option, or the `/sandbox disable` command. If the effective policy permits bypass, a user can still explicitly disable sandboxing for the rest of the current session from an active sandbox-bypass permission prompt.
+* `failIfUnavailable`: `true`, combined with `enabled: true`, makes the managed sandbox mandatory. If Copilot cannot validate, compile, or enforce the sandbox policy with an available sandbox backend, it blocks model and tool execution instead of allowing commands to fail or run unsandboxed. This property does not enable sandboxing by itself.
+* `allowBypass`: `false` prevents both individual commands from running outside the sandbox and users from disabling sandboxing for the rest of the current session from an active sandbox-bypass permission prompt.
 * `addCurrentWorkingDirectory`: `false` prevents Copilot CLI from automatically adding the current working directory to the sandbox's read/write paths.
 * `sandboxMcpServers`: `true` requires local MCP servers started by Copilot CLI to run in the sandbox. Remote MCP servers do not run in the local sandbox.
 * `sandboxLspServers`: `true` requires language servers started by Copilot CLI to run in the sandbox.

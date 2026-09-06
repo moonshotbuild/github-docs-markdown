@@ -71,18 +71,23 @@ Read access to the repository.
 ### Notes and limitations
 
 * GitHub provides three audit logs: **enterprise**, **organization**, and user **security logs**.
+
 * The GitHub audit log UI has **limited filtering and search** capabilities. For this reason, we recommend that enterprises **stream** the enterprise audit log to an external SIEM or log management system for more advanced querying.
   * Audit log streaming to an external SIEM or log management system requires prior configuration. See [Streaming the audit log for your enterprise](/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise).
   * Without audit log streaming, you won't be able to run more complex queries, such as correlating events across organizations or repositories, or pivoting from a specific token to all related events.
   * Git events data are included in the stream.
+
 * We recommend streaming **API request events**; this requires prior configuration. See [Streaming the audit log for your enterprise](/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise#enabling-audit-log-streaming-of-api-requests).
+
 * For enterprises on GitHub Enterprise Cloud, we recommend displaying **IP addresses** in the audit logs; this requires prior configuration. See [Displaying IP addresses in the audit log for your enterprise](/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/displaying-ip-addresses-in-the-audit-log-for-your-enterprise).
+
 * Different GitHub plans have different data availability and data retention offerings:
   * GitHub Free and GitHub Team plans can't view API activity or Git events at all.
   * Standalone organizations (organizations that are not part of an enterprise) can't stream the audit logs, can't view API request events, and are limited to 7 days for Git event data.
   * For enterprises on GitHub Enterprise Cloud:
     * If your enterprise uses **Enterprise Managed Users**, then the audit log also includes user **security logs** (events related to user accounts, such as login activity and token usage).
     * If your enterprise *doesn't use* Enterprise Managed Users, then the GitHub audit log only includes events related to the enterprise account and the organizations within it.
+
 * The audit logs **don't** include page view or repository browsing telemetry.
 
 ## Dependency graph

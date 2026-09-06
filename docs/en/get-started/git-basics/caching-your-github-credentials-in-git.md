@@ -55,7 +55,7 @@ The next time you clone an HTTPS URL that requires authentication, Git will prom
 
 > \[!TIP]
 >
-> If you're a member of an enterprise that uses Enterprise Managed Users, your enterprise view has the "Users managed by ACCOUNT NAME" header bar at the top of the screen. In that case you will need to disable account filtering locally in GCM to prevent getting prompted for authentication each time a remote Git operation is performed. For more details, see the [`git-credential-manager` repository](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/configuration.md#credentialgithubaccountfiltering).
+> If you're a member of an enterprise that uses Enterprise Managed Users, your enterprise view has the "Users managed by ACCOUNT NAME" header bar at the top of the screen. In that case you will need to disable account filtering locally in GCM to prevent getting prompted for authentication each time a remote Git operation is performed. For more details, see the [`git-credential-manager` repository](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialgithubaccountfiltering).
 >
 > To configure the Git Credential Manager run the following command:
 >
@@ -77,7 +77,7 @@ The next time you clone an HTTPS URL that requires authentication, Git will prom
 
 > \[!TIP]
 >
-> If you're a member of an enterprise that uses Enterprise Managed Users, your enterprise view has the "Users managed by ACCOUNT NAME" header bar at the top of the screen. In that case you will need to disable account filtering locally in GCM to prevent getting prompted for authentication each time a remote Git operation is performed. For more details, see the [`git-credential-manager` repository](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/configuration.md#credentialgithubaccountfiltering).
+> If you're a member of an enterprise that uses Enterprise Managed Users, your enterprise view has the "Users managed by ACCOUNT NAME" header bar at the top of the screen. In that case you will need to disable account filtering locally in GCM to prevent getting prompted for authentication each time a remote Git operation is performed. For more details, see the [`git-credential-manager` repository](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialgithubaccountfiltering).
 >
 > To configure the Git Credential Manager run the following command:
 >
@@ -103,7 +103,7 @@ For Linux, install Git and GCM, then configure Git to use GCM.
 
 1. Install Git from your distro's packaging system. Instructions will vary depending on the flavor of Linux you run.
 
-2. Install GCM. See the [instructions in the GCM repo](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md), as they'll vary depending on the flavor of Linux you run.
+2. Install GCM. See the [instructions in the GCM repo](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/install.md), as they'll vary depending on the flavor of Linux you run.
 
 3. Configure Git to use GCM. There are several backing stores that you may choose from, so see the GCM docs to complete your setup. For more information, see [GCM Linux](https://aka.ms/gcmcore-linuxcredstores).
 
@@ -111,7 +111,7 @@ The next time you clone an HTTPS URL that requires authentication, Git will prom
 
 > \[!TIP]
 >
-> If you're a member of an enterprise that uses Enterprise Managed Users, your enterprise view has the "Users managed by ACCOUNT NAME" header bar at the top of the screen. In that case you will need to disable account filtering locally in GCM to prevent getting prompted for authentication each time a remote Git operation is performed. For more details, see the [`git-credential-manager` repository](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/configuration.md#credentialgithubaccountfiltering).
+> If you're a member of an enterprise that uses Enterprise Managed Users, your enterprise view has the "Users managed by ACCOUNT NAME" header bar at the top of the screen. In that case you will need to disable account filtering locally in GCM to prevent getting prompted for authentication each time a remote Git operation is performed. For more details, see the [`git-credential-manager` repository](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialgithubaccountfiltering).
 >
 > To configure the Git Credential Manager run the following command:
 >

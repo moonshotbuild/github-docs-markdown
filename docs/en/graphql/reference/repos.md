@@ -2044,6 +2044,7 @@ A team, app or user that has the ability to bypass rules defined on a ruleset.
 * `deployKey` (Boolean!): This actor represents the ability for a deploy key to bypass.
 * `enterpriseOwner` (Boolean!): This actor represents the ability for an enterprise owner to bypass.
 * `enterpriseRole` (Boolean!): This actor represents the ability for an enterprise role to bypass.
+* `enterpriseRoleDatabaseId` (BigInt): If the actor is an enterprise role, the enterprise role's ID that can bypass.
 * `id` (ID!): The Node ID of the RepositoryRulesetBypassActor object.
 * `organizationAdmin` (Boolean!): This actor represents the ability for an organization owner to bypass.
 * `repositoryRoleDatabaseId` (Int): If the actor is a repository role, the repository role's ID that can bypass.
@@ -2082,9 +2083,9 @@ An edge in a connection.
 
 ## RepositoryRulesetBypassActorInput - input object
 
-Specifies the attributes for a new or updated ruleset bypass actor. Only one of
-actor_id, repository_role_database_id, organization_admin,
-enterprise_owner, or deploy_key should be specified.
+Specifies the attributes for a new or updated ruleset bypass actor. Exactly one
+of actor_id, repository_role_database_id, organization_admin,
+enterprise_owner, enterprise_role_database_id, or deploy_key should be specified.
 
 ### Input fields for `RepositoryRulesetBypassActorInput`
 
@@ -2092,7 +2093,8 @@ enterprise_owner, or deploy_key should be specified.
 * `bypassMode` (RepositoryRulesetBypassActorBypassMode!): The bypass mode for this actor.
 * `deployKey` (Boolean): For deploy key bypasses, true. Can only use ALWAYS as the bypass mode.
 * `enterpriseOwner` (Boolean): For enterprise owner bypasses, true.
-* `enterpriseRole` (Boolean): For enterprise role bypasses, true. NOTE: This bypass actor is in beta.
+* `enterpriseRole` (Boolean): For enterprise role bypasses, true. NOTE: This bypass actor is in beta. **Deprecated:** Use enterpriseRoleDatabaseId.
+* `enterpriseRoleDatabaseId` (BigInt): For enterprise role bypasses, the enterprise role database ID. NOTE: This bypass actor is in beta.
 * `organizationAdmin` (Boolean): For organization owner bypasses, true.
 * `repositoryRoleDatabaseId` (Int): For role bypasses, the role database ID.
 

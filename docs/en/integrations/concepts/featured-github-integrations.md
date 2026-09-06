@@ -61,7 +61,7 @@ You can also integrate the Copilot cloud agent with Slack, enabling you to use A
 
 Use Copilot cloud agent to collaborate with your team on agent-assisted work. You can @mention GitHub in channels, threads, and direct messages to work alongside teammates and Copilot on research, planning, and coding tasks. Teammates can add context, steer Copilot sessions, monitor progress, and then review the resulting artifacts.
 
-For more information, see [Integrating Copilot cloud agent with Slack](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-slack).
+For more information, see [Integrating Copilot cloud agent with Slack](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-slack).
 
 ### Microsoft Teams and GitHub integration
 
@@ -83,4 +83,4 @@ You can also integrate the Copilot cloud agent with your Microsoft Teams app, en
 
 Use Copilot cloud agent in Microsoft Teams to collaborate with your team on agent-assisted work. You can @mention GitHub in channels, threads, and direct messages to work alongside teammates and Copilot on research, planning, and coding tasks. Teammates can add context, steer Copilot sessions, monitor progress, and then review the resulting artifacts.
 
-See [Integrating Copilot cloud agent with Teams](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-teams) for more information.
+See [Integrating Copilot cloud agent with Teams](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-teams) for more information.

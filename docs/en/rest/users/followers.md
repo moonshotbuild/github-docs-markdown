@@ -295,6 +295,7 @@ GET /users/{username}/followers
 ```
 
 Lists the people following the specified user.
+If the specified user has a private profile, this endpoint returns an empty list unless the request is authenticated as that user. A request authenticated as the specified user returns the list even if the token has no OAuth scopes.
 
 ### Parameters
 
@@ -343,6 +344,7 @@ GET /users/{username}/following
 ```
 
 Lists the people who the specified user follows.
+If the specified user has a private profile, this endpoint returns an empty list unless the request is authenticated as that user. A request authenticated as the specified user returns the list even if the token has no OAuth scopes.
 
 ### Parameters
 

@@ -444,7 +444,7 @@ Array of `Organization Repository Custom Property Values`:
 * `properties`: required, array of `Custom Property Value`:
   * `property_name`: required, string
   * `value`: required, one of:
-    * **string**
+    * **string or null**
     * **array**
 
 ## Create or update custom property values for organization repositories

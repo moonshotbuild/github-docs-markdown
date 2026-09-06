@@ -95,4 +95,4 @@ GitHub Copilot app may generate code that is a match or near match of publicly a
 
 ## Further reading
 
-* [Getting started with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/getting-started)
+* [Getting started with the GitHub Copilot app](/en/copilot/get-started/quickstart-copilot-app)

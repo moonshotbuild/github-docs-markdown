@@ -39,11 +39,7 @@ Future releases of GitHub will remove the ability to disable running Dependabot 
 
 To run Dependabot jobs on GitHub Actions, GitHub creates a dynamic workflow for each job. Unlike standard GitHub Actions workflows, dynamic workflows are generated for a specific run and are not stored in your repository's `.github/workflows` directory.
 
-You may see workflow runs named `dynamic/dependabot/dependabot-updates` or check runs with `(dynamic)` appended to their names. You can use the workflow run logs to troubleshoot errors or configuration problems.
-
 You may see workflow runs named `dynamic/dependabot/dependabot-updates` or check runs with `(dynamic)` appended to their names. To troubleshoot errors or configuration problems, on the repository's **Actions** tab, filter the workflow runs to show only Dependabot update jobs, then open a workflow run to view the logs.
-
-## Runner options
 
 ## Runner options
 

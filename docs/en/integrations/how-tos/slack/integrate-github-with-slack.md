@@ -78,4 +78,4 @@ If you are an admin or owner of a Slack Enterprise Grid organization, you can in
 
 * [Using GitHub in Slack](/en/integrations/how-tos/slack/use-github-in-slack) - Learn how to use the GitHub integration for Slack.
 
-* [Integrating Copilot cloud agent with Slack](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-slack) - Learn about Copilot cloud agent with Slack.
+* [Integrating Copilot cloud agent with Slack](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-slack) - Learn about Copilot cloud agent with Slack.
