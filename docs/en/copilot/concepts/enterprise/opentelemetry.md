@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/agents/opentelemetry"
+source_path: "/en/copilot/concepts/enterprise/opentelemetry"
 title: "OpenTelemetry for agent monitoring"
 intro: "Understand how Copilot agents perform and interact with models and tools."
 product: "GitHub Copilot"
@@ -9,10 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
-  - title: "Agents"
-    href: "/en/copilot/concepts/agents"
+  - title: "Enterprise"
+    href: "/en/copilot/concepts/enterprise"
   - title: "OpenTelemetry"
-    href: "/en/copilot/concepts/agents/opentelemetry"
+    href: "/en/copilot/concepts/enterprise/opentelemetry"
 ---
 
 # OpenTelemetry for agent monitoring
@@ -45,7 +45,7 @@ To collect OTel data from users' Copilot clients:
 
 Enterprises can enforce OTel configuration across supported clients with managed settings. These settings are enforced across users' clients and cannot be overridden. The `telemetry` property includes keys for enabling and configuring OpenTelemetry.
 
-For more information, see [Configuring enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-managed-settings) and [Enterprise managed settings](/en/copilot/reference/enterprise-administrators/enterprise-managed-settings).
+For more information, see [Getting started with enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/get-started) and [Enterprise managed settings](/en/copilot/reference/enterprise-administrators/enterprise-managed-settings).
 
 ## Client documentation
 

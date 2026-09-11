@@ -39,7 +39,7 @@ Code Quality features that use AI models consume AI credits from your shared AI 
 
 Code Quality is a purpose-built product that uses a carefully tuned mix of models, prompts, and system behaviors to deliver consistent, high-quality analysis across a wide range of codebases. Model switching is not supported, as changing the model is likely to compromise the reliability and accuracy of analysis results.
 
-For more information about how AI credits work, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises).
+For more information about how AI credits work, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing).
 
 ### Active and unique committers
 
@@ -60,4 +60,4 @@ Users can contribute to multiple repositories or organizations. Usage is measure
 
 * [Preventing code quality issues from reaching your default branch](/en/code-security/tutorials/improve-code-quality/catch-issues-before-merge)
 * [GitHub Actions billing](/en/billing/concepts/product-billing/github-actions)
-* [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises)
+* [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing)

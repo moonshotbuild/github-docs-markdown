@@ -55,10 +55,6 @@ Learn how GitHub Copilot can independently execute tasks across the software dev
 
   Plugins are installable packages that extend Copilot with reusable agents, skills, hooks, and integrations.
 
-* [About enterprise-managed plugin standards](/en/copilot/concepts/agents/about-enterprise-plugin-standards)
-
-  Enterprise administrators can centrally define plugin policies for users, ensuring consistent plugin availability.
-
 * [About third-party coding agents](/en/copilot/concepts/agents/about-third-party-coding-agents)
 
   You can use third-party coding agents alongside Copilot cloud agent to work asynchronously on your development tasks on GitHub.
@@ -78,11 +74,3 @@ Learn how GitHub Copilot can independently execute tasks across the software dev
 * [About agent skills](/en/copilot/concepts/agents/about-agent-skills)
 
   Skills allow Copilot to perform specialized tasks.
-
-* [Agent management for enterprises](/en/copilot/concepts/agents/enterprise-management)
-
-  Maintain your enterprise's security and compliance standards and supercharge your developers by managing agents with AI Controls.
-
-* [OpenTelemetry for agent monitoring](/en/copilot/concepts/agents/opentelemetry)
-
-  Understand how Copilot agents perform and interact with models and tools.

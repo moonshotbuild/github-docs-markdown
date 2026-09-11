@@ -26,7 +26,8 @@ Use the REST API to get public and private information about authenticated users
 GET /user
 ```
 
-OAuth app tokens and personal access tokens (classic) need the user scope in order for the response to include private profile information.
+OAuth app tokens and personal access tokens (classic) need the read:user scope, or the broader user scope, for this endpoint to return the private user response. The private user response includes additional fields such as private_gists, total_private_repos, owned_private_repos, disk_usage, collaborators, and two_factor_authentication. Tokens without these scopes receive the public user response.
+The private and public user response types are unrelated to the private profile setting. A token without scopes still authenticates as the token's owner, so values subject to private profile visibility, such as followers and following, may differ from an unauthenticated response.
 
 ### HTTP response status codes
 
@@ -510,6 +511,7 @@ GET /users/{username}
 ```
 
 Provides publicly available information about someone with a GitHub account.
+If the specified user has a private profile, the followers and following values are 0 unless the request is authenticated as that user. A request authenticated as the specified user returns the actual values even if the token has no OAuth scopes.
 The events_url value is a URI template. Replace {/privacy} with /public to retrieve only public events. Omit it to retrieve public events and, when authenticated as the user, private events. For more information, see "List events for the authenticated user."
 If you are requesting information about an Enterprise Managed User, or a GitHub App bot that is installed in an organization that uses Enterprise Managed Users, your requests must be authenticated as a user or GitHub App that has access to the organization to view that account's information. If you are not authorized, the request will return a 404 Not Found status.
 The email key in the following response is the publicly visible email address from your GitHub profile page. When setting up your profile, you can select a primary email address to be public which provides an email entry for this endpoint. If you do not set a public email address for email, then it will have a value of null. You only see publicly visible email addresses when authenticated with GitHub. For more information, see Authentication.

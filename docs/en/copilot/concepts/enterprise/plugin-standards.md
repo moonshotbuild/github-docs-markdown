@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/agents/about-enterprise-plugin-standards"
+source_path: "/en/copilot/concepts/enterprise/plugin-standards"
 title: "About enterprise-managed plugin standards"
 intro: "Enterprise administrators can centrally define plugin policies for users, ensuring consistent plugin availability."
 product: "GitHub Copilot"
@@ -9,10 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
-  - title: "Agents"
-    href: "/en/copilot/concepts/agents"
-  - title: "Enterprise plugin standards"
-    href: "/en/copilot/concepts/agents/about-enterprise-plugin-standards"
+  - title: "Enterprise"
+    href: "/en/copilot/concepts/enterprise"
+  - title: "Plugin standards"
+    href: "/en/copilot/concepts/enterprise/plugin-standards"
 ---
 
 # About enterprise-managed plugin standards
@@ -47,4 +47,4 @@ Enterprise-managed plugin standards help administrators address several common c
 
 ## Next step
 
-To configure enterprise plugin standards, see [Configuring enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-managed-settings).
+To configure enterprise plugin standards, see [Getting started with enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/get-started).

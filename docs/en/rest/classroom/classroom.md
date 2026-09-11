@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/classroom/classroom"
 ---
 
-# REST API endpoints for GitHub Classroom
+# REST API endpoints for {% data variables.product.prodname_classroom %}
 
 Use the REST API to interact with GitHub Classroom.
 

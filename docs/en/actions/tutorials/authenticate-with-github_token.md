@@ -82,7 +82,7 @@ jobs:
 
 Use the `permissions` key in your workflow file to modify permissions for the `GITHUB_TOKEN` for an entire workflow or for individual jobs. This allows you to configure the minimum required permissions for a workflow or job. As a good security practice, you should grant the `GITHUB_TOKEN` the least required access.
 
-To see the list of permissions available for use and their parameterized names, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#account-permissions).
+To see the list of permissions available for use and their parameterized names, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#permissions).
 
 The two workflow examples earlier in this article show the `permissions` key being used at the job level.
 

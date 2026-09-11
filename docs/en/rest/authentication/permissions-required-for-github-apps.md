@@ -107,6 +107,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}` | write | UAT, IAT | ✓ |
 | `DELETE /orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}` | write | UAT, IAT | ✓ |
 | `PUT /orgs/{org}/actions/permissions/workflow` | write | UAT, IAT | ✗ |
+| `PATCH /orgs/{org}/code-scanning/ai-scan` | write | UAT, IAT | ✗ |
 | `POST /orgs/{org}/code-security/configurations` | write | UAT, IAT | ✗ |
 | `DELETE /orgs/{org}/code-security/configurations/detach` | write | UAT, IAT | ✗ |
 | `PATCH /orgs/{org}/code-security/configurations/{configuration_id}` | write | UAT, IAT | ✗ |
@@ -171,6 +172,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /orgs/{org}/actions/permissions/self-hosted-runners` | read | UAT, IAT | ✗ |
 | `GET /orgs/{org}/actions/permissions/self-hosted-runners/repositories` | read | UAT, IAT | ✗ |
 | `GET /orgs/{org}/actions/permissions/workflow` | read | UAT, IAT | ✗ |
+| `GET /orgs/{org}/code-scanning/ai-scan` | read | UAT, IAT | ✗ |
 | `GET /orgs/{org}/code-security/configurations` | read | UAT, IAT | ✗ |
 | `GET /orgs/{org}/code-security/configurations/defaults` | read | UAT, IAT | ✗ |
 | `GET /orgs/{org}/code-security/configurations/{configuration_id}` | read | UAT, IAT | ✗ |
@@ -699,6 +701,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users` | write | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/code-quality/setup` | write | UAT, IAT | ✗ |
 | `PATCH /repos/{owner}/{repo}/code-quality/setup` | write | UAT, IAT | ✗ |
+| `PATCH /repos/{owner}/{repo}/code-scanning/ai-scan` | write | UAT, IAT | ✗ |
 | `PATCH /repos/{owner}/{repo}/code-scanning/default-setup` | write | UAT, IAT | ✗ |
 | `PUT /repos/{owner}/{repo}/collaborators/{username}` | write | UAT, IAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/collaborators/{username}` | write | UAT, IAT | ✗ |
@@ -870,6 +873,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `DELETE /repos/{owner}/{repo}/code-scanning/analyses/{analysis_id}` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/code-scanning/sarifs` | write | UAT, IAT | ✗ |
 | `GET /orgs/{org}/code-scanning/alerts` | read | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/code-scanning/ai-scan` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/code-scanning/alerts` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/autofix` | read | UAT, IAT | ✗ |

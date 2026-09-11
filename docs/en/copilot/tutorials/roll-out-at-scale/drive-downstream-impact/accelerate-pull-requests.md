@@ -172,7 +172,7 @@ Developers **should not**:
 * [Creating a pull request summary with GitHub Copilot](/en/copilot/how-tos/copilot-on-github/copilot-for-github-tasks/create-a-pr-summary)
 * [Using GitHub Copilot code review](/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)
 * [Adding repository custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions)
-* [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review)
+* [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review)
 * [Adding organization custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-organization-instructions)
 
 ## Metrics to watch

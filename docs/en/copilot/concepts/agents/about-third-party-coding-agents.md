@@ -71,10 +71,7 @@ The following models are available for each agent:
 ### Anthropic Claude
 
 * Auto
-* Claude Opus 4.5
-* Claude Opus 4.6
 * Claude Opus 4.7
-* Claude Sonnet 4.5
 * Claude Sonnet 4.6
 
 ## Security validation
@@ -93,7 +90,7 @@ Security validation does not require a GitHub Advanced Security license.
 
 Coding agents consume **GitHub Actions minutes** and **AI credits**. Each agent session consumes AI credits based on the model used and the number of tokens processed.
 
-Within your included GitHub Actions minutes and AI credits, you can use agents without incurring additional costs. See [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises).
+Within your included GitHub Actions minutes and AI credits, you can use agents without incurring additional costs. See [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing).
 
 ## Partner agents
 

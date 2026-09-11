@@ -62,7 +62,7 @@ The second policy has these characteristics:
 
 When both policies are enabled, users without a Copilot license can request a review from Copilot code review on their pull requests in the organization's repositories.
 
-In repositories where automatic code review is enabled, Copilot automatically reviews all pull requests. This happens regardless of whether the author has a Copilot license. For more information about how to configure automatic code review, see [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review).
+In repositories where automatic code review is enabled, Copilot automatically reviews all pull requests. This happens regardless of whether the author has a Copilot license. For more information about how to configure automatic code review, see [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review).
 
 Copilot code review for users without a license is not available in IDEs.
 
@@ -98,7 +98,7 @@ A review typically consumes an estimated $0.05 USD to $1 USD worth of AI credits
 
 Consumption generally increases with pull request size and repository custom instructions, and the ranges may change as models evolve. These estimates do not include GitHub Actions minutes.
 
-Repository and organization administrators can set the default review effort level for automatic code reviews. For configuration steps, see [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review#customizing-copilot-code-review-1).
+Repository and organization administrators can set the default review effort level for automatic code reviews. For configuration steps, see [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review#customizing-copilot-code-review-1).
 
 ## Code review usage
 
@@ -108,10 +108,9 @@ Code reviews have two cost components: AI credits for the model interaction (the
 
 If a repository is configured to automatically request a code review from Copilot for all new pull requests, the AI credits consumption is attributed to the pull request author. If a review is manually requested by another user, the consumption is attributed to that user instead.
 
-If a pull request is created by GitHub Actions or by a bot, the usage will apply to:
+For pull requests authored by Copilot cloud agent, usage is attributed first to the human co-author associated with the change. If the co-author cannot be billed, usage is billed directly to the organization.
 
-* The user who triggered the workflow, if that user can be identified.
-* A designated billing owner.
+For pull requests authored by other bots, or when a bot requests the review, usage is billed directly to the organization. These pull requests are eligible for agentic review.
 
 ### What happens when a budget is reached
 
@@ -156,7 +155,7 @@ The triggers for automatic code review depend on the configuration settings.
 * Review draft pull requests:
   * Pull requests are automatically reviewed while they are still drafts, before you switch them to "Open".
 
-For full instructions, see [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review).
+For full instructions, see [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review).
 
 > \[!NOTE]
 > Unless Copilot has been configured to review each push to a pull request, it will only review a pull request once. If you make changes to the pull request after it has been automatically reviewed and you want Copilot to re-review it, you can request this manually. Click the <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-sync" aria-label="Re-request review" role="img"><path d="M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z"></path></svg> button next to Copilot's name in the **Reviewers** menu.
@@ -268,4 +267,4 @@ For more information, see [Application card: GitHub Copilot Agents](/en/copilot/
 ## Next steps
 
 * [Using GitHub Copilot code review](/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)
-* [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-automatic-review)
+* [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review)

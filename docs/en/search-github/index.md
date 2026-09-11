@@ -19,9 +19,21 @@ Learn how to use the search functions available on GitHub to find different type
 
   Our integrated search covers the many repositories, users, and lines of code on GitHub.
 
+* [About GitHub Code Search](/en/search-github/github-code-search/about-github-code-search)
+
+  You can search, navigate and understand code across GitHub with code search.
+
 * [Understanding the search syntax](/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax)
 
   When searching GitHub, you can construct queries that match specific numbers and words.
+
+* [Understanding GitHub Code Search syntax](/en/search-github/github-code-search/understanding-github-code-search-syntax)
+
+  You can build search queries for the results you want with specialized code qualifiers, regular expressions, and boolean operations.
+
+* [Using GitHub Code Search](/en/search-github/github-code-search/using-github-code-search)
+
+  You can use suggestions, completions and saved searches in the upgraded search interface to quickly find what you are looking for across GitHub.
 
 * [Finding files on GitHub](/en/search-github/searching-on-github/finding-files-on-github)
 

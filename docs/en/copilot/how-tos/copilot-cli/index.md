@@ -81,6 +81,10 @@ Use Copilot directly from your terminal to answer questions, write and debug cod
 
   Use the tabs in an interactive Copilot CLI session to browse issues, pull requests and gists, without leaving the terminal.
 
+* [Asking a side question in GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/ask-a-side-question)
+
+  During a CLI session, you can ask Copilot a question without adding the prompt, or the answer, to your conversation history.
+
 * [Rolling back changes made during a GitHub Copilot CLI session](/en/copilot/how-tos/copilot-cli/use-copilot-cli/roll-back-changes)
 
   Rewind your Copilot CLI session to a previous prompt to undo changes in conversation history, and optionally restore files.

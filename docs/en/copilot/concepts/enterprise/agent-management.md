@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/agents/enterprise-management"
+source_path: "/en/copilot/concepts/enterprise/agent-management"
 title: "Agent management for enterprises"
 intro: "Maintain your enterprise's security and compliance standards and supercharge your developers by managing agents with AI Controls."
 product: "GitHub Copilot"
@@ -9,10 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
-  - title: "Agents"
-    href: "/en/copilot/concepts/agents"
-  - title: "Enterprise management"
-    href: "/en/copilot/concepts/agents/enterprise-management"
+  - title: "Enterprise"
+    href: "/en/copilot/concepts/enterprise"
+  - title: "Agent management"
+    href: "/en/copilot/concepts/enterprise/agent-management"
 ---
 
 # Agent management for enterprises
@@ -85,13 +85,13 @@ To help you meet security and compliance requirements, you can choose to:
 
 Private MCP registries apply to Copilot CLI and IDEs, but not to cloud agents that run on GitHub. For Copilot cloud agent, MCP servers can be configured at the repository level or in custom agent profiles defined at the enterprise level.
 
-For more information, see [MCP server usage in your company](/en/copilot/concepts/mcp-management).
+For more information, see [MCP server usage in your company](/en/copilot/concepts/enterprise/mcp-management).
 
 ## Enterprise-managed settings
 
 The `managed-settings.json` file allows enterprises to control how users can interact with agents across Copilot clients. For example: which plugins can people install, and can people use "allow all" commands that let agents run commands without asking for permission? This file can be hosted on GitHub or installed directly on users' machines.
 
-For more information, see [Configuring enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-managed-settings).
+For more information, see [Getting started with enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/get-started).
 
 ## Agent mode in the IDE
 

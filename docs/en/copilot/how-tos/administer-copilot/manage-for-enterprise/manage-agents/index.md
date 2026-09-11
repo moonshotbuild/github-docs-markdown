@@ -31,10 +31,6 @@ Maintain your enterprise's security and compliance standards and empower your de
 
   A .github-private repository can serve as a designated source of governance settings for agents and plugins across your enterprise.
 
-* [Configuring enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-managed-settings)
-
-  Configure enterprise managed settings to centrally control Copilot client behavior across your enterprise using server-managed, MDM-managed, or file-based deployment.
-
 * [Monitoring agentic activity in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/monitor-agentic-activity)
 
   Track agentic activity in your enterprise to ensure continued compliance.

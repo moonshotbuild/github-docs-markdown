@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/learning-about-new-features-and-models"
+source_path: "/en/copilot/concepts/enterprise/learning-about-new-features-and-models"
 title: "Learning about new features and models"
 intro: "Stay informed about GitHub Copilot features and models, and make confident decisions about enabling them for your enterprise."
 product: "GitHub Copilot"
@@ -9,8 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
+  - title: "Enterprise"
+    href: "/en/copilot/concepts/enterprise"
   - title: "New features and models"
-    href: "/en/copilot/concepts/learning-about-new-features-and-models"
+    href: "/en/copilot/concepts/enterprise/learning-about-new-features-and-models"
 ---
 
 # Learning about new features and models
@@ -47,7 +49,7 @@ Copilot features generally fall into three categories:
 Each feature has its own enablement requirements and policy settings. When a new feature is released:
 
 1. Review the feature documentation to understand its capabilities.
-2. Check the policy settings available at the enterprise and organization level. See [GitHub Copilot policies for enterprises and organizations](/en/copilot/concepts/policies).
+2. Check the policy settings available at the enterprise and organization level. See [GitHub Copilot policies for enterprises and organizations](/en/copilot/concepts/enterprise/policies).
 3. Consider running a pilot with a subset of users before broader rollout.
 
 ### Learning about new Copilot models

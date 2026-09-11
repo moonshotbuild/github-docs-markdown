@@ -29,7 +29,7 @@ Learn how to use GitHub's security and code quality features.
 
 * [How-tos for leak prevention](/en/code-security/how-tos/secure-your-secrets/prevent-future-leaks)
 
-  Learn how to prevent future secret leaks with GitHub's push protection.
+  Prevent exposed secrets from reaching your repositories and protected branches.
 
 * [How-tos for working with leak prevention](/en/code-security/how-tos/secure-your-secrets/work-with-leak-prevention)
 

@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/about-enterprise-accounts-for-copilot-business"
+source_path: "/en/copilot/concepts/enterprise/about-enterprise-accounts-for-copilot-business"
 title: "About enterprise accounts for Copilot Business"
 intro: "An enterprise account lets you manage only Copilot Business licenses, without consuming GitHub Enterprise Cloud licenses."
 product: "GitHub Copilot"
@@ -9,8 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
+  - title: "Enterprise"
+    href: "/en/copilot/concepts/enterprise"
   - title: "Copilot-only enterprises"
-    href: "/en/copilot/concepts/about-enterprise-accounts-for-copilot-business"
+    href: "/en/copilot/concepts/enterprise/about-enterprise-accounts-for-copilot-business"
 ---
 
 # About enterprise accounts for Copilot Business

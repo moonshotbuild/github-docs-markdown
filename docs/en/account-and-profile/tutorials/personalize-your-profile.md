@@ -18,7 +18,7 @@ breadcrumbs:
 You can share information about yourself with other users by setting a profile picture and adding a bio to your profile.
 
 > \[!NOTE]
-> Your profile name for your is GitHub account is **required**. All other profile information described in this article is **optional**.
+> Your profile name for your GitHub account is **required**. All other profile information described in this article is **optional**.
 
 ## Changing your profile picture
 

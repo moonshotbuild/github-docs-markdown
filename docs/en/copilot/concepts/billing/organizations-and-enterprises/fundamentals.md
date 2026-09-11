@@ -45,7 +45,7 @@ With GitHub Enterprise Cloud:
 
 Copilot usage is measured in AI credits under usage-based billing. Each license contributes AI credits to a shared enterprise pool, and usage beyond the pool is charged at $0.01 USD per AI credit. Code completions and next edit suggestions are not billed in AI credits and remain unlimited for all paid plans.
 
-For a full explanation of how AI credits work, including pooling, additional usage, and what happens when credits run out, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises).
+For a full explanation of how AI credits work, including pooling, additional usage, and what happens when credits run out, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing).
 
 ## Seat assignment
 

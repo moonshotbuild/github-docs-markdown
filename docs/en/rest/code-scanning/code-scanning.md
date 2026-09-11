@@ -232,6 +232,102 @@ Array of objects:
   * **Simple User** (see above)
 * `assignees`: array of `Simple User` (see above)
 
+## Get AI Scan enablement for a repository
+
+```
+GET /repos/{owner}/{repo}/code-scanning/ai-scan
+```
+
+Note
+
+This endpoint is in public preview and is subject to change.
+
+Gets whether AI Scan is enabled for a repository.
+OAuth app tokens and personal access tokens (classic) need the security\_events scope to use this endpoint with private or public repositories, or the public\_repo scope to use this endpoint with only public repositories.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`owner`** (string) (required)
+  The account owner of the repository. The name is not case sensitive.
+
+* **`repo`** (string) (required)
+  The name of the repository without the .git extension. The name is not case sensitive.
+
+### HTTP response status codes
+
+* **200** - OK
+
+* **403** - Response if GitHub Advanced Security is not enabled for this repository
+
+* **404** - Resource not found
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X GET \
+  https://api.github.com/repos/OWNER/REPO/code-scanning/ai-scan
+```
+
+**Response schema (Status: 200):**
+
+* `pr_scan`: required, string, enum: `enabled`, `disabled`
+
+## Update AI Scan enablement for a repository
+
+```
+PATCH /repos/{owner}/{repo}/code-scanning/ai-scan
+```
+
+Note
+
+This endpoint is in public preview and is subject to change.
+
+Updates whether AI Scan is enabled for a repository.
+OAuth app tokens and personal access tokens (classic) need the repo scope to use this endpoint with private or public repositories, or the public\_repo scope to use this endpoint with only public repositories.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`owner`** (string) (required)
+  The account owner of the repository. The name is not case sensitive.
+
+* **`repo`** (string) (required)
+  The name of the repository without the .git extension. The name is not case sensitive.
+
+#### Body parameters
+
+* **`pr_scan`** (string)
+  Whether to enable or disable AI Scan for the repository.
+  Can be one of: `enabled`, `disabled`
+
+### HTTP response status codes
+
+* **200** - OK
+
+* **403** - Response if the repository is archived or if GitHub Advanced Security is not enabled for this repository
+
+* **404** - Resource not found
+
+* **422** - Validation failed, or the endpoint has been spammed.
+
 ## List code scanning alerts for a repository
 
 ```

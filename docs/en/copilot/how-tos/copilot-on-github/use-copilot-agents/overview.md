@@ -23,7 +23,7 @@ Try Copilot cloud agent end-to-end in about ten minutes.
 
 ## Prerequisite
 
-You need a repository where Copilot cloud agent is enabled. For Copilot Business and Copilot Enterprise subscribers, an administrator must enable the agent before you can use it. See [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/access-management).
+You need a repository where Copilot cloud agent is enabled. For Copilot Business and Copilot Enterprise subscribers, an administrator must enable the agent before you can use it. See [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/enterprise/cloud-agent-access).
 
 ## Step 1: Assign an issue to Copilot
 

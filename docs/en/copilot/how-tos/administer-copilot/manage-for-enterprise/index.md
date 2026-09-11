@@ -33,6 +33,10 @@ Manage and govern GitHub Copilot across your enterprise by controlling licensing
 
   Control the availability of features for GitHub Copilot in your enterprise using policies.
 
+* [Using enterprise managed settings for GitHub Copilot](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings)
+
+  Govern how enterprise members can use Copilot across clients.
+
 * [Managing agents in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents)
 
   Maintain your enterprise's security and compliance standards and empower your developers by managing your agents.

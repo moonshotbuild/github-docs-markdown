@@ -79,9 +79,7 @@ Use this table to find a suitable model quickly, see more detail in the sections
 |                                       |                                                         |                                                                                                                                                                |                                                                                                                                                                            |
 | Gemini 3.8 Flash                      | Fast help with simple or repetitive tasks               | Fast, reliable answers to lightweight coding questions                                                                                                         | [Gemini 3.8 Flash model card](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf)                                                   |
 |                                       |                                                         |                                                                                                                                                                |                                                                                                                                                                            |
-| MAI-Code-1-Flash[^mai-code-1-flash]   | General-purpose coding and writing                      | Fast, accurate code completions and explanations                                                                                                               | [MAI-Code-1-Flash model card](https://aka.ms/mai-code-1-flash-modelcard)                                                                                                   |
-|                                       |                                                         |                                                                                                                                                                |                                                                                                                                                                            |
-| MAI-Code-1.1-Flash[^mai-code-1-flash] | General-purpose coding and writing, image understanding | Fast code completions and explanations, instruction following, tool use                                                                                        | [MAI-Code-1.1-Flash model card](https://microsoft.ai/pdf/MAI-Code-1.1-Flash-Model-Card.PDF)                                                                                |
+| MAI-Code-1.1-Flash[^mai-models]       | General-purpose coding and writing, image understanding | Fast code completions and explanations, instruction following, tool use                                                                                        | [MAI-Code-1.1-Flash model card](https://microsoft.ai/pdf/MAI-Code-1.1-Flash-Model-Card.PDF)                                                                                |
 |                                       |                                                         |                                                                                                                                                                |                                                                                                                                                                            |
 | Grok 4.5                              | General-purpose coding and agent tasks                  | Complex problem-solving challenges, sophisticated reasoning                                                                                                    | [Grok 4.5 model card](https://media.x.ai/v1/website/card-7f81d41b.pdf)                                                                                                     |
 |                                       |                                                         |                                                                                                                                                                |                                                                                                                                                                            |
@@ -98,12 +96,11 @@ Use this table to find a suitable model quickly, see more detail in the sections
 
 Use these models for common development tasks that require a balance of quality, speed, and cost efficiency. These models are a good default when you don't have specific requirements.
 
-| Model            | Why it's a good fit                                                                                                                                      |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GPT-5.3-Codex    | Delivers higher-quality code on complex engineering tasks like features, tests, debugging, refactors, and reviews without lengthy instructions.          |
-| GPT-5 mini       | Reliable default for most coding and writing tasks. Fast, accurate, and works well across languages and frameworks.                                      |
-| GPT-5.6 Terra    | Balanced all-round choice for everyday interactive and agentic coding.                                                                                   |
-| MAI-Code-1-Flash | Strong instruction-following and adaptive reasoning make it a reliable default for everyday coding tasks, writing, and multi-turn development workflows. |
+| Model         | Why it's a good fit                                                                                                                             |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| GPT-5.3-Codex | Delivers higher-quality code on complex engineering tasks like features, tests, debugging, refactors, and reviews without lengthy instructions. |
+| GPT-5 mini    | Reliable default for most coding and writing tasks. Fast, accurate, and works well across languages and frameworks.                             |
+| GPT-5.6 Terra | Balanced all-round choice for everyday interactive and agentic coding.                                                                          |
 
 ### When to use these models
 
@@ -124,11 +121,10 @@ These models are optimized for speed and responsiveness. They’re ideal for qui
 
 ### Recommended models
 
-| Model            | Why it's a good fit                                                                                                                                     |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GPT-5.6 Luna     | Lightweight, cost-efficient option for smaller, faster tasks. The lowest-cost model in the GPT-5.6 family.                                              |
-| Claude Haiku 4.5 | Balances fast responses with quality output. Ideal for small tasks and lightweight code explanations.                                                   |
-| MAI-Code-1-Flash | Handles quick coding tasks with adaptive efficiency, stays concise for simple requests and delivers fast, accurate responses without unnecessary depth. |
+| Model            | Why it's a good fit                                                                                        |
+| ---------------- | ---------------------------------------------------------------------------------------------------------- |
+| GPT-5.6 Luna     | Lightweight, cost-efficient option for smaller, faster tasks. The lowest-cost model in the GPT-5.6 family. |
+| Claude Haiku 4.5 | Balances fast responses with quality output. Ideal for small tasks and lightweight code explanations.      |
 
 ### When to use these models
 
@@ -203,11 +199,11 @@ Some models have behaviors, limitations, or safeguards that are useful to unders
 
 ### Kimi K3
 
-Kimi K3 is designed for long-context, multi-step coding and agentic workflows. In pre-release testing, the model exhibited elevated risk on certain higher-risk prompts and was less consistent than some other models in refusing requests involving sensitive topics. These behaviors may reflect differences in the model's safety post-training and alignment. We have deployed additional safeguards in GitHub Copilot to help mitigate the identified risks. As with any model, enterprises should evaluate model capabilities, limitations, and safeguards in light of their particular use cases and requirements.
+Kimi K3 is designed for long-context, multi-step coding and agentic workflows. Fine-tuned model variants may be included as part of the Kimi K3 (GitHub) offering on individual plans only. Fine-tuned variants are not included for Copilot Business or Copilot Enterprise plans. In pre-release testing, the model exhibited elevated risk on certain higher-risk prompts and was less consistent than some other models in refusing requests involving sensitive topics. These behaviors may reflect differences in the model's safety post-training and alignment. We have deployed additional safeguards in GitHub Copilot to help mitigate the identified risks. As with any model, enterprises should evaluate model capabilities, limitations, and safeguards in light of their particular use cases and requirements.
 
 ## Next steps
 
-[^mai-code-1-flash]: MAI models are continuously improving models. Performance and behavior may evolve over time as new checkpoints are released.
+[^mai-models]: MAI models are continuously improving models. Performance and behavior may evolve over time as new checkpoints are released.
 
 [^kimi-k3]: For important information about Kimi K3 behavior and safeguards, see [Model-specific considerations](#kimi-k3).
 

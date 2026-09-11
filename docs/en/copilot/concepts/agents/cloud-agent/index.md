@@ -41,10 +41,6 @@ Learn how Copilot cloud agent can carry out research, planning and coding tasks 
 
   When automations triage issues, it explains each change, rates its confidence, and holds lower-confidence changes for your review.
 
-* [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/access-management)
-
-  Find out about Copilot cloud agent policies available for GitHub Copilot Enterprise and GitHub Copilot Business, and about disabling the agent for specific repositories.
-
 * [Model Context Protocol (MCP) and GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/mcp-and-cloud-agent)
 
   Find out about using the Model Context Protocol (MCP) with Copilot cloud agent.

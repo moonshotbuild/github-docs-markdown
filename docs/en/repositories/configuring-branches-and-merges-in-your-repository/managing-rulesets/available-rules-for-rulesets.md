@@ -62,7 +62,13 @@ With both methods, we use the `verified_signature?` to confirm if a commit has a
 > * If you have enabled vigilant mode in your account settings, which indicates that your commits will always be signed, any commits that GitHub identifies as "Partially verified" are permitted on branches that require signed commits. For more information about vigilant mode, see [Displaying verification statuses for all of your commits](/en/authentication/managing-commit-signature-verification/displaying-verification-statuses-for-all-of-your-commits).
 > * If a collaborator pushes an unsigned commit to a branch that requires commit signatures, the collaborator will need to rebase the commit to include a verified signature, then force push the rewritten commit to the branch.
 
-You can always push local commits to the branch if the commits are signed and verified. You can also merge signed and verified commits into the branch using a pull request. However, you cannot squash and merge a pull request into the branch on GitHub unless you are the author of the pull request. You can squash and merge pull requests locally. For more information, see [Checking out pull requests locally](/en/pull-requests/how-tos/review-pull-requests/checking-out-pull-requests-locally).
+You can push local commits to the branch if the commits are signed and verified.
+
+You can also merge signed and verified commits into the branch using a pull request. When GitHub evaluates whether a pull request can be merged, it creates a test merge commit whose parents are the latest commit on the base branch and the pull request's head commit. GitHub checks the commits introduced by this test merge, including commits from the head branch. As a result, unsigned commits on the head branch can block a squash merge, even though GitHub would sign the final squash commit. This restriction can also apply to the author of the pull request.
+
+To merge a blocked pull request, rewrite and sign the unsigned commits on the head branch, or ask someone with permission to bypass the applicable protections to merge the pull request.
+
+You can squash and merge pull requests locally, but you must sign the resulting commit before pushing it to the branch. If another protection requires changes to be made through a pull request, you may also need bypass permissions to push the locally merged commit. See [Checking out pull requests locally](/en/pull-requests/how-tos/review-pull-requests/checking-out-pull-requests-locally) and [Signing commits](/en/authentication/managing-commit-signature-verification/signing-commits).
 
 For more information about merge methods, see [About merge methods on GitHub](/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github).
 
@@ -160,6 +166,20 @@ If someone force pushes to a branch or tag, commits that other collaborators hav
 > \[!NOTE] If force pushes are blocked, organization owners or repository administrators will be unable to change or rename the default branch unless they are authorized to bypass the ruleset.
 
 Enabling force pushes will not override any other rules. For example, if a branch requires a linear commit history, you cannot force push merge commits to that branch.
+
+## Require secret scanning alerts are resolved
+
+> \[!NOTE]
+> The rule to require secret scanning alerts to be resolved before merging is in public preview and subject to change.
+
+If your repositories use secret scanning, you can prevent a pull request from merging when either of these conditions applies:
+
+* A secret scanning scan has not completed for the head commit of the pull request.
+* A commit in the pull request introduced an open secret scanning alert that matches a secret type selected in the ruleset.
+
+You can configure the rule for provider, custom, and generic patterns. AI-detected secrets are not supported.
+
+For more information, see [Blocking pull request merges that contain secrets](/en/code-security/how-tos/secure-your-secrets/prevent-future-leaks/block-merges-with-secrets).
 
 ## Require code scanning results
 

@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/policies"
+source_path: "/en/copilot/concepts/enterprise/policies"
 title: "GitHub Copilot policies for enterprises and organizations"
 intro: "Control the availability of GitHub Copilot features and models for your users."
 product: "GitHub Copilot"
@@ -9,8 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
+  - title: "Enterprise"
+    href: "/en/copilot/concepts/enterprise"
   - title: "Policies"
-    href: "/en/copilot/concepts/policies"
+    href: "/en/copilot/concepts/enterprise/policies"
 ---
 
 # GitHub Copilot policies for enterprises and organizations

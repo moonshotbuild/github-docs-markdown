@@ -295,7 +295,7 @@ For additional guidance on the responsible use of Copilot agentic features, we r
 * [Best practices for using GitHub Copilot to work on tasks](/en/copilot/tutorials/cloud-agent/get-the-best-results)
 * [Configure the development environment](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment)
 * [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-the-firewall)
-* [Build your first Copilot-powered app](/en/copilot/how-tos/copilot-sdk/getting-started)
+* [Build your first Copilot-powered app](/en/copilot/get-started/sdk-quickstart)
 * [Configure MCP servers for your repository](/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers)
 * [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli)
 * [About the GitHub Copilot app](/en/copilot/concepts/agents/github-copilot-app)

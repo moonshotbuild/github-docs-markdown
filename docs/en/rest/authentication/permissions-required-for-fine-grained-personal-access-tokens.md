@@ -71,6 +71,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}` | write | PAT | ✓ |
 | `DELETE /orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}` | write | PAT | ✓ |
 | `PUT /orgs/{org}/actions/permissions/workflow` | write | PAT | ✗ |
+| `PATCH /orgs/{org}/code-scanning/ai-scan` | write | PAT | ✗ |
 | `POST /orgs/{org}/code-security/configurations` | write | PAT | ✗ |
 | `DELETE /orgs/{org}/code-security/configurations/detach` | write | PAT | ✗ |
 | `PATCH /orgs/{org}/code-security/configurations/{configuration_id}` | write | PAT | ✗ |
@@ -135,6 +136,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /orgs/{org}/actions/permissions/self-hosted-runners` | read | PAT | ✗ |
 | `GET /orgs/{org}/actions/permissions/self-hosted-runners/repositories` | read | PAT | ✗ |
 | `GET /orgs/{org}/actions/permissions/workflow` | read | PAT | ✗ |
+| `GET /orgs/{org}/code-scanning/ai-scan` | read | PAT | ✗ |
 | `GET /orgs/{org}/code-security/configurations` | read | PAT | ✗ |
 | `GET /orgs/{org}/code-security/configurations/defaults` | read | PAT | ✗ |
 | `GET /orgs/{org}/code-security/configurations/{configuration_id}` | read | PAT | ✗ |
@@ -645,6 +647,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users` | write | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/code-quality/setup` | write | PAT | ✗ |
 | `PATCH /repos/{owner}/{repo}/code-quality/setup` | write | PAT | ✗ |
+| `PATCH /repos/{owner}/{repo}/code-scanning/ai-scan` | write | PAT | ✗ |
 | `PATCH /repos/{owner}/{repo}/code-scanning/default-setup` | write | PAT | ✗ |
 | `PUT /repos/{owner}/{repo}/collaborators/{username}` | write | PAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/collaborators/{username}` | write | PAT | ✗ |
@@ -797,6 +800,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `DELETE /repos/{owner}/{repo}/code-scanning/analyses/{analysis_id}` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/code-scanning/sarifs` | write | PAT | ✗ |
 | `GET /orgs/{org}/code-scanning/alerts` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/code-scanning/ai-scan` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/code-scanning/alerts` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/autofix` | read | PAT | ✗ |
@@ -1102,6 +1106,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/rulesets` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/rulesets/{ruleset_id}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stargazers/count` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/stargazers/history` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/code_frequency` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/commit_activity` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stats/contributors` | read | PAT | ✗ |

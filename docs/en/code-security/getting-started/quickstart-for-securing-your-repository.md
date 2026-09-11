@@ -42,7 +42,7 @@ Repository administrators can enable or disable the dependency graph for reposit
 2. Click **Advanced Security**.
 3. Next to Dependency graph, click **Enable** or **Disable**.
 
-For more information, see [Enabling the dependency graph](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/enable-dependency-graph#enabling-the-dependency-graph-for-a-repository).
+For more information, see [Enabling the dependency graph](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/enable-dependency-graph).
 
 ## Managing Dependabot alerts
 

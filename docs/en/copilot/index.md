@@ -39,6 +39,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Sign in to the GitHub Copilot app, connect a repository or local folder, and create your first agent session to make code changes.
 
+* [Build your first Copilot-powered app](/en/copilot/get-started/sdk-quickstart)
+
+  In this tutorial, you'll use the Copilot SDK to build a command-line assistant. You'll start with the basics, add streaming responses, then add custom tools - giving Copilot the ability to call your code.
+
 * [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot)
 
   Learn what Copilot is and what you can do with it.
@@ -90,10 +94,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [About rationale, confidence, and approvals for issues](/en/copilot/concepts/agents/cloud-agent/about-automation-rationale-and-approvals)
 
   When automations triage issues, it explains each change, rates its confidence, and holds lower-confidence changes for your review.
-
-* [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/access-management)
-
-  Find out about Copilot cloud agent policies available for GitHub Copilot Enterprise and GitHub Copilot Business, and about disabling the agent for specific repositories.
 
 * [Model Context Protocol (MCP) and GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/mcp-and-cloud-agent)
 
@@ -191,10 +191,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Plugins are installable packages that extend Copilot with reusable agents, skills, hooks, and integrations.
 
-* [About enterprise-managed plugin standards](/en/copilot/concepts/agents/about-enterprise-plugin-standards)
-
-  Enterprise administrators can centrally define plugin policies for users, ensuring consistent plugin availability.
-
 * [About third-party coding agents](/en/copilot/concepts/agents/about-third-party-coding-agents)
 
   You can use third-party coding agents alongside Copilot cloud agent to work asynchronously on your development tasks on GitHub.
@@ -214,14 +210,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [About agent skills](/en/copilot/concepts/agents/about-agent-skills)
 
   Skills allow Copilot to perform specialized tasks.
-
-* [Agent management for enterprises](/en/copilot/concepts/agents/enterprise-management)
-
-  Maintain your enterprise's security and compliance standards and supercharge your developers by managing agents with AI Controls.
-
-* [OpenTelemetry for agent monitoring](/en/copilot/concepts/agents/opentelemetry)
-
-  Understand how Copilot agents perform and interact with models and tools.
 
 * [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes)
 
@@ -263,10 +251,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Integrate Copilot with other tools and platforms to streamline your workflow.
 
-* [About default availability of Copilot models](/en/copilot/concepts/models/default-availability)
-
-  A policy controls whether unconfigured models default to enabled or disabled.
-
 * [Bring your own key for GitHub Copilot](/en/copilot/concepts/models/bring-your-own-key)
 
   Use your existing LLM provider with GitHub Copilot to save costs or consolidate billing.
@@ -278,10 +262,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection)
 
   Automatically select the best model for each task.
-
-* [FedRAMP-compliant models for GitHub Copilot](/en/copilot/concepts/models/fedramp-models)
-
-  Restrict users to models with FedRAMP Moderate certification.
 
 * [Base and long-term support (LTS) models](/en/copilot/concepts/models/fallback-and-lts-models)
 
@@ -307,25 +287,49 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Under usage-based billing, budget controls at the user, organization, cost center, and enterprise levels determine how Copilot usage is served, metered, or blocked.
 
-* [About enterprise accounts for Copilot Business](/en/copilot/concepts/about-enterprise-accounts-for-copilot-business)
-
-  An enterprise account lets you manage only Copilot Business licenses, without consuming GitHub Enterprise Cloud licenses.
-
-* [GitHub Copilot policies for enterprises and organizations](/en/copilot/concepts/policies)
-
-  Control the availability of GitHub Copilot features and models for your users.
-
-* [MCP server usage in your company](/en/copilot/concepts/mcp-management)
-
-  You can manage MCP server usage to provide your developers with valuable tools while maintaining security and compliance.
-
 * [Network settings for GitHub Copilot](/en/copilot/concepts/network-settings)
 
   You can connect to GitHub Copilot through an HTTP proxy and use custom certificates.
 
-* [Learning about new features and models](/en/copilot/concepts/learning-about-new-features-and-models)
+* [GitHub Copilot policies for enterprises and organizations](/en/copilot/concepts/enterprise/policies)
+
+  Control the availability of GitHub Copilot features and models for your users.
+
+* [About default availability of Copilot models](/en/copilot/concepts/enterprise/default-model-availability)
+
+  A policy controls whether unconfigured models default to enabled or disabled.
+
+* [FedRAMP-compliant models for GitHub Copilot](/en/copilot/concepts/enterprise/fedramp-models)
+
+  Restrict users to models with FedRAMP Moderate certification.
+
+* [Learning about new features and models](/en/copilot/concepts/enterprise/learning-about-new-features-and-models)
 
   Stay informed about GitHub Copilot features and models, and make confident decisions about enabling them for your enterprise.
+
+* [Agent management for enterprises](/en/copilot/concepts/enterprise/agent-management)
+
+  Maintain your enterprise's security and compliance standards and supercharge your developers by managing agents with AI Controls.
+
+* [MCP server usage in your company](/en/copilot/concepts/enterprise/mcp-management)
+
+  You can manage MCP server usage to provide your developers with valuable tools while maintaining security and compliance.
+
+* [About enterprise-managed plugin standards](/en/copilot/concepts/enterprise/plugin-standards)
+
+  Enterprise administrators can centrally define plugin policies for users, ensuring consistent plugin availability.
+
+* [OpenTelemetry for agent monitoring](/en/copilot/concepts/enterprise/opentelemetry)
+
+  Understand how Copilot agents perform and interact with models and tools.
+
+* [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/enterprise/cloud-agent-access)
+
+  Find out about Copilot cloud agent policies available for GitHub Copilot Enterprise and GitHub Copilot Business, and about disabling the agent for specific repositories.
+
+* [About enterprise accounts for Copilot Business](/en/copilot/concepts/enterprise/about-enterprise-accounts-for-copilot-business)
+
+  An enterprise account lets you manage only Copilot Business licenses, without consuming GitHub Enterprise Cloud licenses.
 
 * [Setting up GitHub Copilot for yourself](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-self)
 
@@ -658,10 +662,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Using deep links to open the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/open-with-deep-links)
 
   Use deep links to launch the GitHub Copilot app from the terminal, tickets, and internal tools, so people can jump directly into the right repository, pull request, automation, or session.
-
-* [Build your first Copilot-powered app](/en/copilot/how-tos/copilot-sdk/getting-started)
-
-  In this tutorial, you'll use the Copilot SDK to build a command-line assistant. You'll start with the basics, add streaming responses, then add custom tools - giving Copilot the ability to call your code.
 
 * [Authentication](/en/copilot/how-tos/copilot-sdk/auth/authenticate)
 
@@ -1091,6 +1091,22 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Control the availability of features for GitHub Copilot in your enterprise using policies.
 
+* [Getting started with enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/get-started)
+
+  Configure enterprise managed settings to centrally control Copilot client behavior across your enterprise.
+
+* [Choosing how to deploy enterprise-managed settings to users](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/deploy-managed-settings)
+
+  Choose from different deployment methods to deliver managed settings keys to users.
+
+* [Overriding enterprise-managed settings for teams](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/override-settings-for-teams)
+
+  Avoid overly restrictive configuration by overriding default settings for specific teams.
+
+* [Using enterprise-managed settings without organizations](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/copilot-business-only)
+
+  Special guidance for enterprises that are only used to assign Copilot Business licenses.
+
 * [Preparing to use custom agents in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/prepare-for-custom-agents)
 
   Set up your enterprise for custom agents by configuring their source organization and repository, availability, and management permissions.
@@ -1098,10 +1114,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Creating a `.github-private` repository](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/create-github-private-repo)
 
   A `.github-private` repository can serve as a designated source of governance settings for agents and plugins across your enterprise.
-
-* [Configuring enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-managed-settings)
-
-  Configure enterprise managed settings to centrally control Copilot client behavior across your enterprise using server-managed, MDM-managed, or file-based deployment.
 
 * [Monitoring agentic activity in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/monitor-agentic-activity)
 

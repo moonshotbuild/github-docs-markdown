@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/models/fedramp-models"
+source_path: "/en/copilot/concepts/enterprise/fedramp-models"
 title: "FedRAMP-compliant models for GitHub Copilot"
 intro: "Restrict users to models with FedRAMP Moderate certification."
 product: "GitHub Copilot"
@@ -9,10 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
-  - title: "Models"
-    href: "/en/copilot/concepts/models"
+  - title: "Enterprise"
+    href: "/en/copilot/concepts/enterprise"
   - title: "FedRAMP models"
-    href: "/en/copilot/concepts/models/fedramp-models"
+    href: "/en/copilot/concepts/enterprise/fedramp-models"
 ---
 
 # FedRAMP-compliant models for GitHub Copilot
@@ -42,7 +42,6 @@ Enabling the FedRAMP policy restricts users to the following models:
 * Claude Sonnet 5
 * Claude Opus 4.8
 * Claude Opus 5
-* MAI-Code-1-Flash
 
 ## Client version requirements
 

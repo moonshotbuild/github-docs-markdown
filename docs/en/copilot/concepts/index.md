@@ -61,22 +61,10 @@ Learn the core concepts that you'll need to understand GitHub Copilot.
 
   Understand billing and usage for GitHub Copilot.
 
-* [About enterprise accounts for Copilot Business](/en/copilot/concepts/about-enterprise-accounts-for-copilot-business)
-
-  An enterprise account lets you manage only Copilot Business licenses, without consuming GitHub Enterprise Cloud licenses.
-
-* [GitHub Copilot policies for enterprises and organizations](/en/copilot/concepts/policies)
-
-  Control the availability of GitHub Copilot features and models for your users.
-
-* [MCP server usage in your company](/en/copilot/concepts/mcp-management)
-
-  You can manage MCP server usage to provide your developers with valuable tools while maintaining security and compliance.
-
 * [Network settings for GitHub Copilot](/en/copilot/concepts/network-settings)
 
   You can connect to GitHub Copilot through an HTTP proxy and use custom certificates.
 
-* [Learning about new features and models](/en/copilot/concepts/learning-about-new-features-and-models)
+* [Enterprise concepts for GitHub Copilot](/en/copilot/concepts/enterprise)
 
-  Stay informed about GitHub Copilot features and models, and make confident decisions about enabling them for your enterprise.
+  Understand how to govern and manage GitHub Copilot across your enterprise.

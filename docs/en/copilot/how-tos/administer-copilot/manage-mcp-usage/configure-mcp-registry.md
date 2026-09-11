@@ -25,7 +25,7 @@ Create and host a list of MCP servers that your developers can access.
 
 ## Prerequisites
 
-Before you create your Model Context Protocol (MCP) registry, you should understand the functionality and benefits of MCP management for your company. See [MCP server usage in your company](/en/copilot/concepts/mcp-management).
+Before you create your Model Context Protocol (MCP) registry, you should understand the functionality and benefits of MCP management for your company. See [MCP server usage in your company](/en/copilot/concepts/enterprise/mcp-management).
 
 ## Option 1: Self-hosting an MCP registry
 

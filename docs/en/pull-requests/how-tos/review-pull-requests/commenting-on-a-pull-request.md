@@ -57,11 +57,11 @@ To reply to an existing line or file comment, navigate to the comment on either 
    ![Screenshot of an image file on the "Files changed" page of a pull request. To the right of the file, a comment icon is outlined in orange.](/assets/images/help/pull_requests/pull-request-comment-on-file.png)
 9. When you're done:
 
-   * If you only want to add this **one comment**, click **Add single comment**.
+   * If you only want to add this **one comment**, click **Comment**.
 
    * If you want to add **multiple comments**, click **Start a review**, then continue adding comments.
 
-     When you're finished, click **Finish your review**, leave a summary of your review, and click **Submit review**.
+     When you're finished, click **Submit review**, leave a summary of your review, and click **Submit review**.
 
 Anyone watching the pull request or repository will receive a notification of your comments. Batching your comments avoids sending multiple notifications.
 

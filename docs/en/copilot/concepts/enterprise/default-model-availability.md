@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/models/default-availability"
+source_path: "/en/copilot/concepts/enterprise/default-model-availability"
 title: "About default availability of Copilot models"
 intro: "A policy controls whether unconfigured models default to enabled or disabled."
 product: "GitHub Copilot"
@@ -9,10 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
-  - title: "Models"
-    href: "/en/copilot/concepts/models"
-  - title: "Default availability"
-    href: "/en/copilot/concepts/models/default-availability"
+  - title: "Enterprise"
+    href: "/en/copilot/concepts/enterprise"
+  - title: "Default model availability"
+    href: "/en/copilot/concepts/enterprise/default-model-availability"
 ---
 
 # About default availability of Copilot models
@@ -42,4 +42,4 @@ For instructions on managing model policies, see [Managing availability of model
 
 ## How do I prepare for new models?
 
-We recommend keeping up with new model releases so you can choose your enablement settings for each one. New models are announced on GitHub's changelog. For more information, see [Learning about new features and models](/en/copilot/concepts/learning-about-new-features-and-models#learning-about-new-copilot-models).
+We recommend keeping up with new model releases so you can choose your enablement settings for each one. New models are announced on GitHub's changelog. For more information, see [Learning about new features and models](/en/copilot/concepts/enterprise/learning-about-new-features-and-models#learning-about-new-copilot-models).

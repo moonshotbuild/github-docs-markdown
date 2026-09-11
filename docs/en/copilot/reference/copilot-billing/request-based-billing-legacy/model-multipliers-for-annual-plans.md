@@ -44,7 +44,6 @@ The following table shows the model multipliers per supported model.
 >
 > * Claude Sonnet 4.6
 > * GPT-5.4 mini
-> * The multiplier for MAI-Code-1-Flash is a promotional rate.
 >
 > If you use auto model selection in Copilot Chat, Copilot CLI, GitHub Copilot app, or Copilot cloud agent, you qualify for a 10% discount. For example, if a model has a multiplier of 1x you'll be billed at 0.9x instead.
 
@@ -84,8 +83,6 @@ The following table shows the model multipliers per supported model.
 | GPT-5.5            |         57 |
 |                    |            |
 | GPT-5 mini         |       0.33 |
-|                    |            |
-| MAI-Code-1-Flash   |       0.33 |
 |                    |            |
 | MAI-Code-1.1-Flash |       0.25 |
 |                    |            |

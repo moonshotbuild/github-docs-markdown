@@ -517,6 +517,10 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   You can control GitHub's ability to block your pushes that may contain secrets.
 
+* [Blocking pull request merges that contain secrets](/en/code-security/how-tos/secure-your-secrets/prevent-future-leaks/block-merges-with-secrets)
+
+  Prevent exposed secrets from reaching protected branches by requiring contributors to resolve secret scanning alerts before merging.
+
 * [Working with push protection from the command line](/en/code-security/how-tos/secure-your-secrets/work-with-leak-prevention/push-protection-on-the-command-line)
 
   Learn your options for unblocking your push from the command line to GitHub if secret scanning detects a secret in your changes.

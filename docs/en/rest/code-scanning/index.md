@@ -17,6 +17,10 @@ Use the REST API to retrieve and update code scanning alerts from a repository.
 
 ## Links
 
+* [REST API endpoints for AI Scan](/en/rest/code-scanning/ai-scan)
+
+  Use the REST API to get and update AI Scan settings for an organization.
+
 * [REST API endpoints for code scanning alert dismissal requests](/en/alert-dismissal-requests)
 
   Use the REST API to interact with code scanning alert dismissal requests from a repository.

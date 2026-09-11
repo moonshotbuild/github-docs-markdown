@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/agents/cloud-agent/access-management"
+source_path: "/en/copilot/concepts/enterprise/cloud-agent-access"
 title: "Managing access to GitHub Copilot cloud agent"
 intro: "Find out about Copilot cloud agent policies available for GitHub Copilot Enterprise and GitHub Copilot Business, and about disabling the agent for specific repositories."
 product: "GitHub Copilot"
@@ -9,12 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
-  - title: "Agents"
-    href: "/en/copilot/concepts/agents"
-  - title: "Cloud agent"
-    href: "/en/copilot/concepts/agents/cloud-agent"
-  - title: "Access management"
-    href: "/en/copilot/concepts/agents/cloud-agent/access-management"
+  - title: "Enterprise"
+    href: "/en/copilot/concepts/enterprise"
+  - title: "Cloud agent access"
+    href: "/en/copilot/concepts/enterprise/cloud-agent-access"
 ---
 
 # Managing access to GitHub Copilot cloud agent

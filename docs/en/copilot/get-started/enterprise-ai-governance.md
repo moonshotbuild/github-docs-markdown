@@ -39,7 +39,7 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
   Set a governance posture that balances compliance requirements with developer productivity, so your rollout succeeds from day one.
 
-* [GitHub Copilot policies for enterprises and organizations](/en/copilot/concepts/policies)
+* [GitHub Copilot policies for enterprises and organizations](/en/copilot/concepts/enterprise/policies)
 
   Control the availability of GitHub Copilot features and models for your users.
 
@@ -51,13 +51,17 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
   Check for changes to settings or licenses in your Copilot plan.
 
+* [Getting started with enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/get-started)
+
+  Configure enterprise managed settings to centrally control Copilot client behavior across your enterprise.
+
 ### Preparing for agents
 
 * [Integrating agentic AI into your enterprise's software development lifecycle](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
 
   See how agents can boost productivity across your enterprise.
 
-* [Agent management for enterprises](/en/copilot/concepts/agents/enterprise-management)
+* [Agent management for enterprises](/en/copilot/concepts/enterprise/agent-management)
 
   Maintain your enterprise's security and compliance standards and supercharge your developers by managing agents with AI Controls.
 
@@ -97,7 +101,7 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
 ### Adopting new features
 
-* [Learning about new features and models](/en/copilot/concepts/learning-about-new-features-and-models)
+* [Learning about new features and models](/en/copilot/concepts/enterprise/learning-about-new-features-and-models)
 
   Stay informed about GitHub Copilot features and models, and make confident decisions about enabling them for your enterprise.
 

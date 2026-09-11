@@ -68,4 +68,4 @@ To use the GitHub integration for Teams, you need:
 
 * [Customizing notifications for GitHub in Teams](/en/integrations/how-tos/teams/customize-notifications) - Learn how to customize your GitHub notifications in Teams.
 
-* [Integrating Copilot cloud agent with Teams](/en/copilot/how-tos/use-copilot-agents/cloud-agent/integrate-cloud-agent-with-teams) - Learn about Copilot cloud agent with Teams.
+* [Integrating Copilot cloud agent with Teams](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-teams) - Learn about Copilot cloud agent with Teams.

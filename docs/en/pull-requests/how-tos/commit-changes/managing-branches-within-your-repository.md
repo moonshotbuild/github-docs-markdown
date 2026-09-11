@@ -35,9 +35,9 @@ Create a branch for a separate place to work on changes before opening a pull re
 3. Click **New branch**.
 
    ![Screenshot of the "Branches" page for a repository. A green button, labeled "New branch", is highlighted with an orange outline.](/assets/images/help/branches/new-branch-button.png)
-4. Under "Branch name", type a name for the branch.
-5. Under "Branch source", choose the repository and branch to base your new branch on.
-6. Click **Create branch**.
+4. Under "New branch name", type a name for the branch.
+5. Under "Source", choose the branch to base your new branch on.
+6. Click **Create new branch**.
 
 ### Creating a branch using the branch dropdown
 

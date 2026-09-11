@@ -100,7 +100,7 @@ Copilot Chat can help you clarify the bigger picture before you start line-level
 
 10. When you're done, click **Start a review**. If you have already started a review, you can click **Add review comment**.
 
-Before you submit your review, your line comments are *pending* and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review, including all of its pending comments, click **Review changes**, then click **Abandon review**.
+Before you submit your review, your line comments are *pending* and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review, including all of its pending comments, click **Submit review**, then click **Discard review**.
 
 ![Screenshot of the comment field for a review. The "Abandon review" button is outlined in dark orange.](/assets/images/help/pull_requests/abandon-review-button.png)
 

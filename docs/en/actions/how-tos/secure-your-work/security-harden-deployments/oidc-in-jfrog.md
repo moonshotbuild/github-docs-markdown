@@ -37,14 +37,17 @@ For an example GitHub Actions workflow using the JFrog CLI, see [`build-publish.
 
 * Before proceeding, you must plan your security strategy to ensure that access tokens are only allocated in a predictable way. To control how your cloud provider issues access tokens, you **must** define at least one condition, so that untrusted repositories can’t request access tokens for your cloud resources. For more information, see [OpenID Connect reference](/en/actions/reference/security/oidc#oidc-claims-used-to-define-trust-conditions-on-cloud-roles).
 
+* OIDC tokens requested for Dependabot update jobs have an `event_name` claim of `dynamic`. If your trust policy is intended to authorize only GitHub Actions workflows and your cloud provider supports conditions on `event_name`, allow only the event names expected by your workflows. For more information, see [OpenID Connect reference](/en/actions/reference/security/oidc#oidc-claims-used-to-define-trust-conditions-on-cloud-roles).
+
 * To be secure, you need to set a Claims JSON in JFrog when configuring identity mappings. For more information, see [AUTOTITLE](https://jfrog.com/help/r/jfrog-platform-administration-documentation/configure-identity-mappings) and [OpenID Connect reference](/en/actions/reference/security/oidc#customizing-the-token-claims).
 
-  For example, you can set `iss` to `https://token.actions.githubusercontent.com`, and the `repository` to something like "octo-org/octo-repo"\`. This will ensure only Actions workflows from the specified repository will have access to your JFrog platform. The following is an example Claims JSON when configuring identity mappings.
+  For example, you can set `iss` to `https://token.actions.githubusercontent.com`, and the `repository` to something like `octo-org/octo-repo`. JFrog identity mappings match each claim against an exact value, so to ensure only GitHub Actions workflows from the specified repository have access to your JFrog platform, also set `event_name` to the event that triggers your workflow, such as `push`. This prevents OIDC tokens requested for Dependabot update jobs, which have an `event_name` of `dynamic`, from matching the identity mapping. If your workflows are triggered by more than one event, create a separate identity mapping for each event name. The following is an example Claims JSON when configuring identity mappings.
 
   ```json copy
   {
       "iss": "https://token.actions.githubusercontent.com",
-      "repository": "octo-org/octo-repo"
+      "repository": "octo-org/octo-repo",
+      "event_name": "push"
   }
   ```
 

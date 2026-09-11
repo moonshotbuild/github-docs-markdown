@@ -23,7 +23,7 @@ Use Copilot Chat in your editor to give you code suggestions, explain code, gene
 
 This guide describes how to use Copilot Chat and agents to automate coding tasks by breaking them into steps, using tools to read files, edit code, and run commands, and self-correcting when something goes wrong. You can also ask general questions about software development, or specific questions about the code in your project. For more information, see [About GitHub Copilot Chat](/en/copilot/concepts/chat).
 
-To learn how to use Copilot for agent-driven workflows in a desktop app, see [Getting started with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/getting-started).
+To learn how to use Copilot for agent-driven workflows in a desktop app, see [Getting started with the GitHub Copilot app](/en/copilot/get-started/quickstart-copilot-app).
 
 <!-- --------------------- -->
 

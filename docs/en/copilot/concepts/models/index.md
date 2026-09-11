@@ -19,10 +19,6 @@ Learn about the AI models available for GitHub Copilot.
 
 ## Links
 
-* [About default availability of Copilot models](/en/copilot/concepts/models/default-availability)
-
-  A policy controls whether unconfigured models default to enabled or disabled.
-
 * [Bring your own key for GitHub Copilot](/en/copilot/concepts/models/bring-your-own-key)
 
   Use your existing LLM provider with GitHub Copilot to save costs or consolidate billing.
@@ -34,10 +30,6 @@ Learn about the AI models available for GitHub Copilot.
 * [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection)
 
   Automatically select the best model for each task.
-
-* [FedRAMP-compliant models for GitHub Copilot](/en/copilot/concepts/models/fedramp-models)
-
-  Restrict users to models with FedRAMP Moderate certification.
 
 * [Base and long-term support (LTS) models](/en/copilot/concepts/models/fallback-and-lts-models)
 

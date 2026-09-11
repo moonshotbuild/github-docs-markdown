@@ -55,4 +55,4 @@ If you prefer to maintain full control over your enterprise's tooling to ensure 
 
 ## Next steps
 
-To centrally control Copilot client behavior across your enterprise, configure enterprise managed settings. See [Configuring enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/configure-enterprise-managed-settings).
+To centrally control Copilot client behavior across your enterprise, configure enterprise managed settings. See [Getting started with enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/get-started).

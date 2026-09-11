@@ -28,6 +28,7 @@ To set up a trial of GitHub Advanced Security using this method, you must meet t
 3. You have not previously purchased GitHub Advanced Security (that is, you do not currently or in the past have a paid license for GitHub Advanced Security).
 4. You are not already using metered billing for GitHub Advanced Security.
 5. If you have had a previous GitHub Advanced Security trial, you are eligible only if you have had no more than one previous trial and it ended at least 180 days ago.
+6. Your enterprise has 300 or fewer seats.
 
 > \[!TIP]
 >
