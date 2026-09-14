@@ -382,7 +382,8 @@ GET /repos/{owner}/{repo}/secret-scanning/custom-patterns
 ```
 
 Lists secret scanning custom patterns for a repository.
-OAuth app tokens and personal access tokens (classic) need the repo or security_events scope to use this endpoint. If this endpoint is only used with public repositories, the token can use the public_repo scope instead.
+OAuth app tokens and personal access tokens (classic) need the repo scope to use this endpoint. If this endpoint is only used with public repositories, the token can use the public_repo scope instead.
+Fine-grained access tokens require the administration:write repository permission.
 
 ### Parameters
 
@@ -454,7 +455,8 @@ POST /repos/{owner}/{repo}/secret-scanning/custom-patterns
 ```
 
 Bulk creates secret scanning custom patterns for a repository.
-OAuth app tokens and personal access tokens (classic) need the repo or security_events scope to use this endpoint. If this endpoint is only used with public repositories, the token can use the public_repo scope instead.
+OAuth app tokens and personal access tokens (classic) need the repo scope to use this endpoint. If this endpoint is only used with public repositories, the token can use the public_repo scope instead.
+Fine-grained access tokens require the administration:write repository permission.
 
 ### Parameters
 
@@ -547,7 +549,8 @@ DELETE /repos/{owner}/{repo}/secret-scanning/custom-patterns
 ```
 
 Bulk deletes secret scanning custom patterns for a repository.
-OAuth app tokens and personal access tokens (classic) need the repo or security_events scope to use this endpoint. If this endpoint is only used with public repositories, the token can use the public_repo scope instead.
+OAuth app tokens and personal access tokens (classic) need the repo scope to use this endpoint. If this endpoint is only used with public repositories, the token can use the public_repo scope instead.
+Fine-grained access tokens require the administration:write repository permission.
 
 ### Parameters
 
@@ -622,7 +625,8 @@ PATCH /repos/{owner}/{repo}/secret-scanning/custom-patterns/{pattern_id}
 ```
 
 Updates a secret scanning custom pattern for a repository.
-OAuth app tokens and personal access tokens (classic) need the repo or security_events scope to use this endpoint. If this endpoint is only used with public repositories, the token can use the public_repo scope instead.
+OAuth app tokens and personal access tokens (classic) need the repo scope to use this endpoint. If this endpoint is only used with public repositories, the token can use the public_repo scope instead.
+Fine-grained access tokens require the administration:write repository permission.
 
 ### Parameters
 

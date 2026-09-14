@@ -41,7 +41,7 @@ Open **[Automations](https://github.com/copilot/app/launch?open=ghapp%3A%2F%2Fau
 
 To use cloud automations, make sure the following settings are enabled.
 
-* Copilot cloud agent must be enabled for the repository. If you have Copilot Business or Copilot Enterprise, an administrator must enable the Copilot cloud agent policy. See [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/access-management).
+* Copilot cloud agent must be enabled for the repository. If you have Copilot Business or Copilot Enterprise, an administrator must enable the Copilot cloud agent policy. See [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/enterprise/cloud-agent-access).
 * The organization must allow both Copilot cloud agent and automations in the repository (both are enabled by default). See [Adding GitHub Copilot cloud agent to your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/add-copilot-cloud-agent).
 * If you want to create automations that can listen to events triggered by users without write access, disable the "Only allow automations to be triggered by users with write access" setting in Copilot cloud agent repository settings.
 

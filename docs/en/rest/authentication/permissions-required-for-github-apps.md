@@ -737,6 +737,10 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `DELETE /repos/{owner}/{repo}/rulesets/{ruleset_id}` | write | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/rulesets/{ruleset_id}/history` | write | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/rulesets/{ruleset_id}/history/{version_id}` | write | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/secret-scanning/custom-patterns` | write | UAT, IAT | ✗ |
+| `POST /repos/{owner}/{repo}/secret-scanning/custom-patterns` | write | UAT, IAT | ✗ |
+| `DELETE /repos/{owner}/{repo}/secret-scanning/custom-patterns` | write | UAT, IAT | ✗ |
+| `PATCH /repos/{owner}/{repo}/secret-scanning/custom-patterns/{pattern_id}` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/security-advisories/{ghsa_id}/forks` | write | UAT, IAT | ✓ |
 | `PUT /repos/{owner}/{repo}/topics` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/transfer` | write | UAT | ✗ |
@@ -1308,14 +1312,10 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | Endpoint | Access | Tokens | Additional Permissions |
 |----------|--------|--------|------------------------|
 | `PATCH /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}` | write | UAT, IAT | ✗ |
-| `POST /repos/{owner}/{repo}/secret-scanning/custom-patterns` | write | UAT, IAT | ✗ |
-| `DELETE /repos/{owner}/{repo}/secret-scanning/custom-patterns` | write | UAT, IAT | ✗ |
-| `PATCH /repos/{owner}/{repo}/secret-scanning/custom-patterns/{pattern_id}` | write | UAT, IAT | ✗ |
 | `GET /orgs/{org}/secret-scanning/alerts` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/secret-scanning/alerts` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}/locations` | read | UAT, IAT | ✗ |
-| `GET /repos/{owner}/{repo}/secret-scanning/custom-patterns` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/secret-scanning/scan-history` | read | UAT, IAT | ✗ |
 
 ## Repository permissions for "Secrets"

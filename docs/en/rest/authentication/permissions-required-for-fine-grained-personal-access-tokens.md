@@ -683,6 +683,10 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `DELETE /repos/{owner}/{repo}/rulesets/{ruleset_id}` | write | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/rulesets/{ruleset_id}/history` | write | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/rulesets/{ruleset_id}/history/{version_id}` | write | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/secret-scanning/custom-patterns` | write | PAT | ✗ |
+| `POST /repos/{owner}/{repo}/secret-scanning/custom-patterns` | write | PAT | ✗ |
+| `DELETE /repos/{owner}/{repo}/secret-scanning/custom-patterns` | write | PAT | ✗ |
+| `PATCH /repos/{owner}/{repo}/secret-scanning/custom-patterns/{pattern_id}` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/security-advisories/{ghsa_id}/forks` | write | PAT | ✓ |
 | `PUT /repos/{owner}/{repo}/topics` | write | PAT | ✗ |
 | `PUT /repos/{owner}/{repo}/vulnerability-alerts` | write | PAT | ✗ |
@@ -1233,14 +1237,10 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | Endpoint | Access | Tokens | Additional Permissions |
 |----------|--------|--------|------------------------|
 | `PATCH /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}` | write | PAT | ✗ |
-| `POST /repos/{owner}/{repo}/secret-scanning/custom-patterns` | write | PAT | ✗ |
-| `DELETE /repos/{owner}/{repo}/secret-scanning/custom-patterns` | write | PAT | ✗ |
-| `PATCH /repos/{owner}/{repo}/secret-scanning/custom-patterns/{pattern_id}` | write | PAT | ✗ |
 | `GET /orgs/{org}/secret-scanning/alerts` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/secret-scanning/alerts` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}/locations` | read | PAT | ✗ |
-| `GET /repos/{owner}/{repo}/secret-scanning/custom-patterns` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/secret-scanning/scan-history` | read | PAT | ✗ |
 
 ## Repository permissions for "Secrets"

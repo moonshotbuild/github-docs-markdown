@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/copilot-usage-metrics"
+source_path: "/en/copilot/concepts/billing-and-usage/copilot-usage-metrics"
 title: "GitHub Copilot usage metrics"
 intro: "Track how your teams are using and adopting GitHub Copilot with detailed usage metrics."
 product: "GitHub Copilot"
@@ -9,8 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
+  - title: "Billing and usage"
+    href: "/en/copilot/concepts/billing-and-usage"
   - title: "Copilot usage metrics"
-    href: "/en/copilot/concepts/copilot-usage-metrics"
+    href: "/en/copilot/concepts/billing-and-usage/copilot-usage-metrics"
 ---
 
 # GitHub Copilot usage metrics
@@ -19,6 +21,6 @@ Track how your teams are using and adopting GitHub Copilot with detailed usage m
 
 ## Articles
 
-* [GitHub Copilot usage metrics](/en/copilot/concepts/copilot-usage-metrics/copilot-metrics)
+* [GitHub Copilot usage metrics](/en/copilot/concepts/billing-and-usage/copilot-usage-metrics/copilot-metrics)
 
   Copilot usage metrics provide visibility into how Copilot is adopted and used across your organization, including engagement, activity, code generation, and pull request lifecycle trends.

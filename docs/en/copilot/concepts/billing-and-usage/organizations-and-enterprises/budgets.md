@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/billing/budgets-for-usage-based-billing"
+source_path: "/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/budgets"
 title: "Budgets for usage-based billing"
 intro: "Under usage-based billing, budget controls at the user, organization, cost center, and enterprise levels determine how Copilot usage is served, metered, or blocked."
 product: "GitHub Copilot"
@@ -9,10 +9,12 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
-  - title: "Billing"
-    href: "/en/copilot/concepts/billing"
+  - title: "Billing and usage"
+    href: "/en/copilot/concepts/billing-and-usage"
+  - title: "Organizations and enterprises"
+    href: "/en/copilot/concepts/billing-and-usage/organizations-and-enterprises"
   - title: "Budgets"
-    href: "/en/copilot/concepts/billing/budgets-for-usage-based-billing"
+    href: "/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/budgets"
 ---
 
 # Budgets for usage-based billing

@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/billing/usage-based-billing-for-individuals"
+source_path: "/en/copilot/concepts/billing-and-usage/individuals/billing"
 title: "Usage-based billing for individuals"
 intro: "Your Copilot plan includes a monthly allowance of GitHub AI Credits. If you exhaust your AI credits, you can pay extra to keep working."
 product: "GitHub Copilot"
@@ -9,10 +9,12 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
+  - title: "Billing and usage"
+    href: "/en/copilot/concepts/billing-and-usage"
+  - title: "Individuals"
+    href: "/en/copilot/concepts/billing-and-usage/individuals"
   - title: "Billing"
-    href: "/en/copilot/concepts/billing"
-  - title: "Billing for individuals"
-    href: "/en/copilot/concepts/billing/usage-based-billing-for-individuals"
+    href: "/en/copilot/concepts/billing-and-usage/individuals/billing"
 ---
 
 # Usage-based billing for individuals
@@ -116,8 +118,6 @@ Your billing date will depend on whether or not you are already being billed by 
 * **If you are not already being billed by GitHub**, in most cases your billing cycle will start on the day you sign up for Copilot. For example, if you sign up on 3 September, with monthly billing, your initial billing cycle will run from 3 September until and including 2 October, and then on the same days of subsequent months.
 * **If you already have a billing cycle**, billing for Copilot will be included in your next bill. You will be charged on a pro rata basis for that initial period.
 
-<!-- expires 2026-09-01 -->
-
 ## Update your IDE, client, and extension
 
 For the best experience with usage-based billing, update your IDE, client, and Copilot extension to at least the versions listed below.
@@ -137,8 +137,6 @@ For the best experience with usage-based billing, update your IDE, client, and C
 | Copilot CLI                  | 1.0.48          |
 
 We recommend keeping your IDE, client, and Copilot extensions on the latest available stable version. For information on configuring automatic updates, see [Configuring GitHub Copilot in your environment](/en/copilot/how-tos/configure-personal-settings/configure-in-ide). To update Copilot CLI, see [Installing GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli).
-
-<!-- end expires 2026-09-01 -->
 
 ## Further reading
 

@@ -26,12 +26,12 @@ For an overview of what plugins are and how they work across Copilot clients, se
 
 ## CLI commands
 
-You can use the following commands in the terminal to manage plugins for Copilot CLI. `copilot plugin` and `copilot plugins` are interchangeable—use whichever reads better for the subcommand.
+You can use the following commands in the terminal to manage plugins for Copilot CLI. `copilot plugins` (plural) is a legacy alias for `copilot plugin`—both resolve to the same command.
 
 | Command                                                      | Description                                                                                                                                                           |
 | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `copilot plugin install SPECIFICATION`                       | Install a plugin. See [Plugin specification for `install` command](#plugin-specification-for-install-command) below.                                                  |
-| `copilot plugin uninstall NAME`                              | Remove a plugin                                                                                                                                                       |
+| `copilot plugin install SPECIFICATION` (alias `add`)         | Install a plugin. See [Plugin specification for `install` command](#plugin-specification-for-install-command) below.                                                  |
+| `copilot plugin uninstall NAME` (aliases `remove`, `rm`)     | Remove a plugin                                                                                                                                                       |
 | `copilot plugin list`                                        | List installed plugins                                                                                                                                                |
 | `copilot plugin update NAME`                                 | Update a named plugin. Use `--all` to update all installed plugins at once.                                                                                           |
 | `copilot plugin enable NAME`                                 | Enable a previously disabled plugin                                                                                                                                   |
@@ -42,10 +42,12 @@ You can use the following commands in the terminal to manage plugins for Copilot
 | `copilot plugin marketplace update [NAME]` (alias `refresh`) | Re-fetch a marketplace's plugin catalog. Omit `NAME` to refresh the catalogs of every registered marketplace.                                                         |
 | `copilot plugin marketplace remove NAME`                     | Unregister a marketplace. Refused if plugins from the marketplace are still installed; pass `--force` to also uninstall those plugins.                                |
 
-Non-interactively, `copilot plugins enable NAME --plugin`, `copilot plugins disable NAME --plugin`, and `copilot plugins remove NAME --plugin` provide the same enable, disable, and uninstall operations. `--plugin` is the default kind and can be omitted for these three commands. See [GitHub Copilot CLI command reference](/en/copilot/reference/copilot-cli-reference/cli-command-reference#using-copilot-plugins-list) for the non-interactive `--mcp` and `--skill` kinds, which extend these commands to MCP servers and skills.
+Before `copilot plugin` was split into separate commands by resource, `copilot plugins` also inspected and toggled MCP servers, skills, instructions, and language servers using `--kind`, `--scope`, `--mcp`, and `--skill` flags. Those cross-kind flags have been removed. Use the dedicated [`copilot mcp`](/en/copilot/reference/copilot-cli-reference/cli-command-reference#copilot-mcp-subcommand), [`copilot skill`](/en/copilot/reference/copilot-cli-reference/cli-command-reference#managing-skills-non-interactively), [`copilot instruction`](/en/copilot/reference/copilot-cli-reference/cli-command-reference#using-copilot-instruction), and [`copilot lsp`](/en/copilot/reference/copilot-cli-reference/cli-command-reference#using-copilot-lsp) commands instead. `copilot plugin list --json` now emits a flat array of plugins instead of the previous `{ plugins, errors }` object.
 
 > \[!NOTE]
 > A plugin or marketplace pinned by an organization or MDM managed policy (`enabledPlugins`, `extraKnownMarketplaces`) can't be re-enabled, disabled, or repointed locally—the managed value wins for that entry. The `/plugin` dashboard marks these rows with a `Managed` badge and refuses a conflicting toggle. See [GitHub Copilot CLI configuration directory](/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference#mdm-managed-settings).
+>
+> A plugin whose activation is currently decided by the current repository's `enabledPlugins` overlay rejects `copilot plugin enable`/`disable` instead of silently persisting a global value that would have no effect in that repository. The error names the settings file that actually controls the plugin. See [GitHub Copilot CLI configuration directory](/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference#repository-settings-githubcopilotsettingsjson).
 
 ### Plugin specification for `install` command
 
@@ -57,26 +59,37 @@ Non-interactively, `copilot plugins enable NAME --plugin`, `copilot plugins disa
 | Git URL        | `https://github.com/o/r.git` | Any Git URL                          |
 | Local path     | `./my-plugin` or `/abs/path` | Local directory                      |
 
-### `copilot plugins install` options
+### `copilot plugin list` options
 
-In addition to installing a plugin from a specification, `copilot plugins install` can install an individual skill from a file, URL, or directory with `--skill`. A skill install isn't a plugin install and doesn't go through a marketplace—see [GitHub Copilot CLI command reference](/en/copilot/reference/copilot-cli-reference/cli-command-reference#skills-reference) for details on skills themselves.
+| Option                   | Description                                                                                 |                                           |
+| ------------------------ | ------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| `--json`                 | Emit a flat JSON array of plugins instead of text.                                          |                                           |
+| `--config-dir=DIRECTORY` | Path to the configuration directory. This option is deprecated. Use `COPILOT_HOME` instead. | <!-- markdownlint-disable-line GHD046 --> |
 
-| Option                   | Description                                                                                                                                                                                                                           |                                           |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| `--plugin`               | Install a plugin (default).                                                                                                                                                                                                           |                                           |
-| `--skill`                | Install a skill from a local path or URL.                                                                                                                                                                                             |                                           |
-| `--scope SCOPE`          | For a file or URL `--skill` install: `user` (default) or `project`. `project` scopes the install to the current repository's `.github/skills` directory instead of your user account, and only applies to file or URL skill installs. |                                           |
-| `--config-dir=DIRECTORY` | Path to the configuration directory. This option is deprecated. Use `COPILOT_HOME` instead.                                                                                                                                           | <!-- markdownlint-disable-line GHD046 --> |
+Each `--json` row has the shape `{ name, marketplace?, version?, enabled, source, installedFrom? }`.
 
-Installing a directory registers it as a custom skill source rather than copying it; installing a file or URL copies the skill's content into your personal or project skills directory.
+### `copilot plugin enable`/`disable` options
 
-MCP servers install from a policy-configured registry, which requires authentication and interactive secret entry. Use the **Online** view of the `/mcp` dashboard to add MCP servers instead of `copilot plugins install`.
+| Option                   | Description                                                                                 |                                           |
+| ------------------------ | ------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| `--config-dir=DIRECTORY` | Path to the configuration directory. This option is deprecated. Use `COPILOT_HOME` instead. | <!-- markdownlint-disable-line GHD046 --> |
 
-### `copilot plugins update` options
+### `copilot plugin install` options
 
-| Option  | Description                   |
-| ------- | ----------------------------- |
-| `--all` | Update every installed plugin |
+To install a skill instead of a plugin, use [`copilot skill add`](/en/copilot/reference/copilot-cli-reference/cli-command-reference#managing-skills-non-interactively) instead—it isn't a plugin install and doesn't go through a marketplace.
+
+| Option                   | Description                                                                                 |                                           |
+| ------------------------ | ------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| `--config-dir=DIRECTORY` | Path to the configuration directory. This option is deprecated. Use `COPILOT_HOME` instead. | <!-- markdownlint-disable-line GHD046 --> |
+
+MCP servers install from a policy-configured registry, which requires authentication and interactive secret entry. Use the **Online** view of the `/mcp` dashboard, or the [`copilot mcp add`](/en/copilot/reference/copilot-cli-reference/cli-command-reference#copilot-mcp-subcommand) command, to add MCP servers instead of `copilot plugin install`.
+
+### `copilot plugin update` options
+
+| Option                   | Description                                                                                 |                                           |
+| ------------------------ | ------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| `--all`                  | Update every installed plugin                                                               |                                           |
+| `--config-dir=DIRECTORY` | Path to the configuration directory. This option is deprecated. Use `COPILOT_HOME` instead. | <!-- markdownlint-disable-line GHD046 --> |
 
 > \[!NOTE]
 > Path-sourced plugins in a local (directory-source) marketplace load live from their real directory—editing one takes effect on `/restart` or in a new session, with no `copilot plugin update` needed.
@@ -87,7 +100,7 @@ A marketplace you've added yourself can opt into the same session-start auto-upd
 
 In interactive mode, `/plugin` flags an installed plugin or marketplace when a newer version is available upstream, and offers an **Update** action from the dashboard to pull it.
 
-### `copilot plugins marketplace` subcommands
+### `copilot plugin marketplace` (alias `marketplaces`) subcommands
 
 Built-in default marketplaces ship with the runtime and can't be removed.
 

@@ -913,7 +913,7 @@ For full type definitions, input/output field tables, and additional examples fo
 
 ## See also
 
-* [Build your first Copilot-powered app](/en/copilot/how-tos/copilot-sdk/getting-started)
+* [Build your first Copilot-powered app](/en/copilot/get-started/sdk-quickstart)
 * [Custom agents and sub-agent orchestration](/en/copilot/how-tos/copilot-sdk/features/custom-agents)
 * [Streaming session events](/en/copilot/how-tos/copilot-sdk/features/streaming-events)
 * [Debugging guide](/en/copilot/how-tos/copilot-sdk/troubleshooting/debugging)

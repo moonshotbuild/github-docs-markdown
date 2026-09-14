@@ -61,7 +61,7 @@ Users who belong to multiple organizations in an enterprise or who receive a Cop
 
 To confirm which organization is charged for a given user's license, you can request a detailed usage report. See [Billing reports reference](/en/billing/reference/billing-reports#detailed-usage-report).
 
-See [GitHub Copilot billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises#seat-assignment).
+See [GitHub Copilot seats and billing cycles for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises#seat-assignment).
 
 ## Understanding cost center usage and attribution
 

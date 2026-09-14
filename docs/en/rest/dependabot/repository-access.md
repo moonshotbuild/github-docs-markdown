@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/dependabot/repository-access"
 ---
 
-# REST API endpoints for {% data variables.product.prodname_dependabot %} repository access
+# REST API endpoints for Dependabot repository access
 
 Use the REST API to manage which repositories Dependabot can access within an organization.
 

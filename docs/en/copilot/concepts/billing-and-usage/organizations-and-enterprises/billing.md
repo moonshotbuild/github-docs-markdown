@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing"
+source_path: "/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing"
 title: "Usage-based billing for organizations and enterprises"
 intro: "Under usage-based billing, Copilot usage in organizations and enterprises is measured in AI credits."
 product: "GitHub Copilot"
@@ -9,12 +9,12 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
-  - title: "Billing"
-    href: "/en/copilot/concepts/billing"
+  - title: "Billing and usage"
+    href: "/en/copilot/concepts/billing-and-usage"
   - title: "Organizations and enterprises"
-    href: "/en/copilot/concepts/billing/organizations-and-enterprises"
-  - title: "Usage-based billing"
-    href: "/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing"
+    href: "/en/copilot/concepts/billing-and-usage/organizations-and-enterprises"
+  - title: "Billing"
+    href: "/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing"
 ---
 
 # Usage-based billing for organizations and enterprises
@@ -50,21 +50,6 @@ Adding licenses mid-cycle increases the pool immediately. Removing licenses mid-
 
 Included AI credits do not carry over between months. Unused credits are forfeited, and the pool resets to the full monthly amount at 00:00:00 UTC on the first day of each calendar month. This reset date is fixed and does not change based on when licenses are added, removed, or billed. See [Billing cycles](/en/billing/concepts/billing-cycles#billing-cycles-for-metered-products).
 
-<!-- expires 2026-09-01 -->
-
-### Promotional amounts for existing customers
-
-Existing Copilot Business and Copilot Enterprise customers receive a higher amount of included AI credits for the first three months of usage-based billing (June 1 – September 1, 2026):
-
-| Plan               | Total AI credits per user per month |
-| ------------------ | ----------------------------------- |
-| Copilot Business   | 3,000                               |
-| Copilot Enterprise | 7,000                               |
-
-After the promotional period, included usage returns to the standard amounts above.
-
-<!-- end expires 2026-09-01 -->
-
 ## What happens if I exceed my included AI credits?
 
 When your pooled AI credits are exhausted, what happens next depends on how you have configured policies for additional usage.
@@ -75,7 +60,7 @@ When your pooled AI credits are exhausted, what happens next depends on how you 
 > \[!NOTE]
 > Additional usage is **enabled by default** for organizations and enterprises. If you want to prevent any spending beyond your included AI credits, an administrator must explicitly disable the **AI credits paid usage** policy in your enterprise's or organization's AI Controls settings.
 
-If you have set a user-level budget and a user exhausts it, that user's access to Copilot is halted, regardless of whether the organization's pool still has capacity. A user can also be blocked by an enterprise spending limit before they reach their individual user-level budget, if the spending limit runs out first. There is no automatic fallback to lower-cost models when a budget is exhausted. For more information about how these controls interact, see [Budgets for usage-based billing](/en/copilot/concepts/billing/budgets-for-usage-based-billing).
+If you have set a user-level budget and a user exhausts it, that user's access to Copilot is halted, regardless of whether the organization's pool still has capacity. A user can also be blocked by an enterprise spending limit before they reach their individual user-level budget, if the spending limit runs out first. There is no automatic fallback to lower-cost models when a budget is exhausted. For more information about how these controls interact, see [Budgets for usage-based billing](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/budgets).
 
 Additional usage budgets are set in US dollars, and usage is shown in AI credits. AI credits draw down the budget at a fixed rate: 1 AI credit = $0.01 USD, so a $10 USD budget covers 1,000 AI credits.
 
@@ -88,9 +73,7 @@ Budget controls let you govern how individual users draw from the shared pool an
 * **Enterprise spending limits** cap total metered charges across your entire enterprise after the pool is exhausted.
 * **Organization-level budgets** cap metered charges for users whose Copilot seats are billed to the organization, after the pool is exhausted.
 
-For a full explanation of how these controls work together and when usage gets blocked, see [Budgets for usage-based billing](/en/copilot/concepts/billing/budgets-for-usage-based-billing).
-
-<!-- expires 2026-09-01 -->
+For a full explanation of how these controls work together and when usage gets blocked, see [Budgets for usage-based billing](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/budgets).
 
 ## Update your IDE, client, and extension
 
@@ -111,8 +94,6 @@ For the best experience with usage-based billing, update your IDE, client, and C
 | Copilot CLI                  | 1.0.48          |
 
 We recommend keeping your IDE, client, and Copilot extensions on the latest available stable version. For information on configuring automatic updates, see [Configuring GitHub Copilot in your environment](/en/copilot/how-tos/configure-personal-settings/configure-in-ide). To update Copilot CLI, see [Installing GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli).
-
-<!-- end expires 2026-09-01 -->
 
 ## Next steps
 

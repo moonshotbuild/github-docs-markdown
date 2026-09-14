@@ -69,4 +69,4 @@ Copilot cloud agent will begin processing the work item and create a draft pull 
 ## Further reading
 
 * [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
-* [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/access-management)
+* [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/enterprise/cloud-agent-access)

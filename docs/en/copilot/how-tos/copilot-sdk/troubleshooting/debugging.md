@@ -568,7 +568,7 @@ If you're still stuck:
 
 ## See also
 
-* [Build your first Copilot-powered app](/en/copilot/how-tos/copilot-sdk/getting-started)
+* [Build your first Copilot-powered app](/en/copilot/get-started/sdk-quickstart)
 * [Using MCP servers with the GitHub Copilot SDK](/en/copilot/how-tos/copilot-sdk/features/mcp) - MCP configuration and setup
 * [MCP server debugging guide](/en/copilot/how-tos/copilot-sdk/troubleshooting/mcp-debugging) - Detailed MCP troubleshooting
 * [API Reference](https://github.com/github/copilot-sdk)

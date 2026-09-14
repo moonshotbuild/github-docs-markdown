@@ -617,9 +617,9 @@ breadcrumbs:
 
 ## code-scanning
 
-* [`GET /orgs/{org}/code-scanning/ai-scan`](/en/rest/code-scanning/ai-scan#get-the-ai-scan-setting-for-an-organization)
+* [`GET /orgs/{org}/code-scanning/ai-scan`](/en/rest/code-scanning/code-scanning#get-the-ai-scan-setting-for-an-organization)
 
-* [`PATCH /orgs/{org}/code-scanning/ai-scan`](/en/rest/code-scanning/ai-scan#update-the-ai-scan-setting-for-an-organization)
+* [`PATCH /orgs/{org}/code-scanning/ai-scan`](/en/rest/code-scanning/code-scanning#update-the-ai-scan-setting-for-an-organization)
 
 * [`GET /orgs/{org}/code-scanning/alerts`](/en/rest/code-scanning/code-scanning#list-code-scanning-alerts-for-an-organization)
 

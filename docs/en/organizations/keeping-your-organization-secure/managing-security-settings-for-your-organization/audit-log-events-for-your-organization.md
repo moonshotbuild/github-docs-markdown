@@ -116,7 +116,7 @@ A billing budget was created for a business or organization. Includes details ab
 
 A billing budget was deleted for a business or organization. Includes details about the removed budget and any alerting settings.
 
-**Additional fields:** `alert_enabled`, `budget_limit_type`, `customer_id`, `exclude_cost_center_usage`, `expires_at`, `oauth_application_id`, `pricing_target_id`, `pricing_target_type`, `status`, `target_amount`, `target_type`, `user_programmatic_access_name`, `uuid`
+**Additional fields:** `actor_is_agent`, `alert_enabled`, `budget_limit_type`, `customer_id`, `exclude_cost_center_usage`, `expires_at`, `oauth_application_id`, `pricing_target_id`, `pricing_target_type`, `status`, `target_amount`, `target_type`, `user_programmatic_access_name`, `uuid`
 
 #### `billing.budget_update`
 
@@ -144,13 +144,13 @@ The billing email address changed.
 
 A cost center was created for a business or organization.
 
-**Additional fields:** `name`, `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `name`, `oauth_application_id`
 
 #### `billing.cost_center_delete`
 
 A cost center was deleted from a business or organization.
 
-**Additional fields:** `name`, `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `name`, `oauth_application_id`
 
 #### `billing.cost_center_resource_added`
 
@@ -168,7 +168,7 @@ A resource was removed from a cost center for a business or organization.
 
 A cost center was updated for a business or organization.
 
-**Additional fields:** `name`, `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `name`, `oauth_application_id`
 
 #### `billing.overage_policy_updated`
 
@@ -376,7 +376,7 @@ A codespace was stopped.
 
 A personal account's access and security setting for Codespaces were updated.
 
-**Additional fields:** `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`
 
 **Reference:** [Managing access to other repositories within your codespace](/en/codespaces/managing-codespaces-for-your-organization/managing-repository-access-for-your-organizations-codespaces)
 
@@ -430,7 +430,7 @@ A seat assignment that was previously pending cancellation was re-assigned and t
 
 A Copilot Business or Copilot Enterprise seat assignment was re-created for a user who already had a seat with no pending cancellation date, and the user will retain access to Copilot.
 
-**Additional fields:** `owner`, `owner_type`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `owner`, `owner_type`, `user_programmatic_access_name`
 
 #### `copilot.cfb_seat_assignment_unassigned`
 
@@ -456,6 +456,10 @@ The seat management setting was changed at the organization level to either enab
 
 **Additional fields:** `new_value`, `old_value`, `previous_value`
 
+#### `copilot.code_review_organization_settings_updated`
+
+Copilot code review settings were updated for an organization.
+
 #### `copilot.code_review_repository_settings_updated`
 
 Copilot code review settings were updated for a repository.
@@ -466,7 +470,7 @@ Copilot code review settings were updated for a repository.
 
 The excluded paths for GitHub Copilot were updated.
 
-**Additional fields:** `actor_is_agent`, `excluded_paths`, `owner_type`, `public_repo`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `excluded_paths`, `oauth_application_id`, `owner_type`, `public_repo`, `user_programmatic_access_name`
 
 #### `copilot.custom_instructions_created`
 
@@ -630,7 +634,7 @@ Dismissal of Dependabot alerts was approved.
 
 Dismissal request for Dependabot alerts was canceled.
 
-**Additional fields:** `alert_number`, `number`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `alert_number`, `number`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
 **Reference:** [Dependabot alerts](/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts)
 
@@ -638,7 +642,7 @@ Dismissal request for Dependabot alerts was canceled.
 
 Dismissal of Dependabot alerts was requested.
 
-**Additional fields:** `alert_number`, `number`, `public_repo`
+**Additional fields:** `actor_is_agent`, `alert_number`, `number`, `oauth_application_id`, `public_repo`
 
 **Reference:** [Dependabot alerts](/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts)
 
@@ -646,7 +650,7 @@ Dismissal of Dependabot alerts was requested.
 
 Dismissal of Dependabot alerts was denied.
 
-**Additional fields:** `actor_is_agent`, `alert_number`, `number`, `public_repo`
+**Additional fields:** `actor_is_agent`, `alert_number`, `number`, `oauth_application_id`, `public_repo`
 
 **Reference:** [Dependabot alerts](/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts)
 
@@ -656,7 +660,7 @@ Dismissal of Dependabot alerts was denied.
 
 The default repository access for Dependabot was updated.
 
-**Additional fields:** `access_level`, `oauth_application_id`, `user_programmatic_access_name`
+**Additional fields:** `access_level`, `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 #### `dependabot_repository_access.repositories_updated`
 
@@ -742,7 +746,7 @@ A global announcement banner was created for the enterprise.
 
 A global announcement banner was removed from the enterprise.
 
-**Additional fields:** `actor_is_agent`, `owner`, `owner_type`, `public_repo`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `owner`, `owner_type`, `public_repo`, `user_programmatic_access_name`
 
 **Reference:** [Customizing user messages for your enterprise](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/communicating-information-to-users-in-your-enterprise/customizing-user-messages-for-your-enterprise)
 
@@ -960,7 +964,7 @@ Token(s) for a GitHub App were revoked.
 
 A GitHub App was suspended.
 
-**Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /apps/maintaining-github-apps/suspending-a-github-app-installation
 
@@ -979,6 +983,12 @@ A GitHub App was unsuspended.
 **Additional fields:** `application_client_id`, `integration`, `name`
 
 **Reference:** /apps/maintaining-github-apps/suspending-a-github-app-installation
+
+#### `integration.update`
+
+A GitHub App was updated.
+
+**Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `oauth_application_id`
 
 ### integration\_installation
 
@@ -1034,7 +1044,7 @@ A GitHub App was unsuspended.
 
 Permissions for a GitHub App were updated.
 
-**Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `repository_selection`
+**Additional fields:** `actor_is_agent`, `application_client_id`, `events_added`, `events_removed`, `events_unchanged`, `integration`, `name`, `repository_selection`
 
 **Reference:** /apps/using-github-apps/approving-updated-permissions-for-a-github-app
 
@@ -1322,7 +1332,7 @@ The ability for members to publish private GitHub Pages was disabled  Members ca
 
 The ability for members to publish private GitHub Pages was enabled  Members can publish private GitHub Pages in an organization.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /organizations/managing-organization-settings/managing-the-publication-of-github-pages-sites-for-your-organization
 
@@ -1365,6 +1375,8 @@ The ability for enterprise members to delete repositories was disabled  Members 
 #### `members_can_delete_repos.enable`
 
 The ability for enterprise members to delete repositories was enabled  Members can delete or transfer repositories in any organizations in an enterprise.
+
+**Additional fields:** `oauth_application_id`
 
 **Reference:** [Enforcing repository management policies in your enterprise](/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-for-repository-deletion-and-transfer)
 
@@ -1526,6 +1538,14 @@ An OAuth application was transferred from one account to another.
 
 **Reference:** /apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app
 
+#### `oauth_application.update_token_expiration`
+
+The token expiration setting for an OAuth application was updated.
+
+**Additional fields:** `oauth_application`, `oauth_application_id`
+
+**Reference:** /apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app
+
 ### org
 
 #### `org.accept_business_invitation`
@@ -1537,6 +1557,8 @@ An invitation sent to an organization to join an enterprise was accepted.
 #### `org.add_billing_manager`
 
 A billing manager was added to an organization.
+
+**Additional fields:** `oauth_application_id`
 
 **Reference:** /organizations/managing-peoples-access-to-your-organization-with-roles/adding-a-billing-manager-to-your-organization
 
@@ -1670,9 +1692,13 @@ An organization owner updated the Code Quality entity policy for repositories ow
 
 AI-powered findings for code scanning were disabled for an organization.
 
+**Additional fields:** `oauth_application_id`
+
 #### `org.code_scanning_ai_findings_enabled`
 
 AI-powered findings for code scanning were enabled for an organization.
+
+**Additional fields:** `oauth_application_id`
 
 #### `org.code_scanning_autofix_disabled`
 
@@ -1774,17 +1800,19 @@ GitHub Codespaces trusted repository access to all other repositories in an orga
 
 A user has been allowed to use Codespaces for an organization.
 
-**Additional fields:** `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`
 
 #### `org.codespaces_user_access_revoked`
 
 A user has been prevented from using Codespaces for an organization.
 
+**Additional fields:** `actor_is_agent`, `oauth_application_id`
+
 #### `org.config.disable_collaborators_only`
 
 The interaction limit for collaborators only for an organization was disabled.
 
-**Additional fields:** `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`
 
 **Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization
 
@@ -1798,13 +1826,15 @@ The interaction limit for prior contributors only for an organization was disabl
 
 The interaction limit for existing users only for an organization was disabled.
 
+**Additional fields:** `actor_is_agent`, `user_programmatic_access_name`
+
 **Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization
 
 #### `org.config.enable_collaborators_only`
 
 The interaction limit for collaborators only for an organization was enabled.
 
-**Additional fields:** `oauth_application_id`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization
 
@@ -1818,7 +1848,7 @@ The interaction limit for prior contributors only for an organization was enable
 
 The interaction limit for existing users only for an organization was enabled.
 
-**Additional fields:** `oauth_application_id`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization
 
@@ -1884,7 +1914,7 @@ An organization was deleted by a user or staff.
 
 A custom image was deleted for an organization.
 
-**Additional fields:** `oauth_application_id`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /actions/how-tos/manage-runners/larger-runners/use-custom-images
 
@@ -1920,11 +1950,13 @@ An organization owner limited discussion creation to users with at least triage 
 
 SAML single sign-on was disabled for an organization.
 
-**Additional fields:** `issuer`, `sso_url`
+**Additional fields:** `issuer`, `oauth_application_id`, `sso_url`
 
 #### `org.disable_source_ip_disclosure`
 
 Display of IP addresses within audit log events for the organization was disabled.
+
+**Additional fields:** `oauth_application_id`
 
 **Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/displaying-ip-addresses-in-the-audit-log-for-your-organization
 
@@ -1944,7 +1976,7 @@ An organization owner enabled the display of a commenter's full name in an organ
 
 Team creation by members was allowed.
 
-**Additional fields:** `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /organizations/managing-organization-settings/setting-team-creation-permissions-in-your-organization
 
@@ -2262,6 +2294,8 @@ Enablement for Secret Protection features on new repositories has been locked fo
 
 Enablement for Secret Protection features on new repositories has been unlocked for this organization.
 
+**Additional fields:** `topic`
+
 #### `org.secret_scanning_custom_pattern_push_protection_disabled`
 
 Push protection for a custom pattern for secret scanning was disabled for an organization.
@@ -2286,7 +2320,7 @@ The custom message triggered by an attempted push to a push-protected repository
 
 The custom message triggered by an attempted push to a push-protected repository was enabled for an organization.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** [Push protection](/en/code-security/secret-scanning/protecting-pushes-with-secret-scanning#enabling-secret-scanning-as-a-push-protection-for-an-organization)
 
@@ -2294,7 +2328,7 @@ The custom message triggered by an attempted push to a push-protected repository
 
 The custom message triggered by an attempted push to a push-protected repository was updated for an organization.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** [Push protection](/en/code-security/secret-scanning/protecting-pushes-with-secret-scanning#enabling-secret-scanning-as-a-push-protection-for-an-organization)
 
@@ -2382,7 +2416,7 @@ The runner application was updated. This event is not included in the JSON/CSV e
 
 The cache retention policy for GitHub Actions was set for an organization.
 
-**Additional fields:** `oauth_application_id`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /organizations/managing-organization-settings/managing-github-actions-settings-for-your-organization
 
@@ -2390,7 +2424,7 @@ The cache retention policy for GitHub Actions was set for an organization.
 
 The cache storage policy for GitHub Actions was set for an organization.
 
-**Additional fields:** `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /organizations/managing-organization-settings/managing-github-actions-settings-for-your-organization
 
@@ -2406,7 +2440,7 @@ The setting for requiring approvals for workflows from public forks was changed 
 
 The policy for requiring approval for fork pull request workflows from collaborators without write access to private repos was changed for an organization.
 
-**Additional fields:** `oauth_application_id`, `policy`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `policy`, `user_programmatic_access_name`
 
 **Reference:** /organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#enabling-workflows-for-private-repository-forks
 
@@ -2422,7 +2456,7 @@ The retention period for GitHub Actions artifacts and logs in an organization wa
 
 The default permissions granted to the GITHUB\_TOKEN when running workflows were changed for an organization.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `default_workflow_permissions_value`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#setting-the-permissions-of-the-github\_token-for-your-organization
 
@@ -2438,7 +2472,7 @@ The policy for workflows on private repository forks was changed.
 
 The policy for allowing GitHub Actions to create and approve pull requests was changed for an organization.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`, `workflow_permission_can_approve_pr_value`
 
 **Reference:** /organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#preventing-github-actions-from-creating-or-approving-pull-requests
 
@@ -2452,7 +2486,7 @@ A SAML single sign-on (SSO) response was generated when a member attempted to au
 
 An organization was transferred between enterprise accounts.
 
-**Additional fields:** `from_business`, `to_business`
+**Additional fields:** `from_business`, `oauth_application_id`, `to_business`
 
 **Reference:** [Adding organizations to your enterprise](/en/enterprise-cloud@latest/admin/user-management/managing-organizations-in-your-enterprise/adding-organizations-to-your-enterprise#transferring-an-organization-between-enterprise-accounts)
 
@@ -2460,7 +2494,7 @@ An organization was transferred between enterprise accounts.
 
 An organization was transferred between enterprise accounts.
 
-**Additional fields:** `from_business`, `to_business`
+**Additional fields:** `from_business`, `oauth_application_id`, `to_business`
 
 **Reference:** [Adding organizations to your enterprise](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-organizations-in-your-enterprise/adding-organizations-to-your-enterprise#transferring-an-organization-between-enterprise-accounts)
 
@@ -2614,7 +2648,7 @@ Automatic partner validation checks have been disabled at the organization level
 
 Automatic partner validation checks have been enabled at the organization level
 
-**Additional fields:** `oauth_application_id`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#allowing-validity-checks-for-partner-patterns-in-an-organization
 
@@ -2624,13 +2658,15 @@ Automatic partner validation checks have been enabled at the organization level
 
 A custom pattern was created for secret scanning in an organization.
 
-**Additional fields:** `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** [Defining custom patterns for secret scanning](/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning#defining-a-custom-pattern-for-an-organization)
 
 #### `org_secret_scanning_custom_pattern.delete`
 
 A custom pattern was removed from secret scanning in an organization.
+
+**Additional fields:** `actor_is_agent`, `oauth_application_id`
 
 **Reference:** [Defining custom patterns for secret scanning](/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning#removing-a-custom-pattern)
 
@@ -2643,6 +2679,8 @@ A custom pattern was published for secret scanning in an organization.
 #### `org_secret_scanning_custom_pattern.update`
 
 Changes to a custom pattern were saved and a dry run was executed for secret scanning in an organization.
+
+**Additional fields:** `actor_is_agent`, `oauth_application_id`
 
 **Reference:** [Defining custom patterns for secret scanning](/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning#editing-a-custom-pattern)
 
@@ -2790,6 +2828,30 @@ A domain was verified for an organization.
 
 **Reference:** /organizations/managing-organization-settings/verifying-or-approving-a-domain-for-your-organization#verifying-a-domain-for-your-organization
 
+### organization\_moderators
+
+#### `organization_moderators.add_team`
+
+A team was added as an organization moderator.
+
+**Additional fields:** `team`
+
+#### `organization_moderators.add_user`
+
+A user was added as an organization moderator.
+
+#### `organization_moderators.remove_team`
+
+A team was removed as an organization moderator.
+
+**Additional fields:** `team`
+
+#### `organization_moderators.remove_user`
+
+A user was removed as an organization moderator.
+
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
+
 ### organization\_projects\_change
 
 #### `organization_projects_change.clear`
@@ -2838,7 +2900,7 @@ A custom organization role was created in an organization.
 
 A custom organization role was deleted in an organization.
 
-**Additional fields:** `actor_is_agent`, `base_role`, `name`, `oauth_application_id`, `organization_role_id`, `owner`, `owner_id`, `owner_type`, `role_permissions`
+**Additional fields:** `actor_is_agent`, `base_role`, `name`, `oauth_application_id`, `organization_role_id`, `owner`, `owner_id`, `owner_type`, `role_permissions`, `user_programmatic_access_name`
 
 **Reference:** [Permissions of custom organization roles](/en/organizations/managing-peoples-access-to-your-organization-with-roles/about-custom-organization-roles)
 
@@ -3048,6 +3110,8 @@ A GitHub Codespaces prebuild configuration for a repository was edited.
 
 An enterprise owner cleared the policy setting for allowing forks of private and internal repositories, for a repository, organization or enterprise.
 
+**Additional fields:** `oauth_application_id`
+
 #### `private_repository_forking.disable`
 
 An enterprise owner disabled the policy setting for allowing forks of private and internal repositories, for a repository, organization or enterprise. Private and internal repositories are never allowed to be forked.
@@ -3138,7 +3202,7 @@ A user was added to or removed from a project board or had their permission leve
 
 A project's visibility was changed from public to private.
 
-**Additional fields:** `oauth_application_id`, `project_id`, `project_kind`, `project_name`, `public_project`
+**Additional fields:** `oauth_application_id`, `project_id`, `project_kind`, `project_name`, `public_project`, `user_programmatic_access_name`
 
 #### `project.visibility_public`
 
@@ -3206,7 +3270,7 @@ A view was created in a project board.
 
 A view was deleted in a project board.
 
-**Additional fields:** `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /issues/planning-and-tracking-with-projects/customizing-views-in-your-project/managing-your-views
 
@@ -3390,7 +3454,7 @@ An SSH key was removed from a user account or a deploy key was removed from a re
 
 A user account's SSH key or a repository's deploy key was unable to be unverified.
 
-**Additional fields:** `fingerprint`, `key`, `read_only`, `title`
+**Additional fields:** `fingerprint`, `key`, `public_repo`, `read_only`, `title`
 
 **Reference:** /authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys
 
@@ -3546,7 +3610,7 @@ A review comment was added to a pull request.
 
 A review comment on a pull request was deleted.
 
-**Additional fields:** `actor_is_agent`, `comment_id`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `comment_id`, `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`
 
 #### `pull_request_review_comment.update`
 
@@ -3618,17 +3682,35 @@ Pull request merge options were changed for a repository.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
+#### `repo.code_quality_disabled`
+
+Code Quality was disabled for a repository.
+
+**Additional fields:** `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`
+
+#### `repo.code_quality_enabled`
+
+Code Quality was enabled for a repository.
+
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
+
+#### `repo.code_quality_updated`
+
+Code Quality was updated for a repository.
+
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
+
 #### `repo.code_scanning_ai_findings_disabled`
 
 AI-powered findings for code scanning were disabled for a repository.
 
-**Additional fields:** `public_repo`
+**Additional fields:** `oauth_application_id`, `public_repo`
 
 #### `repo.code_scanning_ai_findings_enabled`
 
 AI-powered findings for code scanning were enabled for a repository.
 
-**Additional fields:** `public_repo`
+**Additional fields:** `oauth_application_id`, `public_repo`
 
 #### `repo.code_scanning_analysis_deleted`
 
@@ -3986,7 +4068,7 @@ The runner application was updated. This event is not included in the JSON/CSV e
 
 The cache retention policy for GitHub Actions was set for a repository.
 
-**Additional fields:** `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
 **Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository
 
@@ -3994,7 +4076,7 @@ The cache retention policy for GitHub Actions was set for a repository.
 
 The cache storage policy for GitHub Actions was set for a repository.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `visibility`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
 **Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository
 
@@ -4026,7 +4108,7 @@ The retention period for GitHub Actions artifacts and logs in a repository was c
 
 The default permissions granted to the GITHUB\_TOKEN when running workflows were changed for a repository.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
+**Additional fields:** `actor_is_agent`, `default_workflow_permissions_value`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
 **Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#setting-the-permissions-of-the-github\_token-for-your-repository
 
@@ -4042,7 +4124,7 @@ Triggered when the policy for workflows on private repository forks is changed.
 
 The policy for allowing GitHub Actions to create and approve pull requests was changed for a repository.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`, `workflow_permission_can_approve_pr_value`
 
 **Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#preventing-github-actions-from-creating-or-approving-pull-requests
 
@@ -4136,6 +4218,12 @@ Someone closed a security advisory.
 
 **Reference:** [Repository security advisories](/en/code-security/security-advisories/working-with-repository-security-advisories/about-repository-security-advisories)
 
+#### `repository_advisory.create_confidential_comment`
+
+Someone created a confidential comment on a repository security advisory.
+
+**Additional fields:** `public_repo`, `repository_advisory`, `repository_advisory_comment_id`, `repository_advisory_id`
+
 #### `repository_advisory.cve_request`
 
 Someone requested a CVE (Common Vulnerabilities and Exposures) number from GitHub for a draft security advisory.
@@ -4166,11 +4254,17 @@ Someone published a security advisory.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
+#### `repository_advisory.read_confidential_comments`
+
+Confidential comments on a repository security advisory were read by someone.
+
+**Additional fields:** `confidential_comment_count`, `public_repo`, `repository_advisory`, `repository_advisory_id`, `surface`
+
 #### `repository_advisory.reopen`
 
 Someone reopened as draft security advisory.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
 #### `repository_advisory.update`
 
@@ -4426,7 +4520,7 @@ Automatic partner validation checks have been enabled at the repository level
 
 A custom pattern was created for secret scanning in a repository.
 
-**Additional fields:** `oauth_application_id`, `public_repo`
+**Additional fields:** `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
 **Reference:** [Defining custom patterns for secret scanning](/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning#defining-a-custom-pattern-for-a-repository)
 
@@ -4434,7 +4528,7 @@ A custom pattern was created for secret scanning in a repository.
 
 A custom pattern was removed from secret scanning in a repository.
 
-**Additional fields:** `public_repo`
+**Additional fields:** `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
 **Reference:** [Defining custom patterns for secret scanning](/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning#removing-a-custom-pattern)
 
@@ -4450,7 +4544,7 @@ A custom pattern was published for secret scanning in a repository.
 
 Changes to a custom pattern were saved and a dry run was executed for secret scanning in a repository.
 
-**Additional fields:** `oauth_application_id`, `public_repo`
+**Additional fields:** `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
 **Reference:** [Defining custom patterns for secret scanning](/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning#editing-a-custom-pattern)
 
@@ -4562,7 +4656,7 @@ Push protection settings for "Users who can bypass push protection for secret sc
 
 Push protection settings for "Users who can bypass push protection for secret scanning" changed from "Anyone with write access" to "Specific roles or teams" at the repository level.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `topic`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`
 
 **Reference:** [Push protection](/en/code-security/secret-scanning/push-protection-for-repositories-and-organizations#enabling-delegated-bypass-for-push-protection)
 
@@ -4696,7 +4790,7 @@ Changes were pushed to update and resolve a Dependabot alert in a project depend
 
 A user was unassigned to a Dependabot alert.
 
-**Additional fields:** `active`, `alert_id`, `alert_number`, `ghsa_id`, `oauth_application_id`, `owner`, `public_repo`, `user_programmatic_access_name`
+**Additional fields:** `active`, `actor_is_agent`, `alert_id`, `alert_number`, `ghsa_id`, `oauth_application_id`, `owner`, `public_repo`, `user_programmatic_access_name`
 
 #### `repository_vulnerability_alert.withdraw`
 
@@ -4718,13 +4812,13 @@ The list of people or teams authorized to receive Dependabot alerts for the repo
 
 Dependabot alerts was disabled.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `reason`, `topic`, `user_programmatic_access_name`
 
 #### `repository_vulnerability_alerts.enable`
 
 Dependabot alerts was enabled.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `reason`, `topic`, `user_programmatic_access_name`
 
 ### repository\_vulnerability\_alerts\_auto\_dismissal
 
@@ -4764,7 +4858,7 @@ A status check was no longer marked as required for a protected branch.
 
 Email notification restrictions for an organization or enterprise were disabled.
 
-**Additional fields:** `owner`
+**Additional fields:** `oauth_application_id`, `owner`
 
 **Reference:** [Restricting email notifications for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/restricting-email-notifications-for-your-organization), [Restricting email notifications for your enterprise](/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/restricting-email-notifications-for-your-enterprise)
 
@@ -4790,7 +4884,7 @@ A new custom repository role was created.
 
 A custom repository role was deleted.
 
-**Additional fields:** `actor_is_agent`, `base_role`, `name`, `oauth_application_id`, `owner`, `role_permissions`
+**Additional fields:** `actor_is_agent`, `base_role`, `name`, `oauth_application_id`, `owner`, `role_permissions`, `user_programmatic_access_name`
 
 **Reference:** [Managing custom repository roles for an organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/managing-custom-repository-roles-for-an-organization)
 
@@ -4801,6 +4895,50 @@ A custom repository role was edited.
 **Additional fields:** `actor_is_agent`, `base_role`, `name`, `oauth_application_id`, `old_base_role`, `old_role_permissions`, `owner`, `role_permissions`, `user_programmatic_access_name`
 
 **Reference:** [Managing custom repository roles for an organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/managing-custom-repository-roles-for-an-organization)
+
+### sandbox
+
+#### `sandbox.add_port`
+
+A forwarded port was added to a sandbox.
+
+**Additional fields:** `sandbox_id`
+
+#### `sandbox.create`
+
+A sandbox was created.
+
+**Additional fields:** `sandbox_id`
+
+#### `sandbox.delete`
+
+A sandbox was deleted.
+
+**Additional fields:** `sandbox_id`
+
+#### `sandbox.generate_token`
+
+A token was generated for a sandbox.
+
+**Additional fields:** `sandbox_id`
+
+#### `sandbox.remove_port`
+
+A forwarded port was removed from a sandbox.
+
+**Additional fields:** `sandbox_id`
+
+#### `sandbox.resume`
+
+A sandbox was resumed.
+
+**Additional fields:** `sandbox_id`
+
+#### `sandbox.stop`
+
+A sandbox was stopped.
+
+**Additional fields:** `sandbox_id`
 
 ### secret\_scanning
 
@@ -4843,6 +4981,22 @@ GitHub detected a secret and created a secret scanning alert.
 A secret scanning alert was deleted by GitHub. Note that deletions from custom patterns are not logged.
 
 **Additional fields:** `multi_repo`, `number`, `publicly_leaked`, `reason`, `secret_type`, `secret_type_display_name`
+
+**Reference:** [Manage secret scanning alerts](/en/code-security/secret-scanning/managing-alerts-from-secret-scanning)
+
+#### `secret_scanning_alert.metadata_create`
+
+Metadata was added to a secret scanning alert.
+
+**Additional fields:** `multi_repo`, `number`, `publicly_leaked`, `secret_type`, `secret_type_display_name`
+
+**Reference:** [Manage secret scanning alerts](/en/code-security/secret-scanning/managing-alerts-from-secret-scanning)
+
+#### `secret_scanning_alert.metadata_remove`
+
+Metadata was removed from a secret scanning alert.
+
+**Additional fields:** `multi_repo`, `number`, `publicly_leaked`, `secret_type`, `secret_type_display_name`
 
 **Reference:** [Manage secret scanning alerts](/en/code-security/secret-scanning/managing-alerts-from-secret-scanning)
 
@@ -4986,7 +5140,7 @@ A user requested to bypass secret scanning push protection.
 
 A secret scanning scan has completed on this repository.
 
-**Additional fields:** `completed_at`, `custom_pattern_name`, `custom_pattern_scope`, `public_repo`, `secret_types`, `source`, `source_slug`, `started_at`, `type`, `type_slug`
+**Additional fields:** `completed_at`, `custom_pattern_name`, `custom_pattern_scope`, `public_repo`, `secret_types`, `source`, `source_slug`, `started_at`, `topic`, `type`, `type_slug`
 
 **Reference:** [Secret scanning](/en/code-security/secret-scanning/about-secret-scanning)
 
@@ -5492,7 +5646,7 @@ A workflow run was cancelled.
 
 A workflow status changed to completed. This event is not available in the web interface, only via the REST API, audit log streaming, or JSON/CSV exports.
 
-**Additional fields:** `actor_is_agent`, `completed_at`, `conclusion`, `event`, `head_branch`, `head_sha`, `name`, `public_repo`, `run_attempt`, `run_number`, `started_at`, `topic`, `trigger_id`, `workflow_id`, `workflow_run_id`
+**Additional fields:** `actor_is_agent`, `completed_at`, `conclusion`, `event`, `head_branch`, `head_sha`, `name`, `oauth_application_id`, `public_repo`, `run_attempt`, `run_number`, `started_at`, `topic`, `trigger_id`, `user_programmatic_access_name`, `workflow_id`, `workflow_run_id`
 
 **Reference:** [Viewing workflow run history](/en/actions/monitoring-and-troubleshooting-workflows/viewing-workflow-run-history)
 
@@ -5503,6 +5657,18 @@ A workflow run was create. This event is not available in the web interface, onl
 **Additional fields:** `actor_is_agent`, `event`, `head_branch`, `head_sha`, `name`, `public_repo`, `run_number`, `started_at`, `trigger_id`, `workflow_id`, `workflow_run_id`
 
 **Reference:** [Understanding GitHub Actions](/en/actions/learn-github-actions/understanding-github-actions#create-an-example-workflow)
+
+#### `workflows.debugger_session_completed`
+
+An Actions job with the debugger enabled completed its debug session. Includes the repository, ref, workflow file, actor, and session duration.
+
+**Additional fields:** `completed_at`, `started_at`
+
+#### `workflows.debugger_session_started`
+
+An Actions job with the debugger enabled started a debug session. Includes the repository, ref, workflow file, and actor.
+
+**Additional fields:** `started_at`
 
 #### `workflows.delete_workflow_run`
 

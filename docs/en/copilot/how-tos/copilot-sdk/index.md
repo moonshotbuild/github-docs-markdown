@@ -19,10 +19,6 @@ Welcome to the GitHub Copilot SDK docs. Whether you're building your first Copil
 
 ## Links
 
-* [Build your first Copilot-powered app](/en/copilot/how-tos/copilot-sdk/getting-started)
-
-  In this tutorial, you'll use the Copilot SDK to build a command-line assistant. You'll start with the basics, add streaming responses, then add custom tools - giving Copilot the ability to call your code.
-
 * [Authentication](/en/copilot/how-tos/copilot-sdk/auth)
 
   Choose the authentication method that best fits your deployment scenario for the GitHub Copilot SDK.

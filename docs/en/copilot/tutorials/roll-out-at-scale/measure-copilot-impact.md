@@ -23,7 +23,7 @@ Understanding how Copilot is used across your enterprise is the first step to de
 
 ### Phase 1: Choose metrics to monitor Copilot adoption.
 
-* [GitHub Copilot usage metrics](/en/copilot/concepts/copilot-usage-metrics/copilot-metrics)
+* [GitHub Copilot usage metrics](/en/copilot/concepts/billing-and-usage/copilot-usage-metrics/copilot-metrics)
 
   Copilot usage metrics provide visibility into how Copilot is adopted and used across your organization, including engagement, activity, code generation, and pull request lifecycle trends.
 

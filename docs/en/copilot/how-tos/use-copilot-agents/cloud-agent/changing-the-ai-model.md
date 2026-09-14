@@ -52,7 +52,6 @@ The following options are currently available:
 * GPT-6 Astra
 * Grok 4.5
 * Grok 4.6
-* MAI-Code-1-Flash
 * MAI-Code-1.1-Flash
 
 > \[!NOTE] If you select **Auto**, Copilot auto model selection will select the best model based on availability and to help reduce rate limiting. See [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection).

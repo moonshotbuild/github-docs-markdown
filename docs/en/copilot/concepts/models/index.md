@@ -19,6 +19,14 @@ Learn about the AI models available for GitHub Copilot.
 
 ## Links
 
+* [Models in GitHub Copilot](/en/copilot/concepts/models/overview)
+
+  Understand the types and availability of AI models in GitHub Copilot.
+
+* [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection)
+
+  Automatically select the best model for each task.
+
 * [Bring your own key for GitHub Copilot](/en/copilot/concepts/models/bring-your-own-key)
 
   Use your existing LLM provider with GitHub Copilot to save costs or consolidate billing.
@@ -26,10 +34,6 @@ Learn about the AI models available for GitHub Copilot.
 * [Utility models](/en/copilot/concepts/models/utility-models)
 
   Utility models power background Copilot features.
-
-* [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection)
-
-  Automatically select the best model for each task.
 
 * [Base and long-term support (LTS) models](/en/copilot/concepts/models/fallback-and-lts-models)
 

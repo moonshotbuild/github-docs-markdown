@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/usage-limits"
+source_path: "/en/copilot/concepts/billing-and-usage/individuals/usage-limits"
 title: "Usage limits for GitHub Copilot"
 intro: "Learn about GitHub Copilot usage limits and what to do if you hit a limit."
 product: "GitHub Copilot"
@@ -9,8 +9,12 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
+  - title: "Billing and usage"
+    href: "/en/copilot/concepts/billing-and-usage"
+  - title: "Individuals"
+    href: "/en/copilot/concepts/billing-and-usage/individuals"
   - title: "Usage limits"
-    href: "/en/copilot/concepts/usage-limits"
+    href: "/en/copilot/concepts/billing-and-usage/individuals/usage-limits"
 ---
 
 # Usage limits for GitHub Copilot
@@ -32,7 +36,7 @@ GitHub enforces rate limits for several reasons.
 
 Your Copilot plan includes an allowance of AI credits. If you exhaust these included credits, you can continue working by either upgrading your plan or setting a budget for **Additional usage** to access more AI credits. If you exceed the allowed additional usage, you can pay for the additional usage you've already consumed to unlock more and continue.
 
-For more information, see [Usage-based billing for individuals](/en/copilot/concepts/billing/usage-based-billing-for-individuals#what-happens-if-i-exceed-my-included-ai-credits).
+For more information, see [Usage-based billing for individuals](/en/copilot/concepts/billing-and-usage/individuals/billing#what-happens-if-i-exceed-my-included-ai-credits).
 
 ## What to do if you hit a limit
 

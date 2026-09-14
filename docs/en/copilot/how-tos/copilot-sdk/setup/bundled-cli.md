@@ -230,4 +230,4 @@ Session state persists at `~/.copilot/session-state/{sessionId}/`.
 
 * **[BYOK (bring your own key)](/en/copilot/how-tos/copilot-sdk/auth/byok)**: Use your own model provider keys
 * **[Session resume and persistence](/en/copilot/how-tos/copilot-sdk/features/session-persistence)**: Advanced session management
-* **[Build your first Copilot-powered app](/en/copilot/how-tos/copilot-sdk/getting-started)**: Build a complete app
+* **[Build your first Copilot-powered app](/en/copilot/get-started/sdk-quickstart)**: Build a complete app

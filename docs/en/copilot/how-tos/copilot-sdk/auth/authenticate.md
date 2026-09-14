@@ -448,5 +448,5 @@ const client = new CopilotClient({
 ## Next steps
 
 * [BYOK (bring your own key)](/en/copilot/how-tos/copilot-sdk/auth/byok) - Learn how to use your own API keys
-* [Build your first Copilot-powered app](/en/copilot/how-tos/copilot-sdk/getting-started) - Build your first Copilot-powered app
+* [Build your first Copilot-powered app](/en/copilot/get-started/sdk-quickstart) - Build your first Copilot-powered app
 * [Using MCP servers with the GitHub Copilot SDK](/en/copilot/how-tos/copilot-sdk/features/mcp) - Connect to external tools

@@ -188,11 +188,30 @@ When an GitHub Actions workflow run fails on a pull request branch, you can ask 
 
 ## Continuing work on a pull request
 
+You can ask Copilot to make changes or address review comments on an existing pull request. You can then track the resulting session and provide follow-up instructions.
+
+### Asking Copilot to make changes
+
 You can mention `@copilot` in a comment on any pull request to ask Copilot to make changes. This works on pull requests created by Copilot and on pull requests you or others created.
 
 By default, Copilot pushes commits directly to the pull request branch. To create a separate pull request instead, describe that in your comment. You can also check out the branch and push changes yourself.
 
-Batch review comments instead of submitting them individually. When submitting a pull request comment (not a review or review comment) through the GitHub web interface, select a model with the model picker. Copilot uses the model from the original pull request by default.
+When submitting a pull request comment (not a review or review comment) through the GitHub web interface, select a model with the model picker. Copilot uses the model from the original pull request by default.
+
+### Delegating review comments
+
+You can delegate review comments to have Copilot implement feedback from human reviewers and GitHub Copilot code review.
+
+1. In the pull request, open the **Files changed** tab.
+2. Navigate to the first review comment you want Copilot to implement.
+   * To delegate one comment, click **Fix with Copilot**.
+   * To delegate multiple comments, click **Add to batch**. Continue to add the comments you want Copilot to work on.
+3. In the **Manage batch** panel, add any additional instructions, and optionally select a model with the model picker.
+4. Choose how you want Copilot to apply the changes:
+   * To commit the changes directly to the branch, click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-agent" aria-label="The Agents icon" role="img"><path d="M14.5 8.9v-.052A2.956 2.956 0 0 0 11.542 5.9a.815.815 0 0 1-.751-.501l-.145-.348A3.496 3.496 0 0 0 7.421 2.9h-.206a3.754 3.754 0 0 0-3.736 4.118l.011.121a.822.822 0 0 1-.619.879A1.81 1.81 0 0 0 1.5 9.773v.14c0 1.097.89 1.987 1.987 1.987H4.5a.75.75 0 0 1 0 1.5H3.487A3.487 3.487 0 0 1 0 9.913v-.14C0 8.449.785 7.274 1.963 6.75A5.253 5.253 0 0 1 7.215 1.4h.206a4.992 4.992 0 0 1 4.586 3.024A4.455 4.455 0 0 1 16 8.848V8.9a.75.75 0 0 1-1.5 0Z"></path><path d="m8.38 7.67 2.25 2.25a.749.749 0 0 1 0 1.061L8.38 13.23a.749.749 0 1 1-1.06-1.06l1.719-1.72L7.32 8.731A.75.75 0 0 1 8.38 7.67ZM15 13.45h-3a.75.75 0 0 1 0-1.5h3a.75.75 0 0 1 0 1.5Z"></path></svg> Fix and commit**.
+   * To have Copilot create a new pull request with the changes, click **Fix and open pull request** from the dropdown menu.
+
+### Tracking and continuing a session
 
 Copilot only responds to comments from people who have write access to the repository.
 

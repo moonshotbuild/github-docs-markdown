@@ -33,10 +33,6 @@ Learn the core concepts that you'll need to understand GitHub Copilot.
 
   Cloud and local sandboxes provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine or in fully isolated cloud environments.
 
-* [GitHub Copilot usage metrics](/en/copilot/concepts/copilot-usage-metrics)
-
-  Track how your teams are using and adopting GitHub Copilot with detailed usage metrics.
-
 * [Concepts for prompting GitHub Copilot](/en/copilot/concepts/prompting)
 
   Learn how to interact with GitHub Copilot to get the best results.
@@ -53,13 +49,9 @@ Learn the core concepts that you'll need to understand GitHub Copilot.
 
   Learn about the AI models available for GitHub Copilot.
 
-* [Usage limits for GitHub Copilot](/en/copilot/concepts/usage-limits)
+* [GitHub Copilot billing and usage](/en/copilot/concepts/billing-and-usage)
 
-  Learn about GitHub Copilot usage limits and what to do if you hit a limit.
-
-* [GitHub Copilot billing](/en/copilot/concepts/billing)
-
-  Understand billing and usage for GitHub Copilot.
+  Understand billing and usage for GitHub Copilot, whether you use it individually or manage it for an organization or enterprise.
 
 * [Network settings for GitHub Copilot](/en/copilot/concepts/network-settings)
 

@@ -70,7 +70,7 @@ A billing budget was created for a business or organization. Includes details ab
 
 A billing budget was deleted for a business or organization. Includes details about the removed budget and any alerting settings.
 
-**Additional fields:** `alert_enabled`, `budget_limit_type`, `customer_id`, `exclude_cost_center_usage`, `expires_at`, `oauth_application_id`, `pricing_target_id`, `pricing_target_type`, `status`, `target_amount`, `target_type`, `user_programmatic_access_name`, `uuid`
+**Additional fields:** `actor_is_agent`, `alert_enabled`, `budget_limit_type`, `customer_id`, `exclude_cost_center_usage`, `expires_at`, `oauth_application_id`, `pricing_target_id`, `pricing_target_type`, `status`, `target_amount`, `target_type`, `user_programmatic_access_name`, `uuid`
 
 #### `billing.budget_update`
 
@@ -125,6 +125,12 @@ An enterprise owner was added to an enterprise.
 A billing manager was added to an enterprise.
 
 **Additional fields:** `actor_is_agent`, `name`, `oauth_application_id`
+
+#### `business.add_member`
+
+A member was added to an enterprise.
+
+**Additional fields:** `actor_is_agent`, `name`
 
 #### `business.add_support_entitlee`
 
@@ -190,7 +196,7 @@ A CSV export was requested on the "Risk" page.
 
 The cache retention policy for GitHub Actions was set for an enterprise.
 
-**Additional fields:** `name`
+**Additional fields:** `name`, `oauth_application_id`
 
 **Reference:** [Enforcing policies for GitHub Actions in your enterprise](/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise)
 
@@ -206,7 +212,7 @@ The cache storage policy for GitHub Actions was set for an enterprise.
 
 The policy for requiring approvals for workflows from public forks was changed for an enterprise.
 
-**Additional fields:** `name`, `policy`
+**Additional fields:** `name`, `oauth_application_id`, `policy`
 
 **Reference:** [Enforcing policies for GitHub Actions in your enterprise](/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise#enforcing-a-policy-for-fork-pull-requests-in-your-enterprise)
 
@@ -222,7 +228,7 @@ The policy for requiring approval for fork pull request workflows from collabora
 
 The retention period for GitHub Actions artifacts and logs was changed for an enterprise.
 
-**Additional fields:** `limit`, `name`
+**Additional fields:** `limit`, `name`, `oauth_application_id`
 
 **Reference:** [Enforcing policies for GitHub Actions in your enterprise](/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise#enforcing-a-policy-for-artifact-and-log-retention-in-your-enterprise)
 
@@ -230,7 +236,7 @@ The retention period for GitHub Actions artifacts and logs was changed for an en
 
 The default permissions granted to the GITHUB\_TOKEN when running workflows were changed for an enterprise.
 
-**Additional fields:** `name`, `oauth_application_id`
+**Additional fields:** `default_workflow_permissions_value`, `name`, `oauth_application_id`
 
 **Reference:** [Enforcing policies for GitHub Actions in your enterprise](/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise#enforcing-a-policy-for-workflow-permissions-in-your-enterprise)
 
@@ -246,7 +252,7 @@ The policy for fork pull request workflows was changed for an enterprise.
 
 The policy for allowing GitHub Actions to create and approve pull requests was changed for an enterprise.
 
-**Additional fields:** `name`, `oauth_application_id`
+**Additional fields:** `name`, `oauth_application_id`, `workflow_permission_can_approve_pr_value`
 
 **Reference:** [Enforcing policies for GitHub Actions in your enterprise](/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise#preventing-github-actions-from-creating-or-approving-pull-requests)
 
@@ -332,7 +338,7 @@ A codespace was stopped.
 
 A personal account's access and security setting for Codespaces were updated.
 
-**Additional fields:** `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`
 
 **Reference:** [Managing access to other repositories within your codespace](/en/codespaces/managing-codespaces-for-your-organization/managing-repository-access-for-your-organizations-codespaces)
 
@@ -362,7 +368,7 @@ A seat assignment that was previously pending cancellation was re-assigned and t
 
 A Copilot Business or Copilot Enterprise seat assignment was re-created for a user who already had a seat with no pending cancellation date, and the user will retain access to Copilot.
 
-**Additional fields:** `owner`, `owner_type`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `owner`, `owner_type`, `user_programmatic_access_name`
 
 #### `copilot.cfb_seat_assignment_unassigned`
 
@@ -381,6 +387,10 @@ A user's Copilot Business or Copilot Enterprise seat was canceled, and the user 
 A user's Copilot Business or Copilot Enterprise seat was canceled manually by GitHub staff, and the user no longer has access to Copilot.
 
 **Additional fields:** `owner`, `owner_type`, `seat_assignment`
+
+#### `copilot.code_review_organization_settings_updated`
+
+Copilot code review settings were updated for an organization.
 
 #### `copilot.code_review_repository_settings_updated`
 
@@ -460,7 +470,7 @@ Dismissal of Dependabot alerts was approved.
 
 Dismissal request for Dependabot alerts was canceled.
 
-**Additional fields:** `alert_number`, `number`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `alert_number`, `number`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
 **Reference:** [Dependabot alerts](/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts)
 
@@ -468,7 +478,7 @@ Dismissal request for Dependabot alerts was canceled.
 
 Dismissal of Dependabot alerts was requested.
 
-**Additional fields:** `alert_number`, `number`, `public_repo`
+**Additional fields:** `actor_is_agent`, `alert_number`, `number`, `oauth_application_id`, `public_repo`
 
 **Reference:** [Dependabot alerts](/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts)
 
@@ -476,7 +486,7 @@ Dismissal of Dependabot alerts was requested.
 
 Dismissal of Dependabot alerts was denied.
 
-**Additional fields:** `actor_is_agent`, `alert_number`, `number`, `public_repo`
+**Additional fields:** `actor_is_agent`, `alert_number`, `number`, `oauth_application_id`, `public_repo`
 
 **Reference:** [Dependabot alerts](/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts)
 
@@ -758,7 +768,7 @@ Token(s) for a GitHub App were revoked.
 
 A GitHub App was suspended.
 
-**Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /apps/maintaining-github-apps/suspending-a-github-app-installation
 
@@ -777,6 +787,12 @@ A GitHub App was unsuspended.
 **Additional fields:** `application_client_id`, `integration`, `name`
 
 **Reference:** /apps/maintaining-github-apps/suspending-a-github-app-installation
+
+#### `integration.update`
+
+A GitHub App was updated.
+
+**Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `oauth_application_id`
 
 ### integration\_installation
 
@@ -832,7 +848,7 @@ A GitHub App was unsuspended.
 
 Permissions for a GitHub App were updated.
 
-**Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `repository_selection`
+**Additional fields:** `actor_is_agent`, `application_client_id`, `events_added`, `events_removed`, `events_unchanged`, `integration`, `name`, `repository_selection`
 
 **Reference:** /apps/using-github-apps/approving-updated-permissions-for-a-github-app
 
@@ -1096,6 +1112,14 @@ An OAuth application was transferred from one account to another.
 
 **Reference:** /apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app
 
+#### `oauth_application.update_token_expiration`
+
+The token expiration setting for an OAuth application was updated.
+
+**Additional fields:** `oauth_application`, `oauth_application_id`
+
+**Reference:** /apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app
+
 ### oauth\_authorization
 
 #### `oauth_authorization.create`
@@ -1118,7 +1142,7 @@ An authorization for an OAuth application was deleted.
 
 An authorization for an OAuth application was updated.
 
-**Additional fields:** `oauth_application_name`
+**Additional fields:** `integration`, `oauth_application_name`, `topic`
 
 **Reference:** /apps/oauth-apps/using-oauth-apps/authorizing-oauth-apps
 
@@ -1194,7 +1218,7 @@ A CSV export was requested on the Risk page.
 
 The cache retention policy for GitHub Actions was set for an organization.
 
-**Additional fields:** `oauth_application_id`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /organizations/managing-organization-settings/managing-github-actions-settings-for-your-organization
 
@@ -1202,7 +1226,7 @@ The cache retention policy for GitHub Actions was set for an organization.
 
 The cache storage policy for GitHub Actions was set for an organization.
 
-**Additional fields:** `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /organizations/managing-organization-settings/managing-github-actions-settings-for-your-organization
 
@@ -1218,7 +1242,7 @@ The setting for requiring approvals for workflows from public forks was changed 
 
 The policy for requiring approval for fork pull request workflows from collaborators without write access to private repos was changed for an organization.
 
-**Additional fields:** `oauth_application_id`, `policy`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `policy`, `user_programmatic_access_name`
 
 **Reference:** /organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#enabling-workflows-for-private-repository-forks
 
@@ -1234,7 +1258,7 @@ The retention period for GitHub Actions artifacts and logs in an organization wa
 
 The default permissions granted to the GITHUB\_TOKEN when running workflows were changed for an organization.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `default_workflow_permissions_value`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#setting-the-permissions-of-the-github\_token-for-your-organization
 
@@ -1250,7 +1274,7 @@ The policy for workflows on private repository forks was changed.
 
 The policy for allowing GitHub Actions to create and approve pull requests was changed for an organization.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`, `workflow_permission_can_approve_pr_value`
 
 **Reference:** /organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#preventing-github-actions-from-creating-or-approving-pull-requests
 
@@ -1374,7 +1398,7 @@ A fine-grained personal access token was revoked by GitHub Advanced Security.
 
 Triggered when you delete a fine-grained personal access token.
 
-**Additional fields:** `explanation`, `user_programmatic_access_name`
+**Additional fields:** `explanation`, `oauth_application_id`, `user_programmatic_access_name`
 
 #### `personal_access_token.request_cancelled`
 
@@ -1484,7 +1508,7 @@ A user was added to or removed from a project board or had their permission leve
 
 A project's visibility was changed from public to private.
 
-**Additional fields:** `oauth_application_id`, `project_id`, `project_kind`, `project_name`, `public_project`
+**Additional fields:** `oauth_application_id`, `project_id`, `project_kind`, `project_name`, `public_project`, `user_programmatic_access_name`
 
 #### `project.visibility_public`
 
@@ -1544,7 +1568,7 @@ A view was created in a project board.
 
 A view was deleted in a project board.
 
-**Additional fields:** `oauth_application_id`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
 **Reference:** /issues/planning-and-tracking-with-projects/customizing-views-in-your-project/managing-your-views
 
@@ -1580,7 +1604,7 @@ An SSH key was removed from a user account or a deploy key was removed from a re
 
 A user account's SSH key or a repository's deploy key was unable to be unverified.
 
-**Additional fields:** `fingerprint`, `key`, `read_only`, `title`
+**Additional fields:** `fingerprint`, `key`, `public_repo`, `read_only`, `title`
 
 **Reference:** /authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys
 
@@ -1914,7 +1938,7 @@ A repository was renamed.
 
 The cache retention policy for GitHub Actions was set for a repository.
 
-**Additional fields:** `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
 **Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository
 
@@ -1922,7 +1946,7 @@ The cache retention policy for GitHub Actions was set for a repository.
 
 The cache storage policy for GitHub Actions was set for a repository.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `visibility`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
 **Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository
 
@@ -1954,7 +1978,7 @@ The retention period for GitHub Actions artifacts and logs in a repository was c
 
 The default permissions granted to the GITHUB\_TOKEN when running workflows were changed for a repository.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
+**Additional fields:** `actor_is_agent`, `default_workflow_permissions_value`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
 **Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#setting-the-permissions-of-the-github\_token-for-your-repository
 
@@ -1970,7 +1994,7 @@ Triggered when the policy for workflows on private repository forks is changed.
 
 The policy for allowing GitHub Actions to create and approve pull requests was changed for a repository.
 
-**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
+**Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`, `workflow_permission_can_approve_pr_value`
 
 **Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#preventing-github-actions-from-creating-or-approving-pull-requests
 
@@ -2134,29 +2158,43 @@ A repository ruleset was edited.
 
 A forwarded port was added to a sandbox.
 
+**Additional fields:** `sandbox_id`
+
 #### `sandbox.create`
 
 A sandbox was created.
+
+**Additional fields:** `sandbox_id`
 
 #### `sandbox.delete`
 
 A sandbox was deleted.
 
+**Additional fields:** `sandbox_id`
+
 #### `sandbox.generate_token`
 
 A token was generated for a sandbox.
+
+**Additional fields:** `sandbox_id`
 
 #### `sandbox.remove_port`
 
 A forwarded port was removed from a sandbox.
 
+**Additional fields:** `sandbox_id`
+
 #### `sandbox.resume`
 
 A sandbox was resumed.
 
+**Additional fields:** `sandbox_id`
+
 #### `sandbox.stop`
 
 A sandbox was stopped.
+
+**Additional fields:** `sandbox_id`
 
 ### security\_key
 
@@ -2404,6 +2442,8 @@ Triggered when you create a succession invitation.
 
 Triggered when you decline a succession invitation.
 
+**Additional fields:** `oauth_application_id`
+
 **Reference:** [Maintaining ownership continuity of your personal account's repositories](/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/maintaining-ownership-continuity-of-your-personal-accounts-repositories)
 
 #### `successor_invitation.revoke`
@@ -2543,6 +2583,42 @@ A site administrator was demoted to an ordinary user account.
 #### `user.destroy`
 
 A user deleted his or her account, triggering user.async\_delete.
+
+#### `user.disable_collaborators_only`
+
+The interaction limit for collaborators only was disabled for a personal account.
+
+**Additional fields:** `oauth_application_id`, `user_programmatic_access_name`
+
+#### `user.disable_contributors_only`
+
+The interaction limit for prior contributors only was disabled for a personal account.
+
+**Additional fields:** `oauth_application_id`
+
+#### `user.disable_sockpuppet_disallowed`
+
+The interaction limit for existing users only was disabled for a personal account.
+
+**Additional fields:** `oauth_application_id`, `user_programmatic_access_name`
+
+#### `user.enable_collaborators_only`
+
+The interaction limit for collaborators only was enabled for a personal account.
+
+**Additional fields:** `oauth_application_id`, `user_programmatic_access_name`
+
+#### `user.enable_contributors_only`
+
+The interaction limit for prior contributors only was enabled for a personal account.
+
+**Additional fields:** `oauth_application_id`, `user_programmatic_access_name`
+
+#### `user.enable_sockpuppet_disallowed`
+
+The interaction limit for existing users only was enabled for a personal account.
+
+**Additional fields:** `oauth_application_id`, `user_programmatic_access_name`
 
 #### `user.failed_login`
 

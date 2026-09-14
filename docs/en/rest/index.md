@@ -353,10 +353,6 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to manage a code quality configuration.
 
-* [REST API endpoints for AI Scan](/en/rest/code-scanning/ai-scan)
-
-  Use the REST API to get and update AI Scan settings for an organization.
-
 * [REST API endpoints for code scanning alert dismissal requests](/en/alert-dismissal-requests)
 
   Use the REST API to interact with code scanning alert dismissal requests from a repository.

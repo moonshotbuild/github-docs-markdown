@@ -395,6 +395,6 @@ If multiple skills provide conflicting instructions:
 
 ## See also
 
-* [Build your first Copilot-powered app](/en/copilot/how-tos/copilot-sdk/getting-started#create-custom-agents) - Define specialized AI personas
-* [Build your first Copilot-powered app](/en/copilot/how-tos/copilot-sdk/getting-started#step-4-add-a-custom-tool) - Build your own tools
+* [Build your first Copilot-powered app](/en/copilot/get-started/sdk-quickstart#create-custom-agents) - Define specialized AI personas
+* [Build your first Copilot-powered app](/en/copilot/get-started/sdk-quickstart#step-4-add-a-custom-tool) - Build your own tools
 * [Using MCP servers with the GitHub Copilot SDK](/en/copilot/how-tos/copilot-sdk/features/mcp) - Connect external tool providers

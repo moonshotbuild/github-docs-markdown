@@ -1,7 +1,7 @@
 ---
-source_path: "/en/copilot/concepts/billing/organizations-and-enterprises/fundamentals"
-title: "About billing for GitHub Copilot in organizations and enterprises"
-intro: "Learn about pricing and billing cycles for Copilot."
+source_path: "/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/seats-and-billing-cycles"
+title: "GitHub Copilot seats and billing cycles for organizations and enterprises"
+intro: "Learn about seats and billing cycles for Copilot."
 product: "GitHub Copilot"
 document_type: "article"
 breadcrumbs:
@@ -9,17 +9,17 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
-  - title: "Billing"
-    href: "/en/copilot/concepts/billing"
+  - title: "Billing and usage"
+    href: "/en/copilot/concepts/billing-and-usage"
   - title: "Organizations and enterprises"
-    href: "/en/copilot/concepts/billing/organizations-and-enterprises"
-  - title: "Fundamentals"
-    href: "/en/copilot/concepts/billing/organizations-and-enterprises/fundamentals"
+    href: "/en/copilot/concepts/billing-and-usage/organizations-and-enterprises"
+  - title: "Seats and billing cycles"
+    href: "/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/seats-and-billing-cycles"
 ---
 
-# About billing for GitHub Copilot in organizations and enterprises
+# GitHub Copilot seats and billing cycles for organizations and enterprises
 
-Learn about pricing and billing cycles for Copilot.
+Learn about seats and billing cycles for Copilot.
 
 ## Available plans
 
@@ -27,13 +27,6 @@ GitHub offers the following plans for organization accounts:
 
 * **Copilot Business** at $19 USD per user per month, includes 1,900 AI credits per user, and access to a broad model catalog.
 * **Copilot Enterprise** at $39 USD per user per month, includes 3,900 AI credits per user (GitHub Enterprise Cloud only), and priority access to new models and features.
-
-<!-- expires 2026-09-01 -->
-
-> \[!NOTE]
-> Existing customers receive higher included AI credits during the promotional period (June–August 2026). See [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing#promotional-amounts-for-existing-customers).
-
-<!-- end expires 2026-09-01 -->
 
 With GitHub Enterprise Cloud:
 
@@ -45,7 +38,7 @@ With GitHub Enterprise Cloud:
 
 Copilot usage is measured in AI credits under usage-based billing. Each license contributes AI credits to a shared enterprise pool, and usage beyond the pool is charged at $0.01 USD per AI credit. Code completions and next edit suggestions are not billed in AI credits and remain unlimited for all paid plans.
 
-For a full explanation of how AI credits work, including pooling, additional usage, and what happens when credits run out, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing).
+For a full explanation of how AI credits work, including pooling, additional usage, and what happens when credits run out, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing).
 
 ## Seat assignment
 
@@ -67,7 +60,7 @@ For more information, see [Making changes to your GitHub Copilot license](/en/co
 
 ## Managing costs
 
-You can control AI credits spend using budget controls at the user, cost center, and enterprise level. For an overview of how budget controls work, see [Budgets for usage-based billing](/en/copilot/concepts/billing/budgets-for-usage-based-billing). For guidance on choosing a configuration, see [Optimizing your budget configuration](/en/copilot/tutorials/budgets/optimizing-your-budget-configuration).
+You can control AI credits spend using budget controls at the user, cost center, and enterprise level. For an overview of how budget controls work, see [Budgets for usage-based billing](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/budgets). For guidance on choosing a configuration, see [Optimizing your budget configuration](/en/copilot/tutorials/budgets/optimizing-your-budget-configuration).
 
 ## Reference
 

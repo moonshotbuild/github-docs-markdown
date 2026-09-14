@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Endpoints available for GitHub App user access tokens
 
-Your GitHub App can make requests to the following REST endpoints with a user access token.
+<p>Your GitHub App can make requests to the following REST endpoints with a user access token.</p>
 
 ## actions
 
@@ -673,20 +673,6 @@ Your GitHub App can make requests to the following REST endpoints with a user ac
 
 * [`GET /repos/{owner}/{repo}/commits/{ref}/check-suites`](/en/rest/checks/suites#list-check-suites-for-a-git-reference)
 
-## classroom
-
-* [`GET /assignments/{assignment_id}`](/en/rest/classroom/classroom#closed---get-an-assignment)
-
-* [`GET /assignments/{assignment_id}/accepted_assignments`](/en/rest/classroom/classroom#closed---list-accepted-assignments-for-an-assignment)
-
-* [`GET /assignments/{assignment_id}/grades`](/en/rest/classroom/classroom#closed---get-assignment-grades)
-
-* [`GET /classrooms`](/en/rest/classroom/classroom#closed---list-classrooms)
-
-* [`GET /classrooms/{classroom_id}`](/en/rest/classroom/classroom#closed---get-a-classroom)
-
-* [`GET /classrooms/{classroom_id}/assignments`](/en/rest/classroom/classroom#closed---list-assignments-for-a-classroom)
-
 ## code-quality
 
 * [`GET /repos/{owner}/{repo}/code-quality/findings`](/en/rest/code-quality/code-quality#list-code-quality-findings-for-a-repository)
@@ -699,9 +685,9 @@ Your GitHub App can make requests to the following REST endpoints with a user ac
 
 ## code-scanning
 
-* [`GET /orgs/{org}/code-scanning/ai-scan`](/en/rest/code-scanning/ai-scan#get-the-ai-scan-setting-for-an-organization)
+* [`GET /orgs/{org}/code-scanning/ai-scan`](/en/rest/code-scanning/code-scanning#get-the-ai-scan-setting-for-an-organization)
 
-* [`PATCH /orgs/{org}/code-scanning/ai-scan`](/en/rest/code-scanning/ai-scan#update-the-ai-scan-setting-for-an-organization)
+* [`PATCH /orgs/{org}/code-scanning/ai-scan`](/en/rest/code-scanning/code-scanning#update-the-ai-scan-setting-for-an-organization)
 
 * [`GET /orgs/{org}/code-scanning/alerts`](/en/rest/code-scanning/code-scanning#list-code-scanning-alerts-for-an-organization)
 
