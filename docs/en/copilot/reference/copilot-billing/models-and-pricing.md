@@ -27,8 +27,8 @@ The cost of an interaction depends on two things: the model and the number of to
 
 How Copilot usage is tracked and billed depends on your plan type:
 
-* Individual plans (Copilot Free, Copilot Pro, Copilot Pro+, and Copilot Max) include GitHub AI Credits allowances that vary by plan. For details, see [Usage-based billing for individuals](/en/copilot/concepts/billing/usage-based-billing-for-individuals).
-* Copilot Business and Copilot Enterprise include per-user GitHub AI Credits allowances that are pooled at the billing entity level. For details, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing).
+* Individual plans (Copilot Free, Copilot Pro, Copilot Pro+, and Copilot Max) include GitHub AI Credits allowances that vary by plan. For details, see [Usage-based billing for individuals](/en/copilot/concepts/billing-and-usage/individuals/billing).
+* Copilot Business and Copilot Enterprise include per-user GitHub AI Credits allowances that are pooled at the billing entity level. For details, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing).
 
 When usage exceeds the included allowances for any Copilot plan, additional usage is billed in GitHub AI Credits at the per-token rates shown in the pricing tables below (1 AI credit = $0.01 USD).
 
@@ -42,7 +42,7 @@ All prices are **per 1 million tokens**.
 
 > \[!NOTE] Models with a **Long context** tier, offer extended capabilities and longer context windows. See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#models-with-extended-capabilities)
 
-GPT-5.6 Sol, GPT-5.6 Terra, GPT-5.6 Luna, and GPT-6 Astra include a cache write cost in addition to cached input. Earlier OpenAI models have no cache write cost.
+GPT-5.6 Sol, GPT-5.6 Terra, GPT-5.6 Luna, GPT-6 Astra, GPT-6 Luna, and GPT-6 Sol include a cache write cost in addition to cached input. Earlier OpenAI models have no cache write cost.
 
 | Model         | Release status | Category    | Tier         | Threshold (input tokens) |  Input | Cached input |    Cache write | Output |
 | ------------- | -------------- | ----------- | ------------ | ------------------------ | -----: | -----------: | -------------: | -----: |
@@ -79,6 +79,14 @@ GPT-5.6 Sol, GPT-5.6 Terra, GPT-5.6 Luna, and GPT-6 Astra include a cache write 
 |               |                |             |              |                          |        |              |                |        |
 | GPT-6 Astra   | GA             | Powerful    | Long context | > 272K                   | $20.00 |        $2.00 |         $25.00 | $75.00 |
 |               |                |             |              |                          |        |              |                |        |
+| GPT-6 Luna    | GA             | Lightweight | Default      | ≤ 272K                   |  $0.10 |        $0.01 |         $0.125 |  $0.50 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-6 Luna    | GA             | Lightweight | Long context | > 272K                   |  $0.20 |        $0.02 |          $0.25 |  $0.75 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-6 Sol     | GA             | Powerful    | Default      | ≤ 272K                   |  $2.00 |        $0.20 |          $2.50 | $10.00 |
+|               |                |             |              |                          |        |              |                |        |
+| GPT-6 Sol     | GA             | Powerful    | Long context | > 272K                   |  $4.00 |        $0.40 |          $5.00 | $15.00 |
+|               |                |             |              |                          |        |              |                |        |
 
 ### Anthropic
 
@@ -98,6 +106,8 @@ Anthropic models include a cache write cost in addition to cached input.
 | Claude Opus 4.8                       | GA             | Powerful  |  $5.00 |        $0.50 |       $6.25 | $25.00 |
 |                                       |                |           |        |              |             |        |
 | Claude Opus 5                         | GA             | Powerful  |  $5.00 |        $0.50 |       $6.25 | $25.00 |
+|                                       |                |           |        |              |             |        |
+| Claude Opus 5.5                       | GA             | Powerful  |  $4.00 |        $0.20 |       $5.00 | $20.00 |
 |                                       |                |           |        |              |             |        |
 | Claude Sonnet 5                       | GA             | Versatile |  $2.00 |        $0.20 |       $2.50 | $10.00 |
 |                                       |                |           |        |              |             |        |
@@ -152,6 +162,10 @@ Anthropic models include a cache write cost in addition to cached input.
 | Grok 4.6 | GA             | Versatile | Default      | ≤ 200K                   | $2.00 |        $0.50 |  $6.00 |
 |          |                |           |              |                          |       |              |        |
 | Grok 4.6 | GA             | Versatile | Long context | > 200K                   | $4.00 |        $1.00 | $12.00 |
+|          |                |           |              |                          |       |              |        |
+| Grok 4.7 | GA             | Versatile | Default      | ≤ 200K                   | $2.00 |        $0.50 |  $6.00 |
+|          |                |           |              |                          |       |              |        |
+| Grok 4.7 | GA             | Versatile | Long context | > 200K                   | $4.00 |        $1.00 | $12.00 |
 |          |                |           |              |                          |       |              |        |
 
 ### Moonshot AI

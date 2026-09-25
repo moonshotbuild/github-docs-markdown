@@ -109,7 +109,7 @@ Array of objects:
   * `secret_scanning_delegated_alert_dismissal`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_extended_metadata`: string, enum: `enabled`, `disabled`, `not_set`
   * `private_vulnerability_reporting`: string, enum: `enabled`, `disabled`, `not_set`
-  * `enforcement`: string, enum: `enforced`, `unenforced`
+  * `enforcement`: string, enum: `enforced`, `unenforced`, `enterprise_enforced`
   * `url`: string, format: uri
   * `html_url`: string, format: uri
   * `created_at`: string, format: date-time
@@ -253,7 +253,7 @@ code_security and secret_protection are deprecated values for this field. Prefer
 - **`enforcement`** (string)
   The enforcement status for a security configuration
   Default: `enforced`
-  Can be one of: `enforced`, `unenforced`
+  Can be one of: `enforced`, `unenforced`, `enterprise_enforced`
 
 ### HTTP response status codes
 
@@ -321,7 +321,7 @@ curl -L \
 * `secret_scanning_delegated_alert_dismissal`: string, enum: `enabled`, `disabled`, `not_set`
 * `secret_scanning_extended_metadata`: string, enum: `enabled`, `disabled`, `not_set`
 * `private_vulnerability_reporting`: string, enum: `enabled`, `disabled`, `not_set`
-* `enforcement`: string, enum: `enforced`, `unenforced`
+* `enforcement`: string, enum: `enforced`, `unenforced`, `enterprise_enforced`
 * `url`: string, format: uri
 * `html_url`: string, format: uri
 * `created_at`: string, format: date-time
@@ -404,7 +404,7 @@ Array of objects:
     * `secret_scanning_delegated_alert_dismissal`: string, enum: `enabled`, `disabled`, `not_set`
     * `secret_scanning_extended_metadata`: string, enum: `enabled`, `disabled`, `not_set`
     * `private_vulnerability_reporting`: string, enum: `enabled`, `disabled`, `not_set`
-    * `enforcement`: string, enum: `enforced`, `unenforced`
+    * `enforcement`: string, enum: `enforced`, `unenforced`, `enterprise_enforced`
     * `url`: string, format: uri
     * `html_url`: string, format: uri
     * `created_at`: string, format: date-time
@@ -589,7 +589,7 @@ code_security and secret_protection are deprecated values for this field. Prefer
 
 - **`enforcement`** (string)
   The enforcement status for a security configuration
-  Can be one of: `enforced`, `unenforced`
+  Can be one of: `enforced`, `unenforced`, `enterprise_enforced`
 
 ### HTTP response status codes
 
@@ -831,7 +831,7 @@ curl -L \
   * `secret_scanning_delegated_alert_dismissal`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_extended_metadata`: string, enum: `enabled`, `disabled`, `not_set`
   * `private_vulnerability_reporting`: string, enum: `enabled`, `disabled`, `not_set`
-  * `enforcement`: string, enum: `enforced`, `unenforced`
+  * `enforcement`: string, enum: `enforced`, `unenforced`, `enterprise_enforced`
   * `url`: string, format: uri
   * `html_url`: string, format: uri
   * `created_at`: string, format: date-time
@@ -874,7 +874,7 @@ OAuth app tokens and personal access tokens (classic) need the read:enterprise s
 
 - **`status`** (string)
   A comma-separated list of statuses. If specified, only repositories with these attachment statuses will be returned.
-Can be: all, attached, attaching, removed, enforced, failed, updating, removed_by_enterprise
+Can be: all, attached, attaching, removed, enforced, failed, updating, removed_by_enterprise, enterprise_enforced
   Default: `all`
 
 ### HTTP response status codes
@@ -900,7 +900,7 @@ curl -L \
 **Response schema (Status: 200):**
 
 Array of objects:
-  * `status`: string, enum: `attached`, `attaching`, `detached`, `removed`, `enforced`, `failed`, `updating`, `removed_by_enterprise`
+  * `status`: string, enum: `attached`, `attaching`, `detached`, `removed`, `enforced`, `failed`, `updating`, `removed_by_enterprise`, `enterprise_enforced`
   * `repository`: `Simple Repository`:
     * `id`: required, integer, format: int64
     * `node_id`: required, string
@@ -1279,7 +1279,8 @@ DELETE /orgs/{org}/code-security/configurations/detach
 Detach code security configuration(s) from a set of repositories.
 Repositories will retain their settings but will no longer be associated with the configuration.
 The authenticated user must be an administrator or security manager for the organization to use this endpoint.
-OAuth app tokens and personal access tokens (classic) need the write:org scope to use this endpoint.
+Repositories with active enterprise-enforced attachments are skipped unless the authenticated user can manage the enterprise's code security settings; the rest are detached. Inactive enterprise-enforced attachments, such as failed attachments, are detached. The request still returns 204 if every repository is skipped.
+OAuth app tokens and classic PATs require the write:org scope. Managing enterprise-enforced configurations also requires admin:enterprise and is not supported by fine-grained PATs or GitHub App access tokens.
 
 ### Parameters
 
@@ -1619,7 +1620,9 @@ POST /orgs/{org}/code-security/configurations/{configuration_id}/attach
 Attach a code security configuration to a set of repositories. If the repositories specified are already attached to a configuration, they will be re-attached to the provided configuration.
 If insufficient GHAS licenses are available to attach the configuration to a repository, only free features will be enabled.
 The authenticated user must be an administrator or security manager for the organization to use this endpoint.
-OAuth app tokens and personal access tokens (classic) need the write:org scope to use this endpoint.
+Directly applying an enterprise-enforced configuration also requires permission to manage the enterprise's code security settings. Without it, the request returns 403 and no repositories change.
+When applying a different configuration, repositories with active enterprise-enforced attachments are skipped unless the authenticated user can manage the enterprise's code security settings; the remaining repositories are updated. The request still returns 202 if every repository is skipped.
+OAuth app tokens and classic PATs require the write:org scope. Directly applying an enterprise-enforced configuration also requires admin:enterprise and is not supported by fine-grained PATs or GitHub App access tokens.
 
 ### Parameters
 
@@ -1648,6 +1651,8 @@ OAuth app tokens and personal access tokens (classic) need the write:org scope t
 ### HTTP response status codes
 
 - **202** - Accepted
+
+- **403** - Forbidden
 
 ### Code examples
 
@@ -1680,8 +1685,9 @@ PUT /orgs/{org}/code-security/configurations/{configuration_id}/defaults
 
 Sets a code security configuration as a default to be applied to new repositories in your organization.
 This configuration will be applied to the matching repository type (all, none, public, private and internal) by default when they are created.
-The authenticated user must be an administrator or security manager for the organization to use this endpoint.
-OAuth app tokens and personal access tokens (classic) need the write:org scope to use this endpoint.
+The authenticated user must be an administrator or security manager for the organization to use this endpoint. Setting an enterprise-enforced configuration as the default also requires permission to manage the enterprise's code security settings.
+A default set with this endpoint is an organization default, even if the configuration is owned or enforced by the enterprise. An enterprise-enforced configuration set as an enterprise-level default for the same repository visibility takes precedence.
+OAuth app tokens and classic PATs require the write:org scope; setting an enterprise-enforced configuration as the default also requires admin:enterprise. Fine-grained PATs and GitHub App access tokens cannot perform that action.
 
 ### Parameters
 
@@ -1768,7 +1774,7 @@ OAuth app tokens and personal access tokens (classic) need the read:org scope to
 
 - **`status`** (string)
   A comma-separated list of statuses. If specified, only repositories with these attachment statuses will be returned.
-Can be: all, attached, attaching, detached, removed, enforced, failed, updating, removed_by_enterprise
+Can be: all, attached, attaching, detached, removed, enforced, failed, updating, removed_by_enterprise, enterprise_enforced
   Default: `all`
 
 ### HTTP response status codes
@@ -1846,7 +1852,7 @@ curl -L \
 
 **Response schema (Status: 200):**
 
-* `status`: string, enum: `attached`, `attaching`, `detached`, `removed`, `enforced`, `failed`, `updating`, `removed_by_enterprise`
+* `status`: string, enum: `attached`, `attaching`, `detached`, `removed`, `enforced`, `failed`, `updating`, `removed_by_enterprise`, `enterprise_enforced`
 * `configuration`: object:
   * `id`: integer
   * `name`: string
@@ -1882,7 +1888,7 @@ curl -L \
   * `secret_scanning_delegated_alert_dismissal`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_extended_metadata`: string, enum: `enabled`, `disabled`, `not_set`
   * `private_vulnerability_reporting`: string, enum: `enabled`, `disabled`, `not_set`
-  * `enforcement`: string, enum: `enforced`, `unenforced`
+  * `enforcement`: string, enum: `enforced`, `unenforced`, `enterprise_enforced`
   * `url`: string, format: uri
   * `html_url`: string, format: uri
   * `created_at`: string, format: date-time

@@ -177,6 +177,8 @@ This endpoint triggers notifications. Creating content too quickly using this en
 
 - **422** - Unprocessable Entity if user is not a collaborator
 
+- **503** - Service unavailable
+
 ### Code examples
 
 #### Example
@@ -251,6 +253,8 @@ curl -L \
   * `description`: required, string
   * `color`: required, string
   * `default`: required, boolean
+  * `archived_by`: required, all of:
+    * **Simple User** (see above)
 * `milestone`: required, any of:
   * **null**
   * **Milestone**

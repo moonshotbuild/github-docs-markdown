@@ -981,8 +981,6 @@ An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a projec
 * `databaseId` (Int): Identifies the primary key from the database.
 * `duplicateOf` (Issue): A reference to the original issue that this issue has been marked as a duplicate of.
 * `editor` (Actor): The actor who edited the comment.
-* `eventRationales` ([IssueEventRationale!]!): A list of rationales associated with this issue's timeline events. Always
-returns an empty list; use the intent field on individual timeline events instead. **Deprecated:** Use the intent field on individual timeline events instead. This field is being removed and now always returns an empty list.
 * `fullDatabaseId` (BigInt): Identifies the primary key from the database as a BigInt.
 * `hovercard` (Hovercard!): The hovercard information for this issue.
   * `includeNotificationContexts` (Boolean): Whether or not to include notification contexts. Default: `true`.
@@ -1323,37 +1321,6 @@ The confidence level associated with an agent's issue event action.
 * `LOW`: Low confidence.
 * `MEDIUM`: Medium confidence.
 
-## IssueEventRationale - object
-
-Rationale text associated with an issue timeline event. Deprecated: the fields
-that return this type are being removed and now return null/empty. Use the
-intent field on individual timeline events instead.
-
-### Fields for `IssueEventRationale`
-
-* `actor` (Actor): The agent or user who produced the rationale.
-* `createdAt` (DateTime!): Identifies the date and time when the rationale was created.
-* `issueEvent` (IssueEventWithRationale): The issue timeline event this rationale is associated with.
-* `rationale` (String!): The reasoning or explanation text for the event.
-
-## IssueEventWithRationale - union
-
-An issue timeline event that may have an associated rationale. Deprecated: this
-union is only reachable via the deprecated IssueEventRationale type, which is
-being removed. Use the intent field on individual timeline events instead.
-
-### Possible types for `IssueEventWithRationale`
-
-* ClosedEvent
-* IssueFieldAddedEvent
-* IssueFieldChangedEvent
-* IssueFieldRemovedEvent
-* IssueTypeAddedEvent
-* IssueTypeChangedEvent
-* IssueTypeRemovedEvent
-* LabeledEvent
-* UnlabeledEvent
-
 ## IssueFieldAddedEvent - object
 
 Represents aissue_field_addedevent on a given issue.
@@ -1369,7 +1336,6 @@ Represents aissue_field_addedevent on a given issue.
 * `intent` (IssueUpdateIntent): The intent behind the agent's action, including rationale and confidence.
 * `issueField` (IssueFields): The issue field added.
 * `options` ([IssueFieldTimelineOption!]): The selected options for option-backed fields; single-select returns one option and multi-select returns many.
-* `rationale` (IssueEventRationale): The rationale associated with this event. Always returns null; use intent instead. **Deprecated:** Use intent instead. This field is being removed and now always returns null.
 * `value` (String): The value of the added field.
 
 ## IssueFieldChangedEvent - object
@@ -1391,7 +1357,6 @@ Represents aissue_field_changedevent on a given issue.
 * `previousColor` (String): The previous color if it was a single-select field.
 * `previousOptions` ([IssueFieldTimelineOption!]): The previous options for option-backed fields; single-select returns one option and multi-select returns many.
 * `previousValue` (String): The previous value of the field.
-* `rationale` (IssueEventRationale): The rationale associated with this event. Always returns null; use intent instead. **Deprecated:** Use intent instead. This field is being removed and now always returns null.
 
 ## IssueFieldCommon - interface
 
@@ -1561,7 +1526,6 @@ Represents aissue_field_removedevent on a given issue.
 * `intent` (IssueUpdateIntent): The intent behind the agent's action, including rationale and confidence.
 * `issueField` (IssueFields): The issue field removed.
 * `options` ([IssueFieldTimelineOption!]): The removed options for option-backed fields; single-select returns one option and multi-select returns many.
-* `rationale` (IssueEventRationale): The rationale associated with this event. Always returns null; use intent instead. **Deprecated:** Use intent instead. This field is being removed and now always returns null.
 
 ## IssueFields - union
 
@@ -2147,7 +2111,6 @@ Represents aissue_type_addedevent on a given issue.
 * `id` (ID!): The Node ID of the IssueTypeAddedEvent object.
 * `intent` (IssueUpdateIntent): The intent behind the agent's action, including rationale and confidence.
 * `issueType` (IssueType): The issue type added.
-* `rationale` (IssueEventRationale): The rationale associated with this event. Always returns null; use intent instead. **Deprecated:** Use intent instead. This field is being removed and now always returns null.
 
 ## IssueTypeChangedEvent - object
 
@@ -2163,7 +2126,6 @@ Represents aissue_type_changedevent on a given issue.
 * `intent` (IssueUpdateIntent): The intent behind the agent's action, including rationale and confidence.
 * `issueType` (IssueType): The issue type added.
 * `prevIssueType` (IssueType): The issue type removed.
-* `rationale` (IssueEventRationale): The rationale associated with this event. Always returns null; use intent instead. **Deprecated:** Use intent instead. This field is being removed and now always returns null.
 
 ## IssueTypeColor - enum
 
@@ -2231,7 +2193,6 @@ Represents aissue_type_removedevent on a given issue.
 * `id` (ID!): The Node ID of the IssueTypeRemovedEvent object.
 * `intent` (IssueUpdateIntent): The intent behind the agent's action, including rationale and confidence.
 * `issueType` (IssueType): The issue type removed.
-* `rationale` (IssueEventRationale): The rationale associated with this event. Always returns null; use intent instead. **Deprecated:** Use intent instead. This field is being removed and now always returns null.
 
 ## IssueTypeUpdateInput - input object
 
@@ -2341,7 +2302,6 @@ Represents alabeledevent on a given issue or pull request.
 * `intent` (IssueUpdateIntent): The intent behind the agent's action, including rationale and confidence.
 * `label` (Label!): Identifies the label associated with thelabeledevent.
 * `labelable` (Labelable!): Identifies the Labelable associated with the event.
-* `rationale` (IssueEventRationale): The rationale associated with this event. Always returns null; use intent instead. **Deprecated:** Use intent instead. This field is being removed and now always returns null.
 
 ## LabelEdge - object
 
@@ -2703,11 +2663,14 @@ Represents aparent_issue_removedevent on a given issue.
 
 A pending suggestion to assign a user to an issue.
 
+**Implements:** Node
+
 ### Fields for `PendingAssigneeSuggestion`
 
 * `actor` (Actor): The actor who suggested the assignee.
 * `assignee` (Assignee): The suggested assignee.
 * `createdAt` (DateTime!): When the suggestion was created.
+* `id` (ID!): The Node ID of the PendingAssigneeSuggestion object.
 * `rationale` (String): The rationale provided for suggesting this assignee.
 * `updatedAt` (DateTime): When the suggestion was last updated.
 
@@ -2715,12 +2678,15 @@ A pending suggestion to assign a user to an issue.
 
 A pending suggestion to close an issue.
 
+**Implements:** Node
+
 ### Fields for `PendingCloseSuggestion`
 
 * `actor` (Actor): The actor who suggested closing the issue.
 * `createdAt` (DateTime!): When the suggestion was created.
 * `duplicateOf` (IssueOrPullRequest): The issue or pull request the suggestion proposes marking this issue as a
 duplicate of. Only set when stateReason is DUPLICATE.
+* `id` (ID!): The Node ID of the PendingCloseSuggestion object.
 * `rationale` (String): The rationale provided for suggesting this close.
 * `stateReason` (IssueStateReason): The state reason the suggestion would apply when closing the issue.
 * `updatedAt` (DateTime): When the suggestion was last updated.
@@ -2729,10 +2695,13 @@ duplicate of. Only set when stateReason is DUPLICATE.
 
 A pending suggestion to set an issue field's value.
 
+**Implements:** Node
+
 ### Fields for `PendingFieldSuggestion`
 
 * `actor` (Actor): The actor who suggested the field value.
 * `createdAt` (DateTime!): When the suggestion was created.
+* `id` (ID!): The Node ID of the PendingFieldSuggestion object.
 * `issueField` (IssueFields): The issue field the suggestion targets.
 * `rationale` (String): The rationale provided for suggesting this field value.
 * `suggestedValue` (String): The suggested value for the field, as a string representation of the value originally provided.
@@ -2778,10 +2747,13 @@ A reference to a single pending issue suggestion to apply.
 
 A pending suggestion to add a label to an issue.
 
+**Implements:** Node
+
 ### Fields for `PendingLabelSuggestion`
 
 * `actor` (Actor): The actor who suggested the label.
 * `createdAt` (DateTime!): When the suggestion was created.
+* `id` (ID!): The Node ID of the PendingLabelSuggestion object.
 * `label` (Label): The suggested label.
 * `rationale` (String): The rationale provided for suggesting this label.
 * `updatedAt` (DateTime): When the suggestion was last updated.
@@ -2790,10 +2762,13 @@ A pending suggestion to add a label to an issue.
 
 A pending suggestion to change an issue's type.
 
+**Implements:** Node
+
 ### Fields for `PendingTypeSuggestion`
 
 * `actor` (Actor): The actor who suggested the type change.
 * `createdAt` (DateTime!): When the suggestion was created.
+* `id` (ID!): The Node ID of the PendingTypeSuggestion object.
 * `issueType` (IssueType): The suggested issue type.
 * `rationale` (String): The rationale provided for suggesting this type change.
 * `updatedAt` (DateTime): When the suggestion was last updated.
@@ -3339,7 +3314,6 @@ Represents anunlabeledevent on a given issue or pull request.
 * `intent` (IssueUpdateIntent): The intent behind the agent's action, including rationale and confidence.
 * `label` (Label!): Identifies the label associated with theunlabeledevent.
 * `labelable` (Labelable!): Identifies the Labelable associated with the event.
-* `rationale` (IssueEventRationale): The rationale associated with this event. Always returns null; use intent instead. **Deprecated:** Use intent instead. This field is being removed and now always returns null.
 
 ## UnlockedEvent - object
 

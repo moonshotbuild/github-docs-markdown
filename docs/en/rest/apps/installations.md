@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/apps/installations"
 ---
 
-# REST API endpoints for GitHub App installations
+# REST API endpoints for {% data variables.product.prodname\_github\_app %} installations
 
 Use the REST API to get information about GitHub App installations and perform actions within those installations.
 

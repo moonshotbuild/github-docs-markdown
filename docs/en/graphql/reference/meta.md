@@ -213,6 +213,11 @@ An object with an ID.
 * MilestonedEvent
 * ParentIssueAddedEvent
 * ParentIssueRemovedEvent
+* PendingAssigneeSuggestion
+* PendingCloseSuggestion
+* PendingFieldSuggestion
+* PendingLabelSuggestion
+* PendingTypeSuggestion
 * PinnedEvent
 * PinnedIssue
 * PinnedIssueComment

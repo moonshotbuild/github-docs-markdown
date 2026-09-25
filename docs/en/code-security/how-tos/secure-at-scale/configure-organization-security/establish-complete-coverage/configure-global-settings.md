@@ -96,7 +96,7 @@ You can customize several global settings for code scanning:
 
 * [Recommending the extended query suite for default setup](#recommending-the-extended-query-suite-for-default-setup)
 * [Enabling Copilot Autofix for CodeQL](#enabling-copilot-autofix-for-codeql)
-* [Enabling AI-powered security detections](#enabling-ai-powered-security-detections)
+* [Enabling AI Scan](#enabling-ai-scan)
 * [Expanding CodeQL analysis](#expanding-codeql-analysis)
 * [Continuing scans on inactive repositories](#continuing-scans-on-inactive-repositories)
 
@@ -108,9 +108,9 @@ Code scanning offers specific groups of CodeQL queries, called CodeQL query suit
 
 You can select **Copilot Autofix** to enable Copilot Autofix for all the repositories in your organization that use CodeQL default setup or CodeQL advanced setup. Copilot Autofix is an expansion of code scanning that suggests fixes for code scanning alerts. For more information, see [Application card: GitHub security and quality AI features](/en/code-security/responsible-use/security-and-quality-ai-features).
 
-### Enabling AI-powered security detections
+### Enabling AI Scan
 
-You can select **AI-powered security detections** to enable AI-powered security detections for all repositories in your organization that use CodeQL default setup. See [AI-powered security detections in pull requests](/en/code-security/concepts/code-scanning/ai-powered-security-detections).
+You can select **AI Scan** to enable AI Scan for eligible repositories in your organization where code scanning is enabled. Repositories inherit the organization setting, but repository administrators can opt out for individual repositories. See [AI Scan for pull requests](/en/code-security/concepts/code-scanning/ai-powered-security-detections).
 
 ### Expanding CodeQL analysis
 

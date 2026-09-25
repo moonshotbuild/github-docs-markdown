@@ -21,7 +21,7 @@ breadcrumbs:
 
 Control the availability of GitHub Copilot features and models for users granted a license by your organization.
 
-Copilot policies are also managed at the enterprise level. If your enterprise owner has selected a specific policy, such as enabling a feature everywhere, disabling it everywhere, or enabling it for selected organizations only, you cannot override that setting at the organization level. For information on how policies combine, see [GitHub Copilot policies for enterprises and organizations](/en/copilot/concepts/policies).
+Copilot policies are also managed at the enterprise level. If your enterprise owner has selected a specific policy, such as enabling a feature everywhere, disabling it everywhere, or enabling it for selected organizations only, you cannot override that setting at the organization level. For information on how policies combine, see [GitHub Copilot policies for enterprises and organizations](/en/copilot/concepts/enterprise/policies).
 
 ## Enabling Copilot features and models in your organization
 

@@ -90,6 +90,31 @@ Array of `Label`:
   * `description`: required, string or null
   * `color`: required, string
   * `default`: required, boolean
+  * `archived_at`: required, string or null, format: date-time
+  * `archived_by`: required, all of:
+    * **Simple User**
+      * `name`: string or null
+      * `email`: string or null
+      * `login`: required, string
+      * `id`: required, integer, format: int64
+      * `node_id`: required, string
+      * `avatar_url`: required, string, format: uri
+      * `gravatar_id`: required, string or null
+      * `url`: required, string, format: uri
+      * `html_url`: required, string, format: uri
+      * `followers_url`: required, string, format: uri
+      * `following_url`: required, string
+      * `gists_url`: required, string
+      * `starred_url`: required, string
+      * `subscriptions_url`: required, string, format: uri
+      * `organizations_url`: required, string, format: uri
+      * `repos_url`: required, string, format: uri
+      * `events_url`: required, string
+      * `received_events_url`: required, string, format: uri
+      * `type`: required, string
+      * `site_admin`: required, boolean
+      * `starred_at`: string
+      * `user_view_type`: string
 
 ## Add labels to an issue
 
@@ -446,6 +471,31 @@ curl -L \
 * `description`: required, string or null
 * `color`: required, string
 * `default`: required, boolean
+* `archived_at`: required, string or null, format: date-time
+* `archived_by`: required, all of:
+  * **Simple User**
+    * `name`: string or null
+    * `email`: string or null
+    * `login`: required, string
+    * `id`: required, integer, format: int64
+    * `node_id`: required, string
+    * `avatar_url`: required, string, format: uri
+    * `gravatar_id`: required, string or null
+    * `url`: required, string, format: uri
+    * `html_url`: required, string, format: uri
+    * `followers_url`: required, string, format: uri
+    * `following_url`: required, string
+    * `gists_url`: required, string
+    * `starred_url`: required, string
+    * `subscriptions_url`: required, string, format: uri
+    * `organizations_url`: required, string, format: uri
+    * `repos_url`: required, string, format: uri
+    * `events_url`: required, string
+    * `received_events_url`: required, string, format: uri
+    * `type`: required, string
+    * `site_admin`: required, boolean
+    * `starred_at`: string
+    * `user_view_type`: string
 
 ## Get a label
 

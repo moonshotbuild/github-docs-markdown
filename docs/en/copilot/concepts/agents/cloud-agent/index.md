@@ -44,7 +44,3 @@ Learn how Copilot cloud agent can carry out research, planning and coding tasks 
 * [Model Context Protocol (MCP) and GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/mcp-and-cloud-agent)
 
   Find out about using the Model Context Protocol (MCP) with Copilot cloud agent.
-
-* [Risks and mitigations for GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/risks-and-mitigations)
-
-  How do Copilot cloud agent's built-in security protections mitigate known risks?

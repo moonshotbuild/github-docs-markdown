@@ -36,3 +36,7 @@ Learn the core concepts that you'll need to understand GitHub Actions.
 * [Billing and usage](/en/actions/concepts/billing-and-usage)
 
   There are usage limits for GitHub Actions workflows. Usage charges apply to repositories that go beyond the amount of free minutes and storage for a repository.
+
+* [About Actions policies](/en/actions/concepts/about-actions-policies)
+
+  Govern how GitHub Actions workflows run within your repository, organization, or enterprise.

@@ -90,7 +90,7 @@ Security validation does not require a GitHub Advanced Security license.
 
 Coding agents consume **GitHub Actions minutes** and **AI credits**. Each agent session consumes AI credits based on the model used and the number of tokens processed.
 
-Within your included GitHub Actions minutes and AI credits, you can use agents without incurring additional costs. See [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing).
+Within your included GitHub Actions minutes and AI credits, you can use agents without incurring additional costs. See [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing).
 
 ## Partner agents
 

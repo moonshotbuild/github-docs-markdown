@@ -221,6 +221,10 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to interact with permissions for GitHub Actions.
 
+* [REST API endpoints for GitHub Actions policies](/en/rest/actions/policies)
+
+  Use the REST API to view and manage policies for GitHub Actions.
+
 * [REST API endpoints for GitHub Actions Secrets](/en/rest/actions/secrets)
 
   Use the REST API to interact with secrets in GitHub Actions.
@@ -509,15 +513,7 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to administer your enterprise.
 
-* [REST API endpoints for enterprise team memberships](/en/rest/enterprise-teams/enterprise-team-members)
-
-  Use the REST API to create and manage membership of enterprise teams in your GitHub enterprise.
-
-* [REST API endpoints for enterprise team organizations](/en/rest/enterprise-teams/enterprise-team-organizations)
-
-  Use the REST API to create and manage organization assignments for enterprise teams in your GitHub enterprise.
-
-* [REST API endpoints for enterprise teams](/en/rest/enterprise-teams/enterprise-teams)
+* [Enterprise teams](/en/enterprise-teams)
 
   Use the REST API to create and manage enterprise teams in your GitHub enterprise.
 

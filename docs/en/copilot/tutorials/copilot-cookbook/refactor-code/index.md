@@ -25,17 +25,9 @@ Discover ways that you can use GitHub Copilot to refactor your code.
 
   Copilot Chat can suggest ways to make your code easier to understand and maintain.
 
-* [Fixing lint errors](/en/copilot/tutorials/copilot-cookbook/refactor-code/fix-lint-errors)
-
-  Copilot Chat can suggest ways to fix issues identified by a code linter.
-
 * [Refactoring for performance optimization](/en/copilot/tutorials/copilot-cookbook/refactor-code/refactor-for-optimization)
 
   Copilot Chat can suggest ways to speed up slow-running code.
-
-* [Refactoring for environmental sustainability](/en/copilot/tutorials/copilot-cookbook/refactor-code/refactor-for-sustainability)
-
-  Copilot Chat can suggest ways to make code more environmentally friendly.
 
 * [Refactoring to implement a design pattern](/en/copilot/tutorials/copilot-cookbook/refactor-code/refactor-design-patterns)
 
@@ -44,10 +36,6 @@ Discover ways that you can use GitHub Copilot to refactor your code.
 * [Refactoring data access layers](/en/copilot/tutorials/copilot-cookbook/refactor-code/refactor-data-access-layers)
 
   Copilot Chat can suggest ways to decouple your data access code from your business logic, making an application easier to maintain and scale.
-
-* [Decoupling business logic from UI components](/en/copilot/tutorials/copilot-cookbook/refactor-code/decouple-business-logic)
-
-  Copilot Chat can help you separate your business logic from your user interface code, making it easier to maintain and scale your application.
 
 * [Handling cross-cutting concerns](/en/copilot/tutorials/copilot-cookbook/refactor-code/handle-cross-cutting)
 

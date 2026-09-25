@@ -39,7 +39,7 @@ Code Quality features that use AI models consume AI credits from your shared AI 
 
 Code Quality is a purpose-built product that uses a carefully tuned mix of models, prompts, and system behaviors to deliver consistent, high-quality analysis across a wide range of codebases. Model switching is not supported, as changing the model is likely to compromise the reliability and accuracy of analysis results.
 
-For more information about how AI credits work, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing).
+For more information about how AI credits work, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing).
 
 ### Active and unique committers
 
@@ -52,7 +52,7 @@ Code Quality is a standalone product with its own license, and does not consume 
 To understand your license usage, and which licenses you can free up, it helps to distinguish between active and unique committers. You can see the number of licenses you're using on the **Licensing** page for your organization or enterprise, shown as **"Consumed licenses"**:
 
 * **Active committers** are committers who contributed to at least one repository and have a GitHub Team or GitHub Enterprise license with your organization or enterprise. This includes members, enterprise-managed users, external collaborators, and people with a pending invitation to join your organization or enterprise.
-* **Unique committers** is the number of active committers who contributed only to one repository, or only to repositories in one organization. You can free up this number of licenses by disabling Code Quality for that repository or organization.
+* **Unique committers** is the number of active committers who contributed only to one repository, or only to repositories in one organization. You can free these licenses for the next billing period by disabling Code Quality for that repository or organization. This doesn't reduce your license charge for the current period.
 
 Users can contribute to multiple repositories or organizations. Usage is measured across the whole organization or enterprise to ensure that each member uses one license regardless of how many repositories or organizations the user contributes to.
 
@@ -60,4 +60,4 @@ Users can contribute to multiple repositories or organizations. Usage is measure
 
 * [Preventing code quality issues from reaching your default branch](/en/code-security/tutorials/improve-code-quality/catch-issues-before-merge)
 * [GitHub Actions billing](/en/billing/concepts/product-billing/github-actions)
-* [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing)
+* [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing)

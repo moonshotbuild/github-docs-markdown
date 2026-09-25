@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Endpoints available for fine-grained personal access tokens
 
-<p>Your fine-grained personal access token can make requests to the following REST endpoints.</p>
+Your {% data variables.product.pat\_v2 %} can make requests to the following REST endpoints.
 
 ## actions
 
@@ -116,6 +116,16 @@ breadcrumbs:
 * [`GET /orgs/{org}/actions/permissions/workflow`](/en/rest/actions/permissions#get-default-workflow-permissions-for-an-organization)
 
 * [`PUT /orgs/{org}/actions/permissions/workflow`](/en/rest/actions/permissions#set-default-workflow-permissions-for-an-organization)
+
+* [`GET /orgs/{org}/actions/policies`](/en/rest/actions/policies#list-organization-actions-policies)
+
+* [`POST /orgs/{org}/actions/policies`](/en/rest/actions/policies#create-an-organization-actions-policy)
+
+* [`GET /orgs/{org}/actions/policies/{policy_id}`](/en/rest/actions/policies#get-an-organization-actions-policy)
+
+* [`PUT /orgs/{org}/actions/policies/{policy_id}`](/en/rest/actions/policies#update-an-organization-actions-policy)
+
+* [`DELETE /orgs/{org}/actions/policies/{policy_id}`](/en/rest/actions/policies#delete-an-organization-actions-policy)
 
 * [`GET /orgs/{org}/actions/runner-groups`](/en/rest/actions/self-hosted-runner-groups#list-self-hosted-runner-groups-for-an-organization)
 
@@ -276,6 +286,16 @@ breadcrumbs:
 * [`GET /repos/{owner}/{repo}/actions/permissions/workflow`](/en/rest/actions/permissions#get-default-workflow-permissions-for-a-repository)
 
 * [`PUT /repos/{owner}/{repo}/actions/permissions/workflow`](/en/rest/actions/permissions#set-default-workflow-permissions-for-a-repository)
+
+* [`GET /repos/{owner}/{repo}/actions/policies`](/en/rest/actions/policies#list-repository-actions-policies)
+
+* [`POST /repos/{owner}/{repo}/actions/policies`](/en/rest/actions/policies#create-a-repository-actions-policy)
+
+* [`GET /repos/{owner}/{repo}/actions/policies/{policy_id}`](/en/rest/actions/policies#get-a-repository-actions-policy)
+
+* [`PUT /repos/{owner}/{repo}/actions/policies/{policy_id}`](/en/rest/actions/policies#update-a-repository-actions-policy)
+
+* [`DELETE /repos/{owner}/{repo}/actions/policies/{policy_id}`](/en/rest/actions/policies#delete-a-repository-actions-policy)
 
 * [`GET /repos/{owner}/{repo}/actions/runners`](/en/rest/actions/self-hosted-runners#list-self-hosted-runners-for-a-repository)
 

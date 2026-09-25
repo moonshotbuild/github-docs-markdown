@@ -35,8 +35,6 @@ Community members can upvote discussions and top-level comments inside discussio
 
 For more information about participation in discussions, see [Participating in a discussion](/en/discussions/collaborating-with-your-community-using-discussions/participating-in-a-discussion).
 
-> \[!TIP] You can also use Copilot Chat to generate ideas, outlines, or drafts for discussions, based on your pull requests and issues. See [Writing discussions or blog posts](/en/copilot/tutorials/copilot-cookbook/document-code/write-discussions-or-blog-posts).
-
 ## Prerequisites
 
 To collaborate with maintainers in repository discussions, a repository administrator or project maintainer must enable GitHub Discussions for the repository. For more information, see [Enabling or disabling GitHub Discussions for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository).

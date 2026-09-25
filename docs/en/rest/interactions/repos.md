@@ -429,6 +429,7 @@ curl -L \
 
 * `enabled`: required, boolean
 * `max_open_pull_requests`: required, integer, minimum: 1, maximum: 1000
+* `include_drafts`: boolean
 
 ## Update pull request creation cap for a repository
 
@@ -463,6 +464,9 @@ Only users with admin access to the repository can configure the cap.
 * **`max_open_pull_requests`** (integer)
   The maximum number of open pull requests a user can have at one time
 
+* **`include_drafts`** (boolean)
+  Whether draft pull requests count toward the pull request creation cap
+
 ### HTTP response status codes
 
 * **200** - OK
@@ -487,7 +491,8 @@ curl -L \
   https://api.github.com/repos/OWNER/REPO/interaction-limits/pulls/creation-cap \
   -d '{
   "enabled": true,
-  "max_open_pull_requests": 1
+  "max_open_pull_requests": 1,
+  "include_drafts": true
 }'
 ```
 

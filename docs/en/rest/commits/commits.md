@@ -85,6 +85,10 @@ ValueDescriptionexpired_keyThe key that made the signature is expired.not_signin
 
 - **409** - Conflict
 
+- **422** - Validation failed, or the endpoint has been spammed.
+
+- **429** - The request could not be processed due to heavy server load. Please try again.
+
 - **500** - Internal Error
 
 ### Code examples
@@ -340,6 +344,8 @@ Array of `Pull Request Simple`:
     * `description`: required, string
     * `color`: required, string
     * `default`: required, boolean
+    * `archived_by`: required, all of:
+      * **Simple User** (see above)
   * `milestone`: required, any of:
     * **null**
     * **Milestone**
@@ -623,6 +629,8 @@ ValueDescriptionexpired_keyThe key that made the signature is expired.not_signin
 
 - **422** - Validation failed, or the endpoint has been spammed.
 
+- **429** - The request could not be processed due to heavy server load. Please try again.
+
 - **500** - Internal Error
 
 - **503** - Service unavailable
@@ -820,6 +828,8 @@ ValueDescriptionexpired_keyThe key that made the signature is expired.not_signin
 - **200** - OK
 
 - **404** - Resource not found
+
+- **422** - Validation failed, or the endpoint has been spammed.
 
 - **500** - Internal Error
 

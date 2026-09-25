@@ -197,6 +197,10 @@ Automate, customize, and execute your software development workflows right in yo
 
   There are usage limits for GitHub Actions workflows. Usage charges apply to repositories that go beyond the amount of free minutes and storage for a repository.
 
+* [About Actions policies](/en/actions/concepts/about-actions-policies)
+
+  Govern how GitHub Actions workflows run within your repository, organization, or enterprise.
+
 * [Using workflow templates](/en/actions/how-tos/write-workflows/use-workflow-templates)
 
   GitHub provides workflow templates for a variety of languages and tooling.
@@ -589,6 +593,10 @@ Automate, customize, and execute your software development workflows right in yo
 
   You can use the tools in GitHub Actions to debug your workflows.
 
+* [Controlling who can execute GitHub Actions workflows](/en/actions/how-tos/administer/control-workflow-execution)
+
+  Control who can trigger GitHub Actions workflows and which events are permitted to run them across an enterprise, organization, and repository.
+
 * [Viewing GitHub Actions metrics](/en/actions/how-tos/administer/view-metrics)
 
   You can view metrics to monitor where your organization or repositories use GitHub Actions and how they are performing.
@@ -667,7 +675,7 @@ Automate, customize, and execute your software development workflows right in yo
 
 * [Securely using pull\_request\_target](/en/actions/reference/security/securely-using-pull_request_target)
 
-  Learn about the security risks of the `pull_request_target event`.
+  Learn about the security risks of the `pull_request_target` event.
 
 * [Secrets reference](/en/actions/reference/security/secrets)
 

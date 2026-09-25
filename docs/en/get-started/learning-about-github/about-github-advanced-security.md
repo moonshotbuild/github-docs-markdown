@@ -40,7 +40,7 @@ You get the following features with GitHub Code Security:
 
 * **Copilot Autofix**: Get automatically generated fixes for code scanning alerts.
 
-* **AI-powered security detections**: Find vulnerabilities in languages and frameworks not covered by CodeQL with an AI-based scanning engine that runs during pull request review.
+* **AI Scan**: Find vulnerabilities in languages and frameworks not covered by CodeQL with an AI-based scanning engine that runs during pull request review.
 
 * **Security campaigns**: Reduce security debt at scale.
 

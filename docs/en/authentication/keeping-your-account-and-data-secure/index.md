@@ -83,7 +83,7 @@ To protect your personal information, you should keep both your account on GitHu
 
 * [Sudo mode](/en/authentication/keeping-your-account-and-data-secure/sudo-mode)
 
-  To confirm access to your account before you perform a potentially sensitive action, GitHub.com prompts for authentication.
+  To confirm access to your account before you perform a protected high-impact action, GitHub.com prompts for authentication.
 
 * [Preventing unauthorized access](/en/authentication/keeping-your-account-and-data-secure/preventing-unauthorized-access)
 

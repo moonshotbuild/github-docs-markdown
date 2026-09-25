@@ -789,6 +789,8 @@ curl -L \
     * `description`: required, string
     * `color`: required, string
     * `default`: required, boolean
+    * `archived_by`: required, all of:
+      * **Simple User** (see above)
   * `milestone`: required, any of:
     * **null**
     * **Milestone**

@@ -21,6 +21,8 @@ breadcrumbs:
 
 Learn how to plan an effective enablement process to drive Copilot adoption.
 
+Use this guide for an initial organization-wide rollout: granting licenses, helping developers set up their environments, and providing broad training and support. For a focused rollout of agentic tools to an established team, see [Driving team adoption of agentic GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/enable-developers/drive-team-agentic-adoption).
+
 An effective enablement process is essential to drive adoption of Copilot in your organization. This process should be tailored to your organization's needs and goals, and should be designed to help your teams understand how to use Copilot effectively.
 
 Your enablement process may evolve based on feedback and results. You should regularly review and update the process to ensure it continues to meet your organization's needs.
@@ -80,6 +82,7 @@ GitHub documentation that you may want to feature in your onboarding materials i
 
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)
 * [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Rolling out the GitHub Copilot app to your team](/en/copilot/tutorials/roll-out-at-scale/enable-developers/copilot-app-for-teams)
 * [Getting code suggestions in your IDE with GitHub Copilot](/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions)
 * [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/chat-with-copilot/chat-in-ide)
 

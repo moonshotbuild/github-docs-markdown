@@ -31,16 +31,16 @@ A hook is a callback you register once when creating a session. The SDK invokes 
 
 ![Diagram: Flowchart showing the described process.](/assets/images/help/copilot/copilot-sdk/features-hooks-diagram-0.png)
 
-| Hook                                                                                             | When it fires                       | What you can do                            |
-| ------------------------------------------------------------------------------------------------ | ----------------------------------- | ------------------------------------------ |
-| [Session lifecycle hooks](/en/copilot/how-tos/copilot-sdk/hooks/session-lifecycle#session-start) | Session begins (new or resumed)     | Inject context, load preferences           |
-| [User prompt submitted hook](/en/copilot/how-tos/copilot-sdk/hooks/user-prompt-submitted)        | User sends a message                | Rewrite prompts, add context, filter input |
-| [User prompt transformed hook](/en/copilot/how-tos/copilot-sdk/hooks/user-prompt-transformed)    | Runtime builds the model prompt     | Inspect or replace model-facing content    |
-| [Pre-tool use hook](/en/copilot/how-tos/copilot-sdk/hooks/pre-tool-use)                          | Before a tool executes              | Allow / deny / modify the call             |
-| [Post-tool use hook](/en/copilot/how-tos/copilot-sdk/hooks/post-tool-use)                        | After a tool returns (success only) | Transform results, redact secrets, audit   |
-| [Post-tool use hook](/en/copilot/how-tos/copilot-sdk/hooks/post-tool-use#failure-variant)        | After a tool returns a failure      | Inject retry guidance, log failures        |
-| [Session lifecycle hooks](/en/copilot/how-tos/copilot-sdk/hooks/session-lifecycle#session-end)   | Session ends                        | Clean up, record metrics                   |
-| [Error handling hook](/en/copilot/how-tos/copilot-sdk/hooks/error-handling)                      | An error is raised                  | Custom logging, retry logic, alerts        |
+| Hook                                                                                                  | When it fires                       | What you can do                            |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------- | ------------------------------------------ |
+| [Session lifecycle hooks](/en/copilot/how-tos/copilot-sdk/hooks/session-lifecycle#session-start-hook) | Session begins (new or resumed)     | Inject context, load preferences           |
+| [User prompt submitted hook](/en/copilot/how-tos/copilot-sdk/hooks/user-prompt-submitted)             | User sends a message                | Rewrite prompts, add context, filter input |
+| [User prompt transformed hook](/en/copilot/how-tos/copilot-sdk/hooks/user-prompt-transformed)         | Runtime builds the model prompt     | Inspect or replace model-facing content    |
+| [Pre-tool use hook](/en/copilot/how-tos/copilot-sdk/hooks/pre-tool-use)                               | Before a tool executes              | Allow / deny / modify the call             |
+| [Post-tool use hook](/en/copilot/how-tos/copilot-sdk/hooks/post-tool-use)                             | After a tool returns (success only) | Transform results, redact secrets, audit   |
+| [Post-tool use hook](/en/copilot/how-tos/copilot-sdk/hooks/post-tool-use#failure-variant)             | After a tool returns a failure      | Inject retry guidance, log failures        |
+| [Session lifecycle hooks](/en/copilot/how-tos/copilot-sdk/hooks/session-lifecycle#session-end-hook)   | Session ends                        | Clean up, record metrics                   |
+| [Error handling hook](/en/copilot/how-tos/copilot-sdk/hooks/error-handling)                           | An error is raised                  | Custom logging, retry logic, alerts        |
 
 All hooks are **optional**—register only the ones you need. Returning `null` (or the language equivalent) from any hook tells the SDK to continue with default behavior.
 

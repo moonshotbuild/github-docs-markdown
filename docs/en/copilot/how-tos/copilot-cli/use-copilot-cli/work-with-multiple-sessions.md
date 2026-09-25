@@ -205,5 +205,5 @@ For the full list of sidebar settings and their defaults, see [GitHub Copilot CL
 
 Further reading:
 
-* [About GitHub Copilot CLI session data](/en/copilot/concepts/agents/copilot-cli/chronicle)
+* [About GitHub Copilot session data](/en/copilot/concepts/security-governance-and-network-settings/session-data)
 * [GitHub Copilot CLI command reference](/en/copilot/reference/copilot-cli-reference/cli-command-reference#session-status-indicators)

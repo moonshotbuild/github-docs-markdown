@@ -55,6 +55,6 @@ For large organizations, we recommend using **security configurations** to enabl
 
 To get started:
 
-* For repositories, see [Enabling validity checks for your repository](/en/code-security/how-tos/secure-your-secrets/customize-leak-detection/enable-validity-checks)
+* For repositories, see [Enabling validity checks for your repository](/en/code-security/how-tos/secure-your-secrets/customize-leak-detection/enable-validity-checks) and [Enabling extended metadata checks for your repository](/en/code-security/how-tos/secure-your-secrets/customize-leak-detection/enable-metadata-checks)
 * For an organization, see [Creating a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/create-custom-configuration)
 * For an enterprise, see [Creating a custom security configuration for your enterprise](/en/code-security/how-tos/secure-at-scale/configure-enterprise-security/establish-complete-coverage/create-custom-configuration)

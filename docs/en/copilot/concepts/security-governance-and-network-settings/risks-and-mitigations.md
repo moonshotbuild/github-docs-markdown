@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/agents/cloud-agent/risks-and-mitigations"
+source_path: "/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations"
 title: "Risks and mitigations for GitHub Copilot cloud agent"
 intro: "How do Copilot cloud agent's built-in security protections mitigate known risks?"
 product: "GitHub Copilot"
@@ -9,12 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
-  - title: "Agents"
-    href: "/en/copilot/concepts/agents"
-  - title: "Cloud agent"
-    href: "/en/copilot/concepts/agents/cloud-agent"
+  - title: "Security, governance, and network settings"
+    href: "/en/copilot/concepts/security-governance-and-network-settings"
   - title: "Risks and mitigations"
-    href: "/en/copilot/concepts/agents/cloud-agent/risks-and-mitigations"
+    href: "/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations"
 ---
 
 # Risks and mitigations for GitHub Copilot cloud agent

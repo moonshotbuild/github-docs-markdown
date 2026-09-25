@@ -41,6 +41,10 @@ Use the REST API to interact with GitHub Actions for an organization or reposito
 
   Use the REST API to interact with permissions for GitHub Actions.
 
+* [REST API endpoints for GitHub Actions policies](/en/rest/actions/policies)
+
+  Use the REST API to view and manage policies for GitHub Actions.
+
 * [REST API endpoints for GitHub Actions Secrets](/en/rest/actions/secrets)
 
   Use the REST API to interact with secrets in GitHub Actions.

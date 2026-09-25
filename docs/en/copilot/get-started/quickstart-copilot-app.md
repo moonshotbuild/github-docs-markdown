@@ -53,7 +53,7 @@ In this quickstart, you will:
 
 To work on code, you need at least one project connected to the app. A project can be a folder already on your machine, including a repository you've already cloned locally, or a repository you clone from GitHub or another remote Git host such as Azure DevOps. Connecting a project unlocks the core app workflow: reading code, making edits, and opening pull requests from agent sessions. If you skipped project setup during onboarding, or want to add more projects later:
 
-1. Click the **+** button in the sidebar next to "Sessions".
+1. In the sidebar, next to **Projects**, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-plus" aria-label="Add project" role="img"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>.
 2. Under **Add project from**, choose one of the following:
 
 * **Local folder or repository** — Select a folder already on your machine, including one that contains a repository you've already cloned locally.
@@ -62,7 +62,7 @@ To work on code, you need at least one project connected to the app. A project c
 
 ## Making your first code changes
 
-1. Click **+** next to **Sessions**, then choose a connected folder or repository under **Start session in**.
+1. Under **Projects** in the sidebar, find the connected folder or repository you want to use, then click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-plus" aria-label="Start a new session" role="img"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg> next to it.
 
 2. Select a session mode from the dropdown below the prompt field—for example, **Interactive** to work collaboratively with the agent.
 
@@ -86,11 +86,12 @@ To work on code, you need at least one project connected to the app. A project c
 
 The sidebar gives you access to the main areas of the app:
 
+* **New** — Start a new agent session.
 * **[My work](https://github.com/copilot/app/launch?open=ghapp%3A%2F%2Fmywork)** — Browse and filter issues and pull requests from your repositories, check CI status, and leave reviews.
 * **[Automations](https://github.com/copilot/app/launch?open=ghapp%3A%2F%2Fautomations)** — Saved agent tasks that run on a schedule or on demand.
 * **Customize** — Discover and manage plugins, skills, MCP servers, and canvases.
 * **Search** — Search across your repositories directly from the app.
-* **Sessions** — Active agent sessions, grouped by project.
+* **Projects** — View connected projects and their active agent sessions, or start a new session for a project.
 * **Chats** — General conversations that do not require a dedicated branch or workspace.
 
 ## Next steps

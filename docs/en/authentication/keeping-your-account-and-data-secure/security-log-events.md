@@ -356,7 +356,7 @@ A Copilot Business or Copilot Enterprise seat assignment was newly created for a
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `owner`, `owner_type`, `user_programmatic_access_name`
 
-**Reference:** [What is GitHub Copilot?](/en/copilot/overview-of-github-copilot/about-github-copilot-for-business)
+**Reference:** [About GitHub Copilot](/en/copilot/overview-of-github-copilot/about-github-copilot-for-business)
 
 #### `copilot.cfb_seat_assignment_refreshed`
 

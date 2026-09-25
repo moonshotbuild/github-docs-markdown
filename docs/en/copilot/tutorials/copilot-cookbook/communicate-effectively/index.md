@@ -36,7 +36,3 @@ Discover ways that you can use GitHub Copilot to communicate effectively with yo
 * [Creating diagrams](/en/copilot/tutorials/copilot-cookbook/communicate-effectively/creating-diagrams)
 
   GitHub Copilot Chat can help you create diagrams to better understand your data and communicate insights.
-
-* [Generating tables](/en/copilot/tutorials/copilot-cookbook/communicate-effectively/generating-tables)
-
-  Copilot Chat can help you create tables to organize information and present it clearly.

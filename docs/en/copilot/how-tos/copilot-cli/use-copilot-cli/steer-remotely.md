@@ -25,7 +25,7 @@ Remote control lets you connect to a running Copilot CLI session from any browse
 
 This article explains how to enable and use remote control. For more conceptual information, see [About remote control of GitHub Copilot CLI sessions](/en/copilot/concepts/agents/copilot-cli/about-remote-control).
 
-Remote access is different from session syncing. Your Copilot CLI sessions are synced to your GitHub account by default, and synced sessions appear as view-only on GitHub.com and GitHub Mobile. These sessions are not steerable. To steer a session remotely, you must enable remote control. For more information about session syncing, see [About GitHub Copilot CLI session data](/en/copilot/concepts/agents/copilot-cli/chronicle#session-syncing).
+Remote access is different from session syncing. Your Copilot CLI sessions are synced to your GitHub account by default, and synced sessions appear as view-only on GitHub.com and GitHub Mobile. These sessions are not steerable. To steer a session remotely, you must enable remote control. For more information about session syncing, see [About GitHub Copilot session data](/en/copilot/concepts/security-governance-and-network-settings/session-data#session-syncing).
 
 ## Prerequisites
 
@@ -138,7 +138,7 @@ A Copilot CLI session is available in GitHub Mobile as soon as you enable remote
 
 1. In an interactive session, enter the `/remote` slash command to redisplay the remote session details.
 
-2. Press <kbd>Ctrl</kbd>+<kbd>E</kbd> to toggle on/off display of a QR code.
+2. Press <kbd>Ctrl</kbd>+<kbd>O</kbd> (letter O) to toggle on/off display of a QR code.
 
    > \[!NOTE]
    > This keyboard shortcut expands/collapses all details in the session conversation, not just the QR code. It only works if the input field is currently empty.

@@ -27,6 +27,10 @@ Manage GitHub Copilot for your team by configuring settings, monitoring usage, a
 
   Manage and govern GitHub Copilot across your enterprise by controlling licensing and access, setting policies and guardrails, and monitoring adoption and usage.
 
+* [Managing requests for additional Copilot budget](/en/copilot/how-tos/administer-copilot/manage-budget-requests)
+
+  Approve, adjust, or deny requests from members who have used all the AI credits in their budget.
+
 * [Managing MCP usage in your company](/en/copilot/how-tos/administer-copilot/manage-mcp-usage)
 
   Organization and enterprise owners can control the availability of MCP servers for their developers using MCP management features.

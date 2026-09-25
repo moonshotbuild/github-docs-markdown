@@ -198,6 +198,9 @@ Array of `Event`:
         * `description`: required, string or null
         * `color`: required, string
         * `default`: required, boolean
+        * `archived_at`: required, string or null, format: date-time
+        * `archived_by`: required, all of:
+          * **Simple User**
   * **IssuesEvent**
     * `action`: required, string
     * `issue`: required, `Issue`:

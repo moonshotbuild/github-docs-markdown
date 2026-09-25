@@ -61,10 +61,6 @@ Learn how you can use GitHub Copilot in your terminal.
 
   The /research slash command turns Copilot into your research assistant, gathering in-depth information and insights on a topic.
 
-* [About GitHub Copilot CLI session data](/en/copilot/concepts/agents/copilot-cli/chronicle)
-
-  Your Copilot CLI sessions build a searchable history of everything you have worked on. Query past sessions with natural language, generate standup reports, get personalized tips, and resume previous work.
-
 * [About the rubber duck agent](/en/copilot/concepts/agents/copilot-cli/rubber-duck)
 
   The rubber duck agent is a built-in critic that gives Copilot a constructive second opinion on its own plans, code, and tests—using a different AI model from the one driving your session.

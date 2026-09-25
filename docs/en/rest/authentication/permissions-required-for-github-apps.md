@@ -40,29 +40,6 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /enterprises/{enterprise}/copilot/metrics/reports/users-1-day` | read | UAT, IAT | ✗ |
 | `GET /enterprises/{enterprise}/copilot/metrics/reports/users-28-day/latest` | read | UAT, IAT | ✗ |
 
-## Enterprise permissions for "Enterprise teams"
-
-| Endpoint | Access | Tokens | Additional Permissions |
-|----------|--------|--------|------------------------|
-| `POST /enterprises/{enterprise}/teams` | write | UAT, IAT | ✗ |
-| `POST /enterprises/{enterprise}/teams/{enterprise-team}/memberships/add` | write | UAT, IAT | ✗ |
-| `POST /enterprises/{enterprise}/teams/{enterprise-team}/memberships/remove` | write | UAT, IAT | ✗ |
-| `PUT /enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username}` | write | UAT, IAT | ✗ |
-| `DELETE /enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username}` | write | UAT, IAT | ✗ |
-| `POST /enterprises/{enterprise}/teams/{enterprise-team}/organizations/add` | write | UAT, IAT | ✗ |
-| `POST /enterprises/{enterprise}/teams/{enterprise-team}/organizations/remove` | write | UAT, IAT | ✗ |
-| `PUT /enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org}` | write | UAT, IAT | ✗ |
-| `DELETE /enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org}` | write | UAT, IAT | ✗ |
-| `PATCH /enterprises/{enterprise}/teams/{team_slug}` | write | UAT, IAT | ✗ |
-| `DELETE /enterprises/{enterprise}/teams/{team_slug}` | write | UAT, IAT | ✗ |
-| `GET /enterprises/{enterprise}/members/{username}/teams` | read | UAT, IAT | ✗ |
-| `GET /enterprises/{enterprise}/teams` | read | UAT, IAT | ✗ |
-| `GET /enterprises/{enterprise}/teams/{enterprise-team}/memberships` | read | UAT, IAT | ✗ |
-| `GET /enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username}` | read | UAT, IAT | ✗ |
-| `GET /enterprises/{enterprise}/teams/{enterprise-team}/organizations` | read | UAT, IAT | ✗ |
-| `GET /enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org}` | read | UAT, IAT | ✗ |
-| `GET /enterprises/{enterprise}/teams/{team_slug}` | read | UAT, IAT | ✗ |
-
 ## Organization permissions for "API Insights"
 
 | Endpoint | Access | Tokens | Additional Permissions |
@@ -107,6 +84,11 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}` | write | UAT, IAT | ✓ |
 | `DELETE /orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}` | write | UAT, IAT | ✓ |
 | `PUT /orgs/{org}/actions/permissions/workflow` | write | UAT, IAT | ✗ |
+| `GET /orgs/{org}/actions/policies` | write | UAT, IAT | ✗ |
+| `POST /orgs/{org}/actions/policies` | write | UAT, IAT | ✗ |
+| `GET /orgs/{org}/actions/policies/{policy_id}` | write | UAT, IAT | ✗ |
+| `PUT /orgs/{org}/actions/policies/{policy_id}` | write | UAT, IAT | ✗ |
+| `DELETE /orgs/{org}/actions/policies/{policy_id}` | write | UAT, IAT | ✗ |
 | `PATCH /orgs/{org}/code-scanning/ai-scan` | write | UAT, IAT | ✗ |
 | `POST /orgs/{org}/code-security/configurations` | write | UAT, IAT | ✗ |
 | `DELETE /orgs/{org}/code-security/configurations/detach` | write | UAT, IAT | ✗ |
@@ -650,7 +632,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 
 | Endpoint | Access | Tokens | Additional Permissions |
 |----------|--------|--------|------------------------|
-| `POST /orgs/{org}/repos` | write | UAT, IAT | ✗ |
+| `POST /orgs/{org}/repos` | write | UAT, IAT | ✓ |
 | `PUT /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}` | write | UAT, IAT | ✓ |
 | `DELETE /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}` | write | UAT, IAT | ✓ |
 | `PATCH /repos/{owner}/{repo}` | write | UAT, IAT | ✗ |
@@ -664,6 +646,11 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /repos/{owner}/{repo}/actions/permissions/fork-pr-workflows-private-repos` | write | UAT, IAT | ✗ |
 | `PUT /repos/{owner}/{repo}/actions/permissions/selected-actions` | write | UAT, IAT | ✗ |
 | `PUT /repos/{owner}/{repo}/actions/permissions/workflow` | write | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/actions/policies` | write | UAT, IAT | ✗ |
+| `POST /repos/{owner}/{repo}/actions/policies` | write | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/actions/policies/{policy_id}` | write | UAT, IAT | ✗ |
+| `PUT /repos/{owner}/{repo}/actions/policies/{policy_id}` | write | UAT, IAT | ✗ |
+| `DELETE /repos/{owner}/{repo}/actions/policies/{policy_id}` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/actions/runners/generate-jitconfig` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/actions/runners/registration-token` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/actions/runners/remove-token` | write | UAT, IAT | ✗ |
@@ -749,7 +736,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `POST /repos/{template_owner}/{template_repo}/generate` | write | UAT, IAT | ✓ |
 | `PUT /teams/{team_id}/repos/{owner}/{repo}` | write | UAT, IAT | ✓ |
 | `DELETE /teams/{team_id}/repos/{owner}/{repo}` | write | UAT, IAT | ✓ |
-| `POST /user/repos` | write | UAT | ✗ |
+| `POST /user/repos` | write | UAT | ✓ |
 | `PATCH /user/repository_invitations/{invitation_id}` | write | UAT | ✗ |
 | `DELETE /user/repository_invitations/{invitation_id}` | write | UAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/cache/retention-limit` | read | UAT, IAT | ✗ |
@@ -1031,6 +1018,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/tarball/{ref}` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/zipball/{ref}` | read | UAT, IAT | ✗ |
 | `POST /repos/{template_owner}/{template_repo}/generate` | read | UAT, IAT | ✓ |
+| `POST /repos/{template_owner}/{template_repo}/generate` | read | UAT, IAT | ✓ |
 
 ## Repository permissions for "Copilot agent settings"
 
@@ -1293,6 +1281,14 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/stacks` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/stacks/{stack_number}` | read | UAT, IAT | ✗ |
+
+## Repository permissions for "Repository creation"
+
+| Endpoint | Access | Tokens | Additional Permissions |
+|----------|--------|--------|------------------------|
+| `POST /orgs/{org}/repos` | write | UAT, IAT | ✓ |
+| `POST /repos/{template_owner}/{template_repo}/generate` | write | UAT, IAT | ✓ |
+| `POST /user/repos` | write | UAT | ✓ |
 
 ## Repository permissions for "Repository security advisories"
 

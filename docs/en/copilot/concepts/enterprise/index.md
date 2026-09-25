@@ -23,9 +23,9 @@ Understand how to govern and manage GitHub Copilot across your enterprise.
 
   Control the availability of GitHub Copilot features and models for your users.
 
-* [About default availability of Copilot models](/en/copilot/concepts/enterprise/default-model-availability)
+* [About default availability of Copilot features and models](/en/copilot/concepts/enterprise/default-availability)
 
-  A policy controls whether unconfigured models default to enabled or disabled.
+  Policies control whether unconfigured features and models default to enabled or disabled.
 
 * [FedRAMP-compliant models for GitHub Copilot](/en/copilot/concepts/enterprise/fedramp-models)
 

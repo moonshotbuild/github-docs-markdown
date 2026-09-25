@@ -19,6 +19,10 @@ Manage GitHub Actions settings for your organization or enterprise.
 
 ## Links
 
+* [Controlling who can execute GitHub Actions workflows](/en/actions/how-tos/administer/control-workflow-execution)
+
+  Control who can trigger GitHub Actions workflows and which events are permitted to run them across an enterprise, organization, and repository.
+
 * [Viewing GitHub Actions metrics](/en/actions/how-tos/administer/view-metrics)
 
   You can view metrics to monitor where your organization or repositories use GitHub Actions and how they are performing.

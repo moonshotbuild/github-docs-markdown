@@ -126,7 +126,7 @@ Many endpoints require authentication or return additional information if you ar
 
 <div class="ghd-tool curl">
 
-To authenticate your request, you will need to provide an authentication token with the required scopes or permissions. There a few different ways to get a token: You can create a personal access token, generate a token with a GitHub App, or use the built-in `GITHUB_TOKEN` in a GitHub Actions workflow. For more information, see [Authenticating to the REST API](/en/rest/authentication/authenticating-to-the-rest-api).
+To authenticate your request, you will need to provide an authentication token with the required scopes or permissions. There are a few different ways to get a token: You can create a personal access token, generate a token with a GitHub App, or use the built-in `GITHUB_TOKEN` in a GitHub Actions workflow. For more information, see [Authenticating to the REST API](/en/rest/authentication/authenticating-to-the-rest-api).
 
 For an example of a request that uses an authentication token, see [Making a request](#making-a-request).
 
@@ -146,7 +146,7 @@ Although some REST API endpoints are accessible without authentication, GitHub C
 
 <div class="ghd-tool javascript">
 
-To authenticate your request, you will need to provide an authentication token with the required scopes or permissions. There a few different ways to get a token: You can create a personal access token, generate a token with a GitHub App, or use the built-in `GITHUB_TOKEN` in a GitHub Actions workflow. For more information, see [Authenticating to the REST API](/en/rest/authentication/authenticating-to-the-rest-api).
+To authenticate your request, you will need to provide an authentication token with the required scopes or permissions. There are a few different ways to get a token: You can create a personal access token, generate a token with a GitHub App, or use the built-in `GITHUB_TOKEN` in a GitHub Actions workflow. For more information, see [Authenticating to the REST API](/en/rest/authentication/authenticating-to-the-rest-api).
 
 For an example of a request that uses an authentication token, see [Making a request](#making-a-request).
 

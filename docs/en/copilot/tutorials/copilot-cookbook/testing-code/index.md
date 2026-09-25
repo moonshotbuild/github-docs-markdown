@@ -32,7 +32,3 @@ Discover ways that you can use GitHub Copilot to test your code.
 * [Creating end-to-end tests for a webpage](/en/copilot/tutorials/copilot-cookbook/testing-code/create-end-to-end-tests)
 
   Copilot Chat can help with generating end-to-end tests.
-
-* [Updating unit tests to match code changes](/en/copilot/tutorials/copilot-cookbook/testing-code/update-unit-tests)
-
-  Copilot Chat can help with updating your tests.

@@ -89,7 +89,7 @@ With review effort levels, you can choose the level of thoroughness of Copilot's
 * **Lite**: Cost-efficient review that provides targeted feedback on glaring issues such as bugs, security vulnerabilities, and style inconsistencies.
 * **Balanced**: Deeper analysis of complex logic, security-sensitive code, and cross-service changes, using a higher-reasoning model.
 
-You can select the review effort level in the pull request before you request a review from Copilot, under the **Reviewers** section where Copilot appears as a reviewer. Organization owners and repository administrators can also set a default effort level for automatic reviews.
+You can select Copilot review effort in the pull request before you request a review from Copilot, under the **Reviewers** section where Copilot appears as a reviewer. You can also set a default Copilot review effort in your settings. Organization owners and repository administrators can set a default Copilot review effort for automatic reviews.
 
 For more information, see [About GitHub Copilot code review](/en/copilot/concepts/agents/code-review#review-effort-level).
 
@@ -332,7 +332,7 @@ These instructions explain how to use Copilot code review in Xcode. To see instr
 
 ## Prerequisites
 
-* **Access to Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#get-access).
+* **Access to Copilot**. See [About GitHub Copilot](/en/copilot/get-started/about-github-copilot#get-access).
 
 * **Compatible JetBrains IDE**. To use GitHub Copilot in JetBrains, you must have a compatible JetBrains IDE installed. GitHub Copilot is compatible with the following IDEs:
 
@@ -378,7 +378,7 @@ These instructions explain how to use Copilot code review in JetBrains IDEs. To 
 
 ## Prerequisites
 
-* **Access to Copilot**. See [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot#get-access).
+* **Access to Copilot**. See [About GitHub Copilot](/en/copilot/get-started/about-github-copilot#get-access).
 * **GitHub CLI**. You must have the GitHub CLI installed and authenticated. See [GitHub CLI quickstart](/en/github-cli/github-cli/quickstart).
 
 ## Using Copilot code review

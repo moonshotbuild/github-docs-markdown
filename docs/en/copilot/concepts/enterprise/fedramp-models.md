@@ -36,7 +36,6 @@ Enabling the FedRAMP policy restricts users to the following models:
 * GPT-4o
 * GPT-4.1
 * GPT-5.2
-* GPT-5.2-Codex
 * GPT-5.3-Codex
 * Claude Haiku 4.5
 * Claude Sonnet 5
@@ -51,7 +50,7 @@ If a user attempts to use Copilot with an older, incompatible client, they will 
 
 ## Supported Copilot features
 
-All generally available Copilot features work with this enforcement. See [GitHub Copilot features](/en/copilot/get-started/features).
+All generally available Copilot features work with this enforcement. The availability of features is visible under Copilot policy controls, see [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies).
 
 Preview features that reach general availability will be supported with compliant model alternatives at the time of their GA release.
 
@@ -61,7 +60,7 @@ Copilot requests processed with this enforcement in place include a 10% increase
 
 For example, if an interaction would normally consume 100 AI credits, the same interaction processed with this enforcement enabled consumes 110 AI credits. This pricing applies to all compliant model requests across all providers.
 
-See [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises).
+See [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing).
 
 ## Policy controls
 

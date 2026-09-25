@@ -427,12 +427,12 @@ setInterval(() => cleanupSessions(24 * 60 * 60 * 1000), 60 * 60 * 1000);
 
 ## Limitations
 
-| Limitation                                      | Details                                                                                        |
-| ----------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Single CLI server = single point of failure** | See [Scaling and multi-tenancy](/en/copilot/how-tos/copilot-sdk/setup/scaling) for HA patterns |
-| **No built-in auth between SDK and CLI**        | Secure the network path (same host, VPC, etc.)                                                 |
-| **Session state on local disk**                 | Mount persistent storage for container restarts                                                |
-| **30-minute idle timeout**                      | Sessions without activity are auto-cleaned                                                     |
+| Limitation                                      | Details                                                                                               |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Single CLI server = single point of failure** | See [Scaling and multi-tenancy](/en/copilot/how-tos/copilot-sdk/setup/scaling) for HA patterns        |
+| **No built-in auth between SDK and CLI**        | Secure the network path (same host, VPC, etc.)                                                        |
+| **Session state on local disk**                 | Mount persistent storage for container restarts                                                       |
+| **No idle timeout by default**                  | Pass `--session-idle-timeout <seconds>` to the CLI server to automatically clean up inactive sessions |
 
 ## When to move on
 

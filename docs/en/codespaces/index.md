@@ -389,6 +389,6 @@ Create a codespace to start developing in a secure, configurable, and dedicated 
 
   Tips on getting the best help from support for GitHub Codespaces.
 
-* [The github.dev web-based editor](/en/codespaces/the-githubdev-web-based-editor)
+* [Using VS Code for the Web from GitHub](/en/codespaces/the-githubdev-web-based-editor)
 
-  You can use the github.dev web-based editor to edit files and commit your changes.
+  You can open a repository or pull request in VS Code for the Web directly from GitHub to browse code, edit files, and commit your changes.

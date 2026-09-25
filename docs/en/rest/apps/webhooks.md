@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/apps/webhooks"
 ---
 
-# REST API endpoints for GitHub App webhooks
+# REST API endpoints for {% data variables.product.prodname\_github\_app %} webhooks
 
 Use the REST API to interact with webhooks for OAuth apps
 

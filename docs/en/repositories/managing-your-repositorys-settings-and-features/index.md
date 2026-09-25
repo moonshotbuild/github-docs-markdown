@@ -29,10 +29,6 @@ You can customize your repository, enable or disable optional features for your 
 
   You can enable, configure, and disable optional features for your repository.
 
-* [Actions policies](/en/repositories/managing-your-repositorys-settings-and-features/actions-policies)
-
-  Actions policies let you govern how GitHub Actions workflows run in a repository.
-
 * [Managing repository settings](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings)
 
   You can choose the way your repository functions by managing repository settings.

@@ -51,7 +51,7 @@ Compliance teams may also want to know about the administrative features availab
 * Audit logs for monitoring changes to access and settings
 * The ability to exclude sensitive content from Copilot's view
 
-For an overview of these features, see [GitHub Copilot features](/en/copilot/get-started/features#features-for-administrators).
+For guidance on managing Copilot for your team, including configuring settings and monitoring usage, see [Administer GitHub Copilot for your team](/en/copilot/how-tos/administer-copilot).
 
 ### For new GitHub Enterprise customers
 

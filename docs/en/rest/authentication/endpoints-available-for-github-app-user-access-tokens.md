@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Endpoints available for GitHub App user access tokens
 
-<p>Your GitHub App can make requests to the following REST endpoints with a user access token.</p>
+Your GitHub App can make requests to the following REST endpoints with a user access token.
 
 ## actions
 
@@ -130,6 +130,16 @@ breadcrumbs:
 * [`GET /orgs/{org}/actions/permissions/workflow`](/en/rest/actions/permissions#get-default-workflow-permissions-for-an-organization)
 
 * [`PUT /orgs/{org}/actions/permissions/workflow`](/en/rest/actions/permissions#set-default-workflow-permissions-for-an-organization)
+
+* [`GET /orgs/{org}/actions/policies`](/en/rest/actions/policies#list-organization-actions-policies)
+
+* [`POST /orgs/{org}/actions/policies`](/en/rest/actions/policies#create-an-organization-actions-policy)
+
+* [`GET /orgs/{org}/actions/policies/{policy_id}`](/en/rest/actions/policies#get-an-organization-actions-policy)
+
+* [`PUT /orgs/{org}/actions/policies/{policy_id}`](/en/rest/actions/policies#update-an-organization-actions-policy)
+
+* [`DELETE /orgs/{org}/actions/policies/{policy_id}`](/en/rest/actions/policies#delete-an-organization-actions-policy)
 
 * [`GET /orgs/{org}/actions/runner-groups`](/en/rest/actions/self-hosted-runner-groups#list-self-hosted-runner-groups-for-an-organization)
 
@@ -290,6 +300,16 @@ breadcrumbs:
 * [`GET /repos/{owner}/{repo}/actions/permissions/workflow`](/en/rest/actions/permissions#get-default-workflow-permissions-for-a-repository)
 
 * [`PUT /repos/{owner}/{repo}/actions/permissions/workflow`](/en/rest/actions/permissions#set-default-workflow-permissions-for-a-repository)
+
+* [`GET /repos/{owner}/{repo}/actions/policies`](/en/rest/actions/policies#list-repository-actions-policies)
+
+* [`POST /repos/{owner}/{repo}/actions/policies`](/en/rest/actions/policies#create-a-repository-actions-policy)
+
+* [`GET /repos/{owner}/{repo}/actions/policies/{policy_id}`](/en/rest/actions/policies#get-a-repository-actions-policy)
+
+* [`PUT /repos/{owner}/{repo}/actions/policies/{policy_id}`](/en/rest/actions/policies#update-a-repository-actions-policy)
+
+* [`DELETE /repos/{owner}/{repo}/actions/policies/{policy_id}`](/en/rest/actions/policies#delete-a-repository-actions-policy)
 
 * [`GET /repos/{owner}/{repo}/actions/runners`](/en/rest/actions/self-hosted-runners#list-self-hosted-runners-for-a-repository)
 
@@ -1124,44 +1144,6 @@ breadcrumbs:
 ## emojis
 
 * [`GET /emojis`](/en/rest/emojis/emojis#get-emojis)
-
-## enterprise-teams
-
-* [`GET /enterprises/{enterprise}/members/{username}/teams`](/en/rest/enterprise-teams/enterprise-team-members#list-enterprise-teams-for-a-user)
-
-* [`GET /enterprises/{enterprise}/teams`](/en/rest/enterprise-teams/enterprise-teams#list-enterprise-teams)
-
-* [`POST /enterprises/{enterprise}/teams`](/en/rest/enterprise-teams/enterprise-teams#create-an-enterprise-team)
-
-* [`GET /enterprises/{enterprise}/teams/{enterprise-team}/memberships`](/en/rest/enterprise-teams/enterprise-team-members#list-members-in-an-enterprise-team)
-
-* [`POST /enterprises/{enterprise}/teams/{enterprise-team}/memberships/add`](/en/rest/enterprise-teams/enterprise-team-members#bulk-add-team-members)
-
-* [`POST /enterprises/{enterprise}/teams/{enterprise-team}/memberships/remove`](/en/rest/enterprise-teams/enterprise-team-members#bulk-remove-team-members)
-
-* [`GET /enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username}`](/en/rest/enterprise-teams/enterprise-team-members#get-enterprise-team-membership)
-
-* [`PUT /enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username}`](/en/rest/enterprise-teams/enterprise-team-members#add-team-member)
-
-* [`DELETE /enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username}`](/en/rest/enterprise-teams/enterprise-team-members#remove-team-membership)
-
-* [`GET /enterprises/{enterprise}/teams/{enterprise-team}/organizations`](/en/rest/enterprise-teams/enterprise-team-organizations#get-organization-assignments)
-
-* [`POST /enterprises/{enterprise}/teams/{enterprise-team}/organizations/add`](/en/rest/enterprise-teams/enterprise-team-organizations#add-organization-assignments)
-
-* [`POST /enterprises/{enterprise}/teams/{enterprise-team}/organizations/remove`](/en/rest/enterprise-teams/enterprise-team-organizations#remove-organization-assignments)
-
-* [`GET /enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org}`](/en/rest/enterprise-teams/enterprise-team-organizations#get-organization-assignment)
-
-* [`PUT /enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org}`](/en/rest/enterprise-teams/enterprise-team-organizations#add-an-organization-assignment)
-
-* [`DELETE /enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org}`](/en/rest/enterprise-teams/enterprise-team-organizations#delete-an-organization-assignment)
-
-* [`GET /enterprises/{enterprise}/teams/{team_slug}`](/en/rest/enterprise-teams/enterprise-teams#get-an-enterprise-team)
-
-* [`PATCH /enterprises/{enterprise}/teams/{team_slug}`](/en/rest/enterprise-teams/enterprise-teams#update-an-enterprise-team)
-
-* [`DELETE /enterprises/{enterprise}/teams/{team_slug}`](/en/rest/enterprise-teams/enterprise-teams#delete-an-enterprise-team)
 
 ## gists
 

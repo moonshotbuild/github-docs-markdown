@@ -29,10 +29,6 @@ Learn the core concepts that you'll need to understand GitHub Copilot.
 
   Learn how GitHub Copilot can independently execute tasks across the software development lifecycle.
 
-* [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes)
-
-  Cloud and local sandboxes provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine or in fully isolated cloud environments.
-
 * [Concepts for prompting GitHub Copilot](/en/copilot/concepts/prompting)
 
   Learn how to interact with GitHub Copilot to get the best results.
@@ -53,9 +49,9 @@ Learn the core concepts that you'll need to understand GitHub Copilot.
 
   Understand billing and usage for GitHub Copilot, whether you use it individually or manage it for an organization or enterprise.
 
-* [Network settings for GitHub Copilot](/en/copilot/concepts/network-settings)
+* [Security, governance, and network settings for GitHub Copilot](/en/copilot/concepts/security-governance-and-network-settings)
 
-  You can connect to GitHub Copilot through an HTTP proxy and use custom certificates.
+  Understand how to control access to GitHub Copilot, protect data, isolate agent execution, and configure network access.
 
 * [Enterprise concepts for GitHub Copilot](/en/copilot/concepts/enterprise)
 

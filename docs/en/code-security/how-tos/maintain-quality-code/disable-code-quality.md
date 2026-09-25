@@ -28,7 +28,7 @@ Stop Code Quality scans on a repository or across your organization, and know wh
 3. In the sidebar, under **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-shield" aria-label="shield" role="img"><path d="M7.467.133a1.748 1.748 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667Zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.196.196 0 0 0 .154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.251.251 0 0 0-.174-.237l-5.25-1.68ZM8.75 4.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 1.5 0ZM9 10.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg> Security and quality**, click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-code-square" aria-label="code review" role="img"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25Zm7.47 3.97a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L10.69 8 9.22 6.53a.75.75 0 0 1 0-1.06ZM6.78 6.53 5.31 8l1.47 1.47a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-2-2a.75.75 0 0 1 0-1.06l2-2a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path></svg> Code quality** to display the "Code quality" page.
 4. Under **Code Quality analysis**, toggle from **On** to **Off**.
 
-This stops all future Code Quality scans, and the billing they generate, for that repository.
+This stops all future Code Quality scans for that repository, along with the GitHub Actions minutes and AI credits those scans use. License charges continue for a period after you disable Code Quality. See [When billing stops](#when-billing-stops).
 
 ## Disabling Code Quality for an organization
 
@@ -43,6 +43,8 @@ Disabling at the organization level turns Code Quality off across your organizat
 5. To also disable Code Quality in repositories where an administrator has deliberately enabled it, and to prevent administrators from re-enabling it, turn on **Enforce access**. Without enforcement, those repositories keep Code Quality enabled.
 6. Unless you select **Let repositories decide**, a "Review enablement and billing changes" dialog appears, showing the total number of affected repositories. Review the details, then click **Confirm**.
 
+For repositories affected by the organization-level change, disabling stops future scans and the metered usage they generate. Repositories that are explicitly enabled continue scanning unless you turn on **Enforce access**. License charges continue for a period after the change. See [When billing stops](#when-billing-stops).
+
 For the full list of access options and how enforcement works, see [Code Quality enablement across organizations and enterprises](/en/code-security/concepts/code-quality/enablement-at-scale#organization-level-repository-access).
 
 ## What happens to your existing data
@@ -54,9 +56,24 @@ Disabling Code Quality:
 
 ## When billing stops
 
-Disabling stops new scans right away, so no further GitHub Actions minutes or AI credits are consumed.
+Disabling Code Quality stops metered usage immediately, but license charges continue for a period afterwards. For an overview of what Code Quality bills for, see [GitHub Code Quality billing](/en/billing/concepts/product-billing/github-code-quality).
 
-Usage you've already accrued this cycle still bills as normal. All metered usage adds up over the course of the month and bills on your next billing cycle date, so your next bill will show the AI credits usage and licenses consumed before you disabled the feature. You won't see new charges accrue after the disable date.
+### Metered usage stops immediately
+
+Disabling stops new scans right away, so you use no further GitHub Actions minutes or AI credits.
+
+Usage from before you disabled still bills as normal. Metered usage adds up over the course of the month and appears on your next bill.
+
+### License charges can continue
+
+Disabling Code Quality can reduce the number of licenses you use:
+
+* A committer who contributed only to repositories where you disable Code Quality no longer counts towards your license usage.
+* A committer who also contributed to another repository where Code Quality remains enabled continues to count. They stop counting 90 days after their most recent commit to an enabled repository.
+
+For each billing period, you're charged for the highest number of licenses used at any point during that period, not the number in use at the end. Disabling Code Quality can free licenses for the next period, but it doesn't reduce the charge for the current period.
+
+Code Quality uses the same licensing model as GitHub Advanced Security. To see how the active committer count changes as people stop committing and as repositories are enabled and disabled, see [GitHub Advanced Security license billing](/en/billing/concepts/product-billing/github-advanced-security#example-showing-how-the-active-committer-count-changes-over-time).
 
 ## Confirming Code Quality is off
 

@@ -41,6 +41,10 @@ Configure and deploy the GitHub Copilot SDK for your use case.
 
   Let users authenticate with their GitHub accounts to use Copilot through your application. This supports individual accounts, organization memberships, and enterprise identities.
 
+* [Run the Copilot runtime in process](/en/copilot/how-tos/copilot-sdk/setup/in-process-runtime)
+
+  In-process hosting loads the native Copilot runtime into your application process instead of starting a separate Copilot CLI process. Use it to remove child-process management while keeping the same Copilot SDK sessions, events, tools, hooks, and JSON-RPC behavior.
+
 * [Local CLI setup](/en/copilot/how-tos/copilot-sdk/setup/local-cli)
 
   Use a specific CLI binary instead of the SDK's automatic CLI management. This is an advanced option—you supply the CLI path explicitly, and you are responsible for ensuring version compatibility with the SDK.

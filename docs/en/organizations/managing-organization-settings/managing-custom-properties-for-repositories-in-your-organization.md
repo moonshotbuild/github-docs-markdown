@@ -25,6 +25,15 @@ This article relates to **repository custom properties.**
 
 The **visibility** of custom properties matches the visibility of the repository. Custom properties on public repositories can be viewed by anyone, while custom properties on internal or private repositories can be viewed by accounts with `read` permissions to the repository.
 
+## About custom property suggestions
+
+> \[!NOTE]
+> Copilot suggestions for repository custom property definitions are in public preview.
+
+When you create a single select or multi select property, Copilot can suggest allowed values for the property definition. Select a suggestion to add it to the list of allowed values.
+
+This feature is available with Copilot Business or Copilot Enterprise. Organization owners can configure availability with the **Repository custom property suggestions** policy. See [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies).
+
 ## Allowed characters
 
 Custom property names and values may only contain certain characters:
@@ -55,6 +64,8 @@ You can add custom properties to your organization and set values for those prop
 7. Optionally, in the "Description" field, fill in a description of your custom property.
 
 8. Under "Type", select the type of property you'd like to add. This can either be a text string, a single select field, a multi select field, or a true/false boolean.
+
+   If you selected a single select or multi select type, Copilot can suggest allowed values for the property definition. Select **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Accept suggestion" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg> Accept suggestion** to add it to the list of allowed values.
 
 9. Optionally, you can select **Allow repository actors to set this property**. When enabled, repository users and apps with the repository-level "custom properties" fine-grained permission will be able to set and update the property value for their repository.
 

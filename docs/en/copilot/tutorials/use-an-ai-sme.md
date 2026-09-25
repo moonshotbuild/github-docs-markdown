@@ -161,5 +161,5 @@ Used this way, Copilot CLI doesn't replace human SMEs, but it makes you less dep
 ## Next steps
 
 * Save your most useful prompt preambles as custom instructions, so you can reuse them across sessions and projects. See [Adding custom instructions for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/add-custom-instructions).
-* Once you understand the area of the code you want to change, use Copilot CLI to help you make the change. See [Refactoring code with GitHub Copilot](/en/copilot/tutorials/refactor-code) and [Writing tests with GitHub Copilot](/en/copilot/tutorials/write-tests).
+* Once you understand the area of the code you want to change, use Copilot CLI to help you make the change. For testing examples, see [Writing tests with GitHub Copilot](/en/copilot/tutorials/write-tests).
 * Learn how to control which tools Copilot CLI can run during a session. See [Allowing and denying tool use](/en/copilot/how-tos/copilot-cli/use-copilot-cli/allowing-tools).

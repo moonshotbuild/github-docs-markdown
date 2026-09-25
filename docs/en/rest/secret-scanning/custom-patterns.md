@@ -126,7 +126,7 @@ Personal access tokens (classic) need the write:org scope to use this endpoint.
 #### Body parameters
 
 - **`patterns`** (array of objects) (required)
-  The list of custom patterns to create.
+  The list of custom patterns to create (maximum 100).
   - **`name`** (string) (required)
     The name of the custom pattern.
   - **`pattern`** (string) (required)
@@ -476,7 +476,7 @@ Fine-grained access tokens require the administration:write repository permissio
 #### Body parameters
 
 - **`patterns`** (array of objects) (required)
-  The list of custom patterns to create.
+  The list of custom patterns to create (maximum 100).
   - **`name`** (string) (required)
     The name of the custom pattern.
   - **`pattern`** (string) (required)

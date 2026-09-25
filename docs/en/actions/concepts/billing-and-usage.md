@@ -50,6 +50,6 @@ For more information see, [Reuse workflows](/en/actions/how-tos/reuse-automation
 You can manage your GitHub Actions usage and retention policies for your repository, organization, or enterprise account. For more information, see:
 
 * [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
-* [Configuring the retention period for GitHub Actions artifacts and logs in your organization](/en/organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization)
+* [Configuring the retention period for checks, workflow runs, commit statuses, artifacts, and logs in your organization](/en/organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization)
 * [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization)
 * [Enforcing policies for GitHub Actions in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise)

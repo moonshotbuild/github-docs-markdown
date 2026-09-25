@@ -826,6 +826,9 @@ curl -L \
     * `color`: string
     * `default`: boolean
     * `description`: string or null
+    * `archived_at`: string or null, format: date-time
+    * `archived_by`: all of:
+      * **Simple User** (see above)
   * `sub_issues_summary`: `Sub-issues Summary`:
     * `total`: required, integer
     * `completed`: required, integer
@@ -1161,6 +1164,9 @@ curl -L \
     * `color`: string
     * `default`: boolean
     * `description`: string or null
+    * `archived_at`: string or null, format: date-time
+    * `archived_by`: all of:
+      * **Simple User** (see above)
   * `sub_issues_summary`: `Sub-issues Summary`:
     * `total`: required, integer
     * `completed`: required, integer
@@ -1515,6 +1521,31 @@ curl -L \
   * `color`: required, string
   * `default`: required, boolean
   * `description`: required, string or null
+  * `archived_at`: required, string or null, format: date-time
+  * `archived_by`: required, all of:
+    * **Simple User**
+      * `name`: string or null
+      * `email`: string or null
+      * `login`: required, string
+      * `id`: required, integer, format: int64
+      * `node_id`: required, string
+      * `avatar_url`: required, string, format: uri
+      * `gravatar_id`: required, string or null
+      * `url`: required, string, format: uri
+      * `html_url`: required, string, format: uri
+      * `followers_url`: required, string, format: uri
+      * `following_url`: required, string
+      * `gists_url`: required, string
+      * `starred_url`: required, string
+      * `subscriptions_url`: required, string, format: uri
+      * `organizations_url`: required, string, format: uri
+      * `repos_url`: required, string, format: uri
+      * `events_url`: required, string
+      * `received_events_url`: required, string, format: uri
+      * `type`: required, string
+      * `site_admin`: required, boolean
+      * `starred_at`: string
+      * `user_view_type`: string
   * `score`: required, number
   * `text_matches`: array of objects:
     * `object_url`: string

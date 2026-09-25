@@ -75,6 +75,14 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
 ### Enabling agents
 
+* [Driving team adoption of agentic GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/enable-developers/drive-team-agentic-adoption)
+
+  Help established teams build sustained habits with GitHub Copilot app and Copilot CLI, then measure adoption and business impact.
+
+* [Rolling out the GitHub Copilot app to your team](/en/copilot/tutorials/roll-out-at-scale/enable-developers/copilot-app-for-teams)
+
+  Roll out the GitHub Copilot app so developers can direct agents across parallel tasks while you control access, model availability, and external tools.
+
 * [Enabling GitHub Copilot cloud agent in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/enable-copilot-cloud-agent)
 
   Choose which organizations can use Copilot cloud agent and connect it to MCP servers.

@@ -51,6 +51,14 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   Guidance and recommendations for maintaining the dependencies you use, including GitHub's security products that can help.
 
+## Links
+
+### Getting started
+
+* [GitHub security features](/en/code-security/getting-started/github-security-features)
+
+  An overview of GitHub's security features.
+
 ## Articles
 
 * [GitHub security features](/en/code-security/getting-started/github-security-features)
@@ -141,9 +149,9 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   Autofix automatically generates fixes for code scanning alerts, helping you remediate existing vulnerabilities.
 
-* [AI-powered security detections in pull requests](/en/code-security/concepts/code-scanning/ai-powered-security-detections)
+* [AI Scan for pull requests](/en/code-security/concepts/code-scanning/ai-powered-security-detections)
 
-  AI-powered security detections use an AI-based scanning engine to find security vulnerabilities in pull requests for languages and frameworks not covered by CodeQL.
+  AI Scan uses an AI-based scanning engine to find security vulnerabilities in pull requests for languages and frameworks not covered by CodeQL.
 
 * [About setup types for code scanning](/en/code-security/concepts/code-scanning/setup-types)
 

@@ -65,7 +65,7 @@ Archive stopped sessions to remove them from your sessions list.
 2. Click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-kebab-horizontal" aria-label="More actions" role="img"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>**, then click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-inbox" aria-label="inbox" role="img"><path d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z"></path></svg> Archive session**.
 3. In the dialog, click **Yes, archive**.
 
-Copilot cloud agent sessions can be archived but not deleted. Only local sessions (from GitHub Copilot CLI, VS Code, JetBrains, or the GitHub Copilot app) can be deleted. For more information about deleting sessions, see [About GitHub Copilot CLI session data](/en/copilot/concepts/agents/copilot-cli/chronicle#managing-your-session-data).
+Copilot cloud agent sessions can be archived but not deleted. Only local sessions (from GitHub Copilot CLI, VS Code, JetBrains, or the GitHub Copilot app) can be deleted. For more information about deleting sessions, see [About GitHub Copilot session data](/en/copilot/concepts/security-governance-and-network-settings/session-data#deleting-session-data).
 
 ## Share a session
 
@@ -75,7 +75,7 @@ Local sessions (from GitHub Copilot CLI, VS Code, JetBrains, or the GitHub Copil
 
 Recipients can view the session's prompts, responses, and file changes, but cannot steer or modify the session. Shared local sessions appear in the "All sessions" view but are not indexed for other users' session queries (they will not appear in another user's `/chronicle` results).
 
-For more information about session syncing, see [About GitHub Copilot CLI session data](/en/copilot/concepts/agents/copilot-cli/chronicle#session-syncing).
+For more information about session syncing, see [About GitHub Copilot session data](/en/copilot/concepts/security-governance-and-network-settings/session-data#session-syncing).
 
 ## Query past sessions
 
@@ -85,7 +85,7 @@ You can only query sessions that you started. Your session data is private by de
 
 ### Prerequisites
 
-Your sessions must be synced to your GitHub account. By default, session data is synced automatically. If you have opted out of syncing (by setting `"remoteExport": false` in your CLI settings JSON), or if your organization has not enabled the "Store local sessions in the Cloud" policy, session querying is not available. For more information, see [About GitHub Copilot CLI session data](/en/copilot/concepts/agents/copilot-cli/chronicle#session-syncing).
+Your sessions must be synced to your GitHub account. By default, session data is synced automatically. If you have opted out of syncing (by setting `"remoteExport": false` in your CLI settings JSON), or if your organization has not enabled the "Store local sessions in the Cloud" policy, session querying is not available. For more information, see [About GitHub Copilot session data](/en/copilot/concepts/security-governance-and-network-settings/session-data#session-syncing).
 
 ### Example queries
 
@@ -107,7 +107,7 @@ Show me sessions where the agent struggled or I had to correct it multiple times
 
 Copilot can search across your prompts, responses, file changes, and other context from your synced sessions.
 
-For CLI-specific session querying and `/chronicle` commands, see [Using GitHub Copilot CLI session data](/en/copilot/how-tos/copilot-cli/use-copilot-cli/chronicle). For conceptual information about how session data is stored and synced, see [About GitHub Copilot CLI session data](/en/copilot/concepts/agents/copilot-cli/chronicle).
+For CLI-specific session querying and `/chronicle` commands, see [Using GitHub Copilot CLI session data](/en/copilot/how-tos/copilot-cli/use-copilot-cli/chronicle). For conceptual information about how session data is stored and synced, see [About GitHub Copilot session data](/en/copilot/concepts/security-governance-and-network-settings/session-data).
 
 ## Continue a session's work in GitHub Copilot Chat
 

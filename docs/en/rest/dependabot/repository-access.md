@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/dependabot/repository-access"
 ---
 
-# REST API endpoints for Dependabot repository access
+# REST API endpoints for {% data variables.product.prodname_dependabot %} repository access
 
 Use the REST API to manage which repositories Dependabot can access within an organization.
 
@@ -258,6 +258,7 @@ Note
 This operation supports both server-to-server and user-to-server access.
 Unauthorized users will not see the existence of this endpoint.
 
+OAuth app tokens and personal access tokens (classic) need the write:org scope to use this endpoint.
 Example request body:
 {
   "repository_ids_to_add": [123, 456],
@@ -319,6 +320,7 @@ Sets the default level of repository access Dependabot will have while performin
 
 Unauthorized users will not see the existence of this endpoint.
 This operation supports both server-to-server and user-to-server access.
+OAuth app tokens and personal access tokens (classic) need the write:org scope to use this endpoint.
 
 ### Parameters
 

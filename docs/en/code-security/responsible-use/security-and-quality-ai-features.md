@@ -30,8 +30,11 @@ As part of its commitment to responsible AI, GitHub adheres to Microsoft's [six 
 GitHub's security and quality platform includes several AI-powered capabilities that help developers find and fix security vulnerabilities, detect leaked secrets, and improve code quality. This application card covers the following experiences:
 
 * **Copilot Autofix for code scanning**: Automatically generates fix suggestions for CodeQL alerts on pull requests and the default branch.
+
 * **Generic secret detection**: Uses a model to identify unstructured secrets in source code that deterministic pattern matching cannot find.
+
 * **Custom pattern regex generator**: Uses AI to generate regular expressions for custom secret scanning patterns from natural language descriptions.
+
 * **GitHub Code Quality**: Surfaces code quality issues and offers LLM-powered fix suggestions on pull requests and the default branch. Also provides AI-powered automatic generation of code coverage workflows.
 
 Copilot Autofix is an expansion of code scanning that provides users with targeted recommendations to help them fix code scanning alerts, avoiding the introduction of new security vulnerabilities. Potential fixes are generated automatically by large language models (LLMs) using data from the codebase and from code scanning analysis. Copilot Autofix is available for CodeQL analysis and does not require a GitHub Copilot subscription.
@@ -51,13 +54,21 @@ The primary supported language for GitHub Code Security AI features is English.
 The following list provides a glossary of key terms related to GitHub Code Security AI features:
 
 * **CodeQL**: GitHub's semantic code analysis engine for identifying security vulnerabilities in source code.
+
 * **Copilot Autofix**: GitHub's LLM-powered feature that automatically generates fix suggestions for code scanning alerts. Copilot Autofix is available for CodeQL analysis and does not require a GitHub Copilot subscription.
+
 * **Large language model (LLM)**: A type of neural network trained on a large body of text data that can generate, analyze, and transform natural language and code. Copilot Autofix uses one or more LLMs to process code scanning alerts and produce fix suggestions.
+
 * **AI detection for secret scanning**: AI-powered capabilities that extend secret scanning, including generic secret detection. Does not require a GitHub Copilot subscription.
+
 * **Generic secret detection**: AI identification of unstructured secrets (such as passwords) that are not covered by partner or custom patterns. Generic secret detection uses models to scan for password-like strings in source code.
+
 * **Custom pattern**: A user-defined regular expression used by secret scanning to detect secrets that match a specific format. The custom pattern regular expression generator helps create these patterns from natural language descriptions.
+
 * **SARIF**: Static Analysis Results Interchange Format—the standard format CodeQL uses to report code scanning findings, including alert locations and descriptions.
+
 * **GitHub Code Quality**: A feature that surfaces code quality issues and offers LLM-powered fixes. Code Quality combines CodeQL quality queries with LLM-powered analysis to identify maintainability, reliability, and style issues.
+
 * **AI findings**: The dashboard under the **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-shield" aria-label="shield" role="img"><path d="M7.467.133a1.748 1.748 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667Zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.196.196 0 0 0 .154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.251.251 0 0 0-.174-.237l-5.25-1.68ZM8.75 4.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 1.5 0ZM9 10.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg> Security and quality** tab where LLM-powered Code Quality findings for the default branch are displayed.
 
 ## 3. Key features or capabilities
@@ -65,12 +76,19 @@ The following list provides a glossary of key terms related to GitHub Code Secur
 The key features and capabilities outlined here describe what GitHub Code Security AI features are designed to do and how they perform across supported tasks.
 
 * **Automated fix suggestions for security alerts**: Copilot Autofix automatically generates code change suggestions for CodeQL alerts found on pull requests and on the default branch. Each suggestion includes both the proposed code change and a natural language explanation of the fix.
+
 * **Alert-to-fix translation**: Copilot Autofix translates the description and location of a code scanning alert into actionable code changes that may resolve the underlying security vulnerability. The system uses CodeQL alert data in SARIF format, surrounding code snippets, and query help text to generate relevant fixes.
+
 * **Multi-language support**: Copilot Autofix supports fix generation for a subset of queries included in the default and security-extended CodeQL query suites for C#, C/C++, Go, Java/Kotlin, Swift, JavaScript/TypeScript, Python, Ruby, and Rust. For more information on these query suites, see [CodeQL query suites](/en/code-security/concepts/code-scanning/codeql/codeql-query-suites#built-in-codeql-query-suites).
+
 * **AI-powered password detection**: Secret scanning's generic secret detection scans repository content using AI to identify unstructured secrets (like passwords) that deterministic pattern matching cannot find. Detected secrets are surfaced as alerts in the secret scanning alert list under the **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-shield" aria-label="shield" role="img"><path d="M7.467.133a1.748 1.748 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667Zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.196.196 0 0 0 .154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.251.251 0 0 0-.174-.237l-5.25-1.68ZM8.75 4.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 1.5 0ZM9 10.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg> Security and quality** tab.
+
 * **AI-powered regular expression generation**: Secret scanning's regular expression generator takes a natural language description of the pattern you want to detect, along with optional example strings, and produces up to three candidate regular expressions. Each result includes an AI-generated plain language description, and you can validate patterns via a dry run before deployment.
+
 * **Code quality issue detection**: GitHub Code Quality runs CodeQL quality queries on changed code in pull requests and periodically on the full default branch. These queries identify maintainability, reliability, and style issues.
+
 * **LLM-powered code quality analysis**: After each push to the default branch, an LLM analyzes recently changed files for quality issues beyond what deterministic engines can find. Findings are displayed in the **AI findings** dashboard.
+
 * **Automated fix suggestions for quality findings**: When a quality issue is detected by either type of analysis, Copilot Autofix generates a fix suggestion. On pull requests, the `github-code-quality` bot posts a comment with the suggested change.
 
 ## 4. Intended uses
@@ -78,15 +96,25 @@ The key features and capabilities outlined here describe what GitHub Code Securi
 GitHub Code Security AI features can be used in multiple scenarios across a variety of industries. Some examples of use cases include:
 
 * **Accelerating remediation of security vulnerabilities**: Use Copilot Autofix to quickly generate fix suggestions for CodeQL alerts, reducing the time and expertise required to address security issues found during code scanning.
+
 * **Reducing the barrier to secure coding**: Copilot Autofix helps developers with limited secure-coding training. Instead of researching vulnerabilities independently, developers start with a code suggestion that demonstrates a potential solution for their codebase.
+
 * **Streamlining pull request review**: When code scanning finds alerts on a pull request, Copilot Autofix provides suggested fixes inline, helping developers resolve security issues before merging.
+
 * **Fixing alerts on the default branch**: Copilot Autofix can also generate fix suggestions for existing alerts on the default branch, helping teams reduce their backlog of security findings.
+
 * **Detecting leaked passwords in source code**: Use generic secret detection to find unstructured secrets in repositories that fall outside the coverage of partner and custom secret scanning patterns.
+
 * **Triaging credentials with contextual alerts**: When a password is detected, an alert with AI-detection context is displayed in the alerts list, enabling maintainers and security managers to review the finding and take action.
+
 * **Creating custom secret scanning patterns without regex expertise**: Use the regular expression generator to define custom patterns by describing what you want to detect in natural language, removing the need to write regular expressions manually.
+
 * **Validating generated patterns before deployment**: After generating regular expressions, use the dry-run mechanism to test patterns across your repository or organization before deploying them as custom patterns.
+
 * **Surfacing code quality issues across a repository**: Use GitHub Code Quality to identify maintainability, reliability, and style issues so developers and administrators can quickly prioritize areas of risk.
+
 * **Accelerating remediation of code quality findings**: Copilot Autofix suggests fixes for quality findings, combining information on best practices with details of the codebase to propose a potential fix directly on the pull request or in the AI findings dashboard.
+
 * **Providing actionable feedback on pull requests**: The `github-code-quality` bot posts comments with suggested fixes on pull requests, helping developers address quality issues before merging.
 
 ## 5. Models and training data
@@ -242,13 +270,21 @@ GitHub Code Quality's LLM-powered analysis shares the evaluation framework of Co
 ## 9. Safety components and mitigations
 
 * **Human-in-the-loop review**: Copilot Autofix presents all suggestions as proposed code changes that require explicit developer review and acceptance before being applied. Developers must evaluate each suggestion and verify it maintains the codebase's intended behavior.
+
 * **Content filtering**: A filtering system on the LLM detects and prevents potentially harmful suggestions from being displayed to users. The system is stress-tested through red teaming to identify potential vulnerabilities.
+
 * **Internal quality testing**: Suggestions that fail internal testing are not displayed to users. Fix generation is only shown when the system has sufficient confidence in the suggestion's quality.
+
 * **Opt-in/opt-out controls**: Copilot Autofix is allowed by default and enabled for every repository using CodeQL, but administrators can disable Copilot Autofix at the enterprise, organization, and repository levels. For more information, see [Disabling autofix for code scanning security alerts](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/disabling-autofix-for-code-scanning).
+
 * **No training on customer data**: Data handled by Copilot Autofix is not employed for LLM training purposes. The use of this feature is governed by the existing terms and conditions associated with GitHub Advanced Security.
+
 * **False positive feedback loop**: When users close a generic secret detection alert and mark the reason as "False positive," GitHub uses the false positive volume to improve the model. GitHub does not have access to the secret literals themselves.
+
 * **Dry-run validation for generated patterns**: Generated regular expressions from the custom pattern regex generator must go through a dry-run validation step before deployment. Users explicitly import a result into the custom pattern form and test it across their repository or organization, ensuring patterns perform as expected before they are used in production.
+
 * **Explicit user action required**: The regex generator does not automatically deploy patterns. Users must click **Use result** to copy a generated expression into the custom pattern form, then manually save and enable the pattern.
+
 * **Feedback mechanism for Code Quality**: Users can provide feedback on Code Quality suggestions using the thumbs up and thumbs down buttons on the `github-code-quality` bot's comments, helping GitHub improve suggestion quality.
 
 ## 10. Best practices for deploying and adopting GitHub Code Security AI features
@@ -257,26 +293,44 @@ Responsible AI is a shared commitment between GitHub and its customers. While Gi
 
 * **Exercise caution and evaluate outcomes when using GitHub Security AI features for consequential decisions or in sensitive domains**: <!-- Do not modify this text.-->
   Consequential decisions are those that may have a legal or significant impact on a person's access to education, employment, financial platforms, government benefits, healthcare, housing, insurance, legal platforms, or that could result in physical, psychological, or financial harm. Sensitive domains—such as financial platforms, healthcare, and housing—require particular care due to the potential for disproportionate impact on different groups of people. When using AI for decisions in these areas, make sure that impacted stakeholders can understand how decisions are made, appeal decisions, and update any relevant input data.
+
 * **Evaluate legal and regulatory considerations**: <!-- Do not modify this text.-->
   Customers need to evaluate potential specific legal and regulatory obligations when using any AI platforms and solutions, which may not be appropriate for use in every industry or scenario. Additionally, AI platforms or solutions are not designed for and may not be used in ways prohibited in applicable terms of service and relevant codes of conduct.
+
 * **Always review suggestions before accepting**: Evaluate the proposed code change to ensure it correctly fixes the security vulnerability without changing the intended behavior of your code. Having good test coverage helps verify that a fix does not change the behavior of the codebase.
+
 * **Verify CI tests pass**: After committing a suggested fix or modified fix, always verify that continuous integration testing (CI) for the codebase continues to pass and that the alert is shown as resolved before merging your pull request.
+
 * **Review dependency changes carefully**: If a suggested fix includes changes to dependencies, verify that any added or updated dependencies are secure, supported, and maintain the intended behavior of the codebase. Use dependency management solutions, such as the dependency review API and action, to evaluate changes. For more information, see [Dependency review](/en/code-security/concepts/supply-chain-security/dependency-review).
+
 * **Close false positive alerts appropriately**: Since AI secret detection may generate more false positives than partner pattern detection, review the accuracy of each alert. When you verify an alert to be a false positive, close the alert and mark the reason as "False positive" in the GitHub UI. This feedback helps improve the model.
+
 * **Validate generated regex patterns with a dry run**: When using the custom pattern regex generator, always perform a dry run across representative repositories before deploying a generated pattern organization-wide.
+
 * **Be specific with descriptions**: To improve the quality of generated regular expressions, be as specific as possible with your natural language descriptions and include diverse example strings that represent the patterns you want to detect.
+
 * **Review all generated patterns**: Carefully review each of the generated regular expressions, including the AI-generated plain language descriptions, and consider modifying results to more fully meet your needs. You remain ultimately responsible for any custom patterns you decide to use.
+
 * **Review Code Quality findings before applying fixes**: Always verify the accuracy and applicability of Code Quality findings and Autofix suggestions to your codebase before accepting them.
+
 * **Provide feedback on Code Quality suggestions**: Use the thumbs up and thumbs down buttons on the `github-code-quality` bot's comments to help improve the tool and address any concerns or limitations.
+
 * **Exercise human oversight when appropriate**: Human oversight is an important safeguard when interacting with AI applications. While we continuously improve our AI applications, AI might still make mistakes. The outputs generated may be inaccurate, incomplete, biased, misaligned, or irrelevant to your intended goals. This could happen due to various reasons, such as ambiguity in the inputs or limitations of the underlying models. As such, users should review the responses generated by GitHub Code Security AI features and verify that they match their expectations and requirements.
+
 * **Be aware of the risk of overreliance**: <!-- Do not modify this text.-->
   Overreliance on AI happens when users accept incorrect or incomplete AI outputs, mainly because mistakes in AI outputs may be hard to detect. For the end-user, overreliance could result in decreased productivity, loss of trust, application abandonment, financial loss, psychological harm, physical harm, among others. (e.g. a doctor accepts an incorrect AI output).
+
 * **Exercise caution when designing agentic AI in sensitive domains**: <!-- Do not modify this text.-->
   Users should exercise caution when designing and/or deploying agentic AI applications in sensitive domains where agent actions are irreversible or highly consequential. Additional precautions should also be taken when creating autonomous agentic AI as described further in the [GitHub Terms](/en/site-policy/github-terms).
+
 * **Enable CI testing on pull requests**: Ensure continuous integration testing is in place before enabling Copilot Autofix, so that functional requirements are verified after developers apply fixes.
+
 * **Use dependency management solutions**: Enable dependency review on pull requests to catch potentially risky dependency changes introduced by Autofix suggestions.
+
 * **Review security overview metrics**: Use your organization's security overview dashboard to view the total number of Copilot Autofix suggestions generated on open and closed pull requests for a given time period. For more information, see [Security overview dashboard metrics](/en/code-security/reference/security-at-scale/overview-dashboard-metrics#pull-request-alerts-fixed-with-copilot-autofix-suggestions).
+
 * **Evaluate false-positive volume for secret detection**: Evaluate the false-positive volume and establish triage processes for the alerts list.
+
 * **Monitor Code Quality suggestion volume and quality**: Evaluate the volume and quality of Code Quality suggestions and adjust enablement as appropriate for your organization.
 
 ## 11. Learn more about GitHub Security AI features
@@ -284,17 +338,29 @@ Responsible AI is a shared commitment between GitHub and its customers. While Gi
 For additional guidance on the responsible use of GitHub Security AI features, we recommend reviewing the following documentation:
 
 * [Code scanning alerts](/en/code-security/concepts/code-scanning/code-scanning-alerts)
+
 * [Triaging code scanning alerts in pull requests](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/triage-alerts-in-pull-requests#working-with-copilot-autofix-suggestions-for-alerts-on-a-pull-request)
+
 * [Resolving code scanning alerts](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/resolve-alerts#generating-a-suggested-fix)
+
 * [Disabling autofix for code scanning security alerts](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/disabling-autofix-for-code-scanning)
+
 * [GitHub Terms for Additional Products and Features](/en/site-policy/github-terms/github-terms-for-additional-products-and-features#advanced-security)
+
 * [Secret scanning](/en/code-security/concepts/secret-security/secret-scanning)
+
 * [Enabling generic secret detection for AI-detected secrets](/en/code-security/how-tos/secure-your-secrets/detect-secret-leaks/enabling-secret-scanning-for-ai-detected-secrets)
+
 * [Manage secret scanning alerts](/en/code-security/how-tos/manage-security-alerts/manage-secret-scanning-alerts)
+
 * [Generating regular expressions for custom patterns with AI](/en/code-security/how-tos/secure-your-secrets/customize-leak-detection/generating-regular-expressions-for-custom-patterns-with-ai)
+
 * [Defining custom patterns for secret scanning](/en/code-security/how-tos/secure-your-secrets/customize-leak-detection/define-custom-patterns)
+
 * [GitHub Code Quality](/en/code-security/concepts/code-quality/code-quality)
+
 * [Application card: GitHub Copilot Agents](/en/copilot/responsible-use/agents)
+
 * [Community discussion for Code Quality feedback](https://github.com/orgs/community/discussions/177488)
 
 ### Learn more about responsible AI

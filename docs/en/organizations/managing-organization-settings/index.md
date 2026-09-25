@@ -57,10 +57,6 @@ Organization owners can change several settings, including the names of reposito
 
   You can enable, disable, and limit GitHub Actions for an organization.
 
-* [Actions policies](/en/organizations/managing-organization-settings/actions-policies)
-
-  Actions policies let you govern how GitHub Actions workflows run across repositories in your organization.
-
 * [About networking for hosted compute products in your organization](/en/organizations/managing-organization-settings/about-networking-for-hosted-compute-products-in-your-organization)
 
   You can manage private networking for GitHub-hosted products using network configurations in your organization.
@@ -77,9 +73,9 @@ Organization owners can change several settings, including the names of reposito
 
   Learn how to fix common issues while creating Azure private network configurations to use GitHub-hosted runners with an Azure VNET.
 
-* [Configuring the retention period for GitHub Actions artifacts and logs in your organization](/en/organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization)
+* [Configuring the retention period for checks, workflow runs, commit statuses, artifacts, and logs in your organization](/en/organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization)
 
-  You can configure the retention period for GitHub Actions artifacts and logs in your organization.
+  Control how long checks, workflow runs, commit statuses, artifacts, and logs are retained in your organization.
 
 * [Setting permissions for adding outside collaborators](/en/setting-permissions-for-adding-outside-collaborators)
 

@@ -49,10 +49,6 @@ Learn how to use GitHub Copilot to accomplish specific tasks.
 
   GitHub Copilot Chat can help you create diagrams to better understand your data and communicate insights.
 
-* [Generating tables](/en/copilot/tutorials/copilot-cookbook/communicate-effectively/generating-tables)
-
-  Copilot Chat can help you create tables to organize information and present it clearly.
-
 * [Debugging invalid JSON](/en/copilot/tutorials/copilot-cookbook/debug-errors/debug-invalid-json)
 
   Copilot Chat can identify and resolve syntax errors or structural issues in JSON data.
@@ -81,17 +77,9 @@ Learn how to use GitHub Copilot to accomplish specific tasks.
 
   Copilot Chat can suggest ways to make your code easier to understand and maintain.
 
-* [Fixing lint errors](/en/copilot/tutorials/copilot-cookbook/refactor-code/fix-lint-errors)
-
-  Copilot Chat can suggest ways to fix issues identified by a code linter.
-
 * [Refactoring for performance optimization](/en/copilot/tutorials/copilot-cookbook/refactor-code/refactor-for-optimization)
 
   Copilot Chat can suggest ways to speed up slow-running code.
-
-* [Refactoring for environmental sustainability](/en/copilot/tutorials/copilot-cookbook/refactor-code/refactor-for-sustainability)
-
-  Copilot Chat can suggest ways to make code more environmentally friendly.
 
 * [Refactoring to implement a design pattern](/en/copilot/tutorials/copilot-cookbook/refactor-code/refactor-design-patterns)
 
@@ -100,10 +88,6 @@ Learn how to use GitHub Copilot to accomplish specific tasks.
 * [Refactoring data access layers](/en/copilot/tutorials/copilot-cookbook/refactor-code/refactor-data-access-layers)
 
   Copilot Chat can suggest ways to decouple your data access code from your business logic, making an application easier to maintain and scale.
-
-* [Decoupling business logic from UI components](/en/copilot/tutorials/copilot-cookbook/refactor-code/decouple-business-logic)
-
-  Copilot Chat can help you separate your business logic from your user interface code, making it easier to maintain and scale your application.
 
 * [Handling cross-cutting concerns](/en/copilot/tutorials/copilot-cookbook/refactor-code/handle-cross-cutting)
 
@@ -121,30 +105,6 @@ Learn how to use GitHub Copilot to accomplish specific tasks.
 
   Copilot Chat can help you rewrite code to perform the same operations but in a different programming language.
 
-* [Filing issues without breaking your flow](/en/copilot/tutorials/copilot-cookbook/document-code/filing-issues-without-breaking-your-flow)
-
-  When something catches your attention mid-task, use Copilot CLI to file a GitHub issue with code context, linked PRs, and labels, then get back to what you were doing.
-
-* [Documenting legacy code](/en/copilot/tutorials/copilot-cookbook/document-code/document-legacy-code)
-
-  Copilot Chat can help with documenting legacy code.
-
-* [Explaining legacy code](/en/copilot/tutorials/copilot-cookbook/document-code/explain-legacy-code)
-
-  Copilot Chat can help with explaining unfamiliar code.
-
-* [Explaining complex algorithms or logic](/en/copilot/tutorials/copilot-cookbook/document-code/explain-complex-logic)
-
-  Copilot Chat can help add clear and concise documentation on complex algorithms or logic.
-
-* [Syncing documentation with code changes](/en/copilot/tutorials/copilot-cookbook/document-code/sync-documentation)
-
-  Copilot Chat can help with keeping code documentation up-to-date.
-
-* [Writing discussions or blog posts](/en/copilot/tutorials/copilot-cookbook/document-code/write-discussions-or-blog-posts)
-
-  Copilot Chat can help you generate ideas, outline, or draft discussions or blog posts.
-
 * [Generating unit tests](/en/copilot/tutorials/copilot-cookbook/testing-code/generate-unit-tests)
 
   Copilot Chat can help with generating unit tests for a function.
@@ -156,10 +116,6 @@ Learn how to use GitHub Copilot to accomplish specific tasks.
 * [Creating end-to-end tests for a webpage](/en/copilot/tutorials/copilot-cookbook/testing-code/create-end-to-end-tests)
 
   Copilot Chat can help with generating end-to-end tests.
-
-* [Updating unit tests to match code changes](/en/copilot/tutorials/copilot-cookbook/testing-code/update-unit-tests)
-
-  Copilot Chat can help with updating your tests.
 
 * [Securing your repository](/en/copilot/tutorials/copilot-cookbook/analyze-security/secure-your-repository)
 

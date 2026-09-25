@@ -30,6 +30,19 @@ exceed the size of a 32-bit integer, it's encoded as a string.
 
 Represents true or false values.
 
+## CodeCoverageParameters - object
+
+Enforce minimum line coverage thresholds on pull requests. When configured,
+uploaded coverage data must meet the specified criteria before changes can be merged.
+
+### Fields for `CodeCoverageParameters`
+
+* `maxCoverageDrop` (Float): The maximum percentage points that line coverage may drop relative to the
+default branch. Pull requests that reduce line coverage by more than this
+amount will be blocked.
+* `minimumCoverage` (Float): The absolute minimum line coverage percentage required. Pull requests with
+line coverage below this threshold will be blocked.
+
 ## CustomPropertyValue - scalar
 
 A custom property value can be either a string or an array of strings. All

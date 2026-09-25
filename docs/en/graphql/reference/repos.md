@@ -107,6 +107,19 @@ to copying only the default branch of the template.
 * `repositoryId` (ID!): The Node ID of the template repository.
 * `visibility` (RepositoryVisibility!): Indicates the repository's visibility level.
 
+## CodeCoverageParametersInput - input object
+
+Enforce minimum line coverage thresholds on pull requests. When configured,
+uploaded coverage data must meet the specified criteria before changes can be merged.
+
+### Input fields for `CodeCoverageParametersInput`
+
+* `maxCoverageDrop` (Float): The maximum percentage points that line coverage may drop relative to the
+default branch. Pull requests that reduce line coverage by more than this
+amount will be blocked.
+* `minimumCoverage` (Float): The absolute minimum line coverage percentage required. Pull requests with
+line coverage below this threshold will be blocked.
+
 ## CodeScanningParameters - object
 
 Choose which tools must provide code scanning results before the reference is
@@ -1878,6 +1891,7 @@ requests, and repository settings, including adding collaborators.
 * `MAINTAIN`: Can read, clone, and push to this repository. They can also manage issues, pull requests, and some repository settings.
 * `READ`: Can read and clone this repository. Can also open and comment on issues and pull requests.
 * `TRIAGE`: Can read and clone this repository. Can also manage issues and pull requests.
+* `TRIAGE_PLUS`: Can read and clone this repository. Can also manage issues and pull requests, plus additional triage abilities.
 * `WRITE`: Can read, clone, and push to this repository. Can also manage issues and pull requests.
 
 ## RepositoryPlanFeatures - object
@@ -2137,6 +2151,11 @@ The rule types supported in rulesets.
 
 * `AUTHORIZATION`: Authorization.
 * `BRANCH_NAME_PATTERN`: Branch name pattern.
+* `CODE_COVERAGE`: Enforce minimum line coverage thresholds on pull requests. When configured,
+uploaded coverage data must meet the specified criteria before changes can be merged.
+* `CODE_QUALITY`: Choose which severity levels of code quality results should block pull request
+merges. When configured, a code quality analysis must be done on the pull
+request before the changes can be merged.
 * `CODE_SCANNING`: Choose which tools must provide code scanning results before the reference is
 updated. When configured, code scanning must be enabled and have results for
 both the commit and the reference being updated.
@@ -2246,6 +2265,8 @@ Types which can be parameters for RepositoryRule objects.
 ### Possible types for `RuleParameters`
 
 * BranchNamePatternParameters
+* CodeCoverageParameters
+* CodeQualityParameters
 * CodeScanningParameters
 * CommitAuthorEmailPatternParameters
 * CommitMessagePatternParameters
@@ -2270,6 +2291,8 @@ Specifies the parameters for a RepositoryRule object. Only one of the fields sho
 ### Input fields for `RuleParametersInput`
 
 * `branchNamePattern` (BranchNamePatternParametersInput): Parameters used for the branch_name_pattern rule type.
+* `codeCoverage` (CodeCoverageParametersInput): Parameters used for the code_coverage rule type.
+* `codeQuality` (CodeQualityParametersInput): Parameters used for the code_quality rule type.
 * `codeScanning` (CodeScanningParametersInput): Parameters used for the code_scanning rule type.
 * `commitAuthorEmailPattern` (CommitAuthorEmailPatternParametersInput): Parameters used for the commit_author_email_pattern rule type.
 * `commitMessagePattern` (CommitMessagePatternParametersInput): Parameters used for the commit_message_pattern rule type.

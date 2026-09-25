@@ -45,7 +45,7 @@ When you know the exact change you'd like, suggest it so the author can apply it
 
 Finish by submitting your review with a decision that tells the author what to do next.
 
-1. Click **Review changes**.
+1. Click **Submit review**.
 2. Add a summary comment.
 3. Select a decision, then click **Submit review**:
 

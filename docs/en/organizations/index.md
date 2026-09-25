@@ -43,10 +43,6 @@ You can use organizations to collaborate with a large number of people across ma
 
   You can customize access to each repository in your organization by assigning granular roles, giving people access to the features and tasks they need.
 
-* [Governing how people use repositories in your organization](/en/organizations/managing-organization-settings/governing-how-people-use-repositories-in-your-organization)
-
-  Create a repository policy to control who can do things like create and delete repositories.
-
 * [Reviewing the audit log for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization)
 
   The audit log allows organization admins to quickly review the actions performed by members of your organization. It includes details such as who performed the action, what the action was, and when it was performed.
@@ -377,14 +373,6 @@ You can use organizations to collaborate with a large number of people across ma
 
   You can enable, disable, and limit GitHub Actions for an organization.
 
-* [About Actions policies](/en/organizations/managing-organization-settings/actions-policies/about-actions-policies)
-
-  Actions policies let you govern how GitHub Actions workflows run across repositories in your organization, starting with workflow execution protections.
-
-* [Workflow execution protections](/en/organizations/managing-organization-settings/actions-policies/workflow-execution-protections)
-
-  Workflow execution protections let you control who can trigger GitHub Actions workflows and which events are permitted to run them across your organization.
-
 * [About networking for hosted compute products in your organization](/en/organizations/managing-organization-settings/about-networking-for-hosted-compute-products-in-your-organization)
 
   You can manage private networking for GitHub-hosted products using network configurations in your organization.
@@ -401,9 +389,9 @@ You can use organizations to collaborate with a large number of people across ma
 
   Learn how to fix common issues while creating Azure private network configurations to use GitHub-hosted runners with an Azure VNET.
 
-* [Configuring the retention period for GitHub Actions artifacts and logs in your organization](/en/organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization)
+* [Configuring the retention period for checks, workflow runs, commit statuses, artifacts, and logs in your organization](/en/organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization)
 
-  You can configure the retention period for GitHub Actions artifacts and logs in your organization.
+  Control how long checks, workflow runs, commit statuses, artifacts, and logs are retained in your organization.
 
 * [Setting permissions for adding outside collaborators](/en/setting-permissions-for-adding-outside-collaborators)
 

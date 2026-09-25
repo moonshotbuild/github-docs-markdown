@@ -124,11 +124,11 @@ For exposed or exploited credentials, the most immediate action you can take is 
 
 * **Revoke or delete credentials for a specific user**
 
-  If you've identified a specific compromised account, enterprise or organization owners on GitHub Enterprise Cloud can revoke SSO authorizations for that individual user. For enterprises with Enterprise Managed Users, you can also delete credentials entirely. This is less disruptive than bulk actions while still containing the threat. See [Revoking SSO authorizations or deleting credentials in your enterprise](/en/enterprise-cloud@latest/admin/managing-iam/respond-to-incidents/revoke-authorizations-or-tokens#taking-action-against-individual-members).
+  If you've identified a specific compromised account, enterprise or organization owners on GitHub Enterprise Cloud can revoke SSO authorizations for that individual user. For enterprises with Enterprise Managed Users, you can also delete credentials entirely. This is less disruptive than bulk actions while still containing the threat. See [Revoking authorizations or deleting credentials in your enterprise](/en/enterprise-cloud@latest/admin/managing-iam/respond-to-incidents/revoke-authorizations-or-tokens#taking-action-against-individual-members).
 
 * **Revoke or delete credentials of a specific type**
 
-  If the incident is limited to one credential type, such as personal access tokens (classic), enterprise or organization owners can revoke SSO authorizations or delete credentials of that type only, across all members, using the GitHub UI. This targets the affected credential type without disrupting other credentials. See [Revoking SSO authorizations or deleting credentials in your enterprise](/en/enterprise-cloud@latest/admin/managing-iam/respond-to-incidents/revoke-authorizations-or-tokens#taking-action-against-a-specific-credential-type).
+  If the incident is limited to one credential type, such as personal access tokens (classic), enterprise or organization owners can revoke SSO authorizations or delete credentials of that type only, across all members, using the GitHub UI. This targets the affected credential type without disrupting other credentials. See [Revoking authorizations or deleting credentials in your enterprise](/en/enterprise-cloud@latest/admin/managing-iam/respond-to-incidents/revoke-authorizations-or-tokens#taking-action-against-a-specific-credential-type).
 
 * **Emergency actions (major incident)**
 

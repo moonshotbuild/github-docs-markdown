@@ -52,7 +52,7 @@ If you use the REST API for secret scanning, you can use the `Secret type` to re
 | Base64 format support          |  |  |                                                                                                                                                                  Some                                                                                                                                                                 |
 
 > \[!NOTE]
-> Validity and extended metadata checks are only available to users with GitHub Team or GitHub Enterprise who enable the feature as part of GitHub Secret Protection.
+> Validity and extended metadata checks for partner patterns are only available to users with GitHub Team or GitHub Enterprise who enable the feature as part of GitHub Secret Protection.
 
 ## Supported generic patterns
 

@@ -209,14 +209,6 @@ Learn to use and manage the repositories that allow you to store and collaborate
 
   You can control features that secure and analyze the code in your project on GitHub.
 
-* [About Actions policies](/en/repositories/managing-your-repositorys-settings-and-features/actions-policies/about-actions-policies)
-
-  Actions policies let you govern how GitHub Actions workflows run in your repository, starting with workflow execution protections.
-
-* [Workflow execution protections](/en/repositories/managing-your-repositorys-settings-and-features/actions-policies/workflow-execution-protections)
-
-  Workflow execution protections let you control who can trigger GitHub Actions workflows and which events are permitted to run them.
-
 * [Setting repository visibility](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)
 
   You can choose who can view your repository.

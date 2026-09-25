@@ -189,9 +189,9 @@ You also need to add the `.npmrc` file to your project so that all requests to i
 
 ### Installing packages from other organizations
 
-By default, you can only use GitHub Packages packages from one organization. If you'd like to route package requests to multiple organizations and users, you can add additional lines to your `.npmrc` file, replacing `NAMESPACE` with the name of the personal account or organization to which the package is scoped.
+By default, you can only use GitHub Packages packages from one organization. If you'd like to route package requests to multiple organizations and users, you can add additional lines to your `.npmrc` file, replacing `NAMESPACE1` and `NAMESPACE2` with the names of the personal accounts or organizations to which the packages are scoped.
 
 ```shell
-@NAMESPACE:registry=https://npm.pkg.github.com
-@NAMESPACE:registry=https://npm.pkg.github.com
+@NAMESPACE1:registry=https://npm.pkg.github.com
+@NAMESPACE2:registry=https://npm.pkg.github.com
 ```

@@ -37,7 +37,7 @@ Choose the model based on the work involved:
 
 Use as much capability as the task requires, and as little as necessary. Matching capability to task improves outcomes and directly controls costs at scale.
 
-For a breakdown by model and task type, see [Comparing AI models using different tasks](/en/copilot/tutorials/compare-ai-models).
+For a breakdown by model and task type, see [AI model comparison](/en/copilot/reference/ai-models/model-comparison#recommended-models-by-task).
 
 ### Configure the reasoning level of the model
 
@@ -129,7 +129,7 @@ AI credit session limits are most useful when:
 * You want to cap AI credits usage on a single session to avoid unexpected costs.
 * You're tuning agent efficiency and want to find the minimum AI credits that still produces a good result.
 
-Session limits are soft limits that help you control how many AI credits any single task consumes, but they don't replace user-level budgets or spending limits, which govern your overall monthly consumption. For those controls, see [Budgets for usage-based billing](/en/copilot/concepts/billing/budgets-for-usage-based-billing).
+Session limits are soft limits that help you control how many AI credits any single task consumes, but they don't replace user-level budgets or spending limits, which govern your overall monthly consumption. For those controls, see [Budgets for usage-based billing](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/budgets).
 
 For information on how to set a session limit in Copilot CLI, see [Setting an AI credit session limit in GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/set-session-limit).
 
@@ -156,7 +156,7 @@ In Copilot CLI, `/chronicle` can generate useful insights from your session hist
 * Use `/chronicle tips` to analyze your recent session history and surface opportunities to use Copilot more efficiently.
 * Use `/chronicle cost-tips` to understand your token usage patterns and get insights into how to reduce cost.
 
-See [About GitHub Copilot CLI session data](/en/copilot/concepts/agents/copilot-cli/chronicle#the-chronicle-slash-command).
+See [Using GitHub Copilot CLI session data](/en/copilot/how-tos/copilot-cli/use-copilot-cli/chronicle#using-the-chronicle-slash-command).
 
 ### Feed insights into a `copilot-instructions.md` file
 

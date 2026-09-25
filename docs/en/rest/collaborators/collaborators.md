@@ -55,7 +55,7 @@ OAuth app tokens and personal access tokens (classic) need the read:org and repo
 
 - **`permission`** (string)
   Filter collaborators by the permissions they have on the repository. If not specified, all collaborators will be returned.
-  Can be one of: `pull`, `triage`, `push`, `maintain`, `admin`
+  Can be one of: `pull`, `triage`, `triage_plus`, `push`, `maintain`, `admin`
 
 - **`per_page`** (integer)
   The number of results per page (max 100). For more information, see "Using pagination in the REST API."
@@ -205,7 +205,7 @@ You are limited to sending 50 invitations to a repository per 24 hour period. No
 #### Body parameters
 
 - **`permission`** (string)
-  The permission to grant the collaborator. Only valid on organization-owned repositories. We accept the following permissions to be set: pull, triage, push, maintain, admin and you can also specify a custom repository role name, if the owning organization has defined any.
+  The permission to grant the collaborator. Only valid on organization-owned repositories. We accept the following permissions to be set: pull, triage, triage_plus, push, maintain, admin and you can also specify a custom repository role name, if the owning organization has defined any.
   Default: `push`
 
 ### HTTP response status codes
@@ -399,7 +399,7 @@ curl -L \
 * `inviter`: required, any of:
   * **null**
   * **Simple User** (see above)
-* `permissions`: required, string, enum: `read`, `write`, `admin`, `triage`, `maintain`
+* `permissions`: required, string, enum: `read`, `write`, `admin`, `triage`, `triage_plus`, `maintain`
 * `created_at`: required, string, format: date-time
 * `expired`: boolean
 * `url`: required, string

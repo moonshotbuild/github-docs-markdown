@@ -166,7 +166,7 @@ Use custom instructions to set defaults that apply to every session, such as the
 
 Copilot cloud agent uses GitHub Actions minutes and AI credits.
 
-For more information, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing/organizations-and-enterprises/usage-based-billing).
+For more information, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing).
 
 ## Adding or removing an organization to the GitHub Copilot for Jira app
 

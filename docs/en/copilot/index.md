@@ -17,19 +17,31 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 ### Getting started
 
-* [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot)
+* [About GitHub Copilot](/en/copilot/get-started/about-github-copilot)
 
-  Learn what Copilot is and what you can do with it.
+  Understand how GitHub Copilot helps you ship software faster, how it works, and how to get access.
 
-* [Quickstart for GitHub Copilot](/en/copilot/get-started/quickstart)
+* [Quickstart for using GitHub Copilot on GitHub.com](/en/copilot/get-started/quickstart-for-using-github-copilot-on-github-com)
 
-  Quickly learn how to use GitHub Copilot.
+  Understand code and work faster by asking questions and assigning coding tasks to Copilot cloud agent without leaving GitHub.
 
 ## Articles
 
-* [Quickstart for GitHub Copilot](/en/copilot/get-started/quickstart)
+* [About GitHub Copilot](/en/copilot/get-started/about-github-copilot)
 
-  Quickly learn how to use GitHub Copilot.
+  Understand how GitHub Copilot helps you ship software faster, how it works, and how to get access.
+
+* [Where to use GitHub Copilot](/en/copilot/get-started/where-to-use-github-copilot)
+
+  Choose where to work with GitHub Copilot, from understanding an issue to writing, reviewing, testing, and shipping code.
+
+* [Quickstart for using GitHub Copilot on GitHub.com](/en/copilot/get-started/quickstart-for-using-github-copilot-on-github-com)
+
+  Understand code and work faster by asking questions and assigning coding tasks to Copilot cloud agent without leaving GitHub.
+
+* [Quickstart for using GitHub Copilot in your IDE](/en/copilot/get-started/quickstart-for-using-github-copilot-in-your-ide)
+
+  Use Copilot in your IDE to explain concepts, complete code, propose edits, and validate files with agent mode.
 
 * [Getting started with GitHub Copilot CLI](/en/copilot/get-started/cli-quickstart)
 
@@ -43,17 +55,9 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   In this tutorial, you'll use the Copilot SDK to build a command-line assistant. You'll start with the basics, add streaming responses, then add custom tools - giving Copilot the ability to call your code.
 
-* [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot)
-
-  Learn what Copilot is and what you can do with it.
-
 * [Plans for GitHub Copilot](/en/copilot/get-started/plans)
 
   Discover the plans available for Copilot.
-
-* [GitHub Copilot features](/en/copilot/get-started/features)
-
-  GitHub Copilot offers a suite of features for users and administrators.
 
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)
 
@@ -99,10 +103,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Find out about using the Model Context Protocol (MCP) with Copilot cloud agent.
 
-* [Risks and mitigations for GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/risks-and-mitigations)
-
-  How do Copilot cloud agent's built-in security protections mitigate known risks?
-
 * [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli)
 
   Find out about using Copilot from the command line.
@@ -138,10 +138,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Researching with GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/research)
 
   The `/research` slash command turns Copilot into your research assistant, gathering in-depth information and insights on a topic.
-
-* [About GitHub Copilot CLI session data](/en/copilot/concepts/agents/copilot-cli/chronicle)
-
-  Your Copilot CLI sessions build a searchable history of everything you have worked on. Query past sessions with natural language, generate standup reports, get personalized tips, and resume previous work.
 
 * [About the rubber duck agent](/en/copilot/concepts/agents/copilot-cli/rubber-duck)
 
@@ -211,10 +207,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Skills allow Copilot to perform specialized tasks.
 
-* [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes)
-
-  Cloud and local sandboxes provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine or in fully isolated cloud environments.
-
 * [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
 
   Follow these strategies to improve your Copilot results.
@@ -234,10 +226,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Indexing repositories for GitHub Copilot](/en/copilot/concepts/context/repository-indexing)
 
   Copilot improves responses by indexing your repositories.
-
-* [Content exclusion for GitHub Copilot](/en/copilot/concepts/context/content-exclusion)
-
-  You can prevent Copilot from accessing certain files.
 
 * [Choosing the right AI tool for your task](/en/copilot/concepts/tools/ai-tools)
 
@@ -291,7 +279,23 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Copilot usage metrics provide visibility into how Copilot is adopted and used across your organization, including engagement, activity, code generation, and pull request lifecycle trends.
 
-* [Network settings for GitHub Copilot](/en/copilot/concepts/network-settings)
+* [Content exclusion for GitHub Copilot](/en/copilot/concepts/security-governance-and-network-settings/content-exclusion)
+
+  You can prevent Copilot from accessing certain files.
+
+* [About GitHub Copilot session data](/en/copilot/concepts/security-governance-and-network-settings/session-data)
+
+  Understand what session data is, where it is stored, who can access it, and how it is managed.
+
+* [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/security-governance-and-network-settings/about-cloud-and-local-sandboxes)
+
+  Cloud and local sandboxes provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine or in fully isolated cloud environments.
+
+* [Risks and mitigations for GitHub Copilot cloud agent](/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations)
+
+  How do Copilot cloud agent's built-in security protections mitigate known risks?
+
+* [Network settings for GitHub Copilot](/en/copilot/concepts/security-governance-and-network-settings/network-settings)
 
   You can connect to GitHub Copilot through an HTTP proxy and use custom certificates.
 
@@ -299,9 +303,9 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Control the availability of GitHub Copilot features and models for your users.
 
-* [About default availability of Copilot models](/en/copilot/concepts/enterprise/default-model-availability)
+* [About default availability of Copilot features and models](/en/copilot/concepts/enterprise/default-availability)
 
-  A policy controls whether unconfigured models default to enabled or disabled.
+  Policies control whether unconfigured features and models default to enabled or disabled.
 
 * [FedRAMP-compliant models for GitHub Copilot](/en/copilot/concepts/enterprise/fedramp-models)
 
@@ -647,6 +651,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Run multiple isolated agent sessions simultaneously, each with its own branch, and steer them using different session modes, models, and tools.
 
+* [Configuring local sandboxing in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/configure-local-sandboxing)
+
+  Use the `/sandbox` slash command and project settings in the GitHub Copilot app to control how local sandboxing restricts filesystem access, network connectivity, and credential use.
+
 * [Working with canvas extensions in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/working-with-canvas-extensions)
 
   Use canvases in the GitHub Copilot app to build shared, agent-driven artifacts and interfaces for human-agent collaboration.
@@ -686,6 +694,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Citations](/en/copilot/how-tos/copilot-sdk/features/citations)
 
   Citations link spans of an assistant response back to the sources that support them. Turn on `enableCitations` when you create or resume a session, then read the `citations` payload on `assistant.message` events to render footnotes, source lists, or inline links.
+
+* [Client info](/en/copilot/how-tos/copilot-sdk/features/client-info)
+
+  Client info identifies the application using the Copilot SDK and, when applicable, a specific integration within it. An integration is an identifiable sub-part of the application through which the SDK is used, such as an extension or plugin. Set the optional `clientInfo` client option to attribute runtime telemetry for that connection to your application instead of the runtime's own build.
 
 * [Cloud sessions](/en/copilot/how-tos/copilot-sdk/features/cloud-sessions)
 
@@ -802,6 +814,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [GitHub OAuth setup](/en/copilot/how-tos/copilot-sdk/setup/github-oauth)
 
   Let users authenticate with their GitHub accounts to use Copilot through your application. This supports individual accounts, organization memberships, and enterprise identities.
+
+* [Run the Copilot runtime in process](/en/copilot/how-tos/copilot-sdk/setup/in-process-runtime)
+
+  In-process hosting loads the native Copilot runtime into your application process instead of starting a separate Copilot CLI process. Use it to remove child-process management while keeping the same Copilot SDK sessions, events, tools, hooks, and JSON-RPC behavior.
 
 * [Local CLI setup](/en/copilot/how-tos/copilot-sdk/setup/local-cli)
 
@@ -1147,6 +1163,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Check for changes to settings or licenses in your Copilot plan.
 
+* [Managing requests for additional Copilot budget](/en/copilot/how-tos/administer-copilot/manage-budget-requests)
+
+  Approve, adjust, or deny requests from members who have used all the AI credits in their budget.
+
 * [Configuring an MCP server allowlist for your enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-enterprise-allowlist)
 
   Define which MCP servers your users can and cannot use without the need for a private registry.
@@ -1379,10 +1399,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   GitHub Copilot Chat can help you create diagrams to better understand your data and communicate insights.
 
-* [Generating tables](/en/copilot/tutorials/copilot-cookbook/communicate-effectively/generating-tables)
-
-  Copilot Chat can help you create tables to organize information and present it clearly.
-
 * [Debugging invalid JSON](/en/copilot/tutorials/copilot-cookbook/debug-errors/debug-invalid-json)
 
   Copilot Chat can identify and resolve syntax errors or structural issues in JSON data.
@@ -1411,17 +1427,9 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Copilot Chat can suggest ways to make your code easier to understand and maintain.
 
-* [Fixing lint errors](/en/copilot/tutorials/copilot-cookbook/refactor-code/fix-lint-errors)
-
-  Copilot Chat can suggest ways to fix issues identified by a code linter.
-
 * [Refactoring for performance optimization](/en/copilot/tutorials/copilot-cookbook/refactor-code/refactor-for-optimization)
 
   Copilot Chat can suggest ways to speed up slow-running code.
-
-* [Refactoring for environmental sustainability](/en/copilot/tutorials/copilot-cookbook/refactor-code/refactor-for-sustainability)
-
-  Copilot Chat can suggest ways to make code more environmentally friendly.
 
 * [Refactoring to implement a design pattern](/en/copilot/tutorials/copilot-cookbook/refactor-code/refactor-design-patterns)
 
@@ -1430,10 +1438,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Refactoring data access layers](/en/copilot/tutorials/copilot-cookbook/refactor-code/refactor-data-access-layers)
 
   Copilot Chat can suggest ways to decouple your data access code from your business logic, making an application easier to maintain and scale.
-
-* [Decoupling business logic from UI components](/en/copilot/tutorials/copilot-cookbook/refactor-code/decouple-business-logic)
-
-  Copilot Chat can help you separate your business logic from your user interface code, making it easier to maintain and scale your application.
 
 * [Handling cross-cutting concerns](/en/copilot/tutorials/copilot-cookbook/refactor-code/handle-cross-cutting)
 
@@ -1451,30 +1455,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Copilot Chat can help you rewrite code to perform the same operations but in a different programming language.
 
-* [Filing issues without breaking your flow](/en/copilot/tutorials/copilot-cookbook/document-code/filing-issues-without-breaking-your-flow)
-
-  When something catches your attention mid-task, use Copilot CLI to file a GitHub issue with code context, linked PRs, and labels, then get back to what you were doing.
-
-* [Documenting legacy code](/en/copilot/tutorials/copilot-cookbook/document-code/document-legacy-code)
-
-  Copilot Chat can help with documenting legacy code.
-
-* [Explaining legacy code](/en/copilot/tutorials/copilot-cookbook/document-code/explain-legacy-code)
-
-  Copilot Chat can help with explaining unfamiliar code.
-
-* [Explaining complex algorithms or logic](/en/copilot/tutorials/copilot-cookbook/document-code/explain-complex-logic)
-
-  Copilot Chat can help add clear and concise documentation on complex algorithms or logic.
-
-* [Syncing documentation with code changes](/en/copilot/tutorials/copilot-cookbook/document-code/sync-documentation)
-
-  Copilot Chat can help with keeping code documentation up-to-date.
-
-* [Writing discussions or blog posts](/en/copilot/tutorials/copilot-cookbook/document-code/write-discussions-or-blog-posts)
-
-  Copilot Chat can help you generate ideas, outline, or draft discussions or blog posts.
-
 * [Generating unit tests](/en/copilot/tutorials/copilot-cookbook/testing-code/generate-unit-tests)
 
   Copilot Chat can help with generating unit tests for a function.
@@ -1486,10 +1466,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Creating end-to-end tests for a webpage](/en/copilot/tutorials/copilot-cookbook/testing-code/create-end-to-end-tests)
 
   Copilot Chat can help with generating end-to-end tests.
-
-* [Updating unit tests to match code changes](/en/copilot/tutorials/copilot-cookbook/testing-code/update-unit-tests)
-
-  Copilot Chat can help with updating your tests.
 
 * [Securing your repository](/en/copilot/tutorials/copilot-cookbook/analyze-security/secure-your-repository)
 
@@ -1619,10 +1595,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Learn how to use the Model Context Protocol (MCP) to expand the agentic capabilities of Copilot Chat.
 
-* [Comparing AI models using different tasks](/en/copilot/tutorials/compare-ai-models)
-
-  Explore real-world examples of common developer tasks along with sample prompts, responses, and guidance to help you choose the right AI model for your workflow.
-
 * [Speeding up development work with GitHub Copilot Spaces](/en/copilot/tutorials/speed-up-development-work)
 
   Learn how to use Copilot Spaces to help you with development work.
@@ -1659,9 +1631,17 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Learn how to plan an effective enablement process to drive Copilot adoption.
 
+* [Rolling out the GitHub Copilot app to your team](/en/copilot/tutorials/roll-out-at-scale/enable-developers/copilot-app-for-teams)
+
+  Roll out the GitHub Copilot app so developers can direct agents across parallel tasks while you control access, model availability, and external tools.
+
 * [Integrating agentic AI into your enterprise's software development lifecycle](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
 
   See how agents can boost productivity across your enterprise.
+
+* [Driving team adoption of agentic GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/enable-developers/drive-team-agentic-adoption)
+
+  Help established teams build sustained habits with GitHub Copilot app and Copilot CLI, then measure adoption and business impact.
 
 * [Achieving your company's engineering goals with GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/drive-downstream-impact/achieve-company-goals)
 
@@ -1703,10 +1683,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Use Copilot to generate unit and integration tests, and help improve code quality.
 
-* [Refactoring code with GitHub Copilot](/en/copilot/tutorials/refactor-code)
-
-  Leverage Copilot artificial intelligence to help you refactor your code quickly and effectively.
-
 * [Optimizing your AI usage to maximize efficiency and reduce cost](/en/copilot/tutorials/optimize-ai-usage)
 
   Learn how to choose the right models, structure your prompts, and add guardrails so that Copilot completes tasks more efficiently and uses fewer AI credits.
@@ -1727,33 +1703,9 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Learn techniques to verify and validate AI-generated code, and how Copilot Chat can help.
 
-* [Learning a new programming language with GitHub Copilot](/en/copilot/tutorials/learn-a-new-language)
-
-  GitHub Copilot Chat can help you extend your programming skills by learning how to code in a new programming language.
-
-* [Modernizing legacy code with GitHub Copilot](/en/copilot/tutorials/modernize-legacy-code)
-
-  Copilot Chat helps modernize legacy code by suggesting refactors and creating tests to catch potential issues.
-
-* [Modernizing Java applications with GitHub Copilot](/en/copilot/tutorials/modernize-java-applications)
-
-  GitHub Copilot can help modernize and migrate Java applications by assessing your codebase, identifying upgrade paths, and automating remediation and containerization tasks.
-
-* [Using GitHub Copilot to migrate a project to another programming language](/en/copilot/tutorials/migrate-a-project)
-
-  GitHub Copilot Chat can help you move a project to a different language. This guide describes what's involved in a migration process and gives an example of a PHP to Python migration.
-
-* [Planning a project with GitHub Copilot](/en/copilot/tutorials/plan-a-project)
-
-  Plan your next project by using GitHub Copilot to turn your ideas into issues.
-
 * [Vibe coding with GitHub Copilot](/en/copilot/tutorials/vibe-coding)
 
   Create an application without writing any code yourself.
-
-* [Upgrading projects with GitHub Copilot](/en/copilot/tutorials/upgrade-projects)
-
-  You can use GitHub Copilot to upgrade your Maven and Gradle Java applications and .NET applications.
 
 * [Using hooks with Copilot CLI for predictable, policy-compliant execution](/en/copilot/tutorials/copilot-cli-hooks)
 
@@ -1778,3 +1730,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Application card: GitHub Copilot Agents](/en/copilot/responsible-use/agents)
 
   Learn how to use GitHub Copilot agentic features responsibly by understanding their purposes, capabilities, and limitations.
+
+* [GitHub Copilot on GitHub Enterprise Server](/en/copilot-on-ghes)
+
+  Specific documentation about using GitHub Copilot in a server-hosted enterprise.

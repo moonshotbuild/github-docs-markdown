@@ -118,7 +118,7 @@ A GitHub Security Advisory.
 * `notificationsPermalink` (URI): The permalink for the advisory's dependabot alerts page.
 * `origin` (String!): The organization that originated the advisory.
 * `permalink` (URI): The permalink for the advisory.
-* `publishedAt` (DateTime!): When the advisory was published.
+* `publishedAt` (DateTime!): When GitHub published this advisory.
 * `references` ([SecurityAdvisoryReference!]!): A list of references for this advisory.
 * `severity` (SecurityAdvisorySeverity!): The severity of the advisory.
 * `summary` (String!): A short plaintext summary of the advisory.

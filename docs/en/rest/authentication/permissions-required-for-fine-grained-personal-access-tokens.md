@@ -71,6 +71,11 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}` | write | PAT | ✓ |
 | `DELETE /orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}` | write | PAT | ✓ |
 | `PUT /orgs/{org}/actions/permissions/workflow` | write | PAT | ✗ |
+| `GET /orgs/{org}/actions/policies` | write | PAT | ✗ |
+| `POST /orgs/{org}/actions/policies` | write | PAT | ✗ |
+| `GET /orgs/{org}/actions/policies/{policy_id}` | write | PAT | ✗ |
+| `PUT /orgs/{org}/actions/policies/{policy_id}` | write | PAT | ✗ |
+| `DELETE /orgs/{org}/actions/policies/{policy_id}` | write | PAT | ✗ |
 | `PATCH /orgs/{org}/code-scanning/ai-scan` | write | PAT | ✗ |
 | `POST /orgs/{org}/code-security/configurations` | write | PAT | ✗ |
 | `DELETE /orgs/{org}/code-security/configurations/detach` | write | PAT | ✗ |
@@ -596,7 +601,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 
 | Endpoint | Access | Tokens | Additional Permissions |
 |----------|--------|--------|------------------------|
-| `POST /orgs/{org}/repos` | write | PAT | ✗ |
+| `POST /orgs/{org}/repos` | write | PAT | ✓ |
 | `PUT /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}` | write | PAT | ✓ |
 | `DELETE /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}` | write | PAT | ✓ |
 | `PATCH /repos/{owner}/{repo}` | write | PAT | ✗ |
@@ -610,6 +615,11 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /repos/{owner}/{repo}/actions/permissions/fork-pr-workflows-private-repos` | write | PAT | ✗ |
 | `PUT /repos/{owner}/{repo}/actions/permissions/selected-actions` | write | PAT | ✗ |
 | `PUT /repos/{owner}/{repo}/actions/permissions/workflow` | write | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/actions/policies` | write | PAT | ✗ |
+| `POST /repos/{owner}/{repo}/actions/policies` | write | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/actions/policies/{policy_id}` | write | PAT | ✗ |
+| `PUT /repos/{owner}/{repo}/actions/policies/{policy_id}` | write | PAT | ✗ |
+| `DELETE /repos/{owner}/{repo}/actions/policies/{policy_id}` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/actions/runners/generate-jitconfig` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/actions/runners/registration-token` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/actions/runners/remove-token` | write | PAT | ✗ |
@@ -694,7 +704,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `POST /repos/{template_owner}/{template_repo}/generate` | write | PAT | ✓ |
 | `PUT /teams/{team_id}/repos/{owner}/{repo}` | write | PAT | ✓ |
 | `DELETE /teams/{team_id}/repos/{owner}/{repo}` | write | PAT | ✓ |
-| `POST /user/repos` | write | PAT | ✗ |
+| `POST /user/repos` | write | PAT | ✓ |
 | `DELETE /user/repository_invitations/{invitation_id}` | write | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/cache/retention-limit` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/permissions` | read | PAT | ✗ |
@@ -958,6 +968,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/tarball/{ref}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/zipball/{ref}` | read | PAT | ✗ |
 | `POST /repos/{template_owner}/{template_repo}/generate` | read | PAT | ✓ |
+| `POST /repos/{template_owner}/{template_repo}/generate` | read | PAT | ✓ |
 
 ## Repository permissions for "Copilot agent settings"
 
@@ -1218,6 +1229,14 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stacks` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/stacks/{stack_number}` | read | PAT | ✗ |
+
+## Repository permissions for "Repository creation"
+
+| Endpoint | Access | Tokens | Additional Permissions |
+|----------|--------|--------|------------------------|
+| `POST /orgs/{org}/repos` | write | PAT | ✓ |
+| `POST /repos/{template_owner}/{template_repo}/generate` | write | PAT | ✓ |
+| `POST /user/repos` | write | PAT | ✓ |
 
 ## Repository permissions for "Repository security advisories"
 

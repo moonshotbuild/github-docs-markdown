@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can use GitHub Copilot in GitHub Codespaces by adding a VS Code extension.
 
-[GitHub Copilot](https://copilot.github.com/) is an AI pair programmer that you can use in any codespace that you open in the VS Code web client or desktop application. For more information about GitHub Copilot, see [What is GitHub Copilot?](/en/copilot/get-started/what-is-github-copilot).
+[GitHub Copilot](https://copilot.github.com/) is an AI pair programmer that you can use in any codespace that you open in the VS Code web client or desktop application. For more information about GitHub Copilot, see [About GitHub Copilot](/en/copilot/get-started/about-github-copilot).
 
 To start using GitHub Copilot in GitHub Codespaces, install the [GitHub Copilot extension from the Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot).
 
@@ -25,4 +25,5 @@ To include GitHub Copilot, or other extensions, in all of your codespaces, enabl
 
 ## Further reading
 
-* [Quickstart for GitHub Copilot](/en/copilot/get-started/quickstart)
+* [Quickstart for using GitHub Copilot on GitHub.com](/en/copilot/get-started/quickstart-for-using-github-copilot-on-github-com)
+* [Quickstart for using GitHub Copilot in your IDE](/en/copilot/get-started/quickstart-for-using-github-copilot-in-your-ide)

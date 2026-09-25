@@ -73,4 +73,4 @@ Pull requests connect your code to the automation and services that help you wri
 
 * [Creating a pull request](/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request)
 
-* [Quickstart for GitHub Copilot](/en/copilot/get-started/quickstart)
+* [Quickstart for using GitHub Copilot on GitHub.com](/en/copilot/get-started/quickstart-for-using-github-copilot-on-github-com)

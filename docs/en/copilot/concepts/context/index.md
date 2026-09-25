@@ -30,7 +30,3 @@ Learn how GitHub Copilot gathers contextual information to provide relevant resp
 * [Indexing repositories for GitHub Copilot](/en/copilot/concepts/context/repository-indexing)
 
   Copilot improves responses by indexing your repositories.
-
-* [Content exclusion for GitHub Copilot](/en/copilot/concepts/context/content-exclusion)
-
-  You can prevent Copilot from accessing certain files.

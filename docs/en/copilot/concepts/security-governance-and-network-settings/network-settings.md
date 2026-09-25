@@ -1,5 +1,5 @@
 ---
-source_path: "/en/copilot/concepts/network-settings"
+source_path: "/en/copilot/concepts/security-governance-and-network-settings/network-settings"
 title: "Network settings for GitHub Copilot"
 intro: "You can connect to GitHub Copilot through an HTTP proxy and use custom certificates."
 product: "GitHub Copilot"
@@ -9,8 +9,10 @@ breadcrumbs:
     href: "/en/copilot"
   - title: "Concepts"
     href: "/en/copilot/concepts"
+  - title: "Security, governance, and network settings"
+    href: "/en/copilot/concepts/security-governance-and-network-settings"
   - title: "Network settings"
-    href: "/en/copilot/concepts/network-settings"
+    href: "/en/copilot/concepts/security-governance-and-network-settings/network-settings"
 ---
 
 # Network settings for GitHub Copilot

@@ -23,7 +23,7 @@ When you review and investigate a single notification, you have several triaging
 
 To save a single notification to review later, to the right of the notification, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-bookmark" aria-label="Save" role="img"><path d="M3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v11.5a.75.75 0 0 1-1.227.579L8 11.722l-3.773 3.107A.751.751 0 0 1 3 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.91l3.023-2.489a.75.75 0 0 1 .954 0l3.023 2.49V2.75a.25.25 0 0 0-.25-.25Z"></path></svg>. You can only save one notification at a time.
 
-Saved notifications are kept indefinitely and can be viewed by clicking **Saved** in the sidebar or with the `is:saved` query. If your saved notification is older than 5 months and becomes unsaved, the notification will disappear from your inbox within a day.
+Saved notifications are kept indefinitely and can be viewed by clicking **Saved** in the sidebar or with the `is:saved` query. If your saved notification is older than 3 months and becomes unsaved, the notification will disappear from your inbox within a day.
 
 ![Screenshot of a single notification from the "Notifications" page. The bookmark icon is highlighted with an orange outline.](/assets/images/help/notifications-v2/save-triaging-option.png)
 

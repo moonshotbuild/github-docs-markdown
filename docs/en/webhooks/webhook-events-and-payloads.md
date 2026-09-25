@@ -764,9 +764,9 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 ### Webhook payload object
 
-**Action type:** `created`, `deleted`, `edited`
+**Action type:** `archived`, `created`, `deleted`, `edited`, `unarchived`
 
-A label was created.
+A label was archived.
 
 #### Webhook payload object parameters
 

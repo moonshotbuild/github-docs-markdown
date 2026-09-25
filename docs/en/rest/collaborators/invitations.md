@@ -235,7 +235,7 @@ Array of `Repository Invitation`:
 * `inviter`: required, any of:
   * **null**
   * **Simple User** (see above)
-* `permissions`: required, string, enum: `read`, `write`, `admin`, `triage`, `maintain`
+* `permissions`: required, string, enum: `read`, `write`, `admin`, `triage`, `triage_plus`, `maintain`
 * `created_at`: required, string, format: date-time
 * `expired`: boolean
 * `url`: required, string
@@ -450,7 +450,7 @@ curl -L \
 * `inviter`: required, any of:
   * **null**
   * **Simple User** (see above)
-* `permissions`: required, string, enum: `read`, `write`, `admin`, `triage`, `maintain`
+* `permissions`: required, string, enum: `read`, `write`, `admin`, `triage`, `triage_plus`, `maintain`
 * `created_at`: required, string, format: date-time
 * `expired`: boolean
 * `url`: required, string

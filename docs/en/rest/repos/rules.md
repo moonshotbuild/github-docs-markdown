@@ -467,6 +467,23 @@ A collection of reviewers and associated file patterns. Each reviewer has a list
           Can be one of: `none`, `critical`, `high_or_higher`, `medium_or_higher`, `all`
         - **`tool`** (string) (required)
           The name of a code scanning tool
+  - **`code_quality`** (object)
+    Choose which severity levels of code quality results should block pull request merges. When configured, a code quality analysis must be done on the pull request before the changes can be merged.
+    - **`type`** (string) (required)
+      Can be one of: `code_quality`
+    - **`parameters`** (object)
+      - **`severity`** (string) (required)
+        The lowest severity level at which code quality reviews need to be resolved before commits can be merged.
+        Can be one of: `errors`, `warnings`, `notes`, `all`
+  - **`code_coverage`** (object)
+    Enforce minimum line coverage thresholds on pull requests. When configured, uploaded coverage data must meet the specified criteria before changes can be merged.
+    - **`type`** (string) (required)
+      Can be one of: `code_coverage`
+    - **`parameters`** (object)
+      - **`max_coverage_drop`** (number)
+        The maximum percentage points that line coverage may drop relative to the default branch. Pull requests that reduce line coverage by more than this amount will be blocked.
+      - **`minimum_coverage`** (number)
+        The absolute minimum line coverage percentage required. Pull requests with line coverage below this threshold will be blocked.
   - **`copilot_code_review`** (object)
     Request Copilot code review for new pull requests automatically if the author has access to Copilot code review and their premium requests quota has not reached the limit.
     - **`type`** (string) (required)
@@ -927,6 +944,23 @@ A collection of reviewers and associated file patterns. Each reviewer has a list
           Can be one of: `none`, `critical`, `high_or_higher`, `medium_or_higher`, `all`
         - **`tool`** (string) (required)
           The name of a code scanning tool
+  - **`code_quality`** (object)
+    Choose which severity levels of code quality results should block pull request merges. When configured, a code quality analysis must be done on the pull request before the changes can be merged.
+    - **`type`** (string) (required)
+      Can be one of: `code_quality`
+    - **`parameters`** (object)
+      - **`severity`** (string) (required)
+        The lowest severity level at which code quality reviews need to be resolved before commits can be merged.
+        Can be one of: `errors`, `warnings`, `notes`, `all`
+  - **`code_coverage`** (object)
+    Enforce minimum line coverage thresholds on pull requests. When configured, uploaded coverage data must meet the specified criteria before changes can be merged.
+    - **`type`** (string) (required)
+      Can be one of: `code_coverage`
+    - **`parameters`** (object)
+      - **`max_coverage_drop`** (number)
+        The maximum percentage points that line coverage may drop relative to the default branch. Pull requests that reduce line coverage by more than this amount will be blocked.
+      - **`minimum_coverage`** (number)
+        The absolute minimum line coverage percentage required. Pull requests with line coverage below this threshold will be blocked.
   - **`copilot_code_review`** (object)
     Request Copilot code review for new pull requests automatically if the author has access to Copilot code review and their premium requests quota has not reached the limit.
     - **`type`** (string) (required)
