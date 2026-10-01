@@ -184,3 +184,7 @@ Organization owners can change several settings, including the names of reposito
 * [Managing custom properties for repositories in your organization](/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization)
 
   With custom properties, you can add metadata to repositories in your organization. You can use those properties to target repositories with rulesets.
+
+* [Integrating custom properties with an external system](/en/organizations/managing-organization-settings/sync-external-custom-properties)
+
+  Use a GitHub App to write external metadata to custom properties in an organization's repositories.

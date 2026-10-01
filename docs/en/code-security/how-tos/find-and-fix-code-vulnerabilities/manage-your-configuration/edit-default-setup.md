@@ -124,7 +124,7 @@ The recommended way to customize default setup at scale is to set an organizatio
 
    We recommend testing the configuration file on a single repository before setting the organization-wide default. See [Repository properties for code scanning](/en/code-security/concepts/code-scanning/repository-properties#testing-changes-before-applying-them).
 
-3. The configuration file will be automatically detected and merged with the configuration default setup generates the next time code scanning runs on each repository in the organization. Repositories that already have an explicit value set for the `github-codeql-config-file` property continue to use that value instead of the organization-wide default. For more information about how default and explicit repository property values interact, see [Managing custom properties for repositories in your organization](/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties).
+3. The configuration file will be automatically detected and merged with the configuration default setup generates the next time code scanning runs on each repository in the organization. Repositories that already have an explicit value set for the `github-codeql-config-file` property continue to use that value instead of the organization-wide default. For more information about how default and explicit repository property values interact, see [Managing custom properties for repositories in your organization](/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties-on-github).
 
 ### Applying a configuration file to a repository
 

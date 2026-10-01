@@ -251,6 +251,8 @@ Your {% data variables.product.pat\_v2 %} can make requests to the following RES
 
 * [`POST /repos/{owner}/{repo}/actions/jobs/{job_id}/rerun`](/en/rest/actions/workflow-runs#re-run-a-job-from-a-workflow-run)
 
+* [`GET /repos/{owner}/{repo}/actions/jobs/{job_id}/steps/{step_number}/logs`](/en/rest/actions/workflow-jobs#download-step-logs-for-a-workflow-run-job)
+
 * [`GET /repos/{owner}/{repo}/actions/oidc/customization/sub`](/en/rest/actions/oidc#get-the-customization-template-for-an-oidc-subject-claim-for-a-repository)
 
 * [`PUT /repos/{owner}/{repo}/actions/oidc/customization/sub`](/en/rest/actions/oidc#set-the-customization-template-for-an-oidc-subject-claim-for-a-repository)
@@ -506,6 +508,12 @@ Your {% data variables.product.pat\_v2 %} can make requests to the following RES
 * [`PATCH /repos/{owner}/{repo}/agents/variables/{name}`](/en/rest/agents/variables#update-a-repository-variable)
 
 * [`DELETE /repos/{owner}/{repo}/agents/variables/{name}`](/en/rest/agents/variables#delete-a-repository-variable)
+
+## apps
+
+* [`PUT /user/installations/{installation_id}/repositories/{repository_id}`](/en/rest/apps/installations#add-a-repository-to-an-app-installation)
+
+* [`DELETE /user/installations/{installation_id}/repositories/{repository_id}`](/en/rest/apps/installations#remove-a-repository-from-an-app-installation)
 
 ## billing
 
@@ -1209,6 +1217,12 @@ Your {% data variables.product.pat\_v2 %} can make requests to the following RES
 
 * [`GET /repos/{owner}/{repo}/issues/{issue_number}/parent`](/en/rest/issues/sub-issues#get-parent-issue)
 
+* [`GET /repos/{owner}/{repo}/issues/{issue_number}/relates_to`](/en/rest/issues/issues#list-issues-related-to-an-issue)
+
+* [`POST /repos/{owner}/{repo}/issues/{issue_number}/relates_to`](/en/rest/issues/issues#add-a-related-issue)
+
+* [`DELETE /repos/{owner}/{repo}/issues/{issue_number}/relates_to/{issue_id}`](/en/rest/issues/issues#remove-a-related-issue)
+
 * [`DELETE /repos/{owner}/{repo}/issues/{issue_number}/sub_issue`](/en/rest/issues/sub-issues#remove-sub-issue)
 
 * [`GET /repos/{owner}/{repo}/issues/{issue_number}/sub_issues`](/en/rest/issues/sub-issues#list-sub-issues)
@@ -1436,6 +1450,10 @@ Your {% data variables.product.pat\_v2 %} can make requests to the following RES
 * [`PUT /orgs/{org}/outside_collaborators/{username}`](/en/rest/orgs/outside-collaborators#convert-an-organization-member-to-outside-collaborator)
 
 * [`DELETE /orgs/{org}/outside_collaborators/{username}`](/en/rest/orgs/outside-collaborators#remove-outside-collaborator-from-an-organization)
+
+* [`GET /orgs/{org}/properties/installations`](/en/rest/orgs/custom-properties#get-registered-app-installations-for-external-custom-properties)
+
+* [`POST /orgs/{org}/properties/installations`](/en/rest/orgs/custom-properties#register-an-app-installation-for-external-custom-properties)
 
 * [`GET /orgs/{org}/properties/schema`](/en/rest/orgs/custom-properties#get-all-custom-properties-for-an-organization)
 

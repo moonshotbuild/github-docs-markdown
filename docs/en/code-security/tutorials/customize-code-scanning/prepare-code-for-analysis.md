@@ -56,9 +56,7 @@ You must specify:
   | ------------------------ | ----------------------- | ----------------------------------------- |
   | C/C++                    | `c-cpp`                 | `c` or `cpp`                              |
   | C#                       | `csharp`                |                                           |
-  |                          |                         |                                           |
   | GitHub Actions workflows | `actions`               |                                           |
-  |                          |                         |                                           |
   | Go                       | `go`                    |                                           |
   | Java/Kotlin              | `java-kotlin`           | `java` or `kotlin`                        |
   | JavaScript/TypeScript    | `javascript-typescript` | `javascript` or `typescript`              |

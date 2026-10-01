@@ -725,6 +725,34 @@ An issue was marked as blocked by another issue.
 | `blocking_issue`      | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
 | `blocking_issue_repo` | `object` | A repository on GitHub.                                                                  |
 
+## issue\_relates\_to
+
+This event occurs when there is activity relating to a "relates to" relationship between two issues.
+For relationships between issues in the same repository, GitHub sends one delivery containing both issues. For relationships between issues in different repositories, GitHub sends one delivery for each repository. Each cross-repository delivery contains only the issue in the repository receiving the delivery and omits the related issue, its ID, and its repository details.
+For activity relating to issues more generally, use the issues event instead.
+To subscribe to this event, a GitHub App must have at least read-level access for the "Issues" repository permissions.
+
+### Availability
+
+* `repository`
+* `organization`
+* `app`
+
+### Webhook payload object
+
+**Action type:** `relates_to_added`, `relates_to_removed`
+
+An issue was marked as related to another issue.
+
+#### Webhook payload object parameters
+
+| Name               | Type     | Description                                                                               |
+| ------------------ | -------- | ----------------------------------------------------------------------------------------- |
+| `issue_id`         | `number` | The ID of the issue the relationship was added to.                                        |
+| `issue`            | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.  |
+| `related_issue_id` | `number` | The ID of the related issue. Only present when both issues belong to the same repository. |
+| `related_issue`    | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.  |
+
 ## issues
 
 This event occurs when there is activity relating to an issue. For more information about issues, see "About issues." For information about the APIs to manage issues, see the GraphQL documentation or "Issues" in the REST API documentation.

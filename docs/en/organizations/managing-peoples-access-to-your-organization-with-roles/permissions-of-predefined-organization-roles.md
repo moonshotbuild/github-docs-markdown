@@ -26,11 +26,17 @@ Predefined organization roles are roles that are available by default in every o
 The predefined roles for organization access are:
 
 * **Member:** Grants standard access to organization features.
+
 * **Moderator:** Grants additional permissions to help moderate organization-level discussions and community content.
+
 * **Owner:** Grants full administrative control of the organization.
+
 * **Billing manager:** Grants permission to view and manage billing settings and subscription details for the organization.
+
 * **Security manager:** Grants the ability to manage security policies, security alerts, and security configurations for an organization and all its repositories.
+
 * **CI/CD admin:** Grants admin access to manage Actions policies, runners, runner groups, hosted compute network configurations, secrets, variables, and usage metrics for an organization.
+
 * **App Manager:** Grants the ability to create, edit, and delete all GitHub Apps in an organization.
 
 There are also roles that grant access to repositories in the organization:

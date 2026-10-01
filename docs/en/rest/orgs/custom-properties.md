@@ -24,6 +24,369 @@ You can use the REST API to create and manage custom properties for an organizat
 > \[!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
+## Get registered app installations for external custom properties
+
+```
+GET /orgs/{org}/properties/installations
+```
+
+Gets the registered GitHub App installations used to read and write external custom properties for an organization.
+A GitHub App installation token will only be able to see its own registration info, whereas an authenticated user will be able to see all registrations for the organization.
+To use this endpoint, the authenticated caller must have the organization\_external\_properties\_for\_repos:admin permission.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`org`** (string) (required)
+  The organization name. The name is not case sensitive.
+
+### HTTP response status codes
+
+* **200** - OK
+
+* **403** - Forbidden
+
+* **404** - Resource not found
+
+* **422** - Validation failed, or the endpoint has been spammed.
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X GET \
+  https://api.github.com/orgs/ORG/properties/installations
+```
+
+**Response schema (Status: 200):**
+
+Array of `Organization External Custom Property Installation`:
+
+* `display_name`: required, string
+* `installation`: required, object:
+  * `id`: required, integer
+
+## Register an app installation for external custom properties
+
+```
+POST /orgs/{org}/properties/installations
+```
+
+Registers a GitHub App installation so it can read and write external custom properties for an organization, and assigns it a display name.
+An app installation can only be registered once, and its display name can't be changed afterward. Calling with an app installation that has already been registered returns a 422 response with an already\_exists error code.
+Uninstalling the GitHub App unregisters it, and removes the external custom properties it created.
+To use this endpoint, the authenticated caller must have the organization\_external\_properties\_for\_repos:admin permission.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`org`** (string) (required)
+  The organization name. The name is not case sensitive.
+
+#### Body parameters
+
+* **`installation_id`** (integer)
+  The unique identifier of the GitHub App installation to register for managing external custom properties. When authenticating as a GitHub App installation, this defaults to the authenticated installation and can be omitted. It is required for all other callers (users and fine-grained personal access tokens).
+
+* **`display_name`** (string) (required)
+  The display name for this app installation's external custom properties in the organization. This can't be changed after the app installation is registered.
+
+### HTTP response status codes
+
+* **201** - Created
+
+* **403** - Forbidden
+
+* **404** - Resource not found
+
+* **422** - Validation failed, or the endpoint has been spammed.
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X POST \
+  https://api.github.com/orgs/ORG/properties/installations \
+  -d '{
+  "installation_id": 67890,
+  "display_name": "Acme"
+}'
+```
+
+**Response schema (Status: 201):**
+
+* `display_name`: required, string
+* `installation`: required, object:
+  * `id`: required, integer
+
+## Get all external custom properties for a GitHub App installation in an organization
+
+```
+GET /orgs/{org}/properties/installations/schema
+```
+
+Gets all external custom properties defined for the authenticated GitHub App installation on an organization.
+To use this endpoint, the authenticated GitHub App must have the organization\_external\_properties\_for\_repos:read permission.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`org`** (string) (required)
+  The organization name. The name is not case sensitive.
+
+### HTTP response status codes
+
+* **200** - OK
+
+* **403** - Forbidden
+
+* **404** - Resource not found
+
+* **422** - Validation failed, or the endpoint has been spammed.
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X GET \
+  https://api.github.com/orgs/ORG/properties/installations/schema
+```
+
+**Response schema (Status: 200):**
+
+Array of `External Property`:
+
+* `property_name`: required, string
+
+## Create or update external custom property values for organization repositories
+
+```
+PATCH /orgs/{org}/properties/installations/values
+```
+
+Create new or update existing external custom property values for repositories in a batch that belong to an organization.
+Each target repository will have its external custom property values updated to match the values provided in the request.
+A maximum of 30 repositories can be updated in a single request.
+Using a value of null for an external custom property will remove or 'unset' the property value from the repository.
+To use this endpoint, the authenticated GitHub App must have the organization\_external\_properties\_for\_repos:write permission.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`org`** (string) (required)
+  The organization name. The name is not case sensitive.
+
+#### Body parameters
+
+* **`repository_names`** (array of strings) (required)
+  The names of repositories that the external custom property values will be applied to.
+
+* **`properties`** (array of objects) (required)
+  List of external custom property names and associated values to apply to the repositories.
+  * **`property_name`** (string) (required)
+    The name of the property
+  * **`value`** (null or string or array) (required)
+    The value assigned to the property
+
+### HTTP response status codes
+
+* **204** - No Content when external custom property values are successfully created or updated
+
+* **403** - Forbidden
+
+* **404** - Resource not found
+
+* **422** - Validation failed, or the endpoint has been spammed.
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X PATCH \
+  https://api.github.com/orgs/ORG/properties/installations/values \
+  -d '{
+  "repository_names": [
+    "Hello-World",
+    "octo-repo"
+  ],
+  "properties": [
+    {
+      "property_name": "environment",
+      "value": "production"
+    },
+    {
+      "property_name": "service",
+      "value": "web"
+    },
+    {
+      "property_name": "team",
+      "value": "octocat"
+    }
+  ]
+}'
+```
+
+**Response schema (Status: 204):**
+
+## Create or update external custom property values for a property across organization repositories
+
+```
+PATCH /orgs/{org}/properties/installations/values/{property_name}
+```
+
+Create new or update existing external custom property values for a single named property across repositories that belong to an organization.
+Up to 100 repository values can be updated in a single request. Repositories not included in the request are left unchanged.
+Using a value of null for a repository will remove or 'unset' the property value for that repository. A request that only contains null values for a property that does not yet exist is a no-op.
+To use this endpoint, the authenticated GitHub App must have the organization\_external\_properties\_for\_repos:write permission.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`org`** (string) (required)
+  The organization name. The name is not case sensitive.
+
+* **`property_name`** (string) (required)
+  The name of the external custom property
+
+#### Body parameters
+
+* **`repository_values`** (array of objects) (required)
+  The names of repositories and the values that the named external custom property will be set to.
+  * **`repository_name`** (string) (required)
+    The name of the repository
+  * **`value`** (string or null) (required)
+    The value assigned to the repository. Set to null to unset the value for this repository.
+
+### HTTP response status codes
+
+* **204** - A header with no content is returned.
+
+* **403** - Forbidden
+
+* **404** - Resource not found
+
+* **422** - Validation failed, or the endpoint has been spammed.
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X PATCH \
+  https://api.github.com/orgs/ORG/properties/installations/values/PROPERTY_NAME \
+  -d '{
+  "repository_values": [
+    {
+      "repository_name": "Hello-World",
+      "value": "production"
+    },
+    {
+      "repository_name": "octo-repo",
+      "value": null
+    }
+  ]
+}'
+```
+
+**Response schema (Status: 204):**
+
+## Remove all external custom property values for a property across all organization repositories
+
+```
+DELETE /orgs/{org}/properties/installations/values/{property_name}
+```
+
+Removes all external custom property values for a specified property name across all repositories that belong to an organization.
+To use this endpoint, the authenticated GitHub App must have the organization\_external\_properties\_for\_repos:write permission.
+
+### Parameters
+
+#### Headers
+
+* **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+* **`org`** (string) (required)
+  The organization name. The name is not case sensitive.
+
+* **`property_name`** (string) (required)
+  The name of the external custom property
+
+### HTTP response status codes
+
+* **204** - A header with no content is returned.
+
+* **403** - Forbidden
+
+* **404** - Resource not found
+
+* **422** - Validation failed, or the endpoint has been spammed.
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X DELETE \
+  https://api.github.com/orgs/ORG/properties/installations/values/PROPERTY_NAME
+```
+
+**Response schema (Status: 204):**
+
 ## Get all custom properties for an organization
 
 ```

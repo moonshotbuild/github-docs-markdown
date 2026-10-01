@@ -51,7 +51,7 @@ Auto model selection chooses a capable model for you, based on the intent of you
 
 A small router looks at your prompt and sends it to the model that can **handle it most efficiently**, reserving expensive reasoning models for complex problems. It also avoids models that burn through a token budget quickly.
 
-Auto model selection also **protects your cache**. It only changes models at natural cache boundaries, when a new session starts or after you run `/compact`, never mid-task. To understand more about why this matters, see [4. Preserve the cache](#4-preserve-the-cache).
+Auto model selection also **protects your cache**. It changes models at natural cache boundaries, when a new session starts or after you run `/compact`. As conversations evolve, it will re-route at points where quality improvements outweigh cache loss. To understand more about why this matters, see [4. Preserve the cache](#4-preserve-the-cache).
 
 Auto model selection also routes around degraded or busy models, so you hit fewer rate limits and errors.
 

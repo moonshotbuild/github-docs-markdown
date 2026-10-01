@@ -276,6 +276,17 @@ Some endpoints require more than one permission. Other endpoints work with any o
 |----------|--------|--------|------------------------|
 | `GET /users/{username}/events/orgs/{org}` | read | UAT | ✗ |
 
+## Organization permissions for "External custom properties for repositories"
+
+| Endpoint | Access | Tokens | Additional Permissions |
+|----------|--------|--------|------------------------|
+| `GET /orgs/{org}/properties/installations` | admin | UAT, IAT | ✗ |
+| `POST /orgs/{org}/properties/installations` | admin | UAT, IAT | ✗ |
+| `PATCH /orgs/{org}/properties/installations/values` | write | IAT | ✗ |
+| `PATCH /orgs/{org}/properties/installations/values/{property_name}` | write | IAT | ✗ |
+| `DELETE /orgs/{org}/properties/installations/values/{property_name}` | write | IAT | ✗ |
+| `GET /orgs/{org}/properties/installations/schema` | read | IAT | ✗ |
+
 ## Organization permissions for "GitHub Copilot Business"
 
 | Endpoint | Access | Tokens | Additional Permissions |
@@ -604,6 +615,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/actions/concurrency_groups/{concurrency_group_name}` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/jobs/{job_id}` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/jobs/{job_id}/logs` | read | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/actions/jobs/{job_id}/steps/{step_number}/logs` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/oidc/customization/sub` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/runs` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/runs/{run_id}` | read | UAT, IAT | ✗ |
@@ -736,7 +748,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `POST /repos/{template_owner}/{template_repo}/generate` | write | UAT, IAT | ✓ |
 | `PUT /teams/{team_id}/repos/{owner}/{repo}` | write | UAT, IAT | ✓ |
 | `DELETE /teams/{team_id}/repos/{owner}/{repo}` | write | UAT, IAT | ✓ |
-| `POST /user/repos` | write | UAT | ✓ |
+| `POST /user/repos` | write | UAT, IAT | ✓ |
 | `PATCH /user/repository_invitations/{invitation_id}` | write | UAT | ✗ |
 | `DELETE /user/repository_invitations/{invitation_id}` | write | UAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/cache/retention-limit` | read | UAT, IAT | ✗ |
@@ -1080,6 +1092,13 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/environments/{environment_name}/variables` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/environments/{environment_name}/variables/{name}` | read | UAT, IAT | ✗ |
 
+## Repository permissions for "GitHub App installation repository access"
+
+| Endpoint | Access | Tokens | Additional Permissions |
+|----------|--------|--------|------------------------|
+| `PUT /user/installations/{installation_id}/repositories/{repository_id}` | write | UAT, IAT | ✗ |
+| `DELETE /user/installations/{installation_id}/repositories/{repository_id}` | write | UAT, IAT | ✗ |
+
 ## Repository permissions for "Issues"
 
 | Endpoint | Access | Tokens | Additional Permissions |
@@ -1108,6 +1127,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/lock` | write | UAT, IAT | ✓ |
 | `POST /repos/{owner}/{repo}/issues/{issue_number}/reactions` | write | UAT, IAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/reactions/{reaction_id}` | write | UAT, IAT | ✗ |
+| `POST /repos/{owner}/{repo}/issues/{issue_number}/relates_to` | write | UAT, IAT | ✗ |
+| `DELETE /repos/{owner}/{repo}/issues/{issue_number}/relates_to/{issue_id}` | write | UAT, IAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/sub_issue` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/issues/{issue_number}/sub_issues` | write | UAT, IAT | ✗ |
 | `PATCH /repos/{owner}/{repo}/issues/{issue_number}/sub_issues/priority` | write | UAT, IAT | ✗ |
@@ -1137,6 +1158,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/labels` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/parent` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/reactions` | read | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/relates_to` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/sub_issues` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/suggestions` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/timeline` | read | UAT, IAT | ✓ |
@@ -1288,7 +1310,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 |----------|--------|--------|------------------------|
 | `POST /orgs/{org}/repos` | write | UAT, IAT | ✓ |
 | `POST /repos/{template_owner}/{template_repo}/generate` | write | UAT, IAT | ✓ |
-| `POST /user/repos` | write | UAT | ✓ |
+| `POST /user/repos` | write | UAT, IAT | ✓ |
 
 ## Repository permissions for "Repository security advisories"
 

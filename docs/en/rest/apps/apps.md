@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/apps/apps"
 ---
 
-# REST API endpoints for GitHub Apps
+# REST API endpoints for {% data variables.product.prodname\_github\_apps %}
 
 Use the REST API to interact with GitHub Apps
 
@@ -432,6 +432,7 @@ Array of `Installation`:
   * `organization_custom_properties`: string, enum: `read`, `write`, `admin`
   * `organization_copilot_seat_management`: string, enum: `read`, `write`
   * `organization_copilot_agent_settings`: string, enum: `read`, `write`
+  * `organization_external_properties_for_repos`: string, enum: `read`, `write`, `admin`
   * `organization_announcement_banners`: string, enum: `read`, `write`
   * `organization_events`: string, enum: `read`
   * `organization_hooks`: string, enum: `read`, `write`
@@ -586,6 +587,7 @@ curl -L \
   * `organization_custom_properties`: string, enum: `read`, `write`, `admin`
   * `organization_copilot_seat_management`: string, enum: `read`, `write`
   * `organization_copilot_agent_settings`: string, enum: `read`, `write`
+  * `organization_external_properties_for_repos`: string, enum: `read`, `write`, `admin`
   * `organization_announcement_banners`: string, enum: `read`, `write`
   * `organization_events`: string, enum: `read`
   * `organization_hooks`: string, enum: `read`, `write`
@@ -804,6 +806,9 @@ You must use a JWT to access this endpoint.
   * **`organization_copilot_agent_settings`** (string)
     The level of permission to grant the access token to view and manage Copilot cloud agent settings for an organization.
     Can be one of: `read`, `write`
+  * **`organization_external_properties_for_repos`** (string)
+    The level of permission to grant the access token for managing external custom properties for repositories in an organization.
+    Can be one of: `read`, `write`, `admin`
   * **`organization_announcement_banners`** (string)
     The level of permission to grant the access token to view and manage announcement banners for an organization.
     Can be one of: `read`, `write`
@@ -936,6 +941,7 @@ curl -L \
   * `organization_custom_properties`: string, enum: `read`, `write`, `admin`
   * `organization_copilot_seat_management`: string, enum: `read`, `write`
   * `organization_copilot_agent_settings`: string, enum: `read`, `write`
+  * `organization_external_properties_for_repos`: string, enum: `read`, `write`, `admin`
   * `organization_announcement_banners`: string, enum: `read`, `write`
   * `organization_events`: string, enum: `read`
   * `organization_hooks`: string, enum: `read`, `write`
@@ -1325,6 +1331,9 @@ Invalid tokens will return 404 NOT FOUND.
   * **`organization_copilot_agent_settings`** (string)
     The level of permission to grant the access token to view and manage Copilot cloud agent settings for an organization.
     Can be one of: `read`, `write`
+  * **`organization_external_properties_for_repos`** (string)
+    The level of permission to grant the access token for managing external custom properties for repositories in an organization.
+    Can be one of: `read`, `write`, `admin`
   * **`organization_announcement_banners`** (string)
     The level of permission to grant the access token to view and manage announcement banners for an organization.
     Can be one of: `read`, `write`
@@ -1498,6 +1507,7 @@ curl -L \
       * `organization_custom_properties`: string, enum: `read`, `write`, `admin`
       * `organization_copilot_seat_management`: string, enum: `read`, `write`
       * `organization_copilot_agent_settings`: string, enum: `read`, `write`
+      * `organization_external_properties_for_repos`: string, enum: `read`, `write`, `admin`
       * `organization_announcement_banners`: string, enum: `read`, `write`
       * `organization_events`: string, enum: `read`
       * `organization_hooks`: string, enum: `read`, `write`

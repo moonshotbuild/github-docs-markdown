@@ -263,6 +263,13 @@ Some endpoints require more than one permission. Other endpoints work with any o
 |----------|--------|--------|------------------------|
 | `GET /users/{username}/events/orgs/{org}` | read | PAT | ✗ |
 
+## Organization permissions for "External custom properties for repositories"
+
+| Endpoint | Access | Tokens | Additional Permissions |
+|----------|--------|--------|------------------------|
+| `GET /orgs/{org}/properties/installations` | admin | PAT | ✗ |
+| `POST /orgs/{org}/properties/installations` | admin | PAT | ✗ |
+
 ## Organization permissions for "GitHub Copilot Business"
 
 | Endpoint | Access | Tokens | Additional Permissions |
@@ -573,6 +580,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/actions/concurrency_groups/{concurrency_group_name}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/jobs/{job_id}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/jobs/{job_id}/logs` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/actions/jobs/{job_id}/steps/{step_number}/logs` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/oidc/customization/sub` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/runs` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/actions/runs/{run_id}` | read | PAT | ✗ |
@@ -1029,6 +1037,13 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/environments/{environment_name}/variables` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/environments/{environment_name}/variables/{name}` | read | PAT | ✗ |
 
+## Repository permissions for "GitHub App installation repository access"
+
+| Endpoint | Access | Tokens | Additional Permissions |
+|----------|--------|--------|------------------------|
+| `PUT /user/installations/{installation_id}/repositories/{repository_id}` | write | PAT | ✗ |
+| `DELETE /user/installations/{installation_id}/repositories/{repository_id}` | write | PAT | ✗ |
+
 ## Repository permissions for "Issues"
 
 | Endpoint | Access | Tokens | Additional Permissions |
@@ -1057,6 +1072,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/lock` | write | PAT | ✓ |
 | `POST /repos/{owner}/{repo}/issues/{issue_number}/reactions` | write | PAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/reactions/{reaction_id}` | write | PAT | ✗ |
+| `POST /repos/{owner}/{repo}/issues/{issue_number}/relates_to` | write | PAT | ✗ |
+| `DELETE /repos/{owner}/{repo}/issues/{issue_number}/relates_to/{issue_id}` | write | PAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/sub_issue` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/issues/{issue_number}/sub_issues` | write | PAT | ✗ |
 | `PATCH /repos/{owner}/{repo}/issues/{issue_number}/sub_issues/priority` | write | PAT | ✗ |
@@ -1086,6 +1103,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/labels` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/parent` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/reactions` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/relates_to` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/sub_issues` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/suggestions` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/timeline` | read | PAT | ✓ |

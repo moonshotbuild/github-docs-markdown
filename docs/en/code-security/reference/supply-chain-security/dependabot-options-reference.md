@@ -550,9 +550,7 @@ When `open-pull-requests-limit` is defined:
 | Docker          | `docker`         |          v1          |
 | Docker Compose  | `docker-compose` |        v2, v3        |
 | .NET SDK        | `dotnet-sdk`     |    >=.NET Core 3.1   |
-|                 |                  |                      |
 | Helm Charts     | `helm`           |          v3          |
-|                 |                  |                      |
 | Hex             | `mix`            |          v1          |
 |                 |                  |                      |
 | Julia           | `julia`          |        >=v1.10       |
@@ -736,9 +734,7 @@ Supported values: `REGISTRY_NAME` or `"*"`
 | [`interval`](#interval) | **Required.** Defines the frequency for Dependabot.         |
 | [`day`](#day)           | Specify the day to run for a **weekly** interval.           |
 | [`time`](#time)         | Specify the time to run.                                    |
-|                         |                                                             |
 | [`cronjob`](#cronjob)   | Defines the cron expression if the interval type is `cron`. |
-|                         |                                                             |
 | [`timezone`](#timezone) | Specify the timezone of the `time` value.                   |
 
 ### `interval`
@@ -758,7 +754,7 @@ Each package manager **must** define a schedule interval.
 > \[!NOTE]
 > The supported values `quarterly`, `semiannually`, and `yearly` are only available on GitHub Enterprise Server from version 3.19.
 
-By default, Dependabot randomly assigns a time to apply all the updates in the configuration file. You can use the `time` and `timezone` parameters to set a specific runtime for all intervals.  If you use a `cron` interval, you can define the update time with a `cronjob` expression.
+By default, Dependabot randomly assigns a time to apply all the updates in the configuration file. You can use the `time` and `timezone` parameters to set a specific runtime for all intervals. If you use a `cron` interval, you can define the update time with a `cronjob` expression.
 
 ### `day`
 
@@ -1001,9 +997,7 @@ The `dependabot.yml` file doesn't control the versioning tags that you can use, 
 | Dev containers      | `devcontainers`  | SemVer 2.0.0 (prerelease not used in practice)                                                                         | `ghcr.io/devcontainers/features/node@1.6.1`, `ghcr.io/devcontainers/features/python@1.6`                                       |
 | .NET SDK            | `dotnet-sdk`     | `preview.N`, `rc.N`, `alpha.N`                                                                                         | `dotnet-sdk@9.0.100-preview.7.24407.12`, `dotnet-sdk@9.0.100-rc.2.24474.11`                                                    |
 | GitHub Actions      | `github-actions` | Any SemVer prerelease identifier (commonly `alpha`, `beta`, `rc`)                                                      | `my-org/my-action@v1.0.0-beta.1`, `my-org/deploy@v2.0.0-rc1`, `my-org/lint@v3.0.0-alpha`                                       |
-|                     |                  |                                                                                                                        |                                                                                                                                |
 | Helm Charts         | `helm`           | Any SemVer prerelease identifier (commonly `alpha`, `beta`, `rc`)                                                      | `ingress-nginx@4.11.0-beta.0`, `cert-manager@1.15.0-alpha.1`, `prometheus@25.0.0-rc1`                                          |
-|                     |                  |                                                                                                                        |                                                                                                                                |
 | Hex                 | `mix`            | Any SemVer prerelease identifier (commonly `alpha`, `beta`, `rc`, `dev`)                                               | `phoenix/phoenix@1.7.0-rc.0`, `elixir-ecto/ecto@3.11.0-beta.1`, `elixir-plug/plug@1.15.0-alpha.1`                              |
 |                     |                  |                                                                                                                        |                                                                                                                                |
 | Julia               | `julia`          | Any SemVer prerelease identifier (commonly `rc`, `DEV`, `beta`)                                                        | `HTTP@1.10.0-rc1`, `Plots@2.0.0-DEV`, `DataFrames@1.6.0-beta.1`                                                                |

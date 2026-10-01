@@ -849,6 +849,10 @@ Represents amergedevent on a given pull request.
 
 Merge a pull request.
 
+We recommend using the asynchronous merge REST
+API instead.
+This mutation does not support stacked pull requests.
+
 ### Input fields for `mergePullRequest`
 
 * `input` (MergePullRequestInput!): 

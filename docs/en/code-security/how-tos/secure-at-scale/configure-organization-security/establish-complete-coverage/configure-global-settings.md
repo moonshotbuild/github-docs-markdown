@@ -64,7 +64,7 @@ For more information, see [Dependabot on GitHub Actions runners](/en/code-securi
 
 ### Configuring the runner type for Dependabot
 
-You can configure which type of runner Dependabot uses to scan for version and security updates. By default, Dependabot uses standard **GitHub-hosted runners**. You can configure Dependabot to use **self-hosted runners** with custom labels, which allows you to integrate with existing runner infrastructure such as Actions Runner Controller (ARC).
+You can configure which type of runner Dependabot uses to scan for version and security updates. By default, Dependabot uses standard **GitHub-hosted runners**. You can configure Dependabot to use **labeled runners**, which allows you to integrate with existing runner infrastructure such as Actions Runner Controller (ARC).
 
 > \[!NOTE]
 >
@@ -76,9 +76,9 @@ To configure the runner type:
 1. Under "Dependabot", next to "Runner type", select <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-pencil" aria-label="Edit runner type" role="img"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg>.
 2. In the "Edit runner type for Dependabot" dialog, select the runner type you want Dependabot to use:
    * **Standard GitHub runner**.
-   * **Labeled runner**: If you select this option, Dependabot will use self-hosted runners that match the label you specify.
+   * **Labeled runner**: If you select this option, Dependabot will use self-hosted or larger runners that match the label you specify.
 3. If you selected **Labeled runner**:
-   * In "Runner label", enter the label assigned to your self-hosted runners. Dependabot will use runners with this label. By default, the `dependabot` label is used, but you can specify a custom label to match your existing runner infrastructure.
+   * In "Runner label", enter the label assigned to your runners. Dependabot will use runners with this label. By default, the `dependabot` label is used, but you can specify a custom label to match your existing runner infrastructure.
    * Optionally, in "Runner group name", enter the name of a runner group if you want to target a specific group of runners.
 4. Click **Save runner selection**.
 

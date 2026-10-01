@@ -51,6 +51,14 @@ Learn about the different components of your bill, and how you can view and mana
 
   You can upgrade the plan for a personal account or organization on GitHub at any time.
 
+## Links
+
+### Getting started
+
+* [How GitHub billing works](/en/billing/get-started/how-billing-works)
+
+  Learn what you'll be charged for, when charges occur, and how to track your usage on GitHub to avoid billing surprises.
+
 ## Articles
 
 * [How GitHub billing works](/en/billing/get-started/how-billing-works)

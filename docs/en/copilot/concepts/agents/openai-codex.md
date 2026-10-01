@@ -40,7 +40,7 @@ When starting a task with the OpenAI Codex coding agent, you can select the AI m
 * GPT-5.4
 * GPT-5.4 nano
 
-If you select **Auto**, Copilot auto model selection will select the best model based on availability and to help reduce rate limiting. For more information, see [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection).
+If you select **Auto**, it will choose one of the available models listed above. **Auto** in OpenAI Codex coding agent does **not** leverage Copilot auto model selection.
 
 ## VS Code extension
 

@@ -41,6 +41,7 @@ The following options are currently available:
 * Claude Opus 4.7
 * Claude Opus 5
 * Claude Opus 5.5
+* Claude Sonnet 5.5
 * Claude Haiku 4.5
 * Gemini 3.5 Flash
 * Gemini 3.6 Flash
@@ -53,6 +54,7 @@ The following options are currently available:
 * GPT-6 Astra
 * GPT-6 Luna
 * GPT-6 Sol
+* GPT-6.1 Sol
 * Grok 4.5
 * Grok 4.6
 * Grok 4.7

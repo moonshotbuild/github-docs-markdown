@@ -1169,8 +1169,14 @@ curl -L \
 PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge
 ```
 
+Note
+
+We recommend using the asynchronous merge API instead. This endpoint does not support stacked pull requests or merging with a merge queue.
+
 Merges a pull request into the base branch.
-This endpoint triggers notifications. Creating content too quickly using this endpoint may result in secondary rate limiting. For more information, see "Rate limits for the API" and "Best practices for using the REST API."
+This endpoint triggers notifications.
+Creating content too quickly using this endpoint may result in secondary rate limiting.
+For more information, see "Rate limits for the API" and "Best practices for using the REST API."
 
 ### Parameters
 
@@ -1247,10 +1253,10 @@ curl -L \
 PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge-async
 ```
 
-Merges a pull request into the base branch in the background. Merging in this way allows certain types of errors to be retried, and avoids the risk of timeouts for particularly complex merges.
-This is the required method for merging stacked PRs, but also supports unstacked PRs. When using this endpoint to merge a stacked pull request, all pull requests in the stack up to and including the requested PR will be merged into the base branch.
-The response includes a UUID that can be used to fetch the result of the merge. If another asynchronous merge request has already been made for this pull request, the UUID of that request will be returned instead with a 409 response status to indicate that the merge options may be different from those that were requested. If there isn't an existing asynchronous merge request, a 202 response status is used.
-If the pull request is already merged, the merge commit OID will be returned immediately with a 200 status.
+Merges a pull request into the base branch in the background or adds it to a merge queue. Background processing allows certain types of errors to be retried and reduces the risk of timeouts for complex merges.
+This is the required API for merging stacked pull requests. For a stacked pull request, the operation includes all open downstack pull requests.
+A new asynchronous merge request returns a 202 response with a UUID that can be used to fetch the result of the merge. If another asynchronous merge request is already pending for this pull request, a 409 response returns that request's UUID and merge options instead.
+If the pull request is already merged or already in a merge queue, a 200 response is returned immediately. A merged result includes the merge commit OID. An enqueued result means the pull request was added to the merge queue, not that it has merged.
 If the pull request cannot be merged (e.g. because it is closed, or still a draft) this result will be returned immediately with a 400 response status. Branch protection rules and repository rules are not run at this stage, only basic pull request state checks are performed.
 
 ### Parameters
@@ -1274,20 +1280,20 @@ If the pull request cannot be merged (e.g. because it is closed, or still a draf
 #### Body parameters
 
 * **`commit_title`** (string)
-  Title for the automatic commit message.
+  Title for the automatic commit message. Only supported for direct merges.
 
 * **`commit_message`** (string)
-  Extra detail to append to automatic commit message.
+  Extra detail to append to automatic commit message. Only supported for direct merges.
 
 * **`sha`** (string)
   SHA that pull request head must match to allow merge. If not provided, the current head of the PR at the time of the request will be used; if the PR is pushed in between the merge being requested and being executed, the merge will be cancelled.
 
 * **`merge_method`** (string)
-  The merge method to use.
+  The merge method to use for a direct merge. Only supported for direct merges.
   Can be one of: `merge`, `squash`, `rebase`
 
 * **`merge_action`** (string)
-  The action that will be taken to merge the pull request. direct\_merge merges the pull request directly without using a merge queue; merge\_queue adds the pull request to a merge queue; default selects the most appropriate option.
+  The action that will be taken to merge the pull request. direct\_merge merges the pull request directly without using a merge queue; merge\_queue adds the pull request to a merge queue; default uses a merge queue if one is configured for the target branch, or merges directly otherwise. If omitted, defaults to default.
   Can be one of: `default`, `direct_merge`, `merge_queue`
 
 ### HTTP response status codes
@@ -1308,7 +1314,7 @@ If the pull request cannot be merged (e.g. because it is closed, or still a draf
 
 ### Code examples
 
-#### Example 1: Status Code 200
+#### Direct merge example 1: Status Code 200
 
 **Request:**
 
@@ -1321,14 +1327,14 @@ curl -L \
   "commit_message": "Avoids a race by trying to read the file and handling the exception if it does not exist.",
   "sha": "6358cd125586d9def8c3e5943f23506202da81cc",
   "merge_method": "squash",
-  "merge_action": "default"
+  "merge_action": "direct_merge"
 }'
 ```
 
 **Response schema (Status: 200):**
 
 * `status`: required, string, enum: `pending`, `merged`, `enqueued`, `failed`
-* `details`: required, one of:
+* `details`: required, any of:
   * **object**
     * `message`: required, string
     * `uuid`: required, string
@@ -1339,9 +1345,11 @@ curl -L \
     * `message`: required, string
   * **object**
     * `message`: required, string
+  * **object**
+    * `message`: required, string
     * `sha`: required, string
 
-#### Example 2: Status Code 200
+#### Merge queue example 2: Status Code 200
 
 **Request:**
 
@@ -1350,18 +1358,15 @@ curl -L \
   -X PUT \
   https://api.github.com/repos/OWNER/REPO/pulls/PULL_NUMBER/merge-async \
   -d '{
-  "commit_title": "Fix race condition",
-  "commit_message": "Avoids a race by trying to read the file and handling the exception if it does not exist.",
   "sha": "6358cd125586d9def8c3e5943f23506202da81cc",
-  "merge_method": "squash",
-  "merge_action": "default"
+  "merge_action": "merge_queue"
 }'
 ```
 
 **Response schema (Status: 200):**
 
 * `status`: required, string, enum: `pending`, `merged`, `enqueued`, `failed`
-* `details`: required, one of:
+* `details`: required, any of:
   * **object**
     * `message`: required, string
     * `uuid`: required, string
@@ -1372,9 +1377,11 @@ curl -L \
     * `message`: required, string
   * **object**
     * `message`: required, string
+  * **object**
+    * `message`: required, string
     * `sha`: required, string
 
-#### Example 3: Status Code 202
+#### Direct merge example 3: Status Code 202
 
 **Request:**
 
@@ -1387,20 +1394,54 @@ curl -L \
   "commit_message": "Avoids a race by trying to read the file and handling the exception if it does not exist.",
   "sha": "6358cd125586d9def8c3e5943f23506202da81cc",
   "merge_method": "squash",
-  "merge_action": "default"
+  "merge_action": "direct_merge"
 }'
 ```
 
 **Response schema (Status: 202):**
 
 * `status`: required, string, enum: `pending`, `merged`, `enqueued`, `failed`
-* `details`: required, one of:
+* `details`: required, any of:
   * **object**
     * `message`: required, string
     * `uuid`: required, string
     * `merge_method`: required, string, enum: `default`, `merge`, `squash`, `rebase`
     * `merge_action`: required, string, enum: `default`, `merge_queue`, `direct_merge`
     * `expected_head_sha`: required, string
+  * **object**
+    * `message`: required, string
+  * **object**
+    * `message`: required, string
+  * **object**
+    * `message`: required, string
+    * `sha`: required, string
+
+#### Merge queue example 4: Status Code 202
+
+**Request:**
+
+```curl
+curl -L \
+  -X PUT \
+  https://api.github.com/repos/OWNER/REPO/pulls/PULL_NUMBER/merge-async \
+  -d '{
+  "sha": "6358cd125586d9def8c3e5943f23506202da81cc",
+  "merge_action": "merge_queue"
+}'
+```
+
+**Response schema (Status: 202):**
+
+* `status`: required, string, enum: `pending`, `merged`, `enqueued`, `failed`
+* `details`: required, any of:
+  * **object**
+    * `message`: required, string
+    * `uuid`: required, string
+    * `merge_method`: required, string, enum: `default`, `merge`, `squash`, `rebase`
+    * `merge_action`: required, string, enum: `default`, `merge_queue`, `direct_merge`
+    * `expected_head_sha`: required, string
+  * **object**
+    * `message`: required, string
   * **object**
     * `message`: required, string
   * **object**
@@ -1414,7 +1455,13 @@ GET /repos/{owner}/{repo}/pulls/{pull_number}/merge-async/{uuid}
 ```
 
 Fetches the current result of an asynchronous merge request, identified by the UUID that was returned when the merge was requested.
-While the merge is still queued, the response includes the UUID, merge method, and expected head SHA of the request. Once the merge has completed, the response reports whether it was merged, including the merge commit OID on success or a message describing why it could not be merged on failure.
+While the request's status is pending, the response includes the UUID, merge method, merge action, and expected head SHA of the request. Once the asynchronous request completes, its status is one of:
+
+merged: The pull request was merged into the base branch. The response includes the merge commit OID.
+enqueued: The pull request was added to a merge queue.
+failed: The request failed. The response includes a message describing the failure.
+
+An enqueued result is final for the merge queue requests and does not mean the pull request has merged. This result does not change when the merge queue later merges the pull request. To get the eventual merge status, check if a pull request has been merged.
 The result of an asynchronous merge request is retained for 24 hours after its most recent update. After this window the request expires and this endpoint returns a 404 response for its UUID.
 
 ### Parameters

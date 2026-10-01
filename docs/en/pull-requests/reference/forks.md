@@ -55,9 +55,9 @@ See [Managing the forking policy for your organization](/en/organizations/managi
 
 ## Visibility of forks
 
-A fork's visibility is tied to the upstream repository's repository network. Public repository forks are public, and private repository forks are private. You cannot change the visibility of a fork by itself.
+A fork's visibility depends on the upstream repository. Public repository forks are public, and private repository forks are private. You cannot change the visibility of a fork by itself.
 
-All repositories in a repository network share the same visibility setting. A repository network includes the upstream repository, its forks, and forks of those forks. See [Understanding connections between repositories](/en/repositories/viewing-activity-and-data-for-your-repository/understanding-connections-between-repositories).
+A repository network includes the upstream repository, its forks, and forks of those forks. Repositories in the network share Git data and remain connected to the upstream repository. See [Understanding connections between repositories](/en/repositories/viewing-activity-and-data-for-your-repository/understanding-connections-between-repositories).
 
 Deleting a repository or changing its visibility can affect the network. If you delete a fork, code contributions from that fork can remain accessible to the repository network.
 
@@ -77,7 +77,6 @@ Visibility changes can separate forks into new repository networks so that exist
 | A public repository is deleted      | An active public fork becomes the new upstream repository for the network. |
 | A public repository is made private | Its public forks stay public in a separate network.                        |
 | A private repository is made public | Private forks stay private but disconnect into separate private networks.  |
-|                                     |                                                                            |
 
 Changing a public repository to private can also affect stars, watchers, dependency graph, Dependabot alerts, and code scanning availability. Review repository visibility settings carefully before changing them.
 

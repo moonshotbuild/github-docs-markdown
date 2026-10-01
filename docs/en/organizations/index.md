@@ -501,6 +501,10 @@ You can use organizations to collaborate with a large number of people across ma
 
   With custom properties, you can add metadata to repositories in your organization. You can use those properties to target repositories with rulesets.
 
+* [Integrating custom properties with an external system](/en/organizations/managing-organization-settings/sync-external-custom-properties)
+
+  Use a GitHub App to write external metadata to custom properties in an organization's repositories.
+
 * [Viewing whether users in your organization have 2FA enabled](/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/viewing-whether-users-in-your-organization-have-2fa-enabled)
 
   You can see which organization owners, members, and outside collaborators have enabled two-factor authentication or are required to do so.

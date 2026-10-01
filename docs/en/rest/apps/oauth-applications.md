@@ -205,6 +205,7 @@ curl -L \
       * `organization_custom_properties`: string, enum: `read`, `write`, `admin`
       * `organization_copilot_seat_management`: string, enum: `read`, `write`
       * `organization_copilot_agent_settings`: string, enum: `read`, `write`
+      * `organization_external_properties_for_repos`: string, enum: `read`, `write`, `admin`
       * `organization_announcement_banners`: string, enum: `read`, `write`
       * `organization_events`: string, enum: `read`
       * `organization_hooks`: string, enum: `read`, `write`

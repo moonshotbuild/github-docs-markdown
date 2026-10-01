@@ -142,7 +142,7 @@ Add a field to an organization-owned project.
   The field's data type.
   Can be one of: `iteration`
 
-- **`single_select_options`** (array of objects)
+- **`single_select_options`** (array of objects) (required)
   The options available for single select fields. At least one option must be provided when creating a single select field.
   - **`name`** (string)
     The display name of the option.
@@ -600,7 +600,7 @@ Add a field to a specified user owned project.
   The field's data type.
   Can be one of: `iteration`
 
-- **`single_select_options`** (array of objects)
+- **`single_select_options`** (array of objects) (required)
   The options available for single select fields. At least one option must be provided when creating a single select field.
   - **`name`** (string)
     The display name of the option.
