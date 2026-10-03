@@ -21,15 +21,15 @@ Determine how you can meet your security goals using GitHub Secret Protection an
 
 * [Planning a trial of GitHub Advanced Security](/en/code-security/tutorials/trialing-github-advanced-security/planning-a-trial-of-ghas)
 
-  Learn how to prepare for a successful trial of Advanced Security.
+  Prepare your organization to evaluate Advanced Security against clear security and purchasing goals.
 
 * [Setting up a trial of GitHub Advanced Security](/en/code-security/tutorials/trialing-github-advanced-security/trial-advanced-security)
 
-  You can try the full set of GitHub Advanced Security features for free.
+  Evaluate GitHub Code Security and GitHub Secret Protection on your existing repositories before you buy.
 
-* [Enabling security features in your trial enterprise](/en/code-security/tutorials/trialing-github-advanced-security/enable-security-features-trial)
+* [Enabling security features in your trial](/en/code-security/tutorials/trialing-github-advanced-security/enable-security-features-trial)
 
-  Quickly create an enterprise-level configuration and apply Secret Protection and Code Security features across all repositories in your trial enterprise.
+  Apply Secret Protection and Code Security to a sample of repositories so your team can evaluate the features during your trial.
 
 * [Exploring your enterprise trial of GitHub Secret Protection](/en/code-security/tutorials/trialing-github-advanced-security/explore-trial-secret-scanning)
 

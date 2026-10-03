@@ -37,6 +37,10 @@ Repository maintainers can set contributing guidelines to help collaborators mak
 
   You can create guidelines to communicate how people should contribute to your project.
 
+* [Adding an accessibility page to your repository](/en/communities/setting-up-your-project-for-healthy-contributions/adding-an-accessibility-page-to-your-repository)
+
+  Add an ACCESSIBILITY.md file to make your project's accessibility information easy to find and give people a clear way to report barriers.
+
 * [Adding a license to a repository](/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository)
 
   You can include an open source license in your repository to make it easier for other people to contribute.

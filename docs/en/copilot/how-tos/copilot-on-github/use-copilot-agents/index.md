@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/how-tos/copilot-on-github/use-copilot-agents"
 title: "Use Copilot agents"
-intro: "Delegate tasks to GitHub Copilot agents on GitHub, track their progress, and review the results."
+intro: "Delegate tasks to GitHub Copilot agents, track their progress, and review the results."
 product: "GitHub Copilot"
 document_type: "subcategory"
 breadcrumbs:
@@ -17,7 +17,7 @@ breadcrumbs:
 
 # Use Copilot agents
 
-Delegate tasks to GitHub Copilot agents on GitHub, track their progress, and review the results.
+Delegate tasks to GitHub Copilot agents, track their progress, and review the results.
 
 ## Links
 

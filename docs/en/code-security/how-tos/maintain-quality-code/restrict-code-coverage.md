@@ -1,7 +1,7 @@
 ---
 source_path: "/en/code-security/how-tos/maintain-quality-code/restrict-code-coverage"
 title: "Setting code coverage thresholds for pull requests"
-intro: "Protect your code coverage by automatically blocking pull requests that fall below the coverage levels your team requires."
+intro: "Prevent pull requests from being merged when uploaded code coverage falls below the levels your team requires."
 product: "Security and code quality"
 document_type: "article"
 breadcrumbs:
@@ -17,18 +17,23 @@ breadcrumbs:
 
 # Setting code coverage thresholds for pull requests
 
-Protect your code coverage by automatically blocking pull requests that fall below the coverage levels your team requires.
+Prevent pull requests from being merged when uploaded code coverage falls below the levels your team requires.
 
 > \[!NOTE]
 > This feature is in public preview and subject to change.
+
+## How the code coverage rule works
+
+The **Restrict code coverage** rule evaluates uploaded line coverage data against the configured thresholds. It does not wait for coverage uploads to complete.
+
+To prevent a pull request from being merged before all expected coverage results are available, make each status check associated with an expected coverage upload a required status check. This includes coverage uploaded from separate jobs or workflows.
+
+For more information about line coverage, see [Code coverage reference](/en/code-security/reference/code-quality/code-coverage).
 
 ## Prerequisites
 
 * GitHub Code Quality is enabled on the repository.
 * Code coverage data is uploaded to GitHub for the pull request branch. See [Setting up code coverage for your repository](/en/code-security/how-tos/maintain-quality-code/set-up-code-coverage).
-
-> \[!NOTE]
-> Coverage thresholds are evaluated against **line coverage**. See [Code coverage reference](/en/code-security/reference/code-quality/code-coverage).
 
 ## Creating a coverage threshold rule
 
@@ -38,7 +43,7 @@ Protect your code coverage by automatically blocking pull requests that fall bel
 
    ![Screenshot of a repository header showing the tabs. The "Settings" tab is highlighted by a dark orange outline.](/assets/images/help/repository/repo-actions-settings.png)
 
-3. In the left sidebar, under "Code and automation," click **Rulesets**, then click **Rulesets**.
+3. In the left sidebar, under "Code, planning, and automation", click **Rulesets**, then click **Rulesets**.
 
 4. Create a new branch ruleset or click an existing one to edit it.
 

@@ -37,6 +37,7 @@ Used for:
 * GPT-6 Astra
 * GPT-6 Luna
 * GPT-6 Sol
+* GPT-6.1 Sol
 
 These models are hosted by OpenAI and GitHub's Azure infrastructure.
 
@@ -53,6 +54,7 @@ Used for:
 * Claude Haiku 4.5
 * Claude Sonnet 4.6
 * Claude Sonnet 5
+* Claude Sonnet 5.5
 * Claude Opus 4.7
 * Claude Opus 4.8
 * Claude Opus 4.8 (fast mode) (preview)

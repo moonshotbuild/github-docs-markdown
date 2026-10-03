@@ -65,7 +65,7 @@ Leaked credentials expose your organization to data breaches. GitHub Secret Prot
 
 * [Setting up a trial of GitHub Advanced Security](/en/code-security/tutorials/trialing-github-advanced-security/trial-advanced-security)
 
-  You can try the full set of GitHub Advanced Security features for free.
+  Evaluate GitHub Code Security and GitHub Secret Protection on your existing repositories before you buy.
 
 ### Phase 3: Pilot GitHub Secret Protection
 

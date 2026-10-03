@@ -265,6 +265,8 @@ Your GitHub App can make requests to the following REST endpoints with a user ac
 
 * [`POST /repos/{owner}/{repo}/actions/jobs/{job_id}/rerun`](/en/rest/actions/workflow-runs#re-run-a-job-from-a-workflow-run)
 
+* [`GET /repos/{owner}/{repo}/actions/jobs/{job_id}/steps/{step_number}/logs`](/en/rest/actions/workflow-jobs#download-step-logs-for-a-workflow-run-job)
+
 * [`GET /repos/{owner}/{repo}/actions/oidc/customization/sub`](/en/rest/actions/oidc#get-the-customization-template-for-an-oidc-subject-claim-for-a-repository)
 
 * [`PUT /repos/{owner}/{repo}/actions/oidc/customization/sub`](/en/rest/actions/oidc#set-the-customization-template-for-an-oidc-subject-claim-for-a-repository)
@@ -544,6 +546,10 @@ Your GitHub App can make requests to the following REST endpoints with a user ac
 * [`GET /user/installations`](/en/rest/apps/installations#list-app-installations-accessible-to-the-user-access-token)
 
 * [`GET /user/installations/{installation_id}/repositories`](/en/rest/apps/installations#list-repositories-accessible-to-the-user-access-token)
+
+* [`PUT /user/installations/{installation_id}/repositories/{repository_id}`](/en/rest/apps/installations#add-a-repository-to-an-app-installation)
+
+* [`DELETE /user/installations/{installation_id}/repositories/{repository_id}`](/en/rest/apps/installations#remove-a-repository-from-an-app-installation)
 
 * [`GET /user/marketplace_purchases`](/en/rest/apps/marketplace#list-subscriptions-for-the-authenticated-user)
 
@@ -1333,6 +1339,12 @@ Your GitHub App can make requests to the following REST endpoints with a user ac
 
 * [`GET /repos/{owner}/{repo}/issues/{issue_number}/parent`](/en/rest/issues/sub-issues#get-parent-issue)
 
+* [`GET /repos/{owner}/{repo}/issues/{issue_number}/relates_to`](/en/rest/issues/issues#list-issues-related-to-an-issue)
+
+* [`POST /repos/{owner}/{repo}/issues/{issue_number}/relates_to`](/en/rest/issues/issues#add-a-related-issue)
+
+* [`DELETE /repos/{owner}/{repo}/issues/{issue_number}/relates_to/{issue_id}`](/en/rest/issues/issues#remove-a-related-issue)
+
 * [`DELETE /repos/{owner}/{repo}/issues/{issue_number}/sub_issue`](/en/rest/issues/sub-issues#remove-sub-issue)
 
 * [`GET /repos/{owner}/{repo}/issues/{issue_number}/sub_issues`](/en/rest/issues/sub-issues#list-sub-issues)
@@ -1604,6 +1616,10 @@ Your GitHub App can make requests to the following REST endpoints with a user ac
 * [`POST /orgs/{org}/personal-access-tokens/{pat_id}`](/en/rest/orgs/personal-access-tokens#update-the-access-a-fine-grained-personal-access-token-has-to-organization-resources)
 
 * [`GET /orgs/{org}/personal-access-tokens/{pat_id}/repositories`](/en/rest/orgs/personal-access-tokens#list-repositories-a-fine-grained-personal-access-token-has-access-to)
+
+* [`GET /orgs/{org}/properties/installations`](/en/rest/orgs/custom-properties#get-registered-app-installations-for-external-custom-properties)
+
+* [`POST /orgs/{org}/properties/installations`](/en/rest/orgs/custom-properties#register-an-app-installation-for-external-custom-properties)
 
 * [`GET /orgs/{org}/properties/schema`](/en/rest/orgs/custom-properties#get-all-custom-properties-for-an-organization)
 

@@ -114,7 +114,9 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Amazon AWS | Amazon AWS Session Token | aws_secret_access_key, aws_session_token, aws_temporary_access_key_id | ✗ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Anthropic | Anthropic Admin API Key | anthropic_admin_api_key | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Anthropic | Anthropic API Key | anthropic_api_key, [Token versions](#token-versions) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Anthropic | Anthropic Service Account API Key | anthropic_service_api_key | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
 | Anthropic | Anthropic Session ID | anthropic_session_id | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
+| Anthropic | Anthropic User API Key | anthropic_user_api_key | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
 | APIclub | APIclub API Key | apiclub_api_key | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Apify | Apify Actor Run API Token | apify_actor_run_api_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Apify | Apify Actor Run Proxy Password | apify_actor_run_proxy_password | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
@@ -401,7 +403,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | LogicMonitor | LogicMonitor Bearer Token | logicmonitor_bearer_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | LogicMonitor | LogicMonitor LMv1 Access Key | logicmonitor_lmv1_access_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Login with Amazon | Login with Amazon OAuth Client ID | amazon_oauth_client_id, amazon_oauth_client_secret | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| Lovable Labs | Lovable API Key | lovable_api_key | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
+| Lovable Labs | Lovable API Key | lovable_api_key | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ |
 | Mailchimp | Mailchimp API Key | mailchimp_api_key | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Mailchimp | Mandrill API Key | mandrill_api_key | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
 | Mailersend | Mailersend API Token | mailersend_api_token | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
@@ -500,6 +502,8 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Proctorio | Proctorio Secret Key | proctorio_secret_key, [Token versions](#token-versions) | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Proof | Proof Full Access API Key | proof_full_access_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Pulumi | Pulumi Access Token | pulumi_access_token | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
+| Pydantic Services Inc. | Logfire Token | logfire_token | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ |
+| Pydantic Services Inc. | Pydantic AI Gateway API Key | pydantic_ai_gateway_api_key | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ |
 | PyPI | PyPI API Token | pypi_api_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Rainforest Pay | Rainforest API Key | rainforest_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Rainforest Pay | Rainforest Sandbox API Key | rainforest_sandbox_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
@@ -565,9 +569,9 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Stripe | Stripe Test API Restricted Key | stripe_test_restricted_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Stripe | Stripe Test API Secret Key | stripe_test_secret_key | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Stripe | Stripe Webhook Signing Secret | stripe_webhook_signing_secret | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ |
-| Supabase | Supabase OAuth Access Token | supabase_oauth_access_token | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
+| Supabase | Supabase OAuth Access Token | supabase_oauth_access_token | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ |
 | Supabase | Supabase Personal Access Token | supabase_personal_access_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| Supabase | Supabase Personal Access Token (scoped) | supabase_scoped_personal_access_token | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
+| Supabase | Supabase Personal Access Token (scoped) | supabase_scoped_personal_access_token | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ |
 | Supabase | Supabase Secret Key | supabase_secret_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Tableau | Tableau Personal Access Token | tableau_personal_access_token | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Tailscale | Tailscale API Key | tailscale_api_key | ✓ | ✓ | ✗ | ✓ | ✓ | ✗ |

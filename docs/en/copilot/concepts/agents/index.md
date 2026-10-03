@@ -31,6 +31,10 @@ Learn how GitHub Copilot can independently execute tasks across the software dev
 
   The GitHub Copilot app is a desktop application for agent-driven development that brings parallel workstreams, GitHub integration, and PR lifecycle management into one place.
 
+* [About computer use in GitHub Copilot](/en/copilot/concepts/agents/computer-use)
+
+  Copilot can interact with desktop applications to automate tasks that cannot be completed with a more direct tool.
+
 * [Using GitHub Copilot in JetBrains IDEs](/en/copilot/concepts/agents/copilot-in-jetbrains)
 
   Learn about the different ways to use GitHub Copilot in JetBrains IDEs, including the GitHub Copilot plugin, JetBrains AI Assistant, and Copilot CLI.
@@ -46,6 +50,10 @@ Learn how GitHub Copilot can independently execute tasks across the software dev
 * [About GitHub Copilot Memory](/en/copilot/concepts/agents/copilot-memory)
 
   Copilot Memory helps Copilot become more effective over time by remembering facts about your repositories and your personal coding preferences.
+
+* [Dynamic workflows](/en/copilot/concepts/agents/dynamic-workflows)
+
+  Use GitHub Copilot to orchestrate work on complex tasks, potentially combining deterministic operations, agents, tools, API calls, and user interactions.
 
 * [About hooks for GitHub Copilot](/en/copilot/concepts/agents/hooks)
 

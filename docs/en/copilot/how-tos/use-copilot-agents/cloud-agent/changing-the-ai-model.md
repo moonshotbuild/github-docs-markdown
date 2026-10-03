@@ -11,7 +11,7 @@ breadcrumbs:
     href: "/en/copilot/how-tos"
   - title: "Use Copilot agents"
     href: "/en/copilot/how-tos/use-copilot-agents"
-  - title: "Cloud agent"
+  - title: "Copilot cloud agent"
     href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent"
   - title: "Changing the AI model"
     href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model"
@@ -38,13 +38,10 @@ You may find that different models perform better, or provide more useful respon
 The following options are currently available:
 
 * Auto
-* Claude Opus 4.7
 * Claude Opus 5
 * Claude Opus 5.5
 * Claude Sonnet 5.5
 * Claude Haiku 4.5
-* Gemini 3.5 Flash
-* Gemini 3.6 Flash
 * Gemini 3.7 Flash
 * Gemini 3.8 Flash
 * GPT-5.4 mini

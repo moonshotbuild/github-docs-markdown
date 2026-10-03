@@ -25,7 +25,7 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [Planning a trial of GitHub Advanced Security](/en/code-security/tutorials/trialing-github-advanced-security/planning-a-trial-of-ghas)
 
-  Learn how to prepare for a successful trial of Advanced Security.
+  Prepare your organization to evaluate Advanced Security against clear security and purchasing goals.
 
 * [Secret scanning](/en/code-security/concepts/secret-security/secret-scanning)
 
@@ -38,10 +38,6 @@ Build security and code quality into your GitHub workflow with integrated toolin
 * [Dependabot quickstart guide](/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart)
 
   Find and fix vulnerable dependencies you rely on with Dependabot.
-
-* [Improve code quality at scale with GitHub](/en/code-security/tutorials/code-quality-adoption-path)
-
-  Inconsistent code quality slows every team down and adds risk you can't easily see. GitHub Code Quality catches issues before they merge and reports on code health across your organization. Follow this adoption path to evaluate the feature, run a pilot, prove its value, and roll it out at scale.
 
 * [Best practices for preventing data leaks in your organization](/en/code-security/tutorials/secure-your-organization/prevent-data-leaks)
 
@@ -797,6 +793,10 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   This article contains detailed information about configuring private registries, as well as commands you can run from the command line to configure your package managers locally.
 
+* [Resolving a blocked host in a Dependabot update job](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/resolve-a-blocked-host)
+
+  Diagnose an update job that fails because Dependabot could not reach a host, and allow the host it needs.
+
 * [Preventing changes to your releases](/en/code-security/how-tos/secure-your-supply-chain/establish-provenance-and-integrity/prevent-release-changes)
 
   You can enforce immutable releases for a repository or organization to prevent potential vulnerabilities.
@@ -915,7 +915,7 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [Setting code coverage thresholds for pull requests](/en/code-security/how-tos/maintain-quality-code/restrict-code-coverage)
 
-  Protect your code coverage by automatically blocking pull requests that fall below the coverage levels your team requires.
+  Prevent pull requests from being merged when uploaded code coverage falls below the levels your team requires.
 
 * [Fixing code quality findings on a pull request](/en/code-security/how-tos/maintain-quality-code/fix-findings-on-a-pr)
 
@@ -1498,6 +1498,9 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [resolve library-paths](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/resolve-library-paths)
 
+  \[Deep plumbing] Determine QL library paths and dbschemes for multiple
+  queries.
+
 * [resolve metadata](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/resolve-metadata)
 
   \[Deep plumbing] Resolve and return the key-value metadata pairs from a
@@ -1774,15 +1777,15 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [Planning a trial of GitHub Advanced Security](/en/code-security/tutorials/trialing-github-advanced-security/planning-a-trial-of-ghas)
 
-  Learn how to prepare for a successful trial of Advanced Security.
+  Prepare your organization to evaluate Advanced Security against clear security and purchasing goals.
 
 * [Setting up a trial of GitHub Advanced Security](/en/code-security/tutorials/trialing-github-advanced-security/trial-advanced-security)
 
-  You can try the full set of GitHub Advanced Security features for free.
+  Evaluate GitHub Code Security and GitHub Secret Protection on your existing repositories before you buy.
 
-* [Enabling security features in your trial enterprise](/en/code-security/tutorials/trialing-github-advanced-security/enable-security-features-trial)
+* [Enabling security features in your trial](/en/code-security/tutorials/trialing-github-advanced-security/enable-security-features-trial)
 
-  Quickly create an enterprise-level configuration and apply Secret Protection and Code Security features across all repositories in your trial enterprise.
+  Apply Secret Protection and Code Security to a sample of repositories so your team can evaluate the features during your trial.
 
 * [Exploring your enterprise trial of GitHub Secret Protection](/en/code-security/tutorials/trialing-github-advanced-security/explore-trial-secret-scanning)
 

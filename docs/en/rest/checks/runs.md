@@ -222,8 +222,8 @@ curl -L \
         "path": "README.md",
         "annotation_level": "warning",
         "title": "Spell Checker",
-        "message": "Check your spelling for 'banaas'.",
-        "raw_details": "Do you mean 'bananas' or 'banana'?",
+        "message": "Check your spelling for '\''banaas'\''.",
+        "raw_details": "Do you mean '\''bananas'\'' or '\''banana'\''?",
         "start_line": 2,
         "end_line": 2
       },
@@ -231,8 +231,8 @@ curl -L \
         "path": "README.md",
         "annotation_level": "warning",
         "title": "Spell Checker",
-        "message": "Check your spelling for 'aples'",
-        "raw_details": "Do you mean 'apples' or 'Naples'",
+        "message": "Check your spelling for '\''aples'\''",
+        "raw_details": "Do you mean '\''apples'\'' or '\''Naples'\''",
         "start_line": 4,
         "end_line": 4
       }
@@ -552,8 +552,8 @@ curl -L \
         "path": "README.md",
         "annotation_level": "warning",
         "title": "Spell Checker",
-        "message": "Check your spelling for 'banaas'.",
-        "raw_details": "Do you mean 'bananas' or 'banana'?",
+        "message": "Check your spelling for '\''banaas'\''.",
+        "raw_details": "Do you mean '\''bananas'\'' or '\''banana'\''?",
         "start_line": 2,
         "end_line": 2
       },
@@ -561,8 +561,8 @@ curl -L \
         "path": "README.md",
         "annotation_level": "warning",
         "title": "Spell Checker",
-        "message": "Check your spelling for 'aples'",
-        "raw_details": "Do you mean 'apples' or 'Naples'",
+        "message": "Check your spelling for '\''aples'\''",
+        "raw_details": "Do you mean '\''apples'\'' or '\''Naples'\''",
         "start_line": 4,
         "end_line": 4
       }

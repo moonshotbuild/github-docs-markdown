@@ -457,7 +457,7 @@ curl -L \
   https://api.github.com/repos/OWNER/REPO/labels \
   -d '{
   "name": "bug",
-  "description": "Something isn't working",
+  "description": "Something isn'\''t working",
   "color": "f29513"
 }'
 ```

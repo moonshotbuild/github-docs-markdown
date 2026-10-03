@@ -163,7 +163,7 @@ curl -L \
   -X POST \
   https://api.github.com/user/gpg_keys \
   -d '{
-  "name": "Octocat's GPG Key",
+  "name": "Octocat'\''s GPG Key",
   "armored_public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\nVersion: GnuPG v1\n\nmQINBFnZ2ZIBEADQ2Z7Z7\n-----END PGP PUBLIC KEY BLOCK-----"
 }'
 ```

@@ -41,7 +41,7 @@ Learn how to use GitHub's code security and code quality features to maintain hi
 
 * [Setting code coverage thresholds for pull requests](/en/code-security/how-tos/maintain-quality-code/restrict-code-coverage)
 
-  Protect your code coverage by automatically blocking pull requests that fall below the coverage levels your team requires.
+  Prevent pull requests from being merged when uploaded code coverage falls below the levels your team requires.
 
 * [Fixing code quality findings on a pull request](/en/code-security/how-tos/maintain-quality-code/fix-findings-on-a-pr)
 

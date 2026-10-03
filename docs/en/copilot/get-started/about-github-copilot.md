@@ -93,5 +93,5 @@ These settings help administrators manage Copilot across the environments and fe
 
 ## Next steps
 
-* Start using Copilot. See [Setting up GitHub Copilot](/en/copilot/how-tos/set-up).
+* Start using Copilot. See [Where to use GitHub Copilot](/en/copilot/get-started/where-to-use-github-copilot).
 * View the Copilot features available to you by navigating to your Copilot settings at [https://github.com/settings/copilot/features](https://github.com/settings/copilot/features?ref_product=copilot\&ref_type=engagement\&ref_style=text).

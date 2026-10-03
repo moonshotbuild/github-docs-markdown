@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can use the audit log to review all actions related to GitHub Codespaces.
 
-When any member of your organization performs an action related to GitHub Codespaces, you can review the actions in the audit log. For information about accessing the log, see [Reviewing the audit log for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization#accessing-the-audit-log).
+When any member of your organization performs an action related to GitHub Codespaces, you can review the actions in the audit log. For information about accessing the log, see [Reviewing the audit log for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization#accessing-the-organizations-audit-log-via-the-web-interface).
 
 ![Screenshot of the "Audit log" page for an organization, showing the "Recent events" list.](/assets/images/help/codespaces/codespaces-audit-log-org.png)
 

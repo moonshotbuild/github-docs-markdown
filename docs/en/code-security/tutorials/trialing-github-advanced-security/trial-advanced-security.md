@@ -1,7 +1,7 @@
 ---
 source_path: "/en/code-security/tutorials/trialing-github-advanced-security/trial-advanced-security"
 title: "Setting up a trial of GitHub Advanced Security"
-intro: "You can try the full set of GitHub Advanced Security features for free."
+intro: "Evaluate GitHub Code Security and GitHub Secret Protection on your existing repositories before you buy."
 product: "Security and code quality"
 document_type: "article"
 breadcrumbs:
@@ -17,59 +17,58 @@ breadcrumbs:
 
 # Setting up a trial of GitHub Advanced Security
 
-You can try the full set of GitHub Advanced Security features for free.
+Evaluate GitHub Code Security and GitHub Secret Protection on your existing repositories before you buy.
 
 ## Prerequisites
 
-To set up a trial of GitHub Advanced Security using this method, you must meet the following criteria:
+To start a self-serve trial for an organization on GitHub Team, all of the following must be true:
 
-1. You are an owner of an enterprise account. See [Enterprise accounts](/en/enterprise-cloud@latest/admin/concepts/enterprise-fundamentals/enterprise-accounts).
-2. You pay by credit card or PayPal.
-3. You have not previously purchased GitHub Advanced Security (that is, you do not currently or in the past have a paid license for GitHub Advanced Security).
-4. You are not already using metered billing for GitHub Advanced Security.
-5. If you have had a previous GitHub Advanced Security trial, you are eligible only if you have had no more than one previous trial and it ended at least 180 days ago.
-6. Your enterprise has 300 or fewer seats.
+* You are an owner of the organization.
+* The organization does not currently have, and has not previously had, a paid license for GitHub Advanced Security.
+* The organization is not already using metered billing for GitHub Advanced Security.
+* If the organization has previously had a GitHub Advanced Security trial, it has had no more than one previous trial. That trial ended at least 180 days ago.
 
-> \[!TIP]
->
-> * **No enterprise account?** Start a trial of GitHub Enterprise Cloud with GitHub Advanced Security. See [Setting up a trial of GitHub Enterprise Cloud](/en/enterprise-cloud@latest/admin/overview/setting-up-a-trial-of-github-enterprise-cloud).
-> * **Pay by invoice** Contact [GitHub's Sales team](https://github.com/enterprise/contact) to arrange a trial.
+Your payment method does not affect whether you can start a trial. However, you can purchase GitHub Advanced Security through the trial checkout flow only if your organization pays by credit card, PayPal, or Azure.
 
-## Setting up your trial of GitHub Advanced Security
+## What the trial includes
 
-1. Navigate to your enterprise. For example, from the [Enterprises](https://github.com/settings/enterprises?ref_product=ghec\&ref_type=engagement\&ref_style=text) page on GitHub.com.
-2. At the top of the page, click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-credit-card" aria-label="credit-card" role="img"><path d="M10.75 9a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5h-1.5Z"></path><path d="M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25ZM14.5 6.5h-13v5.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Zm0-2.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25V5h13Z"></path></svg> Billing and licensing**.
-3. Click **Licensing** to show detailed information on license use.
-4. To the right of "GitHub Advanced Security", click **Start free trial**.
-5. Click **Start trial**.
+The trial gives you access to GitHub Code Security and GitHub Secret Protection for private repositories. You can evaluate capabilities such as:
 
-   During a trial of GitHub Advanced Security, you can add any number of committers and enable GitHub Secret Protection and GitHub Code Security for any number of organizations.
+* Code scanning, Copilot Autofix, dependency review, and security campaigns
+* Secret scanning, push protection, custom patterns, validity checks, and delegated bypass
+
+Use the trial on a sample of repositories so you can assess the results, developer experience, and controls before you purchase.
+
+## Start your trial
+
+An organization owner can start a trial from the organization's "Licensing" page.
+
+1. In the upper-right corner of GitHub, click your profile picture, then click **Your organizations**.
+2. Next to the organization, click **Settings**.
+3. In the "Access" section of the sidebar, click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-credit-card" aria-label="credit-card" role="img"><path d="M10.75 9a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5h-1.5Z"></path><path d="M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25ZM14.5 6.5h-13v5.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Zm0-2.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25V5h13Z"></path></svg> Billing & Licensing**, then click **Licensing**.
+4. To the right of "GitHub Advanced Security", click **Try free for 30 days**, then follow the prompts to start your trial.
+
+## Evaluate features during your trial
+
+After you start the trial, enable the features you want to evaluate on a sample of repositories. See [Enabling security features in your trial](/en/code-security/tutorials/trialing-github-advanced-security/enable-security-features-trial).
+
+As you evaluate the features, compare the results with the goals and success criteria you defined when planning the trial.
 
 ## Billing during your trial
 
-During the trial, you do not pay license fees for GitHub Advanced Security.
+During the trial, you do not pay license fees for GitHub Secret Protection or GitHub Code Security.
 
-Usage-based billing continues for features that consume GitHub Actions minutes or AI credits.
+Usage-based billing applies for features that consume GitHub Actions minutes or AI credits. For private repositories, GitHub Actions minutes used by GitHub Advanced Security workflows count toward your organization's included usage. This includes code scanning workflows. Usage beyond the included amount is billed at the standard rate. For more information, see [Product usage included with each plan](/en/billing/reference/product-usage-included).
 
-For private repositories, minutes used by GitHub Advanced Security workflows that run on standard GitHub-hosted runners, including code scanning workflows, count toward the 50,000 minutes included each month with your GitHub Enterprise Cloud plan. Workflows in public repositories or on self-hosted runners do not consume included minutes. larger runners are billed separately. Usage beyond the included amount is billed at the standard rate. For more information, see [Product usage included with each plan](/en/billing/reference/product-usage-included).
+## Managing and finishing your trial
 
-## Finishing your trial
+Your trial lasts 30 days. You can review the expiration date and current usage on the "Licensing" page for your organization or enterprise.
 
-You can finish your trial at any time by purchasing licenses for GitHub Secret Protection or GitHub Code Security. If you haven't made a purchase by the end of the 30 days, your trial will expire.
+To purchase during the trial:
 
-If you pay for GitHub Enterprise Cloud with metered billing, but did not set up a free trial of GitHub Advanced Security, you can still use metered-based billing to pay for Advanced Security products after the GitHub Enterprise Cloud trial ends. For more information, contact [GitHub's Sales team](https://enterprise.github.com/contact).
+1. Access the "Licensing" page for the organization.
+2. In the GitHub Advanced Security trial banner, click **Buy Advanced Security**.
+3. Review the estimated monthly usage, billing information, and payment method.
+4. Click **Purchase Advanced Security**.
 
-1. Navigate to your enterprise. For example, from the [Enterprises](https://github.com/settings/enterprises?ref_product=ghec\&ref_type=engagement\&ref_style=text) page on GitHub.com.
-2. At the top of the page, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-gear" aria-label="gear" role="img"><path d="M8 0a8.2 8.2 0 0 1 .701.031C9.444.095 9.99.645 10.16 1.29l.288 1.107c.018.066.079.158.212.224.231.114.454.243.668.386.123.082.233.09.299.071l1.103-.303c.644-.176 1.392.021 1.82.63.27.385.506.792.704 1.218.315.675.111 1.422-.364 1.891l-.814.806c-.049.048-.098.147-.088.294.016.257.016.515 0 .772-.01.147.038.246.088.294l.814.806c.475.469.679 1.216.364 1.891a7.977 7.977 0 0 1-.704 1.217c-.428.61-1.176.807-1.82.63l-1.102-.302c-.067-.019-.177-.011-.3.071a5.909 5.909 0 0 1-.668.386c-.133.066-.194.158-.211.224l-.29 1.106c-.168.646-.715 1.196-1.458 1.26a8.006 8.006 0 0 1-1.402 0c-.743-.064-1.289-.614-1.458-1.26l-.289-1.106c-.018-.066-.079-.158-.212-.224a5.738 5.738 0 0 1-.668-.386c-.123-.082-.233-.09-.299-.071l-1.103.303c-.644.176-1.392-.021-1.82-.63a8.12 8.12 0 0 1-.704-1.218c-.315-.675-.111-1.422.363-1.891l.815-.806c.05-.048.098-.147.088-.294a6.214 6.214 0 0 1 0-.772c.01-.147-.038-.246-.088-.294l-.815-.806C.635 6.045.431 5.298.746 4.623a7.92 7.92 0 0 1 .704-1.217c.428-.61 1.176-.807 1.82-.63l1.102.302c.067.019.177.011.3-.071.214-.143.437-.272.668-.386.133-.066.194-.158.211-.224l.29-1.106C6.009.645 6.556.095 7.299.03 7.53.01 7.764 0 8 0Zm-.571 1.525c-.036.003-.108.036-.137.146l-.289 1.105c-.147.561-.549.967-.998 1.189-.173.086-.34.183-.5.29-.417.278-.97.423-1.529.27l-1.103-.303c-.109-.03-.175.016-.195.045-.22.312-.412.644-.573.99-.014.031-.021.11.059.19l.815.806c.411.406.562.957.53 1.456a4.709 4.709 0 0 0 0 .582c.032.499-.119 1.05-.53 1.456l-.815.806c-.081.08-.073.159-.059.19.162.346.353.677.573.989.02.03.085.076.195.046l1.102-.303c.56-.153 1.113-.008 1.53.27.161.107.328.204.501.29.447.222.85.629.997 1.189l.289 1.105c.029.109.101.143.137.146a6.6 6.6 0 0 0 1.142 0c.036-.003.108-.036.137-.146l.289-1.105c.147-.561.549-.967.998-1.189.173-.086.34-.183.5-.29.417-.278.97-.423 1.529-.27l1.103.303c.109.029.175-.016.195-.045.22-.313.411-.644.573-.99.014-.031.021-.11-.059-.19l-.815-.806c-.411-.406-.562-.957-.53-1.456a4.709 4.709 0 0 0 0-.582c-.032-.499.119-1.05.53-1.456l.815-.806c.081-.08.073-.159.059-.19a6.464 6.464 0 0 0-.573-.989c-.02-.03-.085-.076-.195-.046l-1.102.303c-.56.153-1.113.008-1.53-.27a4.44 4.44 0 0 0-.501-.29c-.447-.222-.85-.629-.997-1.189l-.289-1.105c-.029-.11-.101-.143-.137-.146a6.6 6.6 0 0 0-1.142 0ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM9.5 8a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 9.5 8Z"></path></svg> **Settings**.
-3. At the top of the page, click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-credit-card" aria-label="credit-card" role="img"><path d="M10.75 9a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5h-1.5Z"></path><path d="M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25ZM14.5 6.5h-13v5.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Zm0-2.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25V5h13Z"></path></svg> Billing and licensing**.
-4. Click **Licensing** to show detailed information on license use.
-5. To the right of "GitHub Advanced Security trial", select the **Manage** dropdown menu and click **Purchase**.
-6. Confirm your billing information and payment method.
-7. Click **Purchase Advanced Security**.
-
-Note that GitHub may apply a temporary authorization hold for the value of the usage-based costs in advance, which will appear as a pending charge in your account's payment method.
-
-> \[!TIP]
-> If you pay for GitHub using volume/subscription billing, you will also need define how many licenses to purchase.
->
-> * Under "How many committers do you want to include?", enter the number of committers you want to purchase licenses for. See [Active committers and unique committers](/en/billing/concepts/product-billing/github-advanced-security#active-and-unique-committers).
+If you do not purchase by the end of the trial, it expires automatically, and GitHub Secret Protection and GitHub Code Security features are disabled for private repositories.

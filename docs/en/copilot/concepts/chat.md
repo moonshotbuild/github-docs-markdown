@@ -31,7 +31,7 @@ GitHub Copilot Chat is available in various environments:
 * GitHub Copilot CLI
 * GitHub Copilot app
 
-Different environments may have different features and capabilities, but the core functionality remains consistent across platforms. To explore the functionality available in each environment, see the [GitHub Copilot Chat](/en/copilot/how-tos/chat-with-copilot) how-to guides and the [Tutorials for GitHub Copilot](/en/copilot/tutorials).
+Different environments may have different features and capabilities, but the core functionality remains consistent across platforms. To explore the functionality available in each environment, see the [Chat with Copilot](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot) and [Chat with Copilot](/en/copilot/how-tos/copilot-on-github/chat-with-copilot) how-to guides and the [Tutorials for GitHub Copilot](/en/copilot/tutorials).
 
 ## Limitations
 
@@ -59,7 +59,7 @@ For more information, see [Adding personal custom instructions for GitHub Copilo
 
 ## AI models for Copilot Chat
 
-You can change the model Copilot uses to generate responses. You may find that different models perform better, or provide more useful responses, depending on the type of questions you ask. Options include premium models with advanced capabilities.
+You can change the model Copilot uses to generate responses. You may find that different models perform better, or provide more useful responses, depending on the type of questions you ask. Options include premium models with advanced capabilities. To change the model in your IDE, see [Changing the AI model for GitHub Copilot Chat](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/change-the-chat-model). To change or compare models on GitHub, see [Asking GitHub Copilot questions in GitHub](/en/copilot/how-tos/copilot-on-github/chat-with-copilot/chat-in-github#changing-and-comparing-ai-models).
 
 ## Extending Copilot Chat
 
@@ -69,10 +69,11 @@ Copilot Chat can be extended in a variety of ways to enhance its functionality a
 
 MCP is an open standard that defines how applications share context with large language models (LLMs). MCP provides a standardized way to connect AI models to different data sources and tools, enabling them to work together more effectively.
 
-You can configure MCP servers to provide context to Copilot Chat in various IDEs, such as Visual Studio Code and JetBrains IDEs. For Copilot Chat in GitHub, the GitHub MCP server is automatically configured, enabling Copilot Chat to perform a limited set of tasks, at your request, such as creating branches or merging pull requests. For more information, see [Extending GitHub Copilot Chat with Model Context Protocol (MCP) servers](/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/extend-copilot-chat-with-mcp) and [Using the GitHub MCP Server in your IDE](/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/use-the-github-mcp-server).
+You can configure MCP servers to provide context to Copilot Chat in various IDEs, such as Visual Studio Code and JetBrains IDEs. For Copilot Chat in GitHub, the GitHub MCP server is automatically configured, enabling Copilot Chat to perform a limited set of tasks, at your request, such as creating branches or merging pull requests. For more information, see [Extending GitHub Copilot Chat with Model Context Protocol (MCP) servers](/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/extend-copilot-chat-with-mcp) and [Using the GitHub MCP Server in your IDE](/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/use-the-github-mcp-server).
 
 ### Further reading
 
-* [GitHub Copilot Chat](/en/copilot/how-tos/chat-with-copilot) how-to guides
+* [Chat with Copilot](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot) how-to guides
+* [Chat with Copilot](/en/copilot/how-tos/copilot-on-github/chat-with-copilot) how-to guides
 * [Using GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/overview)
 * [GitHub Copilot Cookbook](/en/copilot/tutorials/copilot-cookbook)

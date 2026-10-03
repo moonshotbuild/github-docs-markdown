@@ -80,3 +80,7 @@ Customize and configure features for dependency management.
 * [Guidance for the configuration of private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-private-registries)
 
   This article contains detailed information about configuring private registries, as well as commands you can run from the command line to configure your package managers locally.
+
+* [Resolving a blocked host in a Dependabot update job](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/resolve-a-blocked-host)
+
+  Diagnose an update job that fails because Dependabot could not reach a host, and allow the host it needs.

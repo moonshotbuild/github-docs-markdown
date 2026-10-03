@@ -24,7 +24,7 @@ Owners and administrators of public repositories can enable private vulnerabilit
 > \[!NOTE]
 >
 > * If you have admin or security permissions for a public repository, you don’t need to submit a vulnerability report. Instead, create a draft security advisory directly. See [Creating a repository security advisory](/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/create-repository-advisory).
-> * Private vulnerability reporting is separate from a repository’s `SECURITY.md` file. You can only report vulnerabilities privately for repositories where this feature is enabled, and you don’t need to follow the instructions in `SECURITY.md`.
+> * Private vulnerability reporting is separate from a repository’s `SECURITY.md` file. You can only report vulnerabilities privately for repositories where this feature is enabled. If the repository has a security policy, the policy is displayed above the reporting form so you can review the maintainer's guidance before submitting.
 
 If a public repository has private vulnerability reporting enabled, anyone can submit a private vulnerability report to the repository maintainers.
 
@@ -36,19 +36,21 @@ If the repository doesn't have private vulnerability reporting enabled, you need
 
 3. Click **Report a vulnerability** to open the advisory form.
 
-4. Fill in the advisory details form.
+4. If the repository has a security policy, review the policy displayed above the form.
+
+5. Fill in the vulnerability reporting form.
 
    > \[!TIP]
-   > In this form, only the title and description are mandatory. (In the general draft security advisory form, which the repository maintainer initiates, specifying the ecosystem is also required.) However, we recommend security researchers provide as much information as possible on the form so that the maintainers can make an informed decision about the submitted report. You can adopt the template used by our security researchers from the GitHub Security Lab, which is available on the [`github/securitylab` repository](https://github.com/github/securitylab/blob/main/docs/report-template.md).
+   > By default, you must provide a summary, details, proof of concept, and impact statement. Maintainers can customize the form and require other information. Provide enough detail for the maintainers to reproduce and assess the vulnerability.
 
-   For more information about the fields available and guidance on filling in the form, see [Creating a repository security advisory](/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/create-repository-advisory) and [Best practices for writing repository security advisories](/en/code-security/tutorials/fix-reported-vulnerabilities/write-security-advisories).
+6. Optionally, select **I used AI assistance to find or write up this report**.
 
-5. At the bottom of the form, click **Submit report**. GitHub will display a message letting you know that maintainers have been notified and that you have a pending credit for this security advisory.
+7. At the bottom of the form, click **Submit report**. GitHub will display a message letting you know that maintainers have been notified and that you have a pending credit for this security advisory.
 
    > \[!TIP]
    > When the report is submitted, GitHub automatically adds the reporter of the vulnerability as a collaborator and as a credited user on the proposed advisory.
 
-6. Optionally, click **Start a temporary private fork** if you want to start to fix the issue. Note that only the repository maintainer can merge changes from that private fork into the parent repository.
+8. Optionally, click **Start a temporary private fork** if you want to start to fix the issue. Note that only the repository maintainer can merge changes from that private fork into the parent repository.
 
    ![Screenshot of the bottom of a security advisory. A button, labeled "Start a temporary fork" is outlined in dark orange.](/assets/images/help/security/advisory-start-a-temporary-private-fork-button.png)
 

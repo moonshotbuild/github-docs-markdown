@@ -1296,6 +1296,10 @@ If the pull request cannot be merged (e.g. because it is closed, or still a draf
   The action that will be taken to merge the pull request. direct\_merge merges the pull request directly without using a merge queue; merge\_queue adds the pull request to a merge queue; default uses a merge queue if one is configured for the target branch, or merges directly otherwise. If omitted, defaults to default.
   Can be one of: `default`, `direct_merge`, `merge_queue`
 
+* **`bypass_rules`** (boolean)
+  Whether to bypass repository rules that the authenticated actor is permitted to bypass.
+  Default: `false`
+
 ### HTTP response status codes
 
 * **200** - if the pull request was already merged, or is already in a merge queue
@@ -1341,6 +1345,7 @@ curl -L \
     * `merge_method`: required, string, enum: `default`, `merge`, `squash`, `rebase`
     * `merge_action`: required, string, enum: `default`, `merge_queue`, `direct_merge`
     * `expected_head_sha`: required, string
+    * `bypass_rules`: boolean, default: `false`
   * **object**
     * `message`: required, string
   * **object**
@@ -1373,6 +1378,7 @@ curl -L \
     * `merge_method`: required, string, enum: `default`, `merge`, `squash`, `rebase`
     * `merge_action`: required, string, enum: `default`, `merge_queue`, `direct_merge`
     * `expected_head_sha`: required, string
+    * `bypass_rules`: boolean, default: `false`
   * **object**
     * `message`: required, string
   * **object**
@@ -1408,6 +1414,7 @@ curl -L \
     * `merge_method`: required, string, enum: `default`, `merge`, `squash`, `rebase`
     * `merge_action`: required, string, enum: `default`, `merge_queue`, `direct_merge`
     * `expected_head_sha`: required, string
+    * `bypass_rules`: boolean, default: `false`
   * **object**
     * `message`: required, string
   * **object**
@@ -1440,6 +1447,7 @@ curl -L \
     * `merge_method`: required, string, enum: `default`, `merge`, `squash`, `rebase`
     * `merge_action`: required, string, enum: `default`, `merge_queue`, `direct_merge`
     * `expected_head_sha`: required, string
+    * `bypass_rules`: boolean, default: `false`
   * **object**
     * `message`: required, string
   * **object**

@@ -86,7 +86,7 @@ If you work on codespaces in Visual Studio Code, you can enable [Auto Save](http
 
 ### Closing or stopping your codespace
 
-Your codespace will keep running while you are using it, but will time out after a period of inactivity. File changes from the editor and terminal output are counted as activity, so your codespace will not time out if terminal output is continuing. The default inactivity timeout period is 30 minutes. You can define your personal timeout setting for codespaces you create, but this may be overruled by an organization timeout policy. For more information, see [Setting your timeout period for GitHub Codespaces](/en/codespaces/setting-your-user-preferences/setting-your-timeout-period-for-github-codespaces).
+Your codespace will keep running while you are using it, up to a maximum lifetime of 12 hours, but will time out after a period of inactivity. File changes from the editor and terminal output are counted as activity, so your codespace will not time out if terminal output is continuing. The default inactivity timeout period is 30 minutes. You can define your personal timeout setting for codespaces you create, but this may be overruled by an organization timeout policy. For more information, see [Setting your timeout period for GitHub Codespaces](/en/codespaces/setting-your-user-preferences/setting-your-timeout-period-for-github-codespaces). For more information about the maximum lifetime, see [Understanding the codespace lifecycle](/en/codespaces/about-codespaces/understanding-the-codespace-lifecycle#maximum-lifetime-of-a-codespace).
 
 If a codespace times out it will stop running, but you can restart it from the browser tab (if you were using the codespace in the browser), from within VS Code, or from your list of codespaces at <https://github.com/codespaces>.
 
@@ -160,4 +160,3 @@ If you want to make changes to your codespace that will be more robust over rebu
 * [Enabling or disabling GitHub Codespaces for your organization](/en/codespaces/managing-codespaces-for-your-organization/enabling-or-disabling-github-codespaces-for-your-organization)
 * [Managing the cost of GitHub Codespaces in your organization](/en/codespaces/managing-codespaces-for-your-organization/managing-the-cost-of-github-codespaces-in-your-organization)
 * [Adding a dev container configuration to your repository](/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration)
-* [Understanding the codespace lifecycle](/en/codespaces/about-codespaces/understanding-the-codespace-lifecycle)

@@ -83,7 +83,9 @@ POST /orgs/{org}/properties/installations
 ```
 
 Registers a GitHub App installation so it can read and write external custom properties for an organization, and assigns it a display name.
-An app installation can only be registered once, and its display name can't be changed afterward. Calling with an app installation that has already been registered returns a 422 response with an already\_exists error code.
+The display name must be 1 to 15 characters and contain only letters and numbers. Capitalization is preserved as entered.
+An app installation can only be registered once, and its display name can't be changed afterward. Calling with an app installation that has already been registered returns a 422 response with an already\_exists error code for installation\_id. If the display name is already in use by another app installation in the organization, the response is 422 with an already\_exists error code for display\_name. An invalid display name also returns 422.
+The app installation being registered must have write or admin permission for organization external custom properties for repositories. If it doesn't, the response is 422. This is the permission of the installation being registered, which isn't necessarily the caller.
 Uninstalling the GitHub App unregisters it, and removes the external custom properties it created.
 To use this endpoint, the authenticated caller must have the organization\_external\_properties\_for\_repos:admin permission.
 
@@ -105,7 +107,7 @@ To use this endpoint, the authenticated caller must have the organization\_exter
   The unique identifier of the GitHub App installation to register for managing external custom properties. When authenticating as a GitHub App installation, this defaults to the authenticated installation and can be omitted. It is required for all other callers (users and fine-grained personal access tokens).
 
 * **`display_name`** (string) (required)
-  The display name for this app installation's external custom properties in the organization. This can't be changed after the app installation is registered.
+  The display name for this app installation's external custom properties in the organization. Must be 1 to 15 characters and contain only letters and numbers. Capitalization is preserved as entered. This can't be changed after the app installation is registered.
 
 ### HTTP response status codes
 

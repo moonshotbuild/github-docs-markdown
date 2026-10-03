@@ -23,7 +23,7 @@ View logs to troubleshoot GitHub Copilot-related errors in your IDE.
 
 ## Collecting log files
 
-The location of the log files depends on the JetBrains IDE you are using. For more information, see [Configuring GitHub Copilot in your environment](/en/copilot/how-tos/configure-personal-settings/configure-in-ide?tool=jetbrains).
+The location of the log files depends on the JetBrains IDE you are using. For more information, see [Configuring GitHub Copilot in your environment](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/configure-in-ide?tool=jetbrains).
 
 These steps describe how to view and collect the log files for the following JetBrains IDEs:
 

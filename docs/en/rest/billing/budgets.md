@@ -357,6 +357,7 @@ curl -L \
 * `budget_alerting`: required, object:
   * `will_alert`: boolean
   * `alert_recipients`: array of string
+* `consumed_amount`: number
 
 ## Update a budget for an organization
 

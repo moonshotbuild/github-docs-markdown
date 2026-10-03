@@ -209,6 +209,10 @@ If you're moving to GitHub from another code hosting platform or moving between 
 
   You can migrate organizations from GitHub.com to GitHub Enterprise Cloud, using the GitHub CLI or the GraphQL API.
 
+* [Migrating repositories between two data-resident enterprises](/en/migrations/using-github-enterprise-importer/migrating-between-github-products/migrating-repositories-between-two-data-resident-enterprises)
+
+  You can use the GitHub Enterprise Importer (GEI) extension for GitHub CLI to migrate repositories between two instances of GitHub Enterprise Cloud with data residency.
+
 * [Understand migrations from GitLab to GitHub](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab/understand-migrations)
 
   GitHub Enterprise Importer automates migrations from GitLab.

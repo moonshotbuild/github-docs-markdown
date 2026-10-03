@@ -115,7 +115,7 @@ Let tools handle the repetitive work.
 * Set up CI checks for style, linting, security, code quality and code coverage.
 * Use Dependabot for dependency updates and alerts.
 * Apply CodeQL or similar scanners for static analysis.
-* [Finding public code that matches GitHub Copilot suggestions](/en/copilot/how-tos/get-code-suggestions/find-matching-code) shows how Copilot can help track down code patterns and automate search tasks.
+* [Finding public code that matches GitHub Copilot suggestions](/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/find-matching-code) shows how Copilot can help track down code patterns and automate search tasks.
 * Consider if AI agents with reasoning capabilities can assist in automating parts of your review process. For example, build a self-reviewing agent that evaluates draft pull requests against your standards, checking for accuracy, appropriate tone, and business logic *before* requesting human review.
 
 ## 8. Keep improving your workflow

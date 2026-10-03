@@ -19,7 +19,7 @@ breadcrumbs:
 
 Restructure stacked pull requests, rebase their branches, and make changes to lower layers using GitHub CLI.
 
-> \[!NOTE] This feature is in public preview and subject to change.
+> \[!NOTE] This feature is in public preview and is subject to change.
 
 As you iterate on a stack, you often need to make changes in a lower layer, rebase to keep a linear history, or restructure its branches. The `gh stack` extension in GitHub CLI handles these tasks with cascading operations that update every affected branch. See [Stacked pull requests CLI commands](/en/pull-requests/reference/stacked-prs-cli-commands).
 

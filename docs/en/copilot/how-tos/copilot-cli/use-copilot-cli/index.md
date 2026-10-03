@@ -33,6 +33,10 @@ Understand the different ways you can use GitHub Copilot in your terminal.
 
   Speak your prompts to GitHub Copilot CLI instead of typing them, using the CLI's speech-to-text feature.
 
+* [Using GitHub Copilot CLI to interact with desktop applications](/en/copilot/how-tos/copilot-cli/use-copilot-cli/computer-use)
+
+  With computer use, allow Copilot to interact with local desktop applications from GitHub Copilot CLI.
+
 * [Connecting GitHub Copilot CLI to VS Code](/en/copilot/how-tos/copilot-cli/use-copilot-cli/connecting-vs-code)
 
   Connect Copilot CLI to VS Code to share context, trust settings, and output.

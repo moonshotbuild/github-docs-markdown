@@ -59,7 +59,7 @@ Inconsistent code quality slows every team down and adds risk you can't easily s
 
 * [Setting code coverage thresholds for pull requests](/en/code-security/how-tos/maintain-quality-code/restrict-code-coverage)
 
-  Protect your code coverage by automatically blocking pull requests that fall below the coverage levels your team requires.
+  Prevent pull requests from being merged when uploaded code coverage falls below the levels your team requires.
 
 ### Phase 4: Assess the pilot and decide
 

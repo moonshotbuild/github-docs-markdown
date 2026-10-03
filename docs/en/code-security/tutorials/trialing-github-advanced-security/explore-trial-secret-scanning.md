@@ -39,7 +39,7 @@ For full details of the features available, see [GitHub Secret Protection](/en/g
 
 ### Security configuration for Secret Protection
 
-Most enterprises choose to enable Secret Protection with push protection across all their repositories by applying security configurations with these features enabled. This ensures that repositories are checked for access tokens that have already been added to GitHub, in addition to flagging when users are about to leak tokens in GitHub. For information about creating an enterprise-level security configuration and applying it to your test repositories, see [Enabling security features in your trial enterprise](/en/code-security/tutorials/trialing-github-advanced-security/enable-security-features-trial).
+Most enterprises choose to enable Secret Protection with push protection across all their repositories by applying security configurations with these features enabled. This ensures that repositories are checked for access tokens that have already been added to GitHub, in addition to flagging when users are about to leak tokens in GitHub. For information about creating an enterprise-level security configuration and applying it to your test repositories, see [Enabling security features in your trial](/en/code-security/tutorials/trialing-github-advanced-security/enable-security-features-trial).
 
 ### Provide access to view the results of secret scanning
 
