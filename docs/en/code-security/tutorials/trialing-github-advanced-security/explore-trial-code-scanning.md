@@ -34,7 +34,7 @@ In contrast to Secret Protection, where a single security configuration is typic
 * Code scanning uses runners with a specific label to apply to repositories that require a specialized environment or that use private registries.
 * Code scanning is "Not set" to apply to repositories that need to use advanced setup or that require a third-party tool.
 
-For your trial, it's simplest to create a primary enterprise-level security configuration and apply it to your test repositories. Then you can create any additional security configurations you need and apply them to a subset of repositories selected using code language, custom property, visibility, and other filter options. For more information, see [Enabling security features in your trial enterprise](/en/code-security/tutorials/trialing-github-advanced-security/enable-security-features-trial) and [Applying a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/apply-custom-configuration).
+For your trial, it's simplest to create a primary enterprise-level security configuration and apply it to your test repositories. Then you can create any additional security configurations you need and apply them to a subset of repositories selected using code language, custom property, visibility, and other filter options. For more information, see [Enabling security features in your trial](/en/code-security/tutorials/trialing-github-advanced-security/enable-security-features-trial) and [Applying a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/apply-custom-configuration).
 
 ### Provide access to view results of code scanning
 

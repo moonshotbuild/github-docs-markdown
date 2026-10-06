@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/apps/installations"
 ---
 
-# REST API endpoints for {% data variables.product.prodname\_github\_app %} installations
+# REST API endpoints for GitHub App installations
 
 Use the REST API to get information about GitHub App installations and perform actions within those installations.
 
@@ -338,7 +338,6 @@ PUT /user/installations/{installation_id}/repositories/{repository_id}
 ```
 
 Add a single repository to an installation. The authenticated user must have admin access to the repository.
-This endpoint only works for PATs (classic) with the repo scope.
 
 ### Parameters
 
@@ -386,7 +385,7 @@ DELETE /user/installations/{installation_id}/repositories/{repository_id}
 ```
 
 Remove a single repository from an installation. The authenticated user must have admin access to the repository. The installation must have the repository\_selection of selected.
-This endpoint only works for PATs (classic) with the repo scope.
+To use a PAT (classic) with this endpoint, the repo scope is required
 
 ### Parameters
 

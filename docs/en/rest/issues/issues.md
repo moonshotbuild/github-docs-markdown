@@ -713,7 +713,7 @@ curl -L \
   https://api.github.com/repos/OWNER/REPO/issues \
   -d '{
   "title": "Found a bug",
-  "body": "I'm having a problem with this.",
+  "body": "I'\''m having a problem with this.",
   "assignees": [
     "octocat"
   ],
@@ -1220,7 +1220,7 @@ curl -L \
   https://api.github.com/repos/OWNER/REPO/issues/ISSUE_NUMBER \
   -d '{
   "title": "Found a bug",
-  "body": "I'm having a problem with this.",
+  "body": "I'\''m having a problem with this.",
   "assignees": [
     "octocat"
   ],

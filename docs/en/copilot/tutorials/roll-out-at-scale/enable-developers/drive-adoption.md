@@ -59,12 +59,12 @@ GitHub has found that many successful rollouts offer a fully self-service model 
 
 ## Supporting users setting up their environment
 
-Once your teams have access to GitHub Copilot, ensure they're confident with setting up their environment. GitHub provides comprehensive documentation to help users set up their environment and resolve common issues. See [Setting up GitHub Copilot for yourself](/en/copilot/how-tos/set-up/set-up-for-self) and [Troubleshoot GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot).
+Once your teams have access to GitHub Copilot, ensure they're confident with setting up their environment. GitHub provides comprehensive documentation to help users set up their environment and resolve common issues. See [Set up Copilot](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot) and [Troubleshoot GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot).
 
 If your company uses a corporate proxy or firewall, there are additional steps for ensuring users can connect to GitHub Copilot:
 
 * Ensure that key URLs are added to the allowlist for the proxy server or firewall. See [Copilot allowlist reference](/en/copilot/reference/copilot-allowlist-reference).
-* Provide guidance for your users to set up their environment to connect via your proxy. You may also need to install custom SSL certificates on your users' machines. See [Configuring network settings for GitHub Copilot](/en/copilot/how-tos/configure-personal-settings/configure-network-settings).
+* Provide guidance for your users to set up their environment to connect via your proxy. You may also need to install custom SSL certificates on your users' machines. See [Configuring network settings for GitHub Copilot](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/configure-network-settings).
 
 For more complex issues, you may also choose to designate an internal point of contact to help users resolve issues, or escalate them to GitHub Support. You should choose a point of contact who is confident troubleshooting firewall and network configuration issues.
 
@@ -83,8 +83,8 @@ GitHub documentation that you may want to feature in your onboarding materials i
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)
 * [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
 * [Rolling out the GitHub Copilot app to your team](/en/copilot/tutorials/roll-out-at-scale/enable-developers/copilot-app-for-teams)
-* [Getting code suggestions in your IDE with GitHub Copilot](/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions)
-* [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/chat-with-copilot/chat-in-ide)
+* [Getting code suggestions in your IDE with GitHub Copilot](/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/get-ide-code-suggestions)
+* [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide)
 
 You can also create a GitHub repository to store these materials, and encourage teams to contribute their own resources and best practices. This can help foster a sense of community among teams that are using Copilot, and make it easier for new teams to get started.
 

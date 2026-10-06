@@ -67,21 +67,21 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Adopt the latest GitHub Copilot features without compromising on control and governance.
 
-* [GitHub Copilot code suggestions in your IDE](/en/copilot/concepts/completions/code-suggestions)
+* [GitHub Copilot app](/en/copilot/concepts/copilot-surfaces/github-copilot-app)
 
-  Learn about Copilot code suggestions in different IDEs.
+  The GitHub Copilot app is a desktop application for agent-driven development that brings parallel workstreams, GitHub integration, and PR lifecycle management into one place.
 
-* [GitHub Copilot code referencing](/en/copilot/concepts/completions/code-referencing)
+* [GitHub Copilot CLI](/en/copilot/concepts/copilot-surfaces/copilot-cli)
 
-  GitHub Copilot checks suggestions for matches with publicly available code. Any matches are discarded or suggested with a code reference.
+  Find out about using Copilot from the command line.
 
-* [About GitHub Copilot Chat](/en/copilot/concepts/chat)
+* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 
-  Learn how you can use GitHub Copilot Chat to enhance your coding experience.
+  Explore your repositories, plan changes, and delegate coding tasks to GitHub Copilot without leaving GitHub.com.
 
-* [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
+* [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides)
 
-  Copilot can research a repository, create an implementation plan, and make code changes on a branch. You can review the diff, iterate, and create a pull request when you're ready.
+  Get contextual AI assistance from GitHub Copilot throughout your IDE workflow, from exploring an approach to writing, reviewing, and improving code.
 
 * [About agent management](/en/copilot/concepts/agents/cloud-agent/agent-management)
 
@@ -102,10 +102,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Model Context Protocol (MCP) and GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/mcp-and-cloud-agent)
 
   Find out about using the Model Context Protocol (MCP) with Copilot cloud agent.
-
-* [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli)
-
-  Find out about using Copilot from the command line.
 
 * [Comparing GitHub Copilot CLI customization features](/en/copilot/concepts/agents/copilot-cli/comparing-cli-features)
 
@@ -159,21 +155,13 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   When local sandboxing is enabled, Copilot CLI runs each sandboxed process or operation under a filesystem policy that controls which files and directories it can read and write. Learn how that policy is built and how to check the access it grants.
 
-* [About the GitHub Copilot app](/en/copilot/concepts/agents/github-copilot-app)
+* [About GitHub Copilot code review](/en/copilot/concepts/agents/code-review)
 
-  The GitHub Copilot app is a desktop application for agent-driven development that brings parallel workstreams, GitHub integration, and PR lifecycle management into one place.
+  Copilot reviews your pull requests, identifies issues, and suggests fixes you can apply in a couple of clicks.
 
 * [About computer use in GitHub Copilot](/en/copilot/concepts/agents/computer-use)
 
   Copilot can interact with desktop applications to automate tasks that cannot be completed with a more direct tool.
-
-* [Using GitHub Copilot in JetBrains IDEs](/en/copilot/concepts/agents/copilot-in-jetbrains)
-
-  Learn about the different ways to use GitHub Copilot in JetBrains IDEs, including the GitHub Copilot plugin, JetBrains AI Assistant, and Copilot CLI.
-
-* [About GitHub Copilot code review](/en/copilot/concepts/agents/code-review)
-
-  Copilot reviews your pull requests, identifies issues, and suggests fixes you can apply in a couple of clicks.
 
 * [About GitHub Agentic Workflows](/en/copilot/concepts/agents/about-github-agentic-workflows)
 

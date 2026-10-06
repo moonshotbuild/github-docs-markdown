@@ -32,7 +32,7 @@ You can control the use of Copilot CLI by configuring a policy.
 5. In the "Clients" section, for Copilot CLI, select your preferred policy.
 
 > \[!NOTE]
-> Disabling Copilot CLI does not disable the GitHub Copilot app. The app is governed by its own policy. For more information, see [About the GitHub Copilot app](/en/copilot/concepts/agents/github-copilot-app).
+> Disabling Copilot CLI does not disable the GitHub Copilot app. The app is governed by its own policy. For more information, see [GitHub Copilot app](/en/copilot/concepts/copilot-surfaces/github-copilot-app).
 
 ## How do other AI controls affect Copilot CLI?
 

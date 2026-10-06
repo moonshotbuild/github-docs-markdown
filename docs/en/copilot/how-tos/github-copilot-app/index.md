@@ -27,6 +27,10 @@ A desktop application for agent-driven development that brings parallel workstre
 
   Run multiple isolated agent sessions simultaneously, each with its own branch, and steer them using different session modes, models, and tools.
 
+* [Using the GitHub Copilot app to interact with desktop applications](/en/copilot/how-tos/github-copilot-app/computer-use)
+
+  With computer use, allow Copilot to interact with local desktop applications from the GitHub Copilot app.
+
 * [Configuring local sandboxing in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/configure-local-sandboxing)
 
   Use the `/sandbox` slash command and project settings in the GitHub Copilot app to control how local sandboxing restricts filesystem access, network connectivity, and credential use.

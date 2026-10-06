@@ -164,6 +164,7 @@ Follow a link below to review the scope and tooling for your migration to GHE.co
 
 * [GitHub Enterprise Server to GHE.com](#github-enterprise-server-to-ghecom)
 * [GitHub.com to GHE.com](#githubcom-to-ghecom)
+* [GHE.com to GHE.com](#ghecom-to-ghecom)
 * [Azure DevOps Services (Azure DevOps Cloud) to GHE.com](#azure-devops-services-azure-devops-cloud-to-ghecom)
 * [Azure DevOps Server to GHE.com](#azure-devops-server-to-ghecom)
 * [Bitbucket Cloud (Bitbucket.org) to GHE.com](#bitbucket-cloud-bitbucketorg-to-ghecom)
@@ -200,6 +201,14 @@ Follow a link below to review the scope and tooling for your migration to GHE.co
 * **Caveats:**
   * For complex repositories larger than around 40GB, we recommend contacting GitHub Expert Services.
   * If an expert-led migration isn't right for you, you can perform a "source and history" migration of the affected repositories instead. For more information, see [Migrations from any Git repository to GHE.com](#any-git-repository-to-ghecom).
+
+### GHE.com to GHE.com
+
+* **Scope:** Source, history, and metadata
+* **Tooling:** GitHub Enterprise Importer
+* **More information:** [Migrating repositories between two data-resident enterprises](/en/migrations/using-github-enterprise-importer/migrating-between-github-products/migrating-repositories-between-two-data-resident-enterprises)
+* **Caveats:**
+  * Repository archives must be less than 5GB.
 
 ### Azure DevOps Services (Azure DevOps Cloud) to GHE.com
 

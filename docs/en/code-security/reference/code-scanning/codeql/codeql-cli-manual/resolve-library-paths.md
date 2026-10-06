@@ -1,6 +1,7 @@
 ---
 source_path: "/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/resolve-library-paths"
 title: "resolve library-paths"
+intro: "[Deep plumbing] Determine QL library paths and dbschemes for multiple\nqueries."
 product: "Security and code quality"
 document_type: "article"
 breadcrumbs:
@@ -19,6 +20,9 @@ breadcrumbs:
 ---
 
 # resolve library-paths
+
+[Deep plumbing] Determine QL library paths and dbschemes for multiple
+queries.
 
 > [!NOTE]
 > This content describes the most recent release of the CodeQL CLI. For more information about this release, see https://github.com/github/codeql-cli-binaries/releases.

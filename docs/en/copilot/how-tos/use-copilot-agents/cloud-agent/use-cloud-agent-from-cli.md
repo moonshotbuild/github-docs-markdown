@@ -11,7 +11,7 @@ breadcrumbs:
     href: "/en/copilot/how-tos"
   - title: "Use Copilot agents"
     href: "/en/copilot/how-tos/use-copilot-agents"
-  - title: "Cloud agent"
+  - title: "Copilot cloud agent"
     href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent"
   - title: "Use cloud agent from the GitHub CLI"
     href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-from-cli"

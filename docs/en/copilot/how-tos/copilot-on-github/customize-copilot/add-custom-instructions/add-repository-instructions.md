@@ -25,7 +25,7 @@ Create repository custom instructions files that give Copilot additional context
 
 ## Introduction
 
-Repository custom instructions let you provide Copilot with repository-specific guidance and preferences on GitHub. To find out how to set up custom instructions in an IDE, see [Adding repository custom instructions for GitHub Copilot in your IDE](/en/copilot/how-tos/configure-custom-instructions-in-your-ide/add-repository-instructions-in-your-ide). For more information about custom instructions, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization).
+Repository custom instructions let you provide Copilot with repository-specific guidance and preferences on GitHub. To find out how to set up custom instructions in an IDE, see [Adding repository custom instructions for GitHub Copilot in your IDE](/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/configure-custom-instructions/add-repository-instructions-in-your-ide). For more information about custom instructions, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization).
 
 ## Prerequisites for repository custom instructions
 

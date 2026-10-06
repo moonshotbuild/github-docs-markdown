@@ -27,6 +27,8 @@ Dependabot version updates keeps your dependencies up-to-date and Dependabot sec
 
 In most ecosystems, private dependencies are usually published to private package registries. These private registries are similar to their public equivalents, but they require authentication.
 
+Configuring a registry in `dependabot.yml` also allows Dependabot to reach it over the network. Update jobs can connect only to hosts on an egress allowlist. Declare a registry under the top-level `registries` key even if it allows anonymous access, because defining it only in an ecosystem-native configuration file, such as `.npmrc` or `nuget.config`, does not allow its host. Add private registries to `dependabot.yml`, not to the shared defaults. See [Resolving a blocked host in a Dependabot update job](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/resolve-a-blocked-host).
+
 For specific ecosystems, you can configure Dependabot to access *only* private registries by removing calls to public registries. For more information, see [Removing Dependabot access to public registries](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/remove-access-to-public-registries).
 
 To allow Dependabot access to registries hosted privately or restricted to internal networks, configure Dependabot to run on GitHub Actions self-hosted runners. For more information, see [Configuring Dependabot on self-hosted runners](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-on-self-hosted-runners).

@@ -283,6 +283,8 @@ The table below shows the package managers that support `cooldown`. The `default
 
 * For GitHub Actions, use the value `/`. Dependabot will search the `/.github/workflows` directory, as well as the `action.yml/action.yaml` file from the root directory.
 
+* For Dev containers, use the value `/`. Dependabot will search the `.devcontainer.json`, `.devcontainer/devcontainer.json`, and `.devcontainer/<anything>/devcontainer.json` files from the root directory.
+
 If you need to use more than one block in the configuration file to define updates for a single target branch of an ecosystem, you must ensure that all values are unique and there is no overlap in directories defined.
 
 > \[!NOTE]

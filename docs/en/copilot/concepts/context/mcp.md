@@ -29,7 +29,7 @@ For more information on MCP, see [the official MCP documentation](https://modelc
 
 To learn how to configure and use MCP servers, see:
 
-* [Extending GitHub Copilot Chat with Model Context Protocol (MCP) servers](/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/extend-copilot-chat-with-mcp) for Copilot Chat in your IDE
+* [Extending GitHub Copilot Chat with Model Context Protocol (MCP) servers](/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/extend-copilot-chat-with-mcp) for Copilot Chat in your IDE
 * [Adding MCP servers for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/add-mcp-servers) for Copilot CLI
 * [Configure MCP servers for your repository](/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers) for repository MCP configuration on GitHub.com
 * [Customizing the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/customize-github-copilot-app) for information on MCP server support in the GitHub Copilot app
@@ -55,7 +55,7 @@ GitHub MCP server can be used to:
 * Enable cloud-based workflows that work from any device, without local setup.
 * Invoke GitHub tools, such as Copilot cloud agent (requires GitHub Copilot subscription) and code scanning (requires GitHub Advanced Security subscription), to assist with code generation and security analysis.
 
-To learn how to set up and use the GitHub MCP server, see [Using the GitHub MCP Server in your IDE](/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/use-the-github-mcp-server).
+To learn how to set up and use the GitHub MCP server, see [Using the GitHub MCP Server in your IDE](/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/use-the-github-mcp-server).
 
 To find out whether your editor supports the GitHub MCP server, and which connection and authentication methods are available, see [Support by host application](https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/README.md#support-by-host-application) in the `github/github-mcp-server` repository.
 
@@ -76,7 +76,7 @@ Enabling only the toolsets you need improves your AI assistant's performance and
 
 Toolsets do not only include tools, but also relevant MCP resources and prompts where applicable.
 
-To learn how to configure toolsets for the GitHub MCP server, see [Configuring toolsets for the GitHub MCP Server](/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/configure-toolsets).
+To learn how to configure toolsets for the GitHub MCP server, see [Configuring toolsets for the GitHub MCP Server](/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/configure-toolsets).
 
 ### Security
 
@@ -97,9 +97,9 @@ To use agent finder, download the [agent finder skill](https://github.com/ards-p
 
 ## Next steps
 
-* [Extending GitHub Copilot Chat with Model Context Protocol (MCP) servers](/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/extend-copilot-chat-with-mcp)—Add MCP servers to Copilot Chat in your IDE
+* [Extending GitHub Copilot Chat with Model Context Protocol (MCP) servers](/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/extend-copilot-chat-with-mcp)—Add MCP servers to Copilot Chat in your IDE
 * [Configure MCP servers for your repository](/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers)—Configure repository MCP servers for Copilot cloud agent and Copilot code review
-* [Setting up the GitHub MCP Server](/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server)—Set up the GitHub MCP server
-* [Using the GitHub MCP Server in your IDE](/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/use-the-github-mcp-server)—Use the GitHub MCP server
+* [Setting up the GitHub MCP Server](/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/set-up-the-github-mcp-server)—Set up the GitHub MCP server
+* [Using the GitHub MCP Server in your IDE](/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/use-the-github-mcp-server)—Use the GitHub MCP server
 * [Enhancing GitHub Copilot agent mode with MCP](/en/copilot/tutorials/enhance-agent-mode-with-mcp)
 * [Copilot customization cheat sheet](/en/copilot/reference/customization-cheat-sheet)

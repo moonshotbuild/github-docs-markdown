@@ -225,7 +225,7 @@ To resolve this issue, follow these steps to start a new active SSO session for 
 
 ## Further reading
 
-* [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
+* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 * [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/enterprise/cloud-agent-access)
 * [Configure MCP servers for your repository](/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers#example-atlassian)
 * [Collaborate on work items with AI agents](https://support.atlassian.com/jira-software-cloud/docs/collaborate-on-work-items-with-ai-agents/) in the Atlassian documentation

@@ -52,15 +52,11 @@ The following table shows the model multipliers per supported model.
 |                    |            |
 | Claude Haiku 4.5   |       0.33 |
 |                    |            |
-| Claude Opus 4.7    |         27 |
-|                    |            |
 | Claude Opus 4.8    |         27 |
 |                    |            |
 | Claude Sonnet 4.6  |          9 |
 |                    |            |
 | Gemini 3 Pro       |          6 |
-|                    |            |
-| Gemini 3.5 Flash   |         14 |
 |                    |            |
 | GPT-4o             |       0.33 |
 |                    |            |

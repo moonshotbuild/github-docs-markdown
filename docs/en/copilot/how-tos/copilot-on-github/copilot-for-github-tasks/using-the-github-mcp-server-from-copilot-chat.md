@@ -43,7 +43,7 @@ For a full list of available skills, see [GitHub Copilot Chat cheat sheet](/en/c
 
 The GitHub MCP server in Copilot Chat in GitHub supports a limited set of skills. If a requested action is not supported, Copilot Chat provides guidance but cannot perform it directly.
 
-To access the full set of tools, set up the GitHub MCP server in your IDE. See [Using the GitHub MCP Server in your IDE](/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/use-the-github-mcp-server).
+To access the full set of tools, set up the GitHub MCP server in your IDE. See [Using the GitHub MCP Server in your IDE](/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/use-the-github-mcp-server).
 
 You can also use the GitHub MCP server with Copilot cloud agent. It is enabled with read-only access by default and can be customized for wider access. See [Configure MCP servers for your repository](/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers#customizing-the-built-in-github-mcp-server).
 

@@ -11,7 +11,7 @@ breadcrumbs:
     href: "/en/copilot/how-tos"
   - title: "Use Copilot agents"
     href: "/en/copilot/how-tos/use-copilot-agents"
-  - title: "Cloud agent"
+  - title: "Copilot cloud agent"
     href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent"
   - title: "Use cloud agent via GitHub MCP Server"
     href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-with-mcp"
@@ -27,7 +27,7 @@ Start Copilot cloud agent sessions from any IDE or agentic tool that supports Mo
 
 ## Starting a session
 
-1. Install the GitHub MCP Server in your preferred IDE or agentic coding tool. See [Using the GitHub MCP Server in your IDE](/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/use-the-github-mcp-server).
+1. Install the GitHub MCP Server in your preferred IDE or agentic coding tool. See [Using the GitHub MCP Server in your IDE](/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/use-the-github-mcp-server).
 
 2. Ensure the `create_pull_request_with_copilot` tool is enabled.
 

@@ -31,10 +31,6 @@ Make GitHub work best for you by customizing your personal account settings and 
 
   You can share information about yourself with other users by setting a profile picture and adding a bio to your profile.
 
-* [Using your GitHub profile to enhance your resume](/en/account-and-profile/tutorials/using-your-github-profile-to-enhance-your-resume)
-
-  Demonstrate your skills to hiring managers with your GitHub profile.
-
 * [Setting your commit email address](/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address)
 
   You can set the email address that is used to author commits on GitHub and on your computer.

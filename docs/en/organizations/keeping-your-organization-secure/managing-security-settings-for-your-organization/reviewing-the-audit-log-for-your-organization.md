@@ -19,7 +19,7 @@ breadcrumbs:
 
 The audit log allows organization admins to quickly review the actions performed by members of your organization. It includes details such as who performed the action, what the action was, and when it was performed.
 
-## Accessing the audit log
+## Accessing the organization's audit log via the web interface
 
 > \[!NOTE]
 > Webhooks might be a good alternative to the audit log or API polling for certain use cases. Webhooks are a way for GitHub to notify your server when specific events occur for a repository, organization, or enterprise. Compared to the API or searching the audit log, webhooks can be more efficient if you just want to learn and possibly log when certain events occur on your enterprise, organization, or repository. See [Webhooks documentation](/en/webhooks).

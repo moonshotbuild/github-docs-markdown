@@ -558,6 +558,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Sourcegraph | Sourcegraph Access Token with Instance Identifier | sourcegraph_instance_identifier_access_token | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Sourcegraph | Sourcegraph License Key Token | sourcegraph_license_key_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Sourcegraph | Sourcegraph Product Subscription Token | sourcegraph_product_subscription_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
+| SpaceX | Starlink Public API V2 Client Secret | starlink_public_api_v2_secret | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
 | Square | Square Access Token | square_access_token, [Token versions](#token-versions) | ✗ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Square | Square Production Application Secret | square_production_application_secret | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Square | Square Sandbox Application Secret | square_sandbox_application_secret | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |

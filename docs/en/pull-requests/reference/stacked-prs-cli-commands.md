@@ -17,7 +17,7 @@ breadcrumbs:
 
 Find every command, flag, and exit code for the gh stack extension in GitHub CLI.
 
-> \[!NOTE] This feature is in public preview and subject to change.
+> \[!NOTE] This feature is in public preview and is subject to change.
 
 The `gh stack` extension for GitHub CLI creates and manages stacks of pull requests from your local repository. For an introduction to stacks, see [Stacked pull requests](/en/pull-requests/reference/stacked-pull-requests).
 

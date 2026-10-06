@@ -192,7 +192,7 @@ Responsible AI is a shared commitment between GitHub and its customers. While Gi
 
 For additional guidance on the responsible use of Copilot inline suggestions, we recommend reviewing the following documentation:
 
-* [Getting code suggestions in your IDE with GitHub Copilot](/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions)
+* [Getting code suggestions in your IDE with GitHub Copilot](/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/get-ide-code-suggestions)
 * [GitHub Terms for Additional Products and Features](/en/site-policy/github-terms/github-terms-for-additional-products-and-features#github-copilot)
 * [Copilot Trust Center](https://copilot.github.trust.page/)
 

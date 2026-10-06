@@ -37,4 +37,4 @@ Learn how to use GitHub Copilot on GitHub.
 
 * [Use Copilot agents](/en/copilot/how-tos/copilot-on-github/use-copilot-agents)
 
-  Delegate tasks to GitHub Copilot agents on GitHub, track their progress, and review the results.
+  Delegate tasks to GitHub Copilot agents, track their progress, and review the results.

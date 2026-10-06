@@ -22,7 +22,7 @@ breadcrumbs:
 In supported entrypoints, when starting a task with Copilot cloud agent, you can select the model used, and, for supported models, the reasoning level.
 
 > \[!NOTE]
-> For an overview of Copilot cloud agent, see [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent).
+> For an overview of Copilot cloud agent, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
 
 ## Introduction
 

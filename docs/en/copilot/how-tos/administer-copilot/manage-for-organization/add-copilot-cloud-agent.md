@@ -22,7 +22,7 @@ breadcrumbs:
 Enable Copilot cloud agent for your members and control the repositories where it is available.
 
 > \[!NOTE]
-> For an introduction to Copilot cloud agent, see [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent).
+> For an introduction to Copilot cloud agent, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
 
 ## Enabling Copilot cloud agent for your members
 

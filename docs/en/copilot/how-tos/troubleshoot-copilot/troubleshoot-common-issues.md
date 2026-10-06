@@ -29,9 +29,9 @@ We recommend you follow the quickstart guide for GitHub Copilot while setting up
 
 The GitHub Copilot extension is frequently updated to fix bugs and add new features. It's important to keep your extension up to date because older clients cannot communicate with the GitHub Copilot servers. Update your GitHub Copilot extension on all the machines you have it installed.
 
-If you're using a Copilot plan for a managed user account on GHE.com, you'll need to update some settings before you sign in. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/configure-personal-settings/authenticate-to-ghecom).
+If you're using a Copilot plan for a managed user account on GHE.com, you'll need to update some settings before you sign in. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/authenticate-to-ghecom).
 
-For more information about configuring GitHub Copilot in a supported IDE, see [Configuring GitHub Copilot in your environment](/en/copilot/how-tos/configure-personal-settings/configure-in-ide).
+For more information about configuring GitHub Copilot in a supported IDE, see [Configuring GitHub Copilot in your environment](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/configure-in-ide).
 
 ## GitHub Copilot not working in some files
 
@@ -83,7 +83,7 @@ In case you experience repeated rate limiting in Copilot contact [GitHub Support
 
 ## Can't find Copilot Chat in my IDE
 
-If you can't find Copilot Chat in your editor, make sure you have checked the "Prerequisites" section of [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/chat-with-copilot/chat-in-ide).
+If you can't find Copilot Chat in your editor, make sure you have checked the "Prerequisites" section of [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide).
 
 > \[!NOTE]
 > The linked article has tabs for various IDEs.
@@ -98,7 +98,7 @@ To use Copilot Chat, make sure you are using the [latest version of Visual Studi
 
 ## Authentication problems with managed user account accounts
 
-If you're using a Copilot plan for a managed user account on GHE.com, you'll need to update some settings before you sign in. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/configure-personal-settings/authenticate-to-ghecom).
+If you're using a Copilot plan for a managed user account on GHE.com, you'll need to update some settings before you sign in. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/authenticate-to-ghecom).
 
 ## Authentication problems in Visual Studio Code
 

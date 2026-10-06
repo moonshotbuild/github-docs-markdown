@@ -47,8 +47,8 @@ Before getting started you must have the following:
 * A [GitHub Copilot subscription plan](/en/copilot/get-started/plans).
 * One of these IDEs:
   * Visual Studio Code
-  * Any JetBrains IDE that supports Copilot, with the GitHub Copilot extension for JetBrains installed. See [Installing the GitHub Copilot extension in your environment](/en/copilot/how-tos/set-up/install-copilot-extension?tool=jetbrains).
-* Some experience of using Copilot Chat in either Visual Studio Code or JetBrains. If you've never used Copilot Chat before, see [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/chat-with-copilot/chat-in-ide).
+  * Any JetBrains IDE that supports Copilot, with the GitHub Copilot extension for JetBrains installed. See [Installing the GitHub Copilot extension in your environment](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/install-copilot-extension?tool=jetbrains).
+* Some experience of using Copilot Chat in either Visual Studio Code or JetBrains. If you've never used Copilot Chat before, see [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide).
 
 ## Preparation
 

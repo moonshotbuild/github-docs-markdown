@@ -56,7 +56,7 @@ This reference article provides details of which types of custom instructions ar
         <ul style="list-style: none; padding-left: 1.5em; margin-left: 0;">
           <li style="text-indent: -1.6em;"><span aria-hidden="true">📦</span> &nbsp;<strong>Repository-wide</strong> instructions (using the <code>.github/copilot-instructions.md</code> file).</li>
           <li style="text-indent: -1.6em;"><span aria-hidden="true">📂</span> &nbsp;<strong>Path-specific</strong> instructions (using <code>.github/instructions/**/*.instructions.md</code> files).</li>
-          <li style="text-indent: -1.6em;"><span aria-hidden="true">🤖</span> &nbsp;<strong>Agent</strong> instructions (using an <code>AGENTS.md</code> file).</li>
+          <li style="text-indent: -1.6em;"><span aria-hidden="true">🤖</span> &nbsp;<strong>Agent</strong> instructions (using <code>AGENTS.md</code>, <code>CLAUDE.md</code>, <code>GEMINI.md</code> or <code>REVIEW.md</code> files).</li>
           <li style="text-indent: -1.6em;"><span aria-hidden="true">🏢</span> &nbsp;<strong>Organization</strong> instructions.</li>
         </ul>
       </td>
@@ -139,7 +139,7 @@ This reference article provides details of which types of custom instructions ar
 
 In JetBrains IDEs, you can manage supported customizations from the Agent Customizations editor. In the GitHub Copilot Chat panel, click the settings icon in the top-right, then click **Customizations**.
 
-The editor lets you work with workspace customizations for the current project or personal customizations that follow you across projects. You can use it to view and edit custom agents, manage reusable skills and prompt files, and configure instructions. For more information, see [Adding repository custom instructions for GitHub Copilot in your IDE](/en/copilot/how-tos/configure-custom-instructions-in-your-ide/add-repository-instructions-in-your-ide) and [Creating custom agents for Copilot cloud agent in your IDE](/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-custom-agents-in-your-ide).
+The editor lets you work with workspace customizations for the current project or personal customizations that follow you across projects. You can use it to view and edit custom agents, manage reusable skills and prompt files, and configure instructions. For more information, see [Adding repository custom instructions for GitHub Copilot in your IDE](/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/configure-custom-instructions/add-repository-instructions-in-your-ide) and [Using custom agents in your IDE](/en/copilot/how-tos/copilot-in-your-ide/use-copilot-agents/use-custom-agents).
 
 <table>
   <thead>

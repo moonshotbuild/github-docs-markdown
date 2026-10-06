@@ -1261,6 +1261,7 @@ Represents an iteration.
 ### Input fields for `ProjectV2Iteration`
 
 * `duration` (Int!): The duration of the iteration, in days.
+* `id` (String): The ID of an existing iteration. Include this to preserve the iteration's identity during replacement updates.
 * `startDate` (Date!): The start date for the iteration.
 * `title` (String!): The title for the iteration.
 

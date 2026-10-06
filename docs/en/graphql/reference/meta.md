@@ -303,6 +303,7 @@ An object with an ID.
 * ProjectColumn
 * RemovedFromProjectEvent
 * AddedToMergeQueueEvent
+* AddedToStackEvent
 * AutoMergeDisabledEvent
 * AutoMergeEnabledEvent
 * AutoRebaseEnabledEvent
@@ -331,6 +332,7 @@ An object with an ID.
 * PullRequestThread
 * ReadyForReviewEvent
 * RemovedFromMergeQueueEvent
+* RemovedFromStackEvent
 * ReviewDismissedEvent
 * ReviewRequest
 * ReviewRequestRemovedEvent

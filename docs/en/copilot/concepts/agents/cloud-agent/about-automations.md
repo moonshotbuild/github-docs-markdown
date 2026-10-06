@@ -127,5 +127,5 @@ For more information about how GitHub mitigates the risks of Copilot cloud agent
 ## Further reading
 
 * [Creating automations with Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-automations)
-* [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
+* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 * To learn how to store your automation as code, review it through pull requests, or run it with a different coding agent, see [About GitHub Agentic Workflows](/en/copilot/concepts/agents/about-github-agentic-workflows)

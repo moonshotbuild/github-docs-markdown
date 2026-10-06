@@ -1084,7 +1084,7 @@ curl -L \
   -d '{
   "state": "dismissed",
   "dismissed_reason": "false positive",
-  "dismissed_comment": "This alert is not actually correct, because there's a sanitizer included in the library.",
+  "dismissed_comment": "This alert is not actually correct, because there'\''s a sanitizer included in the library.",
   "create_request": true
 }'
 ```
@@ -1287,7 +1287,7 @@ curl -L \
   https://api.github.com/repos/OWNER/REPO/code-scanning/alerts/ALERT_NUMBER/autofix/commits \
   -d '{
   "target_ref": "refs/heads/fix-bug",
-  "message": "Let's fix this 🪲!"
+  "message": "Let'\''s fix this 🪲!"
 }'
 ```
 

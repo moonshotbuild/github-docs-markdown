@@ -11,7 +11,7 @@ breadcrumbs:
     href: "/en/copilot/how-tos"
   - title: "Use Copilot agents"
     href: "/en/copilot/how-tos/use-copilot-agents"
-  - title: "Cloud agent"
+  - title: "Copilot cloud agent"
     href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent"
 ---
 
@@ -41,10 +41,6 @@ Find out how Copilot can research a repository, plan and make code changes, and 
 
   Learn how to configure settings for Copilot cloud agent
 
-* [Creating custom agents for Copilot cloud agent in your IDE](/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-custom-agents-in-your-ide)
-
-  You can create specialized agents with tailored expertise for specific development tasks.
-
 * [Using Copilot cloud agent on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github)
 
   Start Copilot cloud agent sessions directly on GitHub, then iterate on the results without leaving your browser.
@@ -56,10 +52,6 @@ Find out how Copilot can research a repository, plan and make code changes, and 
 * [Using agent apps](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-agent-apps)
 
   Start a partner-built agent from an issue, a pull request comment, or the Agents UI on GitHub.
-
-* [Using Copilot cloud agent in your IDE](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-in-your-ide)
-
-  Start and track Copilot cloud agent sessions from Visual Studio Code, JetBrains IDEs, Eclipse, and Visual Studio.
 
 * [Using Copilot cloud agent via the API](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-via-the-api)
 

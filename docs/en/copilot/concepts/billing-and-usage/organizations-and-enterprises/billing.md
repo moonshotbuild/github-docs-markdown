@@ -93,7 +93,7 @@ For the best experience with usage-based billing, update your IDE, client, and C
 | Xcode (extension)            | 0.50.0          |
 | Copilot CLI                  | 1.0.48          |
 
-We recommend keeping your IDE, client, and Copilot extensions on the latest available stable version. For information on configuring automatic updates, see [Configuring GitHub Copilot in your environment](/en/copilot/how-tos/configure-personal-settings/configure-in-ide). To update Copilot CLI, see [Installing GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli).
+We recommend keeping your IDE, client, and Copilot extensions on the latest available stable version. For information on configuring automatic updates, see [Configuring GitHub Copilot in your environment](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/configure-in-ide). To update Copilot CLI, see [Installing GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli).
 
 ## Next steps
 

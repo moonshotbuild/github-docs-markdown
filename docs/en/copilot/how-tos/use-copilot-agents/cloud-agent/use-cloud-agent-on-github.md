@@ -25,7 +25,7 @@ Start Copilot cloud agent sessions directly on GitHub, then iterate on the resul
 
 You can start Copilot cloud agent sessions from several places on GitHub. Once a session is running, you can monitor its progress, steer it with follow-up prompts, and iterate on the resulting pull request—all without leaving the browser.
 
-For more information about Copilot cloud agent, see [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent).
+For more information about Copilot cloud agent, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
 
 You can also start partner-built agents from these same entry points using agent apps. For more information, see [Using agent apps](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-agent-apps).
 
@@ -255,6 +255,6 @@ Use the feedback buttons on Copilot's pull requests and comments to rate the out
 
 ## Further reading
 
-* [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
+* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 * [Best practices for using GitHub Copilot to work on tasks](/en/copilot/tutorials/cloud-agent/get-the-best-results)
 * [Troubleshooting GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/troubleshoot-cloud-agent)

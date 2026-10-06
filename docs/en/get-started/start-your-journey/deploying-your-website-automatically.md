@@ -122,7 +122,7 @@ Across this series, you built a complete software project and practiced the GitH
 ## Next steps
 
 * Expand your understanding of Git and GitHub. For more information, see [Git and GitHub learning resources](/en/get-started/start-your-journey/git-and-github-learning-resources).
-* Explore Copilot Chat to learn faster and get help as you code. For more information, see [About GitHub Copilot Chat](/en/copilot/concepts/chat).
+* Explore Copilot Chat to learn faster and get help as you code. For more information, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/chat).
 * Go deeper with AI and learn how agents can act like a practical coding partner by turning ideas into small actionable steps, generating examples, and handling repetitive work. For more information, see [Concepts for GitHub Copilot agents](/en/copilot/concepts/agents).
 * Learn more about automating your software projects with GitHub Actions workflows. For more information, see [Understanding GitHub Actions](/en/actions/get-started/understand-github-actions).
 * Add a custom domain or explore more ways to publish your website with GitHub Pages. For more information, see [Getting started with GitHub Pages](/en/pages/getting-started-with-github-pages).

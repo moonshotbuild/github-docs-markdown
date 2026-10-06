@@ -37,6 +37,10 @@ You can learn more about getting in touch with GitHub Support.
 
   Support tickets are assigned a priority based on the circumstances of the issue and impact to you and your team.
 
+* [Understanding how GitHub Support can help during a security incident](understanding-how-github-support-can-help-during-a-security-incident)
+
+  Understand what GitHub Support can and cannot do during a security incident, and find resources to investigate and respond.
+
 * [GitHub Marketplace support](/en/support/learning-about-github-support/github-marketplace-support)
 
   When you encounter issues using an app in GitHub Marketplace, you can contact the support team for the app.

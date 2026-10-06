@@ -23,10 +23,14 @@ Learn how to use GitHub Copilot agents.
 
   Find out how Copilot can research a repository, plan and make code changes, and create pull requests for you to review.
 
-* [Code review](/en/copilot/how-tos/use-copilot-agents/request-a-code-review)
-
-  Request and configure code reviews from Copilot.
-
 * [Managing Copilot Memory](/en/copilot/how-tos/use-copilot-agents/copilot-memory)
 
   Manage and curate memories for Copilot agents.
+
+* [Using GitHub Copilot code review](/en/copilot/how-tos/use-copilot-agents/use-code-review)
+
+  Learn how to request a code review from GitHub Copilot.
+
+* [Using dynamic workflows](/en/copilot/how-tos/use-copilot-agents/use-dynamic-workflows)
+
+  Find, run, monitor, and resume dynamic workflows in GitHub Copilot CLI and the GitHub Copilot app.

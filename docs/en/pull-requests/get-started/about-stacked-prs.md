@@ -17,7 +17,7 @@ breadcrumbs:
 
 Break large code changes into a chain of smaller, dependent pull requests you can review and merge independently.
 
-> \[!NOTE] This feature is in public preview and subject to change.
+> \[!NOTE] This feature is in public preview and is subject to change.
 
 ## About stacked pull requests
 

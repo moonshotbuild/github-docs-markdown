@@ -138,7 +138,7 @@ For reasoning models that support configurable thinking effort, you can control 
 > \[!NOTE] If you select **Auto**, Copilot auto model selection will select the best model based on availability and to help reduce rate limiting. See [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection).
 
 > \[!TIP]
-> Model selection is also available when using Copilot through JetBrains AI Assistant. For more information, see [Using GitHub Copilot in JetBrains IDEs](/en/copilot/concepts/agents/copilot-in-jetbrains).
+> Model selection is also available when using Copilot through JetBrains AI Assistant. For more information, see [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides).
 
 </div>
 
