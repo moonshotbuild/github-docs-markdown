@@ -153,7 +153,7 @@ By default, Copilot works in a standard GitHub Actions runner. You can upgrade t
    * `api.individual.githubcopilot.com` (if you expect Copilot Pro, Copilot Pro+, or Copilot Max users to use Copilot cloud agent in your repository)
    * `api.business.githubcopilot.com` (if you expect Copilot Business users to use Copilot cloud agent in your repository)
    * `api.enterprise.githubcopilot.com` (if you expect Copilot Enterprise users to use Copilot cloud agent in your repository)
-   * If you are using the OpenAI Codex third-party coding agent (for more information, see [About third-party coding agents](/en/copilot/concepts/agents/about-third-party-coding-agents)):
+   * If you are using the OpenAI Codex third-party coding agent (for more information, see [Third-party coding agents](/en/copilot/concepts/agent-capabilities/about-agents/about-third-party-coding-agents)):
      * `npmjs.org`
      * `npmjs.com`
      * `registry.npmjs.com`
@@ -193,7 +193,7 @@ We recommend that you only use Copilot cloud agent with ephemeral, single-use ru
    * `api.individual.githubcopilot.com` (if you expect Copilot Pro, Copilot Pro+, or Copilot Max users to use Copilot cloud agent in your repository)
    * `api.business.githubcopilot.com` (if you expect Copilot Business users to use Copilot cloud agent in your repository)
    * `api.enterprise.githubcopilot.com` (if you expect Copilot Enterprise users to use Copilot cloud agent in your repository)
-   * If you are using the OpenAI Codex third-party coding agent (for more information, see [About third-party coding agents](/en/copilot/concepts/agents/about-third-party-coding-agents)):
+   * If you are using the OpenAI Codex third-party coding agent (for more information, see [Third-party coding agents](/en/copilot/concepts/agent-capabilities/about-agents/about-third-party-coding-agents)):
      * `npmjs.org`
      * `npmjs.com`
      * `registry.npmjs.com`

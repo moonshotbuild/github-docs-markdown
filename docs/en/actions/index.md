@@ -181,6 +181,10 @@ Automate, customize, and execute your software development workflows right in yo
 
   Understand the security risks associated with script injections and GitHub Actions workflows.
 
+* [Workflow dependency lockfiles](/en/actions/concepts/security/workflow-dependency-lockfiles)
+
+  A lockfile pins every action your workflows depend on to a verified commit, so the code you reviewed is the code that runs.
+
 * [Compromised runners](/en/actions/concepts/security/compromised-runners)
 
   Understand the security risks associated with compromised GitHub Actions runners.
@@ -281,9 +285,9 @@ Automate, customize, and execute your software development workflows right in yo
 
   You can share an action or reusable workflow with your organization without publishing the action or workflow publicly.
 
-* [Sharing actions and workflows with your enterprise](/en/share-with-your-enterprise)
+* [Locking action dependencies in a repository's workflows](/en/actions/how-tos/secure-your-work/lock-workflow-dependencies)
 
-  You can share an action or reusable workflow with your enterprise without publishing the action or workflow publicly.
+  Generate a lockfile that pins every action your workflows use to a verified commit, and keep it current as your dependencies change.
 
 * [Using artifact attestations to establish provenance for builds](/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations)
 
@@ -312,6 +316,10 @@ Automate, customize, and execute your software development workflows right in yo
 * [Configuring OpenID Connect in Azure](/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-azure)
 
   Use OpenID Connect within your workflows to authenticate with Azure.
+
+* [Configuring OpenID Connect in Docker](/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-docker)
+
+  Use OpenID Connect within your workflows to authenticate with Docker without storing long-lived credentials.
 
 * [Configuring OpenID Connect in Google Cloud Platform](/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-google-cloud-platform)
 
@@ -527,7 +535,7 @@ Automate, customize, and execute your software development workflows right in yo
 
 * [Removing self-hosted runners](/en/actions/how-tos/manage-runners/self-hosted-runners/remove-runners)
 
-  You can permanently remove a self-hosted runner from a repository.
+  You can permanently remove a self-hosted runner from a repository or organization.
 
 * [Managing larger runners](/en/actions/how-tos/manage-runners/larger-runners/manage-larger-runners)
 
@@ -593,17 +601,17 @@ Automate, customize, and execute your software development workflows right in yo
 
   You can use the tools in GitHub Actions to debug your workflows.
 
-* [Controlling who can execute GitHub Actions workflows](/en/actions/how-tos/administer/control-workflow-execution)
+* [Governing execution of GitHub Actions workflows](/en/actions/how-tos/administer/control-workflow-execution)
 
   Control who can trigger GitHub Actions workflows and which events are permitted to run them across an enterprise, organization, and repository.
+
+* [Enforcing lockfiles for action dependencies](/en/actions/how-tos/administer/enforce-workflow-lockfiles)
+
+  Require workflow dependency lockfiles across your repositories, and automatically keep the files up to date.
 
 * [Viewing GitHub Actions metrics](/en/actions/how-tos/administer/view-metrics)
 
   You can view metrics to monitor where your organization or repositories use GitHub Actions and how they are performing.
-
-* [Making retired namespaces available on GHE.com](/en/reuse-namespaces-on-ghecom)
-
-  Allow people to use namespaces that match actions you have used from GitHub.com.
 
 * [Getting help from GitHub Support about GitHub Actions](/en/actions/how-tos/get-support)
 
@@ -643,7 +651,7 @@ Automate, customize, and execute your software development workflows right in yo
 
 * [Reusing workflow configurations](/en/actions/reference/workflows-and-actions/reusing-workflow-configurations)
 
-  Find information about avoiding duplication when creating a workflow by reusing existing workflows.
+  Find information about avoiding duplication when creating a workflow by reusing existing workflows and using YAML anchors and aliases.
 
 * [Metadata syntax reference](/en/actions/reference/workflows-and-actions/metadata-syntax)
 

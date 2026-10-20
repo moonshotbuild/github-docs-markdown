@@ -983,7 +983,7 @@ OAuth app tokens and personal access tokens (classic) need the codespace scope t
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/repos/OWNER/REPO/codespaces/permissions_check
+  "https://api.github.com/repos/OWNER/REPO/codespaces/permissions_check?ref=REF&devcontainer_path=DEVCONTAINER_PATH"
 ```
 
 **Response schema (Status: 200):**

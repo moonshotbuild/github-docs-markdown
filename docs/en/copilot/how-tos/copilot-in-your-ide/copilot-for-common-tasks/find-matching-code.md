@@ -47,7 +47,7 @@ This version of this article is for Copilot in Visual Studio. For Copilot on oth
 
 ## Introduction
 
-If you allow GitHub Copilot to make suggestions that match publicly available code or use a product that does not support "Block" mode, Copilot will display references to any similar code that is found. See [GitHub Copilot code referencing](/en/copilot/concepts/completions/code-referencing).
+If you allow GitHub Copilot to make suggestions that match publicly available code or use a product that does not support "Block" mode, Copilot will display references to any similar code that is found. See [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides#references-to-matching-public-code).
 
 ### Prerequisites
 
@@ -324,4 +324,4 @@ When Copilot provides a response that includes code that matches code in a publi
 
 ## Further reading
 
-* [GitHub Copilot code referencing](/en/copilot/concepts/completions/code-referencing)
+* [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides#references-to-matching-public-code)

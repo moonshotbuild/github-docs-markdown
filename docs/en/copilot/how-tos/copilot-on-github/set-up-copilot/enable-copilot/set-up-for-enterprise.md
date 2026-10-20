@@ -27,11 +27,15 @@ Enable GitHub Copilot across your enterprise so developers can write code faster
 
 **Enterprise owners** can set up Copilot Business or Copilot Enterprise for their enterprise.
 
-* If you want to pay by credit card or PayPal, [subscribe here](https://github.com/github-copilot/purchase?ref_product=copilot\&ref_type=purchase\&ref_style=button).
+* If **you're on GitHub.com and pay by credit card or PayPal**, you can [subscribe here](https://github.com/github-copilot/purchase?ref_product=copilot\&ref_type=purchase\&ref_style=button).
 
   > \[!NOTE] If you are currently in a trial of GitHub Enterprise Cloud, you must convert to a paid enterprise before you can purchase GitHub Copilot.
 
-* For other payment methods, [contact GitHub's Sales team](https://github.com/enterprise/contact?ref_product=copilot\&ref_type=engagement\&ref_style=text).
+* For **any other payment method and enterprises on GHE.com**, [contact GitHub's Sales team](https://github.com/enterprise/contact?ref_product=copilot\&ref_type=engagement\&ref_style=text).
+
+As an enterprise owner, contact [GitHub Support](https://support.github.com) if the enterprise **Licensing** page shows **Contact support to enable**, or if the **Copilot** card or **Manage** or **Enable** controls are missing. Also contact GitHub Support if activation remains unavailable after a trial expires, a plan change, or moving an organization into a new enterprise. Activation may need to be enabled for your enterprise first.
+
+After GitHub Support confirms the change, allow a short time for the change to propagate. Then return to the enterprise **Licensing** page and retry enabling Copilot.
 
 ## Set policies
 

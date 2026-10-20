@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Following people
 
-You can follow people on GitHub to receive notifications about their activity.
+You can follow people on GitHub to receive notifications about their activity and discover projects in their communities.
 
 ## About followers
 

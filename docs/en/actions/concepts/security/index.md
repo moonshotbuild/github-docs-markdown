@@ -39,6 +39,10 @@ Learn about security as a concept in GitHub Actions.
 
   Understand the security risks associated with script injections and GitHub Actions workflows.
 
+* [Workflow dependency lockfiles](/en/actions/concepts/security/workflow-dependency-lockfiles)
+
+  A lockfile pins every action your workflows depend on to a verified commit, so the code you reviewed is the code that runs.
+
 * [Compromised runners](/en/actions/concepts/security/compromised-runners)
 
   Understand the security risks associated with compromised GitHub Actions runners.

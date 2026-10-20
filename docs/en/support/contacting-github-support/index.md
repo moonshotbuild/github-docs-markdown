@@ -17,10 +17,6 @@ Use the GitHub Support portal to contact GitHub Support when you need help troub
 
 ## Links
 
-* [Getting your enterprise started with the GitHub Support portal](getting-your-enterprise-started-with-the-github-support-portal)
-
-  Learn how to start using the GitHub Support portal for issues related to your enterprise.
-
 * [Creating a support ticket](/en/support/contacting-github-support/creating-a-support-ticket)
 
   You can use the GitHub Support portal to create a support ticket and speak to GitHub Support.
@@ -32,7 +28,3 @@ Use the GitHub Support portal to contact GitHub Support when you need help troub
 * [Viewing and updating support tickets](/en/support/contacting-github-support/viewing-and-updating-support-tickets)
 
   You can view your support tickets and respond to GitHub Support using the GitHub Support portal.
-
-* [Providing data to GitHub Support](providing-data-to-github-support)
-
-  Since GitHub Support doesn't have access to your environment, we sometimes require some additional information from you.

@@ -91,7 +91,8 @@ Greater than 100 MB: This endpoint is not supported.
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/repos/OWNER/REPO/contents/PATH
+  https://api.github.com/repos/OWNER/REPO/contents/PATH \
+  -H "Accept: application/vnd.github.object"
 ```
 
 **Response schema (Status: 200):**
@@ -133,7 +134,8 @@ curl -L \
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/repos/OWNER/REPO/contents/PATH
+  https://api.github.com/repos/OWNER/REPO/contents/PATH \
+  -H "Accept: application/vnd.github.object"
 ```
 
 **Response schema (Status: 200):**

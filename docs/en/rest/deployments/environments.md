@@ -86,7 +86,69 @@ curl -L \
   * `html_url`: required, string
   * `created_at`: required, string, format: date-time
   * `updated_at`: required, string, format: date-time
-  * `protection_rules`: array of object
+  * `protection_rules`: array of items:
+    * any of:
+      * **object**
+        * `id`: required, integer
+        * `node_id`: required, string
+        * `type`: required, string
+        * `wait_timer`: integer
+      * **object**
+        * `id`: required, integer
+        * `node_id`: required, string
+        * `prevent_self_review`: boolean
+        * `type`: required, string
+        * `reviewers`: array of objects:
+          * `type`: string, enum: `User`, `Team`
+          * `reviewer`: any of:
+            * **Simple User**
+              * `name`: string or null
+              * `email`: string or null
+              * `login`: required, string
+              * `id`: required, integer, format: int64
+              * `node_id`: required, string
+              * `avatar_url`: required, string, format: uri
+              * `gravatar_id`: required, string or null
+              * `url`: required, string, format: uri
+              * `html_url`: required, string, format: uri
+              * `followers_url`: required, string, format: uri
+              * `following_url`: required, string
+              * `gists_url`: required, string
+              * `starred_url`: required, string
+              * `subscriptions_url`: required, string, format: uri
+              * `organizations_url`: required, string, format: uri
+              * `repos_url`: required, string, format: uri
+              * `events_url`: required, string
+              * `received_events_url`: required, string, format: uri
+              * `type`: required, string
+              * `site_admin`: required, boolean
+              * `starred_at`: string
+              * `user_view_type`: string
+            * **Team**
+              * `id`: required, integer
+              * `node_id`: required, string
+              * `name`: required, string
+              * `slug`: required, string
+              * `description`: required, string or null
+              * `privacy`: string
+              * `notification_setting`: string
+              * `permission`: required, string
+              * `permissions`: object
+              * `url`: required, string, format: uri
+              * `html_url`: required, string, format: uri
+              * `members_url`: required, string
+              * `repositories_url`: required, string, format: uri
+              * `type`: required, string, enum: `enterprise`, `organization`
+              * `access_source`: string, enum: `direct`, `organization`, `enterprise`
+              * `organization_id`: integer
+              * `enterprise_id`: integer
+              * `parent`: required, any of:
+                * **null**
+                * **Team Simple**
+      * **object**
+        * `id`: required, integer
+        * `node_id`: required, string
+        * `type`: required, string
   * `deployment_branch_policy`: object or null:
     * `protected_branches`: required, boolean
     * `custom_branch_policies`: required, boolean
@@ -147,7 +209,90 @@ curl -L \
 * `html_url`: required, string
 * `created_at`: required, string, format: date-time
 * `updated_at`: required, string, format: date-time
-* `protection_rules`: array of object
+* `protection_rules`: array of items:
+  * any of:
+    * **object**
+      * `id`: required, integer
+      * `node_id`: required, string
+      * `type`: required, string
+      * `wait_timer`: integer
+    * **object**
+      * `id`: required, integer
+      * `node_id`: required, string
+      * `prevent_self_review`: boolean
+      * `type`: required, string
+      * `reviewers`: array of objects:
+        * `type`: string, enum: `User`, `Team`
+        * `reviewer`: any of:
+          * **Simple User**
+            * `name`: string or null
+            * `email`: string or null
+            * `login`: required, string
+            * `id`: required, integer, format: int64
+            * `node_id`: required, string
+            * `avatar_url`: required, string, format: uri
+            * `gravatar_id`: required, string or null
+            * `url`: required, string, format: uri
+            * `html_url`: required, string, format: uri
+            * `followers_url`: required, string, format: uri
+            * `following_url`: required, string
+            * `gists_url`: required, string
+            * `starred_url`: required, string
+            * `subscriptions_url`: required, string, format: uri
+            * `organizations_url`: required, string, format: uri
+            * `repos_url`: required, string, format: uri
+            * `events_url`: required, string
+            * `received_events_url`: required, string, format: uri
+            * `type`: required, string
+            * `site_admin`: required, boolean
+            * `starred_at`: string
+            * `user_view_type`: string
+          * **Team**
+            * `id`: required, integer
+            * `node_id`: required, string
+            * `name`: required, string
+            * `slug`: required, string
+            * `description`: required, string or null
+            * `privacy`: string
+            * `notification_setting`: string
+            * `permission`: required, string
+            * `permissions`: object:
+              * `pull`: required, boolean
+              * `triage`: required, boolean
+              * `push`: required, boolean
+              * `maintain`: required, boolean
+              * `admin`: required, boolean
+            * `url`: required, string, format: uri
+            * `html_url`: required, string, format: uri
+            * `members_url`: required, string
+            * `repositories_url`: required, string, format: uri
+            * `type`: required, string, enum: `enterprise`, `organization`
+            * `access_source`: string, enum: `direct`, `organization`, `enterprise`
+            * `organization_id`: integer
+            * `enterprise_id`: integer
+            * `parent`: required, any of:
+              * **null**
+              * **Team Simple**
+                * `id`: required, integer
+                * `node_id`: required, string
+                * `url`: required, string, format: uri
+                * `members_url`: required, string
+                * `name`: required, string
+                * `description`: required, string or null
+                * `permission`: required, string
+                * `privacy`: string
+                * `notification_setting`: string
+                * `html_url`: required, string, format: uri
+                * `repositories_url`: required, string, format: uri
+                * `slug`: required, string
+                * `ldap_dn`: string
+                * `type`: required, string, enum: `enterprise`, `organization`
+                * `organization_id`: integer
+                * `enterprise_id`: integer
+    * **object**
+      * `id`: required, integer
+      * `node_id`: required, string
+      * `type`: required, string
 * `deployment_branch_policy`: object or null:
   * `protected_branches`: required, boolean
   * `custom_branch_policies`: required, boolean

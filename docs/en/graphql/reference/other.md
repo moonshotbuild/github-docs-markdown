@@ -32,8 +32,10 @@ Represents true or false values.
 
 ## CodeCoverageParameters - object
 
-Enforce minimum line coverage thresholds on pull requests. When configured,
-uploaded coverage data must meet the specified criteria before changes can be merged.
+Enforce minimum line coverage thresholds on pull requests. This rule evaluates
+uploaded coverage data but does not wait for coverage uploads. To ensure
+coverage is evaluated before merging, make each status check associated with a
+coverage upload a required status check.
 
 ### Fields for `CodeCoverageParameters`
 

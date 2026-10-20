@@ -31,6 +31,10 @@ Make GitHub work best for you by customizing your personal account settings and 
 
   You can share information about yourself with other users by setting a profile picture and adding a bio to your profile.
 
+* [Using your GitHub profile to enhance your resume](/en/account-and-profile/tutorials/using-your-github-profile-to-enhance-your-resume)
+
+  Demonstrate your skills to hiring managers with your GitHub profile.
+
 * [Setting your commit email address](/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address)
 
   You can set the email address that is used to author commits on GitHub and on your computer.
@@ -121,17 +125,13 @@ Make GitHub work best for you by customizing your personal account settings and 
 
   You can transfer repositories and projects from your personal account to a new or existing organization through your account settings.
 
-* [Converting a user into an organization](/en/converting-a-user-into-an-organization)
-
-  You can convert your personal account into an organization. This allows more granular permissions for repositories that belong to the organization.
-
 * [Unlinking your email address from a locked account](/en/account-and-profile/how-tos/account-management/unlinking-your-email-address-from-a-locked-account)
 
   If you have lost your two-factor authentication (2FA) credentials and are unable to recover access, you can remove the connection between your email address and a 2FA locked account.
 
 * [Deleting your personal account](/en/account-and-profile/how-tos/account-management/deleting-your-personal-account)
 
-  You can delete your personal account on GitHub.com at any time.
+  You can delete your personal account on GitHub.com from your account settings.
 
 * [Managing security and analysis features](/en/account-and-profile/how-tos/account-settings/managing-security-and-analysis-features)
 
@@ -152,10 +152,6 @@ Make GitHub work best for you by customizing your personal account settings and 
 * [Prepare for job change](/en/account-and-profile/how-tos/account-settings/prepare-for-job-change)
 
   If you use your GitHub account for both personal and work purposes, there are steps to follow when you leave your company or organization.
-
-* [Integrating Jira with your personal projects](/en/integrating-jira-with-your-personal-projects)
-
-  You can integrate Jira Cloud with your personal account to scan commits and pull requests, creating relevant metadata and hyperlinks in any mentioned Jira issues.
 
 * [Set your hiring status](/en/account-and-profile/how-tos/account-settings/set-your-hiring-status)
 

@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Saving repositories with stars
 
-You can star repositories and topics to keep track of projects you find interesting.
+You can star repositories and topics to keep track of projects you find interesting and discover related content in your news feed.
 
 You can search, sort, and filter your starred repositories and topics on your [stars page](https://github.com/stars?ref_product=github\&ref_type=engagement\&ref_style=text).
 

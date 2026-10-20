@@ -23,6 +23,8 @@ Prevent a job from running unless your conditions are met.
 
 You can use the `jobs.<job_id>.if` conditional to prevent a job from running unless a condition is met. You can use any supported context and expression to create a conditional. For more information on which contexts are supported in this key, see [Contexts reference](/en/actions/reference/workflows-and-actions/contexts#context-availability).
 
+Note that conditions executed by a shell (for example `[[ $variable == "prefix"* ]]`) cannot be evaluated in `jobs.<job_id>.if`. Such conditions must be written inside `jobs.<job_id>.steps[*].run`.
+
 ### Example: Only run job for a specific repository
 
 This example uses `if` to control when the `production-deploy` job can run. It will only run if the repository is named `octo-repo-prod` and is within the `octo-org` organization. Otherwise, the job will be marked as *skipped*.

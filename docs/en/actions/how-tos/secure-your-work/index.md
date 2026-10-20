@@ -19,6 +19,10 @@ Use security best practices with GitHub Actions, and use GitHub Actions to impro
 
 ## Links
 
+* [Locking action dependencies in a repository's workflows](/en/actions/how-tos/secure-your-work/lock-workflow-dependencies)
+
+  Generate a lockfile that pins every action your workflows use to a verified commit, and keep it current as your dependencies change.
+
 * [Using artifact attestations](/en/actions/how-tos/secure-your-work/use-artifact-attestations)
 
   Use artifact attestations to establish build provenance for the software you produce and to verify the software you consume.

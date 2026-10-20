@@ -21,25 +21,9 @@ Learn how Copilot cloud agent can carry out research, planning and coding tasks 
 
 ## Links
 
-* [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
-
-  Copilot can research a repository, create an implementation plan, and make code changes on a branch. You can review the diff, iterate, and create a pull request when you're ready.
-
-* [About agent management](/en/copilot/concepts/agents/cloud-agent/agent-management)
-
-  Use one centralized control page to jump between agent sessions, check progress, and stay in control without losing your place.
-
 * [About custom agents](/en/copilot/concepts/agents/cloud-agent/about-custom-agents)
 
   Custom agents enhance Copilot with assistance tailored to your needs.
-
-* [About Copilot automations](/en/copilot/concepts/agents/cloud-agent/about-automations)
-
-  Automations let you run Copilot cloud agent automatically, on a schedule or in response to events in a repository.
-
-* [About rationale, confidence, and approvals for issues](/en/copilot/concepts/agents/cloud-agent/about-automation-rationale-and-approvals)
-
-  When automations triage issues, it explains each change, rates its confidence, and holds lower-confidence changes for your review.
 
 * [Model Context Protocol (MCP) and GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/mcp-and-cloud-agent)
 

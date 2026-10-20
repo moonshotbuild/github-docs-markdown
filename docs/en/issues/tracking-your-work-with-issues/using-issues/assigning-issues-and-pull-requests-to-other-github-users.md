@@ -53,7 +53,7 @@ Both issues and pull requests support up to 10 assignees.
 
 ## Assigning an issue to Copilot
 
-If you assign an issue to Copilot, Copilot will work autonomously on the issue, creating a pull request and, when it has finished, requesting that you review the pull request. See [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent).
+If you assign an issue to Copilot, Copilot will work autonomously on the issue, creating a pull request and, when it has finished, requesting that you review the pull request. See [GitHub Copilot on GitHub.com](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent).
 
 ## Further reading
 

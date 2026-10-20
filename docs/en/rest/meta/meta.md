@@ -179,7 +179,8 @@ Get the octocat as ASCII art
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/octocat
+  https://api.github.com/octocat \
+  -H "Accept: application/octocat-stream"
 ```
 
 **Response schema (Status: 200):**
@@ -237,7 +238,8 @@ Get a random sentence from the Zen of GitHub
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/zen
+  https://api.github.com/zen \
+  -H "Accept: text/plain"
 ```
 
 **Response schema (Status: 200):**

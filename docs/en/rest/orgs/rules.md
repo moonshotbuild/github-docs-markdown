@@ -99,7 +99,143 @@ Array of `Repository ruleset`:
         * `include`: array of string
         * `exclude`: array of string
     * **Organization ruleset conditions**
-  * `rules`: array of object
+  * `rules`: array of `Repository Rule`:
+    * one of:
+      * **creation**
+        * `type`: required, string, enum: `creation`
+      * **update**
+        * `type`: required, string, enum: `update`
+        * `parameters`: object:
+          * `update_allows_fetch_and_merge`: required, boolean
+      * **deletion**
+        * `type`: required, string, enum: `deletion`
+      * **required_linear_history**
+        * `type`: required, string, enum: `required_linear_history`
+      * **merge_queue**
+        * `type`: required, string, enum: `merge_queue`
+        * `parameters`: object:
+          * `check_response_timeout_minutes`: required, integer, minimum: 1, maximum: 360
+          * `grouping_strategy`: required, string, enum: `ALLGREEN`, `HEADGREEN`
+          * `max_entries_to_build`: required, integer, minimum: 0, maximum: 100
+          * `max_entries_to_merge`: required, integer, minimum: 0, maximum: 100
+          * `merge_method`: required, string, enum: `MERGE`, `SQUASH`, `REBASE`
+          * `min_entries_to_merge`: required, integer, minimum: 0, maximum: 100
+          * `min_entries_to_merge_wait_minutes`: required, integer, minimum: 0, maximum: 360
+      * **required_deployments**
+        * `type`: required, string, enum: `required_deployments`
+        * `parameters`: object:
+          * `required_deployment_environments`: required, array of string
+      * **required_signatures**
+        * `type`: required, string, enum: `required_signatures`
+      * **pull_request**
+        * `type`: required, string, enum: `pull_request`
+        * `parameters`: object:
+          * `allowed_merge_methods`: array of string, enum: `merge`, `squash`, `rebase`
+          * `dismiss_stale_reviews_on_push`: required, boolean
+          * `dismissal_restriction`: `DismissalRestriction`:
+            * `allowed_actors`: array of object
+            * `enabled`: required, boolean
+          * `require_code_owner_review`: required, boolean
+          * `require_last_push_approval`: required, boolean
+          * `required_approving_review_count`: required, integer, minimum: 0, maximum: 10
+          * `required_review_thread_resolution`: required, boolean
+          * `required_reviewers`: array of `RequiredReviewerConfiguration`:
+            * `file_patterns`: required, array of string
+            * `minimum_approvals`: required, integer
+            * `reviewer`: required, object
+      * **required_status_checks**
+        * `type`: required, string, enum: `required_status_checks`
+        * `parameters`: object:
+          * `do_not_enforce_on_create`: boolean
+          * `required_status_checks`: required, array of `StatusCheckConfiguration`:
+            * `context`: required, string
+            * `integration_id`: integer
+          * `strict_required_status_checks_policy`: required, boolean
+      * **non_fast_forward**
+        * `type`: required, string, enum: `non_fast_forward`
+      * **commit_message_pattern**
+        * `type`: required, string, enum: `commit_message_pattern`
+        * `parameters`: object:
+          * `name`: string
+          * `negate`: boolean
+          * `operator`: required, string, enum: `starts_with`, `ends_with`, `contains`, `regex`
+          * `pattern`: required, string
+      * **commit_author_email_pattern**
+        * `type`: required, string, enum: `commit_author_email_pattern`
+        * `parameters`: object:
+          * `name`: string
+          * `negate`: boolean
+          * `operator`: required, string, enum: `starts_with`, `ends_with`, `contains`, `regex`
+          * `pattern`: required, string
+      * **committer_email_pattern**
+        * `type`: required, string, enum: `committer_email_pattern`
+        * `parameters`: object:
+          * `name`: string
+          * `negate`: boolean
+          * `operator`: required, string, enum: `starts_with`, `ends_with`, `contains`, `regex`
+          * `pattern`: required, string
+      * **branch_name_pattern**
+        * `type`: required, string, enum: `branch_name_pattern`
+        * `parameters`: object:
+          * `name`: string
+          * `negate`: boolean
+          * `operator`: required, string, enum: `starts_with`, `ends_with`, `contains`, `regex`
+          * `pattern`: required, string
+      * **tag_name_pattern**
+        * `type`: required, string, enum: `tag_name_pattern`
+        * `parameters`: object:
+          * `name`: string
+          * `negate`: boolean
+          * `operator`: required, string, enum: `starts_with`, `ends_with`, `contains`, `regex`
+          * `pattern`: required, string
+      * **workflows**
+        * `type`: required, string, enum: `workflows`
+        * `parameters`: object:
+          * `do_not_enforce_on_create`: boolean
+          * `workflows`: required, array of `WorkflowFileReference`:
+            * `path`: required, string
+            * `ref`: string
+            * `repository_id`: required, integer
+            * `sha`: string
+      * **code_scanning**
+        * `type`: required, string, enum: `code_scanning`
+        * `parameters`: object:
+          * `code_scanning_tools`: required, array of `CodeScanningTool`:
+            * `alerts_threshold`: required, string, enum: `none`, `errors`, `errors_and_warnings`, `all`
+            * `security_alerts_threshold`: required, string, enum: `none`, `critical`, `high_or_higher`, `medium_or_higher`, `all`
+            * `tool`: required, string
+      * **code_quality**
+        * `type`: required, string, enum: `code_quality`
+        * `parameters`: object:
+          * `severity`: required, string, enum: `errors`, `warnings`, `notes`, `all`
+      * **code_coverage**
+        * `type`: required, string, enum: `code_coverage`
+        * `parameters`: object:
+          * `max_coverage_drop`: number, format: float, minimum: 0, maximum: 100
+          * `minimum_coverage`: number, format: float, minimum: 0, maximum: 100
+      * **copilot_code_review**
+        * `type`: required, string, enum: `copilot_code_review`
+        * `parameters`: object:
+          * `review_draft_pull_requests`: boolean
+          * `review_on_push`: boolean
+      * **license_compliance_scanning**
+        * `type`: required, string, enum: `license_compliance_scanning`
+      * **file_path_restriction**
+        * `type`: required, string, enum: `file_path_restriction`
+        * `parameters`: object:
+          * `restricted_file_paths`: required, array of string
+      * **max_file_path_length**
+        * `type`: required, string, enum: `max_file_path_length`
+        * `parameters`: object:
+          * `max_file_path_length`: required, integer, minimum: 1, maximum: 32767
+      * **file_extension_restriction**
+        * `type`: required, string, enum: `file_extension_restriction`
+        * `parameters`: object:
+          * `restricted_file_extensions`: required, array of string
+      * **max_file_size**
+        * `type`: required, string, enum: `max_file_size`
+        * `parameters`: object:
+          * `max_file_size`: required, integer, minimum: 1, maximum: 100
   * `created_at`: string, format: date-time
   * `updated_at`: string, format: date-time
 
@@ -267,11 +403,7 @@ Supported values are: merge, squash, rebase
       - **`required_review_thread_resolution`** (boolean) (required)
         All conversations on code must be resolved before a pull request can be merged.
       - **`required_reviewers`** (array of objects)
-        Note
-
-required_reviewers is in beta and subject to change.
-
-A collection of reviewers and associated file patterns. Each reviewer has a list of file patterns which determine the files that reviewer is required to review.
+        A collection of reviewers and associated file patterns. Each reviewer has a list of file patterns which determine the files that reviewer is required to review.
         - **`file_patterns`** (array of strings) (required)
           Array of file patterns. Pull requests which change matching files must be approved by the specified team. File patterns use fnmatch syntax.
         - **`minimum_approvals`** (integer) (required)
@@ -433,7 +565,7 @@ A collection of reviewers and associated file patterns. Each reviewer has a list
         - **`tool`** (string) (required)
           The name of a code scanning tool
   - **`copilot_code_review`** (object)
-    Request Copilot code review for new pull requests automatically if the author has access to Copilot code review and their premium requests quota has not reached the limit.
+    Request Copilot code review for new pull requests automatically if the author has access to Copilot code review and AI credits.
     - **`type`** (string) (required)
       Can be one of: `copilot_code_review`
     - **`parameters`** (object)
@@ -531,7 +663,147 @@ curl -L \
       * `include`: array of string
       * `exclude`: array of string
   * **Organization ruleset conditions**
-* `rules`: array of object
+* `rules`: array of `Repository Rule`:
+  * one of:
+    * **creation**
+      * `type`: required, string, enum: `creation`
+    * **update**
+      * `type`: required, string, enum: `update`
+      * `parameters`: object:
+        * `update_allows_fetch_and_merge`: required, boolean
+    * **deletion**
+      * `type`: required, string, enum: `deletion`
+    * **required_linear_history**
+      * `type`: required, string, enum: `required_linear_history`
+    * **merge_queue**
+      * `type`: required, string, enum: `merge_queue`
+      * `parameters`: object:
+        * `check_response_timeout_minutes`: required, integer, minimum: 1, maximum: 360
+        * `grouping_strategy`: required, string, enum: `ALLGREEN`, `HEADGREEN`
+        * `max_entries_to_build`: required, integer, minimum: 0, maximum: 100
+        * `max_entries_to_merge`: required, integer, minimum: 0, maximum: 100
+        * `merge_method`: required, string, enum: `MERGE`, `SQUASH`, `REBASE`
+        * `min_entries_to_merge`: required, integer, minimum: 0, maximum: 100
+        * `min_entries_to_merge_wait_minutes`: required, integer, minimum: 0, maximum: 360
+    * **required_deployments**
+      * `type`: required, string, enum: `required_deployments`
+      * `parameters`: object:
+        * `required_deployment_environments`: required, array of string
+    * **required_signatures**
+      * `type`: required, string, enum: `required_signatures`
+    * **pull_request**
+      * `type`: required, string, enum: `pull_request`
+      * `parameters`: object:
+        * `allowed_merge_methods`: array of string, enum: `merge`, `squash`, `rebase`
+        * `dismiss_stale_reviews_on_push`: required, boolean
+        * `dismissal_restriction`: `DismissalRestriction`:
+          * `allowed_actors`: array of `Actor`:
+            * `id`: required, integer
+            * `type`: required, string, enum: `User`, `Team`, `IntegrationInstallation`, `RepositoryRole`
+          * `enabled`: required, boolean
+        * `require_code_owner_review`: required, boolean
+        * `require_last_push_approval`: required, boolean
+        * `required_approving_review_count`: required, integer, minimum: 0, maximum: 10
+        * `required_review_thread_resolution`: required, boolean
+        * `required_reviewers`: array of `RequiredReviewerConfiguration`:
+          * `file_patterns`: required, array of string
+          * `minimum_approvals`: required, integer
+          * `reviewer`: required, `Reviewer`:
+            * `id`: required, integer
+            * `type`: required, string, enum: `Team`
+    * **required_status_checks**
+      * `type`: required, string, enum: `required_status_checks`
+      * `parameters`: object:
+        * `do_not_enforce_on_create`: boolean
+        * `required_status_checks`: required, array of `StatusCheckConfiguration`:
+          * `context`: required, string
+          * `integration_id`: integer
+        * `strict_required_status_checks_policy`: required, boolean
+    * **non_fast_forward**
+      * `type`: required, string, enum: `non_fast_forward`
+    * **commit_message_pattern**
+      * `type`: required, string, enum: `commit_message_pattern`
+      * `parameters`: object:
+        * `name`: string
+        * `negate`: boolean
+        * `operator`: required, string, enum: `starts_with`, `ends_with`, `contains`, `regex`
+        * `pattern`: required, string
+    * **commit_author_email_pattern**
+      * `type`: required, string, enum: `commit_author_email_pattern`
+      * `parameters`: object:
+        * `name`: string
+        * `negate`: boolean
+        * `operator`: required, string, enum: `starts_with`, `ends_with`, `contains`, `regex`
+        * `pattern`: required, string
+    * **committer_email_pattern**
+      * `type`: required, string, enum: `committer_email_pattern`
+      * `parameters`: object:
+        * `name`: string
+        * `negate`: boolean
+        * `operator`: required, string, enum: `starts_with`, `ends_with`, `contains`, `regex`
+        * `pattern`: required, string
+    * **branch_name_pattern**
+      * `type`: required, string, enum: `branch_name_pattern`
+      * `parameters`: object:
+        * `name`: string
+        * `negate`: boolean
+        * `operator`: required, string, enum: `starts_with`, `ends_with`, `contains`, `regex`
+        * `pattern`: required, string
+    * **tag_name_pattern**
+      * `type`: required, string, enum: `tag_name_pattern`
+      * `parameters`: object:
+        * `name`: string
+        * `negate`: boolean
+        * `operator`: required, string, enum: `starts_with`, `ends_with`, `contains`, `regex`
+        * `pattern`: required, string
+    * **workflows**
+      * `type`: required, string, enum: `workflows`
+      * `parameters`: object:
+        * `do_not_enforce_on_create`: boolean
+        * `workflows`: required, array of `WorkflowFileReference`:
+          * `path`: required, string
+          * `ref`: string
+          * `repository_id`: required, integer
+          * `sha`: string
+    * **code_scanning**
+      * `type`: required, string, enum: `code_scanning`
+      * `parameters`: object:
+        * `code_scanning_tools`: required, array of `CodeScanningTool`:
+          * `alerts_threshold`: required, string, enum: `none`, `errors`, `errors_and_warnings`, `all`
+          * `security_alerts_threshold`: required, string, enum: `none`, `critical`, `high_or_higher`, `medium_or_higher`, `all`
+          * `tool`: required, string
+    * **code_quality**
+      * `type`: required, string, enum: `code_quality`
+      * `parameters`: object:
+        * `severity`: required, string, enum: `errors`, `warnings`, `notes`, `all`
+    * **code_coverage**
+      * `type`: required, string, enum: `code_coverage`
+      * `parameters`: object:
+        * `max_coverage_drop`: number, format: float, minimum: 0, maximum: 100
+        * `minimum_coverage`: number, format: float, minimum: 0, maximum: 100
+    * **copilot_code_review**
+      * `type`: required, string, enum: `copilot_code_review`
+      * `parameters`: object:
+        * `review_draft_pull_requests`: boolean
+        * `review_on_push`: boolean
+    * **license_compliance_scanning**
+      * `type`: required, string, enum: `license_compliance_scanning`
+    * **file_path_restriction**
+      * `type`: required, string, enum: `file_path_restriction`
+      * `parameters`: object:
+        * `restricted_file_paths`: required, array of string
+    * **max_file_path_length**
+      * `type`: required, string, enum: `max_file_path_length`
+      * `parameters`: object:
+        * `max_file_path_length`: required, integer, minimum: 1, maximum: 32767
+    * **file_extension_restriction**
+      * `type`: required, string, enum: `file_extension_restriction`
+      * `parameters`: object:
+        * `restricted_file_extensions`: required, array of string
+    * **max_file_size**
+      * `type`: required, string, enum: `max_file_size`
+      * `parameters`: object:
+        * `max_file_size`: required, integer, minimum: 1, maximum: 100
 * `created_at`: string, format: date-time
 * `updated_at`: string, format: date-time
 
@@ -750,11 +1022,7 @@ Supported values are: merge, squash, rebase
       - **`required_review_thread_resolution`** (boolean) (required)
         All conversations on code must be resolved before a pull request can be merged.
       - **`required_reviewers`** (array of objects)
-        Note
-
-required_reviewers is in beta and subject to change.
-
-A collection of reviewers and associated file patterns. Each reviewer has a list of file patterns which determine the files that reviewer is required to review.
+        A collection of reviewers and associated file patterns. Each reviewer has a list of file patterns which determine the files that reviewer is required to review.
         - **`file_patterns`** (array of strings) (required)
           Array of file patterns. Pull requests which change matching files must be approved by the specified team. File patterns use fnmatch syntax.
         - **`minimum_approvals`** (integer) (required)
@@ -916,7 +1184,7 @@ A collection of reviewers and associated file patterns. Each reviewer has a list
         - **`tool`** (string) (required)
           The name of a code scanning tool
   - **`copilot_code_review`** (object)
-    Request Copilot code review for new pull requests automatically if the author has access to Copilot code review and their premium requests quota has not reached the limit.
+    Request Copilot code review for new pull requests automatically if the author has access to Copilot code review and AI credits.
     - **`type`** (string) (required)
       Can be one of: `copilot_code_review`
     - **`parameters`** (object)

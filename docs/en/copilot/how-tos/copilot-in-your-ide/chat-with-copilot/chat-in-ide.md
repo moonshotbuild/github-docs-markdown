@@ -23,7 +23,7 @@ Use Copilot Chat in your editor to give you code suggestions, explain code, gene
 
 ## Introduction
 
-This guide describes how to use Copilot Chat and agents to automate coding tasks by breaking them into steps, using tools to read files, edit code, and run commands, and self-correcting when something goes wrong. You can also ask general questions about software development, or specific questions about the code in your project. For more information, see [About GitHub Copilot Chat](/en/copilot/concepts/chat).
+This guide describes how to use Copilot Chat and agents to automate coding tasks by breaking them into steps, using tools to read files, edit code, and run commands, and self-correcting when something goes wrong. You can also ask general questions about software development, or specific questions about the code in your project. For more information, see [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides).
 
 To learn how to use Copilot for agent-driven workflows in a desktop app, see [Getting started with the GitHub Copilot app](/en/copilot/get-started/quickstart-copilot-app).
 
@@ -70,7 +70,7 @@ You can give the agent a high-level description of what you want to build and it
 
    ![Screenshot of the 'Copilot Chat' button, highlighted with a dark orange outline.](/assets/images/help/copilot/vsc-copilot-chat-icon.png)
 
-2. Enter a prompt in the prompt box. For an introduction to the kinds of prompts you can use, see [Getting started with prompts for GitHub Copilot Chat in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/get-started-with-chat-in-your-ide).
+2. Enter a prompt in the prompt box. For an introduction to writing prompts including examples of the kinds of prompts you can use, see [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering).
 
 3. Evaluate Copilot's response, and make a follow-up request if needed.
 
@@ -80,7 +80,7 @@ You can give the agent a high-level description of what you want to build and it
 
 ## Using keywords in your prompt
 
-You can use special keywords to help Copilot understand your prompt. For examples, see [Getting started with prompts for GitHub Copilot Chat in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/get-started-with-chat-in-your-ide).
+You can use special keywords to help Copilot understand your prompt. See [GitHub Copilot Chat cheat sheet](/en/copilot/reference/chat-cheat-sheet).
 
 ### Chat participants
 
@@ -176,7 +176,7 @@ To leave feedback about the GitHub Copilot Chat extension, open an issue in the 
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Using Copilot Chat in VS Code](https://code.visualstudio.com/docs/copilot/copilot-chat) in the Visual Studio Code documentation
 * [Managing agent sessions](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/manage-and-track-agents)
 * [Asking GitHub Copilot questions in GitHub](/en/copilot/how-tos/copilot-on-github/chat-with-copilot/chat-in-github)
@@ -229,7 +229,7 @@ To use ask mode, select **Ask** from the mode dropdown at the bottom of the chat
 You can ask Copilot Chat to give you code suggestions, explain code, generate unit tests, and suggest code fixes.
 
 1. In the Visual Studio menu bar, click **View**, then click **GitHub Copilot Chat**.
-2. In the Copilot Chat window, enter a prompt, then press **Enter**. For example prompts, see [Getting started with prompts for GitHub Copilot Chat in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/get-started-with-chat-in-your-ide).
+2. In the Copilot Chat window, enter a prompt, then press **Enter**. For example prompts, see [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering).
 3. Evaluate Copilot's response, and submit a follow up prompt if needed.
 
    The response often includes interactive elements. For example, the response may include buttons to copy, insert, or preview the result of a code block.
@@ -327,7 +327,7 @@ To share feedback about Copilot Chat, you can use the **Send feedback** button i
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Using GitHub Copilot Chat in Visual Studio in the Microsoft Learn documentation](https://learn.microsoft.com/visualstudio/ide/visual-studio-github-copilot-chat?view=vs-2022#use-copilot-chat-in-visual-studio)
 * [Tips to improve GitHub Copilot Chat results in the Microsoft Learn documentation](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-chat-context?view=vs-2022)
 * [Asking GitHub Copilot questions in GitHub](/en/copilot/how-tos/copilot-on-github/chat-with-copilot/chat-in-github)
@@ -383,13 +383,13 @@ The following agents are available:
 * **Ask mode**: Get quick answers and assistance without making code changes.
 * **Plan mode**: Collaborate on planning before implementation—Copilot analyzes your request and builds a structured plan for your review. See [Using plan mode in your IDE](/en/copilot/how-tos/copilot-in-your-ide/use-copilot-agents/use-plan-mode).
 * **Edit mode**: Make controlled edits across multiple files that you review and accept individually.
-* **Copilot CLI**: Runs Copilot through Copilot CLI, providing a terminal-first agentic experience with support for multiple isolation modes, live session progress, and tool call visibility. For more information, see [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli).
+* **Copilot CLI**: Runs Copilot through Copilot CLI, providing a terminal-first agentic experience with support for multiple isolation modes, live session progress, and tool call visibility. For more information, see [GitHub Copilot CLI](/en/copilot/concepts/copilot-surfaces/copilot-cli).
 * **Custom agents**: Use personalized agents tailored to your specific needs. See [Using custom agents in your IDE](/en/copilot/how-tos/copilot-in-your-ide/use-copilot-agents/use-custom-agents).
 
 Copilot Edits lets you make changes across multiple files directly from a single Copilot Chat prompt, using edit mode and agent mode.
 
 > \[!TIP]
-> You can also access Copilot from JetBrains AI Assistant without installing the Copilot plugin. For more information, see [Using GitHub Copilot in JetBrains IDEs](/en/copilot/concepts/agents/copilot-in-jetbrains).
+> You can also access Copilot from JetBrains AI Assistant without installing the Copilot plugin. For more information, see [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides).
 
 ### Using edit mode
 
@@ -416,7 +416,7 @@ You can ask Copilot Chat to give you code suggestions, explain code, generate un
 
    ![Screenshot of the GitHub Copilot Chat icon in the Activity Bar.](/assets/images/help/copilot/jetbrains-copilot-chat-icon.png)
 
-2. Enter a prompt in the prompt box. For example prompts, see [Getting started with prompts for GitHub Copilot Chat in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/get-started-with-chat-in-your-ide).
+2. Enter a prompt in the prompt box. For an introduction to writing prompts including examples of the kinds of prompts you can use, see [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering).
 
 3. Evaluate Copilot's response, and submit a follow up prompt if needed.
 
@@ -477,7 +477,7 @@ To share feedback about Copilot Chat, you can use the **share feedback** link in
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Asking GitHub Copilot questions in GitHub](/en/copilot/how-tos/copilot-on-github/chat-with-copilot/chat-in-github)
 * [Application card: GitHub Copilot Chat](/en/copilot/responsible-use/chat)
 * [GitHub Pre-release License Terms](/en/site-policy/github-terms/github-pre-release-license-terms)
@@ -516,7 +516,7 @@ You can ask Copilot Chat to give you code suggestions, explain code, generate un
 
 1. To open the chat window, click **Editor** in the menu bar, then click **GitHub Copilot** then **Open Chat**. Copilot Chat opens in a new window.
 
-2. Enter a prompt in the prompt box. For example prompts, see [Getting started with prompts for GitHub Copilot Chat in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/get-started-with-chat-in-your-ide).
+2. Enter a prompt in the prompt box. For an introduction to writing prompts including examples of the kinds of prompts you can use, see [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering).
 
 3. Evaluate Copilot's response, and submit a follow up prompt if needed.
 
@@ -556,7 +556,7 @@ To indicate whether a response was helpful, use <svg version="1.1" width="16" he
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Asking GitHub Copilot questions in GitHub](/en/copilot/how-tos/copilot-on-github/chat-with-copilot/chat-in-github)
 * [Application card: GitHub Copilot Chat](/en/copilot/responsible-use/chat)
 * [GitHub Pre-release License Terms](/en/site-policy/github-terms/github-pre-release-license-terms)
@@ -599,13 +599,13 @@ You can ask Copilot Chat to give you code suggestions, explain code, generate un
 
 2. Enter a prompt in the prompt box, then press <kbd>Enter</kbd>.
 
-   For an introduction to the kinds of prompts you can use, see [Getting started with prompts for GitHub Copilot Chat in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/get-started-with-chat-in-your-ide).
+   For an introduction to writing prompts including examples of the kinds of prompts you can use, see [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering).
 
 3. Evaluate Copilot's response, and make a follow up request if needed.
 
 ## Using keywords in your prompt
 
-You can use special keywords to help Copilot understand your prompt. For examples, see [Getting started with prompts for GitHub Copilot Chat in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/get-started-with-chat-in-your-ide).
+You can use special keywords to help Copilot understand your prompt. See [GitHub Copilot Chat cheat sheet](/en/copilot/reference/chat-cheat-sheet).
 
 ### Slash commands
 
@@ -623,7 +623,7 @@ You can change the model Copilot uses to generate responses. You may find that d
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Asking GitHub Copilot questions in GitHub](/en/copilot/how-tos/copilot-on-github/chat-with-copilot/chat-in-github)
 * [Application card: GitHub Copilot Chat](/en/copilot/responsible-use/chat)
 * [GitHub Terms for Additional Products and Features](/en/site-policy/github-terms/github-terms-for-additional-products-and-features#github-copilot)

@@ -33,21 +33,9 @@ Use the REST API to control and manage all your GitHub organizations.
 
   Use the REST API to block and unblock users in an organization.
 
-* [REST API endpoints for organization push rule bypass requests](/en/bypass-requests)
-
-  Use the REST API to manage organization push rule bypass requests.
-
 * [REST API endpoints for custom properties](/en/rest/orgs/custom-properties)
 
   Use the REST API to create and manage custom properties for an organization.
-
-* [REST API endpoints for an organization's custom property values](/en/custom-properties-for-orgs)
-
-  Use the REST API to manage custom property values for an organization
-
-* [REST API endpoints for custom repository roles](/en/custom-roles)
-
-  Use the REST API to interact with custom repository roles.
 
 * [REST API endpoints for issue fields](/en/rest/orgs/issue-fields)
 

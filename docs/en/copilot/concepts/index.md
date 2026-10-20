@@ -17,29 +17,25 @@ Learn the core concepts that you'll need to understand GitHub Copilot.
 
 ## Links
 
-* [Completions for GitHub Copilot](/en/copilot/concepts/completions)
+* [GitHub Copilot surfaces](/en/copilot/concepts/copilot-surfaces)
 
-  Learn how Copilot can provide inline suggestions.
-
-* [About GitHub Copilot Chat](/en/copilot/concepts/chat)
-
-  Learn how you can use GitHub Copilot Chat to enhance your coding experience.
+  Learn about the different places where you can use GitHub Copilot.
 
 * [Concepts for GitHub Copilot agents](/en/copilot/concepts/agents)
 
   Learn how GitHub Copilot can independently execute tasks across the software development lifecycle.
 
-* [Concepts for prompting GitHub Copilot](/en/copilot/concepts/prompting)
+* [Agent capabilities](/en/copilot/concepts/agent-capabilities)
 
-  Learn how to interact with GitHub Copilot to get the best results.
+  Understand what GitHub Copilot agents can do, how to delegate work to them, and how they operate in automated workflows.
+
+* [Prompting and context for GitHub Copilot](/en/copilot/concepts/prompting-and-context)
+
+  Get more relevant responses from GitHub Copilot by writing effective prompts and providing useful context.
 
 * [Concepts for providing context to GitHub Copilot](/en/copilot/concepts/context)
 
-  Learn how GitHub Copilot gathers contextual information to provide relevant responses to your prompts.
-
-* [Concepts for AI tools](/en/copilot/concepts/tools)
-
-  Learn about different Copilot tools and how they can be used to help develop software.
+  Extend the capabilities of GitHub Copilot by providing additional context using Model Context Protocol.
 
 * [Models for GitHub Copilot](/en/copilot/concepts/models)
 

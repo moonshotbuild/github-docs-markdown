@@ -1009,6 +1009,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/dependency-graph/sbom/fetch-report/{sbom_uuid}` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/dependency-graph/sbom/generate-report` | read | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/forks` | read | UAT, IAT | ✓ |
+| `POST /repos/{owner}/{repo}/forks` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/git/blobs/{file_sha}` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/git/commits/{commit_sha}` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/git/matching-refs/{ref}` | read | UAT, IAT | ✗ |
@@ -1262,6 +1263,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/comments/{comment_id}/replies` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers` | write | UAT, IAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers` | write | UAT, IAT | ✗ |
+| `POST /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers/rerequest` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/reviews` | write | UAT, IAT | ✗ |
 | `PUT /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}` | write | UAT, IAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}` | write | UAT, IAT | ✗ |
@@ -1309,6 +1311,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | Endpoint | Access | Tokens | Additional Permissions |
 |----------|--------|--------|------------------------|
 | `POST /orgs/{org}/repos` | write | UAT, IAT | ✓ |
+| `POST /repos/{owner}/{repo}/forks` | write | UAT, IAT | ✓ |
 | `POST /repos/{template_owner}/{template_repo}/generate` | write | UAT, IAT | ✓ |
 | `POST /user/repos` | write | UAT, IAT | ✓ |
 

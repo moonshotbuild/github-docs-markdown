@@ -732,7 +732,8 @@ curl -L \
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/repos/OWNER/REPO/commits/REF
+  https://api.github.com/repos/OWNER/REPO/commits/REF \
+  -H "Accept: application/vnd.github.diff"
 ```
 
 **Response schema (Status: 200):**
@@ -746,7 +747,8 @@ string
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/repos/OWNER/REPO/commits/REF
+  https://api.github.com/repos/OWNER/REPO/commits/REF \
+  -H "Accept: application/vnd.github.patch"
 ```
 
 **Response schema (Status: 200):**
@@ -760,7 +762,8 @@ string
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/repos/OWNER/REPO/commits/REF
+  https://api.github.com/repos/OWNER/REPO/commits/REF \
+  -H "Accept: application/vnd.github.sha"
 ```
 
 **Response schema (Status: 200):**
@@ -945,7 +948,8 @@ curl -L \
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/repos/OWNER/REPO/compare/BASEHEAD
+  https://api.github.com/repos/OWNER/REPO/compare/BASEHEAD \
+  -H "Accept: application/vnd.github.diff"
 ```
 
 **Response schema (Status: 200):**
@@ -959,7 +963,8 @@ Same response schema as [Get a commit](#get-a-commit).
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/repos/OWNER/REPO/compare/BASEHEAD
+  https://api.github.com/repos/OWNER/REPO/compare/BASEHEAD \
+  -H "Accept: application/vnd.github.patch"
 ```
 
 **Response schema (Status: 200):**

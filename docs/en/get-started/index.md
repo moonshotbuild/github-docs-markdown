@@ -109,10 +109,6 @@ Learn how to start building, shipping, and maintaining software with GitHub. Exp
 
   Get started with setting up and managing your enterprise account with GitHub Enterprise Cloud.
 
-* [Getting started with GitHub Enterprise Server](/en/getting-started-with-github-enterprise-server)
-
-  Get started with setting up and managing GitHub.com.
-
 * [Hello World](/en/get-started/using-github/hello-world)
 
   Follow this Hello World exercise to learn GitHub's pull request workflow.
@@ -167,7 +163,7 @@ Learn how to start building, shipping, and maintaining software with GitHub. Exp
 
 * [About GitHub Advanced Security](/en/get-started/learning-about-github/about-github-advanced-security)
 
-  GitHub makes extra security features available to customers who purchase GitHub Code Security or GitHub Secret Protection.
+  GitHub makes extra security features available to customers who purchase GitHub Code Security or GitHub Secret Protection. Some features are enabled for public repositories by default.
 
 * [FAQ about changes to GitHub's plans](/en/get-started/learning-about-github/faq-about-changes-to-githubs-plans)
 
@@ -339,11 +335,11 @@ Learn how to start building, shipping, and maintaining software with GitHub. Exp
 
 * [Saving repositories with stars](/en/get-started/exploring-projects-on-github/saving-repositories-with-stars)
 
-  You can star repositories and topics to keep track of projects you find interesting.
+  You can star repositories and topics to keep track of projects you find interesting and discover related content in your news feed.
 
 * [Following people](/en/get-started/exploring-projects-on-github/following-people)
 
-  You can follow people on GitHub to receive notifications about their activity.
+  You can follow people on GitHub to receive notifications about their activity and discover projects in their communities.
 
 * [Following organizations](/en/get-started/exploring-projects-on-github/following-organizations)
 
@@ -442,6 +438,8 @@ Learn how to start building, shipping, and maintaining software with GitHub. Exp
   Learn how to work around the 2 GiB push limit.
 
 * [Requesting an archive of your personal account's data](/en/get-started/archiving-your-github-personal-account-and-public-repositories/requesting-an-archive-of-your-personal-accounts-data)
+
+  You can export and review the metadata that GitHub stores about your personal account.
 
 * [Opting into or out of the GitHub Archive Program for your public repository](/en/get-started/archiving-your-github-personal-account-and-public-repositories/opting-into-or-out-of-the-github-archive-program-for-your-public-repository)
 

@@ -116,7 +116,7 @@ The following procedure will guide you through installation of the GitHub Copilo
 
 ## Other ways to access GitHub Copilot in JetBrains IDEs
 
-The plugin provides the full Copilot experience, but you can also access Copilot through JetBrains AI Assistant or Copilot CLI without installing the plugin. For a comparison of what each entry point offers, see [Using GitHub Copilot in JetBrains IDEs](/en/copilot/concepts/agents/copilot-in-jetbrains).
+The plugin provides the full Copilot experience, but you can also access Copilot through JetBrains AI Assistant or Copilot CLI without installing the plugin. For a comparison of what each entry point offers, see [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides).
 
 </div>
 

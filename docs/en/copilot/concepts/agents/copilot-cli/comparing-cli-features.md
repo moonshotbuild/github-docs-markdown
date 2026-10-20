@@ -180,7 +180,7 @@ You’ll see Copilot using tools when you:
 
 ### Find out more about allowing or denying tools
 
-See [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli#allowed-tools).
+See [GitHub Copilot CLI](/en/copilot/concepts/copilot-surfaces/copilot-cli#allowed-tools).
 
 ## MCP servers
 

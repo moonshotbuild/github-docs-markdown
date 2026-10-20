@@ -5,7 +5,7 @@ product: "GitHub.com Help Documentation"
 document_type: "homepage"
 ---
 
-# GitHub Help Documentation
+# GitHub.com Help Documentation
 
 ## Links
 
@@ -30,10 +30,6 @@ document_type: "homepage"
 * [Repositories documentation](/en/repositories)
 
   Learn to use and manage the repositories that allow you to store and collaborate on your project's code.
-
-* [Enterprise administrator documentation](admin)
-
-  Documentation and guides for enterprise administrators and security specialists who configure and manage GitHub Enterprise.
 
 * [Billing and payments documentation](/en/billing)
 
@@ -109,7 +105,7 @@ document_type: "homepage"
 
 * [GitHub Discussions documentation](/en/discussions)
 
-  GitHub Discussions is a collaborative communication forum for the community around an internal project. Community members can ask and answer questions, share updates, have open-ended conversations, and follow along on decisions affecting the community's way of working.
+  GitHub Discussions is a collaborative communication forum for the community around an open source or internal project. Community members can ask and answer questions, share updates, have open-ended conversations, and follow along on decisions affecting the community's way of working.
 
 * [GitHub Sponsors documentation](/en/sponsors)
 

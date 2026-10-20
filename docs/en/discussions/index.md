@@ -11,7 +11,7 @@ breadcrumbs:
 
 # GitHub Discussions documentation
 
-GitHub Discussions is a collaborative communication forum for the community around an internal project. Community members can ask and answer questions, share updates, have open-ended conversations, and follow along on decisions affecting the community's way of working.
+GitHub Discussions is a collaborative communication forum for the community around an open source or internal project. Community members can ask and answer questions, share updates, have open-ended conversations, and follow along on decisions affecting the community's way of working.
 
 ## Recommended
 

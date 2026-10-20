@@ -37,10 +37,14 @@ Discover how to assess, manage, and resolve code scanning alerts to keep your co
 
   From the security view, you can view, fix, or dismiss alerts for potential vulnerabilities or errors in your project's code.
 
+* [Managing access to agentic autofix for code scanning](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/managing-access-to-agentic-autofix-for-code-scanning)
+
+  Control the rollout of agentic autofix across your enterprise, organizations, and repositories.
+
 * [Enabling delegated alert dismissal for code scanning](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/enable-delegated-alert-dismissal)
 
   You can use delegated alert dismissal to control who can dismiss an alert found by code scanning.
 
-* [Disabling autofix for code scanning security alerts](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/disabling-autofix-for-code-scanning)
+* [Disabling Copilot Autofix for code scanning](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/disabling-copilot-autofix-for-code-scanning)
 
-  You can disable Copilot Autofix, which also blocks agentic autofix, for an enterprise, organization, or repository.
+  You can disable Copilot Autofix for an enterprise, organization, or repository.

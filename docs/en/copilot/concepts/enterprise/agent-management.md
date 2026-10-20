@@ -66,7 +66,7 @@ Third-party agents, or partner agents, such as Claude and Codex work alongside C
 
 Enterprise administrators and AI managers can control the availability of third-party agents from the Agents page in the AI Controls view. These policies govern third-party agent usage on GitHub.com.
 
-For more information about available third-party agents, see [About third-party coding agents](/en/copilot/concepts/agents/about-third-party-coding-agents).
+For more information about available third-party agents, see [Third-party coding agents](/en/copilot/concepts/agent-capabilities/about-agents/about-third-party-coding-agents).
 
 ## Local agents
 

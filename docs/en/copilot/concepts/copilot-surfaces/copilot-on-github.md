@@ -60,13 +60,13 @@ On GitHub.com, Copilot Chat and Copilot cloud agent can share context. When you 
 
 Copilot Chat can also answer questions about pull requests created by Copilot by pulling in the relevant agent session logs. You can ask what changed, what was validated, and why, without leaving the conversation.
 
-This context passing is scoped to the Copilot Chat and cloud agent sessions you are actively working with. It is distinct from Copilot Memory, which builds a longer-term, persistent understanding of your repositories and preferences across sessions. For more information, see [About GitHub Copilot Memory](/en/copilot/concepts/agents/copilot-memory).
+This context passing is scoped to the Copilot Chat and cloud agent sessions you are actively working with. It is distinct from Copilot Memory, which builds a longer-term, persistent understanding of your repositories and preferences across sessions. For more information, see [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory).
 
 On GitHub.com, session logs show the work and tools used. Shared sessions and pull requests let teammates with repository access follow the work and review changes. Logs do not replace your own review and testing. See [Managing agent sessions](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/manage-and-track-agents).
 
 ### Sessions across surfaces
 
-With remote control enabled, you can monitor and steer a GitHub Copilot CLI session from GitHub.com. It continues running on your original machine, which must stay online. See [About remote control of GitHub Copilot CLI sessions](/en/copilot/concepts/agents/copilot-cli/about-remote-control).
+With remote control enabled, you can monitor and steer a GitHub Copilot CLI session from GitHub.com. It continues running on your original machine, which must stay online. See [Remote control of GitHub Copilot CLI sessions](/en/copilot/concepts/agents/copilot-cli/about-remote-control).
 
 On GitHub.com, you can ask about your synced session history across Copilot surfaces. This includes Copilot cloud agent and Copilot code review sessions, and sessions from GitHub Copilot CLI, VS Code, JetBrains IDEs, and the GitHub Copilot app.
 
@@ -74,15 +74,15 @@ You can only query sessions you started. Syncing must be enabled and permitted b
 
 ## Code review
 
-On GitHub.com, Copilot code review reviews pull request changes, identifies potential issues, and suggests fixes. It uses agentic capabilities to gather context from your repository. You can request a review or configure automatic reviews, then review and apply the suggested changes. See [About GitHub Copilot code review](/en/copilot/concepts/agents/code-review).
+On GitHub.com, Copilot code review reviews pull request changes, identifies potential issues, and suggests fixes. It uses agentic capabilities to gather context from your repository. You can request a review or configure automatic reviews, then review and apply the suggested changes. See [GitHub Copilot code review](/en/copilot/concepts/agents/code-review).
 
 Copilot can also generate a summary of your changes directly in a pull request description or comment. This helps reviewers understand the changes, but is separate from reviewing the code. See [Creating a pull request summary with GitHub Copilot](/en/copilot/how-tos/copilot-on-github/copilot-for-github-tasks/create-a-pr-summary).
 
 ## Automations and agentic workflows
 
-Automations let you define a task once and have Copilot cloud agent run it on a schedule or in response to repository events. For example, an automation can triage incoming issues or prepare weekly release notes. You create and manage automations from the **Agents** tab in a repository on GitHub.com. Automations are available in eligible private and internal repositories. See [About Copilot automations](/en/copilot/concepts/agents/cloud-agent/about-automations).
+Automations let you define a task once and have Copilot cloud agent run it on a schedule or in response to repository events. For example, an automation can triage incoming issues or prepare weekly release notes. You create and manage automations from the **Agents** tab in a repository on GitHub.com. Automations are available in eligible private and internal repositories. See [Copilot automations](/en/copilot/concepts/agents/cloud-agent/about-automations).
 
-GitHub Agentic Workflows provide another way to automate tasks in your repositories on GitHub.com. You define tasks in natural language in Markdown files, and they run as GitHub Actions workflows. These workflows can use Copilot or another supported coding agent. See [About GitHub Agentic Workflows](/en/copilot/concepts/agents/about-github-agentic-workflows).
+GitHub Agentic Workflows provide another way to automate tasks in your repositories on GitHub.com. You define tasks in natural language in Markdown files, and they run as GitHub Actions workflows. These workflows can use Copilot or another supported coding agent. See [GitHub Agentic Workflows](/en/copilot/concepts/agents/about-github-agentic-workflows).
 
 ## Customizations
 
@@ -144,5 +144,5 @@ Copilot cloud agent has the following workflow limitations:
 * [GitHub Copilot on GitHub](/en/copilot/how-tos/copilot-on-github)
 * [GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent) how-to guides
 * [GitHub Copilot Cookbook](/en/copilot/tutorials/copilot-cookbook)
-* For delegating work from tools such as Microsoft Teams and Slack, see [About Copilot integrations](/en/copilot/concepts/tools/about-copilot-integrations).
+* For delegating work from tools such as Microsoft Teams and Slack, see [Copilot integrations](/en/copilot/concepts/tools/about-copilot-integrations).
 * For organization and enterprise metrics on pull request creation, merges, and time to merge, see [GitHub Copilot usage metrics](/en/copilot/concepts/billing-and-usage/copilot-usage-metrics/copilot-metrics).

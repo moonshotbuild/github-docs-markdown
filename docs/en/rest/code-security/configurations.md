@@ -259,11 +259,13 @@ code_security and secret_protection are deprecated values for this field. Prefer
 
 - **201** - Successfully created code security configuration
 
-- **400** - Bad Request
+- **400** - Bad Request because security product settings conflict, are unsupported by your plan, or required products are not enabled in the configuration.
 
 - **403** - Forbidden
 
 - **404** - Resource not found
+
+- **422** - Validation failed because of unavailable security products, invalid feature dependencies, or an invalid configuration.
 
 ### Code examples
 
@@ -597,11 +599,15 @@ code_security and secret_protection are deprecated values for this field. Prefer
 
 - **304** - Not modified
 
+- **400** - Bad Request because of a global configuration, incompatible parameters, or invalid enforcement changes.
+
 - **403** - Forbidden
 
 - **404** - Resource not found
 
-- **409** - Conflict
+- **409** - Conflict because security configuration work is already in progress.
+
+- **422** - Validation failed because the configuration is invalid.
 
 ### Code examples
 
@@ -717,7 +723,9 @@ OAuth app tokens and personal access tokens (classic) need the admin:enterprise 
 
 - **404** - Resource not found
 
-- **409** - Conflict
+- **409** - Conflict because security configuration work is already in progress.
+
+- **422** - Validation failed because the request does not match the request schema.
 
 ### Code examples
 
@@ -777,6 +785,8 @@ OAuth app tokens and personal access tokens (classic) need the admin:enterprise 
 - **403** - Forbidden
 
 - **404** - Resource not found
+
+- **422** - Validation failed because a public default is not supported in the current environment.
 
 ### Code examples
 
@@ -880,6 +890,8 @@ Can be: all, attached, attaching, removed, enforced, failed, updating, removed_b
 ### HTTP response status codes
 
 - **200** - OK
+
+- **400** - Bad Request because of unsupported attachment statuses.
 
 - **403** - Forbidden
 
@@ -1197,6 +1209,14 @@ code_security and secret_protection are deprecated values for this field. Prefer
 ### HTTP response status codes
 
 - **201** - Successfully created code security configuration
+
+- **400** - Bad Request because security product settings conflict, are unsupported by your plan, or required products are not enabled in the configuration.
+
+- **403** - Forbidden
+
+- **404** - Resource not found
+
+- **422** - Validation failed because of unavailable security products, invalid feature dependencies, or an invalid configuration.
 
 ### Code examples
 
@@ -1537,6 +1557,16 @@ code_security and secret_protection are deprecated values for this field. Prefer
 
 - **204** - Response when no new updates are made
 
+- **400** - Bad Request because of a global configuration, incompatible parameters, or an attempt to update attributes of an enterprise-owned configuration.
+
+- **403** - Forbidden
+
+- **404** - Resource not found
+
+- **409** - Conflict because security configuration work is already in progress.
+
+- **422** - Validation failed because of invalid enforcement values, unavailable security products, an attempt to change enterprise-enforced enforcement, or an invalid configuration.
+
 ### Code examples
 
 #### Example for updating a code security configuration
@@ -1652,7 +1682,19 @@ OAuth app tokens and classic PATs require the write:org scope. Directly applying
 
 - **202** - Accepted
 
+- **400** - Bad Request
+
 - **403** - Forbidden
+
+- **404** - Resource not found
+
+- **409** - Conflict because security configuration work is already in progress for the
+organization, security configuration changes are blocked for the organization,
+or another organization in the same enterprise is applying security configurations.
+
+- **422** - Validation failed because the body does not match the request schema, scope
+is selected but selected_repository_ids is missing or empty, or a non-empty
+selected_repository_ids array is provided for another scope.
 
 ### Code examples
 
@@ -1718,6 +1760,8 @@ OAuth app tokens and classic PATs require the write:org scope; setting an enterp
 
 - **404** - Resource not found
 
+- **422** - Validation failed because a public default is not supported in the current environment.
+
 ### Code examples
 
 #### Set this configuration to be enabled by default on all new repositories.
@@ -1781,9 +1825,13 @@ Can be: all, attached, attaching, detached, removed, enforced, failed, updating,
 
 - **200** - OK
 
+- **400** - Bad Request because of unsupported attachment statuses.
+
 - **403** - Forbidden
 
 - **404** - Resource not found
+
+- **422** - Validation failed because removed and detached are requested together.
 
 ### Code examples
 

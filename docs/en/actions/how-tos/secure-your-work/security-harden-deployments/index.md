@@ -29,6 +29,10 @@ Use OpenID Connect within your workflows to authenticate with your cloud provide
 
   Use OpenID Connect within your workflows to authenticate with Azure.
 
+* [Configuring OpenID Connect in Docker](/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-docker)
+
+  Use OpenID Connect within your workflows to authenticate with Docker without storing long-lived credentials.
+
 * [Configuring OpenID Connect in Google Cloud Platform](/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-google-cloud-platform)
 
   Use OpenID Connect within your workflows to authenticate with Google Cloud Platform.

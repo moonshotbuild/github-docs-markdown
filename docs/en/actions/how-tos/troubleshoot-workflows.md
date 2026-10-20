@@ -77,6 +77,12 @@ Scheduled events can be delayed during periods of high loads of GitHub Actions w
 
 High load times include the start of every hour. If the load is sufficiently high enough, some queued jobs may be dropped. To decrease the chance of delay, schedule your workflow to run at a different time of the hour. For more information, see [Events that trigger workflows](/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
 
+### Scheduled workflow stopped running
+
+A scheduled (`cron`) workflow can stop running even though it is still enabled and manual or `workflow_dispatch` runs still work.
+
+This can happen when the workflow's associated `actor` account is suspended, deleted, or deprovisioned. To restart it, a user with `write` access to the repository can commit a change to the `cron` schedule. See [Events that trigger workflows](/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#actor-for-scheduled-workflows).
+
 ### Filtering and diff limits
 
 Specific events allow for filtering by branch, tag, and/or paths you can customize. Workflow run creation will be skipped if the filter conditions apply to filter out the workflow.
@@ -111,6 +117,10 @@ In these cases, you can leverage the API to force cancel the run. For more infor
 A common cause can be using the `always()` [status check function](/en/actions/reference/workflows-and-actions/expressions#status-check-functions) which returns `true`, even on cancellation. An alternative is to use the inverse of the `cancelled()` function, `${{ !cancelled() }}`.
 
 For more information, see [Using conditions to control job execution](/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-jobs-with-conditions) and [Canceling a workflow run](/en/actions/how-tos/manage-workflow-runs/cancel-a-workflow-run).
+
+If a run remains queued or in progress after cancellation attempts, it may be stuck in an abnormal state rather than continuing because of `always()`. Signs include no jobs being created, the UI displaying "Failed to cancel workflow", or the `cancel` or `force-cancel` REST API endpoints returning HTTP `500` or `409`.
+
+Self-service cancellation, including force cancellation, may not clear a stuck or out-of-sync workflow run or check suite. If your repository uses concurrency, the stuck run can continue blocking later runs in the same concurrency group. In this situation, contact us through the [GitHub Support portal](https://support.github.com) for help clearing the run.
 
 ## Troubleshooting runners
 

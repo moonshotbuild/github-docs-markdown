@@ -418,7 +418,8 @@ Array of `Repository`:
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/user/starred
+  https://api.github.com/user/starred \
+  -H "Accept: application/vnd.github.v3.star+json"
 ```
 
 **Response schema (Status: 200):**

@@ -23,6 +23,8 @@ You can use the dependency review action to catch vulnerabilities before they ar
 
 The "dependency review action" refers to the specific action that can report on differences in a pull request within the GitHub Actions context. It can also add enforcement mechanisms to the GitHub Actions workflow. For more information, see [Dependency review](/en/code-security/concepts/supply-chain-security/dependency-review#about-the-dependency-review-action).
 
+For organizations using GitHub Enterprise Cloud with GitHub Code Security enabled, enterprise-wide management of license policy is available. This feature uses a similar pull-request based approach to dependency review action but adds auditability, centralized policy management, and ruleset-based enforcement of license policy. For more information, see [About open source license compliance](/en/code-security/concepts/supply-chain-security/open-source-license-compliance).
+
 For a list of common configuration options, see [Dependency review](https://github.com/marketplace/actions/dependency-review#configuration-options) on the GitHub Marketplace.
 
 ## Configuring the dependency review action

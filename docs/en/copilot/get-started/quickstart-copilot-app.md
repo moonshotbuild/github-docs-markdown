@@ -17,7 +17,7 @@ breadcrumbs:
 
 Sign in to the GitHub Copilot app, connect a repository or local folder, and create your first agent session to make code changes.
 
-For a conceptual overview of the GitHub Copilot app, see [About the GitHub Copilot app](/en/copilot/concepts/agents/github-copilot-app).
+For a conceptual overview of the GitHub Copilot app, see [GitHub Copilot app](/en/copilot/concepts/copilot-surfaces/github-copilot-app).
 
 In this quickstart, you will:
 
@@ -29,7 +29,7 @@ In this quickstart, you will:
 
 * A GitHub account.
 * A Copilot plan, or you can configure your own model provider.
-  * If you use your own model provider, you will need provider credentials such as an API key. For setup steps, see [Using your own LLM models in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/use-byok-models).
+  * If you use your own model provider, you will need provider credentials such as an API key. For setup steps, see [Adding LLM models to the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/use-byok-models).
 * [Git](https://github.com/git-guides/install-git) installed on your computer.
 
 > \[!NOTE]
@@ -37,8 +37,9 @@ In this quickstart, you will:
 
 ## Installing the GitHub Copilot app
 
-1. Visit the [download page for GitHub Copilot app](https://github.com/features/ai/github-app).
-2. Download the app for your platform.
+Download and install the GitHub Copilot app for your operating system. For other operating systems and architectures, see the [download page](https://github.com/features/ai/github-app).
+
+<a href="https://github.com/features/ai/github-app" target="_blank" class="btn btn-primary mt-3 mr-3 no-underline js-os-download" data-os-download-mac="https://gh.io/copilot-app-mac" data-os-download-mac-intel="https://gh.io/copilot-app-mac-intel" data-os-download-windows="https://gh.io/copilot-app-win64" data-os-download-windows-arm="https://gh.io/copilot-app-win-arm" data-os-download-linux="https://gh.io/copilot-app-linux"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-desktop-download" aria-label="desktop download icon" role="img"><path d="m4.927 5.427 2.896 2.896a.25.25 0 0 0 .354 0l2.896-2.896A.25.25 0 0 0 10.896 5H8.75V.75a.75.75 0 1 0-1.5 0V5H5.104a.25.25 0 0 0-.177.427Z"></path><path d="M1.573 2.573a.25.25 0 0 0-.073.177v7.5a.25.25 0 0 0 .25.25h12.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25h-3a.75.75 0 1 1 0-1.5h3A1.75 1.75 0 0 1 16 2.75v7.5A1.75 1.75 0 0 1 14.25 12h-3.727c.099 1.041.52 1.872 1.292 2.757A.75.75 0 0 1 11.25 16h-6.5a.75.75 0 0 1-.565-1.243c.772-.885 1.192-1.716 1.292-2.757H1.75A1.75 1.75 0 0 1 0 10.25v-7.5A1.75 1.75 0 0 1 1.75 1h3a.75.75 0 0 1 0 1.5h-3a.25.25 0 0 0-.177.073ZM6.982 12a5.72 5.72 0 0 1-.765 2.5h3.566a5.72 5.72 0 0 1-.765-2.5H6.982Z"></path></svg> <span class="js-os-download-label">Download the GitHub Copilot app</span></a>
 
 ## Opening the GitHub Copilot app for the first time
 

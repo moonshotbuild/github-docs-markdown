@@ -17,10 +17,6 @@ Use the REST API to retrieve and update code scanning alerts from a repository.
 
 ## Links
 
-* [REST API endpoints for code scanning alert dismissal requests](/en/alert-dismissal-requests)
-
-  Use the REST API to interact with code scanning alert dismissal requests from a repository.
-
 * [REST API endpoints for code scanning](/en/rest/code-scanning/code-scanning)
 
   Use the REST API to retrieve and update code scanning alerts from a repository.

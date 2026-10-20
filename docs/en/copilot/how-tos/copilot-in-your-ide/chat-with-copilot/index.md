@@ -21,10 +21,6 @@ Get help with coding tasks by using Copilot Chat in your IDE.
 
 ## Links
 
-* [Getting started with prompts for GitHub Copilot Chat in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/get-started-with-chat-in-your-ide)
-
-  Get an overview of ways to use Copilot Chat in your IDE.
-
 * [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide)
 
   Use Copilot Chat in your editor to give you code suggestions, explain code, generate unit tests, and suggest code fixes.

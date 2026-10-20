@@ -19,7 +19,7 @@ Use labels and milestones to categorize and track work on GitHub.
 
 * [Managing labels](/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
 
-  You can classify issues and pull requests by creating, editing, applying, and deleting labels.
+  You can classify issues, pull requests, and discussions by creating, editing, applying, and deleting labels.
 
 * [About milestones](/en/issues/using-labels-and-milestones-to-track-work/about-milestones)
 

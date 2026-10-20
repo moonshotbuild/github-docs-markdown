@@ -19,11 +19,11 @@ Learn how to test your webhooks and troubleshoot problems.
 
 * [Viewing webhook deliveries](/en/webhooks/testing-and-troubleshooting-webhooks/viewing-webhook-deliveries)
 
-  You can view details about webhook deliveries from the past 7 days.
+  You can view details about webhook deliveries from the past 3 days.
 
 * [Redelivering webhooks](/en/webhooks/testing-and-troubleshooting-webhooks/redelivering-webhooks)
 
-  To help recover from failed deliveries, you can redeliver webhook deliveries from the past 7 days.
+  To help recover from failed deliveries, you can redeliver webhook deliveries from the past 3 days.
 
 * [Testing webhooks](/en/webhooks/testing-and-troubleshooting-webhooks/testing-webhooks)
 

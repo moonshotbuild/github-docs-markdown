@@ -41,7 +41,7 @@ Identify and resolve issues when uploading SARIF files, including authentication
 
 * [Upload fails because GitHub Code Security is disabled](/en/code-security/reference/code-scanning/sarif-files/troubleshoot-sarif-uploads/ghas-required)
 
-  You can only upload SARIF results to repositories where GitHub Code Security is enabled.
+  You can only upload SARIF results to private or internal repositories where GitHub Code Security is enabled.
 
 * [Upload was rejected because CodeQL default setup is enabled for code scanning](/en/code-security/reference/code-scanning/sarif-files/troubleshoot-sarif-uploads/default-setup-enabled)
 

@@ -68,9 +68,6 @@ Alternatively, you can use a script to output command-line options and pipe this
 
 ## Running Copilot CLI commands in a sandbox
 
-> \[!NOTE]
-> Cloud and local sandboxes for GitHub Copilot are in public preview and subject to change.
-
 To prevent Copilot from modifying files you don't want it to touch, you can force agents to run commands within a local sandboxed environment. Alternatively, you can run an entire CLI session in an isolated environment in the cloud. For more information, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
 
 ### Local sandboxing
@@ -78,6 +75,9 @@ To prevent Copilot from modifying files you don't want it to touch, you can forc
 You can enable local sandboxing inside a Copilot CLI session to restrict Copilot's access to your filesystem, network, and system capabilities. To enable it, run `/sandbox enable` inside a session.
 
 ### Cloud sandboxing
+
+> \[!NOTE]
+> Cloud sandboxes for GitHub Copilot are in public preview and subject to change.
 
 You can start a Copilot CLI session inside an isolated, cloud-hosted environment with cloud sandboxes. This is useful when you want to run code without affecting your local machine, keep a session's state between uses, continue a session from a different machine, or run multiple tasks in parallel. Cloud sandbox policies inherit from Copilot cloud agent policies, so existing security controls like firewall rules extend to cloud sandboxes without additional setup.
 
@@ -125,7 +125,7 @@ The following sections provide examples of tasks you can complete with GitHub Co
 
 ### Computer use
 
-In local sessions on macOS and Windows, you can enable computer use to let Copilot interact with desktop applications. This capability is useful for workflows in legacy and GUI-only software that do not provide an API, command-line interface, or MCP integration. For more information, see [About computer use in GitHub Copilot](/en/copilot/concepts/agents/computer-use).
+In local sessions on macOS and Windows, you can enable computer use to let Copilot interact with desktop applications. This capability is useful for workflows in legacy and GUI-only software that do not provide an API, command-line interface, or MCP integration. For more information, see [About computer use in GitHub Copilot](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/computer-use).
 
 ### Tasks involving GitHub.com
 
@@ -204,7 +204,7 @@ You can customize GitHub Copilot CLI in a number of ways:
 * **Custom agents**: Custom agents allow you to create different specialized versions of Copilot for different tasks. For example, you could customize Copilot to be an expert frontend engineer following your team's guidelines. GitHub Copilot CLI includes specialized custom agents that it automatically delegates common tasks to. For more information, see [Using GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/overview#use-custom-agents).
 * **Hooks**: Hooks allow you to execute custom shell commands at key points during agent execution, enabling you to add validation, logging, security scanning, or workflow automation. See [About hooks for GitHub Copilot](/en/copilot/concepts/agents/hooks).
 * **Skills**: Skills allow you to enhance the ability of Copilot to perform specialized tasks with instructions, scripts, and resources. For more information, see [About agent skills](/en/copilot/concepts/agents/about-agent-skills).
-* **Copilot Memory**: Copilot Memory allows Copilot to build a persistent understanding of your repository by storing "memories", which are pieces of information about coding conventions, patterns, and preferences that Copilot deduces as it works. This reduces the need to repeatedly explain context in your prompts and makes future sessions more productive. For more information, see [About GitHub Copilot Memory](/en/copilot/concepts/agents/copilot-memory).
+* **Copilot Memory**: Copilot Memory allows Copilot to build a persistent understanding of your repository by storing "memories", which are pieces of information about coding conventions, patterns, and preferences that Copilot deduces as it works. This reduces the need to repeatedly explain context in your prompts and makes future sessions more productive. For more information, see [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory).
 
 ## Security considerations
 

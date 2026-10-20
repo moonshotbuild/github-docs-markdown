@@ -95,12 +95,15 @@ If you add custom properties to your organization and set values for repositorie
 
 ### Extra filters for the "Coverage" view
 
-| Qualifier                           | Description                                                                                             |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `code-scanning-default-setup`       | Display data for repositories where code scanning is enabled or not enabled using CodeQL default setup. |
-| `code-scanning-pull-request-alerts` | Display data for repositories where code scanning is enabled or not enabled to run on pull requests.    |
-| `dependabot-security-updates`       | Display data for repositories where Dependabot security updates is enabled or not enabled.              |
-| `secret-scanning-push-protection`   | Display data for repositories where push protection for secret scanning is enabled or not enabled.      |
+| Qualifier                           | Description                                                                                                                                                                                                                                                                                |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `code-scanning-default-setup`       | Display data for repositories where code scanning is enabled or not enabled using CodeQL default setup.                                                                                                                                                                                    |
+|                                     |                                                                                                                                                                                                                                                                                            |
+| `code-scanning-ai-scan-pr-scan`     | Display data for repositories where AI Scan for pull requests is effectively enabled or not enabled. Use `code-scanning-ai-scan-pr-scan:enabled` to display enabled repositories, or `code-scanning-ai-scan-pr-scan:not-enabled` to display repositories where the feature is not enabled. |
+|                                     |                                                                                                                                                                                                                                                                                            |
+| `code-scanning-pull-request-alerts` | Display data for repositories where code scanning is enabled or not enabled to run on pull requests.                                                                                                                                                                                       |
+| `dependabot-security-updates`       | Display data for repositories where Dependabot security updates is enabled or not enabled.                                                                                                                                                                                                 |
+| `secret-scanning-push-protection`   | Display data for repositories where push protection for secret scanning is enabled or not enabled.                                                                                                                                                                                         |
 
 ## Alert number filters
 

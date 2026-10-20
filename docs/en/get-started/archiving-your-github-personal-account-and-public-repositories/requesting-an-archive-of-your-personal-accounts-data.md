@@ -15,6 +15,8 @@ breadcrumbs:
 
 # Requesting an archive of your personal account's data
 
+You can export and review the metadata that GitHub stores about your personal account.
+
 GitHub stores repository and profile metadata from your personal account's activity. You can export your personal account's data through your account settings on GitHub or with the User Migration API.
 
 For more information about the data GitHub stores that is available for exporting, see [REST API endpoints for migrations](/en/rest/migrations#download-a-user-migration-archive).

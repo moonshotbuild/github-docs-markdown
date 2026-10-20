@@ -21,49 +21,13 @@ Learn how you can use GitHub Copilot in your terminal.
 
 ## Links
 
-* [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli)
-
-  Find out about using Copilot from the command line.
-
 * [Comparing GitHub Copilot CLI customization features](/en/copilot/concepts/agents/copilot-cli/comparing-cli-features)
 
   Find out about the various ways you can customize Copilot: what they do, and when to use them.
 
-* [About using Copilot CLI in GitHub Actions](/en/copilot/concepts/agents/copilot-cli/copilot-cli-in-github-actions)
-
-  You can run Copilot CLI in a GitHub Actions workflow using either a personal access token or the built-in GITHUB\_TOKEN. The two approaches differ in how AI credits are billed and what setup is required.
-
-* [Canceling a GitHub Copilot CLI operation and rolling back changes](/en/copilot/concepts/agents/copilot-cli/cancel-and-roll-back)
-
-  Find out about the different ways to cancel an active Copilot operation, and how to roll back changes made during a session if the result isn't what you expected.
-
-* [Managing context in GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/context-management)
-
-  Understand how Copilot manages conversation context, what happens during long sessions, and how to stay in control of your context window.
-
-* [About remote control of GitHub Copilot CLI sessions](/en/copilot/concepts/agents/copilot-cli/about-remote-control)
-
-  Remote control lets you monitor and steer a Copilot CLI session from GitHub.com or GitHub Mobile, even after you've stepped away from your machine.
-
 * [About custom agents](/en/copilot/concepts/agents/copilot-cli/about-custom-agents)
 
   Custom agents enhance Copilot with assistance tailored to your needs.
-
-* [Allowing GitHub Copilot CLI to work autonomously](/en/copilot/concepts/agents/copilot-cli/autopilot)
-
-  The CLI's autopilot mode lets Copilot CLI work autonomously on a task, carrying out multiple steps until the task is complete.
-
-* [Running tasks in parallel with the <code>/fleet</code> command](/en/copilot/concepts/agents/copilot-cli/fleet)
-
-  The /fleet slash command lets Copilot CLI break down a complex request into smaller tasks and run them in parallel, maximizing efficiency and throughput.
-
-* [Researching with GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/research)
-
-  The /research slash command turns Copilot into your research assistant, gathering in-depth information and insights on a topic.
-
-* [About the rubber duck agent](/en/copilot/concepts/agents/copilot-cli/rubber-duck)
-
-  The rubber duck agent is a built-in critic that gives Copilot a constructive second opinion on its own plans, code, and tests—using a different AI model from the one driving your session.
 
 * [Using LSP servers with GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/lsp-servers)
 
@@ -72,11 +36,3 @@ Learn how you can use GitHub Copilot in your terminal.
 * [About extensions for GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-cli-extensions)
 
   Extensions let you add your own tools and slash commands to GitHub Copilot CLI, using only the SDK that ships with the CLI.
-
-* [Loading tools on demand with tool search](/en/copilot/concepts/agents/copilot-cli/tool-search)
-
-  Tool search keeps your context small by letting Copilot CLI load external tools only when a task needs them.
-
-* [Understanding filesystem policies for local sandboxing in GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/understanding-local-sandboxing)
-
-  When local sandboxing is enabled, Copilot CLI runs each sandboxed process or operation under a filesystem policy that controls which files and directories it can read and write. Learn how that policy is built and how to check the access it grants.

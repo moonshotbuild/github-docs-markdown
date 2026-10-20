@@ -20,7 +20,7 @@ breadcrumbs:
 Find out about Copilot cloud agent policies available for GitHub Copilot Enterprise and GitHub Copilot Business, and about disabling the agent for specific repositories.
 
 > \[!NOTE]
-> For an introduction to Copilot cloud agent, see [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent).
+> For an introduction to Copilot cloud agent, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
 
 ## Overview
 
@@ -52,7 +52,7 @@ For information on disabling Copilot cloud agent in repositories owned by your p
 
 ## Managing access to Automations
 
-Automations let users run Copilot cloud agent automatically, on a schedule or in response to events. See [About Copilot automations](/en/copilot/concepts/agents/cloud-agent/about-automations).
+Automations let users run Copilot cloud agent automatically, on a schedule or in response to events. See [Copilot automations](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automations).
 
 For automations to be available in a repository, all of the following must be true:
 

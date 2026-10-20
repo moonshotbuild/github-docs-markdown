@@ -39,11 +39,11 @@ Discover interesting projects on GitHub and contribute to open source by collabo
 
 * [Saving repositories with stars](/en/get-started/exploring-projects-on-github/saving-repositories-with-stars)
 
-  You can star repositories and topics to keep track of projects you find interesting.
+  You can star repositories and topics to keep track of projects you find interesting and discover related content in your news feed.
 
 * [Following people](/en/get-started/exploring-projects-on-github/following-people)
 
-  You can follow people on GitHub to receive notifications about their activity.
+  You can follow people on GitHub to receive notifications about their activity and discover projects in their communities.
 
 * [Following organizations](/en/get-started/exploring-projects-on-github/following-organizations)
 

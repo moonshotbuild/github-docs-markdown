@@ -106,7 +106,7 @@ jobs:
 # separate terms of service, privacy policy, and support
 # documentation.
       - name: Sign in to Artifactory Docker registry
-        uses: docker/login-action@v3
+        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
         with:
           registry: ${{ env.JF_URL }}
           username: ${{ steps.setup-jfrog-cli.outputs.oidc-user }}

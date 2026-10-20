@@ -64,6 +64,7 @@ Depending on what is rendered in the Markdown, you may need to provide additiona
 curl -L \
   -X POST \
   https://api.github.com/markdown \
+  -H "Accept: text/html" \
   -d '{
   "text": "Hello **world**"
 }'
@@ -97,6 +98,7 @@ You must send Markdown as plain text (using a Content-Type header of text/plain 
 curl -L \
   -X POST \
   https://api.github.com/markdown/raw \
+  -H "Accept: text/html" \
   -d '{
   "text": "Hello **world**"
 }'
@@ -114,6 +116,7 @@ Same response schema as [Render a Markdown document](#render-a-markdown-document
 curl -L \
   -X POST \
   https://api.github.com/markdown/raw \
+  -H "Accept: text/html" \
   -d '{
   "text": "Hello **world**"
 }'

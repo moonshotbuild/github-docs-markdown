@@ -25,7 +25,7 @@ Customize GitHub Copilot Chat responses to match your personal preferences.
 
 > \[!NOTE] Personal custom instructions are only supported for GitHub Copilot Chat in GitHub.
 
-You can layer multiple types of custom instructions to shape GitHub Copilot Chat responses. For an overview, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization?tool=webui).
+You can layer multiple types of custom instructions to shape GitHub Copilot Chat responses. For an overview, see [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions).
 
 ## About personal custom instructions for Copilot Chat
 

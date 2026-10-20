@@ -29,7 +29,3 @@ breadcrumbs:
 * [Getting started with GitHub Enterprise Cloud](/en/get-started/onboarding/getting-started-with-github-enterprise-cloud)
 
   Get started with setting up and managing your enterprise account with GitHub Enterprise Cloud.
-
-* [Getting started with GitHub Enterprise Server](/en/getting-started-with-github-enterprise-server)
-
-  Get started with setting up and managing GitHub.com.

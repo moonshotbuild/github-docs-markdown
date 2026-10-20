@@ -55,4 +55,4 @@ You can host your own runners to run workflows in a highly customizable environm
 
 * [Removing self-hosted runners](/en/actions/how-tos/manage-runners/self-hosted-runners/remove-runners)
 
-  You can permanently remove a self-hosted runner from a repository.
+  You can permanently remove a self-hosted runner from a repository or organization.

@@ -86,7 +86,7 @@ Under normal conditions, you can expect API data to appear within 4–6 hours af
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/insights/api/route-stats/ACTOR_TYPE/ACTOR_ID
+  "https://api.github.com/orgs/ORG/insights/api/route-stats/ACTOR_TYPE/ACTOR_ID?min_timestamp=MIN_TIMESTAMP"
 ```
 
 **Response schema (Status: 200):**
@@ -158,7 +158,7 @@ Under normal conditions, you can expect API data to appear within 4–6 hours af
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/insights/api/subject-stats
+  "https://api.github.com/orgs/ORG/insights/api/subject-stats?min_timestamp=MIN_TIMESTAMP"
 ```
 
 **Response schema (Status: 200):**
@@ -212,7 +212,7 @@ Under normal conditions, you can expect API data to appear within 4–6 hours af
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/insights/api/summary-stats
+  "https://api.github.com/orgs/ORG/insights/api/summary-stats?min_timestamp=MIN_TIMESTAMP"
 ```
 
 **Response schema (Status: 200):**
@@ -263,7 +263,7 @@ Under normal conditions, you can expect API data to appear within 4–6 hours af
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/insights/api/summary-stats/users/USER_ID
+  "https://api.github.com/orgs/ORG/insights/api/summary-stats/users/USER_ID?min_timestamp=MIN_TIMESTAMP"
 ```
 
 **Response schema (Status: 200):**
@@ -317,7 +317,7 @@ Under normal conditions, you can expect API data to appear within 4–6 hours af
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/insights/api/summary-stats/ACTOR_TYPE/ACTOR_ID
+  "https://api.github.com/orgs/ORG/insights/api/summary-stats/ACTOR_TYPE/ACTOR_ID?min_timestamp=MIN_TIMESTAMP"
 ```
 
 **Response schema (Status: 200):**
@@ -367,7 +367,7 @@ Under normal conditions, you can expect API data to appear within 4–6 hours af
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/insights/api/time-stats
+  "https://api.github.com/orgs/ORG/insights/api/time-stats?min_timestamp=MIN_TIMESTAMP&timestamp_increment=TIMESTAMP_INCREMENT"
 ```
 
 **Response schema (Status: 200):**
@@ -423,7 +423,7 @@ Under normal conditions, you can expect API data to appear within 4–6 hours af
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/insights/api/time-stats/users/USER_ID
+  "https://api.github.com/orgs/ORG/insights/api/time-stats/users/USER_ID?min_timestamp=MIN_TIMESTAMP&timestamp_increment=TIMESTAMP_INCREMENT"
 ```
 
 **Response schema (Status: 200):**
@@ -480,7 +480,7 @@ Under normal conditions, you can expect API data to appear within 4–6 hours af
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/insights/api/time-stats/ACTOR_TYPE/ACTOR_ID
+  "https://api.github.com/orgs/ORG/insights/api/time-stats/ACTOR_TYPE/ACTOR_ID?min_timestamp=MIN_TIMESTAMP&timestamp_increment=TIMESTAMP_INCREMENT"
 ```
 
 **Response schema (Status: 200):**
@@ -549,7 +549,7 @@ Under normal conditions, you can expect API data to appear within 4–6 hours af
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/insights/api/user-stats/USER_ID
+  "https://api.github.com/orgs/ORG/insights/api/user-stats/USER_ID?min_timestamp=MIN_TIMESTAMP"
 ```
 
 **Response schema (Status: 200):**

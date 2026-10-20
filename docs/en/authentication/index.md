@@ -71,7 +71,7 @@ Authenticate securely to GitHub with passwords, tokens, SSH keys, and more—and
 
 * [Switching between accounts](/en/authentication/keeping-your-account-and-data-secure/switching-between-accounts)
 
-  Learn how to switch between multiple accounts.
+  Learn how to switch between multiple GitHub accounts and managed user accounts.
 
 * [Verifying new devices when signing in](/en/authentication/keeping-your-account-and-data-secure/verifying-new-devices-when-signing-in)
 
@@ -188,10 +188,6 @@ Authenticate securely to GitHub with passwords, tokens, SSH keys, and more—and
 * [Signing in with a passkey](/en/authentication/authenticating-with-a-passkey/signing-in-with-a-passkey)
 
   You can use a passkey to sign in safely and easily to GitHub in your browser, without requiring a password and two-factor authentication. You can also sign in using a passkey on a nearby device.
-
-* [Authenticating with single sign-on](/en/authenticating-with-single-sign-on)
-
-  You can authenticate to GitHub with single sign-on (SSO) and view your active sessions.
 
 * [About SSH](/en/authentication/connecting-to-github-with-ssh/about-ssh)
 

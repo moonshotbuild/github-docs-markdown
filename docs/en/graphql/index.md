@@ -269,10 +269,6 @@ To create integrations, retrieve data, and automate your workflows, use the GitH
 
   Learn how to traverse data sets using cursor based pagination with the GraphQL API.
 
-* [Managing enterprise accounts](/en/managing-enterprise-accounts)
-
-  You can manage your enterprise account and the organizations it owns with the GraphQL API.
-
 * [Using the GraphQL API for Discussions](/en/graphql/guides/using-the-graphql-api-for-discussions)
 
   Learn how to use the GitHub Discussions GraphQL API.

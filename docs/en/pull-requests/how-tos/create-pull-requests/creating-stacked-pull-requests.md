@@ -19,8 +19,6 @@ breadcrumbs:
 
 Create a stack of dependent pull requests using the gh stack extension in GitHub CLI or directly on GitHub.
 
-> \[!NOTE] This feature is in public preview and is subject to change.
-
 Create stacked pull requests with the `gh stack` extension in GitHub CLI or on the GitHub website.
 
 > \[!NOTE]

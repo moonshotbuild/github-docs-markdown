@@ -36,7 +36,10 @@ SBOMs include an inventory of a project's dependencies and associated informatio
 
 ## Exporting a software bill of materials for your repository using the REST API
 
-If you want to use the REST API to export an SBOM for your repository, see [REST API endpoints for software bill of materials (SBOM)](/en/rest/dependency-graph/sboms#export-a-software-bill-of-materials-sbom-for-a-repository).
+To export an SBOM for your repository using the REST API:
+
+1. Request generation of the SBOM. See [REST API endpoints for software bill of materials (SBOM)](/en/rest/dependency-graph/sboms#request-generation-of-a-software-bill-of-materials-sbom-for-a-repository).
+2. Poll the returned `sbom_url` while the response is `202`. When the response is `302`, follow the redirect to download the completed SBOM. See [REST API endpoints for software bill of materials (SBOM)](/en/rest/dependency-graph/sboms#fetch-a-software-bill-of-materials-sbom-for-a-repository).
 
 ## Generating a software bill of materials from GitHub Actions
 

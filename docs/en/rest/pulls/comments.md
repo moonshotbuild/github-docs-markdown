@@ -198,6 +198,8 @@ application/vnd.github-commitcomment.full+json: Returns raw, text, and HTML repr
 
 * **200** - OK
 
+* **304** - Not modified
+
 * **404** - Resource not found
 
 ### Code examples

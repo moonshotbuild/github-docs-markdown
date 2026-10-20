@@ -155,6 +155,7 @@ Array of objects:
     * `ecosystem`: required, string, read-only
     * `name`: required, string, read-only
   * `manifest_path`: string, read-only
+  * `version_requirement`: string or null, read-only
   * `scope`: string or null, enum: `development`, `runtime`, `null`, read-only
   * `relationship`: string or null, enum: `unknown`, `direct`, `transitive`, `inconclusive`, `null`, read-only
 * `security_advisory`: required, object, read-only:
@@ -558,6 +559,7 @@ Array of objects:
     * `ecosystem`: required, string, read-only
     * `name`: required, string, read-only
   * `manifest_path`: string, read-only
+  * `version_requirement`: string or null, read-only
   * `scope`: string or null, enum: `development`, `runtime`, `null`, read-only
   * `relationship`: string or null, enum: `unknown`, `direct`, `transitive`, `inconclusive`, `null`, read-only
 * `security_advisory`: required, object, read-only:
@@ -710,6 +712,7 @@ curl -L \
     * `ecosystem`: required, string, read-only
     * `name`: required, string, read-only
   * `manifest_path`: string, read-only
+  * `version_requirement`: string or null, read-only
   * `scope`: string or null, enum: `development`, `runtime`, `null`, read-only
   * `relationship`: string or null, enum: `unknown`, `direct`, `transitive`, `inconclusive`, `null`, read-only
 * `security_advisory`: required, object, read-only:

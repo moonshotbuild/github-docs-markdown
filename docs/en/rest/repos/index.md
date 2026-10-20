@@ -25,10 +25,6 @@ Use the REST API to create, manage and control the workflow of public and privat
 
   Use the REST API to add autolinks to external resources.
 
-* [REST API endpoints for repository push rule bypass requests](/en/bypass-requests)
-
-  Use the REST API to manage repository push rule bypass requests.
-
 * [REST API endpoints for repository contents](/en/rest/repos/contents)
 
   Use the REST API to create, modify, and delete Base64 encoded content in a repository.
@@ -45,10 +41,6 @@ Use the REST API to create, manage and control the workflow of public and privat
 
   Use the REST API to manage issue types for a repository.
 
-* [REST API endpoints for Git LFS](/en/lfs)
-
-  Use the REST API to enable or disable Git Large File Storage (LFS) for a repository.
-
 * [REST API endpoints for repositories](/en/rest/repos/repos)
 
   Use the REST API to manage repositories on GitHub.
@@ -60,10 +52,6 @@ Use the REST API to create, manage and control the workflow of public and privat
 * [REST API endpoints for rules](/en/rest/repos/rules)
 
   Use the REST API to manage rulesets for repositories. Rulesets control how people can interact with selected branches and tags in a repository.
-
-* [REST API endpoints for repository tags](/en/tags)
-
-  Use the REST API to manage tags for a repository.
 
 * [REST API endpoints for repository webhooks](/en/rest/repos/webhooks)
 

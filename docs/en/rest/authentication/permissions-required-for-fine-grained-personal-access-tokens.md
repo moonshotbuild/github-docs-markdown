@@ -955,6 +955,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/dependency-graph/sbom/fetch-report/{sbom_uuid}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/dependency-graph/sbom/generate-report` | read | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/forks` | read | PAT | ✓ |
+| `POST /repos/{owner}/{repo}/forks` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/git/blobs/{file_sha}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/git/commits/{commit_sha}` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/git/matching-refs/{ref}` | read | PAT | ✗ |
@@ -1206,6 +1207,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/comments/{comment_id}/replies` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers` | write | PAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers` | write | PAT | ✗ |
+| `POST /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers/rerequest` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/reviews` | write | PAT | ✗ |
 | `PUT /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}` | write | PAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}` | write | PAT | ✗ |
@@ -1253,6 +1255,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | Endpoint | Access | Tokens | Additional Permissions |
 |----------|--------|--------|------------------------|
 | `POST /orgs/{org}/repos` | write | PAT | ✓ |
+| `POST /repos/{owner}/{repo}/forks` | write | PAT | ✓ |
 | `POST /repos/{template_owner}/{template_repo}/generate` | write | PAT | ✓ |
 | `POST /user/repos` | write | PAT | ✓ |
 

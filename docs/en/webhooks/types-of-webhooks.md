@@ -13,7 +13,7 @@ breadcrumbs:
 
 # Types of webhooks
 
-You can create webhooks to subscribe to events that occur in a specific repository, organization,    or GitHub App.
+You can create webhooks to subscribe to events that occur in a specific repository, organization,  GitHub Marketplace account,  GitHub Sponsors account,  or GitHub App.
 
 ## About webhook types
 

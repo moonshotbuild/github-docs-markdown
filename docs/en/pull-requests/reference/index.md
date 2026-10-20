@@ -72,7 +72,3 @@ Find detailed reference information on managing pull requests, including reviews
 * [Managing and standardizing pull requests](/en/pull-requests/reference/managing-and-standardizing-pull-requests)
 
   Manage and standardize pull requests using templates, code owners, protected branches, rulesets, and automated tools for consistent and secure repository contributions.
-
-* [Working with pre-receive hooks](/en/working-with-pre-receive-hooks)
-
-  Enforce repository policies and prevent issues like secrets or invalid commits using pre-receive hooks on GitHub Enterprise Server.

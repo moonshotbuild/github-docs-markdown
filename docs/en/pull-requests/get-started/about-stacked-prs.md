@@ -17,8 +17,6 @@ breadcrumbs:
 
 Break large code changes into a chain of smaller, dependent pull requests you can review and merge independently.
 
-> \[!NOTE] This feature is in public preview and is subject to change.
-
 ## About stacked pull requests
 
 Stacked pull requests are two or more pull requests in the same repository, where:

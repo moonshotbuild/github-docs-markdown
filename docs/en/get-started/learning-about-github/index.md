@@ -35,7 +35,7 @@ Learn how you can use GitHub products to improve your software management proces
 
 * [About GitHub Advanced Security](/en/get-started/learning-about-github/about-github-advanced-security)
 
-  GitHub makes extra security features available to customers who purchase GitHub Code Security or GitHub Secret Protection.
+  GitHub makes extra security features available to customers who purchase GitHub Code Security or GitHub Secret Protection. Some features are enabled for public repositories by default.
 
 * [FAQ about changes to GitHub's plans](/en/get-started/learning-about-github/faq-about-changes-to-githubs-plans)
 

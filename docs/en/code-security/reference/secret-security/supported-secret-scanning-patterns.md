@@ -43,13 +43,13 @@ If you use the REST API for secret scanning, you can use the `Secret type` to re
 
 | Capability                     |                                                                                                                                                                                                           Generic patterns                                                                                                                                                                                                          |                                                                                                                                                                                                             AI-detected                                                                                                                                                                                                             |                                                                                                                                                           Provider patterns                                                                                                                                                           |
 | ------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| User alerts                    |                                                                                                             |                                                                                                             |               |
-| Partner notifications          |  |  |  (if partner) |
-| Push protection (default)      |  |  |     (most)    |
-| Push protection (configurable) |                                                                                                             |  |                                                                                                                                                                  Some                                                                                                                                                                 |
-| Validity checks                |  |  |                                                                                                                                                                  Some                                                                                                                                                                 |
-| Extended metadata              |  |  |                                                                                                                                                                  Some                                                                                                                                                                 |
-| Base64 format support          |  |  |                                                                                                                                                                  Some                                                                                                                                                                 |
+| User alerts                    |                                                       ✓                                                      |                                                       ✓                                                      |        ✓       |
+| Partner notifications          | ✗ | ✗ | ✓ (if partner) |
+| Push protection (default)      | ✗ | ✗ |    ✓ (most)    |
+| Push protection (configurable) |                                                       ✓                                                      | ✗ |                                                                                                                                                                  Some                                                                                                                                                                 |
+| Validity checks                | ✗ | ✗ |                                                                                                                                                                  Some                                                                                                                                                                 |
+| Extended metadata              | ✗ | ✗ |                                                                                                                                                                  Some                                                                                                                                                                 |
+| Base64 format support          | ✗ | ✗ |                                                                                                                                                                  Some                                                                                                                                                                 |
 
 > \[!NOTE]
 > Validity and extended metadata checks for partner patterns are only available to users with GitHub Team or GitHub Enterprise who enable the feature as part of GitHub Secret Protection.
@@ -114,9 +114,9 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Amazon AWS | Amazon AWS Session Token | aws_secret_access_key, aws_session_token, aws_temporary_access_key_id | ✗ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Anthropic | Anthropic Admin API Key | anthropic_admin_api_key | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Anthropic | Anthropic API Key | anthropic_api_key, [Token versions](#token-versions) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Anthropic | Anthropic Service Account API Key | anthropic_service_api_key | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
+| Anthropic | Anthropic Service Account API Key | anthropic_service_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Anthropic | Anthropic Session ID | anthropic_session_id | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| Anthropic | Anthropic User API Key | anthropic_user_api_key | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
+| Anthropic | Anthropic User API Key | anthropic_user_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | APIclub | APIclub API Key | apiclub_api_key | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Apify | Apify Actor Run API Token | apify_actor_run_api_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Apify | Apify Actor Run Proxy Password | apify_actor_run_proxy_password | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
@@ -241,7 +241,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Cloudflare | Cloudflare Account API Token | cloudflare_account_api_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Cloudflare | Cloudflare Global User API Key | cloudflare_global_user_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Cloudflare | Cloudflare User API Token | cloudflare_user_api_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| Cloudsmith | Cloudsmith API Key | cloudsmith_api_key | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
+| Cloudsmith | Cloudsmith API Key | cloudsmith_api_key | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ |
 | Cockroach Labs | CockroachDB Cloud API Key | ccdb_api_key | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Cohere | Cohere API Key | cohere_api_key | ✗ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Contentful | Contentful Personal Access Token | contentful_personal_access_token | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
@@ -519,7 +519,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | RubyGems | RubyGems API Key | rubygems_api_key | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | RunPod | RunPod API Key | runpod_api_key | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Salesforce | Salesforce Access Token | salesforce_access_token | ✗ | ✓ | ✓ | ✓ | ✗ | ✗ |
-| Salesforce | Salesforce Marketing Cloud API OAuth2 Token | salesforce_marketing_cloud_api_oauth2_token | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
+| Salesforce | Salesforce Marketing Cloud API OAuth2 Token | salesforce_marketing_cloud_api_oauth2_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Salesforce | Salesforce OAuth2 Consumer Key | salesforce_oauth2_consumer_key, salesforce_oauth2_consumer_secret | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Salesforce | Salesforce Refresh Token | salesforce_refresh_token | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Samsara | Samsara API Token | samsara_api_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
@@ -558,7 +558,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Sourcegraph | Sourcegraph Access Token with Instance Identifier | sourcegraph_instance_identifier_access_token | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Sourcegraph | Sourcegraph License Key Token | sourcegraph_license_key_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Sourcegraph | Sourcegraph Product Subscription Token | sourcegraph_product_subscription_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| SpaceX | Starlink Public API V2 Client Secret | starlink_public_api_v2_secret | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
+| SpaceX | Starlink Public API V2 Client Secret | starlink_public_api_v2_secret | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ |
 | Square | Square Access Token | square_access_token, [Token versions](#token-versions) | ✗ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Square | Square Production Application Secret | square_production_application_secret | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Square | Square Sandbox Application Secret | square_sandbox_application_secret | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
@@ -576,6 +576,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Supabase | Supabase Secret Key | supabase_secret_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Tableau | Tableau Personal Access Token | tableau_personal_access_token | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Tailscale | Tailscale API Key | tailscale_api_key | ✓ | ✓ | ✗ | ✓ | ✓ | ✗ |
+| Tavily | Tavily API Key | tavily_api_key | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ |
 | Telegram | Telegram Bot Token | telegram_bot_token | ✗ | ✓ | ✗ | ✓ | ✓ | ✗ |
 | Telnyx | Telnyx API V2 Key | telnyx_api_v2_key | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Temporal | Temporal Cloud API Key | temporal_cloud_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
@@ -603,6 +604,8 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | Wakatime | WakaTime App Secret | wakatime_app_secret | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Wakatime | WakaTime OAuth Access Token | wakatime_oauth_access_token | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
 | Wakatime | WakaTime OAuth Refresh Token | wakatime_oauth_refresh_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
+| Wave Mobile Money Inc. | Wave Production API Key | wave_api_prod_key | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
+| Wave Mobile Money Inc. | Wave Test API Key | wave_api_test_key | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
 | Weatherstack | Weatherstack API Key | weatherstack_api_key | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Weights & Biases | Weights & Biases API Key | wandb_api_key | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Workato | Workato Developer API Token | workato_developer_api_token, [Token versions](#token-versions) | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |

@@ -140,6 +140,11 @@ To get this ID, you can use GET /repos/{owner}/{repo}/rulesets/rule-suites
 for repositories and GET /orgs/{org}/rulesets/rule-suites
 for organizations.
 
+- **`include_metadata`** (boolean)
+  When set to true, the response will include additional metadata for pull request and required status check rule evaluation.
+Results are capped at 50 entries.
+  Default: `false`
+
 ### HTTP response status codes
 
 - **200** - OK
@@ -181,4 +186,36 @@ curl -L \
   * `enforcement`: string, enum: `active`, `evaluate`, `deleted ruleset`
   * `result`: string, enum: `pass`, `fail`
   * `rule_type`: string
+  * `metadata`: one of:
+    * **Pull request rule suite metadata**
+      * `pull_request`: object:
+        * `id`: integer
+        * `number`: integer
+        * `user`: object:
+          * `id`: integer
+          * `login`: string
+          * `type`: string
+        * `reviews`: array of objects:
+          * `id`: integer
+          * `user`: object
+          * `state`: string
+        * `proof_of_presence`: object or null:
+          * `state`: string
+          * `code`: string
+          * `base_sha`: string
+          * `head_sha`: string
+          * `required_level`: string
+          * `verified_level`: string
+          * `verified_at`: string
+          * `verifier`: object or null
+    * **Required status checks rule suite metadata**
+      * `checks`: array of objects:
+        * `id`: integer
+        * `context`: string
+        * `state`: string
+        * `type`: string
+        * `app`: object or null:
+          * `id`: integer
+          * `slug`: string
+          * `name`: string
   * `details`: string or null

@@ -30,10 +30,6 @@ You can retrieve and update code scanning alerts from a repository. You can use 
 GET /orgs/{org}/code-scanning/ai-scan
 ```
 
-Note
-
-This endpoint is in public preview and is subject to change.
-
 Gets the AI Scan setting stored on an organization.
 The response reports the value stored on the organization. Organization respects enterprise policy.
 The authenticated user must be an owner or security manager for the organization to use this endpoint.
@@ -80,10 +76,6 @@ curl -L \
 ```
 PATCH /orgs/{org}/code-scanning/ai-scan
 ```
-
-Note
-
-This endpoint is in public preview and is subject to change.
 
 Updates the AI Scan setting stored on an organization.
 The organization respects the enterprise policy, so enabling is rejected when the enterprise disallows AI Scan.
@@ -350,10 +342,6 @@ Array of objects:
 GET /repos/{owner}/{repo}/code-scanning/ai-scan
 ```
 
-Note
-
-This endpoint is in public preview and is subject to change.
-
 Gets whether AI Scan is enabled for a repository.
 OAuth app tokens and personal access tokens (classic) need the security\_events scope to use this endpoint with private or public repositories, or the public\_repo scope to use this endpoint with only public repositories.
 
@@ -401,10 +389,6 @@ Same response schema as [Get the AI Scan setting for an organization](#get-the-a
 ```
 PATCH /repos/{owner}/{repo}/code-scanning/ai-scan
 ```
-
-Note
-
-This endpoint is in public preview and is subject to change.
 
 Updates whether AI Scan is enabled for a repository.
 OAuth app tokens and personal access tokens (classic) need the repo scope to use this endpoint with private or public repositories, or the public\_repo scope to use this endpoint with only public repositories.
@@ -1585,7 +1569,8 @@ curl -L \
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/repos/OWNER/REPO/code-scanning/analyses/ANALYSIS_ID
+  https://api.github.com/repos/OWNER/REPO/code-scanning/analyses/ANALYSIS_ID \
+  -H "Accept: application/sarif+json"
 ```
 
 **Response schema (Status: 200):**

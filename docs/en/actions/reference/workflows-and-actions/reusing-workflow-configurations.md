@@ -17,7 +17,7 @@ breadcrumbs:
 
 # Reusing workflow configurations
 
-Find information about avoiding duplication when creating a workflow by reusing existing workflows.
+Find information about avoiding duplication when creating a workflow by reusing existing workflows and using YAML anchors and aliases.
 
 ## Reusable workflows
 

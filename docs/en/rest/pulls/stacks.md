@@ -163,7 +163,58 @@ curl -L \
   * `ref`: required, string
 * `open`: required, boolean
 * `created_at`: required, string, format: date-time
-* `pull_requests`: required, array of object
+* `pull_requests`: required, array of `Pull Request Stack Pull Request`:
+  * all of:
+    * **Pull Request Minimal**
+      * `id`: required, integer, format: int64
+      * `number`: required, integer
+      * `url`: required, string
+      * `head`: required, object:
+        * `ref`: required, string
+        * `sha`: required, string
+        * `repo`: required, object:
+          * `id`: required, integer, format: int64
+          * `url`: required, string
+          * `name`: required, string
+      * `base`: required, object:
+        * `ref`: required, string
+        * `sha`: required, string
+        * `repo`: required, object:
+          * `id`: required, integer, format: int64
+          * `url`: required, string
+          * `name`: required, string
+    * **object**
+      * `node_id`: required, string
+      * `title`: required, string
+      * `state`: required, string, enum: `open`, `closed`
+      * `merged_at`: required, string or null, format: date-time
+      * `draft`: required, boolean
+      * `html_url`: required, string, format: uri
+      * `user`: required, any of:
+        * **null**
+        * **Simple User**
+          * `name`: string or null
+          * `email`: string or null
+          * `login`: required, string
+          * `id`: required, integer, format: int64
+          * `node_id`: required, string
+          * `avatar_url`: required, string, format: uri
+          * `gravatar_id`: required, string or null
+          * `url`: required, string, format: uri
+          * `html_url`: required, string, format: uri
+          * `followers_url`: required, string, format: uri
+          * `following_url`: required, string
+          * `gists_url`: required, string
+          * `starred_url`: required, string
+          * `subscriptions_url`: required, string, format: uri
+          * `organizations_url`: required, string, format: uri
+          * `repos_url`: required, string, format: uri
+          * `events_url`: required, string
+          * `received_events_url`: required, string, format: uri
+          * `type`: required, string
+          * `site_admin`: required, boolean
+          * `starred_at`: string
+          * `user_view_type`: string
 
 ## Get a pull request stack
 

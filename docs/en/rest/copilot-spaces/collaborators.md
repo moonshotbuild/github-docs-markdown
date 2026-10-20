@@ -69,7 +69,26 @@ curl -L \
 
 **Response schema (Status: 200):**
 
-* `collaborators`: required, array of object
+* `collaborators`: required, array of `Copilot Space Collaborator`:
+  * any of:
+    * **object**
+    * **object**
+      * `actor_type`: required, string, enum: `Team`
+      * `role`: required, string, enum: `reader`, `writer`, `admin`
+      * `id`: required, integer
+      * `node_id`: required, string
+      * `name`: required, string
+      * `slug`: required, string
+      * `type`: required, string, enum: `Team`
+      * `description`: string or null
+      * `privacy`: string
+      * `notification_setting`: string
+      * `url`: string, format: uri
+      * `html_url`: string, format: uri
+      * `members_url`: string
+      * `repositories_url`: string, format: uri
+      * `organization_id`: integer
+      * `parent`: null
 
 ## Add a collaborator to an organization Copilot Space
 

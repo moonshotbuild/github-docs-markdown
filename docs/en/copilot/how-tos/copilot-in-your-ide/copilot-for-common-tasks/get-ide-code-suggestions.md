@@ -46,9 +46,11 @@ Use GitHub Copilot to get code suggestions in your editor.
 
 This guide demonstrates how to get coding suggestions from GitHub Copilot in a JetBrains IDE. To see instructions for other popular coding environments, use the tool switcher at the top of the page.
 
+GitHub Copilot provides suggestions for numerous languages and a wide variety of frameworks, but works especially well for Python, JavaScript, TypeScript, Ruby, Go, C# and C++. GitHub Copilot can also assist in query generation for databases, generating suggestions for APIs and frameworks, and can help with infrastructure as code development.
+
 The examples in this guide use Java, however other languages will work similarly.
 
-For more information, see [GitHub Copilot code suggestions in your IDE](/en/copilot/concepts/completions/code-suggestions?tool=jetbrains).
+For more information, see [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides#code-suggestions).
 
 ## Prerequisites
 
@@ -176,7 +178,7 @@ This guide demonstrates how to get coding suggestions from GitHub Copilot in Vis
 
 The examples in this guide use C#, however other languages will work similarly.
 
-For more information, see [GitHub Copilot code suggestions in your IDE](/en/copilot/concepts/completions/code-suggestions?tool=visualstudio).
+For more information, see [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides#code-suggestions).
 
 ## Prerequisites
 
@@ -293,7 +295,7 @@ This guide demonstrates how to get coding suggestions from GitHub Copilot in Vis
 
 The examples in this guide use JavaScript, however other languages will work similarly.
 
-For more information, see [GitHub Copilot code suggestions in your IDE](/en/copilot/concepts/completions/code-suggestions?tool=vscode).
+For more information, see [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides#code-suggestions).
 
 ## Prerequisites
 
@@ -641,11 +643,11 @@ An arrow in the gutter indicates an available edit suggestion. Hover over the ar
 
 ## Next steps
 
-* **Learn how to write effective prompts** - See [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering).
+* **Learn how to write effective prompts** - See [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering).
 * **Configure Copilot in your editor** - You can enable or disable GitHub Copilot from within your editor, and create your own preferred keyboard shortcuts for Copilot. See [Configuring GitHub Copilot in your environment](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/configure-in-ide).
 * **Get started with GitHub Copilot Chat** - Learn how to ask Copilot for information and assistance, using GitHub Copilot Chat. See [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide).
 * **Troubleshoot issues** - Learn more about how to troubleshoot common issues with GitHub Copilot. See [Troubleshoot GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot).
 
 ## Further reading
 
-* [GitHub Copilot code suggestions in your IDE](/en/copilot/concepts/completions/code-suggestions)
+* [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides#code-suggestions)

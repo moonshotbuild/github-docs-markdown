@@ -19,7 +19,7 @@ breadcrumbs:
 
 # Removing self-hosted runners
 
-You can permanently remove a self-hosted runner from a repository.
+You can permanently remove a self-hosted runner from a repository or organization.
 
 ## Removing a runner from a repository
 

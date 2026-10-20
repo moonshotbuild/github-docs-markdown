@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Viewing webhook deliveries
 
-You can view details about webhook deliveries from the past 7 days.
+You can view details about webhook deliveries from the past 3 days.
 
 ## About webhook deliveries
 

@@ -17,10 +17,6 @@ Use the REST API to interact with Dependabot alerts and secrets for an organizat
 
 ## Links
 
-* [REST API endpoints for Dependabot alert dismissal requests](/en/alert-dismissal-requests)
-
-  Use the REST API to manage Dependabot alert dismissal requests for a repository.
-
 * [REST API endpoints for Dependabot alerts](/en/rest/dependabot/alerts)
 
   Use the REST API to interact with Dependabot alerts for a repository.

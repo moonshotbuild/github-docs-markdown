@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Managing your personal account
 
-You can manage your personal account on GitHub. For example, you can change your username, move your work to an organization, or delete an account.
+You can manage your personal account on GitHub. For example, you can change your username, manage multiple accounts, move your work to an organization, or delete an account.
 
 ## Links
 
@@ -39,14 +39,10 @@ You can manage your personal account on GitHub. For example, you can change your
 
   You can transfer repositories and projects from your personal account to a new or existing organization through your account settings.
 
-* [Converting a user into an organization](/en/converting-a-user-into-an-organization)
-
-  You can convert your personal account into an organization. This allows more granular permissions for repositories that belong to the organization.
-
 * [Unlinking your email address from a locked account](/en/account-and-profile/how-tos/account-management/unlinking-your-email-address-from-a-locked-account)
 
   If you have lost your two-factor authentication (2FA) credentials and are unable to recover access, you can remove the connection between your email address and a 2FA locked account.
 
 * [Deleting your personal account](/en/account-and-profile/how-tos/account-management/deleting-your-personal-account)
 
-  You can delete your personal account on GitHub.com at any time.
+  You can delete your personal account on GitHub.com from your account settings.

@@ -39,10 +39,6 @@ You can manage settings for your personal account, including your theme, usernam
 
   If you use your GitHub account for both personal and work purposes, there are steps to follow when you leave your company or organization.
 
-* [Integrating Jira with your personal projects](/en/integrating-jira-with-your-personal-projects)
-
-  You can integrate Jira Cloud with your personal account to scan commits and pull requests, creating relevant metadata and hyperlinks in any mentioned Jira issues.
-
 * [Set your hiring status](/en/account-and-profile/how-tos/account-settings/set-your-hiring-status)
 
   When you select Available for hire, you indicate that you're open to job opportunities.

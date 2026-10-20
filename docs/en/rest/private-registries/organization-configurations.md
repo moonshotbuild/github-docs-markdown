@@ -76,7 +76,7 @@ curl -L \
 * `configurations`: required, array of `Organization private registry`:
   * `name`: required, string
   * `registry_type`: required, string, enum: `maven_repository`, `nuget_feed`, `goproxy_server`, `npm_registry`, `rubygems_server`, `cargo_registry`, `composer_repository`, `docker_registry`, `git_source`, `helm_registry`, `hex_organization`, `hex_repository`, `pub_repository`, `python_index`, `terraform_registry`
-  * `auth_type`: string, enum: `token`, `username_password`, `oidc_azure`, `oidc_aws`, `oidc_jfrog`, `oidc_cloudsmith`, `oidc_gcp`
+  * `auth_type`: string, enum: `token`, `username_password`, `oidc_azure`, `oidc_aws`, `oidc_jfrog`, `oidc_cloudsmith`, `oidc_gcp`, `anonymous`
   * `url`: string, format: uri
   * `username`: string or null
   * `replaces_base`: boolean, default: `false`
@@ -107,6 +107,7 @@ POST /orgs/{org}/private-registries
 
 Creates a private registry configuration with an encrypted value for an organization. Encrypt your secret using LibSodium. For more information, see "Encrypting secrets for the REST API."
 For OIDC-based registries (oidc_azure, oidc_aws, oidc_jfrog, oidc_cloudsmith, or oidc_gcp), the encrypted_value and key_id fields should be omitted.
+For anonymous registries (anonymous), the username, encrypted_value, and key_id fields must be omitted.
 OAuth app tokens and personal access tokens (classic) need the admin:org scope to use this endpoint.
 
 ### Parameters
@@ -151,8 +152,8 @@ OAuth app tokens and personal access tokens (classic) need the admin:org scope t
   An array of repository IDs that can access the organization private registry. You can only provide a list of repository IDs when visibility is set to selected. You can manage the list of selected repositories using the Update a private registry for an organization endpoint. This field should be omitted if visibility is set to all or private.
 
 - **`auth_type`** (string)
-  The authentication type for the private registry. Defaults to token if not specified. Use oidc_azure, oidc_aws, oidc_jfrog, oidc_cloudsmith, or oidc_gcp for OIDC authentication.
-  Can be one of: `token`, `username_password`, `oidc_azure`, `oidc_aws`, `oidc_jfrog`, `oidc_cloudsmith`, `oidc_gcp`
+  The authentication type for the private registry. Defaults to token if not specified. Use oidc_azure, oidc_aws, oidc_jfrog, oidc_cloudsmith, or oidc_gcp for OIDC authentication. Use anonymous for registries that do not require authentication; username, encrypted_value, and key_id must be omitted.
+  Can be one of: `token`, `username_password`, `oidc_azure`, `oidc_aws`, `oidc_jfrog`, `oidc_cloudsmith`, `oidc_gcp`, `anonymous`
 
 - **`tenant_id`** (string)
   The tenant ID of the Azure AD application. Required when auth_type is oidc_azure.
@@ -232,7 +233,7 @@ curl -L \
 
 * `name`: required, string
 * `registry_type`: required, string, enum: `maven_repository`, `nuget_feed`, `goproxy_server`, `npm_registry`, `rubygems_server`, `cargo_registry`, `composer_repository`, `docker_registry`, `git_source`, `helm_registry`, `hex_organization`, `hex_repository`, `pub_repository`, `python_index`, `terraform_registry`
-* `auth_type`: string, enum: `token`, `username_password`, `oidc_azure`, `oidc_aws`, `oidc_jfrog`, `oidc_cloudsmith`, `oidc_gcp`
+* `auth_type`: string, enum: `token`, `username_password`, `oidc_azure`, `oidc_aws`, `oidc_jfrog`, `oidc_cloudsmith`, `oidc_gcp`, `anonymous`
 * `url`: string, format: uri
 * `username`: string
 * `replaces_base`: boolean, default: `false`
@@ -282,7 +283,7 @@ curl -L \
 
 * `name`: required, string
 * `registry_type`: required, string, enum: `maven_repository`, `nuget_feed`, `goproxy_server`, `npm_registry`, `rubygems_server`, `cargo_registry`, `composer_repository`, `docker_registry`, `git_source`, `helm_registry`, `hex_organization`, `hex_repository`, `pub_repository`, `python_index`, `terraform_registry`
-* `auth_type`: string, enum: `token`, `username_password`, `oidc_azure`, `oidc_aws`, `oidc_jfrog`, `oidc_cloudsmith`, `oidc_gcp`
+* `auth_type`: string, enum: `token`, `username_password`, `oidc_azure`, `oidc_aws`, `oidc_jfrog`, `oidc_cloudsmith`, `oidc_gcp`, `anonymous`
 * `url`: string, format: uri
 * `username`: string
 * `replaces_base`: boolean, default: `false`
@@ -396,7 +397,7 @@ curl -L \
 
 * `name`: required, string
 * `registry_type`: required, string, enum: `maven_repository`, `nuget_feed`, `goproxy_server`, `npm_registry`, `rubygems_server`, `cargo_registry`, `composer_repository`, `docker_registry`, `git_source`, `helm_registry`, `hex_organization`, `hex_repository`, `pub_repository`, `python_index`, `terraform_registry`
-* `auth_type`: string, enum: `token`, `username_password`, `oidc_azure`, `oidc_aws`, `oidc_jfrog`, `oidc_cloudsmith`, `oidc_gcp`
+* `auth_type`: string, enum: `token`, `username_password`, `oidc_azure`, `oidc_aws`, `oidc_jfrog`, `oidc_cloudsmith`, `oidc_gcp`, `anonymous`
 * `url`: string, format: uri
 * `username`: string or null
 * `replaces_base`: boolean, default: `false`
@@ -427,6 +428,7 @@ PATCH /orgs/{org}/private-registries/{secret_name}
 
 Updates a private registry configuration with an encrypted value for an organization. Encrypt your secret using LibSodium. For more information, see "Encrypting secrets for the REST API."
 For OIDC-based registries (oidc_azure, oidc_aws, oidc_jfrog, oidc_cloudsmith, or oidc_gcp), the encrypted_value and key_id fields should be omitted.
+For anonymous registries (anonymous), the username, encrypted_value, and key_id fields must be omitted, and auth_type cannot be changed to or from anonymous.
 OAuth app tokens and personal access tokens (classic) need the admin:org scope to use this endpoint.
 
 ### Parameters
@@ -475,7 +477,7 @@ OAuth app tokens and personal access tokens (classic) need the admin:org scope t
 
 - **`auth_type`** (string)
   The authentication type for the private registry. This field cannot be changed after creation. If provided, it must match the existing auth_type of the configuration. To change the authentication type, delete and recreate the configuration.
-  Can be one of: `token`, `username_password`, `oidc_azure`, `oidc_aws`, `oidc_jfrog`, `oidc_cloudsmith`, `oidc_gcp`
+  Can be one of: `token`, `username_password`, `oidc_azure`, `oidc_aws`, `oidc_jfrog`, `oidc_cloudsmith`, `oidc_gcp`, `anonymous`
 
 - **`tenant_id`** (string)
   The tenant ID of the Azure AD application. Required when auth_type is oidc_azure.

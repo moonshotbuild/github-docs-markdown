@@ -26,7 +26,7 @@ Use the REST API to manage issue types for a repository.
 GET /repos/{owner}/{repo}/issue-types
 ```
 
-Lists issue types available for a repository (inherited from its organization owner, with any per-repository overrides applied).
+Lists enabled issue types inherited from the repository owner.
 OAuth app tokens and personal access tokens (classic) need the repo scope to use this endpoint.
 Fine-grained access tokens require the "Metadata" repository permission (read).
 

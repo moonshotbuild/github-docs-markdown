@@ -21,7 +21,7 @@ breadcrumbs:
 
 # Upload fails because GitHub Code Security is disabled
 
-You can only upload SARIF results to repositories where GitHub Code Security is enabled.
+You can only upload SARIF results to private or internal repositories where GitHub Code Security is enabled.
 
 ## About this error
 

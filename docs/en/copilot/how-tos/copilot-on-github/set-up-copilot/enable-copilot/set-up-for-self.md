@@ -31,7 +31,7 @@ For higher limits and access to more models, subscribe to **Copilot Pro**, **Cop
 
 ## Configure settings (optional)
 
-If you have your own Copilot plan, manage your policies and feature access from your [Copilot settings](https://github.com/settings/copilot?ref_product=copilot\&ref_type=engagement\&ref_style=text). You can also enable Copilot Memory so Copilot remembers useful context about your repositories.
+If you have your own Copilot plan, manage your policies and feature access from your [Copilot settings](https://github.com/settings/copilot?ref_product=copilot\&ref_type=engagement\&ref_style=text). You can also enable Copilot Memory so Copilot remembers useful context about your repositories. See [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory).
 
 ## Set up personal custom instructions (optional)
 

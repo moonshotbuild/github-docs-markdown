@@ -21,7 +21,7 @@ breadcrumbs:
 
 GitHub Copilot reviews your pull requests and suggests ready-to-apply changes, so you get fast, actionable feedback on every commit.
 
-Copilot code review is also available for organization members without a Copilot license, when enabled by an enterprise administrator or organization owner. See [Copilot code review for organization members without a Copilot license](/en/copilot/concepts/agents/code-review#copilot-code-review-without-a-copilot-license).
+Copilot code review is also available for organization members without a Copilot license, when enabled by an enterprise administrator or organization owner. See [Copilot code review for organization members without a Copilot license](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#copilot-code-review-without-a-copilot-license).
 
 ## Request a review from Copilot
 
@@ -128,5 +128,5 @@ In repository settings, **Allow Copilot to use MCP tools when reviewing pull req
 
 ## Further reading
 
-* [About GitHub Copilot code review](/en/copilot/concepts/agents/code-review)
+* [GitHub Copilot code review](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review)
 * [Review output from Copilot](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/review-copilot-output)

@@ -86,7 +86,18 @@ curl -L \
     * **Repository Actions policy conditions**
     * **Organization Actions policy conditions**
     * **Enterprise Actions policy conditions**
-  * `rules`: array of object
+  * `rules`: array of `Actions Rule`:
+    * one of:
+      * **restrict_actions_actors**
+        * `type`: required, string, enum: `restrict_actions_actors`
+        * `parameters`: object:
+          * `allowed_actors`: required, array of `Actor`:
+            * `id`: required, integer
+            * `type`: required, string, enum: `User`, `Bot`, `Team`, `BusinessTeam`, `EnterpriseTeam`, `IntegrationInstallation`, `App`, `RepositoryRole`
+      * **restrict_action_events**
+        * `type`: required, string, enum: `restrict_action_events`
+        * `parameters`: object:
+          * `allowed_events`: required, array of string, enum: `branch_protection_rule`, `check_run`, `check_suite`, `create`, `delete`, `deployment`, `deployment_status`, `discussion`, `discussion_comment`, `fork`, `gollum`, `image_version`, `issue_comment`, `issues`, `label`, `merge_group`, `milestone`, `page_build`, `project`, `project_card`, `project_column`, `public`, `pull_request`, `pull_request_review`, `pull_request_review_comment`, `pull_request_target`, `push`, `registry_package`, `release`, `repository_dispatch`, `schedule`, `status`, `watch`, `workflow_call`, `workflow_dispatch`, `workflow_run`
   * `node_id`: string
   * `_links`: object:
     * `self`: object:
@@ -263,7 +274,18 @@ curl -L \
   * **Repository Actions policy conditions**
   * **Organization Actions policy conditions**
   * **Enterprise Actions policy conditions**
-* `rules`: array of object
+* `rules`: array of `Actions Rule`:
+  * one of:
+    * **restrict_actions_actors**
+      * `type`: required, string, enum: `restrict_actions_actors`
+      * `parameters`: object:
+        * `allowed_actors`: required, array of `Actor`:
+          * `id`: required, integer
+          * `type`: required, string, enum: `User`, `Bot`, `Team`, `BusinessTeam`, `EnterpriseTeam`, `IntegrationInstallation`, `App`, `RepositoryRole`
+    * **restrict_action_events**
+      * `type`: required, string, enum: `restrict_action_events`
+      * `parameters`: object:
+        * `allowed_events`: required, array of string, enum: `branch_protection_rule`, `check_run`, `check_suite`, `create`, `delete`, `deployment`, `deployment_status`, `discussion`, `discussion_comment`, `fork`, `gollum`, `image_version`, `issue_comment`, `issues`, `label`, `merge_group`, `milestone`, `page_build`, `project`, `project_card`, `project_column`, `public`, `pull_request`, `pull_request_review`, `pull_request_review_comment`, `pull_request_target`, `push`, `registry_package`, `release`, `repository_dispatch`, `schedule`, `status`, `watch`, `workflow_call`, `workflow_dispatch`, `workflow_run`
 * `node_id`: string
 * `_links`: object:
   * `self`: object:

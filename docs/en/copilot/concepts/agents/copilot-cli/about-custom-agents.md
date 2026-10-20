@@ -67,7 +67,8 @@ Focus on the following instructions:
 
 You can define agent profiles at different levels:
 
-* **Repository level**: Create `.github/agents/CUSTOM-AGENT-NAME.md` in your repository for project-specific agents.
+* **User level**: Create `$HOME/.copilot/agents/CUSTOM-AGENT-NAME.md` to define a custom agent that is available to you across repositories.
+* **Repository level**: Create `.github/agents/CUSTOM-AGENT-NAME.md` in your repository to define a project-specific agent.
 * **Organization level**: Create `/agents/CUSTOM-AGENT-NAME.md` in the organization's `.github` or `.github-private` repository for broader availability within the organization.
 * **Enterprise level**: Create `/agents/CUSTOM-AGENT-NAME.md` in the `.github-private` repository of an organization that an enterprise owner has designated in enterprise settings for availability across all repositories in the enterprise.
 
@@ -87,9 +88,9 @@ Copilot will automatically use an appropriate built-in agent based on your promp
 
 * **code-review** — Reviews code changes with an extremely high signal-to-noise ratio. This agent analyzes staged/unstaged changes and branch diffs, surfacing only issues that genuinely matter: bugs, security vulnerabilities, race conditions, memory leaks, and logic errors. It never comments on style or formatting. It will not make any changes to files.
 
-* **research** — This agent operates as a staff-level software engineer and research specialist. It provides exhaustive, meticulously researched answers about codebases, APIs, libraries, and software architecture. It uses GitHub search/exploration tools, web fetch/search, and local tools. Unlike the other agents, the research agent can only be invoked by using the `/research` slash command. It cannot be automatically triggered by the main agent.
+* **research** — This agent operates as a staff-level software engineer and research specialist. It provides exhaustive, meticulously researched answers about codebases, APIs, libraries, and software architecture. It uses GitHub search/exploration tools, web fetch/search, and local tools. You can invoke it explicitly using the `/research` slash command. The main agent can also delegate research work to it when appropriate.
 
-* **rubber-duck** — A constructive critic that gives Copilot a second opinion on its own plans, code, and tests. It runs on a different model from the one driving your session, so it brings a complementary perspective. It is designed to review proposed changes, not to make file changes itself. For more information, see [About the rubber duck agent](/en/copilot/concepts/agents/copilot-cli/rubber-duck).
+* **rubber-duck** — A constructive critic that gives Copilot a second opinion on its own plans, code, and tests. It runs on a different model from the one driving your session, so it brings a complementary perspective. It is designed to review proposed changes, not to make file changes itself. For more information, see [Getting a second opinion with the rubber duck agent](/en/copilot/concepts/agent-capabilities/choosing-and-delegating-agent-work/getting-a-second-opinion).
 
 * **security-review** — A read-only specialist that searches your codebase for exploitable security vulnerabilities and reports only high-confidence findings. You can invoke it explicitly using the `/security-review` slash command. The main agent can also delegate security-focused work to it, including when you explicitly ask it to find exploitable vulnerabilities.
 

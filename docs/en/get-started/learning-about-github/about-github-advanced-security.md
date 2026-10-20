@@ -15,7 +15,7 @@ breadcrumbs:
 
 # About GitHub Advanced Security
 
-GitHub makes extra security features available to customers who purchase GitHub Code Security or GitHub Secret Protection.
+GitHub makes extra security features available to customers who purchase GitHub Code Security or GitHub Secret Protection. Some features are enabled for public repositories by default.
 
 ## About GitHub Advanced Security products
 

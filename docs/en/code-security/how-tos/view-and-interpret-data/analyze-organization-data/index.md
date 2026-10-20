@@ -35,15 +35,15 @@ Learn how to assess security risks, track feature adoption, view key metrics, an
 
 * [Exporting data from security overview](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/export-data)
 
-  From security overview, you can export CSV files of the data used for your organization or enterprise's overview, risk, coverage, and CodeQL pull request insights pages.
+  From security overview, you can export CSV files of the data used for your organization or enterprise's overview, risk, coverage, and code scanning pull request insights pages.
 
 * [Viewing security insights](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-security-insights)
 
   Monitor your organization security posture, identify high-risk repositories, and track alert remediation progress using the overview dashboard in security overview.
 
-* [Viewing metrics for pull request alerts](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-metrics-for-pull-request-alerts)
+* [Viewing code scanning metrics for pull requests](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-metrics-for-pull-request-alerts)
 
-  Monitor CodeQL's performance in pull requests across your organizations to identify repositories where you may need to take action.
+  Monitor how CodeQL and AI Scan perform in pull requests across your organizations to identify repositories where you may need to take action.
 
 * [Viewing metrics for secret scanning push protection](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-metrics-for-secret-scanning-push-protection)
 

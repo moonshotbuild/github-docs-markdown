@@ -19,7 +19,7 @@ breadcrumbs:
 
 # Exploring the dependencies of a repository
 
-You can use the dependency graph to see the packages your project depends on. In addition, you can see any vulnerabilities detected in its dependencies.
+You can use the dependency graph to see the packages your project depends on and the repositories that depend on it. In addition, you can see any vulnerabilities detected in its dependencies.
 
 ## Viewing the dependency graph
 

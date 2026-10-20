@@ -16,6 +16,8 @@ breadcrumbs:
 
 * [Requesting an archive of your personal account's data](/en/get-started/archiving-your-github-personal-account-and-public-repositories/requesting-an-archive-of-your-personal-accounts-data)
 
+  You can export and review the metadata that GitHub stores about your personal account.
+
 * [Opting into or out of the GitHub Archive Program for your public repository](/en/get-started/archiving-your-github-personal-account-and-public-repositories/opting-into-or-out-of-the-github-archive-program-for-your-public-repository)
 
   You can manage whether GitHub includes your public repository in the GitHub Archive Program to help ensure the long-term preservation of the world's open source software.

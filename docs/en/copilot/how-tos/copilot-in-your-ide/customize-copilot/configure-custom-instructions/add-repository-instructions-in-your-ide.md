@@ -31,7 +31,7 @@ This version of this article is for using repository custom instructions and pro
 
 ## Introduction
 
-Repository custom instructions let you provide Copilot with repository-specific guidance and preferences. For more information, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization).
+Repository custom instructions let you provide Copilot with repository-specific guidance and preferences. For more information, see [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions).
 
 ## Prerequisites for repository custom instructions
 
@@ -43,7 +43,7 @@ Repository custom instructions let you provide Copilot with repository-specific 
 
 <div class="ghd-tool vscode">
 
-VS Code supports three types of repository custom instructions. For details of which GitHub Copilot features support these types of instructions, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization?tool=vscode#support-for-repository-custom-instructions-1).
+VS Code supports three types of repository custom instructions. For details of which GitHub Copilot features support these types of instructions, see [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions#repository-custom-instructions-across-clients-and-surfaces).
 
 * **Repository-wide custom instructions**, which apply to all requests made in the context of a repository.
 
@@ -168,7 +168,7 @@ Custom instructions are enabled for Copilot code review by default but you can d
 
 > \[!NOTE]
 >
-> * Copilot prompt files are in public preview and subject to change. Prompt files are only available in VS Code, Visual Studio, and JetBrains IDEs. See [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization#about-prompt-files).
+> * Copilot prompt files are in public preview and subject to change. Prompt files are only available in VS Code, Visual Studio, and JetBrains IDEs. See [Prompt files for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-files).
 > * For community-contributed examples of prompt files for specific languages and scenarios, see the [Awesome GitHub Copilot Customizations](https://awesome-copilot.github.com) site.
 
 Prompt files let you build and share reusable prompt instructions with additional context. A prompt file is a Markdown file, stored in your workspace, that mimics the existing format of writing prompts in Copilot Chat (for example, `Rewrite #file:x.ts`). You can have multiple prompt files in your workspace, each of which defines a prompt for a different purpose.
@@ -224,7 +224,7 @@ This version of this article is for using repository custom instructions and pro
 
 ## Introduction
 
-Repository custom instructions let you provide Copilot with repository-specific guidance and preferences. For more information, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization).
+Repository custom instructions let you provide Copilot with repository-specific guidance and preferences. For more information, see [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions).
 
 ## Prerequisites for repository custom instructions
 
@@ -234,7 +234,7 @@ Repository custom instructions let you provide Copilot with repository-specific 
 
 ## Creating custom instructions
 
-Visual Studio supports two types of custom instructions. For details of which GitHub Copilot features support these types of instructions, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization?tool=visualstudio).
+Visual Studio supports two types of custom instructions. For details of which GitHub Copilot features support these types of instructions, see [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions).
 
 * **Repository-wide custom instructions**, which apply to all requests made in the context of a repository.
 
@@ -356,7 +356,7 @@ Custom instructions are enabled for Copilot code review by default but you can d
 
 > \[!NOTE]
 >
-> * Copilot prompt files are in public preview and subject to change. Prompt files are only available in VS Code, Visual Studio, and JetBrains IDEs. See [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization#about-prompt-files).
+> * Copilot prompt files are in public preview and subject to change. Prompt files are only available in VS Code, Visual Studio, and JetBrains IDEs. See [Prompt files for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-files).
 > * For community-contributed examples of prompt files for specific languages and scenarios, see the [Awesome GitHub Copilot Customizations](https://awesome-copilot.github.com) site.
 
 Prompt files let you build and share reusable prompt instructions with additional context. A prompt file is a Markdown file, stored in your workspace, that mimics the existing format of writing prompts in Copilot Chat (for example, `Rewrite #file:x.ts`). You can have multiple prompt files in your workspace, each of which defines a prompt for a different purpose.
@@ -388,7 +388,7 @@ This version of this article is for using repository custom instructions in JetB
 
 ## Introduction
 
-Repository custom instructions let you provide Copilot with repository-specific guidance and preferences. For more information, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization).
+Repository custom instructions let you provide Copilot with repository-specific guidance and preferences. For more information, see [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions).
 
 ## Prerequisites for repository custom instructions
 
@@ -457,7 +457,7 @@ Custom instructions are not visible in the Chat view or inline chat, but you can
 
 > \[!NOTE]
 >
-> * Copilot prompt files are in public preview and subject to change. Prompt files are only available in VS Code, Visual Studio, and JetBrains IDEs. See [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization#about-prompt-files).
+> * Copilot prompt files are in public preview and subject to change. Prompt files are only available in VS Code, Visual Studio, and JetBrains IDEs. See [Prompt files for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-files).
 > * For community-contributed examples of prompt files for specific languages and scenarios, see the [Awesome GitHub Copilot Customizations](https://awesome-copilot.github.com) site.
 
 Prompt files let you build and share reusable prompt instructions with additional context. A prompt file is a Markdown file, stored in your workspace, that mimics the existing format of writing prompts in Copilot Chat (for example, `Rewrite #file:x.ts`). You can have multiple prompt files in your workspace, each of which defines a prompt for a different purpose.
@@ -512,7 +512,7 @@ This version of this article is for using repository custom instructions in Xcod
 
 ## Introduction
 
-Repository custom instructions let you provide Copilot with repository-specific guidance and preferences. For more information, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization).
+Repository custom instructions let you provide Copilot with repository-specific guidance and preferences. For more information, see [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions).
 
 ## Prerequisites for repository custom instructions
 
@@ -566,7 +566,7 @@ This version of this article is for using repository custom instructions in Ecli
 
 ## Introduction
 
-Repository custom instructions let you provide Copilot with repository-specific guidance and preferences. For more information, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization).
+Repository custom instructions let you provide Copilot with repository-specific guidance and preferences. For more information, see [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions).
 
 ## Prerequisites for repository custom instructions
 

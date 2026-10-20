@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Managing labels
 
-You can classify issues and pull requests by creating, editing, applying, and deleting labels.
+You can classify issues, pull requests, and discussions by creating, editing, applying, and deleting labels.
 
 ## About labels
 

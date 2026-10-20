@@ -34,7 +34,3 @@ Create modular automations that you can share and reuse across GitHub Actions wo
 * [Sharing actions and workflows with your organization](/en/actions/how-tos/reuse-automations/share-with-your-organization)
 
   You can share an action or reusable workflow with your organization without publishing the action or workflow publicly.
-
-* [Sharing actions and workflows with your enterprise](/en/share-with-your-enterprise)
-
-  You can share an action or reusable workflow with your enterprise without publishing the action or workflow publicly.

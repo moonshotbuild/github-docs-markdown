@@ -114,7 +114,19 @@ curl -L \
     * `site_admin`: required, boolean
     * `starred_at`: string
     * `user_view_type`: string
-* `labels`: required, array of object
+* `labels`: required, array of items:
+  * one of:
+    * **string**
+    * **object**
+      * `id`: integer, format: int64
+      * `node_id`: string
+      * `url`: string, format: uri
+      * `name`: string
+      * `description`: string or null
+      * `color`: string or null
+      * `default`: boolean
+      * `archived_by`: all of:
+        * **Simple User** (see above)
 * `assignees`: array of `Simple User` (see above)
 * `milestone`: required, any of:
   * **null**
@@ -552,7 +564,19 @@ Array of `Issue`:
       * `site_admin`: required, boolean
       * `starred_at`: string
       * `user_view_type`: string
-  * `labels`: required, array of object
+  * `labels`: required, array of items:
+    * one of:
+      * **string**
+      * **object**
+        * `id`: integer, format: int64
+        * `node_id`: string
+        * `url`: string, format: uri
+        * `name`: string
+        * `description`: string or null
+        * `color`: string or null
+        * `default`: boolean
+        * `archived_by`: all of:
+          * **Simple User** (see above)
   * `assignees`: array of `Simple User` (see above)
   * `milestone`: required, any of:
     * **null**

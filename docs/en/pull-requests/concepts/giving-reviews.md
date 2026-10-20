@@ -53,4 +53,4 @@ Thorough reviews go beyond reading the diff top to bottom. GitHub gives you tool
 
 * [Reviewing dependency changes in a pull request](/en/pull-requests/how-tos/review-pull-requests/reviewing-dependency-changes-in-a-pull-request)
 
-* [About GitHub Copilot code review](/en/copilot/concepts/agents/code-review).
+* [GitHub Copilot code review](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review).

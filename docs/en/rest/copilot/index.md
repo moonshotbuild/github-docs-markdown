@@ -29,10 +29,6 @@ Use the REST API to monitor and manage GitHub Copilot.
 
   Use the REST API to manage Copilot content exclusion rules.
 
-* [REST API endpoints for Copilot custom agents](/en/copilot-custom-agents)
-
-  Use the REST API to manage Copilot custom agents for your enterprise.
-
 * [REST API endpoints for Copilot usage metrics](/en/rest/copilot/copilot-usage-metrics)
 
   Use the REST API to view Copilot usage metrics.

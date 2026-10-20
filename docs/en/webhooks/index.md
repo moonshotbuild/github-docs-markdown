@@ -59,7 +59,7 @@ Webhooks can let your integrations take an action in response to events that occ
 
 * [Types of webhooks](/en/webhooks/types-of-webhooks)
 
-  You can create webhooks to subscribe to events that occur in a specific repository, organization,    or GitHub App.
+  You can create webhooks to subscribe to events that occur in a specific repository, organization,  GitHub Marketplace account,  GitHub Sponsors account,  or GitHub App.
 
 * [Webhook events and payloads](/en/webhooks/webhook-events-and-payloads)
 
@@ -111,11 +111,11 @@ Webhooks can let your integrations take an action in response to events that occ
 
 * [Viewing webhook deliveries](/en/webhooks/testing-and-troubleshooting-webhooks/viewing-webhook-deliveries)
 
-  You can view details about webhook deliveries from the past 7 days.
+  You can view details about webhook deliveries from the past 3 days.
 
 * [Redelivering webhooks](/en/webhooks/testing-and-troubleshooting-webhooks/redelivering-webhooks)
 
-  To help recover from failed deliveries, you can redeliver webhook deliveries from the past 7 days.
+  To help recover from failed deliveries, you can redeliver webhook deliveries from the past 3 days.
 
 * [Testing webhooks](/en/webhooks/testing-and-troubleshooting-webhooks/testing-webhooks)
 

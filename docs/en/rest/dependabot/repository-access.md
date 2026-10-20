@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/dependabot/repository-access"
 ---
 
-# REST API endpoints for Dependabot repository access
+# REST API endpoints for {% data variables.product.prodname_dependabot %} repository access
 
 Use the REST API to manage which repositories Dependabot can access within an organization.
 
@@ -32,6 +32,9 @@ GET /enterprises/{enterprise}/dependabot/repository-access
 
 Lists repositories that enterprise admins have allowed Dependabot to access when updating dependencies across organizations in the enterprise.
 The authenticated user must be an enterprise owner to use this endpoint.
+Note
+
+The "Enterprise administration" fine-grained permission is not available to callers. To use this API, you must use an OAuth app token or a personal access token (classic).
 
 ### Parameters
 
@@ -76,7 +79,78 @@ curl -L \
 **Response schema (Status: 200):**
 
 * `default_level`: string or null, enum: `public`, `internal`, `null`
-* `accessible_repositories`: array of object
+* `accessible_repositories`: array of items:
+  * any of:
+    * **null**
+    * **Simple Repository**
+      * `id`: required, integer, format: int64
+      * `node_id`: required, string
+      * `name`: required, string
+      * `full_name`: required, string
+      * `owner`: required, `Simple User`:
+        * `name`: string or null
+        * `email`: string or null
+        * `login`: required, string
+        * `id`: required, integer, format: int64
+        * `node_id`: required, string
+        * `avatar_url`: required, string, format: uri
+        * `gravatar_id`: required, string or null
+        * `url`: required, string, format: uri
+        * `html_url`: required, string, format: uri
+        * `followers_url`: required, string, format: uri
+        * `following_url`: required, string
+        * `gists_url`: required, string
+        * `starred_url`: required, string
+        * `subscriptions_url`: required, string, format: uri
+        * `organizations_url`: required, string, format: uri
+        * `repos_url`: required, string, format: uri
+        * `events_url`: required, string
+        * `received_events_url`: required, string, format: uri
+        * `type`: required, string
+        * `site_admin`: required, boolean
+        * `starred_at`: string
+        * `user_view_type`: string
+      * `private`: required, boolean
+      * `html_url`: required, string, format: uri
+      * `description`: required, string or null
+      * `fork`: required, boolean
+      * `url`: required, string, format: uri
+      * `archive_url`: required, string
+      * `assignees_url`: required, string
+      * `blobs_url`: required, string
+      * `branches_url`: required, string
+      * `collaborators_url`: required, string
+      * `comments_url`: required, string
+      * `commits_url`: required, string
+      * `compare_url`: required, string
+      * `contents_url`: required, string
+      * `contributors_url`: required, string, format: uri
+      * `deployments_url`: required, string, format: uri
+      * `downloads_url`: required, string, format: uri
+      * `events_url`: required, string, format: uri
+      * `forks_url`: required, string, format: uri
+      * `git_commits_url`: required, string
+      * `git_refs_url`: required, string
+      * `git_tags_url`: required, string
+      * `issue_comment_url`: required, string
+      * `issue_events_url`: required, string
+      * `issues_url`: required, string
+      * `keys_url`: required, string
+      * `labels_url`: required, string
+      * `languages_url`: required, string, format: uri
+      * `merges_url`: required, string, format: uri
+      * `milestones_url`: required, string
+      * `notifications_url`: required, string
+      * `pulls_url`: required, string
+      * `releases_url`: required, string
+      * `stargazers_url`: required, string, format: uri
+      * `statuses_url`: required, string
+      * `subscribers_url`: required, string, format: uri
+      * `subscription_url`: required, string, format: uri
+      * `tags_url`: required, string, format: uri
+      * `teams_url`: required, string, format: uri
+      * `trees_url`: required, string
+      * `hooks_url`: required, string, format: uri
 
 ## Updates Dependabot's repository access list for an enterprise
 
@@ -91,6 +165,10 @@ Example request body:
   "repository_ids_to_add": [123, 456],
   "repository_ids_to_remove": [789]
 }
+
+Note
+
+The "Enterprise administration" fine-grained permission is not available to callers. To use this API, you must use an OAuth app token or a personal access token (classic).
 
 ### Parameters
 
@@ -146,6 +224,9 @@ Sets the default level of repository access Dependabot will have while performin
 'internal' - Dependabot will only have access to public and internal repositories, unless access is explicitly granted to private repositories.
 
 The authenticated user must be an enterprise owner to use this endpoint.
+Note
+
+The "Enterprise administration" fine-grained permission is not available to callers. To use this API, you must use an OAuth app token or a personal access token (classic).
 
 ### Parameters
 

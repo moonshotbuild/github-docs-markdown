@@ -25,10 +25,6 @@ Identify and resolve issues with your security configurations by diagnosing comm
 
   You see an error when you try to attach a security configuration with default code scanning enabled to repositories that use advanced setup for code scanning.
 
-* [A feature has disappeared from a security configuration](/en/feature-disappears)
-
-  Changes to your GitHub Enterprise Server instance's installation settings by a site administrator may affect which security features are available to your configuration.
-
 * [Default setup for code scanning overrides advanced setup](/en/code-security/reference/security-at-scale/troubleshoot-security-configurations/unexpected-default-setup)
 
   You apply a security configuration with "Enabled with advanced setup allowed" and the existing advanced setup for code scanning is ignored in some repositories.

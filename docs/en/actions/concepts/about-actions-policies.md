@@ -53,6 +53,6 @@ GitHub plans to add more rules over time.
 
 ## Next steps
 
-To configure workflow execution protections, see [Controlling who can execute GitHub Actions workflows](/en/actions/how-tos/administer/control-workflow-execution).
+To configure workflow execution protections, see [Governing execution of GitHub Actions workflows](/en/actions/how-tos/administer/control-workflow-execution).
 
 To manage policies programmatically, see [REST API endpoints for GitHub Actions policies](/en/rest/actions/policies).

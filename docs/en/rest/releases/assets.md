@@ -365,7 +365,7 @@ If you upload an asset with the same filename as another uploaded asset, you'll 
 ```curl
 curl -L \
   -X POST \
-  https://uploads.github.com/repos/OWNER/REPO/releases/RELEASE_ID/assets \
+  "https://uploads.github.com/repos/OWNER/REPO/releases/RELEASE_ID/assets?name=example.zip" \
   -H "Content-Type: application/octet-stream" \
   --data-binary "@example.zip"
 ```

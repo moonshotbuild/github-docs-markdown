@@ -53,7 +53,7 @@ Find information on workflows and actions in GitHub Actions.
 
 * [Reusing workflow configurations](/en/actions/reference/workflows-and-actions/reusing-workflow-configurations)
 
-  Find information about avoiding duplication when creating a workflow by reusing existing workflows.
+  Find information about avoiding duplication when creating a workflow by reusing existing workflows and using YAML anchors and aliases.
 
 * [Metadata syntax reference](/en/actions/reference/workflows-and-actions/metadata-syntax)
 

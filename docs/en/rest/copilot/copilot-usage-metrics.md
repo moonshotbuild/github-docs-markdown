@@ -71,7 +71,7 @@ Enterprise owners, billing managers, and authorized users with fine-grained "Vie
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/enterprises/ENTERPRISE/copilot/metrics/reports/enterprise-1-day
+  "https://api.github.com/enterprises/ENTERPRISE/copilot/metrics/reports/enterprise-1-day?day=DAY"
 ```
 
 **Response schema (Status: 200):**
@@ -177,7 +177,7 @@ Enterprise owners, billing managers, and authorized users with fine-grained "Vie
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/enterprises/ENTERPRISE/copilot/metrics/reports/repos-1-day
+  "https://api.github.com/enterprises/ENTERPRISE/copilot/metrics/reports/repos-1-day?day=DAY"
 ```
 
 **Response schema (Status: 200):**
@@ -229,7 +229,7 @@ Enterprise owners, billing managers, and authorized users with fine-grained "Vie
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/enterprises/ENTERPRISE/copilot/metrics/reports/user-teams-1-day
+  "https://api.github.com/enterprises/ENTERPRISE/copilot/metrics/reports/user-teams-1-day?day=DAY"
 ```
 
 **Response schema (Status: 200):**
@@ -281,7 +281,7 @@ Enterprise owners, billing managers, and authorized users with fine-grained "Vie
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/enterprises/ENTERPRISE/copilot/metrics/reports/users-1-day
+  "https://api.github.com/enterprises/ENTERPRISE/copilot/metrics/reports/users-1-day?day=DAY"
 ```
 
 **Response schema (Status: 200):**
@@ -385,7 +385,7 @@ For more information about organization metrics attribution, see How are metrics
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/copilot/metrics/reports/organization-1-day
+  "https://api.github.com/orgs/ORG/copilot/metrics/reports/organization-1-day?day=DAY"
 ```
 
 **Response schema (Status: 200):**
@@ -490,7 +490,7 @@ For more information about organization metrics attribution, see How are metrics
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/copilot/metrics/reports/repos-1-day
+  "https://api.github.com/orgs/ORG/copilot/metrics/reports/repos-1-day?day=DAY"
 ```
 
 **Response schema (Status: 200):**
@@ -545,7 +545,7 @@ For more information about organization metrics attribution, see How are metrics
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/copilot/metrics/reports/user-teams-1-day
+  "https://api.github.com/orgs/ORG/copilot/metrics/reports/user-teams-1-day?day=DAY"
 ```
 
 **Response schema (Status: 200):**
@@ -600,7 +600,7 @@ For more information about organization metrics attribution, see How are metrics
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/copilot/metrics/reports/users-1-day
+  "https://api.github.com/orgs/ORG/copilot/metrics/reports/users-1-day?day=DAY"
 ```
 
 **Response schema (Status: 200):**

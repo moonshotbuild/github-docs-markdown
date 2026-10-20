@@ -25,7 +25,7 @@ Create repository custom instructions files that give Copilot additional context
 
 ## Introduction
 
-Repository custom instructions let you provide Copilot with repository-specific guidance and preferences on GitHub. To find out how to set up custom instructions in an IDE, see [Adding repository custom instructions for GitHub Copilot in your IDE](/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/configure-custom-instructions/add-repository-instructions-in-your-ide). For more information about custom instructions, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization).
+Repository custom instructions let you provide Copilot with repository-specific guidance and preferences on GitHub. To find out how to set up custom instructions in an IDE, see [Adding repository custom instructions for GitHub Copilot in your IDE](/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/configure-custom-instructions/add-repository-instructions-in-your-ide). For more information about custom instructions, see [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions).
 
 ## Prerequisites for repository custom instructions
 
@@ -35,7 +35,7 @@ Repository custom instructions let you provide Copilot with repository-specific 
 
 ## Creating custom instructions
 
-Copilot on GitHub supports three types of repository custom instructions. For details of which GitHub Copilot features support these types of instructions, see [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization?tool=webui#support-for-repository-custom-instructions).
+Copilot on GitHub supports three types of repository custom instructions. For details of which GitHub Copilot features support these types of instructions, see [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions#repository-custom-instructions-across-clients-and-surfaces).
 
 * **Repository-wide custom instructions** apply to all requests made in the context of a repository.
 

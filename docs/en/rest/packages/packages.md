@@ -299,7 +299,7 @@ OAuth app tokens and personal access tokens (classic) need the read:packages sco
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/orgs/ORG/packages
+  "https://api.github.com/orgs/ORG/packages?package_type=container"
 ```
 
 **Response schema (Status: 200):**
@@ -978,7 +978,7 @@ OAuth app tokens and personal access tokens (classic) need the read:packages sco
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/user/packages
+  "https://api.github.com/user/packages?package_type=container"
 ```
 
 **Response schema (Status: 200):**
@@ -1461,7 +1461,7 @@ OAuth app tokens and personal access tokens (classic) need the read:packages sco
 ```curl
 curl -L \
   -X GET \
-  https://api.github.com/users/USERNAME/packages
+  "https://api.github.com/users/USERNAME/packages?package_type=container"
 ```
 
 **Response schema (Status: 200):**

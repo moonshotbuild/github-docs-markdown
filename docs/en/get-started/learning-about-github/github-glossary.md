@@ -250,7 +250,7 @@ Notifications sent to a user's email address.
 
 ## enterprise account
 
-Enterprise accounts allow you to centrally manage policy and billing for multiple organizations. Enterprise accounts are available with GitHub Enterprise Cloud and GitHub Enterprise Server. For more information, see [About enterprise accounts](/en/enterprise-cloud@latest/admin/overview/about-enterprise-accounts).
+Enterprise accounts allow you to centrally manage policy and billing for multiple organizations. Enterprise accounts are available with GitHub Enterprise Cloud and GitHub Enterprise Server. For more information, see [About enterprise accounts](/en/enterprise-cloud@latest/admin/overview/about-enterprise-accounts) in the GitHub Enterprise Cloud documentation.
 
 ## Explorer
 

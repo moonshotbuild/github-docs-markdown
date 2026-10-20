@@ -273,6 +273,10 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to subscribe to notifications for activity in a repository.
 
+* [REST API endpoints for agent automations](/en/rest/agent-automations/agent-automations)
+
+  Use the REST API to manage agent automations.
+
 * [REST API endpoints for agent tasks](/en/rest/agent-tasks/agent-tasks)
 
   Use the REST API to start and manage Copilot cloud agent tasks
@@ -284,10 +288,6 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 * [REST API endpoints for variables](/en/rest/agents/variables)
 
   Use the REST API to manage variables.
-
-* [REST API endpoints for announcement banners](/en/announcement-banners)
-
-  The Announcement Banners API enables you to view, create, and remove an announcement banner for your enterprise or organization.
 
 * [REST API endpoints for GitHub Apps](/en/rest/apps/apps)
 
@@ -309,25 +309,13 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to interact with webhooks for OAuth apps
 
-* [REST API endpoints for billing](/en/billing)
-
-  Use the REST API to get billing information.
-
 * [Budgets](/en/rest/billing/budgets)
 
   Use the REST API to get budget information.
 
-* [Cost centers](/en/cost-centers)
-
-  Use the REST API to get cost center information.
-
 * [Billing usage](/en/rest/billing/usage)
 
   Use the REST API to get billing usage information.
-
-* [Usage reports](/en/usage-reports)
-
-  Use the REST API to create and retrieve usage report exports for an enterprise.
 
 * [REST API endpoints for branches](/en/rest/branches/branches)
 
@@ -356,10 +344,6 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 * [REST API endpoints for code quality](/en/rest/code-quality/code-quality)
 
   Use the REST API to manage a code quality configuration.
-
-* [REST API endpoints for code scanning alert dismissal requests](/en/alert-dismissal-requests)
-
-  Use the REST API to interact with code scanning alert dismissal requests from a repository.
 
 * [REST API endpoints for code scanning](/en/rest/code-scanning/code-scanning)
 
@@ -428,10 +412,6 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 * [REST API endpoints for Copilot content exclusion management](/en/rest/copilot/copilot-content-exclusion-management)
 
   Use the REST API to manage Copilot content exclusion rules.
-
-* [REST API endpoints for Copilot custom agents](/en/copilot-custom-agents)
-
-  Use the REST API to manage Copilot custom agents for your enterprise.
 
 * [REST API endpoints for Copilot usage metrics](/en/rest/copilot/copilot-usage-metrics)
 
@@ -508,14 +488,6 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 * [REST API endpoints for emojis](/en/rest/emojis/emojis)
 
   Use the REST API to list and view all the available emojis to use on GitHub.
-
-* [REST API endpoints for GitHub Enterprise administration](/en/enterprise-admin)
-
-  Use the REST API to administer your enterprise.
-
-* [Enterprise teams](/en/enterprise-teams)
-
-  Use the REST API to create and manage enterprise teams in your GitHub enterprise.
 
 * [REST API endpoints for gists](/en/rest/gists/gists)
 
@@ -637,10 +609,6 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to review, backup, or migrate your user data stored on GitHub.
 
-* [REST API endpoints for OAuth app authorizations](/en/oauth-authorizations)
-
-  Use the REST API to manage the access OAuth apps have to your account.
-
 * [REST API endpoints for API Insights](/en/rest/orgs/api-insights)
 
   Use the REST API to view statistics for API usage in an organization.
@@ -657,21 +625,9 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to block and unblock users in an organization.
 
-* [REST API endpoints for organization push rule bypass requests](/en/bypass-requests)
-
-  Use the REST API to manage organization push rule bypass requests.
-
 * [REST API endpoints for custom properties](/en/rest/orgs/custom-properties)
 
   Use the REST API to create and manage custom properties for an organization.
-
-* [REST API endpoints for an organization's custom property values](/en/custom-properties-for-orgs)
-
-  Use the REST API to manage custom property values for an organization
-
-* [REST API endpoints for custom repository roles](/en/custom-roles)
-
-  Use the REST API to interact with custom repository roles.
 
 * [REST API endpoints for issue fields](/en/rest/orgs/issue-fields)
 
@@ -813,10 +769,6 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to manage issue types for a repository.
 
-* [REST API endpoints for Git LFS](/en/lfs)
-
-  Use the REST API to enable or disable Git Large File Storage (LFS) for a repository.
-
 * [REST API endpoints for repositories](/en/rest/repos/repos)
 
   Use the REST API to manage repositories on GitHub.
@@ -829,17 +781,9 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to manage rulesets for repositories. Rulesets control how people can interact with selected branches and tags in a repository.
 
-* [REST API endpoints for repository tags](/en/tags)
-
-  Use the REST API to manage tags for a repository.
-
 * [REST API endpoints for repository webhooks](/en/rest/repos/webhooks)
 
   Use the REST API to create and manage webhooks for your repositories.
-
-* [REST API endpoints for SCIM](/en/scim)
-
-  Use the REST API to control and manage your GitHub organization members' access with SCIM.
 
 * [REST API endpoints for search](/en/rest/search/search)
 
@@ -848,10 +792,6 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 * [REST API endpoints for secret scanning custom patterns](/en/rest/secret-scanning/custom-patterns)
 
   Use the REST API to manage custom patterns for secret scanning.
-
-* [REST API endpoints for push protection bypass requests](/en/delegated-bypass)
-
-  Use the REST API to manage push protection bypass requests for secret scanning.
 
 * [REST API endpoints for secret scanning push protection](/en/rest/secret-scanning/push-protection)
 
@@ -869,17 +809,9 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to view and manage repository security advisories.
 
-* [REST API endpoints for external groups](/en/external-groups)
-
-  Use the REST API to view the external identity provider groups that are available to your organization and manage the connection between external groups and teams in your organization.
-
 * [REST API endpoints for team members](/en/rest/teams/members)
 
   Use the REST API to create and manage membership of teams in your GitHub organization.
-
-* [REST API endpoints for team synchronization](/en/team-sync)
-
-  Use the REST API to manage connections between GitHub teams and external identity provider (IdP) groups.
 
 * [REST API endpoints for teams](/en/rest/teams/teams)
 

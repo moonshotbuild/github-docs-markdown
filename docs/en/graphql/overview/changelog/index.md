@@ -19,7 +19,56 @@ The GraphQL schema changelog is a list of recent and upcoming changes to our Gra
 
 Breaking changes include changes that will break existing queries or could affect the runtime behavior of clients. For a list of breaking changes and when they will occur, see our [breaking changes log](/en/graphql/overview/breaking-changes).
 
-**2026** · [2025](2025) · [2024](2024) · [2023](2023) · [2022](2022) · [2021](2021) · [2020](2020) · [2019](2019) · [2018](2018) · [2017](2017)
+**2026** · [2025](/en/graphql/overview/changelog/2025) · [2024](/en/graphql/overview/changelog/2024) · [2023](/en/graphql/overview/changelog/2023) · [2022](/en/graphql/overview/changelog/2022) · [2021](/en/graphql/overview/changelog/2021) · [2020](/en/graphql/overview/changelog/2020) · [2019](/en/graphql/overview/changelog/2019) · [2018](/en/graphql/overview/changelog/2018) · [2017](/en/graphql/overview/changelog/2017)
+
+## Schema changes for 2026-10-08
+
+### The GraphQL schema includes these changes:
+
+* Field fullDatabaseId was added to object type Repository
+
+## Schema changes for 2026-10-05
+
+### The GraphQL schema includes these changes:
+
+* Type AddedToStackEvent was added
+* AddedToStackEvent object implements Node interface
+* Field actor was added to object type AddedToStackEvent
+* Field createdAt was added to object type AddedToStackEvent
+* Field id was added to object type AddedToStackEvent
+* Field pullRequest was added to object type AddedToStackEvent
+* Field stackId was added to object type AddedToStackEvent
+* Field stackNumber was added to object type AddedToStackEvent
+* Type RemovedFromStackEvent was added
+* RemovedFromStackEvent object implements Node interface
+* Field actor was added to object type RemovedFromStackEvent
+* Field createdAt was added to object type RemovedFromStackEvent
+* Field id was added to object type RemovedFromStackEvent
+* Field pullRequest was added to object type RemovedFromStackEvent
+* Field stackId was added to object type RemovedFromStackEvent
+* Field stackNumber was added to object type RemovedFromStackEvent
+* Type RerequestReviewsInput was added
+* Input field botIds of type '\[ID!]was added to input object typeRerequestReviewsInput'
+* Input field clientMutationId of type String was added to input object type RerequestReviewsInput
+* Input field pullRequestId of type ID! was added to input object type RerequestReviewsInput
+* Input field teamIds of type '\[ID!]was added to input object typeRerequestReviewsInput'
+* Input field userIds of type '\[ID!]was added to input object typeRerequestReviewsInput'
+* Type RerequestReviewsPayload was added
+* Field actor was added to object type RerequestReviewsPayload
+* Field clientMutationId was added to object type RerequestReviewsPayload
+* Field pullRequest was added to object type RerequestReviewsPayload
+* Field requestedReviewersEdge was added to object type RerequestReviewsPayload
+* Field rerequestReviews was added to object type Mutation
+* Argument input: RerequestReviewsInput! added to field Mutation.rerequestReviews
+* Member AddedToStackEvent was added to Union type PullRequestTimelineItems
+* Member RemovedFromStackEvent was added to Union type PullRequestTimelineItems
+* Argument isWithdrawn: Boolean added to field Query.securityAdvisories
+* Argument 'severities: \[SecurityAdvisorySeverity!]added to fieldQuery.securityAdvisories'
+* Field cveId was added to object type SecurityAdvisory
+* Field githubReviewedAt was added to object type SecurityAdvisory
+* Field nvdPublishedAt was added to object type SecurityAdvisory
+* Field repositoryAdvisoryUrl was added to object type SecurityAdvisory
+* Field sourceCodeLocation was added to object type SecurityAdvisory
 
 ## Schema changes for 2026-10-01
 

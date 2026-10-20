@@ -27,7 +27,7 @@ To protect your personal information, you should keep both your account on GitHu
 
 * [Switching between accounts](/en/authentication/keeping-your-account-and-data-secure/switching-between-accounts)
 
-  Learn how to switch between multiple accounts.
+  Learn how to switch between multiple GitHub accounts and managed user accounts.
 
 * [Verifying new devices when signing in](/en/authentication/keeping-your-account-and-data-secure/verifying-new-devices-when-signing-in)
 

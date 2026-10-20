@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Redelivering webhooks
 
-To help recover from failed deliveries, you can redeliver webhook deliveries from the past 7 days.
+To help recover from failed deliveries, you can redeliver webhook deliveries from the past 3 days.
 
 ## About redelivering webhooks
 

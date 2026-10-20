@@ -33,4 +33,4 @@ Learn about the different places where you can use GitHub Copilot.
 
 * [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides)
 
-  Get contextual AI assistance from GitHub Copilot throughout your IDE workflow, from exploring an approach to writing, reviewing, and improving code.
+  Use Copilot in your IDE to get assistance as you code, collaborate with agents, and delegate work locally, in the background, or in the cloud.

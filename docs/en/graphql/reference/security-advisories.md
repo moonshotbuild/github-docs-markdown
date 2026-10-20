@@ -92,9 +92,11 @@ GitHub Security Advisories.
 * `epssPercentile` (Float): The EPSS percentile to filter advisories by.
 * `first` (Int): Returns the first n elements from the list.
 * `identifier` (SecurityAdvisoryIdentifierFilter): Filter advisories by identifier, e.g. GHSA or CVE.
+* `isWithdrawn` (Boolean): Filter advisories by withdrawn status. True returns only withdrawn advisories. False excludes withdrawn advisories.
 * `last` (Int): Returns the last n elements from the list.
 * `orderBy` (SecurityAdvisoryOrder): Ordering options for the returned topics.
 * `publishedSince` (DateTime): Filter advisories to those published since a time in the past.
+* `severities` ([SecurityAdvisorySeverity!]): A list of advisory severities to filter advisories by.
 * `updatedSince` (DateTime): Filter advisories to those updated since a time in the past.
 
 ## SecurityAdvisory - object
@@ -106,6 +108,7 @@ A GitHub Security Advisory.
 ### Fields for `SecurityAdvisory`
 
 * `classification` (SecurityAdvisoryClassification!): The classification of the advisory.
+* `cveId` (String): The Common Vulnerabilities and Exposures ID.
 * `cvss` (CVSS!): The CVSS associated with this advisory. **Deprecated:** cvss will be removed. New cvss_severities field will now contain both cvss_v3 and cvss_v4 properties. Removal on 2025-10-01 UTC.
 * `cvssSeverities` (CvssSeverities!): The CVSS associated with this advisory.
 * `cwes` (CWEConnection!): CWEs associated with this Advisory. _(Pagination: `after`, `before`, `first`, `last`)_
@@ -113,14 +116,18 @@ A GitHub Security Advisory.
 * `description` (String!): This is a long plaintext description of the advisory.
 * `epss` (EPSS): The Exploit Prediction Scoring System.
 * `ghsaId` (String!): The GitHub Security Advisory ID.
+* `githubReviewedAt` (DateTime): When the GitHub Security team reviewed this advisory, which may differ from when GitHub published it.
 * `id` (ID!): The Node ID of the SecurityAdvisory object.
 * `identifiers` ([SecurityAdvisoryIdentifier!]!): A list of identifiers for this advisory.
 * `notificationsPermalink` (URI): The permalink for the advisory's dependabot alerts page.
+* `nvdPublishedAt` (DateTime): When NVD published its advisory record, independent of GitHub's publishing timeline.
 * `origin` (String!): The organization that originated the advisory.
 * `permalink` (URI): The permalink for the advisory.
 * `publishedAt` (DateTime!): When GitHub published this advisory.
 * `references` ([SecurityAdvisoryReference!]!): A list of references for this advisory.
+* `repositoryAdvisoryUrl` (URI): The URL for the associated repository security advisory, if this global advisory is linked to a repository-level advisory.
 * `severity` (SecurityAdvisorySeverity!): The severity of the advisory.
+* `sourceCodeLocation` (URI): URL to the upstream source code relevant to the advisory.
 * `summary` (String!): A short plaintext summary of the advisory.
 * `updatedAt` (DateTime!): When the advisory was last updated.
 * `vulnerabilities` (SecurityVulnerabilityConnection!): Vulnerabilities associated with this Advisory.

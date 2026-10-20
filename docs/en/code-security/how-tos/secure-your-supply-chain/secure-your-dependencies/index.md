@@ -29,6 +29,10 @@ Keep your supply chain secure by understanding and updating dependencies.
 
   Prevent malware attacks by identifying and remediating malicious dependencies.
 
+* [Protecting endpoints with GitHub package firewall](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/protecting-endpoints-with-package-firewall)
+
+  Protect dependency installations on developer machines, AI agents, and CI runners with GitHub package firewall.
+
 * [Configuring Dependabot security updates](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-security-updates)
 
   You can use Dependabot security updates or manual pull requests to easily update vulnerable dependencies.
@@ -55,7 +59,7 @@ Keep your supply chain secure by understanding and updating dependencies.
 
 * [Exploring the dependencies of a repository](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/explore-dependencies)
 
-  You can use the dependency graph to see the packages your project depends on. In addition, you can see any vulnerabilities detected in its dependencies.
+  You can use the dependency graph to see the packages your project depends on and the repositories that depend on it. In addition, you can see any vulnerabilities detected in its dependencies.
 
 * [Configuring automatic dependency submission for your repository](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/submit-dependencies-automatically)
 

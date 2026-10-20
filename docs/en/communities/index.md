@@ -135,7 +135,7 @@ Learn best practices for moderating and setting up collaborative, safe, and effe
 
 * [Archive pull requests](/en/communities/moderating-comments-and-conversations/archive-pull-requests)
 
-  Repository administrators can archive a pull request to remove it from public view, providing a moderation option between leaving a pull request up and permanently deleting it.
+  Archiving a pull request removes it from public view without permanently deleting it.
 
 * [Limiting interactions in your repository](/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository)
 

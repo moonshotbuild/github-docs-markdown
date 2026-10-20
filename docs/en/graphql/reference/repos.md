@@ -109,8 +109,10 @@ to copying only the default branch of the template.
 
 ## CodeCoverageParametersInput - input object
 
-Enforce minimum line coverage thresholds on pull requests. When configured,
-uploaded coverage data must meet the specified criteria before changes can be merged.
+Enforce minimum line coverage thresholds on pull requests. This rule evaluates
+uploaded coverage data but does not wait for coverage uploads. To ensure
+coverage is evaluated before merging, make each status check associated with a
+coverage upload a required status check.
 
 ### Input fields for `CodeCoverageParametersInput`
 
@@ -1094,6 +1096,7 @@ if only internal repositories are needed. Cannot be combined with the
 visibility argument.
   * `visibility` (RepositoryVisibility): If non-null, filters repositories according to visibility. Cannot be combined with the privacy argument.
 
+* `fullDatabaseId` (BigInt): Identifies the primary key from the database as a BigInt.
 * `fundingLinks` ([FundingLink!]!): The funding links for this repository.
 * `hasDiscussionsEnabled` (Boolean!): Indicates if the repository has the Discussions feature enabled.
 * `hasIssuesEnabled` (Boolean!): Indicates if the repository has issues feature enabled.
@@ -2151,8 +2154,10 @@ The rule types supported in rulesets.
 
 * `AUTHORIZATION`: Authorization.
 * `BRANCH_NAME_PATTERN`: Branch name pattern.
-* `CODE_COVERAGE`: Enforce minimum line coverage thresholds on pull requests. When configured,
-uploaded coverage data must meet the specified criteria before changes can be merged.
+* `CODE_COVERAGE`: Enforce minimum line coverage thresholds on pull requests. This rule evaluates
+uploaded coverage data but does not wait for coverage uploads. To ensure
+coverage is evaluated before merging, make each status check associated with a
+coverage upload a required status check.
 * `CODE_QUALITY`: Choose which severity levels of code quality results should block pull request
 merges. When configured, a code quality analysis must be done on the pull
 request before the changes can be merged.
@@ -2163,8 +2168,7 @@ both the commit and the reference being updated.
 * `COMMIT_AUTHOR_EMAIL_PATTERN`: Commit author email pattern.
 * `COMMIT_MESSAGE_PATTERN`: Commit message pattern.
 * `COPILOT_CODE_REVIEW`: Request Copilot code review for new pull requests automatically if the author
-has access to Copilot code review and their premium requests quota has not
-reached the limit.
+has access to Copilot code review and AI credits.
 * `CREATION`: Only allow users with bypass permission to create matching refs.
 * `DELETION`: Only allow users with bypass permissions to delete matching refs.
 * `FILE_EXTENSION_RESTRICTION`: Prevent commits that include files with specified file extensions from being pushed to the commit graph.

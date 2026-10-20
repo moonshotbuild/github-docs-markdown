@@ -123,7 +123,13 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `disabled`, `enabled`
 
+#### `disabled`
+
 All branch protections were disabled for a repository.
+
+#### `enabled`
+
+All branch protections were enabled for a repository.
 
 ## branch\_protection\_rule
 
@@ -140,13 +146,36 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `created`, `deleted`, `edited`
 
+#### `created`
+
 A branch protection rule was created.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name   | Type     | Description                                                                                                                                                                                                                                                                              |
 | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `rule` | `object` | **Required.** The branch protection rule. Includes a name and all the branch protection settings applied to branches that match the name. Binary settings are boolean. Multi-level configurations are one of off, non\_admins, or everyone. Actor and build lists are arrays of strings. |
+
+#### `deleted`
+
+A branch protection rule was deleted.
+
+##### Webhook payload object parameters
+
+| Name   | Type     | Description                                                                                                                                                                                                                                                                              |
+| ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `rule` | `object` | **Required.** The branch protection rule. Includes a name and all the branch protection settings applied to branches that match the name. Binary settings are boolean. Multi-level configurations are one of off, non\_admins, or everyone. Actor and build lists are arrays of strings. |
+
+#### `edited`
+
+A branch protection rule was edited.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                                                                                                                                                                                                                                                                              |
+| --------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `changes` | `object` | If the action was edited, the changes to the rule.                                                                                                                                                                                                                                       |
+| `rule`    | `object` | **Required.** The branch protection rule. Includes a name and all the branch protection settings applied to branches that match the name. Binary settings are boolean. Multi-level configurations are one of off, non\_admins, or everyone. Actor and build lists are arrays of strings. |
 
 ## check\_run
 
@@ -167,9 +196,42 @@ The API only looks for pushes in the repository where the check run was created.
 
 **Action type:** `completed`, `created`, `requested_action`, `rerequested`
 
+#### `completed`
+
 A check run was completed, and a conclusion is available.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name        | Type     | Description                                                        |
+| ----------- | -------- | ------------------------------------------------------------------ |
+| `check_run` | `object` | **Required.** A check performed on the code of a given code change |
+
+#### `created`
+
+A new check run was created.
+
+##### Webhook payload object parameters
+
+| Name        | Type     | Description                                                        |
+| ----------- | -------- | ------------------------------------------------------------------ |
+| `check_run` | `object` | **Required.** A check performed on the code of a given code change |
+
+#### `requested_action`
+
+A check run completed, and someone requested a followup action that your app provides. Only the GitHub App someone requests to perform an action will receive the requested\_action payload. For more information, see "Creating CI tests with the Checks API."
+
+##### Webhook payload object parameters
+
+| Name               | Type     | Description                                                        |
+| ------------------ | -------- | ------------------------------------------------------------------ |
+| `check_run`        | `object` | **Required.** A check performed on the code of a given code change |
+| `requested_action` | `object` | The action requested by the user.                                  |
+
+#### `rerequested`
+
+Someone requested to re-run a check run. Only the GitHub App that someone requests to re-run the check will receive the rerequested payload.
+
+##### Webhook payload object parameters
 
 | Name        | Type     | Description                                                        |
 | ----------- | -------- | ------------------------------------------------------------------ |
@@ -194,9 +256,31 @@ The API only looks for pushes in the repository where the check suite was create
 
 **Action type:** `completed`, `requested`, `rerequested`
 
+#### `completed`
+
 All check runs in a check suite have completed, and a conclusion is available.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name          | Type     | Description                     |
+| ------------- | -------- | ------------------------------- |
+| `check_suite` | `object` | **Required.** The check\_suite. |
+
+#### `requested`
+
+Someone requested to run a check suite. By default, check suites are automatically created when you create a check run. For more information, see the GraphQL API documentation for creating a check run or "Create a check run" in the REST API documentation.
+
+##### Webhook payload object parameters
+
+| Name          | Type     | Description                     |
+| ------------- | -------- | ------------------------------- |
+| `check_suite` | `object` | **Required.** The check\_suite. |
+
+#### `rerequested`
+
+Someone requested to re-run the check runs in a check suite. For more information, see the GraphQL API documentation for creating a check suite or "Create a check suite" in the REST API documentation.
+
+##### Webhook payload object parameters
 
 | Name          | Type     | Description                     |
 | ------------- | -------- | ------------------------------- |
@@ -217,15 +301,87 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `appeared_in_branch`, `closed_by_user`, `created`, `fixed`, `reopened`, `reopened_by_user`, `updated_assignment`
 
+#### `appeared_in_branch`
+
 A previously created code scanning alert appeared in another branch. This can happen when a branch is merged into or created from a branch with a pre-existing code scanning alert.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name         | Type     | Description                                                                                                                                                                                |
 | ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `alert`      | `object` | **Required.** The code scanning alert involved in the event.                                                                                                                               |
 | `commit_oid` | `string` | **Required.** The commit SHA of the code scanning alert. When the action is reopened\_by\_user or closed\_by\_user, the event was triggered by the sender and this value will be empty.    |
 | `ref`        | `string` | **Required.** The Git reference of the code scanning alert. When the action is reopened\_by\_user or closed\_by\_user, the event was triggered by the sender and this value will be empty. |
+
+#### `closed_by_user`
+
+Someone closed a code scanning alert.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                                                                                                                                                                |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `alert`      | `object` | **Required.** The code scanning alert involved in the event.                                                                                                                               |
+| `commit_oid` | `string` | **Required.** The commit SHA of the code scanning alert. When the action is reopened\_by\_user or closed\_by\_user, the event was triggered by the sender and this value will be empty.    |
+| `ref`        | `string` | **Required.** The Git reference of the code scanning alert. When the action is reopened\_by\_user or closed\_by\_user, the event was triggered by the sender and this value will be empty. |
+
+#### `created`
+
+A code scanning alert was created in a repository.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                                                                                                                                                                |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `alert`      | `object` | **Required.** The code scanning alert involved in the event.                                                                                                                               |
+| `commit_oid` | `string` | **Required.** The commit SHA of the code scanning alert. When the action is reopened\_by\_user or closed\_by\_user, the event was triggered by the sender and this value will be empty.    |
+| `ref`        | `string` | **Required.** The Git reference of the code scanning alert. When the action is reopened\_by\_user or closed\_by\_user, the event was triggered by the sender and this value will be empty. |
+
+#### `fixed`
+
+A code scanning alert was fixed in a branch by a commit.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                                                                                                                                                                |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `alert`      | `object` | **Required.** The code scanning alert involved in the event.                                                                                                                               |
+| `commit_oid` | `string` | **Required.** The commit SHA of the code scanning alert. When the action is reopened\_by\_user or closed\_by\_user, the event was triggered by the sender and this value will be empty.    |
+| `ref`        | `string` | **Required.** The Git reference of the code scanning alert. When the action is reopened\_by\_user or closed\_by\_user, the event was triggered by the sender and this value will be empty. |
+
+#### `reopened`
+
+A previously fixed code scanning alert reappeared in a branch.
+
+##### Webhook payload object parameters
+
+| Name         | Type             | Description                                                                                                                                                                                |
+| ------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `alert`      | `object`         | **Required.** The code scanning alert involved in the event.                                                                                                                               |
+| `commit_oid` | `string or null` | **Required.** The commit SHA of the code scanning alert. When the action is reopened\_by\_user or closed\_by\_user, the event was triggered by the sender and this value will be empty.    |
+| `ref`        | `string or null` | **Required.** The Git reference of the code scanning alert. When the action is reopened\_by\_user or closed\_by\_user, the event was triggered by the sender and this value will be empty. |
+
+#### `reopened_by_user`
+
+Someone reopened a code scanning alert.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                                                                                                                                                                |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `alert`      | `object` | **Required.** The code scanning alert involved in the event.                                                                                                                               |
+| `commit_oid` | `string` | **Required.** The commit SHA of the code scanning alert. When the action is reopened\_by\_user or closed\_by\_user, the event was triggered by the sender and this value will be empty.    |
+| `ref`        | `string` | **Required.** The Git reference of the code scanning alert. When the action is reopened\_by\_user or closed\_by\_user, the event was triggered by the sender and this value will be empty. |
+
+#### `updated_assignment`
+
+The assignees list of a code scanning alert has been updated.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                                                  |
+| ------- | -------- | ------------------------------------------------------------ |
+| `alert` | `object` | **Required.** The code scanning alert involved in the event. |
 
 ## commit\_comment
 
@@ -292,9 +448,41 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `created`, `deleted`, `promote_to_enterprise`, `updated`
 
+#### `created`
+
 A new custom property was created.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                              |
+| ------------ | -------- | -------------------------------------------------------- |
+| `definition` | `object` | **Required.** Custom property defined on an organization |
+
+#### `deleted`
+
+A custom property was deleted.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description   |
+| ------------ | -------- | ------------- |
+| `definition` | `object` | **Required.** |
+
+#### `promote_to_enterprise`
+
+A custom property was promoted to an enterprise.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                              |
+| ------------ | -------- | -------------------------------------------------------- |
+| `definition` | `object` | **Required.** Custom property defined on an organization |
+
+#### `updated`
+
+A custom property was updated.
+
+##### Webhook payload object parameters
 
 | Name         | Type     | Description                                              |
 | ------------ | -------- | -------------------------------------------------------- |
@@ -361,15 +549,101 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 ### Webhook payload object
 
-**Action type:** `assignees_changed`, `auto_dismissed`, `auto_reopened`, `created`, `dismissed`, `fixed`, `reintroduced`, `reopened`
+**Action type:** `assignees_changed`, `auto_dismissed`, `auto_reopened`, `created`, `dismissed`, `fixed`, `reintroduced`, `reopened`, `withdrawn`
+
+#### `assignees_changed`
 
 The assignees for a Dependabot alert were updated.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name    | Type     | Description                       |
 | ------- | -------- | --------------------------------- |
 | `alert` | `object` | **Required.** A Dependabot alert. |
+
+#### `auto_dismissed`
+
+A Dependabot alert was automatically closed by a Dependabot auto-triage rule.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                       |
+| ------- | -------- | --------------------------------- |
+| `alert` | `object` | **Required.** A Dependabot alert. |
+
+#### `auto_reopened`
+
+A Dependabot alert, that had been automatically closed by a Dependabot auto-triage rule, was automatically reopened because the alert metadata or rule changed.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                       |
+| ------- | -------- | --------------------------------- |
+| `alert` | `object` | **Required.** A Dependabot alert. |
+
+#### `created`
+
+A manifest file change introduced a vulnerable dependency, or a GitHub Security Advisory was published and an existing dependency was found to be vulnerable.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                       |
+| ------- | -------- | --------------------------------- |
+| `alert` | `object` | **Required.** A Dependabot alert. |
+
+#### `dismissed`
+
+A Dependabot alert was manually closed.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                       |
+| ------- | -------- | --------------------------------- |
+| `alert` | `object` | **Required.** A Dependabot alert. |
+
+#### `fixed`
+
+A manifest file change removed a vulnerability.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                       |
+| ------- | -------- | --------------------------------- |
+| `alert` | `object` | **Required.** A Dependabot alert. |
+
+#### `reintroduced`
+
+A manifest file change introduced a vulnerable dependency that had previously been fixed.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                       |
+| ------- | -------- | --------------------------------- |
+| `alert` | `object` | **Required.** A Dependabot alert. |
+
+#### `reopened`
+
+A Dependabot alert was manually reopened.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                       |
+| ------- | -------- | --------------------------------- |
+| `alert` | `object` | **Required.** A Dependabot alert. |
+
+#### `withdrawn`
+
+A Dependabot alert was withdrawn because the advisory or the vulnerable version
+range that produced it is no longer valid. The alert contains identifiers
+captured before deletion for matching external records, rather than the full
+alert payload used by other actions. Its alert URLs identify the deleted alert
+and may no longer resolve.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                                                                                                                                                                     |
+| ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `alert` | `object` | **Required.** Identifiers for a withdrawn Dependabot alert, captured before deletion so that consumers can reconcile external records. This is not a full alert representation. |
 
 ## deploy\_key
 
@@ -386,9 +660,21 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `created`, `deleted`
 
+#### `created`
+
 A deploy key was created.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name  | Type     | Description                            |
+| ----- | -------- | -------------------------------------- |
+| `key` | `object` | **Required.** The deploy key resource. |
+
+#### `deleted`
+
+A deploy key was deleted.
+
+##### Webhook payload object parameters
 
 | Name  | Type     | Description                            |
 | ----- | -------- | -------------------------------------- |
@@ -457,9 +743,11 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `approved`, `rejected`, `requested`
 
+#### `approved`
+
 A deployment review was approved.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name                | Type               | Description   |
 | ------------------- | ------------------ | ------------- |
@@ -470,6 +758,37 @@ A deployment review was approved.
 | `workflow_job_run`  | `object`           |               |
 | `workflow_job_runs` | `array of objects` |               |
 | `workflow_run`      | `object or null`   | **Required.** |
+
+#### `rejected`
+
+A deployment review was rejected.
+
+##### Webhook payload object parameters
+
+| Name                | Type               | Description   |
+| ------------------- | ------------------ | ------------- |
+| `approver`          | `object`           |               |
+| `comment`           | `string`           |               |
+| `reviewers`         | `array of objects` |               |
+| `since`             | `string`           | **Required.** |
+| `workflow_job_run`  | `object`           |               |
+| `workflow_job_runs` | `array of objects` |               |
+| `workflow_run`      | `object or null`   | **Required.** |
+
+#### `requested`
+
+A deployment review was requested.
+
+##### Webhook payload object parameters
+
+| Name               | Type               | Description   |
+| ------------------ | ------------------ | ------------- |
+| `environment`      | `string`           | **Required.** |
+| `requestor`        | `object or null`   | **Required.** |
+| `reviewers`        | `array of objects` | **Required.** |
+| `since`            | `string`           | **Required.** |
+| `workflow_job_run` | `object`           | **Required.** |
+| `workflow_run`     | `object or null`   | **Required.** |
 
 ## deployment\_status
 
@@ -517,13 +836,161 @@ Webhook events for GitHub Discussions are currently in public preview and subjec
 
 **Action type:** `answered`, `category_changed`, `closed`, `created`, `deleted`, `edited`, `labeled`, `locked`, `pinned`, `reopened`, `transferred`, `unanswered`, `unlabeled`, `unlocked`, `unpinned`
 
+#### `answered`
+
 A comment on the discussion was marked as the answer.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name         | Type     | Description                                 |
 | ------------ | -------- | ------------------------------------------- |
 | `answer`     | `object` | **Required.**                               |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+
+#### `category_changed`
+
+The category of a discussion was changed.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `changes`    | `object` | **Required.**                               |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+
+#### `closed`
+
+A discussion was closed.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+
+#### `created`
+
+A discussion was created.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+
+#### `deleted`
+
+A discussion was deleted.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+
+#### `edited`
+
+The title or body on a discussion was edited, or the category of the discussion was changed.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `changes`    | `object` |                                             |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+
+#### `labeled`
+
+A label was added to a discussion.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+| `label`      | `object` | **Required.**                               |
+
+#### `locked`
+
+A discussion was locked.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+
+#### `pinned`
+
+A discussion was pinned.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+
+#### `reopened`
+
+A discussion was reopened.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+
+#### `transferred`
+
+A discussion was transferred to another repository.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `changes`    | `object` | **Required.**                               |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+
+#### `unanswered`
+
+A comment on the discussion was unmarked as the answer.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+| `old_answer` | `object` | **Required.**                               |
+
+#### `unlabeled`
+
+A label was removed from a discussion.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+| `label`      | `object` | **Required.**                               |
+
+#### `unlocked`
+
+A discussion was unlocked.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+
+#### `unpinned`
+
+A discussion was unpinned.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
 | `discussion` | `object` | **Required.** A Discussion in a repository. |
 
 ## discussion\_comment
@@ -544,12 +1011,37 @@ Webhook events for GitHub Discussions are currently in public preview and subjec
 
 **Action type:** `created`, `deleted`, `edited`
 
+#### `created`
+
 A comment on a discussion was created.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name         | Type     | Description                                 |
 | ------------ | -------- | ------------------------------------------- |
+| `comment`    | `object` | **Required.**                               |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+
+#### `deleted`
+
+A comment on a discussion was deleted.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `comment`    | `object` | **Required.**                               |
+| `discussion` | `object` | **Required.** A Discussion in a repository. |
+
+#### `edited`
+
+A comment on a discussion was edited.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                 |
+| ------------ | -------- | ------------------------------------------- |
+| `changes`    | `object` | **Required.**                               |
 | `comment`    | `object` | **Required.**                               |
 | `discussion` | `object` | **Required.** A Discussion in a repository. |
 
@@ -619,14 +1111,60 @@ For more information about GitHub Apps, see "About apps." For information about 
 
 **Action type:** `created`, `deleted`, `new_permissions_accepted`, `suspend`, `unsuspend`
 
+#### `created`
+
 Someone installed a GitHub App on a user or organization account.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name           | Type               | Description                                                      |
 | -------------- | ------------------ | ---------------------------------------------------------------- |
 | `repositories` | `array of objects` | An array of repository objects that the installation can access. |
 | `requester`    | `object or null`   |                                                                  |
+
+#### `deleted`
+
+Someone uninstalled a GitHub App from their user or organization account.
+
+##### Webhook payload object parameters
+
+| Name           | Type               | Description                                                      |
+| -------------- | ------------------ | ---------------------------------------------------------------- |
+| `repositories` | `array of objects` | An array of repository objects that the installation can access. |
+| `requester`    | `null`             |                                                                  |
+
+#### `new_permissions_accepted`
+
+Someone granted new permissions to a GitHub App.
+
+##### Webhook payload object parameters
+
+| Name           | Type               | Description                                                      |
+| -------------- | ------------------ | ---------------------------------------------------------------- |
+| `repositories` | `array of objects` | An array of repository objects that the installation can access. |
+| `requester`    | `null`             |                                                                  |
+
+#### `suspend`
+
+Someone blocked access by a GitHub App to their user or organization account.
+
+##### Webhook payload object parameters
+
+| Name           | Type               | Description                                                      |
+| -------------- | ------------------ | ---------------------------------------------------------------- |
+| `repositories` | `array of objects` | An array of repository objects that the installation can access. |
+| `requester`    | `null`             |                                                                  |
+
+#### `unsuspend`
+
+A GitHub App that was blocked from accessing a user or organization account was given access the account again.
+
+##### Webhook payload object parameters
+
+| Name           | Type               | Description                                                      |
+| -------------- | ------------------ | ---------------------------------------------------------------- |
+| `repositories` | `array of objects` | An array of repository objects that the installation can access. |
+| `requester`    | `null`             |                                                                  |
 
 ## installation\_repositories
 
@@ -641,9 +1179,24 @@ For more information about GitHub Apps, see "About apps." For information about 
 
 **Action type:** `added`, `removed`
 
+#### `added`
+
 A GitHub App installation was granted access to one or more repositories.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name                   | Type               | Description                                                                                                                                                           |
+| ---------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `repositories_added`   | `array of objects` | **Required.** An array of repository objects, which were added to the installation.                                                                                   |
+| `repositories_removed` | `array of objects` | **Required.** An array of repository objects, which were removed from the installation. When repository\_selection changes from all to selected, this array is empty. |
+| `repository_selection` | `string`           | **Required.** Describe whether all repositories have been selected or there's a selection involved                                                                    |
+| `requester`            | `object or null`   | **Required.**                                                                                                                                                         |
+
+#### `removed`
+
+Access to one or more repositories was revoked for a GitHub App installation.
+
+##### Webhook payload object parameters
 
 | Name                   | Type               | Description                                                                                                                                                           |
 | ---------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -688,9 +1241,56 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `created`, `deleted`, `edited`, `pinned`, `unpinned`
 
+#### `created`
+
 A comment on an issue or pull request was created.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                                     |
+| --------- | -------- | ----------------------------------------------- |
+| `comment` | `object` | **Required.** The comment itself.               |
+| `issue`   | `object` | **Required.** The issue the comment belongs to. |
+
+#### `deleted`
+
+A comment on an issue or pull request was deleted.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                                     |
+| --------- | -------- | ----------------------------------------------- |
+| `comment` | `object` | **Required.** The comment itself.               |
+| `issue`   | `object` | **Required.** The issue the comment belongs to. |
+
+#### `edited`
+
+A comment on an issue or pull request was edited.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                                     |
+| --------- | -------- | ----------------------------------------------- |
+| `changes` | `object` | **Required.** The changes to the comment.       |
+| `comment` | `object` | **Required.** The comment itself.               |
+| `issue`   | `object` | **Required.** The issue the comment belongs to. |
+
+#### `pinned`
+
+A comment on an issue was pinned.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                                     |
+| --------- | -------- | ----------------------------------------------- |
+| `comment` | `object` | **Required.** The comment itself.               |
+| `issue`   | `object` | **Required.** The issue the comment belongs to. |
+
+#### `unpinned`
+
+A comment on an issue was unpinned.
+
+##### Webhook payload object parameters
 
 | Name      | Type     | Description                                     |
 | --------- | -------- | ----------------------------------------------- |
@@ -713,9 +1313,11 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `blocked_by_added`, `blocked_by_removed`, `blocking_added`, `blocking_removed`
 
+#### `blocked_by_added`
+
 An issue was marked as blocked by another issue.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name                  | Type     | Description                                                                              |
 | --------------------- | -------- | ---------------------------------------------------------------------------------------- |
@@ -724,6 +1326,48 @@ An issue was marked as blocked by another issue.
 | `blocking_issue_id`   | `number` | The ID of the blocking issue.                                                            |
 | `blocking_issue`      | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
 | `blocking_issue_repo` | `object` | A repository on GitHub.                                                                  |
+
+#### `blocked_by_removed`
+
+The blocked by relationship between an issue and another issue was removed.
+
+##### Webhook payload object parameters
+
+| Name                  | Type     | Description                                                                              |
+| --------------------- | -------- | ---------------------------------------------------------------------------------------- |
+| `blocked_issue_id`    | `number` | The ID of the blocked issue.                                                             |
+| `blocked_issue`       | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
+| `blocking_issue_id`   | `number` | The ID of the blocking issue.                                                            |
+| `blocking_issue`      | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
+| `blocking_issue_repo` | `object` | A repository on GitHub.                                                                  |
+
+#### `blocking_added`
+
+An issue was marked as blocking another issue.
+
+##### Webhook payload object parameters
+
+| Name                 | Type     | Description                                                                              |
+| -------------------- | -------- | ---------------------------------------------------------------------------------------- |
+| `blocked_issue_id`   | `number` | The ID of the blocked issue.                                                             |
+| `blocked_issue`      | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
+| `blocked_issue_repo` | `object` | A repository on GitHub.                                                                  |
+| `blocking_issue_id`  | `number` | The ID of the blocking issue.                                                            |
+| `blocking_issue`     | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
+
+#### `blocking_removed`
+
+The blocking relationship between an issue and another issue was removed.
+
+##### Webhook payload object parameters
+
+| Name                 | Type     | Description                                                                              |
+| -------------------- | -------- | ---------------------------------------------------------------------------------------- |
+| `blocked_issue_id`   | `number` | The ID of the blocked issue.                                                             |
+| `blocked_issue`      | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
+| `blocked_issue_repo` | `object` | A repository on GitHub.                                                                  |
+| `blocking_issue_id`  | `number` | The ID of the blocking issue.                                                            |
+| `blocking_issue`     | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
 
 ## issue\_relates\_to
 
@@ -742,13 +1386,28 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `relates_to_added`, `relates_to_removed`
 
+#### `relates_to_added`
+
 An issue was marked as related to another issue.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name               | Type     | Description                                                                               |
 | ------------------ | -------- | ----------------------------------------------------------------------------------------- |
 | `issue_id`         | `number` | The ID of the issue the relationship was added to.                                        |
+| `issue`            | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.  |
+| `related_issue_id` | `number` | The ID of the related issue. Only present when both issues belong to the same repository. |
+| `related_issue`    | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.  |
+
+#### `relates_to_removed`
+
+An issue's relationship to another issue was removed.
+
+##### Webhook payload object parameters
+
+| Name               | Type     | Description                                                                               |
+| ------------------ | -------- | ----------------------------------------------------------------------------------------- |
+| `issue_id`         | `number` | The ID of the issue the relationship was removed from.                                    |
 | `issue`            | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.  |
 | `related_issue_id` | `number` | The ID of the related issue. Only present when both issues belong to the same repository. |
 | `related_issue`    | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.  |
@@ -769,14 +1428,222 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `assigned`, `closed`, `deleted`, `demilestoned`, `edited`, `field_added`, `field_removed`, `labeled`, `locked`, `milestoned`, `opened`, `pinned`, `reopened`, `transferred`, `typed`, `unassigned`, `unlabeled`, `unlocked`, `unpinned`, `untyped`
 
+#### `assigned`
+
 An issue was assigned to a user.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name       | Type             | Description                     |
 | ---------- | ---------------- | ------------------------------- |
 | `assignee` | `object or null` |                                 |
 | `issue`    | `object`         | **Required.** The issue itself. |
+
+#### `closed`
+
+An issue was closed.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                     |
+| ------- | -------- | ------------------------------- |
+| `issue` | `object` | **Required.** The issue itself. |
+
+#### `deleted`
+
+An issue was deleted.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                     |
+| ------- | -------- | ------------------------------- |
+| `issue` | `object` | **Required.** The issue itself. |
+
+#### `demilestoned`
+
+An issue was removed from a milestone.
+
+##### Webhook payload object parameters
+
+| Name        | Type     | Description                                       |
+| ----------- | -------- | ------------------------------------------------- |
+| `issue`     | `object` | **Required.** The issue itself.                   |
+| `milestone` | `object` | A collection of related issues and pull requests. |
+
+#### `edited`
+
+The title or body on an issue was edited.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                             |
+| --------- | -------- | --------------------------------------- |
+| `changes` | `object` | **Required.** The changes to the issue. |
+| `issue`   | `object` | **Required.** The issue itself.         |
+| `label`   | `object` |                                         |
+
+#### `field_added`
+
+An issue field value was set or updated on an issue.
+
+##### Webhook payload object parameters
+
+| Name                | Type     | Description                                                                                                                         |
+| ------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `issue`             | `object` | **Required.** The issue itself.                                                                                                     |
+| `issue_field`       | `object` | **Required.** The issue field whose value was set or updated on the issue.                                                          |
+| `issue_field_value` | `object` | The value that was set or updated for the issue field. When updating an existing value, the previous value is available in changes. |
+| `changes`           | `object` | The previous field value, present when an existing value was updated.                                                               |
+
+#### `field_removed`
+
+An issue field value was cleared from an issue.
+
+##### Webhook payload object parameters
+
+| Name                | Type     | Description                                                           |
+| ------------------- | -------- | --------------------------------------------------------------------- |
+| `issue`             | `object` | **Required.** The issue itself.                                       |
+| `issue_field`       | `object` | **Required.** The issue field whose value was cleared from the issue. |
+| `issue_field_value` | `object` | The value that was cleared from the issue field.                      |
+
+#### `labeled`
+
+A label was added to an issue.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                     |
+| ------- | -------- | ------------------------------- |
+| `issue` | `object` | **Required.** The issue itself. |
+| `label` | `object` |                                 |
+
+#### `locked`
+
+Conversation on an issue was locked. For more information, see "Locking conversations."
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                     |
+| ------- | -------- | ------------------------------- |
+| `issue` | `object` | **Required.** The issue itself. |
+
+#### `milestoned`
+
+An issue was added to a milestone.
+
+##### Webhook payload object parameters
+
+| Name        | Type     | Description                                                     |
+| ----------- | -------- | --------------------------------------------------------------- |
+| `issue`     | `object` | **Required.** The issue itself.                                 |
+| `milestone` | `object` | **Required.** A collection of related issues and pull requests. |
+
+#### `opened`
+
+An issue was created. When a closed issue is reopened, the action will be reopened instead.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                     |
+| --------- | -------- | ------------------------------- |
+| `changes` | `object` |                                 |
+| `issue`   | `object` | **Required.** The issue itself. |
+
+#### `pinned`
+
+An issue was pinned to a repository. For more information, see "Pinning an issue to your repository."
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                     |
+| ------- | -------- | ------------------------------- |
+| `issue` | `object` | **Required.** The issue itself. |
+
+#### `reopened`
+
+A closed issue was reopened.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                     |
+| ------- | -------- | ------------------------------- |
+| `issue` | `object` | **Required.** The issue itself. |
+
+#### `transferred`
+
+An issue was transferred to another repository. For more information, see "Transferring an issue to another repository."
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                     |
+| --------- | -------- | ------------------------------- |
+| `changes` | `object` | **Required.**                   |
+| `issue`   | `object` | **Required.** The issue itself. |
+
+#### `typed`
+
+An issue type was added to an issue.
+
+##### Webhook payload object parameters
+
+| Name    | Type             | Description                                                                                                                    |
+| ------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `issue` | `object`         | **Required.** The issue itself.                                                                                                |
+| `type`  | `object or null` | **Required.** The type assigned to the issue. This is only present for issues in repositories where issue types are supported. |
+
+#### `unassigned`
+
+A user was unassigned from an issue.
+
+##### Webhook payload object parameters
+
+| Name       | Type             | Description                     |
+| ---------- | ---------------- | ------------------------------- |
+| `assignee` | `object or null` |                                 |
+| `issue`    | `object`         | **Required.** The issue itself. |
+
+#### `unlabeled`
+
+A label was removed from an issue.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                     |
+| ------- | -------- | ------------------------------- |
+| `issue` | `object` | **Required.** The issue itself. |
+| `label` | `object` |                                 |
+
+#### `unlocked`
+
+Conversation on an issue was locked. For more information, see "Locking conversations."
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                     |
+| ------- | -------- | ------------------------------- |
+| `issue` | `object` | **Required.** The issue itself. |
+
+#### `unpinned`
+
+An issue was unpinned from a repository. For more information, see "Pinning an issue to your repository."
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                     |
+| ------- | -------- | ------------------------------- |
+| `issue` | `object` | **Required.** The issue itself. |
+
+#### `untyped`
+
+An issue type was removed from an issue.
+
+##### Webhook payload object parameters
+
+| Name    | Type             | Description                                                                                                                    |
+| ------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `issue` | `object`         | **Required.** The issue itself.                                                                                                |
+| `type`  | `object or null` | **Required.** The type assigned to the issue. This is only present for issues in repositories where issue types are supported. |
 
 ## label
 
@@ -794,9 +1661,52 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `archived`, `created`, `deleted`, `edited`, `unarchived`
 
+#### `archived`
+
 A label was archived.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name    | Type     | Description   |
+| ------- | -------- | ------------- |
+| `label` | `object` | **Required.** |
+
+#### `created`
+
+A label was created.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description   |
+| ------- | -------- | ------------- |
+| `label` | `object` | **Required.** |
+
+#### `deleted`
+
+A label was deleted.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description   |
+| ------- | -------- | ------------- |
+| `label` | `object` | **Required.** |
+
+#### `edited`
+
+A label's name, description, or color was changed.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                                        |
+| --------- | -------- | -------------------------------------------------- |
+| `changes` | `object` | The changes to the label if the action was edited. |
+| `label`   | `object` | **Required.**                                      |
+
+#### `unarchived`
+
+A label was unarchived.
+
+##### Webhook payload object parameters
 
 | Name    | Type     | Description   |
 | ------- | -------- | ------------- |
@@ -814,9 +1724,59 @@ This event occurs when there is activity relating to a GitHub Marketplace purcha
 
 **Action type:** `cancelled`, `changed`, `pending_change`, `pending_change_cancelled`, `purchased`
 
+#### `cancelled`
+
 Someone cancelled a GitHub Marketplace plan, and the last billing cycle has ended. The change will take effect on the account immediately.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name                            | Type     | Description   |
+| ------------------------------- | -------- | ------------- |
+| `effective_date`                | `string` | **Required.** |
+| `marketplace_purchase`          | `object` | **Required.** |
+| `previous_marketplace_purchase` | `object` |               |
+
+#### `changed`
+
+Someone upgraded or downgraded a GitHub Marketplace plan, and the last billing cycle has ended. The change will take effect on the account immediately.
+
+##### Webhook payload object parameters
+
+| Name                            | Type     | Description   |
+| ------------------------------- | -------- | ------------- |
+| `effective_date`                | `string` | **Required.** |
+| `marketplace_purchase`          | `object` | **Required.** |
+| `previous_marketplace_purchase` | `object` |               |
+
+#### `pending_change`
+
+Someone downgraded or cancelled a GitHub Marketplace plan. The new plan or cancellation will take effect at the end of the current billing cycle. When the change takes effect, the changed or cancelled event will be sent.
+
+##### Webhook payload object parameters
+
+| Name                            | Type     | Description   |
+| ------------------------------- | -------- | ------------- |
+| `effective_date`                | `string` | **Required.** |
+| `marketplace_purchase`          | `object` | **Required.** |
+| `previous_marketplace_purchase` | `object` |               |
+
+#### `pending_change_cancelled`
+
+Someone cancelled a pending change to a GitHub Marketplace plan. Pending changes include plan cancellations and downgrades that will take effect at the end of a billing cycle.
+
+##### Webhook payload object parameters
+
+| Name                            | Type     | Description   |
+| ------------------------------- | -------- | ------------- |
+| `effective_date`                | `string` | **Required.** |
+| `marketplace_purchase`          | `object` | **Required.** |
+| `previous_marketplace_purchase` | `object` |               |
+
+#### `purchased`
+
+Someone purchased a GitHub Marketplace plan. The change will take effect on the account immediately.
+
+##### Webhook payload object parameters
 
 | Name                            | Type     | Description   |
 | ------------------------------- | -------- | ------------- |
@@ -840,14 +1800,37 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `added`, `edited`, `removed`
 
+#### `added`
+
 A GitHub user accepted an invitation to a repository.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name      | Type             | Description   |
 | --------- | ---------------- | ------------- |
 | `changes` | `object`         |               |
 | `member`  | `object or null` | **Required.** |
+
+#### `edited`
+
+Permissions were changed for a collaborator on a repository.
+
+##### Webhook payload object parameters
+
+| Name      | Type             | Description                                               |
+| --------- | ---------------- | --------------------------------------------------------- |
+| `changes` | `object`         | **Required.** The changes to the collaborator permissions |
+| `member`  | `object or null` | **Required.**                                             |
+
+#### `removed`
+
+A collaborator was removed from a repository.
+
+##### Webhook payload object parameters
+
+| Name     | Type             | Description   |
+| -------- | ---------------- | ------------- |
+| `member` | `object or null` | **Required.** |
 
 ## membership
 
@@ -864,9 +1847,23 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `added`, `removed`
 
+#### `added`
+
 An organization member was added to a team.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name     | Type             | Description                                                                                    |
+| -------- | ---------------- | ---------------------------------------------------------------------------------------------- |
+| `member` | `object or null` | **Required.**                                                                                  |
+| `scope`  | `string`         | **Required.** The scope of the membership. Currently, can only be team.                        |
+| `team`   | `object`         | **Required.** Groups of organization members that gives permissions on specified repositories. |
+
+#### `removed`
+
+An organization member was removed from a team.
+
+##### Webhook payload object parameters
 
 | Name     | Type             | Description                                                                                    |
 | -------- | ---------------- | ---------------------------------------------------------------------------------------------- |
@@ -887,14 +1884,28 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `checks_requested`, `destroyed`
 
+#### `checks_requested`
+
 Status checks were requested for a merge group. This happens when a merge group is created or added to by the merge queue because a pull request was queued.
 When you receive this event, you should perform checks on the head SHA and report status back using check runs or commit statuses.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name          | Type     | Description                                                                                    |
 | ------------- | -------- | ---------------------------------------------------------------------------------------------- |
 | `merge_group` | `object` | **Required.** A group of pull requests that the merge queue has grouped together to be merged. |
+
+#### `destroyed`
+
+The merge queue groups pull requests together to be merged. This event indicates that one of those merge groups was destroyed. This happens when a pull request is removed from the queue: any group containing that pull request is also destroyed.
+When you receive this event, you may want to cancel any checks that are running on the head SHA to avoid wasting computing resources on a merge group that will not be used.
+
+##### Webhook payload object parameters
+
+| Name          | Type     | Description                                                                                                                                                                                  |
+| ------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `reason`      | `string` | Explains why the merge group is being destroyed. The group could have been merged, removed from the queue (dequeued), or invalidated by an earlier queue entry being dequeued (invalidated). |
+| `merge_group` | `object` | **Required.** A group of pull requests that the merge queue has grouped together to be merged.                                                                                               |
 
 ## meta
 
@@ -936,9 +1947,52 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `closed`, `created`, `deleted`, `edited`, `opened`
 
+#### `closed`
+
 A milestone was closed.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name        | Type     | Description                                                     |
+| ----------- | -------- | --------------------------------------------------------------- |
+| `milestone` | `object` | **Required.** A collection of related issues and pull requests. |
+
+#### `created`
+
+A milestone was created.
+
+##### Webhook payload object parameters
+
+| Name        | Type     | Description                                                     |
+| ----------- | -------- | --------------------------------------------------------------- |
+| `milestone` | `object` | **Required.** A collection of related issues and pull requests. |
+
+#### `deleted`
+
+A milestone was deleted.
+
+##### Webhook payload object parameters
+
+| Name        | Type     | Description                                                     |
+| ----------- | -------- | --------------------------------------------------------------- |
+| `milestone` | `object` | **Required.** A collection of related issues and pull requests. |
+
+#### `edited`
+
+A milestone was edited.
+
+##### Webhook payload object parameters
+
+| Name        | Type     | Description                                                          |
+| ----------- | -------- | -------------------------------------------------------------------- |
+| `changes`   | `object` | **Required.** The changes to the milestone if the action was edited. |
+| `milestone` | `object` | **Required.** A collection of related issues and pull requests.      |
+
+#### `opened`
+
+A milestone was opened.
+
+##### Webhook payload object parameters
 
 | Name        | Type     | Description                                                     |
 | ----------- | -------- | --------------------------------------------------------------- |
@@ -960,9 +2014,21 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `blocked`, `unblocked`
 
+#### `blocked`
+
 A user was blocked from the organization.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name           | Type             | Description   |
+| -------------- | ---------------- | ------------- |
+| `blocked_user` | `object or null` | **Required.** |
+
+#### `unblocked`
+
+A previously blocked user was unblocked from the organization.
+
+##### Webhook payload object parameters
 
 | Name           | Type             | Description   |
 | -------------- | ---------------- | ------------- |
@@ -984,12 +2050,56 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `deleted`, `member_added`, `member_invited`, `member_removed`, `renamed`
 
+#### `deleted`
+
 An organization was deleted.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name         | Type     | Description                                                                                           |
 | ------------ | -------- | ----------------------------------------------------------------------------------------------------- |
+| `membership` | `object` | The membership between the user and the organization. Not present when the action is member\_invited. |
+
+#### `member_added`
+
+A member accepted an invitation to join an organization.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                                                                                         |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------------------------- |
+| `membership` | `object` | **Required.** The membership between the user and the organization. Not present when the action is member\_invited. |
+
+#### `member_invited`
+
+A member was invited to join the organization.
+
+##### Webhook payload object parameters
+
+| Name         | Type             | Description                                                                          |
+| ------------ | ---------------- | ------------------------------------------------------------------------------------ |
+| `invitation` | `object`         | **Required.** The invitation for the user or email if the action is member\_invited. |
+| `user`       | `object or null` |                                                                                      |
+
+#### `member_removed`
+
+A member was removed from the organization.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                                                                                         |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------------------------- |
+| `membership` | `object` | **Required.** The membership between the user and the organization. Not present when the action is member\_invited. |
+
+#### `renamed`
+
+The name of an organization was changed.
+
+##### Webhook payload object parameters
+
+| Name         | Type     | Description                                                                                           |
+| ------------ | -------- | ----------------------------------------------------------------------------------------------------- |
+| `changes`    | `object` |                                                                                                       |
 | `membership` | `object` | The membership between the user and the organization. Not present when the action is member\_invited. |
 
 ## package
@@ -1005,9 +2115,21 @@ This event occurs when there is activity relating to GitHub Packages. For more i
 
 **Action type:** `published`, `updated`
 
+#### `published`
+
 A package was published to a registry.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                                  |
+| --------- | -------- | -------------------------------------------- |
+| `package` | `object` | **Required.** Information about the package. |
+
+#### `updated`
+
+A previously published package was updated.
+
+##### Webhook payload object parameters
 
 | Name      | Type     | Description                                  |
 | --------- | -------- | -------------------------------------------- |
@@ -1047,9 +2169,41 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `approved`, `cancelled`, `created`, `denied`
 
+#### `approved`
+
 A fine-grained personal access token request was approved.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name                            | Type     | Description                                               |
+| ------------------------------- | -------- | --------------------------------------------------------- |
+| `personal_access_token_request` | `object` | **Required.** Details of a Personal Access Token Request. |
+
+#### `cancelled`
+
+A fine-grained personal access token request was cancelled by the requester.
+
+##### Webhook payload object parameters
+
+| Name                            | Type     | Description                                               |
+| ------------------------------- | -------- | --------------------------------------------------------- |
+| `personal_access_token_request` | `object` | **Required.** Details of a Personal Access Token Request. |
+
+#### `created`
+
+A fine-grained personal access token request was created.
+
+##### Webhook payload object parameters
+
+| Name                            | Type     | Description                                               |
+| ------------------------------- | -------- | --------------------------------------------------------- |
+| `personal_access_token_request` | `object` | **Required.** Details of a Personal Access Token Request. |
+
+#### `denied`
+
+A fine-grained personal access token request was denied.
+
+##### Webhook payload object parameters
 
 | Name                            | Type     | Description                                               |
 | ------------------------------- | -------- | --------------------------------------------------------- |
@@ -1094,9 +2248,52 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `closed`, `created`, `deleted`, `edited`, `reopened`
 
+#### `closed`
+
 A project (classic) was closed.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name      | Type     | Description   |
+| --------- | -------- | ------------- |
+| `project` | `object` | **Required.** |
+
+#### `created`
+
+A project (classic) was created.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description   |
+| --------- | -------- | ------------- |
+| `project` | `object` | **Required.** |
+
+#### `deleted`
+
+A project (classic) was deleted.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description   |
+| --------- | -------- | ------------- |
+| `project` | `object` | **Required.** |
+
+#### `edited`
+
+The name or description of a project (classic) was changed.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                                          |
+| --------- | -------- | ---------------------------------------------------- |
+| `changes` | `object` | The changes to the project if the action was edited. |
+| `project` | `object` | **Required.**                                        |
+
+#### `reopened`
+
+A project (classic) was closed.
+
+##### Webhook payload object parameters
 
 | Name      | Type     | Description   |
 | --------- | -------- | ------------- |
@@ -1119,13 +2316,57 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `converted`, `created`, `deleted`, `edited`, `moved`
 
+#### `converted`
+
 A note in a project (classic) was converted to an issue.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name           | Type     | Description   |
 | -------------- | -------- | ------------- |
 | `changes`      | `object` | **Required.** |
+| `project_card` | `object` | **Required.** |
+
+#### `created`
+
+A card was added to a project (classic).
+
+##### Webhook payload object parameters
+
+| Name           | Type     | Description   |
+| -------------- | -------- | ------------- |
+| `project_card` | `object` | **Required.** |
+
+#### `deleted`
+
+A card on a project (classic) was deleted.
+
+##### Webhook payload object parameters
+
+| Name           | Type     | Description   |
+| -------------- | -------- | ------------- |
+| `project_card` | `object` | **Required.** |
+
+#### `edited`
+
+A note on a project (classic) was edited.
+
+##### Webhook payload object parameters
+
+| Name           | Type     | Description   |
+| -------------- | -------- | ------------- |
+| `changes`      | `object` | **Required.** |
+| `project_card` | `object` | **Required.** |
+
+#### `moved`
+
+A card on a project (classic) was moved to another column or to another position in its column.
+
+##### Webhook payload object parameters
+
+| Name           | Type     | Description   |
+| -------------- | -------- | ------------- |
+| `changes`      | `object` |               |
 | `project_card` | `object` | **Required.** |
 
 ## project\_column
@@ -1145,9 +2386,42 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `created`, `deleted`, `edited`, `moved`
 
+#### `created`
+
 A column was added to a project (classic).
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name             | Type     | Description   |
+| ---------------- | -------- | ------------- |
+| `project_column` | `object` | **Required.** |
+
+#### `deleted`
+
+A column was deleted from a project (classic).
+
+##### Webhook payload object parameters
+
+| Name             | Type     | Description   |
+| ---------------- | -------- | ------------- |
+| `project_column` | `object` | **Required.** |
+
+#### `edited`
+
+The name of a column on a project (classic) was changed.
+
+##### Webhook payload object parameters
+
+| Name             | Type     | Description   |
+| ---------------- | -------- | ------------- |
+| `changes`        | `object` | **Required.** |
+| `project_column` | `object` | **Required.** |
+
+#### `moved`
+
+A column was moved to a new position on a project (classic).
+
+##### Webhook payload object parameters
 
 | Name             | Type     | Description   |
 | ---------------- | -------- | ------------- |
@@ -1169,9 +2443,52 @@ Webhook events for projects are currently in public preview and subject to chang
 
 **Action type:** `closed`, `created`, `deleted`, `edited`, `reopened`
 
+#### `closed`
+
 A project in the organization was closed.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name          | Type     | Description                         |
+| ------------- | -------- | ----------------------------------- |
+| `projects_v2` | `object` | **Required.** A projects v2 project |
+
+#### `created`
+
+A project in the organization was created.
+
+##### Webhook payload object parameters
+
+| Name          | Type     | Description                         |
+| ------------- | -------- | ----------------------------------- |
+| `projects_v2` | `object` | **Required.** A projects v2 project |
+
+#### `deleted`
+
+A project in the organization was deleted.
+
+##### Webhook payload object parameters
+
+| Name          | Type     | Description                         |
+| ------------- | -------- | ----------------------------------- |
+| `projects_v2` | `object` | **Required.** A projects v2 project |
+
+#### `edited`
+
+The title, description, or README of a project in the organization was changed.
+
+##### Webhook payload object parameters
+
+| Name          | Type     | Description                         |
+| ------------- | -------- | ----------------------------------- |
+| `changes`     | `object` | **Required.**                       |
+| `projects_v2` | `object` | **Required.** A projects v2 project |
+
+#### `reopened`
+
+A project in the organization was reopened.
+
+##### Webhook payload object parameters
 
 | Name          | Type     | Description                         |
 | ------------- | -------- | ----------------------------------- |
@@ -1193,9 +2510,75 @@ Webhook events for projects are currently in public preview and subject to chang
 
 **Action type:** `archived`, `converted`, `created`, `deleted`, `edited`, `reordered`, `restored`
 
+#### `archived`
+
 An item on an organization project was archived. For more information, see "Archiving items from your project."
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name               | Type     | Description                                  |
+| ------------------ | -------- | -------------------------------------------- |
+| `changes`          | `object` | **Required.**                                |
+| `projects_v2_item` | `object` | **Required.** An item belonging to a project |
+
+#### `converted`
+
+A draft issue in an organization project was converted to an issue.
+
+##### Webhook payload object parameters
+
+| Name               | Type     | Description                                  |
+| ------------------ | -------- | -------------------------------------------- |
+| `changes`          | `object` | **Required.**                                |
+| `projects_v2_item` | `object` | **Required.** An item belonging to a project |
+
+#### `created`
+
+An item was added to a project in the organization.
+
+##### Webhook payload object parameters
+
+| Name               | Type     | Description                                  |
+| ------------------ | -------- | -------------------------------------------- |
+| `projects_v2_item` | `object` | **Required.** An item belonging to a project |
+
+#### `deleted`
+
+An item was deleted from a project in the organization.
+
+##### Webhook payload object parameters
+
+| Name               | Type     | Description                                  |
+| ------------------ | -------- | -------------------------------------------- |
+| `projects_v2_item` | `object` | **Required.** An item belonging to a project |
+
+#### `edited`
+
+The values or state of an item in an organization project were changed. For example, the value of a field was updated, the body of a draft issue was changed, or a draft issue was converted to an issue.
+
+##### Webhook payload object parameters
+
+| Name               | Type     | Description                                                                                                                                                                                                                                    |
+| ------------------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `changes`          | `object` | The changes made to the item may involve modifications in the item's fields and draft issue body. It includes altered values for text, number, date, single select, and iteration fields, along with the GraphQL node ID of the changed field. |
+| `projects_v2_item` | `object` | **Required.** An item belonging to a project                                                                                                                                                                                                   |
+
+#### `reordered`
+
+The position of an item in an organization project was changed. For example, an item was moved above or below another item in the table or board layout.
+
+##### Webhook payload object parameters
+
+| Name               | Type     | Description                                  |
+| ------------------ | -------- | -------------------------------------------- |
+| `changes`          | `object` | **Required.**                                |
+| `projects_v2_item` | `object` | **Required.** An item belonging to a project |
+
+#### `restored`
+
+An archived item on an organization project was restored from the archive. For more information, see "Archiving items from your project."
+
+##### Webhook payload object parameters
 
 | Name               | Type     | Description                                  |
 | ------------------ | -------- | -------------------------------------------- |
@@ -1218,12 +2601,35 @@ To share feedback about projects webhooks with GitHub, see the Projects webhook 
 
 **Action type:** `created`, `deleted`, `edited`
 
+#### `created`
+
 A status update was added to a project in the organization.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name                        | Type     | Description                                           |
 | --------------------------- | -------- | ----------------------------------------------------- |
+| `projects_v2_status_update` | `object` | **Required.** An status update belonging to a project |
+
+#### `deleted`
+
+A status update was removed from a project in the organization.
+
+##### Webhook payload object parameters
+
+| Name                        | Type     | Description                                           |
+| --------------------------- | -------- | ----------------------------------------------------- |
+| `projects_v2_status_update` | `object` | **Required.** An status update belonging to a project |
+
+#### `edited`
+
+A status update was edited on a project in the organization.
+
+##### Webhook payload object parameters
+
+| Name                        | Type     | Description                                           |
+| --------------------------- | -------- | ----------------------------------------------------- |
+| `changes`                   | `object` |                                                       |
 | `projects_v2_status_update` | `object` | **Required.** An status update belonging to a project |
 
 ## public
@@ -1255,15 +2661,264 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `assigned`, `auto_merge_disabled`, `auto_merge_enabled`, `closed`, `converted_to_draft`, `demilestoned`, `dequeued`, `edited`, `enqueued`, `labeled`, `locked`, `milestoned`, `opened`, `ready_for_review`, `reopened`, `review_request_removed`, `review_requested`, `stacked`, `synchronize`, `unassigned`, `unlabeled`, `unlocked`
 
+#### `assigned`
+
 A pull request was assigned to a user.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name           | Type             | Description                            |
 | -------------- | ---------------- | -------------------------------------- |
 | `assignee`     | `object or null` | **Required.**                          |
 | `number`       | `integer`        | **Required.** The pull request number. |
 | `pull_request` | `object`         | **Required.**                          |
+
+#### `auto_merge_disabled`
+
+Auto merge was disabled for a pull request. For more information, see "Automatically merging a pull request."
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
+| `reason`       | `string`  | **Required.**                          |
+
+#### `auto_merge_enabled`
+
+Auto merge was enabled for a pull request. For more information, see "Automatically merging a pull request."
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
+| `reason`       | `string`  |                                        |
+
+#### `closed`
+
+A pull request was closed. If merged is false in the webhook payload, the pull request was closed with unmerged commits. If merged is true in the webhook payload, the pull request was merged.
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
+
+#### `converted_to_draft`
+
+A pull request was converted to a draft. For more information, see "Changing the stage of a pull request."
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
+
+#### `demilestoned`
+
+A pull request was removed from a milestone.
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                                       |
+| -------------- | --------- | ------------------------------------------------- |
+| `milestone`    | `object`  | A collection of related issues and pull requests. |
+| `number`       | `integer` | **Required.** The pull request number.            |
+| `pull_request` | `object`  | **Required.**                                     |
+
+#### `dequeued`
+
+A pull request was removed from the merge queue.
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
+| `reason`       | `string`  | **Required.**                          |
+
+#### `edited`
+
+The title or body of a pull request was edited, or the base branch of a pull request was changed.
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                                                        |
+| -------------- | --------- | ------------------------------------------------------------------ |
+| `changes`      | `object`  | **Required.** The changes to the comment if the action was edited. |
+| `number`       | `integer` | **Required.** The pull request number.                             |
+| `pull_request` | `object`  | **Required.**                                                      |
+
+#### `enqueued`
+
+A pull request was added to the merge queue.
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
+
+#### `labeled`
+
+A label was added to a pull request.
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `label`        | `object`  |                                        |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
+
+#### `locked`
+
+Conversation on a pull request was locked. For more information, see "Locking conversations."
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
+
+#### `milestoned`
+
+A pull request was added to a milestone.
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                                       |
+| -------------- | --------- | ------------------------------------------------- |
+| `milestone`    | `object`  | A collection of related issues and pull requests. |
+| `number`       | `integer` | **Required.** The pull request number.            |
+| `pull_request` | `object`  | **Required.**                                     |
+
+#### `opened`
+
+A pull request was created
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
+
+#### `ready_for_review`
+
+A draft pull request was marked as ready for review. For more information, see "Changing the stage of a pull request."
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
+
+#### `reopened`
+
+A previously closed pull request was reopened.
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
+
+#### `review_request_removed`
+
+A request for review by a person or team was removed from a pull request.
+
+##### Webhook payload object parameters
+
+| Name                 | Type             | Description                                                                                    |
+| -------------------- | ---------------- | ---------------------------------------------------------------------------------------------- |
+| `number`             | `integer`        | **Required.** The pull request number.                                                         |
+| `pull_request`       | `object`         | **Required.**                                                                                  |
+| `requested_reviewer` | `object or null` | **Required.**                                                                                  |
+| `requested_team`     | `object`         | **Required.** Groups of organization members that gives permissions on specified repositories. |
+
+#### `review_requested`
+
+Review by a person or team was requested for a pull request. For more information, see "Requesting a pull request review."
+
+##### Webhook payload object parameters
+
+| Name                 | Type             | Description                                                                                    |
+| -------------------- | ---------------- | ---------------------------------------------------------------------------------------------- |
+| `number`             | `integer`        | **Required.** The pull request number.                                                         |
+| `pull_request`       | `object`         | **Required.**                                                                                  |
+| `requested_reviewer` | `object or null` | **Required.**                                                                                  |
+| `requested_team`     | `object`         | **Required.** Groups of organization members that gives permissions on specified repositories. |
+
+#### `stacked`
+
+A pull request was added to a stack.
+
+##### Webhook payload object parameters
+
+| Name           | Type             | Description                                           |
+| -------------- | ---------------- | ----------------------------------------------------- |
+| `stack`        | `object or null` | The stack information associated with a pull request. |
+| `number`       | `integer`        | **Required.** The pull request number.                |
+| `pull_request` | `object`         | **Required.**                                         |
+
+#### `synchronize`
+
+A pull request's head branch was updated. For example, the head branch was updated from the base branch or new commits were pushed to the head branch.
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `after`        | `string`  | **Required.**                          |
+| `before`       | `string`  | **Required.**                          |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
+
+#### `unassigned`
+
+A user was unassigned from a pull request.
+
+##### Webhook payload object parameters
+
+| Name           | Type             | Description                            |
+| -------------- | ---------------- | -------------------------------------- |
+| `assignee`     | `object or null` |                                        |
+| `number`       | `integer`        | **Required.** The pull request number. |
+| `pull_request` | `object`         | **Required.**                          |
+
+#### `unlabeled`
+
+A label was removed from a pull request.
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `label`        | `object`  |                                        |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
+
+#### `unlocked`
+
+Conversation on a pull request was unlocked. For more information, see "Locking conversations."
+
+##### Webhook payload object parameters
+
+| Name           | Type      | Description                            |
+| -------------- | --------- | -------------------------------------- |
+| `number`       | `integer` | **Required.** The pull request number. |
+| `pull_request` | `object`  | **Required.**                          |
 
 ## pull\_request\_review
 
@@ -1281,9 +2936,34 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `dismissed`, `edited`, `submitted`
 
+#### `dismissed`
+
 A review on a pull request was dismissed.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name           | Type     | Description                                 |
+| -------------- | -------- | ------------------------------------------- |
+| `pull_request` | `object` | **Required.**                               |
+| `review`       | `object` | **Required.** The review that was affected. |
+
+#### `edited`
+
+The body comment on a pull request review was edited.
+
+##### Webhook payload object parameters
+
+| Name           | Type     | Description                                 |
+| -------------- | -------- | ------------------------------------------- |
+| `changes`      | `object` | **Required.**                               |
+| `pull_request` | `object` | **Required.**                               |
+| `review`       | `object` | **Required.** The review that was affected. |
+
+#### `submitted`
+
+A review on a pull request was submitted.
+
+##### Webhook payload object parameters
 
 | Name           | Type     | Description                                 |
 | -------------- | -------- | ------------------------------------------- |
@@ -1306,14 +2986,39 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `created`, `deleted`, `edited`
 
+#### `created`
+
 A comment on a pull request diff was created.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name           | Type     | Description                       |
 | -------------- | -------- | --------------------------------- |
 | `comment`      | `object` | **Required.** The comment itself. |
 | `pull_request` | `object` | **Required.**                     |
+
+#### `deleted`
+
+A comment on a pull request diff was deleted.
+
+##### Webhook payload object parameters
+
+| Name           | Type     | Description                       |
+| -------------- | -------- | --------------------------------- |
+| `comment`      | `object` | **Required.** The comment itself. |
+| `pull_request` | `object` | **Required.**                     |
+
+#### `edited`
+
+The content of a comment on a pull request diff was changed.
+
+##### Webhook payload object parameters
+
+| Name           | Type     | Description                               |
+| -------------- | -------- | ----------------------------------------- |
+| `changes`      | `object` | **Required.** The changes to the comment. |
+| `comment`      | `object` | **Required.** The comment itself.         |
+| `pull_request` | `object` | **Required.**                             |
 
 ## pull\_request\_review\_thread
 
@@ -1331,9 +3036,23 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `resolved`, `unresolved`
 
+#### `resolved`
+
 A comment thread on a pull request was marked as resolved.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name           | Type             | Description   |
+| -------------- | ---------------- | ------------- |
+| `pull_request` | `object`         | **Required.** |
+| `thread`       | `object`         | **Required.** |
+| `updated_at`   | `string or null` |               |
+
+#### `unresolved`
+
+A previously resolved comment thread on a pull request was marked as unresolved.
+
+##### Webhook payload object parameters
 
 | Name           | Type             | Description   |
 | -------------- | ---------------- | ------------- |
@@ -1391,9 +3110,21 @@ GitHub recommends that you use the newer package event instead.
 
 **Action type:** `published`, `updated`
 
+#### `published`
+
 A package was published to a registry.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name               | Type     | Description   |
+| ------------------ | -------- | ------------- |
+| `registry_package` | `object` | **Required.** |
+
+#### `updated`
+
+A package that was previously published to a registry was updated.
+
+##### Webhook payload object parameters
 
 | Name               | Type     | Description   |
 | ------------------ | -------- | ------------- |
@@ -1414,9 +3145,72 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `created`, `deleted`, `edited`, `prereleased`, `published`, `released`, `unpublished`
 
+#### `created`
+
 A draft was saved, or a release or pre-release was published without previously being saved as a draft.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                       |
+| --------- | -------- | --------------------------------- |
+| `release` | `object` | **Required.** The release object. |
+
+#### `deleted`
+
+A release, pre-release, or draft release was deleted.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                       |
+| --------- | -------- | --------------------------------- |
+| `release` | `object` | **Required.** The release object. |
+
+#### `edited`
+
+The details of a release, pre-release, or draft release were edited. For more information, see "Managing releases in a repository."
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                       |
+| --------- | -------- | --------------------------------- |
+| `changes` | `object` | **Required.**                     |
+| `release` | `object` | **Required.** The release object. |
+
+#### `prereleased`
+
+A release was created and identified as a pre-release. A pre-release is a release that is not ready for production and may be unstable.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                       |
+| --------- | -------- | --------------------------------- |
+| `release` | `object` | **Required.** The release object. |
+
+#### `published`
+
+A release, pre-release, or draft of a release was published.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                       |
+| --------- | -------- | --------------------------------- |
+| `release` | `object` | **Required.** The release object. |
+
+#### `released`
+
+A release was published, or a pre-release was changed to a release.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                       |
+| --------- | -------- | --------------------------------- |
+| `release` | `object` | **Required.** The release object. |
+
+#### `unpublished`
+
+A release or pre-release was unpublished.
+
+##### Webhook payload object parameters
 
 | Name      | Type     | Description                       |
 | --------- | -------- | --------------------------------- |
@@ -1438,7 +3232,59 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `archived`, `created`, `deleted`, `edited`, `privatized`, `publicized`, `renamed`, `transferred`, `unarchived`
 
+#### `archived`
+
 A repository was archived.
+
+#### `created`
+
+A repository was created.
+
+#### `deleted`
+
+A repository was deleted. GitHub Apps and repository webhooks will not receive this event.
+
+#### `edited`
+
+The topics, default branch, description, or homepage of a repository was changed.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description   |
+| --------- | -------- | ------------- |
+| `changes` | `object` | **Required.** |
+
+#### `privatized`
+
+The visibility of a repository was changed to private.
+
+#### `publicized`
+
+The visibility of a repository was changed to public.
+
+#### `renamed`
+
+The name of a repository was changed.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description   |
+| --------- | -------- | ------------- |
+| `changes` | `object` | **Required.** |
+
+#### `transferred`
+
+Ownership of the repository was transferred to a user or organization account. This event is only sent to the account where the ownership is transferred. To receive the repository.transferred event, the new owner account must have the GitHub App installed, and the App must be subscribed to "Repository" events.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description   |
+| --------- | -------- | ------------- |
+| `changes` | `object` | **Required.** |
+
+#### `unarchived`
+
+A previously archived repository was unarchived.
 
 ## repository\_advisory
 
@@ -1455,9 +3301,21 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `published`, `reported`
 
+#### `published`
+
 A repository security advisory was published.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name                  | Type     | Description                                   |
+| --------------------- | -------- | --------------------------------------------- |
+| `repository_advisory` | `object` | **Required.** A repository security advisory. |
+
+#### `reported`
+
+A private vulnerability report was submitted.
+
+##### Webhook payload object parameters
 
 | Name                  | Type     | Description                                   |
 | --------------------- | -------- | --------------------------------------------- |
@@ -1515,13 +3373,36 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `created`, `deleted`, `edited`
 
+#### `created`
+
 A repository ruleset was created.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name                 | Type     | Description                                                              |
 | -------------------- | -------- | ------------------------------------------------------------------------ |
 | `repository_ruleset` | `object` | **Required.** A set of rules to apply when specified conditions are met. |
+
+#### `deleted`
+
+A repository ruleset was deleted.
+
+##### Webhook payload object parameters
+
+| Name                 | Type     | Description                                                              |
+| -------------------- | -------- | ------------------------------------------------------------------------ |
+| `repository_ruleset` | `object` | **Required.** A set of rules to apply when specified conditions are met. |
+
+#### `edited`
+
+A repository ruleset was edited.
+
+##### Webhook payload object parameters
+
+| Name                 | Type     | Description                                                              |
+| -------------------- | -------- | ------------------------------------------------------------------------ |
+| `repository_ruleset` | `object` | **Required.** A set of rules to apply when specified conditions are met. |
+| `changes`            | `object` |                                                                          |
 
 ## repository\_vulnerability\_alert
 
@@ -1538,9 +3419,41 @@ Closing down notice: This event is closing down. Use the dependabot\_alert event
 
 **Action type:** `create`, `dismiss`, `reopen`, `resolve`
 
+#### `create`
+
 A repository vulnerability alert was created.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                                                    |
+| ------- | -------- | -------------------------------------------------------------- |
+| `alert` | `object` | **Required.** The security alert of the vulnerable dependency. |
+
+#### `dismiss`
+
+A repository vulnerability alert was dismissed.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                                                    |
+| ------- | -------- | -------------------------------------------------------------- |
+| `alert` | `object` | **Required.** The security alert of the vulnerable dependency. |
+
+#### `reopen`
+
+A previously dismissed or resolved repository vulnerability alert was reopened.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description                                                    |
+| ------- | -------- | -------------------------------------------------------------- |
+| `alert` | `object` | **Required.** The security alert of the vulnerable dependency. |
+
+#### `resolve`
+
+A repository vulnerability alert was marked as resolved.
+
+##### Webhook payload object parameters
 
 | Name    | Type     | Description                                                    |
 | ------- | -------- | -------------------------------------------------------------- |
@@ -1562,14 +3475,97 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `assigned`, `created`, `metadata_created`, `metadata_removed`, `publicly_leaked`, `reopened`, `resolved`, `unassigned`, `validated`
 
+#### `assigned`
+
 A secret scanning alert was assigned.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name       | Type     | Description    |
 | ---------- | -------- | -------------- |
 | `alert`    | `object` | **Required.**  |
 | `assignee` | `object` | A GitHub user. |
+
+#### `created`
+
+A secret scanning alert was created.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description   |
+| ------- | -------- | ------------- |
+| `alert` | `object` | **Required.** |
+
+#### `metadata_created`
+
+Metadata was created for a secret scanning alert.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description   |
+| ------- | -------- | ------------- |
+| `alert` | `object` | **Required.** |
+
+#### `metadata_removed`
+
+Metadata was removed from a secret scanning alert.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description   |
+| ------- | -------- | ------------- |
+| `alert` | `object` | **Required.** |
+
+#### `publicly_leaked`
+
+A secret scanning alert was detected in a public repo.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description   |
+| ------- | -------- | ------------- |
+| `alert` | `object` | **Required.** |
+
+#### `reopened`
+
+A previously closed secret scanning alert was reopened.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description   |
+| ------- | -------- | ------------- |
+| `alert` | `object` | **Required.** |
+
+#### `resolved`
+
+A secret scanning alert was closed.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description   |
+| ------- | -------- | ------------- |
+| `alert` | `object` | **Required.** |
+
+#### `unassigned`
+
+A secret scanning alert was unassigned.
+
+##### Webhook payload object parameters
+
+| Name       | Type     | Description    |
+| ---------- | -------- | -------------- |
+| `alert`    | `object` | **Required.**  |
+| `assignee` | `object` | A GitHub user. |
+
+#### `validated`
+
+A secret scanning alert was validated.
+
+##### Webhook payload object parameters
+
+| Name    | Type     | Description   |
+| ------- | -------- | ------------- |
+| `alert` | `object` | **Required.** |
 
 ## secret\_scanning\_alert\_location
 
@@ -1637,9 +3633,31 @@ GitHub Dependabot alerts are also powered by the security advisory dataset. For 
 
 **Action type:** `published`, `updated`, `withdrawn`
 
+#### `published`
+
 A security advisory was published to the GitHub community.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name                | Type     | Description                                                                                       |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------- |
+| `security_advisory` | `object` | **Required.** The details of the security advisory, including summary, description, and severity. |
+
+#### `updated`
+
+The metadata or description of a security advisory was changed.
+
+##### Webhook payload object parameters
+
+| Name                | Type     | Description                                                                                       |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------- |
+| `security_advisory` | `object` | **Required.** The details of the security advisory, including summary, description, and severity. |
+
+#### `withdrawn`
+
+A previously published security advisory was withdrawn.
+
+##### Webhook payload object parameters
 
 | Name                | Type     | Description                                                                                       |
 | ------------------- | -------- | ------------------------------------------------------------------------------------------------- |
@@ -1677,13 +3695,71 @@ You can only create a sponsorship webhook on GitHub.com. For more information, s
 
 **Action type:** `cancelled`, `created`, `edited`, `pending_cancellation`, `pending_tier_change`, `tier_changed`
 
+#### `cancelled`
+
 A sponsorship was cancelled and the last billing cycle has ended.
 This event is only sent when a recurring (monthly) sponsorship is cancelled; it is not sent for one-time sponsorships.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name          | Type     | Description   |
 | ------------- | -------- | ------------- |
+| `sponsorship` | `object` | **Required.** |
+
+#### `created`
+
+A sponsor created a sponsorship for a sponsored account. This event occurs once the payment is successfully processed.
+
+##### Webhook payload object parameters
+
+| Name          | Type     | Description   |
+| ------------- | -------- | ------------- |
+| `sponsorship` | `object` | **Required.** |
+
+#### `edited`
+
+A monthly sponsor changed who can see their sponsorship. If you recognize your sponsors publicly, you may want to update your sponsor recognition to reflect the change when this event occurs.
+
+##### Webhook payload object parameters
+
+| Name          | Type     | Description   |
+| ------------- | -------- | ------------- |
+| `changes`     | `object` | **Required.** |
+| `sponsorship` | `object` | **Required.** |
+
+#### `pending_cancellation`
+
+A sponsor scheduled a cancellation for their sponsorship. The cancellation will become effective on their next billing date.
+This event is only sent when a recurring (monthly) sponsorship is cancelled; it is not sent for one-time sponsorships.
+
+##### Webhook payload object parameters
+
+| Name             | Type     | Description                                                                                                                             |
+| ---------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `effective_date` | `string` | The pending\_cancellation and pending\_tier\_change event types will include the date the cancellation or tier change will take effect. |
+| `sponsorship`    | `object` | **Required.**                                                                                                                           |
+
+#### `pending_tier_change`
+
+A sponsor scheduled a downgrade to a lower sponsorship tier. The new tier will become effective on their next billing date.
+
+##### Webhook payload object parameters
+
+| Name             | Type     | Description                                                                                                                             |
+| ---------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `changes`        | `object` | **Required.**                                                                                                                           |
+| `effective_date` | `string` | The pending\_cancellation and pending\_tier\_change event types will include the date the cancellation or tier change will take effect. |
+| `sponsorship`    | `object` | **Required.**                                                                                                                           |
+
+#### `tier_changed`
+
+A sponsor changed the tier of their sponsorship and the change has taken effect. If a sponsor upgraded their tier, the change took effect immediately. If a sponsor downgraded their tier, the change took effect at the beginning of the sponsor's next billing cycle.
+
+##### Webhook payload object parameters
+
+| Name          | Type     | Description   |
+| ------------- | -------- | ------------- |
+| `changes`     | `object` | **Required.** |
 | `sponsorship` | `object` | **Required.** |
 
 ## star
@@ -1701,13 +3777,25 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `created`, `deleted`
 
+#### `created`
+
 Someone starred a repository.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name         | Type             | Description                                                                                                                                     |
 | ------------ | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | `starred_at` | `string or null` | **Required.** The time the star was created. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. Will be null for the deleted action. |
+
+#### `deleted`
+
+Someone unstarred the repository.
+
+##### Webhook payload object parameters
+
+| Name         | Type   | Description                                                                                                                                     |
+| ------------ | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `starred_at` | `null` | **Required.** The time the star was created. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. Will be null for the deleted action. |
 
 ## status
 
@@ -1755,9 +3843,11 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `parent_issue_added`, `parent_issue_removed`, `sub_issue_added`, `sub_issue_removed`
 
+#### `parent_issue_added`
+
 A parent issue was added to an issue.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
 
 | Name                | Type     | Description                                                                                            |
 | ------------------- | -------- | ------------------------------------------------------------------------------------------------------ |
@@ -1766,6 +3856,48 @@ A parent issue was added to an issue.
 | `parent_issue_repo` | `object` | A repository on GitHub.                                                                                |
 | `sub_issue_id`      | `number` | **Required.** The ID of the sub-issue.                                                                 |
 | `sub_issue`         | `object` | **Required.** Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
+
+#### `parent_issue_removed`
+
+A parent issue was removed from an issue.
+
+##### Webhook payload object parameters
+
+| Name                | Type     | Description                                                                                            |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------------ |
+| `parent_issue_id`   | `number` | The ID of the parent issue.                                                                            |
+| `parent_issue`      | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.               |
+| `parent_issue_repo` | `object` | A repository on GitHub.                                                                                |
+| `sub_issue_id`      | `number` | **Required.** The ID of the sub-issue.                                                                 |
+| `sub_issue`         | `object` | **Required.** Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
+
+#### `sub_issue_added`
+
+A sub-issue was added to an issue.
+
+##### Webhook payload object parameters
+
+| Name              | Type     | Description                                                                                            |
+| ----------------- | -------- | ------------------------------------------------------------------------------------------------------ |
+| `sub_issue_id`    | `number` | The ID of the sub-issue.                                                                               |
+| `sub_issue`       | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.               |
+| `sub_issue_repo`  | `object` | A repository on GitHub.                                                                                |
+| `parent_issue_id` | `number` | **Required.** The ID of the parent issue.                                                              |
+| `parent_issue`    | `object` | **Required.** Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
+
+#### `sub_issue_removed`
+
+A sub-issue was removed from an issue.
+
+##### Webhook payload object parameters
+
+| Name              | Type     | Description                                                                                            |
+| ----------------- | -------- | ------------------------------------------------------------------------------------------------------ |
+| `sub_issue_id`    | `number` | The ID of the sub-issue.                                                                               |
+| `sub_issue`       | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.               |
+| `sub_issue_repo`  | `object` | A repository on GitHub.                                                                                |
+| `parent_issue_id` | `number` | **Required.** The ID of the parent issue.                                                              |
+| `parent_issue`    | `object` | **Required.** Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
 
 ## team
 
@@ -1783,9 +3915,52 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `added_to_repository`, `created`, `deleted`, `edited`, `removed_from_repository`
 
+#### `added_to_repository`
+
 A team was granted access to a repository.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name   | Type     | Description                                                                                    |
+| ------ | -------- | ---------------------------------------------------------------------------------------------- |
+| `team` | `object` | **Required.** Groups of organization members that gives permissions on specified repositories. |
+
+#### `created`
+
+A team was created.
+
+##### Webhook payload object parameters
+
+| Name   | Type     | Description                                                                                    |
+| ------ | -------- | ---------------------------------------------------------------------------------------------- |
+| `team` | `object` | **Required.** Groups of organization members that gives permissions on specified repositories. |
+
+#### `deleted`
+
+A team was deleted.
+
+##### Webhook payload object parameters
+
+| Name   | Type     | Description                                                                                    |
+| ------ | -------- | ---------------------------------------------------------------------------------------------- |
+| `team` | `object` | **Required.** Groups of organization members that gives permissions on specified repositories. |
+
+#### `edited`
+
+The name, description, or visibility of a team was changed.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                                                                                    |
+| --------- | -------- | ---------------------------------------------------------------------------------------------- |
+| `changes` | `object` | **Required.** The changes to the team if the action was edited.                                |
+| `team`    | `object` | **Required.** Groups of organization members that gives permissions on specified repositories. |
+
+#### `removed_from_repository`
+
+A team's access to a repository was removed.
+
+##### Webhook payload object parameters
 
 | Name   | Type     | Description                                                                                    |
 | ------ | -------- | ---------------------------------------------------------------------------------------------- |
@@ -1864,9 +4039,44 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `completed`, `in_progress`, `queued`, `waiting`
 
+#### `completed`
+
 A job in a workflow run finished. This event occurs when a job in a workflow is completed, regardless of whether the job was successful or unsuccessful.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name           | Type     | Description                                                 |
+| -------------- | -------- | ----------------------------------------------------------- |
+| `workflow_job` | `object` | **Required.**                                               |
+| `deployment`   | `object` | A request for a specific ref(branch,sha,tag) to be deployed |
+
+#### `in_progress`
+
+A job in a workflow run started processing on a runner.
+
+##### Webhook payload object parameters
+
+| Name           | Type     | Description                                                 |
+| -------------- | -------- | ----------------------------------------------------------- |
+| `workflow_job` | `object` | **Required.**                                               |
+| `deployment`   | `object` | A request for a specific ref(branch,sha,tag) to be deployed |
+
+#### `queued`
+
+A job in a workflow run was created.
+
+##### Webhook payload object parameters
+
+| Name           | Type     | Description                                                 |
+| -------------- | -------- | ----------------------------------------------------------- |
+| `workflow_job` | `object` | **Required.**                                               |
+| `deployment`   | `object` | A request for a specific ref(branch,sha,tag) to be deployed |
+
+#### `waiting`
+
+A job in a workflow run was created and is waiting for approvals.
+
+##### Webhook payload object parameters
 
 | Name           | Type     | Description                                                 |
 | -------------- | -------- | ----------------------------------------------------------- |
@@ -1890,9 +4100,33 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 **Action type:** `completed`, `in_progress`, `requested`
 
+#### `completed`
+
 A workflow run finished. This event occurs when a workflow run is completed, regardless of whether the workflow was successful or unsuccessful.
 
-#### Webhook payload object parameters
+##### Webhook payload object parameters
+
+| Name           | Type             | Description   |
+| -------------- | ---------------- | ------------- |
+| `workflow`     | `object or null` | **Required.** |
+| `workflow_run` | `object`         | **Required.** |
+
+#### `in_progress`
+
+A workflow run started processing on a runner.
+
+##### Webhook payload object parameters
+
+| Name           | Type             | Description   |
+| -------------- | ---------------- | ------------- |
+| `workflow`     | `object or null` | **Required.** |
+| `workflow_run` | `object`         | **Required.** |
+
+#### `requested`
+
+A workflow run was triggered.
+
+##### Webhook payload object parameters
 
 | Name           | Type             | Description   |
 | -------------- | ---------------- | ------------- |

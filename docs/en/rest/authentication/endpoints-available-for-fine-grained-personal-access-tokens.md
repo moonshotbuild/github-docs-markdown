@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Endpoints available for fine-grained personal access tokens
 
-<p>Your fine-grained personal access token can make requests to the following REST endpoints.</p>
+Your fine-grained personal access token can make requests to the following REST endpoints.
 
 ## actions
 
@@ -1640,6 +1640,8 @@ breadcrumbs:
 * [`POST /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers`](/en/rest/pulls/review-requests#request-reviewers-for-a-pull-request)
 
 * [`DELETE /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers`](/en/rest/pulls/review-requests#remove-requested-reviewers-from-a-pull-request)
+
+* [`POST /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers/rerequest`](/en/rest/pulls/review-requests#rerequest-reviewers-for-a-pull-request)
 
 * [`GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews`](/en/rest/pulls/reviews#list-reviews-for-a-pull-request)
 

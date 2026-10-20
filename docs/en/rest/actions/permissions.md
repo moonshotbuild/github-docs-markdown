@@ -132,7 +132,8 @@ curl -L \
 GET /orgs/{org}/actions/permissions/artifact-and-log-retention
 ```
 
-Gets artifact and log retention settings for an organization.
+Gets retention settings for checks, workflow runs, commit statuses, artifacts, and logs for an organization.
+Checks include check suites, check runs, and check annotations. These settings also apply to checks and commit statuses created by third-party integrations, and are not limited to data created by GitHub Actions.
 OAuth app tokens and personal access tokens (classic) need the admin:org scope or the "Actions policies" fine-grained permission to use this endpoint.
 
 ### Parameters
@@ -178,7 +179,8 @@ curl -L \
 PUT /orgs/{org}/actions/permissions/artifact-and-log-retention
 ```
 
-Sets artifact and log retention settings for an organization.
+Sets retention settings for checks, workflow runs, commit statuses, artifacts, and logs for an organization.
+Checks include check suites, check runs, and check annotations. These settings also apply to checks and commit statuses created by third-party integrations, and are not limited to data created by GitHub Actions.
 OAuth app tokens and personal access tokens (classic) need the admin:org scope or the "Actions policies" fine-grained permission to use this endpoint.
 
 ### Parameters
@@ -196,7 +198,7 @@ OAuth app tokens and personal access tokens (classic) need the admin:org scope o
 #### Body parameters
 
 * **`days`** (integer) (required)
-  The number of days to retain artifacts and logs
+  The number of days to retain checks, workflow runs, commit statuses, artifacts, and logs
 
 ### HTTP response status codes
 
@@ -1609,7 +1611,8 @@ curl -L \
 GET /repos/{owner}/{repo}/actions/permissions/artifact-and-log-retention
 ```
 
-Gets artifact and log retention settings for a repository.
+Gets retention settings for checks, workflow runs, commit statuses, artifacts, and logs for a repository.
+Checks include check suites, check runs, and check annotations. These settings also apply to checks and commit statuses created by third-party integrations, and are not limited to data created by GitHub Actions.
 OAuth app tokens and personal access tokens (classic) need the repo scope to use this endpoint.
 
 ### Parameters
@@ -1655,7 +1658,8 @@ Same response schema as [Get artifact and log retention settings for an organiza
 PUT /repos/{owner}/{repo}/actions/permissions/artifact-and-log-retention
 ```
 
-Sets artifact and log retention settings for a repository.
+Sets retention settings for checks, workflow runs, commit statuses, artifacts, and logs for a repository.
+Checks include check suites, check runs, and check annotations. These settings also apply to checks and commit statuses created by third-party integrations, and are not limited to data created by GitHub Actions.
 OAuth app tokens and personal access tokens (classic) need the repo scope to use this endpoint.
 
 ### Parameters
@@ -1676,7 +1680,7 @@ OAuth app tokens and personal access tokens (classic) need the repo scope to use
 #### Body parameters
 
 * **`days`** (integer) (required)
-  The number of days to retain artifacts and logs
+  The number of days to retain checks, workflow runs, commit statuses, artifacts, and logs
 
 ### HTTP response status codes
 
