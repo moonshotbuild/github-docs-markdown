@@ -19,7 +19,7 @@ A billing manager is a user who manages the billing settings for your organizati
 
 Members of your organization's Owners team can give *billing manager* permissions to people. Once a person accepts their invitation to become a billing manager for your organization, they can invite additional people to be billing managers.
 
-> \[!NOTE]
+> [!NOTE]
 > Billing managers do not use paid licenses in your organization's subscription.
 
 ## Permissions for billing managers
@@ -47,12 +47,12 @@ Billing managers **are not** able to:
 * Purchase, edit, or cancel subscriptions for GitHub Marketplace apps
 * Purchase, edit, or cancel subscriptions for GitHub Copilot Business or GitHub Copilot Enterprise
 
-> \[!TIP]
+> [!TIP]
 > If your organization [requires members, billing managers, and outside collaborators to use two-factor authentication](/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization), the user must enable two-factor authentication before they can accept your invitation to become a billing manager for the organization.
 
 ## Inviting a billing manager
 
-> \[!NOTE] If your organization is owned by an enterprise account, you cannot invite billing managers at the organization level. For more information, see [Inviting people to manage your enterprise](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/inviting-people-to-manage-your-enterprise).
+> [!NOTE] If your organization is owned by an enterprise account, you cannot invite billing managers at the organization level. For more information, see [Inviting people to manage your enterprise](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/inviting-people-to-manage-your-enterprise).
 
 The invited person will receive an invitation email asking them to become a billing manager for your organization. Once the invited person clicks the accept link in their invitation email, they will automatically be added to the organization as a billing manager. If they don't already have a GitHub account, they will be directed to sign up for one, and they will be automatically added to the organization as a billing manager after they create an account.
 

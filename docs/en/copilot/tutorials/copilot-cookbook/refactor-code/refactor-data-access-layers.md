@@ -25,7 +25,7 @@ Hardcoded SQL queries and tightly coupled data access code can make it difficult
 
 Copilot Chat can recommend implementing a repository pattern or data access layer that abstracts database interactions, making the code more modular and reducing redundancy. It can also help refactor SQL queries into optimized versions, improving performance and maintainability.
 
-> \[!NOTE] The responses described in this article are examples. Copilot Chat responses are non-deterministic, so you may get different responses from the ones shown here.
+> [!NOTE] The responses described in this article are examples. Copilot Chat responses are non-deterministic, so you may get different responses from the ones shown here.
 
 ## Example scenario
 
@@ -136,5 +136,5 @@ The revised code improves on the original in several ways:
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

@@ -82,7 +82,7 @@ For a full reference of the reclaim command, including options to control invita
 
 6. In the search field, type the username of the organization member you want to attribute the mannequin's contributions to, then click the member.
 
-   > \[!NOTE]
+   > [!NOTE]
    > You can only send attribution invitations to user accounts that are already members of the organization.
 
 7. Click **Invite**.

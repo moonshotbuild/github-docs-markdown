@@ -24,7 +24,7 @@ The endpoints on this page return usage that is billed to the account associated
 
 To view enterprise-level endpoints, select the dropdown menu at the top of the page and switch from Free, Pro, & Team to GitHub Enterprise Cloud.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get billing AI credit usage report for an organization

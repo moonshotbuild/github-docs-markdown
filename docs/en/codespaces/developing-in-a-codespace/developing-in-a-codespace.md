@@ -144,7 +144,7 @@ The tabs in this article allow you to switch between information for each of the
 
 ## Working in a codespace in a command shell
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 You can use GitHub CLI to create a new codespace, or start an existing codespace, and then SSH to it. Once connected, you can work on the command line using your preferred command-line tools.

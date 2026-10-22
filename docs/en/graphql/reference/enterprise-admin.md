@@ -415,7 +415,7 @@ An account to manage multiple organizations with consolidated policy and billing
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (EnterpriseTeamOrder): Ordering options for enterprise teams returned from the connection.
+  * `orderBy` (EnterpriseTeamOrder): Ordering options for enterprise teams returned from the connection. Default: `{field: ID, direction: ASC}`.
   * `query` (String): The search string to look for.
   * `userLogins` ([String!]): User logins to filter by. A maximum of 3 logins can be passed.
 
@@ -426,7 +426,7 @@ An account to manage multiple organizations with consolidated policy and billing
   * `ecosystem` (SecurityAdvisoryEcosystem): An ecosystem to filter vulnerabilities by.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SecurityVulnerabilityOrder): Ordering options for the returned vulnerabilities.
+  * `orderBy` (SecurityVulnerabilityOrder): Ordering options for the returned vulnerabilities. Default: `{field: UPDATED_AT, direction: DESC}`.
   * `package` (String): A package name to filter vulnerabilities by.
   * `severities` ([SecurityAdvisorySeverity!]): A list of severities to filter vulnerabilities by.
 
@@ -442,7 +442,7 @@ Upcoming Change on 2025-04-01 UTC
 Description: hasTwoFactorEnabled will be removed. Use two_factor_method_security instead.
 Reason: has_two_factor_enabled will be removed.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (EnterpriseMemberOrder): Ordering options for members returned from the connection.
+  * `orderBy` (EnterpriseMemberOrder): Ordering options for members returned from the connection. Default: `{field: LOGIN, direction: ASC}`.
   * `organizationLogins` ([String!]): Only return members within the organizations with these logins.
   * `query` (String): The search string to look for.
   * `role` (EnterpriseUserAccountMembershipRole): The role of the user in the enterprise organization or server.
@@ -455,7 +455,7 @@ not include members who only have an account on a GitHub Enterprise Server insta
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations returned from the connection.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations returned from the connection. Default: `{field: LOGIN, direction: ASC}`.
   * `query` (String): The search string to look for.
   * `viewerOrganizationRole` (RoleInOrganization): The viewer's role in an organization.
 
@@ -481,7 +481,7 @@ personal access tokens (classic) with read:enterprise or admin:enterprise scope.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (RepositoryOrder): Ordering options for repositories returned from the connection.
+  * `orderBy` (RepositoryOrder): Ordering options for repositories returned from the connection. Default: `{field: NAME, direction: ASC}`.
   * `query` (String): The search string to look for.
 
 * `viewerIsAdmin` (Boolean!): Is the current viewer an admin of this enterprise?.
@@ -913,7 +913,7 @@ Upcoming Change on 2025-04-01 UTC
 Description: hasTwoFactorEnabled will be removed. Use two_factor_method_security instead.
 Reason: has_two_factor_enabled will be removed.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (EnterpriseMemberOrder): Ordering options for administrators returned from the connection.
+  * `orderBy` (EnterpriseMemberOrder): Ordering options for administrators returned from the connection. Default: `{field: LOGIN, direction: ASC}`.
   * `organizationLogins` ([String!]): Only return members within the organizations with these logins.
   * `query` (String): The search string to look for.
   * `role` (EnterpriseAdministratorRole): The role to filter by.
@@ -927,7 +927,7 @@ Reason: has_two_factor_enabled will be removed.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (Boolean!): The setting value to find organizations for.
 
 * `allowPrivateRepositoryForkingSettingPolicyValue` (EnterpriseAllowPrivateRepositoryForkingPolicyValue): The value for the allow private repository forking policy on the enterprise.
@@ -937,7 +937,7 @@ Reason: has_two_factor_enabled will be removed.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (DefaultRepositoryPermissionField!): The permission to find organizations for.
 
 * `domains` (VerifiableDomainConnection!): A list of domains owned by the enterprise. Visible to enterprise owners or
@@ -948,15 +948,15 @@ enterprise owners' personal access tokens (classic) with admin:enterprise scope.
   * `isApproved` (Boolean): Filter whether or not the domain is approved.
   * `isVerified` (Boolean): Filter whether or not the domain is verified.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (VerifiableDomainOrder): Ordering options for verifiable domains returned.
+  * `orderBy` (VerifiableDomainOrder): Ordering options for verifiable domains returned. Default: `{field: DOMAIN, direction: ASC}`.
 
 * `enterpriseServerInstallations` (EnterpriseServerInstallationConnection!): Enterprise Server installations owned by the enterprise.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
-  * `connectedOnly` (Boolean): Whether or not to only return installations discovered via GitHub Connect.
+  * `connectedOnly` (Boolean): Whether or not to only return installations discovered via GitHub Connect. Default: `false`.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (EnterpriseServerInstallationOrder): Ordering options for Enterprise Server installations returned.
+  * `orderBy` (EnterpriseServerInstallationOrder): Ordering options for Enterprise Server installations returned. Default: `{field: HOST_NAME, direction: ASC}`.
 
 * `failedInvitations` (EnterpriseFailedInvitationConnection!): A list of failed invitations in the enterprise.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
@@ -973,7 +973,7 @@ Visible to enterprise owners or enterprise owners' personal access tokens
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (IpAllowListEntryOrder): Ordering options for IP allow list entries returned.
+  * `orderBy` (IpAllowListEntryOrder): Ordering options for IP allow list entries returned. Default: `{field: ALLOW_LIST_VALUE, direction: ASC}`.
 
 * `ipAllowListForInstalledAppsEnabledSetting` (IpAllowListForInstalledAppsEnabledSettingValue!): The setting value for whether the enterprise has IP allow list configuration for installed GitHub Apps enabled.
 * `ipAllowListUserLevelEnforcementEnabledSetting` (IpAllowListUserLevelEnforcementEnabledSettingValue!): The setting value for whether the enterprise has IP allow list user-level enforcement enabled.
@@ -986,7 +986,7 @@ repository can change repository visibility.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (Boolean!): The setting value to find organizations for.
 
 * `membersCanCreateInternalRepositoriesSetting` (Boolean): The setting value for whether members of organizations in the enterprise can create internal repositories.
@@ -998,7 +998,7 @@ repository can change repository visibility.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (OrganizationMembersCanCreateRepositoriesSettingValue!): The setting to find organizations for.
 
 * `membersCanDeleteIssuesSetting` (EnterpriseEnabledDisabledSettingValue!): The setting value for whether members with admin permissions for repositories can delete issues.
@@ -1007,7 +1007,7 @@ repository can change repository visibility.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (Boolean!): The setting value to find organizations for.
 
 * `membersCanDeleteRepositoriesSetting` (EnterpriseEnabledDisabledSettingValue!): The setting value for whether members with admin permissions for repositories can delete or transfer repositories.
@@ -1016,7 +1016,7 @@ repository can change repository visibility.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (Boolean!): The setting value to find organizations for.
 
 * `membersCanInviteCollaboratorsSetting` (EnterpriseEnabledDisabledSettingValue!): The setting value for whether members of organizations in the enterprise can invite outside collaborators.
@@ -1025,7 +1025,7 @@ repository can change repository visibility.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (Boolean!): The setting value to find organizations for.
 
 * `membersCanMakePurchasesSetting` (EnterpriseMembersCanMakePurchasesSettingValue!): Indicates whether members of this enterprise's organizations can purchase additional services for those organizations.
@@ -1035,7 +1035,7 @@ repository can change repository visibility.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (Boolean!): The setting value to find organizations for.
 
 * `membersCanViewDependencyInsightsSetting` (EnterpriseEnabledDisabledSettingValue!): The setting value for whether members can view dependency insights.
@@ -1044,7 +1044,7 @@ repository can change repository visibility.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (Boolean!): The setting value to find organizations for.
 
 * `notificationDeliveryRestrictionEnabledSetting` (NotificationRestrictionSettingValue!): Indicates if email notification delivery for this enterprise is restricted to verified or approved domains.
@@ -1055,7 +1055,7 @@ repository can change repository visibility.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (Boolean!): The setting value to find organizations for.
 
 * `outsideCollaborators` (EnterpriseOutsideCollaboratorConnection!): A list of outside collaborators across the repositories in the enterprise.
@@ -1068,7 +1068,7 @@ Description: hasTwoFactorEnabled will be removed. Use two_factor_method_security
 Reason: has_two_factor_enabled will be removed.
   * `last` (Int): Returns the last n elements from the list.
   * `login` (String): The login of one specific outside collaborator.
-  * `orderBy` (EnterpriseMemberOrder): Ordering options for outside collaborators returned from the connection.
+  * `orderBy` (EnterpriseMemberOrder): Ordering options for outside collaborators returned from the connection. Default: `{field: LOGIN, direction: ASC}`.
   * `organizationLogins` ([String!]): Only return outside collaborators within the organizations with these logins.
   * `query` (String): The search string to look for.
   * `twoFactorMethodSecurity` (TwoFactorCredentialSecurityType): Only return outside collaborators with this type of two-factor authentication method.
@@ -1079,7 +1079,7 @@ Reason: has_two_factor_enabled will be removed.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (EnterpriseAdministratorInvitationOrder): Ordering options for pending enterprise administrator invitations returned from the connection.
+  * `orderBy` (EnterpriseAdministratorInvitationOrder): Ordering options for pending enterprise administrator invitations returned from the connection. Default: `{field: CREATED_AT, direction: DESC}`.
   * `query` (String): The search string to look for.
   * `role` (EnterpriseAdministratorRole): The role to filter by.
 
@@ -1088,7 +1088,7 @@ Reason: has_two_factor_enabled will be removed.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (RepositoryInvitationOrder): Ordering options for pending repository collaborator invitations returned from the connection.
+  * `orderBy` (RepositoryInvitationOrder): Ordering options for pending repository collaborator invitations returned from the connection. Default: `{field: CREATED_AT, direction: DESC}`.
   * `query` (String): The search string to look for.
 
 * `pendingMemberInvitations` (EnterprisePendingMemberInvitationConnection!): A list of pending member invitations for organizations in the enterprise.
@@ -1105,7 +1105,7 @@ Reason: has_two_factor_enabled will be removed.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (EnterpriseMemberInvitationOrder): Ordering options for pending enterprise member invitations returned from the connection.
+  * `orderBy` (EnterpriseMemberInvitationOrder): Ordering options for pending enterprise member invitations returned from the connection. Default: `{field: CREATED_AT, direction: DESC}`.
   * `query` (String): The search string to look for.
 
 * `repositoryDeployKeySetting` (EnterpriseEnabledDisabledSettingValue!): The setting value for whether deploy keys are enabled for repositories in organizations in this enterprise.
@@ -1114,7 +1114,7 @@ Reason: has_two_factor_enabled will be removed.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (Boolean!): The setting value to find organizations for.
 
 * `repositoryProjectsSetting` (EnterpriseEnabledDisabledSettingValue!): The setting value for whether repository projects are enabled in this enterprise.
@@ -1123,7 +1123,7 @@ Reason: has_two_factor_enabled will be removed.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (Boolean!): The setting value to find organizations for.
 
 * `samlIdentityProvider` (EnterpriseIdentityProvider): The SAML Identity Provider for the enterprise.
@@ -1132,7 +1132,7 @@ Reason: has_two_factor_enabled will be removed.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (IdentityProviderConfigurationState!): The setting value to find organizations for.
 
 * `supportEntitlements` (EnterpriseMemberConnection!): A list of members with a support entitlement.
@@ -1140,7 +1140,7 @@ Reason: has_two_factor_enabled will be removed.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (EnterpriseMemberOrder): Ordering options for support entitlement users returned from the connection.
+  * `orderBy` (EnterpriseMemberOrder): Ordering options for support entitlement users returned from the connection. Default: `{field: LOGIN, direction: ASC}`.
 
 * `teamDiscussionsSetting` (EnterpriseEnabledDisabledSettingValue!): The setting value for whether team discussions are enabled for organizations in this enterprise. **Deprecated:** The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.
 * `twoFactorDisallowedMethodsSetting` (EnterpriseDisallowedMethodsSettingValue!): The setting value for what methods of two-factor authentication the enterprise prevents its users from having.
@@ -1150,7 +1150,7 @@ Reason: has_two_factor_enabled will be removed.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations with this setting. Default: `{field: LOGIN, direction: ASC}`.
   * `value` (Boolean!): The setting value to find organizations for.
 
 ## EnterpriseRepositoryInfo - object
@@ -1205,14 +1205,14 @@ An Enterprise Server installation.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (EnterpriseServerUserAccountOrder): Ordering options for Enterprise Server user accounts returned from the connection.
+  * `orderBy` (EnterpriseServerUserAccountOrder): Ordering options for Enterprise Server user accounts returned from the connection. Default: `{field: LOGIN, direction: ASC}`.
 
 * `userAccountsUploads` (EnterpriseServerUserAccountsUploadConnection!): User accounts uploads for the Enterprise Server installation.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (EnterpriseServerUserAccountsUploadOrder): Ordering options for Enterprise Server user accounts uploads returned from the connection.
+  * `orderBy` (EnterpriseServerUserAccountsUploadOrder): Ordering options for Enterprise Server user accounts uploads returned from the connection. Default: `{field: CREATED_AT, direction: DESC}`.
 
 ## EnterpriseServerInstallationConnection - object
 
@@ -1288,7 +1288,7 @@ A user account on an Enterprise Server installation.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (EnterpriseServerUserAccountEmailOrder): Ordering options for Enterprise Server user account emails returned from the connection.
+  * `orderBy` (EnterpriseServerUserAccountEmailOrder): Ordering options for Enterprise Server user account emails returned from the connection. Default: `{field: EMAIL, direction: ASC}`.
 
 * `enterpriseServerInstallation` (EnterpriseServerInstallation!): The Enterprise Server installation on which this user account exists.
 * `id` (ID!): The Node ID of the EnterpriseServerUserAccount object.
@@ -1465,7 +1465,7 @@ A team that belongs to an enterprise and can be assigned to multiple organizatio
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (EnterpriseTeamOrganizationOrder): Ordering options for organizations returned from the connection.
+  * `orderBy` (EnterpriseTeamOrganizationOrder): Ordering options for organizations returned from the connection. Default: `{field: ID, direction: ASC}`.
 
 * `combinedSlug` (String!): The human-readable, unique identifier for the enterprise and team.
 * `createdAt` (DateTime!): Identifies the date and time when the object was created.
@@ -1476,7 +1476,7 @@ A team that belongs to an enterprise and can be assigned to multiple organizatio
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (EnterpriseTeamMemberOrder): Order for the connection.
+  * `orderBy` (EnterpriseTeamMemberOrder): Order for the connection. Default: `{field: ID, direction: ASC}`.
   * `query` (String): The search string to look for.
 
 * `fullDatabaseId` (BigInt): Identifies the primary key from the database as a BigInt.
@@ -1595,7 +1595,7 @@ An account for a user who is an admin of an enterprise or a member of an enterpr
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (EnterpriseServerInstallationOrder): Ordering options for installations returned from the connection.
+  * `orderBy` (EnterpriseServerInstallationOrder): Ordering options for installations returned from the connection. Default: `{field: HOST_NAME, direction: ASC}`.
   * `query` (String): The search string to look for.
   * `role` (EnterpriseUserAccountMembershipRole): The role of the user in the installation.
 
@@ -1607,7 +1607,7 @@ An account for a user who is an admin of an enterprise or a member of an enterpr
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrganizationOrder): Ordering options for organizations returned from the connection.
+  * `orderBy` (OrganizationOrder): Ordering options for organizations returned from the connection. Default: `{field: LOGIN, direction: ASC}`.
   * `query` (String): The search string to look for.
   * `role` (EnterpriseUserAccountMembershipRole): The role of the user in the enterprise organization.
 

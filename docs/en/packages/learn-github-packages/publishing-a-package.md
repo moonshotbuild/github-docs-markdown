@@ -29,7 +29,7 @@ If a new version of a package fixes a security vulnerability, you should publish
 
 ## Publishing a package
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Packages only supports authentication using a personal access token (classic). For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 You can publish a package to GitHub Packages using any supported package client by following the same general guidelines.

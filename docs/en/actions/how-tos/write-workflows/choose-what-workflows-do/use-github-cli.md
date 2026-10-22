@@ -21,7 +21,7 @@ breadcrumbs:
 
 You can script with GitHub CLI in GitHub Actions workflows.
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 GitHub CLI is preinstalled on all GitHub-hosted runners. For each step that uses GitHub CLI, you must set an environment variable called `GH_TOKEN` to a token with the required scopes.

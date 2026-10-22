@@ -21,7 +21,7 @@ breadcrumbs:
 
 Monitor push protection's performance across your organization to identify repositories where you may need to take action.
 
-> \[!NOTE]
+> [!NOTE]
 > Secret scanning metrics for push protection is currently in public preview and subject to change.
 
 ## Viewing metrics for secret scanning push protection for an organization
@@ -46,5 +46,5 @@ You can view metrics for secret scanning push protection across organizations in
    * Use the date picker to set the time range that you want to view metrics for. Note that the date used by the date picker corresponds to the date a secret was bypassed on.
    * Click in the search box to add further filters on the secret scanning metrics displayed. For more information, see [Filtering alerts in security overview](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview).
 
-> \[!TIP]
+> [!TIP]
 > You can use the `owner` filter in the search field to filter the data by organization. For more information, see [Filtering alerts in security overview](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview).

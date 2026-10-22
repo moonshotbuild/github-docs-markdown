@@ -33,7 +33,7 @@ Working in a private repository with packages:
 * When you **publish a private package**, the total file size is included in the **repository owner's storage use**.
 * When you **download** a private package, the transfer of data is included in the **repository owner's data transfer usage**.
 
-> \[!TIP]
+> [!TIP]
 > Anyone with write access to a repository can publish packages without increasing usage for their personal account.
 
 ### Examples of how usage is measured
@@ -60,7 +60,7 @@ The following amounts of storage and data transfer are included in your GitHub p
 
 The storage amounts shown are **shared** with GitHub Actions artifacts. This means your total storage across Packages and Actions artifacts cannot exceed the included amount for your plan.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * **Billing for container image storage:** Container image storage and bandwidth for the Container registry is currently free. If you use Container registry, you'll be informed at least one month in advance of any change to this policy. For more information about the Container registry, see [Working with the Container registry](/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry).
 

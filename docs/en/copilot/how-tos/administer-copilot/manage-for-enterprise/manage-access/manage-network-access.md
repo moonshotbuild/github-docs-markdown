@@ -45,7 +45,7 @@ You should ensure that your firewall allows access to all of the hostnames liste
 
 Enterprise or organization owners can add the endpoints for Copilot Business, Copilot Enterprise, or both to their allow-list. This will ensure that members can only access Copilot through the allowed endpoint.
 
-> \[!NOTE] If your enterprise account includes both Copilot Business and Copilot Enterprise plans, make sure both endpoints are added to your allow-list.
+> [!NOTE] If your enterprise account includes both Copilot Business and Copilot Enterprise plans, make sure both endpoints are added to your allow-list.
 
 1. Ensure your members have updated to at least the minimum version of their Copilot client listed below.
    * For Visual Studio Code, use Copilot Chat version 0.17 or later.
@@ -56,6 +56,6 @@ Enterprise or organization owners can add the endpoints for Copilot Business, Co
    * For a Copilot Business plan, add `*.business.githubcopilot.com`
 
    * For a Copilot Enterprise plan, add `*.enterprise.githubcopilot.com`
-   > \[!NOTE] The `*` indicates a wildcard character. A wildcard is necessary as there are multiple subdomains required for Copilot to function correctly.
+   > [!NOTE] The `*` indicates a wildcard character. A wildcard is necessary as there are multiple subdomains required for Copilot to function correctly.
 
 3. Update your corporate network firewall to include `*.individual.githubcopilot.com` in your blocklist.

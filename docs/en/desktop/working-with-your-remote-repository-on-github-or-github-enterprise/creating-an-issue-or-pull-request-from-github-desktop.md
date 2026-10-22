@@ -49,7 +49,7 @@ Before you create a pull request, you'll need to push changes to a branch on Git
 
 2. On GitHub, click **Get started** to open an issue template or click **Open a blank issue**.
 
-> \[!NOTE]
+> [!NOTE]
 > If issue templates aren't enabled in your current repository, GitHub Desktop will direct you to a blank issue on GitHub.
 
 ## Creating a pull request

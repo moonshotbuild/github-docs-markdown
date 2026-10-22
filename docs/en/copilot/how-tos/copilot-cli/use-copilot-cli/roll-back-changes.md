@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/how-tos/copilot-cli/use-copilot-cli/roll-back-changes"
-title: "Rolling back changes made during a GitHub Copilot CLI session"
-intro: "Rewind your Copilot CLI session to a previous prompt to undo changes in conversation history, and optionally restore files."
+title: "Canceling operations and rolling back changes in GitHub Copilot CLI"
+intro: "Stop an active Copilot CLI operation, or rewind a session to undo changes in conversation history and optionally restore files."
 product: "GitHub Copilot"
 document_type: "article"
 breadcrumbs:
@@ -13,41 +13,62 @@ breadcrumbs:
     href: "/en/copilot/how-tos/copilot-cli"
   - title: "Use Copilot CLI"
     href: "/en/copilot/how-tos/copilot-cli/use-copilot-cli"
-  - title: "Roll back changes"
+  - title: "Cancel and roll back"
     href: "/en/copilot/how-tos/copilot-cli/use-copilot-cli/roll-back-changes"
 ---
 
-# Rolling back changes made during a GitHub Copilot CLI session
+# Canceling operations and rolling back changes in GitHub Copilot CLI
 
-Rewind your Copilot CLI session to a previous prompt to undo changes in conversation history, and optionally restore files.
+Stop an active Copilot CLI operation, or rewind a session to undo changes in conversation history and optionally restore files.
 
 ## Introduction
 
-When you work in an interactive Copilot CLI session, Copilot can make changes to files, run shell commands, and modify your repository. If the result isn't what you expected, you can rewind to a previous point in the session to undo those changes.
+When you work in an interactive Copilot CLI session, you can stop work that is in progress or undo work that has already been completed:
 
-You can trigger a rewind by pressing <kbd>Esc</kbd> twice when Copilot is idle, or by using the `/undo` slash command (or its alias `/rewind`).
+* **Cancel an operation** by using <kbd>Esc</kbd> or <kbd>Ctrl</kbd>+<kbd>C</kbd>. These keys behave differently depending on whether Copilot is working, prompts are queued, or a dialog is open.
+* **Roll back completed work** by pressing <kbd>Esc</kbd> twice when Copilot is idle, or by using the `/undo` slash command or its `/rewind` alias.
 
-When you select a point to rewind to, you can choose whether to **Rewind the conversation only** or **Rewind the conversation and restore files**.
+When you roll back, you can choose whether to rewind only the conversation or also restore files that Copilot changed.
 
 Rewind works in any directory, including folders that aren't Git repositories. It restores only the files that Copilot changed.
 
-This article explains how to roll back changes. For more conceptual information about rewinding to an earlier point in a session, see [Canceling a GitHub Copilot CLI operation and rolling back changes](/en/copilot/concepts/agents/copilot-cli/cancel-and-roll-back).
+## Canceling an operation
 
-## Prerequisites
+Use <kbd>Esc</kbd> when you want gradual, targeted control. While Copilot is working, the first press displays a reminder and a second press interrupts the operation. A single press also closes an open dialog or denies a pending permission request.
 
-* **A rewind point must exist.** You can't roll back before your first prompt in a session.
-* **File restoration is only available for sessions that tracked file changes.** If you resume a session that started before file-change tracking was enabled, only conversation rewind is offered. Start a new session to be able to restore file changes.
-* **File restoration skips files you changed yourself.** Files whose current contents no longer match what Copilot last wrote (for example, because you edited them afterward), and files that were too large to back up, are left untouched rather than overwritten.
-* **Rewind isn't available for remote-backed sessions**, or while the session still has work in progress.
+Use <kbd>Ctrl</kbd>+<kbd>C</kbd> when you want to cancel without the confirming second press that <kbd>Esc</kbd> requires. A single <kbd>Ctrl</kbd>+<kbd>C</kbd> immediately cancels the active operation and clears any queued prompts. Any file write that is already in progress will complete—files are not left corrupted mid-write—but any remaining planned changes are abandoned. Pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> a second time within two seconds, when the input area is empty, exits the session entirely.
+
+### What pressing Esc does in different situations
+
+The effect of pressing <kbd>Esc</kbd> depends on the current state of the session.
+
+| Current state                             | What pressing <kbd>Esc</kbd> does                                                                                                                                                                                                                                                                  |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Copilot is active with no queued prompts. | Displays an "Esc again to cancel" reminder. Press <kbd>Esc</kbd> again within half a second to cancel the operation.                                                                                                                                                                               |
+| Copilot is active and prompts are queued. | Displays the cancellation reminder. Pressing <kbd>Esc</kbd> again interrupts the current operation. In a local session, queued prompts are processed as the next turn. In a remote-backed or attached session, the operation is fully canceled and queued prompts are not run as a follow-up turn. |
+| A permission dialog is open.              | Denies the pending request without requiring a second press.                                                                                                                                                                                                                                       |
+| A dialog, overlay, or picker is open.     | Closes the dialog, overlay, or picker.                                                                                                                                                                                                                                                             |
+| Copilot is idle.                          | Displays a reminder that pressing <kbd>Esc</kbd> again quickly will open the rewind picker.                                                                                                                                                                                                        |
+
+Pressing <kbd>Esc</kbd> twice quickly opens the rewind picker only when Copilot is idle and the input area is empty. In other situations, a double <kbd>Esc</kbd> performs the first applicable action in this order:
+
+1. Cancels a running shell command.
+2. Stops the current response.
+3. Stops background agents.
+4. Clears text in the input area.
 
 ## Rolling back with a double Esc keypress
 
-> \[!WARNING]
+> [!WARNING]
 >
 > * Rewinding cannot be undone. Once you roll back, later session history is permanently removed.
 > * If you choose to restore files, Copilot restores only the files it changed, and skips any file whose current contents no longer match what it last wrote, so your own later edits aren't overwritten.
 
-Pressing <kbd>Esc</kbd> twice only opens the rewind picker when Copilot is idle. For details of what a double <kbd>Esc</kbd> does when an operation is in progress, see [Canceling a GitHub Copilot CLI operation and rolling back changes](/en/copilot/concepts/agents/copilot-cli/cancel-and-roll-back#what-pressing-esc-does-in-different-situations).
+### Prerequisites
+
+* **A rewind point must exist.** You can't roll back before your first prompt in a session.
+* **File restoration is only available for sessions that tracked file changes.** If you resume a session that started before file-change tracking was enabled, only conversation rewind is offered. Start a new session to be able to restore file changes.
+* **Rewind isn't available for remote-backed sessions**, or while the session still has work in progress.
 
 When Copilot has finished responding to a prompt you've entered:
 
@@ -62,7 +83,7 @@ When Copilot has finished responding to a prompt you've entered:
 
    Choosing a rewind point opens an action menu where you can select **Conversation only** or **Conversation + files**. The latter is unavailable for a rewind point when neither that turn nor any later turn changed any files that can be restored. Before restoring, Copilot shows a per-file preview of the changes so you can confirm.
 
-   > \[!NOTE]
+   > [!NOTE]
    > The rewind is applied relative to the state immediately **before** Copilot started working on the prompt, not immediately after it finished working on the prompt.
 
    The prompt you selected is shown in the input area, so you can edit and resubmit it, if required.
@@ -72,6 +93,28 @@ When Copilot has finished responding to a prompt you've entered:
 The `/undo` slash command, and its alias `/rewind`, provide an alternative way of opening the rewind picker.
 
 Both commands produce the same result that you get by pressing <kbd>Esc</kbd> twice when Copilot is idle and there is no text in the input area.
+
+## What happens when you roll back
+
+If you choose to rewind the conversation and restore files:
+
+1. Copilot restores the files it changed to their state before the selected prompt. It skips files that you edited afterward.
+2. The conversation is rewound to the selected point. Messages and tool calls after that point are removed.
+3. Captured file changes for the discarded turns are removed. Earlier rewind points remain available.
+4. Copilot reports how many files were restored and identifies any skipped files.
+5. The selected prompt is placed in the input area so you can edit and resubmit it.
+
+If you choose to rewind only the conversation, your files are left untouched. The later session history is removed and the selected prompt is restored to the input area.
+
+## Changes that can't be restored
+
+File restoration is skipped or unavailable in these situations:
+
+* **Files over 10 MB**: Changes to individual files larger than 10 MB aren't captured.
+* **More than 500 changed files**: If a single turn changes more than 500 files, file changes for that turn aren't captured. Other turns are unaffected.
+* **Files you changed yourself**: If a file's current contents no longer match what Copilot last wrote, the file is left untouched.
+* **Sessions without file tracking**: If a session started before file-change tracking was enabled, only conversation rewind is available.
+* **Remote-backed or busy sessions**: Rewind isn't available for remote-backed sessions or while work is still in progress.
 
 ## Verifying the rollback
 

@@ -55,7 +55,7 @@ You can also ask Copilot Chat in your editor to review the same changes and offe
 
 3. Read the suggestions and decide which ones improve your feature. You're always in control of which changes to make.
 
-> \[!TIP]
+> [!TIP]
 > If you enjoyed using Copilot to review your own code, you can [sign up for a paid plan](https://github.com/github-copilot/signup?ref_product=copilot\&ref_type=purchase\&ref_style=text\&ref_plan=pro) to get additional AI credits and Copilot code review, which can review your pull requests automatically when you add Copilot as a reviewer.
 >
 > For more information, see [Plans for GitHub Copilot](/en/copilot/get-started/plans) and [GitHub Copilot code review](/en/copilot/concepts/agents/code-review).

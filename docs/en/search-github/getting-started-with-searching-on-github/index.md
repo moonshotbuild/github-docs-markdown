@@ -32,7 +32,3 @@ You can use a wide range of syntax to search GitHub. You can adjust the scope of
 * [Sorting search results](/en/search-github/getting-started-with-searching-on-github/sorting-search-results)
 
   You can sort GitHub search results using the Sort menu, or by adding a sort qualifier to your query.
-
-* [Enabling repository search across environments](/en/enabling-repository-search-across-environments)
-
-  Unify search results in GitHub Enterprise Server by connecting your account on GitHub.com or GHE.com.

@@ -30,14 +30,14 @@ You can set up code coverage for your repository in two ways:
   * You have complex CI requirements (such as private registries or custom build steps).
   * You want to understand exactly how coverage is configured.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > If you use the **Restrict code coverage** rule, make each status check associated with an expected coverage upload a required status check. For more information, see [How the code coverage rule works](/en/code-security/how-tos/maintain-quality-code/restrict-code-coverage#how-the-code-coverage-rule-works).
 
 ## Automatic setup
 
 You can use the automatic setup option to generate a working code coverage workflow without manually authoring CI configuration. An agent analyzes your repository, identifies your test framework, and opens a pull request with a coverage workflow ready for review.
 
-> \[!NOTE]
+> [!NOTE]
 > Automatic setup uses AI to generate the workflow file. There is no additional cost for using this feature.
 
 ### Prerequisites for automatic setup
@@ -87,7 +87,7 @@ Configure your test framework to output a coverage report in the Cobertura XML f
 | Ruby                  | SimpleCov                       | Add `SimpleCov::Formatter::CoberturaFormatter`                                    |
 | Go                    | `go test` + `gocover-cobertura` | `go test -coverprofile=cover.out && gocover-cobertura < cover.out > coverage.xml` |
 
-> \[!TIP]
+> [!TIP]
 > If your framework isn't listed above, check its documentation for Cobertura output support. Many tools either support it directly or can convert to Cobertura XML from other formats.
 
 ### Step 2: Upload the coverage report

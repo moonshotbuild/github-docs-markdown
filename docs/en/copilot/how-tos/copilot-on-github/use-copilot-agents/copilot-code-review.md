@@ -92,7 +92,7 @@ Copilot code review also reads custom instructions from `CLAUDE.md`, `GEMINI.md`
 
 For more information, see [Adding repository custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions).
 
-> \[!NOTE]
+> [!NOTE]
 > When reviewing a pull request, Copilot reads repository custom instructions, agent instructions, and agent skills from the head branch (the branch with your changes), not the base branch. For example, when merging `my-feature-branch` into `main`, Copilot uses the instructions and skills in `my-feature-branch`, so you can test changes to them in the same pull request without merging them first.
 
 ### Example

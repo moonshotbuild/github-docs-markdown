@@ -23,7 +23,7 @@ In this guide, you'll get started with GitHub, sign up for accounts and discount
 
 GitHub also offers partnerships with educational institutions through the GitHub Campus Program. For more information, see the [GitHub Campus Program](https://education.github.com/schools) website.
 
-> \[!NOTE]
+> [!NOTE]
 > If you're a student and you'd like to take advantage of an academic discount, see [Apply to GitHub Education as a student](/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student).
 
 ## Creating accounts
@@ -60,7 +60,7 @@ With your personal account and organization account, you're ready to get started
 
 3. Review the information. To authorize GitHub Classroom to access your organization account on GitHub, click **Grant**.
 
-   > \[!TIP]
+   > [!TIP]
    > If you see a **Request** button instead of a **Grant** button, you are a member of the organization, not an owner. An owner must approve your request for GitHub Classroom. You must be an organization owner to create and manage classrooms and assignments in GitHub Classroom. For more information, see [Authorizing OAuth apps](/en/apps/oauth-apps/using-oauth-apps/authorizing-oauth-apps#oauth-apps-and-organizations).
 
 4. Click **Authorize github**.

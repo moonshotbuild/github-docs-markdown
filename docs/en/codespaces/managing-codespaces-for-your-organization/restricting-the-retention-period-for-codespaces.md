@@ -25,7 +25,7 @@ GitHub users can set a personal retention period of less than 30 days for codesp
 
 As an organization owner, you may want to configure constraints on the maximum retention period for codespaces created for the repositories owned by your organization. This can help you to limit the storage costs associated with codespaces that are stopped and then left unused until they are automatically deleted. For more information about storage charges, see [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces#pricing). You can set a maximum retention period for all, or for specific, repositories owned by your organization.
 
-> \[!NOTE]
+> [!NOTE]
 > Setting a maximum retention policy for a repository prevents people from exempting a codespace from automatic deletion. The "Keep codespace" option will be unavailable for codespaces created for that repository. For more information, see [Configuring automatic deletion of your codespaces](/en/codespaces/setting-your-user-preferences/configuring-automatic-deletion-of-your-codespaces?tool=webui#avoiding-automatic-deletion-of-codespaces).
 
 ### Setting organization-wide and repository-specific policies
@@ -34,7 +34,7 @@ When you create a policy, you choose whether it applies to all repositories in y
 
 If you add an organization-wide policy with a retention constraint, you should set the retention period to the longest acceptable period. You can then add separate policies that set the maximum retention to a shorter period for specific repositories in your organization.
 
-> \[!NOTE]
+> [!NOTE]
 > Codespaces policies only apply to codespaces that your organizations pays for. If someone creates a codespace for a repository in your organization at their own expense, then the codespace will not be bound by these policies. For more information, see [Choosing who owns and pays for codespaces in your organization](/en/codespaces/managing-codespaces-for-your-organization/choosing-who-owns-and-pays-for-codespaces-in-your-organization).
 
 ## Adding a policy to set a maximum codespace retention period
@@ -61,7 +61,7 @@ If you add an organization-wide policy with a retention constraint, you should s
 
    ![Screenshot of a dropdown with a field labeled "Maximum value" set to 8 days. Below this are "Cancel" and "Save" buttons.](/assets/images/help/codespaces/maximum-days-retention.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    >
    > * A day, in this context, is a 24-hour period, beginning at the time of day when the codespace was stopped.
    > * The valid range is 0-30 days.
@@ -71,7 +71,7 @@ If you add an organization-wide policy with a retention constraint, you should s
 
     ![Screenshot of the repository selection dropdown, showing the options "All repositories" and "Selected repositories."](/assets/images/help/codespaces/selected-repositories.png)
 
-    > \[!NOTE]
+    > [!NOTE]
     > If you're adding a constraint to an existing policy that already contains the "Maximum codespaces per user" constraint, you won't be able to apply the policy to selected repositories. This is because the "Maximum codespaces per user" constraint always applies to all repositories in the organization.
 
     With **Selected repositories** selected:

@@ -29,7 +29,7 @@ You must install and import `octokit` in order to use the Octokit.js library. Th
 
 ## Instantiating and authenticating
 
-> \[!WARNING]
+> [!WARNING]
 > Treat your authentication credentials like a password.
 >
 > To keep your credentials secure, you can store your credentials as a secret and run your script through GitHub Actions. For more information, see [Using secrets in GitHub Actions](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets).

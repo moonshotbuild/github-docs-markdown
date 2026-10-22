@@ -69,7 +69,7 @@ packs. Along with the queries themselves, CodeQL packs contain important metadat
 that tells the CodeQL CLI how to process the query files. For more information,
 see [Creating and working with CodeQL packs](/en/code-security/tutorials/customize-code-scanning/create-and-work-with-codeql-packs).
 
-> \[!NOTE]
+> [!NOTE]
 > There are different versions of the CodeQL queries available for different users. Check out the correct version for your use case:
 >
 > * For the queries that are intended to be used with the latest CodeQL CLI release, check out the branch tagged `codeql-cli/latest`. You should use this branch for databases you’ve built using the CodeQL CLI or recently downloaded from GitHub.

@@ -165,7 +165,7 @@ The stroke is the color `fg.severe` in the [Primer Design System](https://primer
 
    * Pixel width: 1000 pixels maximum
 
-   > \[!NOTE]
+   > [!NOTE]
    > On Windows, you may need to select **Advanced** to change the resolution. Ensure **Use resampling** is disabled.
 
 3. With the GitHub Docs theme open in the Shapes sidebar, select the dark orange rectangle.
@@ -176,7 +176,7 @@ The stroke is the color `fg.severe` in the [Primer Design System](https://primer
 
 6. Export image to PNG.
 
-> \[!NOTE]
+> [!NOTE]
 > A bug in Snagit may corrupt the corner rounding, causing rectangles to become ovals. If this occurs, delete and reinstall the GitHub Docs theme (Windows and Mac), or click and drag the yellow dot at the top right of the shape to reset corner rounding to 4 px (Mac only).
 
 ## Replacing screenshots

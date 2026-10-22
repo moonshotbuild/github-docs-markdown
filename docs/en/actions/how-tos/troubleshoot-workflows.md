@@ -21,7 +21,7 @@ You can use the tools in GitHub Actions to debug your workflows.
 
 There are several ways you can troubleshoot failed workflow runs.
 
-> \[!NOTE] If you are on a GitHub Copilot Free subscription, this will count towards your monthly chat message limit.
+> [!NOTE] If you are on a GitHub Copilot Free subscription, this will count towards your monthly chat message limit.
 
 ### Using GitHub Copilot
 

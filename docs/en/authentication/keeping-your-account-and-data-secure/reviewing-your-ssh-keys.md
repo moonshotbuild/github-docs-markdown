@@ -27,7 +27,7 @@ You can delete unauthorized (or possibly compromised) SSH keys to ensure that an
 
 3. Under "SSH keys", take note of the SSH keys associated with your account. For those that you don't recognize, or that are out-of-date, click **Delete**. If there are valid SSH keys you'd like to keep, click **Approve**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you're auditing your SSH keys due to an unsuccessful Git operation, the unverified key that caused the [SSH key audit error](/en/authentication/troubleshooting-ssh/error-were-doing-an-ssh-key-audit) will be highlighted in the list of SSH keys.
 
 4. Open Terminal.
@@ -60,7 +60,7 @@ You can delete unauthorized (or possibly compromised) SSH keys to ensure that an
 
 3. Under "SSH keys", take note of the SSH keys associated with your account. For those that you don't recognize, or that are out-of-date, click **Delete**. If there are valid SSH keys you'd like to keep, click **Approve**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you're auditing your SSH keys due to an unsuccessful Git operation, the unverified key that caused the [SSH key audit error](/en/authentication/troubleshooting-ssh/error-were-doing-an-ssh-key-audit) will be highlighted in the list of SSH keys.
 
 4. Open Git Bash.
@@ -81,7 +81,7 @@ You can delete unauthorized (or possibly compromised) SSH keys to ensure that an
    > Agent pid 59566
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > The eval commands above start ssh-agent manually in your environment. These commands may fail if ssh-agent already runs as a background system service. If that happens, we recommend you check the relevant documentation for your environment.
 
 6. Find and take a note of your public key fingerprint.
@@ -103,7 +103,7 @@ You can delete unauthorized (or possibly compromised) SSH keys to ensure that an
 
 3. Under "SSH keys", take note of the SSH keys associated with your account. For those that you don't recognize, or that are out-of-date, click **Delete**. If there are valid SSH keys you'd like to keep, click **Approve**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you're auditing your SSH keys due to an unsuccessful Git operation, the unverified key that caused the [SSH key audit error](/en/authentication/troubleshooting-ssh/error-were-doing-an-ssh-key-audit) will be highlighted in the list of SSH keys.
 
 4. Open Terminal.
@@ -128,5 +128,5 @@ You can delete unauthorized (or possibly compromised) SSH keys to ensure that an
 
 </div>
 
-> \[!WARNING]
+> [!WARNING]
 > If you see an SSH key you're not familiar with on GitHub, delete it immediately and contact us through the [GitHub Support portal](https://support.github.com) for further help. An unidentified public key may indicate a possible security concern.

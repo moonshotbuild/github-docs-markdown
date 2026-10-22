@@ -77,7 +77,7 @@ jobs:
           path: output/test/code-coverage.html
 ```
 
-> \[!TIP]
+> [!TIP]
 > To display code coverage results directly on pull requests instead of downloading artifacts, you can upload a Cobertura XML coverage report to Code Quality. See [Setting up code coverage for your repository](/en/code-security/how-tos/maintain-quality-code/set-up-code-coverage).
 
 ## Configuring a custom artifact retention period
@@ -99,7 +99,7 @@ The `retention-days` value cannot exceed the retention limit set by the reposito
 
 You can use the [`actions/download-artifact`](https://github.com/actions/download-artifact) action to download previously uploaded artifacts during a workflow run.
 
-> \[!NOTE]
+> [!NOTE]
 > If you want to download artifacts from a different workflow or workflow run, you need to supply a token and run identifier. See [Download Artifacts from other Workflow Runs or Repositories](https://github.com/actions/download-artifact?tab=readme-ov-file#download-artifacts-from-other-workflow-runs-or-repositories) in the documentation for the `download-artifact` action.
 
 Specify an artifact's name to download an individual artifact. If you uploaded an artifact without specifying a name, the default name is `artifact`.

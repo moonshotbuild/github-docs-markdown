@@ -33,10 +33,6 @@ Learn how to use the billing platform to pay for expanded access to GitHub and p
 
   Learn how to use the billing platform to pay for expanded access to GitHub products.
 
-* [Manage Enterprise Server licenses for your enterprise account](/en/manage-server-licenses)
-
-  Learn how to set up an instance of GitHub Enterprise Server that synchronizes license information with your enterprise account on GitHub Enterprise Cloud.
-
 * [Making payments to third-parties through GitHub](/en/billing/how-tos/pay-third-parties)
 
   You can upgrade, downgrade, or cancel GitHub Marketplace apps and sponsorships.

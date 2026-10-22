@@ -50,7 +50,7 @@ To keep your local branches in sync with their remotes and avoid merge conflicts
      git checkout -b YOUR-TOPIC-BRANCH
      ```
 
-     > \[!NOTE]
+     > [!NOTE]
      > You can use forward slashes as part of the branch name, for example to include your user name:
      >
      > ```shell
@@ -139,7 +139,7 @@ To keep your local branches in sync with their remotes and avoid merge conflicts
 
 * If a commit addresses an issue, you can reference the issue number in the commit, and a link to the commit will appear in the issue conversation timeline: "Addresses #1234 - adds steps for backing up the VM before upgrading."
 
-  > \[!NOTE]
+  > [!NOTE]
   > We generally don't close an issue via a commit. To close an issue, open a pull request and add "Closes #1234" to the description. The linked issue will be closed when the pull request is merged. For more information, see [Linking a pull request to an issue](/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue).
 
 * Make commit messages clear, detailed, and imperative. For example: "Add conceptual article about 2FA," not "Add info."
@@ -181,7 +181,7 @@ There are two ways to handle merge conflicts:
 
    If there are multiple files with merge conflicts, repeat the previous steps until you resolve all conflicts.
 
-   > \[!NOTE]
+   > [!NOTE]
    > You should apply care when resolving merge conflicts. Sometimes you will simply accept your own changes, sometimes you will use the upstream changes from the `main` branch, and sometimes you will combine both sets of changes. If you're unsure of the best resolution, be wary of replacing the changes from upstream as these may have been made for specific reasons that you're not aware of.
 
 5. In the terminal, stage the file, or files, that you just modified.
@@ -206,7 +206,7 @@ There are two ways to handle merge conflicts:
 
 We recommend you open your pull request on GitHub early. Create the pull request as a draft until you are ready for it to be reviewed. Each time you push changes, your commits will be added to the pull request.
 
-> \[!NOTE]
+> [!NOTE]
 > You can quickly access pull requests you've created by clicking **Pull requests** at the top of every page on GitHub.
 
 For more information, see [Creating a pull request](/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request?tool=webui#creating-the-pull-request).

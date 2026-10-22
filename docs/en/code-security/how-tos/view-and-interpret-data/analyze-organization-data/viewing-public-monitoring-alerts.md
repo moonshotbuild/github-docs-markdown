@@ -21,14 +21,14 @@ breadcrumbs:
 
 Find out which credentials your enterprise members have exposed in public repositories across GitHub.
 
-> \[!NOTE]
+> [!NOTE]
 > Public monitoring for secret scanning is currently in public preview and subject to change. If you have feedback, please join the [discussion](https://github.com/orgs/community/discussions/categories/code-security).
 
 ## About the public monitoring page
 
 The **Public monitoring** page is a dedicated view within the enterprise-level security overview. It displays alerts for secrets detected in public repositories across GitHub that are attributed to your enterprise members or users with an email matching your enterprise's verified domain.
 
-> \[!NOTE]
+> [!NOTE]
 > The Public monitoring page is available at the enterprise level only. It is not available at the organization level.
 
 ## Prerequisites

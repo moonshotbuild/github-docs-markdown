@@ -21,7 +21,7 @@ Learn how to use GitHub in Slack to improve collaboration and streamline your wo
 
 The GitHub integration for Slack allows you to connect your GitHub account to the GitHub app in Slack. Once connected, you can use slash commands to interact with GitHub, receive notifications about repository activity, and collaborate with your team directly within Slack.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * GitHub Copilot in Slack is currently in public preview and subject to change.
 
@@ -29,7 +29,7 @@ You can also use the GitHub integration to initiate and steer Copilot cloud agen
 
 ## Connecting your GitHub account to the GitHub app in Slack
 
-> \[!NOTE] Before you can connect your accounts, an admin for your Slack workspace must have installed the GitHub app. See [Integrating GitHub with Slack](/en/integrations/how-tos/slack/integrate-github-with-slack).
+> [!NOTE] Before you can connect your accounts, an admin for your Slack workspace must have installed the GitHub app. See [Integrating GitHub with Slack](/en/integrations/how-tos/slack/integrate-github-with-slack).
 
 1. In Slack, start a direct message with the GitHub app.
 2. The direct message will be pre-populated with a welcome message and a link to connect your GitHub account. Follow the prompts on screen in Slack, and in GitHub in your browser, to authenticate and authorize the connection.
@@ -53,7 +53,7 @@ To use a slash command, type `/github` followed by the command you want to execu
 | `/github signin`                                  | Restarts the "Connect your GitHub account" workflow.                                                               |
 | `/github signout`                                 | Disconnects your GitHub account from your Slack user.                                                              |
 
-> \[!NOTE] When you subscribe a channel to a repository, the channel will receive notifications for all `open`, `close`, and `reopen` events on pull requests and issues in that repository. The channel will also receive notifications of any `push` events directly to the repository's default branch.
+> [!NOTE] When you subscribe a channel to a repository, the channel will receive notifications for all `open`, `close`, and `reopen` events on pull requests and issues in that repository. The channel will also receive notifications of any `push` events directly to the repository's default branch.
 
 To change the settings for Copilot cloud agent in Slack, use the `@GitHub settings` command.
 
@@ -80,7 +80,7 @@ You can create, comment on, and manage issues and pull requests directly from Sl
 
 To have Copilot perform an action, @mention the app in any chat by typing `@GitHub` followed by your task.
 
-> \[!NOTE]
+> [!NOTE]
 > Pull requests created in a shared context by Copilot use the app's identity. If you use repository rulesets, because these pull requests aren't attributed to a person, one more approval is required before merging, as long as the repository already requires at least one approval. This is enabled by default. See [Available rules for rulesets](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets#additional-approval-for-unattributed-copilot-pull-requests).
 
 For step-by-step instructions to work with issues and pull requests independent of Copilot, see [Creating issues with the GitHub integration in Slack](/en/integrations/tutorials/slack/create-issues) and [Managing issues with the GitHub integration in Slack](/en/integrations/tutorials/slack/manage-issues).
@@ -91,7 +91,7 @@ When you subscribe to a repository in Slack, you will see yourself mentioned in 
 
 Mentions require you to be logged in to your GitHub account through the GitHub app in Slack. This enables GitHub to map your Slack identity to your GitHub identity. See [Connecting your GitHub account to the GitHub app in Slack](#connecting-your-github-account-to-the-github-app-in-slack).
 
-> \[!NOTE]
+> [!NOTE]
 > If you have multiple Slack workspaces where you use the GitHub app, mentions will only work in the workspace where you logged in to your GitHub app most recently. If you log in to your GitHub app in a different workspace, mentions will stop working in the previous workspace.
 
 The following are scenarios in which you will be mentioned:

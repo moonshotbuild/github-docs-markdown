@@ -34,7 +34,7 @@ Organization owners and security managers can set custom auto-triage rules at th
 * **Enforced:** If an organization-level rule is "enforced", repository administrators cannot edit, disable, or delete the rule.
 * **Enabled:** If an organization-level rule is "enabled", repository administrators can still disable the rule for their repository.
 
-> \[!NOTE]
+> [!NOTE]
 > In the event that an organization-level rule and a repository-level rule specify conflicting behaviors, the action set out by the organization-level rule takes precedence. Dismissal rules always act before rules which trigger Dependabot pull requests.
 
 You can create rules to target alerts using the following metadata:
@@ -52,7 +52,7 @@ You can create rules to target alerts using the following metadata:
 
 ### Understanding how custom auto-triage rules and Dependabot security updates interact
 
-> \[!NOTE] Dependabot will only open pull requests to resolve Dependabot alerts, not Dependabot malware alerts.
+> [!NOTE] Dependabot will only open pull requests to resolve Dependabot alerts, not Dependabot malware alerts.
 
 You can use custom auto-triage rules to tailor which Dependabot alerts you want Dependabot to open pull requests for. However, for an "open a pull request" rule to take effect, you must ensure that Dependabot security updates are **disabled** for the repository (or repositories) that the rule should apply to.
 
@@ -62,7 +62,7 @@ For more information about enabling or disabling Dependabot security updates for
 
 ## Adding custom auto-triage rules to your repository
 
-> \[!NOTE]
+> [!NOTE]
 > During the public preview, you can create up to 10 custom auto-triage rules for a repository.
 
 1. On GitHub, navigate to the main page of the repository.
@@ -87,7 +87,7 @@ For more information about enabling or disabling Dependabot security updates for
    * Select **Dismiss alerts** to auto-dismiss alerts that match the metadata. You can choose to dismiss alerts indefinitely or until a patch is available.
    * Select **Open a pull request to resolve this alert** if you want Dependabot to suggest changes to resolve alerts that match the targeted metadata. Note that this option is unavailable if you have already selected the option to dismiss alerts indefinitely, or if Dependabot security updates are enabled in your repository settings.
 
-     > \[!NOTE] Dependabot will only open pull requests to resolve Dependabot alerts, not Dependabot malware alerts.
+     > [!NOTE] Dependabot will only open pull requests to resolve Dependabot alerts, not Dependabot malware alerts.
 
 10. Click **Create rule**.
 

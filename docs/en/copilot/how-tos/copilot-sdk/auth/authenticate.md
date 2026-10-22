@@ -505,7 +505,7 @@ For multi-user server mode, pass a per-session `gitHubToken` so each session run
 
 ## Disabling auto-login
 
-To prevent the SDK from automatically using stored credentials or `gh` CLI auth, configure it to disable logged-in-user fallback:
+To prevent the SDK from automatically using stored credentials or `gh` CLI auth, configure it to disable logged-in-user fallback. This also ignores environment variable tokens such as `COPILOT_GITHUB_TOKEN`, so you must pass a token through the SDK's explicit token option. The examples below show only the fallback setting:
 
 <div class="ghd-codetabs">
 <div class="ghd-codetab" data-lang="dotnet" data-label=".NET"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">.NET</div>

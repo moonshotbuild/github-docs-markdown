@@ -23,7 +23,7 @@ You can filter to see which alerts have been auto-dismissed by a rule, and you c
 
 ## Managing automatically dismissed alerts
 
-> \[!NOTE]
+> [!NOTE]
 > The Dependabot alerts page defaults to showing open alerts. To filter and view auto-dismissed alerts, you must first clear the `is:open` default filter from the view.
 
 1. On GitHub, navigate to the main page of the repository.

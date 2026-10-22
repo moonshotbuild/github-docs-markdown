@@ -21,7 +21,7 @@ Create a stack of dependent pull requests using the gh stack extension in GitHub
 
 Create stacked pull requests with the `gh stack` extension in GitHub CLI or on the GitHub website.
 
-> \[!NOTE]
+> [!NOTE]
 > Stacked pull requests require all branches to be in the same repository. Cross-fork stacks are not supported.
 
 ## Creating a stack with GitHub CLI

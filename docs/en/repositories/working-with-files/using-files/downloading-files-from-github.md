@@ -33,7 +33,7 @@ Each of these methods has its own use case, which we'll explain in the next sect
 
 This tutorial focuses on downloading a repository's files to your local computer. For example, if you've found some interesting content in a repository on GitHub, downloading is a simple way to get a copy of the content, without using Git or applying version control.
 
-> \[!TIP]
+> [!TIP]
 > To download a release package or assets, such as the latest version of an application, or the installer, binary, or executable for software stored in a GitHub repository, see [Downloading source code archives from a release](/en/repositories/working-with-files/using-files/downloading-source-code-archives#downloading-source-code-archives-from-a-release) or [Downloading source code archives from a tag](/en/repositories/working-with-files/using-files/downloading-source-code-archives#downloading-source-code-archives-from-a-tag).
 
 ### Understanding the differences between downloading, cloning, and forking

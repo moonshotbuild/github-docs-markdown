@@ -24,7 +24,7 @@ Determine your timeline, which will largely dictate your approach. The first ste
 * Number of repositories
 * Number of pull requests
 
-> \[!NOTE] Migration timing is largely based on the number of pull requests in a repository. If you want to migrate 1,000 repositories, and each repository has 100 pull requests on average, your migration will likely be very quick. If you want to migrate only 100 repositories, but the repositories each have 75,000 pull requests on average, the migration will take much longer and require more planning and testing.
+> [!NOTE] Migration timing is largely based on the number of pull requests in a repository. If you want to migrate 1,000 repositories, and each repository has 100 pull requests on average, your migration will likely be very quick. If you want to migrate only 100 repositories, but the repositories each have 75,000 pull requests on average, the migration will take much longer and require more planning and testing.
 
 We recommend the `inventory-report` command in the ADO2GH extension of the GitHub CLI. This command will connect with the Azure DevOps API, and then create several CSV files. `repos.csv` contains information about your repositories, including the number of pull requests.
 
@@ -48,7 +48,7 @@ Next, plan the organizational structure you'll create in GitHub. ADO and GitHub 
 
 After migrating to GitHub, you should have only one enterprise account and a small number of organizations owned by that enterprise. Each organization from ADO should correspond to a single organization on GitHub.
 
-> \[!NOTE] The concept of a team project, which is used to group repositories in ADO, does not exist in GitHub. We do not recommend creating an organization on GitHub for each team project on ADO, as this may result in a large list of ungrouped repositories within each organization. However, you can manage access to groups of repositories by creating teams.
+> [!NOTE] The concept of a team project, which is used to group repositories in ADO, does not exist in GitHub. We do not recommend creating an organization on GitHub for each team project on ADO, as this may result in a large list of ungrouped repositories within each organization. However, you can manage access to groups of repositories by creating teams.
 
 If you want to break your migration effort into batches, the new structure can help you determine them. If you have more than one organization in ADO, and each organization's repositories are reasonably sized batches, consider batching by organization.
 

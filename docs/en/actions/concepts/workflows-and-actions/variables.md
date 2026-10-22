@@ -30,7 +30,7 @@ You can set a custom variable in two ways.
 * To define an environment variable for use in a single workflow, you can use the `env` key in the workflow file. For more information, see [Defining environment variables for a single workflow](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables#defining-environment-variables-for-a-single-workflow).
 * To define a configuration variable across multiple workflows, you can define it at the organization, repository, or environment level. When creating a variable in an organization, you can use a policy to limit access by repository. For example, you can grant access to all repositories, or limit access to only private repositories or a specified list of repositories. For more information, see [Defining configuration variables for multiple workflows](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables#defining-configuration-variables-for-multiple-workflows).
 
-> \[!WARNING]
+> [!WARNING]
 > By default, variables render unmasked in your build outputs. If you need greater security for sensitive information, such as passwords, use secrets instead. For more information, see [Secrets](/en/actions/concepts/security/secrets).
 
 For reference documentation, see [Variables reference](/en/actions/reference/workflows-and-actions/variables).

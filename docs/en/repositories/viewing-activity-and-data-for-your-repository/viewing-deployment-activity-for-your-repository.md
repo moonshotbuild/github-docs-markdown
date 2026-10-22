@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can view information about deployments for your entire repository or a specific pull request.
 
-> \[!NOTE]
+> [!NOTE]
 > The deployments dashboard is currently in public preview and subject to change.
 
 People with read access to a repository can see an overview of all current deployments and a log of past deployment activity, if the repository's deployment workflow is integrated with GitHub through the Deployments API or an app from [GitHub Marketplace](https://github.com/marketplace/category/deployment). For more information, see [REST API endpoints for repositories](/en/rest/repos#deployments).

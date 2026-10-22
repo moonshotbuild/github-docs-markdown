@@ -17,10 +17,10 @@ breadcrumbs:
 
 You can sign tags locally using GPG, SSH, or S/MIME.
 
-> \[!NOTE]
+> [!NOTE]
 > [GitHub Desktop](https://desktop.github.com/) only supports commit signing if your Git client is configured to sign commits by default.
 
-> \[!TIP]
+> [!TIP]
 > To configure your Git client to sign tags by default for a local repository, in Git versions 2.23.0 and above, run `git config tag.gpgsign true`. To sign all tags by default in any local repository on your computer, run `git config --global tag.gpgsign true`.
 
 1. To sign a tag, add `-s` to your `git tag` command.

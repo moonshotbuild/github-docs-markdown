@@ -21,12 +21,12 @@ breadcrumbs:
 
 Enable Copilot cloud agent for your members and control the repositories where it is available.
 
-> \[!NOTE]
+> [!NOTE]
 > For an introduction to Copilot cloud agent, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
 
 ## Enabling Copilot cloud agent for your members
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot policies are also managed at the enterprise level. If your enterprise owner has selected a specific policy, such as enabling a feature everywhere, disabling it everywhere, or enabling it for selected organizations only, you cannot override that setting at the organization level. For information on how policies combine, see [GitHub Copilot policies for enterprises and organizations](/en/copilot/concepts/enterprise/policies).
 
 Copilot cloud agent and use of third-party MCP servers are disabled by default for organization members assigned a GitHub Copilot Enterprise or Copilot Business license by your organization.
@@ -53,7 +53,7 @@ Once Copilot cloud agent is enabled for a repository, any user with access to Co
 
 ## Controlling automations in your repositories
 
-Automations let users run Copilot cloud agent automatically, on a schedule or in response to events. See [About Copilot automations](/en/copilot/concepts/agents/cloud-agent/about-automations).
+Automations let users run Copilot cloud agent automatically, on a schedule or in response to events. See [Copilot automations](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automations).
 
 Automations are allowed by default in repositories where Copilot cloud agent is available. You can control whether automations are allowed in repositories owned by your organization, separately from the Copilot cloud agent policy.
 

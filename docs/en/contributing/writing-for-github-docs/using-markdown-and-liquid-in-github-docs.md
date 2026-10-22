@@ -77,10 +77,10 @@ Alerts highlight important information that users need to know. For details abou
 
 ### Example alerts rendered on GitHub Docs
 
-> \[!TIP]
+> [!TIP]
 > Try this out!
 
-> \[!NOTE]
+> [!NOTE]
 > Generally alerts should be short.
 >
 > But occasionally may require more than one paragraph
@@ -482,7 +482,7 @@ For more information about links, see [Style guide](/en/contributing/style-guide
 
 Because the site is dynamic, it does not build HTML files for each different version of an article. Instead it generates a "permalink" for every version of the article. It does this based on the article's [`versions` frontmatter](/en/contributing/writing-for-github-docs/using-yaml-frontmatter#versions).
 
-> \[!NOTE]
+> [!NOTE]
 > As of early 2021, the `free-pro-team@latest` version is not included in URLs. A helper function called `lib/remove-fpt-from-path.ts` removes the version from URLs.
 
 For example, an article that is available in currently supported versions will have permalink URLs like the following:
@@ -499,7 +499,7 @@ An article that is not available in GitHub Enterprise Server will have just one 
 
 * `/en/get-started/git-basics/set-up-git`
 
-> \[!NOTE]
+> [!NOTE]
 > If you are a content contributor, you don't need to worry about supported versions when adding a link to a document. Following the examples above, if you want to reference an article, you can just use its relative location: `/github/getting-started-with-github/set-up-git`.
 
 ### Internal links with AUTOTITLE
@@ -512,7 +512,7 @@ When linking to another GitHub Docs page, use standard Markdown syntax like `[](
 * `For more information, see [AUTOTITLE](/path/to/page#section-link).`
 * `For more information, see the TOOLNAME documentation in [AUTOTITLE](/path/to/page?tool=TOOLNAME).`
 
-> \[!NOTE]
+> [!NOTE]
 > Same-page section links do not work with this keyword. Type out the full header text instead.
 
 ### Linking to the current article in a different version of the docs

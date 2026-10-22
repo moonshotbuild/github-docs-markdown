@@ -41,23 +41,23 @@ Copilot cloud agent and use of third-party MCP servers are disabled by default. 
 
 5. Select a global policy for Copilot cloud agent, then communicate your decision with your organizations.
 
-   > \[!TIP] If you select **Enabled for selected organizations**, you can select individual organizations in the UI. To select organizations based on custom properties instead, use the REST API. See [REST API endpoints for Copilot cloud agent management](/en/rest/copilot/copilot-coding-agent-management#selecting-organizations-with-custom-properties).
+   > [!TIP] If you select **Enabled for selected organizations**, you can select individual organizations in the UI. To select organizations based on custom properties instead, use the REST API. See [REST API endpoints for Copilot cloud agent management](/en/rest/copilot/copilot-coding-agent-management#selecting-organizations-with-custom-properties).
 
 6. By default, the agent will be available in all repositories in selected organizations. If there are repositories where Copilot cloud agent should be blocked for all users, tell organization owners to configure this setting. See [Adding GitHub Copilot cloud agent to your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/add-copilot-cloud-agent#disabling-or-enabling-copilot-cloud-agent-in-your-repositories).
 
 ## Enabling MCP servers
 
-Copilot cloud agent automatically has access to a small number of default MCP servers. See [Model Context Protocol (MCP) and GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/mcp-and-cloud-agent#default-mcp-servers).
+Copilot cloud agent automatically has access to a small number of default MCP servers. See [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp#default-mcp-servers).
 
 You can enable third-party MCP servers to allow developers to integrate Copilot cloud agent with other services in your DevOps toolchain, such as error-tracking platforms or logging systems.
 
 1. In the sidebar, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-mcp" aria-label="mcp" role="img"><path d="M5.52 1.12a3.578 3.578 0 0 1 6.078 2.98 3.578 3.578 0 0 1 2.982 6.08l-3.292 3.293a.252.252 0 0 0 0 .354l.843.843a.749.749 0 1 1-1.06 1.06l-.844-.843a1.75 1.75 0 0 1 0-2.474L13.52 9.12a2.08 2.08 0 0 0 0-2.94 2.08 2.08 0 0 0-2.94 0L7.731 9.03A.75.75 0 0 1 6.67 7.97l2.85-2.85a2.08 2.08 0 0 0 0-2.94 2.08 2.08 0 0 0-2.94 0l-4.799 4.8A.75.75 0 0 1 .72 5.92Z"></path><path d="M7.52 3.12a.749.749 0 1 1 1.06 1.06L5.731 7.03A2.079 2.079 0 0 0 8.67 9.97l2.85-2.85a.749.749 0 1 1 1.06 1.06l-2.849 2.85A3.578 3.578 0 0 1 4.67 5.97Z"></path></svg> **MCP**.
 2. Set a policy for **MCP servers in Copilot**.
 
-> \[!NOTE] The "MCP Registry URL" and "Restrict MCP access to registry servers" policies do **not** apply to Copilot cloud agent.
+> [!NOTE] The "MCP Registry URL" and "Restrict MCP access to registry servers" policies do **not** apply to Copilot cloud agent.
 
 ## Enabling agent apps and third-party agents
 
-Enterprise owners can enable third-party agents, including agent apps, for their organizations. Once enabled at the enterprise level, organization owners can choose which agents to allow. For an overview of agent apps, see [About agent apps](/en/copilot/concepts/agents/agent-apps).
+Enterprise owners can enable third-party agents, including agent apps, for their organizations. Once enabled at the enterprise level, organization owners can choose which agents to allow. For an overview of agent apps, see [Agent apps](/en/copilot/concepts/agent-capabilities/about-agents/agent-apps).
 
 To manage agent and enterprise policies, see [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies).

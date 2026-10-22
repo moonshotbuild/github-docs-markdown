@@ -50,7 +50,7 @@ To use a specific action version, users can configure their GitHub Actions workf
 
 ### Using tags for release management
 
-> \[!NOTE] If you have enabled immutable releases to help prevent supply chain attacks and accidental changes to your releases, instead see [Using immutable releases and tags to manage your action's releases](/en/actions/how-tos/create-and-publish-actions/using-immutable-releases-and-tags-to-manage-your-actions-releases).
+> [!NOTE] If you have enabled immutable releases to help prevent supply chain attacks and accidental changes to your releases, instead see [Using immutable releases and tags to manage your action's releases](/en/actions/how-tos/create-and-publish-actions/using-immutable-releases-and-tags-to-manage-your-actions-releases).
 
 We recommend using tags for actions release management. Using this approach, your users can easily distinguish between major and minor versions:
 

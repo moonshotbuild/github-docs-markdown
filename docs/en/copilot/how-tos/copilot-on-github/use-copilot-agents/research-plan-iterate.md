@@ -29,7 +29,7 @@ Copilot cloud agent lets you:
 
 Sessions do not create pull requests automatically. To create one immediately, include that in your prompt—for example, "Create a pull request to ...".
 
-> \[!NOTE] These capabilities are only available with Copilot cloud agent on GitHub.com, and in public preview for the Teams and Slack integrations. Other Cloud agent integrations (such as Azure Boards, JIRA, or Linear) only support creating a pull request directly.
+> [!NOTE] These capabilities are only available with Copilot cloud agent on GitHub.com, and in public preview for the Teams and Slack integrations. Other Cloud agent integrations (such as Azure Boards, JIRA, or Linear) only support creating a pull request directly.
 
 ## Perform deep research
 
@@ -40,7 +40,7 @@ Ask Copilot cloud agent questions about a repository to understand how it works,
 
    For example: `Investigate performance issues in this app and suggest improvements.`
 
-   > \[!TIP] You can also open Copilot Chat and attach the relevant repository as context. Copilot prompts you to approve a deep research session.
+   > [!TIP] You can also open Copilot Chat and attach the relevant repository as context. Copilot prompts you to approve a deep research session.
 3. Optionally, send follow-up prompts while Copilot is working to steer the session.
 4. Review the response and ask follow-up questions.
 

@@ -19,7 +19,7 @@ You can search for issues and pull requests on GitHub and narrow the results usi
 
 You can search for issues and pull requests globally across all of GitHub, or search for issues and pull requests within a particular organization. For more information, see [About searching on GitHub](/en/search-github/getting-started-with-searching-on-github/about-searching-on-github).
 
-> \[!TIP]
+> [!TIP]
 >
 > * This article contains example searches on GitHub.com, but you can use the same search filters on other GitHub platforms.
 > * You can build advanced filters using boolean and nested queries on your repository's issues page and the issues dashboard. See [Filtering and searching issues and pull requests](/en/issues/tracking-your-work-with-issues/using-issues/filtering-and-searching-issues-and-pull-requests#building-advanced-filters-for-issues).
@@ -74,11 +74,11 @@ You can filter issues and pull requests based on whether they're open or closed 
 
 ## Search based on whether a pull request is archived
 
-Repository administrators can archive a pull request to remove it from public view. You can search for archived pull requests using the `is:archived` qualifier. For more information, see [Archive pull requests](/en/communities/moderating-comments-and-conversations/archive-pull-requests).
+People with triage access or higher to a repository can archive, unarchive, and view archived pull requests. Archiving removes a pull request from public view. You can search for archived pull requests using the `is:archived` qualifier. For more information, see [Archive pull requests](/en/communities/moderating-comments-and-conversations/archive-pull-requests).
 
-| Qualifier     | Example                                                                                                                                                                                                                                                             |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `is:archived` | [**is:archived is:pr spam**](https://github.com/search?q=is%3Aarchived+is%3Apr+spam\&ref_product=github\&ref_type=engagement\&ref_style=text) matches archived pull requests that contain the word "spam" in repositories where you are a repository administrator. |
+| Qualifier     | Example                                                                                                                                                                                                                                                           |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `is:archived` | [**is:archived is:pr spam**](https://github.com/search?q=is%3Aarchived+is%3Apr+spam\&ref_product=github\&ref_type=engagement\&ref_style=text) matches archived pull requests that contain the word "spam" in repositories where you have triage access or higher. |
 
 ## Search for pull requests in the merge queue
 

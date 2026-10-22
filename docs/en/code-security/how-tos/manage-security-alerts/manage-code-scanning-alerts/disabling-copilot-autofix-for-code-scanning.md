@@ -33,7 +33,7 @@ For standalone organizations, the organization and repository controls apply wit
 
 Disabling Copilot Autofix at any level closes all open suggestions that it added as comments on code scanning alerts in affected pull requests. If you later re-enable it, suggestions are generated only for new pull requests. To generate suggestions for existing pull requests, re-run code scanning security analysis.
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot Autofix is an integral part of GitHub Code Quality and will continue to run on code quality results even when it is disabled for code security results.
 
 ## Blocking use of Copilot Autofix for an enterprise

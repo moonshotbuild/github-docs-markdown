@@ -1,7 +1,7 @@
 ---
 source_path: "/en/code-security/concepts/code-scanning/autofix-for-code-scanning"
 title: "About autofix for code scanning"
-intro: "Autofix automatically generates fixes for code scanning alerts, helping you remediate existing vulnerabilities."
+intro: "Autofix generates potential fixes for code scanning alerts, helping you remediate existing vulnerabilities."
 product: "Security and code quality"
 document_type: "article"
 breadcrumbs:
@@ -17,36 +17,52 @@ breadcrumbs:
 
 # About autofix for code scanning
 
-Autofix automatically generates fixes for code scanning alerts, helping you remediate existing vulnerabilities.
+Autofix generates potential fixes for code scanning alerts, helping you remediate existing vulnerabilities.
 
-Autofix provides you with targeted recommendations to help you fix code scanning alerts so you can avoid introducing new security vulnerabilities. The potential fixes are generated automatically by large language models (LLMs) using data from the codebase and from code scanning analysis.
+GitHub provides two separate autofix experiences for code scanning alerts: agentic autofix and Copilot Autofix. Both use large language models (LLMs), data from the codebase, and code scanning analysis to generate potential code changes and explanations. However, they have different workflows, results, access requirements, and usage.
 
-## How autofix works
+## What are the two types of autofix?
 
-Autofix translates the description and location of a code scanning alert into code changes that may fix it. It interfaces with the large language model GPT-5.3-Codex from OpenAI, which has sufficient generative capabilities to produce both suggested fixes in code and explanatory text for those fixes.
+Agentic Autofix and Copilot Autofix solve different problems:
 
-There are two ways to get a fix for an alert: agentic autofix and Copilot Autofix. If Copilot cloud agent is available in a repository, assigning an alert uses agentic autofix instead of Copilot Autofix.
+* Use agentic autofix when you want Copilot to investigate and fix one or more alerts for you, end to end.
+* Use Copilot Autofix when you want a single suggested code change for one alert that you review and apply yourself.
 
-## Agentic autofix
+With agentic autofix, you assign one or more alerts to Copilot. It explores the codebase, generates a fix, and validates the changes. Then it opens a draft pull request containing the proposed fix.
 
-> \[!NOTE]
-> This feature is currently in public preview and is subject to change. Access to preview features is controlled by policy settings at the organization and enterprise level. See [Managing policies and features for GitHub Copilot in your organization](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies#opting-in-to-previews-or-feedback) and [Managing policies and features for GitHub Copilot in your enterprise](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies#defining-policies-for-your-enterprise).
+With Copilot Autofix, GitHub generates a single suggested code change for one supported alert. You can use this suggestion to create a pull request yourself.
 
-Assign a code scanning alert to Copilot to have it resolve the alert for you. Assigning an alert starts an agent session: Copilot cloud agent calls tools to explore your codebase beyond the affected file, generates a fix, validates it (for example, by re-running CodeQL), and iterates until it opens a pull request with the changes. See [Resolving code scanning alerts](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/resolve-alerts#fixing-alerts-with-copilot).
+## Where is autofix available?
+
+Access to the two features works differently. For agentic autofix on an organization-owned repository, an organization owner or security manager must enable it. If the organization belongs to an enterprise, an enterprise owner or security manager must also allow it. Organization enablement turns it on for eligible repositories by default, but a repository administrator can opt out, or re-enable it when higher-level settings permit.
+
+For an eligible public repository owned by a personal account, a repository administrator can enable agentic autofix directly. You don't need a Copilot license to use agentic autofix, but it isn't available for repositories owned by Enterprise Managed Users. See [Managing access to agentic autofix for code scanning](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/managing-access-to-agentic-autofix-for-code-scanning) for details.
+
+Copilot Autofix, by contrast, is enabled by default for any repository that uses CodeQL, unless an administrator disables it. It's available to all public repositories on GitHub.com. It's also available to internal or private repositories owned by organizations and enterprises that have a license for GitHub Code Security. Unlike agentic autofix, Copilot Autofix is available for repositories owned by Enterprise Managed Users.
+
+## Choosing an autofix type
+
+Usage costs also factor into which feature to use. Each agentic autofix agent session consumes AI credits and GitHub Actions minutes, while Copilot Autofix suggested fixes don't consume AI credits.
+
+If agentic autofix isn't enabled for a repository, you can still use Copilot Autofix to generate suggested fixes for supported alerts.
+
+## Using agentic autofix
+
+Use agentic autofix when you want Copilot to investigate one or more alerts and prepare a draft pull request. You can assign agentic autofix alerts from the repository backlog or a security campaign. Each assignment starts an agent session. The session explores the codebase beyond the affected file, then generates and validates a fix. It opens a pull request with the changes. See [Resolving code scanning alerts](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/resolve-alerts#fixing-alerts-with-copilot).
 
 Keep the following in mind:
 
-* Agentic autofix requires Copilot cloud agent and Copilot Autofix to be available in the repository. If Copilot cloud agent isn't available, assigning an alert falls back to Copilot Autofix instead.
-* Each agentic autofix session is billed as a Copilot cloud agent session and consumes AI credits. See [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent#copilot-cloud-agent-usage-costs).
-* Copilot follows any custom instructions configured for the repository or organization when it generates a fix.
-* Agentic autofix works on a best-effort basis. Copilot validates fixes by re-running CodeQL using the code-scanning query suite, so it can't confirm that a fix resolves alerts generated by custom queries or the security-extended query suite. Fix quality for alerts from third-party tools is also not guaranteed.
+* For details on enabling agentic autofix at the organization, enterprise, or repository level, see [Managing access to agentic autofix for code scanning](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/managing-access-to-agentic-autofix-for-code-scanning).
+* Agentic Autofix consumes Code Security AI Credits and GitHub Actions minutes. See [GitHub Advanced Security license billing](/en/billing/concepts/product-billing/github-advanced-security#how-ai-feature-usage-is-billed).
+* Copilot uses the custom instructions that apply when it generates a fix. See [Add custom instructions for Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions).
+* Agentic Autofix works on a best-effort basis. Copilot validates fixes by re-running CodeQL with the code scanning query suite. It can't confirm fixes for alerts from custom CodeQL queries, the `security-extended` CodeQL query suite, or code scanning alerts from third-party tools.
 
-## Getting a suggested fix with Copilot Autofix
+Always review and test the generated changes before you merge the pull request.
 
-Copilot Autofix generates a single suggested fix for an alert, which you review and apply yourself.
+## Using Copilot Autofix
 
-You do not need a subscription to GitHub Copilot to use GitHub Copilot Autofix, and it does not consume AI credits. Copilot Autofix is available to all public repositories on GitHub.com, as well as internal or private repositories owned by organizations and enterprises that have a license for GitHub Code Security.
+Copilot Autofix works the same way whether a repository uses default or advanced setup for code scanning. There is no separate step to enable it: enabling code scanning with CodeQL is sufficient. See [Configuring default setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning).
 
-Copilot Autofix is allowed by default and enabled for every repository that uses CodeQL, regardless of whether it uses default or advanced setup for code scanning. There is no separate step to enable Copilot Autofix: enabling code scanning with CodeQL is sufficient. See [Configuring default setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning).
+Copilot Autofix is also an integral part of GitHub Code Quality, and continues to run on code quality results even when it's disabled for code scanning results.
 
-Administrators at the enterprise, organization, and repository levels can choose to disable Copilot Autofix. If Copilot Autofix has been disabled at your level, you can re-enable it by following the same steps used to disable it and selecting the option to allow Copilot Autofix. To learn how to manage Copilot Autofix at each level, see [Disabling autofix for code scanning security alerts](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/disabling-autofix-for-code-scanning).
+Administrators at the enterprise, organization, and repository levels can disable Copilot Autofix. Settings cascade downward: if an enterprise owner disallows the feature, no organization or repository in that enterprise can enable it, and if an organization owner disables it, no repository in that organization can re-enable it. To restore the feature at a given level, an administrator at that level, or a level above, must reverse the setting. To learn how to manage Copilot Autofix at each level, see [Disabling Copilot Autofix for code scanning](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/disabling-copilot-autofix-for-code-scanning).

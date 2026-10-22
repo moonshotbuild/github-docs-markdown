@@ -33,7 +33,7 @@ Meet the security needs of your repositories by editing your custom security con
 
 4. Under "Security configurations", click the name of the custom security configuration you want to edit.
 
-   > \[!NOTE]
+   > [!NOTE]
    > The default security configuration for an organization is only automatically applied to new repositories created in your organization. If a repository is transferred into your organization, you will still need to apply an appropriate security configuration to the repository manually.
 
 5. Edit the name and description of your custom security configuration as desired.
@@ -42,6 +42,6 @@ Meet the security needs of your repositories by editing your custom security con
 
 7. In the "Policy" section, you can modify the configuration's enforcement status. Enforcing a configuration will block repository owners from changing features that are enabled or disabled by the configuration, but features that are not set aren't enforced. Next to "Enforce configuration", select **Enforce** or **Don't enforce** from the dropdown menu.
 
-   > \[!NOTE] Some situations can break the enforcement of security configurations. See [Security configuration enforcement](/en/code-security/reference/security-at-scale/configuration-enforcement).
+   > [!NOTE] Some situations can break the enforcement of security configurations. See [Security configuration enforcement](/en/code-security/reference/security-at-scale/configuration-enforcement).
 
 8. To apply your changes, click **Update configuration**.

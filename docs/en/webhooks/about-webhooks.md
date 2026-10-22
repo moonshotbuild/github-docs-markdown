@@ -39,7 +39,7 @@ You must create a webhook within a specific repository, organization,  GitHub Ma
 
 For more information about creating webhooks, see [Creating webhooks](/en/webhooks/using-webhooks/creating-webhooks). For more information about the types of events you can subscribe to, see [Webhook events and payloads](/en/webhooks/webhook-events-and-payloads). For more information about configuring your server to take an action in response to a payload delivery, see [Handling webhook deliveries](/en/webhooks/using-webhooks/handling-webhook-deliveries).
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub webhooks do not currently support IPv6 but will in the future. The `/meta` REST API endpoint returns IPv6 ranges to enable that transition.
 
 ## Choosing webhooks or the REST API
@@ -54,7 +54,7 @@ If you only need information once or intermittently, or only want to get informa
 
 For information on best practices to follow when using webhooks, see [Best practices for using webhooks](/en/webhooks/using-webhooks/best-practices-for-using-webhooks).
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Services (sometimes referred to as Service Hooks) is retired, in favor of integrating with webhooks. For more information about migrating your integration from using GitHub Services to using webhooks, see the [blog post](https://developer.github.com/changes/2018-04-25-github-services-deprecation/).
 
 ## Further reading

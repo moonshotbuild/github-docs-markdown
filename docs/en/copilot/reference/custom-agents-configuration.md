@@ -19,7 +19,7 @@ Reference for configuring custom agents.
 
 This reference article provides detailed configuration information for custom agents. For general information about creating custom agents, see [Creating custom agents for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents).
 
-> \[!NOTE]
+> [!NOTE]
 > Custom agents are in public preview for JetBrains IDEs, Eclipse, and Xcode, and subject to change.
 
 ## YAML frontmatter properties
@@ -45,7 +45,7 @@ The following table outlines the properties that you can configure for agent pro
 
 Define the agent's behavior, expertise, and instructions in the Markdown content below the YAML frontmatter. The prompt can be a maximum of 30,000 characters.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The `argument-hint` and `handoffs` properties from VS Code and other IDE custom agents are currently not supported for Copilot cloud agent on GitHub.com. They are ignored to ensure compatibility.
 > * For more information on custom agent file structure in VS Code, see [Custom agents in VS Code](https://code.visualstudio.com/docs/copilot/customization/custom-agents#_custom-agent-file-structure) in the VS Code documentation.
@@ -122,7 +122,7 @@ For compatibility, the `stdio` type used by Claude Code and VS Code is mapped to
 
 ### MCP server environment variables and secrets
 
-> \[!NOTE]
+> [!NOTE]
 > If your MCP server requires secrets or environment variables, these must be configured as Agents secrets or variables at either the organization or repository level. For more information, see [Configure secrets and variables for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/configure-secrets-and-variables).
 
 Custom agent MCP configuration supports the same environment variable and secret replacement capabilities as existing repository-level MCP configurations. Similar to repository-level configurations, secrets and variables can be sourced from Agents secrets and variables for Copilot cloud agent, configured at either the organization or repository level. The syntax for referencing these values has been expanded to support common patterns used in GitHub Actions and Claude Code.

@@ -15,7 +15,7 @@ breadcrumbs:
 
 You can open a repository or pull request in VS Code for the Web directly from GitHub to browse code, edit files, and commit your changes.
 
-> \[!NOTE] Opening a repository at `github.dev` opens it in VS Code for the Web, the browser-based version of VS Code. For more information, see [VS Code for the Web](https://code.visualstudio.com/docs/remote/vscode-web) in the VS Code documentation.
+> [!NOTE] Opening a repository at `github.dev` opens it in VS Code for the Web, the browser-based version of VS Code. For more information, see [VS Code for the Web](https://code.visualstudio.com/docs/remote/vscode-web) in the VS Code documentation.
 
 ## About VS Code for the Web
 

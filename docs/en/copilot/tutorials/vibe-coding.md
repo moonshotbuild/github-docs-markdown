@@ -25,7 +25,7 @@ In this tutorial you'll work this way, in VS Code or in a JetBrains IDE, to crea
 
 This method works well for developing a proof of concept, creating a draft of an application that you'll  develop further using a more conventional approach to software development, or creating applications for your own personal use.
 
-> \[!NOTE]
+> [!NOTE]
 > The responses shown in this article are examples. Copilot Chat responses are non-deterministic, so you may get different responses from the ones shown here.
 
 ## Who is this tutorial for?
@@ -80,7 +80,7 @@ We'll create a time-tracking app in a new GitHub repository.
 
 5. Choose a model from the models dropdown.
 
-   > \[!NOTE]
+   > [!NOTE]
    > The responses referred to in this tutorial were received while using Claude Sonnet 4.5, which has since been retired. Other models will respond differently, but you should get roughly similar results.
    >
    > Set the model to **Auto**, or select a model of your choice.
@@ -252,7 +252,7 @@ When you think the plan contains enough detail:
 
      If you get any error messages while developing the application, copy the error message into the chat prompt box and ask Copilot to fix the problem.
 
-     > \[!NOTE]
+     > [!NOTE]
      > You may have to iterate with Copilot in this way, asking it to debug and fix problems, until it has a working application that you can view in your browser.
 
    * **Copilot's response appears to be stuck**
@@ -305,7 +305,7 @@ When you think the plan contains enough detail:
 
    <img src="/assets/images/help/copilot/time-tracker-example2.png" alt="Screenshot of another example of a time tracker created by Copilot." style="width:100%;max-height:100%" />
 
-   > \[!NOTE]
+   > [!NOTE]
    > The application that Copilot generates for you might look quite different to the examples shown above.
 
 2. Try using the application. Add a couple of projects and a selection of tasks, then start tracking time on a task.

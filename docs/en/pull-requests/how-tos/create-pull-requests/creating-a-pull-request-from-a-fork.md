@@ -23,7 +23,7 @@ Before creating a pull request from a fork, fork the upstream repository and pus
 
 In a pull request from a fork, the base branch is where you want to merge your changes, and the compare branch is the branch in your fork that contains your changes. See [Creating a pull request](/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request#creating-the-pull-request).
 
-> \[!NOTE]
+> [!NOTE]
 > To open a pull request in a public repository, you must have write access to the head or the source branch or, for organization-owned repositories, you must be a member of the organization that owns the repository to open a pull request.
 
 1. Navigate to the original repository where you created your fork.
@@ -48,13 +48,13 @@ In a pull request from a fork, the base branch is where you want to merge your c
 
 7. On user-owned forks, if you want to allow anyone with push access to the upstream repository to make changes to your pull request, select **Allow edits from maintainers**.
 
-   > \[!WARNING]
+   > [!WARNING]
    > If your fork contains GitHub Actions workflows, the option is **Allow edits and access to secrets by maintainers**. Allowing edits on a fork's branch that contains GitHub Actions workflows also allows a maintainer to edit the forked repository's workflows, which can potentially reveal values of secrets and grant access to other branches.
 
 8. To create a pull request that is ready for review, click **Create Pull Request**.
    To create a draft pull request, use the drop-down and select **Create Draft Pull Request**, then click **Draft Pull Request**. If you are the member of an organization, you may need to request access to draft pull requests from an organization owner. See [Pull requests](/en/pull-requests/reference/pull-requests#draft-pull-requests).
 
-> \[!TIP]
+> [!TIP]
 > After you create a pull request, you can ask a specific person to review your proposed changes. See [Requesting a pull request review](/en/pull-requests/how-tos/create-pull-requests/requesting-a-pull-request-review).
 
 ## Further reading

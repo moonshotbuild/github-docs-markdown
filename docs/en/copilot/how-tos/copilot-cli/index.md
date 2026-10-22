@@ -17,6 +17,18 @@ breadcrumbs:
 
 Use Copilot directly from your terminal to answer questions, write and debug code, and interact with GitHub.
 
+## Links
+
+### Getting started
+
+* [GitHub Copilot CLI](/en/copilot/concepts/copilot-surfaces/copilot-cli)
+
+  Find out about using Copilot from the command line.
+
+* [Getting started with GitHub Copilot CLI](/en/copilot/get-started/cli-quickstart)
+
+  Quickly learn how to use GitHub Copilot CLI.
+
 ## Recommended
 
 * [Using GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/overview)
@@ -204,95 +216,3 @@ Use Copilot directly from your terminal to answer questions, write and debug cod
 * [Using Copilot CLI in GitHub Actions with GITHUB\_TOKEN](/en/copilot/how-tos/copilot-cli/use-copilot-cli-in-actions)
 
   Run Copilot CLI in a GitHub Actions workflow using the built-in `GITHUB_TOKEN`, without a personal access token.
-
-* [About agent skills](/en/copilot/concepts/agents/about-agent-skills)
-
-  Skills allow Copilot to perform specialized tasks.
-
-* [About GitHub Copilot plugins](/en/copilot/concepts/agents/about-plugins)
-
-  Plugins are installable packages that extend Copilot with reusable agents, skills, hooks, and integrations.
-
-* [GitHub Copilot CLI](/en/copilot/concepts/copilot-surfaces/copilot-cli)
-
-  Find out about using Copilot from the command line.
-
-* [Dynamic workflows](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/dynamic-workflows)
-
-  Use GitHub Copilot to orchestrate work on complex tasks, potentially combining deterministic operations, agents, tools, API calls, and user interactions.
-
-* [About custom agents](/en/copilot/concepts/agents/copilot-cli/about-custom-agents)
-
-  Custom agents enhance Copilot with assistance tailored to your needs.
-
-* [Remote control of GitHub Copilot CLI sessions](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-remote-control)
-
-  Remote control lets you monitor and steer a Copilot CLI session from GitHub.com or GitHub Mobile, even after you've stepped away from your machine.
-
-* [Comparing GitHub Copilot CLI customization features](/en/copilot/concepts/agents/copilot-cli/comparing-cli-features)
-
-  Find out about the various ways you can customize Copilot: what they do, and when to use them.
-
-* [Managing context for GitHub Copilot](/en/copilot/concepts/prompting-and-context/context-management)
-
-  Understand how Copilot manages conversation context, what happens during long sessions, and how to stay in control of your context window.
-
-* [Loading tools on demand with tool search](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/tool-search)
-
-  Tool search keeps your context small by letting Copilot CLI load external tools only when a task needs them.
-
-* [Delegating and parallelizing work with agents](/en/copilot/concepts/agent-capabilities/choosing-and-delegating-agent-work/delegating-and-parallelizing-work-with-agents)
-
-  Break complex development work into focused tasks and coordinate multiple agents in the GitHub Copilot app or GitHub Copilot CLI.
-
-* [Using LSP servers with GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/lsp-servers)
-
-  LSP servers give Copilot CLI precise code intelligence, enabling it to navigate definitions, find references, and rename symbols accurately across your project.
-
-* [Getting a second opinion with the rubber duck agent](/en/copilot/concepts/agent-capabilities/choosing-and-delegating-agent-work/getting-a-second-opinion)
-
-  Use the rubber duck agent to get an independent critique of plans, code, and tests in GitHub Copilot CLI or the GitHub Copilot app.
-
-* [About extensions for GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-cli-extensions)
-
-  Extensions let you add your own tools and slash commands to GitHub Copilot CLI, using only the SDK that ships with the CLI.
-
-* [Using dynamic workflows](/en/copilot/how-tos/use-copilot-agents/use-dynamic-workflows)
-
-  Find, run, monitor, and resume dynamic workflows in GitHub Copilot CLI and the GitHub Copilot app.
-
-* [Copilot CLI ACP server](/en/copilot/reference/copilot-cli-reference/acp-server)
-
-  Learn about GitHub Copilot CLI's Agent Client Protocol server.
-
-* [GitHub Copilot CLI command reference](/en/copilot/reference/copilot-cli-reference/cli-command-reference)
-
-  Find commands and keyboard shortcuts to help you use Copilot CLI effectively.
-
-* [GitHub Copilot CLI plugin reference](/en/copilot/reference/copilot-cli-reference/cli-plugin-reference)
-
-  Find commands and configuration details for CLI plugins.
-
-* [GitHub Copilot CLI programmatic reference](/en/copilot/reference/copilot-cli-reference/cli-programmatic-reference)
-
-  Find options for running Copilot CLI programmatically.
-
-* [About GitHub Copilot session data](/en/copilot/concepts/security-governance-and-network-settings/session-data)
-
-  Understand what session data is, where it is stored, who can access it, and how it is managed.
-
-* [GitHub Copilot hooks reference](/en/copilot/reference/hooks-reference)
-
-  Find hook events, configuration formats, and input payloads for hooks in Copilot CLI and Copilot cloud agent.
-
-* [Application card: GitHub Copilot Agents](/en/copilot/responsible-use/agents)
-
-  Learn how to use GitHub Copilot agentic features responsibly by understanding their purposes, capabilities, and limitations.
-
-* [Using hooks with Copilot CLI for predictable, policy-compliant execution](/en/copilot/tutorials/copilot-cli-hooks)
-
-  Use hooks to log user prompts and control which tools Copilot CLI can run in a repository, so teams can automate safely within your organization's security and compliance requirements.
-
-* [Allowing GitHub Copilot to work autonomously](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/autopilot)
-
-  Autopilot mode lets Copilot carry a well-defined coding task through multiple steps without waiting for you after each step.

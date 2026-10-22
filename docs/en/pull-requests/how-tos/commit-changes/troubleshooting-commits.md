@@ -23,7 +23,7 @@ Resolve common commit issues like incorrect user links, missing local commits, a
 
 GitHub links a commit to a user by matching the email address in the commit header to an email address on a GitHub account. If your commits are linked to the wrong user or no user, update your Git email settings and add the email address to your account.
 
-> \[!NOTE]
+> [!NOTE]
 > If your commits are linked to another user, that does not give them access to your repository.
 
 ### Commits are linked to another user

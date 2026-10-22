@@ -61,7 +61,7 @@ Before you can sponsor an account, you must have a verified email address. For m
 
 10. Decide whether you want to receive email updates from the sponsored account, then select or deselect **Receive email updates from ACCOUNT**.
 
-    > \[!NOTE]
+    > [!NOTE]
     > If your organization chooses to receive email updates from sponsored accounts, you can select a specific email address to receive those emails. For more information, see [Managing updates from accounts your organization sponsors](/en/organizations/managing-organization-settings/managing-updates-from-accounts-your-organization-sponsors).
 
 11. If you are sponsoring an account as a business, click **Yes**. Filling out the related fields will help your sponsored accounts calculate and pay taxes where appropriate. For more information, see [Tax information for GitHub Sponsors](/en/sponsors/receiving-sponsorships-through-github-sponsors/tax-information-for-github-sponsors#sales-tax).
@@ -106,7 +106,7 @@ Before you can sponsor an account, you must have a verified email address. For m
 
    * A CSV file of your own creation containing your desired sponsorships. For GitHub to parse your CSV file correctly, the file must contain columns labeled "Maintainer username" and "Sponsorship amount in USD."
 
-   > \[!NOTE]
+   > [!NOTE]
    > Any errors in your file are reported at the top of the review page with instructions to resolve them.
 
 7. Optionally, to resolve any errors or make any changes to your sponsorship selections, click **Choose file**, then navigate to the new or updated CSV file you would like to upload. Select the CSV file, then click **Open**.
@@ -121,7 +121,7 @@ Before you can sponsor an account, you must have a verified email address. For m
 
 11. Decide whether you want to receive email updates from the sponsored accounts, then select or deselect **Receive email updates from the maintainers you're sponsoring**.
 
-    > \[!NOTE]
+    > [!NOTE]
     > If your organization chooses to receive email updates from sponsored accounts, you can select a specific email address to receive those emails. For more information, see [Managing updates from accounts your organization sponsors](/en/organizations/managing-organization-settings/managing-updates-from-accounts-your-organization-sponsors).
 
 12. If you are sponsoring an account as a business, click **Yes**. Filling out the related fields will help your sponsored accounts calculate and pay taxes where appropriate. For more information, see [Tax information for GitHub Sponsors](/en/sponsors/receiving-sponsorships-through-github-sponsors/tax-information-for-github-sponsors#sales-tax).

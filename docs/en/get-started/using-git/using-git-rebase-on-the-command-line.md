@@ -140,7 +140,7 @@ $ git push origin main --force-with-lease
 $ git push origin main --force
 ```
 
-> \[!WARNING]
+> [!WARNING]
 > Force pushing has serious implications because it changes the historical sequence of commits for the branch. Use it with caution, especially if your repository is being accessed by multiple people.
 
 ## Further reading

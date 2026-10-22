@@ -41,7 +41,7 @@ Compare release tags to review changes between releases. See [Comparing releases
 3. Select the newer tag from the `compare` dropdown menu.
 4. Review the commits and changed files in the comparison.
 
-> \[!NOTE]
+> [!NOTE]
 > If a branch and a tag have the same name, the branch is used. To compare the tag, add `tags/` before the tag name.
 
 ## Comparing commits

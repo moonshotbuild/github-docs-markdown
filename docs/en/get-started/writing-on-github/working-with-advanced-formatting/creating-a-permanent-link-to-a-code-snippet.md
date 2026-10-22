@@ -25,7 +25,7 @@ This type of permanent link will render as a code snippet only in the repository
 
 ![Screenshot of an issue comment. A code snippet has a header that lists the file name and line numbers, and a body that lists the code on those lines.](/assets/images/help/repository/rendered-code-snippet.png)
 
-> \[!TIP]
+> [!TIP]
 > To create a permalink for an entire file, see [Getting permanent links to files](/en/repositories/working-with-files/using-files/getting-permanent-links-to-files).
 
 1. On GitHub, navigate to the main page of the repository.

@@ -70,7 +70,7 @@ The new commit and message appear on GitHub.com.
 
 ## Creating a commit on behalf of an organization
 
-> \[!NOTE]
+> [!NOTE]
 > Creating a commit on behalf of an organization is not available on GitHub Enterprise Server.
 
 Add an `on-behalf-of:` trailer to a signed commit to attribute it to an organization. To use the trailer, you must be a member of the organization, and both your commit email and the organization email must be in a domain verified by the organization.

@@ -93,7 +93,7 @@ jobs:
 
 ```
 
-> \[!TIP]
+> [!TIP]
 > When OIDC authentication is used, the `setup-jfrog-cli` action automatically provides `oidc-user` and `oidc-token` as step outputs.
 > These can be used for other integrations that require authentication with JFrog.
 > To reference these outputs, ensure the step has an explicit `id` defined (for example `id: setup-jfrog-cli`).

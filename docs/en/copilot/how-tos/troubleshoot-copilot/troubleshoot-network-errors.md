@@ -53,7 +53,7 @@ If there is a problem with your proxy setup, you may see the following error: `G
 
 If you know you are connecting via a proxy, make sure the proxy is configured correctly in your environment. For more information, see [Configuring network settings for GitHub Copilot](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/configure-network-settings#configuring-proxy-settings-for-copilot).
 
-> \[!NOTE] If you are an employee of a company with a proxy server, your company must also configure proxy settings for Copilot at the company level. See [Copilot allowlist reference](/en/copilot/reference/copilot-allowlist-reference).
+> [!NOTE] If you are an employee of a company with a proxy server, your company must also configure proxy settings for Copilot at the company level. See [Copilot allowlist reference](/en/copilot/reference/copilot-allowlist-reference).
 
 GitHub Copilot uses custom code to connect to proxies. This means a proxy setup supported by your editor is not necessarily supported by GitHub Copilot. Some common causes for errors related to proxies are:
 
@@ -75,7 +75,7 @@ Some possible ways to resolve certificate-related errors are:
   * On Linux, Copilot checks the standard OpenSSL files `/etc/ssl/certs/ca-certificates.crt` and `/etc/ssl/certs/ca-bundle.crt`.
 * Configure GitHub Copilot to ignore certificate errors. In your proxy settings, you can deselect **Proxy Strict SSL** in Visual Studio Code, or select **Accept non-trusted certificates automatically** in a JetBrains IDE. For more information, see [Configuring network settings for GitHub Copilot](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/configure-network-settings#configuring-proxy-settings-for-copilot).
 
-  > \[!WARNING] Ignoring certificate errors can cause security issues and is not recommended.
+  > [!WARNING] Ignoring certificate errors can cause security issues and is not recommended.
 
 ### Troubleshooting security software-related certificate errors
 

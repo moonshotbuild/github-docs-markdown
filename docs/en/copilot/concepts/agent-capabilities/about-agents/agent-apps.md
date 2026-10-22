@@ -21,7 +21,7 @@ breadcrumbs:
 
 Agent apps let you use partner-built agents directly in your workflows on GitHub, powered by your Copilot subscription.
 
-> \[!NOTE] Agent apps are currently in public preview and subject to change.
+> [!NOTE] Agent apps are currently in public preview and subject to change.
 
 ## Introduction
 
@@ -43,7 +43,7 @@ You can use these entry points in the same way as you use Copilot cloud agent an
 
 ## How agent apps work
 
-An agent app is a GitHub App that a partner has configured to act as an agent. Each agent app can define a custom agent with its own prompt, model, tools, and Model Context Protocol (MCP) servers. To learn more about custom agents and MCP, see [About custom agents](/en/copilot/concepts/agents/cloud-agent/about-custom-agents) and [Model Context Protocol (MCP) and GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/mcp-and-cloud-agent).
+An agent app is a GitHub App that a partner has configured to act as an agent. Each agent app can define a custom agent with its own prompt, model, tools, and Model Context Protocol (MCP) servers. To learn more about custom agents and MCP, see [Custom agents](/en/copilot/concepts/customizations/custom-agents) and [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 Agent apps can connect to the partner's own systems through MCP servers. These MCP servers authorize the agent app using a JWT assertion issued by GitHub, so the partner can securely identify your account and their agent app without you managing additional credentials.
 

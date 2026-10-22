@@ -33,7 +33,7 @@ We recommend using [Bundler](https://bundler.io/) to install and run Jekyll. Bun
 
 <div class="ghd-tool mac">
 
-> \[!TIP]
+> [!TIP]
 > If you see a Ruby error when you try to install Jekyll using Bundler, you may need to use a package manager, such as [RVM](https://rvm.io/) or [Homebrew](https://brew.sh/), to manage your Ruby installation. For more information, see [Troubleshooting](https://jekyllrb.com/docs/troubleshooting/#jekyll--macos) in the Jekyll documentation.
 
 </div>
@@ -62,7 +62,7 @@ We recommend using [Bundler](https://bundler.io/) to install and run Jekyll. Bun
    >  Server running... press ctrl-c to stop.
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    >
    > * If you've installed Ruby 3.0 or later (which you may have if you installed the default version via Homebrew), you might get an error at this step. That's because these versions of Ruby no longer come with `webrick` installed.
    >
@@ -80,7 +80,7 @@ We recommend using [Bundler](https://bundler.io/) to install and run Jekyll. Bun
 
 ## Updating the GitHub Pages gem
 
-> \[!NOTE] While the `github-pages` gem remains supported for some workflows, GitHub Actions is now the recommended approach for deploying and automating GitHub Pages sites.
+> [!NOTE] While the `github-pages` gem remains supported for some workflows, GitHub Actions is now the recommended approach for deploying and automating GitHub Pages sites.
 
 Jekyll is an active open source project that is updated frequently. If the `github-pages` gem on your computer is out of date with the `github-pages` gem on the GitHub Pages server, your site may look different when built locally than when published on GitHub. To avoid this, regularly update the `github-pages` gem on your computer.
 

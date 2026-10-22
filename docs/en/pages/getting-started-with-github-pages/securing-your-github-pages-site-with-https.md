@@ -27,10 +27,10 @@ GitHub Pages sites created after June 15, 2016, and using `github.io` domains ar
 
 GitHub Pages sites shouldn't be used for sensitive transactions like sending passwords or credit card numbers.
 
-> \[!WARNING]
+> [!WARNING]
 > GitHub Pages sites are publicly available on the internet, even if the repository for the site is private (if your plan or organization allows it). If you have sensitive data in your site's repository, you may want to remove the data before publishing. For more information, see [About repositories](/en/repositories/creating-and-managing-repositories/about-repositories#about-repository-visibility).
 
-> \[!NOTE]
+> [!NOTE]
 > RFC3280 states that the maximum length of the common name should be 64 characters. Therefore, the entire domain name of your GitHub Pages site must be less than 64 characters long for a certificate to be successfully created.
 
 ## Enforcing HTTPS for your GitHub Pages site
@@ -61,7 +61,7 @@ Assets are commonly found in the following locations:
 * JavaScript is usually found in the `<head>` section or just before the closing `</body>` tag.
 * Images are often found in the `<body>` section.
 
-> \[!TIP]
+> [!TIP]
 > If you can't find your assets in your site's source files, try searching your site's source files for `http://` in your text editor or on GitHub.
 
 ### Examples of assets referenced in an HTML file

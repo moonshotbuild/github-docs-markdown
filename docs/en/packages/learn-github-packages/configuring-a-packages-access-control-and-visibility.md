@@ -39,7 +39,7 @@ If a package belongs to a registry that supports granular permissions, anyone wi
 
 In most registries, to pull a package, you must authenticate with a personal access token or `GITHUB_TOKEN`, regardless of whether the package is public or private. However, in the Container registry, public packages allow anonymous access and can be pulled without authentication or signing in via the CLI.
 
-> \[!NOTE]
+> [!NOTE]
 > If you publish a package that is linked to a repository, the package inherits its permissions from the linked repository by default. To access the package's granular permissions settings, you must remove the package's inherited permissions. If you're the owner of an organization, you can disable the automatic inheritance of permissions for all new packages scoped to your organization. For more information, see [Configuring a package's access control and visibility](/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility#selecting-whether-a-package-inherits-permissions-from-a-repository) and [Configuring a package's access control and visibility](/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility#disabling-automatic-inheritance-of-access-permissions-in-an-organization).
 
 When you publish a package, you automatically get admin permissions to the package. If you publish a package to an organization, anyone with the `owner` role in the organization also gets admin permissions to the package.
@@ -54,7 +54,7 @@ If you are using a GitHub Actions workflow to manage your packages, you can gran
 | Write      | Can upload and download this package. <br> Can read and write package metadata.                                                      |
 | Admin      | Can upload, download, delete, and manage this package. <br> Can read and write package metadata. <br> Can grant package permissions. |
 
-> \[!NOTE]
+> [!NOTE]
 > The ability for GitHub Actions workflows to delete and restore packages using the REST API is currently in public preview and subject to change.
 
 ## Configuring access to packages for your personal account
@@ -99,7 +99,7 @@ When a package inherits permissions from a repository, to grant or remove access
 
 If you want to configure a package's access settings on a granular level, separately from the linked repository, you must remove the inherited permissions from the package.
 
-> \[!NOTE]
+> [!NOTE]
 > If you change how a package gets its access permissions, any existing permissions for the package are overwritten.
 
 ### Selecting the inheritance setting for packages scoped to your personal account
@@ -120,12 +120,12 @@ If you want to configure a package's access settings on a granular level, separa
 
 6. To choose whether a package inherits access permissions from the linked repository, under "Manage access" or "Inherited access", select or deselect **Inherit access from repository (recommended)**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > The name of this section changes depending on whether the package already inherits its permissions from a repository.
 
 ### Selecting the inheritance setting for packages scoped to an organization
 
-> \[!TIP]
+> [!TIP]
 > If you're the owner of an organization, you can prevent all new packages scoped to your organization from automatically inheriting permissions from a linked repository. For more information, see [Disabling automatic inheritance of access permissions in an organization](#disabling-automatic-inheritance-of-access-permissions-in-an-organization) below.
 
 1. On GitHub, navigate to the main page of your organization.
@@ -138,7 +138,7 @@ If you want to configure a package's access settings on a granular level, separa
    ![Screenshot of a package's landing page. In the lower right corner, "Package settings" is highlighted with an orange outline.](/assets/images/help/package-registry/package-settings.png)
 5. To choose whether a package inherits access permissions from the linked repository, under "Manage access" or "Inherited access", select or deselect **Inherit access from repository (recommended)**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > The name of this section changes depending on whether the package already inherits its permissions from a repository.
 
 ## Disabling automatic inheritance of access permissions in an organization
@@ -166,7 +166,7 @@ If you publish a package that is linked to a repository, GitHub Actions workflow
 
 Granting a repository access here also allows Dependabot to pull from this package automatically, without requiring personal access tokens or `dependabot.yml` registry configuration. See [Automatic Dependabot access to GitHub-hosted registries](/en/code-security/concepts/supply-chain-security/automatic-dependabot-access-to-github-registries).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Syncing your package with a repository by using the **Add Repository** button under "Manage Actions access" in the package's settings is different than connecting your package to a repository. For more information about linking a repository to your package, see [Connecting a repository to a package](/en/packages/learn-github-packages/connecting-a-repository-to-a-package).
 > * You can choose to limit permissions to workflow jobs using the `permissions` key and `packages` scope. For more information, see [Use GITHUB\_TOKEN for authentication in workflows](/en/actions/tutorials/authenticate-with-github_token#modifying-the-permissions-for-the-github_token).
@@ -248,7 +248,7 @@ When you first publish a package that is scoped to your personal account, the de
 4. Select a visibility setting:
    * To make the package visible to anyone, select **Public**.
 
-     > \[!WARNING]
+     > [!WARNING]
      > Once you make a package public, you cannot make it private again.
 
    * To make the package visible to a custom selection of people, select **Private**.
@@ -286,7 +286,7 @@ When you first publish a package, the default visibility is private and only you
 5. At the bottom of the page, under "Danger Zone", click **Change visibility** and choose a visibility setting:
    * To make the package visible to anyone, click **Public**.
 
-     > \[!WARNING]
+     > [!WARNING]
      > Once you make a package public, you cannot make it private again.
 
    * To make the package visible to a custom selection of people in your organization, click **Private**.

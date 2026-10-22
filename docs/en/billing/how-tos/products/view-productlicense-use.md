@@ -19,7 +19,7 @@ breadcrumbs:
 
 Explore your use of features that are billed by usage and see how they contribute to your bill.
 
-> \[!TIP]
+> [!TIP]
 > **GitHub Enterprise Server** administrators should instead see [Downloading license use for your enterprise or organization](/en/billing/how-tos/products/download-license-use).
 
 ## Viewing a summary of usage
@@ -64,22 +64,30 @@ The metered usage chart and usage break down table both show your current choice
 
 ![Screenshot of the metered usage chart showing "Actions grouped by SKU" with the three control fields outlined in dark orange.](/assets/images/help/billing/product-usage-chart.png)
 
-> \[!TIP]
+> [!TIP]
 > For GitHub Actions, you can also view the billable job execution minutes for an individual workflow run. For more information, see [Viewing job execution time](/en/actions/how-tos/monitor-workflows/view-job-execution-time).
 
 ## Analyzing AI credits usage
 
-> \[!NOTE]
+> [!NOTE]
 > Enterprise owners and billing managers can filter AI usage data by user. Organization owners cannot view user-level data directly—to see per-user consumption, download a usage report instead. See [Downloading usage reports](#downloading-usage-reports).
 
-If you use Copilot, an additional **AI usage** view is listed under **Usage**. You can use this view to dig deeper into how your enterprise is consuming AI credits and where additional spend is occurring. For example:
+If your account uses AI credits, an additional **AI usage** view is listed under **Usage**. You can use this view to understand included and metered usage across products, including Copilot and Advanced Security.
+
+To review combined AI Scan and agentic autofix usage, open the **AI usage** view, under "Group by," select **Products**, then review **Advanced Security**. These features share the Code Security AI Credits SKU, so their usage is reported together within the product total, not as separate totals for each feature.
+
+You can use the view to answer questions such as:
 
 * What's our total AI credits consumption across all users?
 * Which users are the heaviest consumers, and are they within their budget?
 * Which models are driving the most spend?
 * How widespread is adoption in the organizations where we rolled out Copilot?
 
-To understand how AI credits are pooled across your enterprise and what the usage data represents, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing).
+For information about Copilot allowances and how AI credits are pooled across your enterprise, see [Usage-based billing for organizations and enterprises](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/billing).
+
+App attribution is not available in the **AI usage** view. To identify usage from a GitHub App installed on an organization, download an AI usage report. Use the “List app installations for an organization” REST API endpoint and match `app_client_id` in the report to `client_id` in the response. The response’s `app_slug` identifies the app, and `id` identifies the installation. See [REST API endpoints for organizations](/en/rest/orgs/orgs#list-app-installations-for-an-organization). For report field definitions, see [Billing reports reference](/en/billing/reference/billing-reports#usage-report-fields).
+
+For information about Advanced Security AI-credit billing, see [GitHub Advanced Security license billing](/en/billing/concepts/product-billing/github-advanced-security#how-ai-feature-usage-is-billed).
 
 ## Downloading usage reports
 

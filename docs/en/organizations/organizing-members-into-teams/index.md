@@ -27,7 +27,7 @@ You can group organization members into teams that reflect your company or group
 
 * [Adding organization members to a team](/en/organizations/organizing-members-into-teams/adding-organization-members-to-a-team)
 
-  People with owner or team maintainer permissions can add organization members to teams. People with owner permissions can also add non-members to a team and the organization.
+  People with owner or team maintainer permissions can add organization members to teams. People with owner permissions can also invite non-members to join a team and the organization.
 
 * [Assigning the team maintainer role to a team member](/en/organizations/organizing-members-into-teams/assigning-the-team-maintainer-role-to-a-team-member)
 
@@ -52,10 +52,6 @@ You can group organization members into teams that reflect your company or group
 * [Configuring team notifications](/en/organizations/organizing-members-into-teams/configuring-team-notifications)
 
   Team maintainers and organization owners can configure notifications for specific teams.
-
-* [Synchronizing a team with an identity provider group](/en/synchronizing-a-team-with-an-identity-provider-group)
-
-  You can synchronize a GitHub team with a supported identity provider (IdP) group to automatically add and remove team members.
 
 * [Moving a team in your organization's hierarchy](/en/organizations/organizing-members-into-teams/moving-a-team-in-your-organizations-hierarchy)
 

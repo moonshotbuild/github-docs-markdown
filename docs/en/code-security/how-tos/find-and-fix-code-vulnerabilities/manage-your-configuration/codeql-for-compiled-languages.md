@@ -112,7 +112,7 @@ Creating a CodeQL database without a build may produce less accurate results tha
 
 To use `autobuild` or manual build steps, you can use advanced setup.
 
-> \[!NOTE] For Java analysis, if `build-mode` is set to `none` and Kotlin code is found in the repository, the Kotlin code will not be analyzed and a warning will be produced. See [CodeQL build options and steps for compiled languages](/en/code-security/reference/code-scanning/codeql/build-options-for-compiled-languages#building-java-and-kotlin).
+> [!NOTE] For Java analysis, if `build-mode` is set to `none` and Kotlin code is found in the repository, the Kotlin code will not be analyzed and a warning will be produced. See [CodeQL build options and steps for compiled languages](/en/code-security/reference/code-scanning/codeql/build-options-for-compiled-languages#building-java-and-kotlin).
 
 ## Use `autobuild` for CodeQL
 

@@ -62,7 +62,7 @@ You cannot change the contents of an existing cache. Instead, you can create a n
 
 * `enableCrossOsArchive`: **Optional** A boolean value that when enabled, allows Windows runners to save or restore caches independent of the operating system the cache was created on. If this parameter is not set, it defaults to `false`. For more information, see [Cross OS cache](https://github.com/actions/cache/blob/main/tips-and-workarounds.md#cross-os-cache) in the Actions Cache documentation.
 
-> \[!NOTE]
+> [!NOTE]
 > We recommend that you don't store any sensitive information, such as access tokens or login credentials, in files in the cache path. Anyone with read access can create a pull request on a repository and access the contents of a cache. Additionally, forks of a repository can create pull requests on the base branch and access caches on the base branch.
 
 ### Output parameters for the `cache` action
@@ -298,7 +298,7 @@ If a called workflow declares a `cache-mode` that requests access beyond this ex
 
 A job or workflow that explicitly declares `cache-mode: write` or `cache-mode: write-only` overrides the secure read-only default that would otherwise apply to a run triggered by a low-trust event. See [Cache access for low-trust workflow triggers](#cache-access-for-low-trust-workflow-triggers).
 
-> \[!WARNING]
+> [!WARNING]
 > Explicitly declaring `cache-mode: write` or `cache-mode: write-only` reintroduces the risk of cache-poisoning that the default untrusted-trigger read-only permissions are designed to prevent. If a workflow that runs on an untrusted trigger, such as `pull_request_target`, `issue_comment`, or `workflow_run`, declares a write-capable `cache-mode`, vulnerabilities or untrusted code execution in the workflow could then be used to save a cache. A more privileged workflow that later restores that cache could then execute attacker-controlled content.
 
 Before declaring a write-capable `cache-mode` on a workflow with a low-trust trigger, consider whether a narrower mitigation meets your needs instead:

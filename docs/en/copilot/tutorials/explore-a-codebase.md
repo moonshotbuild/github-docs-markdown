@@ -39,7 +39,7 @@ Attaching a repository gives Copilot Chat access to the code in the repository, 
 
 ### Asking from the repository page
 
-> \[!NOTE]
+> [!NOTE]
 > This feature is currently in public preview and subject to change.
 
 You can ask Copilot Chat about a repository directly from its page on GitHub, without attaching it first. This is a quick way to get oriented in a project you haven't worked on before.
@@ -138,9 +138,9 @@ Use Copilot to help you understand the purpose of a specific file or symbol in t
 
    Copilot replies in the chat panel.
 
-   > \[!TIP]
+   > [!TIP]
    >
-   > Copilot's ability to answer natural language questions like these in a repository context is optimized when the semantic code search index for the repository is up to date. For more information, see [Indexing repositories for GitHub Copilot](/en/copilot/concepts/context/repository-indexing).
+   > Copilot's ability to answer natural language questions like these in a repository context is optimized when the semantic code search index for the repository is up to date. For more information, see [Indexing repositories for GitHub Copilot](/en/copilot/concepts/prompting-and-context/repository-indexing).
 
 ## Finding out about commits
 

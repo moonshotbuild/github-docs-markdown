@@ -37,10 +37,6 @@ You can purchase and install GitHub Apps from GitHub Marketplace.
 
   You can install a GitHub App that you created on the account that owns the app. If your app is public, the GitHub App can also be installed on other accounts.
 
-* [Installing a GitHub App on your enterprise](/en/installing-a-github-app-on-your-enterprise)
-
-  You can install GitHub Apps on your enterprise to manage your enterprise account and perform enterprise-level operations.
-
 * [Requesting a GitHub App from your organization owner](/en/apps/using-github-apps/requesting-a-github-app-from-your-organization-owner)
 
   Organization members can request installation of a GitHub App for their organization.
@@ -60,10 +56,6 @@ You can purchase and install GitHub Apps from GitHub Marketplace.
 * [Reviewing and modifying installed GitHub Apps](/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps)
 
   You can review the permissions and change the repository access for GitHub Apps that you have installed. You can also temporarily or permanently prevent a GitHub App from accessing resources owned by your account or organization.
-
-* [SAML and GitHub Apps](/en/saml-and-github-apps)
-
-  If your organization or enterprise is SSO protected, you may need to start an active SSO session for your organization before authorizing, installing, or requesting a GitHub App.
 
 * [Privileged GitHub Apps](/en/apps/using-github-apps/privileged-github-apps)
 

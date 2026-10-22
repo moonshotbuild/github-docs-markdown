@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Backing up a repository
 
-You can use Git or the API to back up your repository.
+You can use Git, a third-party tool, or the API to back up your repository.
 
 You may want to take backups of repositories for archiving or disaster recovery purposes.
 
@@ -59,7 +59,7 @@ You can use the REST API to generate a migration archive for a repository. For m
 
 These archives are designed for moving data between GitHub products, but they can also be used to back up a repository for archiving purposes
 
-> \[!WARNING]
+> [!WARNING]
 > Migration archives do not include all data related to a repository. For example, Git Large File Storage objects, discussions, or packages are not included. For more information on what is included in migration archives, see [About migrations between GitHub products with GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/migrating-between-github-products/about-migrations-between-github-products).
 
 Once you have generated an archive, you can move it to a location of your choice for safe-keeping.

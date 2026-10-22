@@ -108,7 +108,7 @@ Docker evaluates the `sub` claim from the GitHub OIDC token against the rulesets
 repo:<owner>/<repo>:ref:refs/heads/<branch>
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Repositories created after July 15, 2026, and repository renames or transfers after that date, use an immutable default OIDC `sub` claim that includes owner and repository IDs. Existing repositories keep the previous format unless they opt in. For more information, see [OpenID Connect reference](/en/actions/reference/security/oidc#immutable-subject-claims).
 
 Different workflow triggers produce different subject claims. For example:

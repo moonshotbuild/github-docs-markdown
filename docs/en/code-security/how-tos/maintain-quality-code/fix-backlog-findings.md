@@ -19,7 +19,7 @@ breadcrumbs:
 
 Generate autofixes for findings on the default branch of your repository, or dismiss findings that aren't relevant.
 
-> \[!TIP]
+> [!TIP]
 > If you're new to Code Quality, see [Raising your repository's code quality score](/en/code-security/tutorials/improve-code-quality/raise-your-quality-rating?utm_campaign=code-quality-ga-july-2026\&utm_medium=docs\&utm_source=docs-fix-backlog-walkthrough-tip) for a guided walkthrough of reviewing and improving your repository's quality scores.
 
 ## How Code Quality works on your default branch
@@ -30,7 +30,7 @@ Code Quality scans your default branch and reports findings on "Code quality" pa
 
 2. **AI findings**: Code Quality uses AI-powered analysis to identify quality issues in the files most recently pushed to your default branch, including issues that rule-based analysis may not detect - such as best practices, naming conventions, or design considerations.
 
-> \[!NOTE]
+> [!NOTE]
 > The "AI findings" page for recently changed files is currently in public preview and subject to change.
 
 For information on resolving AI findings, see [Fixing code quality findings in recently merged files](/en/code-security/how-tos/maintain-quality-code/fix-findings-in-recent-merges).

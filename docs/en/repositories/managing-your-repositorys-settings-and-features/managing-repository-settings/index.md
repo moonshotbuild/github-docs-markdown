@@ -51,14 +51,6 @@ You can choose the way your repository functions by managing repository settings
 
   You can choose whether Git Large File Storage (Git LFS) objects are included in source code archives created for your repository.
 
-* [Enabling anonymous Git read access for a repository](/en/enabling-anonymous-git-read-access-for-a-repository)
-
-  As a repository administrator, you can enable or disable anonymous Git read access for public repositories that meet certain requirements.
-
-* [About email notifications for pushes to your repository](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/about-email-notifications-for-pushes-to-your-repository)
-
-  You can choose to automatically send email notifications to a specific email address when anyone pushes to the repository.
-
 * [Configuring autolinks to reference external resources](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources)
 
   You can add autolinks to external resources like JIRA issues and Zendesk tickets to help streamline your workflow.

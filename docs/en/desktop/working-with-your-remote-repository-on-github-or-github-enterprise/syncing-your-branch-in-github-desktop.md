@@ -53,7 +53,7 @@ Some workflows require or benefit from rebasing instead of merging. By rebasing 
 
 3. Click the branch you want to merge into the current branch, then click **Merge BRANCH into BRANCH**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If there are merge conflicts, GitHub Desktop will warn you above the **Merge BRANCH into BRANCH** button. You will not be able to merge the branches until you have resolved all conflicts.
 
 4. To push your local changes to the remote repository, in the repository bar, click **Push origin**.
@@ -104,7 +104,7 @@ Some workflows require or benefit from rebasing instead of merging. By rebasing 
 
 2. In the "Squash and merge" window, click the branch you want to merge into the current branch, then click **Squash and merge**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If there are merge conflicts, GitHub Desktop will warn you above the **Squash and merge** button. You will not be able to squash and merge the branch until you have resolved all conflicts.
 
 3. To push your local changes to the remote repository, in the repository bar, click **Push origin**.

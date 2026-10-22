@@ -21,10 +21,10 @@ breadcrumbs:
 
 # database interpret-results
 
-\[Plumbing] Interpret computed query results into meaningful formats
+[Plumbing] Interpret computed query results into meaningful formats
 such as SARIF or CSV.
 
-> \[!NOTE]
+> [!NOTE]
 > This content describes the most recent release of the CodeQL CLI. For more information about this release, see <https://github.com/github/codeql-cli-binaries/releases>.
 >
 > To see details of the options available for this command in an earlier release, run the command with the <span style="white-space: nowrap;">`--help`</span> option in your terminal.
@@ -265,7 +265,7 @@ This overrides the GITHUB\_TOKEN environment variable.
 
 ### Options to specify which extensions to use when interpreting the results
 
-#### `--model-packs=<`<name@range>>...
+#### `--model-packs=<name@range>...`
 
 A list of CodeQL pack names, each with an optional version range, to be
 used as model packs to customize the queries that are about to be

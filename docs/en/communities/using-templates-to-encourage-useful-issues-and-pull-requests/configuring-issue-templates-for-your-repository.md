@@ -42,7 +42,7 @@ You can create default issue templates and a default configuration file for issu
    ![Screenshot of the preview of an issue template. To the right of the template name, a pencil icon is outlined in dark orange.](/assets/images/help/repository/issue-template-edit-button.png)
 
 7. To automatically set a default issue title, assign the issue to people with read access to the repository, or apply labels to issues raised from the template, use the fields under "Optional additional information." You can also add these details in the issue template with `title`, `labels`, `type`, or `assignees` in a YAML frontmatter format.
-   > \[!NOTE]
+   > [!NOTE]
    > The template name must be more than 3 characters.
 
 8. When you're finished editing and previewing your template, click **Propose changes** in the upper right corner of the page.
@@ -55,7 +55,7 @@ You can create default issue templates and a default configuration file for issu
 
 ## Creating issue forms
 
-> \[!NOTE]
+> [!NOTE]
 > Issue forms are currently in public preview and subject to change.
 
 With issue forms, you can create issue templates that have customizable web form fields. You can encourage contributors to include specific, structured information by using issue forms in your repository.
@@ -141,7 +141,7 @@ body:
       required: false
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > The `name` field must be more than 3 characters. If it's not, the template won't be shown when creating an issue.
 
 Here is the rendered version of the issue form.

@@ -33,7 +33,7 @@ For prices and monthly allowances, see [GitHub Pricing](https://github.com/prici
 
 Your bill includes the cost of GitHub Enterprise licenses used, as well as any extra features you purchase, such as GitHub Copilot or Advanced Security licenses.
 
-> \[!TIP] GitHub Enterprise Server customers with no enterprise account on GitHub.com can view invoices and payment history on the [GitHub Enterprise website](https://enterprise.github.com/login).
+> [!TIP] GitHub Enterprise Server customers with no enterprise account on GitHub.com can view invoices and payment history on the [GitHub Enterprise website](https://enterprise.github.com/login).
 
 ## Paying for your enterprise
 

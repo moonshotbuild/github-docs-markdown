@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/apps/installations"
 ---
 
-# REST API endpoints for GitHub App installations
+# REST API endpoints for {% data variables.product.prodname\_github\_app %} installations
 
 Use the REST API to get information about GitHub App installations and perform actions within those installations.
 
@@ -23,7 +23,7 @@ A GitHub App installation refers to the installation of the app on an organizati
 
 To list all GitHub App installations for an organization, see [REST API endpoints for organizations](/en/rest/orgs/orgs#list-app-installations-for-an-organization).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List repositories accessible to the app installation

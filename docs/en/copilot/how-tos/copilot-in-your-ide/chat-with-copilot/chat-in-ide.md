@@ -53,7 +53,7 @@ You can use Copilot Chat in the following modes:
 
 To switch between modes, use the agents dropdown at the bottom of the chat view.
 
-> \[!NOTE]
+> [!NOTE]
 > If you don’t see the **Agent** option in the mode selector, your enterprise or organization administrator may have disabled agent mode for your IDE.
 
 ### Using ask mode
@@ -88,7 +88,7 @@ Chat participants are like domain experts who have a specialty that they can hel
 
 Copilot Chat can infer relevant chat participants based on your natural language prompt, improving discovery of advanced capabilities without you having to explicitly specify the participant you want to use in your prompt.
 
-> \[!NOTE] Automatic inference for chat participants is currently in public preview and is subject to change.
+> [!NOTE] Automatic inference for chat participants is currently in public preview and is subject to change.
 
 Alternatively, you can manually specify a chat participant to scope your prompt to a specific domain. To do this, type `@` in the chat prompt box, followed by a chat participant name.
 
@@ -119,7 +119,7 @@ You can generate a list of currently available skills by asking Copilot: `@githu
 
 ## Using Model Context Protocol (MCP) servers
 
-You can use MCP to extend the capabilities of Copilot Chat by integrating it with a wide range of existing tools and services. For additional information, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+You can use MCP to extend the capabilities of Copilot Chat by integrating it with a wide range of existing tools and services. For additional information, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## AI models for Copilot Chat
 
@@ -254,7 +254,7 @@ See also [GitHub Copilot Chat cheat sheet](/en/copilot/reference/chat-cheat-shee
 
 ## Using GitHub skills for Copilot (preview)
 
-> \[!NOTE]
+> [!NOTE]
 > The `@github` chat participant is currently in preview, and only available in [Visual Studio 2022 Preview 2](https://visualstudio.microsoft.com/vs/preview/) onwards.
 
 Copilot's GitHub-specific skills expand the type of information Copilot can provide. To access these skills in Copilot Chat in Visual Studio, include `@github` in your question.
@@ -265,7 +265,7 @@ You can generate a list of currently available skills by asking Copilot: `@githu
 
 ## Using Model Context Protocol (MCP) servers
 
-You can use MCP to extend the capabilities of Copilot Chat by integrating it with a wide range of existing tools and services. For additional information, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+You can use MCP to extend the capabilities of Copilot Chat by integrating it with a wide range of existing tools and services. For additional information, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## AI models for Copilot Chat
 
@@ -388,7 +388,7 @@ The following agents are available:
 
 Copilot Edits lets you make changes across multiple files directly from a single Copilot Chat prompt, using edit mode and agent mode.
 
-> \[!TIP]
+> [!TIP]
 > You can also access Copilot from JetBrains AI Assistant without installing the Copilot plugin. For more information, see [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides).
 
 ### Using edit mode
@@ -451,7 +451,7 @@ You can generate a list of currently available skills by asking Copilot: `@githu
 
 ## Using Model Context Protocol (MCP) servers
 
-You can use MCP to extend the capabilities of Copilot Chat by integrating it with a wide range of existing tools and services. For additional information, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+You can use MCP to extend the capabilities of Copilot Chat by integrating it with a wide range of existing tools and services. For additional information, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## AI models for Copilot Chat
 
@@ -526,7 +526,7 @@ You can ask Copilot Chat to give you code suggestions, explain code, generate un
 
 ## Using Model Context Protocol (MCP) servers
 
-You can use MCP to extend the capabilities of Copilot Chat by integrating it with a wide range of existing tools and services. For additional information, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+You can use MCP to extend the capabilities of Copilot Chat by integrating it with a wide range of existing tools and services. For additional information, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## AI models for Copilot Chat
 
@@ -615,7 +615,7 @@ To see all available slash commands, type `/` in the chat prompt box.
 
 ## Using Model Context Protocol (MCP) servers
 
-You can use MCP to extend the capabilities of Copilot Chat by integrating it with a wide range of existing tools and services. For additional information, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+You can use MCP to extend the capabilities of Copilot Chat by integrating it with a wide range of existing tools and services. For additional information, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## AI models for Copilot Chat
 

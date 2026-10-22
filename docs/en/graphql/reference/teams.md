@@ -66,7 +66,7 @@ A team of users in an organization.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (UserStatusOrder): Ordering options for user statuses returned from the connection.
+  * `orderBy` (UserStatusOrder): Ordering options for user statuses returned from the connection. Default: `{field: UPDATED_AT, direction: DESC}`.
 
 * `members` (TeamMemberConnection!): A list of users who are members of this team.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
@@ -93,11 +93,11 @@ A team of users in an organization.
 * `projectsV2` (ProjectV2Connection!): List of projects this team has collaborator access to.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
-  * `filterBy` (ProjectV2Filters): Filtering options for projects returned from this connection.
+  * `filterBy` (ProjectV2Filters): Filtering options for projects returned from this connection. Default: `{}`.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
   * `minPermissionLevel` (ProjectV2PermissionLevel): Filter projects based on user role. Default: `READ`.
-  * `orderBy` (ProjectV2Order): How to order the returned projects.
+  * `orderBy` (ProjectV2Order): How to order the returned projects. Default: `{field: NUMBER, direction: DESC}`.
   * `query` (String): The query to search projects by. Default: ``.
 
 * `repositories` (TeamRepositoryConnection!): A list of repositories this team has access to.
@@ -292,7 +292,7 @@ Properties by which team member connections can be ordered.
 
 ## TeamMemberRole - enum
 
-The possible team member roles; eithermaintaineror 'member'.
+The possible team member roles; either maintainer or 'member'.
 
 ### Values for `TeamMemberRole`
 

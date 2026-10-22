@@ -72,7 +72,7 @@ The maximum price is US$12,000 per month.
 
 4. To the right of the tier you want to edit, click **Edit**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > To see ideas of tier descriptions, scroll down.
 
 5. Type a price per month and description for the tier.

@@ -137,7 +137,7 @@ After running the tests, you will see the output in your terminal or IDE. If all
 
 Additionally, you can prompt Copilot to write a full suite of unit tests with the `/tests` slash command. Ensure that you have the file open on the current tab of your IDE and Copilot will generate unit tests for that file. The tests that Copilot generates may not cover all scenarios, so you should always review the generated code and add any additional tests that may be necessary.
 
-> \[!TIP] If you ask Copilot to write tests for a code file that is not already covered by unit tests, you can provide Copilot with useful context by opening one or more existing test files in adjacent tabs in your editor. Copilot will be able to see the testing framework you use and will be more likely to write a test that is consistent with your existing tests.
+> [!TIP] If you ask Copilot to write tests for a code file that is not already covered by unit tests, you can provide Copilot with useful context by opening one or more existing test files in adjacent tabs in your editor. Copilot will be able to see the testing framework you use and will be more likely to write a test that is consistent with your existing tests.
 
 Copilot will generate a unit test suite such as the following.
 
@@ -203,7 +203,7 @@ This prompt does a few important things:
 * **Verification:** The prompt emphasizes verifying that the `NotificationSystem` is called correctly after a deposit, ensuring that the integration between the components works as expected.
 * **Specificity:** The prompt clearly states the method (`deposit`) and the class (`BankAccount`) to be tested.
 
-> \[!TIP] If Copilot is producing invalid tests, provide examples of inputs and outputs for the function you want to test. This will help Copilot evaluate the expected behavior of the function.
+> [!TIP] If Copilot is producing invalid tests, provide examples of inputs and outputs for the function you want to test. This will help Copilot evaluate the expected behavior of the function.
 
 Copilot will generate a test suite like the following.
 
@@ -343,4 +343,4 @@ Or:
 
 > Write a unit test for the refund logic in `refund.js`, following the structure in the existing test suite.
 
-For more information about using Copilot Spaces, see [About GitHub Copilot Spaces](/en/copilot/concepts/context/spaces).
+For more information about using Copilot Spaces, see [About GitHub Copilot Spaces](/en/copilot/concepts/prompting-and-context/spaces).

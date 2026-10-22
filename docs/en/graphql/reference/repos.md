@@ -603,7 +603,7 @@ A property that must match.
 
 * `name` (String!): The name of the property.
 * `propertyValues` ([String!]!): The values to match for.
-* `source` (String): The source of the property. Choosecustomor 'system'. Defaults to 'custom' if not specified.
+* `source` (String): The source of the property. Choose custom or 'system'. Defaults to custom if not specified.
 
 ## PropertyTargetDefinitionInput - input object
 
@@ -613,7 +613,7 @@ A property that must match.
 
 * `name` (String!): The name of the property.
 * `propertyValues` ([String!]!): The values to match for.
-* `source` (String): The source of the property. Choosecustomor 'system'. Defaults to 'custom' if not specified.
+* `source` (String): The source of the property. Choose custom or 'system'. Defaults to custom if not specified.
 
 ## RepoAccessAuditEntry - object
 
@@ -1034,7 +1034,7 @@ always be updated even if it is not required to be up to date before merging.
   * `environments` ([String!]): Environments to list deployments for.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (DeploymentOrder): Ordering options for deployments returned from the connection.
+  * `orderBy` (DeploymentOrder): Ordering options for deployments returned from the connection. Default: `{field: CREATED_AT, direction: ASC}`.
 
 * `description` (String): The description of the repository.
 * `descriptionHTML` (HTML!): The description of the repository rendered to HTML.
@@ -1044,7 +1044,7 @@ always be updated even if it is not required to be up to date before merging.
 * `discussionCategories` (DiscussionCategoryConnection!): A list of discussion categories that are available in the repository.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
-  * `filterByAssignable` (Boolean): Filter by categories that are assignable by the viewer.
+  * `filterByAssignable` (Boolean): Filter by categories that are assignable by the viewer. Default: `false`.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
 
@@ -1058,8 +1058,8 @@ always be updated even if it is not required to be up to date before merging.
   * `categoryId` (ID): Only include discussions that belong to the category with this ID.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (DiscussionOrder): Ordering options for discussions returned from the connection.
-  * `states` ([DiscussionState!]): A list of states to filter the discussions by.
+  * `orderBy` (DiscussionOrder): Ordering options for discussions returned from the connection. Default: `{field: UPDATED_AT, direction: DESC}`.
+  * `states` ([DiscussionState!]): A list of states to filter the discussions by. Default: `[]`.
 
 * `diskUsage` (Int): The number of kilobytes this repository occupies on disk.
 * `environment` (Environment): Returns a single active environment from the current repository by name.
@@ -1070,8 +1070,8 @@ always be updated even if it is not required to be up to date before merging.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `names` ([String!]): The names of the environments to be returned.
-  * `orderBy` (Environments): Ordering options for the environments.
+  * `names` ([String!]): The names of the environments to be returned. Default: `[]`.
+  * `orderBy` (Environments): Ordering options for the environments. Default: `{field: NAME, direction: ASC}`.
   * `pinnedEnvironmentFilter` (EnvironmentPinnedFilterField): Filter to control pinned environments return. Default: `ALL`.
 
 * `forkCount` (Int!): Returns how many forks there are of this repository in the whole network.
@@ -1089,7 +1089,7 @@ current viewer owns.
   * `orderBy` (RepositoryOrder): Ordering options for repositories returned from the connection.
   * `ownerAffiliations` ([RepositoryAffiliation]): Array of owner's affiliation options for repositories returned from the
 connection. For example, OWNER will include only repositories that the
-organization or user being viewed owns.
+organization or user being viewed owns. Default: `[OWNER, COLLABORATOR]`.
   * `privacy` (RepositoryPrivacy): If non-null, filters repositories according to privacy. Internal
 repositories are considered private; consider using the visibility argument
 if only internal repositories are needed. Cannot be combined with the
@@ -1129,7 +1129,7 @@ visibility argument.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (IssueFieldOrder): Ordering options for issue fields returned from the connection.
+  * `orderBy` (IssueFieldOrder): Ordering options for issue fields returned from the connection. Default: `{field: CREATED_AT, direction: ASC}`.
 
 * `issueOrPullRequest` (IssueOrPullRequest): Returns a single issue-like object from the current repository by number.
   * `number` (Int!): The number for the issue to be returned.
@@ -1143,7 +1143,7 @@ visibility argument.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (IssueTypeOrder): Ordering options for issue types returned from the connection.
+  * `orderBy` (IssueTypeOrder): Ordering options for issue types returned from the connection. Default: `{field: CREATED_AT, direction: ASC}`.
 
 * `issues` (IssueConnection!): A list of issues that have been opened in the repository.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
@@ -1163,7 +1163,7 @@ visibility argument.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (LabelOrder): Ordering options for labels returned from the connection.
+  * `orderBy` (LabelOrder): Ordering options for labels returned from the connection. Default: `{field: CREATED_AT, direction: ASC}`.
   * `query` (String): If provided, searches labels by name and description.
 
 * `languages` (LanguageConnection): A list containing a breakdown of the language composition of the repository.
@@ -1216,7 +1216,7 @@ visibility argument.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
   * `names` ([String]): Find packages by their names.
-  * `orderBy` (PackageOrder): Ordering of the returned packages.
+  * `orderBy` (PackageOrder): Ordering of the returned packages. Default: `{field: CREATED_AT, direction: DESC}`.
   * `packageType` (PackageType): Filter registry package by type.
   * `repositoryId` (ID): Find packages in a repository by ID.
 
@@ -1227,7 +1227,7 @@ visibility argument.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (PinnedEnvironmentOrder): Ordering options for the environments.
+  * `orderBy` (PinnedEnvironmentOrder): Ordering options for the environments. Default: `{field: POSITION, direction: ASC}`.
 
 * `pinnedIssues` (PinnedIssueConnection): A list of pinned issues for this repository. _(Pagination: `after`, `before`, `first`, `last`)_
 * `planFeatures` (RepositoryPlanFeatures!): Returns information about the availability of certain features and limits based on the repository's billing plan.
@@ -1255,7 +1255,7 @@ visibility argument.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
   * `minPermissionLevel` (ProjectV2PermissionLevel): Filter projects based on user role. Default: `READ`.
-  * `orderBy` (ProjectV2Order): How to order the returned projects.
+  * `orderBy` (ProjectV2Order): How to order the returned projects. Default: `{field: NUMBER, direction: DESC}`.
   * `query` (String): A project to search for linked to the repo.
 
 * `pullRequest` (PullRequest): Returns a single pull request from the current repository by number.
@@ -1391,7 +1391,7 @@ Lookup a given repository by the owner and repository name.
 
 ### Arguments for `repository`
 
-* `followRenames` (Boolean): Follow repository renames. If disabled, a repository referenced by its old name will return an error.
+* `followRenames` (Boolean): Follow repository renames. If disabled, a repository referenced by its old name will return an error. Default: `true`.
 * `name` (String!): The name of the repository.
 * `owner` (String!): The login field of a user or organization.
 
@@ -1854,7 +1854,7 @@ current viewer owns.
   * `orderBy` (RepositoryOrder): Ordering options for repositories returned from the connection.
   * `ownerAffiliations` ([RepositoryAffiliation]): Array of owner's affiliation options for repositories returned from the
 connection. For example, OWNER will include only repositories that the
-organization or user being viewed owns.
+organization or user being viewed owns. Default: `[OWNER, COLLABORATOR]`.
   * `privacy` (RepositoryPrivacy): If non-null, filters repositories according to privacy. Internal
 repositories are considered private; consider using the visibility argument
 if only internal repositories are needed. Cannot be combined with the
@@ -2482,12 +2482,12 @@ current viewer owns.
   * `orderBy` (RepositoryOrder): Ordering options for repositories returned from the connection.
   * `ownerAffiliations` ([RepositoryAffiliation]): Array of owner's affiliation options for repositories returned from the
 connection. For example, OWNER will include only repositories that the
-organization or user being viewed owns.
+organization or user being viewed owns. Default: `[OWNER, COLLABORATOR]`.
   * `privacy` (RepositoryPrivacy): If non-null, filters repositories according to privacy. Internal
 repositories are considered private; consider using the visibility argument
 if only internal repositories are needed. Cannot be combined with the
 visibility argument.
-  * `sponsorableOnly` (Boolean): If true, only repositories whose owner can be sponsored via GitHub Sponsors will be returned.
+  * `sponsorableOnly` (Boolean): If true, only repositories whose owner can be sponsored via GitHub Sponsors will be returned. Default: `false`.
   * `visibility` (RepositoryVisibility): If non-null, filters repositories according to visibility. Cannot be combined with the privacy argument.
 
 * `stargazerCount` (Int!): Returns a count of how many stargazers there are on this object.
@@ -2516,10 +2516,10 @@ Reason that the suggested topic is declined.
 
 ### Values for `TopicSuggestionDeclineReason`
 
-* `NOT_RELEVANT`: The suggested topic is not relevant to the repository.
-* `PERSONAL_PREFERENCE`: The viewer does not like the suggested topic.
-* `TOO_GENERAL`: The suggested topic is too general for the repository.
-* `TOO_SPECIFIC`: The suggested topic is too specific for the repository (e.g. #ruby-on-rails-version-4-2-1).
+* `NOT_RELEVANT`: The suggested topic is not relevant to the repository. **Deprecated:** Suggested topics are no longer supported Removal on 2024-04-01 UTC.
+* `PERSONAL_PREFERENCE`: The viewer does not like the suggested topic. **Deprecated:** Suggested topics are no longer supported Removal on 2024-04-01 UTC.
+* `TOO_GENERAL`: The suggested topic is too general for the repository. **Deprecated:** Suggested topics are no longer supported Removal on 2024-04-01 UTC.
+* `TOO_SPECIFIC`: The suggested topic is too specific for the repository (e.g. #ruby-on-rails-version-4-2-1). **Deprecated:** Suggested topics are no longer supported Removal on 2024-04-01 UTC.
 
 ## unarchiveRepository - mutation
 

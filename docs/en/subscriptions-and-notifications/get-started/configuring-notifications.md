@@ -27,7 +27,7 @@ You can receive notifications for activity on GitHub in the following locations.
 
 To use the notifications inbox on GitHub and GitHub Mobile, you must enable notifications for both **Email** and **On GitHub** in your notification settings. For more information, see [Choosing your notification settings](#choosing-your-notification-settings).
 
-> \[!TIP]
+> [!TIP]
 > If you receive notifications both via email and on GitHub, you can automatically sync the read or unread status of the notification so that notifications on GitHub are automatically marked as read once you've read the corresponding email notification. To enable this sync, your email client must be able to view images from `notifications@github.com`.
 
 ### Benefits of the notifications inbox
@@ -61,7 +61,7 @@ To see repositories that you're watching, go to your [watching page](https://git
 
 You can configure notifications for a repository on the repository page, or on your watching page.
 
-> \[!NOTE]
+> [!NOTE]
 > You can watch a maximum of 10,000 repositories.
 
 ### About custom notifications
@@ -85,7 +85,7 @@ If you do not enable "Notify me: On GitHub" for watching or participating notifi
 
 After enabling email notifications, GitHub will send notifications to you as multipart emails that contain both HTML and plain text copies of the content. Email notification content includes any Markdown, @mentions, emojis, hash-links, and more, that appear in the original content on GitHub. If you only want to see the text in the email, you can configure your email client to display the plain text copy only.
 
-> \[!TIP]
+> [!TIP]
 > If you receive notifications both via email and on GitHub, you can automatically sync the read or unread status of the notification so that notifications on GitHub are automatically marked as read once you've read the corresponding email notification. To enable this sync, your email client must be able to view images from `notifications@github.com`.
 
 If you're using Gmail, you can click a button beside the notification email to visit the original issue or pull request that generated the notification.
@@ -121,7 +121,7 @@ GitHub will not always include the full email contents and will attempt to strip
 
 ## Choosing your notification settings
 
-1. In the upper-right corner of any page, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-inbox" aria-label="You have " role="img"><path d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z"></path></svg>. If the icon is not displayed, go directly to the [notifications page](https://github.com/notifications).
+1. In the upper-right corner of any page, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-inbox" aria-label="You have (no) unread notifications" role="img"><path d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z"></path></svg>. If the icon is not displayed, go directly to the [notifications page](https://github.com/notifications).
 
    ![Screenshot of the right corner of the header of GitHub. An inbox icon has a blue dot, indicating that there are unread notifications.](/assets/images/help/notifications/notifications-general-existence-indicator.png)
 2. In the left sidebar, under the list of repositories, use the "Manage notifications" drop-down to click **Notification settings**.

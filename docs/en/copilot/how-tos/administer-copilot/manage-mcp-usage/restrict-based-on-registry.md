@@ -21,7 +21,7 @@ breadcrumbs:
 
 You can configure an MCP registry URL and access control policy to determine which MCP servers developers can discover and use in supported IDEs and Copilot CLI.
 
-> \[!IMPORTANT] This feature is in public preview and is not the recommended method for restricting access to MCP servers. The more secure, generally available method is to define settings in your enterprise's `managed-settings.json` file. See [Configuring an MCP server allowlist for your enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-enterprise-allowlist).
+> [!IMPORTANT] This feature is in public preview and is not the recommended method for restricting access to MCP servers. The more secure, generally available method is to define settings in your enterprise's `managed-settings.json` file. See [Configuring an MCP server allowlist for your enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-enterprise-allowlist).
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ To ensure uniform access, you can set and maintain your MCP registry URL and all
 
 5. In the **MCP Registry URL** section, enter the URL of your registry, then click **Save**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you set up your MCP registry using Azure API Center, enter the base URL for your API Center, including the workspace path, in the format:
    >
    > ```text
@@ -79,7 +79,7 @@ To ensure uniform access, you can set and maintain your MCP registry URL and all
 
 6. In the **MCP Registry URL (optional)** field, enter the URL of your registry, then click **Save**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you set up your MCP registry using Azure API Center, enter the base URL for your API Center, including the workspace path, in the format:
    >
    > ```text

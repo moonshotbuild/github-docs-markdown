@@ -38,7 +38,7 @@ When a new secret is detected, GitHub notifies all users with access to security
 * Users with custom roles with read/write access
 * Organization owners and enterprise owners, if they are administrators of repositories where secrets were leaked
 
-> \[!NOTE]
+> [!NOTE]
 > Commit authors who've accidentally committed secrets will be notified, regardless of their notification preferences.
 
 You will receive an email notification if:

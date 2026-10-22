@@ -28,7 +28,7 @@ The information below describes the views available to organizations with GitHub
 
 ## About the views
 
-> \[!NOTE]
+> [!NOTE]
 > All views show information and metrics for the **default** branches of the repositories you have permission to view in an organization or enterprise.
 
 The views are interactive with filters that allow you to look at the aggregated data in detail and identify sources of high risk, see security trends, and see the impact of pull request analysis on blocking security vulnerabilities entering your code. As you apply multiple filters to focus on narrower areas of interest, all data and metrics across the view change to reflect your current selection. For more information, see [Filtering alerts in security overview](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview).
@@ -37,7 +37,7 @@ From security overview, you can download comma-separated values (CSV) files cont
 
 There are dedicated views for each type of security alert. You can limit your analysis to a specific type of alert, and then narrow the results further with a range of filters specific to each view. For example, in the secret scanning view, you can use the "Secret type" filter to view only secret scanning alerts for a specific secret, like a GitHub personal access token.
 
-> \[!NOTE]
+> [!NOTE]
 > Security overview displays active alerts raised by security features. If there are no alerts shown in security overview for a repository, undetected security vulnerabilities or code errors may still exist or the feature may not be enabled for that repository.
 
 ## About security overview for organizations
@@ -54,7 +54,7 @@ Security overview has multiple views that provide different ways to explore enab
 * **Assessments:** regardless of the enablement status of Advanced Security features, organizations on GitHub Team and GitHub Enterprise can run a free report to scan the code in the organization for leaked secrets, see [Secret security with GitHub](/en/code-security/concepts/secret-security/secret-security-with-github).
 * **Campaigns:** coordinate and measure targeted remediation efforts, grouping related security tasks across repositories, assigning owners, and tracking progress toward defined risk‑reduction goals.
 * **Enablement:** see how quickly different teams are adopting security features.
-* **CodeQL pull requests:** assess the impact of running CodeQL on pull requests and how development teams are resolving code scanning alerts, see [Viewing metrics for pull request alerts](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-metrics-for-pull-request-alerts).
+* **Code scanning on pull requests:** assess the impact of running CodeQL and AI Scan on pull requests, and how development teams resolve alerts and findings, see [Viewing code scanning metrics for pull requests](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-metrics-for-pull-request-alerts).
 * **Dependabot**: prioritize and track critical vulnerabilities by identifying, remediating, and measuring security improvements across repositories.
 * **Secret scanning:** find out which types of secret are blocked by push protection and which teams are bypassing push protection, see [Viewing metrics for secret scanning push protection](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-metrics-for-secret-scanning-push-protection) and [Reviewing requests to bypass push protection](/en/code-security/how-tos/secure-your-secrets/manage-bypass-requests/review-bypass-requests).
 

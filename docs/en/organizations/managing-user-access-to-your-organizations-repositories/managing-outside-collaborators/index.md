@@ -37,7 +37,7 @@ You can manage outside collaborators, or people who have access to repositories 
 
 * [Converting an outside collaborator to an organization member](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/converting-an-outside-collaborator-to-an-organization-member)
 
-  If you would like to give an outside collaborator on your organization's repositories broader permissions within your organization, you can make them a member of the organization.
+  If you would like to give an outside collaborator on your organization's repositories broader permissions within your organization, you can invite them to become a member of the organization.
 
 * [Reinstating a former outside collaborator's access to your organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/reinstating-a-former-outside-collaborators-access-to-your-organization)
 

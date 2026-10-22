@@ -97,7 +97,7 @@ There are also many additional claims supported in the OIDC token that can be us
 
 OIDC tokens requested for Dependabot update jobs have an `event_name` claim of `dynamic`. If your trust policy is intended to authorize only GitHub Actions workflows and your cloud provider supports conditions on `event_name`, allow only the event names expected by your workflows.
 
-> \[!NOTE]
+> [!NOTE]
 > To control how your cloud provider issues access tokens, you **must** define at least one condition, so that untrusted repositories can’t request access tokens for your cloud resources.
 
 ## Example subject claims
@@ -286,12 +286,12 @@ You can use these `repo_property_*` claims as conditions in your cloud provider'
 
 To help improve security, compliance, and standardization, you can customize the standard claims to suit your required access conditions. If your cloud provider supports conditions on subject claims, you can create a condition that checks whether the `sub` value matches the path of the reusable workflow, such as `"job_workflow_ref:octo-org/octo-automation/.github/workflows/oidc.yml@refs/heads/main"`. The exact format will vary depending on your cloud provider's OIDC configuration. To configure the matching condition on GitHub, you can use the REST API to require that the `sub` claim must always include a specific custom claim, such as `job_workflow_ref`. You can use the REST API to apply a customization template for the OIDC subject claim; for example, you can require that the `sub` claim within the OIDC token must always include a specific custom claim, such as `job_workflow_ref`. For more information, see [REST API endpoints for GitHub Actions OIDC](/en/rest/actions/oidc).
 
-> \[!NOTE]
+> [!NOTE]
 > When the organization template is applied, it will not affect any workflows already using OIDC unless their repository has opted in to custom organization templates. For all repositories, existing and new, the repository owner will need to use the repository-level REST API to opt in to receive this configuration by setting `use_default` to `false`. Alternatively, the repository owner could use the REST API to apply a different configuration specific to the repository. For more information, see [REST API endpoints for GitHub Actions OIDC](/en/rest/actions/oidc#set-the-customization-template-for-an-oidc-subject-claim-for-a-repository).
 
 Customizing the claims results in a new format for the entire `sub` claim, which replaces the default predefined `sub` format in the token described in [Example subject claims](#example-subject-claims).
 
-> \[!NOTE]
+> [!NOTE]
 > The `sub` claim uses the shortened form `repo` (for example, `repo:ORG-NAME/REPO-NAME`) instead of `repository` to reference the repository.
 > Any `:` within the context value will be replaced with `%3A`.
 > For repositories using immutable subject claims (not available on GitHub Enterprise Server), `owner_id` and `repo_id` are always included in the `repo` segment of the `sub` claim, even when you customize claims with `include_claim_keys`. You can't remove these IDs from the immutable format.

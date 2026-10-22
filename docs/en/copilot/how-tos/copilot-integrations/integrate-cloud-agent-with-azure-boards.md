@@ -21,9 +21,9 @@ Use the Copilot integration in Azure Boards to send work items directly to Copil
 
 The Azure Boards GitHub integration allows you to invoke Copilot cloud agent without leaving your workspace. From within a Azure Boards work item you can initiate cloud agent sessions and open pull requests, using the context of your work item description and comments.
 
-For information about additional Copilot integrations, see [About Copilot integrations](/en/copilot/concepts/tools/about-copilot-integrations).
+For information about additional Copilot integrations, see [Copilot integrations](/en/copilot/concepts/agent-capabilities/choosing-and-delegating-agent-work/about-copilot-integrations).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * GitHub Copilot uses AI. Check for mistakes. See [Application card: GitHub Copilot Agents](/en/copilot/responsible-use/agents).
 > * When you send a work item to Copilot cloud agent, the agent will capture content from text fields (such as the description and reproduction steps), along with the last 50 comments. This context is stored in the pull request, and is visible to anyone with access to the repository.
@@ -35,7 +35,7 @@ For information about additional Copilot integrations, see [About Copilot integr
 
 ## Installing the Azure Boards application on GitHub
 
-> \[!NOTE]
+> [!NOTE]
 > To install the Azure Boards application, you must be an owner or App manager of the organization or enterprise on GitHub.
 
 The Azure Boards app only needs to be installed once in an organization. After the app is installed, any member of the organization can connect their GitHub account to the app and start using it.
@@ -68,5 +68,5 @@ Copilot cloud agent will begin processing the work item and create a draft pull 
 
 ## Further reading
 
-* [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
+* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 * [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/enterprise/cloud-agent-access)

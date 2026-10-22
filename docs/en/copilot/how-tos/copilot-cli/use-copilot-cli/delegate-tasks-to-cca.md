@@ -34,7 +34,7 @@ There are two ways to use autopilot mode:
 * **Interactively:** In an interactive session, press <kbd>Shift</kbd>+<kbd>Tab</kbd> until you see "autopilot" in the status bar. If prompted to choose permissions for autopilot mode, allow full permissions, then enter your prompt.
 * **Programmatically:** Pass the CLI a prompt directly in a command, and include the `--autopilot` option. For example, to use autopilot mode with full permissions, restricting it to 10 continuations, enter `copilot --autopilot --yolo --max-autopilot-continues 10 -p "YOUR PROMPT HERE"`.
 
-For more information, see [Allowing GitHub Copilot CLI to work autonomously](/en/copilot/concepts/agents/copilot-cli/autopilot).
+For more information, see [Using Autopilot mode in GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/use-autopilot-mode).
 
 ## Delegate tasks to Copilot cloud agent
 

@@ -23,7 +23,7 @@ If you want to create a new branch for your pull request but don't have write pe
 
 When you create your pull request, you can specify which branch you want to merge your changes into. Pull requests can only be opened between two different branches.
 
-> \[!NOTE]
+> [!NOTE]
 > To open a pull request in a public repository, you must have write access to the head or the source branch or, for organization-owned repositories, you must be a member of the organization that owns the repository to open a pull request.
 
 You can link a pull request to an issue to show that a fix is in progress and automatically close the issue when the pull request is merged. For more information, see [Linking a pull request to an issue](/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue).
@@ -49,7 +49,7 @@ You can link a pull request to an issue to show that a fix is in progress and au
 6. To create a pull request that is ready for review, click **Create Pull Request**.
    To create a draft pull request, use the drop-down and select **Create Draft Pull Request**, then click **Draft Pull Request**. If you are the member of an organization, you may need to request access to draft pull requests from an organization owner. See [Pull requests](/en/pull-requests/reference/pull-requests#draft-pull-requests).
 
-> \[!TIP]
+> [!TIP]
 > After you create a pull request, you can ask a specific person to review your proposed changes. See [Requesting a pull request review](/en/pull-requests/how-tos/create-pull-requests/requesting-a-pull-request-review).
 
 After your pull request has been reviewed, it can be merged into the repository. See [Merging a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-a-pull-request).
@@ -58,7 +58,7 @@ After your pull request has been reviewed, it can be merged into the repository.
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 To create a pull request, use the `gh pr create` subcommand.

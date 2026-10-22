@@ -114,7 +114,7 @@ When Copilot consults the rubber duck agent, it summarizes the resulting critiqu
 
 * **Catches issues early.** Most non-trivial tasks that fail have problems that a critique could have caught at the planning stage. Getting feedback before code is written is preferable to fixing problems later in the process.
 
-  > \[!NOTE]
+  > [!NOTE]
   > Consulting the rubber duck agent runs an additional reasoning pass on a separate model, so it adds some latency and involves additional model usage. The upside is that spending a little more time and resources up front can save you time and model usage overall by catching issues early and by reducing the number of failed attempts to complete a task.
 
 * **Reduces single-model blind spots.** Because the agent uses a model from a different family, it brings a genuinely different perspective rather than re-running the same reasoning that produced the original work.
@@ -125,4 +125,4 @@ When Copilot consults the rubber duck agent, it summarizes the resulting critiqu
 
 ## Further reading
 
-* [About custom agents](/en/copilot/concepts/agents/copilot-cli/about-custom-agents#built-in-agents)
+* [Custom agents](/en/copilot/concepts/customizations/custom-agents#built-in-agents)

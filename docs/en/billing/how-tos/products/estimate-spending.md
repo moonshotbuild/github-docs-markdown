@@ -55,7 +55,7 @@ On this page, you can view your usage in the following categories:
 
 * **By products:** You can use the product tabs to view usage and discounts for different products.
 
-  > \[!NOTE] When you enable GitHub Secret Protection, GitHub Code Security, or GitHub Advanced Security, there is a delay of up to two hours before the change is shown in the usage data on the "Billing and licensing" tab.
+  > [!NOTE] When you enable GitHub Secret Protection, GitHub Code Security, or GitHub Advanced Security, there is a delay of up to two hours before the change is shown in the usage data on the "Billing and licensing" tab.
 
 * **By repository:** The card at the bottom of the page shows the top five repositories that generate the most usage. You can click **View details** in the upper-right corner of the card to view all usage, including a breakdown by gross usage versus billable usage (minus any discounts that may apply).
 

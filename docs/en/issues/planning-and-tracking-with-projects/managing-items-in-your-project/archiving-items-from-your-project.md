@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can archive items, keeping them available to restore, or permanently delete them.
 
-> \[!NOTE]
+> [!NOTE]
 > A project can contain a maximum of 50,000 items across both active views and the archive page.
 
 ## Archiving items

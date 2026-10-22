@@ -67,7 +67,7 @@ The name of the controller repository is saved in your settings for the CodeQL e
 
 4. Open the query you want to run, right-click in the query file, and select **CodeQL: Run Variant Analysis** to start variant analysis.
 
-> \[!NOTE]
+> [!NOTE]
 > To a cancel a variant analysis run, click **Stop query** in the "Variant Analysis Results" view.
 
 ## Selecting a single GitHub repository or organization for analysis
@@ -118,7 +118,7 @@ You can export your results for further analysis or to discuss them with collabo
 
 ## Creating a custom list of repositories
 
-> \[!NOTE]
+> [!NOTE]
 > CodeQL analysis always requires a CodeQL database to run queries against. When you run variant analysis against a list of repositories, your query will only be executed against the repositories that currently have a CodeQL database available to download. The best way to make a repository available for variant analysis is to enable code scanning with CodeQL. For information about enabling code scanning using CodeQL, see [Configuring default setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning).
 
 1. In the "Variant Analysis Repositories" view, click the "Add list" icon.
@@ -152,7 +152,7 @@ You can then insert the `new-repo-list` of repositories into `databases.json`for
 
 ### Using GitHub code search to add repositories to a custom list
 
-> \[!NOTE]
+> [!NOTE]
 > This feature uses the legacy code search via the GitHub code search API. For more information on the syntax to use, see [Searching code (legacy)](/en/search-github/searching-on-github/searching-code).
 
 You can use code search directly in the CodeQL extension to add a subset of repositories from GitHub to a custom list.
@@ -183,7 +183,7 @@ You then need to add a new Actions repository variable in your controller reposi
 ["self-hosted", "macOS", "ARM64"]
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > You must set the `MRVA_RUNNER_OS` variable under the Actions repository variables in your controller repository's settings, and not an environment variable or Actions secret under your Actions settings or in your workflow's `.yml` file.
 > See [Store information in variables](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables#creating-configuration-variables-for-a-repository).
 

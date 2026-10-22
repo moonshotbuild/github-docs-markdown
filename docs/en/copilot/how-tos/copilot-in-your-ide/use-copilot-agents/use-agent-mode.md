@@ -54,7 +54,7 @@ Agent mode is best suited to use cases where:
 
 You can also [click this link](vscode://GitHub.Copilot-Chat/chat?mode=agent\&ref_product=copilot\&ref_type=engagement\&ref_style=text) to go directly to agent mode in VS Code. <!-- markdownlint-disable-line GHD003 -->
 
-> \[!NOTE]
+> [!NOTE]
 > If you don’t see the **Agent** option in the mode selector, your enterprise or organization administrator may have disabled agent mode for your IDE.
 
 For more information, see [Chat overview](https://aka.ms/vscode-copilot-agent) in the Visual Studio Code documentation.

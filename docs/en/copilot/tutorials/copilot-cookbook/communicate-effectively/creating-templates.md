@@ -35,7 +35,7 @@ Create a README template for a new open-source project that includes sections fo
 
 ## Example response
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 Copilot will provide you with a structured README template. You can copy the template Copilot Chat provides and customize it further to fit your project's needs.
 
@@ -154,5 +154,5 @@ This project is licensed under the [INSERT LICENSE](link to relevant license inf
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

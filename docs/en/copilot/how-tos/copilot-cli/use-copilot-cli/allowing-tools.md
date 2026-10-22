@@ -67,7 +67,7 @@ You are starting a CLI session to run benchmarking on your project and you want 
 copilot --excluded-tools='web_fetch, web_search'
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > For full details of the syntax for these and other command-line options mentioned in this article, see [GitHub Copilot CLI command reference](/en/copilot/reference/copilot-cli-reference/cli-command-reference#command-line-options).
 
 ## Allowing or denying permission for specific tools
@@ -108,7 +108,7 @@ Before you grant Copilot wide-ranging permissions with an allow-all option, cons
 
   Within an interactive session, you can use the `/allow-all` or `/yolo` slash commands to allow all tools without needing to restart the session.
 
-> \[!CAUTION]
+> [!CAUTION]
 > It is strongly recommended that you only use these options in an isolated environment. You should never use an alias to apply one of these options every time you start Copilot CLI, as doing so would allow Copilot to use any tool without your explicit permission every time you use the CLI, which could lead to unintended consequences.
 
 ## Resetting permissions

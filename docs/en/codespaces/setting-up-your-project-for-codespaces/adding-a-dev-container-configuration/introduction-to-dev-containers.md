@@ -66,7 +66,7 @@ The Dockerfile is a text file that contains the instructions needed to create a 
 
 The Dockerfile for a dev container is typically located in the `.devcontainer` folder, alongside the `devcontainer.json` in which it is referenced.
 
-> \[!NOTE]
+> [!NOTE]
 > As an alternative to using a Dockerfile you can use the `image` property in the `devcontainer.json` file to refer directly to an existing image you want to use. The image you specify here must be allowed by any organization image policy that has been set. See [Restricting the base image for codespaces](/en/codespaces/managing-codespaces-for-your-organization/restricting-the-base-image-for-codespaces). If neither a Dockerfile nor an image is found then the default container image is used. See [Using the default dev container configuration](#using-the-default-dev-container-configuration).
 
 #### Simple Dockerfile example
@@ -98,7 +98,7 @@ COPY ./script-in-your-repo.sh /tmp/scripts/script-in-codespace.sh
 RUN apt-get update && bash /tmp/scripts/script-in-codespace.sh
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > In the above example, the script that's copied to the codespace (`script-in-your-repo.sh`) must exist in your repository.
 
 For more information about Dockerfile instructions, see [Dockerfile reference](https://docs.docker.com/engine/reference/builder) in the Docker documentation.
@@ -125,7 +125,7 @@ For information about what's included in the default Linux image, see the [`devc
 
 The default configuration is a good option if you're working on a small project that uses the languages and tools that GitHub Codespaces provides.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub does not charge for storage of containers built from the default dev container image. For more information about billing for codespace storage, see [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces). For information on how to check whether a codespace was built from the default dev container image, see [Getting the most out of your included usage](/en/codespaces/troubleshooting/troubleshooting-included-usage#storage-usage-for-your-base-dev-container).
 
 ## Using a predefined dev container configuration
@@ -171,7 +171,7 @@ If none of the predefined configurations meets your needs, you can create a cust
 * If you're adding a single `devcontainer.json` file that will be used by everyone who creates a codespace from your repository, create the file within a `.devcontainer` directory at the root of the repository.
 * If you want to offer users a choice of configuration, you can create multiple custom `devcontainer.json` files, each located within a separate subdirectory of the `.devcontainer` directory.
 
-  > \[!NOTE]
+  > [!NOTE]
   >
   > * You can't locate your `devcontainer.json` files in directories more than one level below `.devcontainer`. For example, a file at `.devcontainer/teamA/devcontainer.json` will work, but `.devcontainer/teamA/testing/devcontainer.json` will not.
   > * When users create codespaces from the **Use this template** button in a template repository, they will not be given a choice between configurations. The codespace will be built based on the default configuration defined in `.devcontainer/devcontainer.json`, or in `.devcontainer.json` at the root of your repository. See [Setting up a template repository for GitHub Codespaces](/en/codespaces/setting-up-your-project-for-codespaces/setting-up-your-repository/setting-up-a-template-repository-for-github-codespaces).
@@ -207,7 +207,7 @@ You can add and edit the supported configuration keys in the `devcontainer.json`
 
 The `devcontainer.json` file is written using the JSONC (JSON with comments) format. This allows you to include comments within the configuration file. See [Editing JSON with VS Code](https://code.visualstudio.com/docs/languages/json#_json-with-comments) in the VS Code documentation.
 
-> \[!NOTE]
+> [!NOTE]
 > If you use a linter to validate the `devcontainer.json` file, make sure it is set to JSONC and not JSON or comments will be reported as errors.
 
 ### Interface settings for VS Code
@@ -229,7 +229,7 @@ You can define default interface settings for VS Code in two places.
 
 Changes to a configuration will be applied the next time you create a codespace. However, you can apply your changes to an existing codespace by rebuilding the container. You can do this within a codespace in the VS Code web client or desktop application, or you can use GitHub CLI.
 
-> \[!NOTE]
+> [!NOTE]
 > When you rebuild the container in a codespace, changes you have made outside the `/workspaces` directory are cleared. Changes you have made inside the `/workspaces` directory, which includes the clone of the repository or template from which you created the codespace, are preserved over a rebuild. For more information, see [Deep dive into GitHub Codespaces](/en/codespaces/about-codespaces/deep-dive#about-the-directory-structure-of-a-codespace).
 
 ### Rebuilding the dev container in the VS Code web client or desktop application
@@ -238,7 +238,7 @@ Changes to a configuration will be applied the next time you create a codespace.
 
    ![Screenshot of the Command Palette with a search for "rebuild container" and the "Codespace: Rebuild Container" option highlighted in the dropdown.](/assets/images/help/codespaces/codespaces-rebuild.png)
 
-   > \[!TIP]
+   > [!TIP]
    > You may occasionally want to perform a full rebuild to clear your cache and rebuild your container with fresh images. For more information, see [Rebuilding the container in a codespace](/en/codespaces/developing-in-a-codespace/rebuilding-the-container-in-a-codespace#rebuilding-a-container).
 2. If changes to your dev container configuration cause a container error, your codespace will run in recovery mode, and you will see an error message.
 

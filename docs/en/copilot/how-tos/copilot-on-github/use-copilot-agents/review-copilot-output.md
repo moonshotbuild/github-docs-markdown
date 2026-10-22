@@ -25,7 +25,7 @@ Copilot pull requests deserve the same thorough review as any contribution.
 
 When Copilot finishes a coding task and requests your review, check the pull request thoroughly before merging.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > If your repository requires pull request approvals, **your approval of a Copilot pull request won't count** toward the required number. Another reviewer must approve the pull request before it can be merged.
 
 To request changes from Copilot on its pull request, mention `@copilot` in a comment, or push commits directly to the branch. For more information, see [Using Copilot cloud agent on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github).

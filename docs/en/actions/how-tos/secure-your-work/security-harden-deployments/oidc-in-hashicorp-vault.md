@@ -96,7 +96,7 @@ To update your workflows for OIDC, you will need to make two changes to your YAM
 1. Add permissions settings for the token.
 2. Use the [`hashicorp/vault-action`](https://github.com/hashicorp/vault-action) action to exchange the OIDC token (JWT) for a cloud access token.
 
-> \[!NOTE]
+> [!NOTE]
 > When environments are used in workflows or in OIDC policies, we recommend adding protection rules to the environment for additional security. For example, you can configure deployment rules on an environment to restrict which branches and tags can deploy to the environment or access environment secrets. For more information, see [Managing environments for deployment](/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments).
 
 To add OIDC integration to your workflows that allow them to access secrets in Vault, you will need to add the following code changes:
@@ -112,11 +112,11 @@ This example demonstrates how to use OIDC with the official action to request a 
 
 The job or workflow run requires a `permissions` setting with [`id-token: write`](/en/actions/tutorials/authenticate-with-github_token#modifying-the-permissions-for-the-github_token) to allow GitHub's OIDC provider to create a JSON Web Token for every run.
 
-> \[!NOTE] Setting `id-token: write` in the workflow’s permissions does not give the workflow permission to modify or write to any resources. Instead, it only allows the workflow to request (fetch) and use (set) an OIDC token for an action or step. This token is then used to authenticate with external services using a short-lived access token.
+> [!NOTE] Setting `id-token: write` in the workflow’s permissions does not give the workflow permission to modify or write to any resources. Instead, it only allows the workflow to request (fetch) and use (set) an OIDC token for an action or step. This token is then used to authenticate with external services using a short-lived access token.
 
 For detailed information on required permissions, configuration examples, and advanced scenarios, see [OpenID Connect reference](/en/actions/reference/security/oidc#workflow-permissions-for-the-requesting-the-oidc-token).
 
-> \[!NOTE]
+> [!NOTE]
 > When the `permissions` key is used, all unspecified permissions are set to *no access*, with the exception of the metadata scope, which always gets *read* access. As a result, you may need to add other permissions, such as `contents: read`. See [Automatic token authentication](/en/actions/tutorials/authenticate-with-github_token) for more information.
 
 ### Requesting the access token
@@ -156,7 +156,7 @@ jobs:
           # This step has access to the secret retrieved above; see hashicorp/vault-action for more details.
 ```
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * If your Vault server is not accessible from the public network, consider using a self-hosted runner with other available Vault [auth methods](https://www.vaultproject.io/docs/auth). For more information, see [Self-hosted runners](/en/actions/concepts/runners/self-hosted-runners).
 > * `VAULT-NAMESPACE` must be set for a Vault Enterprise (including HCP Vault) deployment. For more information, see [Vault namespace](https://www.vaultproject.io/docs/enterprise/namespaces).

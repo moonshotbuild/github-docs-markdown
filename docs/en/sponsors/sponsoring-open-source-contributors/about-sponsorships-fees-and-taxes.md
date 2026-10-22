@@ -38,7 +38,7 @@ If the sponsored account retires your tier, the tier will remain in place for yo
 
 If the account you want to sponsor does not have a profile on GitHub Sponsors, you can encourage the account to join. For more information, see [Setting up GitHub Sponsors for your personal account](/en/sponsors/receiving-sponsorships-through-github-sponsors/setting-up-github-sponsors-for-your-personal-account) and [Setting up GitHub Sponsors for your organization](/en/sponsors/receiving-sponsorships-through-github-sponsors/setting-up-github-sponsors-for-your-organization).
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub is not responsible for how developers represent themselves nor does GitHub endorse any sponsored open source projects. The claims are solely the responsibility of the developer receiving the funds. Make sure you trust a person before offering a sponsorship. For more information, see the [GitHub Sponsors Additional Terms](/en/site-policy/github-terms/github-sponsors-additional-terms).
 
 ## About billing and sponsorship payments
@@ -49,12 +49,12 @@ For additional information on your preferred funding, please click on any of the
 * [Sponsoring an open source contributor through GitHub](/en/sponsors/sponsoring-open-source-contributors/sponsoring-an-open-source-contributor-through-github)
 * [Sponsoring an open source contributor through Patreon](/en/sponsors/sponsoring-open-source-contributors/sponsoring-an-open-source-contributor-through-patreon)
 
-> \[!NOTE]
+> [!NOTE]
 > When sponsoring through GitHub, your balance will be charged effective immediately. If you're starting a monthly sponsorship on behalf of your personal account, you'll immediately be charged a prorated amount for the time until your next regular billing date. If you're sponsoring on behalf of an organization, you can choose to pay the prorated amount or make the full monthly payment.
 
 Alternatively, enterprises and organizations may opt to be billed by recurring invoice. For additional information on billing by invoice, please click on [Paying for GitHub Sponsors by invoice](/en/sponsors/sponsoring-open-source-contributors/paying-for-github-sponsors-by-invoice).
 
-> \[!WARNING]
+> [!WARNING]
 > As of February 23, 2023, GitHub Sponsors does not support PayPal. While this only affects GitHub Sponsors, please note that it is still possible to fund GitHub Pro, GitHub Copilot, Actions, GitHub Packages, Storage, Codespaces and Git LFS Data using PayPal.
 
 ## Using the sponsorships dashboard for organizations

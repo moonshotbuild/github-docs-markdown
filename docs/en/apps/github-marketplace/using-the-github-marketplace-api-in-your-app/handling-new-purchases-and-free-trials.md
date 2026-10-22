@@ -19,10 +19,10 @@ breadcrumbs:
 
 When a customer purchases a paid plan, free trial, or the free version of your GitHub Marketplace app, you'll receive the marketplace_purchase event webhook with the purchased action, which kicks off the purchasing flow.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
-> \[!WARNING]
+> [!WARNING]
 > If you offer a GitHub App in GitHub Marketplace, your app must identify users following the OAuth authorization flow. You don't need to set up a separate OAuth app to support this flow. See [Authenticating with a GitHub App on behalf of a user](/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-with-a-github-app-on-behalf-of-a-user) for more information.
 
 ## Step 1. Initial purchase and webhook event
@@ -45,7 +45,7 @@ If your app is a GitHub App, GitHub prompts the customer to select which reposit
 
 At this point, if you specified a **Setup URL** in your GitHub App settings, GitHub will redirect the customer to that URL. If you do not specify a setup URL, you will not be able to handle purchases of your GitHub App.
 
-> \[!NOTE]
+> [!NOTE]
 > The **Setup URL** is described as optional in GitHub App settings, but it is a required field if you want to offer your app in GitHub Marketplace. For more information, see [About the setup URL](/en/apps/creating-github-apps/registering-a-github-app/about-the-setup-url).
 
 If your app is an OAuth app, GitHub does not install it anywhere. Instead, GitHub redirects the customer to the **Installation URL** you specified in your [GitHub Marketplace listing](/en/apps/github-marketplace/listing-an-app-on-github-marketplace/writing-a-listing-description-for-your-app#listing-urls).
@@ -64,14 +64,14 @@ For either type of app, the first step is to redirect the customer to <https://g
 
 After the customer completes the authorization, your app receives an OAuth access token for the customer. You'll need this token for the next step.
 
-> \[!NOTE]
+> [!NOTE]
 > When authorizing a customer on a free trial, grant them the same access they would have on the paid plan. You'll move them to the paid plan after the trial period ends.
 
 ## Step 4. Provisioning customer accounts
 
 Your app must provision a customer account for all new purchases. Using the access token you received for the customer in [Step 3. Authorization](#step-3-authorization), call the [`GET /user/marketplace_purchases`](/en/rest/apps/marketplace#list-subscriptions-for-the-authenticated-user) endpoint. The response will include the customer's `account` information and show whether they are on a free trial (`on_free_trial`). Use this information to complete setup and provisioning.
 
-> \[!NOTE]
+> [!NOTE]
 > In the current version of GitHub Marketplace, it's possible for a customer to purchase your app through GitHub Marketplace when they already have an existing account purchased from your app's website. If you find that you already have an account set up for the customer who purchased your app, please report the "double" purchases to [GitHub Support](https://github.com/contact).
 
 If the purchase is for an organization and per-user, you can prompt the customer to choose which organization members will have access to the purchased app.

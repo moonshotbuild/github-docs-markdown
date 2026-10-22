@@ -40,7 +40,7 @@ Copilot code review is supported in:
 * JetBrains IDEs
 * Azure DevOps (public preview)
 
-> \[!NOTE]
+> [!NOTE]
 > If you receive Copilot from an organization, your organization must enable the **Copilot code review** option in the Copilot policy settings. This applies to reviews on GitHub.com or in GitHub Mobile. See [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies).
 
 ## Copilot code review without a Copilot license
@@ -83,7 +83,7 @@ If GitHub Actions is unavailable or if Actions workflows used by Copilot code re
 
 Copilot code review uses GitHub Actions to run the agentic capabilities, including full project context gathering and passing suggestions to Copilot cloud agent. By default, Copilot code review uses standard GitHub-hosted runners. You can also upgrade to larger GitHub-hosted runners for better performance, or use self-hosted runners.
 
-> \[!NOTE]
+> [!NOTE]
 > Usage of larger GitHub-hosted runners is billed at a higher per-minute rate. Self-hosted runners do not consume GitHub Actions minutes.
 
 You do not need to have GitHub Actions enabled in your organization or enterprise to use the agentic capabilities in code review.
@@ -144,7 +144,7 @@ For Copilot Business and Copilot Enterprise, code review access is governed by t
 
 Copilot code review is a purpose-built product that uses a carefully tuned mix of models, prompts, and system behaviors to deliver consistent, high-quality feedback across a wide range of codebases. Model switching is not supported, as changing the model is likely to compromise reliability, user experience, and the quality of review comments.
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot code review may use models that are not enabled on your organization's "Models" settings page. The "Models" settings page only controls Copilot Chat.
 >
 > Since Copilot code review is generally available, all model usage will be subject to the generally available terms. See [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies).
@@ -177,7 +177,7 @@ When a pull request qualifies for automatic review, **Review new pushes** and **
 
 For full instructions, see [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review).
 
-> \[!NOTE]
+> [!NOTE]
 > Unless Copilot has been configured to review each push to a pull request, it will only review a pull request once. If you make changes to the pull request after it has been automatically reviewed and you want Copilot to re-review it, you can request this manually. Click the <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-sync" aria-label="Re-request review" role="img"><path d="M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z"></path></svg> button next to Copilot's name in the **Reviewers** menu.
 
 ## Review effort level
@@ -206,7 +206,7 @@ For configuration steps, see [Configuring code review by GitHub Copilot](/en/cop
 
 ## Copilot approvals
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot approvals are in public preview and subject to change.
 
 Every Copilot code review includes an approval assessment in the overview comment, indicating whether Copilot has determined the pull request ready to approve after reviewing it. By default, Copilot's reviews do not count toward required approvals for the pull request.

@@ -39,7 +39,7 @@ You can change numerous settings for the CodeQL for Visual Studio Code extension
 
    ![Screenshot of the CodeQL for VS Code Extension Settings window displayed inside VS Code.](/assets/images/help/security/codeql-for-vs-code-extension-settings.png)
 
-> \[!TIP]
+> [!TIP]
 > Alternatively, you can edit the settings in JSON format by opening the VS Code Command Palette and selecting **Preferences: Open User Settings (JSON)**.
 
 ### Choosing a version of the CodeQL CLI
@@ -112,7 +112,7 @@ To automatically add database source folders to your workspace, you can enable t
 
 This setting is disabled by default. You may want to enable the setting if you regularly browse the source code of databases (for example, to view the abstract syntax tree of the code). For more information, see [Exploring the structure of your source code](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/scan-from-vs-code/explore-code-structure).
 
-> \[!NOTE]
+> [!NOTE]
 > If you are in a single-folder workspace, adding database source folders will cause the workspace to reload as a multi-root workspace. This may cause query history and database lists to reset.
 >
 > Before enabling this setting, we recommend that you save your workspace as a multi-root workspace. For more information, see [Multi-root Workspaces](https://code.visualstudio.com/docs/editing/workspaces/multi-root-workspaces) in the Visual Studio Code documentation.

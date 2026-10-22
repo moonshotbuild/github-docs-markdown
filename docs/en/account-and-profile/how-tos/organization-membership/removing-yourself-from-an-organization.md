@@ -19,7 +19,7 @@ breadcrumbs:
 
 If you're an outside collaborator or a member of an organization, you can leave the organization at any time.
 
-> \[!WARNING]
+> [!WARNING]
 > If you're currently responsible for paying for GitHub in your organization, removing yourself from the organization **does not** update the billing information on file for the organization. If you are currently responsible for billing, **you must** have another owner or billing manager for the organization [update the organization's payment method](/en/billing/how-tos/set-up-payment/manage-payment-info).
 >
 > For more information, see [Transferring organization ownership](/en/organizations/managing-organization-settings/transferring-organization-ownership).

@@ -52,7 +52,7 @@ To include query help in SARIF files when running code scanning analyses:
    codeql database analyze <database> --format=sarif-latest --output=results.sarif --sarif-add-query-help
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > The `--sarif-add-query-help` option is available from CodeQL CLI v2.7.1 onwards.
 3. Upload the SARIF file to GitHub.
 

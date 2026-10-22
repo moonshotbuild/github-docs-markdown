@@ -58,7 +58,7 @@ Deployment records include the environment where the artifact is deployed and an
 
 ![Screenshot of an artifact page. Highlighted fields: the "Deployments" list, including tags for "Prod", "sensitive data", and "pacific-east".](/assets/images/help/security/virtual-registry-deployment-record.png)
 
-> \[!NOTE] Deployment records do **not** include deployment activity from a repository's deployments dashboard, which comes from a different source. See [Viewing deployment activity for your repository](/en/repositories/viewing-activity-and-data-for-your-repository/viewing-deployment-activity-for-your-repository).
+> [!NOTE] Deployment records do **not** include deployment activity from a repository's deployments dashboard, which comes from a different source. See [Viewing deployment activity for your repository](/en/repositories/viewing-activity-and-data-for-your-repository/viewing-deployment-activity-for-your-repository).
 
 ## Where is artifact data available?
 

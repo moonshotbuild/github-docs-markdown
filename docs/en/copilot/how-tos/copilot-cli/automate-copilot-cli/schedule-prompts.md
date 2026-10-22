@@ -21,7 +21,7 @@ breadcrumbs:
 
 Use the /every and /after slash commands to submit a prompt to Copilot on a recurring schedule, or after a specified delay.
 
-> \[!NOTE]
+> [!NOTE]
 > The `/every` and `/after` commands are currently experimental features and are only available if you have used the `/experimental on` slash command, or the `‑‑experimental` command line option.
 
 In an interactive Copilot CLI session you can schedule a prompt to be submitted automatically. This is useful when you want Copilot to repeat a task at a regular cadence or to perform a one-off task after a delay, without you having to remember to submit the prompt manually.
@@ -53,7 +53,7 @@ If you specify an interval, the prompt will be submitted after the interval has 
 /every 30m check for new comments on my open pull requests
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > `/loop` is an alias of `/every`. So you can enter `/loop` instead of `/every`, if you prefer, and the effect is the same.
 
 ### Self-paced scheduling
@@ -70,7 +70,7 @@ Type `/after` followed by a delay and the prompt you want to submit:
 
 The prompt fires once, after the delay has elapsed, and is then removed from the schedule list.
 
-> \[!NOTE]
+> [!NOTE]
 > `/after` does not support self-paced scheduling. If you pass a prompt to `/after`, you must supply a delay or time.
 
 ### Examples
@@ -87,7 +87,7 @@ The prompt fires once, after the delay has elapsed, and is then removed from the
 
 You can use `/every` and `/after` to schedule a skill. To do this, you can reference the skill explicitly by using its slash command, or you can use natural language to tell Copilot to run the skill.
 
-> \[!NOTE]
+> [!NOTE]
 > Only user-invocable skills and a subset of built-in slash commands can be scheduled. Commands that start a self-contained piece of work—such as `/plan`, `/review`, `/research`, or `/security-review`—are schedulable. Commands that change your session or configuration (for example, `/model`, `/clear`, `/compact`, `/permissions`, or `/sandbox`), that only display information (such as `/usage` or `/context`), or that manage scheduling itself (`/every` and `/after`) can't be scheduled, and Copilot rejects them when you try.
 
 ### Examples

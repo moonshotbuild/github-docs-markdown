@@ -61,7 +61,7 @@ Information for an uploaded package.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (PackageVersionOrder): Ordering of the returned packages.
+  * `orderBy` (PackageVersionOrder): Ordering of the returned packages. Default: `{field: CREATED_AT, direction: DESC}`.
 
 ## PackageConnection - object
 
@@ -168,7 +168,7 @@ Represents an owner of a package.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
   * `names` ([String]): Find packages by their names.
-  * `orderBy` (PackageOrder): Ordering of the returned packages.
+  * `orderBy` (PackageOrder): Ordering of the returned packages. Default: `{field: CREATED_AT, direction: DESC}`.
   * `packageType` (PackageType): Filter registry package by type.
   * `repositoryId` (ID): Find packages in a repository by ID.
 
@@ -205,12 +205,12 @@ The possible types of a package.
 ### Values for `PackageType`
 
 * `DEBIAN`: A debian package.
-* `DOCKER`: A docker image.
-* `MAVEN`: A maven package.
-* `NPM`: An npm package.
-* `NUGET`: A nuget package.
+* `DOCKER`: A docker image. **Deprecated:** DOCKER will be removed from this enum as this type will be migrated to only be used by the Packages REST API. Removal on 2021-06-21 UTC.
+* `MAVEN`: A maven package. **Deprecated:** MAVEN will be removed from this enum as this type will be migrated to only be used by the Packages REST API. Removal on 2023-02-10 UTC.
+* `NPM`: An npm package. **Deprecated:** NPM will be removed from this enum as this type will be migrated to only be used by the Packages REST API. Removal on 2022-11-21 UTC.
+* `NUGET`: A nuget package. **Deprecated:** NUGET will be removed from this enum as this type will be migrated to only be used by the Packages REST API. Removal on 2022-11-21 UTC.
 * `PYPI`: A python package.
-* `RUBYGEMS`: A rubygems package.
+* `RUBYGEMS`: A rubygems package. **Deprecated:** RUBYGEMS will be removed from this enum as this type will be migrated to only be used by the Packages REST API. Removal on 2022-12-28 UTC.
 
 ## PackageVersion - object
 
@@ -225,7 +225,7 @@ Information about a specific package version.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (PackageFileOrder): Ordering of the returned package files.
+  * `orderBy` (PackageFileOrder): Ordering of the returned package files. Default: `{field: CREATED_AT, direction: ASC}`.
 
 * `id` (ID!): The Node ID of the PackageVersion object.
 * `package` (Package): The package associated with this version.

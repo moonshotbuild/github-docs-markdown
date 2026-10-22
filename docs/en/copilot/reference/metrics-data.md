@@ -19,7 +19,7 @@ See how GitHub calculates properties from APIs and reports.
 
 ## `last_activity_at`
 
-> \[!NOTE] This data is in public preview and subject to change.
+> [!NOTE] This data is in public preview and subject to change.
 
 The timestamp of a user's most recent interaction with Copilot functionality.
 

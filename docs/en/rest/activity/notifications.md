@@ -19,7 +19,7 @@ Use the REST API to manage GitHub notifications.
 
 ## About GitHub notifications
 
-> \[!NOTE]
+> [!NOTE]
 > These endpoints only support authentication using a personal access token (classic). For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 You can use the REST API to manage GitHub notifications. For more information about notifications, see [About notifications](/en/subscriptions-and-notifications/concepts/about-notifications).
@@ -75,7 +75,7 @@ Note that the `reason` is modified on a per-thread basis, and can change, if the
 
 For example, if you are the author of an issue, subsequent notifications on that issue will have a `reason` of `author`. If you're then **@mentioned** on the same issue, the notifications you fetch thereafter will have a `reason` of `mention`. The `reason` remains as `mention`, regardless of whether you're ever mentioned again.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List notifications for the authenticated user

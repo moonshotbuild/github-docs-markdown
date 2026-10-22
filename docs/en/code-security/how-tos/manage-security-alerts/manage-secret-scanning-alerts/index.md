@@ -27,7 +27,7 @@ Discover how to monitor, manage, and resolve secret scanning alerts to keep your
 
 * [Viewing and filtering alerts from secret scanning](/en/code-security/how-tos/manage-security-alerts/manage-secret-scanning-alerts/viewing-alerts)
 
-  Learn how to find and filter secret scanning alerts for your repository.
+  Learn how to find and filter secret scanning alerts for users for your repository.
 
 * [Resolving alerts from secret scanning](/en/code-security/how-tos/manage-security-alerts/manage-secret-scanning-alerts/resolving-alerts)
 

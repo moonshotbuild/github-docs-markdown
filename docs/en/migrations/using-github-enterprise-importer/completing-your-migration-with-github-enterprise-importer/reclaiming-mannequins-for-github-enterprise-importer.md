@@ -28,7 +28,7 @@ You can reclaim mannequins with GitHub CLI (recommended) or the browser.
 * [Reclaiming mannequins with the GitHub CLI (recommended)](#reclaiming-mannequins-with-the-github-cli-recommended)
 * [Reclaiming mannequins in your browser](#reclaiming-mannequins-in-your-browser)
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * You cannot reclaim mannequins after you have transferred a repository to another organization. If you wish to transfer a repository to another organization after your migration, you must reclaim the mannequins before the transfer.
 > * When reclaiming mannequins, you can only target existing organization members. Before attempting to reclaim a mannequin, verify that the GitHub user you want to invite is already added to the organization.
@@ -222,7 +222,7 @@ By default, the organization member will receive an invitation via email, and th
 
 6. In the search field, type the username of the organization member you want to attribute the mannequin's contributions to, then click the member.
 
-   > \[!NOTE]
+   > [!NOTE]
    > You can only send attribution invitations to user accounts that are already members of the organization.
 
 7. Click **Invite**.

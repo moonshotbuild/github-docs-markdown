@@ -49,7 +49,7 @@ For more information, see "Managing rulesets for repositories in your organizati
 
 - **`time_period`** (string)
   The time period to filter by.
-For example, day will filter for rule suites that occurred in the past 24 hours, and week will filter for rule suites that occurred in the past 7 days (168 hours).
+  For example, day will filter for rule suites that occurred in the past 24 hours, and week will filter for rule suites that occurred in the past 7 days (168 hours).
   Default: `day`
   Can be one of: `hour`, `day`, `week`, `month`
 
@@ -64,9 +64,9 @@ For example, day will filter for rule suites that occurred in the past 24 hours,
 - **`evaluate_status`** (string)
   The evaluate status to filter on. When specified, only rule suites resulting from rulesets with the specified evaluate status will be returned.
 
-all - all rule suites will be returned.
-active - only rule suites resulting from rulesets in active (non-evaluate) mode will be returned.
-evaluate - only rule suites resulting from rulesets in evaluate mode will be returned.
+  all - all rule suites will be returned.
+  active - only rule suites resulting from rulesets in active (non-evaluate) mode will be returned.
+  evaluate - only rule suites resulting from rulesets in evaluate mode will be returned.
   Default: `all`
   Can be one of: `all`, `active`, `evaluate`
 
@@ -136,13 +136,13 @@ For more information, see "Managing rulesets for repositories in your organizati
 
 - **`rule_suite_id`** (integer) (required)
   The unique identifier of the rule suite result.
-To get this ID, you can use GET /repos/{owner}/{repo}/rulesets/rule-suites
-for repositories and GET /orgs/{org}/rulesets/rule-suites
-for organizations.
+  To get this ID, you can use GET /repos/{owner}/{repo}/rulesets/rule-suites
+  for repositories and GET /orgs/{org}/rulesets/rule-suites
+  for organizations.
 
 - **`include_metadata`** (boolean)
   When set to true, the response will include additional metadata for pull request and required status check rule evaluation.
-Results are capped at 50 entries.
+  Results are capped at 50 entries.
   Default: `false`
 
 ### HTTP response status codes

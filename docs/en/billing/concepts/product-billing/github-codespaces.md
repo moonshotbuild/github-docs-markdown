@@ -69,7 +69,7 @@ All GitHub personal accounts include a quota of free compute time and storage fo
 | GitHub Free for personal accounts | 15 GB-month       | 120 hrs                |
 | GitHub Pro                        | 20 GB-month       | 180 hrs                |
 
-> \[!NOTE] GitHub Codespaces is not available for repositories that are owned by managed user accounts. For more information, see [About Enterprise Managed Users](/en/enterprise-cloud@latest/admin/concepts/identity-and-access-management/enterprise-managed-users).
+> [!NOTE] GitHub Codespaces is not available for repositories that are owned by managed user accounts. For more information, see [About Enterprise Managed Users](/en/enterprise-cloud@latest/admin/concepts/identity-and-access-management/enterprise-managed-users).
 
 For tips on making your allowed usage go further, see [Getting the most out of your included usage](/en/codespaces/troubleshooting/troubleshooting-included-usage).
 

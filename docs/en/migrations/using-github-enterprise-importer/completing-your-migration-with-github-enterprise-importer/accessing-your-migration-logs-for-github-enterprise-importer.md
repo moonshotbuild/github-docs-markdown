@@ -30,7 +30,7 @@ The migration log lists the steps that were completed as part of the migration a
 * The source of the migration
 * How long the migration took
 
-> \[!IMPORTANT]\
+> [!IMPORTANT]\
 > Issues should be enabled in the target repository for the migration log to be created.
 
 You can access the migration log for a repository migration in multiple ways.
@@ -101,7 +101,7 @@ gh gei download-logs --github-target-org DESTINATION --target-repo REPOSITORY --
 
 To ensure you have access to migration logs for all your migrated repositories, you can use the `--download-migration-logs` flag when generating a migration script for repository migrations. When you use this flag, the script will include the `download-logs` command for each repository migrated in the script. For more information, see [About GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/understanding-github-enterprise-importer/about-github-enterprise-importer).
 
-> \[!NOTE]
+> [!NOTE]
 > You can only use the `--download-migration-logs` flag with repository migrations, not with organization migrations.
 
 ## Accessing an organization migration log
@@ -117,5 +117,5 @@ The `README.md` file in the root of the repository includes the following inform
 
 The`/success` and `/failure` directories contain one file for each repository that was successfully migrated or that failed to migrate, respectively. These files follow the naming convention `REPO_NAME.md`.
 
-> \[!NOTE]
+> [!NOTE]
 > The `gei-migration-results` repository is created at the beginning of the migration process but is only updated with your migration logs after the migration finishes.

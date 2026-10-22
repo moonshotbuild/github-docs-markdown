@@ -70,7 +70,7 @@ To sustain adoption, review any in-house tools, bots, or dashboards that create,
 
 If your organization provides an internal CLI or other developer tooling, you can use the Stacks API to integrate stack creation and management into those existing tools instead of requiring developers to adopt `gh stack`.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Merging a stacked pull request requires the asynchronous merge API. The legacy pull request merge endpoints can't merge a stack. If your organization merges pull requests programmatically, for example, through in-house tooling or ChatOps bots, update that tooling to call the asynchronous merge API, which supports both stacked and regular pull requests, before rolling out stacked pull requests. See [REST API endpoints for pull requests](/en/rest/pulls/pulls?apiVersion=2026-03-10#merge-a-pull-request-asynchronously).
 
 You may also want to track stack activity programmatically, for example, across dashboards, bots, or internal tooling.

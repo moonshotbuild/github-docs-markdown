@@ -130,10 +130,10 @@ To authenticate your request, you will need to provide an authentication token w
 
 For an example of a request that uses an authentication token, see [Making a request](#making-a-request).
 
-> \[!NOTE]
+> [!NOTE]
 > If you don't want to create a token, you can use GitHub CLI. GitHub CLI will take care of authentication for you, and help keep your account secure. For more information, see the [GitHub CLI version of this page](/en/rest/using-the-rest-api/getting-started-with-the-rest-api?tool=cli).
 
-> \[!WARNING]
+> [!WARNING]
 > Treat your access token the same way you would treat your passwords or other sensitive credentials. For more information, see [Keeping your API credentials secure](/en/rest/authentication/keeping-your-api-credentials-secure).
 
 </div>
@@ -150,7 +150,7 @@ To authenticate your request, you will need to provide an authentication token w
 
 For an example of a request that uses an authentication token, see [Making a request](#making-a-request).
 
-> \[!WARNING]
+> [!WARNING]
 > Treat your access token the same way you would treat your passwords or other sensitive credentials. For more information, see [Keeping your API credentials secure](/en/rest/authentication/keeping-your-api-credentials-secure).
 
 </div>
@@ -337,7 +337,7 @@ curl --request GET \
 
 The following example uses the [Create an issue](/en/rest/issues/issues#create-an-issue) endpoint to create a new issue in the octocat/Spoon-Knife repository. Replace `YOUR-TOKEN` with the authentication token you created in a previous step.
 
-> \[!NOTE]
+> [!NOTE]
 > If you are using a fine-grained personal access token, you must replace `octocat/Spoon-Knife` with a repository that you own or that is owned by an organization that you are a member of. Your token must have access to that repository and have read and write permissions for repository issues. For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 ```shell copy
@@ -400,7 +400,7 @@ Create an access token to authenticate your request. You can save your token and
 
    In the following example request, the HTTP method is `POST`, the path is `/repos/{owner}/{repo}/issues`, the path parameters are `owner: "octocat"` and `repo: "Spoon-Knife"`, and the body parameters are `title: "Created with the REST API"` and `body: "This is a test issue created by the REST API"`.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you are using a fine-grained personal access token, you must replace `octocat/Spoon-Knife` with a repository that you own or that is owned by an organization that you are a member of. Your token must have access to that repository and have read and write permissions for repository issues. For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
    ```javascript copy

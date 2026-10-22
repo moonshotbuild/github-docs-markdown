@@ -39,7 +39,7 @@ The permanent name the codespace is also included in many of the log files. For 
 Every codespace also has an ID (identifier). This is not shown by default in Visual Studio Code so you may need to update the settings for the GitHub Codespaces extension before you can access the ID.
 
 1. In Visual Studio Code, browser or desktop, in the Activity Bar on the left, click **Remote Explorer** to show details for the codespace.
-   > \[!NOTE]
+   > [!NOTE]
    > If the Remote Explorer is not displayed in the Activity Bar:
    >
    > 1. Access the Command Palette. For example, by pressing <kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>P</kbd> (Mac) / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows/Linux).

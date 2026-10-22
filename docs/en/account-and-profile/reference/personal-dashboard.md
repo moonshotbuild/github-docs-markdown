@@ -45,7 +45,7 @@ The list of top repositories cannot be edited, but repositories will drop off th
 
 ## Feed activity
 
-> \[!NOTE]
+> [!NOTE]
 > The new feed is currently in public preview and subject to change.
 
 You'll see updates on your feed when someone you follow:
@@ -60,7 +60,7 @@ You'll see updates on your feed when someone you follow:
 
 ## Home dashboard view
 
-> \[!NOTE]
+> [!NOTE]
 > The updated home dashboard is currently in public preview and subject to change.
 
 To view the updated home dashboard, which is currently in public preview, you will first need to enable **New Dashboard Experience** with feature preview. For more information, see [Exploring early access releases with feature preview](/en/get-started/using-github/exploring-early-access-releases-with-feature-preview#exploring-public-preview-releases-with-feature-preview).

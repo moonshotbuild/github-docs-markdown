@@ -21,7 +21,7 @@ Only members with owner privileges for an organization or admin privileges for a
 
 Deleting a public repository will not delete any forks of the repository.
 
-> \[!WARNING]
+> [!WARNING]
 >
 > * Deleting a repository will **permanently** delete team permissions. This action **cannot** be undone.
 > * Deleting a private repository will delete all forks of the repository.

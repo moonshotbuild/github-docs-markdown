@@ -48,7 +48,7 @@ You can see a summary of any results found in the organizations in your trial en
 
 If you don't see the results you expect for code scanning, you can update default setup to run an extended query suite for repositories where you expected to find more results. This is controlled at the repository level, see [Editing your configuration of default setup](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/edit-default-setup).
 
-> \[!TIP]
+> [!TIP]
 > If you are blocked from editing the repository settings for code scanning, edit the security configuration used by the repository so that settings are not enforced.
 
 If the extended suite still fails to find the results you expect, you may need to enable advanced setup so you can customize the analysis fully. For more information, see [Use the tool status page for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/use-the-tools-status-page-for-code-scanning) and [Configuring advanced setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configuring-advanced-setup-for-code-scanning).
@@ -63,7 +63,7 @@ There are three different types of automated analysis of pull requests built int
 
 These automated reviews are a valuable extension to self-review and make it easier for developers to present a more complete and secure pull request for peer review. In addition, code scanning and dependency reviews can be enforced to protect the security and compliance of your code.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Copilot Autofix is included in the license for GitHub Code Security. Copilot code review requires a paid Copilot plan.
 
 ### Code scanning analysis
@@ -91,7 +91,7 @@ This allows you to update the configuration in a single location, but use the wo
 
 ### Copilot code review
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * If you get a Copilot subscription from an organization, you will only be able to participate in the public preview on the GitHub website if an owner of your organization or enterprise has enabled Copilot code review. See [Managing policies and features for GitHub Copilot in your organization](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies#opting-in-to-previews-or-feedback) and [Managing policies and features for GitHub Copilot in your enterprise](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies) in the GitHub Enterprise Cloud documentation.
 

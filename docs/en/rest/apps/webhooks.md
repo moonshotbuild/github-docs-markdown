@@ -21,7 +21,7 @@ Use the REST API to interact with webhooks for OAuth apps
 
 A GitHub App's webhook allows your server to receive HTTP `POST` payloads whenever certain events happen for a GitHub App. For more information, see [Webhooks documentation](/en/webhooks) and [Using webhooks with GitHub Apps](/en/apps/creating-github-apps/registering-a-github-app/using-webhooks-with-github-apps).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get a webhook configuration for an app

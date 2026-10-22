@@ -55,7 +55,7 @@ Pull requests can do more than document code changes—they’re also a way to k
 
 ### Use GitHub Copilot to generate pull request summaries
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot features require a Copilot plan. See [Plans for GitHub Copilot](/en/copilot/get-started/plans).
 
 Copilot can generate a pull request summary on GitHub. A generated summary can help reviewers understand the main changes, but you should review it carefully and add context that only you know.

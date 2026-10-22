@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can add a new page or post to your Jekyll site on GitHub Pages.
 
-> \[!NOTE] While the `github-pages` gem remains supported for some workflows, GitHub Actions is now the recommended approach for deploying and automating GitHub Pages sites.
+> [!NOTE] While the `github-pages` gem remains supported for some workflows, GitHub Actions is now the recommended approach for deploying and automating GitHub Pages sites.
 
 People with write permissions for a repository can add content to a GitHub Pages site using Jekyll.
 

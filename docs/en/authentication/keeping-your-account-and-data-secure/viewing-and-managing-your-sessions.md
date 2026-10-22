@@ -33,7 +33,7 @@ You can view a list of devices that have logged into your account, and revoke an
 
 6. Optionally, to revoke a GitHub Mobile session, go back to the Sessions overview page and click **Revoke** next to the device you want to revoke.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Revoking a mobile session signs you out of the GitHub Mobile application on that device and removes it as a second-factor option.
 
 ## Further information

@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can add any Git repository to GitHub Desktop, even if it's not a GitHub repository.
 
-> \[!TIP]
+> [!TIP]
 > You can add a Git repository from your local computer to GitHub Desktop by dragging the folder onto the GitHub Desktop window. If you drag multiple Git folders into GitHub Desktop at the same time, each folder will be added as a separate Git repository.
 
 <div class="ghd-tool mac">

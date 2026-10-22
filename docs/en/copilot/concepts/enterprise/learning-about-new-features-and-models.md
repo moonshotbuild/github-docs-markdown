@@ -107,7 +107,7 @@ Copilot features and models progress through different release stages. Understan
 
 </div>
 
-> \[!TIP] Many preview features are covered by the [GitHub Data Protection Agreement](https://gh.io/dpa), meaning you can test them without breaching compliance requirements. See [GitHub DPA-Covered Previews](https://gh.io/dpa-previews) for a list.
+> [!TIP] Many preview features are covered by the [GitHub Data Protection Agreement](https://gh.io/dpa), meaning you can test them without breaching compliance requirements. See [GitHub DPA-Covered Previews](https://gh.io/dpa-previews) for a list.
 
 Preview features are controlled by policy settings at the organization and enterprise level. The **Opt in to preview features** policy allows administrators to enable or disable preview features on the GitHub website specifically. See [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies) and [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies).
 

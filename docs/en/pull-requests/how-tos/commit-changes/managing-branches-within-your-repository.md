@@ -23,7 +23,7 @@ Create new branches for development and delete unused branches directly on GitHu
 
 Create a branch for a separate place to work on changes before opening a pull request.
 
-> \[!NOTE]
+> [!NOTE]
 > You can only create a branch in a repository to which you have write access.
 
 ### Creating a branch via the branches overview
@@ -63,7 +63,7 @@ Delete branches that you no longer need, such as branches for merged or closed w
 
 You can have head branches automatically deleted after pull requests are merged in your repository. See [Managing the automatic deletion of branches](/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-the-automatic-deletion-of-branches).
 
-> \[!NOTE]
+> [!NOTE]
 > If the branch you want to delete is the repository's default branch, choose a new default branch first. See [Changing the default branch](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/changing-the-default-branch).
 
 If the branch is associated with an open pull request, merge or close the pull request before deleting the branch.

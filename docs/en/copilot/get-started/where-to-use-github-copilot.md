@@ -74,7 +74,7 @@ Your choices hold across the workflow, including:
 
 * **Which model**: Different models suit different kinds of work, and you can switch models for chat and agents. See [Changing the AI model for GitHub Copilot Chat](/en/copilot/how-tos/use-ai-models/change-the-chat-model).
 * **Which agents**: Copilot agents and agents from other providers work in the same repositories, open pull requests, and go through review. Copilot applies the same security protections, mitigations, and limitations to third-party agents as it does to Copilot cloud agent. See [GitHub Copilot on GitHub.com](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent) and [Third-party coding agents](/en/copilot/concepts/agent-capabilities/about-agents/about-third-party-coding-agents).
-* **What Copilot can see**: Custom instructions, agent skills, and MCP servers connect Copilot to your conventions and to the tools your team uses. See [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+* **What Copilot can see**: Custom instructions, agent skills, and MCP servers connect Copilot to your conventions and to the tools your team uses. See [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 * **What Copilot remembers**: For supported features, Copilot Memory can reuse repository facts and your preferences in later work. See [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory).
 
 For organizations, administrator policies apply across most surfaces developers use. See [Administer GitHub Copilot for your team](/en/copilot/how-tos/administer-copilot).

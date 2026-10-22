@@ -17,10 +17,10 @@ breadcrumbs:
 
 You can sign commits locally using GPG, SSH, or S/MIME.
 
-> \[!NOTE]
+> [!NOTE]
 > [GitHub Desktop](https://desktop.github.com/) only supports commit signing if your Git client is configured to sign commits by default.
 
-> \[!TIP]
+> [!TIP]
 > To configure your Git client to sign commits by default for a local repository, in Git versions 2.0.0 and above, run `git config commit.gpgsign true`. To sign all commits by default in any local repository on your computer, run `git config --global commit.gpgsign true`.
 >
 > To store your GPG key passphrase so you don't have to enter it every time you sign a commit, we recommend using the following tools:

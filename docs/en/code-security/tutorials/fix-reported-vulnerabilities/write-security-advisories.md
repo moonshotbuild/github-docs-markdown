@@ -19,7 +19,7 @@ breadcrumbs:
 
 When you create or edit security advisories, the information you provide is easier for other users to understand when you specify the ecosystem, package name, and affected versions using the standard formats.
 
-> \[!NOTE]
+> [!NOTE]
 > If you are a security researcher, you should directly contact maintainers to ask them to create security advisories or issue CVEs on your behalf in repositories that you don't administer. However, if private vulnerability reporting is enabled for the repository, you can *privately* report a vulnerability yourself. For more information, see [Privately reporting a security vulnerability](/en/code-security/how-tos/report-and-fix-vulnerabilities/report-privately).
 
 ## About security advisories for repositories
@@ -73,7 +73,7 @@ For more information about the GitHub Advisory Database, see <https://github.com
 
 * `>` for “greater than this version”.
 
-  > \[!WARNING] Although GitHub supports the use of the `>` operator, using this operator is not recommended because it's not supported by the OSV format.
+  > [!WARNING] Although GitHub supports the use of the `>` operator, using this operator is not recommended because it's not supported by the OSV format.
 
 * `=` for “equal to this version”.
 
@@ -99,7 +99,7 @@ For examples showing how affected versions are defined in some existing advisori
   * Each operator sequence must be specified as the operator, a single space, and then the version. For more information about valid operators, see [Supported operators](#supported-operators) above.
 
   * The version must begin with a number followed by any number of numbers, letters, dots, dashes, or underscores (anything other than a space or comma). For more information about version formatting, see [Version syntax](#version-syntax) above.
-  > \[!NOTE]
+  > [!NOTE]
   > Affected version strings cannot contain leading or trailing spaces.
 
 * Upper-bound operators can be inclusive or exclusive, i.e. `<=` or `<`, respectively.
@@ -114,7 +114,7 @@ For examples showing how affected versions are defined in some existing advisori
   * Do not use a space between a number and a comma in `>= lower bound, <= upper bound`.
 
   * Use a space between a comma and the upper bound operator.
-  > \[!NOTE]
+  > [!NOTE]
   > The lower-bound limitation:
   >
   > * Is due to incompatibilities with the OSV schema.

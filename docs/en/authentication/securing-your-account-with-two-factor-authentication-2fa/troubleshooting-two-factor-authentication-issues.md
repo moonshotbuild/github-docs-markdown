@@ -63,14 +63,14 @@ Turning your phone off and on will re-register the device with the network, whic
 
 Check with your cellular provider or carrier to see if there are any local outages or delivery issues in your area. They may also be able to investigate delivery issues for your connection. Provide them with the SMS number configured on your GitHub account and the time that you requested an authentication code from GitHub.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub, along with our SMS delivery partners, proactively monitors our SMS deliverability success rates. Periods of low-deliverability that would indicate a widespread issue are promptly investigated. You can check active and historical incidents affecting SMS delivery in your region on [GitHub's status page](https://githubstatus.com).
 
 ## Recovering your account if troubleshooting doesn't help
 
 If you have tried troubleshooting and you are still having trouble, you can try authenticating with another method, such as a passkey, GitHub Mobile, or a security key, if pre-configured on the account. For more information, see [Accessing GitHub using two-factor authentication](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/accessing-github-using-two-factor-authentication).
 
-> \[!WARNING]
+> [!WARNING]
 > For security reasons, GitHub Support cannot assist with troubleshooting your 2FA methods, including SMS delivery.
 
 If you don't have another authentication method, you will need to try account recovery. For more information about account recovery, see [Recovering your account if you lose your 2FA credentials](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/recovering-your-account-if-you-lose-your-2fa-credentials).

@@ -31,7 +31,7 @@ If there are existing codespaces that no longer conform to a policy you have def
 
 If you remove higher specification machine types that are required by the GitHub Codespaces configuration for an individual repository in your organization, then it won't be possible to create a codespace for that repository. When someone attempts to create a codespace they will see a message telling them that there are no valid machine types available that meet the requirements of the repository's GitHub Codespaces configuration.
 
-> \[!NOTE]
+> [!NOTE]
 > Anyone who can edit the `devcontainer.json` configuration file in a repository can set a minimum specification for machines that can be used for codespaces for that repository. For more information, see [Setting a minimum specification for codespace machines](/en/codespaces/setting-up-your-project-for-codespaces/configuring-dev-containers/setting-a-minimum-specification-for-codespace-machines).
 
 If setting a policy for machine types prevents people from using GitHub Codespaces for a particular repository there are two options:
@@ -47,7 +47,7 @@ For example, you could create an organization-wide policy that restricts the mac
 
 If you add an organization-wide policy, you should set it to the largest choice of machine types that will be available for any repository in your organization. You can then add repository-specific policies to further restrict the choice.
 
-> \[!NOTE]
+> [!NOTE]
 > Codespaces policies only apply to codespaces that your organizations pays for. If someone creates a codespace for a repository in your organization at their own expense, then the codespace will not be bound by these policies. For more information, see [Choosing who owns and pays for codespaces in your organization](/en/codespaces/managing-codespaces-for-your-organization/choosing-who-owns-and-pays-for-codespaces-in-your-organization).
 
 ## Adding a policy to limit the available machine types
@@ -78,7 +78,7 @@ If you add an organization-wide policy, you should set it to the largest choice 
 
     ![Screenshot of the repository selection dropdown, showing the options "All repositories" and "Selected repositories."](/assets/images/help/codespaces/selected-repositories.png)
 
-    > \[!NOTE]
+    > [!NOTE]
     > If you're adding a constraint to an existing policy that already contains the "Maximum codespaces per user" constraint, you won't be able to apply the policy to selected repositories. This is because the "Maximum codespaces per user" constraint always applies to all repositories in the organization.
 
     With **Selected repositories** selected:

@@ -25,7 +25,7 @@ The secret scanning tools are only available via the GitHub remote MCP server. *
 
 This works with any MCP-compatible agent or IDE, including Visual Studio Code, JetBrains, Claude Code, Cursor, and Windsurf. The experience varies across clients.
 
-> \[!NOTE] Findings returned by MCP-invoked scans are **ephemeral**. They are surfaced in your agent's chat for the current session only and are not persisted as alerts on GitHub. This means these findings won't appear in the Security tab, in the secret scanning alerts list, or in the REST/GraphQL APIs for alerts. MCP scans should be treated as a pre-commit safety check, not as a system of record. Remediate findings before they are pushed to the repository and persisted in Git history.
+> [!NOTE] Findings returned by MCP-invoked scans are **ephemeral**. They are surfaced in your agent's chat for the current session only and are not persisted as alerts on GitHub. This means these findings won't appear in the Security tab, in the secret scanning alerts list, or in the REST/GraphQL APIs for alerts. MCP scans should be treated as a pre-commit safety check, not as a system of record. Remediate findings before they are pushed to the repository and persisted in Git history.
 
 ## Prerequisites
 
@@ -152,6 +152,6 @@ If push protection is enabled, the MCP server also blocks secrets from being inc
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Scanning returns no results              | Verify the `secret_protection` toolset is enabled in your MCP configuration.                                                                           |
 | Repository not eligible                  | Secret scanning via MCP is available to public repositories and requires GitHub Secret Protection to be enabled for private and internal repositories. |
-| Agent doesn't recognize the tool         | Confirm your IDE or agent supports MCP. See [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp#availability).                       |
+| Agent doesn't recognize the tool         | Confirm your IDE or agent supports MCP. See [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp#where-you-can-use-mcp).             |
 | Unexpected detection results             | Your organization's security configuration controls which patterns are scanned. Check your repository security settings.                               |
 | Tool works in one client but not another | The experience varies across MCP-compatible clients. Check your client's MCP documentation for supported features.                                     |

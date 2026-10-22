@@ -73,7 +73,7 @@ To share an individual-owned space with others:
 2. To add specific GitHub users, search for them with the search bar, then choose a role for the people you added.
 3. Optionally, to make the space public, under "General access", select **Anyone with link**. Then, copy the link to the space and share it with others.
 
-   > \[!NOTE] Publicly shared spaces are view-only by default, and viewers can only see sources that they have access to.
+   > [!NOTE] Publicly shared spaces are view-only by default, and viewers can only see sources that they have access to.
 
 ## Accessing shared Spaces
 

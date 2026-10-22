@@ -834,7 +834,7 @@ GitHub App installation access tokens are not supported for this endpoint.
   - **`interval`** (object)
     - **`cadence`** (array of strings) (required)
       One or more schedules on which the Automation runs.
-Supported values are: hourly, daily, weekly
+      Supported values are: hourly, daily, weekly
     - **`hour_utc`** (integer)
       UTC hour anchor (0 through 23) for daily and weekly schedules. Omitted daily and weekly values default to 0 (midnight UTC).
     - **`day_of_week`** (integer)
@@ -865,7 +865,7 @@ Supported values are: hourly, daily, weekly
       Workflow names matched against the name in each workflow YAML file.
     - **`conclusions`** (array of strings) (required)
       Workflow conclusions to match. The current trigger supports failure.
-Supported values are: failure
+      Supported values are: failure
     - **`query`** (string)
       A GitHub issue or pull request search query.
     - **`write_scope`** (string)
@@ -904,7 +904,7 @@ Supported values are: failure
   - **`pull_request_comment`** (object)
     - **`comment_types`** (array of strings) (required)
       Pull request conversation and inline review comment types to match.
-Supported values are: timeline_comment, review_comment
+      Supported values are: timeline_comment, review_comment
     - **`body_substring`** (string)
       A case-insensitive substring matched against the event body.
     - **`write_scope`** (string)
@@ -929,7 +929,7 @@ Supported values are: timeline_comment, review_comment
   - **`discussion_comment`** (object)
     - **`comment_types`** (array of strings)
       Top-level discussion comments and replies to match. Omit to match both.
-Supported values are: comment, reply
+      Supported values are: comment, reply
     - **`categories`** (array of strings)
       Discussion category names matched case-insensitively.
     - **`body_substring`** (string)
@@ -994,7 +994,7 @@ Supported values are: comment, reply
       Gitignore-style changed-file path globs.
     - **`states`** (array of strings) (required)
       Submitted review states to match.
-Supported values are: approved, changes_requested, commented
+      Supported values are: approved, changes_requested, commented
     - **`write_scope`** (string)
       Override the Automation write_scope for runs started by this trigger. If omitted, the automation's write_scope is used. Organization or repository policy may restrict the effective scope to trigger.
       Can be one of: `trigger`, `repository`
@@ -1334,7 +1334,7 @@ GitHub App installation access tokens are not supported for this endpoint.
   - **`interval`** (object)
     - **`cadence`** (array of strings) (required)
       One or more schedules on which the Automation runs.
-Supported values are: hourly, daily, weekly
+      Supported values are: hourly, daily, weekly
     - **`hour_utc`** (integer)
       UTC hour anchor (0 through 23) for daily and weekly schedules. Omitted daily and weekly values default to 0 (midnight UTC).
     - **`day_of_week`** (integer)
@@ -1365,7 +1365,7 @@ Supported values are: hourly, daily, weekly
       Workflow names matched against the name in each workflow YAML file.
     - **`conclusions`** (array of strings) (required)
       Workflow conclusions to match. The current trigger supports failure.
-Supported values are: failure
+      Supported values are: failure
     - **`query`** (string)
       A GitHub issue or pull request search query.
     - **`write_scope`** (string)
@@ -1404,7 +1404,7 @@ Supported values are: failure
   - **`pull_request_comment`** (object)
     - **`comment_types`** (array of strings) (required)
       Pull request conversation and inline review comment types to match.
-Supported values are: timeline_comment, review_comment
+      Supported values are: timeline_comment, review_comment
     - **`body_substring`** (string)
       A case-insensitive substring matched against the event body.
     - **`write_scope`** (string)
@@ -1429,7 +1429,7 @@ Supported values are: timeline_comment, review_comment
   - **`discussion_comment`** (object)
     - **`comment_types`** (array of strings)
       Top-level discussion comments and replies to match. Omit to match both.
-Supported values are: comment, reply
+      Supported values are: comment, reply
     - **`categories`** (array of strings)
       Discussion category names matched case-insensitively.
     - **`body_substring`** (string)
@@ -1494,7 +1494,7 @@ Supported values are: comment, reply
       Gitignore-style changed-file path globs.
     - **`states`** (array of strings) (required)
       Submitted review states to match.
-Supported values are: approved, changes_requested, commented
+      Supported values are: approved, changes_requested, commented
     - **`write_scope`** (string)
       Override the Automation write_scope for runs started by this trigger. If omitted, the automation's write_scope is used. Organization or repository policy may restrict the effective scope to trigger.
       Can be one of: `trigger`, `repository`

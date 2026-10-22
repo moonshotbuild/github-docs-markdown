@@ -23,7 +23,7 @@ You can permanently remove a self-hosted runner from a repository or organizatio
 
 ## Removing a runner from a repository
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * This procedure permanently removes the self-hosted runner. If you only want to temporarily stop a runner from being assigned jobs, you can either shut down the machine or stop the `run` application. The runner will remain assigned in an "Offline" state, and won't execute any jobs until you restart the runner using the `run` application.
 > * A self-hosted runner is automatically removed from GitHub if it has not connected to GitHub Actions for more than 14 days. An ephemeral self-hosted runner is automatically removed from GitHub if it has not connected to GitHub Actions for more than 1 day.
@@ -58,7 +58,7 @@ Alternatively, if you don't have access to the repository or organization on Git
 
 ## Removing a runner from an organization
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * This procedure permanently removes the self-hosted runner. If you only want to temporarily stop a runner from being assigned jobs, you can either shut down the machine or stop the `run` application. The runner will remain assigned in an "Offline" state, and won't execute any jobs until you restart the runner using the `run` application.
 > * A self-hosted runner is automatically removed from GitHub if it has not connected to GitHub Actions for more than 14 days. An ephemeral self-hosted runner is automatically removed from GitHub if it has not connected to GitHub Actions for more than 1 day.

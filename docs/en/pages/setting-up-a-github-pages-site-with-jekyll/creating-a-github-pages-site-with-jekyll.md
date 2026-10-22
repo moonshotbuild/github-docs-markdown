@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can use Jekyll to create a GitHub Pages site in a new or existing repository.
 
-> \[!NOTE] While the `github-pages` gem remains supported for some workflows, GitHub Actions is now the recommended approach for deploying and automating GitHub Pages sites.
+> [!NOTE] While the `github-pages` gem remains supported for some workflows, GitHub Actions is now the recommended approach for deploying and automating GitHub Pages sites.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ We recommend using [Bundler](https://bundler.io/) to install and run Jekyll. Bun
 
 <div class="ghd-tool mac">
 
-> \[!TIP]
+> [!TIP]
 > If you see a Ruby error when you try to install Jekyll using Bundler, you may need to use a package manager, such as [RVM](https://rvm.io/) or [Homebrew](https://brew.sh/), to manage your Ruby installation. For more information, see [Troubleshooting](https://jekyllrb.com/docs/troubleshooting/#jekyll--macos) in the Jekyll documentation.
 
 </div>
@@ -62,7 +62,7 @@ If you want to create a site in an existing repository, skip to the [Creating yo
 
 Before you can create your site, you must have a repository for your site on GitHub. If you're not creating your site in an existing repository, see [Creating a repository for your site](#creating-a-repository-for-your-site).
 
-> \[!WARNING]
+> [!WARNING]
 > GitHub Pages sites are publicly available on the internet, even if the repository for the site is private (if your plan or organization allows it). If you have sensitive data in your site's repository, you may want to remove the data before publishing. For more information, see [About repositories](/en/repositories/creating-and-managing-repositories/about-repositories#about-repository-visibility).
 
 1. Open <span class="platform-mac">Terminal</span><span class="platform-linux">Terminal</span><span class="platform-windows">Git Bash</span>.
@@ -183,15 +183,15 @@ Before you can create your site, you must have a repository for your site on Git
 23. To see your published site, under "GitHub Pages", click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-link-external" aria-label="link-external" role="img"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg> Visit site**.
     ![Screenshot of a confirmation message for GitHub Pages listing the site's URL. The gray "Visit site" button is outlined in orange.](/assets/images/help/pages/click-pages-url-to-preview.png)
 
-    > \[!NOTE]
+    > [!NOTE]
     > It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub. If you don't see your GitHub Pages site changes reflected in your browser after an hour, see [About Jekyll build errors for GitHub Pages sites](/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-build-errors-for-github-pages-sites).
 
 24. Your GitHub Pages site is built and deployed with a GitHub Actions workflow. For more information, see [Viewing workflow run history](/en/actions/how-tos/monitor-workflows/view-workflow-run-history).
 
-    > \[!NOTE]
+    > [!NOTE]
     > GitHub Actions is free for public repositories. Usage charges apply for private and internal repositories that go beyond the monthly allotment of free minutes. For more information, see [Billing and usage](/en/actions/concepts/billing-and-usage).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * If you are publishing from a branch and your site has not published automatically, make sure someone with admin permissions and a verified email address has pushed to the publishing source.
 > * Commits pushed by a GitHub Actions workflow that uses the `GITHUB_TOKEN` do not trigger a GitHub Pages build.

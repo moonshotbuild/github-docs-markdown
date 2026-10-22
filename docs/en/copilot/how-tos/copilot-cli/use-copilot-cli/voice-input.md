@@ -73,7 +73,7 @@ Rather than holding down the space bar, you can toggle voice recording on and of
 
 1. Press <kbd>Ctrl</kbd>+<kbd>X</kbd> followed by <kbd>V</kbd> to start recording.
 
-   > \[!NOTE]
+   > [!NOTE]
    > In some terminals, you can use <kbd>Ctrl</kbd>+<kbd>Space</kbd> as an alternative. This shortcut only works if your terminal and OS pass it through. You may also need to free it in your terminal or OS key bindings.
 
 2. Speak your prompt.

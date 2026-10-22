@@ -23,7 +23,7 @@ You can troubleshoot license usage for your enterprise by auditing license repor
 
 If the number of consumed licenses for your enterprise is unexpected, you can review your consumed license report to audit your license usage across all your enterprise deployments and subscriptions. For more information, see [Viewing usage for your GitHub Enterprise plan](/en/billing/how-tos/manage-plan-and-licenses/view-enterprise-usage) and [License troubleshooting information for GitHub Enterprise](/en/enterprise-cloud@latest/billing/reference/enterprise-license-troubleshooting).
 
-> \[!NOTE] For privacy reasons, enterprise owners cannot directly access the details of user accounts unless you use Enterprise Managed Users.
+> [!NOTE] For privacy reasons, enterprise owners cannot directly access the details of user accounts unless you use Enterprise Managed Users.
 
 If you find errors, you can try the troubleshooting steps below.
 
@@ -35,7 +35,7 @@ To ensure that each user is only consuming a single seat for different deploymen
 
    Often, these are the users who erroneously consume more than one licensed seat. For more information, see [Viewing people in your enterprise](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/viewing-people-in-your-enterprise#viewing-members-without-an-email-address-from-a-verified-domain).
 
-   > \[!NOTE]
+   > [!NOTE]
    > To make troubleshooting easier, we recommend using verified domains with your enterprise account on GitHub Enterprise Cloud. For more information, see [Verifying or approving a domain for your enterprise](/en/enterprise-cloud@latest/admin/configuring-settings/configuring-user-applications-for-your-enterprise/verifying-or-approving-a-domain-for-your-enterprise).
 
 2. After you identify users who are consuming multiple seats, make sure that the same email address is associated with all of the user's accounts. For more information about which email addresses must match, see [License troubleshooting information for GitHub Enterprise](/en/enterprise-cloud@latest/billing/reference/enterprise-license-troubleshooting).

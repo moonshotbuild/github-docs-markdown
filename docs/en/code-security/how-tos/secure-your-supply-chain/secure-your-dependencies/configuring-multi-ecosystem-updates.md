@@ -68,7 +68,7 @@ updates:
     multi-ecosystem-group: "infrastructure"
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Use `["*"]` to include all dependencies.
 
 ## 3. Commit your changes

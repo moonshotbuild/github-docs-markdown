@@ -46,7 +46,7 @@ In order to use grouped security updates, you must first enable the following fe
 * **Dependabot alerts**. For more information, see [Configuring Dependabot alerts](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-dependabot-alerts).
 * **Dependabot security updates**. For more information, see [Configuring Dependabot security updates](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-security-updates#managing-dependabot-security-updates-for-your-repositories).
 
-> \[!NOTE]
+> [!NOTE]
 > When grouped security updates are first enabled, Dependabot will immediately try to create grouped pull requests. You may notice Dependabot closing old pull requests and opening new ones.
 
 You can enable grouped pull requests for Dependabot security updates in one, or both, of the following ways.
@@ -54,7 +54,7 @@ You can enable grouped pull requests for Dependabot security updates in one, or 
 * To group as many available security updates together as possible, across directories and per ecosystem, enable grouping in the "Advanced Security" settings for your repository, or in "Global settings" under Advanced Security for your organization.
 * For more granular control of grouping, such as grouping by package name, development/production dependencies, SemVer level, or across multiple directories per ecosystem, add configuration options to the `dependabot.yml` configuration file in your repository.
 
-> \[!NOTE]
+> [!NOTE]
 > If you have configured group rules for Dependabot security updates in a `dependabot.yml` file, all available updates will be grouped according to the rules you've specified. Dependabot will only group across those directories not configured in your `dependabot.yml` if the setting for grouped security updates at the organization or repository level is also enabled.
 
 ### Enabling or disabling grouped Dependabot security updates for an individual repository
@@ -120,7 +120,7 @@ updates:
           - "golang.org*"
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > In order for Dependabot to use this configuration for security updates, the `directory` must be the path to the manifest files (or `directories` must contain paths or glob patterns matching the manifest file locations), and you should not specify a `target-branch`.
 
 ## Further reading

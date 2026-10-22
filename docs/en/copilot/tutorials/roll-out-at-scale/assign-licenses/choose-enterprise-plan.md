@@ -31,7 +31,7 @@ To identify which plan is right for your company:
 2. Understand the benefits of Copilot Business and Copilot Enterprise, including included AI credits.
 3. Choose the Copilot plan with the allowances and features that will help you meet your goals.
 
-   > \[!TIP] When you subscribe to Copilot at the enterprise level, you can choose a plan individually for each organization in your enterprise. This allows you to evaluate the benefits of Copilot Enterprise with a pilot program or enable it in the organizations where it will have the most impact.
+   > [!TIP] When you subscribe to Copilot at the enterprise level, you can choose a plan individually for each organization in your enterprise. This allows you to evaluate the benefits of Copilot Enterprise with a pilot program or enable it in the organizations where it will have the most impact.
 
 This article explains the available plans and provides examples for how Copilot Enterprise can help you achieve specific business goals.
 

@@ -21,14 +21,14 @@ breadcrumbs:
 
 Learn how to control the domains and URLs that Copilot cloud agent and Copilot code review can access.
 
-> \[!NOTE]
+> [!NOTE]
 > Firewall configuration is managed from the "Internet access" settings tab, which covers both Copilot cloud agent and Copilot code review. Previous configurations saved as Actions variables will be maintained on that page.
 
 ## Overview
 
 By default, Copilot's access to the internet is limited by a firewall.
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot code review also supports firewall configuration, at both the organization and repository level, under its own section of the "Internet access" tab described below. This allows you to configure firewall rules for Copilot code review independently of Copilot cloud agent. See [Using GitHub Copilot code review](/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review#customizing-copilot-code-reviews-environment).
 
 Limiting internet access helps manage data exfiltration risks. Unexpected behavior from Copilot, or malicious instructions, could lead to code or other sensitive information being leaked to remote locations.
@@ -76,7 +76,7 @@ The "Internet access" page has separate sections for Copilot cloud agent and Cop
 
 ### Enabling or disabling the firewall
 
-> \[!WARNING]
+> [!WARNING]
 > Disabling the firewall will allow Copilot to connect to any host, increasing risks of exfiltration of code or other sensitive information.
 
 1. Under "Internet access", set the **Enable firewall** setting to **Enabled**, **Disabled**, or **Let repositories decide** (default).
@@ -125,21 +125,21 @@ To access the firewall settings:
 
 ### Enabling or disabling the firewall
 
-> \[!NOTE]
+> [!NOTE]
 > You can only change this setting at the repository level if the organization-level **Enable firewall** setting is set to **Let repositories decide**. If the organization-level setting is **Enabled** or **Disabled**, you can't change this setting for individual repositories.
 
 1. Toggle the **Enable firewall** setting on or off.
 
 ### Enabling or disabling the recommended allowlist
 
-> \[!NOTE]
+> [!NOTE]
 > You can only change this setting at the repository level if the organization-level **Recommended allowlist** setting is set to **Let repositories decide**. If the organization-level setting is **Enabled** or **Disabled**, you can't change this setting for individual repositories.
 
 1. Toggle the **Recommended allowlist** setting on or off.
 
 ### Managing the custom allowlist
 
-> \[!NOTE]
+> [!NOTE]
 > You can only add custom allowlist rules at the repository level if the organization-level **Allow repository custom rules** setting is set to **Enabled**. For more information, see [Controlling whether repositories can add custom allowlist rules](#controlling-whether-repositories-can-add-custom-allowlist-rules).
 
 1. Click **Custom allowlist**.

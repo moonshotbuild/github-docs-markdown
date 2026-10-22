@@ -33,7 +33,7 @@ There are several different ways to give the extension access to the standard li
 
 ### Option 1: Using the starter workspace (recommended)
 
-> \[!NOTE]
+> [!NOTE]
 > The CodeQL repository is included as a submodule in the starter workspace. You should use `git submodule update --remote` regularly to keep the submodules up to date, and ensure that they remain compatible with newer versions of the VS Code extension and the CodeQL CLI.
 
 1. Clone the [vscode-codeql-starter repository](https://github.com/github/vscode-codeql-starter/?ref_product=code-scanning\&ref_type=engagement\&ref_style=text) to your computer. Make sure you include the submodules, either by using `git clone --recursive`, or by using `git submodule update --init --remote` after cloning.
@@ -60,7 +60,7 @@ There are several different ways to give the extension access to the standard li
 
 ### Option 3: Open the directory containing the extracted CodeQL CLI archive
 
-> \[!NOTE]
+> [!NOTE]
 > For this option, you need to set up the CodeQL CLI. For more information, see [Setting up the CodeQL CLI](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/scan-from-the-command-line/set-up-codeql-cli).
 
 In VS Code, open the directory where you extracted the CodeQL CLI .zip archive to create a CodeQL directory (for example `codeql-home`).

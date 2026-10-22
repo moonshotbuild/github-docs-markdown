@@ -27,7 +27,7 @@ You can delete unnecessary custom security configurations in your organization.
 
 If you no longer need a custom security configuration, you can delete that configuration to ensure it will not be applied to any repositories in the future. If you are deleting a custom security configuration because you want to change the security enablement settings in that configuration, you can instead edit the configuration. For more information, see [Editing a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/manage-your-coverage/edit-custom-configuration).
 
-> \[!WARNING]
+> [!WARNING]
 > Deleting a custom security configuration will detach all repositories that are linked to that configuration. The existing security settings for those repositories will be unchanged, but you must apply a different security configuration or manage their security settings at the repository level to keep their settings up to date.
 
 ## Deleting a custom security configuration from your organization

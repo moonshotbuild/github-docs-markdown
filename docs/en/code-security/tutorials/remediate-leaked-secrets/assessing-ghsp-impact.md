@@ -62,7 +62,7 @@ If you previously ran a SRA report, you can access the report to establish a bas
    * Repositories with the highest risk
    * Recommended remediation actions
 
-> \[!NOTE] The SRA report represents a point-in-time snapshot of your secret exposure before or during your GHSP implementation.
+> [!NOTE] The SRA report represents a point-in-time snapshot of your secret exposure before or during your GHSP implementation.
 
 ## Step 3: Compare SRA data with current security overview
 

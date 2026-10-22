@@ -162,7 +162,7 @@ Reviewers may comment, suggest changes, or request changes before a pull request
 
 Once required reviews and status checks pass, merge the pull request to bring your changes into the base branch. If you decide not to merge the changes, you can close the pull request instead.
 
-> \[!TIP]
+> [!TIP]
 > Different repositories may have different requirements for merging. Review any relevant guidance and follow its instructions.
 
 <div class="ghd-tool webui">

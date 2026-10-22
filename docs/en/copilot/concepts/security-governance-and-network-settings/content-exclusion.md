@@ -55,7 +55,7 @@ The Copilot Business and Copilot Enterprise plans provide the following level of
 
 Content exclusions also apply to Copilot code review on the GitHub website.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Content exclusion is in public preview on the GitHub website and in GitHub Mobile and is subject to change.
 > * Content exclusion is currently not supported in Edit and Agent modes of Copilot Chat in Visual Studio Code and other editors.

@@ -19,10 +19,10 @@ You can archive a repository to make it read-only for all users and indicate tha
 
 ## About repository archival
 
-> \[!NOTE]
+> [!NOTE]
 > If you have a legacy per-repository billing plan, you will still be charged for your archived repository. If you don't want to be charged for an archived repository, you must upgrade to a new product. For more information, see [GitHub's plans](/en/get-started/learning-about-github/githubs-plans).
 
-> \[!NOTE]
+> [!NOTE]
 > Customers who use GitHub Secret Protection can enable secret scanning on archived repositories. For more information, see [Secret scanning](/en/code-security/concepts/secret-security/secret-scanning).
 
 We recommend that you close all issues and pull requests, as well as update the README file and description, before you archive a repository.

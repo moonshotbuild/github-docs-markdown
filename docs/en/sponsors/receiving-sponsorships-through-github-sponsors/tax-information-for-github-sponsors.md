@@ -43,7 +43,7 @@ If you are not a U.S. citizen or other U.S. person, including a resident alien i
 
 If your country of residence or billing country is India, then you can use your Permanent Account Number (PAN) as your tax identification number.
 
-> \[!NOTE]
+> [!NOTE]
 > If your country does not require citizens to have a tax number issued by the government, then you can instead write "not legally required".
 >
 > Guidance from the IRS states that you should not write "not applicable." For more information, see [Instructions for Form W-8BEN, Line 6](https://www.irs.gov/instructions/iw8ben#idm139867098922656) on the IRS website.

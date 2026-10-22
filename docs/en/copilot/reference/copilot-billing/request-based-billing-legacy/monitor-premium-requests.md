@@ -21,7 +21,7 @@ breadcrumbs:
 
 Learn how you can monitor your monthly usage of Copilot and get the most value out of your Copilot plan.
 
-> \[!IMPORTANT] This article only applies to Copilot Pro and Copilot Pro+ subscribers on an existing annual plan who remained on legacy premium request-based billing after June 1, 2026.
+> [!IMPORTANT] This article only applies to Copilot Pro and Copilot Pro+ subscribers on an existing annual plan who remained on legacy premium request-based billing after June 1, 2026.
 
 You can track your monthly usage of premium requests to help you get the most value from your Copilot plan.
 

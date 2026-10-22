@@ -19,7 +19,7 @@ breadcrumbs:
 
 Cancelling a GitHub Marketplace app triggers the marketplace_purchase event webhook with the cancelled action, which kicks off the cancellation flow.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 For more information about cancelling as it relates to billing, see [Billing customers](/en/apps/github-marketplace/selling-your-app-on-github-marketplace/billing-customers).
@@ -37,5 +37,5 @@ When a customer cancels a free or paid plan, your app must perform these steps t
 3. If your app is an OAuth app, remove all webhooks your app created for repositories.
 4. Remove all customer data within 30 days of receiving the `cancelled` event.
 
-> \[!NOTE]
+> [!NOTE]
 > We recommend using the [`marketplace_purchase`](/en/apps/github-marketplace/using-the-github-marketplace-api-in-your-app/webhook-events-for-the-github-marketplace-api) webhook's `effective_date` to determine when a plan change will occur and periodically synchronizing the [List accounts for a plan](/en/rest/apps/marketplace#list-accounts-for-a-plan). For more information on webhooks, see [Webhook events for the GitHub Marketplace API](/en/apps/github-marketplace/using-the-github-marketplace-api-in-your-app/webhook-events-for-the-github-marketplace-api).

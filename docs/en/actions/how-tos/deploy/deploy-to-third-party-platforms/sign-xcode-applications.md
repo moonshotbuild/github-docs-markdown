@@ -117,7 +117,7 @@ jobs:
           # ...
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > For iOS build targets, your provisioning profile should have the extension `.mobileprovision`. For macOS build targets, the extension should be `.provisionprofile`. The example workflow above should be updated to reflect your target platform.
 
 ## Required clean-up on self-hosted runners

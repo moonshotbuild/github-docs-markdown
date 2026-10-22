@@ -54,14 +54,14 @@ For more information about the criteria used by the rule, see [CWEs used by GitH
 
 The `Dismiss package malware alerts` rule is a GitHub preset that auto-dismisses alerts that flag all versions of a package as malicious. If your project depends on an **internal** package with the same ecosystem and name as a malicious **public** package, Dependabot can generate a false positive alert, which the rule then auto-dismisses.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Be aware that if a contributor adds a dependency that is truly malicious across all versions, this rule will auto-dismiss the related alert.
 
 The `Dismiss package malware alerts` rule is disabled by default, but can be enabled for any repository using Dependabot malware alerts.
 
 ### About custom auto-triage rules
 
-> \[!NOTE]
+> [!NOTE]
 >
 > Custom auto-triage rules for Dependabot alerts are available on public repositories and on any organization-owned repositories in GitHub Team with [GitHub Code Security](/en/get-started/learning-about-github/about-github-advanced-security) enabled.
 

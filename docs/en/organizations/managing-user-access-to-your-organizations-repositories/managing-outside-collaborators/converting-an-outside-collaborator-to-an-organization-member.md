@@ -17,7 +17,7 @@ breadcrumbs:
 
 # Converting an outside collaborator to an organization member
 
-If you would like to give an outside collaborator on your organization's repositories broader permissions within your organization, you can make them a member of the organization.
+If you would like to give an outside collaborator on your organization's repositories broader permissions within your organization, you can invite them to become a member of the organization.
 
 If your organization is on a paid per-user subscription, an unused license must be available before you can invite a new member to join the organization or reinstate a former organization member. For more information, see [People who consume a license in an organization](/en/billing/reference/github-license-users). Pending invitations will expire after 7 days, restoring any unclaimed licenses.
 

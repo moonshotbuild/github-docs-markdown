@@ -61,7 +61,7 @@ curl -H "Authorization: bearer TOKEN" -X POST -d " \
 " https://api.github.com/graphql
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > The string value of `"query"` must escape newline characters or the schema will not parse it correctly. For the `POST` body, use outer double quotes and escaped inner double quotes.
 
 ### About query and mutation operations
@@ -302,7 +302,7 @@ Let's examine the query line by line:
 
 When we run the query, we get the `id`: `MDU6SXNzdWUyMzEzOTE1NTE=`
 
-> \[!NOTE]
+> [!NOTE]
 > The `id` returned in the query is the value we'll pass as the `subjectID` in the mutation. Neither the docs nor schema introspection will indicate this relationship; you'll need to understand the concepts behind the names to figure this out.
 
 With the ID known, we can proceed with the mutation:
@@ -412,7 +412,7 @@ variables {
 }
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > You may notice that the `content` field value in the earlier example (where it's used directly in the mutation) does not have quotes around `HOORAY`, but it does have quotes when used in the variable. There's a reason for this:
 >
 > * When you use `content` directly in the mutation, the schema expects the value to be of type [`ReactionContent`](/en/graphql/reference/reactions#enum-reactioncontent), which is an *enum*, not a string. Schema validation will throw an error if you add quotes around the enum value, as quotes are reserved for strings.

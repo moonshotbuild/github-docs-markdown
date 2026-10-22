@@ -42,7 +42,7 @@ You can also filter by a specific event. For example, `action:copilot.cfb_seat_a
 
 To view a record of agent activity, use the `actor:Copilot` search term. See [Audit log events for agents](/en/copilot/reference/enterprise-administrators/agentic-audit-log-events).
 
-> \[!NOTE]
+> [!NOTE]
 > For team-based seat assignments, the `copilot.cfb_seat_added` event's actor may not be the account that performed the membership change. See [GitHub Copilot seat assignment](/en/copilot/reference/copilot-billing/seat-assignment#seat-assignment-management).
 
 ## Retaining audit log history

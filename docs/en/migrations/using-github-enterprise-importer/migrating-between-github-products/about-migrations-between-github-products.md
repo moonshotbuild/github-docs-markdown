@@ -130,7 +130,7 @@ All repositories are migrated with private visibility. If you want to set a repo
 
 Team membership is **not** migrated. After the migration, you'll need to add members to migrated teams. For more information, see [Overview of a migration between GitHub products](/en/migrations/using-github-enterprise-importer/migrating-between-github-products/overview-of-a-migration-between-github-products#recreating-teams).
 
-> \[!NOTE]
+> [!NOTE]
 > References to teams, such as `@octo-org/octo-team`, are **not** updated as part of an organization migration. This might cause problems in the destination organization, such as `CODEOWNERS` files not working as expected. For more information about how to prevent and resolve these issues, see [Troubleshooting your migration with GitHub Enterprise Importer](/en/migrations/troubleshooting/troubleshooting-your-migration-with-github-enterprise-importer#team-references-are-broken-after-an-organization-migration).
 
 ### Migrated data for a repository
@@ -236,6 +236,28 @@ There are limits to what GitHub Enterprise Importer can migrate. Some are due to
 * **Delayed code search functionality:** Re-indexing the search index can take a few hours after a repository is migrated, and code searches may return unexpected results until re-indexing is complete.
 * **Rulesets configured for your organization can cause migrations to fail:** For example, if you configured a rule that requires email addresses for commit authors to end with `@monalisa.cat`, and the repository you're migrating contains commits that don't comply with this rule, your migration will fail. For more information about rulesets, see [About rulesets](/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets).
 * **Mannequin content might not be searchable:** Mannequins are placeholder users to which imported content (such as issues, pull requests, comments, etc.) is associated. When you search for content associated with a mannequin, such as assigned issues, the issues may not be found. Once a mannequin is reclaimed, the content should be found via the new owner. For more information, see [Reclaiming mannequins for GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/completing-your-migration-with-github-enterprise-importer/reclaiming-mannequins-for-github-enterprise-importer).
+
+### Commit signature verification
+
+Commit signatures are verified against the signing keys known to the destination, so verification does not always carry over when you migrate.
+
+* **Commits signed by GitHub.** Commits created through the web interface are signed with a web commit signing key for the deployment where the commit was made. GitHub.com, each GitHub Enterprise Server instance, and GHE.com use different keys. Keys can also differ between GHE.com regions.
+
+  As a result, migrated web commits may show as "Unverified" at the destination.
+
+  * On GitHub Enterprise Server, web commit signing is optional. A site administrator configures the key and the account that holds it, so an administrator can add a key.
+  * On GitHub.com and GHE.com, the account is owned by GitHub. If your destination is one of these platforms and your commits are affected, contact [GitHub Support](https://support.github.com).
+
+* **Commits signed by users.** Users' GPG and SSH signing keys are not migrated. For their migrated commits to show as "Verified", users must:
+
+  * Add their signing key to their account at the destination
+  * Verify the commit's committer email address on that account
+
+  After users complete both steps, the "Verified" status is restored on commits that have already been migrated. You do not need to migrate again. See [Adding a GPG key to your GitHub account](/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account), [Adding a new SSH key to your GitHub account](/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account), and [Associating an email with your GPG key](/en/authentication/managing-commit-signature-verification/associating-an-email-with-your-gpg-key).
+
+Migrations between organizations within GitHub.com are not affected, because the source and the destination use the same web commit signing key, and users' own signing keys remain on their accounts.
+
+For more information about how verification works, see [About commit signature verification](/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
 
 ## Getting started
 

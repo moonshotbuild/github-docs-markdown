@@ -126,17 +126,17 @@ export GITHUB_ACTIONS_RUNNER_TLS_NO_VERIFY=1
 
 </div>
 
-> \[!WARNING]
+> [!WARNING]
 > Disabling TLS verification is not recommended since TLS provides privacy and data integrity between the self-hosted runner application and GitHub. We recommend that you install the GitHub certificate in the operating system certificate store for your self-hosted runner. For guidance on how to install the GitHub certificate, check with your operating system vendor.
 
-> \[!NOTE]
+> [!NOTE]
 > For GitHub-hosted larger runners using Azure private networking, see the TLS interception requirements in [Configuring private networking for GitHub-hosted runners in your organization](/en/organizations/managing-organization-settings/configuring-private-networking-for-github-hosted-runners-in-your-organization#prerequisites).
 
 ## Reviewing the self-hosted runner application log files
 
 You can monitor the status of the self-hosted runner application and its activities. Log files are kept in the `_diag` directory where you installed the runner application, and a new log is generated each time the application is started. The filename begins with `Runner_`, and is followed by a UTC timestamp of when the application was started.
 
-> \[!WARNING]
+> [!WARNING]
 > Runner application log files for ephemeral runners must be forwarded and preserved externally for troubleshooting and diagnostic purposes. For more information about ephemeral runners and autoscaling self-hosted runners, see [Self-hosted runners reference](/en/actions/reference/runners/self-hosted-runners#ephemeral-runners-for-autoscaling).
 
 For detailed logs on workflow job executions, see the next section describing the `Worker_` files.

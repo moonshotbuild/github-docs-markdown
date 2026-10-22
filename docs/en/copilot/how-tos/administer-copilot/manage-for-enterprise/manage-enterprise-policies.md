@@ -42,7 +42,7 @@ Enterprise owners can define a policy for the whole enterprise, or delegate the 
    * For policies with a **toggle**, click the toggle to set availability or enforcement.
    * For policies with **no visible dropdown menu or toggle**, click the name of the policy for configuration options.
 
-> \[!NOTE]
+> [!NOTE]
 > The **MCP servers in Copilot** policy controls use where MCP server support is generally available (GA). This policy does not control access and permissions for the GitHub MCP server in third-party host applications (like Cursor, Windsurf or Claude). For more information on controlling access to the GitHub MCP server, see the [Policies and Governance](https://github.com/github/github-mcp-server/blob/main/docs/policies-and-governance.md#control-mechanisms) documentation in the GitHub MCP Server repository.
 
 **Suggestions matching public code** is set to **Allowed** by default for Copilot Business users. You can change this setting in the **Privacy** section of the Copilot policy page.

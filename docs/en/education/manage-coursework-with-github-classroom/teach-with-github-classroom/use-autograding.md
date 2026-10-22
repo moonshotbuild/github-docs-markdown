@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can automatically provide feedback on code submissions from your students by configuring tests to run in the assignment repository.
 
-> \[!WARNING]
+> [!WARNING]
 > **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
 > For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
 

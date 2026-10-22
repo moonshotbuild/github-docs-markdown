@@ -27,7 +27,7 @@ If you're using a GPG key that matches your committer identity and your verified
    gpg --list-secret-keys --keyid-format=long
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > Some GPG installations on Linux may require you to use `gpg2 --list-keys --keyid-format LONG` to view a list of your existing keys instead. In this case you will also need to configure Git to use `gpg2` by running `git config --global gpg.program gpg2`.
 
 3. From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`:

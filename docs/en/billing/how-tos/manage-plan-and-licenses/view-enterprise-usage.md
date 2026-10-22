@@ -48,7 +48,7 @@ On the "Licensing" page, the number of consumed licenses is shown under "Enterpr
 
 ### Viewing history of changes to license usage
 
-> \[!NOTE]
+> [!NOTE]
 > This feature is in public preview and only available to usage-based enterprise accounts without Visual Studio bundles.
 
 To view the history of license usage over time, on the "Licensing" page, to the right of "Enterprise Cloud", click **Manage**.

@@ -43,7 +43,7 @@ def validate_price(price: float):
 
 ## Example response
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 If this is your first time asking Copilot Chat to generate unit tests, it may ask you if you wish to configure unit tests for your project. For this example, we are assuming you decline this offer.
 
@@ -86,5 +86,5 @@ if __name__ == '__main__':
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

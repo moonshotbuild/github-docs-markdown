@@ -110,7 +110,7 @@ You can review the details of a Dependabot alert to understand the vulnerability
 
 ## Dismissing Dependabot alerts
 
-> \[!NOTE]
+> [!NOTE]
 > You can only dismiss open alerts.
 
 If you schedule extensive work to upgrade a dependency, or decide that an alert does not need to be fixed, you can dismiss the alert. Dismissing alerts that you have already assessed makes it easier to triage new alerts as they appear.

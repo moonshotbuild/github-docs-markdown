@@ -46,14 +46,14 @@ To learn how to create a custom security configuration, see [Creating a custom s
 
 7. Select the **Apply configuration** <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-triangle-down" aria-label="triangle-down" role="img"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg> dropdown menu, then click **YOUR-CONFIGURATION-NAME**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > The default security configuration for an organization is only automatically applied to new repositories created in your organization. If a repository is transferred into your organization, you will still need to apply an appropriate security configuration to the repository manually.
 
 8. Review the detailed information about how your changes will affect GitHub Secret Protection, GitHub Code Security, or GitHub Advanced Security license consumption. To apply the security configuration, click **Apply**.
 
 The security configuration is applied to both active and archived repositories because some security features run on archived repositories, for example, secret scanning. In addition, if a repository is later unarchived you can be confident that it is protected by the chosen security configuration.
 
-> \[!NOTE]
+> [!NOTE]
 > If you apply an enforced configuration, this information is reported in the list of repositories. An enforced configuration means that repository owners are blocked from changing features that have been enabled or disabled in the configuration, but features that are not set aren't enforced.
 
 After you apply a configuration, each repository's configuration status reflects the result of the operation—for example, `attached`, `attaching`, or `failed`. For the full list of statuses and recommended actions, see [Security configuration statuses](/en/code-security/reference/security-at-scale/configuration-statuses).

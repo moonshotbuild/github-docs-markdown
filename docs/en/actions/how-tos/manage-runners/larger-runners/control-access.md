@@ -23,7 +23,7 @@ You can use policies to limit access to larger runners that have been added to a
 
 ## Managing access to larger runners
 
-> \[!NOTE]
+> [!NOTE]
 > Before your workflows can send jobs to larger runners, you must first configure permissions for the runner group. See the following sections for more information.
 
 Runner groups are used to control which repositories can run jobs on your larger runners. You must manage access to the group from each level of the management hierarchy, depending on where you've defined the larger runner:
@@ -37,10 +37,10 @@ For example, the following diagram has a runner group named `grp-ubuntu-24.04-16
 
 ## Creating a runner group for an organization
 
-> \[!WARNING]
+> [!WARNING]
 > If you are using a Fixed IP range, we recommend that you only use larger runners with private repositories. Forks of your repository can potentially run dangerous code on your larger runner by creating a pull request that executes the code in a workflow.
 
-> \[!NOTE]
+> [!NOTE]
 > When creating a runner group, you must choose a policy that defines which repositories have access to the runner group. To change which repositories and workflows can access the runner group, organization owners can set a policy for the organization. For more information, see [Managing access to self-hosted runners using groups](/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access#changing-which-repositories-can-access-a-runner-group).
 
 All organizations have a single default runner group. Organization owners using the GitHub Team plan can create additional organization-level runner groups.
@@ -69,7 +69,7 @@ For information about how to create a runner group with the REST API, see [REST 
 
 ## Changing which repositories can access a runner group
 
-> \[!WARNING]
+> [!WARNING]
 > If you are using a Fixed IP range, we recommend that you only use larger runners with private repositories. Forks of your repository can potentially run dangerous code on your larger runner by creating a pull request that executes the code in a workflow.
 
 For runner groups in an organization, you can change what repositories in the organization can access a runner group.

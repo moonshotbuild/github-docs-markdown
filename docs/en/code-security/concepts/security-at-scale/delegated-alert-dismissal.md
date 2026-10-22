@@ -41,7 +41,7 @@ You can use a custom role to let team members who are not organization owners or
 * Organization permissions for reviewing and bypassing alert dismissal requests. To find the exact permissions required for a particular product, see [Permissions for organization access](/en/organizations/managing-peoples-access-to-your-organization-with-roles/permissions-of-custom-organization-roles#permissions-for-organization-access).
 * Repository permissions to view, dismiss, and reopen alerts. To find the exact permissions required for a particular product, see [Security](/en/organizations/managing-peoples-access-to-your-organization-with-roles/permissions-of-custom-organization-roles#security).
 
-> \[!NOTE]
+> [!NOTE]
 > Adding repository permissions to a custom organization role is currently in public preview and subject to change.
 
 ## Next steps

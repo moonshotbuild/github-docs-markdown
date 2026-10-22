@@ -69,7 +69,7 @@ Code often needs to communicate with other systems over a network, and requires 
 
 ### Automatic detection of secrets committed to a repository
 
-> \[!NOTE]
+> [!NOTE]
 > Secret scanning is available for the following repository types:
 >
 > * **Public repositories**: Secret scanning runs automatically for free.
@@ -89,7 +89,7 @@ Besides your code, you probably need to use secrets in other places. For example
 
 ## Keep vulnerable coding patterns out of your repository
 
-> \[!NOTE]
+> [!NOTE]
 > Code scanning is available for the following repository types:
 >
 > * Public repositories on GitHub.com

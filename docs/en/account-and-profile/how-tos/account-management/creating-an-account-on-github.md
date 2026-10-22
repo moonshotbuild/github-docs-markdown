@@ -30,7 +30,7 @@ Every person who uses GitHub signs in to a user account. Your user account is yo
 
 Later, you can explore the different types of accounts that GitHub offers, and decide if you need a billing plan. For more information, see [Types of GitHub accounts](/en/get-started/learning-about-github/types-of-github-accounts) and [GitHub's plans](/en/get-started/learning-about-github/githubs-plans).
 
-> \[!NOTE]
+> [!NOTE]
 > The steps in this article don't apply to Enterprise Managed Users and users on GitHub Enterprise Server. If your GitHub account has been created by your company, you can skip this article.
 
 ## Signing up for a new personal account

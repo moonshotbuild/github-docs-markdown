@@ -36,10 +36,10 @@ For more information, see [Managing remote repositories](/en/get-started/git-bas
 
 If you plan to rename a repository that has a GitHub Pages site, we recommend using a custom domain for your site. This ensures that the site's URL isn't impacted by renaming the repository. For more information, see [About custom domains and GitHub Pages](/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages).
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub will not redirect calls to an action hosted by a renamed repository. Any workflow that uses that action will fail with the error `repository not found`. Instead, create a new repository and action with the new name and archive the old repository. For more information, see [Archiving repositories](/en/repositories/archiving-a-github-repository/archiving-repositories).
 
-> \[!WARNING]
+> [!WARNING]
 > If you create a new repository under your account in the future, do not reuse the original name of the renamed repository. If you do, redirects to the renamed repository will no longer work.
 
 1. On GitHub, navigate to the main page of the repository.

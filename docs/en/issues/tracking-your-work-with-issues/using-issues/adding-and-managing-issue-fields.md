@@ -21,7 +21,7 @@ You can set, edit, and clear issue field values on individual issues to capture 
 
 Issue fields appear in the right-hand sidebar of issues, alongside system fields like assignees, labels, and type. You can set values when creating or editing an issue. When you select an issue type while creating an issue, any fields pinned to that type automatically appear in the sidebar.
 
-> \[!NOTE]
+> [!NOTE]
 > Issue fields are currently available on issues only. Pull requests do not support issue fields.
 
 ## Setting a field value
@@ -36,7 +36,7 @@ Issue fields appear in the right-hand sidebar of issues, alongside system fields
    * For **date** fields, use the date picker to select a date, or type the date directly.
 5. Changes are saved automatically.
 
-> \[!NOTE]
+> [!NOTE]
 > Issue fields cannot currently be pre-filled via URL query parameters or set through issue templates. To set field values, use the issue sidebar, projects, the API, or GitHub Actions.
 
 ## Editing a field value

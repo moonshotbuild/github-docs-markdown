@@ -87,7 +87,7 @@ For more information about Docker and the Container registry, see [Working with 
 
 ## Authenticating to GitHub Packages
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Packages only supports authentication using a personal access token (classic). For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 You need an access token to publish, install, and delete private, internal, and public packages.

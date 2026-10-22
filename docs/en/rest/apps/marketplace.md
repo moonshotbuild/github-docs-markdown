@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/apps/marketplace"
 ---
 
-# REST API endpoints for GitHub Marketplace
+# REST API endpoints for {% data variables.product.prodname\_marketplace %}
 
 Use the REST API to interact with GitHub Marketplace
 
@@ -31,7 +31,7 @@ To test with stubbed data, use a stubbed endpoint in place of its production cou
 
 Make sure to replace stubbed endpoints with production endpoints before deploying your GitHub App.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get a subscription plan for an account

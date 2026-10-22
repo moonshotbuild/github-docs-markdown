@@ -19,7 +19,7 @@ breadcrumbs:
 
 To help manage your app on GitHub Marketplace, use these GitHub Marketplace API endpoints.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 Here are some useful endpoints available for Marketplace listings:
@@ -34,5 +34,5 @@ See these pages for details on how to authenticate when using the GitHub Marketp
 * [Authorization options for OAuth apps](/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
 * [Authentication options for GitHub Apps](/en/apps/creating-github-apps/authenticating-with-a-github-app/about-authentication-with-a-github-app)
 
-> \[!NOTE]
+> [!NOTE]
 > [Rate limits for the REST API](/en/rest/using-the-rest-api/rate-limits-for-the-rest-api) apply to all GitHub Marketplace API endpoints.

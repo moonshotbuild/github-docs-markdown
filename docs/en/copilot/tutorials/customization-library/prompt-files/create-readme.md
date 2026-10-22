@@ -21,9 +21,9 @@ breadcrumbs:
 
 Generate comprehensive README files for your projects.
 
-> \[!NOTE]
+> [!NOTE]
 >
-> * Copilot prompt files are in public preview and subject to change. Prompt files are only available in VS Code, Visual Studio, and JetBrains IDEs. See [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization#about-prompt-files).
+> * Copilot prompt files are in public preview and subject to change. Prompt files are only available in VS Code, Visual Studio, and JetBrains IDEs. See [Prompt files for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-files).
 > * For community-contributed examples of prompt files for specific languages and scenarios, see the [Awesome GitHub Copilot Customizations](https://awesome-copilot.github.com) site.
 
 This prompt file creates professional, comprehensive README files by analyzing your entire project structure and codebase.
@@ -86,5 +86,5 @@ Analyze the project structure, dependencies, and code to make the README accurat
 ## Further reading
 
 * [Use prompt files in Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/prompt-files) in the Visual Studio Code documentation - Information on how to create and use prompt files
-* [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization) - Overview of response customization in GitHub Copilot
+* [Prompt files for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-files) - Overview of prompt files in GitHub Copilot
 * [Awesome GitHub Copilot Customizations](https://github.com/github/awesome-copilot/blob/main/docs/README.prompts.md) - Repository of community-contributed custom prompt files and other customizations for specific languages and scenarios

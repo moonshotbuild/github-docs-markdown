@@ -19,7 +19,7 @@ breadcrumbs:
 
 To list your app in the GitHub Marketplace, you'll need to write descriptions of your app and provide images that follow GitHub's guidelines.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 Here are guidelines about the fields you'll need to fill out in the **Listing description** section of your draft listing.

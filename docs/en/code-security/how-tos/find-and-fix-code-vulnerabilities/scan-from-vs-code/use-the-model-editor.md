@@ -21,7 +21,7 @@ breadcrumbs:
 
 You can view, write, and edit CodeQL model packs in Visual Studio Code.
 
-> \[!NOTE]
+> [!NOTE]
 > CodeQL model packs are currently in public preview and subject to change. Model packs are supported for C/C++, C#, Java/Kotlin, Python, Ruby, and Rust analysis.
 >
 > The CodeQL model editor in the CodeQL extension for Visual Studio Code supports modeling dependencies for C#, Java/Kotlin, Python, and Ruby.
@@ -44,7 +44,7 @@ The rest of this article covers the practical aspects of modelling dependencies 
 
 ## Displaying the CodeQL model editor
 
-> \[!NOTE]
+> [!NOTE]
 > To use this public preview functionality, install the latest version of the CodeQL extension for Visual Studio Code.
 
 1. Open your CodeQL workspace in VS Code. For example, the [`vscode-codeql-starter` workspace](https://github.com/github/vscode-codeql-starter). If you are using the starter workspace, update the `ql` submodule from `main` to ensure that you have the queries used to gather data for the model editor.
@@ -59,7 +59,7 @@ The rest of this article covers the practical aspects of modelling dependencies 
 
 6. When the telemetry queries are complete, the APIs that have been identified are shown in the editor.
 
-> \[!TIP]
+> [!TIP]
 > You can move the CodeQL "Method Modeling" view from the primary sidebar to the secondary sidebar, if you want more space while you are modeling calls or methods. If you close the view, you can reopen it from the "View" menu in VS Code and clicking **Open View\...**.
 
 ## Modeling the calls your codebase makes to external APIs

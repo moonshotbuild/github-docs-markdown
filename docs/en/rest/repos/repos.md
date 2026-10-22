@@ -333,34 +333,34 @@ OAuth app tokens and personal access tokens (classic) need the public_repo or re
 
 - **`squash_merge_commit_title`** (string)
   Required when using squash_merge_commit_message.
-The default value for a squash merge commit title:
+  The default value for a squash merge commit title:
 
-PR_TITLE - default to the pull request's title.
-COMMIT_OR_PR_TITLE - default to the commit's title (if only one commit) or the pull request's title (when more than one commit).
+  PR_TITLE - default to the pull request's title.
+  COMMIT_OR_PR_TITLE - default to the commit's title (if only one commit) or the pull request's title (when more than one commit).
   Can be one of: `PR_TITLE`, `COMMIT_OR_PR_TITLE`
 
 - **`squash_merge_commit_message`** (string)
   The default value for a squash merge commit message:
 
-PR_BODY - default to the pull request's body.
-COMMIT_MESSAGES - default to the branch's commit messages.
-BLANK - default to a blank commit message.
+  PR_BODY - default to the pull request's body.
+  COMMIT_MESSAGES - default to the branch's commit messages.
+  BLANK - default to a blank commit message.
   Can be one of: `PR_BODY`, `COMMIT_MESSAGES`, `BLANK`
 
 - **`merge_commit_title`** (string)
   Required when using merge_commit_message.
-The default value for a merge commit title.
+  The default value for a merge commit title.
 
-PR_TITLE - default to the pull request's title.
-MERGE_MESSAGE - default to the classic title for a merge message (e.g., Merge pull request #123 from branch-name).
+  PR_TITLE - default to the pull request's title.
+  MERGE_MESSAGE - default to the classic title for a merge message (e.g., Merge pull request #123 from branch-name).
   Can be one of: `PR_TITLE`, `MERGE_MESSAGE`
 
 - **`merge_commit_message`** (string)
   The default value for a merge commit message.
 
-PR_TITLE - default to the pull request's title.
-PR_BODY - default to the pull request's body.
-BLANK - default to a blank commit message.
+  PR_TITLE - default to the pull request's title.
+  PR_BODY - default to the pull request's body.
+  BLANK - default to a blank commit message.
   Can be one of: `PR_BODY`, `PR_TITLE`, `BLANK`
 
 - **`custom_properties`** (object)
@@ -762,7 +762,7 @@ Note: To edit a repository's topics, use the Replace all repository topics endpo
 
 - **`private`** (boolean)
   Either true to make the repository private or false to make it public. Default: false.
-Note: You will get a 422 error if the organization restricts changing repository visibility to organization owners and a non-owner tries to change the value of private.
+  Note: You will get a 422 error if the organization restricts changing repository visibility to organization owners and a non-owner tries to change the value of private.
   Default: `false`
 
 - **`visibility`** (string)
@@ -771,15 +771,15 @@ Note: You will get a 422 error if the organization restricts changing repository
 
 - **`security_and_analysis`** (object or null)
   Specify which security and analysis features to enable or disable for the repository.
-To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
-For example, to enable GitHub Advanced Security, use this data in the body of the PATCH request:
-{ "security_and_analysis": {"advanced_security": { "status": "enabled" } } }.
-You can check which security and analysis features are currently enabled by using a GET /repos/{owner}/{repo} request.
+  To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
+  For example, to enable GitHub Advanced Security, use this data in the body of the PATCH request:
+  { "security_and_analysis": {"advanced_security": { "status": "enabled" } } }.
+  You can check which security and analysis features are currently enabled by using a GET /repos/{owner}/{repo} request.
   - **`advanced_security`** (object)
     Use the status property to enable or disable GitHub Advanced Security for this repository.
-For more information, see "About GitHub Advanced
-Security."
-For standalone Code Scanning or Secret Protection products, this parameter cannot be used.
+    For more information, see "About GitHub Advanced
+    Security."
+    For standalone Code Scanning or Secret Protection products, this parameter cannot be used.
     - **`status`** (string)
       Can be enabled or disabled.
   - **`code_security`** (object)
@@ -812,11 +812,11 @@ For standalone Code Scanning or Secret Protection products, this parameter canno
       Can be enabled or disabled.
   - **`secret_scanning_delegated_bypass_options`** (object)
     Feature options for secret scanning delegated bypass.
-This object is only honored when security_and_analysis.secret_scanning_delegated_bypass.status is set to enabled.
-You can send this object in the same request as secret_scanning_delegated_bypass, or update just the options in a separate request.
+    This object is only honored when security_and_analysis.secret_scanning_delegated_bypass.status is set to enabled.
+    You can send this object in the same request as secret_scanning_delegated_bypass, or update just the options in a separate request.
     - **`reviewers`** (array of objects)
       The bypass reviewers for secret scanning delegated bypass.
-If you omit this field, the existing set of reviewers is unchanged.
+      If you omit this field, the existing set of reviewers is unchanged.
       - **`reviewer_id`** (integer) (required)
         The ID of the team or role selected as a bypass reviewer
       - **`reviewer_type`** (string) (required)
@@ -884,34 +884,34 @@ If you omit this field, the existing set of reviewers is unchanged.
 
 - **`squash_merge_commit_title`** (string)
   Required when using squash_merge_commit_message.
-The default value for a squash merge commit title:
+  The default value for a squash merge commit title:
 
-PR_TITLE - default to the pull request's title.
-COMMIT_OR_PR_TITLE - default to the commit's title (if only one commit) or the pull request's title (when more than one commit).
+  PR_TITLE - default to the pull request's title.
+  COMMIT_OR_PR_TITLE - default to the commit's title (if only one commit) or the pull request's title (when more than one commit).
   Can be one of: `PR_TITLE`, `COMMIT_OR_PR_TITLE`
 
 - **`squash_merge_commit_message`** (string)
   The default value for a squash merge commit message:
 
-PR_BODY - default to the pull request's body.
-COMMIT_MESSAGES - default to the branch's commit messages.
-BLANK - default to a blank commit message.
+  PR_BODY - default to the pull request's body.
+  COMMIT_MESSAGES - default to the branch's commit messages.
+  BLANK - default to a blank commit message.
   Can be one of: `PR_BODY`, `COMMIT_MESSAGES`, `BLANK`
 
 - **`merge_commit_title`** (string)
   Required when using merge_commit_message.
-The default value for a merge commit title.
+  The default value for a merge commit title.
 
-PR_TITLE - default to the pull request's title.
-MERGE_MESSAGE - default to the classic title for a merge message (e.g., Merge pull request #123 from branch-name).
+  PR_TITLE - default to the pull request's title.
+  MERGE_MESSAGE - default to the classic title for a merge message (e.g., Merge pull request #123 from branch-name).
   Can be one of: `PR_TITLE`, `MERGE_MESSAGE`
 
 - **`merge_commit_message`** (string)
   The default value for a merge commit message.
 
-PR_TITLE - default to the pull request's title.
-PR_BODY - default to the pull request's body.
-BLANK - default to a blank commit message.
+  PR_TITLE - default to the pull request's title.
+  PR_BODY - default to the pull request's body.
+  BLANK - default to a blank commit message.
   Can be one of: `PR_BODY`, `PR_TITLE`, `BLANK`
 
 - **`archived`** (boolean)
@@ -1057,19 +1057,19 @@ see "Viewing activity and data for your repository."
 
 - **`ref`** (string)
   The Git reference for the activities you want to list.
-The ref for a branch can be formatted either as refs/heads/BRANCH_NAME or BRANCH_NAME, where BRANCH_NAME is the name of your branch.
+  The ref for a branch can be formatted either as refs/heads/BRANCH_NAME or BRANCH_NAME, where BRANCH_NAME is the name of your branch.
 
 - **`actor`** (string)
   The GitHub username to use to filter by the actor who performed the activity.
 
 - **`time_period`** (string)
   The time period to filter by.
-For example, day will filter for activity that occurred in the past 24 hours, and week will filter for activity that occurred in the past 7 days (168 hours).
+  For example, day will filter for activity that occurred in the past 24 hours, and week will filter for activity that occurred in the past 7 days (168 hours).
   Can be one of: `day`, `week`, `month`, `quarter`, `year`
 
 - **`activity_type`** (string)
   The activity type to filter by.
-For example, you can choose to filter by "force_push", to see all force pushes to the repository.
+  For example, you can choose to filter by "force_push", to see all force pushes to the repository.
   Can be one of: `push`, `force_push`, `branch_creation`, `branch_deletion`, `pr_merge`, `merge_queue_merge`
 
 ### HTTP response status codes
@@ -2554,9 +2554,9 @@ The authenticated user has explicit permission to access repositories they own, 
 - **`affiliation`** (string)
   Comma-separated list of values. Can include:
 
-owner: Repositories that are owned by the authenticated user.
-collaborator: Repositories that the user has been added to as a collaborator.
-organization_member: Repositories that the user has access to through being a member of an organization. This includes every repository on every team that the user is on.
+  owner: Repositories that are owned by the authenticated user.
+  collaborator: Repositories that the user has been added to as a collaborator.
+  organization_member: Repositories that the user has access to through being a member of an organization. This includes every repository on every team that the user is on.
   Default: `owner,collaborator,organization_member`
 
 - **`type`** (string)
@@ -2829,34 +2829,34 @@ OAuth app tokens and personal access tokens (classic) need the public_repo or re
 
 - **`squash_merge_commit_title`** (string)
   Required when using squash_merge_commit_message.
-The default value for a squash merge commit title:
+  The default value for a squash merge commit title:
 
-PR_TITLE - default to the pull request's title.
-COMMIT_OR_PR_TITLE - default to the commit's title (if only one commit) or the pull request's title (when more than one commit).
+  PR_TITLE - default to the pull request's title.
+  COMMIT_OR_PR_TITLE - default to the commit's title (if only one commit) or the pull request's title (when more than one commit).
   Can be one of: `PR_TITLE`, `COMMIT_OR_PR_TITLE`
 
 - **`squash_merge_commit_message`** (string)
   The default value for a squash merge commit message:
 
-PR_BODY - default to the pull request's body.
-COMMIT_MESSAGES - default to the branch's commit messages.
-BLANK - default to a blank commit message.
+  PR_BODY - default to the pull request's body.
+  COMMIT_MESSAGES - default to the branch's commit messages.
+  BLANK - default to a blank commit message.
   Can be one of: `PR_BODY`, `COMMIT_MESSAGES`, `BLANK`
 
 - **`merge_commit_title`** (string)
   Required when using merge_commit_message.
-The default value for a merge commit title.
+  The default value for a merge commit title.
 
-PR_TITLE - default to the pull request's title.
-MERGE_MESSAGE - default to the classic title for a merge message (e.g., Merge pull request #123 from branch-name).
+  PR_TITLE - default to the pull request's title.
+  MERGE_MESSAGE - default to the classic title for a merge message (e.g., Merge pull request #123 from branch-name).
   Can be one of: `PR_TITLE`, `MERGE_MESSAGE`
 
 - **`merge_commit_message`** (string)
   The default value for a merge commit message.
 
-PR_TITLE - default to the pull request's title.
-PR_BODY - default to the pull request's body.
-BLANK - default to a blank commit message.
+  PR_TITLE - default to the pull request's title.
+  PR_BODY - default to the pull request's body.
+  BLANK - default to a blank commit message.
   Can be one of: `PR_BODY`, `PR_TITLE`, `BLANK`
 
 - **`has_downloads`** (boolean)

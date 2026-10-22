@@ -133,7 +133,7 @@ After you generate the script, review the file and, optionally, edit the script.
 
 If your trial run was successful, and you were able to complete the follow-up tasks, you can proceed to the real migration.
 
-> \[!WARNING] We recommend halting work in the repositories you are migrating. Any changes made during or after the migration will need to be manually migrated.
+> [!WARNING] We recommend halting work in the repositories you are migrating. Any changes made during or after the migration will need to be manually migrated.
 
 Run the script you generated. Replace FILENAME in the commands below with the filename you provided when generating the script.
 

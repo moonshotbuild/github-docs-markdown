@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can configure an LTI-compliant learning management system (LMS) course to connect to GitHub Classroom so that you can import a roster for your classroom.
 
-> \[!WARNING]
+> [!WARNING]
 > **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
 > For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
 
@@ -31,7 +31,7 @@ You can connect a learning management system (LMS) to GitHub Classroom and impor
 
 Before you can connect your LMS to a classroom, an administrator for your LMS instance needs to register your LMS with GitHub Classroom to initiate the OAuth handshake. An admin only needs to do this registration process once, then any teacher who uses their LMS instance may sync their LMS courses to classrooms. For more information, see [Register a learning management system with GitHub Classroom](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/register-a-learning-management-system-with-github-classroom).
 
-> \[!NOTE]
+> [!NOTE]
 > Google Classroom does not use the LTI protocol, so does not need to be connected to GitHub Classroom before importing the roster. For more information, see [Connect a learning management system course to a classroom](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/connect-a-learning-management-system-course-to-a-classroom#importing-a-roster-from-google-classroom).
 
 To configure an LMS to connect to GitHub Classroom, you must first create a classroom. For more information, see [Manage classrooms](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/manage-classrooms#creating-a-classroom).
@@ -53,7 +53,7 @@ GitHub has tested and verified registration, connection and the import of roster
 * Sakai
 * Google Classroom
 
-> \[!NOTE]
+> [!NOTE]
 > Other LMSes that implement LTI 1.3 may also work with GitHub Classroom, but have not yet been verified. LMS admins may need to configure custom settings around privacy and button placement and may need to provide teachers with documentation on how to launch into GitHub Classroom from the LMS.
 
 Google Classroom does not use the LTI protocol, so does not need to be connected to GitHub Classroom before importing the roster. For more information, see [Connect a learning management system course to a classroom](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/connect-a-learning-management-system-course-to-a-classroom#importing-a-roster-from-google-classroom).
@@ -70,7 +70,7 @@ An administrator needs to register your LMS instance with classroom before you c
 4. Click **GitHub Classroom**.
 5. In GitHub Classroom, select a classroom to link with your LMS course.
 
-   > \[!NOTE] This step might give you an error message, "Unable to launch link. The Tool Provider has been disabled by the System Administrator: GitHub Classroom". To resolve this error, ensure that the status of the “GitHub Classroom” tool is set to `Approved`. In the "Admin Panel," click **LTI Tool Providers**. Hover on the name next to GitHub Classroom and click **Approve**.
+   > [!NOTE] This step might give you an error message, "Unable to launch link. The Tool Provider has been disabled by the System Administrator: GitHub Classroom". To resolve this error, ensure that the status of the “GitHub Classroom” tool is set to `Approved`. In the "Admin Panel," click **LTI Tool Providers**. Hover on the name next to GitHub Classroom and click **Approve**.
 
 Once your course is linked, you can import your roster from your LMS course to your classroom. For more information, see [Importing a roster from your LMS](#importing-a-roster-from-your-lms).
 

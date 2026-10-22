@@ -27,7 +27,7 @@ To add your SSH private key to the ssh-agent, you can specify the path to the Ap
 /usr/bin/ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 ```
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The `--apple-use-keychain` option is in Apple's standard version of `ssh-add`. In macOS versions prior to Monterey (12.0), use `-K` instead of `--apple-use-keychain`.
 > * If you created your key with a different name, or if you are adding an existing key that has a different name, replace *id\_ed25519* in the command with the name of your private key file.

@@ -21,9 +21,9 @@ breadcrumbs:
 
 Review and manage the coding conventions, preferences, and other details that Copilot has stored from your interactions.
 
-> \[!NOTE] This feature is currently in public preview and is subject to change.
+> [!NOTE] This feature is currently in public preview and is subject to change.
 
-Copilot Memory lets Copilot learn about your codebase and your personal preferences, helping Copilot agents work more effectively. For more information, see [About GitHub Copilot Memory](/en/copilot/concepts/agents/copilot-memory).
+Copilot Memory lets Copilot learn about your codebase and your personal preferences, helping Copilot agents work more effectively. For more information, see [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory).
 
 Copilot Memory is enabled for your account by default if:
 

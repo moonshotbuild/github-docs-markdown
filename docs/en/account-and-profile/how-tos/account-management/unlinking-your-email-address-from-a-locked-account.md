@@ -19,7 +19,7 @@ breadcrumbs:
 
 If you have lost your two-factor authentication (2FA) credentials and are unable to recover access, you can remove the connection between your email address and a 2FA locked account.
 
-> \[!WARNING]
+> [!WARNING]
 > Following these steps will not disable 2FA or provide access to a locked account, but will instead unlink the associated email address so it may be used for a different account. If you cannot regain access to the 2FA locked account, these steps will permanently break the link between the account and the linked email address. Before continuing, be sure you have lost all access to your account. See [Recovering your account if you lose your 2FA credentials](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/recovering-your-account-if-you-lose-your-2fa-credentials).
 
 ### Unlinking with your password
@@ -30,7 +30,7 @@ If you know your password, you can sign in with your password to unlink your ema
 
 2. To prompt two-factor authentication, type your username and password, then click **Sign in**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you have linked a social account to your GitHub account, you can sign-in with your social login instead of using your password.
 
 3. Under "More options", click **2FA recovery code**.
@@ -40,7 +40,7 @@ If you know your password, you can sign in with your password to unlink your ema
 5. In the modal that appears, click **I understand, get started**.
 
 6. You may be required to verify an email address. To send an email containing a one-time password to each email address associated with your account, click **Send one-time password**.
-   > \[!NOTE]
+   > [!NOTE]
    > The one-time password will be sent to your primary and backup email addresses. Unless you have previously chosen a specific backup email address, all verified emails are considered backup email addresses.
 
 7. Type the one-time password from your email in the "One-time password" text field, then click **Verify email address**.
@@ -58,7 +58,7 @@ If you know your password, you can sign in with your password to unlink your ema
 12. To finish unlinking your email, click **Unlink**.
 
 13. Optionally, to create a new account and link your newly unlinked email, click **Create a new account**.
-    > \[!NOTE]
+    > [!NOTE]
     > You can also link your unlinked email to an existing GitHub account. See [Adding an email address to your GitHub account](/en/account-and-profile/how-tos/email-preferences/adding-an-email-address-to-your-github-account).
 
 14. Optionally, if you have any form of payment set up on the locked account, please contact us through the [GitHub Support portal](https://support.github.com/) to cancel future payments. For example, you might have a paid subscription or sponsor developers through GitHub Sponsors. If you are sponsored through GitHub Sponsors, please mention this so that the team can help you migrate your sponsorships.
@@ -70,7 +70,7 @@ If you do not know your account password, you can request a password reset link 
 1. To request a new password, visit <https://github.com/password_reset>.
 
 2. Enter the email address associated with your account, then click **Send password reset email.**
-   > \[!NOTE]
+   > [!NOTE]
    > Only primary and backup email addresses can be used to request a new password. Unless you have previously chosen a specific backup email address, all verified emails are considered backup email addresses.
 
 3. GitHub will email you a link that will allow you to reset your password. You must click on this link within 3 hours of receiving the email. If you didn't receive an email from us, make sure to check your spam folder.
@@ -92,7 +92,7 @@ If you do not know your account password, you can request a password reset link 
 10. To finish unlinking your email, click **Unlink**.
 
 11. Optionally, to create a new account and link your newly unlinked email, click **Create a new account**.
-    > \[!NOTE]
+    > [!NOTE]
     > You can also link your unlinked email to an existing GitHub account. See [Adding an email address to your GitHub account](/en/account-and-profile/how-tos/email-preferences/adding-an-email-address-to-your-github-account).
 
 12. Optionally, if you have any form of payment set up on the locked account, please contact us through the [GitHub Support portal](https://support.github.com/) to cancel future payments. For example, you might have a paid subscription or sponsor developers through GitHub Sponsors. If you are sponsored through GitHub Sponsors, please mention this so that the team can help you migrate your sponsorships.

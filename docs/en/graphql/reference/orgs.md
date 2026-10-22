@@ -285,7 +285,7 @@ An account on GitHub, with one or more owners, that has repositories, members an
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (AuditLogOrder): Ordering options for the returned audit log entries.
+  * `orderBy` (AuditLogOrder): Ordering options for the returned audit log entries. Default: `{field: CREATED_AT, direction: DESC}`.
   * `query` (String): The query string to filter audit entries.
 
 * `avatarUrl` (URI!): A URL pointing to the organization's public avatar.
@@ -302,7 +302,7 @@ An account on GitHub, with one or more owners, that has repositories, members an
   * `isApproved` (Boolean): Filter by if the domain is approved.
   * `isVerified` (Boolean): Filter by if the domain is verified.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (VerifiableDomainOrder): Ordering options for verifiable domains returned.
+  * `orderBy` (VerifiableDomainOrder): Ordering options for verifiable domains returned. Default: `{field: DOMAIN, direction: ASC}`.
 
 * `email` (String): The organization's public email.
 * `enterpriseOwners` (OrganizationEnterpriseOwnerConnection!): A list of owners of the organization's enterprise account.
@@ -310,7 +310,7 @@ An account on GitHub, with one or more owners, that has repositories, members an
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (OrgEnterpriseOwnerOrder): Ordering options for enterprise owners returned from the connection.
+  * `orderBy` (OrgEnterpriseOwnerOrder): Ordering options for enterprise owners returned from the connection. Default: `{field: LOGIN, direction: ASC}`.
   * `organizationRole` (RoleInOrganization): The organization role to filter by.
   * `query` (String): The search string to look for.
 
@@ -323,7 +323,7 @@ An account on GitHub, with one or more owners, that has repositories, members an
   * `ecosystem` (SecurityAdvisoryEcosystem): An ecosystem to filter vulnerabilities by.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SecurityVulnerabilityOrder): Ordering options for the returned vulnerabilities.
+  * `orderBy` (SecurityVulnerabilityOrder): Ordering options for the returned vulnerabilities. Default: `{field: UPDATED_AT, direction: DESC}`.
   * `package` (String): A package name to filter vulnerabilities by.
   * `severities` ([SecurityAdvisorySeverity!]): A list of severities to filter vulnerabilities by.
 
@@ -334,7 +334,7 @@ An account on GitHub, with one or more owners, that has repositories, members an
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (IpAllowListEntryOrder): Ordering options for IP allow list entries returned.
+  * `orderBy` (IpAllowListEntryOrder): Ordering options for IP allow list entries returned. Default: `{field: ALLOW_LIST_VALUE, direction: ASC}`.
 
 * `ipAllowListForInstalledAppsEnabledSetting` (IpAllowListForInstalledAppsEnabledSettingValue!): The setting value for whether the organization has IP allow list configuration for installed GitHub Apps enabled.
 * `isSponsoredBy` (Boolean!): Whether the given account is sponsoring this user/organization.
@@ -347,14 +347,14 @@ An account on GitHub, with one or more owners, that has repositories, members an
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (IssueFieldOrder): Ordering options for issue fields returned from the connection.
+  * `orderBy` (IssueFieldOrder): Ordering options for issue fields returned from the connection. Default: `{field: CREATED_AT, direction: ASC}`.
 
 * `issueTypes` (IssueTypeConnection): A list of the organization's issue types.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (IssueTypeOrder): Ordering options for issue types returned from the connection.
+  * `orderBy` (IssueTypeOrder): Ordering options for issue types returned from the connection. Default: `{field: CREATED_AT, direction: ASC}`.
 
 * `itemShowcase` (ProfileItemShowcase!): Showcases a selection of repositories and gists that the profile owner has
 either curated or that have been selected automatically based on popularity.
@@ -364,7 +364,7 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorAndLifetimeValueOrder): Ordering options for results returned from the connection.
+  * `orderBy` (SponsorAndLifetimeValueOrder): Ordering options for results returned from the connection. Default: `{field: SPONSOR_LOGIN, direction: ASC}`.
 
 * `location` (String): The organization's public profile location.
 * `login` (String!): The organization's login name.
@@ -374,14 +374,14 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
   * `login` (String): Filter mannequins by login.
-  * `orderBy` (MannequinOrder): Ordering options for mannequins returned from the connection.
+  * `orderBy` (MannequinOrder): Ordering options for mannequins returned from the connection. Default: `{field: CREATED_AT, direction: ASC}`.
 
 * `memberStatuses` (UserStatusConnection!): Get the status messages members of this entity have set that are either public or visible only to the organization.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (UserStatusOrder): Ordering options for user statuses returned from the connection.
+  * `orderBy` (UserStatusOrder): Ordering options for user statuses returned from the connection. Default: `{field: UPDATED_AT, direction: DESC}`.
 
 * `membersCanForkPrivateRepositories` (Boolean!): Members can fork private repositories in this organization.
 * `membersWithRole` (OrganizationMemberConnection!): A list of users who are members of this organization. _(Pagination: `after`, `before`, `first`, `last`)_
@@ -397,7 +397,7 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
   * `names` ([String]): Find packages by their names.
-  * `orderBy` (PackageOrder): Ordering of the returned packages.
+  * `orderBy` (PackageOrder): Ordering of the returned packages. Default: `{field: CREATED_AT, direction: DESC}`.
   * `packageType` (PackageType): Filter registry package by type.
   * `repositoryId` (ID): Find packages in a repository by ID.
 
@@ -441,7 +441,7 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
   * `minPermissionLevel` (ProjectV2PermissionLevel): Filter projects based on user role. Default: `READ`.
-  * `orderBy` (ProjectV2Order): How to order the returned projects.
+  * `orderBy` (ProjectV2Order): How to order the returned projects. Default: `{field: NUMBER, direction: DESC}`.
   * `query` (String): A project to search for under the owner.
 
 * `recentProjects` (ProjectV2Connection!): Recent projects that this user has modified in the context of the owner. _(Pagination: `after`, `before`, `first`, `last`)_
@@ -460,7 +460,7 @@ current viewer owns.
   * `orderBy` (RepositoryOrder): Ordering options for repositories returned from the connection.
   * `ownerAffiliations` ([RepositoryAffiliation]): Array of owner's affiliation options for repositories returned from the
 connection. For example, OWNER will include only repositories that the
-organization or user being viewed owns.
+organization or user being viewed owns. Default: `[OWNER, COLLABORATOR]`.
   * `privacy` (RepositoryPrivacy): If non-null, filters repositories according to privacy. Internal
 repositories are considered private; consider using the visibility argument
 if only internal repositories are needed. Cannot be combined with the
@@ -480,7 +480,7 @@ visibility argument.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `onlyAnswers` (Boolean): Filter discussion comments to only those that were marked as the answer.
+  * `onlyAnswers` (Boolean): Filter discussion comments to only those that were marked as the answer. Default: `false`.
   * `repositoryId` (ID): Filter discussion comments to only those in a specific repository.
 
 * `repositoryDiscussions` (DiscussionConnection!): Discussions this user has started.
@@ -490,16 +490,16 @@ including both answered and unanswered discussions.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (DiscussionOrder): Ordering options for discussions returned from the connection.
+  * `orderBy` (DiscussionOrder): Ordering options for discussions returned from the connection. Default: `{field: CREATED_AT, direction: DESC}`.
   * `repositoryId` (ID): Filter discussions to only those in a specific repository.
-  * `states` ([DiscussionState!]): A list of states to filter the discussions by.
+  * `states` ([DiscussionState!]): A list of states to filter the discussions by. Default: `[]`.
 
 * `repositoryMigrations` (RepositoryMigrationConnection!): A list of all repository migrations for this organization.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (RepositoryMigrationOrder): Ordering options for repository migrations returned.
+  * `orderBy` (RepositoryMigrationOrder): Ordering options for repository migrations returned. Default: `{field: CREATED_AT, direction: ASC}`.
   * `repositoryName` (String): Filter repository migrations by repository name.
   * `state` (MigrationState): Filter repository migrations by state.
 
@@ -527,28 +527,28 @@ access to members.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorOrder): Ordering options for the users and organizations returned from the connection.
+  * `orderBy` (SponsorOrder): Ordering options for the users and organizations returned from the connection. Default: `{field: RELEVANCE, direction: DESC}`.
 
 * `sponsors` (SponsorConnection!): List of sponsors for this user or organization.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorOrder): Ordering options for sponsors returned from the connection.
+  * `orderBy` (SponsorOrder): Ordering options for sponsors returned from the connection. Default: `{field: RELEVANCE, direction: DESC}`.
   * `tierId` (ID): If given, will filter for sponsors at the given tier. Will only return
 sponsors whose tier the viewer is permitted to see.
 
 * `sponsorsActivities` (SponsorsActivityConnection!): Events involving this sponsorable, such as new sponsorships.
-  * `actions` ([SponsorsActivityAction!]): Filter activities to only the specified actions.
+  * `actions` ([SponsorsActivityAction!]): Filter activities to only the specified actions. Default: `[]`.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `includeAsSponsor` (Boolean): Whether to include those events where this sponsorable acted as the sponsor.
 Defaults to only including events where this sponsorable was the recipient
-of a sponsorship.
+of a sponsorship. Default: `false`.
   * `includePrivate` (Boolean): Whether or not to include private activities in the result set. Defaults to including public and private activities. Default: `true`.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorsActivityOrder): Ordering options for activity returned from the connection.
+  * `orderBy` (SponsorsActivityOrder): Ordering options for activity returned from the connection. Default: `{field: TIMESTAMP, direction: DESC}`.
   * `period` (SponsorsActivityPeriod): Filter activities returned to only those that occurred in the most recent
 specified time period. Set to ALL to avoid filtering by when the activity
 occurred. Will be ignored if since or until is given. Default: `MONTH`.
@@ -569,7 +569,7 @@ get the sponsorship back even if it has been cancelled. Default: `true`.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorshipNewsletterOrder): Ordering options for sponsorship updates returned from the connection.
+  * `orderBy` (SponsorshipNewsletterOrder): Ordering options for sponsorship updates returned from the connection. Default: `{field: CREATED_AT, direction: DESC}`.
 
 * `sponsorshipsAsMaintainer` (SponsorshipConnection!): The sponsorships where this user or organization is the maintainer receiving the funds.
   * `activeOnly` (Boolean): Whether to include only sponsorships that are active right now, versus all
@@ -577,7 +577,7 @@ sponsorships this maintainer has ever received. Default: `true`.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
-  * `includePrivate` (Boolean): Whether or not to include private sponsorships in the result set.
+  * `includePrivate` (Boolean): Whether or not to include private sponsorships in the result set. Default: `false`.
   * `last` (Int): Returns the last n elements from the list.
   * `orderBy` (SponsorshipOrder): Ordering options for sponsorships returned from this connection. If left
 blank, the sponsorships will be ordered based on relevancy to the viewer.
@@ -608,7 +608,7 @@ blank, the sponsorships will be ordered based on relevancy to the viewer.
   * `privacy` (TeamPrivacy): If non-null, filters teams according to privacy.
   * `query` (String): If non-null, filters teams with query on team name and team slug.
   * `role` (TeamRole): If non-null, filters teams according to whether the viewer is an admin or member on team.
-  * `rootTeamsOnly` (Boolean): If true, restrict to only root teams.
+  * `rootTeamsOnly` (Boolean): If true, restrict to only root teams. Default: `false`.
   * `userLogins` ([String!]): User logins to filter by.
 
 * `teamsResourcePath` (URI!): The HTTP path listing organization's teams.
@@ -617,7 +617,7 @@ blank, the sponsorships will be ordered based on relevancy to the viewer.
 spent on GitHub to fund sponsorships. Only returns a value when viewed by the
 user themselves or by a user who can manage sponsorships for the requested organization.
   * `since` (DateTime): Filter payments to those that occurred on or after this time.
-  * `sponsorableLogins` ([String!]): Filter payments to those made to the users or organizations with the specified usernames.
+  * `sponsorableLogins` ([String!]): Filter payments to those made to the users or organizations with the specified usernames. Default: `[]`.
   * `until` (DateTime): Filter payments to those that occurred before this time.
 
 * `twitterUsername` (String): The organization's Twitter username.

@@ -56,6 +56,8 @@ To understand your license usage, and which licenses you can free up, it helps t
 
 Users can contribute to multiple repositories or organizations. Usage is measured across the whole organization or enterprise to ensure that each member uses one license regardless of how many repositories or organizations the user contributes to.
 
+To see which committers and repositories contribute to your license usage, download the Code Quality CSV report from the **Licensing** page. See [Downloading license use for your enterprise or organization](/en/billing/how-tos/products/download-license-use).
+
 ## Further reading
 
 * [Preventing code quality issues from reaching your default branch](/en/code-security/tutorials/improve-code-quality/catch-issues-before-merge)

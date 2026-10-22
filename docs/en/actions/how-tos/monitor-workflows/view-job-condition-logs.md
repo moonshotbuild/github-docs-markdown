@@ -47,5 +47,5 @@ Result: false
 
 In this example, the expanded line reveals that `github.repository` was `'my-username/octo-repo-prod'` (not `'octo-org/octo-repo-prod'`), which caused the condition to evaluate to `false`.
 
-> \[!NOTE]
+> [!NOTE]
 > Expression logs are only available for job-level `if` conditions. For step-level conditions, you can enable debug logging to see expression evaluation in the job logs. For more information, see [Enabling debug logging](/en/actions/how-tos/monitor-workflows/enable-debug-logging).

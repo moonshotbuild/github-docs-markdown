@@ -29,7 +29,7 @@ Your bio is a sentence or two that appears under your profile picture. Use your 
 
 Navigate to your [profile settings](https://github.com/settings/profile) to update your bio. Keep this description short and concise. Consider something like, "Hello! My name is Mona and I'm looking for work as a front end developer."
 
-> \[!NOTE] While you're here, you can update the rest of your profile settings. Consider including a profile picture, a link to your personal website or portfolio, and links to your social profiles.
+> [!NOTE] While you're here, you can update the rest of your profile settings. Consider including a profile picture, a link to your personal website or portfolio, and links to your social profiles.
 
 ## Step 2: Create a profile README
 
@@ -45,7 +45,7 @@ Things you may want to add to your profile README include:
 
 To create your profile README, see [Managing your profile README](/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme#adding-a-profile-readme).
 
-> \[!TIP] Look for ways to show off your coding skills within your profile README. For example, [@new2code](https://github.com/new2code) demonstrates knowledge of GitHub Actions and Python scripts by automating daily updates to the [Countdown to GitHub Universe](https://github.com/new2code#countdown-to-github-universe) section.
+> [!TIP] Look for ways to show off your coding skills within your profile README. For example, [@new2code](https://github.com/new2code) demonstrates knowledge of GitHub Actions and Python scripts by automating daily updates to the [Countdown to GitHub Universe](https://github.com/new2code#countdown-to-github-universe) section.
 
 ## Step 3: Showcase your best projects
 

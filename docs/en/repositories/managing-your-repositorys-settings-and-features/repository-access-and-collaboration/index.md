@@ -21,7 +21,7 @@ You can give people collaborator access to repositories owned by your personal a
 
 * [Inviting collaborators to a personal repository](/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository)
 
-  You can add users as collaborators to your personal repository.
+  You can invite users to become collaborators to your personal repository.
 
 * [Removing a collaborator from a personal repository](/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/removing-a-collaborator-from-a-personal-repository)
 

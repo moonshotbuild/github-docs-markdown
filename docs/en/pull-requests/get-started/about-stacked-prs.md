@@ -73,7 +73,7 @@ Stacked pull requests are available in the following:
 * Programmatic support via Webhooks, REST API, and GraphQL
 * For agents, via the `gh-stack` skill
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Stacked pull requests require all branches to be in the same repository. Cross-fork stacks are not supported.
 > * Stacked pull requests are not supported in GitHub Desktop.
@@ -119,7 +119,7 @@ You can merge your entire stack, a single pull request, or a portion of the stac
 
 Stacks support merge commit, squash, and rebase merge methods, and they are merge-queue aware. The resulting commit history is the same as merging each pull request individually, starting from the bottom.
 
-> \[!NOTE]
+> [!NOTE]
 > If you merge via the API and want to use stacked pull requests, you'll need to use the asynchronous merge API for stacks. See [REST API endpoints for pull requests](/en/rest/pulls/pulls?apiVersion=2026-03-10#merge-a-pull-request-asynchronously).
 
 ## Next steps

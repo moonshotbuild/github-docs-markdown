@@ -32,7 +32,7 @@ You can switch the AI model that's used for Copilot inline suggestions if:
 * An alternative model is currently available
 * You are using the latest releases of VS Code with the latest version of the GitHub Copilot extension
 
-> \[!NOTE] The list of available models will change over time. When only one inline suggestion model is available, the model picker will only show that model. Preview models and additional inline suggestion models will be added to the picker as they become available.
+> [!NOTE] The list of available models will change over time. When only one inline suggestion model is available, the model picker will only show that model. Preview models and additional inline suggestion models will be added to the picker as they become available.
 
 For more information, see [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides#code-suggestions).
 
@@ -62,7 +62,7 @@ You can switch the AI model that's used for Copilot inline suggestions if:
 * An alternative model is currently available
 * You are using Visual Studio 17.14 Preview 2 or later
 
-> \[!NOTE] The list of available models will change over time. When only one inline suggestion model is available, the model picker will only show that model. Preview models and additional inline suggestion models will be added to the picker as they become available.
+> [!NOTE] The list of available models will change over time. When only one inline suggestion model is available, the model picker will only show that model. Preview models and additional inline suggestion models will be added to the picker as they become available.
 
 For more information, see [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides#code-suggestions).
 
@@ -85,7 +85,7 @@ You can switch the AI model that's used for Copilot inline suggestions if:
 * An alternative model is currently available
 * You are using the latest release of JetBrains IDEs with the latest version of the GitHub Copilot extension
 
-> \[!NOTE] The list of available models will change over time. When only one inline suggestion model is available, the model picker will only show that model. Preview models and additional inline suggestion models will be added to the picker as they become available.
+> [!NOTE] The list of available models will change over time. When only one inline suggestion model is available, the model picker will only show that model. Preview models and additional inline suggestion models will be added to the picker as they become available.
 
 For more information, see [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides#code-suggestions).
 

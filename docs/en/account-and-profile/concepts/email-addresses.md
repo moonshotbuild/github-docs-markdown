@@ -43,7 +43,7 @@ Until you verify your email address, your account will use a placeholder email a
 
 Once you verify an email with a managed user account, you won't be able to use the email to sign up for a personal account on GitHub.com.
 
-> \[!NOTE] If you need to use the same email address for both your managed user account and another GitHub account (for example, for innersource, open source, or other valid use cases), you must sign in to your managed user account and unverify the email in your account settings.
+> [!NOTE] If you need to use the same email address for both your managed user account and another GitHub account (for example, for innersource, open source, or other valid use cases), you must sign in to your managed user account and unverify the email in your account settings.
 >
 > The email will still be linked to your managed user account, so you can continue signing in through your organization's or enterprise's identity provider (IdP). However, because the email is unverified, it may affect your access to third-party applications that identify users based solely on email address.
 

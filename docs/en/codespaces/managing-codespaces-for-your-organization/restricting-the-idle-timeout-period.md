@@ -25,7 +25,7 @@ The personal settings of a GitHub user allow them to define their own timeout pe
 
 As an organization owner, you may want to configure constraints on the maximum idle timeout period for codespaces created for repositories owned by your organization. This can help you to limit costs associated with codespaces that are left to timeout after long periods of inactivity. You can set a maximum timeout for the codespaces for all repositories owned by your organization, or for the codespaces of specific repositories.
 
-> \[!NOTE]
+> [!NOTE]
 > Maximum idle timeout constraints only apply to codespaces that are owned by your organization.
 
 For more information about pricing for GitHub Codespaces compute usage, see [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces#pricing).
@@ -46,7 +46,7 @@ When you create a policy, you choose whether it applies to all repositories in y
 
 If you add an organization-wide policy with a timeout constraint, you should set the timeout to the longest acceptable period. You can then add separate policies that set the maximum timeout to a shorter period for specific repositories in your organization.
 
-> \[!NOTE]
+> [!NOTE]
 > Codespaces policies only apply to codespaces that your organizations pays for. If someone creates a codespace for a repository in your organization at their own expense, then the codespace will not be bound by these policies. For more information, see [Choosing who owns and pays for codespaces in your organization](/en/codespaces/managing-codespaces-for-your-organization/choosing-who-owns-and-pays-for-codespaces-in-your-organization).
 
 ## Adding a policy to set a maximum idle timeout period
@@ -77,7 +77,7 @@ If you add an organization-wide policy with a timeout constraint, you should set
 
     ![Screenshot of the repository selection dropdown, showing the options "All repositories" and "Selected repositories."](/assets/images/help/codespaces/selected-repositories.png)
 
-    > \[!NOTE]
+    > [!NOTE]
     > If you're adding a constraint to an existing policy that already contains the "Maximum codespaces per user" constraint, you won't be able to apply the policy to selected repositories. This is because the "Maximum codespaces per user" constraint always applies to all repositories in the organization.
 
     With **Selected repositories** selected:

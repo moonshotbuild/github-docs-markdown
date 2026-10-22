@@ -183,7 +183,7 @@ The second text match occurred in the `body` property of one of the issue's comm
 }
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Search code
@@ -742,12 +742,12 @@ For requests made by GitHub Apps with a user access token, you can't retrieve a 
 * **`search_type`** (string)
   The type of search to perform on issues. When not specified, the default is lexical search.
 
-semantic — performs a pure semantic (vector) search using embedding-based understanding.
-hybrid — combines semantic search with lexical search for best results.
+  semantic — performs a pure semantic (vector) search using embedding-based understanding.
+  hybrid — combines semantic search with lexical search for best results.
 
-Semantic and hybrid search require authentication and are rate limited to 10 requests per minute.
-Only applies to issue searches (/search/issues).
-Can be one of: `semantic`, `hybrid`
+  Semantic and hybrid search require authentication and are rate limited to 10 requests per minute.
+  Only applies to issue searches (/search/issues).
+  Can be one of: `semantic`, `hybrid`
 
 ### HTTP response status codes
 

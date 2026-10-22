@@ -30,15 +30,15 @@ or
 
 * The organization or enterprise owner has added an IP allow list entry for the IP addresses from which the application runs. See [Adding an allowed IP address](/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-allowed-ip-addresses-for-your-organization#adding-an-allowed-ip-address) in the GitHub Enterprise Cloud documentation.
 
-> \[!NOTE]
+> [!NOTE]
 > The addresses in the IP allow list of a GitHub App only affect requests made by installations of the GitHub App. The automatic addition of a GitHub App's IP address to an organization's allow list does not allow access to a GitHub user who connects from that IP address.
 
 ## Adding an IP address allow list to a GitHub App registration
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub is gradually rolling out support for IPv6. As GitHub services continue to add IPv6 support, we will start recognizing IPv6 addresses of GitHub users. To prevent possible access interruptions, please ensure you have added any necessary IPv6 addresses to your IP allow list.
 
-> \[!NOTE]
+> [!NOTE]
 > Due to caching, adding or removing IP addresses can take a few minutes to fully take effect.
 
 1. In the upper-right corner of any page on GitHub, click your profile picture.

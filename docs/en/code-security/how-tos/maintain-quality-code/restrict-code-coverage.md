@@ -19,7 +19,7 @@ breadcrumbs:
 
 Prevent pull requests from being merged when uploaded code coverage falls below the levels your team requires.
 
-> \[!NOTE]
+> [!NOTE]
 > This feature is in public preview and subject to change.
 
 ## How the code coverage rule works

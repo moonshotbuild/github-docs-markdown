@@ -21,7 +21,7 @@ breadcrumbs:
 
 Use GitHub Apps to automate protecting deployments with third-party systems.
 
-> \[!NOTE]
+> [!NOTE]
 > Custom deployment protection rules are currently in public preview and subject to change.
 
 ## About custom deployment protection rules
@@ -34,7 +34,7 @@ When a custom deployment protection rule is triggered it will wait for up to 30 
 
 For more information about creating your own custom deployment protection rules, see [Creating custom deployment protection rules](/en/actions/how-tos/deploy/configure-and-manage-deployments/create-custom-protection-rules).
 
-> \[!NOTE]
+> [!NOTE]
 > Any number of GitHub Apps-based deployment protection rules can be installed on a repository. However, a maximum of 6 deployment protection rules can be enabled on any environment at the same time.
 
 ## Using existing custom deployment protection rules

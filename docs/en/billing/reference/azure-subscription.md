@@ -29,7 +29,7 @@ For details on how charges are applied to cost centers, see [Cost center allocat
 
 After you connect your Azure subscription, usage for GitHub's products are included on your Azure invoice, summarized by product family. Azure usage is separated by **SKU** and either **enterprise ID** or **cost center ID**. The format used is `enterprise:sku` or `costcenter:sku`.
 
-> \[!NOTE]
+> [!NOTE]
 > Azure currently shows internal IDs, which may make it difficult to identify the corresponding enterprise or cost center.
 
 ### Invoice example
@@ -49,6 +49,6 @@ The GitHub products on your Azure invoice are also MACC-eligible. For more infor
 
 During an **Enterprise Managed User trial**, you can use metered products up to the included limits. To exceed the included limits, you’ll need to link an Azure subscription.
 
-> \[!IMPORTANT] If you don't use Enterprise Managed Users in your trial of GitHub Enterprise Cloud, connecting an Azure subscription will immediately end your trial and begin paid usage.
+> [!IMPORTANT] If you don't use Enterprise Managed Users in your trial of GitHub Enterprise Cloud, connecting an Azure subscription will immediately end your trial and begin paid usage.
 
 For more information, see [Connecting an Azure subscription](/en/billing/how-tos/set-up-payment/connect-azure-sub#connecting-your-azure-subscription-to-an-organization-or-enterprise-account).

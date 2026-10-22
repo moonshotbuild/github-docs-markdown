@@ -99,9 +99,8 @@ curl -L \
   -X POST \
   https://api.github.com/markdown/raw \
   -H "Accept: text/html" \
-  -d '{
-  "text": "Hello **world**"
-}'
+  -H "Content-Type: text/plain" \
+  --data-binary 'Hello **world**'
 ```
 
 **Response schema (Status: 200):**
@@ -117,9 +116,8 @@ curl -L \
   -X POST \
   https://api.github.com/markdown/raw \
   -H "Accept: text/html" \
-  -d '{
-  "text": "Hello **world**"
-}'
+  -H "Content-Type: text/x-markdown" \
+  --data-binary 'Hello **world**'
 ```
 
 **Response schema (Status: 200):**

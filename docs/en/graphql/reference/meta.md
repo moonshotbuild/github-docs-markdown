@@ -444,7 +444,7 @@ The client's rate limit information.
 
 ### Arguments for `rateLimit`
 
-* `dryRun` (Boolean): If true, calculate the cost for the query without evaluating it.
+* `dryRun` (Boolean): If true, calculate the cost for the query without evaluating it. Default: `false`.
 
 ## ReportedContentClassifiers - enum
 

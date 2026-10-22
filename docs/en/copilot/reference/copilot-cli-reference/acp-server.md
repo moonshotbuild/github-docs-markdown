@@ -19,7 +19,7 @@ breadcrumbs:
 
 Learn about GitHub Copilot CLI's Agent Client Protocol server.
 
-> \[!NOTE]
+> [!NOTE]
 > ACP support in GitHub Copilot CLI is in public preview and subject to change.
 
 ## Overview

@@ -30,7 +30,7 @@ The REST API exposes stacked pull requests in two ways:
 
 For endpoints, parameters, and schemas, see [REST API endpoints for pull requests](/en/rest/pulls/pulls).
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > If you merge via the API and want to use stacked pull requests, you must use the new asynchronous merge API.
 
 ### Merge API

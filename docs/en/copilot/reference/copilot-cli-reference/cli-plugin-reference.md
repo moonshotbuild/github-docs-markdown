@@ -19,10 +19,10 @@ breadcrumbs:
 
 Find commands and configuration details for CLI plugins.
 
-> \[!NOTE]
+> [!NOTE]
 > You can find help on using plugins by entering `copilot plugin [SUBCOMMAND] --help` in the terminal.
 
-For an overview of what plugins are and how they work across Copilot clients, see [About GitHub Copilot plugins](/en/copilot/concepts/agents/about-plugins).
+For an overview of what plugins are and how they work across Copilot clients, see [Plugins for GitHub Copilot](/en/copilot/concepts/agents/about-plugins).
 
 ## CLI commands
 
@@ -44,7 +44,7 @@ You can use the following commands in the terminal to manage plugins for Copilot
 
 Before `copilot plugin` was split into separate commands by resource, `copilot plugins` also inspected and toggled MCP servers, skills, instructions, and language servers using `--kind`, `--scope`, `--mcp`, and `--skill` flags. Those cross-kind flags have been removed. Use the dedicated [`copilot mcp`](/en/copilot/reference/copilot-cli-reference/cli-command-reference#copilot-mcp-subcommand), [`copilot skill`](/en/copilot/reference/copilot-cli-reference/cli-command-reference#managing-skills-non-interactively), [`copilot instruction`](/en/copilot/reference/copilot-cli-reference/cli-command-reference#using-copilot-instruction), and [`copilot lsp`](/en/copilot/reference/copilot-cli-reference/cli-command-reference#using-copilot-lsp) commands instead. `copilot plugin list --json` now emits a flat array of plugins instead of the previous `{ plugins, errors }` object.
 
-> \[!NOTE]
+> [!NOTE]
 > A plugin or marketplace pinned by an organization or MDM managed policy (`enabledPlugins`, `extraKnownMarketplaces`) can't be re-enabled, disabled, or repointed locally—the managed value wins for that entry. The `/plugin` dashboard marks these rows with a `Managed` badge and refuses a conflicting toggle. See [GitHub Copilot CLI configuration directory](/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference#mdm-managed-settings).
 >
 > A plugin whose activation is currently decided by the current repository's `enabledPlugins` overlay rejects `copilot plugin enable`/`disable` instead of silently persisting a global value that would have no effect in that repository. The error names the settings file that actually controls the plugin. See [GitHub Copilot CLI configuration directory](/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference#repository-settings-githubcopilotsettingsjson).
@@ -91,10 +91,13 @@ MCP servers install from a policy-configured registry, which requires authentica
 | `--all`                  | Update every installed plugin                                                               |                                           |
 | `--config-dir=DIRECTORY` | Path to the configuration directory. This option is deprecated. Use `COPILOT_HOME` instead. | <!-- markdownlint-disable-line GHD046 --> |
 
-> \[!NOTE]
+> [!NOTE]
 > Path-sourced plugins in a local (directory-source) marketplace load live from their real directory—editing one takes effect on `/restart` or in a new session, with no `copilot plugin update` needed.
 
-First-party plugins—those installed from the built-in `copilot-plugins` and `awesome-copilot` marketplaces—automatically update at the start of each session in a trusted working directory. Disable this behavior with the `autoUpdate` setting (set to `false`) or the `COPILOT_AUTO_UPDATE=false` environment variable. Auto-update is also skipped by default in CI. See [GitHub Copilot CLI configuration directory](/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference#configuration-file-settings).
+First-party plugins—those installed from the built-in `awesome-copilot` marketplace—automatically update at the start of each session in a trusted working directory. Disable this behavior with the `autoUpdate` setting (set to `false`) or the `COPILOT_AUTO_UPDATE=false` environment variable. Auto-update is also skipped by default in CI. See [GitHub Copilot CLI configuration directory](/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference#configuration-file-settings).
+
+> [!NOTE]
+> `copilot-plugins` previously shipped as a second built-in default marketplace alongside `awesome-copilot`. It's now an ordinary, non-default marketplace (`github/copilot-plugins`) that you register yourself with `copilot plugin marketplace add github/copilot-plugins`. If you installed plugins from it before this change, a one-time migration adds it to your own `extraKnownMarketplaces` with `autoUpdate: true` so those plugins keep updating. A fresh install that never used `copilot-plugins` must register it manually before installing plugins from it.
 
 A marketplace you've added yourself can opt into the same session-start auto-update by setting `autoUpdate: true` on its `extraKnownMarketplaces` entry in your user settings. This opt-in applies only to interactive and `-p` sessions—SDK and server sessions don't auto-update. It is honored from your own user settings or from managed (MDM/server) settings, but a repository-level `autoUpdate` setting is accepted and ignored—it can't enable or redirect auto-update for a marketplace. On a same-name collision, a built-in first-party marketplace wins, then a managed entry (which replaces the whole same-named user entry, so a managed entry without `"autoUpdate": true` removes the user's opt-in), then the user's own entry. See [Repository settings](/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference#repository-settings-githubcopilotsettingsjson).
 
@@ -102,15 +105,17 @@ In interactive mode, `/plugin` flags an installed plugin or marketplace when a n
 
 ### `copilot plugin marketplace` (alias `marketplaces`) subcommands
 
-Built-in default marketplaces ship with the runtime and can't be removed.
+The built-in `awesome-copilot` default marketplace ships with the runtime and can't be removed.
 
 | Subcommand                        | Description                                                                 |
 | --------------------------------- | --------------------------------------------------------------------------- |
-| `list [--json]`                   | List every registered marketplace, including built-in defaults              |
+| `list [--json]`                   | List every registered marketplace, including the built-in default           |
 | `add SOURCE`                      | Add a marketplace (`owner/repo`, `owner/repo#ref`, a URL, or a local path)  |
 | `remove NAME [--force]`           | Remove a marketplace; `--force` also uninstalls plugins sourced from it     |
 | `browse NAME [--json]`            | List the plugins offered by a marketplace's catalog                         |
 | `update [NAME]` (alias `refresh`) | Refresh the plugin catalog for one marketplace, or all if `NAME` is omitted |
+
+When HTTPS authentication fails for a remote marketplace or plugin fetch, the CLI retries once with your signed-in GitHub token. If the retry also fails, run `/login`.
 
 In interactive mode, run `/plugin marketplace update [NAME]` (alias `/plugin marketplace refresh`), or press <kbd>R</kbd> in the **Marketplace** view of the `/plugin` dashboard, to refresh every registered marketplace's catalog.
 
@@ -303,7 +308,7 @@ You can create a plugin marketplace—which people can use to discover and insta
 copilot plugin marketplace add /PATH/TO/my-marketplace
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot CLI also looks for the `marketplace.json` file in the `.claude-plugin/` directory.
 
 For more information, see [Creating a plugin marketplace for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-marketplace).
@@ -338,7 +343,7 @@ For more information, see [Creating a plugin marketplace for GitHub Copilot CLI]
 }
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > The value of the `source` field for each plugin is the path to the plugin's directory, relative to the root of the repository. It is not necessary to use `./` at the start of the path. For example, `"./plugins/plugin-name"` and `"plugins/plugin-name"` resolve to the same directory.
 
 ### `marketplace.json` fields

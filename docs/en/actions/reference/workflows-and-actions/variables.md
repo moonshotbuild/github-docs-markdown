@@ -84,7 +84,7 @@ We strongly recommend that actions use variables to access the filesystem rather
 | `RUNNER_TEMP`                | The path to a temporary directory on the runner. This directory is emptied at the beginning and end of each job. Note that files will not be removed if the runner's user account does not have permission to delete them. For example, `D:\a\_temp`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | `RUNNER_TOOL_CACHE`          | The path to the directory containing preinstalled tools for GitHub-hosted runners. For more information, see [GitHub-hosted runners](/en/actions/concepts/runners/github-hosted-runners#preinstalled-software-for-github-owned-images). For example, `C:\hostedtoolcache\windows`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
-> \[!NOTE]
+> [!NOTE]
 > If you need to use a workflow run's URL from within a job, you can combine these variables: `$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID`
 
 ## Naming conventions for configuration variables
@@ -101,14 +101,14 @@ The following rules apply to configuration variable names:
 
 When you set an environment variable, you cannot use any of the default environment variable names. For a complete list of default environment variables, see [Variables reference](/en/actions/reference/workflows-and-actions/variables#default-environment-variables) below. If you attempt to override the value of one of these default variables, the assignment is ignored.
 
-> \[!NOTE]
+> [!NOTE]
 > You can list the entire set of environment variables that are available to a workflow step by using <span style="white-space: nowrap;">`run: env`</span> in a step and then examining the output for the step.
 
 ## Configuration variable precedence
 
 If a variable with the same name exists at multiple levels, the variable at the lowest level takes precedence. For example, if an organization-level variable has the same name as a repository-level variable, then the repository-level variable takes precedence. Similarly, if an organization, repository, and environment all have a variable with the same name, the environment-level variable takes precedence.
 
-> \[!NOTE]
+> [!NOTE]
 > Environment-level variables are only available on the runner after the job starts executing. This means that environment-level variables won't overwrite variables in the `env` and `vars` contexts.
 
 For reusable workflows, the variables from the caller workflow's repository are used. Variables from the repository that contains the called workflow are not made available to the caller workflow.
@@ -125,14 +125,14 @@ A workflow created in a repository can access the following number of variables:
 * Up to 1,000 organization variables, if the total combined size of repository and organization variables is less than 256 KB. If the total combined size of organization and repository variables exceeds 256 KB, only the organization variables that fall below that limit will be available (after accounting for repository variables and as sorted alphabetically by variable name).
 * Up to 100 environment-level variables.
 
-> \[!NOTE]
+> [!NOTE]
 > Environment-level variables do not count toward the 256 KB total size limit. If you exceed the combined size limit for repository and organization variables and still need additional variables, you can use an environment and define additional variables in the environment.
 
 ## Supported contexts
 
 You will commonly use either the `env` or `github` context to access variable values in parts of the workflow that are processed before jobs are sent to runners.
 
-> \[!WARNING] Do not print the `github` context to logs. It contains sensitive information.
+> [!WARNING] Do not print the `github` context to logs. It contains sensitive information.
 
 | Context  | Use case                                                                           | Example                                                              |
 | -------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------- |

@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can display a status badge in your repository to indicate the status of your workflows.
 
-> \[!NOTE]
+> [!NOTE]
 > Workflow badges in a private repository are not accessible externally, so you won't be able to embed them or link to them from an external site.
 
 A status badge shows whether a workflow is currently failing or passing. A common place to add a status badge is in the `README.md` file of your repository, but you can add it to any web page you'd like. By default, badges display the status of your default branch. If there are no workflow runs on your default branch, it will display the status of the most recent run across all branches. You can display the status of a workflow run for a specific branch or event using the `branch` and `event` query parameters in the URL.

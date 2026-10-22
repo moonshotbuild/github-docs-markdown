@@ -48,7 +48,7 @@ You can format text and include emoji, images, and GIFs in your organization pro
 
 ## Adding a public organization profile README
 
-> \[!NOTE] Public organization profiles are not available with Enterprise Managed Users.
+> [!NOTE] Public organization profiles are not available with Enterprise Managed Users.
 
 The content of public `README.md` will appear on your organization's public profile.
 
@@ -58,7 +58,7 @@ The content of public `README.md` will appear on your organization's public prof
 
 ## Adding a member-only organization profile README
 
-> \[!NOTE] Member-only organization profile READMEs will only load from a `.github-private` repository with its visibility set to private. Repositories in enterprises set to internal visibility will not work.
+> [!NOTE] Member-only organization profile READMEs will only load from a `.github-private` repository with its visibility set to private. Repositories in enterprises set to internal visibility will not work.
 
 The content of a member-only `README.md` will be displayed in the member view of your organization's profile.
 

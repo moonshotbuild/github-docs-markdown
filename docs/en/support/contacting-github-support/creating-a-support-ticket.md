@@ -48,7 +48,7 @@ GitHub Support does not have access to any private or internal GitHub resources.
 
 Before you submit a ticket, you have the option of using Copilot in GitHub Support to receive an immediate response to your question. If Copilot in GitHub Support is unable to resolve your issue, you can continue submitting your ticket. For more information, see [About Copilot in GitHub Support](/en/support/learning-about-github-support/about-copilot-in-github-support).
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > If your enterprise uses data residency, you must sign in with your GHE.com account when creating a support ticket about your data-resident enterprise. Otherwise, you will be asked to open a new ticket using your GHE.com account.
 
 1. Navigate to the [GitHub Support portal](https://support.github.com/) and choose one of the following options:
@@ -63,7 +63,7 @@ Before you submit a ticket, you have the option of using Copilot in GitHub Suppo
 
 2. At the top of the page, under "How can we help?", choose a topic or click **open a support ticket**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > You will only see the link to open a support ticket if your account uses a paid GitHub product or you are a member of an organization that uses a paid product. If you don't see the link, you can speak to GitHub users and staff on the [GitHub Community discussions](https://github.com/orgs/community/discussions) for most issues, and you can still contact GitHub Support to report account, security, and abuse issues.
 
 3. Select the **From** dropdown menu and click the email address you'd like GitHub Support to contact.
@@ -80,7 +80,7 @@ Before you submit a ticket, you have the option of using Copilot in GitHub Suppo
 
    You can attach files up to 50MB.
 
-   > \[!WARNING]
+   > [!WARNING]
    > When you upload an image or video to a pull request or issue comment, or upload a file to a ticket in the GitHub Support portal, anyone can view the anonymized URL without authentication, even if the pull request or issue is in a private repository. To keep sensitive media files private, serve them from a private network or server that requires authentication. For more information on anonymized URLs see [About anonymized URLs](/en/authentication/keeping-your-account-and-data-secure/about-anonymized-urls).
 
 6. Click **Send request**.

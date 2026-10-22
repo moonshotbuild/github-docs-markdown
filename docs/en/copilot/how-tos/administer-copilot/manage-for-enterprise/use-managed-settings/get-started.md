@@ -27,7 +27,7 @@ With enterprise managed settings, you can centrally define and distribute config
 
 This guide walks through creating the `managed-settings.json` file on GitHub, rolling out the settings to users, and overriding specific settings for enterprise teams. As a low-friction example, we'll ensure new conversations start in auto model mode for most users, and override this setting for a specific enterprise team. This example will allow you to test the managed settings deployment without causing disruption to users.
 
-> \[!NOTE] If you use a dedicated enterprise for Copilot Business, there is additional guidance to consider. See [Using enterprise-managed settings without organizations](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/copilot-business-only).
+> [!NOTE] If you use a dedicated enterprise for Copilot Business, there is additional guidance to consider. See [Using enterprise-managed settings without organizations](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/copilot-business-only).
 
 ## Supported clients
 
@@ -49,7 +49,7 @@ For instructions on **creating the repository and selecting it as your enterpris
 
 The governance settings in this repository apply to all users who receive a Copilot license from your enterprise or any of its organizations, regardless of whether the user has access to the `.github-private` repository or the organization that owns it. We recommend giving the repository internal visibility, so that enterprise members can view the governance settings, and restricting edits of the `managed-settings.json` file to administrators and AI managers.
 
-> \[!TIP] This is called a "server-managed" deployment. There are other methods of distributing managed settings to users, including mobile device management (MDM) and local file delivery. For more information, see [Choosing how to deploy enterprise-managed settings to users](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/deploy-managed-settings).
+> [!TIP] This is called a "server-managed" deployment. There are other methods of distributing managed settings to users, including mobile device management (MDM) and local file delivery. For more information, see [Choosing how to deploy enterprise-managed settings to users](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/deploy-managed-settings).
 
 ## 2. Create the `managed-settings.json` file
 

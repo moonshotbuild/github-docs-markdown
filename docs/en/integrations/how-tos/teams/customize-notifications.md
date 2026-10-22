@@ -34,7 +34,7 @@ The following notifications are enabled by default, but you can disable any of t
 | `deployments` | Deployment status updates.                          |
 | `releases`    | New releases and pre-releases published.            |
 
-> \[!NOTE]
+> [!NOTE]
 > Repository notifications are also enabled by default. You will be notified when your repository is made public or deleted. This notification cannot be disabled, as repository updates are destructive activities.
 
 ### Notifications disabled by default
@@ -71,7 +71,7 @@ Branch filters allow you to filter commit notifications based on branch names. B
 
 You can unsubscribe from the commits feature using `@GitHub unsubscribe OWNER/REPO commits`.
 
-> \[!NOTE] You may have previously used the `commits:all` filter to receive commit notifications for all branches. This filter is closing down. To receive commit notifications for all branches, use the `commits:*` filter instead. If you have previously set up the `commits:all` filter, it will continue to work until you update your configuration to use the `commits:*` filter.
+> [!NOTE] You may have previously used the `commits:all` filter to receive commit notifications for all branches. This filter is closing down. To receive commit notifications for all branches, use the `commits:*` filter instead. If you have previously set up the `commits:all` filter, it will continue to work until you update your configuration to use the `commits:*` filter.
 
 ### Label filters for issue and pull request notifications
 
@@ -141,7 +141,7 @@ When you are subscribed to "workflows", the following functionality is available
 * Once the workflow is completed, you will get an update as a reply in the thread so that you can see the complete context and history of the workflow run.
 * If something fails, you can choose to rerun the workflow in place and you can also enable debug logs if needed.
 
-> \[!NOTE] After March 10, 2025 and for GitHub Enterprise Server version 3.17 onwards, you will no longer be notified about the progress of individual workflow jobs. See the [GitHub changelog](https://github.blog/changelog/2025-02-03-deprecation-of-real-time-github-actions-workflow-job-events-in-slack-and-microsoft-teams-apps/) for more details.
+> [!NOTE] After March 10, 2025 and for GitHub Enterprise Server version 3.17 onwards, you will no longer be notified about the progress of individual workflow jobs. See the [GitHub changelog](https://github.blog/changelog/2025-02-03-deprecation-of-real-time-github-actions-workflow-job-events-in-slack-and-microsoft-teams-apps/) for more details.
 
 ### Workflow notification filters
 
@@ -170,7 +170,7 @@ By default, when you configure workflow notifications without passing any filter
 
 You can unsubscribe from workflow notifications using the command: `@GitHub unsubscribe OWNER/REPO workflows`.
 
-> \[!NOTE] To receive GitHub Actions notifications in Teams, the GitHub app requires additional permissions. When you attempt to subscribe to workflows for the first time, you will be prompted to grant these permissions.
+> [!NOTE] To receive GitHub Actions notifications in Teams, the GitHub app requires additional permissions. When you attempt to subscribe to workflows for the first time, you will be prompted to grant these permissions.
 
 ## Deployment notifications
 
@@ -183,4 +183,4 @@ You can subscribe or unsubscribe to deployment notifications using the following
 @GitHub unsubscribe OWNER/REPO deployments
 ```
 
-> \[!NOTE] If you are using GitHub Actions and want to track your deployments to environments, the `workflows` feature is recommended, as it provides a more complete picture and the ability to approve your deployments directly from Teams.
+> [!NOTE] If you are using GitHub Actions and want to track your deployments to environments, the `workflows` feature is recommended, as it provides a more complete picture and the ability to approve your deployments directly from Teams.

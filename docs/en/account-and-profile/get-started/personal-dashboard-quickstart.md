@@ -37,7 +37,7 @@ You can also find a list of your recently visited repositories, teams, and proje
 
 ## Staying up-to-date with activity from the community
 
-> \[!NOTE]
+> [!NOTE]
 > The new feed is currently in public preview and subject to change.
 
 The feed is designed to help you discover relevant content from projects you follow, keep up with your friends and community members, and track recent activity in your communities.
@@ -46,7 +46,7 @@ You can use the **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" 
 
 ## Working with GitHub Copilot from your dashboard
 
-> \[!NOTE]
+> [!NOTE]
 > The updated home dashboard is currently in public preview and subject to change.
 
 The home dashboard view gives you visibility into your Copilot cloud agent sessions and helps you manage your most important tasks more efficiently. You can prompt GitHub Copilot directly from the dashboard, track the latest agent sessions you've triggered, quickly access agent logs to see progress, and manage the resulting pull requests and tasks. This centralized view makes it easier to stay on top of your agent activities and follow up on their outcomes.

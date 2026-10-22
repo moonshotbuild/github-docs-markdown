@@ -58,19 +58,19 @@ For information about the **Overview**, see [Viewing security insights](/en/code
 
    ![Screenshot of the "Security risk" view for an organization. The options for filtering are outlined in dark orange.](/assets/images/help/security-overview/security-risk-view-highlights.png)
 
-   > \[!NOTE] The set of unaffected repositories includes all repositories without open alerts and also any repositories where the security feature is not enabled.
+   > [!NOTE] The set of unaffected repositories includes all repositories without open alerts and also any repositories where the security feature is not enabled.
 
 5. Optionally, use the sidebar on the left to explore alerts for a specific security feature in greater detail. On each page, you can use filters that are specific to that feature to refine your search.
 
 6. Optionally, use the **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-download" aria-label="download" role="img"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"></path><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"></path></svg> Export CSV** button to download a CSV file of the data currently displayed on the page for security research and in-depth data analysis. For more information, see [Exporting data from security overview](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/export-data).
 
-> \[!NOTE] The summary views ("Overview", "Coverage" and "Risk") show data only for default alerts. Secret scanning alerts for ignored directories and generic alerts are all omitted from these views. Consequently, the individual alert views may include a larger number of open and closed alerts.
+> [!NOTE] The summary views ("Overview", "Coverage" and "Risk") show data only for default alerts. Secret scanning alerts for ignored directories and generic alerts are all omitted from these views. Consequently, the individual alert views may include a larger number of open and closed alerts.
 
 ## Viewing enterprise-level security risks in code
 
 You can view data for security alerts across organizations in an enterprise.
 
-> \[!TIP]
+> [!TIP]
 > You can use the `owner` filter in the search field to filter the data by organization. For more information, see [Filtering alerts in security overview](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview).
 
 1. Navigate to GitHub Enterprise Cloud.
@@ -88,11 +88,11 @@ You can view data for security alerts across organizations in an enterprise.
 
    ![Screenshot of the "Security risk" view for an enterprise. The options for filtering are outlined in dark orange.](/assets/images/help/security-overview/security-risk-view-highlights-enterprise.png)
 
-   > \[!NOTE] The set of unaffected repositories includes all repositories without open alerts and also any repositories where the security feature is not enabled.
+   > [!NOTE] The set of unaffected repositories includes all repositories without open alerts and also any repositories where the security feature is not enabled.
 7. Optionally, use the sidebar on the left to explore alerts for a specific security feature in greater detail. On each page, you can use filters that are specific to that feature to refine your search.
 8. Optionally, use the <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-download" aria-label="download" role="img"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"></path><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"></path></svg> **Export CSV** button to download a CSV file of the data currently displayed on the page for security research and in-depth data analysis. For more information, see [Exporting data from security overview](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/export-data).
 
-> \[!NOTE] The summary views ("Overview", "Coverage" and "Risk") show data only for default alerts. Secret scanning alerts for ignored directories and generic alerts are all omitted from these views. Consequently, the individual alert views may include a larger number of open and closed alerts.
+> [!NOTE] The summary views ("Overview", "Coverage" and "Risk") show data only for default alerts. Secret scanning alerts for ignored directories and generic alerts are all omitted from these views. Consequently, the individual alert views may include a larger number of open and closed alerts.
 
 ## Next steps
 

@@ -21,7 +21,7 @@ Use the REST API to interact with workflow runs in GitHub Actions.
 
 You can use the REST API to view, re-run, cancel, and view logs for workflow runs in GitHub Actions. A workflow run is an instance of your workflow that runs when the pre-configured event occurs. For more information, see [Managing workflow runs](/en/actions/how-tos/manage-workflow-runs).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Re-run a job from a workflow run

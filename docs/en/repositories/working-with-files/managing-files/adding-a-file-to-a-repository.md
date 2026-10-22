@@ -31,9 +31,9 @@ Your repository may have push rulesets enabled. Push rulesets may block creating
 
 Your repository may be secured by push protection. With push protection, GitHub will block uploading a file to the repository if the file contains a supported secret, such as a token. You should remove the secret from the file before attempting to upload the file again. For more information, see [Working with push protection in the GitHub UI](/en/code-security/how-tos/secure-your-secrets/work-with-leak-prevention/push-protection-in-the-github-ui) and [Working with push protection in the GitHub UI](/en/code-security/how-tos/secure-your-secrets/work-with-leak-prevention/push-protection-in-the-github-ui#resolving-a-blocked-commit).
 
-> \[!NOTE] Push protection for file uploads in the web UI is currently in public preview and subject to change.
+> [!NOTE] Push protection for file uploads in the web UI is currently in public preview and subject to change.
 
-> \[!WARNING]
+> [!WARNING]
 > Use Git to push files to your repository if you need to apply the logic in your `.gitattributes` file. For example, automatic conversion of line endings. Uploading a file through the GitHub web interface will ignore `.gitattributes`.
 
 1. On GitHub, navigate to the main page of the repository.
@@ -51,7 +51,7 @@ Your repository may be secured by push protection. With push protection, GitHub 
 
 You can upload an existing file to a repository on GitHub using the command line.
 
-> \[!TIP]
+> [!TIP]
 > You can also [add an existing file to a repository from the GitHub website](/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
 
 This procedure assumes you've already:
@@ -59,7 +59,7 @@ This procedure assumes you've already:
 * [Created a repository on GitHub](/en/repositories/creating-and-managing-repositories/creating-a-new-repository), or have an existing repository owned by someone else you'd like to contribute to
 * [Cloned the repository locally on your computer](/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-> \[!WARNING]
+> [!WARNING]
 > Never `git add`, `commit`, or `push` sensitive information, for example passwords or API keys, to a remote repository. If you've already added this information, see [Removing sensitive data from a repository](/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
 
 1. On your computer, move the file you'd like to upload to GitHub into the local directory that was created when you cloned the repository.

@@ -19,8 +19,8 @@ breadcrumbs:
 
 Learn how usage of Copilot cloud and local sandboxes is measured and billed.
 
-> \[!NOTE]
-> Cloud and local sandboxes for GitHub Copilot are in public preview and subject to change.
+> [!NOTE]
+> Cloud sandboxes for GitHub Copilot are in public preview and subject to change.
 
 ## How sandbox usage is measured
 
@@ -89,7 +89,7 @@ When you create a budget for cloud sandboxes, you can choose between two budget 
 
 If you enable **Stop usage when budget limit is reached**, additional cloud sandbox usage is blocked once the budget reaches 100%, and a banner notifies users in the affected scope.
 
-> \[!NOTE]
+> [!NOTE]
 > Cloud sandboxes for GitHub Copilot are not part of the "Bundled AI credits" budget type. Bundled AI credits budgets apply only to SKUs that consume AI credits (such as GitHub Copilot AI credits, cloud agent AI credits, and GitHub Spark AI credits). To control cloud sandbox spending, use a product-level or SKU-level budget.
 
 ## Viewing your cloud sandbox usage
@@ -99,5 +99,5 @@ To view your cloud sandbox usage, billable amounts, and the monthly preview enti
 ## Further reading
 
 * [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes)
-* [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli)
+* [GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli)
 * [How GitHub billing works](/en/billing/get-started/how-billing-works)

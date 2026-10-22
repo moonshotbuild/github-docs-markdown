@@ -21,7 +21,7 @@ breadcrumbs:
 
 Learn how to use GitHub Copilot from the command line.
 
-The command-line interface (CLI) for GitHub Copilot allows you to use Copilot directly from your terminal. For more information, see [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli).
+The command-line interface (CLI) for GitHub Copilot allows you to use Copilot directly from your terminal. For more information, see [GitHub Copilot CLI](/en/copilot/concepts/copilot-surfaces/copilot-cli).
 
 ## Prerequisite
 
@@ -35,8 +35,8 @@ Install Copilot CLI. See [Installing GitHub Copilot CLI](/en/copilot/how-tos/cop
 
    Copilot will ask you to confirm that you trust the files in this folder.
 
-   > \[!IMPORTANT]
-   > During this GitHub Copilot CLI session, Copilot may attempt to read, modify, and execute files in and below this folder. You should only proceed if you trust the files in this location. For more information about trusted directories, see [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli#trusted-directories).
+   > [!IMPORTANT]
+   > During this GitHub Copilot CLI session, Copilot may attempt to read, modify, and execute files in and below this folder. You should only proceed if you trust the files in this location. For more information about trusted directories, see [GitHub Copilot CLI](/en/copilot/concepts/copilot-surfaces/copilot-cli#trusted-directories).
 
 3. Choose one of the options:
 
@@ -60,7 +60,7 @@ Install Copilot CLI. See [Installing GitHub Copilot CLI](/en/copilot/how-tos/cop
 
    As an alternative to typing, you can speak your prompt. See [Use voice input with Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/voice-input).
 
-   For some examples of prompts, see [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli).
+   For some examples of prompts, see [GitHub Copilot CLI](/en/copilot/concepts/copilot-surfaces/copilot-cli).
 
 6. When Copilot wants to use a tool that could modify or execute files—for example, `touch`, `chmod`, `node`, or `sed`—it will ask you to approve the use of the tool.
 
@@ -162,7 +162,7 @@ For more information, see [Scheduling prompts in GitHub Copilot CLI](/en/copilot
 
 You can use the `--resume` command-line option or the `/resume` slash command to select and resume an interactive CLI session, allowing you to pick up right where you left off, with the saved context. You can kick off a Copilot cloud agent session on GitHub, and then use GitHub Copilot CLI to bring that session to your local environment.
 
-> \[!TIP]
+> [!TIP]
 > To quickly resume the most recently closed local session, enter this in your terminal:
 >
 > ```shell

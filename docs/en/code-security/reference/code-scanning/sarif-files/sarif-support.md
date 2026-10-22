@@ -125,7 +125,7 @@ For information about other errors, see [Troubleshooting SARIF uploads](/en/code
 
 If you use a code analysis engine other than CodeQL, you can review the supported SARIF properties to optimize how your analysis results will appear on GitHub.
 
-> \[!NOTE]
+> [!NOTE]
 > You must supply an explicit value for any property marked as "required". The empty string is not supported for required properties.
 
 Any valid SARIF 2.1.0 output file can be uploaded, however, code scanning will only use the following supported properties.
@@ -307,7 +307,7 @@ This SARIF output file has example values to show the minimum required propertie
 
 This SARIF output file has example of values for the field `originalUriBaseIds`, showing the minimum required properties a SARIF producer should include when using relative URI references.
 
-> \[!NOTE]
+> [!NOTE]
 > While this property is not required by GitHub for the code scanning results to be displayed correctly, it is required to produce a valid SARIF output when using relative URI references.
 
 ```json

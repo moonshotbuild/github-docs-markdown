@@ -297,7 +297,7 @@ Build skills and knowledge about GitHub Copilot through examples and hands-on ac
 
 * [Driving team adoption of agentic GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/enable-developers/drive-team-agentic-adoption)
 
-  Help established teams build sustained habits with GitHub Copilot app and Copilot CLI, then measure adoption and business impact.
+  Help established teams build sustained habits with the GitHub Copilot app and Copilot CLI, then measure adoption and business impact.
 
 * [Achieving your company's engineering goals with GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/drive-downstream-impact/achieve-company-goals)
 

@@ -23,7 +23,7 @@ You can filter for date values using the `YYYY-MM-DD` format, for example: `date
 
 If your project makes use of date fields, you can use the roadmap layout to view items on a timeline. For more information, see [Changing the layout of a view](/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view) and [Customizing the roadmap layout](/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-roadmap-layout).
 
-> \[!NOTE]
+> [!NOTE]
 > Date fields do not currently support default values.
 
 ## Adding a date field

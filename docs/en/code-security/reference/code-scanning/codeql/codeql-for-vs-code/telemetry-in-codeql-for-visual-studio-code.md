@@ -25,7 +25,7 @@ If VS Code telemetry is enabled, GitHub will collect usage data and metrics for 
 
 This data will not be shared with any parties outside of GitHub. IP addresses and installation IDs will be retained for a maximum of 30 days. Anonymous data will be retained for a maximum of 180 days.
 
-> \[!NOTE]
+> [!NOTE]
 > Telemetry collection in CodeQL for Visual Studio Code follows the VS Code telemetry settings. When telemetry collection is disabled, no data will be sent to GitHub servers.
 
 ## Why we collect data

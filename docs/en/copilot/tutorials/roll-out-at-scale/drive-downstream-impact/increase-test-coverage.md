@@ -142,7 +142,7 @@ Developers **should not**:
 * [Writing tests with GitHub Copilot](/en/copilot/tutorials/write-tests)
 * [How to generate unit tests with GitHub Copilot: Tips and examples](https://github.blog/ai-and-ml/github-copilot/how-to-generate-unit-tests-with-github-copilot-tips-and-examples/)
 * [GitHub Copilot is EVERYWHERE in Visual Studio](https://learn.microsoft.com/en-us/shows/github-copilot-for-visual-studio/github-copilot-is-everywhere-in-visual-studio-miniseries) (video content with a section on testing)
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Changing the AI model for GitHub Copilot Chat](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/change-the-chat-model)
 
 ### Recommended features
@@ -150,7 +150,7 @@ Developers **should not**:
 * [Copilot Chat in GitHub](/en/copilot/how-tos/copilot-on-github/chat-with-copilot/chat-in-github)
 * [Copilot inline suggestions](/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/get-ide-code-suggestions)
 * [Copilot Chat in the IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide)
-* [Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
+* [Copilot cloud agent](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 
 ## Metrics to watch
 

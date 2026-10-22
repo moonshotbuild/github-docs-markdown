@@ -47,7 +47,7 @@ You can select a model and reasoning effort from the dropdowns below the prompt 
 
 If you choose **Auto** in the model picker, the app automatically selects the optimal model for your task based on task complexity. After the session starts, the picker next to **Auto** shows which model handled each response. For more information, see [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection).
 
-If you configured your own model provider in the app, those models also appear in the picker. For setup steps, see [Using your own LLM models in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/use-byok-models).
+If you configured your own model provider in the app, those models also appear in the picker. For setup steps, see [Adding LLM models to the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/use-byok-models).
 
 Hover over the <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-info" aria-label="the info icon" role="img"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg> icon in the model picker to see model details.
 
@@ -68,19 +68,19 @@ Use **Manage sessions** to view, search, and filter sessions and chats, includin
 
 ## Using cloud and local sandboxes
 
-> \[!NOTE]
-> Cloud and local sandboxes for GitHub Copilot are in public preview and subject to change.
+> [!NOTE]
+> Cloud sandboxes for GitHub Copilot are in public preview and subject to change.
 
 Cloud and local sandboxes protect sessions in different ways:
 
 * **Cloud sandbox**: Runs the entire session in an isolated environment hosted by GitHub. Use a cloud sandbox when you want to keep the session off your machine or run several resource-intensive tasks in parallel. Choose the cloud sandbox execution location when starting a session.
 * **Local sandbox**: Runs the session on your machine, but restricts the filesystem, network, and credential access available to agent-run tools. Use local sandboxing when the agent needs your local tools or development services, but you want to limit its access to the rest of your machine. Configure the default for new local repository and working tree sessions in the project settings, or use `/sandbox on` or `/sandbox off` to change an active local session.
 
-Local sandboxing does not apply to cloud sandbox sessions or sessions that run on a remote host. For more information about how both types of sandbox work, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes). To enable and configure local sandboxing, see [Configuring local sandboxing in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/configure-local-sandboxing).
+Local sandboxing does not apply to cloud sandbox sessions or sessions that run on a remote host. For more information about how both types of sandbox work, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes). To enable local sandboxing, see [Using local sandboxing](/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing).
 
 ## Using `/security-review` in app sessions
 
-> \[!NOTE]
+> [!NOTE]
 > The `/security-review` slash command is currently in public preview and subject to change.
 
 You can run the `/security-review` slash command in an active agent session to review your current workstream changes for high-confidence vulnerabilities. The command returns prioritized findings with severity and confidence scores, plus suggested fixes you can apply and verify in the same session.
@@ -102,7 +102,7 @@ You can also manually ask Copilot to get a review from the rubber duck agent.
 1. Open an active session.
 2. In the prompt box, type `/rubber-duck` and ask for a critique of your current plan, implementation, or tests.
 
-For more information on the rubber duck agent, see [About the rubber duck agent](/en/copilot/concepts/agents/copilot-cli/rubber-duck).
+For more information on the rubber duck agent, see [Getting a second opinion with the rubber duck agent](/en/copilot/concepts/agent-capabilities/choosing-and-delegating-agent-work/getting-a-second-opinion).
 
 ## Using `/chronicle` with app sessions
 

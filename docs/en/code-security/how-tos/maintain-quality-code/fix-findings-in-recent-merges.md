@@ -19,14 +19,14 @@ breadcrumbs:
 
 Apply autofixes or delegate remediation work to Copilot for quality issues detected by AI-powered analysis of recently merged code.
 
-> \[!TIP]
+> [!TIP]
 > If you're new to Code Quality, see [Raising your repository's code quality score](/en/code-security/tutorials/improve-code-quality/raise-your-quality-rating?utm_campaign=code-quality-ga-july-2026\&utm_medium=docs\&utm_source=docs-fix-recent-merges-walkthrough-tip) for a guided walkthrough of reviewing and improving your repository's quality scores.
 
 ## How Code Quality analyzes recently merged files
 
 Code Quality runs an AI-powered scan on recently changed files after code is merged to your default branch. This scan uses a large language model to report up to 5 findings per file in up to 5 files—across all languages, without being limited to predefined rules.
 
-> \[!NOTE]
+> [!NOTE]
 > The "AI findings" page for recently changed files is currently in public preview and subject to change.
 
 ## Viewing recent suggestions
@@ -38,7 +38,7 @@ Code Quality runs an AI-powered scan on recently changed files after code is mer
 
    ![Screenshot of the "AI findings" view for code quality.](/assets/images/help/code-quality/ai-suggestions-repo.png)
 
-> \[!NOTE]
+> [!NOTE]
 > This view is empty if the repository is inactive or if LLM analysis could not suggest ways to improve code quality in recent pushes to the default branch.
 
 ## Resolving a finding
@@ -69,7 +69,7 @@ You need a Copilot license to assign work to Copilot cloud agent. <br><a href="h
 
 5. Click **Commit change** to create a pull request with the fixes.
 
-> \[!NOTE]
+> [!NOTE]
 > When you open a pull request yourself, you can only commit fixes to one file at a time. To fix multiple files at once, you must delegate the work to Copilot.
 
 ## Further reading

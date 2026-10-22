@@ -27,7 +27,7 @@ Note that the `repo:invite` [OAuth scope](/en/apps/oauth-apps/building-oauth-app
 access to invitations **without** also granting access to repository code, while the
 `repo` scope grants permission to code as well as invitations.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List repository invitations

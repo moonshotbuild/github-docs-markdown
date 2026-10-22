@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can create and manage a classroom for each course that you teach using GitHub Classroom.
 
-> \[!WARNING]
+> [!WARNING]
 > **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
 > For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
 
@@ -79,7 +79,7 @@ If your course already has a roster, you can update the students on the roster o
 
 4. To connect GitHub Classroom to your LMS and import a roster, your LMS administrator will first need to register your LMS instance and then you will need to connect your LMS course to your classroom. Once connected, you can click the **Import from...** button to import a roster from your LMS course. For more information, see [Connect a learning management system course to a classroom](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/connect-a-learning-management-system-course-to-a-classroom).
 
-   > \[!NOTE]
+   > [!NOTE]
    > Google Classroom does not use the LTI protocol, so does not need to be connected to GitHub Classroom before importing the roster. For more information, see [Connect a learning management system course to a classroom](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/connect-a-learning-management-system-course-to-a-classroom#importing-a-roster-from-google-classroom).
 
 5. Provide the student identifiers for your roster.
@@ -102,7 +102,7 @@ Your classroom must have an existing roster to add students to the roster. For m
 5. Follow the instructions to add students to the roster.
    * To import students from an LMS, your LMS administrator will first need to register your LMS instance and then you will need to connect your LMS course to your classroom. Once connected, you can click the **Sync from...** button. For more information, see [Connect a learning management system course to a classroom](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/connect-a-learning-management-system-course-to-a-classroom).
 
-     > \[!NOTE]
+     > [!NOTE]
      > Google Classroom does not use the LTI protocol, so does not need to be connected to GitHub Classroom before importing the roster. For more information, see [Connect a learning management system course to a classroom](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/connect-a-learning-management-system-course-to-a-classroom#importing-a-roster-from-google-classroom).
 
    * To manually add students, under "Manually add students", click **Upload a CSV or text file** or type the identifiers for the students, then click **Add roster entries**.

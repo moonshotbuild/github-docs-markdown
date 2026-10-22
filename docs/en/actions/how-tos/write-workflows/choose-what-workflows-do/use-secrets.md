@@ -98,7 +98,7 @@ gh secret list --env ENV_NAME
 
 ## Creating secrets for an organization
 
-> \[!NOTE]
+> [!NOTE]
 > Organization-level secrets and variables are not accessible by private repositories for GitHub Free. For more information about upgrading your GitHub subscription, see [Upgrading your account's plan](/en/billing/how-tos/manage-plan-and-licenses/upgrade-plan).
 
 When creating a secret or variable in an organization, you can use a policy to limit access by repository. For example, you can grant access to all repositories, or limit access to only private repositories or a specified list of repositories.
@@ -133,7 +133,7 @@ Organization owners can create secrets or variables at the organization level.
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > By default, GitHub CLI authenticates with the `repo` and `read:org` scopes. To manage organization secrets, you must additionally authorize the `admin:org` scope.
 >
 > ```shell
@@ -179,14 +179,14 @@ You can check which access policies are being applied to a secret in your organi
 
 ## Using secrets in a workflow
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * With the exception of `GITHUB_TOKEN`, secrets are not passed to the runner when a workflow is triggered from a forked repository.
 > * Secrets are not automatically passed to reusable workflows. For more information, see [Reuse workflows](/en/actions/how-tos/reuse-automations/reuse-workflows#passing-inputs-and-secrets-to-a-reusable-workflow).
 > * Secrets are not available to workflows triggered by Dependabot events. For more information, see [Troubleshooting Dependabot on GitHub Actions](/en/code-security/reference/supply-chain-security/troubleshoot-dependabot/dependabot-on-actions#accessing-secrets).
 > * If your GitHub Actions workflows need to access resources from a cloud provider that supports OpenID Connect (OIDC), you can configure your workflows to authenticate directly to the cloud provider. This will let you stop storing these credentials as long-lived secrets and provide other security benefits. For more information, see [OpenID Connect](/en/actions/concepts/security/openid-connect).
 
-> \[!WARNING] Mask all sensitive information that is not a GitHub secret by using `::add-mask::VALUE`. This causes the value to be treated as a secret and redacted from logs.
+> [!WARNING] Mask all sensitive information that is not a GitHub secret by using `::add-mask::VALUE`. This causes the value to be treated as a secret and redacted from logs.
 
 To provide an action with a secret as an input or environment variable, you can use the `secrets` context to access secrets you've created in your repository. For more information, see [Contexts reference](/en/actions/reference/workflows-and-actions/contexts) and [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax).
 
@@ -244,7 +244,7 @@ steps:
 
 To use secrets that are larger than 48 KB, you can use a workaround to store secrets in your repository and save the decryption passphrase as a secret on GitHub. For example, you can use `gpg` to encrypt a file containing your secret locally before checking the encrypted file in to your repository on GitHub. For more information, see the [gpg manpage](https://www.gnupg.org/gph/de/manual/r1023.html).
 
-> \[!WARNING]
+> [!WARNING]
 > Be careful that your secrets do not get printed when your workflow runs. When using this workaround, GitHub does not redact secrets that are printed in logs.
 
 1. Run the following command from your terminal to encrypt the file containing your secret using `gpg` and the AES256 cipher algorithm. In this example, `my_secret.json` is the file containing the secret.
@@ -259,7 +259,7 @@ To use secrets that are larger than 48 KB, you can use a workaround to store sec
 
 4. Copy your encrypted file to a path in your repository and commit it. In this example, the encrypted file is `my_secret.json.gpg`.
 
-   > \[!WARNING]
+   > [!WARNING]
    > Make sure to copy the encrypted `my_secret.json.gpg` file ending with the `.gpg` file extension, and **not** the unencrypted `my_secret.json` file.
 
    ```shell
@@ -317,7 +317,7 @@ To use secrets that are larger than 48 KB, you can use a workaround to store sec
 
 You can use Base64 encoding to store small binary blobs as secrets. You can then reference the secret in your workflow and decode it for use on the runner. For the size limits, see [Secrets reference](/en/actions/reference/security/secrets#limits-for-secrets).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Note that Base64 only converts binary to text, and is not a substitute for actual encryption.
 > * Using another shell might require different commands for decoding the secret to a file. On Windows runners, we recommend [using a bash shell](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstepsshell) with `shell: bash` to use the commands in the `run` step above.

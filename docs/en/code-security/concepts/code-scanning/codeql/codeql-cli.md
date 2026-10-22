@@ -47,7 +47,7 @@ Alternatively, you can use GitHub Actions or Azure DevOps pipelines to scan code
 
 For an overview of all the options for using CodeQL analysis for code scanning, see [Code scanning with CodeQL](/en/code-security/concepts/code-scanning/codeql/codeql-code-scanning).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The CodeQL CLI is free to use on public repositories. The CodeQL CLI is also available in private repositories owned by organizations that use GitHub Team or GitHub Enterprise Cloud and have a license for GitHub Code Security. For information, see [GitHub CodeQL Terms and Conditions](https://securitylab.github.com/tools/codeql/license) and [CodeQL CLI](https://codeql.github.com/docs/codeql-cli/).
 > * The CodeQL CLI is currently not compatible with non-glibc Linux distributions such as (musl-based) Alpine Linux.
@@ -62,7 +62,7 @@ Once the CodeQL CLI is set up, you can use three different commands to generate 
 2. `database analyze` to run queries to analyze each CodeQL database and summarize the results in a SARIF file. For more information, see [Analyzing your code with CodeQL queries](/en/code-security/tutorials/customize-code-scanning/analyze-code).
 3. `github upload-results` to upload the resulting SARIF files to GitHub where the results are matched to a branch or pull request and displayed as code scanning alerts. For more information, see [Uploading CodeQL analysis results to GitHub](/en/code-security/tutorials/customize-code-scanning/upload-results).
 
-> \[!NOTE]
+> [!NOTE]
 > Uploading SARIF data to display as code scanning results in GitHub is supported for organization-owned repositories with GitHub Code Security enabled, and public repositories on GitHub.com. For more information, see [Managing security and analysis settings for your repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository).
 
 ### Example CI configuration for CodeQL analysis

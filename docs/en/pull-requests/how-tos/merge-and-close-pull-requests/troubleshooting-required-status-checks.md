@@ -32,7 +32,7 @@ remote: error: GH006: Protected branch update failed for refs/heads/main.
 remote: error: Required status check "ci-build" is failing
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Pull requests that are up-to-date and pass required status checks can be merged locally and pushed to the protected branch. You can do this without running status checks on the merge commit itself.
 
 ## Required check needs to succeed against the latest commit SHA
@@ -114,7 +114,7 @@ A pull request that only changes a file in the repository root will not trigger 
 
 If a merge queue requires a GitHub Actions check, trigger the workflow with the `merge_group` event.
 
-> \[!NOTE]
+> [!NOTE]
 > If your repository uses GitHub Actions to perform required checks on pull requests in your repository, you need to update the workflows to include the `merge_group` event as an additional trigger. Otherwise, status checks will not be triggered when you add a pull request to a merge queue. The merge will fail as the required status check will not be reported. The `merge_group` event is separate from the `pull_request` and `push` events.
 
 Example trigger configuration:

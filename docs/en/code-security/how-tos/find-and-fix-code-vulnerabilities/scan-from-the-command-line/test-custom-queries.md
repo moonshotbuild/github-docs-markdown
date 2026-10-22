@@ -81,7 +81,7 @@ the example code, by creating a file with the extension `.expected`. Alternative
 
 For an example showing how to create and test a query, see the [example](#example) below.
 
-> \[!NOTE]
+> [!NOTE]
 > Your `.ql`, `.qlref`, and `.expected` files must have consistent names:
 >
 > * If you want to directly specify the `.ql` file itself in the test command, it must have the same base name as the corresponding `.expected` file. For example, if the query is `MyJavaQuery.ql`, the expected results file must be `MyJavaQuery.expected`.

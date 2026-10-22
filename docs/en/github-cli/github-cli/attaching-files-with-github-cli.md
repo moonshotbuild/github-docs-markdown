@@ -56,7 +56,7 @@ gh issue comment ISSUE-NUMBER --attach 'PATH/TO/IMAGE#ALT-TEXT'
 
 If you do not provide alt text, GitHub CLI uses the file name.
 
-> \[!NOTE]
+> [!NOTE]
 > Alt text is not supported on video files.
 
 ## Embedding an attachment in Markdown

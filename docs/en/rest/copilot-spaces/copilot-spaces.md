@@ -179,10 +179,10 @@ Fine-grained tokens and GitHub App user access tokens must have been granted acc
 - **`base_role`** (string)
   The base role that determines default permissions for organization members.
 
-no_access: No default access (default)
-reader: Organization members can read the space
-writer: Organization members can read and edit the space
-admin: Organization members have full admin access to the space
+  no_access: No default access (default)
+  reader: Organization members can read the space
+  writer: Organization members can read and edit the space
+  admin: Organization members have full admin access to the space
   Default: `no_access`
   Can be one of: `reader`, `writer`, `admin`, `no_access`
 
@@ -405,10 +405,10 @@ Fine-grained tokens and GitHub App user access tokens must have been granted acc
 - **`base_role`** (string)
   The base role that determines default permissions for organization members. Changing this field requires admin permissions.
 
-no_access: No default access (default)
-reader: Organization members can read the space
-writer: Organization members can read and edit the space
-admin: Organization members have full admin access to the space
+  no_access: No default access (default)
+  reader: Organization members can read the space
+  writer: Organization members can read and edit the space
+  admin: Organization members have full admin access to the space
   Can be one of: `reader`, `writer`, `admin`, `no_access`
 
 - **`resources_attributes`** (array of objects)
@@ -622,9 +622,9 @@ OAuth app tokens and personal access tokens (classic) need the read:user scope t
 - **`base_role`** (string)
   The base role that determines default permissions for the space.
 
-no_access: No default access (default)
-reader: Makes the space publicly readable
-Note: User spaces do not support writer or admin base roles.
+  no_access: No default access (default)
+  reader: Makes the space publicly readable
+  Note: User spaces do not support writer or admin base roles.
   Default: `no_access`
   Can be one of: `reader`, `no_access`
 
@@ -782,9 +782,9 @@ OAuth app tokens and personal access tokens (classic) need the read:user scope t
 - **`base_role`** (string)
   The base role that determines default permissions for the space. Changing this field requires admin permissions.
 
-no_access: No default access (default)
-reader: Makes the space publicly readable
-Note: User spaces do not support writer or admin base roles.
+  no_access: No default access (default)
+  reader: Makes the space publicly readable
+  Note: User spaces do not support writer or admin base roles.
   Can be one of: `reader`, `no_access`
 
 - **`resources_attributes`** (array of objects)

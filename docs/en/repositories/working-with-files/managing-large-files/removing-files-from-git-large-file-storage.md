@@ -25,7 +25,7 @@ If you've set up Git LFS for your repository, you can remove all files or a subs
 
 2. Navigate to your *.gitattributes* file.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Your *.gitattributes* file is generally saved within your local repository. In some cases, you may have created a global *.gitattributes* file that contains all of your Git LFS associations.
 
 3. Find and remove the associated Git LFS tracking rule within the *.gitattributes* file.
@@ -53,7 +53,7 @@ After you remove files from Git LFS, the Git LFS objects still exist on the remo
 
 To remove Git LFS objects from a repository, delete and recreate the repository. When you delete a repository, any associated issues, stars, and forks are also deleted. For more information, see [Deleting a repository](/en/repositories/creating-and-managing-repositories/deleting-a-repository). If you need to purge a removed object and you are unable to delete the repository, please [contact support](/en/support) for help.
 
-> \[!NOTE]
+> [!NOTE]
 > If you removed a single file and have other Git LFS objects that you'd like to keep in your repository, after deleting and recreating your repository, reconfigure your Git LFS-associated files. For more information, see [Removing a single file](#removing-a-single-file) and [Configuring Git Large File Storage](/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage).
 
 ## Further reading

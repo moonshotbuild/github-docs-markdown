@@ -58,7 +58,7 @@ For more information on configuring larger runners for code scanning default set
 
 ## Billing
 
-> \[!NOTE]
+> [!NOTE]
 > Larger runners are not eligible for the use of included minutes on private repositories. For both private and public repositories, when larger runners are in use, they will always be billed at the per-minute rate.
 
 Compared to standard GitHub-hosted runners, larger runners are billed differently. Larger runners are only billed at the per-minute rate for the amount of time workflows are executed on them. There is no cost associated with creating a larger runner that is not being used by a workflow. For more information, see [Actions runner pricing](/en/billing/reference/actions-runner-pricing).

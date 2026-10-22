@@ -19,7 +19,7 @@ You may see some of these common validation errors when creating, saving, or vie
 
 <!--UI-LINK: We link to individual anchors within this file from the issue template editor when the given YAML error is thrown. Links to and anchors within this file should be preserved or should be updated in github/github if they are changed -->
 
-> \[!NOTE]
+> [!NOTE]
 > Issue forms are currently in public preview and subject to change.
 
 ## Required top level key `name` is missing

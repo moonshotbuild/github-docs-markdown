@@ -21,7 +21,7 @@ breadcrumbs:
 
 Reduce your administrative burden and empower your SMEs by creating a team of AI managers.
 
-> \[!NOTE]
+> [!NOTE]
 > Enterprise custom roles are in public preview and subject to change.
 
 ## Overview

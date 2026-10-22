@@ -19,11 +19,11 @@ breadcrumbs:
 
 Learn how to create and use cost centers to manage costs across your company's divisions at scale.
 
-> \[!NOTE] Before you create or update a cost center, if you're unsure of how spending will be allocated to the cost center, see [Cost center allocation for different products](/en/billing/reference/cost-center-allocation).
+> [!NOTE] Before you create or update a cost center, if you're unsure of how spending will be allocated to the cost center, see [Cost center allocation for different products](/en/billing/reference/cost-center-allocation).
 
 ## Creating a cost center
 
-> \[!NOTE]
+> [!NOTE]
 > An enterprise can create up to 1,000 cost centers.
 
 Create cost centers to monitor and manage expenses for specific organizations or repositories. A single cost center can include multiple resources of any type, such as organizations, repositories, users, and enterprise teams.
@@ -46,7 +46,7 @@ You can assign an enterprise team to a cost center. Every member of the team is 
 
 7. Under **Resources**, select the organizations, repositories, users, and/or enterprise teams that will be a part of the cost center.
 
-   > \[!NOTE]
+   > [!NOTE]
    > A resource (organization, repository, user, or enterprise team) can belong to only one cost center at a time. A cost center can hold many resources, but each resource lives in a single cost center. If you add a resource that belongs to a different cost center, it will be moved to the new cost center and you will be notified.
 
 8. Click **Create cost center**.

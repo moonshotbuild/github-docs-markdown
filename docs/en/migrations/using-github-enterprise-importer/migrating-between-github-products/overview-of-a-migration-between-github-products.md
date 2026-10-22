@@ -39,7 +39,7 @@ To plan your migration, ask yourself the following questions.
 
 First, if your migration source is GitHub.com, decide whether you want to migrate on an organization-by-organization basis or on a repository-by-repository basis.
 
-> \[!NOTE]
+> [!NOTE]
 > If you're migrating from GitHub Enterprise Server or GHE.com, you can only migrate repositories.
 
 If you choose repository-by-repository migrations, only repository-level data is migrated. If you pick the organization-by-organization migration strategy, selected organization-level data is also migrated, including teams and their access to repositories.
@@ -54,7 +54,7 @@ Finally, you must be an enterprise owner of the destination enterprise account t
 
 Determine your timeline, which will largely dictate your approach. The first step for determining your timeline is to get an inventory of what you need to migrate. To gather this data, use the [`gh-repo-stats` extension](https://github.com/mona-actions/gh-repo-stats/) for the GitHub CLI. This open-source tool generates a report that details how much data there is to migrate for an organization.
 
-> \[!NOTE]
+> [!NOTE]
 > `gh-repo-stats` is a third-party open-source tool which is not supported by GitHub Support. If you need help with this tool, [open an issue](https://github.com/mona-actions/gh-repo-stats/issues) in its repository.
 
 * Number of repositories
@@ -71,7 +71,7 @@ After you use the analyzer, you can weigh your inventory data against your desir
 2. To understand when teams can be ready to migrate, interview stakeholders.
 3. Fully review the rest of this guide, then decide on a migration timeline.
 
-> \[!NOTE]
+> [!NOTE]
 > `gh-repo-stats` is a third-party open-source tool which is not supported by GitHub Support. If you need help with this tool, [open an issue](https://github.com/mona-actions/gh-repo-stats/issues) in its repository.
 
 ### Do we understand what will be migrated?
@@ -105,7 +105,7 @@ To migrate a repository, you must be an organization owner for both the source o
 
 3. Grant the migrator role to the person or team. For more information, see [Managing access for a migration between GitHub products](/en/migrations/using-github-enterprise-importer/migrating-between-github-products/managing-access-for-a-migration-between-github-products#about-the-migrator-role).
 
-   > \[!NOTE]
+   > [!NOTE]
    > Remember to grant the migrator role for both the source organization and the destination organization.
 
 4. Confirm that the person has correctly configured personal access tokens to meet all the access requirements. For more information, see [Managing access for a migration between GitHub products](/en/migrations/using-github-enterprise-importer/migrating-between-github-products/managing-access-for-a-migration-between-github-products#required-scopes-for-personal-access-tokens).
@@ -118,7 +118,7 @@ If you intend to change your organizational structure, consider other batching f
 
 Even if you change your organizational structure, you can still prepare a script for your migration. Use the GitHub CLI command, then move the lines for each repository into different scripts as needed.
 
-> \[!NOTE]
+> [!NOTE]
 > You can run multiple batches simultaneously. For example, if you're batching by teams, you could run the migrations for multiple teams in the same time window.
 
 1. Decide what your new organization structure will be.
@@ -169,6 +169,7 @@ After each migration has finished, you will need to complete some additional tas
 * [Reinstalling GitHub Apps](#reinstalling-github-apps)
 * [Recreating teams](#recreating-teams)
 * [Reclaiming mannequins](#reclaiming-mannequins)
+* [Restoring commit signature verification](#restoring-commit-signature-verification)
 
 ### Checking the migration status
 
@@ -217,7 +218,7 @@ During the migration process, GitHub Actions is disabled for all migrated reposi
 
 If you were using larger runners, self-hosted runners, or encrypted secrets, you must reconfigure them.
 
-> \[!NOTE]
+> [!NOTE]
 > Workflow run history for GitHub Actions is not included in migrations.
 
 1. If you use self-hosted runners, reconfigure your runners.
@@ -315,10 +316,32 @@ Teams are not migrated as part of a repository migration. You must manually recr
 
 After you run a migration with GitHub Enterprise Importer or Enterprise Live Migrations, all user activity in the migrated repository (except Git commits) is attributed to placeholder identities called mannequins.
 
-> \[!NOTE]
+> [!NOTE]
 > Only organization owners can reclaim mannequins. If you've been granted the migrator role, contact an organization owner to perform this step.
 
 1. Decide if you want to reclaim mannequins.
 2. Plan when you'll complete reclaims.
 3. Reclaim mannequins. You can reattribute the history for each mannequin to an organization member with the GitHub CLI or in your browser. If you use the GitHub CLI, you can reclaim mannequins in bulk. For more information, see [Reclaiming mannequins for GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/completing-your-migration-with-github-enterprise-importer/reclaiming-mannequins-for-github-enterprise-importer).
 4. If any of the members do not already have appropriate access to the repository via team membership, give the members access to the repository. For more information, see [Managing an individual's access to an organization repository](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/managing-an-individuals-access-to-an-organization-repository).
+
+### Restoring commit signature verification
+
+Commit signatures are verified against the signing keys known to the destination, so verification does not always carry over when you migrate.
+
+* **Commits signed by GitHub.** Commits created through the web interface are signed with a web commit signing key for the deployment where the commit was made. GitHub.com, each GitHub Enterprise Server instance, and GHE.com use different keys. Keys can also differ between GHE.com regions.
+
+  As a result, migrated web commits may show as "Unverified" at the destination.
+
+  * On GitHub Enterprise Server, web commit signing is optional. A site administrator configures the key and the account that holds it, so an administrator can add a key.
+  * On GitHub.com and GHE.com, the account is owned by GitHub. If your destination is one of these platforms and your commits are affected, contact [GitHub Support](https://support.github.com).
+
+* **Commits signed by users.** Users' GPG and SSH signing keys are not migrated. For their migrated commits to show as "Verified", users must:
+
+  * Add their signing key to their account at the destination
+  * Verify the commit's committer email address on that account
+
+  After users complete both steps, the "Verified" status is restored on commits that have already been migrated. You do not need to migrate again. See [Adding a GPG key to your GitHub account](/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account), [Adding a new SSH key to your GitHub account](/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account), and [Associating an email with your GPG key](/en/authentication/managing-commit-signature-verification/associating-an-email-with-your-gpg-key).
+
+Migrations between organizations within GitHub.com are not affected, because the source and the destination use the same web commit signing key, and users' own signing keys remain on their accounts.
+
+For more information about how verification works, see [About commit signature verification](/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).

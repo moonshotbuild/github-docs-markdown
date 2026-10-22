@@ -19,7 +19,7 @@ breadcrumbs:
 
 To offer paid plans for your app or to include a marketplace badge in your app listing, you must complete the publisher verification process for your organization.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 Publisher verification ensures that GitHub has a way to contact you, that you've enabled two-factor authentication for your organization, and that your organization's domain has been verified.

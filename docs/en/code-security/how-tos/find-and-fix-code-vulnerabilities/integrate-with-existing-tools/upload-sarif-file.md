@@ -32,7 +32,7 @@ For example, if you use:
 
 By default, code scanning expects one SARIF results file per analysis for a repository. If you want to upload more than one set of results for a commit in a repository, you must identify each set of results as a unique set.
 
-> \[!NOTE]
+> [!NOTE]
 > For private and internal repositories, code scanning is available when GitHub Code Security features are enabled for the repository. If you see the error `GitHub Code Security or GitHub Advanced Security must be enabled for this repository to use code scanning`, check that GitHub Code Security is enabled. For more information, see [Managing security and analysis settings for your repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository).
 
 ## Uploading a code scanning analysis with GitHub Actions

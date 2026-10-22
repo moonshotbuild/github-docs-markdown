@@ -23,7 +23,7 @@ You can connect to GitHub Copilot through an HTTP proxy and use custom certifica
 
 <div class="ghd-tool visualstudio">
 
-> \[!NOTE] GitHub Copilot is not currently available for use with Visual Studio for Mac.
+> [!NOTE] GitHub Copilot is not currently available for use with Visual Studio for Mac.
 
 </div>
 
@@ -41,7 +41,7 @@ You can configure an HTTP proxy for Copilot in your chosen editor. To view instr
 4. In the "Host name" field, enter the hostname of your proxy server, and in the "Port number" field, enter the port number of your proxy server.
 5. Optionally, to configure Copilot to ignore certificate errors, in the left sidebar, click **Appearance & Behavior**, click **System Settings**, click **Server Certificates**, then select or deselect **Accept non-trusted certificates automatically**.
 
-   > \[!WARNING] Ignoring certificate errors can cause security issues and is not recommended.
+   > [!WARNING] Ignoring certificate errors can cause security issues and is not recommended.
 
 If you have configured a proxy but are still encountering connection errors, see [Troubleshooting network errors for GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-network-errors#troubleshooting-proxy-errors).
 
@@ -62,7 +62,7 @@ This stores your credentials as plaintext in your editor's settings. Alternative
 3. In the text box under "Proxy," type the address of your proxy server, for example `http://localhost:3128`.
 4. Optionally, to configure Copilot to ignore certificate errors, under "Proxy Strict SSL," select or deselect the checkbox.
 
-   > \[!WARNING] Ignoring certificate errors can cause security issues and is not recommended.
+   > [!WARNING] Ignoring certificate errors can cause security issues and is not recommended.
 
 If you have configured a proxy but are still encountering connection errors, see [Troubleshooting network errors for GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-network-errors#troubleshooting-proxy-errors).
 
@@ -124,7 +124,7 @@ If you need to authenticate to a proxy, you can try one of the below:
 
 Generally, if you're using company equipment, your company's IT department should have already installed any required certificates on your machine. If you need to install a certificate, see the following instructions.
 
-> \[!WARNING] Installing a custom certificate is an instruction for your computer to trust the creator of the certificate, potentially allowing the creator to intercept all Internet traffic from your machine. You should be very careful to verify that you are installing the correct certificate.
+> [!WARNING] Installing a custom certificate is an instruction for your computer to trust the creator of the certificate, potentially allowing the creator to intercept all Internet traffic from your machine. You should be very careful to verify that you are installing the correct certificate.
 
 * For Windows, see [Installing the trusted root certificate](https://learn.microsoft.com/en-us/skype-sdk/sdn/articles/installing-the-trusted-root-certificate) in the Microsoft documentation.
 * For macOS, see [Add certificates to a keychain using Keychain Access on Mac](https://support.apple.com/en-gb/guide/keychain-access/kyca2431/mac) in the Keychain Access User Guide.

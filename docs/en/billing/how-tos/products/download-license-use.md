@@ -1,7 +1,7 @@
 ---
 source_path: "/en/billing/how-tos/products/download-license-use"
 title: "Downloading license use for your enterprise or organization"
-intro: "Get data on consumption of GitHub, Copilot, and Advanced Security licenses."
+intro: "Get data on consumption of GitHub, Copilot, Code Quality, and Advanced Security licenses."
 product: "Billing and payments"
 document_type: "article"
 breadcrumbs:
@@ -17,9 +17,9 @@ breadcrumbs:
 
 # Downloading license use for your enterprise or organization
 
-Get data on consumption of GitHub, Copilot, and Advanced Security licenses.
+Get data on consumption of GitHub, Copilot, Code Quality, and Advanced Security licenses.
 
-You can download CSV files with details of paid license use through the GitHub user interface or the REST API.
+You can download CSV files with details of paid license use through the GitHub user interface. For supported products, you can also retrieve license usage information through the REST API.
 
 For more detailed reports on usage of all paid products, see [Viewing your usage of metered products and licenses](/en/billing/how-tos/products/view-productlicense-use).
 
@@ -31,7 +31,7 @@ For more detailed reports on usage of all paid products, see [Viewing your usage
 
 3. In the license area of interest, click **Download CSV report**. If offered a choice, choose your preferred report.
 
-The report will be emailed to the default email address associated with your GitHub account. For information about the fields, see [License reports reference](/en/billing/reference/license-reports).
+The report will be emailed to the default email address associated with your GitHub account. The exception is Code Quality reports, which download directly to your browser instead. For information about the fields, see [License reports reference](/en/billing/reference/license-reports).
 
 ## On GitHub Enterprise Server
 

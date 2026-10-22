@@ -32,7 +32,7 @@ If the person who will perform the migration is **not** a GitHub organization ow
 
 Next, you will need to create a personal access token (classic) which the GL2GH extension of the GitHub CLI will use to communicate with GitHub. The scopes that are required for your GitHub personal access token (classic) depend on your role and the task you want to complete.
 
-> \[!NOTE]
+> [!NOTE]
 > You can only use a personal access token (classic), not a fine-grained personal access token. This means that you cannot use GitHub Enterprise Importer if your organization uses the "Restrict personal access tokens (classic) from accessing your organizations" policy. For more information, see [Enforcing policies for personal access tokens in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-personal-access-tokens-in-your-enterprise#restricting-access-by-personal-access-tokens).
 
 | Task                                                      | Organization owner              | Migrator                                                                                                                                                                                                                             |

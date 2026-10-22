@@ -17,7 +17,7 @@ breadcrumbs:
 
 Build extensions that add your own tools and slash commands to Copilot CLI.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Copilot CLI extensions are currently an experimental feature and are subject to change.
 
 An extension lets you add your own capabilities to Copilot CLI. Each extension is a small Node.js module that runs as a separate process alongside your interactive session and connects back to it. Through that connection, an extension can add **tools** that Copilot can call while it works on your behalf, and **slash commands** that you run yourself.
@@ -27,9 +27,9 @@ In this tutorial, you'll build two simple extensions as examples of what you can
 * A tool, called `tool-time`, that Copilot can call to report how long its tool calls have taken so far in a session.
 * A slash command, called `/tokencount`, that reports how many tokens you've used since you started counting.
 
-Both examples rely only on the SDK that's bundled with the Copilot CLI, so there's nothing extra to install. For background on how extensions work, see [About extensions for GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-cli-extensions).
+Both examples rely only on the SDK that's bundled with the Copilot CLI, so there's nothing extra to install. For background on how extensions work, see [Extensions for GitHub Copilot](/en/copilot/concepts/customizations/extensions).
 
-> \[!WARNING]
+> [!WARNING]
 > Extensions execute on your computer with your privileges. Only load extension code that you trust, in the same way you would only run any other script you didn't write yourself.
 
 ## Prerequisites
@@ -38,6 +38,22 @@ Both examples rely only on the SDK that's bundled with the Copilot CLI, so there
 * **Experimental features enabled**: Extensions are currently an experimental feature. The steps in this tutorial turn on experimental features each time you start the CLI, using the `‑‑experimental` command line option.
 * **JavaScript**: Extensions are written in JavaScript, so you'll need to be familiar with this language to create your own extensions.
 * **A repository**: The second example adds a project-level extension, so you'll need a local copy of a Git repository in which to add the extension.
+
+## Choosing an extension location
+
+Each CLI extension lives in a named directory containing an entry file called `extension.mjs`, `extension.cjs`, or `extension.js`. The directory name becomes the extension name. The CLI runs the entry file directly with Node.js, so write it in JavaScript rather than TypeScript.
+
+| Source  | Location                                             | Availability                         |
+| ------- | ---------------------------------------------------- | ------------------------------------ |
+| Project | `.github/extensions/NAME/` in the current repository | Sessions working in that repository  |
+| User    | `~/.copilot/extensions/NAME/`                        | Your CLI sessions across directories |
+| Plugin  | An installed plugin                                  | Wherever the plugin is enabled       |
+
+Use a project extension to share project-specific functionality with collaborators. Use a user extension for personal functionality across projects. Both use the same directory structure, so you can share a personal extension by moving its directory into a repository's `.github/extensions/` directory.
+
+Extensions must be enabled before they can run. You can start the CLI with `--experimental`, as the examples below do, or run `/experimental on` in an existing interactive session.
+
+For controls over loading extensions and letting the agent manage them, see [Extension modes](/en/copilot/reference/copilot-cli-reference/cli-command-reference#extension-modes).
 
 ## Example extension 1: A "tool time" tool
 
@@ -122,7 +138,7 @@ To ensure a tool is used by the CLI, the tool must do something the CLI can't do
    });
    ```
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * `@github/copilot-sdk/extension` is the extension SDK, which is bundled with the CLI. The CLI resolves this import automatically when it runs your extension, so you don't need to add it to a `package.json` or run a package manager.
 > * The `startTimes`, `totalMs`, and `callCount` values live at module scope. Because the extension runs as a single long-lived process for the whole session, they accumulate for as long as the session is open.
@@ -141,7 +157,7 @@ To ensure a tool is used by the CLI, the tool must do something the CLI can't do
 
 2. Without granting elevated permissions to either the new extension, all extensions, or all tools, you'll be prompted to allow the new extension to skip tool permission prompts. Choose either **Yes** or **Yes, and always allow "user:tool-time" in this directory**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > For the minimum elevated permissions to prevent seeing this message when you start the CLI, add this to your CLI startup command:
    >
    > ```shell copy
@@ -170,7 +186,7 @@ Run the `/extensions manage` command to open the extension manager. Your `tool-t
 
    The agent calls the `session_tool_time` tool, from the new extension, and uses it to answer your question.
 
-   > \[!TIP]
+   > [!TIP]
    > You can confirm that the agent used the new tool by looking at the start of Copilot's response. The response should be prefixed by the name of the tool that was used; in this case, `session_tool_time`.
 
 ### How the tool works
@@ -188,7 +204,7 @@ Two further fields shape how the tool is offered to the model:
 
 * **`defer: "never"`**—keeps the tool's description in the model's tool list at all times. By default, when many tools are available, the CLI can defer rarely-used tools and let the model search for them on demand. Setting `defer` to `"never"` opts this tool out of that behavior, so Copilot always sees it.
 
-  > \[!IMPORTANT]
+  > [!IMPORTANT]
   > `defer: "never"` simply makes the tool *available* to Copilot. It doesn't *force* Copilot to call it. There is no way for an extension to mandate that a particular tool should always be used if there is an alternative means of generating an appropriate response to a prompt. The model always decides for itself which tool to use. In this example, the new tool is reliably used because there's no other way for the model to know the information the tool provides.
 
 * **`skipPermission: true`** allows the tool to run without asking you to approve each call. This is appropriate here because the tool only reads totals the extension has already collected; it doesn't touch your files or run commands.
@@ -204,7 +220,7 @@ A `tool.execution_start` event carries the tool's name (`event.data.toolName`). 
 
 Because the totals live in the long-lived extension process, they cover the whole session. This is the kind of job extensions are good at: observing what's happening in the session and keeping state across calls.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The totals are held in memory, so they reset whenever the extension is reloaded or the session restarts (for example, after `/clear`).
 > * The figure is wall-clock time measured from the extension's point of view—the gap between each tool call's start and completion events—so it includes any time a call spent waiting for you to approve it.
@@ -342,7 +358,7 @@ session.on("assistant.usage", (event) => {
 
 The CLI emits an `assistant.usage` event after each assistant turn, carrying the input and output token counts for that turn. The extension adds them to the running total in `tokensUsed`. When you run `/tokencount start`, the handler records the current total in `startedAt`. Entering `/tokencount` with no argument later in the session reports the difference. Because both variables live in the long-lived extension process, they persist for the whole session.
 
-> \[!NOTE]
+> [!NOTE]
 > The totals are held in memory, so they reset whenever the extension is reloaded or the session restarts (for example, after `/clear`).
 
 ## Editing and reloading an extension

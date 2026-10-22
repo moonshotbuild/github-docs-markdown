@@ -23,7 +23,7 @@ You can publish a security advisory to alert your community about a security vul
 
 <!--Marketing-LINK: From /features/security/software-supply-chain page "Publishing a security advisory".-->
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to repository-level security advisories in a public repository.
 > To edit a global advisory in the GitHub Advisory Database, see [Editing security advisories in the GitHub Advisory Database](/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/edit-advisory-database).
 
@@ -33,7 +33,7 @@ Before you can publish a security advisory or request a CVE identification numbe
 
 ## Publishing a security advisory
 
-> \[!WARNING]
+> [!WARNING]
 > Whenever possible, you should add a fix version to a security advisory prior to publishing the advisory. If you don't, the advisory will be published without a fixed version, and Dependabot will alert your users about the issue without offering any safe version to update to.
 
 1. On GitHub, navigate to the main page of the repository.
@@ -46,7 +46,7 @@ Before you can publish a security advisory or request a CVE identification numbe
 
    ![Screenshot of the "Required advisory information has been provided" area of the page. The "Publish advisory" button is outlined in orange.](/assets/images/help/security/publish-advisory-button.png)
 
-> \[!NOTE]
+> [!NOTE]
 > Publishing a security advisory deletes the temporary private fork for the security advisory.
 
 ## Requesting a CVE identification number (Optional)

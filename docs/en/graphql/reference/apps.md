@@ -35,7 +35,7 @@ A GitHub App.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (IpAllowListEntryOrder): Ordering options for IP allow list entries returned.
+  * `orderBy` (IpAllowListEntryOrder): Ordering options for IP allow list entries returned. Default: `{field: ALLOW_LIST_VALUE, direction: ASC}`.
 
 * `logoBackgroundColor` (String!): The hex color code, without the leading '#', for the logo background.
 * `logoUrl` (URI!): A URL pointing to the app's logo.
@@ -227,12 +227,12 @@ false, only approved listings will be returned.
 * `first` (Int): Returns the first n elements from the list.
 * `last` (Int): Returns the last n elements from the list.
 * `organizationId` (ID): Select listings for products owned by the specified organization.
-* `primaryCategoryOnly` (Boolean): Select only listings where the primary category matches the given category slug.
+* `primaryCategoryOnly` (Boolean): Select only listings where the primary category matches the given category slug. Default: `false`.
 * `slugs` ([String]): Select the listings with these slugs, if they are visible to the viewer.
 * `useTopicAliases` (Boolean): Also check topic aliases for the category slug.
 * `viewerCanAdmin` (Boolean): Select listings to which user has admin access. If omitted, listings visible to the
 viewer are returned.
-* `withFreeTrialsOnly` (Boolean): Select only listings that offer a free trial.
+* `withFreeTrialsOnly` (Boolean): Select only listings that offer a free trial. Default: `false`.
 
 ## OauthApplicationAuditEntryData - interface
 

@@ -28,7 +28,7 @@ Code with poor readability is difficult for other developers to maintain and ext
 * [Reducing nested logic](#reducing-nested-logic)
 * [Splitting large methods into smaller, more readable ones](#splitting-up-large-methods)
 
-> \[!NOTE] The responses shown in this article are examples. Copilot Chat responses are non-deterministic, so you may get different responses from the ones shown here.
+> [!NOTE] The responses shown in this article are examples. Copilot Chat responses are non-deterministic, so you may get different responses from the ones shown here.
 
 ## Improving variable names
 
@@ -287,5 +287,5 @@ private void printOrderSummary(Order order, double totalPrice) {
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

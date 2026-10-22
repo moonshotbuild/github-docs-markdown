@@ -27,9 +27,9 @@ Custom agents allow you to tailor Copilot's expertise for specific tasks.
 
 When you prompt Copilot to carry out a task it may choose to use one of your custom agents, if Copilot determines that the agent's expertise is a good fit for the task.
 
-Work performed by a custom agent is carried out using a subagent, which is a temporary agent spun up to complete the task. The subagent has its own context window, which can be populated by information that is not relevant to the main agent. In this way, especially for larger tasks, parts of the work can be offloaded to custom agents, without cluttering the main agent's context window. The main agent can then focus on higher-level planning and coordination.
+When the main agent delegates work to a custom agent, that work is carried out by a subagent with its own context window. This lets the specialist focus on its assigned task without cluttering the main agent's context. You can also select a custom agent for the session directly.
 
-For more information, see [About custom agents](/en/copilot/concepts/agents/copilot-cli/about-custom-agents).
+For more information, see [Custom agents](/en/copilot/concepts/customizations/custom-agents).
 
 ## Creating a custom agent
 
@@ -37,7 +37,7 @@ Each custom agent is defined by a Markdown file with an `.agent.md` extension. Y
 
 1. In interactive mode, enter `/agent`.
 
-2. Select **Create new agent** from the list of options.
+2. Press <kbd>N</kbd> to create a new agent.
 
 3. Choose between the options to create the custom agent in the repository or in your home directory:
 
@@ -45,7 +45,7 @@ Each custom agent is defined by a Markdown file with an `.agent.md` extension. Y
 
    * **User** (`~/.copilot/agents/`)
 
-   > \[!NOTE]
+   > [!NOTE]
    > If personal and repository custom agents have the same ID, the personal agent is used. For an agent at the root of an `agents` directory, the ID is the file name without the `.agent.md` or `.md` extension. The optional `name` field does not affect deduplication. Agents with the same `name` but different IDs both load, but if an `--agent` value matches more than one ID or `name`, the CLI uses the highest-priority match.
 
 4. Choose whether to get Copilot to create the custom agent file, or create it yourself.
@@ -87,7 +87,7 @@ Each custom agent is defined by a Markdown file with an `.agent.md` extension. Y
 
    1. Enter a name for the agent. The name you enter is the name that's displayed when you list the available agents. A version of this will be used as the name of the agent file—for example, if you enter "Security expert", the agent file will be named `security-expert.agent.md`.
 
-      > \[!TIP]
+      > [!TIP]
       > For ease of use when using a custom agent programmatically, it's recommended that you choose a name consisting only of lowercase letters and hyphens.
 
    2. Enter a description that states what expertise this agent has and when it should be used.
@@ -108,8 +108,8 @@ Custom agents can be used in the following ways:
 
   Enter `/agent` in interactive mode and choose from the list of available custom agents. Then enter a prompt that will be passed to the selected agent.
 
-  > \[!NOTE]
-  > The CLI's default agents are not included in this list. For more information about the default agents, see [About custom agents](/en/copilot/concepts/agents/copilot-cli/about-custom-agents#built-in-agents).
+  > [!NOTE]
+  > The CLI's default agents are not included in this list. For more information about the default agents, see [Custom agents](/en/copilot/concepts/customizations/custom-agents#built-in-agents).
 
 * **Explicit instruction**
 
@@ -164,14 +164,14 @@ include-custom-instructions: true
 Review the change and flag anything that violates the repository's conventions.
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > This setting only affects the agent when it runs as a subagent. A custom agent that you select yourself—with `--agent`, `/agent`, or by inference—already follows your repository's custom instructions, so the setting has no effect in that case.
 
 For more information, including how this setting interacts with the `--no-custom-instructions` option, see [GitHub Copilot CLI command reference](/en/copilot/reference/copilot-cli-reference/cli-command-reference#repository-custom-instructions-for-subagents).
 
 ## Further reading
 
-* [Comparing GitHub Copilot CLI customization features](/en/copilot/concepts/agents/copilot-cli/comparing-cli-features)
+* [Comparing Copilot customization features](/en/copilot/concepts/customizations/comparing-customizations)
 * [Custom agents configuration](/en/copilot/reference/custom-agents-configuration)
 * [GitHub Copilot CLI command reference](/en/copilot/reference/copilot-cli-reference/cli-command-reference#custom-agents-reference)
 * [Custom agents](/en/copilot/tutorials/customization-library/custom-agents)—a curated collection of examples

@@ -47,7 +47,7 @@ If a package belongs to a registry that supports granular permissions, anyone wi
 
 In most registries, to pull a package, you must authenticate with a personal access token or `GITHUB_TOKEN`, regardless of whether the package is public or private. However, in the Container registry, public packages allow anonymous access and can be pulled without authentication or signing in via the CLI.
 
-> \[!NOTE]
+> [!NOTE]
 > If you publish a package that is linked to a repository, the package inherits its permissions from the linked repository by default. To access the package's granular permissions settings, you must remove the package's inherited permissions. If you're the owner of an organization, you can disable the automatic inheritance of permissions for all new packages scoped to your organization. For more information, see [Configuring a package's access control and visibility](/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility#selecting-whether-a-package-inherits-permissions-from-a-repository) and [Configuring a package's access control and visibility](/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility#disabling-automatic-inheritance-of-access-permissions-in-an-organization).
 
 When you publish a package, you automatically get admin permissions to the package. If you publish a package to an organization, anyone with the `owner` role in the organization also gets admin permissions to the package.
@@ -62,14 +62,14 @@ If you are using a GitHub Actions workflow to manage your packages, you can gran
 | Write      | Can upload and download this package. <br> Can read and write package metadata.                                                      |
 | Admin      | Can upload, download, delete, and manage this package. <br> Can read and write package metadata. <br> Can grant package permissions. |
 
-> \[!NOTE]
+> [!NOTE]
 > The ability for GitHub Actions workflows to delete and restore packages using the REST API is currently in public preview and subject to change.
 
 For more information, see [Configuring a package's access control and visibility](/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility).
 
 ## About scopes and permissions for package registries
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Packages only supports authentication using a personal access token (classic). For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 To use or manage a package hosted by a package registry, you must use a personal access token (classic) with the appropriate scope, and your personal account must have appropriate permissions.
@@ -85,7 +85,7 @@ For example:
 | `write:packages`  | Upload and publish packages to GitHub Packages     | write               |
 | `delete:packages` | Delete packages from GitHub Packages               | admin               |
 
-> \[!NOTE]
+> [!NOTE]
 > The ability for GitHub Actions workflows to delete and restore packages using the REST API is currently in public preview and subject to change.
 
 When you create a GitHub Actions workflow, you can use the `GITHUB_TOKEN` to publish, install, delete, and restore packages in GitHub Packages without needing to store and manage a personal access token.
@@ -114,7 +114,7 @@ For more conceptual background on GitHub Actions or examples of using packages i
 
 ### Access tokens
 
-> \[!NOTE]
+> [!NOTE]
 > The ability for GitHub Actions workflows to delete and restore packages using the REST API is currently in public preview and subject to change.
 
 * To publish, install, delete, and restore packages associated with the workflow repository, use `GITHUB_TOKEN`.

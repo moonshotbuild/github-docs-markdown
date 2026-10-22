@@ -19,10 +19,10 @@ breadcrumbs:
 
 Rate limits restrict the rate of traffic to GitHub.com, to help ensure consistent access for all users.
 
-> \[!NOTE]
+> [!NOTE]
 > Consider building a GitHub App instead of an OAuth app. The rate limit for GitHub Apps using an installation access token scales with the number of repositories and number of organization users. Conversely, OAuth apps have lower rate limits and do not scale. For more information, see [Differences between GitHub Apps and OAuth apps](/en/apps/oauth-apps/building-oauth-apps/differences-between-github-apps-and-oauth-apps) and [About creating GitHub Apps](/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps).
 
-> \[!WARNING]
+> [!WARNING]
 > OAuth apps are subject to a rate limit of **2,000 access token requests per hour**. If your application exceeds this limit, further requests to generate new access tokens will be temporarily blocked, and you may receive error responses. **This can lead to temporary outages**. Please plan your implementation accordingly to avoid potential service interruptions.
 
 ## About rate limits for OAuth apps

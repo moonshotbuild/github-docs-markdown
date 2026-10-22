@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can create a temporary private fork to privately collaborate on fixing a security vulnerability in your public repository.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to repository-level security advisories in a public repository.
 > To edit a global advisory in the GitHub Advisory Database, see [Editing security advisories in the GitHub Advisory Database](/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/edit-advisory-database).
 
@@ -107,7 +107,7 @@ Additionally, there can be no merge conflicts, and GitHub won't enforce any of t
 
 ![Screenshot of the "Collaborate on a patch" area of a draft security advisory. The "Merge pull requests" button is outlined in dark orange.](/assets/images/help/security/merge-pull-requests-button.png)
 
-> \[!NOTE]
+> [!NOTE]
 > You can only merge one pull request into the `main` branch of a temporary private fork. If more than one pull request targets the `main` branch, merging is blocked.
 
 After you merge changes in a security advisory, you can publish the security advisory to alert your community about the security vulnerability in previous versions of your project. For more information, see [Publishing a repository security advisory](/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/publish-repository-advisory).

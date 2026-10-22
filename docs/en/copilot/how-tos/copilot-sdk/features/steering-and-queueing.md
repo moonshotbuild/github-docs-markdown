@@ -55,8 +55,8 @@ Source identifies origin. Delivery mode requests urgency. Neither requires the r
 
 A successful high-level `send` acknowledgement returns a message ID and confirms acceptance, not that the recipient has consumed the message. Do not automatically resend an accepted message merely because no reply appears. Send-and-wait can complete on an idle event without an assistant message.
 
-> \[!WARNING]
-> Remote backends do not necessarily preserve source end to end. The agent session can include source in its local echo without carrying it in the remote HTTP request. A local source event does not prove that the remote worker received the same provenance.
+> [!WARNING]
+> Remote backends do not necessarily preserve source end to end. Mission Control can include source in its local echo without carrying it in the remote HTTP request. A local source event does not prove that the remote worker received the same provenance.
 
 ## Steering (immediate mode)
 
@@ -240,7 +240,7 @@ try (var client = new CopilotClient()) {
 3. The agent sees the steering message as a new user message and adjusts its response
 4. If the turn completes before the steering message is processed, it is automatically moved to the regular queue for the next turn
 
-> \[!NOTE]
+> [!NOTE]
 > Steering messages are best-effort within the current turn. If the agent has already committed to a tool call, the steering takes effect after that call completes but still within the same turn.
 
 ## Queueing (enqueue mode)
@@ -570,7 +570,7 @@ class InteractiveChat {
 | `"enqueue"`   | Queue for next turn      | Waits in FIFO queue           | Starts a new turn immediately |
 | `"immediate"` | Inject into current turn | Injected before next LLM call | Starts a new turn immediately |
 
-> \[!NOTE]
+> [!NOTE]
 > When the session is idle (not processing), both modes behave identically—the message starts a new turn immediately.
 
 ## Best practices

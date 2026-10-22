@@ -31,4 +31,4 @@ Build skills and knowledge about billing through examples and hands-on activitie
 
 * [Gathering insights on your spending](/en/billing/tutorials/gather-insights)
 
-  Get insights into the usage of your  members.
+  Get insights into the usage of your organization members.

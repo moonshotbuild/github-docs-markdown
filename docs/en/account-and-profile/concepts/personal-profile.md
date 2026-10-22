@@ -19,7 +19,7 @@ Your GitHub profile showcases your work, contributions, and information you choo
 
 Your GitHub profile showcases your work, contributions, and information you choose to share publicly.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Any details you add to your **public** profile will be visible to all GitHub users, including in regions where local laws, regulations, or cultural norms may pose risks to expressing your identity. We respect everyone's decision about whether or not to share information about themselves on their GitHub profile.
 
 ## Key profile elements

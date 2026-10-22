@@ -51,7 +51,7 @@ Once the commit is on the default branch, any tags that contain the commit will 
 
 The file tree helps you navigate between files in a commit and focus on the diffs that matter. You can select a file to view its diff or filter by file path when a commit changes many files.
 
-> \[!NOTE]
+> [!NOTE]
 > The file tree will not display if your screen width is too narrow or if the commit only includes one file.
 
 ![Screenshot of the "Files changed" tab of a pull request. In the left sidebar, the file tree is outlined in dark orange.](/assets/images/help/repository/file-tree.png)

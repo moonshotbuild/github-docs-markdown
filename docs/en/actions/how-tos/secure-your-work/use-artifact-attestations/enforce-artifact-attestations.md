@@ -21,7 +21,7 @@ breadcrumbs:
 
 Use an admission controller to enforce artifact attestations in your Kubernetes cluster.
 
-> \[!NOTE] Before proceeding, ensure you have enabled build provenance for container images, including setting the `push-to-registry` attribute in the [`attest` action](https://github.com/actions/attest) as documented in [Generating build provenance for container images](/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations#generating-build-provenance-for-container-images). This is required for the Policy Controller to verify the attestation.
+> [!NOTE] Before proceeding, ensure you have enabled build provenance for container images, including setting the `push-to-registry` attribute in the [`attest` action](https://github.com/actions/attest) as documented in [Generating build provenance for container images](/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations#generating-build-provenance-for-container-images). This is required for the Policy Controller to verify the attestation.
 
 ## Getting started with Kubernetes admission controller
 
@@ -67,7 +67,7 @@ You've now installed the GitHub trust root, and an artifact attestation policy i
 
 ### Enable the policy in your namespace
 
-> \[!WARNING]
+> [!WARNING]
 > This policy will not be enforced until you specify which namespaces it should apply to.
 
 Each namespace in your cluster can independently enforce policies. To enable enforcement in a namespace, you can add the following label to the namespace:

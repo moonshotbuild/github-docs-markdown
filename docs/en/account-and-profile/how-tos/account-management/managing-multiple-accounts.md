@@ -148,7 +148,7 @@ GIT_SSH_COMMAND='ssh -i PATH/TO/KEY/FILE -o IdentitiesOnly=yes' git clone git@gi
 
 If you are a member of an enterprise with managed users, but also want to collaborate outside your enterprise using a personal account, you can use different SSH keys for each account. For more information about using SSH, see [Connecting to GitHub with SSH](/en/authentication/connecting-to-github-with-ssh).
 
-> \[!WARNING]
+> [!WARNING]
 > You cannot use the same SSH key to contribute to both repositories inside your organization with managed users and outside the enterprise.
 
 1. Generate a different SSH key for the repositories in your organization with managed users. See [Generating a new SSH key and adding it to the ssh-agent](/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key). When you save the key, give it a different filename from your existing key (for instance, add -emu to the suggested name of the file).
@@ -168,7 +168,7 @@ If you are a member of an enterprise with managed users, but also want to collab
        IdentitiesOnly yes
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > The `IdentitiesOnly` line ensures that if the ssh-agent has loaded multiple keys, ssh uses the correct key when connecting.
 
 4. Test your SSH configuration by running the following command to connect using the SSH key associated with your personal account - see [Testing your SSH connection](/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection) for further details

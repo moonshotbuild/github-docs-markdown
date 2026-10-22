@@ -80,5 +80,5 @@ For each company need or goal you set for the trial, decide how you will measure
 
 If you own an eligible organization on GitHub Team, see [Setting up a trial of GitHub Advanced Security](/en/code-security/tutorials/trialing-github-advanced-security/trial-advanced-security).
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Advanced Security is free of charge during trials, but usage-based billing applies for features that consume GitHub Actions minutes or AI credits.

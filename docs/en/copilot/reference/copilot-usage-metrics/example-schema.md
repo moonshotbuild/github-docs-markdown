@@ -597,7 +597,7 @@ The Copilot CLI customization fields shown in `day_totals` apply to enterprise a
 
 The following user-teams report examples are returned by the `user-teams-1-day` endpoints and are intended to be joined with the per-user usage report on `user_id`, `day`, and the relevant entity id (`organization_id` for the organization scope, `enterprise_id` for the enterprise scope) to derive team-level metrics. For more guidance, see [Team-level Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/team-level-metrics).
 
-> \[!NOTE]
+> [!NOTE]
 > Teams with fewer than 5 seated Copilot users are omitted from user-teams reports.
 
 ## Organization user-teams schema example

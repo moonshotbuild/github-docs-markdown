@@ -21,7 +21,7 @@ Find technical information about secrets in GitHub Actions.
 
 ## Naming your secrets
 
-> \[!TIP]
+> [!TIP]
 > To help ensure that GitHub redacts your secrets in logs correctly, avoid using structured data as the values of secrets.
 
 The following rules apply to secret names:
@@ -54,7 +54,7 @@ Organization and repository secrets are read when a workflow run is queued, and 
 
 GitHub automatically redacts the following sensitive information from workflow logs.
 
-> \[!NOTE] If you would like other types of sensitive information to be automatically redacted, please reach out to us in our [community discussions](https://github.com/orgs/community/discussions?discussions_q=is%3Aopen+label%3AActions).
+> [!NOTE] If you would like other types of sensitive information to be automatically redacted, please reach out to us in our [community discussions](https://github.com/orgs/community/discussions?discussions_q=is%3Aopen+label%3AActions).
 
 * 32-byte and 64-byte Azure keys
 * Azure AD client app passwords

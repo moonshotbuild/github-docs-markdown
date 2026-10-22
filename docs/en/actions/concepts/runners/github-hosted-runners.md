@@ -56,7 +56,7 @@ We recommend using actions to interact with the software installed on runners. T
 
 If there is a tool that you'd like to request, please open an issue at [actions/runner-images](https://github.com/actions/runner-images). This repository also contains announcements about all major software updates on runners.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * You can also install additional software on GitHub-hosted runners. See [Customizing GitHub-hosted runners](/en/actions/how-tos/manage-runners/github-hosted-runners/customize-runners).
 > * While nested virtualization is technically possible while using runners, it is not officially supported. Any use of nested VMs is experimental and done at your own risk, we offer no guarantees regarding stability, performance, or compatibility.

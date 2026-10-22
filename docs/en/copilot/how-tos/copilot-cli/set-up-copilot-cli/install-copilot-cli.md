@@ -21,7 +21,7 @@ breadcrumbs:
 
 Learn how to install Copilot CLI so that you can use Copilot directly from the command line.
 
-To find out about Copilot CLI before you install it, see [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli).
+To find out about Copilot CLI before you install it, see [GitHub Copilot CLI](/en/copilot/concepts/copilot-surfaces/copilot-cli).
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ Prerequisite: Node.js 22 or later.
 npm install -g @github/copilot
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > If you have `ignore-scripts=true` in your `~/.npmrc` file, you must use the command:
 >
 > ```shell copy

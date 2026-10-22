@@ -19,12 +19,12 @@ breadcrumbs:
 
 Get your first AI-powered automation running using a pre-built workflow and the GitHub CLI.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Agentic Workflows are in public preview and subject to change.
 
 ## Introduction
 
-GitHub Agentic Workflows let you automate repository tasks using AI-powered workflows. For an overview of GitHub Agentic Workflows, see [About GitHub Agentic Workflows](/en/copilot/concepts/agents/about-github-agentic-workflows).
+GitHub Agentic Workflows let you automate repository tasks using AI-powered workflows. For an overview of GitHub Agentic Workflows, see [GitHub Agentic Workflows](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-github-agentic-workflows).
 
 In this guide, you'll add a pre-built agentic workflow—a daily repository status report—to an existing repository. This takes about 10 minutes and gives you a working example of automated agents running in GitHub Actions.
 

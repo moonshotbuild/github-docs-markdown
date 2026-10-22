@@ -276,7 +276,7 @@ OAuth app tokens and personal access tokens (classic) need the repo scope to use
 
 - **`languages`** (array of strings)
   Languages to be analyzed.
-Supported values are: csharp, go, java-kotlin, javascript-typescript, python, ruby
+  Supported values are: csharp, go, java-kotlin, javascript-typescript, python, ruby
 
 - **`ai_findings_option`** (string)
   Whether AI findings run for Code Quality on this repository.

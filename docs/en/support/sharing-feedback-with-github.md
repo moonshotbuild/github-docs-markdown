@@ -15,7 +15,7 @@ breadcrumbs:
 
 You can share your ideas, thoughts, and feedback with GitHub's Product team and upvote feedback left by others.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > If you're a GitHub Enterprise customer, contact GitHub Support who will share your feedback with the Product team. For more information, see "Creating a support ticket" in either the [GitHub Enterprise Cloud documentation](/en/enterprise-cloud@latest/support/contacting-github-support/creating-a-support-ticket) or [GitHub Enterprise Server documentation](/en/enterprise-server@3.22/support/contacting-github-support/creating-a-support-ticket).
 
 ## About sharing feedback
@@ -31,7 +31,7 @@ Most GitHub product areas have their own feedback discussion category which are 
 1. In your browser, navigate to <https://github.com/orgs/community/discussions>.
 2. In the list of categories, under "GitHub Product Categories", click on the product area that's relevant for your feedback.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you're unsure if a particular category is the correct choice for your feedback, click on it, and read the description that is shown beneath the category name.
 
 ## 2. Searching for existing feedback

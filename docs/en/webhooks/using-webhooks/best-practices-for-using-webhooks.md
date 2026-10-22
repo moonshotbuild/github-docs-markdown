@@ -23,7 +23,7 @@ You should only subscribe to the webhook events that you need. This will reduce 
 
 ## Use a webhook secret
 
-> \[!WARNING]
+> [!WARNING]
 > To avoid accidental exposure of sensitive information, do **not** include sensitive information in your payload URL.
 > This includes your own API keys and other authentication credentials. Instead, to validate that webhook deliveries were sent by GitHub and have not been tampered with, use a webhook secret. For more information, see [Validating webhook deliveries](/en/webhooks/using-webhooks/validating-webhook-deliveries).
 
@@ -59,7 +59,7 @@ If your server goes down, you should redeliver missed webhooks once your server 
 
 In a replay attack, a bad actor intercepts a webhook delivery and re-sends the delivery. To protect against replay attacks, you can use the `X-GitHub-Delivery` header to ensure that each delivery is unique per event.
 
-> \[!NOTE]
+> [!NOTE]
 > If you request a redelivery, the `X-GitHub-Delivery` header will be the same as in the original delivery.
 
 ## Further reading

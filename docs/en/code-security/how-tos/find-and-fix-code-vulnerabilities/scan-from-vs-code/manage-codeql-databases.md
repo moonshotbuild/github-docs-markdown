@@ -37,7 +37,7 @@ You can check if a repository has any CodeQL databases available for download, a
 
 2. Once you've chosen a database, it will be displayed in the "Databases" view. To see the menu options for interacting with a database, right-click an entry in the list. You can select multiple databases at once.
 
-> \[!NOTE]
+> [!NOTE]
 > You can also analyze test databases. Test databases (folders with a `.testproj` extension) are generated when you run regression tests on custom queries using the CodeQL CLI. If a query fails a regression test, you may want to import the test database into Visual Studio Code to debug the failure. For more information about running query tests, see [Testing custom queries](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/scan-from-the-command-line/test-custom-queries).
 
 ## Filtering databases and queries by language

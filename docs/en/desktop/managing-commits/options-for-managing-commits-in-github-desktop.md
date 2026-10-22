@@ -27,7 +27,7 @@ When you're contributing changes to a repository, your commit history should tel
 
 Often, it is difficult to follow these best practices perfectly at the point where you're making changes. You might realize you need to undo the changes in a commit you've made, edit a commit message, or reorder your commits to tell a clearer story. With GitHub Desktop, you can manage your commit history directly from the user interface.
 
-> \[!NOTE]
+> [!NOTE]
 > Where possible, you should avoid changing the history of commits that have already been pushed to the remote repository. Other contributors may have already based work on these commits.
 
 ## Options for managing commit history in GitHub Desktop

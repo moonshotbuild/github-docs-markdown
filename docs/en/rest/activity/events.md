@@ -40,7 +40,7 @@ $    -H 'If-None-Match: "a18c3bded88eb5dbb5c849a489412bf3"'
 
 The timeline will include up to 300 events. Only events created within the past 30 days will be included. Events older than 30 days will not be included (even if the total number of events in the timeline is less than 300).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List public events
@@ -634,7 +634,29 @@ Array of `Event`:
       * `original_position`: required, integer
       * `subject_type`: string or null
       * `commit_id`: required, string
-      * `user`: required, `User` (see above)
+      * `user`: required, `User`:
+        * `avatar_url`: string, format: uri
+        * `deleted`: boolean
+        * `email`: string or null
+        * `events_url`: string, format: uri-template
+        * `followers_url`: string, format: uri
+        * `following_url`: string, format: uri-template
+        * `gists_url`: string, format: uri-template
+        * `gravatar_id`: string
+        * `html_url`: string, format: uri
+        * `id`: integer, format: int64
+        * `login`: string
+        * `name`: string
+        * `node_id`: string
+        * `organizations_url`: string, format: uri
+        * `received_events_url`: string, format: uri
+        * `repos_url`: string, format: uri
+        * `site_admin`: boolean
+        * `starred_url`: string, format: uri-template
+        * `subscriptions_url`: string, format: uri
+        * `type`: string, enum: `Bot`, `User`, `Organization`
+        * `url`: string, format: uri
+        * `user_view_type`: string
       * `body`: required, string
       * `created_at`: required, string, format: date-time
       * `updated_at`: required, string, format: date-time
@@ -645,7 +667,17 @@ Array of `Event`:
         * `pull_request`: required, object
         * `self`: required, object
       * `original_commit_id`: required, string
-      * `reactions`: required, `Reactions` (see above)
+      * `reactions`: required, `Reactions`:
+        * `+1`: integer
+        * `-1`: integer
+        * `confused`: integer
+        * `eyes`: integer
+        * `heart`: integer
+        * `hooray`: integer
+        * `laugh`: integer
+        * `rocket`: integer
+        * `total_count`: integer
+        * `url`: string, format: uri
       * `in_reply_to_id`: integer
   * **PullRequestReviewEvent**
     * `action`: required, string

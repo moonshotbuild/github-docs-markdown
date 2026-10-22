@@ -21,7 +21,7 @@ breadcrumbs:
 
 Create or connect GitHub issues to code scanning alerts to track security fixes in your team's workflow.
 
-> \[!NOTE]
+> [!NOTE]
 > Code scanning alert tracking using GitHub issues is currently in public preview and subject to change.
 
 When code scanning identifies a vulnerability, you can link it to a new or existing GitHub issue. This makes security fixes visible in your planning and project boards alongside your team's regular development work. For more information about how alert tracking works, see [Code scanning alert tracking using issues](/en/code-security/concepts/code-scanning/alert-tracking-with-issues).

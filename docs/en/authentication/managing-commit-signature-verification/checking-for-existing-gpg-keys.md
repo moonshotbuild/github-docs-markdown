@@ -28,7 +28,7 @@ GitHub supports several GPG key algorithms. If you try to add a key generated wi
 * ECDSA
 * EdDSA
 
-> \[!NOTE]
+> [!NOTE]
 > GPG does not come installed by default on macOS or Windows. To install GPG command line tools, see [GnuPG's Download page](https://www.gnupg.org/download/).
 
 1. Open <span class="platform-mac">Terminal</span><span class="platform-linux">Terminal</span><span class="platform-windows">Git Bash</span>.
@@ -38,7 +38,7 @@ GitHub supports several GPG key algorithms. If you try to add a key generated wi
    gpg --list-secret-keys --keyid-format=long
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > Some GPG installations on Linux may require you to use `gpg2 --list-keys --keyid-format LONG` to view a list of your existing keys instead. In this case you will also need to configure Git to use `gpg2` by running `git config --global gpg.program gpg2`.
 3. Check the command output to see if you have a GPG key pair.
    * If there are no GPG key pairs or you don't want to use any that are available for signing commits and tags, then [generate a new GPG key](/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key).

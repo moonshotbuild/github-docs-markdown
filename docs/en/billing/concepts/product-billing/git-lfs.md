@@ -45,7 +45,7 @@ Working in a public or private repository with Git LFS:
 * When you **download** a Git LFS file, the bandwidth you use is included in the **repository owner's bandwidth usage**.
 * When you **upload** a file to Git LFS, the file is included in the **repository owner's storage use** but the bandwidth is not measured.
 
-> \[!TIP]
+> [!TIP]
 > Anyone with write access to a repository can push files to Git LFS without increasing their personal bandwidth and storage use.
 
 ### Examples of how usage is measured

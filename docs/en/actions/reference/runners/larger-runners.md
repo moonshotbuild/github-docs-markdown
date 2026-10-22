@@ -38,7 +38,7 @@ You can choose from several specifications for larger runners.
 | 64  | 256 GB       | 2040 GB       | x64          | Ubuntu, Windows       |
 | 96  | 384 GB       | 2040 GB       | x64          | Ubuntu, Windows       |
 
-> \[!NOTE] The 4-vCPU Windows runner only works with the Windows Server 2025 or the Base Windows 11 Desktop image.
+> [!NOTE] The 4-vCPU Windows runner only works with the Windows Server 2025 or the Base Windows 11 Desktop image.
 
 ### Specifications for GPU larger runners
 
@@ -93,7 +93,7 @@ When enabled, instances of the larger runner will receive IP addresses from spec
 
 If you would like to use more than 10 larger runner pools with static IP address ranges, please contact us through the [GitHub Support portal](https://support.github.com).
 
-> \[!NOTE]
+> [!NOTE]
 > If runners are unused for more than 90 days, their IP address ranges are automatically removed and cannot be recovered.
 
 ## Communication requirements for larger runners
@@ -102,7 +102,7 @@ A larger runner must establish connections to GitHub-owned endpoints to perform 
 
 To ensure proper communications for larger runners between networks within your configuration, ensure that the following communications are allowed.
 
-> \[!NOTE]
+> [!NOTE]
 > Some of the domains listed are configured using `CNAME` records. Some firewalls might require you to add rules recursively for all `CNAME` records. Note that the `CNAME` records might change in the future, and that only the domains listed will remain constant.
 
 **Needed for essential operations:**

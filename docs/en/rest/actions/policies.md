@@ -139,7 +139,7 @@ Omitting workflow_path targets all workflows without storing an explicit conditi
 
 - **`conditions`** (object)
   Conditions for an organization Actions policy. The conditions object should contain one of
-repository_name, repository_id, or repository_property, and may also contain workflow_path.
+  repository_name, repository_id, or repository_property, and may also contain workflow_path.
   - **`Repository ruleset conditions for repository names`** (object)
     Parameters for a repository name condition
     - **`repository_name`** (object) (required)
@@ -152,11 +152,11 @@ repository_name, repository_id, or repository_property, and may also contain wor
     - **`workflow_path`** (object)
       - **`include`** (array of strings) (required)
         Array of workflow file paths or glob patterns to include. An empty array includes all
-workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
-~ALL cannot be combined with other included patterns.
+        workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
+        ~ALL cannot be combined with other included patterns.
       - **`exclude`** (array of strings) (required)
         Array of workflow file paths or glob patterns to exclude. The condition will not pass
-if any of these patterns match. ~ALL is not allowed in this array.
+        if any of these patterns match. ~ALL is not allowed in this array.
   - **`Repository ruleset conditions for repository IDs`** (object)
     Parameters for a repository ID condition
     - **`repository_id`** (object) (required)
@@ -165,11 +165,11 @@ if any of these patterns match. ~ALL is not allowed in this array.
     - **`workflow_path`** (object)
       - **`include`** (array of strings) (required)
         Array of workflow file paths or glob patterns to include. An empty array includes all
-workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
-~ALL cannot be combined with other included patterns.
+        workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
+        ~ALL cannot be combined with other included patterns.
       - **`exclude`** (array of strings) (required)
         Array of workflow file paths or glob patterns to exclude. The condition will not pass
-if any of these patterns match. ~ALL is not allowed in this array.
+        if any of these patterns match. ~ALL is not allowed in this array.
   - **`Repository ruleset conditions for repository properties`** (object)
     Parameters for a repository property condition
     - **`repository_property`** (object) (required)
@@ -194,11 +194,11 @@ if any of these patterns match. ~ALL is not allowed in this array.
     - **`workflow_path`** (object)
       - **`include`** (array of strings) (required)
         Array of workflow file paths or glob patterns to include. An empty array includes all
-workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
-~ALL cannot be combined with other included patterns.
+        workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
+        ~ALL cannot be combined with other included patterns.
       - **`exclude`** (array of strings) (required)
         Array of workflow file paths or glob patterns to exclude. The condition will not pass
-if any of these patterns match. ~ALL is not allowed in this array.
+        if any of these patterns match. ~ALL is not allowed in this array.
 
 - **`rules`** (array of objects)
   An array of rules within the policy.
@@ -221,7 +221,7 @@ if any of these patterns match. ~ALL is not allowed in this array.
     - **`parameters`** (object)
       - **`allowed_events`** (array of strings) (required)
         Select the events that can trigger Actions workflows.
-Supported values are: branch_protection_rule, check_run, check_suite, create, delete, deployment, deployment_status, discussion, discussion_comment, fork, gollum, image_version, issue_comment, issues, label, merge_group, milestone, page_build, project, project_card, project_column, public, pull_request, pull_request_review, pull_request_review_comment, pull_request_target, push, registry_package, release, repository_dispatch, schedule, status, watch, workflow_call, workflow_dispatch, workflow_run
+        Supported values are: branch_protection_rule, check_run, check_suite, create, delete, deployment, deployment_status, discussion, discussion_comment, fork, gollum, image_version, issue_comment, issues, label, merge_group, milestone, page_build, project, project_card, project_column, public, pull_request, pull_request_review, pull_request_review_comment, pull_request_target, push, registry_package, release, repository_dispatch, schedule, status, watch, workflow_call, workflow_dispatch, workflow_run
 
 ### HTTP response status codes
 
@@ -377,7 +377,7 @@ Omitting workflow_path preserves the policy's existing workflow targeting.
 
 - **`conditions`** (object)
   Conditions for an organization Actions policy. The conditions object should contain one of
-repository_name, repository_id, or repository_property, and may also contain workflow_path.
+  repository_name, repository_id, or repository_property, and may also contain workflow_path.
   - **`Repository ruleset conditions for repository names`** (object)
     Parameters for a repository name condition
     - **`repository_name`** (object) (required)
@@ -390,11 +390,11 @@ repository_name, repository_id, or repository_property, and may also contain wor
     - **`workflow_path`** (object)
       - **`include`** (array of strings) (required)
         Array of workflow file paths or glob patterns to include. An empty array includes all
-workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
-~ALL cannot be combined with other included patterns.
+        workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
+        ~ALL cannot be combined with other included patterns.
       - **`exclude`** (array of strings) (required)
         Array of workflow file paths or glob patterns to exclude. The condition will not pass
-if any of these patterns match. ~ALL is not allowed in this array.
+        if any of these patterns match. ~ALL is not allowed in this array.
   - **`Repository ruleset conditions for repository IDs`** (object)
     Parameters for a repository ID condition
     - **`repository_id`** (object) (required)
@@ -403,11 +403,11 @@ if any of these patterns match. ~ALL is not allowed in this array.
     - **`workflow_path`** (object)
       - **`include`** (array of strings) (required)
         Array of workflow file paths or glob patterns to include. An empty array includes all
-workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
-~ALL cannot be combined with other included patterns.
+        workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
+        ~ALL cannot be combined with other included patterns.
       - **`exclude`** (array of strings) (required)
         Array of workflow file paths or glob patterns to exclude. The condition will not pass
-if any of these patterns match. ~ALL is not allowed in this array.
+        if any of these patterns match. ~ALL is not allowed in this array.
   - **`Repository ruleset conditions for repository properties`** (object)
     Parameters for a repository property condition
     - **`repository_property`** (object) (required)
@@ -432,11 +432,11 @@ if any of these patterns match. ~ALL is not allowed in this array.
     - **`workflow_path`** (object)
       - **`include`** (array of strings) (required)
         Array of workflow file paths or glob patterns to include. An empty array includes all
-workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
-~ALL cannot be combined with other included patterns.
+        workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
+        ~ALL cannot be combined with other included patterns.
       - **`exclude`** (array of strings) (required)
         Array of workflow file paths or glob patterns to exclude. The condition will not pass
-if any of these patterns match. ~ALL is not allowed in this array.
+        if any of these patterns match. ~ALL is not allowed in this array.
 
 - **`rules`** (array of objects)
   An array of rules within the policy.
@@ -459,7 +459,7 @@ if any of these patterns match. ~ALL is not allowed in this array.
     - **`parameters`** (object)
       - **`allowed_events`** (array of strings) (required)
         Select the events that can trigger Actions workflows.
-Supported values are: branch_protection_rule, check_run, check_suite, create, delete, deployment, deployment_status, discussion, discussion_comment, fork, gollum, image_version, issue_comment, issues, label, merge_group, milestone, page_build, project, project_card, project_column, public, pull_request, pull_request_review, pull_request_review_comment, pull_request_target, push, registry_package, release, repository_dispatch, schedule, status, watch, workflow_call, workflow_dispatch, workflow_run
+        Supported values are: branch_protection_rule, check_run, check_suite, create, delete, deployment, deployment_status, discussion, discussion_comment, fork, gollum, image_version, issue_comment, issues, label, merge_group, milestone, page_build, project, project_card, project_column, public, pull_request, pull_request_review, pull_request_review_comment, pull_request_target, push, registry_package, release, repository_dispatch, schedule, status, watch, workflow_call, workflow_dispatch, workflow_run
 
 ### HTTP response status codes
 
@@ -630,22 +630,22 @@ Omitting workflow_path targets all workflows without storing an explicit conditi
 
 - **`conditions`** (object)
   Conditions for a repository Actions policy. The object may be empty to preserve or use the
-default workflow targeting, or contain only workflow_path.
+  default workflow targeting, or contain only workflow_path.
   - **``** (object)
   - **`Actions policy workflow path condition`** (object)
     Parameters for an Actions policy workflow path condition. Omitting workflow_path when creating
-a policy targets all workflows without storing an explicit condition. Omitting it when updating a
-policy preserves the existing workflow targeting. For new or changed workflow conditions, the API
-requires at least one included or excluded pattern. This is validated server-side rather than by
-this schema, which can also describe existing stored conditions.
+    a policy targets all workflows without storing an explicit condition. Omitting it when updating a
+    policy preserves the existing workflow targeting. For new or changed workflow conditions, the API
+    requires at least one included or excluded pattern. This is validated server-side rather than by
+    this schema, which can also describe existing stored conditions.
     - **`workflow_path`** (object) (required)
       - **`include`** (array of strings) (required)
         Array of workflow file paths or glob patterns to include. An empty array includes all
-workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
-~ALL cannot be combined with other included patterns.
+        workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
+        ~ALL cannot be combined with other included patterns.
       - **`exclude`** (array of strings) (required)
         Array of workflow file paths or glob patterns to exclude. The condition will not pass
-if any of these patterns match. ~ALL is not allowed in this array.
+        if any of these patterns match. ~ALL is not allowed in this array.
 
 - **`rules`** (array of objects)
   An array of rules within the policy.
@@ -668,7 +668,7 @@ if any of these patterns match. ~ALL is not allowed in this array.
     - **`parameters`** (object)
       - **`allowed_events`** (array of strings) (required)
         Select the events that can trigger Actions workflows.
-Supported values are: branch_protection_rule, check_run, check_suite, create, delete, deployment, deployment_status, discussion, discussion_comment, fork, gollum, image_version, issue_comment, issues, label, merge_group, milestone, page_build, project, project_card, project_column, public, pull_request, pull_request_review, pull_request_review_comment, pull_request_target, push, registry_package, release, repository_dispatch, schedule, status, watch, workflow_call, workflow_dispatch, workflow_run
+        Supported values are: branch_protection_rule, check_run, check_suite, create, delete, deployment, deployment_status, discussion, discussion_comment, fork, gollum, image_version, issue_comment, issues, label, merge_group, milestone, page_build, project, project_card, project_column, public, pull_request, pull_request_review, pull_request_review_comment, pull_request_target, push, registry_package, release, repository_dispatch, schedule, status, watch, workflow_call, workflow_dispatch, workflow_run
 
 ### HTTP response status codes
 
@@ -801,22 +801,22 @@ Omitting workflow_path preserves the policy's existing workflow targeting.
 
 - **`conditions`** (object)
   Conditions for a repository Actions policy. The object may be empty to preserve or use the
-default workflow targeting, or contain only workflow_path.
+  default workflow targeting, or contain only workflow_path.
   - **``** (object)
   - **`Actions policy workflow path condition`** (object)
     Parameters for an Actions policy workflow path condition. Omitting workflow_path when creating
-a policy targets all workflows without storing an explicit condition. Omitting it when updating a
-policy preserves the existing workflow targeting. For new or changed workflow conditions, the API
-requires at least one included or excluded pattern. This is validated server-side rather than by
-this schema, which can also describe existing stored conditions.
+    a policy targets all workflows without storing an explicit condition. Omitting it when updating a
+    policy preserves the existing workflow targeting. For new or changed workflow conditions, the API
+    requires at least one included or excluded pattern. This is validated server-side rather than by
+    this schema, which can also describe existing stored conditions.
     - **`workflow_path`** (object) (required)
       - **`include`** (array of strings) (required)
         Array of workflow file paths or glob patterns to include. An empty array includes all
-workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
-~ALL cannot be combined with other included patterns.
+        workflows not matched by an excluded pattern. Use ~ALL by itself to include all workflows.
+        ~ALL cannot be combined with other included patterns.
       - **`exclude`** (array of strings) (required)
         Array of workflow file paths or glob patterns to exclude. The condition will not pass
-if any of these patterns match. ~ALL is not allowed in this array.
+        if any of these patterns match. ~ALL is not allowed in this array.
 
 - **`rules`** (array of objects)
   An array of rules within the policy.
@@ -839,7 +839,7 @@ if any of these patterns match. ~ALL is not allowed in this array.
     - **`parameters`** (object)
       - **`allowed_events`** (array of strings) (required)
         Select the events that can trigger Actions workflows.
-Supported values are: branch_protection_rule, check_run, check_suite, create, delete, deployment, deployment_status, discussion, discussion_comment, fork, gollum, image_version, issue_comment, issues, label, merge_group, milestone, page_build, project, project_card, project_column, public, pull_request, pull_request_review, pull_request_review_comment, pull_request_target, push, registry_package, release, repository_dispatch, schedule, status, watch, workflow_call, workflow_dispatch, workflow_run
+        Supported values are: branch_protection_rule, check_run, check_suite, create, delete, deployment, deployment_status, discussion, discussion_comment, fork, gollum, image_version, issue_comment, issues, label, merge_group, milestone, page_build, project, project_card, project_column, public, pull_request, pull_request_review, pull_request_review_comment, pull_request_target, push, registry_package, release, repository_dispatch, schedule, status, watch, workflow_call, workflow_dispatch, workflow_run
 
 ### HTTP response status codes
 

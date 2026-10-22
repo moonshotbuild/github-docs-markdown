@@ -34,7 +34,7 @@ The **Issues**, **Pull requests**, and **Gists** tabs let you browse content fro
 * **Pull an item into your chat** — quickly insert a reference to the selected item into the prompt box so that you can ask Copilot to investigate, fix, comment on, or review it.
 * **Jump to an item on GitHub.com** — for example when you want to comment on an issue, merge a pull request, or edit a gist.
 
-> \[!NOTE]
+> [!NOTE]
 > The **Issues** and **Pull requests** tabs are only shown when Copilot CLI is running inside a GitHub repository. In other directories, only the **Session** and **Gists** tabs are shown.
 
 ## Switching between tabs
@@ -43,7 +43,7 @@ The **Issues**, **Pull requests**, and **Gists** tabs let you browse content fro
 * Press <kbd>Shift</kbd>+<kbd>Tab</kbd> to move to the previous tab.
 * Use the mouse to click on a tab to switch to it.
 
-> \[!NOTE]
+> [!NOTE]
 > Clicking tabs requires mouse support. This is enabled by default but can be disabled with the `--no-mouse` command-line option. Use the `--mouse=on` option to re-enable mouse support if it has been disabled.
 
 Tab switching is paused while another part of the CLI—such as the slash command picker—is observing your keystrokes.

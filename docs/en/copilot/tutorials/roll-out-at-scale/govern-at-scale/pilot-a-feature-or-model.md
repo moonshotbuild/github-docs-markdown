@@ -114,7 +114,7 @@ Use Copilot usage metrics to see how many of your pilot users are active, how of
 * To understand what the metrics cover and how to interpret them, see [GitHub Copilot usage metrics](/en/copilot/concepts/billing-and-usage/copilot-usage-metrics/copilot-metrics).
 * To view the dashboard for your organization or enterprise, see [Viewing the Copilot usage metrics dashboard](/en/copilot/how-tos/administer-copilot/view-usage-and-adoption).
 
-> \[!TIP]
+> [!TIP]
 > A rising active-user count doesn't tell you whether that usage is meaningful, especially for an agentic feature. To see whether pilot participants are progressing to deeper, agent-driven usage, see [Viewing the Copilot impact dashboard](/en/copilot/how-tos/administer-copilot/view-impact-dashboard).
 
 ### Collect developer feedback from your pilot group

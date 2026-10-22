@@ -33,7 +33,7 @@ Start and track Copilot cloud agent sessions from Visual Studio Code, JetBrains 
 
    For example, `Put backticks around file names and variables in output`
 
-   > \[!TIP]
+   > [!TIP]
    > To help Copilot, you can select the relevant line(s) of code before submitting your prompt.
 
 4. Submit your prompt by clicking the <svg class="octicon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M15.724 11.053V11.948L7.724 15.948L7.026 15.343L8.14 12.001H13V11.001H8.14L7.026 7.659L7.724 7.054L15.724 11.053ZM1 8C1 6.46 2.15 5.18 3.67 5.02L4.02 4.98L4.11 4.64C4.5 3.09 5.89 2 7.5 2C9.43 2 11 3.57 11 5.5V6H11.5C12.88 6 14 7.12 14 8.5V8.52L14.95 8.99C14.98 8.83 15 8.67 15 8.5C15 6.73 13.68 5.26 11.98 5.03C11.74 2.77 9.82 1 7.5 1C5.55 1 3.84 2.25 3.23 4.07C1.37 4.43 0 6.07 0 8C0 10.21 1.79 12 4 12H7V11H4C2.35 11 1 9.65 1 8Z"/></svg> **Delegate this task to the GitHub Copilot cloud agent** button, next to the <svg class="octicon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1 1.91L1.78 1.5L15 7.44899V8.3999L1.78 14.33L1 13.91L2.58311 8L1 1.91ZM3.6118 8.5L2.33037 13.1295L13.5 7.8999L2.33037 2.83859L3.6118 7.43874L9 7.5V8.5H3.6118Z"/></svg> **Send** button
@@ -54,7 +54,7 @@ To view the session logs, click on the pull request in the list, then click **Vi
 
 To directly open agent sessions in VS Code, click the **Open in VS Code** option on the agents tab.
 
-> \[!NOTE]
+> [!NOTE]
 > Opening a session in VS Code is currently only available in VS Code Insiders.
 
 </div>
@@ -67,7 +67,7 @@ To directly open agent sessions in VS Code, click the **Open in VS Code** option
 
 <div class="ghd-tool jetbrains">
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot cloud agent in JetBrains IDEs is in public preview, and subject to change.
 
 ## Starting a session
@@ -113,7 +113,7 @@ Copilot will also notify you when an agent job has started and finished.
 
 <div class="ghd-tool eclipse">
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot cloud agent in Eclipse is in public preview, and subject to change.
 
 ## Starting a session
@@ -150,7 +150,7 @@ Copilot will also notify you when an agent job has started and finished.
 
 <div class="ghd-tool visualstudio">
 
-> \[!NOTE] To use Copilot cloud agent in Visual Studio, you'll need to be running at least [December Update 18.1.0](https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes#github-copilot-1) of Visual Studio 2026.
+> [!NOTE] To use Copilot cloud agent in Visual Studio, you'll need to be running at least [December Update 18.1.0](https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes#github-copilot-1) of Visual Studio 2026.
 
 ## Starting a session
 

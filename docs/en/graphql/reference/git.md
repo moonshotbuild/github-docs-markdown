@@ -417,7 +417,7 @@ Represents a Git reference.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (RepositoryRuleOrder): Ordering options for repository rules.
+  * `orderBy` (RepositoryRuleOrder): Ordering options for repository rules. Default: `{field: UPDATED_AT, direction: DESC}`.
 
 * `target` (GitObject): The object the ref points to. Returns null when object does not exist.
 

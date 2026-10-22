@@ -33,7 +33,7 @@ For the latest information and updates, see the [GitHub MCP server repository](h
 
 The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub. MCP allows you to integrate AI capabilities with other tools and services, enhancing your development experience by providing context-aware AI assistance.
 
-For a full introduction to the GitHub MCP server and an overview of MCP, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+For a full introduction to the GitHub MCP server and an overview of MCP, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## Prerequisites
 
@@ -64,7 +64,7 @@ For information on manually configuring the remote or local GitHub MCP server, s
 
 The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub. MCP allows you to integrate AI capabilities with other tools and services, enhancing your development experience by providing context-aware AI assistance.
 
-For a full introduction to the GitHub MCP server and an overview of MCP, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+For a full introduction to the GitHub MCP server and an overview of MCP, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## Prerequisites
 
@@ -79,7 +79,7 @@ The instructions below guide you through setting up the GitHub MCP server in Vis
 
 The remote GitHub MCP server uses one-click OAuth authentication by default, but you can also manually configure it to use a personal access token (PAT) for authentication. If you use OAuth, the MCP server can only access the scopes you approve during sign-in. In organization-owned contexts, access may also be limited by admin policies that control which scopes and apps are permitted. If you use a PAT, the MCP server will have access to the scopes granted by the PAT, which is also subject to any PAT restrictions configured by the organization.
 
-> \[!NOTE]
+> [!NOTE]
 > If you are an Enterprise Managed User, then PAT is disabled by default, unless enabled by an enterprise administrator. If PAT is disabled, you won't be able to use PAT authentication. If you have OAuth access policy restrictions, you will need the OAuth App for each client (MCP host application) to be enabled (except Visual Studio Code and Visual Studio).
 
 For information on setting up the GitHub MCP server locally, see the [GitHub MCP server documentation](https://github.com/mcp/io.github.github/github-mcp-server?ref_product=copilot\&ref_type=engagement\&ref_style=text).
@@ -152,7 +152,7 @@ For more information on configuring MCP servers in Visual Studio, see [Use MCP s
 
 The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub. MCP allows you to integrate AI capabilities with other tools and services, enhancing your development experience by providing context-aware AI assistance.
 
-For a full introduction to the GitHub MCP server and an overview of MCP, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+For a full introduction to the GitHub MCP server and an overview of MCP, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## Prerequisites
 
@@ -186,7 +186,7 @@ The instructions below guide you through setting up the GitHub MCP server in Jet
 
 The remote GitHub MCP server uses one-click OAuth authentication by default, but you can also manually configure it to use a personal access token (PAT) for authentication. If you use OAuth, the MCP server can only access the scopes you approve during sign-in. In organization-owned contexts, access may also be limited by admin policies that control which scopes and apps are permitted. If you use a PAT, the MCP server will have access to the scopes granted by the PAT, which is also subject to any PAT restrictions configured by the organization.
 
-> \[!NOTE]
+> [!NOTE]
 > If you are an Enterprise Managed User, then PAT is disabled by default, unless enabled by an enterprise administrator. If PAT is disabled, you won't be able to use PAT authentication. If you have OAuth access policy restrictions, you will need the OAuth App for each client (MCP host application) to be enabled (except Visual Studio Code and Visual Studio).
 
 For information on setting up the GitHub MCP server locally, see the [GitHub MCP server documentation](https://github.com/mcp/io.github.github/github-mcp-server?ref_product=copilot\&ref_type=engagement\&ref_style=text).
@@ -250,7 +250,7 @@ To configure the remote GitHub MCP server with a PAT, ensure you have created a 
 
 The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub. MCP allows you to integrate AI capabilities with other tools and services, enhancing your development experience by providing context-aware AI assistance.
 
-For a full introduction to the GitHub MCP server and an overview of MCP, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+For a full introduction to the GitHub MCP server and an overview of MCP, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## Prerequisites
 
@@ -264,7 +264,7 @@ The instructions below guide you through setting up the GitHub MCP server in Xco
 
 The remote GitHub MCP server uses one-click OAuth authentication by default, but you can also manually configure it to use a personal access token (PAT) for authentication. If you use OAuth, the MCP server can only access the scopes you approve during sign-in. In organization-owned contexts, access may also be limited by admin policies that control which scopes and apps are permitted. If you use a PAT, the MCP server will have access to the scopes granted by the PAT, which is also subject to any PAT restrictions configured by the organization.
 
-> \[!NOTE]
+> [!NOTE]
 > If you are an Enterprise Managed User, then PAT is disabled by default, unless enabled by an enterprise administrator. If PAT is disabled, you won't be able to use PAT authentication. If you have OAuth access policy restrictions, you will need the OAuth App for each client (MCP host application) to be enabled (except Visual Studio Code and Visual Studio).
 
 For information on setting up the GitHub MCP server locally, see the [GitHub MCP server documentation](https://github.com/mcp/io.github.github/github-mcp-server?ref_product=copilot\&ref_type=engagement\&ref_style=text).
@@ -327,7 +327,7 @@ To configure the remote GitHub MCP server with a PAT, ensure you have created a 
 
 The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub. MCP allows you to integrate AI capabilities with other tools and services, enhancing your development experience by providing context-aware AI assistance.
 
-For a full introduction to the GitHub MCP server and an overview of MCP, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+For a full introduction to the GitHub MCP server and an overview of MCP, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## Prerequisites
 
@@ -343,7 +343,7 @@ The instructions below guide you through setting up the GitHub MCP server in Ecl
 
 The remote GitHub MCP server uses one-click OAuth authentication by default, but you can also manually configure it to use a personal access token (PAT) for authentication. If you use OAuth, the MCP server can only access the scopes you approve during sign-in. In organization-owned contexts, access may also be limited by admin policies that control which scopes and apps are permitted. If you use a PAT, the MCP server will have access to the scopes granted by the PAT, which is also subject to any PAT restrictions configured by the organization.
 
-> \[!NOTE]
+> [!NOTE]
 > If you are an Enterprise Managed User, then PAT is disabled by default, unless enabled by an enterprise administrator. If PAT is disabled, you won't be able to use PAT authentication. If you have OAuth access policy restrictions, you will need the OAuth App for each client (MCP host application) to be enabled (except Visual Studio Code and Visual Studio).
 
 For information on setting up the GitHub MCP server locally, see the [GitHub MCP server repository](https://github.com/github/github-mcp-server#usage-in-other-mcp-hosts-1).

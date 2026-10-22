@@ -41,10 +41,6 @@ Find information to support your use of billing.
 
   Learn how your spending is assigned to cost centers for licensed and metered products.
 
-* [License troubleshooting information for GitHub Enterprise](/en/enterprise-license-troubleshooting)
-
-  Troubleshoot license usage for your enterprise by understanding consumption criteria and auditing license reports.
-
 * [People who consume a license in an organization](/en/billing/reference/github-license-users)
 
   Learn how consumption of GitHub licenses is determined for paid organizations and enterprises.
@@ -60,10 +56,6 @@ Find information to support your use of billing.
 * [Product usage included with each plan](/en/billing/reference/product-usage-included)
 
   Check the size of the allowance for usage-based products included in each GitHub plan.
-
-* [Roles for Visual Studio subscriptions with GitHub Enterprise reference](/en/roles-for-visual-studio)
-
-  Learn about the different roles required to set up Visual Studio subscriptions with GitHub Enterprise.
 
 * [Supported payment methods for GitHub](/en/billing/reference/supported-payment-methods)
 

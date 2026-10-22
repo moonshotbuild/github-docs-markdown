@@ -19,7 +19,7 @@ breadcrumbs:
 
 Generate a lockfile that pins every action your workflows use to a verified commit, and keep it current as your dependencies change.
 
-> \[!NOTE] Workflow dependency lockfiles are in public preview and subject to change.
+> [!NOTE] Workflow dependency lockfiles are in public preview and subject to change.
 
 Locking your workflows' dependencies ensures that the actions you reference contain the same code that was originally reviewed. For more information, see [Workflow dependency lockfiles](/en/actions/concepts/security/workflow-dependency-lockfiles).
 
@@ -43,7 +43,7 @@ We recommend letting Dependabot manage your GitHub Actions dependencies. If it's
    gh extension install github/gh-actions-lock
    ```
 
-> \[!TIP] To update the extension later, run `gh extension upgrade gh-actions-lock`.
+> [!TIP] To update the extension later, run `gh extension upgrade gh-actions-lock`.
 
 ## 3. Generate the lockfile
 

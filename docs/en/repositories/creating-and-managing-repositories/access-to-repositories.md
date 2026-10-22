@@ -25,7 +25,7 @@ To add a collaborator, see [Inviting collaborators to a personal repository](/en
 
 Private forks inherit the permissions structure of the upstream repository. This helps owners of private repositories maintain control over their code. For example, if the upstream repository is private and gives read/write access to a team, then the same team will have read/write access to any forks of the private upstream repository. Only team permissions (not individual permissions) are inherited by private forks.
 
-> \[!NOTE]
+> [!NOTE]
 > When you change base permissions for an organization, permissions for private forks are not automatically updated. For more information, see [Setting base permissions for an organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/setting-base-permissions-for-an-organization#about-base-permissions-for-an-organization).
 
 ## About successors

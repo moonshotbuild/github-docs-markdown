@@ -21,7 +21,7 @@ You can enable and pay for usage-based billing on GitHub by connecting an Azure 
 
 You can pay for metered usage of GitHub features through Azure by connecting an Azure Subscription ID to your organization or enterprise account on GitHub. See [Azure subscription payments](/en/billing/concepts/azure-subscriptions).
 
-> \[!NOTE] If you currently pay for your GitHub Enterprise licenses through a volume, subscription, or prepaid agreement, you will continue to be billed in this way until your agreement expires or you are invited to transition. At renewal, you have the option to switch to the metered billing model.
+> [!NOTE] If you currently pay for your GitHub Enterprise licenses through a volume, subscription, or prepaid agreement, you will continue to be billed in this way until your agreement expires or you are invited to transition. At renewal, you have the option to switch to the metered billing model.
 
 ## Prerequisites
 
@@ -30,6 +30,8 @@ You can pay for metered usage of GitHub features through Azure by connecting an 
 * You must know your Azure subscription ID. See [Get subscription and tenant IDs in the Azure portal](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id) in the Microsoft Docs.
 
 * You must be logged into Azure as a user who is able to provide tenant-wide admin consent or arrange to work with a Microsoft Entra Global Administrator to configure an admin consent workflow. See [Azure subscription payments](/en/billing/concepts/azure-subscriptions).
+
+> [!NOTE] If your organization or enterprise has recently signed up for GitHub Copilot with a credit card or PayPal, you may not be able to change your payment method to an Azure subscription. Please [contact GitHub's Sales team](https://github.com/enterprise/contact?ref_product=copilot\&ref_type=engagement\&ref_style=text).
 
 ## Connecting your Azure subscription to an organization or enterprise account
 

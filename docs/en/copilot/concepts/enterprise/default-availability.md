@@ -76,7 +76,7 @@ The following policies are exceptions and are **not** affected:
 
 The **Default availability for released models** policy is active and affects new and unconfigured GA models.
 
-> \[!NOTE] This policy is **not** related to the default model that is selected for users' sessions. See [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection).
+> [!NOTE] This policy is **not** related to the default model that is selected for users' sessions. See [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection).
 
 ### Which models follow the policy?
 

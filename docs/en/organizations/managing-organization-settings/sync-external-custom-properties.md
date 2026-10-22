@@ -17,7 +17,7 @@ breadcrumbs:
 
 Use a GitHub App to write external metadata to custom properties in an organization's repositories.
 
-> \[!NOTE] External custom properties are in public preview and subject to change.
+> [!NOTE] External custom properties are in public preview and subject to change.
 
 You can automatically write metadata from an external system, such as a software catalog or internal developer portal, to repository custom properties on GitHub. This makes the external system the source of truth for these properties, and helps you keep business context such as ownership, service tier, or compliance status up to date in your repositories. External properties can be used in the same places as custom properties that are managed on GitHub.
 
@@ -85,7 +85,7 @@ Under **Where can this GitHub App be installed?**, make sure your app can be ins
 
 ## 3. Create the automation
 
-> \[!TIP] For an example implementation, see the [external-custom-properties-sample](https://github.com/github/external-custom-properties-sample) repository.
+> [!TIP] For an example implementation, see the [external-custom-properties-sample](https://github.com/github/external-custom-properties-sample) repository.
 
 The automation can run on a schedule or listen for events. The webhook you selected for the app determines which GitHub events are forwarded to your webhook URL. You may also want to respond to events on the third-party system, such as changes to metadata values.
 

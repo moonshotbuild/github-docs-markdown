@@ -43,11 +43,7 @@ As an organization owner, you can control access by apps and personal access tok
 
 * [Limiting OAuth app and GitHub App access requests and installations](/en/organizations/managing-programmatic-access-to-your-organization/limiting-oauth-app-and-github-app-access-requests-and-installations)
 
-  As an organization owner, you can control which users can request organization access for apps.
-
-* [Viewing API insights in your organization](/en/viewing-api-insights-in-your-organization)
-
-  You can view REST API activity for your entire organization or specific apps and users.
+  As an organization owner, you can control which users can request organization access for apps, and whether repository admins can install GitHub Apps.
 
 * [GitHub credential types reference](/en/organizations/managing-programmatic-access-to-your-organization/github-credential-types)
 

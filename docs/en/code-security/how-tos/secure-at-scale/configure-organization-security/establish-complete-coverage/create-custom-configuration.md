@@ -31,7 +31,7 @@ You can also choose whether or not you want to include GitHub Code Security or G
 
 If you do, keep in mind that these features incur usage costs (or require GitHub Advanced Security licenses) when applied to private and internal repositories. For more information, see [About GitHub Advanced Security](/en/get-started/learning-about-github/about-github-advanced-security).
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > The order and names of some settings will differ depending on whether you are using licenses for the original GitHub Advanced Security product, or for the two new products: GitHub Code Security and GitHub Secret Protection. See [Creating a GitHub Advanced Security configuration](#creating-a-github-advanced-security-configuration) or [Creating a Secret Protection and Code Security configuration](#creating-a-secret-protection-and-code-security-configuration).
 
 ## Creating a Secret Protection and Code Security configuration
@@ -55,7 +55,7 @@ If you do, keep in mind that these features incur usage costs (or require GitHub
 7. Optionally, enable "Secret Protection", a paid feature for private  repositories. Enabling Secret Protection enables alerts for secret scanning. In addition, you can choose whether to enable, disable, or keep the existing settings for the following secret scanning features:
    * **Validity checks**. To learn more about validity checks for partner patterns, see [Evaluating alerts from secret scanning](/en/code-security/tutorials/remediate-leaked-secrets/evaluating-alerts#checking-a-secrets-validity).
    * **Extended metadata**. To learn more about extended metadata checks, see [About extended metadata checks](/en/code-security/concepts/secret-security/validity-checks#about-extended-metadata-checks) and [Evaluating alerts from secret scanning](/en/code-security/tutorials/remediate-leaked-secrets/evaluating-alerts#reviewing-extended-metadata-for-a-token).
-   > \[!NOTE]
+   > [!NOTE]
    > You can only enable extended metadata checks if validity checks are enabled.
    * **Generic patterns**. To learn more about scanning for generic patterns, see [Supported secret scanning patterns](/en/code-security/reference/secret-security/supported-secret-scanning-patterns#supported-generic-patterns) and [Viewing and filtering alerts from secret scanning](/en/code-security/how-tos/manage-security-alerts/manage-secret-scanning-alerts/viewing-alerts).
    * **Scan for AI-detected secrets**. To learn more, see [Application card: GitHub security and quality AI features](/en/code-security/responsible-use/security-and-quality-ai-features).
@@ -65,14 +65,14 @@ If you do, keep in mind that these features incur usage costs (or require GitHub
 
 8. Optionally, enable "Code Security", a paid feature for private  repositories. You can choose whether to enable, disable, or keep the existing settings for the following code scanning features:
    * **Default setup**. To learn more about default setup, see [Configuring default setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning#configuring-default-setup-for-a-repository).
-     > \[!NOTE]
+     > [!NOTE]
      > To create a configuration that you can apply to all repositories regardless of current code scanning setup, choose "Enabled with advanced setup allowed". This setting enables default setup only in repositories where CodeQL analysis is not actively run. *Option available from GitHub Enterprise Server 3.19.*
    * **Runner type**. If you want to target specific runners for code scanning, you can choose to use custom-labeled runners at this step. See [Configuring default setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning#assigning-labels-to-self-hosted-runners).
    * **Prevent direct alert dismissals**. To learn more, see [Enabling delegated alert dismissal for code scanning](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/enable-delegated-alert-dismissal).
 
 9. Still under "Code Security", in the "Dependency scanning" table, choose whether you want to enable, disable, or keep the existing settings for the following dependency scanning features:
    * **Dependency graph**. To learn about dependency graph, see [Dependency graph](/en/code-security/concepts/supply-chain-security/dependency-graph).
-     > \[!TIP]
+     > [!TIP]
      > When both "Code Security" and Dependency graph are enabled, this enables dependency review, see [Dependency review](/en/code-security/concepts/supply-chain-security/dependency-review).
    * **Automatic dependency submission**. To learn about automatic dependency submission, see [Configuring automatic dependency submission for your repository](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/submit-dependencies-automatically).
    * **Dependabot alerts**. To learn about Dependabot, see [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts).
@@ -84,11 +84,11 @@ If you do, keep in mind that these features incur usage costs (or require GitHub
 
 11. Optionally, in the "Policy" section, you can use additional options to control how the configuration is applied:
     * **Use as default for newly created repositories**. Select the **None** <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-triangle-down" aria-label="triangle-down" role="img"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg> dropdown menu, then click **Public**, **Private and internal**, or **All repositories**.
-      > \[!NOTE]
+      > [!NOTE]
       > The default security configuration for an organization is only automatically applied to new repositories created in your organization. If a repository is transferred into your organization, you will still need to apply an appropriate security configuration to the repository manually.
 
     * **Enforce configuration**. Block repository owners from changing features that are enabled or disabled by the configuration (features that are not set aren't enforced). Select **Enforce** from the dropdown menu.
-    > \[!NOTE] Some situations can break the enforcement of security configurations. See [Security configuration enforcement](/en/code-security/reference/security-at-scale/configuration-enforcement).
+    > [!NOTE] Some situations can break the enforcement of security configurations. See [Security configuration enforcement](/en/code-security/reference/security-at-scale/configuration-enforcement).
 
 12. To finish creating your custom security configuration, click **Save configuration**.
 
@@ -120,14 +120,14 @@ If you do, keep in mind that these features incur usage costs (or require GitHub
 
 8. In the "Code scanning" table, choose whether you want to enable, disable, or keep the existing settings for code scanning default setup.
    * **Default setup**. To learn more about default setup, see [Configuring default setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning#configuring-default-setup-for-a-repository).
-     > \[!NOTE]
+     > [!NOTE]
      > To create a configuration that you can apply to all repositories regardless of current code scanning setup, choose "Enabled with advanced setup allowed". This setting enables default setup only in repositories where CodeQL analysis is not actively run. *Option available from GitHub Enterprise Server 3.19.*
    * **Runner type**. If you want to target specific runners for code scanning, you can choose to use custom-labeled runners at this step. See [Configuring default setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning#assigning-labels-to-self-hosted-runners).
    * **Prevent direct alert dismissals**. To learn more, see [Enabling delegated alert dismissal for code scanning](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/enable-delegated-alert-dismissal).
 
 9. In the "Dependency scanning" table, choose whether you want to enable, disable, or keep the existing settings for the following dependency scanning features:
    * **Dependency graph**. To learn about dependency graph, see [Dependency graph](/en/code-security/concepts/supply-chain-security/dependency-graph).
-     > \[!TIP]
+     > [!TIP]
      > When both "GitHub Advanced Security" and Dependency graph are enabled, this enables dependency review, see [Dependency review](/en/code-security/concepts/supply-chain-security/dependency-review).
    * **Automatic dependency submission**. To learn about automatic dependency submission, see [Configuring automatic dependency submission for your repository](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/submit-dependencies-automatically).
    * **Dependabot alerts**. To learn about Dependabot, see [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts).
@@ -139,7 +139,7 @@ If you do, keep in mind that these features incur usage costs (or require GitHub
 
 11. Optionally, in the "Policy" section, you can use additional options to control how the configuration is applied:
     * **Use as default for newly created repositories**. Select the **None** <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-triangle-down" aria-label="triangle-down" role="img"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg> dropdown menu, then click **Public**, **Private and internal**, or **All repositories**.
-      > \[!NOTE]
+      > [!NOTE]
       > The default security configuration for an organization is only automatically applied to new repositories created in your organization. If a repository is transferred into your organization, you will still need to apply an appropriate security configuration to the repository manually.
     * **Enforce configuration**. Block repository owners from changing features that are enabled or disabled by the configuration (features that are not set aren't enforced). Select **Enforce** from the dropdown menu.
 

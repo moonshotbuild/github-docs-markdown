@@ -99,7 +99,7 @@ The table below shows the usage available in each plan. When you exceed these am
   </tr>
 </table>
 
-> \[!TIP]
+> [!TIP]
 > You can receive email notifications when your included usage reaches 90% and 100% during a billing period. To opt in, see [Setting up budgets to control spending on metered products](/en/billing/how-tos/set-up-budgets#managing-included-usage-alerts).
 
 For information about included requests for GitHub Copilot plans, see [Plans for GitHub Copilot](/en/copilot/get-started/plans).

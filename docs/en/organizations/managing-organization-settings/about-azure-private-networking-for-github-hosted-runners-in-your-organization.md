@@ -43,7 +43,7 @@ Because the NIC lives within your VNET, GitHub cannot block inbound connections.
 
 A NIC enables an Azure virtual machine (VM) to communicate with internet, Azure, and on-premises resources. This way, all communication is kept private within the network boundaries, and networking policies applied to the VNET also apply to the runner. For more information on how to manage a network interface, see [Change network interface settings](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#change-network-interface-settings) on Microsoft Learn.
 
-> \[!NOTE] Soon, NICs created by the GitHub Actions service will no longer appear in your Azure subscriptions. Moving forward, NICs will be provisioned in a service subscription and assigned IP addresses from your subnet.
+> [!NOTE] Soon, NICs created by the GitHub Actions service will no longer appear in your Azure subscriptions. Moving forward, NICs will be provisioned in a service subscription and assigned IP addresses from your subnet.
 
 ![Diagram of network communication between GitHub and your private networks. Each step is numbered and corresponds to a step listed below the diagram.](/assets/images/help/actions/actions-vnet-injected-larger-runners-architecture.png)
 
@@ -58,7 +58,7 @@ A NIC enables an Azure virtual machine (VM) to communicate with internet, Azure,
 
 GitHub deploys your runners in the same Azure region as the subnet you connect them to. Because of this, your subnet must be in one of the supported regions. The GitHub Actions service supports a subset of all the regions that Azure provides, which facilitates communication between the GitHub Actions service and your subnet.
 
-> \[!NOTE] If you use data residency on GHE.com, the supported regions are different. See [Network details for GHE.com](/en/enterprise-cloud@latest/admin/data-residency/network-details-for-ghecom#supported-regions-for-azure-private-networking).
+> [!NOTE] If you use data residency on GHE.com, the supported regions are different. See [Network details for GHE.com](/en/enterprise-cloud@latest/admin/data-residency/network-details-for-ghecom#supported-regions-for-azure-private-networking).
 
 The following regions are supported on GitHub.com.
 
@@ -164,7 +164,7 @@ GitHub-hosted runners use whatever outbound control your network is using. If yo
 
 ## About VNET failover
 
-> \[!NOTE]
+> [!NOTE]
 > VNET failover is in public preview and subject to change.
 
 You can configure a failover network for your network configuration. A failover network is a secondary Azure Virtual Network subnet, which can be in a different Azure region from your primary subnet. If your primary subnet becomes unavailable due to a regional outage or other disruption, you can enable the failover network to route runner traffic through the secondary subnet, maintaining continuity for your GitHub Actions workflows.

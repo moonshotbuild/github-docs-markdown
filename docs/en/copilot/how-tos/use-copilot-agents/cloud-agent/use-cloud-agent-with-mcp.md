@@ -21,7 +21,7 @@ breadcrumbs:
 
 Start Copilot cloud agent sessions from any IDE or agentic tool that supports Model Context Protocol (MCP).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * This capability is only available on the remote GitHub MCP Server and host applications where remote MCP Servers are supported.
 
@@ -37,7 +37,7 @@ Start Copilot cloud agent sessions from any IDE or agentic tool that supports Mo
 
    For example, `Open a PR in my repository to expand unit test coverage.`
 
-   > \[!TIP]
+   > [!TIP]
    >
    > * You can ask Copilot to open a pull request using a specific branch as the base branch by including it in your prompt.
 

@@ -27,7 +27,7 @@ Dependency graph must be enabled for the repository for you to enable automatic 
 
 You must also enable GitHub Actions for the repository in order to use automatic dependency submission. For more information, see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository).
 
-> \[!NOTE]
+> [!NOTE]
 > For ecosystems that support Dependabot graph jobs, you do not need to enable automatic dependency submission. Dependabot graph jobs run automatically when the dependency graph is enabled for your repository, and they take precedence over automatic dependency submission. See [How the dependency graph recognizes dependencies](/en/code-security/concepts/supply-chain-security/dependency-graph-data#dependabot-graph-jobs).
 
 ## Enabling automatic dependency submission
@@ -51,7 +51,7 @@ Once you've enabled automatic dependency submission for a repository, GitHub wil
 
 You can view details about the automatic workflows run by viewing the **Actions** tab of your repository.
 
-> \[!NOTE] After you enable automatic dependency submission, we'll automatically trigger a run of the action. Once enabled, it'll run each time a commit to the default branch updates a manifest.
+> [!NOTE] After you enable automatic dependency submission, we'll automatically trigger a run of the action. Once enabled, it'll run each time a commit to the default branch updates a manifest.
 
 ## Accessing private registries
 
@@ -77,7 +77,7 @@ Once enabled, automatic dependency submission jobs will run on the self-hosted r
 * The self-hosted runners are unavailable.
 * There aren't any runner groups tagged with a `dependency-submission` label.
 
-> \[!NOTE] For Maven or Gradle projects that use self-hosted runners with private Maven registries, you need to modify the Maven server settings file to allow the dependency submission workflows to connect to the registries. For more information about the Maven server settings file, see [Security and Deployment Settings](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#transitive-dependencies) in the Maven documentation.
+> [!NOTE] For Maven or Gradle projects that use self-hosted runners with private Maven registries, you need to modify the Maven server settings file to allow the dependency submission workflows to connect to the registries. For more information about the Maven server settings file, see [Security and Deployment Settings](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#transitive-dependencies) in the Maven documentation.
 
 On a restricted network, automatic dependency submission has several outbound needs. Depending on the ecosystem, a job might download the language toolchain it runs on, the tooling it uses to detect and submit dependencies (such as the Gradle dependency-submission plugin), and your project's own dependencies from your registries.
 

@@ -27,7 +27,7 @@ A merge queue helps merge pull requests into a busy protected branch after requi
 
 <div class="ghd-tool webui">
 
-> \[!NOTE]
+> [!NOTE]
 > You can use GitHub CLI to add a pull request to a merge queue. For more information, click the "GitHub CLI" tab at the top of this article.
 
 1. On GitHub, navigate to the main page of the repository.
@@ -42,7 +42,7 @@ A merge queue helps merge pull requests into a busy protected branch after requi
 
    ![Screenshot of the merge queue options for a pull request.](/assets/images/help/pull_requests/merge-queue-options.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    > You can click **Merge when ready** before all requirements pass. GitHub adds the pull request to the queue when requirements are met.
 
 5. Confirm you want to add the pull request to the merge queue by clicking **Confirm merge when ready**.

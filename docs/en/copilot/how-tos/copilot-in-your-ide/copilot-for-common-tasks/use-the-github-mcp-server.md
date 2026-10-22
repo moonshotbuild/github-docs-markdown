@@ -29,7 +29,7 @@ The GitHub MCP server is available to all GitHub users regardless of plan type. 
 
 The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub. MCP allows you to integrate AI capabilities with other tools and services, enhancing your development experience by providing context-aware AI assistance.
 
-For a full introduction to the GitHub MCP server and an overview of MCP, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+For a full introduction to the GitHub MCP server and an overview of MCP, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## Prerequisites
 
@@ -95,7 +95,7 @@ If you are experiencing other issues with the GitHub MCP server, here are some g
 
 The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub. MCP allows you to integrate AI capabilities with other tools and services, enhancing your development experience by providing context-aware AI assistance.
 
-For a full introduction to the GitHub MCP server and an overview of MCP, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+For a full introduction to the GitHub MCP server and an overview of MCP, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## Prerequisites
 
@@ -127,7 +127,7 @@ The GitHub MCP server enables you to perform a wide range of actions on GitHub, 
 
 The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub. MCP allows you to integrate AI capabilities with other tools and services, enhancing your development experience by providing context-aware AI assistance.
 
-For a full introduction to the GitHub MCP server and an overview of MCP, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+For a full introduction to the GitHub MCP server and an overview of MCP, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## Prerequisites
 
@@ -215,7 +215,7 @@ If you are experiencing other issues with the GitHub MCP server, here are some g
 
 The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub. MCP allows you to integrate AI capabilities with other tools and services, enhancing your development experience by providing context-aware AI assistance.
 
-For a full introduction to the GitHub MCP server and an overview of MCP, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+For a full introduction to the GitHub MCP server and an overview of MCP, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## Prerequisites
 
@@ -281,7 +281,7 @@ If you are experiencing other issues with the GitHub MCP server, here are some g
 
 The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub. MCP allows you to integrate AI capabilities with other tools and services, enhancing your development experience by providing context-aware AI assistance.
 
-For a full introduction to the GitHub MCP server and an overview of MCP, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+For a full introduction to the GitHub MCP server and an overview of MCP, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## Prerequisites
 

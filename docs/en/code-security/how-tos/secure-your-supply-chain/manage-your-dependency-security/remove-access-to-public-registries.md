@@ -49,7 +49,7 @@ To configure the Docker ecosystem to only access private registries, you can use
 
 Define the private registry configuration in a `dependabot.yml` file without `replaces-base`. For more information, see [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#docker-registry).
 
-> \[!NOTE]
+> [!NOTE]
 > Remove `replaces-base: true` from the configuration file.
 
 ```yaml copy
@@ -78,7 +78,7 @@ To configure the Gradle ecosystem to only access private registries, you can use
 
 Define the private registry configuration in a `dependabot.yml` file. For more information, see [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#maven-repository).
 
-> \[!NOTE]
+> [!NOTE]
 > Remove `replaces-base: true` from the configuration file.
 
 Additionally, you also need to specify the private registry URL in the `repositories` section of the `build.gradle` file.
@@ -128,7 +128,7 @@ To configure the npm ecosystem to only access private registries, you can use th
 
 Define the private registry configuration in a `dependabot.yml` file. For more information, see [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#npm-registry).
 
-> \[!NOTE]
+> [!NOTE]
 > Remove `replaces-base: true` from the configuration file.
 
 The npm ecosystem additionally requires a `.npmrc` file with the private registry URL to be checked into the repository.
@@ -141,7 +141,7 @@ The npm ecosystem additionally requires a `.npmrc` file with the private registr
 
 If there is no global registry defined in an `.npmrc` file, you can set `replaces-base: true` in the `dependabot.yml` file. For more information, see [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#npm-registry).
 
-> \[!NOTE]
+> [!NOTE]
 > For scoped dependencies (`@my-org/my-dep`), Dependabot requires that the private registry is defined in the project's `.npmrc` file. To define private registries for individual scopes, use `@myscope:registry=https://private_registry_url`.
 
 ### Yarn
@@ -156,7 +156,7 @@ To configure the Yarn Classic ecosystem to only access private registries, you c
 
 Define the private registry configuration in a `dependabot.yml` file. For more information, see [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#npm-registry).
 
-> \[!NOTE]
+> [!NOTE]
 > Delete `replaces-base: true` from the configuration file.
 
 To ensure the private registry is listed as the dependency source in the project's `yarn.lock` file, run `yarn install` on a machine with private registry access. Yarn should update the `resolved` field to include the private registry URL.
@@ -185,7 +185,7 @@ If the `yarn.lock` file doesn't list the private registry as the dependency sour
 
 If there is no global registry defined in a `.yarnrc` file, you can set `replaces-base: true` in the `dependabot.yml` file. For more information, see [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#npm-registry).
 
-> \[!NOTE]
+> [!NOTE]
 > For scoped dependencies (`@my-org/my-dep`), Dependabot requires that the private registry is defined in the project's `.npmrc` file. To define private registries for individual scopes, use `@myscope:registry=https://private_registry_url`.
 
 #### Yarn Berry
@@ -196,7 +196,7 @@ To configure the Yarn Berry ecosystem to only access private registries, you can
 
 Define the private registry configuration in a `dependabot.yml` file. For more information, see [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#npm-registry).
 
-> \[!NOTE]
+> [!NOTE]
 > Delete `replaces-base: true` from the configuration file.
 
 To ensure the private registry is listed as the dependency source in the project's `yarn.lock` file, run `yarn install` on a machine with private registry access. Yarn should update the `resolved` field to include the private registry URL.
@@ -219,7 +219,7 @@ If the `yarn.lock` file doesn't list the private registry as the dependency sour
    `     npmRegistryServer: "https://private_registry_url"
        `
 
-> \[!NOTE]
+> [!NOTE]
 > For scoped dependencies (`@my-org/my-dep`), Dependabot requires that the private registry is defined in the project's `.yarnrc` file. To define private registries for individual scopes, use `"@myscope:registry" "https://private_registry_url"`.
 
 ## NuGet
@@ -287,7 +287,7 @@ To configure the Pip ecosystem to only access private registries, you can use th
 
 Define the private registry configuration in a `dependabot.yml` file. For more information, see [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#npm-registry).
 
-> \[!NOTE]
+> [!NOTE]
 > Delete `replaces-base: true` from the configuration file.
 
 Add the private registry URL to the `[global]` section of the `pip.conf` file and check the file into the repository.
@@ -314,7 +314,7 @@ Set `replaces-base: true` in the `dependabot.yml` file. For more information, se
 
 Define the private registry configuration in a `dependabot.yml` file. For more information, see [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#npm-registry).
 
-> \[!NOTE]
+> [!NOTE]
 > Delete `replaces-base: true` from the configuration file.
 
 Add the private registry URL to the `requirements.txt` file and check the file into the repository.
@@ -327,7 +327,7 @@ Add the private registry URL to the `requirements.txt` file and check the file i
 
 To configure Pipenv to only access private registries, remove `replaces-base` from the `dependabot.yml` file. For more information, see [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#python-index).
 
-> \[!NOTE]
+> [!NOTE]
 > Delete `replaces-base: true` from the configuration file.
 
 Add the private registry URL to the `[[source]]` section of the `Pipfile` file and check the file into the repository.

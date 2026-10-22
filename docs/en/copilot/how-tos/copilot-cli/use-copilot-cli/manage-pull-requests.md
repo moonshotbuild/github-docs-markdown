@@ -33,7 +33,7 @@ You must be working in a Git repository that is hosted on GitHub.
 
 The `/pr` slash command has several subcommands that you can use to perform different actions on your pull requests.
 
-> \[!NOTE]
+> [!NOTE]
 > All `/pr` subcommands relate to the current branch—for example, fixing failing CI checks for the pull request associated with the current branch.
 
 <!-- Use HTML tags rather than Markdown to avoid bad column width rendering. -->

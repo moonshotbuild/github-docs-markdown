@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can use gh, the GitHub command line interface, to work with GitHub Classroom directly from your command line.
 
-> \[!WARNING]
+> [!WARNING]
 > **Closing down:** This `gh` extension is closing down. The GitHub Classroom application will be retired on August 28, 2026.
 > For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
 

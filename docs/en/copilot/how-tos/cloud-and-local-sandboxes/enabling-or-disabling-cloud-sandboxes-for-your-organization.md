@@ -19,8 +19,8 @@ breadcrumbs:
 
 You can control whether members of your organization or enterprise can use cloud sandboxes by managing the cloud sandbox access policy in your organization or enterprise settings.
 
-> \[!NOTE]
-> Cloud and local sandboxes for GitHub Copilot are in public preview and subject to change.
+> [!NOTE]
+> Cloud sandboxes for GitHub Copilot are in public preview and subject to change.
 
 ## About enabling and disabling cloud sandboxes
 

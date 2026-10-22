@@ -63,7 +63,7 @@ GitHub provides a workflow template for Gradle that should work for most Java wi
 
 10. Edit the workflow as required. For example, change the Java version.
 
-    > \[!NOTE]
+    > [!NOTE]
     >
     > * This workflow template contains an action that is not certified by GitHub. Actions provided by third parties are governed by separate terms of service, privacy policy, and support documentation.
     > * If you use actions from third parties you should use a version specified by a commit SHA. If the action is revised and you want to use the newer version, you will need to update the SHA. You can specify a version by referencing a tag or a branch, however the action may change without warning. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#using-third-party-actions).

@@ -66,7 +66,7 @@ The sections below give example commands for each of the available operations.
 
 For a complete reference of `gh` commands for GitHub Codespaces, including details of all available options for each command, see the GitHub CLI online help for [gh codespace](https://cli.github.com/manual/gh_codespace). Alternatively, on the command line, use `gh codespace --help` for general help or `gh codespace SUBCOMMAND --help` for help with a specific subcommand.
 
-> \[!NOTE]
+> [!NOTE]
 > The `-c CODESPACE_NAME` flag, used with many commands, is optional. If you omit it a list of codespaces is displayed for you to choose from.
 
 ### List all of your codespaces
@@ -149,16 +149,16 @@ To run commands on the remote codespace machine, from your terminal, you can SSH
 gh codespace ssh -c CODESPACE-NAME
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > The codespace you connect to must be running an SSH server. The default dev container image includes an SSH server, which is started automatically. If your codespaces are not created from the default image, you can install and start an SSH server by adding the following to the `features` object in your `devcontainer.json` file.
 >
 > ```jsonc
 > "features": {
-> // ...
-> "ghcr.io/devcontainers/features/sshd:1": {
-> "version": "latest"
-> },
-> // ...
+>     // ...
+>     "ghcr.io/devcontainers/features/sshd:1": {
+>         "version": "latest"
+>     },
+>     // ...
 > }
 > ```
 >
@@ -266,7 +266,7 @@ For more information about the creation log, see [GitHub Codespaces logs](/en/co
 
 You can use the GitHub CLI extension to create a bridge between a codespace and your local machine, so that the codespace can access any remote resource that is accessible from your machine. For more information on using the extension, see [Using GitHub CLI to access remote resources](https://github.com/github/gh-net#codespaces-network-bridge).
 
-> \[!NOTE]
+> [!NOTE]
 > The GitHub CLI extension is currently in public preview and subject to change.
 
 ### Change the machine type of a codespace

@@ -34,7 +34,7 @@ You can choose to receive notifications:
 * On the command line. Warnings are displayed as callbacks when you push to repositories with any insecure dependencies (**CLI** option).
 * On GitHub Mobile, as web notifications. For more information, see [Configuring notifications](/en/subscriptions-and-notifications/get-started/configuring-notifications#managing-your-notification-settings-with-github-mobile).
 
-> \[!NOTE]
+> [!NOTE]
 > The email and web/GitHub Mobile notifications are:
 >
 > * *Per repository* when Dependabot is enabled on the repository, or when a new manifest file is committed to the repository.
@@ -45,7 +45,7 @@ You can customize the way you are notified about Dependabot alerts. For example,
 
 ![Screenshot of the notification options for Dependabot alerts. A dropdown menu with frequency options is outlined in orange.](/assets/images/help/dependabot/dependabot-notification-frequency.png)
 
-> \[!NOTE]
+> [!NOTE]
 > You can filter your notifications on GitHub to show Dependabot alerts. For more information, see [Inbox filters](/en/subscriptions-and-notifications/reference/inbox-filters#dependabot-custom-filters).
 
 Email notifications for Dependabot alerts that affect one or more repositories include the `X-GitHub-Severity` header field. You can use the value of the `X-GitHub-Severity` header field to filter email notifications for Dependabot alerts. For more information, see [Email notification headers](/en/subscriptions-and-notifications/reference/email-notification-headers).

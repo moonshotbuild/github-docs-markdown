@@ -38,7 +38,7 @@ To use GitHub-hosted runners with Azure VNET, you first need to configure your A
 
 To learn how to use GitHub-hosted runners with an Azure private network, see [Configuring your Azure resources](/en/enterprise-cloud@latest/admin/configuring-settings/configuring-private-networking-for-hosted-compute-products/configuring-private-networking-for-github-hosted-runners-in-your-enterprise#configuring-your-azure-resources) in the GitHub Enterprise Cloud documentation.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The `databaseId` which is required in the script for configuring the Azure resources can refer to any of the following depending on whether you are configuring the resources for an enterprise or an organization:
 > * The enterprise slug, which you can identify by looking at the URL for your enterprise, `https://github.com/enterprises/SLUG`, or
@@ -59,7 +59,7 @@ After configuring your Azure resources, you can use an Azure Virtual Network (VN
    * Select the suitable Ubuntu version.
 
    * When adding your GitHub-hosted runner to a runner group, select the runner group you created in the previous step.
-   > \[!NOTE]
+   > [!NOTE]
    > Naming the GitHub-hosted runner **dependabot** assigns the **dependabot** label to the runner, which enables it to pick up jobs triggered by Dependabot on actions.
 
 <!-- This section is currently only valid for dotcom. It'll need reviewing for GHES 3.18 -->

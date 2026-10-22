@@ -35,10 +35,6 @@ Understanding the concepts used in billing for the GitHub Enterprise plan.
 
   To use GitHub Enterprise Server, you must upload a license file.
 
-* [About Visual Studio subscriptions with GitHub Enterprise](/en/visual-studio-subs)
-
-  You can give Visual Studio subscribers on your team access to GitHub Enterprise with a combined offering from Microsoft.
-
 * [Combined use of GitHub Enterprise and Azure DevOps](/en/billing/concepts/enterprise-billing/azure-devops-licenses)
 
   GitHub Enterprise Cloud customers who manage users with Entra ID can access Azure DevOps without additional cost.

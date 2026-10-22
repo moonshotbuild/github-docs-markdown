@@ -93,7 +93,7 @@ updates:
 * The number of cooldown days must be between 1 and 90.
 * The maximum allowed items limit in `include` and `exclude` lists, which can be used with `cooldown`, is 150 each.
 
-> \[!NOTE]
+> [!NOTE]
 > To consider **all dependencies** for a cooldown period, you can:
 >
 > * Omit the `include` option which applies cooldown to all dependencies.

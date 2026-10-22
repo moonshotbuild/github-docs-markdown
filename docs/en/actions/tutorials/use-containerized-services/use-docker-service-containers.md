@@ -25,7 +25,7 @@ Service containers are Docker containers that provide a simple and portable way 
 
 You can configure service containers for each job in a workflow. GitHub creates a fresh Docker container for each service configured in the workflow, and destroys the service container when the job completes. Steps in a job can communicate with all service containers that are part of the same job. However, you cannot create and use service containers inside a composite action.
 
-> \[!NOTE]
+> [!NOTE]
 > If your workflows use Docker container actions, job containers, or service containers, then you must use a Linux runner:
 >
 > * If you are using GitHub-hosted runners, you must use an Ubuntu runner.

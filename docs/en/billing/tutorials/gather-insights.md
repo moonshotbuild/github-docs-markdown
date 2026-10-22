@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Gathering insights on your spending
 
-Get insights into the usage of your  members.
+Get insights into the usage of your organization members.
 
 The billing platform provides you with the tools to:
 
@@ -43,7 +43,7 @@ You can view the usage of your personal account and download the usage data for 
 
    Below the graph, you can see a more granular overview of the usage. Click the arrow next to a specific date to see a nested table with usage per SKU, units, price/unit, and actual usage.
 
-   > \[!NOTE] The usage graph is configured to represent the start of the month to the end of the month, not your specific billing period.
+   > [!NOTE] The usage graph is configured to represent the start of the month to the end of the month, not your specific billing period.
 
 6. To request a CSV usage report, select **Get usage report** in the upper-right corner of the page.
 
@@ -75,11 +75,11 @@ Organization **owners** and **billing managers** can view the usage of your orga
 
    Below the graph, you can see a more granular overview of the usage. Click the arrow next to a specific date to see a nested table with usage per SKU, units, price/unit, and actual usage.
 
-   > \[!NOTE] The usage graph is configured to represent the start of the month to the end of the month, not your specific billing period.
+   > [!NOTE] The usage graph is configured to represent the start of the month to the end of the month, not your specific billing period.
 
 8. To request a CSV usage report, select **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-download" aria-label="download" role="img"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"></path><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"></path></svg> Get usage report** in the upper-right corner of the page.
 
-> \[!NOTE] Data for the detailed usage report is available only through the GitHub web interface and cannot be obtained via the REST API `/usage` endpoint. The REST API only provides access to summarized billing information.
+> [!NOTE] Data for the detailed usage report is available only through the GitHub web interface and cannot be obtained via the REST API `/usage` endpoint. The REST API only provides access to summarized billing information.
 
 ## Viewing license usage
 

@@ -63,7 +63,7 @@ All repositories are migrated as private by default, and only the user that ran 
 
 After you run a migration with GitHub Enterprise Importer or Enterprise Live Migrations, all user activity in the migrated repository (except Git commits) is attributed to placeholder identities called mannequins.
 
-> \[!NOTE]
+> [!NOTE]
 > Only organization owners can reclaim mannequins. If you've been granted the migrator role, contact an organization owner to perform this step.
 
 1. Decide if you want to reclaim mannequins.

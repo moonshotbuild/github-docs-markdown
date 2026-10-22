@@ -21,7 +21,7 @@ breadcrumbs:
 
 Learn how premium requests in Copilot work, including usage measurement and managing your budget.
 
-> \[!IMPORTANT] This article only applies to Copilot Pro and Copilot Pro+ subscribers on an existing annual plan who remained on legacy premium request-based billing after June 1, 2026.
+> [!IMPORTANT] This article only applies to Copilot Pro and Copilot Pro+ subscribers on an existing annual plan who remained on legacy premium request-based billing after June 1, 2026.
 
 Usage of Copilot is measured through a combination of licenses and monthly usage tracking. For more information about how license costs in Copilot work, see [GitHub Copilot licenses](/en/billing/concepts/product-billing/github-copilot-licenses).
 
@@ -45,7 +45,7 @@ Each product's premium request usage is attributed to a premium request SKU:
 
 See [Requests in GitHub Copilot (legacy)](/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests) for details on which models and features consume premium requests and their SKU attribution.
 
-> \[!NOTE]
+> [!NOTE]
 > Premium requests for Spark and Copilot cloud agent are tracked in dedicated SKUs from November 1, 2025. This provides better cost visibility and budget control for each AI product.
 
 ## How usage of premium requests is measured
@@ -81,7 +81,7 @@ If you run out of free minutes or premium requests, and you have *not* set up bi
 
 Copilot cloud agent uses a dedicated Copilot cloud agent premium request SKU. This SKU still pulls from your monthly allowance of premium requests, but allows for more granular budget control and monitoring.
 
-For more information about Copilot cloud agent and Copilot custom agents, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github) and [About custom agents](/en/copilot/concepts/agents/cloud-agent/about-custom-agents).
+For more information about Copilot cloud agent and Copilot custom agents, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github) and [Custom agents](/en/copilot/concepts/customizations/custom-agents).
 
 ## Using more than your included premium requests
 

@@ -51,7 +51,7 @@ Gist supports mapping GeoJSON files. These maps are displayed in embedded gists,
 
 Follow the steps below to create a gist.
 
-> \[!NOTE]
+> [!NOTE]
 > You can also create a gist using the GitHub CLI. For more information, see [`gh gist create`](https://cli.github.com/manual/gh_gist_create) in the GitHub CLI documentation.
 >
 > Alternatively, you can drag and drop a text file from your desktop directly into the editor.

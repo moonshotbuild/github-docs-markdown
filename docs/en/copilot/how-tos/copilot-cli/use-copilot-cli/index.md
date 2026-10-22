@@ -29,6 +29,10 @@ Understand the different ways you can use GitHub Copilot in your terminal.
 
   Control which tools Copilot CLI can use to avoid unintended changes.
 
+* [Using Autopilot mode in GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/use-autopilot-mode)
+
+  Give Copilot CLI a well-defined task and let it work through the implementation, testing, and iteration without waiting for input after each step.
+
 * [Use voice input with Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/voice-input)
 
   Speak your prompts to GitHub Copilot CLI instead of typing them, using the CLI's speech-to-text feature.
@@ -53,9 +57,9 @@ Understand the different ways you can use GitHub Copilot in your terminal.
 
   During a CLI session, you can ask Copilot a question without adding the prompt, or the answer, to your conversation history.
 
-* [Rolling back changes made during a GitHub Copilot CLI session](/en/copilot/how-tos/copilot-cli/use-copilot-cli/roll-back-changes)
+* [Canceling operations and rolling back changes in GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/roll-back-changes)
 
-  Rewind your Copilot CLI session to a previous prompt to undo changes in conversation history, and optionally restore files.
+  Stop an active Copilot CLI operation, or rewind a session to undo changes in conversation history and optionally restore files.
 
 * [Working with multiple GitHub Copilot CLI sessions](/en/copilot/how-tos/copilot-cli/use-copilot-cli/work-with-multiple-sessions)
 
@@ -64,6 +68,10 @@ Understand the different ways you can use GitHub Copilot in your terminal.
 * [Invoking custom agents](/en/copilot/how-tos/copilot-cli/use-copilot-cli/invoke-custom-agents)
 
   Use custom agents, skills, and MCP servers in Copilot CLI to extend its capabilities.
+
+* [Researching with GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/research-with-copilot-cli)
+
+  Use the /research slash command to investigate a complex topic and produce a cited report from your codebase, repositories on GitHub, and web sources.
 
 * [Steering agents in GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/steer-agents)
 

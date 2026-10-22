@@ -33,7 +33,7 @@ At the end of each month, your metered usage is calculated and scheduled to be b
 
 For example, if you started a paid plan or converted from a trial on the 15th of a month, you will be billed on the 15th of each subsequent month.
 
-> \[!NOTE]
+> [!NOTE]
 > From **December 1, 2025**, all self-serve, metered GitHub Enterprise Cloud accounts that pay by credit card will migrate to a **billing date** of 1st of the month. See [Billing date standardized to the first of the month for self-serve credit card metered Enterprise customers](https://github.blog/changelog/2025-11-17-billing-date-standardized-to-the-first-of-the-month-for-self-serve-credit-card-metered-enterprise-customers-now-generally-available/) in the changelog.
 
 ## Billing cycles for volume-based products
@@ -58,6 +58,10 @@ Changes you make mid-cycle, such as adding or removing users, seats, or resource
 
 * **Within the same billing account**: No double-billing. Moving users or resources between organizations under the same account is handled automatically.
 * **Between different billing accounts**: Each account is billed according to its own cycle. You may see charges in both accounts if the move overlaps billing periods.
+
+## Changing your billing cycle
+
+In some cases, you can change your billing cycle from monthly to annual, or vice versa. For information about when you can change your billing cycle and how to make the change, see [Changing your billing cycle](/en/billing/how-tos/manage-plan-and-licenses/change-billing-cycle).
 
 ## Where to find usage details for specific products
 

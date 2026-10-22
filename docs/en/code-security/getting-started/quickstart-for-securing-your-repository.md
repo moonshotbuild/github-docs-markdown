@@ -92,7 +92,7 @@ You can enable Dependabot to automatically raise pull requests to keep your depe
 
 ## Configuring Code Security
 
-> \[!NOTE]
+> [!NOTE]
 > Code Security features are available for all public repositories, and for private repositories owned by organizations that are part of a team or an enterprise that uses GitHub Code Security or GitHub Advanced Security.
 
 GitHub Code Security includes code scanning, CodeQL CLI and Copilot Autofix, as well as other features that find and fix vulnerabilities in your codebase.
@@ -112,7 +112,7 @@ You can separately enable AI Scan to extend code scanning coverage to supported 
 
 ## Configuring Secret Protection
 
-> \[!NOTE]
+> [!NOTE]
 > Secret Protection features are available for all public repositories, and for private repositories owned by organizations that are part of a team or an enterprise that uses GitHub Secret Protection or GitHub Advanced Security.
 
 GitHub Secret Protection includes secret scanning and push protection, as well as other features that help you detect and prevent secret leaks in your repository.

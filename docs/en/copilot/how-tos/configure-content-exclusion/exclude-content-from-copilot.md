@@ -23,8 +23,8 @@ Learn how to prevent Copilot from accessing certain content.
 
 You can use your repository settings to specify content in your repository that GitHub Copilot should ignore.
 
-> \[!NOTE]
-> GitHub Copilot CLI and Agent mode in Copilot Chat in IDEs do not support content exclusion. For more information about these Copilot features, see [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli) and [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide).
+> [!NOTE]
+> GitHub Copilot CLI and Agent mode in Copilot Chat in IDEs do not support content exclusion. For more information about these Copilot features, see [GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli) and [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide).
 
 1. On GitHub, navigate to the main page of the repository.
 
@@ -40,7 +40,7 @@ You can use your repository settings to specify content in your repository that 
 
    Use the format: `- "/PATH/TO/DIRECTORY/OR/FILE"`, with each path on a separate line. You can add comments by starting a line with `#`.
 
-   > \[!TIP] You can use fnmatch pattern matching notation to specify file paths. Patterns are case insensitive. See [File](https://ruby-doc.org/core-2.5.1/File.html#method-c-fnmatch) in the ruby-doc.org documentation.
+   > [!TIP] You can use fnmatch pattern matching notation to specify file paths. Patterns are case insensitive. See [File](https://ruby-doc.org/core-2.5.1/File.html#method-c-fnmatch) in the ruby-doc.org documentation.
 
 ### Example of paths specified in the repository settings
 
@@ -104,7 +104,7 @@ You can use your organization settings to specify files that GitHub Copilot shou
 
    For Azure DevOps, you can use the new (dev.azure.com) or old (visualstudio.com) host format when specifying `REPOSITORY-REFERENCE`, and Copilot will match them regardless of which host was used to clone the repository locally.
 
-   > \[!TIP] You can use fnmatch pattern matching notation to specify file paths. Patterns are case insensitive. See [File](https://ruby-doc.org/core-2.5.1/File.html#method-c-fnmatch) in the ruby-doc.org documentation.
+   > [!TIP] You can use fnmatch pattern matching notation to specify file paths. Patterns are case insensitive. See [File](https://ruby-doc.org/core-2.5.1/File.html#method-c-fnmatch) in the ruby-doc.org documentation.
 
 ### Example of repositories and paths in organization settings
 
@@ -160,7 +160,7 @@ As an enterprise owner, you can use the enterprise settings to specify files tha
 4. Click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-circle-slash" aria-label="circle-slash" role="img"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM3.965 13.096a6.5 6.5 0 0 0 9.131-9.131ZM1.5 8a6.474 6.474 0 0 0 1.404 4.035l9.131-9.131A6.499 6.499 0 0 0 1.5 8Z"></path></svg> **Content exclusion**.
 5. Use paths to specify which content to exclude. See the previous section, [Configuring content exclusion for your organization](#configuring-content-exclusion-for-your-organization).
 
-> \[!NOTE]
+> [!NOTE]
 > The key difference between setting content exclusion at the enterprise level and the organization level is that rules set at the enterprise level apply to all Copilot users in the enterprise, whereas the rules set by organization owners only apply to users who are assigned a Copilot seat by that organization.
 
 ## Testing changes to content exclusions

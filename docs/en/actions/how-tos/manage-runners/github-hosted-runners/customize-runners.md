@@ -47,7 +47,7 @@ jobs:
           sudo apt-get install jq
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Always run `sudo apt-get update` before installing a package. In case the `apt` index is stale, this command fetches and re-indexes any available packages, which helps prevent package installation failures.
 
 ## Installing software on macOS runners

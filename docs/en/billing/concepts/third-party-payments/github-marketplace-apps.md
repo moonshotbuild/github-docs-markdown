@@ -21,7 +21,7 @@ Understand how billing works for paid GitHub Marketplace apps, including shared 
 
 GitHub Marketplace includes apps with free and paid pricing plans. After you purchase and install an app, you can upgrade, downgrade, or cancel **at any time**. This article explains the billing model, that is, what happens when you start, trial, change, or cancel a paid app subscription.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to installing and purchasing apps from GitHub Marketplace only. For more information on apps purchased from integrators, see [About GitHub integrations](/en/integrations/concepts/about-integrations).
 
 ## Core billing model
@@ -58,7 +58,7 @@ You must manage billing settings and paid features for each of your accounts sep
 
 You can switch between settings for your personal account, organization accounts, and enterprise accounts using the context switcher on each settings page. See [Accessing the billing pages](/en/enterprise-cloud@latest/billing/get-started/introduction-to-billing#accessing-the-billing-pages) in the GitHub Enterprise Cloud docs.
 
-> \[!NOTE]
+> [!NOTE]
 > When you transfer an organization with paid GitHub Marketplace apps into an enterprise account, you may receive a second receipt but you will not be charged twice.
 
 ## Unit plan limits

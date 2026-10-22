@@ -25,7 +25,7 @@ Generate an AI-powered summary of your pull request changes to help reviewers qu
 
 GitHub Copilot can summarize a pull request in the description field or as a comment, helping reviewers quickly understand what changed.
 
-> \[!NOTE] GitHub Copilot does not take into account any existing content in the pull request description, so start with a blank description for best results.
+> [!NOTE] GitHub Copilot does not take into account any existing content in the pull request description, so start with a blank description for best results.
 
 1. On GitHub, create a pull request or navigate to an existing pull request.
 

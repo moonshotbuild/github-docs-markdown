@@ -59,8 +59,8 @@ Please note: in order to offer meaningful security benefits, an attestation's si
 
 - **`predicate_type`** (string)
   Optional filter for fetching attestations with a given predicate type.
-This option accepts provenance, sbom, release, or freeform text
-for custom predicate types.
+  This option accepts provenance, sbom, release, or freeform text
+  for custom predicate types.
 
 ### HTTP response status codes
 
@@ -277,8 +277,8 @@ Please note: in order to offer meaningful security benefits, an attestation's si
 
 - **`predicate_type`** (string)
   Optional filter for fetching attestations with a given predicate type.
-This option accepts provenance, sbom, release, or freeform text
-for custom predicate types.
+  This option accepts provenance, sbom, release, or freeform text
+  for custom predicate types.
 
 ### HTTP response status codes
 

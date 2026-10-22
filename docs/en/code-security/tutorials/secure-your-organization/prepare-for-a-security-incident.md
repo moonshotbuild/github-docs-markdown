@@ -35,7 +35,7 @@ These controls are critical for incident response, compliance, and operational t
 
 You should stream the enterprise audit logs, including API request events, to a Security Information and Event Management (SIEM) system. This keeps a copy of your audit log data (including web, Git and API events) in a system where you can run complex queries across large volumes of data and retain data beyond default retention periods.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Audit log streaming only includes activity from the time you enable it. Enabling it during an incident will not recover earlier activity.
 
 This is critical in an incident because some high-value events are not visible in the GitHub audit log web UI, and logs are only available for a limited time unless you export and retain them externally.

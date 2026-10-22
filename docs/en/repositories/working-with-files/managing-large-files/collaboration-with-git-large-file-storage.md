@@ -21,7 +21,7 @@ With Git LFS enabled, you'll be able to fetch, modify, and push large files just
 
 If collaborators on your repository don't have Git LFS installed, they won't have access to the original large file. If they attempt to clone your repository, they will only fetch the pointer files, and won't have access to any of the actual data.
 
-> \[!TIP]
+> [!TIP]
 > To help users without Git LFS enabled, we recommend you set guidelines for repository contributors that describe how to work with large files. For example, you may ask contributors not to modify large files, or to upload changes to a file sharing service like [Dropbox](http://www.dropbox.com/) or [Google Drive](https://drive.google.com). For more information, see [Setting guidelines for repository contributors](/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors).
 
 ## Viewing large files in pull requests

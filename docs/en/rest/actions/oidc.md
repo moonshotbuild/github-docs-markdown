@@ -21,7 +21,7 @@ Use the REST API to interact with JWTs for OIDC subject claims in GitHub Actions
 
 You can use the REST API to query and manage a customization template for an OpenID Connect (OIDC) subject claim. For more information, see [OpenID Connect](/en/actions/concepts/security/openid-connect).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List OIDC custom property inclusions for an enterprise

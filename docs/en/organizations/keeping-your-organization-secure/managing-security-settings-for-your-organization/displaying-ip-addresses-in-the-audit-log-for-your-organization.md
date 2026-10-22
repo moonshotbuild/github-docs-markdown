@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can display the source IP address for events in your organization's audit log.
 
-> \[!NOTE]
+> [!NOTE]
 > Displaying IP addresses in the audit log for an organization is in public preview and subject to change.
 
 ## About display of IP addresses in the audit log

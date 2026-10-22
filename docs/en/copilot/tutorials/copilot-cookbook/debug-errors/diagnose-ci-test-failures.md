@@ -39,7 +39,7 @@ are @order.py and @test_order_service.py
 
 ### Example response
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 Copilot CLI uses the GitHub MCP server to fetch your latest workflow runs on the current branch, identifies the failed job, and retrieves its logs. It finds the following failure:
 
@@ -87,7 +87,7 @@ Relevant files: @order_service.py @test_order_service.py
 
 ### Example response for race conditions
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 Copilot CLI uses the GitHub MCP server to list recent workflow runs on the current branch, identifies one passing and one failing run, and retrieves the logs for both. It compares them:
 

@@ -42,7 +42,7 @@ If a REST API endpoint requires you to authenticate as an app, the documentation
 
 You can use GitHub's Octokit.js SDK to authenticate as a GitHub App. One advantage of using the SDK to authenticate is that you do not need to generate a JSON web token (JWT) yourself. Additionally, the SDK will take care of regenerating the JWT when it expires.
 
-> \[!NOTE]
+> [!NOTE]
 > You must install and import `octokit` in order to use the Octokit.js library. The following example uses import statements in accordance with ES6. For more information about different installation and import methods, see [Usage](https://github.com/octokit/octokit.js/#usage) in the octokit/octokit repository.
 
 1. Get the ID of your app. You can find your app's ID on the settings page for your GitHub App. For more information about navigating to the settings page for your GitHub App, see [Modifying a GitHub App registration](/en/apps/maintaining-github-apps/modifying-a-github-app-registration#navigating-to-your-github-app-settings).

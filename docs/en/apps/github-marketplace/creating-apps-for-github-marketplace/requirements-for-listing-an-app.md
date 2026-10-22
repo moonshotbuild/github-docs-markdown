@@ -19,7 +19,7 @@ breadcrumbs:
 
 Apps on GitHub Marketplace must meet the requirements outlined on this page before the listing can be published.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 <!--UI-LINK: Displayed as a link on the https://github.com/marketplace/new page.-->
@@ -30,7 +30,7 @@ The requirements for listing an app on GitHub Marketplace vary according to whet
 
 All listings on GitHub Marketplace should be for tools that provide value to the GitHub community. When you submit your listing for publication, you must read and accept the terms of the [GitHub Marketplace Developer Agreement](/en/site-policy/github-terms/github-marketplace-developer-agreement).
 
-> \[!NOTE]
+> [!NOTE]
 > For organization-owned apps, only organization owners can create and submit listings in GitHub Marketplace. The GitHub App manager role does not grant permission to list apps in GitHub Marketplace.
 
 ### User experience requirements for all apps
@@ -76,7 +76,7 @@ To publish a paid app (or an app that offers a paid plan), you must also meet th
 
 When you are ready to publish the app on GitHub Marketplace you must request verification for the app listing.
 
-> \[!NOTE]
+> [!NOTE]
 > If you want to sell an app that's owned by your personal account, first you'll need to transfer the app to an organization, and then request verification for a listing created by the organization. For information on how to transfer an app to an organization, see: [Applying for publisher verification for your organization](/en/apps/github-marketplace/github-marketplace-overview/applying-for-publisher-verification-for-your-organization).
 
 ## Billing requirements for paid apps

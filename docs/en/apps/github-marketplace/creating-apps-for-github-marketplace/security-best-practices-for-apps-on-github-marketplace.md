@@ -19,7 +19,7 @@ breadcrumbs:
 
 Guidelines for preparing a secure app to share on GitHub Marketplace.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 Before listing an app on GitHub Marketplace, you should follow the best practices for the type of app that you are listing:

@@ -21,7 +21,7 @@ GitHub sets default environment variables for each codespace.
 
 GitHub sets default environment variables for every codespace. Commands run in codespaces can create, read, and modify environment variables.
 
-> \[!NOTE]
+> [!NOTE]
 > Environment variables are case-sensitive.
 
 ## List of default environment variables

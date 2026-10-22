@@ -21,9 +21,9 @@ breadcrumbs:
 
 # github merge-results
 
-\[Deep plumbing] Merges multiple SARIF files into a single SARIF file.
+[Deep plumbing] Merges multiple SARIF files into a single SARIF file.
 
-> \[!NOTE]
+> [!NOTE]
 > This content describes the most recent release of the CodeQL CLI. For more information about this release, see <https://github.com/github/codeql-cli-binaries/releases>.
 >
 > To see details of the options available for this command in an earlier release, run the command with the <span style="white-space: nowrap;">`--help`</span> option in your terminal.
@@ -47,7 +47,7 @@ codeql github merge-results --sarif=<file> --output=<file> <options>...
 \[Mandatory] Path to the SARIF files to use. This should be the output
 of [codeql database analyze](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/database-analyze) (or [codeql database interpret-results](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/database-interpret-results)) with `--format sarif-latest` for upload to github.com or
 the appropriate supported format tag for GitHub Enterprise Server
-instances (see [SARIF support for code scanning](/en/code-security/reference/code-scanning/sarif-files/sarif-support) for
+instances (see [SARIF support for code scanning](/en/enterprise-server@3.22/code-security/reference/code-scanning/sarif-files/sarif-support) for
 SARIF versions supported by your release).
 
 #### `-o, --output=<file>`

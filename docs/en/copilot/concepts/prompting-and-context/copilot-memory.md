@@ -19,7 +19,7 @@ breadcrumbs:
 
 Copilot Memory helps Copilot become more effective over time by remembering facts about your repositories and your personal coding preferences.
 
-> \[!NOTE] This feature is currently in public preview and is subject to change.
+> [!NOTE] This feature is currently in public preview and is subject to change.
 
 As a developer joining an existing codebase, you typically read the repository's README, coding conventions, and other documentation to understand how the project works and how to contribute. This helps you submit good quality pull requests from the start. Even so, the quality of your work steadily improves as you spend more time in the codebase and learn its nuances. In the same way, allowing Copilot to build its own understanding of your repository enables it to become increasingly effective over time.
 

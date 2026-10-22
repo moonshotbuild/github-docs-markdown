@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Restoring a deleted repository
 
-can restore some deleted repositories to recover their contents.
+You can restore some deleted repositories to recover their contents.
 
 ## About repository restoration
 
@@ -23,7 +23,7 @@ A deleted repository can be restored within 90 days, unless the repository was p
 
 If you want to restore a repository that was part of a fork network that is not currently empty, you can contact us through the [GitHub Support portal](https://support.github.com).
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > You can only contact GitHub Support to restore a repository if you are on a paid GitHub plan. For more information about the different plans, see [GitHub's plans](/en/get-started/learning-about-github/githubs-plans).
 
 It can take up to an hour after a repository is deleted before that repository is available for restoration.

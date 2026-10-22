@@ -19,7 +19,7 @@ Reference documentation for GraphQL schema types in the Projects category.
 
 ## AddedToProjectV2Event - object
 
-Represents aadded_to_project_v2event on a given issue or pull request.
+Represents a added_to_project_v2 event on a given issue or pull request.
 
 **Implements:** Node, ProjectV2Event
 
@@ -556,17 +556,17 @@ New projects that manage issues, pull requests and drafts using tables and board
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ProjectV2FieldOrder): Ordering options for project v2 fields returned from the connection.
+  * `orderBy` (ProjectV2FieldOrder): Ordering options for project v2 fields returned from the connection. Default: `{field: POSITION, direction: ASC}`.
 
 * `fullDatabaseId` (BigInt): Identifies the primary key from the database as a BigInt.
 * `id` (ID!): The Node ID of the ProjectV2 object.
 * `items` (ProjectV2ItemConnection!): List of items in the project.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
-  * `archivedStates` ([ProjectV2ItemArchivedState!]): Filter items by their archived state. Defaults to only returning items that are not archived.
+  * `archivedStates` ([ProjectV2ItemArchivedState!]): Filter items by their archived state. Defaults to only returning items that are not archived. Default: `[NOT_ARCHIVED]`.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ProjectV2ItemOrder): Ordering options for project v2 items returned from the connection.
+  * `orderBy` (ProjectV2ItemOrder): Ordering options for project v2 items returned from the connection. Default: `{field: POSITION, direction: ASC}`.
   * `query` (String): Search query for filtering items. Default: ``.
 
 * `number` (Int!): The project's number.
@@ -578,7 +578,7 @@ New projects that manage issues, pull requests and drafts using tables and board
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (RepositoryOrder): Ordering options for repositories returned from the connection.
+  * `orderBy` (RepositoryOrder): Ordering options for repositories returned from the connection. Default: `{field: CREATED_AT, direction: DESC}`.
 
 * `resourcePath` (URI!): The HTTP path for this project.
 * `shortDescription` (String): The project's short description.
@@ -587,14 +587,14 @@ New projects that manage issues, pull requests and drafts using tables and board
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ProjectV2StatusOrder): Order for connection.
+  * `orderBy` (ProjectV2StatusOrder): Order for connection. Default: `{field: CREATED_AT, direction: DESC}`.
 
 * `teams` (TeamConnection!): The teams the project is linked to.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (TeamOrder): Ordering options for teams returned from this connection.
+  * `orderBy` (TeamOrder): Ordering options for teams returned from this connection. Default: `{field: NAME, direction: ASC}`.
 
 * `template` (Boolean!): Returns true if this project is a template.
 * `title` (String!): The project's name.
@@ -611,7 +611,7 @@ New projects that manage issues, pull requests and drafts using tables and board
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ProjectV2ViewOrder): Ordering options for project v2 views returned from the connection.
+  * `orderBy` (ProjectV2ViewOrder): Ordering options for project v2 views returned from the connection. Default: `{field: POSITION, direction: ASC}`.
 
 * `workflow` (ProjectV2Workflow): A workflow of the project.
   * `number` (Int!): The number of a workflow belonging to the project.
@@ -621,7 +621,7 @@ New projects that manage issues, pull requests and drafts using tables and board
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ProjectV2WorkflowOrder): Ordering options for project v2 workflows returned from the connection.
+  * `orderBy` (ProjectV2WorkflowOrder): Ordering options for project v2 workflows returned from the connection. Default: `{field: NAME, direction: ASC}`.
 
 ## ProjectV2Actor - union
 
@@ -894,7 +894,7 @@ An item within a Project.
 * `createdAt` (DateTime!): Identifies the date and time when the object was created.
 * `creator` (Actor): The actor who created the item.
 * `databaseId` (Int): Identifies the primary key from the database. **Deprecated:** databaseId will be removed because it does not support 64-bit signed integer identifiers. Use fullDatabaseId instead. Removal on 2025-04-01 UTC.
-* `fieldValueByName` (ProjectV2ItemFieldValue): The field value of the first project field which matches thenameargument that is set on the item.
+* `fieldValueByName` (ProjectV2ItemFieldValue): The field value of the first project field which matches the name argument that is set on the item.
   * `name` (String!): The name of the field to return the field value of.
 
 * `fieldValues` (ProjectV2ItemFieldValueConnection!): The field values that are set on the item.
@@ -902,7 +902,7 @@ An item within a Project.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ProjectV2ItemFieldValueOrder): Ordering options for project v2 item field values returned from the connection.
+  * `orderBy` (ProjectV2ItemFieldValueOrder): Ordering options for project v2 item field values returned from the connection. Default: `{field: POSITION, direction: ASC}`.
 
 * `fullDatabaseId` (BigInt): Identifies the primary key from the database as a BigInt.
 * `id` (ID!): The Node ID of the ProjectV2Item object.
@@ -1053,7 +1053,7 @@ The value of a pull request field in a Project item.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (PullRequestOrder): Ordering options for pull requests.
+  * `orderBy` (PullRequestOrder): Ordering options for pull requests. Default: `{field: CREATED_AT, direction: ASC}`.
 
 ## ProjectV2ItemFieldRepositoryValue - object
 
@@ -1229,7 +1229,7 @@ Properties by which project v2 item connections can be ordered.
 
 ## ProjectV2ItemStatusChangedEvent - object
 
-Represents aproject_v2_item_status_changedevent on a given issue or pull request.
+Represents a project_v2_item_status_changed event on a given issue or pull request.
 
 **Implements:** Node, ProjectV2Event
 
@@ -1398,7 +1398,7 @@ Represents an owner of a project.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
   * `minPermissionLevel` (ProjectV2PermissionLevel): Filter projects based on user role. Default: `READ`.
-  * `orderBy` (ProjectV2Order): How to order the returned projects.
+  * `orderBy` (ProjectV2Order): How to order the returned projects. Default: `{field: NUMBER, direction: DESC}`.
   * `query` (String): A project to search for under the owner.
 
 ### Implemented by
@@ -1657,7 +1657,7 @@ A view within a ProjectV2.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ProjectV2FieldOrder): Ordering options for the project v2 fields returned from the connection.
+  * `orderBy` (ProjectV2FieldOrder): Ordering options for the project v2 fields returned from the connection. Default: `{field: POSITION, direction: ASC}`.
 
 * `filter` (String): The project view's filter.
 * `fullDatabaseId` (BigInt): Identifies the primary key from the database as a BigInt.
@@ -1666,14 +1666,14 @@ A view within a ProjectV2.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ProjectV2FieldOrder): Ordering options for the project v2 fields returned from the connection.
+  * `orderBy` (ProjectV2FieldOrder): Ordering options for the project v2 fields returned from the connection. Default: `{field: POSITION, direction: ASC}`.
 
 * `groupByFields` (ProjectV2FieldConfigurationConnection): The view's group-by field.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ProjectV2FieldOrder): Ordering options for the project v2 fields returned from the connection.
+  * `orderBy` (ProjectV2FieldOrder): Ordering options for the project v2 fields returned from the connection. Default: `{field: POSITION, direction: ASC}`.
 
 * `id` (ID!): The Node ID of the ProjectV2View object.
 * `layout` (ProjectV2ViewLayout!): The project view's layout.
@@ -1688,21 +1688,21 @@ A view within a ProjectV2.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ProjectV2FieldOrder): Ordering options for the project v2 fields returned from the connection.
+  * `orderBy` (ProjectV2FieldOrder): Ordering options for the project v2 fields returned from the connection. Default: `{field: POSITION, direction: ASC}`.
 
 * `verticalGroupByFields` (ProjectV2FieldConfigurationConnection): The view's vertical-group-by field.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ProjectV2FieldOrder): Ordering options for the project v2 fields returned from the connection.
+  * `orderBy` (ProjectV2FieldOrder): Ordering options for the project v2 fields returned from the connection. Default: `{field: POSITION, direction: ASC}`.
 
 * `visibleFields` (ProjectV2FieldConnection): The view's visible fields. **Deprecated:** The ProjectV2View#visibleFields API is deprecated in favour of the more capable ProjectV2View#fields API. Check out the ProjectV2View#fields API as an example for the more capable alternative. Removal on 2023-01-01 UTC.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ProjectV2FieldOrder): Ordering options for the project v2 fields returned from the connection.
+  * `orderBy` (ProjectV2FieldOrder): Ordering options for the project v2 fields returned from the connection. Default: `{field: POSITION, direction: ASC}`.
 
 ## ProjectV2ViewConfiguration - object
 
@@ -1829,7 +1829,7 @@ Properties by which project workflows can be ordered.
 
 ## RemovedFromProjectV2Event - object
 
-Represents aremoved_from_project_v2event on a given issue or pull request.
+Represents a removed_from_project_v2 event on a given issue or pull request.
 
 **Implements:** Node, ProjectV2Event
 

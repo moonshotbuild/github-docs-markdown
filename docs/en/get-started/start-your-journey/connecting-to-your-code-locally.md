@@ -19,7 +19,7 @@ Connect GitHub Desktop to your account and clone your repository to edit files l
 
 So far, you've worked in the browser. In this tutorial, you'll use GitHub Desktop to clone your repository to your computer so you can edit files in your own code editor.
 
-> \[!NOTE]
+> [!NOTE]
 > As you follow this series, if you use GitHub Enterprise Cloud with data residency or GitHub Enterprise Server, you will need to substitute references and links to GitHub.com with your enterprise's dedicated URL.
 
 ## Prerequisites
@@ -31,7 +31,7 @@ So far, you've worked in the browser. In this tutorial, you'll use GitHub Deskto
 
 If you don't have GitHub Desktop yet, install it before you continue. [Download GitHub Desktop](https://desktop.github.com/?ref_product=desktop\&ref_type=engagement\&ref_style=button).
 
-> \[!TIP]
+> [!TIP]
 > GitHub Docs contains documentation for all of GitHub's plans, and where relevant, tools and operating systems. To find content that matches your setup, use the **Version** dropdown in the top left corner of an article to select your plan, and select the tool or operating system tabs below the article's introduction.
 
 ## Signing in to GitHub Desktop

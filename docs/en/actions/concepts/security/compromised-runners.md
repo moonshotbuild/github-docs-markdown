@@ -23,7 +23,7 @@ Understand the security risks associated with compromised GitHub Actions runners
 
 These sections consider some of the steps an attacker can take if they're able to run malicious commands on a GitHub Actions runner.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub-hosted runners do not scan for malicious code downloaded by a user during their job, such as a compromised third party library.
 
 ### Accessing secrets

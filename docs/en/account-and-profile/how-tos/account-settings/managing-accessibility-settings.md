@@ -19,7 +19,7 @@ breadcrumbs:
 
 GitHub's user interface can adapt to your vision, hearing, motor, cognitive, or learning needs.
 
-> \[!NOTE] This article will help you customize your experience on the GitHub website as a whole. For information on using specific GitHub products with screen readers and other assistive technologies, see the [GitHub Accessibility Documentation](https://accessibility.github.com/documentation).
+> [!NOTE] This article will help you customize your experience on the GitHub website as a whole. For information on using specific GitHub products with screen readers and other assistive technologies, see the [GitHub Accessibility Documentation](https://accessibility.github.com/documentation).
 
 ## Managing the appearance of links
 

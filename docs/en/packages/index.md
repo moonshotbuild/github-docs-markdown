@@ -107,7 +107,7 @@ Learn to safely publish and consume packages, store your packages alongside your
 
 * [Working with the Docker registry](/en/packages/working-with-a-github-packages-registry/working-with-the-docker-registry)
 
-  You can push and pull your Docker images using the GitHub Packages Docker registry.
+  The Docker registry has now been replaced by the Container registry.
 
 * [Working with the RubyGems registry](/en/packages/working-with-a-github-packages-registry/working-with-the-rubygems-registry)
 

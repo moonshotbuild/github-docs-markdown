@@ -17,7 +17,7 @@ breadcrumbs:
 
 # Inviting collaborators to a personal repository
 
-You can add users as collaborators to your personal repository.
+You can invite users to become collaborators to your personal repository.
 
 ## Inviting a collaborator to a personal repository
 

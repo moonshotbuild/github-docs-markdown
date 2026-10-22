@@ -43,7 +43,7 @@ Code scanning default setup supports the following registry types:
 
 Additionally, *Git Source* registries are supported for granting code scanning access to configuration files in internal or private repositories. For more information about customizing code scanning using custom configuration files, see [Workflow configuration options for code scanning](/en/code-security/reference/code-scanning/workflow-configuration-options#custom-configuration-files).
 
-> \[!TIP]
+> [!TIP]
 > You can define one of each type of registry for each organization. If the codebases in your organization use more than one registry of a given type, you should set up a unified access point or define access to the most important registry for the codebases in that organization.
 
 ### Defining registry access for code scanning default setup
@@ -62,10 +62,12 @@ You need to be an **organization owner** to set up access to private registries 
    * **Username and password**: Enter the username and password used to authenticate with the registry. Some types of authentication tokens, such as a GitHub Personal Access Token, are tied to a particular user identity. Select this option for these and enter the name of the user who created the token as **Username** and the token itself as **Password**.
 
    * **OIDC (OpenID Connect)**: Use short-lived credentials from a cloud identity provider instead of storing long-lived secrets. When you select this option, choose a provider and fill in the provider-specific fields. For more information, see [Configuring OIDC authentication for a private registry](#configuring-oidc-authentication-for-a-private-registry).
+
+   * **Anonymous**: Use this option for a registry that doesn't require authentication. No credentials are stored or sent to the registry. For more information, see [Configuring an anonymous private registry](#configuring-an-anonymous-private-registry).
 6. Define which repositories in the organization can access the private registry using these details: all, private and internal, or selected repositories only.
 7. When you have finished defining the private registry, select **Add Registry** to save the registry information.
 
-> \[!TIP]
+> [!TIP]
 > When you add a private registry to an organization using **Token** or **Username and password** authentication, the token or password is stored as an encrypted secret. Once the registry is created, the token or password cannot be viewed again.
 
 ### Enabling code scanning default setup to use a registry definition
@@ -92,7 +94,7 @@ Dependabot can use any of the org-level private registries, as well as uses any 
 
 For each update job, Dependabot supplies credentials only for organization-level private registry types that apply to the job's package ecosystem. Depending on the ecosystem, the applicable registry types can include Git source credentials in addition to credentials for the ecosystem's package registry.
 
-> \[!NOTE]
+> [!NOTE]
 > The number of applicable organization-level private registry credentials provided to any single update job is capped at 100 for performance reasons.
 
 For a multi-ecosystem group, Dependabot runs a separate update job for each ecosystem and combines the results into one pull request. Each ecosystem's update job has its own 100-registry limit, just as it would if the ecosystems were configured as separate updates.
@@ -113,7 +115,9 @@ See [Configuring access to private registries for Dependabot](/en/code-security/
 
 ### Configuring OIDC authentication for a private registry
 
-OIDC (OpenID Connect) authentication allows Dependabot to use short-lived credentials from your cloud identity provider to access private registries, eliminating the need to store long-lived secrets. With OIDC, credentials are generated dynamically for each Dependabot update job. You must configure a trust relationship between your cloud provider and GitHub before Dependabot can authenticate.
+OIDC (OpenID Connect) authentication allows Dependabot and code scanning default setup to use short-lived credentials from your cloud identity provider to access private registries. Each feature is limited to its supported registry types.
+
+With OIDC, credentials are generated dynamically for update or analysis jobs, eliminating the need to store long-lived secrets. You must configure a trust relationship between your cloud provider and GitHub before either feature can authenticate.
 
 When you select **OIDC** as the authentication method for a private registry, choose one of the supported providers and fill in the required fields:
 
@@ -126,6 +130,16 @@ When you select **OIDC** as the authentication method for a private registry, ch
 The authentication type of a private registry cannot be changed after creation. To switch from OIDC to another authentication method, or vice versa, delete the existing registry and create a new one.
 
 For more information about how OIDC works, see [OpenID Connect](/en/actions/concepts/security/openid-connect).
+
+### Configuring an anonymous private registry
+
+Some registries, such as internal mirrors, don't require authentication. You can add these registries at the organization level with the **Anonymous** authentication method so that Dependabot and code scanning default setup can use them without a token, password, or OIDC configuration.
+
+Dependabot update jobs can only connect to hosts on an egress allowlist. Adding an anonymous registry allows Dependabot to reach the registry's host for jobs in repositories that have access to the registry, without storing a secret or sending credentials. For more information, see [Resolving a blocked host in a Dependabot update job](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/resolve-a-blocked-host).
+
+When you select **Anonymous**, the credential fields are removed from the form. You still define the registry's **URL** and **Type**. You also choose which repositories can access the registry.
+
+After you create an anonymous registry, you can only update its URL and whether it replaces the default registry for the ecosystem. You can't change the authentication method of an existing registry. To switch to or from **Anonymous**, delete the registry and create a new one.
 
 ## Code Quality access to private registries
 

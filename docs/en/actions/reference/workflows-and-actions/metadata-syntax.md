@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can create actions to perform tasks in your repository. If you're making a custom action, it will require a metadata file that uses YAML syntax.
 
-> \[!NOTE]
+> [!NOTE]
 > You can build Docker container, JavaScript, and composite actions. Actions require a metadata file to define the inputs, outputs, and runs configuration for your action. Action metadata files use YAML syntax, and the metadata filename must be either `action.yml` or `action.yaml`. The preferred format is `action.yml`.
 
 ## `name`
@@ -42,7 +42,7 @@ You can create actions to perform tasks in your repository. If you're making a c
 
 This example configures two inputs: `num-octocats` and `octocat-eye-color`. The `num-octocats` input is not required and will default to a value of `1`. `octocat-eye-color` is required and has no default value.
 
-> \[!NOTE]
+> [!NOTE]
 > Actions using `required: true` will not automatically return an error if the input is not specified.
 
 Workflow files that use this action can use the `with` keyword to set an input value for `octocat-eye-color`. For more information about the `with` syntax, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstepswith).
@@ -168,7 +168,7 @@ runs:
 
 **Optional** Allows you to run a script at the start of a job, before the `main:` action begins. For example, you can use `pre:` to run a prerequisite setup script. The runtime specified with the [`using`](#runsusing-for-javascript-actions) syntax will execute this file. The `pre:` action always runs by default but you can override this using [`runs.pre-if`](#runspre-if).
 
-> \[!NOTE]
+> [!NOTE]
 > `runs.pre` is not supported for local actions.
 
 In this example, the `pre:` action runs a script called `setup.js`:

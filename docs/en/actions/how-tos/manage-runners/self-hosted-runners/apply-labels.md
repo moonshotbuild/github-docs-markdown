@@ -36,7 +36,7 @@ You can create custom labels for runners at the repository and organization leve
 * [Creating a custom label for a repository runner](#creating-a-custom-label-for-a-repository-runner)
 * [Creating a custom label for an organization runner](#creating-a-custom-label-for-an-organization-runner)
 
-> \[!NOTE]
+> [!NOTE]
 > Labels are case-insensitive.
 
 ### Creating a custom label for a repository runner
@@ -110,7 +110,7 @@ You can programmatically assign labels to a self-hosted runner after the runner 
 * To programmatically assign labels to an existing self-hosted runner, you must use the REST API. For more information, see [REST API endpoints for self-hosted runners](/en/rest/actions/self-hosted-runners).
 * To programmatically assign labels to a self-hosted runner during the initial runner configuration, you can pass label names to the `config` script using the `labels` parameter.
 
-  > \[!NOTE]
+  > [!NOTE]
   > You cannot use the `config` script to assign labels to an existing self-hosted runner.
 
   For example, this command assigns a label named `gpu` when configuring a new self-hosted runner:
@@ -127,5 +127,5 @@ You can programmatically assign labels to a self-hosted runner after the runner 
   ./config.sh --url <REPOSITORY_URL> --token <REGISTRATION_TOKEN> --labels gpu,x64,linux
   ```
 
-  > \[!NOTE]
+  > [!NOTE]
   > If you replace an existing runner, then you must reassign any custom labels.

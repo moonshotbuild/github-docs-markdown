@@ -148,15 +148,3 @@ Review GitHub's terms of service, acceptable use policies, privacy practices, co
 * [GitHub GPL Cooperation Commitment](/en/site-policy/github-company-policies/github-gpl-cooperation-commitment)
 
 * [GitHub Gifts and Entertainment Policy](/en/site-policy/github-company-policies/github-gifts-and-entertainment-policy)
-
-* [Amendment to GitHub Terms of Service Applicable to U.S. Federal Government Users](/en/site-policy/site-policy-deprecated/amendment-to-github-terms-of-service-applicable-to-us-federal-government-users)
-
-* [GitHub Enterprise Cloud Evaluation Agreement](/en/site-policy/site-policy-deprecated/github-enterprise-cloud-evaluation-agreement)
-
-* [GitHub Enterprise Server License Agreement](/en/site-policy/site-policy-deprecated/github-enterprise-server-license-agreement)
-
-* [GitHub Enterprise Service Level Agreement](/en/site-policy/site-policy-deprecated/github-enterprise-service-level-agreement)
-
-* [GitHub Enterprise Subscription Agreement](/en/site-policy/site-policy-deprecated/github-enterprise-subscription-agreement)
-
-* [GitHub Supplemental Terms for Microsoft Volume Licensing](/en/site-policy/site-policy-deprecated/github-supplemental-terms-for-microsoft-volume-licensing)

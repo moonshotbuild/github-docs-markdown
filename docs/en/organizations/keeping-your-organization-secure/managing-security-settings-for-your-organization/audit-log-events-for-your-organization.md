@@ -19,7 +19,7 @@ breadcrumbs:
 
 Learn about audit log events recorded for your organization.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * This article contains the events that may appear in your organization's audit log. For the events that can appear in a user account's security log, see [Security log events](/en/authentication/keeping-your-account-and-data-secure/security-log-events).
 > * Webhooks might be a good alternative to the audit log or API polling for certain use cases. Webhooks are a way for GitHub to notify your server when specific events occur for a repository, organization, or enterprise. Compared to the API or searching the audit log, webhooks can be more efficient if you just want to learn and possibly log when certain events occur on your enterprise, organization, or repository. See [Webhooks documentation](/en/webhooks).
@@ -96,13 +96,13 @@ A workflow run artifact was manually deleted.
 
 Triggered when the organization must approve fine-grained personal access tokens before the tokens can access organization resources. See also: personal\_access\_token.auto\_approve\_grant\_requests\_disabled
 
-**Reference:** /organizations/managing-programmatic-access-to-your-organization/setting-a-personal-access-token-policy-for-your-organization
+**Reference:** [Setting a personal access token policy for your organization](/en/organizations/managing-programmatic-access-to-your-organization/setting-a-personal-access-token-policy-for-your-organization)
 
 #### `auto_approve_personal_access_token_requests.enable`
 
 Triggered when fine-grained personal access tokens can access organization resources without prior approval. See also: personal\_access\_token.auto\_approve\_grant\_requests\_enabled
 
-**Reference:** /organizations/managing-programmatic-access-to-your-organization/setting-a-personal-access-token-policy-for-your-organization
+**Reference:** [Setting a personal access token policy for your organization](/en/organizations/managing-programmatic-access-to-your-organization/setting-a-personal-access-token-policy-for-your-organization)
 
 ### billing
 
@@ -194,7 +194,7 @@ Automatic creation of check suites was disabled on a repository in the organizat
 
 **Additional fields:** `actor_is_agent`, `public_repo`, `visibility`
 
-**Reference:** /rest/checks#update-repository-preferences-for-check-suites
+**Reference:** [REST API endpoints for checks](/en/rest/checks#update-repository-preferences-for-check-suites)
 
 #### `checks.auto_trigger_enabled`
 
@@ -202,7 +202,7 @@ Automatic creation of check suites was enabled on a repository in the organizati
 
 **Additional fields:** `actor_is_agent`, `public_repo`, `visibility`
 
-**Reference:** /rest/checks#update-repository-preferences-for-check-suites
+**Reference:** [REST API endpoints for checks](/en/rest/checks#update-repository-preferences-for-check-suites)
 
 #### `checks.delete_logs`
 
@@ -312,7 +312,7 @@ Enterprise setting for Codespaces ownership was updated.
 
 **Additional fields:** `enablement`, `organization_names`
 
-**Reference:** /codespaces/managing-codespaces-for-your-organization/choosing-who-owns-and-pays-for-codespaces-in-your-organization
+**Reference:** [Choosing who owns and pays for codespaces in your organization](/en/codespaces/managing-codespaces-for-your-organization/choosing-who-owns-and-pays-for-codespaces-in-your-organization)
 
 #### `codespaces.connect`
 
@@ -540,7 +540,7 @@ A new custom property definition was created.
 
 **Additional fields:** `actor_is_agent`, `allowed_values`, `default_value`, `definition_id`, `description`, `oauth_application_id`, `property_name`, `required`, `user_programmatic_access_name`, `value_type`
 
-**Reference:** /organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization
+**Reference:** [Managing custom properties for repositories in your organization](/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization)
 
 #### `custom_property_definition.destroy`
 
@@ -548,7 +548,7 @@ A custom property definition was deleted.
 
 **Additional fields:** `actor_is_agent`, `allowed_values`, `default_value`, `definition_id`, `description`, `oauth_application_id`, `property_name`, `required`, `user_programmatic_access_name`, `value_type`
 
-**Reference:** /organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization
+**Reference:** [Managing custom properties for repositories in your organization](/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization)
 
 #### `custom_property_definition.update`
 
@@ -556,7 +556,7 @@ A custom property definition was updated.
 
 **Additional fields:** `actor_is_agent`, `allowed_values`, `default_value`, `definition_id`, `oauth_application_id`, `old_allowed_values`, `old_default_value`, `old_required`, `old_values_editable_by`, `old_value_type`, `property_name`, `required`, `user_programmatic_access_name`, `values_editable_by`, `value_type`
 
-**Reference:** /organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization
+**Reference:** [Managing custom properties for repositories in your organization](/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization)
 
 ### custom\_property\_value
 
@@ -566,7 +566,7 @@ A repository's custom property value was manually set for the first time.
 
 **Additional fields:** `actor_is_agent`, `definition_id`, `oauth_application_id`, `property_name`, `public_repo`, `user_programmatic_access_name`, `value`
 
-**Reference:** /organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization
+**Reference:** [Managing custom properties for repositories in your organization](/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization)
 
 #### `custom_property_value.destroy`
 
@@ -574,7 +574,7 @@ A repository's custom property value was deleted.
 
 **Additional fields:** `actor_is_agent`, `definition_id`, `oauth_application_id`, `property_name`, `public_repo`, `user_programmatic_access_name`, `value`
 
-**Reference:** /organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization
+**Reference:** [Managing custom properties for repositories in your organization](/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization)
 
 #### `custom_property_value.update`
 
@@ -582,7 +582,7 @@ A repository's custom property value was updated.
 
 **Additional fields:** `definition_id`, `public_repo`
 
-**Reference:** /organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization
+**Reference:** [Managing custom properties for repositories in your organization](/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization)
 
 ### dependabot\_alerts
 
@@ -592,7 +592,7 @@ Dependabot alerts were disabled for all existing repositories.
 
 **Additional fields:** `oauth_application_id`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#enabling-or-disabling-a-feature-for-all-existing-repositories
+**Reference:** [Managing security and analysis settings for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#enabling-or-disabling-a-feature-for-all-existing-repositories)
 
 #### `dependabot_alerts.enable`
 
@@ -600,7 +600,7 @@ Dependabot alerts were enabled for all existing repositories.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#enabling-or-disabling-a-feature-for-all-existing-repositories
+**Reference:** [Managing security and analysis settings for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#enabling-or-disabling-a-feature-for-all-existing-repositories)
 
 ### dependabot\_alerts\_new\_repos
 
@@ -610,7 +610,7 @@ Dependabot alerts were disabled for all new repositories.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#enabling-or-disabling-a-feature-automatically-when-new-repositories-are-added
+**Reference:** [Managing security and analysis settings for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#enabling-or-disabling-a-feature-automatically-when-new-repositories-are-added)
 
 #### `dependabot_alerts_new_repos.enable`
 
@@ -618,7 +618,7 @@ Dependabot alerts were enabled for all new repositories.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#enabling-or-disabling-a-feature-automatically-when-new-repositories-are-added
+**Reference:** [Managing security and analysis settings for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#enabling-or-disabling-a-feature-automatically-when-new-repositories-are-added)
 
 ### dependabot\_closure\_request
 
@@ -676,7 +676,7 @@ Dependabot security updates were disabled for all existing repositories.
 
 **Additional fields:** `oauth_application_id`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization
+**Reference:** [Managing security and analysis settings for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization)
 
 #### `dependabot_security_updates.enable`
 
@@ -692,7 +692,7 @@ Dependabot security updates were disabled for all new repositories.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization
+**Reference:** [Managing security and analysis settings for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization)
 
 #### `dependabot_security_updates_new_repos.enable`
 
@@ -708,7 +708,7 @@ The dependency graph was disabled for all existing repositories.
 
 **Additional fields:** `oauth_application_id`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization
+**Reference:** [Managing security and analysis settings for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization)
 
 #### `dependency_graph.enable`
 
@@ -724,7 +724,7 @@ The dependency graph was disabled for all new repositories.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization
+**Reference:** [Managing security and analysis settings for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization)
 
 #### `dependency_graph_new_repos.enable`
 
@@ -932,7 +932,7 @@ A member of an enterprise or organization was added as a GitHub App manager.
 
 **Additional fields:** `application_client_id`, `integration`, `manager`, `name`
 
-**Reference:** /organizations/managing-programmatic-access-to-your-organization/adding-and-removing-github-app-managers-in-your-organization#giving-someone-the-ability-to-manage-all-github-apps-owned-by-the-organization
+**Reference:** [Adding and removing GitHub App managers in your organization](/en/organizations/managing-programmatic-access-to-your-organization/adding-and-removing-github-app-managers-in-your-organization#giving-someone-the-ability-to-manage-all-github-apps-owned-by-the-organization)
 
 #### `integration.manager_removed`
 
@@ -940,7 +940,7 @@ A member of an enterprise or organization was removed from being a GitHub App ma
 
 **Additional fields:** `application_client_id`, `integration`, `manager`, `name`
 
-**Reference:** /organizations/managing-programmatic-access-to-your-organization/adding-and-removing-github-app-managers-in-your-organization#removing-a-github-app-managers-permissions-for-the-entire-organization
+**Reference:** [Adding and removing GitHub App managers in your organization](/en/organizations/managing-programmatic-access-to-your-organization/adding-and-removing-github-app-managers-in-your-organization#removing-a-github-app-managers-permissions-for-the-entire-organization)
 
 #### `integration.remove_client_secret`
 
@@ -966,7 +966,7 @@ A GitHub App was suspended.
 
 **Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /apps/maintaining-github-apps/suspending-a-github-app-installation
+**Reference:** [Suspending a GitHub App installation](/en/apps/maintaining-github-apps/suspending-a-github-app-installation)
 
 #### `integration.transfer`
 
@@ -974,7 +974,7 @@ Ownership of a GitHub App was transferred to another user or organization.
 
 **Additional fields:** `application_client_id`, `integration`, `name`, `requester`, `requester_id`, `transfer_from`, `transfer_from_id`, `transfer_from_type`, `transfer_to`, `transfer_to_id`, `transfer_to_type`
 
-**Reference:** /apps/maintaining-github-apps/transferring-ownership-of-a-github-app
+**Reference:** [Transferring ownership of a GitHub App](/en/apps/maintaining-github-apps/transferring-ownership-of-a-github-app)
 
 #### `integration.unsuspend`
 
@@ -982,7 +982,7 @@ A GitHub App was unsuspended.
 
 **Additional fields:** `application_client_id`, `integration`, `name`
 
-**Reference:** /apps/maintaining-github-apps/suspending-a-github-app-installation
+**Reference:** [Suspending a GitHub App installation](/en/apps/maintaining-github-apps/suspending-a-github-app-installation)
 
 #### `integration.update`
 
@@ -998,7 +998,7 @@ A GitHub App was installed.
 
 **Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `oauth_application_id`, `repository_selection`, `topic`, `trigger_id`, `user_programmatic_access_name`
 
-**Reference:** /apps/using-github-apps/authorizing-github-apps
+**Reference:** [Authorizing GitHub Apps](/en/apps/using-github-apps/authorizing-github-apps)
 
 #### `integration_installation.destroy`
 
@@ -1006,7 +1006,7 @@ A GitHub App was uninstalled.
 
 **Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `oauth_application_id`, `repository_selection`, `topic`
 
-**Reference:** /apps/using-github-apps/reviewing-and-modifying-installed-github-apps#blocking-access
+**Reference:** [Reviewing and modifying installed GitHub Apps](/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#blocking-access)
 
 #### `integration_installation.repositories_added`
 
@@ -1014,7 +1014,7 @@ Repositories were added to a GitHub App.
 
 **Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `oauth_application_id`, `repositories_added`, `repositories_added_names`, `repository_selection`, `topic`, `user_programmatic_access_name`
 
-**Reference:** /apps/using-github-apps/reviewing-and-modifying-installed-github-apps#modifying-repository-access
+**Reference:** [Reviewing and modifying installed GitHub Apps](/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#modifying-repository-access)
 
 #### `integration_installation.repositories_removed`
 
@@ -1022,7 +1022,7 @@ Repositories were removed from a GitHub App.
 
 **Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `oauth_application_id`, `repositories_removed`, `repositories_removed_names`, `repository_selection`, `topic`
 
-**Reference:** /apps/using-github-apps/reviewing-and-modifying-installed-github-apps#modifying-repository-access
+**Reference:** [Reviewing and modifying installed GitHub Apps](/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#modifying-repository-access)
 
 #### `integration_installation.suspend`
 
@@ -1030,7 +1030,7 @@ A GitHub App was suspended.
 
 **Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `repository_selection`
 
-**Reference:** /apps/using-github-apps/reviewing-and-modifying-installed-github-apps#blocking-access
+**Reference:** [Reviewing and modifying installed GitHub Apps](/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#blocking-access)
 
 #### `integration_installation.unsuspend`
 
@@ -1038,7 +1038,7 @@ A GitHub App was unsuspended.
 
 **Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `name`, `repository_selection`
 
-**Reference:** /apps/using-github-apps/reviewing-and-modifying-installed-github-apps#blocking-access
+**Reference:** [Reviewing and modifying installed GitHub Apps](/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#blocking-access)
 
 #### `integration_installation.version_updated`
 
@@ -1046,7 +1046,7 @@ Permissions for a GitHub App were updated.
 
 **Additional fields:** `actor_is_agent`, `application_client_id`, `events_added`, `events_removed`, `events_unchanged`, `integration`, `name`, `repository_selection`
 
-**Reference:** /apps/using-github-apps/approving-updated-permissions-for-a-github-app
+**Reference:** [Approving updated permissions for a GitHub App](/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app)
 
 ### integration\_installation\_request
 
@@ -1056,7 +1056,7 @@ A request to install a GitHub App was either approved or denied by an owner, or 
 
 **Additional fields:** `actor_is_agent`, `application_client_id`, `integration`, `reason`, `url`
 
-**Reference:** /apps/using-github-apps/requesting-a-github-app-from-your-organization-owner
+**Reference:** [Requesting a GitHub App from your organization owner](/en/apps/using-github-apps/requesting-a-github-app-from-your-organization-owner)
 
 #### `integration_installation_request.create`
 
@@ -1064,7 +1064,7 @@ A member requested that an owner install a GitHub App.
 
 **Additional fields:** `application_client_id`, `integration`, `requester`, `url`
 
-**Reference:** /apps/using-github-apps/requesting-a-github-app-from-your-organization-owner
+**Reference:** [Requesting a GitHub App from your organization owner](/en/apps/using-github-apps/requesting-a-github-app-from-your-organization-owner)
 
 ### ip\_allow\_list
 
@@ -1308,7 +1308,7 @@ The ability for members to publish GitHub Pages sites was disabled.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/managing-the-publication-of-github-pages-sites-for-your-organization
+**Reference:** [Managing the publication of GitHub Pages sites for your organization](/en/organizations/managing-organization-settings/managing-the-publication-of-github-pages-sites-for-your-organization)
 
 #### `members_can_create_pages.enable`
 
@@ -1316,7 +1316,7 @@ The ability for members to publish GitHub Pages sites was enabled.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/managing-the-publication-of-github-pages-sites-for-your-organization
+**Reference:** [Managing the publication of GitHub Pages sites for your organization](/en/organizations/managing-organization-settings/managing-the-publication-of-github-pages-sites-for-your-organization)
 
 ### members\_can\_create\_private\_pages
 
@@ -1326,7 +1326,7 @@ The ability for members to publish private GitHub Pages was disabled  Members ca
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/managing-the-publication-of-github-pages-sites-for-your-organization
+**Reference:** [Managing the publication of GitHub Pages sites for your organization](/en/organizations/managing-organization-settings/managing-the-publication-of-github-pages-sites-for-your-organization)
 
 #### `members_can_create_private_pages.enable`
 
@@ -1334,7 +1334,7 @@ The ability for members to publish private GitHub Pages was enabled  Members can
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/managing-the-publication-of-github-pages-sites-for-your-organization
+**Reference:** [Managing the publication of GitHub Pages sites for your organization](/en/organizations/managing-organization-settings/managing-the-publication-of-github-pages-sites-for-your-organization)
 
 ### members\_can\_create\_public\_pages
 
@@ -1344,7 +1344,7 @@ The ability for members to publish public GitHub Pages was disabled  Members can
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/managing-the-publication-of-github-pages-sites-for-your-organization
+**Reference:** [Managing the publication of GitHub Pages sites for your organization](/en/organizations/managing-organization-settings/managing-the-publication-of-github-pages-sites-for-your-organization)
 
 #### `members_can_create_public_pages.enable`
 
@@ -1352,7 +1352,7 @@ The ability for members to publish public GitHub Pages was enabled  Members can 
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/managing-the-publication-of-github-pages-sites-for-your-organization
+**Reference:** [Managing the publication of GitHub Pages sites for your organization](/en/organizations/managing-organization-settings/managing-the-publication-of-github-pages-sites-for-your-organization)
 
 ### members\_can\_delete\_repos
 
@@ -1480,7 +1480,7 @@ An OAuth application was created.
 
 **Additional fields:** `oauth_application`, `oauth_application_id`
 
-**Reference:** /apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app
+**Reference:** [Authenticating to the REST API with an OAuth app](/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app)
 
 #### `oauth_application.destroy`
 
@@ -1488,7 +1488,7 @@ An OAuth application was deleted.
 
 **Additional fields:** `oauth_application`, `oauth_application_id`
 
-**Reference:** /apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app
+**Reference:** [Authenticating to the REST API with an OAuth app](/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app)
 
 #### `oauth_application.generate_client_secret`
 
@@ -1496,7 +1496,7 @@ An OAuth application's secret key was generated.
 
 **Additional fields:** `oauth_application`, `oauth_application_id`
 
-**Reference:** /apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app
+**Reference:** [Authenticating to the REST API with an OAuth app](/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app)
 
 #### `oauth_application.remove_client_secret`
 
@@ -1504,7 +1504,7 @@ An OAuth application's secret key was deleted.
 
 **Additional fields:** `oauth_application`, `oauth_application_id`
 
-**Reference:** /apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app
+**Reference:** [Authenticating to the REST API with an OAuth app](/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app)
 
 #### `oauth_application.reset_secret`
 
@@ -1512,7 +1512,7 @@ The secret key for an OAuth application was reset.
 
 **Additional fields:** `oauth_application`, `oauth_application_id`
 
-**Reference:** /apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app
+**Reference:** [Authenticating to the REST API with an OAuth app](/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app)
 
 #### `oauth_application.revoke_all_tokens`
 
@@ -1520,7 +1520,7 @@ All user tokens for an OAuth application were requested to be revoked.
 
 **Additional fields:** `oauth_application`, `oauth_application_id`
 
-**Reference:** /apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app
+**Reference:** [Authenticating to the REST API with an OAuth app](/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app)
 
 #### `oauth_application.revoke_tokens`
 
@@ -1528,7 +1528,7 @@ Token(s) for an OAuth application were revoked.
 
 **Additional fields:** `oauth_application`, `oauth_application_id`
 
-**Reference:** /apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app
+**Reference:** [Authenticating to the REST API with an OAuth app](/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app)
 
 #### `oauth_application.transfer`
 
@@ -1536,7 +1536,7 @@ An OAuth application was transferred from one account to another.
 
 **Additional fields:** `oauth_application`, `oauth_application_id`
 
-**Reference:** /apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app
+**Reference:** [Authenticating to the REST API with an OAuth app](/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app)
 
 #### `oauth_application.update_token_expiration`
 
@@ -1544,7 +1544,7 @@ The token expiration setting for an OAuth application was updated.
 
 **Additional fields:** `oauth_application`, `oauth_application_id`
 
-**Reference:** /apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app
+**Reference:** [Authenticating to the REST API with an OAuth app](/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app#registering-your-app)
 
 ### org
 
@@ -1560,7 +1560,7 @@ A billing manager was added to an organization.
 
 **Additional fields:** `oauth_application_id`
 
-**Reference:** /organizations/managing-peoples-access-to-your-organization-with-roles/adding-a-billing-manager-to-your-organization
+**Reference:** [Adding a billing manager to your organization](/en/organizations/managing-peoples-access-to-your-organization-with-roles/adding-a-billing-manager-to-your-organization)
 
 #### `org.add_disallowed_two_factor_method`
 
@@ -1634,7 +1634,7 @@ Third-party application access for outside collaborators was disabled for the or
 
 Third-party application access for outside collaborators was enabled for the organization.
 
-**Reference:** /organizations/managing-programmatic-access-to-your-organization/limiting-oauth-app-and-github-app-access-requests-and-installations#enabling-or-disabling-app-access-requests
+**Reference:** [Limiting OAuth app and GitHub App access requests and installations](/en/organizations/managing-programmatic-access-to-your-organization/limiting-oauth-app-and-github-app-access-requests-and-installations#enabling-or-disabling-app-access-requests)
 
 #### `org.archive`
 
@@ -1646,7 +1646,7 @@ An export of the organization audit log was created. If the export included a qu
 
 **Additional fields:** `query_phrase`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization#exporting-the-audit-log
+**Reference:** [Reviewing the audit log for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization#exporting-the-audit-log)
 
 #### `org.audit_log_git_event_export`
 
@@ -1654,7 +1654,7 @@ An export of the organization's Git events was created.
 
 **Additional fields:** `end`, `start`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/audit-log-events-for-your-organization
+**Reference:** [Audit log events for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/audit-log-events-for-your-organization)
 
 #### `org.block_user`
 
@@ -1662,7 +1662,7 @@ An organization owner blocked a user from accessing the organization's repositor
 
 **Additional fields:** `blocked_user`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /communities/maintaining-your-safety-on-github/blocking-a-user-from-your-organization
+**Reference:** [Blocking a user from your organization](/en/communities/maintaining-your-safety-on-github/blocking-a-user-from-your-organization)
 
 #### `org.cancel_business_invitation`
 
@@ -1758,7 +1758,7 @@ Access to use Codespaces on internal and private repositories was updated for an
 
 **Additional fields:** `actor_is_agent`, `enablement`, `oauth_application_id`
 
-**Reference:** /codespaces/managing-codespaces-for-your-organization/enabling-or-disabling-github-codespaces-for-your-organization
+**Reference:** [Enabling or disabling GitHub Codespaces for your organization](/en/codespaces/managing-codespaces-for-your-organization/enabling-or-disabling-github-codespaces-for-your-organization)
 
 #### `org.codespaces_ownership_updated`
 
@@ -1766,7 +1766,7 @@ Ownership and payment for codespaces was updated for an organization.
 
 **Additional fields:** `oauth_application_id`, `owner_type`
 
-**Reference:** /codespaces/managing-codespaces-for-your-organization/choosing-who-owns-and-pays-for-codespaces-in-your-organization
+**Reference:** [Choosing who owns and pays for codespaces in your organization](/en/codespaces/managing-codespaces-for-your-organization/choosing-who-owns-and-pays-for-codespaces-in-your-organization)
 
 #### `org.codespaces_team_access_allowed`
 
@@ -1814,13 +1814,13 @@ The interaction limit for collaborators only for an organization was disabled.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`
 
-**Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization
+**Reference:** [Limiting interactions in your organization](/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization)
 
 #### `org.config.disable_contributors_only`
 
 The interaction limit for prior contributors only for an organization was disabled.
 
-**Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization
+**Reference:** [Limiting interactions in your organization](/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization)
 
 #### `org.config.disable_sockpuppet_disallowed`
 
@@ -1828,7 +1828,7 @@ The interaction limit for existing users only for an organization was disabled.
 
 **Additional fields:** `actor_is_agent`, `user_programmatic_access_name`
 
-**Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization
+**Reference:** [Limiting interactions in your organization](/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization)
 
 #### `org.config.enable_collaborators_only`
 
@@ -1836,13 +1836,13 @@ The interaction limit for collaborators only for an organization was enabled.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization
+**Reference:** [Limiting interactions in your organization](/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization)
 
 #### `org.config.enable_contributors_only`
 
 The interaction limit for prior contributors only for an organization was enabled.
 
-**Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization
+**Reference:** [Limiting interactions in your organization](/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization)
 
 #### `org.config.enable_sockpuppet_disallowed`
 
@@ -1850,7 +1850,7 @@ The interaction limit for existing users only for an organization was enabled.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization
+**Reference:** [Limiting interactions in your organization](/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-organization#limiting-interactions-in-your-organization)
 
 #### `org.configure_self_hosted_jit_runner`
 
@@ -1858,7 +1858,7 @@ A new just-in-time GitHub Actions self-hosted runner was configured
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /rest/actions/self-hosted-runners#create-configuration-for-a-just-in-time-runner-for-an-organization
+**Reference:** [REST API endpoints for self-hosted runners](/en/rest/actions/self-hosted-runners#create-configuration-for-a-just-in-time-runner-for-an-organization)
 
 #### `org.confirm_business_invitation`
 
@@ -1880,7 +1880,7 @@ An organization was created.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`
 
-**Reference:** /organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch
+**Reference:** [Creating a new organization from scratch](/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch)
 
 #### `org.create_actions_secret`
 
@@ -1916,7 +1916,7 @@ A custom image was deleted for an organization.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /actions/how-tos/manage-runners/larger-runners/use-custom-images
+**Reference:** [Using custom images](/en/actions/how-tos/manage-runners/larger-runners/use-custom-images)
 
 #### `org.delete_custom_image_version`
 
@@ -1924,7 +1924,7 @@ A custom image version was deleted for an organization.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /actions/how-tos/manage-runners/larger-runners/use-custom-images
+**Reference:** [Using custom images](/en/actions/how-tos/manage-runners/larger-runners/use-custom-images)
 
 #### `org.disable_member_team_creation_permission`
 
@@ -1932,19 +1932,19 @@ Team creation was limited to owners.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/setting-team-creation-permissions-in-your-organization
+**Reference:** [Setting team creation permissions in your organization](/en/organizations/managing-organization-settings/setting-team-creation-permissions-in-your-organization)
 
 #### `org.disable_oauth_app_restrictions`
 
 Third-party application access restrictions for an organization were disabled.
 
-**Reference:** /organizations/managing-oauth-access-to-your-organizations-data/disabling-oauth-app-access-restrictions-for-your-organization
+**Reference:** [Disabling OAuth app access restrictions for your organization](/en/organizations/managing-oauth-access-to-your-organizations-data/disabling-oauth-app-access-restrictions-for-your-organization)
 
 #### `org.disable_reader_discussion_creation_permission`
 
 An organization owner limited discussion creation to users with at least triage permission in an organization.
 
-**Reference:** /organizations/managing-organization-settings/managing-discussion-creation-for-repositories-in-your-organization
+**Reference:** [Managing discussion creation for repositories in your organization](/en/organizations/managing-organization-settings/managing-discussion-creation-for-repositories-in-your-organization)
 
 #### `org.disable_saml`
 
@@ -1958,7 +1958,7 @@ Display of IP addresses within audit log events for the organization was disable
 
 **Additional fields:** `oauth_application_id`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/displaying-ip-addresses-in-the-audit-log-for-your-organization
+**Reference:** [Displaying IP addresses in the audit log for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/displaying-ip-addresses-in-the-audit-log-for-your-organization)
 
 #### `org.disable_two_factor_requirement`
 
@@ -1978,19 +1978,19 @@ Team creation by members was allowed.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/setting-team-creation-permissions-in-your-organization
+**Reference:** [Setting team creation permissions in your organization](/en/organizations/managing-organization-settings/setting-team-creation-permissions-in-your-organization)
 
 #### `org.enable_oauth_app_restrictions`
 
 Third-party application access restrictions for an organization were enabled.
 
-**Reference:** /organizations/managing-oauth-access-to-your-organizations-data/enabling-oauth-app-access-restrictions-for-your-organization
+**Reference:** [Enabling OAuth app access restrictions for your organization](/en/organizations/managing-oauth-access-to-your-organizations-data/enabling-oauth-app-access-restrictions-for-your-organization)
 
 #### `org.enable_reader_discussion_creation_permission`
 
 An organization owner allowed users with read access to create discussions in an organization
 
-**Reference:** /organizations/managing-organization-settings/managing-discussion-creation-for-repositories-in-your-organization
+**Reference:** [Managing discussion creation for repositories in your organization](/en/organizations/managing-organization-settings/managing-discussion-creation-for-repositories-in-your-organization)
 
 #### `org.enable_saml`
 
@@ -2004,7 +2004,7 @@ SAML single sign-on was enabled for the organization.
 
 Display of IP addresses within audit log events for the organization was enabled.
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/displaying-ip-addresses-in-the-audit-log-for-your-organization
+**Reference:** [Displaying IP addresses in the audit log for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/displaying-ip-addresses-in-the-audit-log-for-your-organization)
 
 #### `org.enable_two_factor_requirement`
 
@@ -2012,7 +2012,7 @@ Two-factor authentication is now required for the organization.
 
 **Additional fields:** `oauth_application_id`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization
+**Reference:** [Requiring two-factor authentication in your organization](/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization)
 
 #### `org.integration_manager_added`
 
@@ -2032,7 +2032,7 @@ A new user was invited to join an organization.
 
 **Additional fields:** `actor_is_agent`, `email`, `invitation_id`, `invitee_email`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-membership-in-your-organization/inviting-users-to-join-your-organization
+**Reference:** [Inviting users to join your organization](/en/organizations/managing-membership-in-your-organization/inviting-users-to-join-your-organization)
 
 #### `org.invite_to_business`
 
@@ -2058,7 +2058,7 @@ Access to an organization was granted for an OAuth App.
 
 **Additional fields:** `oauth_application_name`, `url`
 
-**Reference:** /organizations/managing-oauth-access-to-your-organizations-data/approving-oauth-apps-for-your-organization
+**Reference:** [Approving OAuth apps for your organization](/en/organizations/managing-oauth-access-to-your-organizations-data/approving-oauth-apps-for-your-organization)
 
 #### `org.oauth_app_access_denied`
 
@@ -2066,7 +2066,7 @@ Access was disabled for an OAuth App that was previously approved.
 
 **Additional fields:** `oauth_application_name`, `url`
 
-**Reference:** /organizations/managing-oauth-access-to-your-organizations-data/denying-access-to-a-previously-approved-oauth-app-for-your-organization
+**Reference:** [Denying access to a previously approved OAuth app for your organization](/en/organizations/managing-oauth-access-to-your-organizations-data/denying-access-to-a-previously-approved-oauth-app-for-your-organization)
 
 #### `org.oauth_app_access_requested`
 
@@ -2142,7 +2142,7 @@ A billing manager was removed from an organization, either manually or due to a 
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-peoples-access-to-your-organization-with-roles/removing-a-billing-manager-from-your-organization, /organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization
+**Reference:** [Removing a billing manager from your organization](/en/organizations/managing-peoples-access-to-your-organization-with-roles/removing-a-billing-manager-from-your-organization), [Requiring two-factor authentication in your organization](/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization)
 
 #### `org.remove_disallowed_two_factor_method`
 
@@ -2206,7 +2206,7 @@ An organization member was restored.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`
 
-**Reference:** /organizations/managing-membership-in-your-organization/reinstating-a-former-member-of-your-organization
+**Reference:** [Reinstating a former member of your organization](/en/organizations/managing-membership-in-your-organization/reinstating-a-former-member-of-your-organization)
 
 #### `org.revoke_external_identity`
 
@@ -2250,7 +2250,7 @@ The REST API was used to remove a self-hosted runner from a group.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `runner_group_id`, `runner_id`, `user_programmatic_access_name`
 
-**Reference:** /rest/actions#remove-a-self-hosted-runner-from-a-group-for-an-organization
+**Reference:** [REST API endpoints for GitHub Actions](/en/rest/actions#remove-a-self-hosted-runner-from-a-group-for-an-organization)
 
 #### `org.runner_group_runners_added`
 
@@ -2266,7 +2266,7 @@ A runner group's list of members was updated.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `runner_group_id`, `user_programmatic_access_name`
 
-**Reference:** /rest/actions#set-self-hosted-runners-in-a-group-for-an-organization
+**Reference:** [REST API endpoints for GitHub Actions](/en/rest/actions#set-self-hosted-runners-in-a-group-for-an-organization)
 
 #### `org.runner_group_updated`
 
@@ -2282,7 +2282,7 @@ The visibility of a self-hosted runner group was updated via the REST API.
 
 **Additional fields:** `runner_group_id`, `visibility`
 
-**Reference:** /rest/actions#update-a-self-hosted-runner-group-for-an-organization
+**Reference:** [REST API endpoints for GitHub Actions](/en/rest/actions#update-a-self-hosted-runner-group-for-an-organization)
 
 #### `org.secret_protection_metered_usage_lock`
 
@@ -2434,7 +2434,7 @@ The setting for requiring approvals for workflows from public forks was changed 
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `policy`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#requiring-approval-for-workflows-from-public-forks
+**Reference:** [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#requiring-approval-for-workflows-from-public-forks)
 
 #### `org.set_actions_private_fork_pr_approvals_policy`
 
@@ -2442,7 +2442,7 @@ The policy for requiring approval for fork pull request workflows from collabora
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `policy`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#enabling-workflows-for-private-repository-forks
+**Reference:** [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#enabling-workflows-for-private-repository-forks)
 
 #### `org.set_actions_retention_limit`
 
@@ -2450,7 +2450,7 @@ The retention period for GitHub Actions artifacts and logs in an organization wa
 
 **Additional fields:** `actor_is_agent`, `limit`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization
+**Reference:** [Configuring the retention period for checks, workflow runs, commit statuses, artifacts, and logs in your organization](/en/organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization)
 
 #### `org.set_default_workflow_permissions`
 
@@ -2458,7 +2458,7 @@ The default permissions granted to the GITHUB\_TOKEN when running workflows were
 
 **Additional fields:** `actor_is_agent`, `default_workflow_permissions_value`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#setting-the-permissions-of-the-github\_token-for-your-organization
+**Reference:** [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#setting-the-permissions-of-the-github_token-for-your-organization)
 
 #### `org.set_fork_pr_workflows_policy`
 
@@ -2466,7 +2466,7 @@ The policy for workflows on private repository forks was changed.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `policy`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#enabling-workflows-for-private-repository-forks
+**Reference:** [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#enabling-workflows-for-private-repository-forks)
 
 #### `org.set_workflow_permission_can_approve_pr`
 
@@ -2474,7 +2474,7 @@ The policy for allowing GitHub Actions to create and approve pull requests was c
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`, `workflow_permission_can_approve_pr_value`
 
-**Reference:** /organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#preventing-github-actions-from-creating-or-approving-pull-requests
+**Reference:** [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#preventing-github-actions-from-creating-or-approving-pull-requests)
 
 #### `org.sso_response`
 
@@ -2508,7 +2508,7 @@ A user was unblocked from an organization.
 
 **Additional fields:** `blocked_user`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /communities/maintaining-your-safety-on-github/unblocking-a-user-from-your-organization
+**Reference:** [Unblocking a user from your organization](/en/communities/maintaining-your-safety-on-github/unblocking-a-user-from-your-organization)
 
 #### `org.update_actions_secret`
 
@@ -2524,7 +2524,7 @@ An organization owner or site administrator updated GitHub Actions policy settin
 
 **Additional fields:** `actor_is_agent`, `new_policy`, `oauth_application_id`, `old_policy`, `updated_access_policy`, `updated_allowed_types`, `updated_github_owned_allowed`, `updated_patterns`, `updated_verified_allowed`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization
+**Reference:** [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization)
 
 #### `org.update_actions_variable`
 
@@ -2540,7 +2540,7 @@ The enterprise updated GitHub Actions custom image policy settings for an organi
 
 **Additional fields:** `new_policy`, `old_policy`
 
-**Reference:** /actions/how-tos/manage-runners/larger-runners/use-custom-images
+**Reference:** [Using custom images](/en/actions/how-tos/manage-runners/larger-runners/use-custom-images)
 
 #### `org.update_default_repository_permission`
 
@@ -2584,7 +2584,7 @@ An organization owner changed the policy setting for organization members inviti
 
 The name of the default branch was changed for new repositories in the organization.
 
-**Reference:** /organizations/managing-organization-settings/managing-the-default-branch-name-for-repositories-in-your-organization
+**Reference:** [Managing the default branch name for repositories in your organization](/en/organizations/managing-organization-settings/managing-the-default-branch-name-for-repositories-in-your-organization)
 
 #### `org.update_repo_self_hosted_runners_policy`
 
@@ -2592,7 +2592,7 @@ The repository self-hosted runners policy was updated
 
 **Additional fields:** `actor_is_agent`, `new_repo_runners_policy`, `oauth_application_id`, `old_repo_runners_policy`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#limiting-the-use-of-self-hosted-runners
+**Reference:** [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#limiting-the-use-of-self-hosted-runners)
 
 #### `org.update_saml_provider_settings`
 
@@ -2606,7 +2606,7 @@ An organization changed between the Standard Terms of Service and the GitHub Cus
 
 **Additional fields:** `oauth_application_id`
 
-**Reference:** /organizations/managing-organization-settings/upgrading-to-the-github-customer-agreement
+**Reference:** [Upgrading to the GitHub Customer Agreement](/en/organizations/managing-organization-settings/upgrading-to-the-github-customer-agreement)
 
 ### org\_credential\_authorization
 
@@ -2642,7 +2642,7 @@ Automatic partner validation checks have been disabled at the organization level
 
 **Additional fields:** `oauth_application_id`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#allowing-validity-checks-for-partner-patterns-in-an-organization
+**Reference:** [Managing security and analysis settings for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#allowing-validity-checks-for-partner-patterns-in-an-organization)
 
 #### `org_secret_scanning_automatic_validity_checks.enabled`
 
@@ -2650,7 +2650,7 @@ Automatic partner validation checks have been enabled at the organization level
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#allowing-validity-checks-for-partner-patterns-in-an-organization
+**Reference:** [Managing security and analysis settings for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization#allowing-validity-checks-for-partner-patterns-in-an-organization)
 
 ### org\_secret\_scanning\_custom\_pattern
 
@@ -2780,19 +2780,19 @@ A default label was created for repositories in an organization.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`
 
-**Reference:** /organizations/managing-organization-settings/managing-default-labels-for-repositories-in-your-organization#creating-a-default-label
+**Reference:** [Managing default labels for repositories in your organization](/en/organizations/managing-organization-settings/managing-default-labels-for-repositories-in-your-organization#creating-a-default-label)
 
 #### `organization_default_label.destroy`
 
 A default label was deleted for repositories in an organization.
 
-**Reference:** /organizations/managing-organization-settings/managing-default-labels-for-repositories-in-your-organization#deleting-a-default-label
+**Reference:** [Managing default labels for repositories in your organization](/en/organizations/managing-organization-settings/managing-default-labels-for-repositories-in-your-organization#deleting-a-default-label)
 
 #### `organization_default_label.update`
 
 A default label was edited for repositories in an organization.
 
-**Reference:** /organizations/managing-organization-settings/managing-default-labels-for-repositories-in-your-organization#editing-a-default-label
+**Reference:** [Managing default labels for repositories in your organization](/en/organizations/managing-organization-settings/managing-default-labels-for-repositories-in-your-organization#editing-a-default-label)
 
 ### organization\_domain
 
@@ -2802,7 +2802,7 @@ A domain was approved for an organization.
 
 **Additional fields:** `domain_name`, `oauth_application_id`, `owner`, `owner_type`
 
-**Reference:** /organizations/managing-organization-settings/verifying-or-approving-a-domain-for-your-organization#approving-a-domain-for-your-organization
+**Reference:** [Verifying or approving a domain for your organization](/en/organizations/managing-organization-settings/verifying-or-approving-a-domain-for-your-organization#approving-a-domain-for-your-organization)
 
 #### `organization_domain.create`
 
@@ -2810,7 +2810,7 @@ A domain was added to an organization.
 
 **Additional fields:** `domain_name`, `oauth_application_id`, `owner`, `owner_type`
 
-**Reference:** /organizations/managing-organization-settings/verifying-or-approving-a-domain-for-your-organization#verifying-a-domain-for-your-organization
+**Reference:** [Verifying or approving a domain for your organization](/en/organizations/managing-organization-settings/verifying-or-approving-a-domain-for-your-organization#verifying-a-domain-for-your-organization)
 
 #### `organization_domain.destroy`
 
@@ -2818,7 +2818,7 @@ A domain was removed from an organization.
 
 **Additional fields:** `domain_name`, `oauth_application_id`, `owner`, `owner_type`
 
-**Reference:** /organizations/managing-organization-settings/verifying-or-approving-a-domain-for-your-organization#removing-an-approved-or-verified-domain
+**Reference:** [Verifying or approving a domain for your organization](/en/organizations/managing-organization-settings/verifying-or-approving-a-domain-for-your-organization#removing-an-approved-or-verified-domain)
 
 #### `organization_domain.verify`
 
@@ -2826,7 +2826,7 @@ A domain was verified for an organization.
 
 **Additional fields:** `domain_name`, `oauth_application_id`, `owner`, `owner_type`
 
-**Reference:** /organizations/managing-organization-settings/verifying-or-approving-a-domain-for-your-organization#verifying-a-domain-for-your-organization
+**Reference:** [Verifying or approving a domain for your organization](/en/organizations/managing-organization-settings/verifying-or-approving-a-domain-for-your-organization#verifying-a-domain-for-your-organization)
 
 ### organization\_moderators
 
@@ -2936,7 +2936,7 @@ An entire package was deleted.
 
 **Additional fields:** `actor_is_agent`, `ecosystem`, `package`, `version_count`
 
-**Reference:** /packages/learn-github-packages/deleting-and-restoring-a-package
+**Reference:** [Deleting and restoring a package](/en/packages/learn-github-packages/deleting-and-restoring-a-package)
 
 #### `packages.package_published`
 
@@ -2950,7 +2950,7 @@ A specific package version was deleted.
 
 **Additional fields:** `actor_is_agent`, `ecosystem`, `package`, `version`
 
-**Reference:** /packages/learn-github-packages/deleting-and-restoring-a-package
+**Reference:** [Deleting and restoring a package](/en/packages/learn-github-packages/deleting-and-restoring-a-package)
 
 #### `packages.package_version_published`
 
@@ -2966,7 +2966,7 @@ A GitHub Pages verified domain was created for an organization or enterprise.
 
 **Additional fields:** `domain`, `owner`, `owner_type`, `state`
 
-**Reference:** /pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
+**Reference:** [Verifying your custom domain for GitHub Pages](/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages)
 
 #### `pages_protected_domain.delete`
 
@@ -2974,7 +2974,7 @@ A GitHub Pages verified domain was deleted from an organization or enterprise.
 
 **Additional fields:** `domain`, `owner`, `owner_type`, `state`
 
-**Reference:** /pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
+**Reference:** [Verifying your custom domain for GitHub Pages](/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages)
 
 #### `pages_protected_domain.verify`
 
@@ -2982,7 +2982,7 @@ A GitHub Pages domain was verified for an organization or enterprise.
 
 **Additional fields:** `domain`, `owner`, `owner_type`, `state`
 
-**Reference:** /pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
+**Reference:** [Verifying your custom domain for GitHub Pages](/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages)
 
 ### payment\_method
 
@@ -3010,7 +3010,7 @@ A fine-grained personal access token was granted access to resources.
 
 **Additional fields:** `actor_is_agent`, `repositories`, `repository_selection`, `user_programmatic_access_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-programmatic-access-to-your-organization/managing-requests-for-personal-access-tokens-in-your-organization
+**Reference:** [Managing requests for personal access tokens in your organization](/en/organizations/managing-programmatic-access-to-your-organization/managing-requests-for-personal-access-tokens-in-your-organization)
 
 #### `personal_access_token.access_restriction_disabled`
 
@@ -3026,7 +3026,7 @@ A fine-grained personal access token was revoked. The token can still read publi
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `repositories`, `repository_selection`, `user_programmatic_access_id`, `user_programmatic_access_name`
 
-**Reference:** /organizations/managing-programmatic-access-to-your-organization/reviewing-and-revoking-personal-access-tokens-in-your-organization
+**Reference:** [Reviewing and revoking personal access tokens in your organization](/en/organizations/managing-programmatic-access-to-your-organization/reviewing-and-revoking-personal-access-tokens-in-your-organization)
 
 #### `personal_access_token.auto_approve_grant_requests_disabled`
 
@@ -3060,7 +3060,7 @@ Triggered when a fine-grained personal access token was created to access organi
 
 **Additional fields:** `repositories`, `repository_selection`, `user_programmatic_access_id`, `user_programmatic_access_name`, `user_programmatic_access_request_id`
 
-**Reference:** /organizations/managing-programmatic-access-to-your-organization/managing-requests-for-personal-access-tokens-in-your-organization
+**Reference:** [Managing requests for personal access tokens in your organization](/en/organizations/managing-programmatic-access-to-your-organization/managing-requests-for-personal-access-tokens-in-your-organization)
 
 #### `personal_access_token.request_denied`
 
@@ -3068,7 +3068,7 @@ A request for a fine-grained personal access token to access organization resour
 
 **Additional fields:** `actor_is_agent`, `repository_selection`, `user_programmatic_access_name`, `user_programmatic_access_request_id`
 
-**Reference:** /organizations/managing-programmatic-access-to-your-organization/managing-requests-for-personal-access-tokens-in-your-organization
+**Reference:** [Managing requests for personal access tokens in your organization](/en/organizations/managing-programmatic-access-to-your-organization/managing-requests-for-personal-access-tokens-in-your-organization)
 
 ### prebuild\_configuration
 
@@ -3078,7 +3078,7 @@ A GitHub Codespaces prebuild configuration for a repository was created.
 
 **Additional fields:** `branch`, `public_repo`
 
-**Reference:** /codespaces/prebuilding-your-codespaces/about-github-codespaces-prebuilds
+**Reference:** [About GitHub Codespaces prebuilds](/en/codespaces/prebuilding-your-codespaces/about-github-codespaces-prebuilds)
 
 #### `prebuild_configuration.destroy`
 
@@ -3086,7 +3086,7 @@ A GitHub Codespaces prebuild configuration for a repository was deleted.
 
 **Additional fields:** `branch`, `public_repo`
 
-**Reference:** /codespaces/prebuilding-your-codespaces/about-github-codespaces-prebuilds
+**Reference:** [About GitHub Codespaces prebuilds](/en/codespaces/prebuilding-your-codespaces/about-github-codespaces-prebuilds)
 
 #### `prebuild_configuration.run_triggered`
 
@@ -3094,7 +3094,7 @@ A user initiated a run of a GitHub Codespaces prebuild configuration for a repos
 
 **Additional fields:** `branch`, `public_repo`
 
-**Reference:** /codespaces/prebuilding-your-codespaces/about-github-codespaces-prebuilds
+**Reference:** [About GitHub Codespaces prebuilds](/en/codespaces/prebuilding-your-codespaces/about-github-codespaces-prebuilds)
 
 #### `prebuild_configuration.update`
 
@@ -3102,7 +3102,7 @@ A GitHub Codespaces prebuild configuration for a repository was edited.
 
 **Additional fields:** `branch`, `public_repo`
 
-**Reference:** /codespaces/prebuilding-your-codespaces/about-github-codespaces-prebuilds
+**Reference:** [About GitHub Codespaces prebuilds](/en/codespaces/prebuilding-your-codespaces/about-github-codespaces-prebuilds)
 
 ### private\_repository\_forking
 
@@ -3246,7 +3246,7 @@ A field was created in a project board.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /issues/planning-and-tracking-with-projects/understanding-fields
+**Reference:** [Understanding fields](/en/issues/planning-and-tracking-with-projects/understanding-fields)
 
 #### `project_field.delete`
 
@@ -3254,7 +3254,7 @@ A field was deleted in a project board.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `topic`, `user_programmatic_access_name`
 
-**Reference:** /issues/planning-and-tracking-with-projects/understanding-fields/deleting-custom-fields
+**Reference:** [Deleting custom fields](/en/issues/planning-and-tracking-with-projects/understanding-fields/deleting-custom-fields)
 
 ### project\_view
 
@@ -3264,7 +3264,7 @@ A view was created in a project board.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /issues/planning-and-tracking-with-projects/customizing-views-in-your-project/managing-your-views
+**Reference:** [Managing your views](/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/managing-your-views)
 
 #### `project_view.delete`
 
@@ -3272,7 +3272,7 @@ A view was deleted in a project board.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `user_programmatic_access_name`
 
-**Reference:** /issues/planning-and-tracking-with-projects/customizing-views-in-your-project/managing-your-views
+**Reference:** [Managing your views](/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/managing-your-views)
 
 ### protected\_branch
 
@@ -3282,7 +3282,7 @@ The users, teams, or integrations allowed to bypass a branch protection were cha
 
 **Additional fields:** `actor_is_agent`, `name`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
-**Reference:** /repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
+**Reference:** [About protected branches](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)
 
 #### `protected_branch.branch_allowances`
 
@@ -3350,7 +3350,7 @@ Ignoring of approvals from contributors to a pull request was enabled or disable
 
 **Additional fields:** `ignore_approvals_from_contributors`, `name`, `public_repo`
 
-**Reference:** /repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule
+**Reference:** [Managing a branch protection rule](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
 
 #### `protected_branch.update_linear_history_requirement_enforcement_level`
 
@@ -3364,7 +3364,7 @@ Fork syncing was enabled or disabled for a read-only branch
 
 **Additional fields:** `actor_is_agent`, `lock_allows_fetch_and_merge`, `name`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
-**Reference:** repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#lock-branch
+**Reference:** [About protected branches](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#lock-branch)
 
 #### `protected_branch.update_lock_branch_enforcement_level`
 
@@ -3372,7 +3372,7 @@ The enforcement of a branch lock was updated.
 
 **Additional fields:** `actor_is_agent`, `enforcement_level`, `lock_branch_enforcement_level`, `name`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
-**Reference:** /repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#lock-branch
+**Reference:** [About protected branches](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#lock-branch)
 
 #### `protected_branch.update_merge_queue_enforcement_level`
 
@@ -3380,7 +3380,7 @@ Enforcement of the merge queue was modified for a branch.
 
 **Additional fields:** `actor_is_agent`, `merge_queue_enforcement_level`, `name`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
-**Reference:** /repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-merge-queue
+**Reference:** [About protected branches](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-merge-queue)
 
 #### `protected_branch.update_name`
 
@@ -3406,7 +3406,7 @@ Someone other than the person who pushed the last code-modifying commit to the b
 
 **Additional fields:** `actor_is_agent`, `name`, `oauth_application_id`, `public_repo`, `require_last_push_approval`, `user_programmatic_access_name`
 
-**Reference:** /repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging
+**Reference:** [About protected branches](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging)
 
 #### `protected_branch.update_required_approving_review_count`
 
@@ -3440,7 +3440,7 @@ An SSH key was added to a user account or a deploy key was added to a repository
 
 **Additional fields:** `actor_is_agent`, `fingerprint`, `key`, `oauth_application_id`, `public_repo`, `read_only`, `title`, `user_programmatic_access_name`
 
-**Reference:** /authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+**Reference:** [Adding a new SSH key to your GitHub account](/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 #### `public_key.delete`
 
@@ -3448,7 +3448,7 @@ An SSH key was removed from a user account or a deploy key was removed from a re
 
 **Additional fields:** `actor_is_agent`, `explanation`, `fingerprint`, `key`, `oauth_application_id`, `public_repo`, `read_only`, `title`, `user_programmatic_access_name`
 
-**Reference:** /authentication/keeping-your-account-and-data-secure/reviewing-your-ssh-keys
+**Reference:** [Reviewing your SSH keys](/en/authentication/keeping-your-account-and-data-secure/reviewing-your-ssh-keys)
 
 #### `public_key.unverification_failure`
 
@@ -3456,7 +3456,7 @@ A user account's SSH key or a repository's deploy key was unable to be unverifie
 
 **Additional fields:** `fingerprint`, `key`, `public_repo`, `read_only`, `title`
 
-**Reference:** /authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys
+**Reference:** [Managing deploy keys](/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys)
 
 #### `public_key.unverify`
 
@@ -3464,7 +3464,7 @@ A user account's SSH key or a repository's deploy key was unverified.
 
 **Additional fields:** `explanation`, `fingerprint`, `key`, `public_repo`, `read_only`, `title`
 
-**Reference:** /authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys
+**Reference:** [Managing deploy keys](/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys)
 
 #### `public_key.update`
 
@@ -3472,7 +3472,7 @@ A user account's SSH key or a repository's deploy key was updated.
 
 **Additional fields:** `actor_is_agent`, `fingerprint`, `key`, `oauth_application_id`, `public_repo`, `read_only`, `title`, `user_programmatic_access_name`
 
-**Reference:** /authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys
+**Reference:** [Managing deploy keys](/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys)
 
 #### `public_key.verification_failure`
 
@@ -3480,7 +3480,7 @@ A user account's SSH key or a repository's deploy key was unable to be verified.
 
 **Additional fields:** `actor_is_agent`, `fingerprint`, `key`, `oauth_application_id`, `public_repo`, `read_only`, `title`, `user_programmatic_access_name`
 
-**Reference:** /authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys
+**Reference:** [Managing deploy keys](/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys)
 
 #### `public_key.verify`
 
@@ -3488,7 +3488,7 @@ A user account's SSH key or a repository's deploy key was verified.
 
 **Additional fields:** `actor_is_agent`, `fingerprint`, `key`, `oauth_application_id`, `public_repo`, `read_only`, `title`, `user_programmatic_access_name`
 
-**Reference:** /authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys
+**Reference:** [Managing deploy keys](/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys)
 
 ### pull\_request
 
@@ -3626,7 +3626,7 @@ The visibility of a repository changed.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `previous_visibility`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility
+**Reference:** [Setting repository visibility](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)
 
 #### `repo.actions_enabled`
 
@@ -3634,7 +3634,7 @@ GitHub Actions was enabled for a repository.
 
 **Additional fields:** `actor_is_agent`, `integration`, `name`, `oauth_application_id`, `public_repo`, `repository_selection`, `topic`, `user_programmatic_access_name`
 
-**Reference:** organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization#using-the-audit-log-api
+**Reference:** [Reviewing the audit log for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization#using-the-audit-log-api)
 
 #### `repo.add_member`
 
@@ -3650,7 +3650,7 @@ A topic was added to a repository.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics
+**Reference:** [Classifying your repository with topics](/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics)
 
 #### `repo.advanced_security_disabled`
 
@@ -3658,7 +3658,7 @@ GitHub Advanced Security was disabled for a repository.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository
+**Reference:** [Managing security and analysis settings for your repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)
 
 #### `repo.advanced_security_enabled`
 
@@ -3666,7 +3666,7 @@ GitHub Advanced Security was enabled for a repository.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository
+**Reference:** [Managing security and analysis settings for your repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)
 
 #### `repo.archived`
 
@@ -3674,7 +3674,7 @@ A repository was archived.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/archiving-a-github-repository
+**Reference:** [Archiving a GitHub repository](/en/repositories/archiving-a-github-repository)
 
 #### `repo.change_merge_setting`
 
@@ -3718,7 +3718,7 @@ Code scanning analysis for a repository was deleted.
 
 **Additional fields:** `actor_is_agent`, `category`, `oauth_application_id`, `public_repo`, `tool`, `user_programmatic_access_name`
 
-**Reference:** /rest/code-scanning#delete-a-code-scanning-analysis-from-a-repository
+**Reference:** [REST API endpoints for code scanning](/en/rest/code-scanning#delete-a-code-scanning-analysis-from-a-repository)
 
 #### `repo.code_scanning_autofix_disabled`
 
@@ -3804,7 +3804,7 @@ The interaction limit for collaborators only was disabled.
 
 **Additional fields:** `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`
 
-**Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository
+**Reference:** [Limiting interactions in your repository](/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository)
 
 #### `repo.config.disable_contributors_only`
 
@@ -3812,7 +3812,7 @@ The interaction limit for prior contributors only was disabled in a repository.
 
 **Additional fields:** `oauth_application_id`, `public_repo`, `topic`
 
-**Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository
+**Reference:** [Limiting interactions in your repository](/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository)
 
 #### `repo.config.disable_sockpuppet_disallowed`
 
@@ -3820,7 +3820,7 @@ The interaction limit for existing users only was disabled in a repository.
 
 **Additional fields:** `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`
 
-**Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository
+**Reference:** [Limiting interactions in your repository](/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository)
 
 #### `repo.config.enable_collaborators_only`
 
@@ -3828,7 +3828,7 @@ The interaction limit for collaborators only was enabled in a repository  Users 
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
-**Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository
+**Reference:** [Limiting interactions in your repository](/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository)
 
 #### `repo.config.enable_contributors_only`
 
@@ -3836,7 +3836,7 @@ The interaction limit for prior contributors only was enabled in a repository  U
 
 **Additional fields:** `oauth_application_id`, `public_repo`
 
-**Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository
+**Reference:** [Limiting interactions in your repository](/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository)
 
 #### `repo.config.enable_sockpuppet_disallowed`
 
@@ -3844,7 +3844,7 @@ The interaction limit for existing users was enabled in a repository  New users 
 
 **Additional fields:** `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
-**Reference:** /communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository
+**Reference:** [Limiting interactions in your repository](/en/communities/moderating-comments-and-conversations/limiting-interactions-in-your-repository)
 
 #### `repo.configure_self_hosted_jit_runner`
 
@@ -3852,7 +3852,7 @@ A new just-in-time GitHub Actions self-hosted runner was configured
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
-**Reference:** /rest/actions/self-hosted-runners#create-configuration-for-a-just-in-time-runner-for-a-repository
+**Reference:** [REST API endpoints for self-hosted runners](/en/rest/actions/self-hosted-runners#create-configuration-for-a-just-in-time-runner-for-a-repository)
 
 #### `repo.create`
 
@@ -3860,7 +3860,7 @@ A repository was created.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `request_category`, `request_method`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/creating-and-managing-repositories/creating-a-new-repository
+**Reference:** [Creating a new repository](/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
 
 #### `repo.create_actions_secret`
 
@@ -3890,7 +3890,7 @@ A repository was deleted.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `request_category`, `request_method`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/creating-and-managing-repositories/deleting-a-repository
+**Reference:** [Deleting a repository](/en/repositories/creating-and-managing-repositories/deleting-a-repository)
 
 #### `repo.download_zip`
 
@@ -3898,7 +3898,7 @@ A source code archive of a repository was downloaded as a ZIP file.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/working-with-files/using-files/downloading-source-code-archives
+**Reference:** [Downloading source code archives](/en/repositories/working-with-files/using-files/downloading-source-code-archives)
 
 #### `repo.immutable_releases_settings_disabled`
 
@@ -4030,7 +4030,7 @@ A repository was renamed.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `old_name`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/creating-and-managing-repositories/renaming-a-repository
+**Reference:** [Renaming a repository](/en/repositories/creating-and-managing-repositories/renaming-a-repository)
 
 #### `repo.rename_branch`
 
@@ -4038,7 +4038,7 @@ A branch was renamed.
 
 **Additional fields:** `actor_is_agent`, `default_branch`, `new_branch`, `oauth_application_id`, `old_branch`, `public_repo`, `user_programmatic_access_name`
 
-**Reference:** /repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/renaming-a-branch
+**Reference:** [Renaming a branch](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/renaming-a-branch)
 
 #### `repo.self_hosted_runner_offline`
 
@@ -4070,7 +4070,7 @@ The cache retention policy for GitHub Actions was set for a repository.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository
+**Reference:** [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
 
 #### `repo.set_actions_cache_storage_policy`
 
@@ -4078,7 +4078,7 @@ The cache storage policy for GitHub Actions was set for a repository.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository
+**Reference:** [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
 
 #### `repo.set_actions_fork_pr_approvals_policy`
 
@@ -4086,7 +4086,7 @@ The setting for requiring approvals for workflows from public forks was changed 
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `policy`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#configuring-required-approval-for-workflows-from-public-forks
+**Reference:** [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#configuring-required-approval-for-workflows-from-public-forks)
 
 #### `repo.set_actions_private_fork_pr_approvals_policy`
 
@@ -4094,7 +4094,7 @@ The policy for requiring approval for fork pull request workflows from collabora
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `policy`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-forks-of-private-repositories
+**Reference:** [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-forks-of-private-repositories)
 
 #### `repo.set_actions_retention_limit`
 
@@ -4102,7 +4102,7 @@ The retention period for GitHub Actions artifacts and logs in a repository was c
 
 **Additional fields:** `actor_is_agent`, `limit`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-repository
+**Reference:** [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-repository)
 
 #### `repo.set_default_workflow_permissions`
 
@@ -4110,7 +4110,7 @@ The default permissions granted to the GITHUB\_TOKEN when running workflows were
 
 **Additional fields:** `actor_is_agent`, `default_workflow_permissions_value`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#setting-the-permissions-of-the-github\_token-for-your-repository
+**Reference:** [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#setting-the-permissions-of-the-github_token-for-your-repository)
 
 #### `repo.set_fork_pr_workflows_policy`
 
@@ -4118,7 +4118,7 @@ Triggered when the policy for workflows on private repository forks is changed.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `policy`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-private-repository-forks
+**Reference:** [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-private-repository-forks)
 
 #### `repo.set_workflow_permission_can_approve_pr`
 
@@ -4126,7 +4126,7 @@ The policy for allowing GitHub Actions to create and approve pull requests was c
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`, `workflow_permission_can_approve_pr_value`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#preventing-github-actions-from-creating-or-approving-pull-requests
+**Reference:** [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#preventing-github-actions-from-creating-or-approving-pull-requests)
 
 #### `repo.staff_unlock`
 
@@ -4140,7 +4140,7 @@ A user accepted a request to receive a transferred repository.
 
 **Additional fields:** `oauth_application_id`, `old_user`, `owner`, `public_repo`, `repo_was`, `visibility`
 
-**Reference:** /repositories/creating-and-managing-repositories/transferring-a-repository
+**Reference:** [Transferring a repository](/en/repositories/creating-and-managing-repositories/transferring-a-repository)
 
 #### `repo.transfer_outgoing`
 
@@ -4160,7 +4160,7 @@ A repository was unarchived.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`, `visibility`
 
-**Reference:** /repositories/archiving-a-github-repository
+**Reference:** [Archiving a GitHub repository](/en/repositories/archiving-a-github-repository)
 
 #### `repo.update_actions_access_settings`
 
@@ -4278,13 +4278,13 @@ Someone edited a draft or published security advisory.
 
 Branch protections were disabled for the repository.
 
-**Reference:** /repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule
+**Reference:** [Managing a branch protection rule](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
 
 #### `repository_branch_protection_evaluation.enable`
 
 Branch protections were enabled for this repository.
 
-**Reference:** /repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule
+**Reference:** [Managing a branch protection rule](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
 
 ### repository\_code\_security
 
@@ -4306,13 +4306,13 @@ Code security was enabled for a repository.
 
 Data use settings were disabled for a private repository.
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#enabling-or-disabling-security-and-analysis-features-for-private-repositories
+**Reference:** [Managing security and analysis settings for your repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#enabling-or-disabling-security-and-analysis-features-for-private-repositories)
 
 #### `repository_content_analysis.enable`
 
 Data use settings were enabled for a private repository.
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#enabling-or-disabling-security-and-analysis-features-for-private-repositories
+**Reference:** [Managing security and analysis settings for your repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#enabling-or-disabling-security-and-analysis-features-for-private-repositories)
 
 ### repository\_dependency\_graph
 
@@ -4352,7 +4352,7 @@ Dependency updates on self-hosted runners was disabled.
 
 **Additional fields:** `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`
 
-**Reference:** [Configuring Dependabot on self-hosted runners](code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/managing-dependabot-on-self-hosted-runners)
+**Reference:** [Configuring Dependabot on self-hosted runners](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/managing-dependabot-on-self-hosted-runners)
 
 #### `repository_dependency_updates_self_hosted.enabled`
 
@@ -4360,7 +4360,7 @@ Dependency updates on self-hosted runners was enabled.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`
 
-**Reference:** [Configuring Dependabot on self-hosted runners](code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/managing-dependabot-on-self-hosted-runners)
+**Reference:** [Configuring Dependabot on self-hosted runners](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/managing-dependabot-on-self-hosted-runners)
 
 ### repository\_image
 
@@ -4410,7 +4410,7 @@ An organization has reached their repository limit.
 
 **Additional fields:** `actor_is_agent`, `count`, `limit`, `owner`
 
-**Reference:** repositories/creating-and-managing-repositories/repository-limits
+**Reference:** [Repository limits](/en/repositories/creating-and-managing-repositories/repository-limits)
 
 #### `repository_limit.warning`
 
@@ -4418,7 +4418,7 @@ An organization is approaching their repository limit.
 
 **Additional fields:** `actor_is_agent`, `count`, `limit`, `oauth_application_id`, `owner`, `user_programmatic_access_name`
 
-**Reference:** repositories/creating-and-managing-repositories/repository-limits
+**Reference:** [Repository limits](/en/repositories/creating-and-managing-repositories/repository-limits)
 
 ### repository\_malware\_alerts
 
@@ -4462,7 +4462,7 @@ A repository ruleset was created.
 
 **Additional fields:** `actor_is_agent`, `name`, `oauth_application_id`, `public_repo`, `ruleset_bypass_actors`, `ruleset_conditions`, `ruleset_enforcement`, `ruleset_id`, `ruleset_name`, `ruleset_rules`, `ruleset_source_type`, `user_programmatic_access_name`
 
-**Reference:** /repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository
+**Reference:** [Creating rulesets for a repository](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository)
 
 #### `repository_ruleset.destroy`
 
@@ -4470,7 +4470,7 @@ A repository ruleset was deleted.
 
 **Additional fields:** `actor_is_agent`, `name`, `oauth_application_id`, `public_repo`, `ruleset_bypass_actors`, `ruleset_conditions`, `ruleset_enforcement`, `ruleset_id`, `ruleset_name`, `ruleset_rules`, `ruleset_source_type`, `user_programmatic_access_name`
 
-**Reference:** /repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/managing-rulesets-for-a-repository#deleting-a-ruleset
+**Reference:** [Managing rulesets for a repository](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/managing-rulesets-for-a-repository#deleting-a-ruleset)
 
 #### `repository_ruleset.update`
 
@@ -4478,7 +4478,7 @@ A repository ruleset was edited.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `old_name`, `public_repo`, `ruleset_bypass_actors_added`, `ruleset_bypass_actors_deleted`, `ruleset_bypass_actors_updated`, `ruleset_conditions_added`, `ruleset_conditions_deleted`, `ruleset_conditions_updated`, `ruleset_enforcement`, `ruleset_id`, `ruleset_name`, `ruleset_old_enforcement`, `ruleset_old_name`, `ruleset_rules_added`, `ruleset_rules_deleted`, `ruleset_rules_updated`, `ruleset_source_type`, `user_programmatic_access_name`
 
-**Reference:** /repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/managing-rulesets-for-a-repository#editing-a-ruleset
+**Reference:** [Managing rulesets for a repository](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/managing-rulesets-for-a-repository#editing-a-ruleset)
 
 ### repository\_secret\_scanning
 
@@ -4504,7 +4504,7 @@ Automatic partner validation checks have been disabled at the repository level
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#allowing-validity-checks-for-partner-patterns-in-a-repository
+**Reference:** [Managing security and analysis settings for your repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#allowing-validity-checks-for-partner-patterns-in-a-repository)
 
 #### `repository_secret_scanning_automatic_validity_checks.enabled`
 
@@ -4512,7 +4512,7 @@ Automatic partner validation checks have been enabled at the repository level
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `public_repo`, `topic`, `user_programmatic_access_name`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#allowing-validity-checks-for-partner-patterns-in-a-repository
+**Reference:** [Managing security and analysis settings for your repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#allowing-validity-checks-for-partner-patterns-in-a-repository)
 
 ### repository\_secret\_scanning\_custom\_pattern
 
@@ -4718,7 +4718,7 @@ Dependabot security updates was enabled.
 
 The repository visibility change setting was cleared for an organization or enterprise.
 
-**Reference:** /organizations/managing-organization-settings/restricting-repository-visibility-changes-in-your-organization, [Enforcing repository management policies in your enterprise](/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-for-changes-to-repository-visibility)
+**Reference:** [Restricting repository visibility changes in your organization](/en/organizations/managing-organization-settings/restricting-repository-visibility-changes-in-your-organization), [Enforcing repository management policies in your enterprise](/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-for-changes-to-repository-visibility)
 
 #### `repository_visibility_change.disable`
 
@@ -4806,7 +4806,7 @@ The list of people or teams authorized to receive Dependabot alerts for the repo
 
 **Additional fields:** `public_repo`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#granting-access-to-security-alerts
+**Reference:** [Managing security and analysis settings for your repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#granting-access-to-security-alerts)
 
 #### `repository_vulnerability_alerts.disable`
 
@@ -4842,7 +4842,7 @@ A status check was marked as required for a protected branch.
 
 **Additional fields:** `actor_is_agent`, `context`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
-**Reference:** /repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging
+**Reference:** [About protected branches](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging)
 
 #### `required_status_check.destroy`
 
@@ -4850,7 +4850,7 @@ A status check was no longer marked as required for a protected branch.
 
 **Additional fields:** `actor_is_agent`, `context`, `oauth_application_id`, `public_repo`, `user_programmatic_access_name`
 
-**Reference:** /repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging
+**Reference:** [About protected branches](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging)
 
 ### restrict\_notification\_delivery
 
@@ -5200,7 +5200,7 @@ Custom amounts for GitHub Sponsors were enabled or disabled, or the suggested cu
 
 **Additional fields:** `sponsors_listing_id`
 
-**Reference:** /sponsors/receiving-sponsorships-through-github-sponsors/managing-your-sponsorship-tiers
+**Reference:** [Managing your sponsorship tiers](/en/sponsors/receiving-sponsorships-through-github-sponsors/managing-your-sponsorship-tiers)
 
 #### `sponsors.fiscal_host_change`
 
@@ -5212,7 +5212,7 @@ The fiscal host for a GitHub Sponsors listing was updated.
 
 An agreement for invoiced billing for GitHub Sponsors was signed.
 
-**Reference:** /sponsors/sponsoring-open-source-contributors/paying-for-github-sponsors-by-invoice
+**Reference:** [Paying for GitHub Sponsors by invoice](/en/sponsors/sponsoring-open-source-contributors/paying-for-github-sponsors-by-invoice)
 
 #### `sponsors.repo_funding_links_file_action`
 
@@ -5220,7 +5220,7 @@ The FUNDING file in a repository was changed.
 
 **Additional fields:** `actor_is_agent`, `public_repo`, `topic`, `visibility`
 
-**Reference:** /repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+**Reference:** [Displaying a sponsor button in your repository](/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository)
 
 #### `sponsors.sponsor_sponsorship_cancel`
 
@@ -5236,7 +5236,7 @@ A sponsorship was created, by sponsoring an account.
 
 **Additional fields:** `active`
 
-**Reference:** /sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes
+**Reference:** [About sponsorships, fees, and taxes](/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes)
 
 #### `sponsors.sponsor_sponsorship_payment_complete`
 
@@ -5244,7 +5244,7 @@ After you sponsor an account and a payment has been processed, the sponsorship p
 
 **Additional fields:** `active`
 
-**Reference:** /sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes
+**Reference:** [About sponsorships, fees, and taxes](/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes)
 
 #### `sponsors.sponsor_sponsorship_preference_change`
 
@@ -5252,7 +5252,7 @@ The option to receive email updates from a sponsored account was changed.
 
 **Additional fields:** `active`, `oauth_application_id`
 
-**Reference:** /sponsors/sponsoring-open-source-contributors/managing-your-sponsorship
+**Reference:** [Managing your sponsorship](/en/sponsors/sponsoring-open-source-contributors/managing-your-sponsorship)
 
 #### `sponsors.sponsor_sponsorship_tier_change`
 
@@ -5268,7 +5268,7 @@ A GitHub Sponsors account was approved.
 
 **Additional fields:** `sponsors_listing_id`
 
-**Reference:** /sponsors/receiving-sponsorships-through-github-sponsors/setting-up-github-sponsors-for-your-personal-account
+**Reference:** [Setting up GitHub Sponsors for your personal account](/en/sponsors/receiving-sponsorships-through-github-sponsors/setting-up-github-sponsors-for-your-personal-account)
 
 #### `sponsors.sponsored_developer_create`
 
@@ -5276,7 +5276,7 @@ A GitHub Sponsors account was created.
 
 **Additional fields:** `oauth_application_id`, `sponsors_listing_id`
 
-**Reference:** /sponsors/receiving-sponsorships-through-github-sponsors/setting-up-github-sponsors-for-your-personal-account
+**Reference:** [Setting up GitHub Sponsors for your personal account](/en/sponsors/receiving-sponsorships-through-github-sponsors/setting-up-github-sponsors-for-your-personal-account)
 
 #### `sponsors.sponsored_developer_disable`
 
@@ -5290,7 +5290,7 @@ The profile for GitHub Sponsors account was edited.
 
 **Additional fields:** `oauth_application_id`, `sponsors_listing_id`
 
-**Reference:** /sponsors/receiving-sponsorships-through-github-sponsors/editing-your-profile-details-for-github-sponsors
+**Reference:** [Editing your profile details for GitHub Sponsors](/en/sponsors/receiving-sponsorships-through-github-sponsors/editing-your-profile-details-for-github-sponsors)
 
 #### `sponsors.sponsored_developer_redraft`
 
@@ -5304,7 +5304,7 @@ An application for GitHub Sponsors was submitted for approval.
 
 **Additional fields:** `sponsors_listing_id`
 
-**Reference:** /sponsors/receiving-sponsorships-through-github-sponsors/setting-up-github-sponsors-for-your-personal-account
+**Reference:** [Setting up GitHub Sponsors for your personal account](/en/sponsors/receiving-sponsorships-through-github-sponsors/setting-up-github-sponsors-for-your-personal-account)
 
 #### `sponsors.sponsored_developer_tier_description_update`
 
@@ -5312,7 +5312,7 @@ The description for a sponsorship tier was changed.
 
 **Additional fields:** `public_repo`, `sponsors_listing_id`
 
-**Reference:** /sponsors/receiving-sponsorships-through-github-sponsors/managing-your-sponsorship-tiers
+**Reference:** [Managing your sponsorship tiers](/en/sponsors/receiving-sponsorships-through-github-sponsors/managing-your-sponsorship-tiers)
 
 #### `sponsors.sponsors_patreon_user_create`
 
@@ -5320,7 +5320,7 @@ A Patreon account was linked to a user account for use with GitHub Sponsors.
 
 **Additional fields:** `patreon_email`, `patreon_username`
 
-**Reference:** /sponsors/receiving-sponsorships-through-github-sponsors/enabling-sponsorships-through-patreon#linking-your-patreon-account-to-your-github-account
+**Reference:** [Enabling sponsorships through Patreon](/en/sponsors/receiving-sponsorships-through-github-sponsors/enabling-sponsorships-through-patreon#linking-your-patreon-account-to-your-github-account)
 
 #### `sponsors.sponsors_patreon_user_destroy`
 
@@ -5440,7 +5440,7 @@ A member of an organization was added to a team.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `team`, `team_type`, `user_programmatic_access_name`
 
-**Reference:** /organizations/organizing-members-into-teams/adding-organization-members-to-a-team
+**Reference:** [Adding organization members to a team](/en/organizations/organizing-members-into-teams/adding-organization-members-to-a-team)
 
 #### `team.add_repository`
 
@@ -5460,7 +5460,7 @@ A child team was created or a child team's parent was changed.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `team`, `team_type`, `user_programmatic_access_name`
 
-**Reference:** /organizations/organizing-members-into-teams/moving-a-team-in-your-organizations-hierarchy
+**Reference:** [Moving a team in your organization's hierarchy](/en/organizations/organizing-members-into-teams/moving-a-team-in-your-organizations-hierarchy)
 
 #### `team.change_privacy`
 
@@ -5468,7 +5468,7 @@ A team's privacy level was changed.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `team`, `team_type`, `user_programmatic_access_name`
 
-**Reference:** /organizations/organizing-members-into-teams/changing-team-visibility
+**Reference:** [Changing team visibility](/en/organizations/organizing-members-into-teams/changing-team-visibility)
 
 #### `team.create`
 
@@ -5482,7 +5482,7 @@ A user was demoted from a team maintainer to a team member.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `team`, `team_type`, `user_programmatic_access_name`
 
-**Reference:** /organizations/organizing-members-into-teams/assigning-the-team-maintainer-role-to-a-team-member
+**Reference:** [Assigning the team maintainer role to a team member](/en/organizations/organizing-members-into-teams/assigning-the-team-maintainer-role-to-a-team-member)
 
 #### `team.destroy`
 
@@ -5514,7 +5514,7 @@ A user was promoted from a team member to a team maintainer.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `team`, `team_type`, `user_programmatic_access_name`
 
-**Reference:** /organizations/organizing-members-into-teams/assigning-the-team-maintainer-role-to-a-team-member#promoting-an-organization-member-to-team-maintainer
+**Reference:** [Assigning the team maintainer role to a team member](/en/organizations/organizing-members-into-teams/assigning-the-team-maintainer-role-to-a-team-member#promoting-an-organization-member-to-team-maintainer)
 
 #### `team.remove_from_organization`
 
@@ -5528,7 +5528,7 @@ An organization member was removed from a team.
 
 **Additional fields:** `actor_is_agent`, `oauth_application_id`, `team`, `team_type`, `user_programmatic_access_name`
 
-**Reference:** /organizations/organizing-members-into-teams/removing-organization-members-from-a-team
+**Reference:** [Removing organization members from a team](/en/organizations/organizing-members-into-teams/removing-organization-members-from-a-team)
 
 #### `team.remove_repository`
 

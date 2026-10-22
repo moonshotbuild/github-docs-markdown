@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can archive an organization to make it read-only and indicate that it's no longer actively maintained. You can also unarchive organizations that have been archived.
 
-> \[!NOTE]
+> [!NOTE]
 > You can only archive an organization if it's using GitHub Free or if the organization is part of an enterprise. If you want to archive an individually-billed organization, you must downgrade your organization to GitHub Free first. For more information, see [Downgrading your account's plan](/en/billing/how-tos/manage-plan-and-licenses/downgrade-plan).
 
 ## About archiving your organization

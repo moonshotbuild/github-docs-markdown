@@ -19,7 +19,7 @@ You can use GitHub Desktop to revert a specific commit to remove its changes fro
 
 When you revert to a previous commit, the revert is also a commit. The original commit also remains in the repository's history.
 
-> \[!TIP]
+> [!TIP]
 > When you revert multiple commits, it's best to revert in order from newest to oldest. If you revert commits in a different order, you may see merge conflicts.
 
 1. In the left sidebar, click **History**.

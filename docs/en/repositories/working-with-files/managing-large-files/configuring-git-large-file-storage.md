@@ -38,7 +38,7 @@ If there are referenced Git LFS files that did not upload successfully, you will
 
    Every file type you want to associate with Git LFS will need to be added with `git lfs track`. This command amends your repository's *.gitattributes* file and associates large files with Git LFS.
 
-   > \[!NOTE]
+   > [!NOTE]
    > We strongly suggest that you commit your local *.gitattributes* file into your repository.
    >
    > * Relying on a global *.gitattributes* file associated with Git LFS may cause conflicts when contributing to other Git projects.

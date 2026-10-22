@@ -101,14 +101,14 @@ Open the project workspace in VS Code or Visual Studio and enter the following p
 @workspace Refactor this project by using AOP to avoid logging that has cross-cutting concerns
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > The `@workspace` chat participant in VS Code and Visual Studio provides Copilot with context about all of the code in your workspace. You can use `@workspace` when you want Copilot to consider the structure of your project and how different parts of your code interact. If you're using a JetBrains IDE, use `@project` rather than `@workspace`.
 
 ## Example response
 
 Copilot responds as follows.
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 > To refactor this project using Aspect-Oriented Programming (AOP) to handle logging as a cross-cutting concern, you can use a library like `aspectlib`. Here is how you can do it:
 >
@@ -192,5 +192,5 @@ In the refactored version of the project, the same logging operations are perfor
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

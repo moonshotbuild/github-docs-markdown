@@ -23,7 +23,7 @@ Enable remote control for a Copilot CLI session so you can monitor progress, res
 
 Remote control lets you connect to a running Copilot CLI session from any browser or from GitHub Mobile. You can view session output, respond to permission requests, and continue working in the session without being at the machine where the session is running.
 
-This article explains how to enable and use remote control. For more conceptual information, see [About remote control of GitHub Copilot CLI sessions](/en/copilot/concepts/agents/copilot-cli/about-remote-control).
+This article explains how to enable and use remote control. For more conceptual information, see [Remote control of GitHub Copilot CLI sessions](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-remote-control).
 
 Remote access is different from session syncing. Your Copilot CLI sessions are synced to your GitHub account by default, and synced sessions appear as view-only on GitHub.com and GitHub Mobile. These sessions are not steerable. To steer a session remotely, you must enable remote control. For more information about session syncing, see [About GitHub Copilot session data](/en/copilot/concepts/security-governance-and-network-settings/session-data#session-syncing).
 
@@ -31,7 +31,7 @@ Remote access is different from session syncing. Your Copilot CLI sessions are s
 
 * The machine where the CLI session is running must be online, with the session actively running in a terminal.
 
-  > \[!TIP]
+  > [!TIP]
   > Use the `/keep-alive` slash command to prevent your machine from going to sleep while you're away. See [Preventing your machine from going to sleep](#preventing-your-machine-from-going-to-sleep).
 
 * Remote control does not require a Git repository hosted on GitHub.com. You can enable remote control from directories that are not themselves Git repositories, including parent directories containing multiple repositories, and from repositories hosted somewhere other than GitHub.com. Sessions started outside of a GitHub repository appear unassociated with any repository ("no repository") and are only listed on your agents page at [github.com/copilot/agents](https://github.com/copilot/agents). Sessions started inside a GitHub repository also appear on that repository's **Agents** tab.
@@ -85,7 +85,7 @@ To override this setting for a particular session, use the `--no-remote` option 
 copilot --no-remote
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > The command-line options `--remote` and `--no-remote` always take precedence over the `remote` setting in the settings file.
 
 ### Using JetBrains IDE settings
@@ -121,7 +121,7 @@ You can also access the session without the link:
 
 If you started the session from a local copy of a GitHub repository, you can also access the session from the **Agents** tab of that repository on GitHub.com.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Remotely accessible sessions are user-specific: you can only access your own Copilot CLI sessions. Other GitHub users cannot access your sessions.
 
 ## Accessing a session from GitHub Mobile
@@ -140,7 +140,7 @@ A Copilot CLI session is available in GitHub Mobile as soon as you enable remote
 
 2. Press <kbd>Ctrl</kbd>+<kbd>O</kbd> (letter O) to toggle on/off display of a QR code.
 
-   > \[!NOTE]
+   > [!NOTE]
    > This keyboard shortcut expands/collapses all details in the session conversation, not just the QR code. It only works if the input field is currently empty.
 
 3. Scan the QR code with your phone to go directly to the session in GitHub Mobile.

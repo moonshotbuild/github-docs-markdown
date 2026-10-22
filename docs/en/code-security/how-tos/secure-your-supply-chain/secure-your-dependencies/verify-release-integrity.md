@@ -43,7 +43,7 @@ Before you can validate the authenticity of a release and its assets on the comm
    gh release verify-asset RELEASE-TAG ARTIFACT-PATH
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > This command cannot be used to verify the source code zip file or tarball for a release, since these assets are only created when a download is requested.
 
 </div>

@@ -41,7 +41,7 @@ Depending on the ecosystems you use, you may need to allowlist additional URLs.
 * `https://golang.org`—Alternate domain for Go downloads.
 * `https://proxy.golang.org`—Official Go module proxy for downloading Go modules during dependency detection.
 
-> \[!NOTE]
+> [!NOTE]
 > The `actions/go-versions` repository is accessed via `https://raw.githubusercontent.com`, which is already covered in the general requirements.
 
 #### Java (Maven and Gradle)
@@ -68,14 +68,14 @@ If you use a different JDK distribution, you may also need:
 * `https://builds.dotnet.microsoft.com`—Primary feed for .NET SDK and runtime downloads.
 * `https://ci.dot.net`—Secondary feed for .NET builds.
 
-> \[!NOTE]
+> [!NOTE]
 > The `microsoft/component-detection` tool used by .NET autosubmission is downloaded from GitHub releases, which is already covered in the general requirements (`https://github.com` and `https://*.githubusercontent.com`).
 
 #### Python
 
 * `https://python.org`—For downloading Python interpreters.
 
-> \[!NOTE]
+> [!NOTE]
 > The `actions/python-versions` repository and `microsoft/component-detection` releases are accessed via URLs already covered in the general requirements (`https://*.githubusercontent.com` and `https://github.com`).
 
 ## Use GitHub-hosted larger runners for automatic dependency submission
@@ -140,5 +140,5 @@ Python repositories with the dependency graph enabled use Dependabot graph jobs 
 
 Automatic dependency submission for Python uses the open source [component-detection](https://github.com/microsoft/component-detection/) project as its underlying graph generation engine. The autosubmission action will only run if there is a `requirements.txt` file in the root directory of the repository. Python autosubmission does not currently support private packages; packages referenced in `requirements.txt` which are not publicly available will cause the autosubmission action to fail.
 
-> \[!NOTE]
+> [!NOTE]
 > This action uses [actions/setup-python](https://github.com/actions/setup-python) to install Python. You must include a .python-version file in your repository to specify the Python version to be installed.

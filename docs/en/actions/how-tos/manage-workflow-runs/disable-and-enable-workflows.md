@@ -21,6 +21,8 @@ You can disable and re-enable a workflow using the GitHub UI, the REST API, or G
 
 Disabling a workflow allows you to stop a workflow from being triggered without having to delete the file from the repo. You can easily re-enable the workflow again on GitHub.
 
+Disabling a workflow doesn't cancel its existing runs, but you can't re-run those runs or their jobs while the workflow is disabled. Enable the workflow first to re-run it.
+
 Temporarily disabling a workflow can be useful in many scenarios. These are a few examples where disabling a workflow might be helpful:
 
 * A workflow error that produces too many or wrong requests, impacting external services negatively.
@@ -28,7 +30,7 @@ Temporarily disabling a workflow can be useful in many scenarios. These are a fe
 * A workflow that sends requests to a service that is down.
 * Workflows on a forked repository that aren't needed (for example, scheduled workflows).
 
-> \[!WARNING]
+> [!WARNING]
 > To prevent unnecessary workflow runs, scheduled workflows may be disabled automatically. When a public repository is forked, scheduled workflows are disabled by default. In a public repository, scheduled workflows are automatically disabled when no repository activity has occurred in 60 days.
 
 You can also disable and enable a workflow using the REST API. For more information, see [REST API endpoints for workflows](/en/rest/actions/workflows).
@@ -50,7 +52,7 @@ You can also disable and enable a workflow using the REST API. For more informat
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 To disable a workflow, use the `workflow disable` subcommand. Replace `workflow` with either the name, ID, or file name of the workflow you want to disable. For example, `"Link Checker"`, `1234567`, or `"link-check-test.yml"`. If you don't specify a workflow, GitHub CLI returns an interactive menu for you to choose a workflow.

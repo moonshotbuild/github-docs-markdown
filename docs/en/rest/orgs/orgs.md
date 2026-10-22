@@ -276,7 +276,7 @@ OAuth app tokens and personal access tokens (classic) need the admin:org or repo
 
 - **`members_allowed_repository_creation_type`** (string)
   Specifies which types of repositories non-admin organization members can create. private is only available to repositories that are part of an organization on GitHub Enterprise Cloud.
-Note: This parameter is closing down and will be removed in the future. Its return value ignores internal repositories. Using this parameter overrides values set in members_can_create_repositories. See the parameter deprecation notice in the operation description for details.
+  Note: This parameter is closing down and will be removed in the future. Its return value ignores internal repositories. Using this parameter overrides values set in members_can_create_repositories. See the parameter deprecation notice in the operation description for details.
   Can be one of: `all`, `private`, `none`
 
 - **`members_can_create_pages`** (boolean)
@@ -303,39 +303,39 @@ Note: This parameter is closing down and will be removed in the future. Its retu
 
 - **`advanced_security_enabled_for_new_repositories`** (boolean)
   Endpoint closing down notice. Please use code security configurations instead.
-Whether GitHub Advanced Security is automatically enabled for new repositories and repositories transferred to this organization.
-To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
-You can check which security and analysis features are currently enabled by using a GET /orgs/{org} request.
+  Whether GitHub Advanced Security is automatically enabled for new repositories and repositories transferred to this organization.
+  To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
+  You can check which security and analysis features are currently enabled by using a GET /orgs/{org} request.
 
 - **`dependabot_alerts_enabled_for_new_repositories`** (boolean)
   Endpoint closing down notice. Please use code security configurations instead.
-Whether Dependabot alerts are automatically enabled for new repositories and repositories transferred to this organization.
-To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
-You can check which security and analysis features are currently enabled by using a GET /orgs/{org} request.
+  Whether Dependabot alerts are automatically enabled for new repositories and repositories transferred to this organization.
+  To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
+  You can check which security and analysis features are currently enabled by using a GET /orgs/{org} request.
 
 - **`dependabot_security_updates_enabled_for_new_repositories`** (boolean)
   Endpoint closing down notice. Please use code security configurations instead.
-Whether Dependabot security updates are automatically enabled for new repositories and repositories transferred to this organization.
-To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
-You can check which security and analysis features are currently enabled by using a GET /orgs/{org} request.
+  Whether Dependabot security updates are automatically enabled for new repositories and repositories transferred to this organization.
+  To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
+  You can check which security and analysis features are currently enabled by using a GET /orgs/{org} request.
 
 - **`dependency_graph_enabled_for_new_repositories`** (boolean)
   Endpoint closing down notice. Please use code security configurations instead.
-Whether dependency graph is automatically enabled for new repositories and repositories transferred to this organization.
-To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
-You can check which security and analysis features are currently enabled by using a GET /orgs/{org} request.
+  Whether dependency graph is automatically enabled for new repositories and repositories transferred to this organization.
+  To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
+  You can check which security and analysis features are currently enabled by using a GET /orgs/{org} request.
 
 - **`secret_scanning_enabled_for_new_repositories`** (boolean)
   Endpoint closing down notice. Please use code security configurations instead.
-Whether secret scanning is automatically enabled for new repositories and repositories transferred to this organization.
-To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
-You can check which security and analysis features are currently enabled by using a GET /orgs/{org} request.
+  Whether secret scanning is automatically enabled for new repositories and repositories transferred to this organization.
+  To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
+  You can check which security and analysis features are currently enabled by using a GET /orgs/{org} request.
 
 - **`secret_scanning_push_protection_enabled_for_new_repositories`** (boolean)
   Endpoint closing down notice. Please use code security configurations instead.
-Whether secret scanning push protection is automatically enabled for new repositories and repositories transferred to this organization.
-To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
-You can check which security and analysis features are currently enabled by using a GET /orgs/{org} request.
+  Whether secret scanning push protection is automatically enabled for new repositories and repositories transferred to this organization.
+  To use this parameter, you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "Managing security managers in your organization."
+  You can check which security and analysis features are currently enabled by using a GET /orgs/{org} request.
 
 - **`secret_scanning_push_protection_custom_link`** (string)
   If secret_scanning_push_protection_custom_link_enabled is true, the URL that will be displayed to contributors who are blocked from pushing a secret.
@@ -1051,15 +1051,15 @@ OAuth app tokens and personal access tokens (classic) need the admin:org, write:
 
 - **`enablement`** (string) (required)
   The action to take.
-enable_all means to enable the specified security feature for all repositories in the organization.
-disable_all means to disable the specified security feature for all repositories in the organization.
+  enable_all means to enable the specified security feature for all repositories in the organization.
+  disable_all means to disable the specified security feature for all repositories in the organization.
   Can be one of: `enable_all`, `disable_all`
 
 #### Body parameters
 
 - **`query_suite`** (string)
   CodeQL query suite to be used. If you specify the query_suite parameter, the default setup will be configured with this query suite only on all repositories that didn't have default setup already configured. It will not change the query suite on repositories that already have default setup configured.
-If you don't specify any query_suite in your request, the preferred query suite of the organization will be applied.
+  If you don't specify any query_suite in your request, the preferred query suite of the organization will be applied.
   Can be one of: `default`, `extended`
 
 ### HTTP response status codes

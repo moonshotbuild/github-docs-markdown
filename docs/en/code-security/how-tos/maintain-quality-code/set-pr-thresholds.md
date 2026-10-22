@@ -33,7 +33,7 @@ You can enforce these thresholds at the **repository** level, or at the **organi
 * Code Quality is enabled. See [Enabling GitHub Code Quality](/en/code-security/how-tos/maintain-quality-code/enable-code-quality?utm_campaign=code-quality-ga-july-2026\&utm_medium=docs\&utm_source=docs-set-quality-thresholds-enable-cq)
 * Code in a supported language. See [Supported languages](/en/code-security/concepts/code-quality/code-quality#supported-languages).
 
-> \[!NOTE]
+> [!NOTE]
 > The threshold will have an impact only if the repository has code in one or more of the supported languages, see [Enabling GitHub Code Quality](/en/code-security/how-tos/maintain-quality-code/enable-code-quality).
 
 ## Confirming Code Quality runs successfully on pull requests

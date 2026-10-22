@@ -27,11 +27,7 @@ Organization owners can change several settings, including the names of reposito
 
 * [Transferring organization ownership](/en/organizations/managing-organization-settings/transferring-organization-ownership)
 
-  To make someone else the owner of an organization account, you must add a new owner and then remove yourself from the account.
-
-* [Governing how people use repositories in your organization](/en/governing-how-people-use-repositories-in-your-organization)
-
-  Create a repository policy to control who can do things like create and delete repositories.
+  To make someone else the owner of an organization account, you must add a new owner, ensure that the billing information is updated, and then remove yourself from the account.
 
 * [Restricting repository creation in your organization](/en/organizations/managing-organization-settings/restricting-repository-creation-in-your-organization)
 
@@ -77,10 +73,6 @@ Organization owners can change several settings, including the names of reposito
 
   Control how long checks, workflow runs, commit statuses, artifacts, and logs are retained in your organization.
 
-* [Setting permissions for adding outside collaborators](/en/setting-permissions-for-adding-outside-collaborators)
-
-  To protect your organization's data and the number of paid licenses used in your organization, you can configure who can add outside collaborators to organization repositories.
-
 * [Allowing people to delete issues in your organization](/en/organizations/managing-organization-settings/allowing-people-to-delete-issues-in-your-organization)
 
   Organization owners can allow certain people to delete issues in repositories owned by your organization.
@@ -101,17 +93,9 @@ Organization owners can change several settings, including the names of reposito
 
   You can require users to automatically sign off all commits they make in GitHub's web interface to repositories owned by your organization.
 
-* [Restricting deploy keys in your organization](/en/restricting-deploy-keys-in-your-organization)
-
-  To protect your organization's data, you can configure permissions for creating deploy keys in your organization.
-
 * [Setting team creation permissions in your organization](/en/organizations/managing-organization-settings/setting-team-creation-permissions-in-your-organization)
 
   You can allow all organization members to create teams or limit team creation to organization owners.
-
-* [Creating an announcement banner for your organization](/en/creating-an-announcement-banner-for-your-organization)
-
-  Organization owners can create announcement banners for the organization.
 
 * [Managing scheduled reminders for your organization](/en/organizations/managing-organization-settings/managing-scheduled-reminders-for-your-organization)
 
@@ -124,10 +108,6 @@ Organization owners can change several settings, including the names of reposito
 * [Managing default labels for repositories in your organization](/en/organizations/managing-organization-settings/managing-default-labels-for-repositories-in-your-organization)
 
   You can customize the labels that are included in every new repository in your organization.
-
-* [Changing the visibility of your organization's dependency insights](/en/changing-the-visibility-of-your-organizations-dependency-insights)
-
-  You can allow all organization members to view dependency insights for your organization or limit viewing to organization owners.
 
 * [Managing the display of member names in your organization](/en/organizations/managing-organization-settings/managing-the-display-of-member-names-in-your-organization)
 

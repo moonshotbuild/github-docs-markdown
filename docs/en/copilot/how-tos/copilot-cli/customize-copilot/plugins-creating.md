@@ -23,9 +23,9 @@ Create a plugin to share customizations in an easy-to-install package.
 
 ## Introduction
 
-Plugins are packages that extend the functionality of Copilot CLI. See [About GitHub Copilot plugins](/en/copilot/concepts/agents/about-plugins).
+Plugins are packages that extend the functionality of Copilot CLI. See [Plugins for GitHub Copilot](/en/copilot/concepts/agents/about-plugins).
 
-> \[!NOTE]
+> [!NOTE]
 > You can find help on using plugins by entering `copilot plugin [SUBCOMMAND] --help` in the terminal.
 
 ## Plugin structure
@@ -179,7 +179,7 @@ Both formats are supported. Choose Agent Plugins 1.0 when you want to make skill
 
 8. Iterate on your plugin development, as required.
 
-   > \[!IMPORTANT]
+   > [!IMPORTANT]
    > When you install a plugin its components are cached and the CLI reads from the cache for subsequent sessions. To pick up changes made to a local plugin install it again:
    >
    > ```shell copy
@@ -192,7 +192,7 @@ Both formats are supported. Choose Agent Plugins 1.0 when you want to make skill
    copilot plugin uninstall NAME
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > To uninstall a plugin, use the name of the plugin as specified in the `name` field of the plugin's `plugin.json` manifest file, not the path to the plugin's directory.
 
 ## Distributing your plugin

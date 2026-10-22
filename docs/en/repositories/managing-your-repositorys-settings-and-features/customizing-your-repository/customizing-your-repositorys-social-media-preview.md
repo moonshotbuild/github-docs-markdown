@@ -25,7 +25,7 @@ Until you add an image, repository links expand to show basic information about 
 
 You can upload an image to a public repository, or to a private repository to which you have previously uploaded an image. Your image can only be shared from a public repository.
 
-> \[!TIP]
+> [!TIP]
 > Your image should be a PNG, JPG, or GIF file under 1 MB in size. For the best quality rendering, we recommend a size of at least 640 by 320 pixels (1280 by 640 pixels for best display).
 
 1. On GitHub, navigate to the main page of the repository.
@@ -45,5 +45,5 @@ We support PNG images with transparency. Many communication platforms support a 
 
 When using an image with transparency, keep in mind how it may look on different color backgrounds or platforms that don't support transparency.
 
-> \[!TIP]
+> [!TIP]
 > If you aren't sure, we recommend using an image with a solid background.

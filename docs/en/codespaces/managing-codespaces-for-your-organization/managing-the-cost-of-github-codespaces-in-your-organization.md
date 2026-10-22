@@ -33,7 +33,7 @@ You can set a spending limit for GitHub Codespaces for your organization. This l
 
 You can check the compute and storage usage for GitHub Codespaces for the current billing month. For information, see [Viewing your usage of metered products and licenses](/en/billing/how-tos/products/view-productlicense-use).
 
-> \[!NOTE]
+> [!NOTE]
 > Prebuilds for GitHub Codespaces are created and updated using GitHub Actions. This may incur billable costs for GitHub Actions. You can set a budget for GitHub Actions. For more information, see [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces) and [Setting up budgets to control spending on metered products](/en/billing/how-tos/set-up-budgets). Storage of the generated prebuilds is charged at the same rate as your codespaces, and is included in your GitHub Codespaces budget.
 
 ## Disabling or limiting billing for Codespaces
@@ -58,7 +58,7 @@ Your users can delete their own codespaces in <https://github.com/codespaces> an
 
 As an organization owner, you can delete any codespace in your organization. For more information, see [Deleting a codespace](/en/codespaces/developing-in-a-codespace/deleting-a-codespace#deleting-codespaces-in-your-organization).
 
-> \[!NOTE]
+> [!NOTE]
 > Codespaces are automatically deleted after they have been stopped and have remained inactive for a user-definable number of days. For more information, see [Configuring automatic deletion of your codespaces](/en/codespaces/setting-your-user-preferences/configuring-automatic-deletion-of-your-codespaces). As an organization owner, you can set the maximum retention period for codespaces owned by your organization. This will override a user's personal retention setting. For more information, see [Restricting the retention period for codespaces](/en/codespaces/managing-codespaces-for-your-organization/restricting-the-retention-period-for-codespaces).
 
 ## Further reading

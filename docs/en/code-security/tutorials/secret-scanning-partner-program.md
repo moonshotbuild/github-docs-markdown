@@ -129,10 +129,10 @@ You can retrieve the GitHub secret scanning public key from <https://api.github.
 will provide several `key_identifier` and public keys. You can determine which public
 key to use based on the value of `Github-Public-Key-Identifier`.
 
-> \[!NOTE]
+> [!NOTE]
 > When you send a request to the public key endpoint above, you may hit rate limits. To avoid hitting rate limits, you can use a personal access token (classic) (no scopes required) or a fine-grained personal access token (only the automatic public repositories read access required) as suggested in the samples below, or use a conditional request. For more information, see [Best practices for using the REST API](/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api#use-conditional-requests).
 
-> \[!NOTE]
+> [!NOTE]
 > The signature was generated using the raw message body. So it's important you also use the raw message body for signature validation, instead of parsing and stringifying the JSON, to avoid rearranging the message or changing spacing.
 
 **Sample HTTP POST sent to verify endpoint**
@@ -407,5 +407,5 @@ A few important points:
 * For the hashed form of the raw token, you can only use SHA-256 to hash the token, not any other hashing algorithm.
 * The label indicates whether the token is a true ("true\_positive") or a false positive ("false\_positive"). Only these two lowercased literal strings are allowed.
 
-> \[!NOTE]
+> [!NOTE]
 > Our request timeout is set to be higher (that is, 30 seconds) for partners who provide data about false positives. If you require a timeout higher than 30 seconds, email us at <a href="mailto:secret-scanning@github.com"><secret-scanning@github.com></a>.

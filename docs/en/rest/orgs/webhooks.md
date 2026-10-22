@@ -21,7 +21,7 @@ Use the REST API to interact with webhooks in an organization.
 
 Organization webhooks allow your server to receive HTTP `POST` payloads whenever certain events happen in an organization. For more information, see [Webhooks documentation](/en/webhooks).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List organization webhooks

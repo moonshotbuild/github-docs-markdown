@@ -35,7 +35,7 @@ Summarize activity in this repository over the past week. Highlight anything tha
 
 ## Example response
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 ```text
 Repository activity summary (past 7 days)

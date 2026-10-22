@@ -21,9 +21,9 @@ breadcrumbs:
 
 # execute queries
 
-\[Plumbing] Run one or more queries against a dataset.
+[Plumbing] Run one or more queries against a dataset.
 
-> \[!NOTE]
+> [!NOTE]
 > This content describes the most recent release of the CodeQL CLI. For more information about this release, see <https://github.com/github/codeql-cli-binaries/releases>.
 >
 > To see details of the options available for this command in an earlier release, run the command with the <span style="white-space: nowrap;">`--help`</span> option in your terminal.
@@ -90,7 +90,7 @@ stored in the output location.
 
 ### Options to control the model packs to be used
 
-#### `--model-packs=<`<name@range>>...
+#### `--model-packs=<name@range>...`
 
 A list of CodeQL pack names, each with an optional version range, to be
 used as model packs to customize the queries that are about to be

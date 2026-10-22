@@ -25,7 +25,7 @@ This article applies to repository-level security advisories in a public reposit
 
 Collaborators have write permissions to the security advisory. For more information, see [Repository security advisories](/en/code-security/reference/permissions/repository-security-advisory).
 
-> \[!NOTE]
+> [!NOTE]
 > If you remove a user from a repository or organization, and the user is also a collaborator on a security advisory, GitHub will automatically remove the user as a collaborator for the security advisory. This prevents any unauthorized access from ex-collaborators. For more information about removing a collaborator on a security advisory, see [Removing a collaborator from a repository security advisory](/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/remove-collaborators).
 
 1. On GitHub, navigate to the main page of the repository.

@@ -35,7 +35,7 @@ If the pull request has merge conflicts, or if you want to test changes first, [
 
 The repository may automatically delete the head branch after merging. See [Managing the automatic deletion of branches](/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-the-automatic-deletion-of-branches).
 
-> \[!NOTE]
+> [!NOTE]
 > If you delete a head branch after its pull request has been merged, GitHub checks for any open pull requests in the same repository that specify the deleted branch as their base branch. GitHub automatically updates any such pull requests, changing their base branch to the merged pull request's base branch.
 
 Pull requests use [the `--no-ff` option](https://git-scm.com/docs/git-merge#_fast_forward_merge), except squashed or rebased pull requests, which use fast-forward merging.
@@ -62,7 +62,7 @@ If you don't want to merge the changes, you can [close the pull request](/en/pul
 
    * [Rebase the commits individually onto the base branch](/en/pull-requests/reference/pull-request-merges#rebase-and-merge-your-commits) by clicking the merge dropdown menu, selecting **Rebase and merge**, and then clicking **Rebase and merge**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Rebase and merge will always update the committer information and create new commit SHAs. See [About pull request merges](/en/pull-requests/reference/pull-request-merges#rebase-and-merge-your-commits).
 
 4. If prompted, type a commit message, or accept the default message.
@@ -73,7 +73,7 @@ If you don't want to merge the changes, you can [close the pull request](/en/pul
 
    ![Screenshot of a GitHub pull request showing a dropdown menu with options to choose the commit author email address. octocat@github.com is selected.](/assets/images/help/repository/choose-commit-email-address.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    > The email selector is not available for rebase merges, which do not create a merge commit. For squash merges, the email selector is only shown if you are the pull request author and you have more than one email address associated with your account.
 
 6. Click **Confirm merge**, **Confirm squash and merge**, or **Confirm rebase and merge**.
@@ -84,7 +84,7 @@ If you don't want to merge the changes, you can [close the pull request](/en/pul
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 To merge a pull request, use the `gh pr merge` subcommand. Replace `pull-request` with the number, URL, or head branch of the pull request.

@@ -69,7 +69,7 @@ Members of a cost center can be assigned directly, through an organization, or t
 
 When a cost center's budget is exhausted, only users in that cost center are blocked. Other users and cost centers are unaffected.
 
-> \[!NOTE]
+> [!NOTE]
 > A cost center budget is different from a cost center user-level budget. A cost center budget caps the team's **total metered charges** after the pool is exhausted. A cost center user-level budget caps **each member's individual consumption** across both the pool and metered phases, the same way other user-level budgets do. You can apply both to the same cost center.
 
 ### Included usage controls for cost centers
@@ -104,13 +104,15 @@ An organization budget caps metered charges for users who receive their Copilot 
 
 Organization budgets are the only budget option available to organization owners. They can only further restrict usage below any budget set by an enterprise admin, and they cannot override a higher-level budget.
 
+Usage billed directly to an organization from a GitHub App installation counts against the organization budget. You cannot create a budget for an individual app or installation. If **Stop usage when budget limit is reached** is not enabled, the budget only sends alerts and app spending continues after the limit is reached. For information about managing app access, see [Manage GitHub Apps that use your organization's Copilot](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-app-copilot-access).
+
 If a user receives Copilot licenses from multiple organizations, GitHub picks one organization at random each billing cycle to bill the seat. This means the user's spend could count against a different organization's budget from month to month, making enforcement unpredictable. To avoid this, ensure each user has a single license through one organization, or use cost center budgets with direct user assignment.
 
 ### Enterprise budget
 
 The enterprise budget caps total metered charges across your entire enterprise. Like cost center budgets, it is only active after the shared pool is exhausted.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > The enterprise budget is not a total monthly budget. It only caps metered charges after the pool is exhausted. Your total maximum bill is your license fees plus the enterprise budget. For example, 400 Copilot Business licenses at $19 USD per month means $7,600 USD in license fees. A $5,000 USD enterprise budget means your maximum bill is $12,600 USD, not $5,000 USD.
 
 ### How the controls compare
@@ -130,7 +132,7 @@ Any budget set to $0 USD stops usage immediately for the users it applies to.
 
 When someone in your enterprise uses Copilot, the system checks budget controls in a specific order to decide whether the request is served, metered, or blocked.
 
-> \[!NOTE]
+> [!NOTE]
 > For additional (metered) usage to occur, the "AI credit paid usage" policy must be enabled in your enterprise or organization settings. If this policy is disabled, usage is blocked when the shared pool is exhausted, regardless of your budget configuration.
 
 ![Flowchart of AI credit budget checks: individual budget, then shared pool, then metered charge against the most specific budget.](/assets/images/help/billing/request-budget-flow.png)
@@ -147,7 +149,7 @@ Each request for an AI credit-consuming feature goes through these checks:
 
    In all cases, if "Stop usage when budget limit is reached" is on, the user is blocked. If it is off, charges continue to accrue without a cap.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > "Stop usage when budget limit is reached" applies to enterprise spending limits, cost center budgets, and organization budgets only, and is off by default. Without it, charges continue to accrue past the limit. Always enable it when creating a budget. User-level budgets always enforce a hard stop and do not have this setting.
 
 ## How user-level budgets and spending limits interact

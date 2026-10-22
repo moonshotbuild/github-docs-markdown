@@ -32,7 +32,7 @@ How Copilot usage is tracked and billed depends on your plan type:
 
 When usage exceeds the included allowances for any Copilot plan, additional usage is billed in GitHub AI Credits at the per-token rates shown in the pricing tables below (1 AI credit = $0.01 USD).
 
-> \[!NOTE] The option to purchase additional AI credits is not available if you subscribe, or have subscribed, to a Copilot plan through GitHub Mobile on iOS or Android.
+> [!NOTE] The option to purchase additional AI credits is not available if you subscribe, or have subscribed, to a Copilot plan through GitHub Mobile on iOS or Android.
 
 ## Pricing tables
 
@@ -40,28 +40,16 @@ All prices are **per 1 million tokens**.
 
 ### OpenAI
 
-> \[!NOTE] Models with a **Long context** tier, offer extended capabilities and longer context windows. See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#models-with-extended-capabilities)
+> [!NOTE] Models with a **Long context** tier, offer extended capabilities and longer context windows. See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#models-with-extended-capabilities)
 
 GPT-5.6 Sol, GPT-5.6 Terra, GPT-5.6 Luna, GPT-6 Astra, GPT-6 Luna, GPT-6 Sol, and GPT-6.1 Sol include a cache write cost in addition to cached input. Earlier OpenAI models have no cache write cost.
 
 | Model         | Release status | Category    | Tier         | Threshold (input tokens) |  Input | Cached input |    Cache write | Output |
 | ------------- | -------------- | ----------- | ------------ | ------------------------ | -----: | -----------: | -------------: | -----: |
 |               |                |             |              |                          |        |              |                |        |
-| GPT-5 mini    | GA             | Lightweight | Default      | Not applicable           |  $0.25 |       $0.025 | Not applicable |  $2.00 |
-|               |                |             |              |                          |        |              |                |        |
 | GPT-5.3-Codex | GA             | Powerful    | Default      | Not applicable           |  $1.75 |       $0.175 | Not applicable | $14.00 |
 |               |                |             |              |                          |        |              |                |        |
-| GPT-5.4       | GA             | Versatile   | Default      | ≤ 272K                   |  $2.50 |        $0.25 | Not applicable | $15.00 |
-|               |                |             |              |                          |        |              |                |        |
-| GPT-5.4       | GA             | Versatile   | Long context | > 272K                   |  $5.00 |        $0.50 | Not applicable | $22.50 |
-|               |                |             |              |                          |        |              |                |        |
-| GPT-5.4 mini  | GA             | Lightweight | Default      | Not applicable           |  $0.75 |       $0.075 | Not applicable |  $4.50 |
-|               |                |             |              |                          |        |              |                |        |
 | GPT-5.4 nano  | GA             | Lightweight | Default      | Not applicable           |  $0.20 |        $0.02 | Not applicable |  $1.25 |
-|               |                |             |              |                          |        |              |                |        |
-| GPT-5.5       | GA             | Powerful    | Default      | ≤ 272K                   |  $5.00 |        $0.50 | Not applicable | $30.00 |
-|               |                |             |              |                          |        |              |                |        |
-| GPT-5.5       | GA             | Powerful    | Long context | > 272K                   | $10.00 |        $1.00 | Not applicable | $45.00 |
 |               |                |             |              |                          |        |              |                |        |
 | GPT-5.6 Luna  | GA             | Lightweight | Default      | ≤ 200K                   |  $0.20 |        $0.02 |          $0.25 |  $1.20 |
 |               |                |             |              |                          |        |              |                |        |
@@ -94,44 +82,50 @@ GPT-5.6 Sol, GPT-5.6 Terra, GPT-5.6 Luna, GPT-6 Astra, GPT-6 Luna, GPT-6 Sol, an
 
 ### Anthropic
 
+> [!NOTE] Models with a **Long context** tier, offer extended capabilities and longer context windows. See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#models-with-extended-capabilities)
+
 Anthropic models include a cache write cost in addition to cached input.
 
-| Model                                 | Release status | Category  |  Input | Cached input | Cache write | Output |
-| ------------------------------------- | -------------- | --------- | -----: | -----------: | ----------: | -----: |
-|                                       |                |           |        |              |             |        |
-| Claude Haiku 4.5                      | GA             | Versatile |  $1.00 |        $0.10 |       $1.25 |  $5.00 |
-|                                       |                |           |        |              |             |        |
-| Claude Sonnet 4                       | GA             | Versatile |  $3.00 |        $0.30 |       $3.75 | $15.00 |
-|                                       |                |           |        |              |             |        |
-| Claude Sonnet 4.6                     | GA             | Versatile |  $3.00 |        $0.30 |       $3.75 | $15.00 |
-|                                       |                |           |        |              |             |        |
-| Claude Opus 4.8                       | GA             | Powerful  |  $5.00 |        $0.50 |       $6.25 | $25.00 |
-|                                       |                |           |        |              |             |        |
-| Claude Opus 5                         | GA             | Powerful  |  $5.00 |        $0.50 |       $6.25 | $25.00 |
-|                                       |                |           |        |              |             |        |
-| Claude Opus 5.5                       | GA             | Powerful  |  $4.00 |        $0.20 |       $5.00 | $20.00 |
-|                                       |                |           |        |              |             |        |
-| Claude Sonnet 5                       | GA             | Versatile |  $2.00 |        $0.20 |       $2.50 | $10.00 |
-|                                       |                |           |        |              |             |        |
-| Claude Sonnet 5.5                     | GA             | Versatile |  $2.00 |        $0.20 |       $2.50 | $10.00 |
-|                                       |                |           |        |              |             |        |
-| Claude Opus 4.8 (fast mode) (preview) | GA             | Powerful  | $10.00 |        $1.00 |      $12.50 | $50.00 |
-|                                       |                |           |        |              |             |        |
-| Claude Fable 5                        | GA             | Powerful  | $10.00 |        $1.00 |      $12.50 | $50.00 |
-|                                       |                |           |        |              |             |        |
-| Claude Fable 5.1                      | GA             | Powerful  | $10.00 |        $0.25 |      $12.50 | $50.00 |
-|                                       |                |           |        |              |             |        |
+| Model                                 | Release status | Category    | Tier         | Threshold (input tokens) |  Input | Cached input | Cache write | Output |
+| ------------------------------------- | -------------- | ----------- | ------------ | ------------------------ | -----: | -----------: | ----------: | -----: |
+|                                       |                |             |              |                          |        |              |             |        |
+| Claude Haiku 4.5                      | GA             | Versatile   | Default      | Not applicable           |  $1.00 |        $0.10 |       $1.25 |  $5.00 |
+|                                       |                |             |              |                          |        |              |             |        |
+| Claude Haiku 5.5                      | GA             | Lightweight | Default      | ≤ 100K                   |  $0.10 |        $0.01 |      $0.125 |  $0.50 |
+|                                       |                |             |              |                          |        |              |             |        |
+| Claude Haiku 5.5                      | GA             | Lightweight | Long context | > 100K                   |  $0.50 |        $0.05 |      $0.625 |  $2.50 |
+|                                       |                |             |              |                          |        |              |             |        |
+| Claude Sonnet 4                       | GA             | Versatile   | Default      | Not applicable           |  $3.00 |        $0.30 |       $3.75 | $15.00 |
+|                                       |                |             |              |                          |        |              |             |        |
+| Claude Sonnet 4.6                     | GA             | Versatile   | Default      | Not applicable           |  $3.00 |        $0.30 |       $3.75 | $15.00 |
+|                                       |                |             |              |                          |        |              |             |        |
+| Claude Opus 4.8                       | GA             | Powerful    | Default      | Not applicable           |  $5.00 |        $0.50 |       $6.25 | $25.00 |
+|                                       |                |             |              |                          |        |              |             |        |
+| Claude Opus 5                         | GA             | Powerful    | Default      | Not applicable           |  $5.00 |        $0.50 |       $6.25 | $25.00 |
+|                                       |                |             |              |                          |        |              |             |        |
+| Claude Opus 5.5                       | GA             | Powerful    | Default      | Not applicable           |  $4.00 |        $0.20 |       $5.00 | $20.00 |
+|                                       |                |             |              |                          |        |              |             |        |
+| Claude Sonnet 5                       | GA             | Versatile   | Default      | Not applicable           |  $2.00 |        $0.20 |       $2.50 | $10.00 |
+|                                       |                |             |              |                          |        |              |             |        |
+| Claude Sonnet 5.5                     | GA             | Versatile   | Default      | Not applicable           |  $2.00 |        $0.10 |       $2.50 | $10.00 |
+|                                       |                |             |              |                          |        |              |             |        |
+| Claude Opus 4.8 (fast mode) (preview) | GA             | Powerful    | Default      | Not applicable           | $10.00 |        $1.00 |      $12.50 | $50.00 |
+|                                       |                |             |              |                          |        |              |             |        |
+| Claude Fable 5                        | GA             | Powerful    | Default      | Not applicable           | $10.00 |        $1.00 |      $12.50 | $50.00 |
+|                                       |                |             |              |                          |        |              |             |        |
+| Claude Fable 5.1                      | GA             | Powerful    | Default      | Not applicable           | $10.00 |        $0.25 |      $12.50 | $50.00 |
+|                                       |                |             |              |                          |        |              |             |        |
 
 ### Google
 
-> \[!NOTE] Models with a **Long context** tier, offer extended capabilities and longer context windows. See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#models-with-extended-capabilities)
+> [!NOTE] Models with a **Long context** tier, offer extended capabilities and longer context windows. See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#models-with-extended-capabilities)
 
 | Model                                 | Release status | Category  | Tier    | Threshold (input tokens) | Input | Cached input | Output |
 | ------------------------------------- | -------------- | --------- | ------- | ------------------------ | ----: | -----------: | -----: |
 |                                       |                |           |         |                          |       |              |        |
-| Gemini 3.7 Flash[^gemini-flash-promo] | GA             | Versatile | Default | Not applicable           | $0.75 |       $0.075 |  $3.75 |
-|                                       |                |           |         |                          |       |              |        |
 | Gemini 3.8 Flash[^gemini-flash-promo] | GA             | Versatile | Default | Not applicable           | $0.75 |       $0.075 |  $3.75 |
+|                                       |                |           |         |                          |       |              |        |
+| Gemini 4 Argon[^gemini-4-argon-promo] | GA             | Powerful  | Default | Not applicable           | $2.00 |        $0.10 | $10.00 |
 |                                       |                |           |         |                          |       |              |        |
 
 ### Fine-tuned (GitHub)
@@ -150,7 +144,7 @@ Anthropic models include a cache write cost in addition to cached input.
 
 ### xAI
 
-> \[!NOTE] Models with a **Long context** tier, offer extended capabilities and longer context windows. See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#models-with-extended-capabilities)
+> [!NOTE] Models with a **Long context** tier, offer extended capabilities and longer context windows. See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#models-with-extended-capabilities)
 
 | Model    | Release status | Category  | Tier         | Threshold (input tokens) | Input | Cached input | Output |
 | -------- | -------------- | --------- | ------------ | ------------------------ | ----: | -----------: | -----: |
@@ -186,7 +180,9 @@ For most Copilot features, the model used for each interaction is visible to you
 
 Each code review is billed in two ways: token consumption is billed in AI credits, and the agentic infrastructure that powers the review consumes GitHub Actions minutes.
 
-GitHub Actions minutes are attributed to the repository, and from there to the enterprise or cost center where applicable. AI credits are charged to the person who requests the review, or to the author of a pull request where a policy automatically triggers a review. If that person does not have a Copilot seat, usage is billed to the enterprise or cost center instead. For pull requests authored by Copilot cloud agent, usage is attributed first to the human co-author associated with the change. If the co-author cannot be billed, usage is billed directly to the organization. For pull requests authored by other bots, or when a bot requests the review, usage is also billed directly to the organization. These pull requests are eligible for agentic review.
+GitHub Actions minutes are attributed to the repository, and from there to the enterprise or cost center where applicable. For requests associated with organization members who have paid Copilot licenses, AI credits are charged to the member or organization, depending on how the **Choose how members with a Copilot license are billed** policy is configured.
+
+If the person associated with a review does not have a Copilot seat, usage is billed to the enterprise or cost center instead. For pull requests authored by Copilot cloud agent, usage is attributed first to the human co-author associated with the change. If the co-author cannot be billed, usage is billed directly to the organization. For pull requests authored by other bots, or when a bot requests the review, usage is also billed directly to the organization. These pull requests are eligible for agentic review.
 
 You can view your current GitHub Actions usage for Copilot code review in the following ways:
 
@@ -197,4 +193,10 @@ You can view your current GitHub Actions usage for Copilot code review in the fo
 
 Copilot Pro and Copilot Pro+ subscribers on **existing annual billing plans** using the **request-based billing** model have different model multipliers. See [Model multipliers for annual plans on request-based billing (legacy)](/en/copilot/reference/copilot-billing/request-based-billing-legacy/model-multipliers-for-annual-plans).
 
-[^gemini-flash-promo]: Gemini 3.7 Flash and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.
+[^gemini-flash-promo]: Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.
+
+<!-- expires 2026-12-01 -->
+
+[^gemini-4-argon-promo]: Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026.
+
+<!-- end expires 2026-12-01 -->

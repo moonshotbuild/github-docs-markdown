@@ -89,13 +89,20 @@ More complex interactions consume more of your usage allowance. The main factors
 * **Agentic features**: Features like agent mode and Copilot cloud agent can involve multiple model calls within a single task. A complex agentic session working across a large codebase will consume significantly more usage than a quick question in chat.
 * **Model choice**: Different models have different costs per token. More capable models designed for complex reasoning cost more than lighter models suited to quick tasks. Switching to a less expensive model is one way to extend your usage allowance.
 
-> \[!NOTE] If you are on a paid Copilot plan, you qualify for a 10% discount on model costs while using auto model selection in Copilot Chat, Copilot CLI, the GitHub Copilot app, or Copilot cloud agent.
+> [!NOTE] If you are on a paid Copilot plan, you qualify for a 10% discount on model costs while using auto model selection in Copilot Chat, Copilot CLI, the GitHub Copilot app, or Copilot cloud agent.
+>
+> <!-- expires 2026-10-28 -->
+>
+> [!NOTE]
+> If you are on the Copilot Max plan, you'll receive a 30% discount through October 28, 2026 while using auto model selection.
+>
+> <!-- end expires 2026-10-28 -->
 
 For guidance on how to optimize your usage and reduce spend, including how to set session limits to cap spend for agent tasks, see [Optimizing your AI usage to maximize efficiency and reduce cost](/en/copilot/tutorials/optimize-ai-usage).
 
 ## What happens if I exceed my included AI credits?
 
-> \[!NOTE]
+> [!NOTE]
 > This section applies to users who are on a Copilot Individual plan. If you use Copilot through a Copilot Business or Copilot Enterprise plan and exhaust all your AI credits, you'll see a banner on GitHub.com offering you the option to request more budget from your administrator.
 
 When your AI credits are exhausted, you can:
@@ -125,7 +132,7 @@ Your billing date will depend on whether or not you are already being billed by 
 
 For the best experience with usage-based billing, update your IDE, client, and Copilot extension to at least the versions listed below.
 
-> \[!NOTE]
+> [!NOTE]
 > Older versions will continue to work, but may display incorrect model pricing, inaccurate usage information, or outdated billing terminology. Usage alert notifications may also not appear as expected.
 
 | IDE, client, or extension    | Minimum version |

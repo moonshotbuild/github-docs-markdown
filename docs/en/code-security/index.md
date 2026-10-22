@@ -147,7 +147,7 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [About autofix for code scanning](/en/code-security/concepts/code-scanning/autofix-for-code-scanning)
 
-  Autofix automatically generates fixes for code scanning alerts, helping you remediate existing vulnerabilities.
+  Autofix generates potential fixes for code scanning alerts, helping you remediate existing vulnerabilities.
 
 * [AI Scan for pull requests](/en/code-security/concepts/code-scanning/ai-powered-security-detections)
 
@@ -217,9 +217,9 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   The tool status page provides visibility into the health and performance of code scanning tools in your repository.
 
-* [CodeQL pull request alert metrics](/en/code-security/concepts/code-scanning/pull-request-alert-metrics)
+* [Code scanning on pull requests](/en/code-security/concepts/code-scanning/code-scanning-on-pull-requests)
 
-  Understand CodeQL's performance in pull requests across your organizations.
+  Understand how CodeQL and AI Scan find and help prevent vulnerabilities in pull requests across your organizations.
 
 * [Repository properties for code scanning](/en/code-security/concepts/code-scanning/repository-properties)
 
@@ -365,53 +365,13 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   Increase your governance over security alerts with delegated alert dismissal.
 
-* [Supply chain security for your enterprise](/en/supply-chain-security)
-
-  You can enable enterprise-level features that help your developers understand and update the dependencies their code relies on.
-
-* [Establish complete coverage](/en/establish-complete-coverage)
-
-  Learn how to establish comprehensive, enterprise-wide security coverage by enabling GitHub Advanced Security, applying recommended or custom security configurations, and configuring additional secret scanning settings across your enterprise.
-
-* [Editing a custom security configuration](/en/edit-custom-configuration)
-
-  Change the enablement settings in your custom security configuration to better meet the security needs of your repositories.
-
-* [Deleting a custom security configuration](/en/delete-custom-configuration)
-
-  You can delete unnecessary custom security configurations in your enterprise.
-
 * [Enabling public monitoring for your enterprise](/en/code-security/how-tos/secure-at-scale/configure-enterprise-security/manage-your-coverage/enabling-public-monitoring-for-your-enterprise)
 
   Start detecting secrets your enterprise members leak in public repositories outside your enterprise's boundaries.
 
-* [Enabling the dependency graph for your enterprise](/en/enable-dependency-graph)
-
-  You can allow users to identify their projects' dependencies by enabling the dependency graph.
-
 * [Allowing use of GitHub Code Quality in your enterprise](/en/code-security/how-tos/secure-at-scale/configure-enterprise-security/configure-specific-tools/allow-github-code-quality-in-enterprise)
 
   Set enterprise policies for Code Quality to give organizations access while keeping repository enablement under your control.
-
-* [](/en/configuring-code-scanning-for-your-appliance)
-
-  You can enable, configure, and disable code scanning for your enterprise. Code scanning allows users to scan code for vulnerabilities and errors.
-
-* [Configuring dependency review for your appliance](/en/configure-dependency-review)
-
-  To help users understand dependency changes when reviewing pull requests, you can enable, configure, and disable dependency review for GitHub Enterprise Server.
-
-* [Configuring secret scanning for your appliance](/en/configure-secret-scanning)
-
-  You can enable, configure, and disable secret scanning for GitHub Enterprise Server. Secret scanning allows users to scan code for accidentally committed secrets.
-
-* [Viewing the vulnerability data for your enterprise](/en/view-vulnerability-data)
-
-  You can view vulnerability data from the GitHub Advisory Database on GitHub Enterprise Server.
-
-* [Configuring Dependabot to work with limited internet access](/en/configure-limited-internet-access)
-
-  You can configure Dependabot to generate pull requests for version and security updates using private registries when GitHub Enterprise Server has limited, or no, internet access.
 
 * [Setting up Dependabot to run on github-hosted action runners using the Azure Private Network](/en/code-security/how-tos/secure-at-scale/configure-enterprise-security/configure-specific-tools/setting-dependabot-to-run-on-github-hosted-runners-using-vnet)
 
@@ -559,7 +519,7 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [Configuring default setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning)
 
-  Quickly set up code scanning to find vulnerable code automatically.
+  Quickly set up code scanning to find and fix vulnerable code automatically.
 
 * [Configuring advanced setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configuring-advanced-setup-for-code-scanning)
 
@@ -697,6 +657,10 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   Prevent malware attacks by identifying and remediating malicious dependencies.
 
+* [Protecting endpoints with GitHub package firewall](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/protecting-endpoints-with-package-firewall)
+
+  Protect dependency installations on developer machines, AI agents, and CI runners with GitHub package firewall.
+
 * [Configuring Dependabot security updates](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-security-updates)
 
   You can use Dependabot security updates or manual pull requests to easily update vulnerable dependencies.
@@ -723,7 +687,7 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [Exploring the dependencies of a repository](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/explore-dependencies)
 
-  You can use the dependency graph to see the packages your project depends on. In addition, you can see any vulnerabilities detected in its dependencies.
+  You can use the dependency graph to see the packages your project depends on and the repositories that depend on it. In addition, you can see any vulnerabilities detected in its dependencies.
 
 * [Configuring automatic dependency submission for your repository](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/submit-dependencies-automatically)
 
@@ -847,7 +811,7 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [Viewing and filtering alerts from secret scanning](/en/code-security/how-tos/manage-security-alerts/manage-secret-scanning-alerts/viewing-alerts)
 
-  Learn how to find and filter secret scanning alerts for your repository.
+  Learn how to find and filter secret scanning alerts for users for your repository.
 
 * [Resolving alerts from secret scanning](/en/code-security/how-tos/manage-security-alerts/manage-secret-scanning-alerts/resolving-alerts)
 
@@ -873,13 +837,17 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   From the security view, you can view, fix, or dismiss alerts for potential vulnerabilities or errors in your project's code.
 
+* [Managing access to agentic autofix for code scanning](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/managing-access-to-agentic-autofix-for-code-scanning)
+
+  Control the rollout of agentic autofix across your enterprise, organizations, and repositories.
+
 * [Enabling delegated alert dismissal for code scanning](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/enable-delegated-alert-dismissal)
 
   You can use delegated alert dismissal to control who can dismiss an alert found by code scanning.
 
-* [Disabling autofix for code scanning security alerts](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/disabling-autofix-for-code-scanning)
+* [Disabling Copilot Autofix for code scanning](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/disabling-copilot-autofix-for-code-scanning)
 
-  You can disable Copilot Autofix, which also blocks agentic autofix, for an enterprise, organization, or repository.
+  You can disable Copilot Autofix for an enterprise, organization, or repository.
 
 * [Viewing and updating Dependabot alerts](/en/code-security/how-tos/manage-security-alerts/manage-dependabot-alerts/view-dependabot-alerts)
 
@@ -1019,15 +987,15 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [Exporting data from security overview](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/export-data)
 
-  From security overview, you can export CSV files of the data used for your organization or enterprise's overview, risk, coverage, and CodeQL pull request insights pages.
+  From security overview, you can export CSV files of the data used for your organization or enterprise's overview, risk, coverage, and code scanning pull request insights pages.
 
 * [Viewing security insights](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-security-insights)
 
   Monitor your organization security posture, identify high-risk repositories, and track alert remediation progress using the overview dashboard in security overview.
 
-* [Viewing metrics for pull request alerts](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-metrics-for-pull-request-alerts)
+* [Viewing code scanning metrics for pull requests](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-metrics-for-pull-request-alerts)
 
-  Monitor CodeQL's performance in pull requests across your organizations to identify repositories where you may need to take action.
+  Monitor how CodeQL and AI Scan perform in pull requests across your organizations to identify repositories where you may need to take action.
 
 * [Viewing metrics for secret scanning push protection](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-metrics-for-secret-scanning-push-protection)
 
@@ -1080,10 +1048,6 @@ Build security and code quality into your GitHub workflow with integrated toolin
 * [A repository is using advanced setup for code scanning](/en/code-security/reference/security-at-scale/troubleshoot-security-configurations/a-repository-is-using-advanced-setup-for-code-scanning)
 
   You see an error when you try to attach a security configuration with default code scanning enabled to repositories that use advanced setup for code scanning.
-
-* [A feature has disappeared from a security configuration](/en/feature-disappears)
-
-  Changes to your GitHub Enterprise Server instance's installation settings by a site administrator may affect which security features are available to your configuration.
 
 * [Default setup for code scanning overrides advanced setup](/en/code-security/reference/security-at-scale/troubleshoot-security-configurations/unexpected-default-setup)
 
@@ -1147,7 +1111,7 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
 * [Upload fails because GitHub Code Security is disabled](/en/code-security/reference/code-scanning/sarif-files/troubleshoot-sarif-uploads/ghas-required)
 
-  You can only upload SARIF results to repositories where GitHub Code Security is enabled.
+  You can only upload SARIF results to private or internal repositories where GitHub Code Security is enabled.
 
 * [Upload was rejected because CodeQL default setup is enabled for code scanning](/en/code-security/reference/code-scanning/sarif-files/troubleshoot-sarif-uploads/default-setup-enabled)
 
@@ -1380,6 +1344,8 @@ Build security and code quality into your GitHub workflow with integrated toolin
 * [generate overlay-changes](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/generate-overlay-changes)
 
   \[Plumbing] Generate a file that can be used for the
+  \--overlay-changes option to
+  codeql database create when extracting an overlay database.
 
 * [generate query-help](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/generate-query-help)
 
@@ -1798,10 +1764,6 @@ Build security and code quality into your GitHub workflow with integrated toolin
 * [Exploring your enterprise trial of GitHub Code Security](/en/code-security/tutorials/trialing-github-advanced-security/explore-trial-code-scanning)
 
   Introduction to the features of code and dependency scanning available with GitHub Code Security in GitHub Enterprise Cloud so you can assess their fit to your business needs.
-
-* [Adopting GitHub Advanced Security at scale](/en/adopting-github-advanced-security-at-scale)
-
-  A phased approach to rolling out GitHub Advanced Security at your company using industry and GitHub best practices.
 
 * [Best practices for preventing data leaks in your organization](/en/code-security/tutorials/secure-your-organization/prevent-data-leaks)
 

@@ -21,7 +21,7 @@ By default, GitHub Codespaces are automatically deleted after they have been sto
 
 However, because GitHub Codespaces incurs storage charges, you may prefer to reduce the retention period by changing your default period in your personal settings for GitHub Codespaces. For more information about storage charges, see [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces#pricing).
 
-> \[!NOTE]
+> [!NOTE]
 > Whether or not you have set a personal codespace retention period, it's a good idea to get into the habit of deleting codespaces that you no longer need. See [Deleting a codespace](/en/codespaces/developing-in-a-codespace/deleting-a-codespace).
 
 Automatic deletion happens irrespective of whether a codespace contains unpushed changes. To prevent automatic deletion of a codespace, just open the codespace again. The retention period is reset every time you connect to a codespace, and the retention countdown restarts when the codespace is stopped.
@@ -34,7 +34,7 @@ Each codespace has its own retention period. You may, therefore, have codespaces
 * You created a codespace using GitHub CLI and specified a different retention period.
 * You created a codespace for an organization-owned repository that has a retention period configured in the organization settings. The ownership of the codespaces you create is shown on the [Your codespaces](https://github.com/settings/codespaces) page.
 
-> \[!NOTE]
+> [!NOTE]
 > The retention period is specified in days. A day represents a 24-hour period, beginning at the time of day when you stop a codespace.
 
 <div class="ghd-tool webui">
@@ -51,7 +51,7 @@ Each codespace has its own retention period. You may, therefore, have codespaces
 
    You can set your default retention period between `0` and `30` days.
 
-   > \[!WARNING]
+   > [!WARNING]
    > Setting the period to `0` will result in your codespaces being immediately deleted when you stop them, or when they timeout due to inactivity. See [Setting your timeout period for GitHub Codespaces](/en/codespaces/setting-your-user-preferences/setting-your-timeout-period-for-github-codespaces).
 
 4. Click **Save**.
@@ -72,7 +72,7 @@ When an inactive codespace is approaching the end of its retention period, this 
 
 You may have a codespace that you want to keep for longer than the retention period defined in your personal settings. You can do this by using the "Keep codespace" option. When you select this option, your codespace will be retained indefinitely, until you delete it manually.
 
-> \[!NOTE]
+> [!NOTE]
 > The "Keep codespace" option is not available for organization-owned codespaces affected by an organization retention policy.
 
 Codespaces incur storage costs, or consume your included storage allowance if the codespace is owned by your personal GitHub account. You should therefore be aware of the cost implications of storing codespaces indefinitely. See [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces).
@@ -102,7 +102,7 @@ gh codespace create --retention-period DAYS
 
 If you don't specify a retention period when you create a codespace, then either your default retention period, or an organization retention period, will be used, depending on which is lower. For information about setting your default retention period, click the "Web browser" tab on this page.
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 </div>
@@ -121,7 +121,7 @@ You can check, in the Visual Studio Code desktop application, whether a codespac
 
    ![Screenshot of the Activity Bar. The icon for the "Remote Explorer" side bar (a rectangle overlaid by a circle) is highlighted with an orange outline.](/assets/images/help/codespaces/click-remote-explorer-icon-vscode.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    > If the Remote Explorer is not displayed in the Activity Bar:
    >
    > 1. Access the Command Palette. For example, by pressing <kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>P</kbd> (Mac) / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows/Linux).

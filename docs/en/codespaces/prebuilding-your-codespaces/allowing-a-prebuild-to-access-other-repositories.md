@@ -23,7 +23,7 @@ By default, the GitHub Actions workflow for a prebuild configuration can only ac
 
 You can configure read access to other GitHub repositories, with the same repository owner, by specifying permissions in the `devcontainer.json` file used by your prebuild configuration. For more information, see [Managing access to other repositories within your codespace](/en/codespaces/managing-your-codespaces/managing-repository-access-for-your-codespaces).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * You can only authorize read permissions in this way, and the owner of the target repository must be the same as the owner of the repository for which you're creating a prebuild. For example, if you're creating a prebuild configuration for the `octo-org/octocatrepository`, then you'll be able to grant read permissions for other repositories, such as `octo-org/octodemo`, if this is specified in the `devcontainer.json` file, and provided you have the permissions yourself.
 > * You can't use wildcards to specify repositories. You must define permissions for each repository for which you want to grant access.
@@ -38,7 +38,7 @@ You will need to create a new personal account and then use this account to crea
 
 1. Create a new personal account on GitHub.
 
-   > \[!WARNING]
+   > [!WARNING]
    > Although you can generate the personal access token (classic) using your existing personal account, we strongly recommend creating a new account with access only to the target repositories required for your scenario. This is because the access token's `repository` permission grants access to all of the repositories that the account has access to. For more information, see [Creating an account on GitHub](/en/account-and-profile/how-tos/account-management/creating-an-account-on-github) and [Secure use reference](/en/actions/reference/security/secure-use).
 
 2. Give the new account read access to the required repositories. For more information, see [Managing an individual's access to an organization repository](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/managing-an-individuals-access-to-an-organization-repository).

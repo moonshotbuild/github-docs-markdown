@@ -53,7 +53,7 @@ How can I handle API rate limits within get_weather().
 
 ## Example response
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 Copilot might suggest code that implements a retry mechanism with exponential backoff to limit the frequency of retry attempts.
 
@@ -105,5 +105,5 @@ In this example, Copilot's suggestions include setting up a retry session that a
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

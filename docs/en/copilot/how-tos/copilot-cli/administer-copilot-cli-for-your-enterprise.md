@@ -31,7 +31,7 @@ You can control the use of Copilot CLI by configuring a policy.
 4. Under "Features & clients," click **Configure features & clients**.
 5. In the "Clients" section, for Copilot CLI, select your preferred policy.
 
-> \[!NOTE]
+> [!NOTE]
 > Disabling Copilot CLI does not disable the GitHub Copilot app. The app is governed by its own policy. For more information, see [GitHub Copilot app](/en/copilot/concepts/copilot-surfaces/github-copilot-app).
 
 ## How do other AI controls affect Copilot CLI?
@@ -48,7 +48,7 @@ Users can only access AI models that are enabled at the enterprise level. When y
 
 Enterprise and organization owners can provide keys for custom models. Users can select these like any other model: with the Copilot CLI model selector, the `--model` flag, or environment variables. See [Enabling custom models for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/enable-custom-models).
 
-Separately, users can also provide their own LLM keys locally. This is not controlled by enterprise policies. See [Using your own LLM models in GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models).
+Separately, users can also provide their own LLM keys locally. This is not controlled by enterprise policies. See [Adding LLM models to GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models).
 
 ### Custom agents
 

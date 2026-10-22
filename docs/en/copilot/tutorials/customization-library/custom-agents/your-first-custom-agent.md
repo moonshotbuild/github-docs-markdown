@@ -21,7 +21,7 @@ breadcrumbs:
 
 Create and test your first custom agent with this simple README specialist example.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The examples in this library are intended for inspiration—you are encouraged to adjust them to be more specific to your projects, languages, and team processes.
 > * For community-contributed examples for specific languages and scenarios, see the [Awesome GitHub Copilot Customizations](https://github.com/github/awesome-copilot/tree/main/agents) repository.
@@ -30,7 +30,7 @@ Create and test your first custom agent with this simple README specialist examp
 
 Custom agents are specialized versions of Copilot cloud agent that maintain consistent expertise across entire workflows. Unlike custom instructions that apply broadly, or prompt files for one-time tasks, custom agents are selected for specific tasks and maintain their configuration throughout the workflow.
 
-For a more in-depth overview, see [About custom agents](/en/copilot/concepts/agents/cloud-agent/about-custom-agents).
+For a more in-depth overview, see [Custom agents](/en/copilot/concepts/customizations/custom-agents).
 
 ## Your first custom agent
 
@@ -97,6 +97,6 @@ The agent task will appear on the page below the text box. The agent will focus 
 
 ## Further reading
 
-* [About custom agents](/en/copilot/concepts/agents/cloud-agent/about-custom-agents)
+* [Custom agents](/en/copilot/concepts/customizations/custom-agents)
 * [Creating custom agents for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents)
 * [Custom agents configuration](/en/copilot/reference/custom-agents-configuration)

@@ -23,10 +23,10 @@ breadcrumbs:
 
 You can modify Copilot's behavior and abilities when it works on particular tasks.
 
-> \[!NOTE]
+> [!NOTE]
 > Agent skills work with Copilot cloud agent, Copilot code review, the GitHub Copilot CLI, the GitHub Copilot app, and agent mode in Visual Studio Code.
 
-Agent skills are folders of instructions, scripts, and resources that Copilot can load when relevant to improve its performance in specialized tasks. For more information, see [About agent skills](/en/copilot/concepts/agents/about-agent-skills).
+Agent skills are folders of instructions, scripts, and resources that Copilot can load when relevant to improve its performance in specialized tasks. For more information, see [Agent skills](/en/copilot/concepts/agents/about-agent-skills).
 
 ## Creating and adding a skill
 
@@ -44,7 +44,7 @@ To create an agent skill, you write a `SKILL.md` file and, optionally, other res
 
 3. In your skill subdirectory, create a `SKILL.md` file containing your skill's instructions.
 
-   > \[!IMPORTANT]
+   > [!IMPORTANT]
    > Skill files must be named `SKILL.md`.
 
    `SKILL.md` files are Markdown files with YAML frontmatter. In their simplest form, they include:
@@ -104,7 +104,7 @@ To create a skill that runs a script:
    ---
    ```
 
-   > \[!WARNING]
+   > [!WARNING]
    > Only pre-approve the `shell` or `bash` tools if you have reviewed this skill and any referenced scripts, and you fully trust their source. Pre-approving `shell` or `bash` removes the confirmation step for running terminal commands and can allow attacker-controlled skills or prompt injections to execute arbitrary commands in your environment. When in doubt, omit `shell` and `bash` from `allowed-tools` so that Copilot must ask for your explicit confirmation before running terminal commands.
 
 3. **Write instructions that tell Copilot how to use the script.** In the Markdown body of `SKILL.md`, describe when and how to run the script.
@@ -119,7 +119,7 @@ To create a skill that runs a script:
 
 In addition to creating your own skills, you can also add skills that other people have created.
 
-> \[!TIP]
+> [!TIP]
 > You can also use `gh skill` in GitHub CLI to search for, install, update, and publish agent skills. For more information, see [Adding agent skills for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills#managing-skills-with-github-cli).
 
 1. Download a skill directory (that is, a directory containing a SKILL.md file and, optionally, other files and subdirectories).
@@ -136,7 +136,7 @@ In addition to creating your own skills, you can also add skills that other peop
 
 ## Managing skills with GitHub CLI
 
-> \[!NOTE]
+> [!NOTE]
 > `gh skill` is in public preview and subject to change. To use it, update GitHub CLI to version 2.90.0 or later.
 
 You can use the `gh skill` command in GitHub CLI to discover, install, update, and publish agent skills from GitHub repositories.
@@ -147,7 +147,7 @@ For the full list of `gh skill` subcommands, run `gh skill --help` or see the [`
 
 You can search for skills, preview them, and install them from GitHub repositories.
 
-> \[!WARNING]
+> [!WARNING]
 > Skills are not verified by GitHub and may contain prompt injections, hidden instructions, or malicious scripts. Always inspect the content of a skill before installation using `gh skill preview`.
 
 1. Search for skills by topic:
@@ -192,7 +192,7 @@ You can search for skills, preview them, and install them from GitHub repositori
    gh skill install github/awesome-copilot documentation-writer --pin v1.2.0
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > The `@VERSION` syntax and `--pin` flag are mutually exclusive. Use one or the other, not both.
 
    To install a skill for a specific agent host, use the `--agent` flag. To control the install scope, use `--scope`:

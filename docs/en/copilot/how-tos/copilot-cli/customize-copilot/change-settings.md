@@ -100,7 +100,7 @@ For example:
 
 Copilot writes the value and confirms it, for example: `Set autoUpdate = false.`
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * **Boolean settings** accept `on`/`off` or `true`/`false`. For example, `/settings renderMarkdown on`.
 > * **Settings with a fixed set of choices** accept one of those values. For example, `/settings theme dim` or `/settings banner never`.

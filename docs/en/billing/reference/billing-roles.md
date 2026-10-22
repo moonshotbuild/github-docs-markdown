@@ -23,7 +23,7 @@ The following roles have access to the billing platform:
 
 * **Organization owners and organization billing managers**: Can manage billing for an organization on GitHub Free or GitHub Team.
 
-  > \[!NOTE]
+  > [!NOTE]
   > If your organization is owned by an enterprise account, you cannot add billing managers at the organization level. Billing for enterprise-owned organizations is managed at the enterprise level.
 
 * **Personal accounts (non-managed)**: Can access the billing platform for their personal usage.

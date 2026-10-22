@@ -27,7 +27,7 @@ Ensure your Azure resources have been configured *before* adding a network confi
 
 GitHub deploys your runners in the same Azure region as the subnet you connect them to. Because of this, your subnet must be in one of the supported regions. The GitHub Actions service supports a subset of all the regions that Azure provides, which facilitates communication between the GitHub Actions service and your subnet.
 
-> \[!NOTE] If you use data residency on GHE.com, the supported regions are different. See [Network details for GHE.com](/en/enterprise-cloud@latest/admin/data-residency/network-details-for-ghecom#supported-regions-for-azure-private-networking).
+> [!NOTE] If you use data residency on GHE.com, the supported regions are different. See [Network details for GHE.com](/en/enterprise-cloud@latest/admin/data-residency/network-details-for-ghecom#supported-regions-for-azure-private-networking).
 
 The following regions are supported on GitHub.com.
 
@@ -171,7 +171,7 @@ If network settings were configured using an organization's `databaseId` instead
 
 ### Failover network not switching traffic
 
-> \[!NOTE]
+> [!NOTE]
 > VNET failover is in public preview and subject to change.
 > \[!IMPORTANT]
 > Switching between the primary and failover networks is a gradual process. During the transition, runners may be running on both networks simultaneously. Based on testing, the full transition takes approximately 15 minutes. Ensure both subnets remain accessible during this period.

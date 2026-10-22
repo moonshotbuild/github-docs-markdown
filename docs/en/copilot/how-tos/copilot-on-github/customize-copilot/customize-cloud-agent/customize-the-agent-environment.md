@@ -42,7 +42,7 @@ In addition, you can:
 * [Configure secrets and variables for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/configure-secrets-and-variables)
 * [Customizing or disabling the firewall for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-the-firewall).
 
-> \[!NOTE]
+> [!NOTE]
 > Organization owners can configure the default runner type for Copilot cloud agent across all repositories in their organization, and choose whether repositories are allowed to override this default. For more information, see [Configuring runners for GitHub Copilot cloud agent in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/configure-runner-for-coding-agent).
 
 ## Customizing Copilot's development environment with Copilot setup steps
@@ -51,7 +51,7 @@ You can customize Copilot's environment by creating a special GitHub Actions wor
 
 A `copilot-setup-steps.yml` file looks like a normal GitHub Actions workflow file, but must contain a single `copilot-setup-steps` job. The steps in this job will be executed in GitHub Actions before Copilot starts working. For more information on GitHub Actions workflow files, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax).
 
-> \[!NOTE]
+> [!NOTE]
 > The `copilot-setup-steps.yml` workflow won't trigger unless it's present on your default branch.
 
 Here is a simple example of a `copilot-setup-steps.yml` file for a TypeScript project that clones the project, installs Node.js and downloads and caches the project's dependencies. You should customize this to fit your own project, including its language(s), its dependencies, and the workflow triggers you need. For example, you wouldn't typically run on both `push` and `pull_request`.
@@ -171,7 +171,7 @@ By default, Copilot works in a standard GitHub Actions runner. You can upgrade t
        # ...
    ```
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Copilot cloud agent is only compatible with Ubuntu x64 Linux and Windows 64-bit runners. Runners with macOS or other operating systems are not supported.
 
@@ -181,7 +181,7 @@ You can run Copilot cloud agent on self-hosted runners. You may want to do this 
 
 We recommend that you only use Copilot cloud agent with ephemeral, single-use runners that are not reused for multiple jobs. Most customers set this up using ARC (Actions Runner Controller) or the GitHub Actions Runner Scale Set Client. For more information, see [Self-hosted runners reference](/en/actions/reference/runners/self-hosted-runners#autoscaling).
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot cloud agent is only compatible with Ubuntu x64 and Windows 64-bit runners. Runners with macOS or other operating systems are not supported.
 
 1. Configure network security controls for your GitHub Actions runners to ensure that Copilot cloud agent does not have open access to your network or the public internet.

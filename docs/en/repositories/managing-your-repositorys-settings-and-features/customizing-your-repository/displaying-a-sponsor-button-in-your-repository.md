@@ -60,12 +60,12 @@ tidelift: npm/octo-package
 custom: ["https://www.paypal.me/octocat", octocat.com]
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > If a custom URL in an array includes `:`, you must wrap the URL in quotes. For example, `"https://www.paypal.me/octocat"`.
 
 You can create a default sponsor button for your organization or personal account. For more information, see [Creating a default community health file](/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
 
-> \[!NOTE]
+> [!NOTE]
 > Funding links provide a way for open source projects to receive direct financial support from their community. We don’t support the use of funding links for other purposes, such as for advertising, or supporting political, community, or charity groups. If you have questions about whether your intended use is supported, please visit [GitHub Support](https://support.github.com).
 
 ## Displaying a sponsor button in your repository

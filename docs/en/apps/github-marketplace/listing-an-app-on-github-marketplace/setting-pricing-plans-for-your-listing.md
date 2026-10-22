@@ -19,7 +19,7 @@ breadcrumbs:
 
 When you list your app on GitHub Marketplace, you can choose to provide your app as a free service or sell your app. If you plan to sell your app, you can create different pricing plans for different feature tiers.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 ## About setting pricing plans
@@ -61,7 +61,7 @@ When you click **New draft plan**, you'll see a form that allows you to customiz
 
 * **Bullets** - You can write up to four bullets that include more details about your pricing plan. The bullets might include the use cases of your app or list more detailed information about the resources or features included in the plan.
 
-> \[!NOTE]
+> [!NOTE]
 > If you're listing an app on GitHub Marketplace, you can't list your app with a free pricing plan if you offer a paid service outside of GitHub Marketplace.
 
 ## Changing a GitHub Marketplace listing's pricing plan
@@ -72,7 +72,7 @@ Once you publish a pricing plan for an app that is already listed in GitHub Mark
 
 Once you remove a pricing plan, users won't be able to purchase your app using that plan. Existing users on the removed pricing plan will continue to stay on the plan until they cancel their plan subscription.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub can't remove users from a removed pricing plan. You can run a campaign to encourage users to upgrade or downgrade from the removed pricing plan onto a new pricing plan.
 
 You can disable GitHub Marketplace free trials without retiring the pricing plan, but this prevents you from initiating future free trials for that plan. If you choose to disable free trials for a pricing plan, users already signed up can complete their free trial.

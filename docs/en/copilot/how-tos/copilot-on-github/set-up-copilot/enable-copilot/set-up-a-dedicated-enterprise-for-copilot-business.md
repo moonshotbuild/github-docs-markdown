@@ -29,7 +29,7 @@ Before you begin, see [About enterprise accounts for Copilot Business](/en/copil
 
 If you will pay by credit card or PayPal, you can create an enterprise account and purchase Copilot Business yourself.
 
-> \[!NOTE] For other payment methods, contact [GitHub's Sales team](https://github.com/enterprise/contact?ref_product=copilot\&ref_type=engagement\&ref_style=text) and ask for an enterprise account with Copilot enabled.
+> [!NOTE] For other payment methods, contact [GitHub's Sales team](https://github.com/enterprise/contact?ref_product=copilot\&ref_type=engagement\&ref_style=text) and ask for an enterprise account with Copilot enabled.
 
 1. Start a trial of GitHub Enterprise Cloud.
 
@@ -82,7 +82,7 @@ If your enterprise uses personal accounts and the unaffiliated users policy is s
 
 ### Step 2: Remove the organization
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Before taking action, make sure you review the effects of removing or deleting an organization in the linked documentation.
 
 * If your enterprise uses personal accounts, remove the organization from your enterprise. See [Removing organizations from your enterprise](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-organizations-in-your-enterprise/removing-organizations-from-your-enterprise).

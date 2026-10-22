@@ -30,10 +30,10 @@ For lists of available runners, see:
 
 GitHub-hosted Linux runners support hardware acceleration for Android SDK tools, which makes running Android tests much faster and consumes fewer minutes. For more information on Android hardware acceleration, see [Configure hardware acceleration for the Android Emulator](https://developer.android.com/studio/run/emulator-acceleration) in the Android Developers documentation.
 
-> \[!NOTE]
+> [!NOTE]
 > The `-latest` runner images are the latest stable images that GitHub provides, and might not be the most recent version of the operating system available from the operating system vendor.
 
-> \[!WARNING]
+> [!WARNING]
 > Beta and Deprecated Images are provided "as-is", "with all faults" and "as available" and are excluded from the service level agreement and warranty. Beta Images may not be covered by customer support.
 
 ### Standard GitHub-hosted runners for public repositories
@@ -257,7 +257,7 @@ Single-CPU GitHub-hosted runners are available in both public and private reposi
 
 `ubuntu-slim` runners execute Actions workflows in Ubuntu Linux, inside a container rather than a full VM instance. When the job begins, GitHub automatically provisions a new container for that job. All steps in the job execute in the container, allowing the steps in that job to share information using the runner's file system. When the job has finished, the container is automatically decommissioned. Each container provides hypervisor level 2 isolation.
 
-> \[!NOTE]
+> [!NOTE]
 > The container for `ubuntu-slim` runners runs in unprivileged mode. This means that some operations requiring elevated privileges—such as mounting file systems, using Docker-in-Docker, or accessing low-level kernel features—are not supported.
 
 A minimal set of tools is installed on the `ubuntu-slim` runner image, appropriate for lightweight tasks. For details on what software is installed on the `ubuntu-slim` image, see the [README file](https://github.com/actions/runner-images/blob/main/images/ubuntu-slim/ubuntu-slim-Readme.md) in the `actions/runner-images` repository.
@@ -307,7 +307,7 @@ A GitHub-hosted runner must establish connections to GitHub-owned endpoints to p
 
 To ensure proper communications for GitHub-hosted runners between networks within your configuration, ensure that the following communications are allowed.
 
-> \[!NOTE]
+> [!NOTE]
 > Some of the domains listed are configured using `CNAME` records. Some firewalls might require you to add rules recursively for all `CNAME` records. Note that the `CNAME` records might change in the future, and that only the domains listed will remain constant.
 
 **Needed for essential operations:**

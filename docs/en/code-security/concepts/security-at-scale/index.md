@@ -42,7 +42,3 @@ Learn about the concepts behind managing code security at scale in your organiza
 * [Delegated alert dismissal](/en/code-security/concepts/security-at-scale/delegated-alert-dismissal)
 
   Increase your governance over security alerts with delegated alert dismissal.
-
-* [Supply chain security for your enterprise](/en/supply-chain-security)
-
-  You can enable enterprise-level features that help your developers understand and update the dependencies their code relies on.

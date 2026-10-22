@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can send contribution counts from GitHub Enterprise Server to your profile on GitHub.com or GHE.com.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > The connection between your accounts is governed by [GitHub's Privacy Statement](/en/site-policy/privacy-policies/github-general-privacy-statement) and users enabling the connection must agree to the [GitHub Terms of Service](/en/site-policy/github-terms/github-terms-of-service).
 
 ## Sending your enterprise contributions to your profile

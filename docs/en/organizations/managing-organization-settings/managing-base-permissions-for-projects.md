@@ -23,7 +23,7 @@ You can set a project's base permission to control the level of access for all m
 
 When you set the base permission for projects in your organization's settings, the base permission will apply to any new projects created by organization members and existing projects that do not currently have a base permission configured in the project's settings.
 
-> \[!NOTE]
+> [!NOTE]
 > When you migrate a project (classic) to an organization, the organization's base permission for projects will not be applied. After migrating your project, make sure to confirm the project's permissions. For more information, see [Managing access to your projects](/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects).
 
 ## Setting a base permission for projects in your organization

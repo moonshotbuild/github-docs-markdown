@@ -39,14 +39,14 @@ Organization owners can also choose to further limit access to certain settings 
 
 In addition to managing organization-level settings, organization owners have admin access to every repository owned by the organization. For more information, see [Roles in an organization](/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization).
 
-> \[!WARNING]
+> [!WARNING]
 > When someone adds a deploy key to a repository, any user who has the private key can read from or write to the repository (depending on the key settings), even if they're later removed from the organization.
 
 ## Permissions for each role
 
 Some of the features listed below are limited to organizations using GitHub Enterprise Cloud. For more information about how you can try GitHub Enterprise Cloud for free, see [Setting up a trial of GitHub Enterprise Cloud](/en/enterprise-cloud@latest/admin/overview/setting-up-a-trial-of-github-enterprise-cloud).
 
-> \[!NOTE]
+> [!NOTE]
 > The roles required to use security features are listed in [Access requirements for security features](#access-requirements-for-security-features) below.
 
 <div class="ghd-tool rowheaders">
@@ -149,7 +149,7 @@ Some of the features listed below are limited to organizations using GitHub Ente
 
 In this section, you can find the access required for security features, such as GitHub Advanced Security features.
 
-> \[!NOTE]
+> [!NOTE]
 > Repository writers and maintainers can only directly view secret scanning alert information for their own commits. They cannot access the alert list view.
 
 <div class="ghd-tool rowheaders">

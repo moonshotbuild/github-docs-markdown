@@ -13,18 +13,18 @@ breadcrumbs:
     href: "/en/rest/dependabot/alerts"
 ---
 
-# REST API endpoints for Dependabot alerts
+# REST API endpoints for {% data variables.product.prodname\_dependabot\_alerts %}
 
 Use the REST API to interact with Dependabot alerts for a repository.
 
-> \[!NOTE]
+> [!NOTE]
 > The ability to use the REST API to manage Dependabot alerts is currently in public preview and subject to change.
 
 ## About Dependabot alerts
 
 You can view Dependabot alerts for a repository and update individual alerts with the REST API. For more information, see [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List Dependabot alerts for an enterprise
@@ -72,11 +72,11 @@ OAuth app tokens and personal access tokens (classic) need the repo or security\
 * **`epss_percentage`** (string)
   CVE Exploit Prediction Scoring System (EPSS) percentage. Can be specified as:
 
-An exact number (n)
-Comparators such as >n, \<n, >=n, <=n
-A range like n..n, where n is a number from 0.0 to 1.0
+  An exact number (n)
+  Comparators such as >n, \<n, >=n, <=n
+  A range like n..n, where n is a number from 0.0 to 1.0
 
-Filters the list of alerts based on EPSS percentages. If specified, only alerts with the provided EPSS percentages will be returned.
+  Filters the list of alerts based on EPSS percentages. If specified, only alerts with the provided EPSS percentages will be returned.
 
 * **`has`** (string)
   Filters the list of alerts based on whether the alert has the given value. If specified, only alerts meeting this criterion will be returned.
@@ -95,7 +95,7 @@ Filters the list of alerts based on EPSS percentages. If specified, only alerts 
   A comma-separated list of relationships of the vulnerable dependency to your project. If specified, only alerts with these relationships will be returned.
   Note
 
-We are rolling out support for dependency relationship across ecosystems. This value will be "unknown" for all dependencies in unsupported ecosystems.
+  We are rolling out support for dependency relationship across ecosystems. This value will be "unknown" for all dependencies in unsupported ecosystems.
 
 * **`sort`** (string)
   The property by which to sort the results.
@@ -337,11 +337,11 @@ OAuth app tokens and personal access tokens (classic) need the security\_events 
 * **`epss_percentage`** (string)
   CVE Exploit Prediction Scoring System (EPSS) percentage. Can be specified as:
 
-An exact number (n)
-Comparators such as >n, \<n, >=n, <=n
-A range like n..n, where n is a number from 0.0 to 1.0
+  An exact number (n)
+  Comparators such as >n, \<n, >=n, <=n
+  A range like n..n, where n is a number from 0.0 to 1.0
 
-Filters the list of alerts based on EPSS percentages. If specified, only alerts with the provided EPSS percentages will be returned.
+  Filters the list of alerts based on EPSS percentages. If specified, only alerts with the provided EPSS percentages will be returned.
 
 * **`artifact_registry_url`** (string)
   A comma-separated list of artifact registry URLs. If specified, only alerts for repositories with storage records matching these URLs will be returned.
@@ -371,7 +371,7 @@ Filters the list of alerts based on EPSS percentages. If specified, only alerts 
   A comma-separated list of relationships of the vulnerable dependency to your project. If specified, only alerts with these relationships will be returned.
   Note
 
-We are rolling out support for dependency relationship across ecosystems. This value will be "unknown" for all dependencies in unsupported ecosystems.
+  We are rolling out support for dependency relationship across ecosystems. This value will be "unknown" for all dependencies in unsupported ecosystems.
 
 * **`sort`** (string)
   The property by which to sort the results.
@@ -474,11 +474,11 @@ OAuth app tokens and personal access tokens (classic) need the security\_events 
 * **`epss_percentage`** (string)
   CVE Exploit Prediction Scoring System (EPSS) percentage. Can be specified as:
 
-An exact number (n)
-Comparators such as >n, \<n, >=n, <=n
-A range like n..n, where n is a number from 0.0 to 1.0
+  An exact number (n)
+  Comparators such as >n, \<n, >=n, <=n
+  A range like n..n, where n is a number from 0.0 to 1.0
 
-Filters the list of alerts based on EPSS percentages. If specified, only alerts with the provided EPSS percentages will be returned.
+  Filters the list of alerts based on EPSS percentages. If specified, only alerts with the provided EPSS percentages will be returned.
 
 * **`has`** (string)
   Filters the list of alerts based on whether the alert has the given value. If specified, only alerts meeting this criterion will be returned.
@@ -497,7 +497,7 @@ Filters the list of alerts based on EPSS percentages. If specified, only alerts 
   A comma-separated list of relationships of the vulnerable dependency to your project. If specified, only alerts with these relationships will be returned.
   Note
 
-We are rolling out support for dependency relationship across ecosystems. This value will be "unknown" for all dependencies in unsupported ecosystems.
+  We are rolling out support for dependency relationship across ecosystems. This value will be "unknown" for all dependencies in unsupported ecosystems.
 
 * **`sort`** (string)
   The property by which to sort the results.

@@ -118,7 +118,7 @@ I want to customize my pull requests for Dependabot security and version updates
 Draft an update to the dependabot.yml file in my repository that specifies these customization options.
 ```
 
-> \[!TIP]
+> [!TIP]
 >
 > * There are many customization options to explore. For more information, see [Customizing pull requests for Dependabot security updates](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/customizing-dependabot-security-prs) and [Customizing Dependabot pull requests to fit your processes](/en/code-security/tutorials/secure-your-dependencies/customizing-dependabot-prs).
 > * You can specify different customizations per package ecosystem.

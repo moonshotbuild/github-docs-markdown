@@ -29,7 +29,7 @@ Alternatively, you can enable GitHub Actions for all repositories in your organi
 
 You can choose to disable GitHub Actions for all repositories in your organization, or only allow specific repositories. You can also limit the use of public actions and reusable workflows, so that people can only use local actions and reusable workflows that exist in your organization.
 
-> \[!NOTE]
+> [!NOTE]
 > You might not be able to manage these settings if your organization is managed by an enterprise that has overriding policy. For more information, see [Enforcing policies for GitHub Actions in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise).
 
 1. In the upper-right corner of GitHub, click your profile picture, then click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-organization" aria-label="organization" role="img"><path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path></svg> Organizations**.
@@ -58,7 +58,7 @@ You can choose to disable GitHub Actions for all repositories in your organizati
 
 When you choose **Allow *OWNER*, and select non-*OWNER*, actions and reusable workflows**, local actions (`./` and `$/`) and reusable workflows are allowed, and there are additional options for allowing other specific actions and reusable workflows:
 
-> \[!NOTE]
+> [!NOTE]
 > You might not be able to manage these settings if your organization has an overriding policy or is managed by an enterprise that has overriding policy. For more information, see [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization) or [Enforcing policies for GitHub Actions in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise).
 
 * **Allow actions created by GitHub:** You can allow all actions created by GitHub to be used by workflows. Actions created by GitHub are located in the `actions` and `github` organizations. For more information, see the [`actions`](https://github.com/actions) and [`github`](https://github.com/github) organizations.
@@ -75,6 +75,14 @@ When you choose **Allow *OWNER*, and select non-*OWNER*, actions and reusable wo
   Use `,` to separate patterns. For example, to allow all actions and reusable workflows from the `octocat` and `octokit` organizations, you can specify `octocat/*, octokit/*`.
 
   Use the `!` prefix to block patterns. For example, to allow all actions and reusable workflows from the `space-org` organization, but block a specific action like `space-org/action`, you can specify `space-org/*, !space-org/action@*`. By default, only actions and reusable workflows specified in the list will be allowed. To allow all actions and reusable workflows while also blocking specific actions, you can specify `*, !space-org/action@*`.
+
+> [!NOTE]
+> For workflows covered by a dependency lockfile, this policy checks each locked dependency by its commit SHA instead of the tag or branch in the workflow file. Tags and branches are mutable, so they can't identify the code that runs. The locked SHA can. This has two effects:
+>
+> * Allowlist entries pinned to a tag or branch, such as `actions/checkout@v6`, don't match, even when the workflow uses `actions/checkout@v6`. A locked SHA can't be reliably matched back to a tag, because the tag may have moved since you locked it, and a tag's history includes every earlier release. To allow a locked dependency, use a wildcard such as `actions/checkout@*` or `actions/*`, or the full commit SHA.
+> * Locked dependencies satisfy **Require actions to be pinned to a full-length commit SHA** without changes to the workflow file. Dependencies that aren't in the lockfile still need a full-length SHA.
+>
+> For more information, see [Workflow dependency lockfiles](/en/actions/concepts/security/workflow-dependency-lockfiles).
 
 This procedure demonstrates how to add specific actions and reusable workflows to the list.
 
@@ -99,7 +107,7 @@ If a repository already has self-hosted runners when you disable their use, thes
 
 ![Screenshot of the "Runners" list showing a self-hosted runner with the status "Disabled."](/assets/images/help/actions/actions-runners-disabled.png)
 
-> \[!NOTE] When creation of repository-level self-hosted runners is disabled, workflows can still access self-hosted runners at the enterprise or organization level.
+> [!NOTE] When creation of repository-level self-hosted runners is disabled, workflows can still access self-hosted runners at the enterprise or organization level.
 
 1. In the upper-right corner of GitHub, click your profile picture, then click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-organization" aria-label="organization" role="img"><path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path></svg> Organizations**.
 2. Select an organization by clicking on it.
@@ -144,7 +152,7 @@ By default, all first-time contributors require approval to run workflows.
 
 Workflows triggered by `pull_request_target` events are run in the context of the base branch. Since the base branch is considered trusted, workflows triggered by these events will always run, regardless of approval settings. For more information about the `pull_request_target` event, see [Events that trigger workflows](/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request_target).
 
-> \[!WARNING] These workflow approval policies are intended to restrict the set of users that can execute workflows in GitHub Actions runners that could lead to unexpected resource and compute consumption when using GitHub-hosted runners. If you are using self-hosted runners, potentially malicious user-controlled workflow code will execute automatically if the user is allowed to bypass approval in the set approval policy or if the pull request is approved. You must consider the risk of executing this code in your infrastructure and should review and follow the self-hosted runner security recommendations regardless of the approval settings utilized. See [Secure use reference](/en/actions/reference/security/secure-use#hardening-for-self-hosted-runners).
+> [!WARNING] These workflow approval policies are intended to restrict the set of users that can execute workflows in GitHub Actions runners that could lead to unexpected resource and compute consumption when using GitHub-hosted runners. If you are using self-hosted runners, potentially malicious user-controlled workflow code will execute automatically if the user is allowed to bypass approval in the set approval policy or if the pull request is approved. You must consider the risk of executing this code in your infrastructure and should review and follow the self-hosted runner security recommendations regardless of the approval settings utilized. See [Secure use reference](/en/actions/reference/security/secure-use#hardening-for-self-hosted-runners).
 
 You can configure this behavior for an organization using the procedure below. Modifying this setting overrides the configuration set at the enterprise level.
 
@@ -160,7 +168,7 @@ You can configure this behavior for an organization using the procedure below. M
 
 5. Under **Approval for running fork pull request workflows from contributors**, choose which subset of users will require approval before running workflows on their pull requests. Both the pull request author and the actor of the pull request event triggering the workflow will be checked to determine if approval is required. If approval is required, a user with write access to the repository must approve the pull request workflow to be run. See [Approving workflow runs from forks](/en/actions/how-tos/manage-workflow-runs/approve-runs-from-forks).
 
-   > \[!WARNING] When requiring approvals only for first-time contributors (the first two settings), a user that has had any commit or pull request merged into the repository will not require approval. A malicious user could meet this requirement by getting a simple typo or other innocuous change accepted by a maintainer, either as part of a pull request they have authored or as part of another user's pull request.
+   > [!WARNING] When requiring approvals only for first-time contributors (the first two settings), a user that has had any commit or pull request merged into the repository will not require approval. A malicious user could meet this requirement by getting a simple typo or other innocuous change accepted by a maintainer, either as part of a pull request they have authored or as part of another user's pull request.
 
    * **Require approval for first-time contributors who are new to GitHub**. Only users who are both new on GitHub and who have never had a commit or pull request merged into this repository will require approval to run workflows.
    * **Require approval for first-time contributors**. Only users who have never had a commit or pull request merged into this repository will require approval to run workflows.

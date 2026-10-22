@@ -17,7 +17,7 @@ breadcrumbs:
 
 Learn about security log events recorded for your personal account.
 
-> \[!NOTE]
+> [!NOTE]
 > This article contains the events that may appear in your user account's security log. For the events that can appear in an organization's audit log, see [Audit log events for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/audit-log-events-for-your-organization)."
 
 ## About security log events

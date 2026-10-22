@@ -19,7 +19,7 @@ breadcrumbs:
 
 Require workflow dependency lockfiles across your repositories, and automatically keep the files up to date.
 
-> \[!NOTE] Workflow dependency lockfiles are in public preview and subject to change.
+> [!NOTE] Workflow dependency lockfiles are in public preview and subject to change.
 
 Requiring lockfiles gives you consistent, auditable assurance that every workflow runs vetted code, without asking each team to adopt the practice on its own. For an introduction, see [Workflow dependency lockfiles](/en/actions/concepts/security/workflow-dependency-lockfiles).
 
@@ -31,7 +31,7 @@ Before you enforce workflow lockfiles and create processes to keep them up to da
 
 ## 1. Pilot the "require lockfile" policy
 
-> \[!IMPORTANT] **Evaluate** mode for policies is only available on GitHub Enterprise. Do not enable this policy in **Active** mode until you're confident you have systems in place to keep the lockfile up to date for all targeted workflows.
+> [!IMPORTANT] **Evaluate** mode for policies is only available on GitHub Enterprise. Do not enable this policy in **Active** mode until you're confident you have systems in place to keep the lockfile up to date for all targeted workflows.
 
 The **Require lockfile** policy blocks runs of targeted workflows that include action dependencies but are **not** onboarded to the repository's lockfile. To configure the policy, see [Governing execution of GitHub Actions workflows](/en/actions/how-tos/administer/control-workflow-execution).
 
@@ -71,7 +71,7 @@ When someone adds or edits a workflow, run another workflow that runs the lock c
 
 When Copilot edits a workflow file, tell it to run the command to update the lockfile in the same changeset.
 
-The skill should tell Copilot to regenerate the lockfile with the CLI whenever it changes a workflow or a local action, and never to edit the lockfile directly. It only covers edits made with Copilot, so treat it as a convenience rather than a control. See [About agent skills](/en/copilot/concepts/agents/about-agent-skills).
+The skill should tell Copilot to regenerate the lockfile with the CLI whenever it changes a workflow or a local action, and never to edit the lockfile directly. It only covers edits made with Copilot, so treat it as a convenience rather than a control. See [Agent skills](/en/copilot/concepts/agents/about-agent-skills).
 
 ### A pre-commit hook
 

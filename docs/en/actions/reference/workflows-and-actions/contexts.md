@@ -116,7 +116,7 @@ The following table lists the restrictions on where each context and special fun
 
 You can print the contents of contexts to the log for debugging. The [`toJSON` function](/en/actions/reference/workflows-and-actions/expressions#tojson) is required to pretty-print JSON objects to the log.
 
-> \[!WARNING]
+> [!WARNING]
 > When using the whole `github` context, be mindful that it includes sensitive information such as `github.token`. GitHub masks secrets when they are printed to the console, but you should be cautious when exporting or printing the context.
 
 ```yaml copy
@@ -157,7 +157,7 @@ jobs:
 
 The `github` context contains information about the workflow run and the event that triggered the run. You can read most of the `github` context data in environment variables. For more information about environment variables, see [Store information in variables](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables).
 
-> \[!WARNING]
+> [!WARNING]
 > When using the whole `github` context, be mindful that it includes sensitive information such as `github.token`. GitHub masks secrets when they are printed to the console, but you should be cautious when exporting or printing the context.
 > \[!WARNING]
 > When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#good-practices-for-mitigating-script-injection-attacks).
@@ -213,7 +213,7 @@ The `github` context contains information about the workflow run and the event t
 
 The following example context is from a workflow run triggered by the `push` event. The `event` object in this example has been truncated because it is identical to the contents of the [`push` webhook payload](/en/webhooks/webhook-events-and-payloads#push).
 
-> \[!NOTE]
+> [!NOTE]
 > This context is an example only. The contents of a context depends on the workflow that you are running. Contexts, objects, and properties will vary significantly under different workflow run conditions.
 
 ```json
@@ -348,7 +348,7 @@ The contents of the `vars` context is a mapping of configuration variable names 
 
 This example workflow shows how configuration variables set at the repository, environment, or organization levels are automatically available using the `vars` context.
 
-> \[!NOTE]
+> [!NOTE]
 > Configuration variables at the environment level are automatically available after their environment is declared by the runner.
 
 If a configuration variable has not been set, the return value of a context referencing the variable will be an empty string.
@@ -465,7 +465,7 @@ jobs:
 
 ### Example usage of `job` context workflow identity
 
-> \[!NOTE]
+> [!NOTE]
 > The `job.workflow_*` context properties are not available on GitHub Enterprise Server.
 
 This example reusable workflow uses `job.workflow_repository` and `job.workflow_sha` to check out its own source code, rather than the caller's repository. This is useful when a reusable workflow needs to access files co-located with the workflow definition.
@@ -662,7 +662,7 @@ The `secrets` context contains the names and values of secrets that are availabl
 
 `GITHUB_TOKEN` is a secret that is automatically created for every workflow run, and is always included in the `secrets` context. For more information, see [Use GITHUB\_TOKEN for authentication in workflows](/en/actions/tutorials/authenticate-with-github_token).
 
-> \[!WARNING]
+> [!WARNING]
 > If a secret is used in a workflow job, GitHub automatically redacts secrets printed to the log. You should avoid printing secrets to the log intentionally.
 
 | Property name           | Type     | Description                                                                                                                                                                             |
@@ -765,7 +765,7 @@ There are no standard properties in the `matrix` context, only those which are d
 | `matrix`                 | `object` | This context is only available for jobs in a matrix, and changes for each job in a workflow run. You can access this context from any job or step in a workflow. This object contains the properties listed below. |
 | `matrix.<property_name>` | `string` | The value of a matrix property.                                                                                                                                                                                    |
 
-> \[!NOTE]
+> [!NOTE]
 > The variable names are case insensitive. For example, `OS` and `os` will be treated as the same variable.
 
 ### Example contents of the `matrix` context

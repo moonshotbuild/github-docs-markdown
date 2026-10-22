@@ -23,7 +23,7 @@ To sign commits locally, you need to inform Git that there's a GPG, SSH, or X.50
 
 If you're using a GPG key that matches your committer identity and your verified email address associated with your account on GitHub.com, then you can begin signing commits and signing tags.
 
-> \[!NOTE]
+> [!NOTE]
 > If you don't have a GPG key that matches your committer identity, you need to associate an email with an existing key. For more information, see [Associating an email with your GPG key](/en/authentication/managing-commit-signature-verification/associating-an-email-with-your-gpg-key).
 
 If you have multiple GPG keys, you need to tell Git which one to use.
@@ -42,7 +42,7 @@ If you have multiple GPG keys, you need to tell Git which one to use.
    gpg --list-secret-keys --keyid-format=long
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > Some GPG installations on Linux may require you to use `gpg2 --list-keys --keyid-format LONG` to view a list of your existing keys instead. In this case you will also need to configure Git to use `gpg2` by running `git config --global gpg.program gpg2`.
 
 4. From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`:
@@ -107,7 +107,7 @@ If you have multiple GPG keys, you need to tell Git which one to use.
 
 If you're using a GPG key that matches your committer identity and your verified email address associated with your account on GitHub.com, then you can begin signing commits and signing tags.
 
-> \[!NOTE]
+> [!NOTE]
 > If you don't have a GPG key that matches your committer identity, you need to associate an email with an existing key. For more information, see [Associating an email with your GPG key](/en/authentication/managing-commit-signature-verification/associating-an-email-with-your-gpg-key).
 
 If you have multiple GPG keys, you need to tell Git which one to use.
@@ -124,7 +124,7 @@ If you have multiple GPG keys, you need to tell Git which one to use.
    gpg --list-secret-keys --keyid-format=long
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > Some GPG installations on Linux may require you to use `gpg2 --list-keys --keyid-format LONG` to view a list of your existing keys instead. In this case you will also need to configure Git to use `gpg2` by running `git config --global gpg.program gpg2`.
 4. From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`:
 
@@ -164,7 +164,7 @@ If you have multiple GPG keys, you need to tell Git which one to use.
 
 If you're using a GPG key that matches your committer identity and your verified email address associated with your account on GitHub.com, then you can begin signing commits and signing tags.
 
-> \[!NOTE]
+> [!NOTE]
 > If you don't have a GPG key that matches your committer identity, you need to associate an email with an existing key. For more information, see [Associating an email with your GPG key](/en/authentication/managing-commit-signature-verification/associating-an-email-with-your-gpg-key).
 
 If you have multiple GPG keys, you need to tell Git which one to use.
@@ -181,7 +181,7 @@ If you have multiple GPG keys, you need to tell Git which one to use.
    gpg --list-secret-keys --keyid-format=long
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > Some GPG installations on Linux may require you to use `gpg2 --list-keys --keyid-format LONG` to view a list of your existing keys instead. In this case you will also need to configure Git to use `gpg2` by running `git config --global gpg.program gpg2`.
 4. From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`:
 
@@ -226,7 +226,7 @@ If you have multiple GPG keys, you need to tell Git which one to use.
 
 You can use an existing SSH key to sign commits and tags, or generate a new one specifically for signing. For more information, see [Generating a new SSH key and adding it to the ssh-agent](/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
-> \[!NOTE]
+> [!NOTE]
 > SSH signature verification is available in Git 2.34 or later. To update your version of Git, see the [Git](https://git-scm.com/downloads) website.
 
 1. Open <span class="platform-mac">Terminal</span><span class="platform-linux">Terminal</span><span class="platform-windows">Git Bash</span>.
@@ -247,7 +247,7 @@ You can use an existing SSH key to sign commits and tags, or generate a new one 
 
 You can use [smimesign](https://github.com/github/smimesign) to sign commits and tags using S/MIME.
 
-> \[!NOTE]
+> [!NOTE]
 > S/MIME signature verification is available in Git 2.19 or later. To update your version of Git, see the [Git](https://git-scm.com/downloads) website.
 
 1. Install [smimesign](https://github.com/github/smimesign#installation).
@@ -328,7 +328,7 @@ You can use [smimesign](https://github.com/github/smimesign) to sign commits and
 
 You can use [smimesign](https://github.com/github/smimesign) to sign commits and tags using S/MIME.
 
-> \[!NOTE]
+> [!NOTE]
 > S/MIME signature verification is available in Git 2.19 or later. To update your version of Git, see the [Git](https://git-scm.com/downloads) website.
 
 1. Install [smimesign](https://github.com/github/smimesign#installation).

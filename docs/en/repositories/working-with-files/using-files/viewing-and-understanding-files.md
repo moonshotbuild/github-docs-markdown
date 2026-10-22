@@ -39,7 +39,7 @@ With the raw view, you can view or copy the raw content of a file without any st
 
 Within the blame view, you can view the line-by-line revision history for an entire file.
 
-> \[!TIP]
+> [!TIP]
 > On the command line, you can also use `git blame` to view the revision history of lines within a file. For more information, see [Git's `git blame` documentation](https://git-scm.com/docs/git-blame).
 
 1. On GitHub, navigate to the main page of the repository.
@@ -97,7 +97,7 @@ If the blame view for a file shows **Ignoring revisions in .git-blame-ignore-rev
 
 ## Understanding files with Copilot
 
-> \[!NOTE] You'll need access to GitHub Copilot. For more information, see [About GitHub Copilot](/en/copilot/get-started/about-github-copilot#get-access).
+> [!NOTE] You'll need access to GitHub Copilot. For more information, see [About GitHub Copilot](/en/copilot/get-started/about-github-copilot#get-access).
 
 You can also use Copilot to ask about specific lines of code in a file, helping you understand how the code works and reducing the risk of introducing new problems.
 

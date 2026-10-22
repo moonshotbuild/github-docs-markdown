@@ -44,7 +44,7 @@ If the agent stops or produces unexpected results, you can review the agent's se
 
 ## Pull request outcomes
 
-> \[!NOTE]
+> [!NOTE]
 > The agent opens the pull request immediately with an initial planning commit that contains no code changes. The actual implementation commit typically arrives a few minutes later. If the pull request initially shows 0 changed files, wait a few minutes and refresh the page.
 
 If the agent successfully opens a pull request, the pull request may be in one of these states:

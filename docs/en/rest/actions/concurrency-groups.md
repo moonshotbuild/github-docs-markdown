@@ -21,7 +21,7 @@ Use the REST API to view and manage concurrency groups for GitHub Actions workfl
 
 You can use the REST API to read the state of GitHub Actions concurrency groups, which ensure that only a single job or workflow using the same group will run at a time while additional runs are pending or canceled depending on configuration. For more information, see [Control the concurrency of workflows and jobs](/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List concurrency groups for a repository

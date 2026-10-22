@@ -41,7 +41,7 @@ Read access to the repository is required to perform these steps.
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 GitHub CLI will download each artifact into separate directories based on the artifact name. If only a single artifact is specified, it will be extracted into the current directory.

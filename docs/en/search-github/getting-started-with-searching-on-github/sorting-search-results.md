@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can sort GitHub search results using the Sort menu, or by adding a sort qualifier to your query.
 
-> \[!NOTE]
+> [!NOTE]
 > Sorting search results is not supported for GitHub code search. For more information on code search, see [About GitHub Code Search](/en/search-github/github-code-search/about-github-code-search).
 
 Use the **Sort** dropdown menu to sort results by relevance, number of stars, number of forks, and how recently the items were updated.

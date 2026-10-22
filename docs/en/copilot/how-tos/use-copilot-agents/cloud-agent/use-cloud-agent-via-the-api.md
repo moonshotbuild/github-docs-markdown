@@ -27,7 +27,7 @@ In addition, you can use the REST and GraphQL APIs for issues to assign issues t
 
 ## Using the agent tasks API
 
-> \[!NOTE]
+> [!NOTE]
 > The agent tasks API is in public preview and subject to change.
 
 ### Authentication
@@ -101,7 +101,7 @@ Replace `TASK-ID` with the ID of the task you want to check. You can get this ID
 
 ## Using the issues API
 
-> \[!NOTE]
+> [!NOTE]
 > This feature is in public preview and subject to change.
 
 You can assign issues to Copilot using either the GraphQL API or the REST API. Both APIs support an optional Agent Assignment input to customize the task:
@@ -116,7 +116,7 @@ You can assign issues to Copilot using either the GraphQL API or the REST API. B
 
 ### Using the GraphQL API
 
-> \[!NOTE]
+> [!NOTE]
 > You must include the `GraphQL-Features` header with the values `issues_copilot_assignment_api_support` and `coding_agent_model_selection`.
 
 You can use the following GraphQL mutations to assign issues to Copilot:
@@ -130,7 +130,7 @@ You can use the following GraphQL mutations to assign issues to Copilot:
 
 1. Make sure you're authenticating with the API using a user token, for example a personal access token or a GitHub App user-to-server token.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If using a fine-grained personal access token, it needs the following permissions to assign Copilot to an issue:
    >
    > * Read access to metadata
@@ -408,5 +408,5 @@ gh api \
 ## Further reading
 
 * [REST API endpoints for agent tasks](/en/rest/agent-tasks/agent-tasks)
-* [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
+* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 * [Starting GitHub Copilot sessions](/en/copilot/how-tos/use-copilot-agents/cloud-agent/start-copilot-sessions)

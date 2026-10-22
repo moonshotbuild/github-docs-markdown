@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can use GitHub's form schema to configure forms for supported features.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub's form schema is currently in public preview and subject to change.
 
 ## About GitHub's form schema
@@ -97,7 +97,7 @@ For the value of the `attributes` key, you can set the following keys.
 | ------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `value` | The text that is rendered. Markdown formatting is supported. | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Required" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg> | String | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-dash" aria-label="Not applicable" role="img"><path d="M2 7.75A.75.75 0 0 1 2.75 7h10a.75.75 0 0 1 0 1.5h-10A.75.75 0 0 1 2 7.75Z"></path></svg> | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-dash" aria-label="Not applicable" role="img"><path d="M2 7.75A.75.75 0 0 1 2.75 7h10a.75.75 0 0 1 0 1.5h-10A.75.75 0 0 1 2 7.75Z"></path></svg> |
 
-> \[!TIP]
+> [!TIP]
 > YAML processing will treat the hash symbol as a comment. To insert Markdown headers, wrap your text in quotes.
 >
 > For multi-line text, you can use the pipe operator.

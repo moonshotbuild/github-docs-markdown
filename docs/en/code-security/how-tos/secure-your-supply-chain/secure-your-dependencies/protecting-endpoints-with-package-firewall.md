@@ -21,7 +21,7 @@ breadcrumbs:
 
 Protect dependency installations on developer machines, AI agents, and CI runners with GitHub package firewall.
 
-> \[!NOTE]
+> [!NOTE]
 > This feature is currently in public preview and is subject to change.
 
 ## About GitHub package firewall
@@ -76,17 +76,17 @@ Use your user-level `.npmrc` file to configure npm. In the examples, replace `EN
 1. Add the following configuration to your user-level `.npmrc` file:
 
    ```text
-   registry=https://package-firewall.github.com/npm/enterprises/ENTERPRISE
-   //package-firewall.github.com/npm/enterprises/ENTERPRISE/:_authToken=${GITHUB_TOKEN}
+   registry=https://package-firewall.githubapp.com/npm/enterprises/ENTERPRISE
+   //package-firewall.githubapp.com/npm/enterprises/ENTERPRISE/:_authToken=${GITHUB_TOKEN}
    ```
 
 Alternatively, configure the same settings from the command line:
 
 ```shell
 npm config set registry \
-  https://package-firewall.github.com/npm/enterprises/ENTERPRISE
+  https://package-firewall.githubapp.com/npm/enterprises/ENTERPRISE
 npm config set \
-  '//package-firewall.github.com/npm/enterprises/ENTERPRISE/:_authToken=${GITHUB_TOKEN}'
+  '//package-firewall.githubapp.com/npm/enterprises/ENTERPRISE/:_authToken=${GITHUB_TOKEN}'
 ```
 
 ### Configuring Artifactory
@@ -95,13 +95,13 @@ You can configure JFrog Artifactory to retrieve packages through the firewall. Y
 
 You must have administrator privileges in your Artifactory instance.
 
-> \[!NOTE]
+> [!NOTE]
 > Artifactory support is experimental. To share suggestions or concerns about Artifactory support, see the [community discussion](https://gh.io/package-fw-discussion).
 
 1. In Artifactory, click the **Administration** tab, then click **Create a repository**.
 2. Select **Remote** as the repository type, then select **npm** as the package type.
 3. In the "Repository key" field, type a name such as `gh-package-firewall`.
-4. In the "URL" field, type `https://package-firewall.github.com/npm/enterprises/ENTERPRISE`, replacing `ENTERPRISE` with your enterprise slug.
+4. In the "URL" field, type `https://package-firewall.githubapp.com/npm/enterprises/ENTERPRISE`, replacing `ENTERPRISE` with your enterprise slug.
 5. In the "Password / Access Token" field, paste a valid personal access token, then select **Enable Token Authentication**.
 6. Select the **Stage** where you want to use the firewall, based on your Artifactory configuration.
 7. In the "Pattern" field, type `**/*` to include all package paths.

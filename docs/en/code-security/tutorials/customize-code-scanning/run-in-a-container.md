@@ -25,7 +25,7 @@ If you're configuring code scanning for a compiled language, and you're building
 
 You must run CodeQL inside the container in which you build your code. This applies whether you are using the CodeQL CLI or GitHub Actions. For the CodeQL CLI, see [Using code scanning with your existing CI system](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/integrate-with-existing-tools/use-with-existing-ci-system) for more information. If you're using GitHub Actions, configure your workflow to run all the actions in the same container. For more information, see [Example workflow](#example-workflow).
 
-> \[!NOTE]
+> [!NOTE]
 > The CodeQL CLI is currently not compatible with non-glibc Linux distributions such as (musl-based) Alpine Linux.
 
 ## Dependencies for CodeQL code scanning

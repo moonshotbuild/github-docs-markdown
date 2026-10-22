@@ -98,7 +98,7 @@ The following procedure will guide you through installation of the GitHub Copilo
 
 5. After your JetBrains IDE has restarted, click the **Tools** menu. Click **GitHub Copilot**, then click **Login to GitHub**.
 
-   > \[!NOTE] If you're using a Copilot plan for a managed user account on GHE.com, you'll need to update some settings before you sign in. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/authenticate-to-ghecom?tool=jetbrains#authenticating-from-jetbrains-ides).
+   > [!NOTE] If you're using a Copilot plan for a managed user account on GHE.com, you'll need to update some settings before you sign in. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/authenticate-to-ghecom?tool=jetbrains#authenticating-from-jetbrains-ides).
 
    ![Screenshot of the expanded "Tools" menu and "GitHub Copilot" sub-menu. The "Login to GitHub" option is highlighted in blue.](/assets/images/help/copilot/jetbrains-tools-menu.png)
 
@@ -204,7 +204,7 @@ The following instructions are for versions 2022 17.8 and 2022 17.9 of Visual St
 
 4. After installing the GitHub Copilot extension, to enable GitHub Copilot, ensure you have added your GitHub account to Visual Studio. For more information, see [Add your GitHub accounts to your Visual Studio keychain](https://learn.microsoft.com/en-us/visualstudio/ide/work-with-github-accounts?ref_product=copilot\&ref_type=engagement\&ref_style=text) in the Microsoft documentation.
 
-   > \[!NOTE] If you're using a Copilot plan for a managed user account on GHE.com, you'll need to update some settings before you sign in. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/authenticate-to-ghecom?tool=visualstudio#authenticating-from-visual-studio).
+   > [!NOTE] If you're using a Copilot plan for a managed user account on GHE.com, you'll need to update some settings before you sign in. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/authenticate-to-ghecom?tool=visualstudio#authenticating-from-visual-studio).
 
 </div>
 
@@ -222,7 +222,7 @@ When you set up GitHub Copilot in Visual Studio Code for the first time, the req
 
 For detailed instructions, see [Set up GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/setup?ref_product=copilot\&ref_type=engagement\&ref_style=text#_set-up-copilot-in-vs-code) in the Visual Studio Code documentation.
 
-> \[!NOTE] If you're using a Copilot plan for a managed user account on GHE.com, you'll need to update some settings before you sign in. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/authenticate-to-ghecom?tool=vscode#authenticating-from-vs-code).
+> [!NOTE] If you're using a Copilot plan for a managed user account on GHE.com, you'll need to update some settings before you sign in. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/authenticate-to-ghecom?tool=vscode#authenticating-from-vs-code).
 
 </div>
 
@@ -261,7 +261,7 @@ After granting the required permissions, restart Xcode. You will see a new item 
 
 Before you can use the GitHub Copilot extension for Xcode, you need to authorize the extension to access your GitHub account.
 
-> \[!NOTE] If you're using a Copilot plan for a managed user account on GHE.com, you'll need to update some settings before you sign in. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/authenticate-to-ghecom?tool=xcode#authenticating-from-xcode).
+> [!NOTE] If you're using a Copilot plan for a managed user account on GHE.com, you'll need to update some settings before you sign in. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/authenticate-to-ghecom?tool=xcode#authenticating-from-xcode).
 
 1. Open the GitHub Copilot for Xcode application.
 2. Click **Login to GitHub** and follow the prompts to authorize the extension.

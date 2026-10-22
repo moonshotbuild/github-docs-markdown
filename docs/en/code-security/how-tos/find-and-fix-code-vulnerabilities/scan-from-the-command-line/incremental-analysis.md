@@ -146,7 +146,7 @@ extensions:
 
 Each data row is `[filePath, lineStart, lineEnd]`. Line numbers are 1-based. The special case `lineStart = 0, lineEnd = 0` denotes a whole-file match.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > If the diff has zero added or modified lines (for example, only deletions), you must still provide a non-empty data extension with a sentinel entry `["", 0, 0]`. An empty `data` section would leave the `restrictAlertsTo` predicate inactive, which means all alerts would be produced—the opposite of the desired behavior.
 
 ### Step 3: Pass the extension pack to the CodeQL CLI
@@ -300,7 +300,7 @@ codeql database init \
   --language=LANGUAGE
 ```
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > In overlay mode, do not pass `--overwrite` or `--force-overwrite`. You are building on top of the existing cached base database, not replacing it.
 
 #### 4. Build, extract, and run queries as normal

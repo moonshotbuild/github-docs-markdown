@@ -30,7 +30,7 @@ You can choose to receive notifications:
 * On the command line. Warnings are displayed as callbacks when you push to repositories with any insecure dependencies (**CLI** option).
 * On GitHub Mobile, as web notifications. For more information, see [Configuring notifications](/en/subscriptions-and-notifications/get-started/configuring-notifications#managing-your-notification-settings-with-github-mobile).
 
-> \[!NOTE]
+> [!NOTE]
 > The email and web/GitHub Mobile notifications are:
 >
 > * *Per repository* when Dependabot is enabled on the repository, or when a new manifest file is committed to the repository.
@@ -50,7 +50,7 @@ When a new secret is detected, GitHub notifies all users with access to security
 * Users with custom roles with read/write access
 * Organization owners and enterprise owners, if they are administrators of repositories where secrets were leaked
 
-> \[!NOTE]
+> [!NOTE]
 > Commit authors who've accidentally committed secrets will be notified, regardless of their notification preferences.
 
 You will receive an email notification if:

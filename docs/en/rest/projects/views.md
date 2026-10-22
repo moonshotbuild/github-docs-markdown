@@ -57,7 +57,7 @@ Create a new view in an organization-owned project. Views allow you to customize
 
 - **`visible_fields`** (array of integers)
   visible_fields is not applicable to roadmap layout views.
-For table and board layouts, this represents the field IDs that should be visible in the view. If not provided, the default visible fields will be used.
+  For table and board layouts, this represents the field IDs that should be visible in the view. If not provided, the default visible fields will be used.
 
 - **`sort_by`** (array of arrays)
   Sorting configuration for the view. Each element is a two-element array of [field_id, direction] where direction is "asc" or "desc". Supports multiple sort criteria applied in order.
@@ -300,7 +300,7 @@ Create a new view in a user-owned project. Views allow you to customize how item
 
 - **`visible_fields`** (array of integers)
   visible_fields is not applicable to roadmap layout views.
-For table and board layouts, this represents the field IDs that should be visible in the view. If not provided, the default visible fields will be used.
+  For table and board layouts, this represents the field IDs that should be visible in the view. If not provided, the default visible fields will be used.
 
 - **`sort_by`** (array of arrays)
   Sorting configuration for the view. Each element is a two-element array of [field_id, direction] where direction is "asc" or "desc". Supports multiple sort criteria applied in order.

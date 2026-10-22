@@ -69,7 +69,7 @@ This procedure demonstrates how to create the service account for your GKE integ
 
 3. Add roles to the service account.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Apply more restrictive roles to suit your requirements.
 
    ```shell copy

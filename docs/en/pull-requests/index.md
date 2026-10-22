@@ -157,37 +157,9 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 
   Request reviews for your pull requests from individuals or teams to ensure thorough feedback and collaboration.
 
-* [Reviewing stacked pull requests](/en/pull-requests/how-tos/review-pull-requests/reviewing-stacked-pull-requests)
+* [Stacked pull requests](/en/pull-requests/how-tos/stacked-pull-requests)
 
-  Address review feedback on a pull request anywhere in a stack and cascade your changes through the rest of the stack.
-
-* [Merging stacked pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-stacked-pull-requests)
-
-  Merge a stack from the bottom up, individually, or in contiguous groups.
-
-* [Optimizing CI for stacked pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests/optimizing-ci-for-stacked-pull-requests)
-
-  Understand how GitHub Actions workflows run for a stack, access stack metadata in your workflows, and reduce redundant CI usage.
-
-* [Troubleshooting stacked pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-stacked-pull-requests)
-
-  Resolve common problems with stacked pull requests, including rebase conflicts, blocked merges, interrupted operations, and merge queue issues.
-
-* [Stacked pull requests](/en/pull-requests/reference/stacked-pull-requests)
-
-  Rules and requirements for how stacked pull requests function on GitHub.
-
-* [Stacked pull requests CLI commands](/en/pull-requests/reference/stacked-prs-cli-commands)
-
-  Find every command, flag, and exit code for the `gh stack` extension in GitHub CLI.
-
-* [Stacked pull requests APIs and webhooks](/en/pull-requests/reference/stacked-pull-requests-apis-and-webhooks)
-
-  Read and manage stacked pull requests programmatically with the GitHub REST and GraphQL APIs, and webhooks.
-
-* [Roll out stacked pull requests to your organization](/en/pull-requests/tutorials/roll-out-stacked-prs)
-
-  Stacked pull requests help your organization maintain review quality as teams deliver large changes in small, reviewable layers, while keeping required reviews and status checks in place.
+  Use stacked pull requests to break large code changes into a chain of smaller, dependent pull requests you can review and merge independently.
 
 * [Checking out pull requests locally](/en/pull-requests/how-tos/review-pull-requests/checking-out-pull-requests-locally)
 
@@ -196,6 +168,10 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 * [Reviewing proposed changes in a pull request](/en/pull-requests/how-tos/review-pull-requests/reviewing-proposed-changes-in-a-pull-request)
 
   Review commits, file changes, and diffs in pull requests to provide feedback, approve changes, or request updates before merging.
+
+* [Reviewing stacked pull requests](/en/pull-requests/how-tos/review-pull-requests/reviewing-stacked-pull-requests)
+
+  Address review feedback on a pull request anywhere in a stack and cascade your changes through the rest of the stack.
 
 * [Reviewing dependency changes in a pull request](/en/pull-requests/how-tos/review-pull-requests/reviewing-dependency-changes-in-a-pull-request)
 
@@ -233,6 +209,10 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 
   Resolve common errors and unblock merging or pushing to protected branches by troubleshooting required status checks.
 
+* [Troubleshooting stacked pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-stacked-pull-requests)
+
+  Resolve common problems with stacked pull requests, including rebase conflicts, blocked merges, interrupted operations, and merge queue issues.
+
 * [Merging a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-a-pull-request)
 
   Merge pull requests into the upstream branch, choose merge methods, and meet repository requirements like reviews or status checks.
@@ -244,6 +224,14 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 * [Automatically merging a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/automatically-merging-a-pull-request)
 
   Enable or disable auto-merge for pull requests to streamline your workflow and automatically merge changes once all requirements are met.
+
+* [Merging stacked pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-stacked-pull-requests)
+
+  Merge a stack from the bottom up, individually, or in contiguous groups.
+
+* [Optimizing CI for stacked pull requests](/en/pull-requests/how-tos/merge-and-close-pull-requests/optimizing-ci-for-stacked-pull-requests)
+
+  Understand how GitHub Actions workflows run for a stack, access stack metadata in your workflows, and reduce redundant CI usage.
 
 * [Reverting a pull request](/en/pull-requests/how-tos/merge-and-close-pull-requests/reverting-a-pull-request)
 
@@ -276,6 +264,18 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 * [Pull requests](/en/pull-requests/reference/pull-requests)
 
   Propose, review, and merge code changes using pull requests to collaborate effectively and maintain code quality.
+
+* [Stacked pull requests](/en/pull-requests/reference/stacked-pull-requests)
+
+  Rules and requirements for how stacked pull requests function on GitHub.
+
+* [Stacked pull requests CLI commands](/en/pull-requests/reference/stacked-prs-cli-commands)
+
+  Find every command, flag, and exit code for the `gh stack` extension in GitHub CLI.
+
+* [Stacked pull requests APIs and webhooks](/en/pull-requests/reference/stacked-pull-requests-apis-and-webhooks)
+
+  Read and manage stacked pull requests programmatically with the GitHub REST and GraphQL APIs, and webhooks.
 
 * [Branches](/en/pull-requests/reference/branches)
 
@@ -316,3 +316,7 @@ Discover how to create, review, and merge pull requests, resolve merge conflicts
 * [Managing and standardizing pull requests](/en/pull-requests/reference/managing-and-standardizing-pull-requests)
 
   Manage and standardize pull requests using templates, code owners, protected branches, rulesets, and automated tools for consistent and secure repository contributions.
+
+* [Roll out stacked pull requests to your organization](/en/pull-requests/tutorials/roll-out-stacked-prs)
+
+  Stacked pull requests help your organization maintain review quality as teams deliver large changes in small, reviewable layers, while keeping required reviews and status checks in place.

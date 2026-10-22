@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can view the chronological history of your repository by release name or tag version number.
 
-> \[!TIP]
+> [!TIP]
 > You can also view a release using the GitHub CLI. For more information, see [`gh release view`](https://cli.github.com/manual/gh_release_view) in the GitHub CLI documentation.
 
 ## Viewing releases

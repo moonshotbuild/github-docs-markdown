@@ -21,7 +21,7 @@ You can reclaim used GitHub Actions storage by deleting artifacts before they ex
 
 ## Deleting an artifact
 
-> \[!WARNING]
+> [!WARNING]
 > Once you delete an artifact, it cannot be restored.
 
 Write access to the repository is required to perform these steps.

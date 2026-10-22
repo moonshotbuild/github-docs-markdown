@@ -31,7 +31,7 @@ This tutorial walks you through what to do if you've accidentally committed a se
 
 * You have at least write access to the repository.
 * Optional: Secret scanning is enabled for the repository.
-  > \[!NOTE]
+  > [!NOTE]
   > Secret scanning is **free** for public repositories. It is available as part of [GitHub Secret Protection](/en/get-started/learning-about-github/about-github-advanced-security) for private repositories on GitHub Team and GitHub Enterprise Cloud plans.
 
 ## Step 1. Identify the secret and gather context
@@ -45,7 +45,7 @@ Gather as much information as you can about the leaked secret. This will help yo
    * Check the `CODEOWNERS` file of the repository to determine the responsible team.
    * Use `git log -S` to help search the commit history of your repository to identify who committed the secret.
 
-> \[!TIP]
+> [!TIP]
 > If you have secret scanning enabled for your repository, the secret scanning alert can provide you with most of these details.
 
 ## Step 2. Assess risk
@@ -59,7 +59,7 @@ Secret scanning can help you assess the risk associated with an alert, but if yo
 Review the secret scanning alert associated with the leak, checking the alert labels and any available metadata:
 
 1. Check the secret's **validity status** to determine if the secret is still active. The alert will include a status that describes whether the secret is active, inactive, or if its validity is unknown.
-   > \[!NOTE]
+   > [!NOTE]
    >
    > * Validity checks are only available for certain secret types. To check if your secret type is supported, see [Supported secret scanning patterns](/en/code-security/reference/secret-security/supported-secret-scanning-patterns).
    > * The secret provider is always the most reliable source of truth for determining the validity of a secret.
@@ -77,7 +77,7 @@ If you don't yet have secret scanning enabled for the repository, perform a risk
 3. Assess the **file** containing the secret and the **surrounding context**. Is the secret used in a production deployment script (higher risk) or a test file (lower risk)? Is the secret associated with a database credential or admin key (higher risk)?
 4. Assess which services or applications depend on the secret, and consider the potential for downtime or disruption if you were to immediately revoke the secret.
 
-> \[!TIP]
+> [!TIP]
 > Organizations on GitHub Team and GitHub Enterprise plans can perform a **free** secret risk assessment (an on-demand, point-in-time scan) that evaluates their exposure to leaked secrets. See [Secret security with GitHub](/en/code-security/concepts/secret-security/secret-security-with-github).
 
 ## Step 3. Strategize remediation
@@ -92,7 +92,7 @@ If the secret is high risk (that is, the secret is still active, is exposed in a
 
 1. Prioritize revoking the secret immediately. See [Step 4](#step-4-revoke-the-secret).
 
-   > \[!NOTE] If you are concerned about downtime to services, you may want to first generate a new secret with the same permissions, make the application start using the new token, and *then* revoke the old secret.
+   > [!NOTE] If you are concerned about downtime to services, you may want to first generate a new secret with the same permissions, make the application start using the new token, and *then* revoke the old secret.
 
 2. Communicate with the secret owner (identified in Step 1), repository administrators, and security leads **during or after** revocation.
 
@@ -117,7 +117,7 @@ It is not sufficient to simply remove the secret from your codebase. The most im
    If you lack access to the provider portal, contact the secret owner or relevant repository administrator to get help with revoking the secret.
 3. Generate a new secret, if necessary, to replace the revoked secret. This is often required to restore functionality for services that relied on the original secret.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub automatically revokes GitHub personal access tokens (PATs) leaked in public repositories.
 >
 > For leaked GitHub PATs in private repositories, you can report the leak to GitHub directly from within the secret scanning alert by clicking **Report leak**.
@@ -145,7 +145,7 @@ Next, you need to coordinate updates to all affected services using the leaked s
 ### Update and verify
 
 1. Update your application with the new secret, ensuring that your application properly uses the new credential.
-   > \[!TIP] A safe way of providing sensitive credentials to your application is through a vault. For example, you can make sensitive credentials available to GitHub actions and workflows through the "Secrets and variables" store under your repository's settings page.
+   > [!TIP] A safe way of providing sensitive credentials to your application is through a vault. For example, you can make sensitive credentials available to GitHub actions and workflows through the "Secrets and variables" store under your repository's settings page.
 2. Test affected services to ensure they are functioning correctly with the new secret.
 
 ## Step 6. Check for unauthorized access

@@ -40,9 +40,11 @@ GitHub CLI is an open source tool for using GitHub from your computer's command 
 
    GitHub CLI automatically stores your Git credentials for you when you choose HTTPS as your preferred protocol for Git operations and answer "yes" to the prompt asking if you would like to authenticate to Git with your GitHub credentials. This can be useful as it allows you to use Git commands like `git push` and `git pull` without needing to set up a separate credential manager or use SSH.
 
+For more ways to authenticate, including environment variables, GitHub Actions, and expiring tokens, see [Authenticating with GitHub CLI](/en/github-cli/github-cli/authenticating-with-github-cli).
+
 ## Some useful commands
 
-> \[!NOTE]
+> [!NOTE]
 > When you use some commands for the first time - for example, `gh codespace SUBCOMMAND` - you'll be prompted to add extra scopes to your authentication token. Follow the onscreen instructions.
 
 ### Viewing your status
@@ -113,5 +115,6 @@ If you need to use the GitHub CLI across multiple GitHub platforms, such as a pe
 
 ## Further reading
 
+* [Authenticating with GitHub CLI](/en/github-cli/github-cli/authenticating-with-github-cli)
 * [GitHub CLI reference](/en/github-cli/github-cli/github-cli-reference)
 * [GitHub CLI online manual](https://cli.github.com/manual/gh)

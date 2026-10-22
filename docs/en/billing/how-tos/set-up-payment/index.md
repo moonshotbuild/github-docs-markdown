@@ -27,10 +27,6 @@ Learn how to change your payment method, view your payment history, and manage i
 
   You can enable and pay for usage-based billing on GitHub by connecting an Azure subscription.
 
-* [Setting up Visual Studio subscriptions with GitHub Enterprise](/en/set-up-vs-subscription)
-
-  Your team's subscription to Visual Studio can also provide access to GitHub Enterprise.
-
 * [Redeeming a coupon](/en/billing/how-tos/set-up-payment/redeem-coupon)
 
   If you have a coupon, you can redeem it towards a paid GitHub subscription.

@@ -35,7 +35,7 @@ You may also want to use the **actions/add-to-project** workflow, which is maint
 
 For project management tasks that require understanding repository context—such as triaging new issues, summarizing backlogs, classifying issues by type or priority, and recommending field values—agentic workflows are a better fit than traditional GitHub Actions workflows. Unlike fixed workflow steps, agentic workflows let you describe what you want in natural language, and an AI coding agent handles the reasoning and decision-making.  For more information, see [Creating GitHub Agentic Workflows](/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows).
 
-> \[!NOTE]
+> [!NOTE]
 > `GITHUB_TOKEN` is scoped to the repository level and cannot access projects. To access projects you can either create a GitHub App (recommended for organization projects) or a personal access token (recommended for user projects). Workflow examples for both approaches are shown below.
 
 ## Example workflow authenticating with a GitHub App
@@ -46,7 +46,7 @@ For more information about authenticating in a GitHub Actions workflow with a Gi
 
 2. Give your GitHub App read and write permissions to organization projects. For this specific example, your GitHub App will also need read permissions to repository pull requests and repository issues. For more information, see [Modifying a GitHub App registration](/en/apps/maintaining-github-apps/modifying-a-github-app-registration).
 
-   > \[!NOTE]
+   > [!NOTE]
    > You can control your app's permission to organization projects and to repository projects. You must give permission to read and write organization projects; permission to read and write repository projects will not be sufficient.
 
 3. Install the GitHub App in your organization. Install it for all repositories that your project needs to access. For more information, see [Installing your own GitHub App](/en/apps/using-github-apps/installing-your-own-github-app).

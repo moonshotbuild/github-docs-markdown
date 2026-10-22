@@ -27,7 +27,7 @@ Establish a highly customizable code scanning setup at scale with a script.
 
 For repositories that are not eligible for default setup, you can use a bulk configuration script to enable advanced setup across multiple repositories.
 
-> \[!NOTE] To successfully execute the script, GitHub Actions must be enabled for the organization.
+> [!NOTE] To successfully execute the script, GitHub Actions must be enabled for the organization.
 
 1. Identify a group of repositories that can be analyzed using the same code scanning configuration. For example, all repositories that build Java artifacts using the production environment.
 2. Create and test a GitHub Actions workflow to call the CodeQL action with the appropriate configuration. For more information, see [Configuring advanced setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configuring-advanced-setup-for-code-scanning#configuring-advanced-setup-for-code-scanning-with-codeql).
@@ -39,7 +39,7 @@ For repositories that are not eligible for default setup, you can use a bulk con
 
 ## Next steps
 
-> \[!NOTE]
+> [!NOTE]
 > CodeQL model packs are currently in public preview and subject to change. Model packs are supported for C/C++, C#, Java/Kotlin, Python, Ruby, and Rust analysis.
 >
 > The CodeQL model editor in the CodeQL extension for Visual Studio Code supports modeling dependencies for C#, Java/Kotlin, Python, and Ruby.

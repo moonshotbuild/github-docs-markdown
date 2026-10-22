@@ -44,7 +44,7 @@ the model and it opens up a ton of things you could potentially do with the API.
 
 ## Checking mergeability of pull requests
 
-> \[!WARNING]
+> [!WARNING]
 > Please do not depend on using Git directly or [`GET /repos/{owner}/{repo}/git/refs/{ref}`](/en/rest/git/refs#get-a-reference) for updates to `merge` Git refs, because this content becomes outdated without warning.
 
 A consuming API needs to explicitly request a pull request to create a *test* merge commit. A *test* merge commit is created when you view the pull request in the UI and the "Merge" button is displayed, or when you [get](/en/rest/pulls/pulls#get-a-pull-request), [create](/en/rest/pulls/pulls#create-a-pull-request), or [edit](/en/rest/pulls#update-a-pull-request) a pull request using the REST API. Without this request, the `merge` Git refs will fall out of date until the next time someone views the pull request.

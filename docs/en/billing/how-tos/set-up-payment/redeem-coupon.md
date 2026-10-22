@@ -21,7 +21,7 @@ If you have a coupon, you can redeem it towards a paid GitHub subscription.
 
 ## Prerequisites
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > GitHub can't issue a refund if you apply a coupon to the wrong account or to an account that you have already paid for.
 
 Before you redeem a coupon:

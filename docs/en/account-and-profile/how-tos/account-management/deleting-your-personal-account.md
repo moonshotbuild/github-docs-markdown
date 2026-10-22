@@ -28,7 +28,7 @@ Before you delete your personal account, make a copy of all repositories, privat
 
 ## Deleting your personal account
 
-> \[!WARNING]
+> [!WARNING]
 > Once your personal account has been deleted, GitHub cannot restore your content.
 
 If your account is flagged, suspended, or otherwise restricted, **Delete your account** may be unavailable, disabled, or direct you to GitHub Support instead of completing deletion. Contact [GitHub Support](https://support.github.com) to request access to the normal self-service deletion flow.

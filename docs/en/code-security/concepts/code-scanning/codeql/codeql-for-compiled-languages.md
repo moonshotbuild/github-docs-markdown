@@ -45,5 +45,5 @@ You can use dependency caching with CodeQL to store dependencies as a GitHub Act
 
 Dependency caching works with all build modes, and is supported by Java, Go, and C#.
 
-> \[!NOTE]
+> [!NOTE]
 > Using dependency caching will store CodeQL-specific caches that will be subject to cache quotas for a repository. See [Dependency caching reference](/en/actions/reference/workflows-and-actions/dependency-caching#usage-limits-and-eviction-policy).

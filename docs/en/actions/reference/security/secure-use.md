@@ -160,7 +160,7 @@ For more information, see [About code owners](/en/repositories/managing-your-rep
 
 If your GitHub Actions workflows need to access resources from a cloud provider that supports OpenID Connect (OIDC), you can configure your workflows to authenticate directly to the cloud provider. This will let you stop storing these credentials as long-lived secrets and provide other security benefits. For more information, see [OpenID Connect](/en/actions/concepts/security/openid-connect).
 
-> \[!NOTE]
+> [!NOTE]
 > Support for custom claims for OIDC is unavailable in AWS.
 
 ### Using Dependabot version updates to keep actions up to date
@@ -221,7 +221,7 @@ Some customers might attempt to partially mitigate these risks by implementing s
 
 To improve runner registration security, you can use the REST API to create ephemeral, just-in-time (JIT) runners. These self-hosted runners perform at most one job before being automatically removed from the repository, organization, or enterprise. For more information about configuring JIT runners, see [REST API endpoints for self-hosted runners](/en/rest/actions/self-hosted-runners#create-configuration-for-a-just-in-time-runner-for-an-organization).
 
-> \[!NOTE]
+> [!NOTE]
 > Re-using hardware to host JIT runners can risk exposing information from the environment. Use automation to ensure the JIT runner uses a clean environment. For more information, see [Self-hosted runners reference](/en/actions/reference/runners/self-hosted-runners#ephemeral-runners-for-autoscaling).
 
 Once you have the config file from the REST API response, you can pass it to the runner at startup.
@@ -288,7 +288,7 @@ You can set up your repositories so that you:
 
 You can use Dependabot to monitor the actions in your workflows and enable Dependabot alerts to notify you when an action you use has a reported vulnerability. Dependabot performs a scan of the default branch of the repositories where it is enabled to detect insecure dependencies. Dependabot generates Dependabot alerts when a new advisory is added to the GitHub Advisory Database or when an action you use is updated.
 
-> \[!NOTE]
+> [!NOTE]
 > Dependabot only creates alerts for vulnerable actions that use semantic versioning and will not create alerts for actions pinned to SHA values.
 
 You can enable Dependabot alerts for your personal account, for a repository, or for an organization. For more information, see [Configuring Dependabot alerts](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-dependabot-alerts).
@@ -318,7 +318,7 @@ The following features can automatically update the actions in your workflows.
 * **Dependabot version updates** open pull requests to update actions to the latest version when a new version is released.
 * **Dependabot security updates** open pull requests to update actions with reported vulnerabilities to the minimum patched version.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Dependabot only supports updates to GitHub Actions using the GitHub repository syntax, such as `actions/checkout@v6` or `actions/checkout@<commit>` . Dependabot will ignore actions or reusable workflows referenced locally (for example, `./.github/actions/foo.yml`).
 > * Dependabot updates the version documentation of GitHub Actions when the comment is on the same line, such as `actions/checkout@<commit> #<tag or link>` or `actions/checkout@<tag> #<tag or link>`.

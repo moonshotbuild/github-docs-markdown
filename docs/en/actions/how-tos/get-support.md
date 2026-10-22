@@ -37,12 +37,12 @@ Some information that GitHub Support will request can include, but is not limite
 
   Self-hosted runner log file names are formatted: `Runner_YYYY####-xxxxxx-utc.log` and `Worker_YYYY####-xxxxxx-utc.log`.
 
-> \[!NOTE]
+> [!NOTE]
 > Attach files to your support ticket by changing the file's extension to `.txt` or `.zip`. If you include textual data such as log or workflow file snippets inline in your ticket, ensure they are formatted correctly as Markdown code blocks. For more information about proper Markdown formatting, see [Basic writing and formatting syntax](/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#quoting-code).
 >
 > If the information you provide is unreadable due to the loss of formatting by improper Markdown syntax, GitHub Support may request that resubmit the information either as an attachment or with the correct Markdown formatting.
 
-> \[!WARNING]
+> [!WARNING]
 > Ensure all files and text provided to GitHub Support have been properly redacted to remove sensitive information such as tokens and other secrets.
 
 ### Ephemeral Runner Application Log Files

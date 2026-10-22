@@ -23,7 +23,7 @@ You can configure the self-hosted runner application as a service to automatical
 
 <div class="ghd-tool linux">
 
-> \[!NOTE]
+> [!NOTE]
 > You must add a runner to GitHub before you can configure the self-hosted runner application as a service.
 > For more information, see [Adding self-hosted runners](/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners).
 
@@ -35,7 +35,7 @@ On the runner machine, open a shell in the directory where you installed the sel
 
 <div class="ghd-tool windows">
 
-> \[!NOTE]
+> [!NOTE]
 > Configuring the self-hosted runner application as a service on Windows is part of the application configuration process. If you have already configured the self-hosted runner application but did not choose to configure it as a service, you must remove the runner from GitHub and re-configure the application. When you re-configure the application, choose the option to configure the application as a service.
 >
 > For more information, see [Removing self-hosted runners](/en/actions/how-tos/manage-runners/self-hosted-runners/remove-runners) and [Adding self-hosted runners](/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners).
@@ -46,7 +46,7 @@ You can manage the runner service in the Windows **Services** application, or yo
 
 <div class="ghd-tool mac">
 
-> \[!NOTE]
+> [!NOTE]
 > You must add a runner to GitHub before you can configure the self-hosted runner application as a service.
 > For more information, see [Adding self-hosted runners](/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners).
 
@@ -97,7 +97,7 @@ Start the service with the following command:
 sudo ./svc.sh start
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > On Debian-based Linux systems (such as Debian or Ubuntu) with `needrestart` enabled, you can prevent `needrestart` from restarting the runner service during a workflow job by configuring it to ignore the runner service. Run the following command:
 >
 > ```bash

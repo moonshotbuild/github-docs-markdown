@@ -45,7 +45,7 @@ Using the CLI, the error message is:
 
 If the image for a codespace is specified in a Dockerfile, and does not match the policy, a codespace is created in recovery mode, using the default recovery container rather than the specified image. A message to this effect is included at the end of the creation log. For more information about the creation log, see [GitHub Codespaces logs](/en/codespaces/troubleshooting/github-codespaces-logs#creation-logs).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The dev container base image should not be confused with the host image. The host image is the image used to build the virtual machine on which the dev container runs. For more information, see [Choosing the stable or beta host image](/en/codespaces/setting-your-user-preferences/choosing-the-stable-or-beta-host-image).
 > * The base image policy is applied when a codespace is created, and when you perform a full container rebuild. For more information, see [Understanding the codespace lifecycle](/en/codespaces/about-codespaces/understanding-the-codespace-lifecycle#rebuilding-a-codespace).
@@ -57,7 +57,7 @@ When you create a policy you choose whether it applies to all repositories in yo
 
 For example, you could create an organization-wide policy that restricts the base image to any of ten specified images. You can then set a policy for Repository A that restricts the image to a subset of just two of the images specified at the organization level. Specifying additional images for Repository A will have no effect because these images are not specified in the organization-level policy. If you add an organization-wide policy, you should set it to the largest choice of images that will be available for any repository in your organization. You can then add repository-specific policies to further restrict the choice.
 
-> \[!NOTE]
+> [!NOTE]
 > Codespaces policies only apply to codespaces that your organizations pays for. If someone creates a codespace for a repository in your organization at their own expense, then the codespace will not be bound by these policies. For more information, see [Choosing who owns and pays for codespaces in your organization](/en/codespaces/managing-codespaces-for-your-organization/choosing-who-owns-and-pays-for-codespaces-in-your-organization).
 
 ## Adding a policy to define the allowed images
@@ -98,7 +98,7 @@ For example, you could create an organization-wide policy that restricts the bas
 
     ![Screenshot of the repository selection dropdown, showing the options "All repositories" and "Selected repositories."](/assets/images/help/codespaces/selected-repositories.png)
 
-    > \[!NOTE]
+    > [!NOTE]
     > If you're adding a constraint to an existing policy that already contains the "Maximum codespaces per user" constraint, you won't be able to apply the policy to selected repositories. This is because the "Maximum codespaces per user" constraint always applies to all repositories in the organization.
 
     With **Selected repositories** selected:

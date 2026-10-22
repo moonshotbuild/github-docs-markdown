@@ -89,7 +89,7 @@ If you have `repo: write` access to a repository, you can view a list of the run
 4. Review the list of available GitHub-hosted runners for the repository.
 5. Optionally, to copy a runner's label to use it in a workflow, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-kebab-horizontal" aria-label="More options" role="img"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg> to the right of the runner, then click **Copy label**.
 
-> \[!NOTE]
+> [!NOTE]
 > Enterprise and organization owners can create runners from this page. To create a new runner, click **New runner** at the top right of the list of runners to add runners to the repository.
 >
 > For more information, see [Managing larger runners](/en/actions/how-tos/manage-runners/larger-runners/manage-larger-runners) and [Adding self-hosted runners](/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners).

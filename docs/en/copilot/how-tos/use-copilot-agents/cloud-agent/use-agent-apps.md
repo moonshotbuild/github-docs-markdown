@@ -21,11 +21,11 @@ breadcrumbs:
 
 Start a partner-built agent from an issue, a pull request comment, or the Agents UI on GitHub.
 
-> \[!NOTE] Agent apps are currently in public preview and subject to change.
+> [!NOTE] Agent apps are currently in public preview and subject to change.
 
 ## Introduction
 
-Agent apps let you delegate work to partner-built agents from within GitHub. For an overview, see [About agent apps](/en/copilot/concepts/agents/agent-apps).
+Agent apps let you delegate work to partner-built agents from within GitHub. For an overview, see [Agent apps](/en/copilot/concepts/agent-capabilities/about-agents/agent-apps).
 
 Before you can use an agent app, the GitHub App must be installed on the account or organization that owns the repository, and agent features must be enabled for the app. If the repository is owned by an organization that belongs to an enterprise, the "Agent apps" Copilot policy must also be enabled in your enterprise settings.
 

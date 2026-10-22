@@ -21,7 +21,7 @@ Teams are groups of organization members that reflect your company or group's st
 
 You can use teams to manage access for people in an organization, and for sending notifications. Organization owners and team maintainers can give teams admin, read, or write access to organization repositories. Organization members can send a notification to an entire team by mentioning the team's name. Teams can only be made up of members of your organization, outside collaborators are unable to be on a team.
 
-> \[!TIP]
+> [!TIP]
 > If you use an enterprise account, you can also create teams at the enterprise level. For more information, see [Teams in an enterprise](/en/enterprise-cloud@latest/admin/concepts/enterprise-fundamentals/teams-in-an-enterprise).
 
 Organization members can send a notification to an entire team by requesting a review from that team. Organization members can request reviews from specific teams with read access to the repository where the pull request is opened. Teams can be designated as owners of certain types or areas of code in a CODEOWNERS file.
@@ -49,7 +49,7 @@ You can view all the teams you belong to on your personal dashboard. For more in
 
 Each team has its own page within an organization. On a team's page, you can view team members, child teams, and the team's repositories. Organization owners and team maintainers can access team settings and update the team's description and profile picture from the team's page.
 
-> \[!NOTE]
+> [!NOTE]
 > Team Discussions are retired. You can read more about this on the [GitHub Blog](https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/).
 >
 > You can use GitHub Discussions to create organization-level discussions. For more information about GitHub Discussions, see [GitHub Discussions documentation](/en/discussions).

@@ -21,7 +21,7 @@ breadcrumbs:
 
 Limit the amount of AI credits Copilot can spend on a session to control costs and keep tasks predictable.
 
-> \[!NOTE]
+> [!NOTE]
 > AI credit session limits are currently in public preview and subject to change.
 
 An AI credit session limit caps the amount of GitHub AI Credits that Copilot can spend in a session.
@@ -36,7 +36,7 @@ These session limits are **soft limits**. If a response is in progress when the 
 
 How the limit is set and applied depends on whether you are in an interactive session or running the CLI programmatically.
 
-> \[!NOTE]
+> [!NOTE]
 > AI credit session limits must be set to at least 30 AI credits.
 
 ### Setting a limit within an interactive session

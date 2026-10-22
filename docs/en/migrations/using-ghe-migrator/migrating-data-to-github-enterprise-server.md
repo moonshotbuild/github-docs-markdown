@@ -276,7 +276,7 @@ $ ghe-migrator unlock -g MIGRATION-GUID
 > Unlocked octo-org/octo-project
 ```
 
-> \[!WARNING]
+> [!WARNING]
 > If your repository contains GitHub Actions workflows using the `schedule` trigger, the workflows will not run automatically after an import. To start the scheduled workflows once again, push a commit to the repository. For more information, see [Events that trigger workflows](/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
 
 ## Unlocking repositories on the source

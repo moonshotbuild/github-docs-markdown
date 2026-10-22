@@ -1,7 +1,7 @@
 ---
 source_path: "/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/generate-overlay-changes"
 title: "generate overlay-changes"
-intro: "[Plumbing] Generate a file that can be used for the"
+intro: "[Plumbing] Generate a file that can be used for the\n--overlay-changes option to\ncodeql database create when extracting an overlay database."
 product: "Security and code quality"
 document_type: "article"
 breadcrumbs:
@@ -21,9 +21,11 @@ breadcrumbs:
 
 # generate overlay-changes
 
-\[Plumbing] Generate a file that can be used for the
+[Plumbing] Generate a file that can be used for the
+--overlay-changes option to
+codeql database create when extracting an overlay database.
 
-> \[!NOTE]
+> [!NOTE]
 > This content describes the most recent release of the CodeQL CLI. For more information about this release, see <https://github.com/github/codeql-cli-binaries/releases>.
 >
 > To see details of the options available for this command in an earlier release, run the command with the <span style="white-space: nowrap;">`--help`</span> option in your terminal.

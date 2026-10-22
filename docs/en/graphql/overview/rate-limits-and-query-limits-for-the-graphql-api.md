@@ -90,7 +90,7 @@ You can also roughly calculate the point value of a query before you make the qu
 1. Add up the number of requests needed to fulfill each unique connection in the call. Assume every request will reach the `first` or `last` argument limits.
 2. Divide the number by **100** and round the result to the nearest whole number to get the final aggregate point value. This step normalizes large numbers.
 
-> \[!NOTE]
+> [!NOTE]
 > The minimum point value of a call to the GraphQL API is **1**.
 
 Here's an example query and score calculation:

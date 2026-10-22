@@ -45,7 +45,7 @@ If a commit hook fails, GitHub Desktop will display the hook's output and give y
 1. Review the hook output displayed by GitHub Desktop.
 2. To proceed with the commit despite the failure, click **Commit anyway**.
 
-> \[!WARNING]
+> [!WARNING]
 > Bypassing commit hooks overrides quality and safety checks that your team may rely on. Only bypass a hook if you understand the implications.
 
 ## Further reading

@@ -82,7 +82,7 @@ Clear expectations make policy enforcement easier to adopt and maintain.
 
 Throughout this tutorial, you’ll use **repository-scoped hooks** stored in the repository under `.github/hooks/`. These hooks apply whenever Copilot CLI runs from within this repository.
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot agents load hook configurations from `.github/hooks/*.json` files in the repository. Hooks run synchronously and can block execution.
 
 ### Create the directory structure
@@ -117,7 +117,7 @@ This tutorial uses the following structure:
         └── pre-tool-policy.ps1
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > This tutorial seeks to create portable hook configurations and scripts that can be used on Windows, Linux, and macOS. The `scripts` directory will therefore contain both Bash and PowerShell scripts, and the hook configuration files will include `bash` and `powershell` entries. The CLI will use the appropriate entry based on your operating system.
 
 ### Create a hook configuration file
@@ -242,7 +242,7 @@ Use the `userPromptSubmitted` hook to record when users submit prompts to Copilo
 
 The hook receives structured JSON input that includes the timestamp, current working directory, and full prompt text. The output of this hook is ignored.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Prompts may contain sensitive information. Apply redaction and follow your organization’s data handling and retention policies when logging this data.
 
 ### Create the prompt logging script (Bash)
@@ -338,7 +338,7 @@ The `preToolUse` hook input includes:
 
 Because `toolArgs` is a JSON string, your script must parse it before reading fields like `command`.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Tool arguments and commands may contain sensitive information such as API tokens, passwords, or other credentials. Apply redaction before logging this data and follow your organization's security policies. Consider logging only non-sensitive metadata (tool name, timestamp, policy decision) and directing audit events to a secured, centralized logging system with appropriate access controls and retention policies.
 
 ### Create the policy script

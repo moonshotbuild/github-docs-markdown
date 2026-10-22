@@ -21,7 +21,7 @@ breadcrumbs:
 
 When you remove a collaborator from a repository security advisory, they lose read and write access to the security advisory's discussion and metadata.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to repository-level security advisories in a public repository.
 > To edit a global advisory in the GitHub Advisory Database, see [Editing security advisories in the GitHub Advisory Database](/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/edit-advisory-database).
 

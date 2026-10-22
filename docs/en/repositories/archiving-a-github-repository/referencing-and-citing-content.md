@@ -21,7 +21,7 @@ You can use third-party tools to cite and reference content on GitHub.
 
 To make your repositories easier to reference in academic literature, you can create persistent identifiers, also known as Digital Object Identifiers (DOIs). You can use the data archiving tool [Zenodo](https://about.zenodo.org/) to archive a repository on GitHub and issue a DOI for the archive.
 
-> \[!TIP]
+> [!TIP]
 >
 > * Zenodo can only access public repositories, so make sure the repository you want to archive is [public](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility).
 > * If you want to archive a repository that belongs to an organization, the organization owner may need to [approve access](/en/organizations/managing-oauth-access-to-your-organizations-data/approving-oauth-apps-for-your-organization) for the Zenodo application.

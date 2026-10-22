@@ -21,7 +21,7 @@ You can install OAuth apps from GitHub Marketplace to use in your personal accou
 
 ## About installing OAuth apps in your personal account
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to installing and purchasing apps from GitHub Marketplace only. For more information on apps purchased from integrators, see [About GitHub integrations](/en/integrations/concepts/about-integrations).
 
 If you choose a paid plan, you'll pay for your app subscription on your personal account's current billing date using your existing payment method.

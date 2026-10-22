@@ -98,7 +98,7 @@ While we encourage using the in-product reporting tools detailed below, you can 
 3. In the lower-right corner of the template chooser, click **Report abuse**.
 4. Complete the contact form to tell GitHub Support about the contact link's behavior, then click **Send request**.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Users in India can contact GitHub's Grievance Officer for India through [support.github.com/contact/india-grievance-officer](https://support.github.com/contact/india-grievance-officer).
 

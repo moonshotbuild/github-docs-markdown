@@ -29,5 +29,5 @@ For more information, see [Introduction to dev containers](/en/codespaces/settin
 4. Apply the changes by rebuilding the container. For more information, see [Introduction to dev containers](/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers#applying-configuration-changes-to-a-codespace).
 5. After everything looks good, we also recommend creating a new codespace from your test branch to ensure everything is working. You can then commit your changes to your repository's default branch or an active feature branch, triggering an update of the prebuild for that branch.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Creating this codespace will take longer than usual because it will not be created from a prebuild.

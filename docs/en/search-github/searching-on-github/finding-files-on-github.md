@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can search for a file in a repository using the file finder. To search for a file in multiple repositories on GitHub, use the path code search qualifier.
 
-> \[!TIP]
+> [!TIP]
 >
 > * By default, file finder results exclude some directories like `build`, `log`, `tmp`, and `vendor`. To search for files in these directories, use the [`path` code search qualifier](/en/search-github/github-code-search/understanding-github-code-search-syntax#path-qualifier). Alternatively, you can customize which directories are excluded by default [using a `.gitattributes` file](#customizing-excluded-files).
 > * You can also open the file finder by pressing `t` on your keyboard. For more information, see [Keyboard shortcuts](/en/get-started/accessibility/keyboard-shortcuts).

@@ -38,7 +38,7 @@ In order to use Git LFS, you'll need to download and install a new program that'
    cd ~/Downloads/git-lfs-X.X.X
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > The file path you use after `cd` depends on your operating system, Git LFS version you downloaded, and where you saved the Git LFS download.
 
 5. To install the file, run this command:
@@ -48,7 +48,7 @@ In order to use Git LFS, you'll need to download and install a new program that'
    > Git LFS initialized.
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > You may have to use `sudo ./install.sh` to install the file.
 
 6. Next, make required changes to your global Git config:
@@ -66,7 +66,7 @@ In order to use Git LFS, you'll need to download and install a new program that'
 
 1. Navigate to [git-lfs.com](https://git-lfs.com) and click **Download**.
 
-   > \[!TIP]
+   > [!TIP]
    > For more information about alternative ways to install Git LFS for Windows, see this [Getting started guide](https://github.com/github/git-lfs#getting-started).
 
 2. On your computer, locate the downloaded file.
@@ -90,7 +90,7 @@ In order to use Git LFS, you'll need to download and install a new program that'
 
 1. Navigate to [git-lfs.com](https://git-lfs.com) and click **Download**.
 
-   > \[!TIP]
+   > [!TIP]
    > For more information about alternative ways to install Git LFS for Linux, see this [Getting started guide](https://github.com/github/git-lfs#getting-started).
 
 2. On your computer, locate and unzip the downloaded file.
@@ -103,7 +103,7 @@ In order to use Git LFS, you'll need to download and install a new program that'
    cd ~/Downloads/git-lfs-1.X.X
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > The file path you use after `cd` depends on your operating system, Git LFS version you downloaded, and where you saved the Git LFS download.
 
 5. To install the file, run this command:
@@ -113,7 +113,7 @@ In order to use Git LFS, you'll need to download and install a new program that'
    > Git LFS initialized.
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > You may have to use `sudo ./install.sh` to install the file.
 
 6. Next, make required changes to your global Git config:

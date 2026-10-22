@@ -64,7 +64,7 @@ Before you authenticate, you must already have an account on GitHub. For more in
 
 4. In the "Sign in Using Your Browser" modal window, click **Continue With Browser**. GitHub Desktop will open your default browser.
 
-   > \[!WARNING]
+   > [!WARNING]
    > Authenticating to GitHub using your username and password is not supported. We require authenticating using the browser instead.
 
 5. To authenticate to GitHub, in the browser, type your credentials and click **Sign in**.

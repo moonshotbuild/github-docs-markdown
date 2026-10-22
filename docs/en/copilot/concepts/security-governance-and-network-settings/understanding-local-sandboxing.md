@@ -49,7 +49,7 @@ The sandbox is **deny-by-default**: unless a path is explicitly granted, a comma
 
 Because access is denied unless granted, Copilot must grant a command everything it legitimately needs—your project files, the tools it runs, and supporting locations such as temporary directories—while keeping everything else off-limits.
 
-> \[!NOTE]
+> [!NOTE]
 > These permission levels apply to every sandboxed process or operation, but they are enforced differently: for sandboxed child processes the operating system enforces them directly, while the CLI's own built-in file-reading and file-editing tools check the same levels in software, without an operating-system backstop.
 
 ## How the policy is built
@@ -60,7 +60,7 @@ Before each sandboxed process starts, Copilot CLI resolves the effective policy 
 
 When **Include working directory** is enabled in the filesystem settings for local sandboxing—as it is by default—the current working directory is granted read/write access. In a Git repository, Copilot also adds the associated Git grants. Turning this setting off suppresses all of those automatic grants so you must add allow rules for the required project and Git paths manually. See [Configuring local sandbox settings](/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings).
 
-> \[!NOTE]
+> [!NOTE]
 > If you get Copilot from an enterprise-owned organization, an administrator can turn off the **Include working directory** setting and lock it, so you can't turn it back on. See [Enterprise managed settings](/en/copilot/reference/enterprise-administrators/enterprise-managed-settings#sandbox).
 
 ### Tools on your PATH

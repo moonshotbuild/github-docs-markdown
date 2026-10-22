@@ -32,12 +32,12 @@ If a license is matched, the license key and name returned conforms to the [SPDX
 * [List repositories watched by a user](/en/rest/activity/watching#list-repositories-watched-by-a-user)
 * [List team repositories](/en/rest/teams/teams#list-team-repositories)
 
-> \[!WARNING]
+> [!WARNING]
 > GitHub is a lot of things, but it’s not a law firm. As such, GitHub does not provide legal advice. Using the API or sending us an email about it does not constitute legal advice nor does it create an attorney-client relationship. If you have any questions about what you can and can't do with a particular license, you should consult with your own legal counsel before moving forward. In fact, you should always consult with your own lawyer before making any decisions that might have legal ramifications or that may impact your legal rights.
 >
 > GitHub created these endpoints to help users get information about open source licenses and the projects that use them. We hope it helps, but please keep in mind that we’re not lawyers (at least most of us aren't) and that we make mistakes like everyone else. For that reason, GitHub provides the API on an "as-is" basis and makes no warranties regarding any information or licenses provided on or through it, and disclaims liability for damages resulting from using the API.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get all commonly used licenses

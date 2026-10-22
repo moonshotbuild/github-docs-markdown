@@ -41,5 +41,5 @@ Before you configure GitHub Secret Protection:
      * If you are satisfied with the pricing estimate, to enable secret scanning alerts and push protection across your organization, click **Enable Secret Protection**.
      * Alternatively, click **Configure in settings** to customize which repositories you want to enable Secret Protection for. See [Creating a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/create-custom-configuration).
 
-> \[!TIP]
+> [!TIP]
 > To extend secret detection beyond repositories your enterprise owns, enterprise owners can enable public monitoring. Public monitoring detects secrets leaked by enterprise members in public repositories across GitHub. For more information, see [Enabling public monitoring for your enterprise](/en/code-security/how-tos/secure-at-scale/configure-enterprise-security/manage-your-coverage/enabling-public-monitoring-for-your-enterprise).

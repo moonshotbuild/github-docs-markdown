@@ -21,7 +21,7 @@ If you have at least read access to the repository, you can export the dependenc
 
 This article gives details about the REST API endpoint.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Export a software bill of materials (SBOM) for a repository.

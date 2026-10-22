@@ -38,7 +38,7 @@ When you become a sponsored developer or sponsored organization, additional term
 
 ## About the GitHub Sponsors Matching Fund
 
-> \[!NOTE]
+> [!NOTE]
 > Eligibility for the GitHub Sponsors Matching Fund has passed. Applications received after the January 1, 2020 deadline are not eligible for GitHub Sponsors Matching Fund.
 
 The GitHub Sponsors Matching Fund aims to benefit members of the GitHub community who develop open source software that promotes the [GitHub Community Guidelines](/en/site-policy/github-terms/github-community-guidelines). Payments to sponsored organizations and payments from organizations are not eligible for GitHub Sponsors Matching Fund.

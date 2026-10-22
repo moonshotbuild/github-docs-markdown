@@ -123,7 +123,7 @@ GraphQL is [introspective](https://graphql.org/learn/introspection/). This means
   curl -H "Authorization: bearer TOKEN" https://api.github.com/graphql
   ```
 
-  > \[!NOTE]
+  > [!NOTE]
   > If you get the response `"message": "Bad credentials"` or `401 Unauthorized`, check that you are using a valid token. If you receive a `403` error with `Resource not accessible by personal access token`, ensure that your fine-grained personal access token is targeted to the correct resource owner. For example, it must target the organization that owns the repository you are trying to access.
 
   The results are in JSON, so we recommend pretty-printing them for easier reading and searching. You can use a command-line tool like [jq](https://stedolan.github.io/jq/) or pipe the results into `python -m json.tool` for this purpose.
@@ -135,7 +135,7 @@ GraphQL is [introspective](https://graphql.org/learn/introspection/). This means
   https://api.github.com/graphql
   ```
 
-  > \[!NOTE]
+  > [!NOTE]
   > The introspection query is probably the only `GET` request you'll run in GraphQL. If you're passing a body, the GraphQL request method is `POST`, whether it's a query or a mutation.
 
   For more information about performing queries, see [Forming calls with GraphQL](/en/graphql/guides/forming-calls-with-graphql).

@@ -19,7 +19,7 @@ breadcrumbs:
 
 Apps on GitHub Marketplace should adhere to GitHub's billing guidelines and support recommended services. Following our guidelines helps customers navigate the billing process without any surprises.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 ## Understanding the billing cycle

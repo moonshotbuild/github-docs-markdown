@@ -21,7 +21,7 @@ Follow this guide to make sure GitHub's documentation stays consistent and follo
 A condensed version of this style guide is available at `.github/instructions/style-guide-summary.instructions.md`, optimized for AI agents and quick reference. If you make significant changes to this full guide, update the summary file as well.
 -->
 
-> \[!NOTE]
+> [!NOTE]
 > These guidelines are specific to GitHub's documentation. For general style questions or guidance on topics not covered here, see the [Microsoft Style Guide](https://docs.microsoft.com/style-guide/welcome/). For markup specific to source content on docs.github.com, see [Using Markdown and Liquid in GitHub Docs](/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs). For any questions about the GitHub brand, see our [GitHub Brand Guide](https://brand.github.com).<!-- markdownlint-disable-line search-replace -->
 
 ## The GitHub Docs approach to style
@@ -71,7 +71,7 @@ Notes are particularly useful for communicating parenthetical information that i
 
 For example, [Evaluating alerts from secret scanning](/en/code-security/tutorials/remediate-leaked-secrets/evaluating-alerts#reviewing-github-token-metadata) uses a note to inform users that metadata for GitHub tokens is currently in public preview.
 
-> \[!NOTE]
+> [!NOTE]
 > Metadata for GitHub tokens is currently in public preview and subject to change.
 
 #### Tip
@@ -80,14 +80,14 @@ Recommendations, best practices or product hints. Tips contain non-essential inf
 
 For example, [Personalize your profile](/en/account-and-profile/tutorials/personalize-your-profile) uses a tip alert to help users understand what to expect when they @mention an organization.
 
-> \[!TIP]
+> [!TIP]
 > When you @mention an organization, only those that you're a member of will autocomplete. You can still @mention organizations that you're not a member of, like a previous employer, but the organization name won't autocomplete for you.
 
 #### Important
 
 Highlights key information users need to know to achieve their goal.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Runner Scale Sets do not support multiple labels, only the name of the runner can be used in place of a label. See [Deploying runner scale sets with Actions Runner Controller](/en/actions/how-tos/manage-runners/use-actions-runner-controller/deploy-runner-scale-sets).
 
 #### Warning
@@ -98,7 +98,7 @@ Warning alerts are particularly relevant for processes that occur outside the Gi
 
 For example, [About SSH certificate authorities](/en/enterprise-cloud@latest/organizations/managing-git-access-to-your-organizations-repositories/about-ssh-certificate-authorities) includes instructions for the command line, and uses a warning alert to inform users that once issued, certificates cannot be revoked:
 
-> \[!WARNING]
+> [!WARNING]
 > After a certificate has been signed and issued, the certificate cannot be revoked. Make sure to use the -V flag to configure a lifetime for the certificate, or the certificate can be used indefinitely.
 
 #### Caution

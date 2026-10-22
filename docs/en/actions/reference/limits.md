@@ -71,7 +71,7 @@ GitHub Support **can** increase job concurrency limits for GitHub Actions. To re
 | Larger runner                 | Team        | 1000                  | 5                             | 100                         |
 | Larger runner                 | Enterprise  | 1000                  | 50                            | 100                         |
 
-> \[!NOTE]
+> [!NOTE]
 > The maximum concurrent macOS jobs is shared across standard GitHub-hosted runners and GitHub-hosted larger runners.
 
 ### Storage limits for all GitHub-hosted runners

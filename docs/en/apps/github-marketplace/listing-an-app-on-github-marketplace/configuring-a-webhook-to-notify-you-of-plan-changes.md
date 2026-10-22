@@ -19,7 +19,7 @@ breadcrumbs:
 
 After creating a draft GitHub Marketplace listing, you can configure a webhook that notifies you when changes to customer account plans occur. After you configure the webhook, you can handle the marketplace_purchase event types in your app.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 The GitHub Marketplace event webhook can only be set up from your application's GitHub Marketplace listing page. You can configure all other events from your [application's developer settings page](https://github.com/settings/developers). If you haven't created a GitHub Marketplace listing, read [Drafting a listing for your app](/en/apps/github-marketplace/listing-an-app-on-github-marketplace/drafting-a-listing-for-your-app) to learn how.

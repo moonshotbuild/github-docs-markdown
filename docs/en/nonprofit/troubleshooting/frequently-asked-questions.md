@@ -23,7 +23,7 @@ You will need an organization account to sign up for a GitHub for Nonprofits dis
 
 Before you begin converting your account to an organization, set up a new personal GitHub account to manage the organization after conversion and ensure the personal account you're converting has left any organizations it has joined.
 
-> \[!WARNING]
+> [!WARNING]
 > Please read these important considerations before converting your account.
 >
 > * You will no longer be able to sign into the converted personal account.

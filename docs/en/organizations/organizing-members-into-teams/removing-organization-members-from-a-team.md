@@ -25,7 +25,7 @@ Removing a member from a team revokes their access to all repositories and relat
 
 If the member is assigned to any ongoing tasks, you should reassign them or grant them individual repository permissions, as required.
 
-> \[!WARNING]
+> [!WARNING]
 >
 > * If you remove a person’s access to a private repository, any of their forks of that private repository are deleted. Local clones of the private repository are retained. If a team's access to a private repository is revoked or a team with access to a private repository is deleted, and team members do not have access to the repository through another team, private forks of the repository will be deleted.
 > * You are responsible for ensuring that people who have lost access to a repository delete any confidential information or intellectual property.

@@ -59,7 +59,7 @@ When an alert is assigned to a person or team, the assignee receives a notificat
 
 When an alert is assigned to an agent, the agent automatically creates a session and opens a draft pull request with a proposed fix. If the agent can't generate a fix, it remains as an assignee, and you can click **View Session** on the alert timeline to review the agent's log.
 
-> \[!NOTE]
+> [!NOTE]
 > Assignment visibility is currently scoped to the repository-level alerts view. The organization-wide security overview does not display alert assignments.
 
 When an alert's assignees change, GitHub sends an `assignees_changed` webhook event. You can use this event to trigger workflows or sync assignment data with external systems. For more information, see [Webhook events and payloads](/en/webhooks/webhook-events-and-payloads#dependabot_alert).

@@ -33,7 +33,7 @@ You can also upgrade to larger GitHub-hosted runners for better performance.
 
 Run Copilot code review using self-hosted GitHub Actions runners with ARC (Actions Runner Controller). You must first set up ARC-managed scale sets in your environment. For more information on ARC, see [Actions Runner Controller](/en/actions/concepts/runners/actions-runner-controller).
 
-> \[!WARNING]
+> [!WARNING]
 > ARC is the only officially supported solution for self-hosting Copilot code review. For security reasons, do not use non-ARC self-hosted runners.
 
 Copilot code review is only compatible with Ubuntu x64 Linux runners.
@@ -58,14 +58,14 @@ To configure self-hosted runners for Copilot code review:
        # ...
    ```
 
-> \[!NOTE]
+> [!NOTE]
 > If your repository does not have a `copilot-code-review.yml` file, Copilot code review will use the `copilot-setup-steps.yml` file instead. For more information about `copilot-setup-steps.yml`, see [Configure the development environment](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment#preinstalling-tools-or-dependencies-in-copilots-environment).
 
 ## Upgrade to larger GitHub-hosted GitHub Actions runners
 
 By default, Copilot code review runs on a standard GitHub Actions runner. Larger runners provide better performance (CPU and memory), more disk space, and advanced features like Azure private networking. See [Larger runners](/en/actions/concepts/runners/larger-runners).
 
-> \[!NOTE]
+> [!NOTE]
 > Usage of larger GitHub-hosted runners is billed at a higher per-minute rate. For more information, see [GitHub Actions billing](/en/billing/concepts/product-billing/github-actions).
 
 1. Set up larger runners for your organization. See [Managing larger runners](/en/actions/how-tos/manage-runners/larger-runners/manage-larger-runners).
@@ -87,14 +87,14 @@ By default, Copilot code review runs on a standard GitHub Actions runner. Larger
        # ...
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > If your repository does not have a `copilot-code-review.yml` file, Copilot code review will use the `copilot-setup-steps.yml` file instead.
 
 ## Configure runners at the organization level
 
 Organization owners can set a default runner type for Copilot code review and Copilot cloud agent across all repositories in the organization, and control whether individual repositories can override this default.
 
-> \[!NOTE]
+> [!NOTE]
 > The organization-level runner type applies to both Copilot code review and Copilot cloud agent. Repositories can still override the organization default for code review using `copilot-code-review.yml` (or `copilot-setup-steps.yml`) unless you disable **Allow repositories to customize the runner type**. For more information, see [Configuring runners for GitHub Copilot cloud agent in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/configure-runner-for-coding-agent#preventing-repositories-from-customizing-the-runner-type).
 
 This is useful if your organization requires all code reviews and cloud agent tasks to run on specific runners, for example, to use larger runners for better performance or self-hosted runners that have access to internal resources.

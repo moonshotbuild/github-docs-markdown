@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can use GitHub to clone remote repositories to GitHub Desktop.
 
-> \[!TIP]
+> [!TIP]
 > You also can use GitHub Desktop to clone repositories that exist on GitHub. For more information, see [Cloning and forking repositories from GitHub Desktop](/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop).
 
 1. Sign in to GitHub and GitHub Desktop before you start to clone.
@@ -36,7 +36,7 @@ You can use GitHub to clone remote repositories to GitHub Desktop.
 
    ![Screenshot of the "URL" tab of the "Clone a Repository" window. Next to the "Local Path" field, a button, labeled "Choose", is outlined in orange.](/assets/images/help/desktop/clone-choose-button-url-mac.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    > If the repository is configured to use LFS, you will be prompted to initialize Git LFS.
 
 6. Click **Clone**.

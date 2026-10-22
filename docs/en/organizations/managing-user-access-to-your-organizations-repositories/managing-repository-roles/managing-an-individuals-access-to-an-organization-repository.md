@@ -23,7 +23,7 @@ You can manage a person's access to a repository owned by your organization.
 
 When you remove a collaborator from a repository in your organization, the collaborator loses read and write access to the repository. If the repository is private and the collaborator has forked the repository, then their fork is also deleted, but the collaborator will still retain any local clones of your repository.
 
-> \[!WARNING]
+> [!WARNING]
 >
 > * If you remove a person’s access to a private repository, any of their forks of that private repository are deleted. Local clones of the private repository are retained. If a team's access to a private repository is revoked or a team with access to a private repository is deleted, and team members do not have access to the repository through another team, private forks of the repository will be deleted.
 > * You are responsible for ensuring that people who have lost access to a repository delete any confidential information or intellectual property.

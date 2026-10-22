@@ -35,7 +35,7 @@ A workflow contains meta information about an Actions workflow file.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (WorkflowRunOrder): Ordering options for the connection.
+  * `orderBy` (WorkflowRunOrder): Ordering options for the connection. Default: `{field: CREATED_AT, direction: DESC}`.
 
 * `state` (WorkflowState!): The state of the workflow.
 * `updatedAt` (DateTime!): Identifies the date and time when the object was last updated.

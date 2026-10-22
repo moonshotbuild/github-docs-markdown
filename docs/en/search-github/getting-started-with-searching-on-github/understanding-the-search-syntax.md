@@ -17,7 +17,7 @@ breadcrumbs:
 
 When searching GitHub, you can construct queries that match specific numbers and words.
 
-> \[!NOTE]
+> [!NOTE]
 > The syntax below applies to non-code search. For more information on code search syntax, see [Understanding GitHub Code Search syntax](/en/search-github/github-code-search/understanding-github-code-search-syntax).
 
 ## Query for values greater or less than another value

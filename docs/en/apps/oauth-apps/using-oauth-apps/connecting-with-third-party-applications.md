@@ -40,10 +40,10 @@ Applications can have *read* or *write* access to your GitHub data.
 
 When you want to use a third-party application that integrates with GitHub, that application lets you know what type of access to your data will be required. If you grant access to the application, then the application will be able to perform actions on your behalf, such as reading or modifying data. For example, if you want to use an app that requests `user:email` scope, the app will have read-only access to your private email addresses. For more information, see [Scopes for OAuth apps](/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps).
 
-> \[!NOTE]
+> [!NOTE]
 > Currently, you can't scope source code access to read-only.
 
-> \[!TIP]
+> [!TIP]
 > We recommend that you regularly review your authorized integrations. Remove any applications and tokens that haven't been used in a while. For more information, see [Reviewing your authorized OAuth apps](/en/apps/oauth-apps/using-oauth-apps/reviewing-your-authorized-oauth-apps).
 
 ### Types of requested data

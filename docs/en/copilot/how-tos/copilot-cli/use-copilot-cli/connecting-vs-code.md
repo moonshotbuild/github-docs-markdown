@@ -40,7 +40,7 @@ If Copilot CLI successfully connects to VS Code, the environment message that's 
 
 If you have the same workspace open in more than one VS Code window, the CLI connects to one of them automatically. It cannot connect to multiple IDE instances at the same time. If you prefer to connect to a different instance of VS Code, you can switch by using the `/ide` command.
 
-> \[!NOTE]
+> [!NOTE]
 > If you are using GitHub Codespaces, a CLI session running locally cannot connect to a VS Code workspace running in the remote codespace. You can, however, connect when you use the CLI inside the codespace—that is, within VS Code's built-in terminal or in an SSH session on the remote codespace host.
 
 ### Manual connection during an interactive session
@@ -80,7 +80,7 @@ Explain this file
 
 When you ask Copilot to make changes to a file in the workspace, VS Code displays the proposed changes as a diff in a new editor tab. This makes it easy to see exactly what Copilot is proposing. Use the accept (✓) or reject (✗) buttons in the top-right of the diff view to apply or discard the changes. Once you accept or reject the diff, the pending file-edit permission is resolved and the CLI continues its workflow.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The diff view is not shown if you have allowed Copilot to edit files without your approval—for example, using the `--allow-all` or `--yolo` command-line options, or the `/allow-all` or `/yolo` slash commands. Instead, the proposed changes are applied directly to the file in the workspace without showing a diff, and the CLI continues immediately with the updated file content.
 > * If you prefer not to use the diff view in VS Code you can turn this feature off in the `/ide` menu. When you turn this off, the proposed file changes are displayed in the CLI.

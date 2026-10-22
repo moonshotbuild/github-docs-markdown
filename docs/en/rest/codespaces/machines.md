@@ -23,7 +23,7 @@ You can determine which machine types are available to create a codespace, eithe
 
 You can also use this information when changing the machine of an existing codespace by updating its `machine` property. The machine update will take place the next time the codespace is restarted. For more information, see [Changing the machine type for your codespace](/en/codespaces/customizing-your-codespace/changing-the-machine-type-for-your-codespace).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List available machine types for a repository

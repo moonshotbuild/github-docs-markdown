@@ -23,7 +23,7 @@ You can add LSP servers to give Copilot CLI precise code intelligence, improving
 
 ## Introduction
 
-This article explains how to add LSP servers for Copilot CLI. For conceptual information about LSP servers, see [Using LSP servers with GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/lsp-servers).
+This article explains how to add LSP servers for Copilot CLI. For conceptual information about LSP servers, see [Using LSP servers with GitHub Copilot CLI](/en/copilot/concepts/customizations/lsp-servers).
 
 Adding an LSP server for Copilot CLI is a two-step process:
 
@@ -78,13 +78,13 @@ Installing an LSP server for a specific language typically involves installing a
 
 To manually install an LSP server, refer to the documentation for the specific language server you want to install. Listed below are some example commands for installing popular LSP servers.
 
-> \[!NOTE]
+> [!NOTE]
 > Useful resources for finding LSP servers for different languages include:
 >
 > * [Implementations](https://microsoft.github.io/language-server-protocol/implementors/servers/) on Microsoft's Language Server Protocol website.
 > * [Language Server Protocol](https://wiki.archlinux.org/title/Language_Server_Protocol) on the Arch Linux website.
 
-> \[!CAUTION]
+> [!CAUTION]
 > Only install LSP servers from sources you trust.
 
 ### Example installation command: TypeScript and JavaScript

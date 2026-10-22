@@ -48,7 +48,7 @@ To allow GitHub Actions workflows to run, click the **Approve and run workflows*
 
 Optionally, you can configure Copilot cloud agent to allow GitHub Actions workflows to run without human intervention.
 
-> \[!WARNING] Allowing GitHub Actions workflows to run without approval may allow unreviewed code written by Copilot to gain write access to your repository or access your GitHub Actions secrets.
+> [!WARNING] Allowing GitHub Actions workflows to run without approval may allow unreviewed code written by Copilot to gain write access to your repository or access your GitHub Actions secrets.
 
 You must be a repository administrator to configure these settings.
 

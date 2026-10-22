@@ -1,7 +1,7 @@
 ---
 source_path: "/en/billing/concepts/product-billing/github-advanced-security"
 title: "GitHub Advanced Security license billing"
-intro: "Learn how usage of Advanced Security features is measured and how to pay for additional licenses."
+intro: "Understand how Advanced Security licenses and AI-credit usage are billed."
 product: "Billing and payments"
 document_type: "article"
 breadcrumbs:
@@ -17,7 +17,7 @@ breadcrumbs:
 
 # GitHub Advanced Security license billing
 
-Learn how usage of Advanced Security features is measured and how to pay for additional licenses.
+Understand how Advanced Security licenses and AI-credit usage are billed.
 
 ## Licenses for GitHub Advanced Security
 
@@ -41,7 +41,7 @@ Each **active committer** to at least one repository with an Advanced Security f
 * **Active committers** are committers who contributed to at least one repository  and have a GitHub Team or GitHub Enterprise license with your organization or enterprise. That is, they are also a member, an enterprise-managed user, an external collaborator, or have a pending invitation to join your organization or enterprise.
 * **Unique committers** is the number of active committers who contributed only to one repository, or only to repositories in one organization. You can free up this number of licenses by disabling GitHub Secret Protection or GitHub Code Security for that repository or organization.
 
-> \[!NOTE] When a repository is migrated to GitHub using GitHub Enterprise Importer, GitHub Advanced Security only consumes licenses for commits and pushes made *after* migration. Historic contributions from *before* the migration are not considered. For more information, see [About GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/understanding-github-enterprise-importer/about-github-enterprise-importer).
+> [!NOTE] When a repository is migrated to GitHub using GitHub Enterprise Importer, GitHub Advanced Security only consumes licenses for commits and pushes made *after* migration. Historic contributions from *before* the migration are not considered. For more information, see [About GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/understanding-github-enterprise-importer/about-github-enterprise-importer).
 
 You can see the active and unique committers to an organization on the Global settings page for Advanced Security. Under "Secret Protection repositories" and "Code Security repositories", summaries and repository-level details are reported. See [Configuring global security settings for your organization](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/configure-global-settings).
 
@@ -56,6 +56,24 @@ GitHub makes some Advanced Security features available free of charge on GitHub.
 For full details of available features, see [About GitHub Advanced Security](/en/get-started/learning-about-github/about-github-advanced-security).
 
 You need to **pay** to use Advanced Security features in **private repositories** on GitHub.com, and in all repositories hosted by GHE.com and GitHub Enterprise Server.
+
+## How AI feature usage is billed
+
+Some Advanced Security features consume AI credits in addition to the active-committer licenses described in this article. AI Scan and agentic autofix consume the **Code Security AI Credits** SKU.
+
+These features consume Code Security AI Credits even when the repository is public and does not require active-committer licenses.
+
+If the account being billed has included AI credits from a GitHub Copilot entitlement, eligible usage draws from that allowance first. After the included allowance is exhausted, further usage is metered. If the account doesn't have included AI credits, all usage is metered.
+
+For an organization-owned repository, usage is attributed to the account that pays for the organization's usage. This is the standalone organization account or its enterprise account. The included AI credits and budgets for that account apply, including for public repositories.
+
+Repositories in the personal namespace of a managed user account are not treated as ordinary personal-account repositories for Code Security AI Credits. AI Scan and agentic autofix are not currently available for these repositories and do not consume Code Security AI Credits there. Purchasing Code Security, having included AI credits, or configuring a Code Security AI Credits budget does not make these features available.
+
+This limitation does not affect classic Copilot Autofix, which is distinct from agentic autofix and does not consume AI credits.
+
+Before security administrators enable AI Scan or agentic autofix broadly, billing administrators should review the account's included AI credits and set budgets for metered usage. After the included allowance is exhausted, a hard budget can prevent further metered usage. For more information, see [Budgets and alerts](/en/billing/concepts/budgets-and-alerts).
+
+For information about features that consume Code Security AI Credits, see [AI Scan for pull requests](/en/code-security/concepts/code-scanning/ai-powered-security-detections) and [About autofix for code scanning](/en/code-security/concepts/code-scanning/autofix-for-code-scanning).
 
 ## Using more than your planned licenses
 
@@ -78,7 +96,7 @@ There are two different ways to pay for licenses.
   * No pre-defined license limit.
   * No overage state, you pay only for what you use.
 
-  > \[!NOTE]
+  > [!NOTE]
   > On GitHub Enterprise Server, metered use of Advanced Security products is billed through the linked enterprise account on GitHub Enterprise Cloud.
 
 * **Volume/subscription billing** available for GitHub Enterprise plans only
@@ -135,7 +153,7 @@ There are two scenarios where usage may exceed the budget:
 
 For more information about budgets, see [Budgets and alerts](/en/billing/concepts/budgets-and-alerts).
 
-> \[!NOTE] When you enable GitHub Secret Protection, GitHub Code Security, or GitHub Advanced Security, there is a delay of up to two hours before the change is shown in the usage data on the "Billing and licensing" tab.
+> [!NOTE] When you enable GitHub Secret Protection, GitHub Code Security, or GitHub Advanced Security, there is a delay of up to two hours before the change is shown in the usage data on the "Billing and licensing" tab.
 
 If your enterprise uses Advanced Security on both GitHub Enterprise Server and GitHub Enterprise Cloud, you can ensure users don't consume multiple licenses unnecessarily by synchronizing license usage between environments. See [Syncing license usage from GitHub Enterprise Server to Cloud](/en/enterprise-cloud@latest/billing/how-tos/manage-server-licenses/sync-license-usage).
 
@@ -147,7 +165,7 @@ As soon as you make licenses available, by disabling GitHub Secret Protection, G
 
 You can enforce policies to allow or disallow the use of Advanced Security by organizations owned by your enterprise account. See [Enforcing policies for code security and analysis for your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-code-security-and-analysis-for-your-enterprise).
 
-> \[!TIP]
+> [!TIP]
 > All standalone instances of GitHub Enterprise Server use volume/subscription licenses. Contact [GitHub's Sales team](https://enterprise.github.com/contact) if you want to make changes to your license.
 
 ## Disabling GitHub Advanced Security in an enterprise

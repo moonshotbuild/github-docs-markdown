@@ -19,7 +19,7 @@ Repository graphs help you view and analyze data for your repository.
 
 A repository's graphs give you information on  traffic, projects that depend on the repository, contributors and commits to the repository, and a repository's forks and network. If you maintain a repository, you can use this data to get a better understanding of who's using your repository and why they're using it.
 
-> \[!NOTE]
+> [!NOTE]
 > Certain contributor, commit, and code frequency insights are only available for repositories that have fewer than 10,000 commits.
 
 Some repository graphs are available only in public repositories with GitHub Free:

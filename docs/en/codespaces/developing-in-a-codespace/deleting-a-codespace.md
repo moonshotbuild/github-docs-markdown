@@ -29,7 +29,7 @@ You can manually delete a codespace in a variety of ways:
 
 Use the tabs at the top of this article to display instructions for each of these ways of deleting a codespace.
 
-> \[!NOTE]
+> [!NOTE]
 > You can't delete a codespace from within JupyterLab.
 
 ## Why you should delete unused codespaces
@@ -49,7 +49,7 @@ There are limits to the number of codespaces you can create, and the number of c
 
 </div>
 
-> \[!NOTE]
+> [!NOTE]
 > You may have prebuild codespaces that are consuming additional storage which are not displayed on this dashboard. To delete them, follow the steps for “[Deleting a prebuild configuration](/en/codespaces/prebuilding-your-codespaces/managing-prebuilds#deleting-a-prebuild-configuration).”
 
 <div class="ghd-tool vscode">
@@ -60,7 +60,7 @@ You can delete codespaces from within VS Code when you are not currently working
 
    ![Screenshot of the Activity Bar. The icon for the "Remote Explorer" side bar (a rectangle overlaid by a circle) is highlighted with an orange outline.](/assets/images/help/codespaces/click-remote-explorer-icon-vscode.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    > If the Remote Explorer is not displayed in the Activity Bar:
    >
    > 1. Access the Command Palette. For example, by pressing <kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>P</kbd> (Mac) / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows/Linux).
@@ -73,7 +73,7 @@ You can delete codespaces from within VS Code when you are not currently working
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 To delete a codespace use the `gh codespace delete` subcommand and then choose a codespace from the list that's displayed.

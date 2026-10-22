@@ -23,7 +23,7 @@ For more information on the metrics returned by these endpoints, see [GitHub Cop
 
 For help understanding gaps or discrepancies in Copilot usage data, see [Reconciling Copilot usage metrics across dashboards, APIs, and reports](/en/copilot/reference/copilot-usage-metrics/reconciling-usage-metrics).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get Copilot enterprise usage metrics for a specific day

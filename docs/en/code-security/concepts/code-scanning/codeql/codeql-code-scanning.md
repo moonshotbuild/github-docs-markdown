@@ -58,14 +58,14 @@ CodeQL supports the following languages:
 * Swift
 * GitHub Actions workflows
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Use `java-kotlin` to analyze code written in Java, Kotlin or both.
 > * Use `javascript-typescript` to analyze code written in JavaScript, TypeScript or both.
 
 For more information, see the documentation on the CodeQL website: [Supported languages and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/).
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > CodeQL does **not** support languages that are not listed above. This includes, but is not limited to, **PHP**, **Scala**, and others. Attempting to use CodeQL with unsupported languages may result in no alerts being generated and incomplete analysis.
 
 ## Modeling custom or niche frameworks

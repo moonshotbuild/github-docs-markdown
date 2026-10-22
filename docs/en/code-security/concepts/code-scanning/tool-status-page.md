@@ -23,7 +23,7 @@ The tool status page provides visibility into the health and performance of code
 
 The tool status page shows information about all of your code scanning tools and is a good starting point for debugging problems when code scanning isn't working as expected.
 
-> \[!NOTE]
+> [!NOTE]
 > The tool status page shows tool status at the repository level for the default branch only, not at the organization level.
 
 ## Tool status indicators
@@ -78,7 +78,7 @@ Use file coverage percentages to debug and improve your analysis:
 * **Low percentage**: Investigate diagnostic output. See [CodeQL scanned fewer lines than expected](/en/code-security/reference/code-scanning/troubleshoot-analysis-errors/fewer-lines-scanned-than-expected)
 * **Zero percentage**: You may have code in languages not currently being analyzed. Update your setup to include these languages. See [Workflow configuration options for code scanning](/en/code-security/reference/code-scanning/workflow-configuration-options)
 
-> \[!NOTE]
+> [!NOTE]
 > If you set up both advanced setup and default setup, the tool status page only shows default setup.
 
 ## Troubleshooting features

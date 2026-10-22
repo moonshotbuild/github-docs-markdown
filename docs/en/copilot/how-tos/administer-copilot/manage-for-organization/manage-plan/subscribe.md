@@ -23,7 +23,7 @@ breadcrumbs:
 
 Organization owners can set up a Copilot Business plan for their organization.
 
-> \[!NOTE]
+> [!NOTE]
 > If your organization is part of an enterprise, you will gain Copilot through your enterprise instead. See [Subscribing to GitHub Copilot for your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-plan/subscribe) and [Granting users access to GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access).
 
 1. Navigate to the [GitHub Copilot sign up page](https://github.com/github-copilot/purchase?ref_product=copilot\&ref_type=purchase\&ref_style=text).

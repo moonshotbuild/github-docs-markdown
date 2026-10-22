@@ -27,7 +27,7 @@ You can combine multiple filters to narrow your results. For example, you can sh
 
 For a complete list of available filters, see [Available filters for security overview](/en/code-security/reference/security-at-scale/overview-dashboard-filters).
 
-> \[!NOTE]
+> [!NOTE]
 > The information shown by security overview varies according to your access to repositories and organizations, and according to whether Advanced Security features are used by those repositories and organizations. For more information, see [Security overview](/en/code-security/concepts/security-at-scale/security-overview).
 
 ## Filter methods

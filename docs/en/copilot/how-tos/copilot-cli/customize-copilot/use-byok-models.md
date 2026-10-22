@@ -1,6 +1,6 @@
 ---
 source_path: "/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models"
-title: "Using your own LLM models in GitHub Copilot CLI"
+title: "Adding LLM models to GitHub Copilot CLI"
 intro: "Use a model from an external provider of your choice in Copilot by supplying your own API key."
 product: "GitHub Copilot"
 document_type: "article"
@@ -13,17 +13,17 @@ breadcrumbs:
     href: "/en/copilot/how-tos/copilot-cli"
   - title: "Customize Copilot CLI"
     href: "/en/copilot/how-tos/copilot-cli/customize-copilot"
-  - title: "Use your own model provider"
+  - title: "Add LLM models"
     href: "/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models"
 ---
 
-# Using your own LLM models in GitHub Copilot CLI
+# Adding LLM models to GitHub Copilot CLI
 
 Use a model from an external provider of your choice in Copilot by supplying your own API key.
 
-You can configure Copilot CLI to use your own LLM provider, also called BYOK (Bring Your Own Key), instead of GitHub-hosted models. This lets you connect to OpenAI-compatible endpoints, Azure OpenAI, or Anthropic, including locally running models such as Ollama.
+You can configure Copilot CLI to include models from an LLM provider of your choice—using BYOK (Bring Your Own Key)—in addition to the GitHub-hosted models. This lets you connect to OpenAI-compatible endpoints, Azure OpenAI, or Anthropic, including locally running models such as Ollama.
 
-> \[!NOTE]
+> [!NOTE]
 > This article is for users who want to configure their own LLM provider API key on their local machine. To set up custom models for users in an enterprise, see [Enabling custom models for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/enable-custom-models).
 
 ## Prerequisites
@@ -152,7 +152,7 @@ copilot
 
 You can run Copilot CLI in offline mode to prevent it from contacting GitHub's servers. This is designed for isolated environments where the CLI should communicate only with your local or on-premises model provider.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Offline mode only guarantees full network isolation if your provider is also local or within the same isolated environment. If `COPILOT_PROVIDER_BASE_URL` points to a remote endpoint, your prompts and code context are still sent over the network to that provider.
 
 1. Configure your provider environment variables as described in Configuring your provider.

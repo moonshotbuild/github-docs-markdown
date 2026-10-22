@@ -21,7 +21,7 @@ You can choose who can view your repository.
 
 ## About repository visibility changes
 
-> \[!NOTE]
+> [!NOTE]
 > If you can't change a repository's visibility, the organization owner may have restricted the ability to change repository visibility to organization owners only. For more information, see [Restricting repository visibility changes in your organization](/en/organizations/managing-organization-settings/restricting-repository-visibility-changes-in-your-organization).
 
 We recommend reviewing the following caveats before you change the visibility of a repository.

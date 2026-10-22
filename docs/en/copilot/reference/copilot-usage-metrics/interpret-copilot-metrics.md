@@ -68,7 +68,7 @@ The "Model usage per day" and "Model usage per chat mode" charts help you unders
 | Model usage per day       | Shows which AI models power Copilot Chat activity.             | Identify whether users are primarily engaging with default models or experimenting with newer ones. |
 | Model usage per chat mode | Breaks down model usage by chat mode (Ask, Edit, Plan, Agent). | Monitor how model adoption evolves as new models are released.                                      |
 
-> \[!NOTE]
+> [!NOTE]
 > Model usage charts currently represent chat activity only. Completions data is not included in model breakdowns.
 
 ## Reviewing language usage
@@ -105,7 +105,7 @@ The adoption multiplier compares engaged users (Phase 1, 2, or 3) against passiv
 | Engaged users merge pull requests faster than passive users                   | Deeper adoption is associated with a shorter pull request lifecycle.                                                                                              | Use this comparison alongside pull request lifecycle metrics to evaluate overall delivery impact.                                                                        |
 | Multiplier stays flat despite growth in Phase 2 or Phase 3 share              | Agent adoption hasn't yet translated into a measurable difference in output between engaged and passive users.                                                    | Check whether agent usage is concentrated in a few users or teams, and whether enough time has passed since rollout for the impact to show.                              |
 
-> \[!NOTE]
+> [!NOTE]
 > The adoption multiplier compares two different populations of users, not the same users over time. Differences in team composition, project complexity, or seniority between engaged and passive users can influence the comparison as much as Copilot adoption itself.
 
 ## Reviewing potential return on investment
@@ -128,5 +128,5 @@ Use trends in usage, feature adoption, and language activity to guide enablement
 | Steady usage but low agent adoption           | Developers may not be aware of Copilot agent features.                | Share internal demos or success stories.                              |
 | Drop in DAU or acceptance rate                | Configuration issues or reduced relevance of suggestions.             | Encourage feedback and verify IDE and extension versions.             |
 
-> \[!TIP]
+> [!TIP]
 > Consider combining dashboard trends with feedback from surveys or retrospectives to get a full picture of Copilot’s impact on developer productivity.

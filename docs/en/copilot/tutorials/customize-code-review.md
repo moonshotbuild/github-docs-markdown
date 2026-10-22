@@ -51,7 +51,7 @@ Before writing custom instructions, it's helpful to understand how Copilot code 
 
 Keep these factors in mind as you write your instructions—they'll help you set realistic expectations and write more effective guidance.
 
-> \[!NOTE]
+> [!NOTE]
 > When reviewing a pull request, Copilot reads repository custom instructions, agent instructions, and agent skills from the head branch (the branch with your changes), not the base branch. For example, when merging `my-feature-branch` into `main`, Copilot uses the instructions and skills in `my-feature-branch`, so you can test changes to them in the same pull request without merging them first.
 
 ## Writing effective custom instructions
@@ -552,5 +552,5 @@ Remember that creating effective instructions is an iterative process. Start wit
 ## Next steps
 
 * Take a look at some of the [example custom instructions](https://github.com/github/awesome-copilot/tree/main/instructions) in the Awesome GitHub Copilot repository for inspiration.
-* Read [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization) to learn about the full range of customization options.
+* Read [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions) to learn about the full range of customization options.
 * Explore [Add custom instructions for Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions) for technical details on setting up instruction files.

@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can disconnect your Patreon account from GitHub to stop receiving recognition for Patreon sponsorships on GitHub.
 
-> \[!NOTE]
+> [!NOTE]
 > Unlinking your Patreon account from GitHub will not cancel any existing sponsorships you have created through Patreon. They will only appear as cancelled on GitHub. To stop sponsoring maintainers through Patreon, see [How do I cancel?](https://support.patreon.com/hc/en-us/articles/360005502572-How-do-I-cancel-) in the Patreon documentation.
 
 ## Unlinking your Patreon account from your GitHub account

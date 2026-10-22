@@ -41,7 +41,7 @@ You can add an action to your workflow by referencing the action in your workflo
 
 You can view the actions referenced in your GitHub Actions workflows as dependencies in the dependency graph of the repository containing your workflows. For more information, see “[Dependency graph](/en/code-security/concepts/supply-chain-security/dependency-graph).”
 
-> \[!NOTE]
+> [!NOTE]
 > To enhance security, GitHub Actions does not support redirects for actions or reusable workflows. This means that when the owner, name of an action's repository, or name of an action is changed, any workflows using that action with the previous name will fail.
 
 ### Adding an action from GitHub Marketplace
@@ -145,7 +145,7 @@ The creators of a community action have the option to use tags, branches, or SHA
 
 You will designate the version of the action in your workflow file. Check the action's documentation for information on their approach to release management, and to see which tag, branch, or SHA value to use.
 
-> \[!NOTE]
+> [!NOTE]
 > We recommend that you use a SHA value when using third-party actions. However, it's important to note Dependabot will only create Dependabot alerts for vulnerable GitHub Actions that use semantic versioning. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#using-third-party-actions) and [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts).
 
 ### Using tags
@@ -166,7 +166,7 @@ steps:
   - uses: actions/javascript-action@a824008085750b8e136effc585c3cd6082bd575f
 ```
 
-> \[!TIP] A workflow dependency lockfile pins your actions to verified commits without putting SHAs in your workflow files, so your `uses` references stay readable. It also covers transitive dependencies, which SHA pinning does not. See [Workflow dependency lockfiles](/en/actions/concepts/security/workflow-dependency-lockfiles).
+> [!TIP] A workflow dependency lockfile pins your actions to verified commits without putting SHAs in your workflow files, so your `uses` references stay readable. It also covers transitive dependencies, which SHA pinning does not. See [Workflow dependency lockfiles](/en/actions/concepts/security/workflow-dependency-lockfiles).
 
 ### Using branches
 

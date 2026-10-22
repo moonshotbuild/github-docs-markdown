@@ -23,7 +23,7 @@ You can analyze your code with the CodeQL CLI or another tool in a third-party c
 
 As an alternative to running code scanning within GitHub using GitHub Actions, you can analyze code in an external continuous integration or continuous delivery/deployment (CI/CD) system, then upload the results to GitHub.
 
-> \[!NOTE]
+> [!NOTE]
 > Uploading SARIF data to display as code scanning results in GitHub is supported for organization-owned repositories with GitHub Code Security enabled, and public repositories on GitHub.com. For more information, see [Managing security and analysis settings for your repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository).
 
 ## Setting up your analysis tool

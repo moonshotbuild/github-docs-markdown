@@ -118,7 +118,7 @@ If there are many deep code paths highlighted in the SARIF results, you can redu
 
 * CodeQL CLI `database analyze`: update the database analysis command to include the `--max-paths=1` flag. For more information, see [database analyze](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/database-analyze#--max-pathsmaxpaths).
 
-> \[!NOTE]
+> [!NOTE]
 > The `max-paths` setting affects the results of all dataflow queries.
 
 ## Further reading

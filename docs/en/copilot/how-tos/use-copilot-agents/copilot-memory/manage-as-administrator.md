@@ -21,9 +21,9 @@ breadcrumbs:
 
 Manage Copilot Memory settings and stored memories for an organization or enterprise.
 
-> \[!NOTE] This feature is currently in public preview and is subject to change.
+> [!NOTE] This feature is currently in public preview and is subject to change.
 
-Copilot Memory lets Copilot learn about your codebase and your personal preferences, helping Copilot agents work more effectively. For more information, see [About GitHub Copilot Memory](/en/copilot/concepts/agents/copilot-memory).
+Copilot Memory lets Copilot learn about your codebase and your personal preferences, helping Copilot agents work more effectively. For more information, see [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory).
 
 ## Enabling Copilot Memory
 
@@ -31,7 +31,7 @@ For enterprise- and organization-managed Copilot subscriptions, Copilot Memory i
 
 Once Copilot Memory is enabled, the feature is on for users by default. Copilot Memory will be used in any repository in which users use supported Copilot features, and it will save both repository-level facts and user-level preferences. Individual users can opt out of Copilot Memory in their account settings.
 
-> \[!NOTE]
+> [!NOTE]
 > If a user is assigned a Copilot subscription by more than one organization, the most restrictive setting applies—that is, Copilot Memory will not be used unless all of those organizations have enabled this feature.
 
 ### Enabling Copilot Memory for an enterprise
@@ -72,7 +72,7 @@ As an administrator of a repository in which Copilot Memory is in use, you can r
 
 ## Managing user-level preferences for an organization
 
-As an administrator, you can export or delete all user-level preferences that were generated with your organization as the active billing entity. For more information on the ownership model, see [About GitHub Copilot Memory](/en/copilot/concepts/agents/copilot-memory#user-level-preferences).
+As an administrator, you can export or delete all user-level preferences that were generated with your organization as the active billing entity. For more information on the ownership model, see [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory#user-level-preferences).
 
 ### Exporting user-level preferences
 
@@ -106,7 +106,7 @@ You can delete user-level preferences in bulk or for individual users.
 
 ## Managing user-level preferences for an enterprise
 
-As an administrator, you can export or delete all user-level preferences that were generated with your enterprise as the active billing entity. For more information on the ownership model, see [About GitHub Copilot Memory](/en/copilot/concepts/agents/copilot-memory#user-level-preferences).
+As an administrator, you can export or delete all user-level preferences that were generated with your enterprise as the active billing entity. For more information on the ownership model, see [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory#user-level-preferences).
 
 ### Exporting user-level preferences
 

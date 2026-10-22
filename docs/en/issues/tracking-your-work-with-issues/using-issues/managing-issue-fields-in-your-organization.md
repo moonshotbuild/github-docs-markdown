@@ -50,7 +50,7 @@ These default fields are pinned to issue types as follows:
 
 These default fields are fully customizable. You can edit their names, descriptions, and options, or delete them if they don't fit your workflow.
 
-> \[!TIP]
+> [!TIP]
 > You can rename options, change their colors, reorder them, or add new values to match your team's workflow. For example, you could change Effort options to T-shirt sizes (XS, S, M, L, XL).
 
 ## Creating an issue field
@@ -99,7 +99,7 @@ When you delete an issue field, all values set on issues for that field are perm
 5. To the right of the field you want to delete, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-kebab-horizontal" aria-label="open field options" role="img"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>.
 6. Click **Delete** and confirm the deletion.
 
-> \[!TIP]
+> [!TIP]
 > If you don't want to use issue fields, you can delete all default fields from your org settings. This removes them from all issues in your organization. You can re-create fields at any time.
 
 ## Reordering issue fields
@@ -132,7 +132,7 @@ You can associate issue fields with specific issue types so that only the most r
 
 Pinned fields automatically appear in the issue sidebar based on the selected issue type. To pin fields to issues that have no type, select the "Issues without a type" option.
 
-> \[!NOTE]
+> [!NOTE]
 > Fields must be pinned to at least one issue type, or to "Issues without a type", to appear in the issue sidebar. Fields that are not pinned to any type are only accessible via the **Add field** button or in projects.
 
 If a field is not appearing on your issues, check that it is pinned to the relevant issue type or to "Issues without a type". Fields that are not pinned and have no value set are hidden from the issue sidebar.

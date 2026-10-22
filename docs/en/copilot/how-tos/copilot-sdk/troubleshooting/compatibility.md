@@ -33,88 +33,89 @@ The Copilot SDK communicates with the CLI via JSON-RPC protocol. Features must b
 
 ### ✅ Available in SDK
 
-| Feature                        | SDK Method                                             | Notes                                                                                               |
-| ------------------------------ | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| **Session Management**         |                                                        |                                                                                                     |
-| Create session                 | `createSession()`                                      | Full config support                                                                                 |
-| Resume session                 | `resumeSession()`                                      | With infinite session workspaces                                                                    |
-| Disconnect session             | `disconnect()`                                         | Release in-memory resources                                                                         |
-| Destroy session *(deprecated)* | `destroy()`                                            | Use `disconnect()` instead                                                                          |
-| Delete session                 | `deleteSession()`                                      | Remove from storage                                                                                 |
-| List sessions                  | `listSessions()`                                       | All stored sessions                                                                                 |
-| Get last session               | `getLastSessionId()`                                   | For quick resume                                                                                    |
-| Get foreground session         | `getForegroundSessionId()`                             | Multi-session coordination                                                                          |
-| Set foreground session         | `setForegroundSessionId()`                             | Multi-session coordination                                                                          |
-| **Messaging**                  |                                                        |                                                                                                     |
-| Send message                   | `send()`                                               | With attachments                                                                                    |
-| Send and wait                  | `sendAndWait()`                                        | Blocks until complete                                                                               |
-| Steering (immediate mode)      | `send({ mode: "immediate" })`                          | Inject mid-turn without aborting                                                                    |
-| Queueing (enqueue mode)        | `send({ mode: "enqueue" })`                            | Buffer for sequential processing (default)                                                          |
-| File attachments               | `send({ attachments: [{ type: "file", path }] })`      | Images auto-encoded and resized                                                                     |
-| Directory attachments          | `send({ attachments: [{ type: "directory", path }] })` | Attach directory context                                                                            |
-| Get history                    | `getEvents()`                                          | All session events                                                                                  |
-| Abort                          | `abort()`                                              | Cancel in-flight request                                                                            |
-| **Tools**                      |                                                        |                                                                                                     |
-| Register custom tools          | `registerTools()`                                      | Full JSON Schema support                                                                            |
-| Tool permission control        | `onPreToolUse` hook                                    | Allow/deny/ask                                                                                      |
-| Tool result modification       | `onPostToolUse` hook                                   | Transform results                                                                                   |
-| Available/excluded tools       | `availableTools`, `excludedTools` config               | Filter tools                                                                                        |
-| **Models**                     |                                                        |                                                                                                     |
-| List models                    | `listModels()`                                         | With capabilities, billing, policy                                                                  |
-| Set model (at creation)        | `model` in session config                              | Per-session                                                                                         |
-| Switch model (mid-session)     | `session.setModel()`                                   | Also via `session.rpc.model.switchTo()`                                                             |
-| Get current model              | `session.rpc.model.getCurrent()`                       | Query active model                                                                                  |
-| Reasoning effort               | `reasoningEffort` config                               | For supported models                                                                                |
-| **Agent Mode**                 |                                                        |                                                                                                     |
-| Get current mode               | `session.rpc.mode.get()`                               | Returns current mode                                                                                |
-| Set mode                       | `session.rpc.mode.set()`                               | Switch between modes                                                                                |
-| **Plan Management**            |                                                        |                                                                                                     |
-| Read plan                      | `session.rpc.plan.read()`                              | Get plan.md content and path                                                                        |
-| Update plan                    | `session.rpc.plan.update()`                            | Write plan.md content                                                                               |
-| Delete plan                    | `session.rpc.plan.delete()`                            | Remove plan.md                                                                                      |
-| **Workspace Files**            |                                                        |                                                                                                     |
-| List workspace files           | `session.rpc.workspace.listFiles()`                    | Files in session workspace                                                                          |
-| Read workspace file            | `session.rpc.workspace.readFile()`                     | Read file content                                                                                   |
-| Create workspace file          | `session.rpc.workspace.createFile()`                   | Create file in workspace                                                                            |
-| **Authentication**             |                                                        |                                                                                                     |
-| Get auth status                | `getAuthStatus()`                                      | Check login state                                                                                   |
-| Use token                      | `gitHubToken` option                                   | Programmatic auth                                                                                   |
-| **Connectivity**               |                                                        |                                                                                                     |
-| Ping                           | `client.ping()`                                        | Health check with server timestamp                                                                  |
-| Get server status              | `client.getStatus()`                                   | Protocol version and server info                                                                    |
-| **MCP Servers**                |                                                        |                                                                                                     |
-| Local/stdio servers            | `mcpServers` config                                    | Spawn processes                                                                                     |
-| Remote HTTP/SSE                | `mcpServers` config                                    | Connect to services                                                                                 |
-| **Hooks**                      |                                                        |                                                                                                     |
-| Pre-tool use                   | `onPreToolUse`                                         | Permission, modify args                                                                             |
-| Post-tool use (success)        | `onPostToolUse`                                        | Modify results                                                                                      |
-| Post-tool use (failure)        | `onPostToolUseFailure`                                 | Observe failed tool calls, inject retry guidance                                                    |
-| User prompt                    | `onUserPromptSubmitted`                                | Modify prompts                                                                                      |
-| Session start/end              | `onSessionStart`, `onSessionEnd`                       | Lifecycle with source/reason                                                                        |
-| Error handling                 | `onErrorOccurred`                                      | Custom handling                                                                                     |
-| **Events**                     |                                                        |                                                                                                     |
-| All session events             | `on()`, `once()`                                       | 40+ event types                                                                                     |
-| Streaming                      | `streaming: true`                                      | Delta events                                                                                        |
-| **Session Config**             |                                                        |                                                                                                     |
-| Custom agents                  | `customAgents` config                                  | Define specialized agents                                                                           |
-| System message                 | `systemMessage` config                                 | Append or replace                                                                                   |
-| Custom provider                | `provider` config                                      | BYOK support                                                                                        |
-| Infinite sessions              | `infiniteSessions` config                              | Auto-compaction                                                                                     |
-| Permission handler             | `onPermissionRequest`                                  | Approve/deny requests; optionally attach a `decisionContext` for auto-approval telemetry            |
-| User input handler             | `onUserInputRequest`                                   | Handle ask\_user                                                                                    |
-| Skills                         | `skillDirectories` config                              | Custom skills                                                                                       |
-| Disabled skills                | `disabledSkills` config                                | Disable specific skills                                                                             |
-| Config directory               | `configDir` config                                     | Override default config location                                                                    |
-| Client name                    | `clientName` config                                    | Identify app in User-Agent                                                                          |
-| Working directory              | `workingDirectory` config                              | Set session cwd                                                                                     |
-| Additional directories         | `additionalDirectories` config                         | Grant session access beyond the working directory; re-supply on resume                              |
-| **Experimental**               |                                                        |                                                                                                     |
-| Agent management               | `session.rpc.agent.*`                                  | List, select, deselect, get current agent                                                           |
-| Fleet mode                     | `session.rpc.fleet.start()`                            | Parallel sub-agent execution; see [Fleet mode](/en/copilot/how-tos/copilot-sdk/features/fleet-mode) |
-| Manual compaction              | `session.rpc.history.compact()`                        | Trigger compaction on demand                                                                        |
-| Context clearing               | `session.rpc.history.clearContext()`                   | Replace conversation context from a terminal tool                                                   |
-| History truncation             | `session.rpc.history.truncate()`                       | Remove events from a point onward                                                                   |
-| Session forking                | `server.rpc.sessions.fork()`                           | Fork a session at a point in history                                                                |
+| Feature                            | SDK Method                                             | Notes                                                                                                        |
+| ---------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| **Session Management**             |                                                        |                                                                                                              |
+| Create session                     | `createSession()`                                      | Full config support                                                                                          |
+| Resume session                     | `resumeSession()`                                      | With infinite session workspaces                                                                             |
+| Disconnect session                 | `disconnect()`                                         | Release in-memory resources                                                                                  |
+| Destroy session *(deprecated)*     | `destroy()`                                            | Use `disconnect()` instead                                                                                   |
+| Delete session                     | `deleteSession()`                                      | Remove from storage                                                                                          |
+| List sessions                      | `listSessions()`                                       | All stored sessions                                                                                          |
+| Get last session                   | `getLastSessionId()`                                   | For quick resume                                                                                             |
+| Get foreground session             | `getForegroundSessionId()`                             | Multi-session coordination                                                                                   |
+| Set foreground session             | `setForegroundSessionId()`                             | Multi-session coordination                                                                                   |
+| **Messaging**                      |                                                        |                                                                                                              |
+| Send message                       | `send()`                                               | With attachments                                                                                             |
+| Send and wait                      | `sendAndWait()`                                        | Blocks until complete                                                                                        |
+| Steering (immediate mode)          | `send({ mode: "immediate" })`                          | Inject mid-turn without aborting                                                                             |
+| Queueing (enqueue mode)            | `send({ mode: "enqueue" })`                            | Buffer for sequential processing (default)                                                                   |
+| File attachments                   | `send({ attachments: [{ type: "file", path }] })`      | Images auto-encoded and resized                                                                              |
+| Directory attachments              | `send({ attachments: [{ type: "directory", path }] })` | Attach directory context                                                                                     |
+| Get history                        | `getEvents()`                                          | All session events                                                                                           |
+| Abort                              | `abort()`                                              | Cancel in-flight request                                                                                     |
+| **Tools**                          |                                                        |                                                                                                              |
+| Register custom tools              | `registerTools()`                                      | Full JSON Schema support                                                                                     |
+| Replace custom tools (mid-session) | `session.setTools()`                                   | Experimental; see [Changing tools during a session](/en/copilot/how-tos/copilot-sdk/features/changing-tools) |
+| Tool permission control            | `onPreToolUse` hook                                    | Allow/deny/ask                                                                                               |
+| Tool result modification           | `onPostToolUse` hook                                   | Transform results                                                                                            |
+| Available/excluded tools           | `availableTools`, `excludedTools` config               | Filter tools                                                                                                 |
+| **Models**                         |                                                        |                                                                                                              |
+| List models                        | `listModels()`                                         | With capabilities, billing, policy                                                                           |
+| Set model (at creation)            | `model` in session config                              | Per-session                                                                                                  |
+| Switch model (mid-session)         | `session.setModel()`                                   | Also via `session.rpc.model.switchTo()`                                                                      |
+| Get current model                  | `session.rpc.model.getCurrent()`                       | Query active model                                                                                           |
+| Reasoning effort                   | `reasoningEffort` config                               | For supported models                                                                                         |
+| **Agent Mode**                     |                                                        |                                                                                                              |
+| Get current mode                   | `session.rpc.mode.get()`                               | Returns current mode                                                                                         |
+| Set mode                           | `session.rpc.mode.set()`                               | Switch between modes                                                                                         |
+| **Plan Management**                |                                                        |                                                                                                              |
+| Read plan                          | `session.rpc.plan.read()`                              | Get plan.md content and path                                                                                 |
+| Update plan                        | `session.rpc.plan.update()`                            | Write plan.md content                                                                                        |
+| Delete plan                        | `session.rpc.plan.delete()`                            | Remove plan.md                                                                                               |
+| **Workspace Files**                |                                                        |                                                                                                              |
+| List workspace files               | `session.rpc.workspace.listFiles()`                    | Files in session workspace                                                                                   |
+| Read workspace file                | `session.rpc.workspace.readFile()`                     | Read file content                                                                                            |
+| Create workspace file              | `session.rpc.workspace.createFile()`                   | Create file in workspace                                                                                     |
+| **Authentication**                 |                                                        |                                                                                                              |
+| Get auth status                    | `getAuthStatus()`                                      | Check login state                                                                                            |
+| Use token                          | `gitHubToken` option                                   | Programmatic auth                                                                                            |
+| **Connectivity**                   |                                                        |                                                                                                              |
+| Ping                               | `client.ping()`                                        | Health check with server timestamp                                                                           |
+| Get server status                  | `client.getStatus()`                                   | Protocol version and server info                                                                             |
+| **MCP Servers**                    |                                                        |                                                                                                              |
+| Local/stdio servers                | `mcpServers` config                                    | Spawn processes                                                                                              |
+| Remote HTTP/SSE                    | `mcpServers` config                                    | Connect to services                                                                                          |
+| **Hooks**                          |                                                        |                                                                                                              |
+| Pre-tool use                       | `onPreToolUse`                                         | Permission, modify args                                                                                      |
+| Post-tool use (success)            | `onPostToolUse`                                        | Modify results                                                                                               |
+| Post-tool use (failure)            | `onPostToolUseFailure`                                 | Observe failed tool calls, inject retry guidance                                                             |
+| User prompt                        | `onUserPromptSubmitted`                                | Modify prompts                                                                                               |
+| Session start/end                  | `onSessionStart`, `onSessionEnd`                       | Lifecycle with source/reason                                                                                 |
+| Error handling                     | `onErrorOccurred`                                      | Custom handling                                                                                              |
+| **Events**                         |                                                        |                                                                                                              |
+| All session events                 | `on()`, `once()`                                       | 40+ event types                                                                                              |
+| Streaming                          | `streaming: true`                                      | Delta events                                                                                                 |
+| **Session Config**                 |                                                        |                                                                                                              |
+| Custom agents                      | `customAgents` config                                  | Define specialized agents                                                                                    |
+| System message                     | `systemMessage` config                                 | Append or replace                                                                                            |
+| Custom provider                    | `provider` config                                      | BYOK support                                                                                                 |
+| Infinite sessions                  | `infiniteSessions` config                              | Auto-compaction                                                                                              |
+| Permission handler                 | `onPermissionRequest`                                  | Approve/deny; `decisionContext.userFeedback` collects explanations only in restricted telemetry              |
+| User input handler                 | `onUserInputRequest`                                   | Handle ask\_user                                                                                             |
+| Skills                             | `skillDirectories` config                              | Custom skills                                                                                                |
+| Disabled skills                    | `disabledSkills` config                                | Disable specific skills                                                                                      |
+| Config directory                   | `configDir` config                                     | Override default config location                                                                             |
+| Client name                        | `clientName` config                                    | Identify app in User-Agent                                                                                   |
+| Working directory                  | `workingDirectory` config                              | Set session cwd                                                                                              |
+| Additional directories             | `additionalDirectories` config                         | Grant session access beyond the working directory; re-supply on resume                                       |
+| **Experimental**                   |                                                        |                                                                                                              |
+| Agent management                   | `session.rpc.agent.*`                                  | List, select, deselect, get current agent                                                                    |
+| Fleet mode                         | `session.rpc.fleet.start()`                            | Parallel sub-agent execution; see [Fleet mode](/en/copilot/how-tos/copilot-sdk/features/fleet-mode)          |
+| Manual compaction                  | `session.rpc.history.compact()`                        | Trigger compaction on demand                                                                                 |
+| Context clearing                   | `session.rpc.history.clearContext()`                   | Replace conversation context from a terminal tool                                                            |
+| History truncation                 | `session.rpc.history.truncate()`                       | Remove events from a point onward                                                                            |
+| Session forking                    | `server.rpc.sessions.fork()`                           | Fork a session at a point in history                                                                         |
 
 ### ❌ Not available in SDK (CLI-only)
 
@@ -259,7 +260,7 @@ const result = await session.rpc.history.compact();
 console.log(`Removed ${result.tokensRemoved} tokens, ${result.messagesRemoved} messages`);
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Thresholds are context utilization ratios (0.0-1.0), not absolute token counts.
 
 ### Plan management

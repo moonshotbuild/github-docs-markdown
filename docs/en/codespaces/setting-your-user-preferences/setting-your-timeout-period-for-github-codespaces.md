@@ -23,7 +23,7 @@ A codespace will stop running after a period of inactivity. By default this peri
 
 Regardless of your idle timeout setting, a codespace has a maximum lifetime of 12 hours. For more information, see [Understanding the codespace lifecycle](/en/codespaces/about-codespaces/understanding-the-codespace-lifecycle#maximum-lifetime-of-a-codespace).
 
-> \[!WARNING]
+> [!WARNING]
 > Codespaces compute usage is billed for the duration for which a codespace is active. If you're not using a codespace but it remains running, and hasn't yet timed out, you are billed for the total time that the codespace was active, irrespective of whether you were using it. For more information, see [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces#pricing).
 
 ### Inactivity defined
@@ -50,7 +50,7 @@ Organizations can set a maximum idle timeout policy for codespaces created from 
 
 ## Setting the timeout period for a codespace
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 To set the timeout period when you create a codespace, use the `idle-timeout` argument with the `codespace create` subcommand. Specify the time in minutes, followed by `m`. The time must be between 5 minutes and 240 minutes (4 hours).

@@ -33,7 +33,7 @@ When you accept an invitation to join an organization, the organization owners m
 
 For more information, see the [GitHub Privacy Statement](/en/site-policy/privacy-policies/github-general-privacy-statement).
 
-> \[!NOTE]
+> [!NOTE]
 > Owners are not able to view member IP addresses in the organization's audit log. In the event of a security incident, such as an account compromise or inadvertent sharing of sensitive data, organization owners may request details of access to private repositories. The information we return may include your IP address.
 
 By default, your organization membership visibility is set to private. You can choose to publicize individual organization memberships on your profile. For more information, see [Publicizing or hiding organization membership](/en/account-and-profile/how-tos/organization-membership/publicizing-or-hiding-organization-membership).

@@ -139,8 +139,8 @@ Get all the rulesets for a repository.
 
 - **`targets`** (string)
   A comma-separated list of rule targets to filter by.
-If provided, only rulesets that apply to the specified targets will be returned.
-For example, branch,tag,push.
+  If provided, only rulesets that apply to the specified targets will be returned.
+  For example, branch,tag,push.
 
 ### HTTP response status codes
 
@@ -445,7 +445,7 @@ Create a ruleset for a repository.
     - **`parameters`** (object)
       - **`allowed_merge_methods`** (array of strings)
         Array of allowed merge methods. Allowed values include merge, squash, and rebase. At least one option must be enabled.
-Supported values are: merge, squash, rebase
+        Supported values are: merge, squash, rebase
       - **`dismiss_stale_reviews_on_push`** (boolean) (required)
         New, reviewable commits pushed will dismiss previous pull request review approvals.
       - **`dismissal_restriction`** (object)
@@ -1058,7 +1058,7 @@ Update a ruleset for a repository.
     - **`parameters`** (object)
       - **`allowed_merge_methods`** (array of strings)
         Array of allowed merge methods. Allowed values include merge, squash, and rebase. At least one option must be enabled.
-Supported values are: merge, squash, rebase
+        Supported values are: merge, squash, rebase
       - **`dismiss_stale_reviews_on_push`** (boolean) (required)
         New, reviewable commits pushed will dismiss previous pull request review approvals.
       - **`dismissal_restriction`** (object)

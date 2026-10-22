@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can configure an LTI-compliant learning management system (LMS) with GitHub Classroom.
 
-> \[!WARNING]
+> [!WARNING]
 > **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
 > For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
 
@@ -27,7 +27,7 @@ You can configure an LTI-compliant learning management system (LMS) with GitHub 
 
 Before you can connect your LMS to a classroom, an administrator for your LMS instance needs to configure your LMS to allow GitHub Classroom and then register your LMS with GitHub Classroom to initiate the OAuth handshake. An admin only needs to do this registration process once, then any teacher who uses their LMS instance may sync their LMS courses to classrooms. For more information on connecting an LMS course to a classroom, see [Connect a learning management system course to a classroom](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/connect-a-learning-management-system-course-to-a-classroom).
 
-> \[!NOTE]
+> [!NOTE]
 > Google Classroom does not use the LTI protocol, so does not need to be connected to GitHub Classroom before importing the roster. For more information, see [Connect a learning management system course to a classroom](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/connect-a-learning-management-system-course-to-a-classroom#importing-a-roster-from-google-classroom).
 
 ## Supported LMSes
@@ -47,7 +47,7 @@ GitHub has tested and verified registration, connection and the import of roster
 * Sakai
 * Google Classroom
 
-> \[!NOTE]
+> [!NOTE]
 > Other LMSes that implement LTI 1.3 may also work with GitHub Classroom, but have not yet been verified. LMS admins may need to configure custom settings around privacy and button placement and may need to provide teachers with documentation on how to launch into GitHub Classroom from the LMS.
 
 Google Classroom does not use the LTI protocol, so does not need to be connected to GitHub Classroom before importing the roster. For more information, see [Connect a learning management system course to a classroom](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/connect-a-learning-management-system-course-to-a-classroom#importing-a-roster-from-google-classroom).

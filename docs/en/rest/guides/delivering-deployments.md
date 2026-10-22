@@ -34,7 +34,7 @@ If you haven't already, be sure to [download `ngrok`](https://ngrok.com/), and l
 to [use it](https://ngrok.com/docs/getting-started/). We find it to be a very useful tool for exposing local
 applications to the internet.
 
-> \[!NOTE]
+> [!NOTE]
 > Alternatively, you can use webhook forwarding to set up your local environment to receive webhooks. For more information, see [Using the GitHub CLI to forward webhooks for testing](/en/webhooks/testing-and-troubleshooting-webhooks/using-the-github-cli-to-forward-webhooks-for-testing).
 
 Note: you can download the complete source code for this project

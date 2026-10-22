@@ -63,7 +63,7 @@ The Model Context Protocol (MCP) allows you to add external tools and data sourc
 * Book tickets online
 * Integrate with a calendar application
 
-For more information, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+For more information, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## Plugins
 
@@ -71,7 +71,7 @@ Copilot CLI plugins are distributable packages that provide a simple way to exte
 
 They bundle multiple customization components together into a single installable unit. You can install plugins directly from a repository, from a plugin marketplace, or from a local path.
 
-For more information, see [About GitHub Copilot plugins](/en/copilot/concepts/agents/about-plugins).
+For more information, see [Plugins for GitHub Copilot](/en/copilot/concepts/agents/about-plugins).
 
 ## Personal CLI settings
 

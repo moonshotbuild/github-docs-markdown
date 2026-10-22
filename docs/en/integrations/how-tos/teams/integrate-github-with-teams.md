@@ -33,7 +33,7 @@ With the GitHub integration for Teams, you can:
 
 * **Initiate and steer Copilot cloud agent sessions** in a conversation. Teammates can collaborate with each other and the agent, add context, correct assumptions, continue an agent task, and review the resulting plan, issues, pull requests and other artifacts.
 
-  > \[!NOTE]
+  > [!NOTE]
   >
   > * This feature is currently in public preview and subject to change.
 
@@ -51,7 +51,7 @@ To use the GitHub integration for Teams, you need:
 
 * To use Copilot cloud agent, you must have cloud sandboxes enabled for your Copilot plan. See [Cloud sandboxing for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes#cloud-sandboxing).
 
-  > \[!NOTE]
+  > [!NOTE]
   > Cloud sandbox policies share the same configuration as Copilot cloud agent policies. Members of an organization or enterprise, including an enterprise with managed users may need their owner to enable cloud sandboxes and Copilot cloud agent before they can use Copilot in Teams. See [Enabling or disabling cloud sandboxes for your organization or enterprise](/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization).
 
 ## Installing the GitHub integration for Teams in a single workspace

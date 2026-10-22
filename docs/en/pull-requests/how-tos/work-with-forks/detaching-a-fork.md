@@ -23,7 +23,7 @@ Disconnect a repository from its fork network by leaving the network or creating
 
 To turn your fork into a standalone repository, you can leave the fork network. The new repository will no longer automatically sync with changes from the original repository. This is useful when you want to take your work in a different direction or maintain distinct versions.
 
-> \[!WARNING]
+> [!WARNING]
 >
 > * The new repository will not retain any of its issues, pull requests, wikis, stars, watchers, comments, child forks, or other metadata that may currently be associated with your current fork.
 > * All git commit metadata will be preserved. Commits may become eligible to be counted as contributions if they meet certain criteria. See [Troubleshooting missing contributions](/en/account-and-profile/how-tos/contribution-settings/troubleshooting-missing-contributions#your-local-git-commit-email-isnt-connected-to-your-account).
@@ -62,7 +62,7 @@ To turn your fork into a standalone repository, you can clone the fork and use t
 
 3. Delete the forked repository. See [Deleting a repository](/en/repositories/creating-and-managing-repositories/deleting-a-repository).<br><br>
 
-   > \[!WARNING]
+   > [!WARNING]
    > Deleting a fork will **permanently** delete any associated pull requests and configurations. This action **cannot** be undone.
 
 4. Create a new repository with the same name in the same location. See [Creating a new repository](/en/repositories/creating-and-managing-repositories/creating-a-new-repository).

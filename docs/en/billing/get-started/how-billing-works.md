@@ -29,7 +29,7 @@ You can use GitHub without incurring any costs. If you choose a paid plan, subsc
 * **Subscriptions**: Fixed monthly costs for any additional products you subscribe to (for example: GitHub Secret Protection)
 * **Metered usage**: Variable costs that depend on how much you use certain features above the amounts included with your GitHub plan (for example: GitHub Actions). For more information see, [Product usage included with each plan](/en/billing/reference/product-usage-included) and [Budgets and alerts](/en/billing/concepts/budgets-and-alerts).
 
-> \[!TIP]
+> [!TIP]
 > GitHub has discounted plans for verified students and academic faculties, and for non-profit organizations. For more information, see [Discounted plans for GitHub accounts](/en/billing/concepts/discounted-plans).
 
 ## How does billing work?

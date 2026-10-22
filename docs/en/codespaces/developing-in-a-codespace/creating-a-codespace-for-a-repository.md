@@ -88,7 +88,7 @@ To speed up codespace creation, repository administrators can enable GitHub Code
 
         The options page may also display the names of one or more secrets that it's recommended you create in your Codespaces settings. For more information, see [Recommended secrets](#recommended-secrets).
 
-        > \[!NOTE]
+        > [!NOTE]
         >
         > * You can bookmark the options page to give you a quick way to create a codespace for this repository and branch.
         > * The <https://github.com/codespaces/new> page provides a quick way to create a codespace for any repository and branch. You can get to this page quickly by typing `codespace.new` into your browser's address bar.
@@ -122,7 +122,7 @@ After you connect your account on GitHub to the GitHub Codespaces extension, you
 
    ![Screenshot of the Activity Bar. The icon for the "Remote Explorer" side bar (a rectangle overlaid by a circle) is highlighted with an orange outline.](/assets/images/help/codespaces/click-remote-explorer-icon-vscode.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    > If the Remote Explorer is not displayed in the Activity Bar:
    >
    > 1. Access the Command Palette. For example, by pressing <kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>P</kbd> (Mac) / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows/Linux).
@@ -147,14 +147,14 @@ After you connect your account on GitHub to the GitHub Codespaces extension, you
 
 6. Click the machine type you want to use.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Your choice of available machine types may be limited by a number of factors. These can include a policy configured for your organization, or a minimum machine type specification for your repository. For more information, see [Restricting access to machine types](/en/codespaces/managing-codespaces-for-your-organization/restricting-access-to-machine-types) and [Setting a minimum specification for codespace machines](/en/codespaces/setting-up-your-project-for-codespaces/configuring-dev-containers/setting-a-minimum-specification-for-codespace-machines).
 
 </div>
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 To create a new codespace, use the `gh codespace create` subcommand.

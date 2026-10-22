@@ -23,6 +23,10 @@ Learn how to debug billing problems and resolve them.
 
   If the credit card you use to pay for GitHub is declined, you can take several steps to ensure that your payments go through and that you are not locked out of your account.
 
+* [Troubleshooting authorization holds](/en/billing/how-tos/troubleshooting/authorization-holds)
+
+  If an authorization hold appears on your payment method, you can check what it means and what to do if the funds are not released.
+
 * [Unlocking a locked account](/en/billing/how-tos/troubleshooting/locked-account)
 
   Your account's paid features are locked if your payment is past due because of billing problems.

@@ -19,7 +19,7 @@ breadcrumbs:
 
 Examples of how you can use GitHub Actions to automate common Dependabot related tasks.
 
-> \[!NOTE] This article explains how to automate Dependabot-related tasks using GitHub Actions. For more information about running Dependabot updates using GitHub Actions, see [Dependabot on GitHub Actions runners](/en/code-security/concepts/supply-chain-security/dependabot-on-actions) instead.
+> [!NOTE] This article explains how to automate Dependabot-related tasks using GitHub Actions. For more information about running Dependabot updates using GitHub Actions, see [Dependabot on GitHub Actions runners](/en/code-security/concepts/supply-chain-security/dependabot-on-actions) instead.
 
 You can use GitHub Actions to perform automated tasks when Dependabot creates pull requests to update dependencies. You may find this useful if you want to:
 
@@ -29,14 +29,14 @@ You can use GitHub Actions to perform automated tasks when Dependabot creates pu
 
 ## About Dependabot and GitHub Actions
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > If Dependabot is enabled for a repository, it will always run on GitHub Actions, **bypassing both Actions policy checks and disablement at the repository or organization level**. This ensures that security and version update workflows always run when Dependabot is enabled.
 
 Dependabot creates pull requests to keep your dependencies up to date. You can use GitHub Actions to perform automated tasks when these pull requests are created. For example, fetch additional artifacts, add labels, run tests, or otherwise modify the pull request.
 
 Dependabot is able to trigger GitHub Actions workflows on its pull requests and comments; however, certain events are treated differently. For more information, see [Troubleshooting Dependabot on GitHub Actions](/en/code-security/reference/supply-chain-security/troubleshoot-dependabot/dependabot-on-actions).
 
-> \[!NOTE]
+> [!NOTE]
 > You can also use agentic workflows for dependency analysis, update summaries, and remediation recommendations, while keeping security enforcement and merge gating in deterministic GitHub Actions workflows. For more information, see [Creating GitHub Agentic Workflows](/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows).
 
 Here are several common scenarios for pull requests that can be automated using GitHub Actions.
@@ -184,7 +184,7 @@ jobs:
           GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > If you use status checks to test pull requests, you should enable **Require status checks to pass before merging** for the target branch for Dependabot pull requests. This branch protection rule ensures that pull requests are not merged unless **all the required status checks pass**. For more information, see [Managing a branch protection rule](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule).
 
 If the target branch uses a merge queue, the built-in `GITHUB_TOKEN` cannot add pull requests to the queue. In this case, you must authenticate the workflow with a personal access token or a GitHub App token that has permission to merge, and use it in place of `GITHUB_TOKEN` for the `gh pr merge` step.

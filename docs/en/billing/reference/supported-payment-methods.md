@@ -19,7 +19,7 @@ Reference information detailing the supported payment methods for GitHub.
 
 ## Metered or usage-based billing options
 
-> \[!NOTE]
+> [!NOTE]
 > Prepaid credit/debit cards are not accepted as a valid form of payment.
 
 The supported payment methods for metered billing:
@@ -67,5 +67,5 @@ In addition, usage-based billing is available for the following licenses:
 
 For information about controlling spending, see [Setting up budgets to control spending on metered products](/en/billing/how-tos/set-up-budgets).
 
-> \[!NOTE]
+> [!NOTE]
 > Prepaid usage is not currently available for usage-based billing through Azure.

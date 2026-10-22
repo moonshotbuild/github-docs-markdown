@@ -99,7 +99,7 @@ To target all repositories in your organization, in the "Target repositories" se
 
 3. In the modal dialog that appears, enter a repository naming pattern using `fnmatch` syntax, then click **Add Inclusion pattern** or **Add Exclusion pattern**. For more information on `fnmatch` syntax, see [Using `fnmatch` syntax](#using-fnmatch-syntax).
 
-   > \[!NOTE]
+   > [!NOTE]
    > You can add multiple targeting criteria to the same ruleset. For example, you could include any repositories matching the pattern `*cat*`, then specifically exclude a repository matching the pattern `not-a-cat`.
 
 4. Optionally, on the ruleset configuration page, select **Prevent renaming of target repositories**.
@@ -123,7 +123,7 @@ You can add multiple targeting criteria to the same ruleset. For example, you co
 
 In the "Branch protections" or "Tag protections" section, select the rules you want to include in the ruleset. When you select a rule, you may be able to enter additional settings for the rule. For more information on the rules, see [Available rules for rulesets](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets).
 
-> \[!NOTE]
+> [!NOTE]
 > If you select **Require status checks before merging**, in the "Additional settings" section:
 >
 > * You can enter the name of each status check you would like to require. To finish adding the status check as a requirement, you must click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-plus" aria-label="Add selected status checks" role="img"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>.
@@ -135,7 +135,7 @@ To finish creating your ruleset, click **Create**. If the enforcement status of 
 
 ## Creating a push ruleset
 
-> \[!NOTE]
+> [!NOTE]
 > This ruleset will enforce push restrictions for a repository's entire fork network.
 
 You can create a push ruleset for private or internal repositories in your organization.
@@ -153,7 +153,7 @@ You can create a push ruleset for private or internal repositories in your organ
 
 ### Granting bypass permissions for your push ruleset
 
-> \[!NOTE] Bypass permissions for push rulesets that target a repository will be inherited by the entire fork network for this repository. This means that the only users who can bypass this ruleset for any repository in this repository's entire fork network are the users who can bypass this ruleset in the root repository.
+> [!NOTE] Bypass permissions for push rulesets that target a repository will be inherited by the entire fork network for this repository. This means that the only users who can bypass this ruleset for any repository in this repository's entire fork network are the users who can bypass this ruleset in the root repository.
 
 You can grant certain roles, teams, or apps bypass permissions  for your ruleset. The following are eligible for bypass access:
 
@@ -200,7 +200,7 @@ To target all repositories in your organization, in the "Target repositories" se
 
 3. In the modal dialog that appears, enter a repository naming pattern using `fnmatch` syntax, then click **Add Inclusion pattern** or **Add Exclusion pattern**. For more information on `fnmatch` syntax, see [Using `fnmatch` syntax](#using-fnmatch-syntax).
 
-   > \[!NOTE]
+   > [!NOTE]
    > You can add multiple targeting criteria to the same ruleset. For example, you could include any repositories matching the pattern `*cat*`, then specifically exclude a repository matching the pattern `not-a-cat`.
 
 4. Optionally, on the ruleset configuration page, select **Prevent renaming of target repositories**.

@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can invite anyone to become a member of your organization using their username or email address for GitHub.
 
-> \[!NOTE] This article does not apply to Enterprise Managed Users. Managed user accounts are provisioned using SCIM, not invited.
+> [!NOTE] This article does not apply to Enterprise Managed Users. Managed user accounts are provisioned using SCIM, not invited.
 
 ## About organization invitations
 
@@ -25,7 +25,7 @@ When you invite someone to become a member of your organization, the person rece
 
 You can use a person's GitHub username or email address for the invitation.
 
-> \[!NOTE]
+> [!NOTE]
 > If you use an email address for the invitation, the invitee will only be able to accept the invitation if the email address matches with a verified email address associated with the invitee's personal account on GitHub. For more information, see [Verifying your email address](/en/account-and-profile/how-tos/email-preferences/verifying-your-email-address).
 >
 > If an invitee's personal account has been flagged, the invitee won't be able to accept any new or pending invitations to join organizations.

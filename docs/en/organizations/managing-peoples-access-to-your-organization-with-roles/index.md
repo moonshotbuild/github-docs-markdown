@@ -25,17 +25,9 @@ You can control access to your organizations's settings by giving people organiz
 
   Learn how to view organization role permissions and manage organization role assignments.
 
-* [Permissions of custom organization roles](/en/permissions-of-custom-organization-roles)
-
-  You can control access to your organization's settings with custom organization roles.
-
 * [Permissions of predefined organization roles](/en/organizations/managing-peoples-access-to-your-organization-with-roles/permissions-of-predefined-organization-roles)
 
   Learn about the predefined organization roles and the permissions each role grants in your organization.
-
-* [Managing custom organization roles](/en/managing-custom-organization-roles)
-
-  You can create, edit, and assign custom organization roles in an organization's settings.
 
 * [Maintaining ownership continuity for your organization](/en/organizations/managing-peoples-access-to-your-organization-with-roles/maintaining-ownership-continuity-for-your-organization)
 

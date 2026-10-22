@@ -21,7 +21,7 @@ breadcrumbs:
 
 A custom agent that breaks down features into actionable tasks and creates detailed implementation plans.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The examples in this library are intended for inspiration—you are encouraged to adjust them to be more specific to your projects, languages, and team processes.
 > * For community-contributed examples for specific languages and scenarios, see the [Awesome GitHub Copilot Customizations](https://github.com/github/awesome-copilot/tree/main/agents) repository.
@@ -103,6 +103,6 @@ The agent task will appear on the page below the text box. You can click into th
 
 ## Further reading
 
-* [About custom agents](/en/copilot/concepts/agents/cloud-agent/about-custom-agents)
+* [Custom agents](/en/copilot/concepts/customizations/custom-agents)
 * [Creating custom agents for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents)
 * [Custom agents configuration](/en/copilot/reference/custom-agents-configuration)

@@ -113,7 +113,7 @@ You can use Octokit.js to interact with the GitHub REST API in your JavaScript s
 
 1. Create an access token. For example, create a personal access token or a GitHub App user access token. You will use this token to authenticate your request, so you should give it any scopes or permissions that are required to access that endpoint. For more information, see [Authenticating to the REST API](/en/rest/authentication/authenticating-to-the-rest-api) or [Identifying and authorizing users for GitHub Apps](/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-with-a-github-app-on-behalf-of-a-user).
 
-   > \[!WARNING]
+   > [!WARNING]
    > Treat your access token like a password.
    >
    > To keep your token secure, you can store your token as a secret and run your script through GitHub Actions. For more information, see the [Using Octokit.js in GitHub Actions](#using-octokitjs-in-github-actions) section.
@@ -260,14 +260,14 @@ If you are authenticating with a GitHub App, you can create an installation acce
 
 ## Using `curl` in the command line
 
-> \[!NOTE]
+> [!NOTE]
 > If you want to make API requests from the command line, GitHub recommends that you use GitHub CLI, which simplifies authentication and requests. For more information about getting started with the REST API using GitHub CLI, see the GitHub CLI version of this article.
 
 1. Install `curl` if it isn't already installed on your machine. To check if `curl` is installed, execute `curl --version` in the command line. If the output provides information about the version of `curl`, that means `curl` is installed. If you get a message similar to `command not found: curl`, you need to download and install `curl`. For more information, see [the curl project download page](https://curl.se/download.html).
 
 2. Create an access token. For example, create a personal access token or a GitHub App user access token. You will use this token to authenticate your request, so you should give it any scopes or permissions that are required to access the endpoint. For more information, see [Authenticating to the REST API](/en/rest/authentication/authenticating-to-the-rest-api).
 
-   > \[!WARNING]
+   > [!WARNING]
    > Treat your access token like a password.
    >
    > To keep your token secure, you can store your token as a Codespaces secret and use the command line through Codespaces. For more information, see [Managing encrypted secrets for your codespaces](/en/codespaces/managing-your-codespaces/managing-your-account-specific-secrets-for-github-codespaces).
@@ -285,7 +285,7 @@ If you are authenticating with a GitHub App, you can create an installation acce
    --header "Authorization: Bearer YOUR-TOKEN"
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > In most cases, you can use `Authorization: Bearer` or `Authorization: token` to pass a token. However, if you are passing a JSON web token (JWT), you must use `Authorization: Bearer`.
 
 ## Using `curl` commands in GitHub Actions

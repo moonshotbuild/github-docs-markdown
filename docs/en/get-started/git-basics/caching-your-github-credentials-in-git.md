@@ -17,7 +17,7 @@ breadcrumbs:
 
 If you're cloning GitHub repositories using HTTPS, we recommend you use GitHub CLI or Git Credential Manager (GCM) to remember your credentials.
 
-> \[!TIP]
+> [!TIP]
 > If you clone GitHub repositories using SSH, then you can authenticate using an SSH key instead of using other credentials. For information about setting up an SSH connection, see [Connecting to GitHub with SSH](/en/authentication/connecting-to-github-with-ssh).
 
 ## GitHub CLI
@@ -53,7 +53,7 @@ For macOS, you don't need to run `git config` because GCM automatically configur
 
 The next time you clone an HTTPS URL that requires authentication, Git will prompt you to log in using a browser window. You may first be asked to authorize an OAuth app. If your account or organization requires [two-factor auth](/en/authentication/securing-your-account-with-two-factor-authentication-2fa), you'll also need to complete the 2FA challenge.
 
-> \[!TIP]
+> [!TIP]
 >
 > If you're a member of an enterprise that uses Enterprise Managed Users, your enterprise view has the "Users managed by ACCOUNT NAME" header bar at the top of the screen. In that case you will need to disable account filtering locally in GCM to prevent getting prompted for authentication each time a remote Git operation is performed. For more details, see the [`git-credential-manager` repository](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialgithubaccountfiltering).
 >
@@ -75,7 +75,7 @@ We recommend always installing the latest version. At a minimum, install version
 
 The next time you clone an HTTPS URL that requires authentication, Git will prompt you to log in using a browser window. You may first be asked to authorize an OAuth app. If your account or organization requires [two-factor auth](/en/authentication/securing-your-account-with-two-factor-authentication-2fa), you'll also need to complete the 2FA challenge.
 
-> \[!TIP]
+> [!TIP]
 >
 > If you're a member of an enterprise that uses Enterprise Managed Users, your enterprise view has the "Users managed by ACCOUNT NAME" header bar at the top of the screen. In that case you will need to disable account filtering locally in GCM to prevent getting prompted for authentication each time a remote Git operation is performed. For more details, see the [`git-credential-manager` repository](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialgithubaccountfiltering).
 >
@@ -89,10 +89,10 @@ Once you've authenticated successfully, your credentials are stored in the Windo
 
 <br>
 
-> \[!WARNING]
+> [!WARNING]
 > Older versions of Git for Windows came with Git Credential Manager for Windows. This older product is no longer supported and cannot connect to GitHub via OAuth. We recommend you upgrade to [the latest version of Git for Windows](https://github.com/git-for-windows/git/releases/latest).
 
-> \[!WARNING]
+> [!WARNING]
 > If you cached incorrect or outdated credentials in Credential Manager for Windows, Git will fail to access GitHub. To reset your cached credentials so that Git prompts you to enter your credentials, access the Credential Manager in the Windows Control Panel under User Accounts > Credential Manager. Look for the GitHub entry and delete it.
 
 </div>
@@ -109,7 +109,7 @@ For Linux, install Git and GCM, then configure Git to use GCM.
 
 The next time you clone an HTTPS URL that requires authentication, Git will prompt you to log in using a browser window. You may first be asked to authorize an OAuth app. If your account or organization requires [two-factor auth](/en/authentication/securing-your-account-with-two-factor-authentication-2fa), you'll also need to complete the 2FA challenge.
 
-> \[!TIP]
+> [!TIP]
 >
 > If you're a member of an enterprise that uses Enterprise Managed Users, your enterprise view has the "Users managed by ACCOUNT NAME" header bar at the top of the screen. In that case you will need to disable account filtering locally in GCM to prevent getting prompted for authentication each time a remote Git operation is performed. For more details, see the [`git-credential-manager` repository](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md#credentialgithubaccountfiltering).
 >

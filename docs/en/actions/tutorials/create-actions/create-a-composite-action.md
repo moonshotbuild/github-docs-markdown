@@ -25,7 +25,7 @@ In this guide, you'll learn about the basic components needed to create and use 
 
 Once you complete this project, you should understand how to build your own composite action and test it in a workflow.
 
-> \[!WARNING]
+> [!WARNING]
 > When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#good-practices-for-mitigating-script-injection-attacks).
 
 ### Composite actions and reusable workflows
@@ -34,7 +34,7 @@ Composite actions allow you to collect a series of workflow job steps into a sin
 
 ## Prerequisites
 
-> \[!NOTE]
+> [!NOTE]
 > This example explains how to create a composite action within a separate repository. However, it is possible to create a composite action within the same repository. For more information, see [Creating a composite action](/en/actions/tutorials/create-actions/create-a-composite-action#creating-a-composite-action-within-the-same-repository).
 
 Before you begin, you'll create a repository on GitHub.

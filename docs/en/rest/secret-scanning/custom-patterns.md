@@ -133,11 +133,11 @@ Personal access tokens (classic) need the write:org scope to use this endpoint.
     The regular expression of the custom pattern.
   - **`start_delimiter`** (string)
     The start delimiter regex for the custom pattern.
-Defaults to \A|[^0-9A-Za-z] when not specified.
+    Defaults to \A|[^0-9A-Za-z] when not specified.
     Default: `\A|[^0-9A-Za-z]`
   - **`end_delimiter`** (string)
     The end delimiter regex for the custom pattern.
-Defaults to \z|[^0-9A-Za-z] when not specified.
+    Defaults to \z|[^0-9A-Za-z] when not specified.
     Default: `\z|[^0-9A-Za-z]`
   - **`must_match`** (array of strings)
     List of regexes that the secret must match.
@@ -237,9 +237,9 @@ Personal access tokens (classic) need the write:org scope to use this endpoint.
 
 - **`post_delete_action`** (string)
   What to do with alerts associated with the deleted patterns.
-delete_alerts permanently removes the alerts.
-resolve_alerts resolves the alerts as "pattern deleted".
-Defaults to delete_alerts when not specified.
+  delete_alerts permanently removes the alerts.
+  resolve_alerts resolves the alerts as "pattern deleted".
+  Defaults to delete_alerts when not specified.
   Default: `delete_alerts`
   Can be one of: `delete_alerts`, `resolve_alerts`
 
@@ -483,11 +483,11 @@ Fine-grained access tokens require the administration:write repository permissio
     The regular expression of the custom pattern.
   - **`start_delimiter`** (string)
     The start delimiter regex for the custom pattern.
-Defaults to \A|[^0-9A-Za-z] when not specified.
+    Defaults to \A|[^0-9A-Za-z] when not specified.
     Default: `\A|[^0-9A-Za-z]`
   - **`end_delimiter`** (string)
     The end delimiter regex for the custom pattern.
-Defaults to \z|[^0-9A-Za-z] when not specified.
+    Defaults to \z|[^0-9A-Za-z] when not specified.
     Default: `\z|[^0-9A-Za-z]`
   - **`must_match`** (array of strings)
     List of regexes that the secret must match.
@@ -578,9 +578,9 @@ Fine-grained access tokens require the administration:write repository permissio
 
 - **`post_delete_action`** (string)
   What to do with alerts associated with the deleted patterns.
-delete_alerts permanently removes the alerts.
-resolve_alerts resolves the alerts as "pattern deleted".
-Defaults to delete_alerts when not specified.
+  delete_alerts permanently removes the alerts.
+  resolve_alerts resolves the alerts as "pattern deleted".
+  Defaults to delete_alerts when not specified.
   Default: `delete_alerts`
   Can be one of: `delete_alerts`, `resolve_alerts`
 

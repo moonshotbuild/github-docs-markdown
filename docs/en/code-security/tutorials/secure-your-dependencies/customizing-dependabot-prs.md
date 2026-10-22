@@ -292,7 +292,7 @@ This configuration produces the following branch names:
 | pip django-deps group update                              | Grouped         | `deps/pip/django-deps-a1b2c3d4e5`                  |
 | Cross-ecosystem infrastructure group (Docker + Terraform) | Multi-ecosystem | `dependabot/infra/infrastructure-fc93691fd4`       |
 
-> \[!NOTE]
+> [!NOTE]
 > For multi-ecosystem groups:
 >
 > * The `pull-request-branch-name` on the `multi-ecosystem-groups` entry controls the grouped cross-ecosystem PR branch name.
@@ -314,7 +314,7 @@ By default, Dependabot checks for manifest files on the default branch and raise
 
 Generally, it makes most sense to keep Dependabot's checks and updates on the default branch. However, there may be some cases where you may need to specify a different target branch. If, for example, your team's processes require you to first test and validate updates on a non-production branch, you can use `target-branch` to specify a different branch for Dependabot to raise pull requests against.
 
-> \[!NOTE]
+> [!NOTE]
 > Dependabot raises pull requests for security updates against the **default branch only**. If you use `target-branch`, then as a result, all configuration settings for that package manager will then *only* apply to version updates, and not security updates.
 
 ```yaml copy

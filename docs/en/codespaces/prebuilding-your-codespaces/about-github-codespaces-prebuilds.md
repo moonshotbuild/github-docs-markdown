@@ -31,7 +31,7 @@ When prebuilds are available for a particular branch of a repository, a particul
 
 When you create a codespace from a template on the "Your codespaces" page, GitHub may automatically use a prebuild to speed up creation time. For more information on templates, see [Creating a codespace from a template](/en/codespaces/developing-in-a-codespace/creating-a-codespace-from-a-template).
 
-> \[!NOTE]
+> [!NOTE]
 > Each prebuild that's created consumes storage space that will either incur a billable charge or, for repositories owned by your personal GitHub account, will use some of your monthly included storage. For more information, see [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces).
 
 ## The prebuild process

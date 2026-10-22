@@ -21,7 +21,7 @@ breadcrumbs:
 
 Integrate your preferred custom models with GitHub Copilot by using your own LLM API keys, and make them available to your organization members.
 
-> \[!NOTE]
+> [!NOTE]
 > This feature is in public preview and subject to change.
 
 You can add custom models to your enterprise or organization by providing your own API keys. This enables teams to use your preferred large language model (LLM) providers with Copilot Chat, Copilot CLI, and IDEs.
@@ -38,7 +38,7 @@ API keys from the following providers are supported:
 
 Fine-tuned models are also supported, but functionality and quality of results can vary depending on the fine-tuning setup. You should test your model and review its outputs carefully before using it in production.
 
-> \[!NOTE] A separate feature allows users to configure their own LLM keys locally in various clients. See [Bring your own key for GitHub Copilot](/en/copilot/concepts/models/bring-your-own-key).
+> [!NOTE] A separate feature allows users to configure their own LLM keys locally in various clients. See [Bring your own key for GitHub Copilot](/en/copilot/concepts/models/bring-your-own-key).
 
 ## Why bring your own API keys?
 
@@ -55,7 +55,7 @@ An enterprise owner must have enabled the **Enable custom models** policy.
 
 ## Adding your key to an organization account
 
-> \[!IMPORTANT] We highly recommend adhering to the principle of least privilege by assigning only the minimum necessary scopes to your API keys.
+> [!IMPORTANT] We highly recommend adhering to the principle of least privilege by assigning only the minimum necessary scopes to your API keys.
 
 After you've added your key and selected one or more models, you and your organization members will be able to use them with Copilot Chat, Copilot CLI, and IDEs. Your models will appear at the bottom of the model picker, under the organization name.
 
@@ -97,5 +97,5 @@ After you've added your key and selected one or more models, you and your organi
 ## Further reading
 
 * [Enabling custom models for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/enable-custom-models) in our documentation for enterprise accounts.
-* [About GitHub Copilot Chat](/en/copilot/concepts/chat)
+* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 * [Supported surfaces for GitHub Copilot policies](/en/copilot/reference/supported-surfaces-for-policies)

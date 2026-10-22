@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can enable other users to authorize your OAuth app.
 
-> \[!NOTE]
+> [!NOTE]
 > Consider building a GitHub App instead of an OAuth app.
 >
 > Both OAuth apps and GitHub Apps use OAuth 2.0.
@@ -53,7 +53,7 @@ Once you have updated your app to use refresh tokens to handle token expiration,
 
 ## Web application flow
 
-> \[!NOTE]
+> [!NOTE]
 > If you are building a GitHub App, you can still use the OAuth web application flow, but the setup has some important differences. See [Authenticating with a GitHub App on behalf of a user](/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-with-a-github-app-on-behalf-of-a-user) for more information.
 
 The web application flow to authorize users for your app is:
@@ -381,7 +381,7 @@ FAIL:  https://example.org
 
 When wildcard matching is disabled, the redirect URL must exactly match the callback URL. You can enable or disable wildcard matching for each callback URL in your app's settings.
 
-> \[!WARNING]
+> [!WARNING]
 > Enabling wildcard matching can expose your app to security risks, because it allows an attacker to send authorization codes to any subdomain or subdirectory of the callback URL. Only enable wildcard matching if you absolutely need it and you are entirely certain that you control all possible subdomains and paths of the callback URL. For more information, see the [OAuth 2.0 Security Best Current Practice](https://www.rfc-editor.org/info/rfc9700/#section-4.1.1-11).
 
 Apps that had a single callback URL enabled prior to August 3, 2026 have wildcard matching enabled for that callback URL. This preserves the redirect behavior that existed before wildcard matching became a configurable setting, and is why all OAuth apps and some GitHub Apps created before that date have wildcard matching enabled. If your app does not need wildcard matching, we recommend that you disable it.
@@ -412,7 +412,7 @@ There is a limit of ten tokens that are issued per user/application/scope combin
 
 Hitting the hourly rate limit will not revoke your oldest token. Instead, it will trigger a re-authorization prompt within the browser, asking the user to double check the permissions they're granting your app. This prompt is intended to give a break to any potential infinite loop the app is stuck in, since there's little to no reason for an app to request ten tokens from the user within an hour.
 
-> \[!WARNING]
+> [!WARNING]
 > Revoking all permission from an OAuth app deletes any SSH keys the application generated on behalf of the user, including [deploy keys](/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys).
 
 ## Directing users to review their access
@@ -425,7 +425,7 @@ To build this link, you'll need your OAuth app's `client_id` that you received f
 https://github.com/settings/connections/applications/:client_id
 ```
 
-> \[!TIP]
+> [!TIP]
 > To learn more about the resources that your OAuth app can access for a user, see [Discovering resources for a user](/en/rest/guides/discovering-resources-for-a-user).
 
 ## Troubleshooting

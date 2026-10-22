@@ -19,7 +19,7 @@ You can search wikis on GitHub and narrow the results using these wiki search qu
 
 You can search wikis globally across all of GitHub, or search wikis within a particular repository or organization. For more information, see [About searching on GitHub](/en/search-github/getting-started-with-searching-on-github/about-searching-on-github).
 
-> \[!TIP]
+> [!TIP]
 >
 > * This article contains links to example searches on the GitHub.com website, but you can use the same search filters in any GitHub platform. In the linked example searches, replace `github.com` with the hostname for your GitHub platform.
 > * For a list of search syntaxes that you can add to any search qualifier to further improve your results, see [Understanding the search syntax](/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax).

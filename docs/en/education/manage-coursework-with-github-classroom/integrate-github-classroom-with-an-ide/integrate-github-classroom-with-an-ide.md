@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can preconfigure a supported integrated development environment (IDE) for assignments you create in GitHub Classroom.
 
-> \[!WARNING]
+> [!WARNING]
 > **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
 > For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
 

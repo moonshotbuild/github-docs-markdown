@@ -34,7 +34,7 @@ Requests associated with the commit.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (PullRequestOrder): Ordering options for pull requests.
+  * `orderBy` (PullRequestOrder): Ordering options for pull requests. Default: `{field: CREATED_AT, direction: ASC}`.
 
 * `author` (GitActor): Authorship details of the commit.
 * `authoredByCommitter` (Boolean!): Check if the committer and the author match.
@@ -70,7 +70,7 @@ null. We recommend using this field instead of changedFiles.
   * `environments` ([String!]): Environments to list deployments for.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (DeploymentOrder): Ordering options for deployments returned from the connection.
+  * `orderBy` (DeploymentOrder): Ordering options for deployments returned from the connection. Default: `{field: CREATED_AT, direction: ASC}`.
 
 * `file` (TreeEntry): The tree entry representing the file located at the given path.
   * `path` (String!): The path for the file.
@@ -272,7 +272,7 @@ This aggregates commits made by a user within one repository.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (CommitContributionOrder): Ordering options for commit contributions returned from the connection.
+  * `orderBy` (CommitContributionOrder): Ordering options for commit contributions returned from the connection. Default: `{field: OCCURRED_AT, direction: DESC}`.
 
 * `repository` (Repository!): The repository in which the commits were made.
 * `resourcePath` (URI!): The HTTP path for the user's commits to the repository in this time range.

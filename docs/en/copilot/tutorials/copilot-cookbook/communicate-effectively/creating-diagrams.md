@@ -35,7 +35,7 @@ Create a Mermaid Gantt diagram that covers the period August 1st 2025 until Janu
 
 ## Example response
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 Copilot will provide you with the Mermaid code to create the flowchart. You can copy the code Copilot Chat provides and paste it anywhere on GitHub that supports Markdown, such as an issue or discussion.
 

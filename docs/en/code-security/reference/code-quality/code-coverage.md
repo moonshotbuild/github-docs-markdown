@@ -21,7 +21,7 @@ Code Quality shows what percentage of the lines of your code your tests actually
 
 Code coverage measures what percentage of the lines in your source code are executed when your test suite runs. Code Quality displays a line coverage percentage on pull requests after you upload a Cobertura XML coverage report.
 
-> \[!NOTE]
+> [!NOTE]
 > Code Quality reports **line coverage** only. Coverage tools often also report function, branch, or statement coverage. Code Quality does not currently use these metrics, even if your Cobertura XML report includes them, and they are not shown on pull requests or evaluated by coverage threshold rules.
 
 ## How line coverage is calculated

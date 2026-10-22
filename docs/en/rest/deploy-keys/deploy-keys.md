@@ -34,7 +34,7 @@ Conversely, these activities will not delete a deploy key:
 * If the deploy key is created with a GitHub App installation access token, uninstalling or deleting the app will not delete the deploy key.
 * If the deploy key is created with a personal access token, regenerating the personal access token will not delete the deploy key.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List deploy keys

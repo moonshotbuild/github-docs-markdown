@@ -86,7 +86,7 @@ When you run a command, Copilot CLI checks for credentials in the following orde
 4. OAuth token from the system keychain
 5. GitHub CLI (`gh auth token`) fallback
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * An environment variable silently overrides a stored OAuth token. If you set `GH_TOKEN` for another tool, the CLI uses that token instead of the OAuth token from `copilot login`. To avoid unexpected behavior, unset environment variables you do not intend the CLI to use. There is one exception: in GitHub Codespaces, the `GITHUB_TOKEN` that is injected automatically does not take precedence over an account you signed in with using `/login`. A `GITHUB_TOKEN`, `COPILOT_GITHUB_TOKEN`, or `GH_TOKEN` that you export explicitly still does.
 > * When you configure BYOK provider environment variables (for example, `COPILOT_PROVIDER_BASE_URL`, `COPILOT_PROVIDER_API_KEY`), Copilot CLI uses these for AI model requests regardless of your GitHub authentication status. GitHub tokens are only needed for GitHub-hosted features.

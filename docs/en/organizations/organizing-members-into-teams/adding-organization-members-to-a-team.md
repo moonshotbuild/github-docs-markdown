@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Adding organization members to a team
 
-People with owner or team maintainer permissions can add organization members to teams. People with owner permissions can also add non-members to a team and the organization.
+People with owner or team maintainer permissions can add organization members to teams. People with owner permissions can also invite non-members to join a team and the organization.
 
 Organizations that use GitHub Enterprise Cloud can use team synchronization to automatically add and remove organization members to teams through an identity provider. For more information, see [Synchronizing a team with an identity provider group](/en/enterprise-cloud@latest/organizations/organizing-members-into-teams/synchronizing-a-team-with-an-identity-provider-group) in the GitHub Enterprise Cloud documentation.
 

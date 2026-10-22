@@ -21,7 +21,7 @@ The core GitHub tools you can use to investigate security incidents, what each t
 
 Use this reference to decide which GitHub tools to use during a security investigation, what questions each tool can answer, and what factors may affect the data you can see.
 
-> \[!NOTE]
+> [!NOTE]
 > The availability of each tool (and the data it provides) varies by GitHub plan, your role and permissions, feature enablement, and pre-incident configuration (for example, audit log streaming and IP address disclosure require prior set up).
 
 ## Activity view

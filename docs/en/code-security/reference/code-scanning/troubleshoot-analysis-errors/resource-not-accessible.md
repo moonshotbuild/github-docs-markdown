@@ -21,7 +21,7 @@ breadcrumbs:
 
 This error may be seen on pull requests created by Dependabot and can be resolved in a couple of different ways.
 
-> \[!NOTE]
+> [!NOTE]
 > This troubleshooting article is *only* relevant if you're seeing this error with Dependabot. If you see this error with other GitHub products and have difficulty troubleshooting it, you can contact GitHub Support. For more information, see [Contacting GitHub Support](/en/support/contacting-github-support).
 
 ## About this error

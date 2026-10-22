@@ -23,7 +23,7 @@ These endpoints are only available to authenticated organization owners. For mor
 
 You can use these endpoints to export one or more repositories so you can move them to a GitHub Enterprise Server instance. For more information, see [Exporting migration data from GitHub.com](/en/migrations/using-ghe-migrator/exporting-migration-data-from-githubcom).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List organization migrations

@@ -49,7 +49,7 @@ Learn how to customize Copilot CLI to maximize its usefulness when working on a 
 
   Create specialized agents with tailored expertise for specific development tasks.
 
-* [Using your own LLM models in GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models)
+* [Adding LLM models to GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models)
 
   Use a model from an external provider of your choice in Copilot by supplying your own API key.
 

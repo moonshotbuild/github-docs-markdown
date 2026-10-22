@@ -97,7 +97,7 @@ To create secrets or variables for an environment in a personal account reposito
 
 ### Creating configuration variables for an organization
 
-> \[!NOTE]
+> [!NOTE]
 > Organization-level secrets and variables are not accessible by private repositories for GitHub Free. For more information about upgrading your GitHub subscription, see [Upgrading your account's plan](/en/billing/how-tos/manage-plan-and-licenses/upgrade-plan).
 
 When creating a secret or variable in an organization, you can use a policy to limit access by repository. For example, you can grant access to all repositories, or limit access to only private repositories or a specified list of repositories.
@@ -167,10 +167,10 @@ In this modification of the earlier example, we've introduced an `if` conditiona
 run: echo "${{ env.Greeting }} ${{ env.First_Name }}. Today is ${{ env.DAY_OF_WEEK }}!"
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Contexts are usually denoted using the dollar sign and curly braces, as `${{ context.property }}`. In an `if` conditional, the `${{` and `}}` are optional, but if you use them they must enclose the entire comparison statement, as shown above.
 
-> \[!WARNING]
+> [!WARNING]
 > When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#good-practices-for-mitigating-script-injection-attacks).
 
 ### Using the `vars` context to access configuration variable values

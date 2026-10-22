@@ -53,7 +53,7 @@ You can also mark a threaded comment (in response to a comment) as the answer to
 
 It's appropriate to lock a conversation when the entire conversation is not constructive or violates your community's code of conduct or GitHub's [Community Guidelines](/en/site-policy/github-terms/github-community-guidelines). You can also lock a conversation to prevent comments on a discussion you want to use as an announcement to the community. When you lock a conversation, people with write access to the repository, or source repository for organization discussions, will still be able to comment on the discussion. You can also allow emoji reactions to a locked discussion.
 
-> \[!NOTE]
+> [!NOTE]
 > You can also close a discussion. For more information, see [Closing a discussion](/en/discussions/managing-discussions-for-your-community/managing-discussions#closing-a-discussion).
 
 1. On GitHub, navigate to the main page of the repository or organization.

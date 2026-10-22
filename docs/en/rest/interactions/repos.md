@@ -27,7 +27,7 @@ People with owner or admin access can use the REST API to temporarily restrict w
 
 If an interaction limit is enabled for the user or organization that owns the repository, the limit cannot be changed for the individual repository. Instead, use the [User](/en/rest/interactions/user) or [Organization](/en/rest/interactions/orgs) interactions endpoints to change the interaction limit.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get interaction restrictions for a repository

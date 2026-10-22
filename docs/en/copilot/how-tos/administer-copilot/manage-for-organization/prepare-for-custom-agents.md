@@ -21,14 +21,14 @@ breadcrumbs:
 
 Configure the repository that stores custom agents for your organization.
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot custom agents are in public preview and subject to change.
 
 ## Prerequisites
 
-You should understand what Copilot custom agents are and how they work. See [About custom agents](/en/copilot/concepts/agents/cloud-agent/about-custom-agents).
+You should understand what Copilot custom agents are and how they work. See [Custom agents](/en/copilot/concepts/customizations/custom-agents).
 
-> \[!NOTE]
+> [!NOTE]
 > If your organization is part of an enterprise, enterprise owners can configure a ruleset that restricts custom agents. Contact your enterprise owners to check whether you can create and manage organization-level custom agents.
 
 ## Preparing your organization for custom agents

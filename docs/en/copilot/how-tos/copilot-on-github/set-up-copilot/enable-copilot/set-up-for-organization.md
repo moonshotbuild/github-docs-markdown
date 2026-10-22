@@ -43,7 +43,7 @@ If your environment uses custom SSL certificates, install them on your members' 
 
 Enable Copilot for some or all members of your organization. Consider starting with teams most likely to benefit, to discover potential blockers and demonstrate early success. See [Granting access to GitHub Copilot for members of your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-access/grant-access).
 
-> \[!TIP] If your organization belongs to an enterprise on GHE.com, users need additional setup to authenticate from their development environment. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/authenticate-to-ghecom).
+> [!TIP] If your organization belongs to an enterprise on GHE.com, users need additional setup to authenticate from their development environment. See [Using GitHub Copilot with an account on GHE.com](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/authenticate-to-ghecom).
 
 ## Next steps
 

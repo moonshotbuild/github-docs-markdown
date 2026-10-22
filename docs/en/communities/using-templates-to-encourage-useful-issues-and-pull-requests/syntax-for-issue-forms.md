@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can define different input types, validations, default assignees, and default labels for your issue forms.
 
-> \[!NOTE]
+> [!NOTE]
 > Issue forms are currently in public preview and subject to change.
 
 ## About YAML syntax for issue forms

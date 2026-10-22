@@ -65,7 +65,7 @@ Use `jobs.<job_id>.runs-on` to define the type of machine to run the job on.
 
 * If you would like to run your workflow on multiple machines, use [`jobs.<job_id>.strategy`](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstrategy).
 
-> \[!NOTE]
+> [!NOTE]
 > Quotation marks are not required around simple strings like `self-hosted`, but they are required for expressions like  `"${{ inputs.chosen-os }}"`.
 
 ## Choosing GitHub-hosted runners
@@ -284,10 +284,10 @@ For  private repositories, jobs using the workflow labels shown in the table bel
 
 In addition to the standard GitHub-hosted runners, GitHub offers customers on GitHub Team and GitHub Enterprise Cloud plans a range of managed virtual machines with advanced features - for example, more cores and disk space, GPU-powered machines, and ARM-powered machines. For more information, see [Larger runners](/en/actions/concepts/runners/larger-runners).
 
-> \[!NOTE]
+> [!NOTE]
 > The `-latest` runner images are the latest stable images that GitHub provides, and might not be the most recent version of the operating system available from the operating system vendor.
 
-> \[!WARNING]
+> [!WARNING]
 > Beta and Deprecated Images are provided "as-is", "with all faults" and "as available" and are excluded from the service level agreement and warranty. Beta Images may not be covered by customer support.
 
 #### Example: Specifying an operating system
@@ -304,7 +304,7 @@ To specify a self-hosted runner for your job, configure `runs-on` in your workfl
 
 Self-hosted runners may have the `self-hosted` label. When setting up a self-hosted runner, by default we will include the label `self-hosted`. You may pass in the `--no-default-labels` flag to prevent the self-hosted label from being applied. Labels can be used to create targeting options for runners, such as operating system or architecture, we recommend providing an array of labels that begins with `self-hosted` (this must be listed first) and then includes additional labels as needed. When you specify an array of labels, jobs will be queued on runners that have all the labels that you specify.
 
-> \[!NOTE] Actions Runner Controller does not support the `self-hosted` label.
+> [!NOTE] Actions Runner Controller does not support the `self-hosted` label.
 
 #### Example: Using labels for runner selection
 

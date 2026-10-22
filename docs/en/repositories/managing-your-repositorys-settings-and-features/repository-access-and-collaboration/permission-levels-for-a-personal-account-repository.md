@@ -19,7 +19,7 @@ breadcrumbs:
 
 A repository owned by a personal account has two permission levels: the repository owner and collaborators.
 
-> \[!TIP]
+> [!TIP]
 > If you require more granular access to a repository owned by your personal account, consider transferring the repository to an organization. For more information, see [Transferring a repository](/en/repositories/creating-and-managing-repositories/transferring-a-repository#transferring-a-repository-owned-by-your-personal-account).
 
 ## Owner access for a repository owned by a personal account
@@ -67,7 +67,7 @@ GitHub limits the number of people who can be invited to a repository within a 2
 
 Collaborators on a personal repository can pull (read) the contents of the repository and push (write) changes to the repository.
 
-> \[!NOTE]
+> [!NOTE]
 > In a private repository, repository owners can only grant write access to collaborators. Collaborators can't have read-only access to repositories owned by a personal account.
 
 Collaborators can also perform the following actions.

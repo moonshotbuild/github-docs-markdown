@@ -33,7 +33,7 @@ When using an installation access token for a GitHub App, some GraphQL mutations
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 Before running GitHub CLI commands, you must authenticate by running `gh auth login --scopes "project"`. If you only need to read, but not edit, projects, you can provide the `read:project` scope instead of `project`. For more information on command line authentication, see [gh auth login](https://cli.github.com/manual/gh_auth_login).
@@ -467,7 +467,7 @@ A project may contain items that a user does not have permission to view. In thi
 
 Use mutations to update projects. For more information, see [Forming calls with GraphQL](/en/graphql/guides/forming-calls-with-graphql#about-mutations).
 
-> \[!NOTE]
+> [!NOTE]
 > You cannot add and update an item in the same call. You must use `addProjectV2ItemById` to add the item and then use `updateProjectV2ItemFieldValue` to update the item.
 
 ### Adding an item to a project
@@ -640,7 +640,7 @@ gh api graphql -f query='
 
 </div>
 
-> \[!NOTE]
+> [!NOTE]
 > You cannot use `updateProjectV2ItemFieldValue` to change `Assignees`, `Labels`, `Milestone`, or `Repository` because these fields are properties of pull requests and issues, not of project items. Instead, you may use the following mutations:
 >
 > * [addAssigneesToAssignable](/en/graphql/reference/issues#mutation-addassigneestoassignable)

@@ -25,7 +25,7 @@ You can discover many integrations in [GitHub Marketplace](https://github.com/ma
 
 For a list of featured GitHub integrations, see [Featured GitHub integrations](/en/integrations/concepts/featured-github-integrations).
 
-> \[!NOTE] The GitHub docs site only provides documentation for a selected set of integrations. For more information about an integration not documented on the GitHub docs site, see the documentation provided by the integration creator.
+> [!NOTE] The GitHub docs site only provides documentation for a selected set of integrations. For more information about an integration not documented on the GitHub docs site, see the documentation provided by the integration creator.
 
 For more information about using integrations, see:
 

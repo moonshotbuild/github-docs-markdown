@@ -17,6 +17,18 @@ breadcrumbs:
 
 A desktop application for agent-driven development that brings parallel workstreams, GitHub integration, and PR lifecycle management into one place.
 
+## Links
+
+### Getting started
+
+* [GitHub Copilot app](/en/copilot/concepts/copilot-surfaces/github-copilot-app)
+
+  The GitHub Copilot app is a desktop application for agent-driven development that brings parallel workstreams, GitHub integration, and PR lifecycle management into one place.
+
+* [Getting started with the GitHub Copilot app](/en/copilot/get-started/quickstart-copilot-app)
+
+  Sign in to the GitHub Copilot app, connect a repository or local folder, and create your first agent session to make code changes.
+
 ## Articles
 
 * [Customizing the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/customize-github-copilot-app)
@@ -31,10 +43,6 @@ A desktop application for agent-driven development that brings parallel workstre
 
   With computer use, allow Copilot to interact with local desktop applications from the GitHub Copilot app.
 
-* [Configuring local sandboxing in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/configure-local-sandboxing)
-
-  Use the `/sandbox` slash command and project settings in the GitHub Copilot app to control how local sandboxing restricts filesystem access, network connectivity, and credential use.
-
 * [Working with canvas extensions in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/working-with-canvas-extensions)
 
   Use canvases in the GitHub Copilot app to build shared, agent-driven artifacts and interfaces for human-agent collaboration.
@@ -47,7 +55,7 @@ A desktop application for agent-driven development that brings parallel workstre
 
   Automate recurring agent tasks so they run on a schedule or on demand, without manual intervention.
 
-* [Using your own LLM models in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/use-byok-models)
+* [Adding LLM models to the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/use-byok-models)
 
   Connect a model from an external provider of your choice by supplying your own API key, then use the model in agent sessions.
 

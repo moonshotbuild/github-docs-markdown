@@ -21,7 +21,7 @@ breadcrumbs:
 
 Use the campaign tracking views to monitor remediation progress, identify stalled work, and measure campaign impact across your organization.
 
-> \[!NOTE]
+> [!NOTE]
 > Campaigns for secret scanning alerts are currently in public preview and are subject to change.
 
 ## Tracking campaigns across your organization

@@ -21,7 +21,7 @@ You can search for repositories globally across all of GitHub, or search for rep
 
 To include forks in the search results, you will need to add `fork:true` or `fork:only` to your query. For more information, see [Searching in forks](/en/search-github/searching-on-github/searching-in-forks).
 
-> \[!TIP]
+> [!TIP]
 >
 > * This article contains links to example searches on the GitHub.com website, but you can use the same search filters in any GitHub platform. In the linked example searches, replace `github.com` with the hostname for your GitHub platform.
 > * For a list of search syntaxes that you can add to any search qualifier to further improve your results, see [Understanding the search syntax](/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax).

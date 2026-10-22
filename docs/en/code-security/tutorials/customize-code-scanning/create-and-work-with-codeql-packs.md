@@ -43,7 +43,7 @@ The `codeql pack init` command creates the directory structure and configuration
 
 ## Creating a CodeQL model pack
 
-> \[!NOTE]
+> [!NOTE]
 > CodeQL model packs are currently in public preview and subject to change. Model packs are supported for C/C++, C#, Java/Kotlin, Python, Ruby, and Rust analysis.
 >
 > The CodeQL model editor in the CodeQL extension for Visual Studio Code supports modeling dependencies for C#, Java/Kotlin, Python, and Ruby.
@@ -75,7 +75,7 @@ Once you've created a model pack, you can publish it in the same way as other Co
 
 ## Adding and installing dependencies on a CodeQL pack
 
-> \[!NOTE]
+> [!NOTE]
 > This is only supported for CodeQL query and library packs.
 
 You can add dependencies on CodeQL packs using the command `codeql pack add`. You must specify the scope, name, and (optionally) a compatible version range.
@@ -96,7 +96,7 @@ codeql pack install
 
 This command downloads all dependencies to the shared cache on the local disk.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Running the `codeql pack add` and `codeql pack install` commands will generate or update the `codeql-pack.lock.yml` file. This file should be checked-in to version control. The `codeql-pack.lock.yml` file contains the precise version numbers used by the pack. For more information, see [About codeql-pack.lock.yml files](/en/code-security/reference/code-scanning/codeql/codeql-cli/codeql-query-packs#codeql-packlockyml-files).
 > * By default `codeql pack install` will install dependencies from the Container registry on GitHub.com. You can install dependencies from a GitHub Enterprise Server Container registry by creating a `qlconfig.yml` file. For more information, see [Publishing and using CodeQL packs](/en/enterprise-server@3.22/code-security/how-tos/find-and-fix-code-vulnerabilities/scan-from-the-command-line/publish-and-use-packs) in the GitHub Enterprise Server documentation.

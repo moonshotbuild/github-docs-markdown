@@ -53,7 +53,7 @@ You need to follow the steps below on the repository you forked in [Prerequisite
 5. If you clicked **Enable** for Dependabot version updates, you can edit the default `dependabot.yml` configuration file that GitHub creates for you in the `/.github` directory of your repository.
    To enable Dependabot version updates for your repository, you typically configure this file to suit your needs by editing the default file, and committing your changes. You can refer to the snippet provided in [Configuring Dependabot version updates](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-version-updates#example-dependabotyml-file) for an example.
 
-> \[!NOTE]
+> [!NOTE]
 > If the dependency graph is not already enabled for the repository, GitHub will enable it automatically when you enable Dependabot.
 
 For more information about configuring each of these Dependabot features, see [Configuring Dependabot alerts](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-dependabot-alerts), [Configuring Dependabot security updates](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-security-updates), and [Configuring Dependabot version updates](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-version-updates).

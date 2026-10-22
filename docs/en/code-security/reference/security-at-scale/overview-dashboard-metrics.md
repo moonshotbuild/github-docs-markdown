@@ -53,7 +53,7 @@ The dashboard is divided into three tabs, each focused around a different securi
 * **Remediation:** Shows metrics about how alerts are resolved and alert activity over time.
 * **Prevention:** Shows metrics about how vulnerabilities have been prevented and fixed in pull requests.
 
-> \[!NOTE]
+> [!NOTE]
 > Unlike the **Detection** and **Remediation** tabs which report alerts on the default branch, the **Prevention** tab gives you insights for CodeQL alerts found in merged pull requests and AI Scan findings from pull requests.
 
 ## Detection metrics
@@ -74,7 +74,7 @@ The average age of all alerts that are still open at the end of the chosen time 
 
 **Formula:** The age of each open alert is calculated by subtracting the date the alert was created from the date that the chosen time period ends, then averaging across all open alerts.
 
-> \[!NOTE]
+> [!NOTE]
 > For reopened alerts, the age is calculated by subtracting the original creation date rather than the date the alert was reopened.
 
 ### Reopened alerts
@@ -121,7 +121,7 @@ The average age of all alerts that were remediated or dismissed during the chose
 
 **Formula:** The age of each closed alert is calculated by subtracting the date the alert was created from the date that the alert was last closed during the chosen time period, then averaging across all closed alerts.
 
-> \[!NOTE]
+> [!NOTE]
 > For reopened alerts, the age is calculated by subtracting the original creation date rather than the date the alert was reopened.
 
 ### Net resolve rate
@@ -130,7 +130,7 @@ The rate at which alerts are being closed. This metric is similar to measuring "
 
 **Formula:** Number of alerts that were closed and remained closed during the chosen time period ÷ Number of alerts created during the time period
 
-> \[!NOTE]
+> [!NOTE]
 > The net resolve rate takes into account any new and any closed alerts during the chosen time period. This means that the set of new alerts and set of closed alerts used for the calculation do not necessarily correspond, since they may represent different populations of alerts.
 
 **Excluded:** Alerts that are reopened and re-closed during the chosen time period are ignored.

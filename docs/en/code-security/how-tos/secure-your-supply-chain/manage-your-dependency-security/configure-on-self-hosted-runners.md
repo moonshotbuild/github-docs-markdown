@@ -35,12 +35,12 @@ You can configure self-hosted runners that Dependabot uses to access your privat
 
 ## Configuring self-hosted runners for Dependabot updates
 
-> \[!WARNING]
+> [!WARNING]
 > Before selecting **Labeled runner**, make sure a runner has the label you plan to use. If you specify a runner group, make sure the group exists and the repository can access it. See [Dependabot on GitHub Actions runners](/en/code-security/concepts/supply-chain-security/dependabot-on-actions#how-runner-settings-interact).
 
 Once you have configured self-hosted runners for Dependabot updates, you can select them at the organization or repository level.
 
-> \[!NOTE]
+> [!NOTE]
 > Changing the runner setting does not trigger a new Dependabot run.
 
 ### For your private repository
@@ -61,7 +61,7 @@ Once you have configured self-hosted runners for Dependabot updates, you can sel
 
 7. Click **Save runner selection**.
 
-   > \[!NOTE] If you cannot change the runner setting, your organization may restrict actions and self-hosted runners for the repository. Contact your organization owner for more information.
+   > [!NOTE] If you cannot change the runner setting, your organization may restrict actions and self-hosted runners for the repository. Contact your organization owner for more information.
 
 ### For your organization
 

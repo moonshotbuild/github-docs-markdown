@@ -67,7 +67,7 @@ Branch filters allow you to filter commit notifications based on branch names. B
 | `/github subscribe OWNER/REPO commits:feature/*` | Receive commit notifications for all branches that start with `feature/`. |
 | `/github subscribe OWNER/REPO commits:*`         | Receive commit notifications for all branches.                            |
 
-> \[!NOTE] You may have previously used the `commits:all` filter to receive commit notifications for all branches. This filter is closing down. To receive commit notifications for all branches, use the `commits:*` filter instead. If you have previously set up the `commits:all` filter, it will continue to work until you update your configuration to use the `commits:*` filter.
+> [!NOTE] You may have previously used the `commits:all` filter to receive commit notifications for all branches. This filter is closing down. To receive commit notifications for all branches, use the `commits:*` filter instead. If you have previously set up the `commits:all` filter, it will continue to work until you update your configuration to use the `commits:*` filter.
 
 ### Label filters for issue and pull request notifications
 
@@ -140,7 +140,7 @@ When you are subscribed to "workflows", the following functionality is available
 
 * If something fails, you can choose to rerun the workflow in place and you can also enable debug logs if needed.
 
-> \[!NOTE] After 2025-03-10 (GHES version 3.17) you will no longer be notified about the progress of individual workflow jobs. See the [GitHub changelog](https://github.blog/changelog/2025-02-03-deprecation-of-real-time-github-actions-workflow-job-events-in-slack-and-microsoft-teams-apps/) for more details.
+> [!NOTE] After 2025-03-10 (GHES version 3.17) you will no longer be notified about the progress of individual workflow jobs. See the [GitHub changelog](https://github.blog/changelog/2025-02-03-deprecation-of-real-time-github-actions-workflow-job-events-in-slack-and-microsoft-teams-apps/) for more details.
 
 ### Workflow notification filters
 
@@ -169,7 +169,7 @@ By default, when you configure workflow notifications without passing any filter
 
 You can unsubscribe from workflow notifications using the command: `/github unsubscribe OWNER/REPO workflows`.
 
-> \[!NOTE] To receive GitHub Actions notifications in Slack, the GitHub app requires additional permissions. When you attempt to subscribe to workflows for the first time, you will be prompted to grant these permissions.
+> [!NOTE] To receive GitHub Actions notifications in Slack, the GitHub app requires additional permissions. When you attempt to subscribe to workflows for the first time, you will be prompted to grant these permissions.
 
 ## Deployment notifications
 
@@ -177,4 +177,4 @@ You can also configure separate deployment notifications. These deployments can 
 
 You can subscribe or unsubscribe to deployment notifications using the command: `/github subscribe/unsubscribe OWNER/REPO deployments`.
 
-> \[!NOTE] If you are using GitHub Actions and want to track your deployments to environments, the `workflows` feature is recommended, as it provides a more complete picture and the ability to approve your deployments directly from Slack.
+> [!NOTE] If you are using GitHub Actions and want to track your deployments to environments, the `workflows` feature is recommended, as it provides a more complete picture and the ability to approve your deployments directly from Slack.

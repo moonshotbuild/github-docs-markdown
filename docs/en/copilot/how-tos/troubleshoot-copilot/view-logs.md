@@ -70,7 +70,7 @@ If you find the log file doesn't contain enough information to resolve an issue,
 
 ## Using the Agent Debug Panel
 
-> \[!NOTE]
+> [!NOTE]
 > This feature is in public preview and subject to change.
 
 The Agent Debug Panel shows a chronological event log of agent interactions during a Copilot CLI session. Use the panel to debug custom agents and subagent workflows.

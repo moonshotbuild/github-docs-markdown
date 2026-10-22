@@ -31,7 +31,7 @@ Typically, you should use code scanning merge protection on long-lived feature b
 
 Configuring a code scanning rule will not automatically enable code scanning. To learn how to enable code scanning, see [Configuring default setup for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Merge protection with rulesets is not related to status checks. For more information about status checks, see [Status checks](/en/pull-requests/reference/status-checks).
 

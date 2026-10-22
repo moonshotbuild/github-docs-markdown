@@ -33,7 +33,7 @@ The quality of Copilot Chat's responses may be degraded when working with issues
 
    Copilot responds to your request in the panel.
 
-   > \[!TIP] Instead of navigating to an issue or discussion in your browser to ask a question, you can include the relevant URL in your message. For example, `Summarize https://github.com/monalisa/octokit/issues/1`.
+   > [!TIP] Instead of navigating to an issue or discussion in your browser to ask a question, you can include the relevant URL in your message. For example, `Summarize https://github.com/monalisa/octokit/issues/1`.
 
 ## Example prompts
 

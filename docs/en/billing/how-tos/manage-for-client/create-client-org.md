@@ -86,7 +86,7 @@ If you already have a personal account on GitHub, skip to [step 2](#step-2-creat
 
 7. Your client will receive an email inviting them to the organization.
 
-> \[!NOTE]
+> [!NOTE]
 > You cannot move on to the next step until your client accepts the invitation to become an organization owner.
 
 ## Step 5: Transfer organization ownership to your client

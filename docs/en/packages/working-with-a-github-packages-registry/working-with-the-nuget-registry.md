@@ -21,7 +21,7 @@ You can configure the dotnet command-line interface (CLI) to publish NuGet packa
 
 ## Authenticating to GitHub Packages
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Packages only supports authentication using a personal access token (classic). For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 You need an access token to publish, install, and delete private, internal, and public packages.
@@ -37,7 +37,7 @@ To authenticate to a GitHub Packages registry within a GitHub Actions workflow, 
 
 This registry supports granular permissions. For registries that support granular permissions, if your GitHub Actions workflow is using a personal access token to authenticate to a registry, we highly recommend you update your workflow to use the `GITHUB_TOKEN`. For guidance on updating your workflows that authenticate to a registry with a personal access token, see [Publishing and installing a package with GitHub Actions](/en/packages/managing-github-packages-using-github-actions-workflows/publishing-and-installing-a-package-with-github-actions#upgrading-a-workflow-that-accesses-a-registry-using-a-personal-access-token).
 
-> \[!NOTE]
+> [!NOTE]
 > The ability for GitHub Actions workflows to delete and restore packages using the REST API is currently in public preview and subject to change.
 
 You can use a `GITHUB_TOKEN` in a GitHub Actions workflow to delete or restore a package using the REST API, if the token has `admin` permission to the package. Repositories that publish packages using a workflow, and repositories that you have explicitly connected to packages, are automatically granted `admin` permission to packages in the repository.
@@ -58,7 +58,7 @@ You can also choose to give access permissions to packages independently for Git
 
 ### Authenticating with a personal access token
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Packages only supports authentication using a personal access token (classic). For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 You need an access token to publish, install, and delete private, internal, and public packages.
@@ -98,7 +98,7 @@ You must replace:
 
 ## Publishing a package
 
-> \[!NOTE]
+> [!NOTE]
 > The `nupkg` archive for a NuGet package version must be smaller than 2.147 GB in size.
 
 You can publish a package to GitHub Packages by authenticating with a *nuget.config* file, using the `--api-key` command line option with your GitHub personal access token (classic) or by using command that can be run directly from the command line using the `dotnet` command-line interface (CLI).
@@ -143,7 +143,7 @@ After you publish a package, you can view the package on GitHub. For more inform
 
 When publishing, if you are linking your package to a repository, the `OWNER` of the repository specified in your *.csproj* file must match the `NAMESPACE` that you use in your *nuget.config* authentication file. Specify or increment the version number in your *.csproj* file, then use the `dotnet pack` command to create a *.nuspec* file for that version. For more information on creating your package, see [Create and publish a package](https://docs.microsoft.com/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli) in the Microsoft documentation.
 
-> \[!NOTE]
+> [!NOTE]
 > If you publish a package that is linked to a repository, the package automatically inherits the access permissions of the linked repository, and GitHub Actions workflows in the linked repository automatically get access to the package, unless your organization has disabled automatic inheritance of access permissions. For more information, see [Configuring a package's access control and visibility](/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility#about-inheritance-of-access-permissions).
 
 1. Authenticate to GitHub Packages. For more information, see [Authenticating to GitHub Packages](#authenticating-to-github-packages).

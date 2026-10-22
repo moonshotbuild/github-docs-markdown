@@ -43,7 +43,7 @@ You can quickly resume a codespace when you're viewing a repository on GitHub.
 
    Alternatively, if you want to create a new codespace for this branch of the repository, click **Create a new one**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you don't have an existing codespace for this branch, the page is titled "Create codespace" and a button labeled **Create a new codespace** is displayed.
 
 You can bookmark the address of this page if you want to get back to it quickly to resume your codespace. Alternatively you can use the address in a link to provide other people with a quick way of creating and resuming their own codespaces for this repository.
@@ -73,7 +73,7 @@ You can bookmark the address of this page if you want to get back to it quickly 
 
 You can create links to your existing codespaces. This is useful if you have a long-lived codespace that you return to frequently. You can save the link in a location of your choice, as an alternative to using the link on <https://github.com/codespaces>.
 
-> \[!NOTE]
+> [!NOTE]
 > You can only open your own codespaces. If someone clicks a link to one of your codespaces they will see a 404 error message.
 
 Create a link using one of the following URL patterns. In these URLs `CODESPACE-NAME` represents the unique, permanent name of the codespace, such as `literate-space-parakeet-w5vg5ww5p793g7g9`, not the codespace's display name. You can find the name of a codespace by copying the link to the codespace on your <https://github.com/codespaces> page and extracting the codespace name from the URL.
@@ -91,7 +91,7 @@ Create a link using one of the following URL patterns. In these URLs `CODESPACE-
 
 ## Reopening an existing codespace
 
-> \[!NOTE]
+> [!NOTE]
 > To use GitHub Codespaces in VS Code, you need to install the Codespaces extension. See [Using GitHub Codespaces in Visual Studio Code](/en/codespaces/developing-in-a-codespace/using-github-codespaces-in-visual-studio-code).
 
 1. In the VS Code desktop application, open the Command Palette with <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Mac) or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows/Linux).
@@ -106,7 +106,7 @@ You can also access the commands listed above by navigating to the Remote Explor
 
 ![Screenshot of a codespace selected in the Remote Explorer, with "Open in Browser" highlighted in the right-click menu.](/assets/images/help/codespaces/open-codespace-remote-explorer.png)
 
-> \[!NOTE]
+> [!NOTE]
 > If the Remote Explorer is not displayed in the Activity Bar:
 >
 > 1. Access the Command Palette. For example, by pressing <kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>P</kbd> (Mac) / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows/Linux).
@@ -117,7 +117,7 @@ You can also access the commands listed above by navigating to the Remote Explor
 
 You can create links to your existing codespaces. This is useful if you have a long-lived codespace that you return to frequently. You can save the link in a location of your choice, as an alternative to using the link on <https://github.com/codespaces>.
 
-> \[!NOTE]
+> [!NOTE]
 > You can only open your own codespaces. If someone clicks a link to one of your codespaces they will see a 404 error message.
 
 Create a link using one of the following URL patterns. In these URLs `CODESPACE-NAME` represents the unique, permanent name of the codespace, such as `literate-space-parakeet-w5vg5ww5p793g7g9`, not the codespace's display name. You can find the name of a codespace by copying the link to the codespace on your <https://github.com/codespaces> page and extracting the codespace name from the URL.
@@ -144,7 +144,7 @@ If you have installed GitHub CLI, you can use it to work with GitHub Codespaces.
      gh codespace code
      ```
 
-     > \[!NOTE]
+     > [!NOTE]
      > You must have VS Code installed on your local machine. See [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview) in the VS Code documentation.
 
    * To open a codespace in the browser, enter:
@@ -159,7 +159,7 @@ If you have installed GitHub CLI, you can use it to work with GitHub Codespaces.
      gh codespace jupyter
      ```
 
-     > \[!NOTE]
+     > [!NOTE]
      > The JupyterLab application must be installed in the codespace you are opening. The default dev container image includes JupyterLab, so codespaces created from the default image will always have JupyterLab installed. For more information about the default image, see [Introduction to dev containers](/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers#using-the-default-dev-container-configuration) and the [`devcontainers/images`](https://github.com/devcontainers/images/tree/main/src/universal) repository. If you're not using the default image in your dev container configuration, you can install JupyterLab by adding the `ghcr.io/devcontainers/features/python` feature to your `devcontainer.json` file. You should include the option `"installJupyterlab": true`. For more information, see the README for the [`python`](https://github.com/devcontainers/features/tree/main/src/python#python-python) feature, in the `devcontainers/features` repository.
 
    * To access a codespace from the command line, over SSH, enter:

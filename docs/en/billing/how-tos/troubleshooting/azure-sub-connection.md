@@ -32,7 +32,7 @@ Installing the SPV app requires tenant-wide admin consent. You must sign into an
 * [Grant tenant-wide admin consent to an application](https://learn.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent) in Microsoft Docs
 * [User and admin consent in Azure Active Directory](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/user-admin-consent-overview#admin-consent-workflow) in Microsoft Docs.
 
-> \[!TIP] If your tenant provides user consent settings, users included in those settings might not require admin consent to install the GitHub SVP app. See [User consent](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/user-admin-consent-overview#user-consent) in Microsoft Docs.
+> [!TIP] If your tenant provides user consent settings, users included in those settings might not require admin consent to install the GitHub SVP app. See [User consent](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/user-admin-consent-overview#user-consent) in Microsoft Docs.
 
 ## Banner saying my Azure ID is missing
 

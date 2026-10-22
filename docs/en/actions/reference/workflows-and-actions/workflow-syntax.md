@@ -25,7 +25,7 @@ Workflow files use YAML syntax, and must have either a `.yml` or `.yaml` file ex
 
 You must store workflow files in the `.github/workflows` directory of your repository.
 
-> \[!TIP]
+> [!TIP]
 > Unlike traditional GitHub Actions workflows that require you to script every decision as YAML job steps, GitHub Agentic Workflows use YAML frontmatter for triggers and configuration, but let you describe what you want in natural-language Markdown—so you don't need to anticipate and encode every scenario in advance. For more information, see [Creating GitHub Agentic Workflows](/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows).
 
 ## `name`
@@ -354,7 +354,7 @@ When using the `push` and `pull_request` events, you can configure a workflow to
 
 Use the `paths` filter when you want to include file path patterns or when you want to both include and exclude file path patterns. Use the `paths-ignore` filter when you only want to exclude file path patterns. You cannot use both the `paths` and `paths-ignore` filters for the same event in a workflow. If you want to both include and exclude path patterns for a single event, use the `paths` filter prefixed with the `!` character to indicate which paths should be excluded.
 
-> \[!NOTE]
+> [!NOTE]
 > The order that you define `paths` patterns matters:
 >
 > * A matching negative pattern (prefixed with `!`) after a positive match will exclude the path.
@@ -437,7 +437,7 @@ You can use `on.schedule` to define a time schedule for your workflows.
 
 Use [POSIX cron syntax](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07) to schedule workflows to run at specific times. By default, scheduled workflows run in UTC. You can optionally specify a timezone using an [IANA timezone string](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) for timezone-aware scheduling. Scheduled workflows run on the latest commit on the default branch. The shortest interval you can run scheduled workflows is once every 5 minutes.
 
-> \[!NOTE]
+> [!NOTE]
 > For schedules that set `timezone` to a time zone that observes daylight saving time (DST), during DST spring-forward transitions, scheduled workflows in skipped hours advance to the next valid time. For example, a 2:30 AM schedule advances to 3:00 AM.
 
 Cron syntax has five fields separated by a space, and each field represents a unit of time.
@@ -563,7 +563,7 @@ A map of the secrets that can be used in the called workflow.
 
 Within the called workflow, you can use the `secrets` context to refer to a secret.
 
-> \[!NOTE]
+> [!NOTE]
 > If you are passing the secret to a nested reusable workflow, then you must use [`jobs.<job_id>.secrets`](#jobsjob_idsecrets) again to pass the secret. For more information, see [Reuse workflows](/en/actions/how-tos/reuse-automations/reuse-workflows#passing-secrets-to-nested-workflows).
 
 If a caller workflow passes a secret that is not specified in the called workflow, this results in an error.
@@ -694,7 +694,7 @@ This trigger only receives events when the workflow file is on the default branc
 
 The triggered workflow receives the inputs in the `inputs` context. For more information, see [Contexts](/en/actions/reference/workflows-and-actions/contexts#inputs-context).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The workflow will also receive the inputs in the `github.event.inputs` context. The information in the `inputs` context and `github.event.inputs` context is identical except that the `inputs` context preserves Boolean values as Booleans instead of converting them to strings. The `choice` type resolves to a string and is a single selectable option.
 > * The maximum number of top-level properties for `inputs` is 25 .
@@ -927,7 +927,7 @@ When more than one default setting is defined with the same name, GitHub uses th
 
 Use `working-directory` to define the working directory for the `shell` for a step. This keyword can reference several contexts. For more information, see [Contexts](/en/actions/reference/workflows-and-actions/contexts#context-availability).
 
-> \[!TIP]
+> [!TIP]
 > Ensure the `working-directory` you assign exists on the runner before you run your shell in it.
 > When more than one default setting is defined with the same name, GitHub uses the most specific default setting. For example, a default setting defined in a job will override a default setting that has the same name defined in a workflow.
 
@@ -948,7 +948,7 @@ To allow more than one `pending` job or workflow run to wait in the same concurr
 
 The combination of `queue: max` and `cancel-in-progress: true` is not allowed and will result in a workflow validation error.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The concurrency group name is case insensitive. For example, `prod` and `Prod` will be treated as the same concurrency group.
 > * Jobs or workflow runs in the same concurrency group are processed in first-in-first-out (FIFO) order according to the time each one started waiting on the concurrency group, not the time each workflow was dispatched. Since the actual start time of a job or run may vary, ordering is not guaranteed.
@@ -1102,7 +1102,7 @@ Access is enforced with scoped cache tokens, so a job cannot restore or save cac
 
 If you omit `cache-mode`, a `read` or `write` default is used based on the trigger type. For trigger-dependent effective defaults, see [Dependency caching reference](/en/actions/reference/workflows-and-actions/dependency-caching#defaults).
 
-> \[!WARNING]
+> [!WARNING]
 > Explicitly declaring `cache-mode: write` or `cache-mode: write-only` on low-trust triggers can bypass the secure default read-only cache restriction and reintroduce cache-poisoning risk. For guidance and mitigations, see [Dependency caching reference](/en/actions/reference/workflows-and-actions/dependency-caching#bypassing-the-default-untrusted-trigger-cache-restriction).
 
 When a cache operation is not permitted by the effective mode, the cache step logs an informational message and continues. The job and workflow do not fail. A skipped restore is treated as a cache miss; a skipped save is simply not performed. For more information, see [Dependency caching reference](/en/actions/reference/workflows-and-actions/dependency-caching#controlling-cache-access-with-cache-mode).
@@ -1301,7 +1301,7 @@ In this example, `job3` uses the `always()` conditional expression so that it al
 
 You can use the `jobs.<job_id>.if` conditional to prevent a job from running unless a condition is met. You can use any supported context and expression to create a conditional. For more information on which contexts are supported in this key, see [Contexts reference](/en/actions/reference/workflows-and-actions/contexts#context-availability).
 
-> \[!NOTE]
+> [!NOTE]
 > The `jobs.<job_id>.if` condition is evaluated before [`jobs.<job_id>.strategy.matrix`](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstrategymatrix) is applied.
 
 When you use expressions in an `if` conditional, you can, optionally, omit the `${{ }}` expression syntax because GitHub Actions automatically evaluates the `if` conditional as an expression. However, this exception does not apply everywhere.
@@ -1377,7 +1377,7 @@ Use `jobs.<job_id>.runs-on` to define the type of machine to run the job on.
 
 * If you would like to run your workflow on multiple machines, use [`jobs.<job_id>.strategy`](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstrategy).
 
-> \[!NOTE]
+> [!NOTE]
 > Quotation marks are not required around simple strings like `self-hosted`, but they are required for expressions like  `"${{ inputs.chosen-os }}"`.
 
 ### Choosing GitHub-hosted runners
@@ -1596,10 +1596,10 @@ For  private repositories, jobs using the workflow labels shown in the table bel
 
 In addition to the standard GitHub-hosted runners, GitHub offers customers on GitHub Team and GitHub Enterprise Cloud plans a range of managed virtual machines with advanced features - for example, more cores and disk space, GPU-powered machines, and ARM-powered machines. For more information, see [Larger runners](/en/actions/concepts/runners/larger-runners).
 
-> \[!NOTE]
+> [!NOTE]
 > The `-latest` runner images are the latest stable images that GitHub provides, and might not be the most recent version of the operating system available from the operating system vendor.
 
-> \[!WARNING]
+> [!WARNING]
 > Beta and Deprecated Images are provided "as-is", "with all faults" and "as available" and are excluded from the service level agreement and warranty. Beta Images may not be covered by customer support.
 
 #### Example: Specifying an operating system
@@ -1616,7 +1616,7 @@ To specify a self-hosted runner for your job, configure `runs-on` in your workfl
 
 Self-hosted runners may have the `self-hosted` label. When setting up a self-hosted runner, by default we will include the label `self-hosted`. You may pass in the `--no-default-labels` flag to prevent the self-hosted label from being applied. Labels can be used to create targeting options for runners, such as operating system or architecture, we recommend providing an array of labels that begins with `self-hosted` (this must be listed first) and then includes additional labels as needed. When you specify an array of labels, jobs will be queued on runners that have all the labels that you specify.
 
-> \[!NOTE] Actions Runner Controller does not support the `self-hosted` label.
+> [!NOTE] Actions Runner Controller does not support the `self-hosted` label.
 
 #### Example: Using labels for runner selection
 
@@ -1691,7 +1691,7 @@ Use `jobs.<job_id>.environment` to define the environment that the job reference
 
 You can provide the environment as only the environment `name`, or as an environment object with the `name` and `url`. The URL maps to `environment_url` in the deployments API. For more information about the deployments API, see [REST API endpoints for repositories](/en/rest/repos#deployments).
 
-> \[!NOTE]
+> [!NOTE]
 > All deployment protection rules must pass before a job referencing the environment is sent to a runner. For more information, see [Managing environments for deployment](/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments).
 
 ### Example: Using a single environment name
@@ -1757,7 +1757,7 @@ To allow more than one `pending` job or workflow run to wait in the same concurr
 
 The combination of `queue: max` and `cancel-in-progress: true` is not allowed and will result in a workflow validation error.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The concurrency group name is case insensitive. For example, `prod` and `Prod` will be treated as the same concurrency group.
 > * Jobs or workflow runs in the same concurrency group are processed in first-in-first-out (FIFO) order according to the time each one started waiting on the concurrency group, not the time each workflow was dispatched. Since the actual start time of a job or run may vary, ordering is not guaranteed.
@@ -1902,7 +1902,7 @@ Use `jobs.<job_id>.cache-mode` to set the level of GitHub Actions cache access f
 
 The accepted values are `read`, `write`, `write-only`, and `none`, with the same meanings as the top-level key. If neither the job nor the workflow sets `cache-mode`, a trigger-based default applies. For more information about each value, see [`cache-mode`](#cache-mode) and [Dependency caching reference](/en/actions/reference/workflows-and-actions/dependency-caching#defaults).
 
-> \[!WARNING]
+> [!WARNING]
 > Explicitly declaring `cache-mode: write` or `cache-mode: write-only` on low-trust triggers can bypass the secure default read-only cache restriction and reintroduce cache-poisoning risk. For guidance and mitigations, see [Dependency caching reference](/en/actions/reference/workflows-and-actions/dependency-caching#bypassing-the-default-untrusted-trigger-cache-restriction).
 
 You can also set `cache-mode` on a job that calls a reusable workflow to limit the cache access granted to the called workflow. For more information, see [Reusing workflow configurations](/en/actions/reference/workflows-and-actions/reusing-workflow-configurations#supported-keywords-for-jobs-that-call-a-reusable-workflow) and [Reuse workflows](/en/actions/how-tos/reuse-automations/reuse-workflows#controlling-cache-access-in-reusable-workflows).
@@ -1990,7 +1990,7 @@ jobs:
       - run: echo '${{ toJSON(needs.job1.outputs) }}'
 ```
 
-> \[!WARNING]
+> [!WARNING]
 > Actions does not guarantee the order that matrix jobs will run in. Ensure that the output name is unique, otherwise the last matrix job that runs will override the output value.
 
 ## `jobs.<job_id>.env`
@@ -2045,7 +2045,7 @@ When more than one default setting is defined with the same name, GitHub uses th
 
 Use `working-directory` to define the working directory for the `shell` for a step. This keyword can reference several contexts. For more information, see [Contexts](/en/actions/reference/workflows-and-actions/contexts#context-availability).
 
-> \[!TIP]
+> [!TIP]
 > Ensure the `working-directory` you assign exists on the runner before you run your shell in it.
 > When more than one default setting is defined with the same name, GitHub uses the most specific default setting. For example, a default setting defined in a job will override a default setting that has the same name defined in a workflow.
 
@@ -2587,7 +2587,7 @@ Outputs and environment changes from a background step are only available after 
 
 Use `background` when you need fine-grained control: starting a long-running process (like a server or database) that stays up while later steps run, referencing a specific step with [`wait`](#jobsjob_idstepswait) or [`cancel`](#jobsjob_idstepscancel), or interleaving background work with other steps. If you instead have a self-contained group of steps that should all finish before the job continues, [`parallel`](#jobsjob_idstepsparallel) is a more convenient shorthand.
 
-> \[!NOTE]
+> [!NOTE]
 > You cannot use `background` on steps inside a composite action. A composite action can itself run as a background step, but it cannot declare background steps internally.
 
 ### Example: Running a step in the background
@@ -2612,7 +2612,7 @@ Pauses the job until one or more background steps complete. A `wait` step perfor
 
 After a `wait` step completes, the outputs of the referenced background steps become available to subsequent steps. If a referenced background step failed, the `wait` step fails too.
 
-> \[!NOTE]
+> [!NOTE]
 > A `wait` step always runs and does not support the [`if`](#jobsjob_idstepsif) conditional.
 
 ### Example: Waiting for specific background steps
@@ -2645,7 +2645,7 @@ Pauses the job until all active background steps complete. This is useful when s
 
 The `wait-all` keyword takes no arguments.
 
-> \[!NOTE]
+> [!NOTE]
 > A `wait-all` step always runs and does not support the [`if`](#jobsjob_idstepsif) conditional.
 
 ### Example: Waiting for all background steps
@@ -2673,7 +2673,7 @@ steps:
 
 Gracefully terminates a running background step. The runner sends the step's process a termination signal (`SIGTERM`) so it can clean up, and forcibly stops it (`SIGKILL`) if it does not exit within a short grace period. The `cancel` keyword targets a single background step by its `id`.
 
-> \[!NOTE]
+> [!NOTE]
 > A `cancel` step always runs and does not support the [`if`](#jobsjob_idstepsif) conditional.
 
 ### Example: Canceling a background step
@@ -2700,7 +2700,7 @@ Use `parallel` when you have a self-contained group of steps that should all fin
 
 Each step in the group is subject to the same 10-step concurrency limit as other background steps.
 
-> \[!NOTE]
+> [!NOTE]
 > You cannot use `parallel` inside a composite action.
 
 ### Example: Running steps in parallel
@@ -2731,7 +2731,7 @@ The maximum number of minutes to let a job run before GitHub automatically cance
 
 If the timeout exceeds the job execution time limit for the runner, the job will be canceled when the execution time limit is met instead. For more information about job execution time limits, see [Billing and usage](/en/actions/concepts/billing-and-usage#usage-limits-and-policy) for GitHub-hosted runners and [Actions limits](/en/actions/reference/limits) for self-hosted runner usage limits.
 
-> \[!NOTE]
+> [!NOTE]
 > The `GITHUB_TOKEN` expires when a job finishes or after a maximum of 24 hours. For self-hosted runners, the token may be the limiting factor if the job timeout is greater than 24 hours. For more information on the `GITHUB_TOKEN`, see [Use GITHUB\_TOKEN for authentication in workflows](/en/actions/tutorials/authenticate-with-github_token).
 
 ## `jobs.<job_id>.strategy`
@@ -2746,7 +2746,7 @@ A matrix will generate a maximum of 256 jobs per workflow run. This limit applie
 
 The variables that you define become properties in the `matrix` context, and you can reference the property in other areas of your workflow file. In this example, you can use `matrix.version` and `matrix.os` to access the current value of `version` and `os` that the job is using. For more information, see [Contexts reference](/en/actions/reference/workflows-and-actions/contexts).
 
-> \[!NOTE]
+> [!NOTE]
 > The variable names are case insensitive. For example, `OS` and `os` will be treated as the same variable.
 
 By default, GitHub will maximize the number of jobs run in parallel depending on runner availability. The order of the variables in the matrix determines the order in which the jobs are created. The first variable you define will be the first job that is created in your workflow run.
@@ -2942,7 +2942,7 @@ strategy:
 
 ## `jobs.<job_id>.container`
 
-> \[!NOTE]
+> [!NOTE]
 > If your workflows use Docker container actions, job containers, or service containers, then you must use a Linux runner:
 >
 > * If you are using GitHub-hosted runners, you must use an Ubuntu runner.
@@ -2952,7 +2952,7 @@ Use `jobs.<job_id>.container` to create a container to run any steps in a job th
 
 If you do not set a `container`, all steps will run directly on the host specified by `runs-on` unless a step refers to an action configured to run in a container.
 
-> \[!NOTE]
+> [!NOTE]
 > The default shell for `run` steps inside a container is `sh` instead of `bash`. This can be overridden with [`jobs.<job_id>.defaults.run`](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_iddefaultsrun) or [`jobs.<job_id>.steps[*].shell`](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstepsshell).
 
 ### Example: Running a job within a container
@@ -2992,7 +2992,7 @@ jobs:
 
 Use `jobs.<job_id>.container.image` to define the Docker image to use as the container to run the action. The value can be the Docker Hub image name or a registry name.
 
-> \[!NOTE]
+> [!NOTE]
 > Docker Hub normally imposes rate limits on both push and pull operations which will affect jobs on self-hosted runners. However, GitHub-hosted runners are not subject to these limits based on an agreement between GitHub and Docker.
 
 ## `jobs.<job_id>.container.credentials`
@@ -3040,12 +3040,12 @@ volumes:
 
 Use `jobs.<job_id>.container.options` to configure additional Docker container resource options. For a list of options, see [`docker create` options](https://docs.docker.com/engine/reference/commandline/create/#options).
 
-> \[!WARNING]
+> [!WARNING]
 > The `--network` and `--entrypoint` options are not supported.
 
 ## `jobs.<job_id>.services`
 
-> \[!NOTE]
+> [!NOTE]
 > If your workflows use Docker container actions, job containers, or service containers, then you must use a Linux runner:
 >
 > * If you are using GitHub-hosted runners, you must use an Ubuntu runner.
@@ -3144,7 +3144,7 @@ volumes:
 
 Additional Docker container resource options. For a list of options, see [`docker create` options](https://docs.docker.com/engine/reference/commandline/create/#options).
 
-> \[!WARNING]
+> [!WARNING]
 > The `--network` option is not supported.
 
 ## `jobs.<job_id>.services.<service_id>.command`

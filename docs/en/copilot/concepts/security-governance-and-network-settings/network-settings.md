@@ -27,7 +27,7 @@ By default, Copilot connects to GitHub's server directly from your environment v
 
 Some networks use an HTTP proxy server to intercept Internet traffic before sending it to its intended location. Companies often use an HTTP proxy to detect suspicious traffic or restrict the content entering their networks. If you're working on a corporate network, you may need to configure Copilot to connect via an HTTP proxy.
 
-> \[!NOTE] The administrator of your proxy server or firewall also needs to configure network settings for Copilot to work as expected. See [Copilot allowlist reference](/en/copilot/reference/copilot-allowlist-reference).
+> [!NOTE] The administrator of your proxy server or firewall also needs to configure network settings for Copilot to work as expected. See [Copilot allowlist reference](/en/copilot/reference/copilot-allowlist-reference).
 
 Copilot supports basic HTTP proxy setups. If you need to authenticate to a proxy, Copilot supports basic authentication or authentication with Kerberos. If the proxy URL starts `https://`, the proxy is not currently supported.
 
@@ -38,7 +38,7 @@ If you don't configure a proxy directly in your editor, Copilot checks if a prox
 * `HTTP_PROXY`
 * `http_proxy`
 
-> \[!NOTE] You can use any of these variables to store the URL of a standard HTTP proxy. In standard usage, the `http` and `https` portions of these variables refer to the type of request being made, not the URL of the proxy itself. Copilot does not follow this convention and uses the URL stored in the variable with the highest priority as the proxy for both HTTP and HTTPS requests.
+> [!NOTE] You can use any of these variables to store the URL of a standard HTTP proxy. In standard usage, the `http` and `https` portions of these variables refer to the type of request being made, not the URL of the proxy itself. Copilot does not follow this convention and uses the URL stored in the variable with the highest priority as the proxy for both HTTP and HTTPS requests.
 
 ### Authentication with Kerberos
 

@@ -21,7 +21,7 @@ You can generate a new repository with the same directory structure and files as
 
 You can create a template from an existing repository. Anyone with access to the template repository can create a new repository based on the template with the same directory structure, branches, and files. For more information about creation of a repository template, see [Creating a template repository](/en/repositories/creating-and-managing-repositories/creating-a-template-repository).
 
-> \[!TIP]
+> [!TIP]
 > You can also create a repository from a template using the GitHub CLI. For more information, see [`gh repo create`](https://cli.github.com/manual/gh_repo_create) in the GitHub CLI documentation.
 
 You can choose to include the directory structure and files from only the default branch of the template repository or to include all branches. Branches created from a template have unrelated histories, which means you cannot create pull requests or merge between the branches.
@@ -44,7 +44,7 @@ For more information about forks, see [Forks](/en/pull-requests/reference/forks)
 
    ![Screenshot of the "Use this template" button and the dropdown menu expanded to show the "Open in a codespace" option.](/assets/images/help/repository/use-this-template-button.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    > Alternatively, you can open the template in a codespace and publish your work to a new repository later. For more information, see [Creating a codespace from a template](/en/codespaces/developing-in-a-codespace/creating-a-codespace-from-a-template).
 
 4. Use the **Owner** dropdown menu to select the account you want to own the repository.

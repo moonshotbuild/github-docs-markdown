@@ -29,7 +29,7 @@ You must install and import the `octokit` gem in order to use the Octokit.rb lib
 
 ## Instantiating and authenticating
 
-> \[!WARNING]
+> [!WARNING]
 > Treat your authentication credentials like a password.
 >
 > To keep your credentials secure, you can store your credentials as a secret and run your script through GitHub Actions. For more information, see [Using secrets in GitHub Actions](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets).
@@ -321,7 +321,7 @@ comment_url = comment_if_data_files_changed(octokit, owner, repo, pull_number)
 puts "A comment was added to the pull request: #{comment_url}"
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > This is just a basic example. In practice, you may want to use error handling and conditional checks to handle various scenarios.
 
 ## Next steps

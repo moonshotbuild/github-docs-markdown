@@ -91,7 +91,7 @@ You can configure the analysis to limit the number of dataflow paths included in
 
 * CodeQL CLI `database analyze`: update the database analysis command to include the `--max-paths=1` flag. For more information, see [database analyze](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/database-analyze#--max-pathsmaxpaths).
 
-> \[!NOTE]
+> [!NOTE]
 > The `max-paths` setting affects the results of all dataflow queries.
 
 ## Fixing "Analysis SARIF file rejected due to run limits"

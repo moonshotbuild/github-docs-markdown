@@ -50,7 +50,7 @@ size 84977953
 
 It tracks the `version` of Git LFS you're using, followed by a unique identifier for the file (`oid`). It also stores the `size` of the final file.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Git LFS cannot be used with GitHub Pages sites.
 > * Git LFS cannot be used with template repositories.

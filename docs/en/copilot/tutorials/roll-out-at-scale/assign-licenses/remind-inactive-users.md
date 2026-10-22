@@ -43,8 +43,8 @@ In the next section, we'll use this message in an automation that creates an iss
 
 > We noticed you haven't used your assigned license for GitHub Copilot in 30 days. Here are some resources that might help you get started:
 >
-> * If you haven't yet set up Copilot in your environment, see [Setting up GitHub Copilot for yourself](/en/copilot/how-tos/set-up/set-up-for-self) or [Troubleshooting common issues with GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-common-issues).
-> * For best practices and advice on getting started, see [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices) or [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering).
+> * If you haven't yet set up Copilot in your environment, see [Where to use GitHub Copilot](/en/copilot/get-started/where-to-use-github-copilot) or [Troubleshooting common issues with GitHub Copilot](/en/copilot/how-tos/troubleshoot-copilot/troubleshoot-common-issues).
+> * For best practices and advice on getting started, see [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices) or [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering).
 > * For examples related to specific tasks, see [GitHub Copilot Cookbook](/en/copilot/tutorials/copilot-cookbook).
 >
 > If you no longer need access to Copilot, please let us know in this issue. If your license remains inactive for a further 30 days, we'll revoke it to free up access for another user.
@@ -56,7 +56,7 @@ In the next section, we'll use this message in an automation that creates an iss
 ```markdown copy
 We noticed you haven't used your assigned license for GitHub Copilot in 30 days. Here are some resources that might help you get started:
 
-* If you haven't yet set up Copilot in your environment, see [Setting up GitHub Copilot for yourself](https://docs.github.com/en/copilot/setting-up-github-copilot/setting-up-github-copilot-for-yourself) or [Troubleshooting common issues with GitHub Copilot](https://docs.github.com/en/copilot/troubleshooting-github-copilot/troubleshooting-common-issues-with-github-copilot).
+* If you haven't yet set up Copilot in your environment, see [Where to use GitHub Copilot](https://docs.github.com/en/copilot/get-started/where-to-use-github-copilot) or [Troubleshooting common issues with GitHub Copilot](https://docs.github.com/en/copilot/troubleshooting-github-copilot/troubleshooting-common-issues-with-github-copilot).
 * For best practices and advice on getting started, see [Best practices for using GitHub Copilot](https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot) or [Prompt engineering for GitHub Copilot](https://docs.github.com/en/copilot/using-github-copilot/prompt-engineering-for-github-copilot).
 * For examples related to specific tasks, see [Copilot Chat Cookbook](https://docs.github.com/en/copilot/example-prompts-for-github-copilot-chat).
 
@@ -93,7 +93,7 @@ To use this workflow:
 
 ### Example workflow
 
-> \[!NOTE] This example assumes you assign licenses through an organization. Similar API endpoints exist for enterprise accounts and enterprise teams. See [REST API endpoints for Copilot user management](/en/rest/copilot/copilot-user-management).
+> [!NOTE] This example assumes you assign licenses through an organization. Similar API endpoints exist for enterprise accounts and enterprise teams. See [REST API endpoints for Copilot user management](/en/rest/copilot/copilot-user-management).
 
 <!-- markdownlint-disable GHD021 -->
 

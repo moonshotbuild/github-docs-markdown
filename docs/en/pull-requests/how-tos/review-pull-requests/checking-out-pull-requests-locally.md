@@ -19,7 +19,7 @@ breadcrumbs:
 
 Check out pull requests locally to resolve merge conflicts, test changes, or modify code.
 
-> \[!NOTE]
+> [!NOTE]
 > Pull request authors can give upstream repository maintainers, or people with push access to the upstream repository, permission to make commits to their pull request's compare branch in a user-owned fork. See [Allowing changes to a pull request branch created from a fork](/en/pull-requests/how-tos/work-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork).
 
 ## Modifying an active pull request locally
@@ -36,7 +36,7 @@ Check out pull requests locally to resolve merge conflicts, test changes, or mod
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 To check out a pull request locally, use the `gh pr checkout` subcommand. Replace `PULL-REQUEST` with the number, URL, or head branch of the pull request.
@@ -104,5 +104,5 @@ The remote `refs/pull/` namespace is *read-only*. If you try to push commits the
 error: failed to push some refs to 'git@github.local:USERNAME/REPOSITORY.git'
 ```
 
-> \[!TIP]
+> [!TIP]
 > When you remove or rename a remote reference, calls to `git-remote` do not affect your local `refs/pull/origin/` namespace.

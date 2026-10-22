@@ -25,7 +25,7 @@ Custom queries extend CodeQL's built-in security analysis to detect vulnerabilit
 
 Custom queries extend CodeQL's built-in security analysis to detect vulnerabilities, coding standards, and patterns specific to your codebase.
 
-> \[!NOTE]
+> [!NOTE]
 > Queries run with `database analyze` have strict [metadata requirements](https://codeql.github.com/docs/codeql-cli/using-custom-queries-with-the-codeql-cli/#including-query-metadata). You can also execute queries using the following plumbing-level subcommands:
 >
 > * [database run-queries](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/database-run-queries), which outputs non-interpreted results in an intermediate binary format called [BQRS](https://codeql.github.com/docs/codeql-overview/codeql-glossary/#bqrs-file).
@@ -53,7 +53,7 @@ Custom queries are written in query files, which are saved with the `.ql` extens
   * `diagnostic` - Extractor troubleshooting
   * `metric` - Summary metric (requires `@tags summary`)
 
-> \[!NOTE]
+> [!NOTE]
 > Metadata requirements may differ if you want to use your query with other applications. For more information, see [Metadata for CodeQL queries](https://codeql.github.com/docs/writing-codeql-queries/metadata-for-codeql-queries/#metadata-for-codeql-queries).
 
 For more information about query metadata, see [Metadata for CodeQL queries](https://codeql.github.com/docs/writing-codeql-queries/metadata-for-codeql-queries/#metadata-for-codeql-queries) and the [Query metadata style guide](https://github.com/github/codeql/blob/main/docs/query-metadata-style-guide.md).

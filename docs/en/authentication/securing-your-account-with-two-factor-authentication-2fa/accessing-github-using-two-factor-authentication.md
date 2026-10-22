@@ -57,7 +57,7 @@ If you have installed and signed in to GitHub Mobile, you may choose to authenti
 1. Sign in to GitHub with your browser, using your username and password.
 2. GitHub will send you a push notification to verify your sign in attempt. Opening the push notification or opening the GitHub Mobile app will display a prompt, asking you to approve or reject this sign in attempt.
 
-   > \[!NOTE]
+   > [!NOTE]
    > This prompt may require you to enter a two-digit number displayed within the browser you are signing in to.
 
    * Upon approving the login attempt using GitHub Mobile, your browser will complete the sign in attempt automatically.

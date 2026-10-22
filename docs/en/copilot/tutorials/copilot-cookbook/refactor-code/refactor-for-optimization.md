@@ -69,7 +69,7 @@ Optimize this code for performance
 
 Copilot suggests using a sieve function to generate the prime numbers much more efficiently. If you run this program it will complete in a fraction of a second.
 
-> \[!NOTE] Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 ```python
 import time
@@ -100,5 +100,5 @@ if __name__ == "__main__":
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

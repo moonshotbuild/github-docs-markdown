@@ -44,7 +44,7 @@ For users on a Copilot Business or Copilot Enterprise plan, the ability to use l
 
 ## Enterprise BYOK
 
-> \[!NOTE]
+> [!NOTE]
 > This feature is in public preview and subject to change.
 
 Enterprise owners can add keys for custom models in their enterprise settings. They can also allow organization owners to do the same in their organization settings, by enabling the **Enable custom models** policy.

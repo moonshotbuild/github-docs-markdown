@@ -19,7 +19,7 @@ breadcrumbs:
 
 GitHub logs every update job run by Dependabot, giving you visibility into version updates, security patches, and automated rebases across your dependencies.
 
-> \[!NOTE]
+> [!NOTE]
 > Job logs are only available for repositories with Dependabot version updates enabled.
 
 Whenever a Dependabot job runs, the details of the job are captured in the job logs list, which is accessible from the dependency graph.

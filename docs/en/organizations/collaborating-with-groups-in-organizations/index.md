@@ -45,10 +45,6 @@ Groups of people can collaborate across many projects at the same time in organi
 
   You can use your organization's news feed to keep up with recent activity on repositories owned by that organization.
 
-* [Viewing insights for dependencies in your organization](/en/viewing-insights-for-dependencies-in-your-organization)
-
-  Organization dependency insights provide data about your organization dependencies.
-
 * [Viewing GitHub Actions metrics for your organization](/en/organizations/collaborating-with-groups-in-organizations/viewing-github-actions-metrics-for-your-organization)
 
   GitHub Actions metrics provide insights into how and where your organization is using resources for its CI/CD pipelines.

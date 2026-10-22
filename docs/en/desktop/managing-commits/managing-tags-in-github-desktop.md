@@ -42,7 +42,7 @@ By default, GitHub Desktop will push the tag that you create to your repository 
 
 2. Click the commit.
 
-   > \[!NOTE]
+   > [!NOTE]
    > GitHub Desktop displays an arrow <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-arrow-up" aria-label="The up arrow icon" role="img"><path d="M3.47 7.78a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0l4.25 4.25a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018L9 4.81v7.44a.75.75 0 0 1-1.5 0V4.81L4.53 7.78a.75.75 0 0 1-1.06 0Z"></path></svg> if the tag has not been pushed to the remote repository.
 
    ![Screenshot of a list of commits in the "History" tab. Next to a commit, a "hello-tag" label and an "up arrow" icon are outlined in orange.](/assets/images/help/desktop/viewing-tags-in-history.png)
@@ -53,7 +53,7 @@ By default, GitHub Desktop will push the tag that you create to your repository 
 
 ## Deleting tags
 
-> \[!NOTE]
+> [!NOTE]
 > You can only delete tags associated with commits that have not yet been pushed.
 
 1. In the left sidebar, click **History**.

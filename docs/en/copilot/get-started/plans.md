@@ -49,7 +49,7 @@ GitHub offers a variety of plans for Copilot. Choose between them depending on y
 
 * Designed for enterprises using GitHub Enterprise Cloud. This plan includes all the features of Copilot Business, offers a larger monthly pool of AI credits, plus additional enterprise-grade capabilities.
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot is not currently available for GitHub Enterprise Server.
 
 ## Copilot plans overview
@@ -86,7 +86,7 @@ The individual plans available are:
 
 With these plans you'll receive access to the following features and capabilities.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Copilot Free plans are only available to individual developers who don't have access to Copilot through an organization or enterprise.
 > * Verified teachers, and maintainers of popular open source projects may be eligible for free access to Copilot Pro.
@@ -241,7 +241,7 @@ The Copilot plans available for organizations and enterprises are:
 
 With these plans you'll receive access to the following features and capabilities.
 
-> \[!NOTE] With GitHub Enterprise Cloud, an enterprise owner chooses the plan for each organization in the enterprise. For guidance on choosing a plan, see [Choosing your enterprise's plan for GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/assign-licenses/choose-enterprise-plan).
+> [!NOTE] With GitHub Enterprise Cloud, an enterprise owner chooses the plan for each organization in the enterprise. For guidance on choosing a plan, see [Choosing your enterprise's plan for GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/assign-licenses/choose-enterprise-plan).
 
 ### GitHub AI Credits allowance by plan
 

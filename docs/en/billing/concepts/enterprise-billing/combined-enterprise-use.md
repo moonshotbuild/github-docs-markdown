@@ -56,7 +56,7 @@ There are two types of GitHub Enterprise (GHE) licensing models, with different 
   * Users can access both services via GitHub Connect.
   * This license requires manual setup and is provided by GitHub Sales.
 
-> \[!NOTE] If you currently pay for your GitHub Enterprise licenses through a volume, subscription, or prepaid agreement, you will continue to be billed in this way until your agreement expires or you are invited to transition. At renewal, you have the option to switch to the metered billing model.
+> [!NOTE] If you currently pay for your GitHub Enterprise licenses through a volume, subscription, or prepaid agreement, you will continue to be billed in this way until your agreement expires or you are invited to transition. At renewal, you have the option to switch to the metered billing model.
 
 ### Detailed comparison
 

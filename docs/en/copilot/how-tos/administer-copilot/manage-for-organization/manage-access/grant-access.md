@@ -72,7 +72,7 @@ Billing for GitHub Copilot starts when you grant an organization member access, 
 
      To add members in bulk, click **Choose CSV to upload**, and then upload a CSV file including either the username or email address for each member you want to add, separated by a comma. The file can contain a mixture of usernames and email addresses.
 
-     > \[!WARNING] When you upload a CSV file, unless you're using Enterprise Managed Users, GitHub Copilot will search all users on GitHub.com for matches. If the CSV includes users who are not members of your organization, they will be invited to join your organization when you click **Continue to purchase** followed by **Purchase seats**. Outside collaborators will receive a Copilot seat but will not be sent an organization invite. This warning does not apply to accounts using Enterprise Managed Users.
+     > [!WARNING] When you upload a CSV file, unless you're using Enterprise Managed Users, GitHub Copilot will search all users on GitHub.com for matches. If the CSV includes users who are not members of your organization, they will be invited to join your organization when you click **Continue to purchase** followed by **Purchase seats**. Outside collaborators will receive a Copilot seat but will not be sent an organization invite. This warning does not apply to accounts using Enterprise Managed Users.
 
      Review the list of users generated from your CSV file. Clear the selection of any users you do not want to add.
 

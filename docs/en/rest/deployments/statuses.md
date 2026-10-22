@@ -29,7 +29,7 @@ GitHub retains records of previous deployment statuses for **90 days**. Previous
 
 This retention policy applies to all deployment status endpoints, including [List deployment statuses](#list-deployment-statuses) and [Get a deployment status](#get-a-deployment-status). The current status of a deployment is not affected, because it is stored on the deployment itself and remains available regardless of the deployment's age.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List deployment statuses
@@ -198,8 +198,8 @@ OAuth app tokens and personal access tokens (classic) need the repo\_deployment 
   The target URL to associate with this status. This URL should contain output to keep the user updated while the task is running or serve as historical information for what happened in the deployment.
   Note
 
-It's recommended to use the log\_url parameter, which replaces target\_url.
-Default: \`\`
+  It's recommended to use the log\_url parameter, which replaces target\_url.
+  Default: \`\`
 
 * **`log_url`** (string)
   The full URL of the deployment's output. This parameter replaces target\_url. We will continue to accept target\_url to support legacy uses, but we recommend replacing target\_url with log\_url. Setting log\_url will automatically set target\_url to the same value. Default: ""

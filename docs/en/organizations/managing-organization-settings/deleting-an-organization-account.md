@@ -19,14 +19,14 @@ You can delete your organization account at any time.
 
 ## About deletion of your organization account
 
-> \[!TIP]
+> [!TIP]
 > If you want to cancel your paid subscription, you can [downgrade your organization to GitHub Free](/en/billing/how-tos/manage-plan-and-licenses/downgrade-plan) instead of deleting the organization and its content.
 
 Deleting your organization account permanently removes all repositories, forks of private repositories, wikis, issues, pull requests, and project or organization pages. **This action is irreversible.**
 
 Billing for the organization will end.  **Upon deletion, the organization name will not be available to use for another organization or user account for 90 days.** After the 90 days pass, the organization name will automatically become available for use on a new user or organization account.
 
-> \[!TIP]
+> [!TIP]
 > If you would like to make your organization name available for reuse immediately, rename your organization instead of deleting it. For more information, see [Renaming an organization](/en/organizations/managing-organization-settings/renaming-an-organization).
 
 If the account namespace includes any public repositories that contain an action listed on GitHub Marketplace, or that had more than 100 clones or more than 100 uses of GitHub Actions in the week prior to deletion, GitHub permanently retires the owner name and repository name combination (`OWNER/REPOSITORY-NAME`) when you delete your account.

@@ -114,7 +114,14 @@ var client = new CopilotClient(new CopilotClientOptions()
 
 ### Log directory
 
-The CLI writes logs to a directory. You can specify a custom location:
+The SDK-managed out-of-process runtime writes redacted
+`process-<timestamp>-<pid>.log` files under the Copilot home's `logs` directory
+by default in `copilot-cli` mode. SDKs in `empty` mode do not set the logging
+opt-in, but an inherited setting can still enable it; session events remain
+available to `collectLogs`. An explicitly selected older CLI executable may
+ignore this setting. You can specify a custom log location with `--log-dir`;
+`collectLogs` searches the configured directory. In-process connections do
+not start a separate logging process.
 
 <div class="ghd-codetabs">
 <div class="ghd-codetab" data-lang="typescript" data-label="TypeScript"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">TypeScript</div>
@@ -130,13 +137,12 @@ const client = new CopilotClient({
 <div class="ghd-codetab" data-lang="python" data-label="Python"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">Python</div>
 
 ```python
-# The Python SDK does not currently support passing extra CLI arguments.
-# Logs are written to the default location or can be configured via
-# the CLI when running in server mode.
-```
+from copilot import CopilotClient, RuntimeConnection
 
-> \[!NOTE]
-> Python SDK logging configuration is limited. For advanced logging, run the CLI manually with `--log-dir` and connect via `RuntimeConnection.for_uri(...)`.
+client = CopilotClient(
+    connection=RuntimeConnection.for_stdio(args=["--log-dir", "/path/to/logs"])
+)
+```
 
 </div>
 
@@ -168,9 +174,11 @@ var client = new CopilotClient(new CopilotClientOptions
 <!-- docs-validate: skip -->
 
 ```java
-// The Java SDK does not currently support passing extra CLI arguments.
-// For custom log directories, run the CLI manually with --log-dir
-// and connect via cliUrl.
+import com.github.copilot.CopilotClient;
+import com.github.copilot.rpc.CopilotClientOptions;
+
+var client = new CopilotClient(new CopilotClientOptions()
+    .setCliArgs(new String[] {"--log-dir", "/path/to/logs"}));
 ```
 
 </div>
@@ -185,7 +193,7 @@ var client = new CopilotClient(new CopilotClientOptions
 
 **Solution:**
 
-1. Install the CLI: [Installation guide](/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli)
+1. Install the CLI: [Installation guide](/en/copilot/how-tos/set-up/install-copilot-cli)
 
 2. Verify installation:
 
@@ -196,7 +204,7 @@ var client = new CopilotClient(new CopilotClientOptions
 3. Or specify the full path:
 
 <div class="ghd-codetabs">
-<div class="ghd-codetab" data-lang="javascript" data-label="JavaScript"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">JavaScript</div>
+<div class="ghd-codetab" data-lang="typescript" data-label="TypeScript"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">TypeScript</div>
 
 ```typescript
 const client = new CopilotClient({
@@ -262,7 +270,7 @@ var client = new CopilotClient(new CopilotClientOptions()
 2. Or provide a token programmatically:
 
 <div class="ghd-codetabs">
-<div class="ghd-codetab" data-lang="javascript" data-label="JavaScript"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">JavaScript</div>
+<div class="ghd-codetab" data-lang="typescript" data-label="TypeScript"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">TypeScript</div>
 
 ```typescript
 const client = new CopilotClient({

@@ -27,12 +27,12 @@ You can also comment on specific files or sections of a file in a pull request's
 
 See [Reviewing proposed changes in a pull request](/en/pull-requests/how-tos/review-pull-requests/reviewing-proposed-changes-in-a-pull-request).
 
-> \[!NOTE]
+> [!NOTE]
 > If you reply to a pull request via email, your comment will be added on the **Conversation** tab and will not be part of a pull request review.
 
 To reply to an existing line or file comment, navigate to the comment on either the **Conversation** tab or **Files changed** tab. Then, add another comment below it.
 
-> \[!TIP]
+> [!TIP]
 >
 > * Pull request comments support the same [formatting](/en/get-started/writing-on-github) as regular comments on GitHub, such as @mentions, emoji, and references.
 > * You can add reactions to comments in pull requests in the **Files changed** tab.

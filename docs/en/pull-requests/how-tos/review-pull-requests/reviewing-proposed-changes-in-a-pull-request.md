@@ -146,7 +146,7 @@ For more information on reviewing pull requests in GitHub Codespaces, see [Using
 
 ## Understanding changes in a pull request
 
-> \[!NOTE] You'll need access to GitHub Copilot. For more information, see [About GitHub Copilot](/en/copilot/get-started/about-github-copilot#get-access).
+> [!NOTE] You'll need access to GitHub Copilot. For more information, see [About GitHub Copilot](/en/copilot/get-started/about-github-copilot#get-access).
 
 GitHub Copilot can help you quickly understand changes in a pull request by providing context and explanations for specific commits. If you’re unsure about the purpose of a particular change or need more details about how it fits into the broader codebase, you can ask Copilot questions about individual commits.
 
@@ -166,7 +166,7 @@ GitHub Copilot can help you quickly understand changes in a pull request by prov
 
    * `When was this commit made?`
 
-   > \[!TIP]
+   > [!TIP]
    > If you know the SHA for a commit, instead of navigating to the commit, you can ask Copilot about the commit from any page in the repository on GitHub by including the SHA in your message. For example, `What changed in commit a778e0eab?`
 
 5. Optionally, after submitting a question, you can click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-square-fill" aria-label="Stop" role="img"><path d="M5.75 4h4.5c.966 0 1.75.784 1.75 1.75v4.5A1.75 1.75 0 0 1 10.25 12h-4.5A1.75 1.75 0 0 1 4 10.25v-4.5C4 4.784 4.784 4 5.75 4Z"></path></svg> in the text box to stop the response.
@@ -218,7 +218,7 @@ After you've finished reviewing all the files you want in the pull request, subm
    * Select **Request changes** to submit feedback that must be addressed before the pull request can be merged.
 5. Click **Submit review**.
 
-> \[!TIP]
+> [!TIP]
 >
 > * The **Request changes** option is purely informational and will not prevent merging unless a ruleset or classic branch protection rule is configured with the "require a pull request" option. If configured and a collaborator with `admin`, `owner`, or `write` access to the repository submits a review requesting changes, the pull request cannot be merged until the same collaborator submits another review approving the changes in the pull request.
 > * Repository owners and administrators can merge a pull request even if it hasn't received an approving review, or if a reviewer who requested changes has left the organization or is unavailable.

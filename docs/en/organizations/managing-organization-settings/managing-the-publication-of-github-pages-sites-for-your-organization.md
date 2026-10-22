@@ -33,7 +33,7 @@ If you disallow publication of GitHub Pages sites, any sites that are already pu
 
 5. Under "Pages creation, select or deselect **Public**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > To publish a GitHub Pages site privately, your organization must use GitHub Enterprise Cloud. For more information about how you can try GitHub Enterprise Cloud for free, see [Setting up a trial of GitHub Enterprise Cloud](/en/enterprise-cloud@latest/admin/overview/setting-up-a-trial-of-github-enterprise-cloud).
 
 6. Click **Save**.

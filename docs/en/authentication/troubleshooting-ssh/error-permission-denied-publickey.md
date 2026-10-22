@@ -103,7 +103,7 @@ If you have [GitHub Desktop](https://desktop.github.com/) installed, you can use
    > Agent pid 59566
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > The eval commands above start ssh-agent manually in your environment. These commands may fail if ssh-agent already runs as a background system service. If that happens, we recommend you check the relevant documentation for your environment.
 
 2. Verify that you have a private key generated and loaded into SSH.
@@ -130,7 +130,7 @@ If you have [GitHub Desktop](https://desktop.github.com/) installed, you can use
 
 The `ssh-add` command *should* print out a long string of numbers and letters. If it does not print anything, you will need to [generate a new SSH key](/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and associate it with GitHub.
 
-> \[!TIP]
+> [!TIP]
 > On most systems the default private keys (`~/.ssh/id_rsa` and `~/.ssh/identity`) are automatically added to the SSH authentication agent. You shouldn't need to run `ssh-add path/to/key` unless you override the file name when you generate a key.
 
 ### Getting more details
@@ -271,5 +271,5 @@ You must provide your public key to GitHub to establish a secure connection.
 
 If you don't see your public key in GitHub, you'll need to [add your SSH key to GitHub](/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to associate it with your computer.
 
-> \[!WARNING]
+> [!WARNING]
 > If you see an SSH key you're not familiar with on GitHub, delete it immediately and contact us through the [GitHub Support portal](https://support.github.com) for further help. An unidentified public key may indicate a possible security concern. For more information, see [Reviewing your SSH keys](/en/authentication/keeping-your-account-and-data-secure/reviewing-your-ssh-keys).

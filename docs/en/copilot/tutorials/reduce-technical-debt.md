@@ -116,7 +116,7 @@ try {
 }
 ```
 
-> \[!NOTE] This response is an example. Copilot Chat responses are non-deterministic, so you may get a different response if you run the same prompt against the same code.
+> [!NOTE] This response is an example. Copilot Chat responses are non-deterministic, so you may get a different response if you run the same prompt against the same code.
 
 By adopting the in-the-moment fix approach, you help to ensure that substandard code does not get added to your codebase, and you avoid the creation of a backlog issue that may never be addressed.
 

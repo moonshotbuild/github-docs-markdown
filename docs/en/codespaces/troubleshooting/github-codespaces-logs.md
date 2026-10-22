@@ -105,7 +105,7 @@ If you want to share the log with support, you can copy the text from the creati
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 To see the creation log use the `gh codespace logs` subcommand. After entering the command choose from the list of codespaces that's displayed.

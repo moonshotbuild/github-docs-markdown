@@ -37,7 +37,7 @@ You can resume a previous interactive CLI session either from the command line, 
 
 * **During an interactive session**, type `/resume` to switch to a different session. A picker is displayed showing your recent sessions. Alternatively, you can enter `/resume SESSION-ID` to jump straight into a specific session.
 
-> \[!NOTE]
+> [!NOTE]
 > You can find the ID of a current interactive session by using the `/session` slash command. The session ID is also displayed when you exit an interactive session.
 
 When you resume a session, Copilot loads the full conversation history, so you can continue exactly where you left off.
@@ -57,7 +57,7 @@ To remame a session:
 
 You can share the content of the current session as a shareable link to the session on GitHub.com, a Markdown file, an interactive HTML file, or a private gist on GitHub.com. This allows you to share your prompts and Copilot's responses with others, or store a record of your work outside of the CLI.
 
-> \[!NOTE]
+> [!NOTE]
 > You can use `/export` as an alias for `/share` in any of the commands below.
 
 To share the session to GitHub and print a shareable link, type the following in an interactive session:
@@ -82,7 +82,7 @@ To export the session conversation as a Markdown file, type:
 
 If you don't specify a file path, the Markdown file is saved in the current working directory with the name `copilot-session-SESSIONID.md`.
 
-> \[!NOTE]
+> [!NOTE]
 > Gists are not available to Enterprise Managed Users, or if you use GitHub Enterprise Cloud with data residency (\*.ghe.com).
 
 To export the session as an interactive HTML file, type:
@@ -93,7 +93,7 @@ To export the session as an interactive HTML file, type:
 
 As with Markdown export, if you don't specify a file path the file is saved in the current working directory, with the name `copilot-session-SESSIONID.html`.
 
-If you have used the `/research` slash command in the current session, you can also use the `/share` command to share a research report. For more information, see [Researching with GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/research#viewing-and-sharing-a-research-report).
+If you have used the `/research` slash command in the current session, you can also use the `/share` command to share a research report. For more information, see [Researching with GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/research-with-copilot-cli#viewing-and-sharing-a-research-report).
 
 ## Using the `/chronicle` slash command
 
@@ -188,7 +188,7 @@ This does a deep dive into your session history to find places where Copilot str
 
 Capturing project-specific knowledge as custom instructions is a powerful way to improve Copilot's performance when working on your project. For more information, see [Adding custom instructions for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/add-custom-instructions).
 
-> \[!NOTE]
+> [!NOTE]
 > Unlike other times Copilot uses your session data to answer questions or generate insights, the scope of the `improve` subcommand is limited to data for the current repository or working directory. This ensures the recommendations are relevant to the project you're currently working on.
 
 Copilot looks for friction signals—repeated test failures, build errors that required multiple attempts, user messages that corrected or redirected the agent, and patterns that recur across sessions. It then presents 3–5 specific recommendations, each explaining the problem it found and the instruction that would address it.
@@ -201,7 +201,7 @@ After presenting its recommendations, Copilot asks which ones you'd like to appl
 
 You don't need to use a slash command to take advantage of your session history. If Copilot determines that you are asking about your use of the CLI it will automatically use the session store to provide the context for a response.
 
-> \[!NOTE]
+> [!NOTE]
 > By default, the answers to questions about your interactions with Copilot CLI are based on all of your recorded sessions, irrespective of the repository or branch you are currently working in.
 
 Here are some examples of the kinds of questions you might ask:
@@ -254,7 +254,7 @@ For the full list of `/session` subcommands, see [GitHub Copilot CLI command ref
 ### Deleting session data manually
 
 * **Local data**: To remove data for a particular CLI session locally, delete the relevant session directory from `~/.copilot/session-state/`. To clear all local session data, delete everything under `~/.copilot/session-state/`. After doing this you must manually reindex the session store. See [Reindexing the session store](#reindexing-the-session-store) later in this article. Deleting local files does not affect session data that has been synced to your account. You cannot delete synced data locally.
-* **Synced data**: You can delete or hide synced CLI sessions from GitHub.com. Hiding a session removes it from your session index so it no longer appears in query results. Deleting a session removes it from your session list on GitHub.com. Deletion applies to CLI, VS Code, and GitHub Copilot app sessions.
+* **Synced data**: You can delete or hide synced CLI sessions from GitHub.com. Hiding a session removes it from your session index so it no longer appears in query results. Deleting a session removes it from your session list on GitHub.com. Deletion applies to sessions from Copilot CLI, VS Code, and the GitHub Copilot app.
 
 ## Reindexing the session store
 

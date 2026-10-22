@@ -27,9 +27,9 @@ Discover a curated collection of customizations, including custom instructions, 
 
   Create your first Copilot prompt file with this simple code explanation example that works for any programming language. (Image: /assets/images/copilot-landing/improving\_code\_readability.png)
 
-* [/custom-instructions/your-first-custom-agent](/en/custom-instructions/your-first-custom-agent)
+* [Your first custom agent](/en/copilot/tutorials/customization-library/custom-agents/your-first-custom-agent)
 
-  Image: /assets/images/copilot-landing/generating\_unit\_tests.png
+  Create and test your first custom agent with this simple README specialist example. (Image: /assets/images/copilot-landing/generating\_unit\_tests.png)
 
 ## Links
 

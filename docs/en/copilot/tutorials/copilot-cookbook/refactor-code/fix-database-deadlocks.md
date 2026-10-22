@@ -25,7 +25,7 @@ Complex database operations–particularly those involving transactions–can le
 
 Copilot Chat can help by identifying points in a transaction where locking or deadlocks could occur, and can suggest best practices for transaction isolation or deadlock resolution, such as adjusting locking strategies or handling deadlock exceptions gracefully.
 
-> \[!NOTE] The responses shown in this article are examples. Copilot Chat responses are non-deterministic, so you may get different responses from the ones shown here.
+> [!NOTE] The responses shown in this article are examples. Copilot Chat responses are non-deterministic, so you may get different responses from the ones shown here.
 
 ## Avoiding simultaneous updates on interdependent rows
 
@@ -256,5 +256,5 @@ The suggested code ensures that if either the `DELETE` or `INSERT` operation fai
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

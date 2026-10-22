@@ -27,6 +27,14 @@ For most license-based products such as GitHub Copilot, GitHub Team, and GitHub 
 
 For metered products such as GitHub Actions, Copilot AI credits, or cloud sandboxes, you can set budgets to prevent usage once the budget threshold is reached.
 
+The bundled AI credits budget controls metered spending across all AI-credit SKUs. You can also create a SKU-level budget for **Code Security AI Credits** to control spending on AI Scan and agentic autofix.
+
+When no Code Security AI Credits quota remains because of a hard budget, AI Scan cannot produce findings and agentic autofix cannot start a session. Usage resumes when the limiting budget is increased or a new billing cycle begins.
+
+Hard budgets for Code Security AI Credits limit AI feature usage, not enablement. Reaching a budget limit does not prevent administrators from enabling AI Scan or agentic autofix.
+
+By contrast, a hard budget for active-committer licenses prevents enabling Code Security or Secret Protection on additional repositories. It does not disable these products in repositories where they are already enabled.
+
 ## Types and scopes
 
 Each budget has a type and a scope that define which paid use contributes to spending against the budget.
@@ -48,7 +56,7 @@ Enterprise owners and billing managers can create and edit enterprise and cost c
 
 You can enable alerts for budgets to be notified when usage reaches 75%, 90%, and 100% of the budget amount. Alerts are shown in the GitHub UI and sent by email. By default, alerts go to account owners and billing managers, and you can add additional recipients as needed. Budget alerts are available for budgets scoped to your enterprise, a cost center, an organization, or a repository.
 
-> \[!NOTE]
+> [!NOTE]
 > Alerting for user-level budgets is not consistently available in all scenarios. Don't rely on user-level budget alerts as your only signal, also monitor usage at the cost center or enterprise level.
 
 ## Included usage alerts
@@ -70,7 +78,7 @@ Each email identifies the account, the product, the approximate usage compared t
 
 Enterprise owners, organization owners, personal account owners, and billing managers can opt in or out of these notifications from the **Included usage alerts** control on the "Budgets and alerts" page. For more information, see [Setting up budgets to control spending on metered products](/en/billing/how-tos/set-up-budgets#managing-included-usage-alerts).
 
-> \[!NOTE]
+> [!NOTE]
 > Included usage alerts are different from budget threshold alerts. Budget threshold alerts notify you when *spending* reaches a percentage of a dollar budget you have set. Included usage alerts notify you when your plan's *free usage allowance* is approaching depletion, regardless of whether you have set a budget.
 
 ## Your first billing cycle after creating a budget

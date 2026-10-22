@@ -24,8 +24,8 @@ GitHub Code Quality analyzes your code for quality and coverage issues and deliv
 * **On pull requests**, Code Quality uses deterministic CodeQL rules to detect known anti-patterns and posts findings as inline comments before code is merged. If you upload a Cobertura XML coverage report, line coverage metrics show whether a change maintains or reduces coverage. You can enforce quality and coverage thresholds with rulesets to block pull requests that don't meet your criteria, so new quality debt doesn't accumulate.
 * **On the default branch**, rules-based scans identify existing quality debt across your codebase, with autofixes you can apply directly or assign to Copilot cloud agent to resolve on your behalf. AI-powered analysis also runs on recently changed files, flagging issues that fall outside existing rule sets, including languages not yet covered by CodeQL queries.
 
-> \[!NOTE]
-> On pull requests, Code Quality posts rules-based CodeQL findings only. If you also want AI-powered reviews of your pull requests, you can enable GitHub Copilot code review separately. See [About GitHub Copilot code review](/en/copilot/concepts/agents/code-review).
+> [!NOTE]
+> On pull requests, Code Quality posts rules-based CodeQL findings only. If you also want AI-powered reviews of your pull requests, you can enable GitHub Copilot code review separately. See [GitHub Copilot code review](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review).
 
 ## Use cases
 

@@ -64,14 +64,14 @@ Before you apply for a GitHub for Nonprofits discount, you will want to make sur
 
 4. To authorize GitHub for Nonprofits to access your organization account on GitHub, click **Grant**.
 
-   > \[!TIP]
+   > [!TIP]
    > If you see a **Request** button instead of a **Grant** button, you are a member of the organization, not an owner. An owner must approve your request for GitHub for Nonprofit. You must be an organization owner to claim the GitHub for Nonprofit. For more information, see [Authorizing OAuth apps](/en/apps/oauth-apps/using-oauth-apps/authorizing-oauth-apps#oauth-apps-and-organizations).
 
 5. Click **Authorize GitHub**.
 
 6. From the "GitHub Organization" dropdown menu, select your nonprofit organization account. Then click **Continue**.
 
-   > \[!TIP]
+   > [!TIP]
    > If you are running into trouble finding your organization in the drop down, see [Cannot find my organization on GitHub for Nonprofits](/en/nonprofit/troubleshooting/cannot-find-my-organization-on-github-for-nonprofits).
 
 7. If your nonprofit is already in our database as a validated organization, you will be prompted to select your GitHub for Nonprofits discount. If your organization is not automatically validated, you will be asked to complete the validation application.

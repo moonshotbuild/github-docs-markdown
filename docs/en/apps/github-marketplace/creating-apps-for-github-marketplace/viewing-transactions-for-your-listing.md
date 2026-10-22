@@ -19,10 +19,10 @@ breadcrumbs:
 
 The GitHub Marketplace transactions page allows you to download and view all transactions for your GitHub Marketplace listing. You can view transactions for the past day (24 hours), week, month, or for the entire duration of time that your GitHub App has been listed.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
-> \[!NOTE]
+> [!NOTE]
 > Because it takes time to aggregate data, you'll notice a slight delay in the dates shown. When you select a time period, you can see exact dates for the metrics at the top of the page.
 
 You can view or download the transaction data to keep track of your subscription activity. Click the **Export CSV** button to download a `.csv` file. You can also select a period of time to view and search within the transaction page.
@@ -53,7 +53,7 @@ To access GitHub Marketplace transactions:
 
 3. In the left sidebar, click either **OAuth Apps** or **GitHub Apps** depending on the GitHub Marketplace listing you'd like to manage.
 
-   > \[!NOTE]
+   > [!NOTE]
    > You can also manage your listing by navigating to <https://github.com/marketplace/manage>.
 
    ![Screenshot of the sidebar on the "Developer Settings" page of GitHub. Options labeled "GitHub Apps" and "OAuth apps" are outlined in dark orange.](/assets/images/settings/apps-choose-app.png)

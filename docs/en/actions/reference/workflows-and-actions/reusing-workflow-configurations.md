@@ -45,7 +45,7 @@ The **Actions permissions** on the callers repository's Actions settings page mu
 
 For private repositories, the **Access** policy on the Actions settings page of the called workflow's repository must be explicitly configured to allow access from repositories containing caller workflows - see [Managing GitHub Actions settings for a repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#allowing-access-to-components-in-a-private-repository).
 
-> \[!NOTE]
+> [!NOTE]
 > To enhance security, GitHub Actions does not support redirects for actions or reusable workflows. This means that when the owner, name of an action's repository, or name of an action is changed, any workflows using that action with the previous name will fail.
 
 ### Limitations of reusable workflows
@@ -82,7 +82,7 @@ When you call a reusable workflow, you can only use the following keywords in th
 * [`jobs.<job_id>.permissions`](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idpermissions)
 * [`jobs.<job_id>.cache-mode`](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idcache-mode)
 
-  > \[!NOTE]
+  > [!NOTE]
   >
   > * If `jobs.<job_id>.permissions` is not specified in the calling job, the called workflow will have the default permissions for the `GITHUB_TOKEN`. For more information, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#permissions).
   > * The `GITHUB_TOKEN` permissions passed from the caller workflow can be only downgraded (not elevated) by the called workflow.

@@ -113,10 +113,6 @@ Learn about the different components of your bill, and how you can view and mana
 
   To use GitHub Enterprise Server, you must upload a license file.
 
-* [About Visual Studio subscriptions with GitHub Enterprise](/en/visual-studio-subs)
-
-  You can give Visual Studio subscribers on your team access to GitHub Enterprise with a combined offering from Microsoft.
-
 * [Combined use of GitHub Enterprise and Azure DevOps](/en/billing/concepts/enterprise-billing/azure-devops-licenses)
 
   GitHub Enterprise Cloud customers who manage users with Entra ID can access Azure DevOps without additional cost.
@@ -127,7 +123,7 @@ Learn about the different components of your bill, and how you can view and mana
 
 * [GitHub Advanced Security license billing](/en/billing/concepts/product-billing/github-advanced-security)
 
-  Learn how usage of Advanced Security features is measured and how to pay for additional licenses.
+  Understand how Advanced Security licenses and AI-credit usage are billed.
 
 * [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces)
 
@@ -173,10 +169,6 @@ Learn about the different components of your bill, and how you can view and mana
 
   You can enable and pay for usage-based billing on GitHub by connecting an Azure subscription.
 
-* [Setting up Visual Studio subscriptions with GitHub Enterprise](/en/set-up-vs-subscription)
-
-  Your team's subscription to Visual Studio can also provide access to GitHub Enterprise.
-
 * [Redeeming a coupon](/en/billing/how-tos/set-up-payment/redeem-coupon)
 
   If you have a coupon, you can redeem it towards a paid GitHub subscription.
@@ -201,6 +193,10 @@ Learn about the different components of your bill, and how you can view and mana
 
   You can downgrade the plan for any type of account on GitHub at any time.
 
+* [Changing your billing cycle](/en/billing/how-tos/manage-plan-and-licenses/change-billing-cycle)
+
+  In some cases, you can change your billing cycle from monthly to annual, or vice versa.
+
 * [Viewing and managing pending changes to your plan](/en/billing/how-tos/manage-plan-and-licenses/manage-pending-changes)
 
   You can view and cancel pending changes to your plan before they take effect on your next billing date.
@@ -223,7 +219,7 @@ Learn about the different components of your bill, and how you can view and mana
 
 * [Downloading license use for your enterprise or organization](/en/billing/how-tos/products/download-license-use)
 
-  Get data on consumption of GitHub, Copilot, and Advanced Security licenses.
+  Get data on consumption of GitHub, Copilot, Code Quality, and Advanced Security licenses.
 
 * [Buying Advanced Security for your organization or enterprise](/en/billing/how-tos/products/buy-advanced-security)
 
@@ -241,17 +237,9 @@ Learn about the different components of your bill, and how you can view and mana
 
   You can monitor and control the availability and consumption of licenses for Advanced Security in repositories in your enterprise.
 
-* [Viewing committer information for Advanced Security licenses](/en/view-ghas-committers)
-
-  You can view information about the GitHub Secret Protection and GitHub Code Security committers for your enterprise and calculate the cost for additional committers with the site admin dashboard.
-
 * [Disabling GitHub Advanced Security for your enterprise](/en/billing/how-tos/products/disable-ghas-for-enterprise)
 
   Disable GitHub Advanced Security and prevent accidental re-enablement across your enterprise.
-
-* [Manage Enterprise Server licenses for your enterprise account](/en/manage-server-licenses)
-
-  Learn how to set up an instance of GitHub Enterprise Server that synchronizes license information with your enterprise account on GitHub Enterprise Cloud.
 
 * [Upgrading the billing plan for a GitHub Marketplace app](/en/billing/how-tos/pay-third-parties/upgrade-marketplace-app)
 
@@ -301,6 +289,10 @@ Learn about the different components of your bill, and how you can view and mana
 
   If the credit card you use to pay for GitHub is declined, you can take several steps to ensure that your payments go through and that you are not locked out of your account.
 
+* [Troubleshooting authorization holds](/en/billing/how-tos/troubleshooting/authorization-holds)
+
+  If an authorization hold appears on your payment method, you can check what it means and what to do if the funds are not released.
+
 * [Unlocking a locked account](/en/billing/how-tos/troubleshooting/locked-account)
 
   Your account's paid features are locked if your payment is past due because of billing problems.
@@ -337,10 +329,6 @@ Learn about the different components of your bill, and how you can view and mana
 
   Learn how your spending is assigned to cost centers for licensed and metered products.
 
-* [License troubleshooting information for GitHub Enterprise](/en/enterprise-license-troubleshooting)
-
-  Troubleshoot license usage for your enterprise by understanding consumption criteria and auditing license reports.
-
 * [People who consume a license in an organization](/en/billing/reference/github-license-users)
 
   Learn how consumption of GitHub licenses is determined for paid organizations and enterprises.
@@ -356,10 +344,6 @@ Learn about the different components of your bill, and how you can view and mana
 * [Product usage included with each plan](/en/billing/reference/product-usage-included)
 
   Check the size of the allowance for usage-based products included in each GitHub plan.
-
-* [Roles for Visual Studio subscriptions with GitHub Enterprise reference](/en/roles-for-visual-studio)
-
-  Learn about the different roles required to set up Visual Studio subscriptions with GitHub Enterprise.
 
 * [Supported payment methods for GitHub](/en/billing/reference/supported-payment-methods)
 
@@ -379,4 +363,4 @@ Learn about the different components of your bill, and how you can view and mana
 
 * [Gathering insights on your spending](/en/billing/tutorials/gather-insights)
 
-  Get insights into the usage of your  members.
+  Get insights into the usage of your organization members.

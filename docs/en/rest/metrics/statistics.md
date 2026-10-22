@@ -41,7 +41,7 @@ To summarize this:
 * All statistics exclude merge commits.
 * Contributor statistics also exclude empty commits.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get the weekly commit activity

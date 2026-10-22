@@ -23,7 +23,7 @@ Authenticate Actions Runner Controller to the GitHub API.
 
 You can authenticate Actions Runner Controller (ARC) to the GitHub API by using a GitHub App or by using a personal access token (classic).
 
-> \[!NOTE]
+> [!NOTE]
 > You cannot authenticate using a GitHub App for runners at the enterprise level. For more information, see [Managing access to self-hosted runners using groups](/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access).
 
 ## Authenticating ARC with a GitHub App
@@ -35,7 +35,7 @@ You can authenticate Actions Runner Controller (ARC) to the GitHub API by using 
    2. Under "Permissions," click **Repository permissions**. Then use the dropdown menus to select the following access permissions.
       * **Administration:** Read and write
 
-        > \[!NOTE]
+        > [!NOTE]
         > `Administration: Read and write` is only required when configuring Actions Runner Controller to register at the repository scope. It is not required to register at the organization scope.
 
       * **Metadata:** Read-only
@@ -57,7 +57,7 @@ You can authenticate Actions Runner Controller (ARC) to the GitHub API by using 
 
    To create a Kubernetes secret with the values of your GitHub App, run the following command.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Create the secret in the same namespace where the `gha-runner-scale-set` chart is installed. In this example, the namespace is `arc-runners` to match the quickstart documentation. For more information, see [Get started with Actions Runner Controller](/en/actions/tutorials/use-actions-runner-controller/get-started#configuring-a-runner-scale-set).
 
    ```bash copy
@@ -89,7 +89,7 @@ ARC can use personal access tokens (classic) to register self-hosted runners.
 
 2. To create a Kubernetes secret with the value of your personal access token (classic), use the following command.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Create the secret in the same namespace where the `gha-runner-scale-set` chart is installed. In this example, the namespace is `arc-runners` to match the quickstart documentation. For more information, see [Get started with Actions Runner Controller](/en/actions/tutorials/use-actions-runner-controller/get-started#configuring-a-runner-scale-set).
 
    ```bash copy
@@ -123,7 +123,7 @@ ARC can use fine-grained personal access tokens to register self-hosted runners.
 
 2. To create a Kubernetes secret with the value of your fine-grained personal access token, use the following command.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Create the secret in the same namespace where the `gha-runner-scale-set` chart is installed. In this example, the namespace is `arc-runners` to match the quickstart documentation. For more information, see [Get started with Actions Runner Controller](/en/actions/tutorials/use-actions-runner-controller/get-started#configuring-a-runner-scale-set).
 
    ```bash copy
@@ -142,7 +142,7 @@ ARC can use fine-grained personal access tokens to register self-hosted runners.
 
 ## Authenticating ARC with vault secrets
 
-> \[!NOTE]
+> [!NOTE]
 > Vault integration is currently available in public preview with support for Azure Key Vault.
 
 Starting with gha-runner-scale-set version 0.12.0, ARC supports retrieving GitHub credentials from an external vault. Vault integration is configured per runner scale set. This means you can run some scale sets using Kubernetes secrets while others use vault-based secrets, depending on your security and operational requirements.

@@ -19,7 +19,7 @@ breadcrumbs:
 
 To find detailed information about a repository on GitHub, you can filter, sort, and search issues and pull requests that are relevant to the repository.
 
-> \[!TIP]
+> [!TIP]
 > You can also filter issues or pull requests using the GitHub CLI. For more information, see [`gh issue list`](https://cli.github.com/manual/gh_issue_list) or [`gh pr list`](https://cli.github.com/manual/gh_pr_list) in the GitHub CLI documentation.
 
 ## Filtering issues and pull requests
@@ -33,7 +33,7 @@ You can filter issues and pull requests to find:
 * Issues and pull requests that are assigned to you
 * Issues and pull requests where you're [**@mentioned**](/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#mentioning-people-and-teams)
 
-> \[!TIP]
+> [!TIP]
 > You can also filter issues or pull requests using the GitHub CLI. For more information, see [`gh issue list`](https://cli.github.com/manual/gh_issue_list) or [`gh pr list`](https://cli.github.com/manual/gh_pr_list) in the GitHub CLI documentation.
 
 1. On GitHub, navigate to the main page of the repository.
@@ -93,7 +93,7 @@ Once you've [assigned an issue or pull request to someone](/en/issues/tracking-y
    ![Screenshot of a list of issues. In the header above the list, a dropdown menu, labeled "Assignees", is outlined in dark orange.](/assets/images/help/issues/issues-assignee-dropdown.png)
 4. The Assignee drop-down menu lists everyone who has write access to your repository. Click the name of the person whose assigned items you want to see, or click **Assigned to nobody** to see which issues are unassigned.
 
-> \[!TIP]
+> [!TIP]
 > To clear your filter selection, click **Clear current search query, filters, and sorts**.
 
 ## Filtering issues and pull requests by labels
@@ -109,7 +109,7 @@ Once you've [applied labels to an issue or pull request](/en/issues/using-labels
    ![Screenshot of the list of issues for a repository. Above the list, a button, labeled with a label icon and "Labels", is outlined in dark orange.](/assets/images/help/issues/issues-labels-button.png)
 4. In the list of labels, click a label.
 
-> \[!TIP]
+> [!TIP]
 > To clear your filter selection, click **Clear current search query, filters, and sorts**.
 
 ## Filtering by issue type
@@ -177,14 +177,14 @@ The issues and pull requests search bar allows you to define your own custom fil
 
 ![Screenshot of the list of issues for a repository. Above the list, a search field, containing the query "is:issue is:open", is outlined in orange.](/assets/images/help/issues/issues-search-bar.png)
 
-> \[!TIP]
+> [!TIP]
 > You can focus your cursor on the search bar above the issue or pull request list with a keyboard shortcut. For more information, see [Keyboard shortcuts](/en/get-started/accessibility/keyboard-shortcuts#issue-and-pull-request-lists).
 
 </div>
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 You can use the GitHub CLI to search for issues or pull requests. Use the `gh issue list` or `gh pr list` subcommand along with the `--search` argument and a search query.
@@ -213,7 +213,7 @@ With issue and pull request search terms, you can:
 * Filter issues and pull requests by label: `state:open is:issue label:"bug"`
 * Filter out search terms by using `-` before the term: `state:open is:issue -author:octocat`
 
-> \[!TIP]
+> [!TIP]
 >
 > * You can filter issues by label using logical OR or using logical AND.
 >   * To filter issues using logical OR, use the comma syntax: `label:"bug","wip"`.

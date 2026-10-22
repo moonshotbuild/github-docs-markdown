@@ -31,4 +31,4 @@ You can archive, back up, and cite your work using the GitHub UI, the API, or th
 
 * [Backing up a repository](/en/repositories/archiving-a-github-repository/backing-up-a-repository)
 
-  You can use Git or the API to back up your repository.
+  You can use Git, a third-party tool, or the API to back up your repository.

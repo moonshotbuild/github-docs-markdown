@@ -41,11 +41,11 @@ Navigate to the **Issues** tab in your repository, then type:
 Find the issues with the feedback label that have the most reactions, and categorize them based on sentiment.
 ```
 
-> \[!TIP] To try out this prompt, you can go to the [`microsoft/vscode`](https://github.com/microsoft/vscode/issues) repository, which uses labels to track feature requests, and type: `Find the issues with the feature-request label that have the most reactions, and categorize them based on sentiment.`
+> [!TIP] To try out this prompt, you can go to the [`microsoft/vscode`](https://github.com/microsoft/vscode/issues) repository, which uses labels to track feature requests, and type: `Find the issues with the feature-request label that have the most reactions, and categorize them based on sentiment.`
 
 ### Example response
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 Copilot lists the issues with the most reactions, and provides a sentiment analysis for each issue. You can use this list to make more informed decisions when you are prioritizing your work.
 
@@ -86,7 +86,7 @@ Write a feature specification for Issue #426.
 
 ### Example response
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 Copilot generates a feature specification, similar to the following.
 
@@ -136,5 +136,5 @@ Minimal risk as this feature is an addition and does not alter existing function
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

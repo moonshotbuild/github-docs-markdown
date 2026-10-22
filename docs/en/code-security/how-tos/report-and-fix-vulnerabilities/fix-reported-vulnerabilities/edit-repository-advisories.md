@@ -21,7 +21,7 @@ breadcrumbs:
 
 You can edit the metadata and description for a repository security advisory if you need to update details or correct errors.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to repository-level security advisories in a public repository.
 > To edit a global advisory in the GitHub Advisory Database, see [Editing security advisories in the GitHub Advisory Database](/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/edit-advisory-database).
 

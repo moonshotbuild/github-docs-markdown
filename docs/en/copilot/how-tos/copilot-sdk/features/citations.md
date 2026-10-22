@@ -25,7 +25,7 @@ Citations link spans of an assistant response back to the sources that support t
 
 <!-- Suppressed: GHD046 (outdated release terminology), GHD005 (hardcoded data variable) -->
 
-> \[!WARNING]
+> [!WARNING]
 > Citations are experimental. The option name, event payload, and provider coverage can change in a future release.
 
 ## How citations work
@@ -44,7 +44,7 @@ Provider support is limited. The `provider` field on each source records where t
 | `openai`       | Citation produced by an OpenAI model response             |
 | `client`       | Citation synthesized by the runtime from tool output      |
 
-> \[!NOTE]
+> [!NOTE]
 > Turning on `enableCitations` does not guarantee that a response contains citations. Models emit them only when the response is grounded in citable source material. Always treat the `citations` field as optional.
 
 ## Enable citations on a session
@@ -412,7 +412,7 @@ The `citations` object separates deduplicated sources from the spans that refere
 | `CitationReference` | `location?`         | Location within the source that supports the span                                    |
 | `CitationReference` | `providerMetadata?` | Provider-native correlation data, passed through opaquely                            |
 
-> \[!TIP]
+> [!TIP]
 > Span offsets are measured in UTF-16 code units against the final `content` string. TypeScript, Java, and .NET strings are already UTF-16, so you can slice them directly. Python strings are indexed by Unicode code point and Go and Rust strings are UTF-8, so convert the content to UTF-16 code units before slicing, as the examples above do.
 
 ### Citation locations

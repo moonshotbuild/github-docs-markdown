@@ -38,7 +38,7 @@ You can also use the `runner.debug` context to conditionally run steps only when
 
 ## Creating CodeQL debugging artifacts
 
-> \[!WARNING]
+> [!WARNING]
 > CodeQL debugging artifacts contain a copy of the source code being analyzed by CodeQL, therefore we suggest sharing these bundles only with people who are authorized to access that source code.
 
 You can obtain artifacts to help you debug CodeQL.

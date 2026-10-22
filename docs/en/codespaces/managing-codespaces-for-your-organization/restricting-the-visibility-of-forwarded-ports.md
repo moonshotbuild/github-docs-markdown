@@ -27,7 +27,7 @@ As an organization owner, you may want to configure constraints on the visibilit
 
 If there are existing codespaces that no longer conform to a policy you have defined, these codespaces will continue to operate until they are stopped or time out. When the user resumes the codespace, it will be subject to the policy constraints.
 
-> \[!NOTE]
+> [!NOTE]
 > You can't disable private port forwarding, as private port forwarding is required by GitHub Codespaces to continue working as designed, for example to forward SSH on port 22.
 
 ### Setting organization-wide and repository-specific policies
@@ -38,7 +38,7 @@ For example, you could create an organization-wide policy that restricts the vis
 
 If you add an organization-wide policy, you should set it to the most lenient visibility option that will be available for any repository in your organization. You can then add repository-specific policies to further restrict the choice.
 
-> \[!NOTE]
+> [!NOTE]
 > Codespaces policies only apply to codespaces that your organizations pays for. If someone creates a codespace for a repository in your organization at their own expense, then the codespace will not be bound by these policies. For more information, see [Choosing who owns and pays for codespaces in your organization](/en/codespaces/managing-codespaces-for-your-organization/choosing-who-owns-and-pays-for-codespaces-in-your-organization).
 
 ## Adding a policy to limit the port visibility options
@@ -71,7 +71,7 @@ If you add an organization-wide policy, you should set it to the most lenient vi
 
     ![Screenshot of the repository selection dropdown, showing the options "All repositories" and "Selected repositories."](/assets/images/help/codespaces/selected-repositories.png)
 
-    > \[!NOTE]
+    > [!NOTE]
     > If you're adding a constraint to an existing policy that already contains the "Maximum codespaces per user" constraint, you won't be able to apply the policy to selected repositories. This is because the "Maximum codespaces per user" constraint always applies to all repositories in the organization.
 
     With **Selected repositories** selected:

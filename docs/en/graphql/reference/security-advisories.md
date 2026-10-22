@@ -94,7 +94,7 @@ GitHub Security Advisories.
 * `identifier` (SecurityAdvisoryIdentifierFilter): Filter advisories by identifier, e.g. GHSA or CVE.
 * `isWithdrawn` (Boolean): Filter advisories by withdrawn status. True returns only withdrawn advisories. False excludes withdrawn advisories.
 * `last` (Int): Returns the last n elements from the list.
-* `orderBy` (SecurityAdvisoryOrder): Ordering options for the returned topics.
+* `orderBy` (SecurityAdvisoryOrder): Ordering options for the returned topics. Default: `{field: UPDATED_AT, direction: DESC}`.
 * `publishedSince` (DateTime): Filter advisories to those published since a time in the past.
 * `severities` ([SecurityAdvisorySeverity!]): A list of advisory severities to filter advisories by.
 * `updatedSince` (DateTime): Filter advisories to those updated since a time in the past.
@@ -137,7 +137,7 @@ A GitHub Security Advisory.
   * `ecosystem` (SecurityAdvisoryEcosystem): An ecosystem to filter vulnerabilities by.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SecurityVulnerabilityOrder): Ordering options for the returned topics.
+  * `orderBy` (SecurityVulnerabilityOrder): Ordering options for the returned topics. Default: `{field: UPDATED_AT, direction: DESC}`.
   * `package` (String): A package name to filter vulnerabilities by.
   * `severities` ([SecurityAdvisorySeverity!]): A list of severities to filter vulnerabilities by.
 
@@ -299,7 +299,7 @@ Software Vulnerabilities documented by GitHub Security Advisories.
 * `ecosystem` (SecurityAdvisoryEcosystem): An ecosystem to filter vulnerabilities by.
 * `first` (Int): Returns the first n elements from the list.
 * `last` (Int): Returns the last n elements from the list.
-* `orderBy` (SecurityVulnerabilityOrder): Ordering options for the returned topics.
+* `orderBy` (SecurityVulnerabilityOrder): Ordering options for the returned topics. Default: `{field: UPDATED_AT, direction: DESC}`.
 * `package` (String): A package name to filter vulnerabilities by.
 * `severities` ([SecurityAdvisorySeverity!]): A list of severities to filter vulnerabilities by.
 

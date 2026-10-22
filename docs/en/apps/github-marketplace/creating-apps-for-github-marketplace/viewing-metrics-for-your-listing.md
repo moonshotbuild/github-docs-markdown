@@ -19,12 +19,12 @@ breadcrumbs:
 
 The GitHub Marketplace Insights page displays metrics for your GitHub App. You can use the metrics to track your GitHub App's performance and make more informed decisions about pricing, plans, free trials, and how to visualize the effects of marketing campaigns.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 You can view metrics for the past day (24 hours), week, month, or for the entire duration of time that your GitHub App has been listed.
 
-> \[!NOTE]
+> [!NOTE]
 > Because it takes time to aggregate data, you'll notice a slight delay in the dates shown. When you select a time period, you can see exact dates for the metrics at the top of the page.
 
 ## Performance metrics
@@ -35,7 +35,7 @@ The Insights page displays these performance metrics, for the selected time peri
 * **Visitors:** Number of people that have viewed a page in your GitHub Apps listing. This number includes both logged in and logged out visitors.
 * **Pageviews:** Number of views the pages in your GitHub App's listing received. A single visitor can generate more than one page view.
 
-> \[!NOTE]
+> [!NOTE]
 > Your estimated subscription value could be much higher than the transactions processed for this period.
 
 ### Conversion performance
@@ -54,7 +54,7 @@ To access GitHub Marketplace Insights:
 
 3. In the left sidebar, click either **OAuth Apps** or **GitHub Apps** depending on the GitHub Marketplace listing you'd like to manage.
 
-   > \[!NOTE]
+   > [!NOTE]
    > You can also manage your listing by navigating to <https://github.com/marketplace/manage>.
 
    ![Screenshot of the sidebar on the "Developer Settings" page of GitHub. Options labeled "GitHub Apps" and "OAuth apps" are outlined in dark orange.](/assets/images/settings/apps-choose-app.png)

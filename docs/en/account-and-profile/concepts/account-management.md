@@ -44,7 +44,7 @@ To delete your personal account, see [Deleting your personal account](/en/accoun
 
 Since an email address can only be associated with a single GitHub account, when you've lost your 2FA credentials and are unable to recover access, unlinking your email address from the locked account allows you to link that email address to a new or existing account. Additionally, linking a previously used commit email address to a new account will connect your commit history to that account. Unless you have chosen to keep your email address private, your account's commit email address is the same as your account's primary email address. See [Setting your commit email address](/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).
 
-> \[!NOTE]
+> [!NOTE]
 > The GitHub-provided `noreply` email address cannot be unlinked from an account. Commits authored with a `noreply` address cannot be reconnected to a different account.
 
 Be aware that nothing else associated with your 2FA locked account, including your repositories, permissions, and profile, will transfer to your new account.
@@ -67,7 +67,7 @@ If you need to use multiple accounts, you can stay signed in to your accounts an
 
 If you want to use one workstation to contribute from both accounts, you can simplify contribution with Git by using a mixture of protocols to access repository data, or by using credentials on a per-repository basis.
 
-> \[!WARNING]
+> [!WARNING]
 > Be mindful when you use one workstation to contribute to two separate accounts. Management of two or more accounts can increase the chance of mistakenly leaking internal code to the public.
 
 If you aren't required to use a managed user account, GitHub recommends that you use one personal account for all your work on GitHub.com. With a single personal account, you can contribute to a combination of personal, open source, or professional projects using one identity. Other people can invite the account to contribute to both individual repositories and repositories owned by an organization, and the account can be a member of multiple organizations or enterprises.

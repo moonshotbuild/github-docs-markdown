@@ -19,7 +19,7 @@ breadcrumbs:
 
 GitHub recommends testing your app with APIs and webhooks before submitting your listing to GitHub Marketplace so you can provide an ideal experience for customers. Before an onboarding expert approves your app, it must adequately handle the billing flows.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 ## Testing apps
@@ -34,7 +34,7 @@ Because you can only create draft GitHub Marketplace listings for public apps, y
 
 Once you have a development app with a draft listing, you can use it to test changes you make to your app while integrating with the GitHub Marketplace API and webhooks.
 
-> \[!WARNING]
+> [!WARNING]
 > Do not make test purchases with an app that is live in GitHub Marketplace.
 
 ### Simulating Marketplace purchase events

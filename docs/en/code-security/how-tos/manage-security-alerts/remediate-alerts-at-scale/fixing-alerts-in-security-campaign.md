@@ -52,7 +52,7 @@ If agentic autofix is enabled, the fastest way to resolve alerts is to assign th
 
 4. When you have finished fixing the alerts and testing your solutions, create a pull request for your changes and request a review from the campaign manager.
 
-> \[!TIP] If you have write permission for more than one repository in the campaign, click the link in the "Campaign progress" box in your repository to show the organization-level view of the campaign. When you open a repository from this view, the campaign alerts view is displayed.
+> [!TIP] If you have write permission for more than one repository in the campaign, click the link in the "Campaign progress" box in your repository to show the organization-level view of the campaign. When you open a repository from this view, the campaign alerts view is displayed.
 
 ## Assigning alerts to Copilot
 
@@ -73,5 +73,5 @@ For more information about reviewing the session and pull request, see [Resolvin
 
 If you have access to Copilot Chat then you can ask the AI questions about the vulnerability, the suggested fix, and how to test that the fix is comprehensive.
 
-> \[!TIP]
+> [!TIP]
 > Copilot's ability to answer natural language questions like these in a repository context is optimized when the semantic code search index for the repository is up to date. For more information, see [Indexing repositories for GitHub Copilot](/en/copilot/concepts/prompting-and-context/repository-indexing).

@@ -23,13 +23,13 @@ Learn how to request a code review from GitHub Copilot.
 
 GitHub Copilot can review your code and provide feedback. Where possible, Copilot's feedback includes suggested changes which you can apply with a couple of clicks.
 
-For a full introduction to GitHub Copilot code review, see [About GitHub Copilot code review](/en/copilot/concepts/agents/code-review).
+For a full introduction to GitHub Copilot code review, see [GitHub Copilot code review](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review).
 
-Copilot code review uses GitHub Actions to run agentic capabilities. For more information, see [Agentic capabilities for Copilot code review](/en/copilot/concepts/agents/code-review#usage-of-github-actions-runners-for-agentic-capabilities-in-code-review).
+Copilot code review uses GitHub Actions to run agentic capabilities. For more information, see [Agentic capabilities for Copilot code review](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#usage-of-github-actions-runners-for-agentic-capabilities-in-code-review).
 
 <div class="ghd-tool webui">
 
-Copilot code review is also available for organization members without a Copilot license, when enabled by an enterprise administrator or organization owner. See [Copilot code review for organization members without a Copilot license](/en/copilot/concepts/agents/code-review#copilot-code-review-without-a-copilot-license).
+Copilot code review is also available for organization members without a Copilot license, when enabled by an enterprise administrator or organization owner. See [Copilot code review for organization members without a Copilot license](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#copilot-code-review-without-a-copilot-license).
 
 ## Using Copilot code review
 
@@ -78,7 +78,7 @@ To manually request a re-review from Copilot, click the <svg version="1.1" width
 
 To automatically request re-reviews from Copilot on every push, enable automatic code review for the repository and select **Review new pushes** in the ruleset settings. For more information, see [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review#configuring-automatic-code-review-for-repositories-in-an-organization).
 
-> \[!NOTE] When re-reviewing a pull request, Copilot may repeat the same comments again, even if they have been dismissed with the "Resolve conversation" button or downvoted with the thumbs down (:-1:) button.
+> [!NOTE] When re-reviewing a pull request, Copilot may repeat the same comments again, even if they have been dismissed with the "Resolve conversation" button or downvoted with the thumbs down (:-1:) button.
 
 ## Choosing a review effort level
 
@@ -89,11 +89,11 @@ With review effort levels, you can choose the level of thoroughness of Copilot's
 
 You can select Copilot review effort in the pull request before you request a review from Copilot, under the **Reviewers** section where Copilot appears as a reviewer. You can also set a default Copilot review effort in your settings. Organization owners and repository administrators can set a default Copilot review effort for automatic reviews.
 
-For more information, see [About GitHub Copilot code review](/en/copilot/concepts/agents/code-review#review-effort-level).
+For more information, see [GitHub Copilot code review](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level).
 
 ## Pull request approvals from Copilot
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot approvals are in public preview and subject to change.
 
 Every Copilot code review includes an approval assessment in the overview comment, indicating whether Copilot considers the pull request ready to approve. On its own, this assessment does not count toward merge requirements.
@@ -116,7 +116,7 @@ Copilot code review also reads custom instructions from `CLAUDE.md`, `GEMINI.md`
 
 For more information, see [Adding repository custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions).
 
-> \[!NOTE]
+> [!NOTE]
 > When reviewing a pull request, Copilot reads repository custom instructions, agent instructions, and agent skills from the head branch (the branch with your changes), not the base branch. For example, when merging `my-feature-branch` into `main`, Copilot uses the instructions and skills in `my-feature-branch`, so you can test changes to them in the same pull request without merging them first.
 
 ### Example
@@ -227,7 +227,7 @@ Copilot code review also reads custom instructions from `CLAUDE.md`, `GEMINI.md`
 
 For more information, see [Adding repository custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions).
 
-> \[!NOTE]
+> [!NOTE]
 > When reviewing a pull request, Copilot reads repository custom instructions, agent instructions, and agent skills from the head branch (the branch with your changes), not the base branch. For example, when merging `my-feature-branch` into `main`, Copilot uses the instructions and skills in `my-feature-branch`, so you can test changes to them in the same pull request without merging them first.
 
 ### Example

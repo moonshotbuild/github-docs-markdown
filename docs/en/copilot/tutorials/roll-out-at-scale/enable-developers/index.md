@@ -35,4 +35,4 @@ Boost productivity by encouraging developers to make the most of Copilot feature
 
 * [Driving team adoption of agentic GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/enable-developers/drive-team-agentic-adoption)
 
-  Help established teams build sustained habits with GitHub Copilot app and Copilot CLI, then measure adoption and business impact.
+  Help established teams build sustained habits with the GitHub Copilot app and Copilot CLI, then measure adoption and business impact.

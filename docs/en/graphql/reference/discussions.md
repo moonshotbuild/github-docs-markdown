@@ -210,7 +210,7 @@ A discussion in a repository.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (LabelOrder): Ordering options for labels returned from the connection.
+  * `orderBy` (LabelOrder): Ordering options for labels returned from the connection. Default: `{field: CREATED_AT, direction: ASC}`.
 
 * `lastEditedAt` (DateTime): The moment the editor made the last edit.
 * `locked` (Boolean!): true if the object is locked.
@@ -425,7 +425,7 @@ A poll for a discussion.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (DiscussionPollOptionOrder): How to order the options for the discussion poll.
+  * `orderBy` (DiscussionPollOptionOrder): How to order the options for the discussion poll. Default: `{field: AUTHORED_ORDER, direction: ASC}`.
 
 * `question` (String!): The question that is being asked by this poll.
 * `totalVoteCount` (Int!): The total number of votes that have been cast for this poll.
@@ -647,9 +647,9 @@ including both answered and unanswered discussions.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (DiscussionOrder): Ordering options for discussions returned from the connection.
+  * `orderBy` (DiscussionOrder): Ordering options for discussions returned from the connection. Default: `{field: CREATED_AT, direction: DESC}`.
   * `repositoryId` (ID): Filter discussions to only those in a specific repository.
-  * `states` ([DiscussionState!]): A list of states to filter the discussions by.
+  * `states` ([DiscussionState!]): A list of states to filter the discussions by. Default: `[]`.
 
 ### Implemented by
 
@@ -667,7 +667,7 @@ Represents an author of discussion comments in repositories.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `onlyAnswers` (Boolean): Filter discussion comments to only those that were marked as the answer.
+  * `onlyAnswers` (Boolean): Filter discussion comments to only those that were marked as the answer. Default: `false`.
   * `repositoryId` (ID): Filter discussion comments to only those in a specific repository.
 
 ### Implemented by

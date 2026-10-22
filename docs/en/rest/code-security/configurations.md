@@ -147,9 +147,9 @@ OAuth app tokens and personal access tokens (classic) need the admin:enterprise 
 
 - **`advanced_security`** (string)
   The enablement status of GitHub Advanced Security features. enabled will enable both Code Security and Secret Protection features.
-Warning
+  Warning
 
-code_security and secret_protection are deprecated values for this field. Prefer the individual code_security and secret_protection fields to set the status of these features.
+  code_security and secret_protection are deprecated values for this field. Prefer the individual code_security and secret_protection fields to set the status of these features.
   Default: `disabled`
   Can be one of: `enabled`, `disabled`, `code_security`, `secret_protection`
 
@@ -498,9 +498,9 @@ OAuth app tokens and personal access tokens (classic) need the admin:enterprise 
 
 - **`advanced_security`** (string)
   The enablement status of GitHub Advanced Security features. enabled will enable both Code Security and Secret Protection features.
-Warning
+  Warning
 
-code_security and secret_protection are deprecated values for this field. Prefer the individual code_security and secret_protection fields to set the status of these features.
+  code_security and secret_protection are deprecated values for this field. Prefer the individual code_security and secret_protection fields to set the status of these features.
   Can be one of: `enabled`, `disabled`, `code_security`, `secret_protection`
 
 - **`code_security`** (string)
@@ -884,7 +884,7 @@ OAuth app tokens and personal access tokens (classic) need the read:enterprise s
 
 - **`status`** (string)
   A comma-separated list of statuses. If specified, only repositories with these attachment statuses will be returned.
-Can be: all, attached, attaching, removed, enforced, failed, updating, removed_by_enterprise, enterprise_enforced
+  Can be: all, attached, attaching, removed, enforced, failed, updating, removed_by_enterprise, enterprise_enforced
   Default: `all`
 
 ### HTTP response status codes
@@ -1076,9 +1076,9 @@ OAuth app tokens and personal access tokens (classic) need the write:org scope t
 
 - **`advanced_security`** (string)
   The enablement status of GitHub Advanced Security features. enabled will enable both Code Security and Secret Protection features.
-Warning
+  Warning
 
-code_security and secret_protection are deprecated values for this field. Prefer the individual code_security and secret_protection fields to set the status of these features.
+  code_security and secret_protection are deprecated values for this field. Prefer the individual code_security and secret_protection fields to set the status of these features.
   Default: `disabled`
   Can be one of: `enabled`, `disabled`, `code_security`, `secret_protection`
 
@@ -1437,9 +1437,9 @@ OAuth app tokens and personal access tokens (classic) need the write:org scope t
 
 - **`advanced_security`** (string)
   The enablement status of GitHub Advanced Security features. enabled will enable both Code Security and Secret Protection features.
-Warning
+  Warning
 
-code_security and secret_protection are deprecated values for this field. Prefer the individual code_security and secret_protection fields to set the status of these features.
+  code_security and secret_protection are deprecated values for this field. Prefer the individual code_security and secret_protection fields to set the status of these features.
   Can be one of: `enabled`, `disabled`, `code_security`, `secret_protection`
 
 - **`code_security`** (string)
@@ -1818,7 +1818,7 @@ OAuth app tokens and personal access tokens (classic) need the read:org scope to
 
 - **`status`** (string)
   A comma-separated list of statuses. If specified, only repositories with these attachment statuses will be returned.
-Can be: all, attached, attaching, detached, removed, enforced, failed, updating, removed_by_enterprise, enterprise_enforced
+  Can be: all, attached, attaching, detached, removed, enforced, failed, updating, removed_by_enterprise, enterprise_enforced
   Default: `all`
 
 ### HTTP response status codes

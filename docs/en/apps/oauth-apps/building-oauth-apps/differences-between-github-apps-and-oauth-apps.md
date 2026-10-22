@@ -45,7 +45,7 @@ By contrast, users authorize OAuth apps, which gives the app the ability to act 
 
 Organization owners can choose whether to allow outside collaborators to request access for unapproved OAuth apps and GitHub Apps. For more information, see [Limiting OAuth app and GitHub App access requests and installations](/en/organizations/managing-programmatic-access-to-your-organization/limiting-oauth-app-and-github-app-access-requests-and-installations).
 
-> \[!WARNING]
+> [!WARNING]
 > Revoking all permission from an OAuth app deletes any SSH keys the application generated on behalf of the user, including [deploy keys](/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys).
 
 | GitHub Apps                                                                                                                                                                                                                                                      | OAuth apps                                                                                                                                                                               |
@@ -72,7 +72,7 @@ An *authorized* OAuth app has access to all of the user's or organization owner'
 
 ## Token-based identification
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Apps can also use a user-based token. For more information, see [Authenticating with a GitHub App on behalf of a user](/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-with-a-github-app-on-behalf-of-a-user).
 
 | GitHub Apps                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | OAuth apps                                                                                                                                                                                                                                                                                                                   |

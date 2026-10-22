@@ -27,7 +27,7 @@ Anyone with write permissions to a repository can set the state for any status c
 
 If status checks are required for a protected branch, they must pass before the pull request can be merged. See [About protected branches](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging).
 
-> \[!NOTE]
+> [!NOTE]
 > A job that is skipped will report its status as "Success". It will not prevent a pull request from merging, even if it is a required check.
 
 ## Types of status checks on GitHub
@@ -39,7 +39,7 @@ There are two types of status checks on GitHub:
 | Checks          | Detailed output, annotations, and messages. | GitHub Apps, including GitHub Actions. |
 | Commit statuses | A simpler status for a commit.              | External services and integrations.    |
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Actions generates checks, not commit statuses, when workflows are run.
 
 Organization owners and users with push access to a repository can create checks and commit statuses with GitHub's API. See [REST API endpoints for checks](/en/rest/checks) and [REST API endpoints for commit statuses](/en/rest/commits/statuses).
@@ -50,7 +50,7 @@ Checks can include build logs, test results, annotations, and links to more deta
 
 ![Screenshot of the "Checks" tab of a pull request. The "Checks" tab and the dropdown menu to select a commit are both outlined in dark orange.](/assets/images/help/pull_requests/checks-summary-for-various-commits.png)
 
-> \[!NOTE]
+> [!NOTE]
 > The **Checks** tab is populated for pull requests only if you set up *checks*, not *commit statuses*, for the repository.
 
 When a check points to a specific line, details can also appear in the **Files** tab of the pull request. This helps reviewers connect automated feedback to the code being changed.

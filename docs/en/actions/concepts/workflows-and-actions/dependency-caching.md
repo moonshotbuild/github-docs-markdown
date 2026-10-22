@@ -25,7 +25,7 @@ Workflow runs often reuse the same outputs or downloaded dependencies from one r
 
 Jobs on GitHub-hosted runners start in a clean runner image and must download dependencies each time, causing increased network utilization, longer runtime, and increased cost. To help speed up the time it takes to recreate files like dependencies, GitHub can cache files you frequently use in workflows.
 
-> \[!NOTE]
+> [!NOTE]
 > When using self-hosted runners, caches from workflow runs are stored on GitHub-owned cloud storage. A customer-owned storage solution is only available with GitHub Enterprise Server.
 
 ## Artifacts versus dependency caching

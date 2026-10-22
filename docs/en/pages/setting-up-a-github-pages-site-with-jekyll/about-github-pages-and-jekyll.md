@@ -17,7 +17,7 @@ breadcrumbs:
 
 Jekyll is a static site generator with built-in support for GitHub Pages.
 
-> \[!NOTE] While the `github-pages` gem remains supported for some workflows, GitHub Actions is now the recommended approach for deploying and automating GitHub Pages sites.
+> [!NOTE] While the `github-pages` gem remains supported for some workflows, GitHub Actions is now the recommended approach for deploying and automating GitHub Pages sites.
 
 ## About Jekyll
 
@@ -91,7 +91,7 @@ You can enable additional plugins by adding the plugin's gem to the `plugins` se
 
 For a list of supported plugins, see [Dependency versions](https://pages.github.com/versions.json) on the GitHub Pages site. For usage information for a specific plugin, see the plugin's documentation.
 
-> \[!TIP]
+> [!TIP]
 > You can make sure you're using the latest version of all plugins by keeping the GitHub Pages gem updated. For more information, see [Testing your GitHub Pages site locally with Jekyll](/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll#updating-the-github-pages-gem) and [Dependency versions](https://pages.github.com/versions.json) on the GitHub Pages site.
 
 GitHub Pages cannot build sites using unsupported plugins. If you want to use unsupported plugins, generate your site locally and then push your site's static files to GitHub.
@@ -102,7 +102,7 @@ To make your site easier to read, code snippets are highlighted on GitHub Pages 
 
 By default, code blocks on your site will be highlighted by Jekyll. Jekyll uses the [Rouge](https://github.com/rouge-ruby/rouge) highlighter (which is compatible with [Pygments](https://pygments.org/)). If you specify Pygments in your `_config.yml` file, Rouge will be used as the fallback instead. Jekyll cannot use any other syntax highlighter, and you'll get a page build warning if you specify another syntax highlighter in your `_config.yml` file. For more information, see [About Jekyll build errors for GitHub Pages sites](/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-build-errors-for-github-pages-sites).
 
-> \[!NOTE]
+> [!NOTE]
 > Rouge only recognizes lower-case language identifiers for fenced code blocks. For a list of supported languages, see [Languages](https://rouge-ruby.github.io/docs/file.Languages.html).
 
 If you want to use another highlighter, such as [highlight.js](https://github.com/highlightjs/highlight.js), you must disable Jekyll's syntax highlighting by updating your project's `_config.yml` file.

@@ -19,7 +19,7 @@ breadcrumbs:
 
 Learn how to add pull requests, issues, and draft issues to your projects individually or in bulk.
 
-> \[!NOTE]
+> [!NOTE]
 > A project can contain a maximum of 50,000 items across both active views and the archive page. To learn more about automatically archiving items when they meet specific criteria, see [Archiving items automatically](/en/issues/planning-and-tracking-with-projects/automating-your-project/archiving-items-automatically).
 
 ## Adding issues and pull requests to a project
@@ -145,5 +145,5 @@ Draft issues are useful to quickly capture ideas. Unlike issues and pull request
 
 Draft issues can have a title, text body, assignees, and any custom fields from your project. In order to populate the repository, labels, or milestones for a draft issue, you must first convert the draft issue to an issue. For more information, see [Converting draft issues to issues](/en/issues/planning-and-tracking-with-projects/managing-items-in-your-project/converting-draft-issues-to-issues).
 
-> \[!NOTE]
+> [!NOTE]
 > Users will not receive notifications when they are assigned to or mentioned in a draft issue unless the draft issue is converted to an issue.

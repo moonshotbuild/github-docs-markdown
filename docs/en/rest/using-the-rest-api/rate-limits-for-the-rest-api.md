@@ -63,7 +63,7 @@ curl -u YOUR_CLIENT_ID:YOUR_CLIENT_SECRET -I https://api.github.com/meta
 
 For these requests, the rate limit is 5,000 requests per hour per OAuth app. If the app is owned by a GitHub Enterprise Cloud organization, the rate limit is 15,000 requests per hour.
 
-> \[!NOTE]
+> [!NOTE]
 > Never include your app's client secret in client-side code or in code that runs on a user device. The client secret can be used to generate OAuth access tokens for users who have authorized your app, so you should always keep the client secret secure.
 
 ### Primary rate limit for `GITHUB_TOKEN` in GitHub Actions
@@ -114,7 +114,7 @@ You can use the headers that are sent with each response to determine the curren
 
 You can call the `GET /rate_limit` endpoint for a periodic overview of all resource families for the authenticated user. Calling this endpoint does not count against your primary rate limit, but it can count against your secondary rate limit. See [REST API endpoints for rate limits](/en/rest/rate-limit/rate-limit).
 
-> \[!NOTE]
+> [!NOTE]
 > Because GitHub processes API requests in multiple regions, rate limit values can vary from one response to the next based on the location handling the request. For example, `x-ratelimit-remaining` may be higher on a later response than on an earlier one within the same rate limit window. The `x-ratelimit-*` headers are the authoritative source for your current rate limit status and may differ from values reported by the `GET /rate_limit` endpoint. If the two disagree, rely on the response headers.
 
 Use the `x-ratelimit-*` response headers to pace and back off your requests, but avoid logic that depends on an exact remaining count. Ensure your integration handles `403` and `429` responses as described in [Exceeding the rate limit](#exceeding-the-rate-limit) later in this article.

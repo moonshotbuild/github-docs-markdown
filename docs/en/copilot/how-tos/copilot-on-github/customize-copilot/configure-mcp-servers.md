@@ -23,7 +23,7 @@ Configure Model Context Protocol (MCP) servers for your repository to give Copil
 
 ## Prerequisite
 
-Before setting up MCP servers for your repository, read [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp) and [Model Context Protocol (MCP) and GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/mcp-and-cloud-agent).
+Before setting up MCP servers for your repository, read [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## Introduction
 
@@ -31,14 +31,14 @@ As a repository administrator, you can configure MCP servers for use within your
 
 This repository-level MCP configuration is shared by Copilot cloud agent and Copilot code review. For information on disabling use of MCP servers by Copilot code review, see [Disabling MCP tools for Copilot code review](#disabling-mcp-tools-for-code-review).
 
-> \[!NOTE]
+> [!NOTE]
 > Existing repository MCP configurations that were previously managed under Copilot cloud agent settings were automatically moved to the new shared MCP settings page. No migration action is required.
 
 The GitHub MCP server and Playwright MCP server are enabled by default. You can add your own MCP servers alongside these defaults.
 
 Organization and enterprise administrators can also configure MCP servers as part of custom agents using the YAML frontmatter. For more information, see [Custom agents configuration](/en/copilot/reference/custom-agents-configuration#mcp-server-configuration-details).
 
-> \[!WARNING]
+> [!WARNING]
 > Once you've configured an MCP server, Copilot will be able to use the tools provided by the server autonomously, and will not ask for your approval before using them.
 
 When configuring MCP servers for use by Copilot cloud agent and Copilot code review, keep in mind:
@@ -97,7 +97,7 @@ The configuration object can contain the following keys:
 * `tools` (`string[]`): The tools from the MCP server to enable. You may be able to find a list of tools in the server's documentation, or in its code. We strongly recommend that you allowlist specific read-only tools, since the agent will be able to use these tools autonomously and will not ask you for approval first. You can also enable all tools by including `*` in the array.
 * `type` (`string`): Copilot cloud agent accepts `"local"`, `"stdio"`, `"http"`, or `"sse"`.
 
-> \[!NOTE]
+> [!NOTE]
 > For Copilot code review, each tool in the MCP server's `tools/list` response must set `annotations.readOnlyHint` to `true` to allow Copilot to use it. Copilot code review excludes tools when this annotation is missing or set to `false`. For more information, see [Tool annotations in the MCP specification](https://modelcontextprotocol.io/specification/2025-11-25/schema#toolannotations-readonlyhint).
 
 **Local MCP specific keys**

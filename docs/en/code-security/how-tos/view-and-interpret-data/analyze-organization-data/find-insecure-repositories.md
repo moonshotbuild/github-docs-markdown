@@ -21,7 +21,7 @@ breadcrumbs:
 
 Monitor and prioritize security alerts with security overview.
 
-> \[!NOTE]
+> [!NOTE]
 > The information shown by security overview varies according to your access to repositories and organizations, and according to whether Advanced Security features are used by those repositories and organizations. For more information, see [Security overview](/en/code-security/concepts/security-at-scale/security-overview).
 
 1. On GitHub, navigate to the main page of the organization.

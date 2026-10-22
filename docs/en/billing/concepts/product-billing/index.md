@@ -25,7 +25,7 @@ Learn how product costs are calculated if you exceed the usage included in your 
 
 * [GitHub Advanced Security license billing](/en/billing/concepts/product-billing/github-advanced-security)
 
-  Learn how usage of Advanced Security features is measured and how to pay for additional licenses.
+  Understand how Advanced Security licenses and AI-credit usage are billed.
 
 * [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces)
 

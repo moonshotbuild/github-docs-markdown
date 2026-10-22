@@ -99,7 +99,7 @@ You can run Dependabot on self-hosted GitHub Actions runners managed within a Ku
    ./arc-runner-set.sh
    ```
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The installation name of the runner scale set has to be `dependabot` in order to target the dependabot job to the runner.
 > * The `containerMode.type="dind"` configuration is required to allow the runner to connect to the Docker daemon.

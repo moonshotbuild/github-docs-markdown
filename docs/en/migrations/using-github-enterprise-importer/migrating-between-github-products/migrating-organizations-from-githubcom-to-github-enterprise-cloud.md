@@ -148,7 +148,7 @@ If this is your first migration, you'll need to install the GEI extension of the
 
 1. Install the GitHub CLI. For installation instructions for GitHub CLI, see the [GitHub CLI repository](https://github.com/cli/cli#installation).
 
-   > \[!NOTE]
+   > [!NOTE]
    > You need version 2.4.0 or newer of GitHub CLI. You can check the version you have installed with the `gh --version` command.
 2. Install the GEI extension.
 
@@ -216,7 +216,7 @@ To migrate an organization, use the `gh gei migrate-org` command.
 gh gei migrate-org --github-source-org SOURCE --github-target-org DESTINATION --github-target-enterprise ENTERPRISE
 ```
 
-> \[!NOTE] If you're migrating to GHE.com, add `--target-api-url TARGET-API-URL`, where TARGET-API-URL is the base API URL for your enterprise's subdomain. For example: `https://api.octocorp.ghe.com`.
+> [!NOTE] If you're migrating to GHE.com, add `--target-api-url TARGET-API-URL`, where TARGET-API-URL is the base API URL for your enterprise's subdomain. For example: `https://api.octocorp.ghe.com`.
 
 Replace the placeholders in the command above with the following values.
 

@@ -28,7 +28,7 @@ You can upgrade to the GitHub Customer Agreement instead of using the Standard T
 5. In the text field, type the name of the company, non-profit, or group that owns the organization account. This is the entity that will enter into an agreement with GitHub.
 6. To agree to the GitHub Customer Agreement on behalf of your entity, click **Accept terms**.
 
-> \[!NOTE]
+> [!NOTE]
 > When you upgrade or switch your enterprise plan, your existing payment method is not carried forward. If you do not add a new payment method before your next billing cycle, active paid subscriptions—including GitHub Sponsors sponsorships—are automatically cancelled. To avoid disruption, add a payment method immediately after upgrading.
 
 ## Further reading

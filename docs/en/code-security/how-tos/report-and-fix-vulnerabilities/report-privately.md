@@ -21,7 +21,7 @@ Some public repositories configure security advisories so that anyone can report
 
 Owners and administrators of public repositories can enable private vulnerability reporting on their repositories. See [Configuring private vulnerability reporting for a repository](/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * If you have admin or security permissions for a public repository, you don’t need to submit a vulnerability report. Instead, create a draft security advisory directly. See [Creating a repository security advisory](/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/create-repository-advisory).
 > * Private vulnerability reporting is separate from a repository’s `SECURITY.md` file. You can only report vulnerabilities privately for repositories where this feature is enabled. If the repository has a security policy, the policy is displayed above the reporting form so you can review the maintainer's guidance before submitting.
@@ -40,14 +40,14 @@ If the repository doesn't have private vulnerability reporting enabled, you need
 
 5. Fill in the vulnerability reporting form.
 
-   > \[!TIP]
+   > [!TIP]
    > By default, you must provide a summary, details, proof of concept, and impact statement. Maintainers can customize the form and require other information. Provide enough detail for the maintainers to reproduce and assess the vulnerability.
 
 6. Optionally, select **I used AI assistance to find or write up this report**.
 
 7. At the bottom of the form, click **Submit report**. GitHub will display a message letting you know that maintainers have been notified and that you have a pending credit for this security advisory.
 
-   > \[!TIP]
+   > [!TIP]
    > When the report is submitted, GitHub automatically adds the reporter of the vulnerability as a collaborator and as a credited user on the proposed advisory.
 
 8. Optionally, click **Start a temporary private fork** if you want to start to fix the issue. Note that only the repository maintainer can merge changes from that private fork into the parent repository.

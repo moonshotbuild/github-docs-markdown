@@ -19,7 +19,7 @@ breadcrumbs:
 
 Run Copilot CLI in a GitHub Actions workflow using the built-in GITHUB_TOKEN, without a personal access token.
 
-For background on authentication options and how billing works when running Copilot CLI in GitHub Actions, see [About using Copilot CLI in GitHub Actions](/en/copilot/concepts/agents/copilot-cli/copilot-cli-in-github-actions).
+For background on authentication options and how billing works when running Copilot CLI in GitHub Actions, see [Copilot CLI in GitHub Actions](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/copilot-cli-in-github-actions).
 
 ## Enabling the policy
 
@@ -38,7 +38,7 @@ For setup instructions, see [Quick Start](https://github.github.com/gh-aw/setup/
 
 If you need to invoke Copilot CLI directly in a workflow step, install the CLI with npm.
 
-> \[!WARNING]
+> [!WARNING]
 > Invoking Copilot CLI directly in workflow steps gives it broad access to your workflow environment. Review your workflow triggers and permissions carefully before using this approach. Workflows triggered by pull requests from forks are particularly at risk.
 
 ### Example workflow
@@ -73,5 +73,5 @@ Key details about this example:
 * The `copilot-requests: write` permission is required for the workflow to make Copilot requests.
 * The `GITHUB_TOKEN` provided by GitHub Actions handles authentication automatically. No additional secrets are needed.
 
-> \[!NOTE]
+> [!NOTE]
 > You must be on a recent version of Copilot CLI to use `GITHUB_TOKEN` authentication. Update with `copilot update`, or reinstall the latest version with `npm install -g @github/copilot`.

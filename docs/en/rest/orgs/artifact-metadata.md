@@ -19,7 +19,7 @@ Use these endpoints to retrieve and manage metadata for artifacts in your organi
 
 You can use these endpoints to upload storage and deployment records for software that your organization builds with GitHub Actions. The records are displayed on the organization's linked artifacts page. See [About linked artifacts](/en/code-security/concepts/supply-chain-security/linked-artifacts).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Create an artifact deployment record

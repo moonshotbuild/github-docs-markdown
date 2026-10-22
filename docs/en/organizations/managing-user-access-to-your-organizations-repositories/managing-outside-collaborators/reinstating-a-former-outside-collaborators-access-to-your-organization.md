@@ -32,7 +32,7 @@ When you reinstate a former outside collaborator, you can restore:
 * Issue assignments in the organization
 * Repository subscriptions (notification settings for watching, not watching, or ignoring a repository's activity)
 
-> \[!TIP]
+> [!TIP]
 >
 > * Only organization owners can reinstate outside collaborators' access to an organization. Enterprise owners may further restrict the ability to reinstate outside collaborators' access to enterprise owners only. For more information, see [Roles in an organization](/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization).
 > * The reinstating a member flow on GitHub.com may use the term "member" to describe reinstating an outside collaborator but if you reinstate this person and keep their previous privileges, they will only have their previous [outside collaborator permissions](/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization).
@@ -52,7 +52,7 @@ When you reinstate a former outside collaborator, you can restore:
 
 6. Select whether to restore the outside collaborator's previous privileges in the organization by clicking **Invite and reinstate** or choose to clear their previous privileges and set new access permissions by clicking **Invite and start fresh**.
 
-   > \[!WARNING]
+   > [!WARNING]
    > If you want to upgrade the outside collaborator to a member of your organization, then choose **Invite and start fresh** and choose a new role for this person. Note, however, that this person's private forks of your organization's repositories will be lost if you choose to start fresh. To make the former outside collaborator a member of your organization *and* keep their private forks, choose **Invite and reinstate** instead. Once this person accepts the invitation, you can convert them to an organization member by [inviting them to join the organization as a member](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/converting-an-outside-collaborator-to-an-organization-member).
 
 7. If you cleared the previous privileges for a former outside collaborator, choose a role for the user and optionally add them to some teams, then click **Send invitation**.

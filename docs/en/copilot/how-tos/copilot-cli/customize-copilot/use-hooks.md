@@ -21,7 +21,7 @@ breadcrumbs:
 
 Extend GitHub Copilot agent behavior with custom shell commands at key points during agent execution.
 
-Hooks allow you to extend and customize the behavior of GitHub Copilot agents by executing custom shell commands at key points during agent execution. For a conceptual overview of hooks—including details of the available hook triggers—see [About hooks for GitHub Copilot](/en/copilot/concepts/agents/hooks).
+Hooks allow you to extend and customize the behavior of GitHub Copilot agents by executing custom shell commands at key points during agent execution. For a conceptual overview of hooks—including details of the available hook triggers—see [Hooks for GitHub Copilot](/en/copilot/concepts/agents/hooks).
 
 ## Prerequisite
 
@@ -49,7 +49,7 @@ Hooks allow you to extend and customize the behavior of GitHub Copilot agents by
 
 3. Configure your hook syntax under the `bash` and `powershell` keys, or directly reference script files you have created.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Include both a `bash` key (with a script for Linux and macOS) and a `powershell` key (for a script for Windows) to allow the hooks to run on all three operating systems. Copilot uses the appropriate key based on the user's operating system.
 
    * This example runs a script that outputs the start date of the session to a log file using the `sessionStart` hook:
@@ -96,7 +96,7 @@ The following examples for macOS and Windows show how to configure hooks that wi
 
 1. Create a file called `notification-hooks.json` in `~/.copilot/hooks/`.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If `COPILOT_HOME` is set, create the file in `$COPILOT_HOME/hooks/`.
 
 2. Copy and paste the following JSON into the file:
@@ -125,7 +125,7 @@ The following examples for macOS and Windows show how to configure hooks that wi
 
 3. Start, or restart, Copilot CLI.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Changes to hook configurations are loaded when the CLI starts.
 
 4. Enter a prompt and check that you hear a sound and see a message box when the agent finishes responding, and when you quit the CLI.
@@ -136,7 +136,7 @@ The following examples for macOS and Windows show how to configure hooks that wi
 
 1. Create a file called `notification-hooks.json` in `%USERPROFILE%\.copilot\hooks\`.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If `COPILOT_HOME` is set, create the file in `%COPILOT_HOME%\hooks\`.
 
 2. Copy and paste the following JSON into the file:
@@ -165,7 +165,7 @@ The following examples for macOS and Windows show how to configure hooks that wi
 
 3. Start, or restart, Copilot CLI.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Changes to hook configurations are loaded when the CLI starts.
 
 4. Enter a prompt and check that you hear a sound and see a message box when the agent finishes responding, and when you quit the CLI.
@@ -213,6 +213,6 @@ You can debug hooks using the following methods:
 ## Further reading
 
 * [GitHub Copilot hooks reference](/en/copilot/reference/hooks-reference)
-* [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
-* [About GitHub Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli)
+* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
+* [GitHub Copilot CLI](/en/copilot/concepts/copilot-surfaces/copilot-cli)
 * [Configure the development environment](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment)

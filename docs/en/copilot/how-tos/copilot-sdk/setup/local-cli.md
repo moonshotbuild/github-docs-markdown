@@ -89,7 +89,7 @@ await client.stop()
 
 <div class="ghd-codetab" data-lang="go" data-label="Go"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">Go</div>
 
-> \[!NOTE]
+> [!NOTE]
 > The Go SDK does not ship a CLI automatically. Install `copilot` on `PATH`, set the `COPILOT_CLI_PATH` environment variable, embed a CLI with the [bundler tool](https://github.com/github/copilot-sdk/tree/main/go/README.md#distributing-your-application-with-an-embedded-github-copilot-cli), or point `StdioConnection.Path` at an installed binary.
 
 ```golang

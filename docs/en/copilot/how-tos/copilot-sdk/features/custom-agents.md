@@ -40,6 +40,8 @@ Custom agents are lightweight agent definitions you attach to a session. Each ag
 
 ## Defining custom agents
 
+To discover Markdown definitions from versioned packages or vendored folders, use `agentDirectories` or [Customization discovery locations](/en/copilot/how-tos/copilot-sdk/features/customization-locations).
+
 Pass `customAgents` when creating a session. Each agent needs at minimum a `name` and `prompt`.
 
 <div class="ghd-codetabs">
@@ -227,7 +229,7 @@ try (var client = new CopilotClient()) {
 | `model`           | `string`             |          | Model identifier to use while this agent runs                                                                                                         |
 | `reasoningEffort` | `string`             |          | Reasoning effort to use while this agent runs. When omitted, the SDK sends no per-agent override and the runtime resolves the effort (see note below) |
 
-> \[!TIP]
+> [!TIP]
 > A good `description` helps the runtime match user intent to the right agent. Be specific about the agent's expertise and capabilities.
 
 Set `model` and `reasoningEffort` to override the parent session's model settings while a custom agent runs. When `reasoningEffort` is omitted, the SDK sends no per-agent override and the runtime resolves the effort from its own precedence: a per-call client option, the resolved model's default, or the agent definition all take priority; otherwise the runtime inherits the parent session's effort only when the subagent runs the same model as the parent. When the subagent resolves to a different model, it falls back to that model's default instead of inheriting the parent's effort. Python uses `reasoning_effort`, .NET uses `ReasoningEffort`, Go uses `ReasoningEffort`, Java uses `setReasoningEffort`, and Rust uses `with_reasoning_effort`.
@@ -659,7 +661,7 @@ const session = await client.createSession({
 });
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > When `tools` is `null` or omitted, the agent inherits access to all tools configured on the session. Use explicit tool lists to enforce the principle of least privilege.
 
 ## Agent-exclusive tools
@@ -759,7 +761,7 @@ session, err := client.CreateSession(ctx, &copilot.SessionConfig{
 
 </div>
 
-<div class="ghd-codetab" data-lang="csharp" data-label="C#"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">C#</div>
+<div class="ghd-codetab" data-lang="dotnet" data-label=".NET"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">.NET</div>
 
 <!-- docs-validate: skip -->
 
@@ -811,7 +813,7 @@ Precedence:
 1. Session-level `availableTools`/`excludedTools` are applied first (globally)
 2. `defaultAgent.excludedTools` is applied on top, further restricting the main agent only
 
-> \[!NOTE]
+> [!NOTE]
 > If a tool is in both `excludedTools` (session-level) and `defaultAgent.excludedTools`, the session-level exclusion takes precedence—the tool is unavailable to everyone.
 
 ## Attaching MCP servers to agents

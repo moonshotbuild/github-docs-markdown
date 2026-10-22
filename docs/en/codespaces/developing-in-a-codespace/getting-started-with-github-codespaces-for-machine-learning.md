@@ -69,7 +69,7 @@ The JupyterLab application must be installed in the codespace you are opening. T
 
 ## Configuring NVIDIA CUDA for your codespace
 
-> \[!NOTE]
+> [!NOTE]
 > This section only applies to customers who can create codespaces on machines that use a GPU. The ability to choose a machine type that uses a GPU was offered to selected customers during a trial period. This option is not generally available.
 
 Some software requires you to install NVIDIA CUDA to use your codespace’s GPU. Where this is the case, you can create your own custom configuration, by using a `devcontainer.json` file, and specify that CUDA should be installed. For more information on creating a custom configuration, see [Introduction to dev containers](/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers#creating-a-custom-dev-container-configuration).
@@ -116,7 +116,7 @@ For full details of the script that's run when you add the `nvidia-cuda` feature
 
    ![Screenshot of the Command Palette with a search for "rebuild container" and the "Codespace: Rebuild Container" option highlighted in the dropdown.](/assets/images/help/codespaces/codespaces-rebuild.png)
 
-   > \[!TIP]
+   > [!TIP]
    > You may occasionally want to perform a full rebuild to clear your cache and rebuild your container with fresh images. For more information, see [Rebuilding the container in a codespace](/en/codespaces/developing-in-a-codespace/rebuilding-the-container-in-a-codespace#rebuilding-a-container).
    > The codespace container will be rebuilt. This will take several minutes. When the rebuild is complete the codespace is automatically reopened.
 

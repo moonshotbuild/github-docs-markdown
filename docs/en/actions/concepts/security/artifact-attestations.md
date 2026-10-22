@@ -65,7 +65,7 @@ You should **not** sign:
 
 If you consume software that publishes artifact attestations, you can use the GitHub CLI to verify those attestations. Because the attestations give you information about where and how software was built, you can use that information to create and enforce security policies that elevate your supply chain security.
 
-> \[!WARNING] It is important to remember that artifact attestations are *not* a guarantee that an artifact is secure. Instead, artifact attestations link you to the source code and the build instructions that produced them. It is up to you to define your policy criteria, evaluate that policy by evaluating the content, and make an informed risk decision when you are consuming software.
+> [!WARNING] It is important to remember that artifact attestations are *not* a guarantee that an artifact is secure. Instead, artifact attestations link you to the source code and the build instructions that produced them. It is up to you to define your policy criteria, evaluate that policy by evaluating the content, and make an informed risk decision when you are consuming software.
 
 ## Next steps
 

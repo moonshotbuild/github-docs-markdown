@@ -23,7 +23,7 @@ You can comment on a pull request, approve the changes, or request improvements 
 
 You can find a pull request where you or a team you're a member of is requested for review with the search qualifier `review-requested:[USERNAME]` or `team-review-requested:[TEAMNAME]`. For more information, see [Searching issues and pull requests](/en/search-github/searching-on-github/searching-issues-and-pull-requests).
 
-> \[!TIP]
+> [!TIP]
 > If a pull request you approved has changed significantly, you can dismiss your review. The pull request will need a new review before it can be merged. See [Dismissing a pull request review](/en/pull-requests/how-tos/review-pull-requests/dismissing-a-pull-request-review).
 
 1. Under your repository name, click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-git-pull-request" aria-label="git-pull-request" role="img"><path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"></path></svg> Pull requests**.
@@ -39,7 +39,7 @@ You can find a pull request where you or a team you're a member of is requested 
 7. Select **Approve** to approve merging the proposed changes.
 8. Click **Submit review**.
 
-> \[!TIP]
+> [!TIP]
 >
 > * The **Request changes** option is purely informational and will not prevent merging unless a ruleset or classic branch protection rule is configured with the "require a pull request" option. If configured and a collaborator with `admin`, `owner`, or `write` access to the repository submits a review requesting changes, the pull request cannot be merged until the same collaborator submits another review approving the changes in the pull request.
 > * Repository owners and administrators can merge a pull request even if it hasn't received an approving review, or if a reviewer who requested changes has left the organization or is unavailable.

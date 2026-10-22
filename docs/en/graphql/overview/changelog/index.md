@@ -663,8 +663,6 @@ Breaking changes include changes that will break existing queries or could affec
 
 ## Schema changes for 2026-06-23
 
-### The GraphQL schema includes these changes:
-
 ### The following changes will be made to the schema:
 
 * On member CopilotAgentTask.type:type will be removed. Use codingAgentFilter and codingAgentTypeFilter instead. Effective 2026-10-01.
@@ -780,8 +778,6 @@ Breaking changes include changes that will break existing queries or could affec
 * Field fullDatabaseId was added to object type IssueFieldText
 
 ## Schema changes for 2026-05-22
-
-### The GraphQL schema includes these changes:
 
 ### The following changes will be made to the schema:
 
@@ -1393,8 +1389,6 @@ Breaking changes include changes that will break existing queries or could affec
 * Input field pullRequestCreationPolicy of type PullRequestCreationPolicy was added to input object type UpdateRepositoryInput
 
 ## Schema changes for 2026-02-13
-
-### The GraphQL schema includes these changes:
 
 ### The following changes will be made to the schema:
 

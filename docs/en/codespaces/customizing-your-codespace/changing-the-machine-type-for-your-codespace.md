@@ -29,7 +29,7 @@ Unpublished codespaces (codespaces created from a template that are not linked t
 
 ## Changing the machine type
 
-> \[!NOTE]
+> [!NOTE]
 > Your choice of available machine types may be limited by a number of factors. These can include a policy configured for your organization, or a minimum machine type specification for your repository. For more information, see [Restricting access to machine types](/en/codespaces/managing-codespaces-for-your-organization/restricting-access-to-machine-types) and [Setting a minimum specification for codespace machines](/en/codespaces/setting-up-your-project-for-codespaces/configuring-dev-containers/setting-a-minimum-specification-for-codespace-machines).
 
 <div class="ghd-tool webui">

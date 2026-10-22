@@ -21,10 +21,6 @@ Learn the core concepts that you'll need to understand GitHub Copilot.
 
   Learn about the different places where you can use GitHub Copilot.
 
-* [Concepts for GitHub Copilot agents](/en/copilot/concepts/agents)
-
-  Learn how GitHub Copilot can independently execute tasks across the software development lifecycle.
-
 * [Agent capabilities](/en/copilot/concepts/agent-capabilities)
 
   Understand what GitHub Copilot agents can do, how to delegate work to them, and how they operate in automated workflows.
@@ -33,9 +29,9 @@ Learn the core concepts that you'll need to understand GitHub Copilot.
 
   Get more relevant responses from GitHub Copilot by writing effective prompts and providing useful context.
 
-* [Concepts for providing context to GitHub Copilot](/en/copilot/concepts/context)
+* [Customizations for GitHub Copilot](/en/copilot/concepts/customizations)
 
-  Extend the capabilities of GitHub Copilot by providing additional context using Model Context Protocol.
+  Extend Copilot CLI for your own workflows, and for organizations, standardize how Copilot CLI is customized across teams.
 
 * [Models for GitHub Copilot](/en/copilot/concepts/models)
 

@@ -35,7 +35,7 @@ Here are some scenarios where you might use GitHub App Manifests to register pre
 
 The GitHub App Manifest flow uses a handshaking process similar to the [OAuth flow](/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps). The flow uses a manifest to [register a GitHub App](/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app) and receives a temporary `code` used to retrieve the app's private key, webhook secret, and ID.
 
-> \[!NOTE] You must complete all three steps in the GitHub App Manifest flow within one hour.
+> [!NOTE] You must complete all three steps in the GitHub App Manifest flow within one hour.
 
 Follow these steps to implement the GitHub App Manifest flow:
 
@@ -173,7 +173,7 @@ To complete the handshake, send the temporary `code` in a `POST` request to the 
 
 You must complete this step of the GitHub App Manifest flow within one hour.
 
-> \[!NOTE]
+> [!NOTE]
 > This endpoint is rate limited. See [Rate limits](/en/rest/rate-limit/rate-limit) to learn how to get your current rate limit status.
 
 ```

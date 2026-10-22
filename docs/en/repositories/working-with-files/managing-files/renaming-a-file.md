@@ -23,7 +23,7 @@ You can rename any file in your repository directly in GitHub or by using the co
 
 Renaming a file also gives you the opportunity to [move the file to a new location](/en/repositories/working-with-files/managing-files/moving-a-file-to-a-new-location).
 
-> \[!TIP]
+> [!TIP]
 >
 > * If you try to rename a file in a repository that you don’t have access to, we will fork the project to your personal account and help you send [a pull request](/en/pull-requests/reference/pull-requests) to the original repository after you commit your change.
 > * Some files, such as images, require that you rename them from the command line. For more information, see [Renaming a file using the command line](#renaming-a-file-using-the-command-line).

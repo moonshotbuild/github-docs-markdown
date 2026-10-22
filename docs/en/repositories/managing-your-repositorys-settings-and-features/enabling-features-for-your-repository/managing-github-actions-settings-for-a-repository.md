@@ -31,10 +31,10 @@ Alternatively, you can enable GitHub Actions in your repository but limit the ac
 
 You can disable GitHub Actions for a repository, or set a policy that configures which actions and reusable workflows can be used in the repository.
 
-> \[!NOTE]
+> [!NOTE]
 > You might not be able to manage these settings if your organization has an overriding policy or is managed by an enterprise that has overriding policy. For more information, see [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization) or [Enforcing policies for GitHub Actions in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise).
 
-> \[!NOTE]
+> [!NOTE]
 > If you see **GitHub Actions is currently disabled for this repository** or **GitHub Actions is currently disabled for your account**, the repository or account may be in a separate GitHub-controlled disabled state, and changing these settings won't restore access.
 > Contact GitHub Support for review.
 
@@ -62,7 +62,7 @@ You can disable GitHub Actions for a repository, or set a policy that configures
 
 When you choose **Allow *OWNER*, and select non-*OWNER*, actions and reusable workflows**, local actions (`./` and `$/`) and reusable workflows are allowed, and there are additional options for allowing other specific actions and reusable workflows:
 
-> \[!NOTE]
+> [!NOTE]
 > You might not be able to manage these settings if your organization has an overriding policy or is managed by an enterprise that has overriding policy. For more information, see [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization) or [Enforcing policies for GitHub Actions in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise).
 
 * **Allow actions created by GitHub:** You can allow all actions created by GitHub to be used by workflows. Actions created by GitHub are located in the `actions` and `github` organizations. For more information, see the [`actions`](https://github.com/actions) and [`github`](https://github.com/github) organizations.
@@ -79,6 +79,14 @@ When you choose **Allow *OWNER*, and select non-*OWNER*, actions and reusable wo
   Use `,` to separate patterns. For example, to allow all actions and reusable workflows from the `octocat` and `octokit` organizations, you can specify `octocat/*, octokit/*`.
 
   Use the `!` prefix to block patterns. For example, to allow all actions and reusable workflows from the `space-org` organization, but block a specific action like `space-org/action`, you can specify `space-org/*, !space-org/action@*`. By default, only actions and reusable workflows specified in the list will be allowed. To allow all actions and reusable workflows while also blocking specific actions, you can specify `*, !space-org/action@*`.
+
+> [!NOTE]
+> For workflows covered by a dependency lockfile, this policy checks each locked dependency by its commit SHA instead of the tag or branch in the workflow file. Tags and branches are mutable, so they can't identify the code that runs. The locked SHA can. This has two effects:
+>
+> * Allowlist entries pinned to a tag or branch, such as `actions/checkout@v6`, don't match, even when the workflow uses `actions/checkout@v6`. A locked SHA can't be reliably matched back to a tag, because the tag may have moved since you locked it, and a tag's history includes every earlier release. To allow a locked dependency, use a wildcard such as `actions/checkout@*` or `actions/*`, or the full commit SHA.
+> * Locked dependencies satisfy **Require actions to be pinned to a full-length commit SHA** without changes to the workflow file. Dependencies that aren't in the lockfile still need a full-length SHA.
+>
+> For more information, see [Workflow dependency lockfiles](/en/actions/concepts/security/workflow-dependency-lockfiles).
 
 This procedure demonstrates how to add specific actions and reusable workflows to the list.
 
@@ -103,7 +111,7 @@ By default, all first-time contributors require approval to run workflows.
 
 Workflows triggered by `pull_request_target` events are run in the context of the base branch. Since the base branch is considered trusted, workflows triggered by these events will always run, regardless of approval settings. For more information about the `pull_request_target` event, see [Events that trigger workflows](/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request_target).
 
-> \[!WARNING] These workflow approval policies are intended to restrict the set of users that can execute workflows in GitHub Actions runners that could lead to unexpected resource and compute consumption when using GitHub-hosted runners. If you are using self-hosted runners, potentially malicious user-controlled workflow code will execute automatically if the user is allowed to bypass approval in the set approval policy or if the pull request is approved. You must consider the risk of executing this code in your infrastructure and should review and follow the self-hosted runner security recommendations regardless of the approval settings utilized. See [Secure use reference](/en/actions/reference/security/secure-use#hardening-for-self-hosted-runners).
+> [!WARNING] These workflow approval policies are intended to restrict the set of users that can execute workflows in GitHub Actions runners that could lead to unexpected resource and compute consumption when using GitHub-hosted runners. If you are using self-hosted runners, potentially malicious user-controlled workflow code will execute automatically if the user is allowed to bypass approval in the set approval policy or if the pull request is approved. You must consider the risk of executing this code in your infrastructure and should review and follow the self-hosted runner security recommendations regardless of the approval settings utilized. See [Secure use reference](/en/actions/reference/security/secure-use#hardening-for-self-hosted-runners).
 
 You can configure this behavior for a repository using the procedure below. Modifying this setting overrides the configuration set at the organization or enterprise level.
 
@@ -117,7 +125,7 @@ You can configure this behavior for a repository using the procedure below. Modi
 
 4. Under **Approval for running fork pull request workflows from contributors**, choose which subset of users will require approval before running workflows on their pull requests. Both the pull request author and the actor of the pull request event triggering the workflow will be checked to determine if approval is required. If approval is required, a user with write access to the repository must approve the pull request workflow to be run. See [Approving workflow runs from forks](/en/actions/how-tos/manage-workflow-runs/approve-runs-from-forks).
 
-   > \[!WARNING] When requiring approvals only for first-time contributors (the first two settings), a user that has had any commit or pull request merged into the repository will not require approval. A malicious user could meet this requirement by getting a simple typo or other innocuous change accepted by a maintainer, either as part of a pull request they have authored or as part of another user's pull request.
+   > [!WARNING] When requiring approvals only for first-time contributors (the first two settings), a user that has had any commit or pull request merged into the repository will not require approval. A malicious user could meet this requirement by getting a simple typo or other innocuous change accepted by a maintainer, either as part of a pull request they have authored or as part of another user's pull request.
 
    * **Require approval for first-time contributors who are new to GitHub**. Only users who are both new on GitHub and who have never had a commit or pull request merged into this repository will require approval to run workflows.
    * **Require approval for first-time contributors**. Only users who have never had a commit or pull request merged into this repository will require approval to run workflows.
@@ -242,7 +250,7 @@ You can configure the retention period for checks, workflow runs, commit statuse
 
 By default, checks, workflow runs, commit statuses, and the artifacts and log files generated by workflows are retained for 90 days before they are automatically deleted.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Starting October 1, 2026, these policies will apply to checks, workflow runs, and commit statuses in addition to artifacts and logs. Until then, checks, workflow runs, and commit statuses are retained for 400+ days regardless of your configured retention period. Make sure to review your retention setting and make any adjustments before October 1. For more information, see [the GitHub changelog](https://github.blog/changelog/2026-07-17-actions-retention-will-cover-checks-workflow-runs-and-statuses/).
 
 These retention policies apply to checks data, including check suites and check runs, and to commit statuses, including those created by third-party integrations. The policies are not limited to data created by GitHub Actions.

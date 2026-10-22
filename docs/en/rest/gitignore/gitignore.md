@@ -21,7 +21,7 @@ Use the REST API to get .gitignore templates that can be used to ignore files an
 
 When you create a new repository on GitHub via the API, you can specify a [.gitignore template](/en/get-started/git-basics/ignoring-files) to apply to the repository upon creation. You can use the REST API to get .gitignore templates from the GitHub [.gitignore repository](https://github.com/github/gitignore).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get all gitignore templates

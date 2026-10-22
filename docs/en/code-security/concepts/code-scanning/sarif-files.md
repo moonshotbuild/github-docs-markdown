@@ -19,7 +19,7 @@ breadcrumbs:
 
 SARIF files convert third-party analyses into alerts on GitHub.
 
-> \[!NOTE] If you use default setup for code scanning, or an advanced setup that involves using GitHub Actions to run the CodeQL action, then you don't need to interact with SARIF files. Scan results are uploaded and parsed as code scanning alerts automatically.
+> [!NOTE] If you use default setup for code scanning, or an advanced setup that involves using GitHub Actions to run the CodeQL action, then you don't need to interact with SARIF files. Scan results are uploaded and parsed as code scanning alerts automatically.
 
 SARIF stands for *Static Analysis Results Interchange Format*. This is a JSON-based standard for storing results from static analysis tools.
 

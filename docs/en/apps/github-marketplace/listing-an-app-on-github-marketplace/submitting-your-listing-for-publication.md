@@ -19,7 +19,7 @@ breadcrumbs:
 
 To finish your app listing submission, you can request a review by an onboarding expert.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 Once your app listing meets the GitHub Marketplace requirements, you can submit your app. For an overview of the app listing requirements, see [Requirements for listing an app](/en/apps/github-marketplace/creating-apps-for-github-marketplace/requirements-for-listing-an-app).

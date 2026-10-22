@@ -41,7 +41,7 @@ A typical workflow for updating a file using GitHub Codespaces would be:
 * Commit the change.
 * Raise a pull request.
 
-> \[!NOTE]
+> [!NOTE]
 > By default, GitHub Codespaces uses the HTTPS protocol to transfer data to and from a remote repository, and authenticates with a `GITHUB_TOKEN` configured with read and write access to the repository from which you create the codespace. If you're having issues with authentication, see [Troubleshooting authentication to a repository](/en/codespaces/troubleshooting/troubleshooting-authentication-to-a-repository).
 
 ## About automatic forking
@@ -54,7 +54,7 @@ If you make a commit from the codespace, or push a new branch, GitHub Codespaces
 
 If you make a commit from the command line, you will see a prompt asking if you would like to proceed with linking your codespace to a new or existing fork. Enter `y` to proceed. If you commit changes from the **Source Control** view in VS Code, your codespace is automatically linked to a fork without you being prompted.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * If you delete your fork repository, then any codespaces linked to the fork are deleted, even if you originally created them from the upstream repository.
 > * If you make a commit from the command line and refuse the new fork by entering `n`, you should push your changes from the command line rather than from VS Code's Source Control view. If you use the Source Control view, VS Code will still try to create a fork for you on push.
@@ -94,7 +94,7 @@ If you're working in a codespace, you can publish it from the VS Code web client
 
    ![Screenshot of the "Source control" side bar with the staging button (a plus sign), to the right of "Changes," highlighted with a dark orange outline.](/assets/images/help/codespaces/codespaces-commit-stage.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you start from GitHub's blank template, you will not see a list of changes unless you have already initialized your directory as a Git repository. To publish codespaces created from the blank template, click **Publish to GitHub** in the "Source Control" view, then skip to step 5.
 
 3. To commit your staged changes, type a commit message describing the change you've made, then click **Commit**.
@@ -127,7 +127,7 @@ If you're working in a codespace, you can publish it from the VS Code web client
 
    ![Screenshot of the dropdown for creating a new branch in VS Code.](/assets/images/help/codespaces/create-new-branch.png)
 
-> \[!TIP]
+> [!TIP]
 > If someone has recently changed a file on the remote repository, in the branch you switched to, you may not see those changes until you pull the changes into your codespace.
 
 ## Committing your changes
@@ -156,7 +156,7 @@ You can pull changes from the remote repository into your codespace at any time.
 
    ![Screenshot of the VS Code Activity Bar with the source control button highlighted with an orange outline.](/assets/images/help/codespaces/source-control-activity-bar-button.png)
 
-2. At the top of the side bar, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-kebab-horizontal" aria-label="Views and More Actions" role="img"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>.
+2. At the top of the side bar, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-kebab-horizontal" aria-label="Views and More Actions..." role="img"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>.
 
    ![Screenshot of the "Source control" side bar. The ellipsis button (three dots) is highlighted with a dark orange outline.](/assets/images/help/codespaces/source-control-ellipsis-button.png)
 
@@ -202,7 +202,7 @@ If the fetch operation detects new changes on the remote repository, you'll see 
 
 You can push changes you've saved and committed. This applies those changes to the upstream branch on the remote repository. You might want to do this if you're not yet ready to create a pull request, or if you prefer to create a pull request on GitHub.
 
-1. At the top of the side bar, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-kebab-horizontal" aria-label="Views and More Actions" role="img"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>.
+1. At the top of the side bar, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-kebab-horizontal" aria-label="Views and More Actions..." role="img"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>.
 
    ![Screenshot of the "Source control" side bar. The ellipsis button (three dots) is highlighted with a dark orange outline.](/assets/images/help/codespaces/source-control-ellipsis-button-nochanges.png)
 
@@ -226,7 +226,7 @@ If you're working in a codespace, you can publish it from the VS Code web client
 
    ![Screenshot of the "Source control" side bar with the staging button (a plus sign), to the right of "Changes," highlighted with a dark orange outline.](/assets/images/help/codespaces/codespaces-commit-stage.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you start from GitHub's blank template, you will not see a list of changes unless you have already initialized your directory as a Git repository. To publish codespaces created from the blank template, click **Publish to GitHub** in the "Source Control" view, then skip to step 5.
 
 3. To commit your staged changes, type a commit message describing the change you've made, then click **Commit**.
@@ -259,7 +259,7 @@ If you're working in a codespace, you can publish it from the VS Code web client
 
    ![Screenshot of the dropdown for creating a new branch in VS Code.](/assets/images/help/codespaces/create-new-branch.png)
 
-> \[!TIP]
+> [!TIP]
 > If someone has recently changed a file on the remote repository, in the branch you switched to, you may not see those changes until you pull the changes into your codespace.
 
 ## Committing your changes
@@ -288,7 +288,7 @@ You can pull changes from the remote repository into your codespace at any time.
 
    ![Screenshot of the VS Code Activity Bar with the source control button highlighted with an orange outline.](/assets/images/help/codespaces/source-control-activity-bar-button.png)
 
-2. At the top of the side bar, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-kebab-horizontal" aria-label="Views and More Actions" role="img"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>.
+2. At the top of the side bar, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-kebab-horizontal" aria-label="Views and More Actions..." role="img"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>.
 
    ![Screenshot of the "Source control" side bar. The ellipsis button (three dots) is highlighted with a dark orange outline.](/assets/images/help/codespaces/source-control-ellipsis-button.png)
 
@@ -334,7 +334,7 @@ If the fetch operation detects new changes on the remote repository, you'll see 
 
 You can push changes you've saved and committed. This applies those changes to the upstream branch on the remote repository. You might want to do this if you're not yet ready to create a pull request, or if you prefer to create a pull request on GitHub.
 
-1. At the top of the side bar, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-kebab-horizontal" aria-label="Views and More Actions" role="img"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>.
+1. At the top of the side bar, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-kebab-horizontal" aria-label="Views and More Actions..." role="img"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg>.
 
    ![Screenshot of the "Source control" side bar. The ellipsis button (three dots) is highlighted with a dark orange outline.](/assets/images/help/codespaces/source-control-ellipsis-button-nochanges.png)
 

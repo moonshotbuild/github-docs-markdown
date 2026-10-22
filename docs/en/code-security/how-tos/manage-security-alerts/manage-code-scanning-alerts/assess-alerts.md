@@ -56,7 +56,7 @@ By default, the code scanning alerts page is filtered to show alerts for the def
 
 For more information, see [Code scanning alerts](/en/code-security/concepts/code-scanning/code-scanning-alerts).
 
-> \[!NOTE]
+> [!NOTE]
 > You can see information about when code scanning analysis last ran on the tool status page. For more information, see [Use the tool status page for code scanning](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/use-the-tools-status-page-for-code-scanning).
 
 ## Viewing metrics for CodeQL pull request alerts for an organization
@@ -96,7 +96,7 @@ You can search the list of alerts. This is useful if there is a large number of 
 | OR search                                  | `sql OR injection`  | Returns all the alerts containing `sql` or `injection`             |
 | AND search                                 | `sql AND injection` | Returns all the alerts containing both words `sql` and `injection` |
 
-> \[!TIP]
+> [!TIP]
 >
 > * The multiple word search is equivalent to an OR search.
 > * The AND search will return results where the search terms are found *anywhere*, in any order in the alert name or details.

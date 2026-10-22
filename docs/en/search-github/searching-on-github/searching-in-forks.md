@@ -19,7 +19,7 @@ By default, forks are not shown in search results. You can choose to include the
 
 To show forks in repository search results, add `fork:true` or `fork:only` to your query. For more information, see [Searching for repositories](/en/search-github/searching-on-github/searching-for-repositories).
 
-> \[!NOTE]
+> [!NOTE]
 > Forks can only be included in repository and code searches.
 
 ## Repository search

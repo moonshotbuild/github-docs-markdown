@@ -27,7 +27,7 @@ When you upload, create, or edit files from the GitHub UI, push protection preve
 
 GitHub will also block the commit if you attempt to upload files containing supported secrets.
 
-> \[!NOTE] Push protection for file uploads in the web UI is currently in public preview and subject to change.
+> [!NOTE] Push protection for file uploads in the web UI is currently in public preview and subject to change.
 
 You should either:
 
@@ -46,7 +46,7 @@ You will see a dialog box with information about the secret's location, as well 
 
 To resolve a blocked commit in the web UI, you need to remove the secret from the file. Once you remove the secret, you will be able to commit your changes.
 
-> \[!NOTE] To learn how to resolved a blocked push on the command line, see [Working with push protection from the command line](/en/code-security/how-tos/secure-your-secrets/work-with-leak-prevention/push-protection-on-the-command-line#resolving-a-blocked-push).
+> [!NOTE] To learn how to resolved a blocked push on the command line, see [Working with push protection from the command line](/en/code-security/how-tos/secure-your-secrets/work-with-leak-prevention/push-protection-on-the-command-line#resolving-a-blocked-push).
 
 ## Bypassing push protection
 
@@ -64,7 +64,7 @@ When a contributor bypasses a push protection block for a secret, GitHub also se
    * If the detected string is not a secret, click **It's a false positive**.
 
    * If the secret is real but you intend to fix it later, click **I'll fix it later**.
-   > \[!NOTE]
+   > [!NOTE]
    > You are required to specify a reason for bypassing push protection if the repository has secret scanning enabled.
    >
    > When pushing to a *public* repository that doesn't have secret scanning enabled, you are still protected from accidentally pushing secrets thanks to *push protection for users*, which is on by default for your user account.

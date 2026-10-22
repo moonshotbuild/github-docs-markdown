@@ -50,8 +50,8 @@ Get all the repository rulesets for an organization.
 
 - **`targets`** (string)
   A comma-separated list of rule targets to filter by.
-If provided, only rulesets that apply to the specified targets will be returned.
-For example, branch,tag,push.
+  If provided, only rulesets that apply to the specified targets will be returned.
+  For example, branch,tag,push.
 
 ### HTTP response status codes
 
@@ -287,9 +287,9 @@ Create a repository ruleset for an organization.
 
 - **`conditions`** (object)
   Conditions for an organization ruleset.
-The branch and tag rulesets conditions object should contain both repository_name and ref_name properties, or both repository_id and ref_name properties, or both repository_property and ref_name properties.
-The push rulesets conditions object does not require the ref_name property.
-For repository policy rulesets, the conditions object should only contain the repository_name, the repository_id, or the repository_property.
+  The branch and tag rulesets conditions object should contain both repository_name and ref_name properties, or both repository_id and ref_name properties, or both repository_property and ref_name properties.
+  The push rulesets conditions object does not require the ref_name property.
+  For repository policy rulesets, the conditions object should only contain the repository_name, the repository_id, or the repository_property.
   - **`repository_name_and_ref_name`** (object)
     Conditions to target repositories by name and refs by name
     - **`ref_name`** (object)
@@ -380,7 +380,7 @@ For repository policy rulesets, the conditions object should only contain the re
     - **`parameters`** (object)
       - **`allowed_merge_methods`** (array of strings)
         Array of allowed merge methods. Allowed values include merge, squash, and rebase. At least one option must be enabled.
-Supported values are: merge, squash, rebase
+        Supported values are: merge, squash, rebase
       - **`dismiss_stale_reviews_on_push`** (boolean) (required)
         New, reviewable commits pushed will dismiss previous pull request review approvals.
       - **`dismissal_restriction`** (object)
@@ -906,9 +906,9 @@ Update a ruleset for an organization.
 
 - **`conditions`** (object)
   Conditions for an organization ruleset.
-The branch and tag rulesets conditions object should contain both repository_name and ref_name properties, or both repository_id and ref_name properties, or both repository_property and ref_name properties.
-The push rulesets conditions object does not require the ref_name property.
-For repository policy rulesets, the conditions object should only contain the repository_name, the repository_id, or the repository_property.
+  The branch and tag rulesets conditions object should contain both repository_name and ref_name properties, or both repository_id and ref_name properties, or both repository_property and ref_name properties.
+  The push rulesets conditions object does not require the ref_name property.
+  For repository policy rulesets, the conditions object should only contain the repository_name, the repository_id, or the repository_property.
   - **`repository_name_and_ref_name`** (object)
     Conditions to target repositories by name and refs by name
     - **`ref_name`** (object)
@@ -999,7 +999,7 @@ For repository policy rulesets, the conditions object should only contain the re
     - **`parameters`** (object)
       - **`allowed_merge_methods`** (array of strings)
         Array of allowed merge methods. Allowed values include merge, squash, and rebase. At least one option must be enabled.
-Supported values are: merge, squash, rebase
+        Supported values are: merge, squash, rebase
       - **`dismiss_stale_reviews_on_push`** (boolean) (required)
         New, reviewable commits pushed will dismiss previous pull request review approvals.
       - **`dismissal_restriction`** (object)

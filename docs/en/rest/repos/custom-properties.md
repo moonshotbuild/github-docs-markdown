@@ -21,7 +21,7 @@ Use the REST API to list the custom properties assigned to a repository by the o
 
 You can use the REST API to view the custom properties that were assigned to a repository by the organization that owns the repository. For more information, see [Managing custom properties for repositories in your organization](/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization). For more information about the REST API endpoints to manage custom properties, see [REST API endpoints for custom properties](/en/rest/orgs/custom-properties).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get all custom property values for a repository

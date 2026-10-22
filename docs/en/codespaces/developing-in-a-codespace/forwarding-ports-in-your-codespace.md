@@ -27,7 +27,7 @@ When an application running inside a codespace prints output to the terminal tha
 
 You can edit the dev container configuration for the repository to automatically forward one or more ports. You can also forward a port manually, label forwarded ports, share forwarded ports with members of your organization, share forwarded ports publicly, and add forwarded ports to the codespace configuration.
 
-> \[!NOTE]
+> [!NOTE]
 > Organization owners can restrict the ability to make forward ports available publicly or within the organization. For more information, see [Restricting the visibility of forwarded ports](/en/codespaces/managing-codespaces-for-your-organization/restricting-the-visibility-of-forwarded-ports).
 
 ## Forwarding a port
@@ -62,12 +62,12 @@ By default, GitHub Codespaces forwards ports using HTTP but you can update any p
 
 ## Sharing a port
 
-> \[!NOTE]
+> [!NOTE]
 > You can only make a port private to an organization if your organization uses GitHub Team or GitHub Enterprise Cloud.
 
 If you want to share a forwarded port with others, you can either make the port private to your organization or make the port public. After you make a port private to your organization, anyone in the organization with the port's URL can view the running application. After you make a port public, anyone who knows the URL and port number can view the running application without needing to authenticate.
 
-> \[!NOTE]
+> [!NOTE]
 > Your choice of port visibility options may be limited by a policy configured for your organization. For more information, see [Restricting the visibility of forwarded ports](/en/codespaces/managing-codespaces-for-your-organization/restricting-the-visibility-of-forwarded-ports).
 
 1. Open the terminal in your codespace.
@@ -90,7 +90,7 @@ When you forward a port, your application becomes available at the URL `https://
 
 To access your application using a REST client, such as Postman, or a command-line tool like curl, you don't need to authenticate if you're using a localhost port, or if you're accessing a public port at the remote domain. However, to connect to a private port at the remote domain, you must authenticate by using the `GITHUB_TOKEN` access token in your request.
 
-> \[!NOTE]
+> [!NOTE]
 > The `GITHUB_TOKEN` is automatically created when you start a codespace and remains the same for the duration of the codespace session. If you stop and then restart a codespace a new `GITHUB_TOKEN` is generated.
 
 <!-- Don't delete this comment. It prevents a formatting issue. -->
@@ -115,7 +115,7 @@ To access your application using a REST client, such as Postman, or a command-li
 
 2. Copy the token.
 
-   > \[!IMPORTANT]
+   > [!IMPORTANT]
    > Don't share this access token with anyone.
 
 ### Using curl to access a forwarded port
@@ -218,7 +218,7 @@ When an application running inside a codespace prints output to the terminal tha
 
 You can edit the dev container configuration for the repository to automatically forward one or more ports. You can also forward a port manually, label forwarded ports, share forwarded ports with members of your organization, share forwarded ports publicly, and add forwarded ports to the codespace configuration.
 
-> \[!NOTE]
+> [!NOTE]
 > Organization owners can restrict the ability to make forward ports available publicly or within the organization. For more information, see [Restricting the visibility of forwarded ports](/en/codespaces/managing-codespaces-for-your-organization/restricting-the-visibility-of-forwarded-ports).
 
 ## Forwarding a port
@@ -239,12 +239,12 @@ You can manually forward a port that wasn't forwarded automatically.
 
 ## Sharing a port
 
-> \[!NOTE]
+> [!NOTE]
 > You can only make a port private to an organization if your organization uses GitHub Team or GitHub Enterprise Cloud.
 
 If you want to share a forwarded port with others, you can either make the port private to your organization or make the port public. After you make a port private to your organization, anyone in the organization with the port's URL can view the running application. After you make a port public, anyone who knows the URL and port number can view the running application without needing to authenticate.
 
-> \[!NOTE]
+> [!NOTE]
 > Your choice of port visibility options may be limited by a policy configured for your organization. For more information, see [Restricting the visibility of forwarded ports](/en/codespaces/managing-codespaces-for-your-organization/restricting-the-visibility-of-forwarded-ports).
 
 1. Open the terminal in your codespace.
@@ -267,7 +267,7 @@ When you forward a port, your application becomes available at the URL `https://
 
 To access your application using a REST client, such as Postman, or a command-line tool like curl, you don't need to authenticate if you're using a localhost port, or if you're accessing a public port at the remote domain. However, to connect to a private port at the remote domain, you must authenticate by using the `GITHUB_TOKEN` access token in your request.
 
-> \[!NOTE]
+> [!NOTE]
 > The `GITHUB_TOKEN` is automatically created when you start a codespace and remains the same for the duration of the codespace session. If you stop and then restart a codespace a new `GITHUB_TOKEN` is generated.
 
 <!-- Don't delete this comment. It prevents a formatting issue. -->
@@ -292,7 +292,7 @@ To access your application using a REST client, such as Postman, or a command-li
 
 2. Copy the token.
 
-   > \[!IMPORTANT]
+   > [!IMPORTANT]
    > Don't share this access token with anyone.
 
 ### Using curl to access a forwarded port
@@ -391,7 +391,7 @@ You can label a port and write the change to a dev container configuration file 
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 To forward a port use the `gh codespace ports forward` subcommand. Replace `codespace-port:local-port` with the remote and local ports that you want to connect. After entering the command choose from the list of codespaces that's displayed.
@@ -406,12 +406,12 @@ To see details of forwarded ports enter `gh codespace ports` and then choose a c
 
 ## Sharing a port
 
-> \[!NOTE]
+> [!NOTE]
 > You can only make a port private to an organization if your organization uses GitHub Team or GitHub Enterprise Cloud.
 
 If you want to share a forwarded port with others, you can either make the port private to your organization or make the port public. After you make a port private to your organization, anyone in the organization with the port's URL can view the running application. After you make a port public, anyone who knows the URL and port number can view the running application without needing to authenticate.
 
-> \[!NOTE]
+> [!NOTE]
 > Your choice of port visibility options may be limited by a policy configured for your organization. For more information, see [Restricting the visibility of forwarded ports](/en/codespaces/managing-codespaces-for-your-organization/restricting-the-visibility-of-forwarded-ports).
 
 To change the visibility of a forwarded port, use the `gh codespace ports visibility` subcommand. There are three visibility settings:
@@ -440,7 +440,7 @@ When you forward a port, your application becomes available at the URL `https://
 
 To access your application using a REST client, such as Postman, or a command-line tool like curl, you don't need to authenticate if you're using a localhost port, or if you're accessing a public port at the remote domain. However, to connect to a private port at the remote domain, you must authenticate by using the `GITHUB_TOKEN` access token in your request.
 
-> \[!NOTE]
+> [!NOTE]
 > The `GITHUB_TOKEN` is automatically created when you start a codespace and remains the same for the duration of the codespace session. If you stop and then restart a codespace a new `GITHUB_TOKEN` is generated.
 
 <!-- Don't delete this comment. It prevents a formatting issue. -->
@@ -471,7 +471,7 @@ Copy the address and paste it somewhere for later use.
 
 4. Copy the token.
 
-   > \[!IMPORTANT]
+   > [!IMPORTANT]
    > Don't share this access token with anyone.
 
 5. Exit the SSH session.

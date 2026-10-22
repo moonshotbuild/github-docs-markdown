@@ -50,7 +50,7 @@ If you use your GitHub account for both personal and work purposes, there are st
 
 ## Leave organization memberships
 
-> \[!NOTE] Unless you're using a managed user account, you'll still be able to access your personal account after leaving an organization.
+> [!NOTE] Unless you're using a managed user account, you'll still be able to access your personal account after leaving an organization.
 
 1. If you're the organization owner, transfer ownership to another person before removing yourself.
 

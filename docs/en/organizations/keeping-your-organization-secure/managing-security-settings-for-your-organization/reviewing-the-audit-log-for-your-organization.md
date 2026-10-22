@@ -21,7 +21,7 @@ The audit log allows organization admins to quickly review the actions performed
 
 ## Accessing the organization's audit log via the web interface
 
-> \[!NOTE]
+> [!NOTE]
 > Webhooks might be a good alternative to the audit log or API polling for certain use cases. Webhooks are a way for GitHub to notify your server when specific events occur for a repository, organization, or enterprise. Compared to the API or searching the audit log, webhooks can be more efficient if you just want to learn and possibly log when certain events occur on your enterprise, organization, or repository. See [Webhooks documentation](/en/webhooks).
 
 The audit log lists events triggered by activities that affect your organization within the last 180 days. Only owners can access an organization's audit log.
@@ -185,7 +185,7 @@ For example:
 * `created:<=2014-07-08` finds all events that occurred on or before July 8th, 2014.
 * `created:2014-07-01..2014-07-31` finds all events that occurred in the month of July 2014.
 
-> \[!NOTE]
+> [!NOTE]
 > The audit log contains data for the last 180 days.
 
 ### Search based on location

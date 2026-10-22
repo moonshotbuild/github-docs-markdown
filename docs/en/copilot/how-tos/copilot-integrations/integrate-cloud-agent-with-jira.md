@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can use the GitHub integration in Jira to provide context and open pull requests, all from within your Jira workspace.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Copilot uses AI. Check for mistakes. See [Application card: GitHub Copilot Agents](/en/copilot/responsible-use/agents).
 
 The GitHub Copilot integration in Jira allows you to invoke Copilot cloud agent without leaving your Jira workspace. From within Jira you can initiate cloud agent sessions and open pull requests, using the context of the work item's title, description, labels, comments, and any Atlassian custom fields such as acceptance criteria.
@@ -109,7 +109,7 @@ You can trigger Copilot cloud agent in several ways:
 * **Mention** `@GitHub Copilot` in a comment on a work item.
 * **Use a Jira automation.** In your Jira automation rules, select the **Use GitHub Copilot** action and configure your flow to use a custom trigger based on Jira events, such as when a work item is created or transitioned, or a label is applied. For more information, see [Work with AI agents in Jira](https://support.atlassian.com/jira-software-cloud/docs/work-with-ai-agents-in-jira/) in the Atlassian documentation.
 
-> \[!NOTE]
+> [!NOTE]
 > When you assign Copilot to a Jira work item, the context the agent captures from Jira will be added to the pull request and **visible to everyone** if the repository is public.
 
 ### Example: Triggering Copilot cloud agent from a Jira work item
@@ -132,7 +132,7 @@ You can trigger Copilot cloud agent in several ways:
    * Use the **Continue in Chat** button under the **Agents** heading to chat directly with Copilot to have updates made to the *current* pull request.
    * Mention `@GitHub Copilot` in a comment on the work item to have updates made in a *new* pull request.
 
-> \[!TIP]
+> [!TIP]
 > If you have not received confirmation of triggering Copilot cloud agent after 1 minute, refresh the Jira work item page.
 
 ### Viewing agent activity in Jira
@@ -172,7 +172,7 @@ For more information, see [Usage-based billing for organizations and enterprises
 
 A Jira administrator and GitHub organization owner can enable or disable organizations for the integration.
 
-> \[!NOTE]
+> [!NOTE]
 > If a new SSO-protected organization is added to the app after the initial installation, users will need to start an active SAML session for the organization in GitHub, in order to trigger Copilot cloud agent to work in the new organization's repositories from Jira. For more information, see [About authentication with single sign-on](/en/enterprise-cloud@latest/authentication/authenticating-with-single-sign-on/about-authentication-with-single-sign-on#about-oauth-apps-github-apps-and-sso).
 
 To change access for the GitHub Copilot for Jira app for an organization:

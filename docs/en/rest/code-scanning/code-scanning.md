@@ -21,7 +21,7 @@ Use the REST API to retrieve and update code scanning alerts from a repository.
 
 You can retrieve and update code scanning alerts from a repository. You can use the endpoints to create automated reports for the code scanning alerts in an organization or upload analysis results generated using offline code scanning tools. For more information, see [Find and fix code vulnerabilities](/en/code-security/how-tos/find-and-fix-code-vulnerabilities).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get the AI Scan setting for an organization
@@ -153,7 +153,7 @@ OAuth app tokens and personal access tokens (classic) need the security\_events 
 * **`tool_name`** (string)
   The name of a code scanning tool. Only results by this tool will be listed. You can specify the tool by using either tool\_name or tool\_guid, but not both.
 
-* **`tool_guid`** (string,null)
+* **`tool_guid`** (string or null)
   The GUID of a code scanning tool. Only results by this tool will be listed. Note that some code scanning tools may not include a GUID in their analysis data. You can specify the tool by using either tool\_guid or tool\_name, but not both.
 
 * **`before`** (string)
@@ -473,7 +473,7 @@ OAuth app tokens and personal access tokens (classic) need the security\_events 
 * **`tool_name`** (string)
   The name of a code scanning tool. Only results by this tool will be listed. You can specify the tool by using either tool\_name or tool\_guid, but not both.
 
-* **`tool_guid`** (string,null)
+* **`tool_guid`** (string or null)
   The GUID of a code scanning tool. Only results by this tool will be listed. Note that some code scanning tools may not include a GUID in their analysis data. You can specify the tool by using either tool\_guid or tool\_name, but not both.
 
 * **`page`** (integer)
@@ -1403,7 +1403,7 @@ OAuth app tokens and personal access tokens (classic) need the security\_events 
 * **`tool_name`** (string)
   The name of a code scanning tool. Only results by this tool will be listed. You can specify the tool by using either tool\_name or tool\_guid, but not both.
 
-* **`tool_guid`** (string,null)
+* **`tool_guid`** (string or null)
   The GUID of a code scanning tool. Only results by this tool will be listed. Note that some code scanning tools may not include a GUID in their analysis data. You can specify the tool by using either tool\_guid or tool\_name, but not both.
 
 * **`page`** (integer)
@@ -1657,7 +1657,7 @@ OAuth app tokens and personal access tokens (classic) need the repo scope to use
 * **`analysis_id`** (integer) (required)
   The ID of the analysis, as returned from the GET /repos/{owner}/{repo}/code-scanning/analyses operation.
 
-* **`confirm_delete`** (string,null)
+* **`confirm_delete`** (string or null)
   Allow deletion if the specified analysis is the last in a set. If you attempt to delete the final analysis in a set without setting this parameter to true, you'll get a 400 response with the message: Analysis is last of its type and deletion may result in the loss of historical alert data. Please specify confirm\_delete.
 
 ### HTTP response status codes

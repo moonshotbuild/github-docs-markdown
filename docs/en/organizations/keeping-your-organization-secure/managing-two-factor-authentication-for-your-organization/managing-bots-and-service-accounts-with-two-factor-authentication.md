@@ -23,7 +23,7 @@ You can manage shared access to bots and service accounts that have two-factor a
 
 You should ensure that 2FA is enabled for unattended or shared access accounts in your organization, such as bots and service accounts, so that these accounts stay protected. Enabling 2FA for a bot or service account ensures that users must authenticate with 2FA to sign in to the account on GitHub.com. It does not affect the account's ability to authenticate with its existing tokens in automations.
 
-> \[!NOTE]
+> [!NOTE]
 > When you require use of two-factor authentication for your organization, unattended accounts that do not use 2FA will be removed from the organization and will lose access to its repositories.
 
 ## Managing shared access to bots or service accounts with 2FA
@@ -35,7 +35,7 @@ GitHub recommends the following steps for managing shared access to bots or serv
 3. If you haven't already done so, configure 2FA for the bot or service account using an authenticator app (TOTP). For more information, see [Securing your account with two-factor authentication (2FA)](/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
 4. Store the TOTP secret that's offered during 2FA setup in the password manager used by your organization.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Don't store the password for the shared account in the password manager. You will use the password reset functionality every time you need to sign in to the shared account.
 
    If you have already configured 2FA using TOTP and you need to locate the TOTP secret, use the following steps:

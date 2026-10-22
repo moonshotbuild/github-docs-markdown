@@ -23,7 +23,7 @@ breadcrumbs:
 
 Ensure your custom agents are performant and compliant before releasing them to your company.
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot custom agents are in public preview and subject to change.
 
 ## Introduction

@@ -19,7 +19,7 @@ breadcrumbs:
 
 Provide context to the Copilot cloud agent and open pull requests, all from within your Slack workspace.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * This feature is in public preview and subject to change.
 > * GitHub Copilot uses AI. Check for mistakes. See [Application card: GitHub Copilot Agents](/en/copilot/responsible-use/agents).
@@ -28,7 +28,7 @@ Provide context to the Copilot cloud agent and open pull requests, all from with
 
 The Copilot cloud agent integration in Slack allows you to interact with Copilot cloud agent from your Slack workspace and is included in the GitHub app for Slack. Within a Slack message, thread, or direct message, you can initiate cloud agent sessions to investigate, plan, write code, and create issues and pull requests, using the context of your conversation. Your team's collaborative decisions stay connected to your code, bridging the gap between where discussions happen and where implementation lives.
 
-For information about additional Copilot integrations, see [About Copilot integrations](/en/copilot/concepts/tools/about-copilot-integrations).
+For information about additional Copilot integrations, see [Copilot integrations](/en/copilot/concepts/agent-capabilities/choosing-and-delegating-agent-work/about-copilot-integrations).
 
 ## Security considerations
 
@@ -42,7 +42,7 @@ The identity Copilot uses depends on whether you interact with it in a direct me
 
 * When you use Copilot in a shared context, such as a group thread or channel, Copilot creates artifacts, such as pull requests, under its app identity rather than your personal account.
 
-  > \[!NOTE]
+  > [!NOTE]
   > Pull requests created in a shared context by Copilot use the app's identity. If you use repository rulesets, because these pull requests aren't attributed to a person, one more approval is required before merging, as long as the repository already requires at least one approval. This is enabled by default. See [Available rules for rulesets](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets#additional-approval-for-unattributed-copilot-pull-requests).
 
 Only users with **write** access to a repository can trigger Copilot to make changes, but any conversation participant can provide input. Guest members of a workspace, and outside collaborators to repositories are not able to start or steer a session with Copilot in Slack.
@@ -66,7 +66,7 @@ When Copilot cloud agent starts work on a task from Slack, Copilot continues wor
 * You must have the GitHub integration for Slack installed. See [Integrating GitHub with Slack](/en/integrations/how-tos/slack/integrate-github-with-slack).
 * To use Copilot cloud agent, you must have cloud sandboxes enabled for your Copilot plan. See [Cloud sandboxing for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes#cloud-sandboxing).
 
-  > \[!NOTE]
+  > [!NOTE]
   > Cloud sandbox policies share the same configuration as Copilot cloud agent policies. Members of an organization or enterprise, including an enterprise with managed users may need their owner to enable cloud sandboxes and Copilot cloud agent before they can use Copilot in Slack. See [Enabling or disabling cloud sandboxes for your organization or enterprise](/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization).
 
 ## Connecting the GitHub app to your GitHub account
@@ -125,7 +125,7 @@ When you @mention the app, it uses the full thread history as context for the is
    @GitHub In octo-org/octo-repo, create an epic to redesign search, with child issues for fuzzy matching, pagination, and query caching.
    ```
 
-   > \[!NOTE] You can only use Copilot to create issues in repositories where you already have permission to create issues. This feature doesn't change your access or bypass repository permissions.
+   > [!NOTE] You can only use Copilot to create issues in repositories where you already have permission to create issues. This feature doesn't change your access or bypass repository permissions.
 
 2. Copilot creates the issues and replies with a link to each one. Each issue includes a title and description, and based on your prompt Copilot can also add metadata such as labels, assignees, and issue type.
 
@@ -140,8 +140,8 @@ If a channel does not have a default repository, Copilot sets the repository you
 
 When you do not specify a repository or branch, Copilot uses the channel's default repository and that repository's default branch.
 
-> \[!NOTE] The default repository is shared across the channel, so any change applies to everyone using Copilot in that channel.
+> [!NOTE] The default repository is shared across the channel, so any change applies to everyone using Copilot in that channel.
 
 ## Further reading
 
-* [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent) - Learn more about Copilot cloud agent and how it can support you.
+* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github) - Learn more about Copilot cloud agent and how it can support you.

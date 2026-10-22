@@ -27,7 +27,7 @@ Only running codespaces incur CPU charges. A stopped codespace incurs only stora
 
 You may want to stop and restart a codespace to apply changes to it. For example, if you change the machine type used for your codespace, you will need to stop and restart it for the change to take effect. You can also stop your codespace and choose to restart or delete it if you encounter an error or something unexpected.
 
-> \[!NOTE]
+> [!NOTE]
 > A codespace also has a maximum lifetime of 12 hours, regardless of its idle timeout setting. For more information, see [Understanding the codespace lifecycle](/en/codespaces/about-codespaces/understanding-the-codespace-lifecycle#maximum-lifetime-of-a-codespace).
 
 Regardless of where you created or access your codespaces, you can view and manage them in your browser at <https://github.com/codespaces>.
@@ -46,7 +46,7 @@ Regardless of where you created or access your codespaces, you can view and mana
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 To stop a codespace use the `gh codespace stop` subcommand and then choose the codespace you want to stop from the list that's displayed.

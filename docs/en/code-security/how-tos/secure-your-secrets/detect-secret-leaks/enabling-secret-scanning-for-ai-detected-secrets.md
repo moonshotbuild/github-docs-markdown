@@ -25,7 +25,7 @@ You can enable generic secret detection for your repository or organization. Ale
 
 You can enable generic secret detection in the security settings page of your repository or organization.
 
-> \[!NOTE]
+> [!NOTE]
 > You do not need a subscription to GitHub Copilot to use AI-powered generic secret detection. AI-detected secrets features are available to repositories owned by organizations and enterprises with GitHub Secret Protection enabled.
 
 ### Enabling generic secret detection for your repository

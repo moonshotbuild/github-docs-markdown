@@ -19,7 +19,7 @@ GitHub serves applications from multiple IP address ranges, which are available 
 
 You can retrieve a list of the IP addresses for your GitHub environment from the [meta](https://api.github.com/meta) API endpoint. For more information, see [REST API endpoints for meta data](/en/rest/meta).
 
-> \[!NOTE]
+> [!NOTE]
 > The list of GitHub IP addresses returned by the Meta API is not intended to be an exhaustive list. For example, IP addresses for some GitHub services might not be listed, such as LFS or GitHub Packages.
 
 These IP addresses are used by GitHub to serve our content, deliver webhooks, and perform hosted GitHub Actions builds.

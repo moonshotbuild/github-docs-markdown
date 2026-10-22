@@ -25,7 +25,7 @@ If your enterprise uses GitHub Enterprise Cloud with data residency in the US, y
 
 Users will be able to see available models for your region in the model selector in their Copilot interface.
 
-> \[!NOTE]
+> [!NOTE]
 > Model availability changes over time. New models released on GitHub.com may take additional time to become available as providers deploy regional infrastructure and obtain necessary certifications.
 
 Enabling the FedRAMP policy restricts users to the following models:
@@ -44,6 +44,7 @@ Enabling the FedRAMP policy restricts users to the following models:
 * Claude Opus 4.8
 * Claude Opus 5
 * Claude Opus 5.5
+* Gemini 4 Argon
 
 ## Client version requirements
 

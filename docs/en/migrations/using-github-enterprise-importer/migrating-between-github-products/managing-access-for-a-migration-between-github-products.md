@@ -57,12 +57,12 @@ Granting the migrator role allows you to designate other teams or individuals to
 * You can grant the migrator role to an individual user or a team. We strongly recommend that you assign the migrator role to a team. Then, you can further customize who can run a migration by adjusting team membership. See [Adding organization members to a team](/en/organizations/organizing-members-into-teams/adding-organization-members-to-a-team) or [Removing organization members from a team](/en/organizations/organizing-members-into-teams/removing-organization-members-from-a-team).
 * The migrator must use a personal access token that meets all the requirements for running migrations.
 
-> \[!WARNING]
+> [!WARNING]
 > When you grant the migrator role in an organization to a user or team, you are granting them the ability to import or export any repository in that organization.
 
 To grant the migrator role, see [Granting the migrator role](#granting-the-migrator-role).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * If you're migrating a repository between two organizations, you can grant the migrator role to the same person or team for both organizations, but you must grant each separately.
 > * You cannot grant the migrator role for enterprise accounts. Therefore, you can only run an organization migration if you're an owner of the destination enterprise. However, you can grant the migrator role to that enterprise owner for the source organization.
@@ -101,7 +101,7 @@ For other tasks, such as downloading a migration log, you only need one personal
 
 The scopes that are required for your GitHub personal access token (classic) depend on your role and the task you want to complete.
 
-> \[!NOTE]
+> [!NOTE]
 > You can only use a personal access token (classic), not a fine-grained personal access token. This means that you cannot use GitHub Enterprise Importer if your organization uses the "Restrict personal access tokens (classic) from accessing your organizations" policy. For more information, see [Enforcing policies for personal access tokens in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-personal-access-tokens-in-your-enterprise#restricting-access-by-personal-access-tokens).
 
 | Task                                                       | Enterprise owner                                                                                                                                                                                                                     | Organization owner                                                                                                                                                                                                                   | Migrator                                                                                                                                                                                                                             |
@@ -146,7 +146,7 @@ To grant the migrator role using the CLI, you must have installed the GEI extens
    gh gei grant-migrator-role --github-org ORGANIZATION --actor ACTOR --actor-type TYPE
    ```
 
-   > \[!NOTE] If you're granting the migrator role for GHE.com, you must also include the target API URL for your enterprise's subdomain. For example: `--target-api-url https://api.octocorp.ghe.com`.
+   > [!NOTE] If you're granting the migrator role for GHE.com, you must also include the target API URL for your enterprise's subdomain. For example: `--target-api-url https://api.octocorp.ghe.com`.
 
 ### Granting the migrator role with the GraphQL API
 

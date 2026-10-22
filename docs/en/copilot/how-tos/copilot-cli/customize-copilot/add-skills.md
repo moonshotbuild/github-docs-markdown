@@ -21,7 +21,7 @@ breadcrumbs:
 
 Modify Copilot's behavior and abilities when it works on particular tasks.
 
-Agent skills are folders of instructions, scripts, and resources that Copilot can load when relevant to improve its performance in specialized tasks. For more information, see [About agent skills](/en/copilot/concepts/agents/about-agent-skills).
+Agent skills are folders of instructions, scripts, and resources that Copilot can load when relevant to improve its performance in specialized tasks. For more information, see [Agent skills](/en/copilot/concepts/agents/about-agent-skills).
 
 ## Creating and adding a skill
 
@@ -39,7 +39,7 @@ To create an agent skill, you write a `SKILL.md` file and, optionally, other res
 
 3. In your skill subdirectory, create a `SKILL.md` file containing your skill's instructions.
 
-   > \[!IMPORTANT]
+   > [!IMPORTANT]
    > Skill files must be named `SKILL.md`.
 
    `SKILL.md` files are Markdown files with YAML frontmatter. In their simplest form, they include:
@@ -99,7 +99,7 @@ To create a skill that runs a script:
    ---
    ```
 
-   > \[!WARNING]
+   > [!WARNING]
    > Only pre-approve the `shell` or `bash` tools if you have reviewed this skill and any referenced scripts, and you fully trust their source. Pre-approving `shell` or `bash` removes the confirmation step for running terminal commands and can allow attacker-controlled skills or prompt injections to execute arbitrary commands in your environment. When in doubt, omit `shell` and `bash` from `allowed-tools` so that Copilot must ask for your explicit confirmation before running terminal commands.
 
 3. **Write instructions that tell Copilot how to use the script.** In the Markdown body of `SKILL.md`, describe when and how to run the script.
@@ -114,7 +114,7 @@ To create a skill that runs a script:
 
 In addition to creating your own skills, you can also add skills that other people have created.
 
-> \[!TIP]
+> [!TIP]
 > You can also use `gh skill` in GitHub CLI to search for, install, update, and publish agent skills. For more information, see [Adding agent skills for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills#managing-skills-with-github-cli).
 
 1. Download a skill directory (that is, a directory containing a SKILL.md file and, optionally, other files and subdirectories).
@@ -175,4 +175,4 @@ We recommend using **custom instructions** for simple instructions relevant to a
 
 To learn more about repository custom instructions, see [Adding repository custom instructions for GitHub Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions).
 
-To learn more about how skills differ from other customization features, see [Comparing GitHub Copilot CLI customization features](/en/copilot/concepts/agents/copilot-cli/comparing-cli-features).
+To learn more about how skills differ from other customization features, see [Comparing Copilot customization features](/en/copilot/concepts/customizations/comparing-customizations).

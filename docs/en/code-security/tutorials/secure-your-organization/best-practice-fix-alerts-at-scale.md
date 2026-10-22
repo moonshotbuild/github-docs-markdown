@@ -37,7 +37,7 @@ For this campaign, you decide to focus on XSS alerts across your organization, w
 
 On the security alerts page, start by filtering for cross-site scripting alerts. You can also use a predefined campaign template, such as **Cross-site scripting (CWE-79)**, to quickly define the scope. For information on filtering alerts, see [Filtering alerts in security overview](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview).
 
-> \[!NOTE]
+> [!NOTE]
 > Security campaigns can include up to 1000 alerts. If your organization has more than 1000 XSS alerts, narrow your filters (for example, by repository, severity, or language) until the number of matching alerts is within this limit, or plan multiple campaigns to cover the remaining alerts.
 
 If Copilot Autofix is available for your campaign, you can further refine the scope by using the `autofix:supported` filter. This allows developers to take advantage of AI-generated fix suggestions to remediate alerts more efficiently.

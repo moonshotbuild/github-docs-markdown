@@ -23,7 +23,7 @@ You can use service containers to create a Redis client in your workflow. This g
 
 This guide shows you workflow examples that configure a service container using the Docker Hub `redis` image. The workflow runs a script to create a Redis client and populate the client with data. To test that the workflow creates and populates the Redis client, the script prints the client's data to the console.
 
-> \[!NOTE]
+> [!NOTE]
 > If your workflows use Docker container actions, job containers, or service containers, then you must use a Linux runner:
 >
 > * If you are using GitHub-hosted runners, you must use an Ubuntu runner.

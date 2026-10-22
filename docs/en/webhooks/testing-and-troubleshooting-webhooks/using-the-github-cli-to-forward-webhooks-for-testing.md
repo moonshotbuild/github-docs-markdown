@@ -23,12 +23,12 @@ When you make changes to your integration code, running the code in a local envi
 
 Webhook forwarding in the GitHub CLI only works with repository and organization webhooks. If you want to test other types of webhooks locally, you'll need to do this manually. For more information, see [Testing webhooks](/en/webhooks/testing-and-troubleshooting-webhooks/testing-webhooks).
 
-> \[!WARNING]
+> [!WARNING]
 > Webhook forwarding is only designed for use during testing and development. It is not supported for use in production environments for handling live webhooks.
 
 ## Receiving webhooks with GitHub CLI
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 1. To install the GitHub CLI extension to enable webhook forwarding, use the `extension install` subcommand.
@@ -53,5 +53,5 @@ Webhook forwarding in the GitHub CLI only works with repository and organization
 
 Leave the command running in the background. It will receive all of the specified events for the specified repository and forward them to your webhook handler running at the specified URL.
 
-> \[!NOTE]
+> [!NOTE]
 > Only one person can use webhook forwarding at a time for each repository and organization. If you try to set up webhook forwarding and someone else is already working with that organization or repository, you'll receive a `Hook already exists` error.

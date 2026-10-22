@@ -27,7 +27,7 @@ Each reminder is only triggered for up to **five** repositories. Users can eithe
 
 This limit is **per reminder configuration** and **per repository owner**. If you want reminders for more than five repositories per owner, you can configure additional reminders.
 
-> \[!NOTE]
+> [!NOTE]
 > Reminders are not sent when changes are merged from upstream into a fork.
 
 ## Creating a scheduled reminder for an organization
@@ -41,7 +41,7 @@ This limit is **per reminder configuration** and **per repository owner**. If yo
 5. Under "Scheduled reminders", click **Add your first reminder**.
 6. Under "Slack workspace", click **Authorize Slack workspace** and follow the instructions.
 7. Under "Slack channel", type the name of the Slack channel where you'd like to receive notifications.
-   > \[!TIP]
+   > [!TIP]
    > If this Slack channel is private, you will need to invite the integration into the channel: `/invite @github`. In addition, you need to ask users to run `/github signin` in one of their Slack channels, otherwise they will not be @mentioned. For more information, see [Getting started](https://github.com/integrations/slack?tab=readme-ov-file#getting-started) in the Slack integrations documentation.
 8. Under "Days", click **Weekdays** <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-triangle-down" aria-label="The down triangle icon" role="img"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg> to select one or more days you'd like to receive scheduled reminders.
 9. Under "Times", click **9:00 AM** <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-triangle-down" aria-label="The down triangle icon" role="img"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg> to select one or more times you'd like to receive scheduled reminders. Optionally, to change your timezone, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-triangle-down" aria-label="The down triangle icon" role="img"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg> next to your current timezone and select a different time zone.

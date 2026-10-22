@@ -25,7 +25,7 @@ Code that doesn’t follow established design patterns (like Singleton, Factory,
 
 Copilot Chat can help you use appropriate design patterns to make your code more flexible and maintainable. For example, it can recommend converting repetitive instantiations into a Factory pattern, or using the Observer pattern to decouple tightly connected classes.
 
-> \[!NOTE] The responses described in this article are examples. Copilot Chat responses are non-deterministic, so you may get different responses from the ones shown here.
+> [!NOTE] The responses described in this article are examples. Copilot Chat responses are non-deterministic, so you may get different responses from the ones shown here.
 
 ## Example scenario
 
@@ -124,5 +124,5 @@ The module pattern improves code organization, enhances data privacy, and reduce
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

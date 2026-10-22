@@ -55,7 +55,7 @@ For more information about badges for GitHub Apps in GitHub Marketplace, see [Wr
 
 9. Under "Badge background color", type the hexadecimal color code of the background color for your badge.
 
-   > \[!NOTE]
+   > [!NOTE]
    > The "Badge background color" input field will only appear after you upload a logo.
 
 ## Next steps

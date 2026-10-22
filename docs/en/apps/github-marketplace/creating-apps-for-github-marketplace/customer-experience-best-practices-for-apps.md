@@ -19,7 +19,7 @@ breadcrumbs:
 
 Guidelines for creating an app that will be easy to use and understand.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 If you follow these best practices it will help you to provide a good customer experience.

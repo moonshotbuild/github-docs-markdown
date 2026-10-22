@@ -21,7 +21,7 @@ To move an issue to a better fitting repository, you can transfer open issues to
 
 To transfer an open issue to another repository, you must have write access to the repository the issue is in and the repository you're transferring the issue to. For more information, see [Repository roles for an organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization).
 
-> \[!NOTE]
+> [!NOTE]
 > You can only transfer issues between repositories owned by the same user or organization account. A private repository issue cannot be transferred to a public repository.
 
 When you transfer an issue, comments and assignees are retained. Labels and milestones are also retained if they're present in the target repository, with labels matching by name and milestones matching by both name and due date.
@@ -45,7 +45,7 @@ People or teams who are mentioned in the issue will receive a notification letti
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 To transfer an issue, use the `gh issue transfer` subcommand. Replace the `issue` parameter with the number or URL of the issue. Replace the `owner/repo` parameter with the name of the repository that you want to transfer the issue to, such as `octocat/octo-repo`.

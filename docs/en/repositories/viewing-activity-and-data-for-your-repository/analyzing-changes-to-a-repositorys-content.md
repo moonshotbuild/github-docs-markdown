@@ -19,7 +19,7 @@ You can see the changes to the content of a repository by analyzing the reposito
 
 ## Visualizing commits in a repository
 
-> \[!NOTE]
+> [!NOTE]
 > Certain contributor, commit, and code frequency insights are only available for repositories that have fewer than 10,000 commits.
 
 You can see all commits made to a repository in the past year (excluding merge commits) in the Commit graph.
@@ -36,7 +36,7 @@ The top graph shows commits for the entire year by week. The bottom graph shows 
 
 ## Visualizing additions and deletion to content in a repository
 
-> \[!NOTE]
+> [!NOTE]
 > Certain contributor, commit, and code frequency insights are only available for repositories that have fewer than 10,000 commits.
 
 The code frequency graph displays the content additions and deletions for each week in a repository's history.

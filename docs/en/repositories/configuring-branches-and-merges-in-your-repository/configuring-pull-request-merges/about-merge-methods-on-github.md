@@ -21,7 +21,7 @@ You can allow contributors with push access to your repository to merge their pu
 
 You can configure pull request merge options to meet your workflow needs and preferences for managing Git history. For more information, see [Configuring pull request merges](/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges). You can enforce one type of merge method, such as commit squashing or rebasing, by only enabling the desired method for your repository.
 
-> \[!NOTE]
+> [!NOTE]
 > When using the merge queue, you no longer get to choose the merge method, as this is controlled by the queue. For more information about merge queues, see [Managing a merge queue](/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue).
 >
 > Merge methods set on the repository that conflict with the merge method rule will prevent merging. For example if you do not allow rebase merging for the repository, and the merge rule only allows rebase on a branch, that merge will not be possible. For more information, see [Available rules for rulesets](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets#require-a-pull-request-before-merging).

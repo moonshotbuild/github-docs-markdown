@@ -19,7 +19,7 @@ Learn how to use custom extensions written by other GitHub CLI users.
 
 ## About GitHub CLI extensions
 
-> \[!NOTE]
+> [!NOTE]
 > Extensions outside of GitHub and GitHub CLI are not certified by GitHub and are governed by separate terms of service, privacy policy, and support documentation. To mitigate risk when using third-party extensions, audit the source code of the extension before installing or updating the extension.
 
 GitHub CLI extensions are custom GitHub CLI commands that anyone can create and use. For more information about how to create GitHub CLI extensions, see [Creating GitHub CLI extensions](/en/github-cli/github-cli/creating-github-cli-extensions).

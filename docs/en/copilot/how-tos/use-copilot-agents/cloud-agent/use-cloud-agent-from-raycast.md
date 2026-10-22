@@ -43,7 +43,7 @@ Start and track Copilot cloud agent sessions from the Raycast launcher.
 
    Copilot will start a new session. Copilot will work on the task and push changes to its pull request, then add you as a reviewer when it has finished, triggering a notification.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > If you are unable to select a specific repository when starting a task, the organization that owns the repository may have enabled OAuth app access restrictions. To learn how to request approval for the "GitHub Copilot for Raycast" OAuth app, see [Requesting organization approval for OAuth apps](/en/account-and-profile/how-tos/organization-membership/requesting-organization-approval-for-oauth-apps).
 
@@ -61,7 +61,7 @@ Start and track Copilot cloud agent sessions from the Raycast launcher.
 
    Copilot will start a new session. Copilot will work on the task and push changes to its pull request, then add you as a reviewer when it has finished, triggering a notification.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > If you are unable to select a specific repository when starting a task, the organization that owns the repository may have enabled OAuth app access restrictions. To learn how to request approval for the "GitHub Copilot for Raycast" OAuth app, see [Requesting organization approval for OAuth apps](/en/account-and-profile/how-tos/organization-membership/requesting-organization-approval-for-oauth-apps).
 
@@ -74,7 +74,7 @@ Start and track Copilot cloud agent sessions from the Raycast launcher.
    * To open the session logs in the browser, press <kbd>Command</kbd>+<kbd>Enter</kbd> (macOS) or <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (Windows).
    * To open the linked pull request, press <kbd>Command</kbd>+<kbd>P</kbd> (macOS) or <kbd>Ctrl</kbd>+<kbd>P</kbd> (Windows).
 
-> \[!NOTE]
+> [!NOTE]
 > If you are unable to see some tasks in Raycast, the organization that owns the repository may have enabled OAuth app access restrictions. To learn how to request approval for the "GitHub Copilot for Raycast" OAuth app, see [Requesting organization approval for OAuth apps](/en/account-and-profile/how-tos/organization-membership/requesting-organization-approval-for-oauth-apps).
 
 ## Further reading

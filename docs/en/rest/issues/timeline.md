@@ -25,7 +25,7 @@ You can use timeline events to display information about issues and pull request
 
 Every pull request is an issue, but not every issue is a pull request. For this reason, "shared" actions for both features, like managing assignees, labels, and milestones, are provided within the Issues endpoints.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List timeline events for an issue
@@ -845,7 +845,10 @@ Array of `Timeline Event` objects: any of:
   * `performed_via_github_app`: required, any of:
     * **null**
     * **GitHub app** (see above)
-  * `issue_type`: required, `Issue Type` (see above)
+  * `issue_type`: required, `Issue Type`:
+    * `id`: required, integer
+    * `name`: required, string
+    * `color`: string or null, enum: `gray`, `blue`, `green`, `yellow`, `orange`, `red`, `pink`, `purple`, `null`
   * `intent`: any of:
     * **null**
     * **Issue Event Intent** (see above)
@@ -861,7 +864,10 @@ Array of `Timeline Event` objects: any of:
   * `performed_via_github_app`: required, any of:
     * **null**
     * **GitHub app** (see above)
-  * `prev_issue_type`: required, `Issue Type` (see above)
+  * `prev_issue_type`: required, `Issue Type`:
+    * `id`: required, integer
+    * `name`: required, string
+    * `color`: string or null, enum: `gray`, `blue`, `green`, `yellow`, `orange`, `red`, `pink`, `purple`, `null`
   * `intent`: any of:
     * **null**
     * **Issue Event Intent** (see above)
@@ -877,8 +883,14 @@ Array of `Timeline Event` objects: any of:
   * `performed_via_github_app`: required, any of:
     * **null**
     * **GitHub app** (see above)
-  * `issue_type`: required, `Issue Type` (see above)
-  * `prev_issue_type`: required, `Issue Type` (see above)
+  * `issue_type`: required, `Issue Type`:
+    * `id`: required, integer
+    * `name`: required, string
+    * `color`: string or null, enum: `gray`, `blue`, `green`, `yellow`, `orange`, `red`, `pink`, `purple`, `null`
+  * `prev_issue_type`: required, `Issue Type`:
+    * `id`: required, integer
+    * `name`: required, string
+    * `color`: string or null, enum: `gray`, `blue`, `green`, `yellow`, `orange`, `red`, `pink`, `purple`, `null`
   * `intent`: any of:
     * **null**
     * **Issue Event Intent** (see above)
@@ -948,7 +960,11 @@ Array of `Timeline Event` objects: any of:
         * `teams_url`: required, string, format: uri
         * `trees_url`: required, string
         * `hooks_url`: required, string, format: uri
-      * `issue_type`: required, `Issue Type` (see above)
+      * `issue_type`: required, `Issue Type`:
+        * `id`: required, integer
+        * `node_id`: required, string
+        * `name`: required, string
+        * `color`: string or null
 * **Sub-issue Removed Issue Event**
   * `id`: required, integer
   * `node_id`: required, string

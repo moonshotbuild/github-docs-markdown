@@ -17,7 +17,7 @@ breadcrumbs:
 
 Issues and pull requests can be filtered based on the milestone they're associated with. Once you've associated an issue or pull request with a milestone, you can find items based on their milestones. Within a milestone, you can prioritize issues and pull requests.
 
-> \[!TIP]
+> [!TIP]
 >
 > * If you'd rather filter issues and pull requests using the Search bar, you can use the milestone search syntax. For a milestone called My Milestone, the search syntax would be: `milestone:"My Milestone"`.
 > * To clear your filter selection, click **Clear current search query, filters, and sorts**.

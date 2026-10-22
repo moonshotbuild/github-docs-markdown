@@ -43,7 +43,7 @@ When creating a topic:
 
 ## Adding topics to your repository
 
-> \[!NOTE]
+> [!NOTE]
 > Topic names are always public, even if you create the topic from within a private repository.
 
 1. On GitHub, navigate to the main page of the repository.

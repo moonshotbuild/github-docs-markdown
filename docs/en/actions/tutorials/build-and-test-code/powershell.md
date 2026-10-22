@@ -94,14 +94,14 @@ The table below describes the locations for various PowerShell modules in each G
 
 </div>
 
-> \[!NOTE]
+> [!NOTE]
 > On Ubuntu runners, Azure PowerShell modules are stored in `/usr/share/` instead of the default location of PowerShell add-on modules (i.e. `/usr/local/share/powershell/Modules/`).
 
 ## Installing dependencies
 
 GitHub-hosted runners have PowerShell 7 and Pester installed. You can use `Install-Module` to install additional dependencies from the PowerShell Gallery before building and testing your code.
 
-> \[!NOTE]
+> [!NOTE]
 > The pre-installed packages (such as Pester) used by GitHub-hosted runners are regularly updated, and can introduce significant changes. As a result, it is recommended that you always specify the required package versions by using `Install-Module` with `-MaximumVersion`.
 
 You can also cache dependencies to speed up your workflow. For more information, see [Dependency caching reference](/en/actions/reference/workflows-and-actions/dependency-caching).
@@ -122,7 +122,7 @@ jobs:
           Install-Module SqlServer, PSScriptAnalyzer
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > By default, no repositories are trusted by PowerShell. When installing modules from the PowerShell Gallery, you must explicitly set the installation policy for `PSGallery` to `Trusted`.
 
 ### Caching dependencies

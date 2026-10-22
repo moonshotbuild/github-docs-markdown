@@ -27,7 +27,7 @@ Each pull request contains everything you need to quickly and safely review and 
 
 When you merge a pull request that contains a security update, the corresponding Dependabot alert is marked as resolved for your repository. For more information about Dependabot pull requests, see [Managing pull requests for dependency updates](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/manage-dependabot-prs).
 
-> \[!NOTE]
+> [!NOTE]
 > It's good practice to have automated tests and acceptance processes in place so that checks are carried out before the pull request is merged. This is particularly important if the suggested version to upgrade to contains additional functionality, or a change that breaks your project's code. For more information about continuous integration, see [Continuous integration](/en/actions/get-started/continuous-integration).
 
 ### Customizing pull requests for security updates

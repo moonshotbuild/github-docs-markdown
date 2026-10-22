@@ -25,14 +25,14 @@ Extend Copilot's functionality by installing plugins created by the community or
 
 Plugins are packages that extend the functionality of Copilot CLI. You can install a plugin from a marketplace that you have registered with the CLI.
 
-For more information, see [About GitHub Copilot plugins](/en/copilot/concepts/agents/about-plugins).
+For more information, see [Plugins for GitHub Copilot](/en/copilot/concepts/agents/about-plugins).
 
-> \[!NOTE]
+> [!NOTE]
 > You can find help on using plugins by entering `copilot plugin [SUBCOMMAND] --help` in the terminal.
 
 ## Finding plugins
 
-Plugins are collected together in marketplaces. A marketplace is a registry of plugins that you can browse and install from. You can add a marketplace to your CLI configuration, which allows you to use the CLI to browse and install plugins from that marketplace—see [Adding plugin marketplaces](#adding-plugin-marketplaces). Copilot comes with two marketplaces already registered by default: `copilot-plugins` and `awesome-copilot`.
+Plugins are collected together in marketplaces. A marketplace is a registry of plugins that you can browse and install from. You can add a marketplace to your CLI configuration, which allows you to use the CLI to browse and install plugins from that marketplace—see [Adding plugin marketplaces](#adding-plugin-marketplaces). Copilot comes with one marketplace already registered by default: `awesome-copilot`.
 
 To use the CLI to browse the plugins in one of your registered marketplaces:
 
@@ -139,7 +139,7 @@ Or, in an interactive session:
 /plugin marketplace remove MARKETPLACE-NAME
 ```
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * When adding a marketplace you reference the marketplace using the OWNER/REPO of the GitHub repository that has been configured as a marketplace. When removing a marketplace, however, you reference the name of the marketplace as it appears in your list of registered marketplaces.
 > * If you attempt to remove a marketplace that has plugins installed, the command will fail with an error message that lists the plugins that are currently installed from that marketplace. Add the `--force` option to the command to remove the marketplace and uninstall all plugins that were installed from that marketplace.

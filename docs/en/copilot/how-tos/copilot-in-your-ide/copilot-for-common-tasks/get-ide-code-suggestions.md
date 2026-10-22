@@ -98,7 +98,7 @@ GitHub Copilot will automatically suggest code. To accept the suggestion, press 
 
 GitHub Copilot will attempt to match the context and style of your code. You can always edit the suggested code.
 
-> \[!TIP]
+> [!TIP]
 > If you receive limited or no suggestions from Copilot, you may have duplication detection enabled. For more information about duplication detection, see [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#enabling-or-disabling-suggestions-matching-public-code).
 
 ## Showing alternative suggestions
@@ -213,7 +213,7 @@ var doc = XDocument.Load("index.xhml");
 
 GitHub Copilot will suggest an implementation of the function. To accept the suggestion, press <kbd>Tab</kbd>.
 
-> \[!TIP]
+> [!TIP]
 > If you receive limited or no suggestions from Copilot, you may have duplication detection enabled. For more information about duplication detection, see [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#enabling-or-disabling-suggestions-matching-public-code).
 
 ## Showing alternative suggestions
@@ -236,7 +236,7 @@ To accept a suggestion, click "Accept" in the Copilot command palette, or press 
 
 ## Getting comment suggestions
 
-> \[!NOTE] Comment suggestions are available in Visual Studio 17.14 Preview 2 and later.
+> [!NOTE] Comment suggestions are available in Visual Studio 17.14 Preview 2 and later.
 
 GitHub Copilot can suggest comments for your code, by analyzing the code you write and generating comments that describe what the code does. For Copilot Free users, comment suggestions count towards your monthly Copilot Chat usage, not your code suggestions usage.
 
@@ -327,7 +327,7 @@ You can also describe something you want to do using natural language within a c
 
 GitHub Copilot will automatically suggest code. To accept the suggestion, press <kbd>Tab</kbd>.
 
-> \[!TIP]
+> [!TIP]
 > If you receive limited or no suggestions from Copilot, you may have duplication detection enabled. For more information about duplication detection, see [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#enabling-or-disabling-suggestions-matching-public-code).
 
 ## Showing alternative suggestions
@@ -475,7 +475,7 @@ SELECT [Purple], [Blue], [Green], [Yellow], [Orange], [Red]
 
 GitHub Copilot will automatically suggest code. To accept the suggestion, press <kbd>Tab</kbd>.
 
-> \[!TIP]
+> [!TIP]
 > If you receive limited or no suggestions from Copilot, you may have duplication detection enabled. For more information on duplication detection, see [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#enabling-or-disabling-suggestions-matching-public-code).
 
 ## Showing alternative suggestions
@@ -608,7 +608,7 @@ You can also describe something you want to do using natural language within a c
 
 GitHub Copilot will automatically suggest code.
 
-> \[!TIP]
+> [!TIP]
 > If you receive limited or no suggestions from Copilot, you may have duplication detection enabled. For more information about duplication detection, see [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#enabling-or-disabling-suggestions-matching-public-code).
 
 ## Manually triggering inline suggestions

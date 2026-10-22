@@ -49,7 +49,7 @@ For more information about Live Share, see [What is Visual Studio Live Share?](h
 
 7. Send the link in your clipboard to anyone you want to join you in your Live Share session.
 
-   > \[!IMPORTANT]
+   > [!IMPORTANT]
    > Given the level of access Live Share sessions can provide to guests, you should only share with people you trust, and you should think through the implications of what you are sharing. For more information, see [Security features of Live Share](https://learn.microsoft.com/en-us/visualstudio/liveshare/reference/security) in the Visual Studio documentation.
 
 ## Stopping a Live Share session

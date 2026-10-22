@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/copilot/how-tos/copilot-sdk"
   - title: "Set up Copilot SDK"
     href: "/en/copilot/how-tos/copilot-sdk/setup"
-  - title: "In-process runtime"
+  - title: "In Process Runtime"
     href: "/en/copilot/how-tos/copilot-sdk/setup/in-process-runtime"
 ---
 
@@ -25,7 +25,7 @@ In-process hosting loads the native Copilot runtime into your application proces
 
 <!-- Suppressed: GHD046 (outdated release terminology), GHD005 (hardcoded data variable) -->
 
-> \[!WARNING]
+> [!WARNING]
 > In-process hosting is experimental in every SDK. Test startup, model turns, and shutdown behavior on every operating system and architecture that you deploy.
 
 ## When to use in-process hosting

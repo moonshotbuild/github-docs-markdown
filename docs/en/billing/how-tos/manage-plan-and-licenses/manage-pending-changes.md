@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can view and cancel pending changes to your plan before they take effect on your next billing date.
 
-> \[!NOTE] If you created a personal account after February 13, 2025, your billing experience may differ from the information in this article. You can manage your plan and view billing details in the new billing platform. See [Get started with billing](/en/billing/get-started).
+> [!NOTE] If you created a personal account after February 13, 2025, your billing experience may differ from the information in this article. You can manage your plan and view billing details in the new billing platform. See [Get started with billing](/en/billing/get-started).
 
 ## About pending plan changes
 

@@ -64,7 +64,7 @@ You need to repeat these steps for each private package that you want Dependabot
 
 Once access is granted, Dependabot can pull from those packages automatically. You can remove any personal access token-based registry entries in `dependabot.yml` that you previously configured for these packages.
 
-> \[!NOTE]
+> [!NOTE]
 > This method works for every GitHub Packages ecosystem that Dependabot supports, including container images in Container registry.
 
 For more information about how automatic access works, see [Automatic Dependabot access to GitHub-hosted registries](/en/code-security/concepts/supply-chain-security/automatic-dependabot-access-to-github-registries). For more information about package access settings, see [Configuring a package's access control and visibility](/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility#ensuring-workflow-access-to-your-package).
@@ -205,7 +205,7 @@ Dependabot can use OpenID Connect (OIDC) to authenticate with private registries
 
 With OIDC-based authentication, Dependabot update jobs can dynamically obtain short-lived credentials from your cloud identity provider, just like GitHub Actions workflows using OIDC federation.
 
-> \[!TIP]
+> [!TIP]
 > OIDC authentication is also available for **organization-level** private registries, which you can configure through the organization settings UI or the REST API. For more information, see [Giving security features access to private registries](/en/code-security/how-tos/secure-at-scale/configure-organization-security/manage-usage-and-access/giving-org-access-private-registries#configuring-oidc-authentication-for-a-private-registry).
 
 Dependabot supports OIDC authentication for any registry type that uses `username` and `password` authentication, when the registry is hosted on one of the following providers:
@@ -518,7 +518,7 @@ The `npm-registry` type supports username and password, or token. If the account
 
 When using username and password, your `.npmrc`'s auth token may contain a `base64` encoded `_password`; however, the password referenced in your Dependabot configuration file must be the original (unencoded) password.
 
-> \[!NOTE]
+> [!NOTE]
 > When using `npm.pkg.github.com`, don't include a path. Instead use the `https://npm.pkg.github.com` URL without a path.
 
 ```yaml copy

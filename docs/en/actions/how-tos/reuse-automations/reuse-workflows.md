@@ -52,7 +52,7 @@ You can define inputs and secrets, which can be passed from the caller workflow 
 
 2. In the reusable workflow, reference the input or secret that you defined in the `on` key in the previous step.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If the secrets are inherited by using `secrets: inherit` in the calling workflow, you can reference them even if they are not explicitly defined in the `on` key. For more information, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idsecretsinherit).
 
    ```yaml
@@ -74,7 +74,7 @@ You can define inputs and secrets, which can be passed from the caller workflow 
 
    If an environment secret has the same name as a repository or organization secret, the environment secret takes precedence. This applies when the caller uses either `secrets: inherit` or `${{ secrets.MY_SECRET }}`. The job that sets `environment` receives the environment secret's value.
 
-   > \[!WARNING]
+   > [!WARNING]
    > If the caller workflow doesn't pass an environment secret, the secret resolves to an empty string in the reusable workflow. The workflow run doesn't show an error. To make the workflow run fail instead, set `required: true` for the secret in [`on.workflow_call.secrets`](/en/actions/reference/workflows-and-actions/workflow-syntax#onworkflow_callsecrets). This setting only checks whether the caller workflow passes the secret. It doesn't check whether the secret has a value.
 
 3. Pass the input or secret from the caller workflow.
@@ -237,7 +237,7 @@ You can connect a maximum of ten levels of workflows - that is, the top-level ca
 
 Loops in the workflow tree are not permitted.
 
-> \[!NOTE] Nested reusable workflows require all workflows in the chain to be accessible to the caller, and permissions can only be maintained or reduced—not elevated—throughout the chain. For more information, see [Reusing workflow configurations](/en/actions/reference/workflows-and-actions/reusing-workflow-configurations).
+> [!NOTE] Nested reusable workflows require all workflows in the chain to be accessible to the caller, and permissions can only be maintained or reduced—not elevated—throughout the chain. For more information, see [Reusing workflow configurations](/en/actions/reference/workflows-and-actions/reusing-workflow-configurations).
 
 From within a reusable workflow you can call another reusable workflow.
 

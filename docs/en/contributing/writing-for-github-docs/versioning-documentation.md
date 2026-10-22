@@ -116,7 +116,7 @@ We use the [Liquid template language](https://shopify.github.io/liquid/basics/in
 
 If you define multiple products in the `versions` key within a page's YAML frontmatter, you can use the conditional operators `ifversion`/`else` (or `ifversion`/`elsif`/`else`) in the Markdown to control how the site renders content on the page for a particular product. For example, a feature may have more options on GitHub.com than on GitHub Enterprise Server, so you can version the content appropriately via the `versions` frontmatter, and use Liquid conditionals to describe the additional options for GitHub.com.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Use `ifversion` for product-based versioning and [feature-based versioning](#about-feature-based-versioning).
 > * Do not use `if` or `unless`.
@@ -201,7 +201,7 @@ Feature-based versioning provides named "feature flags" that simplify the mainte
 
 Each feature is managed through individual YAML files in `data/features/`.
 
-> \[!NOTE]
+> [!NOTE]
 > Do not delete `data/features/placeholder.yml` because it is used by tests.
 
 To create a new feature, first create a new YAML file with the feature name you want to use in this directory. For a feature named `meow`, that would be `data/features/meow.yml`.

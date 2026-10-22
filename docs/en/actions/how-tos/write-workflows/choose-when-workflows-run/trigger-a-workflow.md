@@ -312,7 +312,7 @@ When using the `push` and `pull_request` events, you can configure a workflow to
 
 Use the `paths` filter when you want to include file path patterns or when you want to both include and exclude file path patterns. Use the `paths-ignore` filter when you only want to exclude file path patterns. You cannot use both the `paths` and `paths-ignore` filters for the same event in a workflow. If you want to both include and exclude path patterns for a single event, use the `paths` filter prefixed with the `!` character to indicate which paths should be excluded.
 
-> \[!NOTE]
+> [!NOTE]
 > The order that you define `paths` patterns matters:
 >
 > * A matching negative pattern (prefixed with `!`) after a positive match will exclude the path.
@@ -443,7 +443,7 @@ When using the `workflow_dispatch` event, you can optionally specify inputs that
 This trigger only receives events when the workflow file is on the default branch.
 The triggered workflow receives the inputs in the `inputs` context. For more information, see [Contexts](/en/actions/reference/workflows-and-actions/contexts#inputs-context).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The workflow will also receive the inputs in the `github.event.inputs` context. The information in the `inputs` context and `github.event.inputs` context is identical except that the `inputs` context preserves Boolean values as Booleans instead of converting them to strings. The `choice` type resolves to a string and is a single selectable option.
 > * The maximum number of top-level properties for `inputs` is 25 .
@@ -626,7 +626,7 @@ jobs:
           echo 'publishing'
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Environments, environment secrets, and deployment protection rules are available in public repositories for all current GitHub plans. They are not available on legacy plans, such as Bronze, Silver, or Gold. For access to environments, environment secrets, and deployment branches in private or internal repositories, you must use GitHub Pro, GitHub Team, or GitHub Enterprise. If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, other deployment protection rules, such as a wait timer or required reviewers, are only available for public repositories.
 
 ## Available events

@@ -32,7 +32,7 @@ The GitHub MCP server supports two enterprise deployment types:
 * **[GitHub Enterprise Cloud with data residency](#configuring-the-remote-mcp-server-for-github-enterprise-cloud-with-data-residency)**: Supports both remote and local MCP server configurations
 * **[GitHub Enterprise Server](#configuring-the-local-mcp-server-for-enterprise)**: Supports **only local MCP server configuration**
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > GitHub Enterprise Server does **not** support remote MCP server hosting. If you are using GitHub Enterprise Server, you **must** use the local MCP server configuration described in [Configuring the local MCP server for enterprise](#configuring-the-local-mcp-server-for-enterprise). Skip the remote MCP server configuration section below.
 
 ## Prerequisites
@@ -42,7 +42,7 @@ The GitHub MCP server supports two enterprise deployment types:
 
 ## Configuring the remote MCP server for GitHub Enterprise Cloud with data residency
 
-> \[!NOTE]
+> [!NOTE]
 > This section applies **only** to GitHub Enterprise Cloud with data residency. If you are using GitHub Enterprise Server, skip to [Configuring the local MCP server for enterprise](#configuring-the-local-mcp-server-for-enterprise).
 
 <div class="ghd-tool vscode">

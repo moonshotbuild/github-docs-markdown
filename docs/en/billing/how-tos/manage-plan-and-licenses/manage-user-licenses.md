@@ -34,7 +34,7 @@ If you're the **owner** or **billing manager** of an organization on a GitHub Te
 7. Define the number of new seats you require. The details of the prorated cost for the remainder of the billing cycle and the total for your next bill are updated automatically.
 8. Click **Add seats** or **Remove seats**.
 
-> \[!NOTE]
+> [!NOTE]
 > **Remove seats** is only displayed when you have unassigned seats available.
 
 ### Changing members to outside collaborators

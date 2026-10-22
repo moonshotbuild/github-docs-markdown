@@ -39,7 +39,7 @@ To edit or remove reminders for the organization, run `@GitHub schedule ORGANIZA
 
 In the personal app, you can list reminders with `schedule list`.
 
-> \[!NOTE] To configure reminders for an organization, you must be a member of the organization and have write access to at least one repository.
+> [!NOTE] To configure reminders for an organization, you must be a member of the organization and have write access to at least one repository.
 
 ## Further reading
 

@@ -63,7 +63,7 @@ Alternatively, you can use a script to output command-line options and pipe this
 ./script-outputting-options.sh | copilot
 ```
 
-> \[!CAUTION]
+> [!CAUTION]
 > If you use an automatic approval option such as `--allow-all-tools`, Copilot has the same access as you do to files on your computer, and can run any shell commands that you can run, without getting your prior approval. See [Security considerations](#security-considerations), later in this article.
 
 ## Running Copilot CLI commands in a sandbox
@@ -76,7 +76,7 @@ You can enable local sandboxing inside a Copilot CLI session to restrict Copilot
 
 ### Cloud sandboxing
 
-> \[!NOTE]
+> [!NOTE]
 > Cloud sandboxes for GitHub Copilot are in public preview and subject to change.
 
 You can start a Copilot CLI session inside an isolated, cloud-hosted environment with cloud sandboxes. This is useful when you want to run code without affecting your local machine, keep a session's state between uses, continue a session from a different machine, or run multiple tasks in parallel. Cloud sandbox policies inherit from Copilot cloud agent policies, so existing security controls like firewall rules extend to cloud sandboxes without additional setup.
@@ -169,7 +169,7 @@ In local sessions on macOS and Windows, you can enable computer use to let Copil
 
   `Use the GitHub MCP server to find good first issues for a new team member to work on from octo-org/octo-repo`
 
-  > \[!NOTE]
+  > [!NOTE]
   > If you know that a specific MCP server can achieve a particular task, then specifying it in your prompt can help Copilot to deliver the results you want.
 
 * Find specific GitHub Actions workflows.
@@ -202,8 +202,8 @@ You can customize GitHub Copilot CLI in a number of ways:
 * **Custom instructions**: Custom instructions allow you to give Copilot additional context on your project and how to build, test and validate its changes. All custom instruction files now combine instead of using priority-based fallbacks. For more information, see [Adding custom instructions for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/add-custom-instructions).
 * **Model Context Protocol (MCP) servers**: MCP servers allow you to give Copilot access to different data sources and tools. For more information, see [Using GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/overview#add-an-mcp-server).
 * **Custom agents**: Custom agents allow you to create different specialized versions of Copilot for different tasks. For example, you could customize Copilot to be an expert frontend engineer following your team's guidelines. GitHub Copilot CLI includes specialized custom agents that it automatically delegates common tasks to. For more information, see [Using GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/overview#use-custom-agents).
-* **Hooks**: Hooks allow you to execute custom shell commands at key points during agent execution, enabling you to add validation, logging, security scanning, or workflow automation. See [About hooks for GitHub Copilot](/en/copilot/concepts/agents/hooks).
-* **Skills**: Skills allow you to enhance the ability of Copilot to perform specialized tasks with instructions, scripts, and resources. For more information, see [About agent skills](/en/copilot/concepts/agents/about-agent-skills).
+* **Hooks**: Hooks allow you to execute custom shell commands at key points during agent execution, enabling you to add validation, logging, security scanning, or workflow automation. See [Hooks for GitHub Copilot](/en/copilot/concepts/agents/hooks).
+* **Skills**: Skills allow you to enhance the ability of Copilot to perform specialized tasks with instructions, scripts, and resources. For more information, see [Agent skills](/en/copilot/concepts/agents/about-agent-skills).
 * **Copilot Memory**: Copilot Memory allows Copilot to build a persistent understanding of your repository by storing "memories", which are pieces of information about coding conventions, patterns, and preferences that Copilot deduces as it works. This reduces the need to repeatedly explain context in your prompts and makes future sessions more productive. For more information, see [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory).
 
 ## Security considerations

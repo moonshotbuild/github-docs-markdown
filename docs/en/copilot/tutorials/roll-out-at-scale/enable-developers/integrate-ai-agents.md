@@ -40,7 +40,7 @@ You're an engineering manager at Mona's, a boutique umbrella retailer. Your team
 
 To meet a tight deadline, you want to speed up each stage for both developers and non-developers, while keeping maintenance manageable after launch.
 
-> \[!NOTE] GitHub is continually expanding its AI-powered platform. Some of the features described in this article are in public preview, and may not be enabled for enterprises by default. You will find resources for each feature in the [Get started with agentic AI](#get-started-with-agentic-ai) section.
+> [!NOTE] GitHub is continually expanding its AI-powered platform. Some of the features described in this article are in public preview, and may not be enabled for enterprises by default. You will find resources for each feature in the [Get started with agentic AI](#get-started-with-agentic-ai) section.
 
 ## 1. Plan with Copilot Chat
 
@@ -82,7 +82,7 @@ To meet a tight deadline, you want to speed up each stage for both developers an
 
 2. When they're satisfied with the tests, the developer asks Copilot to open a pull request for the work on GitHub. Using the **GitHub MCP server**, Copilot opens a pull request with the title and description already filled in.
 
-   > \[!TIP]
+   > [!TIP]
    > Interactions with the GitHub MCP server are secured by **push protection**, which blocks secrets from being included in AI-generated responses and prevents you from exposing secrets through any actions you perform using the server (public repositories only).
 
 ## 4. Review with Copilot code review
@@ -100,7 +100,7 @@ To meet a tight deadline, you want to speed up each stage for both developers an
 
 3. A developer reviews the pull request and leaves feedback, which Copilot incorporates. The developer then merges the pull request.
 
-   > \[!TIP] Copilot cloud agent comes with default guardrails. For example, Copilot cannot merge pull requests by itself. You can define additional protections for target branches using repository rulesets.
+   > [!TIP] Copilot cloud agent comes with default guardrails. For example, Copilot cannot merge pull requests by itself. You can define additional protections for target branches using repository rulesets.
 
 4. Later, while working on a separate feature, the developer notices a small bug in the code for the AI widget. To avoid context switching, the developer delegates the work to Copilot cloud agent directly from their Copilot CLI session.
 

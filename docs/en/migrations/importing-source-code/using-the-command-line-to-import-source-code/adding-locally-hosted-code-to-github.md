@@ -23,7 +23,7 @@ If your code is stored locally on your computer and is tracked by Git or not tra
 
 Importing your source code to GitHub makes it easier for you and others to work together on projects and manage code. GitHub helps you collaborate, track changes, and organize tasks, making it simpler to build and manage projects. For more information, see [What is GitHub?](/en/get-started/start-your-journey/what-is-github).
 
-> \[!WARNING]
+> [!WARNING]
 > Never `git add`, `commit`, or `push` sensitive information, for example passwords or API keys, to a remote repository. If you've already added this information, see [Removing sensitive data from a repository](/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
 
 ### Adding existing source code to GitHub

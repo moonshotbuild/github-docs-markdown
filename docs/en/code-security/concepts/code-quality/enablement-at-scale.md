@@ -33,7 +33,7 @@ When Code Quality is enabled on a repository, CodeQL analysis runs via GitHub Ac
 
 At the organization level, you control Code Quality with a single **Repository access** setting. This setting determines which repositories have Code Quality enabled and which have it disabled: repositories within your selection are enabled, and repositories outside your selection are disabled.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Changing the **Repository access** setting can both enable **and** disable Code Quality across many repositories at once. For example, if you enable Code Quality for repositories matching a filter, any repository that does not match the filter is disabled. Before your change is applied, a dialog shows the total number of enabled and disabled repositories, along with the billing impact.
 
 ### Repository access options

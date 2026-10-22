@@ -21,7 +21,7 @@ breadcrumbs:
 
 Prevent exposed secrets from reaching protected branches by requiring contributors to resolve secret scanning alerts before merging.
 
-> \[!NOTE]
+> [!NOTE]
 > The rule to require secret scanning alerts to be resolved before merging is in public preview and subject to change.
 
 The **Require secret scanning alerts are resolved** rule is available for rulesets that target branches in repositories. You can use the rule to block a pull request from merging when either of these conditions applies:

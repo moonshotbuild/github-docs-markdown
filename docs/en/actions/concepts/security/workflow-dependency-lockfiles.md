@@ -19,7 +19,7 @@ breadcrumbs:
 
 A lockfile pins every action your workflows depend on to a verified commit, so the code you reviewed is the code that runs.
 
-> \[!NOTE] Workflow dependency lockfiles are in public preview and subject to change.
+> [!NOTE] Workflow dependency lockfiles are in public preview and subject to change.
 
 ## Why lock workflow dependencies?
 

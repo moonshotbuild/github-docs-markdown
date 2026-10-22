@@ -79,7 +79,7 @@ You can use Settings Sync to share these settings across all codespaces you open
 
 You can set a default terminal profile to choose the default shell used for all new terminal windows you open in VS Code. The default terminal profile is dependent on your operating system, so you can set a default profile for Linux, if you're using the VS Code web client, or for your local operating system, if you're using the desktop application.
 
-> \[!NOTE]
+> [!NOTE]
 > Regardless of your default profile, codespaces opened in the web client always open with a `bash` session running initially.
 
 1. To open the Visual Studio Code Command Palette, press <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Mac) or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows).
@@ -124,7 +124,7 @@ sudo apt-get install -y csh
 sudo chsh "$(id -un)" --shell "/usr/bin/csh"
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > If you create a new codespace (for example by using `gh codespace create`), you must wait sufficient time to ensure the script has finished running before you connect to the codespace over SSH. If the script hasn't finished running, you will connect to a default `bash` session.
 
 When you have connected to the codespace, for most shells, you can use the command `readlink /proc/$$/exe` to check the correct shell is running.

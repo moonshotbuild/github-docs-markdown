@@ -17,9 +17,9 @@ breadcrumbs:
 
 # Requiring two-factor authentication in your organization
 
-Organization owners can require organization members and outside collaborators to enable two-factor authentication for their personal accounts, making it harder for malicious actors to access an organization's repositories and settings.
+Organization owners can require organization members, outside collaborators, and billing managers to enable two-factor authentication for their personal accounts, making it harder for malicious actors to access an organization's repositories and settings.
 
-> \[!NOTE]
+> [!NOTE]
 > As of March 2023, GitHub required all users who contribute code on GitHub.com to enable one or more forms of two-factor authentication (2FA). If you were in an eligible group, you would have received a notification email when that group was selected for enrollment, marking the beginning of a 45-day 2FA enrollment period, and you would have seen banners asking you to enroll in 2FA on GitHub.com. If you didn't receive a notification, then you were not part of a group required to enable 2FA, though we strongly recommend it.
 >
 > For more information about the 2FA enrollment rollout, see [this blog post](https://github.blog/2023-03-09-raising-the-bar-for-software-security-github-2fa-begins-march-13).
@@ -30,10 +30,10 @@ Two-factor authentication (2FA) is an extra layer of security used when logging 
 
 You can also require two-factor authentication for organizations in an enterprise. For more information, see [Enforcing policies for security settings in your enterprise](/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-security-settings-in-your-enterprise).
 
-> \[!NOTE]
+> [!NOTE]
 > Some of the users in your organization may have been selected for mandatory two-factor authentication enrollment by GitHub, but it has no impact on how you enable the 2FA requirement for your organization.
 
-> \[!WARNING]
+> [!WARNING]
 >
 > * When you require use of two-factor authentication for your organization, members and billing managers who do not use 2FA will not be able to access your organization's resources until they enable 2FA on their account. They will retain membership even without 2FA, including consuming seats in your organization.
 > * When you require use of two-factor authentication for your organization, outside collaborators who do not use 2FA will be removed from the organization and lose access to its repositories. They will also lose access to their forks of the organization's private repositories. You can reinstate their access privileges and settings if they enable 2FA for their personal account within three months of their removal from your organization. For more information, see [Reinstating a former member of your organization](/en/organizations/managing-membership-in-your-organization/reinstating-a-former-member-of-your-organization).

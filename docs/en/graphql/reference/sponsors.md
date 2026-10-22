@@ -147,8 +147,8 @@ email address already on your GitHub account. Only relevant when the
 sponsorable is yourself. Defaults to your primary email address on file if omitted.
 * `fiscalHostLogin` (String): The username of the supported fiscal host's GitHub organization, if you want
 to receive sponsorship payouts through a fiscal host rather than directly to a
-bank account. For example,Open-Source-Collectivefor Open Source Collective
-or 'numfocus' for numFOCUS. Case insensitive. See https://docs.github.com/sponsors/receiving-sponsorships-through-github-sponsors/using-a-fiscal-host-to-receive-github-sponsors-payouts
+bank account. For example, Open-Source-Collective for Open Source Collective
+or numfocus for numFOCUS. Case insensitive. See https://docs.github.com/sponsors/receiving-sponsorships-through-github-sponsors/using-a-fiscal-host-to-receive-github-sponsors-payouts
 for more information.
 * `fiscallyHostedProjectProfileUrl` (String): The URL for your profile page on the fiscal host's website, e.g.,
 https://opencollective.com/babel or https://numfocus.org/project/bokeh.
@@ -274,7 +274,7 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorAndLifetimeValueOrder): Ordering options for results returned from the connection.
+  * `orderBy` (SponsorAndLifetimeValueOrder): Ordering options for results returned from the connection. Default: `{field: SPONSOR_LOGIN, direction: ASC}`.
 
 * `monthlyEstimatedSponsorsIncomeInCents` (Int!): The estimated monthly GitHub Sponsors income for this user/organization in cents (USD).
 * `sponsoring` (SponsorConnection!): List of users and organizations this entity is sponsoring.
@@ -282,28 +282,28 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorOrder): Ordering options for the users and organizations returned from the connection.
+  * `orderBy` (SponsorOrder): Ordering options for the users and organizations returned from the connection. Default: `{field: RELEVANCE, direction: DESC}`.
 
 * `sponsors` (SponsorConnection!): List of sponsors for this user or organization.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorOrder): Ordering options for sponsors returned from the connection.
+  * `orderBy` (SponsorOrder): Ordering options for sponsors returned from the connection. Default: `{field: RELEVANCE, direction: DESC}`.
   * `tierId` (ID): If given, will filter for sponsors at the given tier. Will only return
 sponsors whose tier the viewer is permitted to see.
 
 * `sponsorsActivities` (SponsorsActivityConnection!): Events involving this sponsorable, such as new sponsorships.
-  * `actions` ([SponsorsActivityAction!]): Filter activities to only the specified actions.
+  * `actions` ([SponsorsActivityAction!]): Filter activities to only the specified actions. Default: `[]`.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `includeAsSponsor` (Boolean): Whether to include those events where this sponsorable acted as the sponsor.
 Defaults to only including events where this sponsorable was the recipient
-of a sponsorship.
+of a sponsorship. Default: `false`.
   * `includePrivate` (Boolean): Whether or not to include private activities in the result set. Defaults to including public and private activities. Default: `true`.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorsActivityOrder): Ordering options for activity returned from the connection.
+  * `orderBy` (SponsorsActivityOrder): Ordering options for activity returned from the connection. Default: `{field: TIMESTAMP, direction: DESC}`.
   * `period` (SponsorsActivityPeriod): Filter activities returned to only those that occurred in the most recent
 specified time period. Set to ALL to avoid filtering by when the activity
 occurred. Will be ignored if since or until is given. Default: `MONTH`.
@@ -324,7 +324,7 @@ get the sponsorship back even if it has been cancelled. Default: `true`.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorshipNewsletterOrder): Ordering options for sponsorship updates returned from the connection.
+  * `orderBy` (SponsorshipNewsletterOrder): Ordering options for sponsorship updates returned from the connection. Default: `{field: CREATED_AT, direction: DESC}`.
 
 * `sponsorshipsAsMaintainer` (SponsorshipConnection!): The sponsorships where this user or organization is the maintainer receiving the funds.
   * `activeOnly` (Boolean): Whether to include only sponsorships that are active right now, versus all
@@ -332,7 +332,7 @@ sponsorships this maintainer has ever received. Default: `true`.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
-  * `includePrivate` (Boolean): Whether or not to include private sponsorships in the result set.
+  * `includePrivate` (Boolean): Whether or not to include private sponsorships in the result set. Default: `false`.
   * `last` (Int): Returns the last n elements from the list.
   * `orderBy` (SponsorshipOrder): Ordering options for sponsorships returned from this connection. If left
 blank, the sponsorships will be ordered based on relevancy to the viewer.
@@ -353,7 +353,7 @@ blank, the sponsorships will be ordered based on relevancy to the viewer.
 spent on GitHub to fund sponsorships. Only returns a value when viewed by the
 user themselves or by a user who can manage sponsorships for the requested organization.
   * `since` (DateTime): Filter payments to those that occurred on or after this time.
-  * `sponsorableLogins` ([String!]): Filter payments to those made to the users or organizations with the specified usernames.
+  * `sponsorableLogins` ([String!]): Filter payments to those made to the users or organizations with the specified usernames. Default: `[]`.
   * `until` (DateTime): Filter payments to those that occurred before this time.
 
 * `viewerCanSponsor` (Boolean!): Whether or not the viewer is able to sponsor this user/organization.
@@ -434,8 +434,8 @@ included. Used when onlyDependencies = true.
 * `onlyDependencies` (Boolean): Whether only sponsorables who own the viewer's dependencies will be
 returned. Must be authenticated to use. Can check an organization instead
 for their dependencies owned by sponsorables by passing
-orgLoginForDependencies.
-* `orderBy` (SponsorableOrder): Ordering options for users and organizations returned from the connection.
+orgLoginForDependencies. Default: `false`.
+* `orderBy` (SponsorableOrder): Ordering options for users and organizations returned from the connection. Default: `{field: LOGIN, direction: ASC}`.
 * `orgLoginForDependencies` (String): Optional organization username for whose dependencies should be checked.
 Used when onlyDependencies = true. Omit to check your own dependencies. If
 you are not an administrator of the organization, only dependencies from its
@@ -1045,7 +1045,7 @@ themselves, or by an admin of the sponsorable organization.
 * `dashboardResourcePath` (URI!): The HTTP path for the Sponsors dashboard for this Sponsors listing.
 * `dashboardUrl` (URI!): The HTTP URL for the Sponsors dashboard for this Sponsors listing.
 * `featuredItems` ([SponsorsListingFeaturedItem!]!): The records featured on the GitHub Sponsors profile.
-  * `featureableTypes` ([SponsorsListingFeaturedItemFeatureableType!]): The types of featured items to return.
+  * `featureableTypes` ([SponsorsListingFeaturedItemFeatureableType!]): The types of featured items to return. Default: `[REPOSITORY, USER]`.
 
 * `fiscalHost` (Organization): The fiscal host used for payments, if any. Will only return a value when
 queried by the maintainer themselves, or by an admin of the sponsorable organization.
@@ -1070,9 +1070,9 @@ the sponsorable organization.
 listing can see draft tiers. Only admins of the Sponsors listing and viewers
 who are currently sponsoring on a retired tier can see those retired tiers.
 Defaults to including only published tiers, which are visible to anyone who
-can see the GitHub Sponsors profile.
+can see the GitHub Sponsors profile. Default: `false`.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorsTierOrder): Ordering options for Sponsors tiers returned from the connection.
+  * `orderBy` (SponsorsTierOrder): Ordering options for Sponsors tiers returned from the connection. Default: `{field: MONTHLY_PRICE_IN_CENTS, direction: ASC}`.
 
 * `url` (URI!): The HTTP URL for this Sponsors listing.
 
@@ -1162,7 +1162,7 @@ still use retired tiers if the sponsor selected the tier before it was retired.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `includePrivate` (Boolean): Whether or not to return private sponsorships using this tier. Defaults to
-only returning public sponsorships on this tier.
+only returning public sponsorships on this tier. Default: `false`.
   * `last` (Int): Returns the last n elements from the list.
   * `orderBy` (SponsorshipOrder): Ordering options for sponsorships returned from this connection. If left
 blank, the sponsorships will be ordered based on relevancy to the viewer.

@@ -57,10 +57,10 @@ The dashboard shows 28 days of aggregated IDE telemetry data for all licensed us
 | Acceptance rate          | Percentage of Copilot suggestions accepted.                                  | Reflects relevance and trust—key indicators of value and user satisfaction.      |
 | Language and model usage | Distribution of programming languages and models used.                       | Helps identify where Copilot delivers the most value across teams.               |
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot usage metrics primarily reflect activity in supported IDEs. Server-side telemetry supplements client-side IDE telemetry to surface additional active users. Usage in Copilot Chat on GitHub.com, GitHub Mobile, Copilot code review, or Copilot CLI is not included in dashboard data.
 
-> \[!TIP]
+> [!TIP]
 > Total active users and DAU show whether developers are using Copilot at all, but not how deeply. For a signal that tracks whether trial usage is deepening over time, such as developers progressing from completions to agent workflows, see [Viewing the Copilot impact dashboard](/en/copilot/how-tos/administer-copilot/view-impact-dashboard).
 
 ## Step 3: Evaluate your trial results

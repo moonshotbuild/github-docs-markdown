@@ -81,7 +81,7 @@ export default ProductDetails;
 
 ## Example prompt
 
-> \[!NOTE] This example uses Playwright for end-to-end testing, but you can use other frameworks like Selenium or Cypress.
+> [!NOTE] This example uses Playwright for end-to-end testing, but you can use other frameworks like Selenium or Cypress.
 
 ```copilot copy prompt ref=product-details
 Using Playwright, generate an e2e test to ensure the product displays correctly.
@@ -91,7 +91,7 @@ If you have an existing test you wish Copilot to use as a model, you can use `#f
 
 ## Example response
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 Copilot will respond with an end-to-end test that you can use for your application.
 
@@ -155,5 +155,5 @@ test.describe('ProductDetails Component', () => {
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

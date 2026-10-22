@@ -17,7 +17,7 @@ breadcrumbs:
 
 Sometimes, firewalls refuse to allow SSH connections entirely. If using HTTPS cloning with credential caching is not an option, you can attempt to clone using an SSH connection made over the HTTPS port. Most firewall rules should allow this, but proxy servers may interfere.
 
-> \[!WARNING]
+> [!WARNING]
 > **GitHub Enterprise Server users:** Accessing GitHub Enterprise Server via SSH over the HTTPS port is currently not supported.\
 > **GitHub Enterprise Cloud with data residency users:** Accessing GitHub Enterprise Cloud with data residency via SSH over the HTTPS port is currently not supported.
 
@@ -31,7 +31,7 @@ $ ssh -T -p 443 git@ssh.github.com
 
 If that worked, great! If not, you may need to [follow our troubleshooting guide](/en/authentication/troubleshooting-ssh/error-permission-denied-publickey).
 
-> \[!NOTE] The hostname for port 443 is `ssh.github.com`, not `github.com`.
+> [!NOTE] The hostname for port 443 is `ssh.github.com`, not `github.com`.
 
 Now, to clone the repository, you can run the following command:
 

@@ -165,7 +165,7 @@ For an example workflow, see [Uploading storage and deployment data to the linke
 
 You can validate artifact attestations for binaries and container images and validate SBOM attestations using the GitHub CLI. For more information, see the [`attestation`](https://cli.github.com/manual/gh_attestation) section of the GitHub CLI manual.
 
-> \[!NOTE] These commands assume you are in an online environment. If you are in an offline or air-gapped environment, see [Verifying attestations offline](/en/actions/how-tos/secure-your-work/use-artifact-attestations/verify-attestations-offline).
+> [!NOTE] These commands assume you are in an online environment. If you are in an offline or air-gapped environment, see [Verifying attestations offline](/en/actions/how-tos/secure-your-work/use-artifact-attestations/verify-attestations-offline).
 
 ### Verifying an artifact attestation for binaries
 

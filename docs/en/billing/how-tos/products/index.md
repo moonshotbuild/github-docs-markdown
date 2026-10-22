@@ -25,7 +25,7 @@ Learn how to use the billing platform to pay for expanded access to GitHub produ
 
 * [Downloading license use for your enterprise or organization](/en/billing/how-tos/products/download-license-use)
 
-  Get data on consumption of GitHub, Copilot, and Advanced Security licenses.
+  Get data on consumption of GitHub, Copilot, Code Quality, and Advanced Security licenses.
 
 * [Buying Advanced Security for your organization or enterprise](/en/billing/how-tos/products/buy-advanced-security)
 
@@ -42,10 +42,6 @@ Learn how to use the billing platform to pay for expanded access to GitHub produ
 * [Managing volume licenses for GitHub Advanced Security](/en/billing/how-tos/products/manage-ghas-licenses)
 
   You can monitor and control the availability and consumption of licenses for Advanced Security in repositories in your enterprise.
-
-* [Viewing committer information for Advanced Security licenses](/en/view-ghas-committers)
-
-  You can view information about the GitHub Secret Protection and GitHub Code Security committers for your enterprise and calculate the cost for additional committers with the site admin dashboard.
 
 * [Disabling GitHub Advanced Security for your enterprise](/en/billing/how-tos/products/disable-ghas-for-enterprise)
 

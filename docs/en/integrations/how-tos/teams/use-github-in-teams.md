@@ -23,13 +23,13 @@ The GitHub integration for Microsoft Teams lets you connect your GitHub account 
 
 You can also use the GitHub integration to initiate and steer Copilot cloud agent sessions in a conversation, including asking Copilot to perform deep research, planning and triage tasks within a thread. Teammates can collaborate with each other and the agent, add context, correct assumptions, continue an agent task, and review the resulting artifacts.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * GitHub Copilot in Teams is currently in public preview and subject to change.
 
 ## Connecting your GitHub account to the GitHub app in Teams
 
-> \[!NOTE] Before you can connect your accounts, an admin for your Teams workspace must have installed the GitHub app. See [Integrating GitHub with Teams](/en/integrations/how-tos/teams/integrate-github-with-teams).
+> [!NOTE] Before you can connect your accounts, an admin for your Teams workspace must have installed the GitHub app. See [Integrating GitHub with Teams](/en/integrations/how-tos/teams/integrate-github-with-teams).
 
 1. In Teams, open a direct message or personal app conversation with the GitHub app.
 2. Run `@GitHub` and follow the prompts in Teams and in your browser to authorize the connection.
@@ -47,7 +47,7 @@ In channels, start commands with `@GitHub`. In the personal app, omit the prefix
 | `@GitHub subscribe list`          | Lists all repositories the channel is subscribed to.                           |
 | `@GitHub subscribe list features` | Lists all repositories and notification features the channel is subscribed to. |
 
-> \[!NOTE] When you subscribe a channel to a repository, you may be prompted to install the GitHub app and grant access to the repository or organization.
+> [!NOTE] When you subscribe a channel to a repository, you may be prompted to install the GitHub app and grant access to the repository or organization.
 
 ## Working with issues and pull requests
 
@@ -55,7 +55,7 @@ You can create, comment on, and manage issues and pull requests directly from Te
 
 To have Copilot perform an action, @mention the app in any Teams chat by typing `@GitHub` followed by your task, and see [Initiating Copilot cloud agent sessions within Teams](#initiating--data-variablescopilotcopilot_cloud_agent--sessions-within-teams) below.
 
-> \[!NOTE]
+> [!NOTE]
 > Pull requests created in a shared context by Copilot use the app's identity. If you use repository rulesets, because these pull requests aren't attributed to a person, one more approval is required before merging, as long as the repository already requires at least one approval. This is enabled by default. See [Available rules for rulesets](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets#additional-approval-for-unattributed-copilot-pull-requests).
 
 For step-by-step instructions to work with issues and pull requests independent of Copilot, see [Creating issues with the GitHub integration in Teams](/en/integrations/tutorials/teams/create-issues) and [Managing issues with the GitHub integration in Teams](/en/integrations/tutorials/teams/manage-issues).
@@ -64,7 +64,7 @@ For step-by-step instructions to work with issues and pull requests independent 
 
 When you subscribe to a repository in Teams, you will see yourself mentioned in notifications for repository events in which you have been referenced. Mentions require you to be logged in to your GitHub account through the GitHub app in Teams.
 
-> \[!NOTE] If you have multiple Teams workspaces where you use the GitHub app, mentions will only work in the workspace where you logged in most recently.
+> [!NOTE] If you have multiple Teams workspaces where you use the GitHub app, mentions will only work in the workspace where you logged in most recently.
 
 The following are scenarios in which you will be mentioned:
 

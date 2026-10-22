@@ -21,7 +21,7 @@ Resolve merge conflicts using the command line by identifying conflicting change
 
 Merge conflicts happen when competing changes are made to the same line of a file, or when one person edits a file and another person deletes the same file. See [Merge conflicts](/en/pull-requests/reference/merge-conflicts).
 
-> \[!TIP]
+> [!TIP]
 > You can use the conflict editor on GitHub to resolve competing line change merge conflicts between branches that are part of a pull request. See [Resolving a merge conflict on GitHub](/en/pull-requests/how-tos/merge-and-close-pull-requests/resolving-a-merge-conflict-on-github).
 
 ## Competing line change merge conflicts

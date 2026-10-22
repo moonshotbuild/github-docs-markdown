@@ -19,7 +19,7 @@ breadcrumbs:
 
 Upgrading or downgrading a GitHub Marketplace app triggers the marketplace_purchase event webhook with the changed action, which kicks off the upgrade or downgrade flow.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 For more information about upgrading and downgrading as it relates to billing, see [Using the GitHub Marketplace API in your app](/en/apps/github-marketplace/using-the-github-marketplace-api-in-your-app).
@@ -46,7 +46,7 @@ When a customer downgrades a plan, it's recommended to review whether a customer
 
 To encourage people to upgrade you can display an upgrade URL in your app's UI. See [About upgrade URLs](#about-upgrade-urls) for more details.
 
-> \[!NOTE]
+> [!NOTE]
 > We recommend performing a periodic synchronization using `GET /marketplace_listing/plans/:id/accounts` to ensure your app has the correct plan, billing cycle information, and unit count (for per-unit pricing) for each account.
 
 ## Failed upgrade payments
@@ -65,5 +65,5 @@ For example, if you notice that a customer is on a 5 person plan and needs to mo
 
 Use the `LISTING_PLAN_NUMBER` for the plan the customer would like to purchase. When you create new pricing plans they receive a `LISTING_PLAN_NUMBER`, which is unique to each plan across your listing, and a `LISTING_PLAN_ID`, which is unique to each plan in the GitHub Marketplace. You can find these numbers when you [List plans](/en/rest/apps#list-plans), which identifies your listing's pricing plans. Use the `LISTING_PLAN_ID` and the [`GET /marketplace_listing/plans/{plan_id}/accounts`](/en/rest/apps/marketplace#list-accounts-for-a-plan) endpoint to get the `CUSTOMER_ACCOUNT_ID`.
 
-> \[!NOTE]
+> [!NOTE]
 > If your customer upgrades to additional units (such as seats), you can still send them to the appropriate plan for their purchase, but we are unable to support `unit_count` parameters at this time.

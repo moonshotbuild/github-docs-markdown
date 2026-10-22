@@ -146,7 +146,7 @@ The GitHub CLI supports the following blob storage providers:
 * Amazon Web Services (AWS) S3
 * Azure Blob Storage
 
-> \[!NOTE]
+> [!NOTE]
 > You only need to configure blob storage if you use GitHub Enterprise Server versions 3.8 or higher. If you use GitHub Enterprise Server versions 3.7 or lower, skip to [Step 4: Set up a migration source in GitHub Enterprise Cloud](#step-4-set-up-a-migration-source-in-github-enterprise-cloud).
 >
 > Blob storage is required to migrate repositories with large Git source or metadata. If you use GitHub Enterprise Server versions 3.7 or lower, you will not be able to perform migrations where your Git source or metadata exports exceed 2GB. To perform these migrations, update to GitHub Enterprise Server versions 3.8 or higher.
@@ -182,14 +182,14 @@ You will also need an AWS access key and secret key with the following permissio
 }
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Enterprise Importer does not delete your archive from AWS after your migration is finished. To reduce storage costs, we recommend configuring auto-deletion of your archive after a period of time. For more information, see [Setting lifecycle configuration on a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-set-lifecycle-configuration-intro.html) in the AWS documentation.
 
 #### Setting up an Azure Blob Storage account
 
 In Azure, create a storage account and make a note of your connection string. For more information, see [Manage storage account access keys](https://learn.microsoft.com/en-gb/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#regenerate-access-keys) in Microsoft Docs.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Enterprise Importer does not delete your archive from Azure Blob Storage after your migration is finished. To reduce storage costs, we recommend configuring auto-deletion of your archive after a period of time. For more information, see [Optimize costs by automatically managing the data lifecycle](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview) in Microsoft Docs.
 
 #### Configuring blob storage in the Management Console of your GitHub Enterprise Server instance
@@ -210,12 +210,12 @@ After you set up an AWS S3 storage bucket or Azure Blob Storage account, configu
 
 7. Optionally, to import storage settings you configured for GitHub Actions, select **Copy Storage settings from Actions**. For more information see, [Enabling GitHub Actions with Azure Blob storage](/en/enterprise-server@3.22/admin/managing-github-actions-for-your-enterprise/enabling-github-actions-for-github-enterprise-server/enabling-github-actions-with-azure-blob-storage) and [Enabling GitHub Actions with Amazon S3 storage](/en/enterprise-server@3.22/admin/managing-github-actions-for-your-enterprise/enabling-github-actions-for-github-enterprise-server/enabling-github-actions-with-amazon-s3-storage).
 
-   > \[!NOTE]
+   > [!NOTE]
    > After copying your storage settings, you may still need to update the configuration of your cloud storage account to work with GitHub Enterprise Importer. In particular, you must ensure that GitHub's IP addresses are allowlisted. For more information, see [Managing access for a migration between GitHub products](/en/migrations/using-github-enterprise-importer/migrating-between-github-products/managing-access-for-a-migration-between-github-products#configuring-ip-allow-lists-for-migrations).
 
 8. If you do not import storage settings from GitHub Actions, select either **Azure Blob Storage** or **Amazon S3** and fill in the required details.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you use Amazon S3, you must set the "AWS Service URL" to the standard endpoint for the AWS region where your bucket is located. For example, if your bucket is located in the `eu-west-1` region, the "AWS Service URL" would be `https://s3.eu-west-1.amazonaws.com`. Your GitHub Enterprise Server instance's network must allow access to this host. Gateway endpoints are not supported, such as `bucket.vpce-0e25b8cdd720f900e-argc85vg.s3.eu-west-1.vpce.amazonaws.com`. For more information about gateway endpoints, see [Gateway endpoints for Amazon S3](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html) in the AWS documentation.
 
 9. Click **Test storage settings**.
@@ -247,7 +247,7 @@ mutation createMigrationSource($name: String!, $url: String!, $ownerId: ID!) {
 }
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Make sure to use `GITHUB_ARCHIVE` for `type`.
 
 | Query variable | Description                                                                                                               |
@@ -340,7 +340,7 @@ Content-Type: application/json
 
 For more information, see [Get an organization migration status](/en/rest/migrations/orgs#get-an-organization-migration-status).
 
-> \[!NOTE]
+> [!NOTE]
 > If your migration moves to the `failed` state rather than the `exported` state, try starting the migration again. If the migration fails repeatedly, we recommend generating the archives using `ghe-migrator` instead of the API.
 >
 > Follow the steps in [Exporting migration data from your enterprise](/en/enterprise-server@3.22/migrations/using-ghe-migrator/exporting-migration-data-from-github-enterprise-server), adding only one repository to the migration. At the end of the process, you will have a single migration archive with your Git source and metadata, and you can move to step 6 in this article.
@@ -555,7 +555,7 @@ Alternatively, you can download a standalone binary from the [releases page](htt
 
 1. Install the GitHub CLI. For installation instructions for GitHub CLI, see the [GitHub CLI repository](https://github.com/cli/cli#installation).
 
-   > \[!NOTE]
+   > [!NOTE]
    > You need version 2.4.0 or newer of GitHub CLI. You can check the version you have installed with the `gh --version` command.
 2. Install the GEI extension.
 
@@ -670,14 +670,14 @@ You will also need an AWS access key and secret key with the following permissio
 }
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Enterprise Importer does not delete your archive from AWS after your migration is finished. To reduce storage costs, we recommend configuring auto-deletion of your archive after a period of time. For more information, see [Setting lifecycle configuration on a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-set-lifecycle-configuration-intro.html) in the AWS documentation.
 
 ### Setting up an Azure Blob Storage account
 
 In Azure, create a storage account and make a note of your connection string. For more information, see [Manage storage account access keys](https://learn.microsoft.com/en-gb/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#regenerate-access-keys) in Microsoft Docs.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Enterprise Importer does not delete your archive from Azure Blob Storage after your migration is finished. To reduce storage costs, we recommend configuring auto-deletion of your archive after a period of time. For more information, see [Optimize costs by automatically managing the data lifecycle](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview) in Microsoft Docs.
 
 ### Using local storage (GHES 3.16+)
@@ -706,7 +706,7 @@ If you set up blob storage with a **cloud provider** (as opposed to local storag
 
 #### Configuring blob storage in the Management Console of your GitHub Enterprise Server instance
 
-> \[!NOTE]
+> [!NOTE]
 > You only need to configure blob storage in the Management Console if you use GitHub Enterprise Server 3.8 or higher. If you use 3.7 or lower, configure your credentials in the GitHub CLI instead.
 
 After you set up an AWS S3 storage bucket or Azure Blob Storage account, configure blob storage in the Management Console of your GitHub Enterprise Server instance. For more information about the Management Console, see [Administering your instance from the Management Console](/en/enterprise-server@3.22/admin/administering-your-instance/administering-your-instance-from-the-web-ui).
@@ -725,12 +725,12 @@ After you set up an AWS S3 storage bucket or Azure Blob Storage account, configu
 
 7. Optionally, to import storage settings you configured for GitHub Actions, select **Copy Storage settings from Actions**. For more information see, [Enabling GitHub Actions with Azure Blob storage](/en/enterprise-server@3.22/admin/managing-github-actions-for-your-enterprise/enabling-github-actions-for-github-enterprise-server/enabling-github-actions-with-azure-blob-storage) and [Enabling GitHub Actions with Amazon S3 storage](/en/enterprise-server@3.22/admin/managing-github-actions-for-your-enterprise/enabling-github-actions-for-github-enterprise-server/enabling-github-actions-with-amazon-s3-storage).
 
-   > \[!NOTE]
+   > [!NOTE]
    > After copying your storage settings, you may still need to update the configuration of your cloud storage account to work with GitHub Enterprise Importer. In particular, you must ensure that GitHub's IP addresses are allowlisted. For more information, see [Managing access for a migration between GitHub products](/en/migrations/using-github-enterprise-importer/migrating-between-github-products/managing-access-for-a-migration-between-github-products#configuring-ip-allow-lists-for-migrations).
 
 8. If you do not import storage settings from GitHub Actions, select either **Azure Blob Storage** or **Amazon S3** and fill in the required details.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you use Amazon S3, you must set the "AWS Service URL" to the standard endpoint for the AWS region where your bucket is located. For example, if your bucket is located in the `eu-west-1` region, the "AWS Service URL" would be `https://s3.eu-west-1.amazonaws.com`. Your GitHub Enterprise Server instance's network must allow access to this host. Gateway endpoints are not supported, such as `bucket.vpce-0e25b8cdd720f900e-argc85vg.s3.eu-west-1.vpce.amazonaws.com`. For more information about gateway endpoints, see [Gateway endpoints for Amazon S3](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html) in the AWS documentation.
 
 9. Click **Test storage settings**.
@@ -739,7 +739,7 @@ After you set up an AWS S3 storage bucket or Azure Blob Storage account, configu
 
 ### Configuring your blob storage credentials in the GitHub CLI
 
-> \[!NOTE]
+> [!NOTE]
 > You only need to configure your blob storage credentials in the GitHub CLI if you use GitHub Enterprise Server 3.7 or lower. If you use 3.8 or higher, configure blob storage in the Management Console instead.
 >
 > If you configure your blob storage credentials in the GitHub CLI, you will not be able to perform migrations where your Git source or metadata exports exceed 2GB. To perform these migrations, upgrade to GitHub Enterprise Server 3.8 or higher.
@@ -762,7 +762,7 @@ If you have configured firewall rules on your storage account, ensure you have a
 
 If you want to migrate multiple repositories to GitHub Enterprise Cloud at once, use the GitHub CLI to generate a migration script. The resulting script will contain a list of migration commands, one per repository.
 
-> \[!NOTE]
+> [!NOTE]
 > Generating a script outputs a PowerShell script. If you're using Terminal, you will need to output the script with the `.ps1` file extension and install PowerShell for either [Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-macos?view=powershell-7.2) or [Linux](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-linux?view=powershell-7.2) to run it.
 
 If you want to migrate a single repository, skip to the next step.

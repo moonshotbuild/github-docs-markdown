@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can use your organization's news feed to keep up with recent activity on repositories owned by that organization.
 
-> \[!NOTE] The organization news feed is not available with Enterprise Managed Users.
+> [!NOTE] The organization news feed is not available with Enterprise Managed Users.
 
 An organization's news feed shows other people's activity on repositories owned by that organization. You can use your organization's news feed to see when someone opens, closes, or merges an issue or pull request, creates or deletes a branch, creates a tag or release, comments on an issue, pull request, or commit, or pushes new commits to GitHub.
 

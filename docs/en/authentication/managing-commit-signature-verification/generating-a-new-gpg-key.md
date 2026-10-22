@@ -30,7 +30,7 @@ GitHub supports several GPG key algorithms. If you try to add a key generated wi
 
 ## Generating a GPG key
 
-> \[!NOTE]
+> [!NOTE]
 > Before generating a new GPG key, make sure you've verified your email address. If you haven't verified your email address, you won't be able to sign commits and tags with GPG. For more information, see [Verifying your email address](/en/account-and-profile/how-tos/email-preferences/verifying-your-email-address).
 
 1. Download and install [the GPG command line tools](https://www.gnupg.org/download/) for your operating system. We generally recommend installing the latest version for your operating system.
@@ -60,7 +60,7 @@ GitHub supports several GPG key algorithms. If you try to add a key generated wi
 
 8. Enter your user ID information.
 
-   > \[!NOTE]
+   > [!NOTE]
    > When asked to enter your email address, ensure that you enter the verified email address for your GitHub account.
    > To keep your email address private, use your GitHub-provided `no-reply` email address.
    > For more information, see [Verifying your email address](/en/account-and-profile/how-tos/email-preferences/verifying-your-email-address) and [Setting your commit email address](/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).
@@ -73,7 +73,7 @@ GitHub supports several GPG key algorithms. If you try to add a key generated wi
     gpg --list-secret-keys --keyid-format=long
     ```
 
-    > \[!NOTE]
+    > [!NOTE]
     > Some GPG installations on Linux may require you to use `gpg2 --list-keys --keyid-format LONG` to view a list of your existing keys instead. In this case you will also need to configure Git to use `gpg2` by running `git config --global gpg.program gpg2`.
 
 11. From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`:

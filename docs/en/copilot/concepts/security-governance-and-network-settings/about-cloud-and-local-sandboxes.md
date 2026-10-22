@@ -19,7 +19,7 @@ breadcrumbs:
 
 Cloud and local sandboxes provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine or in fully isolated cloud environments.
 
-> \[!NOTE]
+> [!NOTE]
 > Cloud sandboxes for GitHub Copilot are in public preview and subject to change.
 
 ## Introduction
@@ -132,7 +132,7 @@ Cloud sandboxing lets you run sessions inside fully isolated, ephemeral Linux en
 
 Cloud sandboxing is built on Azure Container Apps Sandboxes, with GitHub providing the identity, policy, and billing layer.
 
-> \[!NOTE]
+> [!NOTE]
 > If you get Copilot through an organization, access to cloud sandboxing depends on it being enabled in the organization or enterprise settings, where it is disabled by default. For more information, see [Enabling or disabling cloud sandboxes for your organization or enterprise](/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization).
 
 ### Starting a cloud sandbox session
@@ -143,14 +143,14 @@ To start a cloud-backed session, run the following command:
 copilot ‑‑cloud ‑‑experimental
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Cloud sandboxing is currently an experimental feature. To use it, you must have experimental features enabled for Copilot CLI—for example, by using the `‑‑experimental` command line option when starting a CLI session, as shown above.
 
 The `‑‑cloud` command line option launches an interactive Copilot CLI session inside a cloud sandbox. You can prompt Copilot to perform tasks, run shell commands, and iterate on code, the same way you would in a local session. The commands that Copilot runs execute in the cloud environment, not on your local machine.
 
 Running `copilot ‑‑cloud` starts a single Copilot CLI session in a cloud sandbox. It does not affect future Copilot sessions. Each time you want to run a new session in a cloud sandbox, you must start the CLI with the `‑‑cloud` option.
 
-> \[!NOTE]
+> [!NOTE]
 > Cloud sandboxing is only available for interactive Copilot CLI sessions. You can't run the CLI programmatically in a cloud sandbox—that is, you can't combine the `‑‑cloud` option with the `-p` or `-i` options.
 
 In the GitHub Copilot app, you don't use a command to start a cloud sandbox session. Instead, choose the cloud sandbox option when you create a new session. For more information, see [Working with agent sessions in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/agent-sessions#starting-a-session).

@@ -23,7 +23,7 @@ This article lists all available filters (qualifiers) for security overview. The
 
 For information about how to apply filters, see [Filtering alerts in security overview](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview).
 
-> \[!NOTE]
+> [!NOTE]
 > The information shown by security overview varies according to your access to repositories and organizations, and according to whether Advanced Security features are used by those repositories and organizations. For more information, see [Security overview](/en/code-security/concepts/security-at-scale/security-overview).
 
 ## Filter logic for security overview
@@ -63,7 +63,7 @@ Currently, there are two logical operators that you can apply to your filters on
 
 **Available in:** Organization-level "Overview" view
 
-> \[!NOTE]
+> [!NOTE]
 > Repository properties are in public preview and subject to change.
 
 Custom repository properties are metadata that organization owners can add to repositories in an organization, providing a way to group repositories by the information you are interested in. For example, you can add custom repository properties for compliance frameworks or data sensitivity. For more information on adding custom repository properties, see [Managing custom properties for repositories in your organization](/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization).
@@ -149,7 +149,7 @@ If you add custom properties to your organization and set values for repositorie
 
 **Available in:** Dependabot and code scanning views
 
-> \[!NOTE]
+> [!NOTE]
 > The integration with Microsoft Defender for Cloud is in public preview and subject to change.
 
 For more information about production context, see [Prioritizing Dependabot and code scanning alerts using production context](/en/code-security/tutorials/secure-your-organization/prioritize-alerts-in-production-code).

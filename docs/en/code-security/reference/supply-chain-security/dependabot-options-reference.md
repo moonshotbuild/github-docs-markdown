@@ -154,7 +154,7 @@ When `commit-message` is defined:
 | `prefix-development` | On supported systems, defines a different prefix to use for commits that update dependencies in the Development dependency group. |
 | `include`            | Follow the commit message prefix with additional information.                                                                     |
 
-> \[!TIP]
+> [!TIP]
 > When pull requests are raised for grouped updates, the branch name and pull request title are defined by the group `IDENTIFIER`, see [`groups`](#groups--).
 
 ### `prefix`
@@ -266,7 +266,7 @@ The table below shows the package managers that support `cooldown`. The `default
 | vcpkg              | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Supported" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg> | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-x" aria-label="Not supported" role="img"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg> |
 |                    |                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * If `semver-major-days`, `semver-minor-days`, or `semver-patch-days` are not defined, the `default-days` settings will take precedence for cooldown-based updates.
 > * The `exclude` list always take precedence over the `include` list. If a dependency is specified in both lists, it is **excluded from cooldown** and will be updated immediately.
@@ -287,7 +287,7 @@ The table below shows the package managers that support `cooldown`. The `default
 
 If you need to use more than one block in the configuration file to define updates for a single target branch of an ecosystem, you must ensure that all values are unique and there is no overlap in directories defined.
 
-> \[!NOTE]
+> [!NOTE]
 > The `directories` key supports globbing and the wildcard character `*`. These features are not supported by the `directory` key.
 
 ## `enable-beta-ecosystems` <svg version="1.1" width="24" height="24" viewBox="0 0 24 24" class="octicon octicon-versions" aria-label="Version updates only" role="img"><path d="M10 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2Zm-.5-2a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H10a.5.5 0 0 0-.5.5ZM6.17 4.165a.75.75 0 0 1-.335 1.006c-.228.114-.295.177-.315.201a.035.035 0 0 0-.008.016.423.423 0 0 0-.012.112v13c0 .07.008.102.012.112a.03.03 0 0 0 .008.016c.02.024.087.087.315.201a.749.749 0 1 1-.67 1.342c-.272-.136-.58-.315-.81-.598C4.1 19.259 4 18.893 4 18.5v-13c0-.393.1-.759.355-1.073.23-.283.538-.462.81-.598a.75.75 0 0 1 1.006.336ZM2.15 5.624a.75.75 0 0 1-.274 1.025c-.15.087-.257.17-.32.245C1.5 6.96 1.5 6.99 1.5 7v10c0 .01 0 .04.056.106.063.074.17.158.32.245a.75.75 0 0 1-.752 1.298C.73 18.421 0 17.907 0 17V7c0-.907.73-1.42 1.124-1.65a.75.75 0 0 1 1.025.274Z"></path></svg>
@@ -467,7 +467,7 @@ When `milestone` is defined:
 
 Supported value: the numeric identifier of a milestone.
 
-> \[!TIP]
+> [!TIP]
 > If you view a milestone, the final part of the page URL, after `milestone`, is the identifier. For example: `https://github.com/<org>/<repo>/milestone/3`, see [Viewing your milestone's progress](/en/issues/using-labels-and-milestones-to-track-work/viewing-your-milestones-progress).
 
 ## `multi-ecosystem-groups` <svg version="1.1" width="24" height="24" viewBox="0 0 24 24" class="octicon octicon-versions" aria-label="Version updates" role="img"><path d="M10 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2Zm-.5-2a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H10a.5.5 0 0 0-.5.5ZM6.17 4.165a.75.75 0 0 1-.335 1.006c-.228.114-.295.177-.315.201a.035.035 0 0 0-.008.016.423.423 0 0 0-.012.112v13c0 .07.008.102.012.112a.03.03 0 0 0 .008.016c.02.024.087.087.315.201a.749.749 0 1 1-.67 1.342c-.272-.136-.58-.315-.81-.598C4.1 19.259 4 18.893 4 18.5v-13c0-.393.1-.759.355-1.073.23-.283.538-.462.81-.598a.75.75 0 0 1 1.006.336ZM2.15 5.624a.75.75 0 0 1-.274 1.025c-.15.087-.257.17-.32.245C1.5 6.96 1.5 6.99 1.5 7v10c0 .01 0 .04.056.106.063.074.17.158.32.245a.75.75 0 0 1-.752 1.298C.73 18.421 0 17.907 0 17V7c0-.907.73-1.42 1.124-1.65a.75.75 0 0 1 1.025.274Z"></path></svg>
@@ -487,7 +487,7 @@ When `multi-ecosystem-groups` is used:
 
 Assign individual package ecosystems to a multi-ecosystem group using the `multi-ecosystem-group` parameter in your `updates` configuration.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Multi-ecosystem updates require specific configuration patterns and have unique parameter merging behavior. For complete setup instructions, configuration examples, and detailed parameter reference, see [Configuring multi-ecosystem updates for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configuring-multi-ecosystem-updates).
 
 ```yaml copy
@@ -519,7 +519,7 @@ Dependabot default behavior:
 
 * If five pull requests with version updates are open, no further pull requests are raised until some of those open requests are merged or closed.
 
-> \[!NOTE]
+> [!NOTE]
 > *Security update* pull requests are subject to a separate, fixed limit of 10 open pull requests, which cannot be configured using `open-pull-requests-limit`.
 
 When `open-pull-requests-limit` is defined:
@@ -629,7 +629,7 @@ Supported values: `"-"`, `_`, `/`
 
 For example, with `separator: "-"`: `dependabot/npm_and_yarn/lodash-4.17.21` becomes `dependabot-npm_and_yarn-lodash-4.17.21`.
 
-> \[!TIP]
+> [!TIP]
 > The hyphen symbol must be escaped so it is not interpreted as starting an empty YAML list.
 
 ### `prefix`
@@ -706,7 +706,7 @@ Dependabot default behavior is to rebase open pull requests when Dependabot dete
 
 When `rebase-strategy` is set to `disabled`, Dependabot stops rebasing pull requests.
 
-> \[!NOTE]
+> [!NOTE]
 > Pull requests that were open **before** you disable rebasing will continue to be rebased until 30 days after they were opened. This affects all pull requests that have conflicts with the target branch and all pull requests for version updates.
 
 ## `registries` <svg version="1.1" width="24" height="24" viewBox="0 0 24 24" class="octicon octicon-versions" aria-label="Version updates" role="img"><path d="M10 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2Zm-.5-2a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H10a.5.5 0 0 0-.5.5ZM6.17 4.165a.75.75 0 0 1-.335 1.006c-.228.114-.295.177-.315.201a.035.035 0 0 0-.008.016.423.423 0 0 0-.012.112v13c0 .07.008.102.012.112a.03.03 0 0 0 .008.016c.02.024.087.087.315.201a.749.749 0 1 1-.67 1.342c-.272-.136-.58-.315-.81-.598C4.1 19.259 4 18.893 4 18.5v-13c0-.393.1-.759.355-1.073.23-.283.538-.462.81-.598a.75.75 0 0 1 1.006.336ZM2.15 5.624a.75.75 0 0 1-.274 1.025c-.15.087-.257.17-.32.245C1.5 6.96 1.5 6.99 1.5 7v10c0 .01 0 .04.056.106.063.074.17.158.32.245a.75.75 0 0 1-.752 1.298C.73 18.421 0 17.907 0 17V7c0-.907.73-1.42 1.124-1.65a.75.75 0 0 1 1.025.274Z"></path></svg> <svg version="1.1" width="24" height="24" viewBox="0 0 24 24" class="octicon octicon-shield-check" aria-label="Security updates" role="img"><path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"></path><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"></path></svg>
@@ -757,7 +757,7 @@ Each package manager **must** define a schedule interval.
 * Use `yearly` to run on the first day of January.
 * Use `cron` for cron expression based scheduling option. See [`cronjob`](#cronjob).
 
-> \[!NOTE]
+> [!NOTE]
 > The supported values `quarterly`, `semiannually`, and `yearly` are only available on GitHub Enterprise Server from version 3.19.
 
 By default, Dependabot randomly assigns a time to apply all the updates in the configuration file. You can use the `time` and `timezone` parameters to set a specific runtime for all intervals. If you use a `cron` interval, you can define the update time with a `cronjob` expression.
@@ -794,7 +794,7 @@ Examples : `0 9 * * *`, `every day at 5pm`
 
 `0 9 * * *` is equivalent to "every day at 9am". `every day at 5pm` is equivalent to `0 17 * * *`.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Timezones must be specified in the [`timezone`](#timezone) parameter and not in the `cronjob`.
 > * A `cronjob` type schedule is required to use a `cron` interval.
@@ -952,7 +952,7 @@ New version `2.0.0`
 * `increase-if-necessary`: new constraint `^2.0.0`
 * `widen`: new constraint `>=1.0.0 <3.0.0`
 
-> \[!NOTE]
+> [!NOTE]
 > If the package manager you use does not yet support configuring the `versioning-strategy` parameter, or does not support a value you need, the strategy code is open source, so if you'd like a particular ecosystem to support a new strategy, you are always welcome to submit a pull request in <https://github.com/dependabot/dependabot-core/>.
 
 ### Versioning tags
@@ -1166,7 +1166,7 @@ The parameters used to provide authentication details for access to a private re
 
 All sensitive data used for authentication should be stored securely and referenced from that secure location, see [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries).
 
-> \[!TIP]
+> [!TIP]
 > If the account is a GitHub account, you can use a GitHub personal access token in place of the password.
 
 For more information about  OIDC support for Dependabot, see [OpenID Connect](/en/actions/concepts/security/openid-connect#oidc-support-for-dependabot) and [Configuring access to private registries for Dependabot](/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-access-to-private-registries#using-oidc-for-authentication).

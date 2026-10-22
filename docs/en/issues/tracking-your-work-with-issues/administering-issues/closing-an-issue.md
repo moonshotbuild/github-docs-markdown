@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can close an issue when bugs are fixed, feedback is acted on, or to show that work is not planned.
 
-> \[!NOTE]
+> [!NOTE]
 > You can also close issues automatically with keywords in pull requests and commit messages. For more information, see [Linking a pull request to an issue](/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
 
 1. On GitHub, navigate to the main page of the repository.

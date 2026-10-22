@@ -25,7 +25,7 @@ Learn how CodeQL builds compiled languages, including available build modes and 
 
 GitHub-hosted runners are always run with the software required by `autobuild`. If you use self-hosted runners for GitHub Actions, you may need to install additional software to use the `autobuild` process. Additionally, if your repository requires a specific version of a build tool, you may need to install it manually.
 
-> \[!NOTE]
+> [!NOTE]
 > If your workflow uses a `language` matrix, `autobuild` attempts to build each of the compiled languages listed in the matrix. Without a matrix `autobuild` attempts to build the supported compiled language that has the most source files in the repository. With the exception of Go, analysis of other compiled languages in your repository will fail unless you supply explicit build commands.
 
 ## Building C/C++
@@ -194,7 +194,7 @@ The `autobuild` process attempts to autodetect a suitable way to install the dep
 3. Finally, if configurations files for these dependency managers are not found, rearrange the repository directory structure suitable for addition to `GOPATH`, and use `go get` to install dependencies. The directory structure reverts to normal after extraction completes.
 4. Extract all Go code in the repository, similar to running `go build ./...`.
 
-> \[!NOTE]
+> [!NOTE]
 > If you use default setup, it will look for a `go.mod` file to automatically install a compatible version of the Go language.
 
 ### Extractor options for Go

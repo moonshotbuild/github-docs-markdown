@@ -17,7 +17,7 @@ breadcrumbs:
 
 Learn how to develop in a GitHub Codespaces environment, and maintain your data throughout the entire codespace lifecycle.
 
-> \[!NOTE]
+> [!NOTE]
 > This article explains the stages in the life of a codespace, from creation to deletion. If you have read the [Quickstart for GitHub Codespaces](/en/codespaces/quickstart) article and you now want to start using GitHub Codespaces for your own work, see the articles under [Developing in a codespace](/en/codespaces/developing-in-a-codespace).
 
 ## About the lifecycle of a codespace
@@ -60,7 +60,7 @@ Your data is saved, then the codespace automatically stops. To continue working,
 
 You can rebuild your codespace to implement changes you've made to your dev container configuration. For most uses, you can create a new codespace as an alternative to rebuilding a codespace. By default, when you rebuild your codespace, GitHub Codespaces will reuse images from your cache to speed up the rebuild process. Alternatively, you can perform a full rebuild, which clears your cache and rebuilds the container with fresh images.
 
-> \[!NOTE]
+> [!NOTE]
 > When you rebuild the container in a codespace, changes you have made outside the `/workspaces` directory are cleared. Changes you have made inside the `/workspaces` directory, which includes the clone of the repository or template from which you created the codespace, are preserved over a rebuild. For more information, see [Deep dive into GitHub Codespaces](/en/codespaces/about-codespaces/deep-dive#about-the-directory-structure-of-a-codespace).
 
 For more information, see [Introduction to dev containers](/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers) and [Rebuilding the container in a codespace](/en/codespaces/developing-in-a-codespace/rebuilding-the-container-in-a-codespace).

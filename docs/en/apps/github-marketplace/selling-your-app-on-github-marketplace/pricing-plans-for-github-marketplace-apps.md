@@ -19,7 +19,7 @@ breadcrumbs:
 
 Pricing plans allow you to provide your app with different levels of service or resources. You can offer up to 10 pricing plans in your GitHub Marketplace listing.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 GitHub Marketplace pricing plans can be free, flat rate, or per-unit. Prices are set, displayed, and processed in US dollars. Paid plans are restricted to apps published by verified publishers. For more information about becoming a verified publisher, see [Applying for publisher verification for your organization](/en/apps/github-marketplace/github-marketplace-overview/applying-for-publisher-verification-for-your-organization).
@@ -30,7 +30,7 @@ If the app you're listing on GitHub Marketplace has multiple plan options, you c
 
 For more information on how to create a pricing plan, see [Setting pricing plans for your listing](/en/apps/github-marketplace/listing-an-app-on-github-marketplace/setting-pricing-plans-for-your-listing).
 
-> \[!NOTE]
+> [!NOTE]
 > If you're listing an app on GitHub Marketplace, you can't list your app with a free pricing plan if you offer a paid service outside of GitHub Marketplace.
 
 ## Types of pricing plans
@@ -63,5 +63,5 @@ Free trials have a fixed length of 14 days. Customers are notified 4 days before
 
 For more information, see: [Handling new purchases and free trials](/en/apps/github-marketplace/using-the-github-marketplace-api-in-your-app/handling-new-purchases-and-free-trials).
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub expects you to delete any private customer data within 30 days of a canceled trial, beginning at the receipt of the cancellation event.

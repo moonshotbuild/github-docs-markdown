@@ -45,7 +45,7 @@ Teams are granted read permissions on any project they are added to. This permis
 
 7. In the search field, start typing the name of the project you want to add and then select the project in the list of matches.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If this change will result in increased project permissions for the team's members, GitHub will prompt you to confirm your choice.
 
 ## Removing a project from a team

@@ -19,7 +19,7 @@ breadcrumbs:
 
 Keep quality issues out of your default branch by applying autofixes, delegating remediation work to Copilot, or dismissing irrelevant findings.
 
-> \[!TIP]
+> [!TIP]
 > If you're new to Code Quality, see [Preventing code quality issues from reaching your default branch](/en/code-security/tutorials/improve-code-quality/catch-issues-before-merge?utm_campaign=code-quality-ga-july-2026\&utm_medium=docs\&utm_source=docs-fix-pr-findings-walkthrough-tip) for a guided walkthrough of how Code Quality works on pull requests.
 
 ## How Code Quality works on pull requests

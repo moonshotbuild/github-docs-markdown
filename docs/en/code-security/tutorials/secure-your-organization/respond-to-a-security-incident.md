@@ -25,7 +25,7 @@ The guidance in this article is aimed at enterprise owners, organization owners,
 
 This guide walks you through how to respond to a security incident, outlining the GitHub surfaces you can use to validate and investigate a threat, and the tools you can use to contain and remediate it.
 
-> \[!IMPORTANT] The steps here are general guidelines. Every incident is unique and may require different approaches based on the specific circumstances.
+> [!IMPORTANT] The steps here are general guidelines. Every incident is unique and may require different approaches based on the specific circumstances.
 >
 > While GitHub Support can assist with platform-specific questions, you are best placed to investigate and respond to a security incident affecting your systems and resources.
 
@@ -57,7 +57,7 @@ Try to identify the nature of the signal you're seeing. For example, does the si
 
 For help identifying these threat signals across your organization or enterprise, consult [Common security incident investigation areas](/en/code-security/reference/security-incident-response/investigation-areas).
 
-> \[!NOTE]
+> [!NOTE]
 > \[!NOTE] Runner IP addresses are dynamically assigned from shared infrastructure and may be flagged due to unrelated activity. For more information, see [Troubleshooting workflows](/en/actions/how-tos/troubleshoot-workflows#runner-ip-addresses-flagged-by-security-scanners).
 
 We suggest you don't spend too much time on deep inspection in the earlier stages of your investigation, since the initial goal is to **identify** the threat signal in order to **validate** it and strategize your response.
@@ -101,7 +101,7 @@ The next step assumes you are dealing with a real and active threat. The goal no
 
 There are several containment actions you can choose to perform to limit the attacker's access and capabilities.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > You should base your choice of actions on the nature of the threat, the potential scope, and the evidence you have at this point. We don't recommend taking all of these actions for every incident. Some actions are more disruptive or destructive than others, so you must weigh the risks and benefits of each action based on your assessment of the nature of the threat above.
 
 ### Revoke compromised credentials
@@ -178,7 +178,7 @@ To restrict access to the enterprise, organization or repository, there are seve
 
 After immediate containment, the goal now is to understand the full scope and impact of the incident, identify all IoCs and persistence mechanisms, and gather the evidence you need to contain and fully remediate the threat.
 
-> \[!IMPORTANT] Incident response is not a linear process. You may need to iterate between investigation, containment, and remediation as you discover new IoCs or understand more about the attack.
+> [!IMPORTANT] Incident response is not a linear process. You may need to iterate between investigation, containment, and remediation as you discover new IoCs or understand more about the attack.
 
 1. Based on the signals you've seen and the evidence gathered so far, develop a **working hypothesis** of what has happened and decide what additional evidence you will need to prove or disprove that hypothesis.
 2. Consider the different **investigation areas** outlined in [Common security incident investigation areas](/en/code-security/reference/security-incident-response/investigation-areas) to help guide your investigation.

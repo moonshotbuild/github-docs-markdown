@@ -15,7 +15,7 @@ breadcrumbs:
 
 GitHub publishes OAuth 2.0 and OpenID Connect metadata documents.
 
-> \[!NOTE]
+> [!NOTE]
 > The GitHub authentication metadata documents described in this article are in public preview and subject to change.
 > While the endpoints may be present on GitHub Enterprise Cloud with data residency and some versions of GitHub Enterprise Server, they contain incorrect information.
 

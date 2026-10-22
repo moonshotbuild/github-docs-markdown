@@ -17,7 +17,7 @@ breadcrumbs:
 
 Learn how to use the Model Context Protocol (MCP) to expand the agentic capabilities of Copilot Chat.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > **MCP servers in Copilot** policy for enterprises and organizations, disabled by default, controls the use of MCP.
 
@@ -45,7 +45,7 @@ Follow these best practices to get the most out of combining MCP servers with ag
 * **Provide context**: Include relevant background information about your project and requirements, including links to external resources that Copilot can access.
 * **Set boundaries**: Specify any constraints or limitations for the task. For example, if you want Copilot to only plan a new feature and not make any changes yet, specify that. You can also limit which MCP tools are enabled.
 * **Request confirmations**: Ask Copilot to confirm its understanding before proceeding with significant changes.
-* **Use prompt files or custom instructions**: You can create prompt files or custom instructions files to guide Copilot on how to behave for different MCP servers. See [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization).
+* **Use prompt files or custom instructions**: You can create prompt files or custom instructions files to guide Copilot on how to behave for different MCP servers. See [Prompt files for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-files) and [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions).
 
 ### MCP server use
 
@@ -63,7 +63,7 @@ Follow these best practices to get the most out of combining MCP servers with ag
 
 ## Example scenario: Implementing accessibility compliance
 
-> \[!NOTE] The following scenario is only meant to demonstrate the patterns and strategies you can use with agent mode and MCP servers to complete a task from start to finish; the scenario, prompts and responses are just examples.
+> [!NOTE] The following scenario is only meant to demonstrate the patterns and strategies you can use with agent mode and MCP servers to complete a task from start to finish; the scenario, prompts and responses are just examples.
 
 Let's say your team has received feedback that your customer portal needs to be updated to comply with the latest accessibility standards. You've been tasked with improving accessibility across the application with the following guidance:
 

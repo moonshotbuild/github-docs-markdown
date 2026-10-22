@@ -58,7 +58,6 @@ You can use a machine as a self-hosted runner as long as it meets these requirem
 
 * `x64` - Linux, macOS, Windows.
 * `ARM64` - Linux, macOS, Windows (currently in public preview).
-* `ARM32` - Linux.
 
 ## Routing precedence for self-hosted runners
 
@@ -111,7 +110,7 @@ To add an ephemeral runner to your environment, include the `--ephemeral` parame
 
 The GitHub Actions service will then automatically de-register the runner after it has processed one job. You can then create your own automation that wipes the runner after it has been de-registered.
 
-> \[!NOTE]
+> [!NOTE]
 > If a job is labeled for a certain type of runner, but none matching that type are available, the job does not immediately fail at the time of queueing. Instead, the job will remain queued until the 24 hour timeout period expires.
 
 Alternatively, you can create ephemeral, just-in-time runners using the REST API. For more information, see [REST API endpoints for self-hosted runners](/en/rest/actions/self-hosted-runners).
@@ -132,7 +131,7 @@ If you disable automatic updates, you will be required to update your runner ver
 
 For instructions on how to install the latest runner version, see the installation instructions for [the latest release](https://github.com/actions/runner/releases).
 
-> \[!WARNING] Any updates released for the software, including major, minor, or patch releases, are considered as an available update. If you do not perform a software update within 30 days, the GitHub Actions service will not queue jobs to your runner. In addition, if a critical security update is required, the GitHub Actions service will not queue jobs to your runner until it has been updated.
+> [!WARNING] Any updates released for the software, including major, minor, or patch releases, are considered as an available update. If you do not perform a software update within 30 days, the GitHub Actions service will not queue jobs to your runner. In addition, if a critical security update is required, the GitHub Actions service will not queue jobs to your runner until it has been updated.
 
 ### Webhooks for autoscaling
 
@@ -177,7 +176,7 @@ The GitHub Actions runner application is open source. You can contribute and fil
 
 ### Accessible domains by function
 
-> \[!NOTE]
+> [!NOTE]
 > Some of the domains listed are configured using `CNAME` records. Some firewalls might require you to add rules recursively for all `CNAME` records. Note that the `CNAME` records might change in the future, and that only the domains listed will remain constant.
 
 **Needed for essential operations:**

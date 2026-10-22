@@ -19,7 +19,7 @@ breadcrumbs:
 
 Owners and repository admins can remove an outside collaborator's access to a repository.
 
-> \[!WARNING]
+> [!WARNING]
 >
 > * When removing an outside collaborator from a private repository, the paid license count does not automatically downgrade. To pay for fewer licenses after removing users from your organization, follow the steps in [Downgrading your account's plan](/en/billing/how-tos/manage-plan-and-licenses/downgrade-plan).
 > * You are responsible for ensuring that people who have lost access to a repository delete any confidential information or intellectual property.

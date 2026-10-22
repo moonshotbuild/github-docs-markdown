@@ -13,7 +13,7 @@ breadcrumbs:
 
 # Managing commit signature verification
 
-GitHub will verify GPG, SSH, or S/MIME signatures so other people will know that your commits come from a trusted source.
+GitHub will verify GPG, SSH, or S/MIME signatures so other people will know that your commits come from a trusted source. GitHub will automatically sign commits you make using the web interface.
 
 ## Links
 

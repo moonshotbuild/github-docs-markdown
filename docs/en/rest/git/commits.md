@@ -21,7 +21,7 @@ Use the REST API to interact with commit objects in your Git database on GitHub.
 
 A Git commit is a snapshot of the hierarchy ([Git tree](/en/rest/git/trees)) and the contents of the files ([Git blob](/en/rest/git/blobs)) in a Git repository. These endpoints allow you to read and write [commit objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects#_git_commit_objects) to your Git database on GitHub.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Create a commit

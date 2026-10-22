@@ -19,7 +19,7 @@ You can view your support tickets and respond to GitHub Support using the GitHub
 
 ## About ticket management
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Urgent priority and GitHub Premium Support SLAs only apply to tickets associated with your enterprise account.
 > * Tickets associated with an enterprise account can only be opened by owners, billing managers, and support-entitled members.

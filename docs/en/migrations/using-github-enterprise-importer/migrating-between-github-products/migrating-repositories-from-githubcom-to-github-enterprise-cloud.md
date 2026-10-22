@@ -114,7 +114,7 @@ mutation createMigrationSource($name: String!, $ownerId: ID!) {
 }
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Make sure to use `GITHUB_ARCHIVE` for `type`.
 
 | Query variable | Description                                                                                       |
@@ -248,7 +248,7 @@ Alternatively, you can download a standalone binary from the [releases page](htt
 
 1. Install the GitHub CLI. For installation instructions for GitHub CLI, see the [GitHub CLI repository](https://github.com/cli/cli#installation).
 
-   > \[!NOTE]
+   > [!NOTE]
    > You need version 2.4.0 or newer of GitHub CLI. You can check the version you have installed with the `gh --version` command.
 2. Install the GEI extension.
 
@@ -312,7 +312,7 @@ Before you can use the GEI extension to migrate to GitHub Enterprise Cloud, you 
 
 If you want to migrate multiple repositories to GitHub Enterprise Cloud at once, use the GitHub CLI to generate a migration script. The resulting script will contain a list of migration commands, one per repository.
 
-> \[!NOTE]
+> [!NOTE]
 > Generating a script outputs a PowerShell script. If you're using Terminal, you will need to output the script with the `.ps1` file extension and install PowerShell for either [Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-macos?view=powershell-7.2) or [Linux](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-linux?view=powershell-7.2) to run it.
 
 If you want to migrate a single repository, skip to the next step.

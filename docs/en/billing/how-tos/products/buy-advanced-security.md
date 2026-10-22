@@ -52,7 +52,7 @@ If you use volume/subscription billing, then you will need to purchase licenses 
 
 6. Click **Purchase Advanced Security**.
 
-> \[!TIP]
+> [!TIP]
 > To see how license use by committers is measured, see [GitHub Advanced Security license billing](/en/billing/concepts/product-billing/github-advanced-security).
 
 ## Further reading

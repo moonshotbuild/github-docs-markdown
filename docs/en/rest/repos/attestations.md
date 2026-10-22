@@ -49,7 +49,7 @@ Artifact attestations are meant to be created using the attest action. For more 
 
 - **`bundle`** (object) (required)
   The attestation's Sigstore Bundle.
-Refer to the Sigstore Bundle Specification for more information.
+  Refer to the Sigstore Bundle Specification for more information.
   - **`mediaType`** (string)
   - **`verificationMaterial`** (object)
   - **`dsseEnvelope`** (object)
@@ -178,8 +178,8 @@ Please note: in order to offer meaningful security benefits, an attestation's si
 
 - **`predicate_type`** (string)
   Optional filter for fetching attestations with a given predicate type.
-This option accepts provenance, sbom, release, or freeform text
-for custom predicate types.
+  This option accepts provenance, sbom, release, or freeform text
+  for custom predicate types.
 
 ### HTTP response status codes
 

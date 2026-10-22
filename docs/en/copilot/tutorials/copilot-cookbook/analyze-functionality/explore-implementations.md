@@ -55,11 +55,11 @@ Navigate to the issue, then type:
 Given the criteria in Issue #753, list options for implementation and tradeoffs for each option.
 ```
 
-> \[!TIP] When you are using Copilot to help identify implementation options, it's good practice to start with a general prompt to spark ideas, like in this example. Then you can follow up with more specific questions to dive more deeply into the options it suggests.
+> [!TIP] When you are using Copilot to help identify implementation options, it's good practice to start with a general prompt to spark ideas, like in this example. Then you can follow up with more specific questions to dive more deeply into the options it suggests.
 
 ## Example response
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 Copilot lists several different options for implementing this dashboard, along with tradeoffs for each option. Then it makes a recommendation.
 
@@ -131,5 +131,5 @@ The hybrid approach (option 4) is a balanced solution, offering fast access thro
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

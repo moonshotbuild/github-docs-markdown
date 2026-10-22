@@ -27,7 +27,7 @@ gh extension install github/gh-stack
 
 The extension requires GitHub CLI (`gh`) version 2.0 or later, and Git 2.36 or later.
 
-> \[!NOTE]
+> [!NOTE]
 > The `gh stack` extension uses your GitHub CLI authentication. If you have not authenticated yet, run `gh auth login`.
 
 ## Command summary
@@ -115,7 +115,7 @@ You can optionally stage changes and create a commit as part of the `add` flow. 
 | `-u, --update`           | Stage changes to tracked files only. Requires `-m`.          |
 | `-m, --message <string>` | Create a commit with this message before creating the branch |
 
-> \[!NOTE]
+> [!NOTE]
 > `-A` and `-u` are mutually exclusive.
 
 **Examples:**
@@ -535,7 +535,7 @@ In an interactive terminal, the command prompts you to choose which pull request
 
 Only basic pull request state is checked before merging. Each pull request must be open and must not be a draft. GitHub evaluates branch protection and repository rules when the merge runs, and any failure is reported back to you.
 
-> \[!NOTE]
+> [!NOTE]
 > You cannot bypass merge requirements when you merge stacked pull requests.
 
 If the base branch uses a merge queue, the stack is added to the queue instead of being merged directly. The queue chooses the merge method, so the prompt skips the merge method step, and the `--merge-method`, `--squash`, `--rebase`, and `--merge` flags are ignored with a warning. The pull requests you select are added to the queue together, but they merge as the queue processes them, so they can land in separate groups rather than all at once.

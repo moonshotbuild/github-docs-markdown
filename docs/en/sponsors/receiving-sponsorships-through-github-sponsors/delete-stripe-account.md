@@ -24,7 +24,7 @@ You can delete your Stripe Connect account yourself if the following conditions 
 * Your Sponsors profile is **not published**, that is, the status is `pending`, `draft`, or `disabled`.
 * The Stripe Connect account has **never received funds** from GitHub.
 
-> \[!NOTE]
+> [!NOTE]
 > Deleting a Stripe Connect account is permanent and cannot be undone.
 
 ## Steps to delete your Stripe Connect account

@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can temporarily block your GitHub App from accessing resources owned by the accounts that installed the GitHub App.
 
-> \[!NOTE]
+> [!NOTE]
 > If you want to suspend a GitHub App that you use but do not own, see [Reviewing and modifying installed GitHub Apps](/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#blocking-access) instead.
 
 When a GitHub App is suspended for an installation, the GitHub App cannot access resources owned by that installation account. For example, you might want to suspend your GitHub App if you are worried that your app's credentials were leaked.

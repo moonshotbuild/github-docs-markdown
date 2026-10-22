@@ -37,7 +37,7 @@ The locations where hooks run, and where you can store hook configuration files,
   * **Repository-level hook files** — `.github/hooks/*.json` in the repository root.
   * **User-level hook files** — `*.json` files in the user-level hooks directory. By default this is `~/.copilot/hooks/` on macOS and Linux, or `%USERPROFILE%\.copilot\hooks\` on Windows. If `COPILOT_HOME` is set, it is `$COPILOT_HOME/hooks/`.
   * **Inline `hooks` block in repository settings** — the `hooks` field at the top level of `.github/copilot/settings.json` (Git committed) or `.github/copilot/settings.local.json` (typically gitignored and user specific) in the repository. Cross-tool `.claude/settings.json` and `.claude/settings.local.json` files in the repository are also read.
-  * **Inline `hooks` block in user-level config** — the `hooks` field at the top level of `~/.copilot/settings.json`.
+  * **Inline `hooks` block in user-level config** — the `hooks` field at the top level of `~/.copilot/settings.json`. The CLI no longer reads `~/.copilot/config.json` for hooks.
   * **Hooks contributed by installed plugins** — declared by each plugin in its own `hooks.json` (or under `hooks/hooks.json`) inside the plugin's installation directory.
 
 * **Copilot cloud agent** — hooks run inside the ephemeral Linux sandbox that cloud agent provisions for each job. The sandbox is non-interactive, has a constrained network, and is destroyed when the job ends. A subset of events fires, and only `bash` (or `command`) entries are honored.
@@ -46,7 +46,7 @@ The locations where hooks run, and where you can store hook configuration files,
 
 ### Policy hooks
 
-> \[!NOTE]
+> [!NOTE]
 > **Copilot CLI only.** Policy hooks are not supported under Copilot cloud agent.
 
 Policy hooks are machine-wide hooks loaded by administrators. They load before all other hooks and cannot be disabled by `disableAllHooks`.
@@ -61,6 +61,34 @@ Policy hooks are discovered from two sources:
 Policy hook files use the same hook configuration format as user and project hooks (`{ "version": 1, "hooks": { ... } }`). On POSIX systems, policy files must be owned by root and must not be group- or world-writable.
 
 Policy hooks are intended for use by enterprise IT administrators and require elevated privileges to install. End users cannot modify them. Policy hooks always run on the host, even when the session sandbox is enabled—see [Sandboxed sessions](#sandboxed-sessions).
+
+### Agent-scoped hooks
+
+> [!NOTE]
+> **Copilot CLI only.**
+
+Declare a `hooks` event map in a custom agent's frontmatter to run command or HTTP hooks only while that agent is selected. These hooks run in addition to session, user, repository, plugin, and policy hooks.
+
+```yaml
+---
+name: formatter
+description: Formats changed files
+hooks:
+  PostToolUse:
+    - type: command
+      command: ./scripts/format-changed-files.sh
+      windows: ./scripts/format-changed-files.ps1
+---
+Format the files you change.
+```
+
+| Behavior        | Details                                                                                                                                     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Event names     | Runtime names such as `postToolUse` and aliases such as `PostToolUse` are accepted.                                                         |
+| Commands        | `command` is the fallback. `windows`, `linux`, and `osx` override it per platform. Paths resolve from the repository root.                  |
+| Subagent `Stop` | A subagent's scoped `Stop` (`agentStop`) hooks run at `SubagentStop`. After eight consecutive scoped blocks, further blocks are ignored.    |
+| Trust           | Repository and inherited-agent hooks require workspace admission. Hook-disable settings, enterprise restrictions, and timeouts still apply. |
+| Unsupported     | Remote or organization-hosted agent definitions do not run scoped hooks.                                                                    |
 
 ## Cloud agent execution environment
 
@@ -80,14 +108,14 @@ This section applies to **Copilot cloud agent only**. It describes constraints t
 
 Hook configuration files use JSON format with version `1`.
 
-> \[!NOTE]
+> [!NOTE]
 > If a hook configuration file loaded from a directory (for example, `.github/hooks/`) contains a malformed hook item, only that item is dropped and logged—valid sibling hooks in the same file still load. Structural errors (invalid JSON, a bad `version`, or a non-array event list) still reject the entire file. Hooks defined inline in `settings.json` remain strict: any item-level validation error rejects the whole `hooks` field. Other configuration files always load independently.
 
 ### Command hooks
 
 Command hooks run shell scripts or executables and are supported on all hook types.
 
-> \[!NOTE]
+> [!NOTE]
 > **Cloud agent only.** Cloud agent runs hooks in a Linux sandbox. Only the `bash` field is honored; `powershell` entries are ignored. The cross-platform `command` field is honored as a fallback.
 
 ```json
@@ -175,7 +203,7 @@ Progress messages are display-only and do not affect hook output or decision log
 
 #### Sandboxed sessions
 
-> \[!NOTE]
+> [!NOTE]
 > **Copilot CLI only.**
 
 When the session sandbox is enabled, command hooks from the repository, your user settings, and plugins run inside it, with the same access as the agent's shell commands. A hook can also read the directory it was loaded from, so a plugin can run the scripts it ships, and a plugin hook can write to its data directory (`$COPILOT_PLUGIN_DATA`).
@@ -188,7 +216,7 @@ Policy hooks always run on the host, outside the sandbox, even when the session 
 
 HTTP hooks send the input payload as a JSON `POST` to a URL.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * By default, only `https://` URLs are allowed. Non-TLS `http://` requests are rejected, except for `http://localhost`, `http://127.*`, and `http://[::1]` when `COPILOT_HOOK_ALLOW_LOCALHOST=1` is set.
 > * **Cloud agent only.** Outbound network from the sandbox is restricted by the cloud agent firewall, so `url` must target an allow-listed host.
@@ -223,10 +251,10 @@ HTTP hooks send the input payload as a JSON `POST` to a URL.
 
 Prompt hooks auto-submit text as if the user typed it. They are only supported on `sessionStart`. The text can be a natural language prompt or a slash command.
 
-> \[!NOTE]
+> [!NOTE]
 > **Copilot CLI only.** Prompt hooks fire only for **new interactive sessions**. They do not fire on resume, and they do not fire in non-interactive prompt mode (`-p`).
 
-> \[!NOTE]
+> [!NOTE]
 > **Cloud agent.** Cloud agent jobs run non-interactively (similar to `-p`), so `prompt` hook entries may not fire. Confirm the behavior in your environment before relying on them.
 
 ```json
@@ -276,6 +304,14 @@ Each hook event delivers a JSON payload to the hook handler. Two payload formats
 * **camelCase format** — Configure the event name in camelCase (for example, `sessionStart`). Fields use camelCase.
 * **VS Code compatible format** — Configure the event name in PascalCase (for example, `SessionStart`). Fields use snake\_case to match the VS Code Copilot extension format.
 
+Hooks that fire inside a subagent include extra fields in their input. Root-agent hook inputs are unchanged.
+
+| Field (camelCase) | Field (VS Code compatible) | Description                                 |
+| ----------------- | -------------------------- | ------------------------------------------- |
+| `agentId`         | `agent_id`                 | Identifier of the subagent firing the hook. |
+| `agentType`       | `agent_type`               | Subagent type, when known.                  |
+| `parentAgentId`   | `parent_agent_id`          | Identifier of the parent agent, when known. |
+
 ### `sessionStart` / `SessionStart`
 
 **camelCase input:**
@@ -317,7 +353,7 @@ When multiple `sessionStart` hooks run, successful hooks that return a non-empty
 
 ### `sessionEnd` / `SessionEnd`
 
-> \[!NOTE]
+> [!NOTE]
 > **Copilot CLI only — `/clear` in interactive mode.** `/clear` closes the old session and fires its `sessionEnd` hooks with `reason: "user_exit"` while the CLI keeps running. The replacement session has its own independent lifecycle. Because the CLI itself isn't exiting, these hooks dispatch detached—they run in the background with their full `timeoutSec` while `/clear` returns immediately, so a hook doing real work is neither cut short nor able to stall the prompt. A detached hook still running when you later quit the CLI is terminated along with the process.
 
 **camelCase input:**
@@ -378,7 +414,7 @@ When multiple `sessionStart` hooks run, successful hooks that return a non-empty
 
 Return `{}` or empty to leave the prompt unchanged.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * `modifiedPrompt` is only honored by SDK programmatic hooks. Command and HTTP config-file `userPromptSubmitted` hooks have their output dropped, including `modifiedPrompt`. The lighter hooks-processing runtime used by hosted or steering Copilot cloud agent sessions also ignores it. This is the same runtime split as `preToolUse`.
 > * A non-string `modifiedPrompt`, `modifiedTransformedPrompt`, or a handled `responseContent` value is ignored rather than corrupting the session—a type warning naming the field is logged and emitted as a `session.warning` event. An empty-string override is rejected instead of blanking the model-facing content. A `null` `additionalContext` value is treated as absent instead of being injected as the literal text `null`. Hook output (stdout for command hooks, the response body for HTTP hooks) is bounded at 10 MiB per invocation—a larger response is truncated rather than exhausting memory.
@@ -462,7 +498,7 @@ Payloads for PascalCase `PreToolUse` report `tool_name` as the Claude tool name 
 
 Tools with no Claude equivalent keep their runtime names.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > **Command vs HTTP fail behavior for `preToolUse`:** Command `preToolUse` hooks are **fail-closed** on errors—a crash or non-zero exit (including exit `2`) denies the tool call, even if the hook's stdout JSON reports `permissionDecision: "allow"`. Command hook **timeouts are always fail-open, even for `preToolUse` and admin-deployed policy hooks**—a timed-out hook surfaces a warning and lets the tool call proceed through the normal permission flow instead of denying it. HTTP `preToolUse` hooks are **fail-open**—a network error, timeout, or non-2xx response falls through to the default permission flow. Choose the variant that matches your security requirements.
 
 ### `postToolUse` / `PostToolUse`
@@ -560,7 +596,7 @@ Tools with no Claude equivalent keep their runtime names.
 
 ### `subagentStart`
 
-> \[!NOTE]
+> [!NOTE]
 > The built-in `general-purpose` agent does not emit `subagentStart` or `subagentStop` events. All other built-in YAML-based agents—including `explore`, `task`, `code-review`, `rubber-duck`, `research`, and `security-review`—and user-defined custom agents emit these events.
 
 **Input:**
@@ -700,11 +736,11 @@ Fires when a subagent completes normally, before returning results to the parent
 
 The `preToolUse` hook can control tool execution by writing a JSON object to stdout.
 
-| Field                      | Values                       | Description                                                                                                                                              |
-| -------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `permissionDecision`       | `"allow"`, `"deny"`, `"ask"` | Whether the tool executes. Empty output uses default behavior. Under cloud agent, `"ask"` is treated as `"deny"` because no user is available to answer. |
-| `permissionDecisionReason` | string                       | Reason shown to the agent. Required when decision is `"deny"`.                                                                                           |
-| `modifiedArgs`             | object                       | Substitute tool arguments to use instead of the originals.                                                                                               |
+| Field                      | Values                       | Description                                                                                                                                                                                                                                                                                                   |
+| -------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `permissionDecision`       | `"allow"`, `"deny"`, `"ask"` | Whether the tool executes. Empty output uses default behavior. Under cloud agent, `"ask"` is treated as `"deny"` because no user is available to answer. In Copilot CLI autopilot mode, no prompt is shown and `"ask"` is denied, so the agent sees that the CLI was unable to ask the user for confirmation. |
+| `permissionDecisionReason` | string                       | Reason shown to the agent. Required when decision is `"deny"`.                                                                                                                                                                                                                                                |
+| `modifiedArgs`             | object                       | Substitute tool arguments to use instead of the originals.                                                                                                                                                                                                                                                    |
 
 When Copilot CLI can show the hook-permission prompt, the user can type optional feedback along with a denial. That feedback is appended to the message the agent receives: `Denied by user via preToolUse hook prompt: <permissionDecisionReason>. The user provided the following feedback: <feedback>`.
 
@@ -721,8 +757,10 @@ When Copilot CLI can show the hook-permission prompt, the user can type optional
 * A valid `block` decision wins over `modifiedResponse`: if a hook returns both, the subagent continues and the rewrite is discarded.
 * Rewrites do not compose across multiple matching hooks. Every hook receives the same original `response`, and the last hook to return `modifiedResponse` wins—chaining a redactor and a formatter does not feed the redacted text into the formatter.
 * The output field names (`decision`, `reason`, `modifiedResponse`) are the same for both the camelCase and VS Code compatible configs.
+* Command and HTTP hooks keep the permissive behavior of other hook events: unsupported verdict fields and non-object JSON outputs are ignored, and `reason` only takes effect alongside a `block` decision with a nonempty string.
+* SDK callback outputs are validated before merging: an invalid `decision`, a `reason` without `block`, a `block` without a nonempty `reason`, or a non-object output fails the subagent hook. An explicit `null` in an optional field is treated as absent.
 
-> \[!NOTE]
+> [!NOTE]
 > **Runaway guard.** After 8 consecutive `block` continuations, the CLI overrides the hook and ends the turn anyway, to prevent an unbounded loop. Use the `stop_hook_active` input field on `agentStop` to detect that this turn was already forced to continue, and self-limit before hitting the cap.
 
 ## `postToolUse` output
@@ -746,7 +784,7 @@ The `postToolUse` hook can modify the tool result or inject additional context f
 
 Return `{}` or empty output to keep the original successful result.
 
-> \[!NOTE]
+> [!NOTE]
 > `modifiedResult` is honored by both SDK programmatic hooks and command/HTTP config-file `postToolUse` hooks.
 
 **Matcher:** Optional regex tested against `toolName`. The regex pattern is the value of the `matcher` field, compiled as `^(?:PATTERN)$`, and must match the entire tool name. If the pattern is not a valid regular expression, the hook is skipped. Omit `matcher` to receive results from all tools.
@@ -761,7 +799,7 @@ Return `{}` or empty output to keep the original successful result.
 
 ## `permissionRequest` decision control
 
-> \[!NOTE]
+> [!NOTE]
 > **Copilot CLI only.** The `permissionRequest` hook does not apply under Copilot cloud agent—tool calls there are pre-approved (see the **Interactivity** row in the Cloud agent execution environment table). Use `preToolUse` to make permission decisions in cloud agent.
 
 The `permissionRequest` hook fires before the permission service runs—before rule checks, session approvals, auto-allow/auto-deny, and user prompting. If hooks return `behavior: "allow"` or `"deny"`, that decision short-circuits the normal permission flow. Returning nothing falls through to normal permission handling. Use it to approve or deny tool calls programmatically—especially useful in CLI pipe mode (`-p`) and other CLI CI usages where no interactive prompt is available. It does not apply to cloud agent.
@@ -772,7 +810,7 @@ All configured `permissionRequest` hooks run for each request (except `read` and
 
 **Matcher:** Optional regex tested against `toolName`. The regex pattern is the value of the `matcher` field, anchored as `^(?:PATTERN)$`, and must match the full tool name. When set, the hook fires only for matching tool names.
 
-> \[!NOTE]
+> [!NOTE]
 > **Claude-format matchers (PascalCase `PermissionRequest`):** Hooks configured with the PascalCase event name `PermissionRequest` use the same Claude matcher semantics as `PreToolUse`. See [Claude-format matchers (PascalCase PreToolUse)](#claude-format-matchers-pascalcase-pretooluse) for the matcher rules and tool name table.
 
 Output JSON to stdout to control the permission decision:
@@ -787,7 +825,7 @@ Return empty output or `{}` to fall through to the normal permission flow. For c
 
 ## `notification` hook
 
-> \[!NOTE]
+> [!NOTE]
 > **Copilot CLI only.** The `notification` hook does not fire under Copilot cloud agent.
 
 The `notification` hook fires asynchronously when the CLI emits a system notification. These hooks are fire-and-forget: they never block the session, and any errors are logged and skipped.
@@ -901,4 +939,4 @@ Behavior depends on where you set the flag:
 * [Using hooks with GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/use-hooks)
 * [GitHub Copilot hooks reference](/en/copilot/reference/hooks-reference)
 * [GitHub Copilot CLI command reference](/en/copilot/reference/copilot-cli-reference/cli-command-reference)
-* [Concepts for GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent)
+* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)

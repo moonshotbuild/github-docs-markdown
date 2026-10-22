@@ -21,7 +21,7 @@ Configure and deploy the GitHub Copilot SDK for your use case.
 
 ## Links
 
-* [Azure managed identity with BYOK](/en/copilot/how-tos/copilot-sdk/setup/azure-managed-identity)
+* [Azure Managed Identity with BYOK](/en/copilot/how-tos/copilot-sdk/setup/azure-managed-identity)
 
   The GitHub Copilot SDK's BYOK (bring your own key) supports static API keys, but Azure deployments often use Managed Identity (Microsoft Entra ID) instead of long-lived keys. The GitHub Copilot SDK is designed to compose with the Azure Identity SDK for maximum flexibility. Supply a bearer token provider callback that can fetch fresh tokens on demand using an Azure Identity SDK API.
 

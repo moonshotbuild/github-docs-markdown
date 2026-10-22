@@ -56,7 +56,7 @@ For setup instructions, see [Get Started with JFrog Artifactory and GitHub Integ
 
 For artifacts that do not need to be attested and are not stored on JFrog, you can create a custom integration using the [Create artifact metadata storage record](/en/rest/orgs/artifact-metadata#create-artifact-metadata-storage-record) API endpoint. You should configure your system to call the endpoint whenever an artifact is published to your chosen package repository.
 
-> \[!NOTE] If the artifact is not associated with a provenance attestation on GitHub, the `github_repository` parameter is mandatory.
+> [!NOTE] If the artifact is not associated with a provenance attestation on GitHub, the `github_repository` parameter is mandatory.
 
 ## Uploading a deployment record
 
@@ -81,14 +81,14 @@ You can connect your MDC instance to your GitHub organization. MDC will automati
 
 For setup instructions, see [Quick Start: Connect your GitHub Environment to Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-github) in the documentation for MDC.
 
-> \[!NOTE]
+> [!NOTE]
 > The integration with Microsoft Defender for Cloud is in public preview and subject to change.
 
 ### Using the REST API
 
 The [Create an artifact deployment record](/en/rest/orgs/artifact-metadata#create-an-artifact-deployment-record) API endpoint allows systems to send deployment data for a specific artifact to GitHub, such as its name, digest, environments, cluster, and deployment. You should call this endpoint whenever an artifact is deployed to a new staging or production environment.
 
-> \[!NOTE] If the artifact is not associated with a provenance attestation on GitHub, the `github_repository` parameter is mandatory.
+> [!NOTE] If the artifact is not associated with a provenance attestation on GitHub, the `github_repository` parameter is mandatory.
 
 ## Verifying an upload
 

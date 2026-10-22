@@ -17,7 +17,7 @@ breadcrumbs:
 
 If your project or company has changed names, you can update the name of your organization to match.
 
-> \[!TIP]
+> [!TIP]
 > Only organization owners can rename an organization. For more information, see [Roles in an organization](/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization).
 
 ## What happens when I change my organization's name?

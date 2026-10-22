@@ -23,7 +23,7 @@ If an organization only has one owner, the organization's projects can become in
 
 Organization owners have full administrative access to the organization. For more information, see [Roles in an organization](/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization).
 
-> \[!NOTE]
+> [!NOTE]
 > As an organization owner, you can change the role of other organization members and owners. You can't change your own role.
 
 ## Appointing an organization owner

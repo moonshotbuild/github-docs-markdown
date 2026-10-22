@@ -29,7 +29,7 @@ Note that the `repo:status` [OAuth scope](/en/apps/oauth-apps/building-oauth-app
 
 If you are developing a GitHub App  and want to provide more detailed information about an external service, you may want to use the REST API to manage checks. For more information, see [REST API endpoints for checks](/en/rest/checks).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get the combined status for a specific reference

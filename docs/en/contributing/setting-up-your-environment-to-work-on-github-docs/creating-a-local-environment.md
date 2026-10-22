@@ -64,7 +64,7 @@ You should now have a running server. To access your local environment, visit [l
 
 When you're ready to stop your local server, type <kbd>Ctrl</kbd>+<kbd>C</kbd> in your terminal window.
 
-> \[!NOTE] You should typically only need to run `npm ci` and `npm run build` each time you pull the latest version of a branch.
+> [!NOTE] You should typically only need to run `npm ci` and `npm run build` each time you pull the latest version of a branch.
 >
 > * `npm ci` does a clean install of dependencies, without updating the `package-lock.json` file.
 > * `npm run build` creates static assets, such as JavaScript and CSS files.
@@ -77,7 +77,7 @@ By default, the local server does not run with all supported languages enabled. 
 
 For example, to enable Japanese and Portuguese in addition to English, you can edit `package.json` and set `ENABLED_LANGUAGES='en,ja,pt'` in the `start` script. Then restart the server for the change to take effect.
 
-> \[!NOTE]
+> [!NOTE]
 > Before you commit your changes, you should revert the `package.json` file to its original state.
 
 The supported language codes are defined in [`src/languages/lib/languages.ts`](https://github.com/github/docs/blob/main/src/languages/lib/languages.ts).

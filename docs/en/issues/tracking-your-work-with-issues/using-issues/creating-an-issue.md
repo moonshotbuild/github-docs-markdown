@@ -44,7 +44,7 @@ Repository administrators can disable issues for a repository. For more informat
 6. In the comment body field, type a description of your issue.
    To cross-reference a related discussion, paste the discussion's URL into the issue description.
 
-   > \[!TIP]
+   > [!TIP]
    > As you type, GitHub may suggest potential duplicate issues that already exist in the repository. If a suggestion looks relevant, you can click through to the existing issue instead of creating a new one. These suggestions appear once the title is filled out and the body reaches 100 characters, and up to three existing issues may be shown. The suggestions are non-blocking and do not prevent you from creating your issue.
 
 7. If you're a project maintainer, you can [assign the issue to someone](/en/issues/tracking-your-work-with-issues/using-issues/assigning-issues-and-pull-requests-to-other-github-users), [add it to a project](/en/issues/planning-and-tracking-with-projects/managing-items-in-your-project/adding-items-to-your-project#assigning-a-project-from-within-an-issue-or-pull-request), [associate it with a milestone](/en/issues/using-labels-and-milestones-to-track-work/associating-milestones-with-issues-and-pull-requests), [set the issue type](/en/issues/tracking-your-work-with-issues/using-issues/editing-an-issue#adding-or-changing-the-issue-type), or [apply a label](/en/issues/using-labels-and-milestones-to-track-work/managing-labels).
@@ -151,7 +151,7 @@ Within an issue, you can use task lists to break work into smaller tasks and tra
 
 You can use query parameters to open issues. Query parameters are optional parts of a URL you can customize to share a specific web page view, such as search filter results or an issue template on GitHub. To create your own query parameters, you must match the key and value pair.
 
-> \[!TIP]
+> [!TIP]
 > You can also create issue templates that open with default labels, assignees, and an issue title. For more information, see [Using templates to encourage useful issues and pull requests](/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests).
 
 You must have the proper permissions for any action to use the equivalent query parameter. For example, you must have permission to add a label to an issue to use the `labels` query parameter. For more information, see [Repository roles for an organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization).
@@ -206,7 +206,7 @@ gh issue create --title "TITLE" --body "ISSUE-DESCRIPTION" --blocked-by BLOCKED-
 
 ## Creating an issue with Copilot Chat on GitHub
 
-> \[!NOTE]
+> [!NOTE]
 > This feature is in public preview and subject to change.
 
 Creating issues manually can be repetitive and time-consuming. With Copilot, you can create issues faster by prompting in natural language, or even by uploading a screenshot. Copilot fills out the title, body, labels, assignees, and more, using your repository’s templates and structure. See [Using GitHub Copilot to create or update issues](/en/copilot/how-tos/copilot-on-github/copilot-for-github-tasks/use-copilot-to-create-or-update-issues).

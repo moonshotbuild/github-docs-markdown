@@ -35,7 +35,7 @@ You can search globally across all of GitHub, or scope your search to a particul
 
 After typing a search query, you can press **Enter** to go to the full search results view, where you can see each match and a visual interface for applying filters. For more information, see [Searching using a visual interface](#searching-using-a-visual-interface).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * You must be signed into a personal account on GitHub to search for code across all public repositories.
 > * GitHub Pages sites are not searchable on GitHub. However, you can search the source content if it exists in the default branch of a repository, using code search. For more information, see [Understanding GitHub Code Search syntax](/en/search-github/github-code-search/understanding-github-code-search-syntax). For more information about GitHub Pages, see [What is GitHub Pages?](/en/pages/getting-started-with-github-pages/what-is-github-pages).

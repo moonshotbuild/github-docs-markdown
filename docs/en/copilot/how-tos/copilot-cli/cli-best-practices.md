@@ -25,7 +25,7 @@ GitHub Copilot CLI is a terminal-native AI coding assistant that brings agentic 
 
 This article provides tips for getting the most out of Copilot CLI, from using the various CLI commands effectively to managing the CLI's access to files. Consider these tips as starting points, then experiment to find out what works best for your workflows.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Copilot CLI is continually evolving. Use the `/help` command to see the most up to date information.
 
 ## 1. Customize your environment
@@ -57,7 +57,7 @@ Avoid conflicting instructions. For example, this is a simple `.github/copilot-i
 - Create feature branches from `main`
 ```
 
-> \[!TIP]
+> [!TIP]
 > Keep instructions concise and actionable. Lengthy instructions can dilute effectiveness.
 
 For more information, see [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions).
@@ -230,7 +230,7 @@ Copilot CLI features **infinite sessions**. You don't need to worry about runnin
 └── files/            # Persistent artifacts
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > If you ever need to manually trigger compaction, use `/compact`. This is rarely necessary since the system handles it automatically.
 
 ### Session management commands
@@ -247,7 +247,7 @@ To view a list of any session checkpoints, enter:
 /session checkpoints
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > A checkpoint is created when session context is compacted, and allows you to view the summary context that Copilot created.
 
 To view the details of a specific checkpoint, enter:

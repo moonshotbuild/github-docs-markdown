@@ -21,7 +21,7 @@ breadcrumbs:
 
 Learn about requests in Copilot, including premium requests, how they work, and how to manage your usage effectively.
 
-> \[!IMPORTANT] This article only applies to Copilot Pro and Copilot Pro+ subscribers on an existing annual plan who remained on legacy premium request-based billing after June 1, 2026.
+> [!IMPORTANT] This article only applies to Copilot Pro and Copilot Pro+ subscribers on an existing annual plan who remained on legacy premium request-based billing after June 1, 2026.
 
 ## What is a request?
 
@@ -35,32 +35,32 @@ Some Copilot features use more advanced processing power and count as premium re
 
 The following Copilot features can use premium requests.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Starting June 1, 2026, Copilot code review will have a model multiplier of 13. This means each time Copilot reviews a pull request or reviews code in your IDE, your monthly quota of Copilot premium requests will be reduced by 13.
 
 <div class="ghd-tool rowheaders">
 
-| Feature                                                                                             | Premium request consumption                                                                                                                                                                                                                                                                                      | SKU Attribution                      |
-| --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
-| [Copilot Chat](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot)                           | Copilot Chat uses **one premium request** per user prompt, multiplied by the model's rate. This includes ask, edit, agent, and plan modes in Copilot Chat in an IDE.                                                                                                                                             | Copilot premium requests             |
-| [Copilot CLI](/en/copilot/concepts/agents/copilot-cli/about-copilot-cli)                            | Each prompt to Copilot CLI uses **one premium request** with the default model. For other models, this is multiplied by the model's rate.                                                                                                                                                                        | Copilot premium requests             |
-| [Copilot code review](/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review) | Each time Copilot reviews a pull request (when assigned as a reviewer) or reviews code in your IDE, **13 premium requests** are consumed.                                                                                                                                                                        | Copilot premium requests             |
-| [Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)                    | Copilot cloud agent uses **one premium request** per session, multiplied by the model's rate. A session begins when you prompt Copilot to undertake a task. In addition, each real-time steering comment made during an active session uses **one premium request** per session, multiplied by the model's rate. | Copilot cloud agent premium requests |
-| [Copilot Spaces](/en/copilot/concepts/context/spaces)                                               | Copilot Spaces uses **one premium request** per user prompt, multiplied by the model's rate.                                                                                                                                                                                                                     | Copilot premium requests             |
-| [OpenAI Codex Visual Studio Code integration](/en/copilot/concepts/agents/openai-codex)             | While in preview, each prompt to OpenAI Codex uses **one premium request** multiplied by the model multiplier rates.                                                                                                                                                                                             | Copilot premium requests             |
-| [Third-party coding agents](/en/copilot/concepts/agents/about-third-party-coding-agents)            | While in preview, each prompt to a third-party coding agent uses **one premium request**, multiplied by the model's rate.                                                                                                                                                                                        | Copilot premium requests             |
+| Feature                                                                                                                                               | Premium request consumption                                                                                                                                                                                                                                                                                      | SKU Attribution                      |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| [Copilot Chat](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot)                                                                             | Copilot Chat uses **one premium request** per user prompt, multiplied by the model's rate. This includes ask, edit, agent, and plan modes in Copilot Chat in an IDE.                                                                                                                                             | Copilot premium requests             |
+| [Copilot CLI](/en/copilot/concepts/copilot-surfaces/copilot-cli)                                                                                      | Each prompt to Copilot CLI uses **one premium request** with the default model. For other models, this is multiplied by the model's rate.                                                                                                                                                                        | Copilot premium requests             |
+| [Copilot code review](/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)                                                   | Each time Copilot reviews a pull request (when assigned as a reviewer) or reviews code in your IDE, **13 premium requests** are consumed.                                                                                                                                                                        | Copilot premium requests             |
+| [Copilot cloud agent](/en/copilot/concepts/copilot-surfaces/copilot-on-github)                                                                        | Copilot cloud agent uses **one premium request** per session, multiplied by the model's rate. A session begins when you prompt Copilot to undertake a task. In addition, each real-time steering comment made during an active session uses **one premium request** per session, multiplied by the model's rate. | Copilot cloud agent premium requests |
+| [Copilot Spaces](/en/copilot/concepts/prompting-and-context/spaces)                                                                                   | Copilot Spaces uses **one premium request** per user prompt, multiplied by the model's rate.                                                                                                                                                                                                                     | Copilot premium requests             |
+| [OpenAI Codex Visual Studio Code integration](/en/copilot/concepts/agent-capabilities/about-agents/about-third-party-coding-agents#vs-code-extension) | While in preview, each prompt to OpenAI Codex uses **one premium request** multiplied by the model multiplier rates.                                                                                                                                                                                             | Copilot premium requests             |
+| [Third-party coding agents](/en/copilot/concepts/agent-capabilities/about-agents/about-third-party-coding-agents)                                     | While in preview, each prompt to a third-party coding agent uses **one premium request**, multiplied by the model's rate.                                                                                                                                                                                        | Copilot premium requests             |
 
 </div>
 
-> \[!NOTE]
+> [!NOTE]
 > Premium requests for Spark and Copilot cloud agent are tracked in dedicated SKUs from November 1, 2025. This provides better cost visibility and budget control for each AI product.
 
-> \[!TIP]
+> [!TIP]
 > For instructions on viewing how many premium requests you have used and advice on how to optimize usage, see [Monitoring your GitHub Copilot usage and entitlements (legacy)](/en/copilot/reference/copilot-billing/request-based-billing-legacy/monitor-premium-requests).
 
 ## How do request allowances work per plan?
 
-> \[!NOTE]
+> [!NOTE]
 > Billing for premium requests began on June 18, 2025, for all paid Copilot plans on GitHub.com, and on August 1, 2025, on GHE.com. The request counters were only set to zero for paid plans.
 
 If you're on a **paid plan**, you get unlimited inline suggestions. Rate limiting is in place to accommodate for high demand. See [Usage limits for GitHub Copilot](/en/copilot/concepts/billing-and-usage/individuals/usage-limits).
@@ -83,7 +83,7 @@ Unused requests for the previous month do not carry over to the following month.
 
 ## What if I run out of premium requests?
 
-> \[!NOTE]
+> [!NOTE]
 > Additional premium requests are not available to:
 >
 > * Users who subscribe, or have subscribed, to Copilot Pro or Copilot Pro+ through GitHub Mobile on iOS or Android.

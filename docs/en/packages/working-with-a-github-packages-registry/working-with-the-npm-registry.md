@@ -21,7 +21,7 @@ You can configure npm to publish packages to GitHub Packages and to use packages
 
 ## Authenticating to GitHub Packages
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Packages only supports authentication using a personal access token (classic). For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 You need an access token to publish, install, and delete private, internal, and public packages.
@@ -37,7 +37,7 @@ To authenticate to a GitHub Packages registry within a GitHub Actions workflow, 
 
 This registry supports granular permissions. For registries that support granular permissions, if your GitHub Actions workflow is using a personal access token to authenticate to a registry, we highly recommend you update your workflow to use the `GITHUB_TOKEN`. For guidance on updating your workflows that authenticate to a registry with a personal access token, see [Publishing and installing a package with GitHub Actions](/en/packages/managing-github-packages-using-github-actions-workflows/publishing-and-installing-a-package-with-github-actions#upgrading-a-workflow-that-accesses-a-registry-using-a-personal-access-token).
 
-> \[!NOTE]
+> [!NOTE]
 > The ability for GitHub Actions workflows to delete and restore packages using the REST API is currently in public preview and subject to change.
 
 You can use a `GITHUB_TOKEN` in a GitHub Actions workflow to delete or restore a package using the REST API, if the token has `admin` permission to the package. Repositories that publish packages using a workflow, and repositories that you have explicitly connected to packages, are automatically granted `admin` permission to packages in the repository.
@@ -73,7 +73,7 @@ $ npm login --scope=@NAMESPACE --auth-type=legacy --registry=https://npm.pkg.git
 
 ## Publishing a package
 
-> \[!NOTE]
+> [!NOTE]
 
 > * Package names and scopes must only use lowercase letters.
 > * The tarball for an npm version must be smaller than 256MB in size.
@@ -84,7 +84,7 @@ When you first publish a package, the default visibility is private. To change t
 
 You can connect a package to a repository as soon as the package is published by including a `repository` field in the `package.json` file. You can also use this method to connect multiple packages to the same repository. For more information, see [Publishing multiple packages to the same repository](#publishing-multiple-packages-to-the-same-repository).
 
-> \[!NOTE]
+> [!NOTE]
 > If you publish a package that is linked to a repository, the package automatically inherits the access permissions of the linked repository, and GitHub Actions workflows in the linked repository automatically get access to the package, unless your organization has disabled automatic inheritance of access permissions. For more information, see [Configuring a package's access control and visibility](/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility#about-inheritance-of-access-permissions).
 
 You can set up the scope mapping for your project using either a local `.npmrc` file in the project or using the `publishConfig` option in the `package.json`. GitHub Packages only supports scoped npm packages. Scoped packages have names with the format of `@NAMESPACE/PACKAGE-NAME`. Scoped packages always begin with an `@` symbol. You may need to update the name in your `package.json` to use the scoped name. For example, if you're the user `octocat` and your package is named `test`, you would assign the scoped package name as follows: `"name": "@octocat/test"`.

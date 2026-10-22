@@ -127,7 +127,7 @@ Learn to use and manage the repositories that allow you to store and collaborate
 
 * [Restoring a deleted repository](/en/repositories/creating-and-managing-repositories/restoring-a-deleted-repository)
 
-  can restore some deleted repositories to recover their contents.
+  You can restore some deleted repositories to recover their contents.
 
 * [Viewing all repositories](/en/repositories/creating-and-managing-repositories/viewing-all-your-repositories)
 
@@ -135,7 +135,7 @@ Learn to use and manage the repositories that allow you to store and collaborate
 
 * [Inviting collaborators to a personal repository](/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository)
 
-  You can add users as collaborators to your personal repository.
+  You can invite users to become collaborators to your personal repository.
 
 * [Removing a collaborator from a personal repository](/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/removing-a-collaborator-from-a-personal-repository)
 
@@ -240,14 +240,6 @@ Learn to use and manage the repositories that allow you to store and collaborate
 * [Managing Git LFS objects in archives of your repository](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-git-lfs-objects-in-archives-of-your-repository)
 
   You can choose whether Git Large File Storage (Git LFS) objects are included in source code archives created for your repository.
-
-* [Enabling anonymous Git read access for a repository](/en/enabling-anonymous-git-read-access-for-a-repository)
-
-  As a repository administrator, you can enable or disable anonymous Git read access for public repositories that meet certain requirements.
-
-* [About email notifications for pushes to your repository](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/about-email-notifications-for-pushes-to-your-repository)
-
-  You can choose to automatically send email notifications to a specific email address when anyone pushes to the repository.
 
 * [Configuring autolinks to reference external resources](/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources)
 
@@ -471,7 +463,7 @@ Learn to use and manage the repositories that allow you to store and collaborate
 
 * [Viewing a project's contributors](/en/repositories/viewing-activity-and-data-for-your-repository/viewing-a-projects-contributors)
 
-  You can see who contributed commits to a repository.
+  You can see who contributed commits to a repository and its dependencies.
 
 * [Analyzing changes to a repository's content](/en/repositories/viewing-activity-and-data-for-your-repository/analyzing-changes-to-a-repositorys-content)
 
@@ -499,4 +491,4 @@ Learn to use and manage the repositories that allow you to store and collaborate
 
 * [Backing up a repository](/en/repositories/archiving-a-github-repository/backing-up-a-repository)
 
-  You can use Git or the API to back up your repository.
+  You can use Git, a third-party tool, or the API to back up your repository.

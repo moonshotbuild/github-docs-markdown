@@ -73,10 +73,10 @@ Each page returns up to 100 budgets.
 - **`scope`** (string)
   Filter budgets by scope type.
 
-organization: Budgets scoped to the organization.
-repository: Budgets scoped to a repository.
-multi_user_customer: Universal budgets that apply to all users in the organization.
-user: Budgets scoped to an individual user.
+  organization: Budgets scoped to the organization.
+  repository: Budgets scoped to a repository.
+  multi_user_customer: Universal budgets that apply to all users in the organization.
+  user: Budgets scoped to an individual user.
   Can be one of: `enterprise`, `organization`, `repository`, `cost_center`, `multi_user_customer`, `user`
 
 - **`user`** (string)
@@ -204,13 +204,13 @@ organization admin or billing manager.
 - **`budget_scope`** (string)
   The scope of the budget for this organization.
 
-organization: Apply the budget to the organization.
-repository: Apply the budget to a specific repository in the organization.
-multi_user_customer: Apply a universal budget to all users in the organization.
-user: Apply the budget to a single user in the organization.
+  organization: Apply the budget to the organization.
+  repository: Apply the budget to a specific repository in the organization.
+  multi_user_customer: Apply a universal budget to all users in the organization.
+  user: Apply the budget to a single user in the organization.
 
-user and multi_user_customer scopes are only supported when
-budget_product_sku is ai_credits or premium_requests.
+  user and multi_user_customer scopes are only supported when
+  budget_product_sku is ai_credits or premium_requests.
   Can be one of: `organization`, `repository`, `multi_user_customer`, `user`
 
 - **`budget_entity_name`** (string)
@@ -220,9 +220,9 @@ budget_product_sku is ai_credits or premium_requests.
 - **`budget_type`** (string)
   The type of pricing model used by the budget. Determines how budget_product_sku is interpreted.
 
-BundlePricing: Covers all AI credit SKUs. Set budget_product_sku to ai_credits.
-ProductPricing: Covers all SKUs that belong to a product. Set budget_product_sku to a product such as actions or packages.
-SkuPricing: Covers a single, specific SKU. Set budget_product_sku to a SKU such as actions_linux.
+  BundlePricing: Covers all AI credit SKUs. Set budget_product_sku to ai_credits.
+  ProductPricing: Covers all SKUs that belong to a product. Set budget_product_sku to a product such as actions or packages.
+  SkuPricing: Covers a single, specific SKU. Set budget_product_sku to a SKU such as actions_linux.
 
 - **`budget_product_sku`** (string)
   A single product or SKU that will be covered in the budget
@@ -232,8 +232,8 @@ SkuPricing: Covers a single, specific SKU. Set budget_product_sku to a SKU such 
 
 - **`expires_at`** (string)
   The date the budget will expire in YYYY-MM-DD format. Only dates in the future are accepted.
-If not provided, the budget will not expire.
-Only supported for budgets with budget_scope of user
+  If not provided, the budget will not expire.
+  Only supported for budgets with budget_scope of user
 
 ### HTTP response status codes
 
@@ -398,8 +398,8 @@ Updates an existing budget for an organization. The authenticated user must be a
 
 - **`expires_at`** (string or null or integer)
   The date the budget will expire in YYYY-MM-DD format. Only dates in the future are accepted.
-If not set, the budget will not expire. Setting to null or 0 will remove the expiration date from a budget if set.
-Only supported for existing user-scoped budgets.
+  If not set, the budget will not expire. Setting to null or 0 will remove the expiration date from a budget if set.
+  Only supported for existing user-scoped budgets.
 
 ### HTTP response status codes
 

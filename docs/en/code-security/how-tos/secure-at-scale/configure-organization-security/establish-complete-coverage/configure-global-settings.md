@@ -66,7 +66,7 @@ For more information, see [Dependabot on GitHub Actions runners](/en/code-securi
 
 You can configure which type of runner Dependabot uses to scan for version and security updates. By default, Dependabot uses standard **GitHub-hosted runners**. You can configure Dependabot to use **labeled runners**, which allows you to integrate with existing runner infrastructure such as Actions Runner Controller (ARC).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * For security reasons, Dependabot uses GitHub-hosted runners for public repositories, even when you configure labeled runners.
 > * Labeled runners **do not work** for public repositories.
@@ -144,7 +144,7 @@ You can define custom patterns for secret scanning with regular expressions. Cus
 
 ### Specifying patterns to include in push protection
 
-> \[!NOTE]
+> [!NOTE]
 > The configuration of patterns for push protection at enterprise and organization level is currently in public preview and subject to change.
 
 You can customize which secret patterns are included in push protection, giving security teams greater control over what types of secrets are blocked in the repositories in your organization.
@@ -158,7 +158,7 @@ The data is limited to the scope, therefore the alert volume, false positives, b
 
 The GitHub default may change over time as we increase precision and promote patterns.
 
-> \[!NOTE] Organization administrators and security teams can override settings configured at the enterprise level.
+> [!NOTE] Organization administrators and security teams can override settings configured at the enterprise level.
 
 For more information on how to read data on the secret scanning pattern configuration page, see [Secret scanning pattern configuration data](/en/code-security/reference/secret-security/secret-pattern-data).
 

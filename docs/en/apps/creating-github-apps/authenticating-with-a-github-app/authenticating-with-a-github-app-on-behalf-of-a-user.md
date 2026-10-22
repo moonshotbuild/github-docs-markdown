@@ -43,5 +43,5 @@ A token has the same capabilities to access resources and perform actions on tho
 
 If you want to attribute app activity to the app instead of to a user, you should authenticate as an app installation instead. For more information, see [Authenticating as a GitHub App installation](/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app-installation).
 
-> \[!NOTE]
+> [!NOTE]
 > If a user reports that they cannot see resources owned by their organization after authorizing your GitHub App and the organization uses SAML SSO, instruct the user to start an active SAML session for their organization before reauthorizing. For more information, see [SAML and GitHub Apps](/en/enterprise-cloud@latest/apps/using-github-apps/saml-and-github-apps) in the GitHub Enterprise Cloud documentation.

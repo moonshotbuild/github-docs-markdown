@@ -79,7 +79,7 @@ You can create a repository on GitHub to store and collaborate on your project's
 
 * [Restoring a deleted repository](/en/repositories/creating-and-managing-repositories/restoring-a-deleted-repository)
 
-  can restore some deleted repositories to recover their contents.
+  You can restore some deleted repositories to recover their contents.
 
 * [Viewing all repositories](/en/repositories/creating-and-managing-repositories/viewing-all-your-repositories)
 

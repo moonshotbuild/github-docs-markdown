@@ -72,7 +72,7 @@ To configure a workflow for image generation:
   * Each job that includes the `snapshot` keyword creates a separate image. To generate only one image or image version, include all workflow steps in a single job.
   * Each successful run of a job that includes the `snapshot` keyword creates a new version of that image.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub recommends configuring image generation as a scheduled workflow on a weekly basis. This approach ensures dependencies remain up-to-date and have the latest security patches. For more information, see [Events that trigger workflows](/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
 
 It can take some time for your image to be fully generated and ready to use after the workflow completes. Provisioning time varies based on runner size and configuration, and may take several hours for larger runners.
@@ -152,7 +152,7 @@ Patch versions are not supported.
 The most recent workflow run for an image is always tagged as latest.
 If you specify an older major version in the YAML (for example, version: 1.\* when a 2.0 version exists), GitHub generates a new minor version under the older major version and marks it as latest.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub-hosted larger runner creation does not support wildcards in image version selection.
 
 ## Expiration for images built from custom images

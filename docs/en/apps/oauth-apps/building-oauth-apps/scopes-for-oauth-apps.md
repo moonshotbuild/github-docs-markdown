@@ -19,12 +19,12 @@ breadcrumbs:
 
 Scopes let you specify exactly what type of access you need. Scopes limit access for OAuth tokens. They do not grant any additional permission beyond that which the user already has.
 
-> \[!NOTE]
+> [!NOTE]
 > Consider building a GitHub App instead of an OAuth app. GitHub Apps use fine-grained permissions instead of scopes, which give you more control over what your app can do. For more information, see [Differences between GitHub Apps and OAuth apps](/en/apps/oauth-apps/building-oauth-apps/differences-between-github-apps-and-oauth-apps) and [About creating GitHub Apps](/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps).
 
 When setting up an OAuth app on GitHub, requested scopes are displayed to the user on the authorization form.
 
-> \[!NOTE]
+> [!NOTE]
 > If you're building a GitHub App, you don’t provide scopes in your authorization request. For more on this, see [Authenticating with a GitHub App on behalf of a user](/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-with-a-github-app-on-behalf-of-a-user).
 
 Check headers to see what OAuth scopes you have, and what the API action accepts:
@@ -80,7 +80,7 @@ X-Accepted-OAuth-Scopes: user
 | **`read:audit_log`**   | Read audit log data.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | **`offline_access`**   | Requests an expiring access token and a refresh token, even if your OAuth app is not configured to use expiring tokens. Use this scope to test and gradually roll out support for expiring tokens. For more information, see [Authorizing OAuth apps](/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#expiring-access-tokens).                                                                                                                                                          |
 
-> \[!NOTE]
+> [!NOTE]
 > Your OAuth app can request the scopes in the initial authorization request. You can specify multiple scopes by separating them with a space using `%20`:
 >
 > ```text

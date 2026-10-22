@@ -21,7 +21,7 @@ breadcrumbs:
 
 You can add a self-hosted runner to a repository, an organization, or an enterprise.
 
-> \[!WARNING]
+> [!WARNING]
 > We recommend that you only use self-hosted runners with private repositories. This is because forks of your public repository can potentially run dangerous code on your self-hosted runner machine by creating a pull request that executes the code in a workflow.
 >
 > For more information, see [Secure use reference](/en/actions/reference/security/secure-use).
@@ -40,7 +40,7 @@ You can add self-hosted runners to a single repository. To add a self-hosted run
 
 For information about how to add a self-hosted runner with the REST API, see [REST API endpoints for self-hosted runners](/en/rest/actions/self-hosted-runners).
 
-> \[!NOTE]
+> [!NOTE]
 > Organization owners can choose which repositories are allowed to create repository-level self-hosted runners.
 >
 > For more information, see [Disabling or limiting GitHub Actions for your organization](/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#limiting-the-use-of-self-hosted-runners).
@@ -63,7 +63,7 @@ For information about how to add a self-hosted runner with the REST API, see [RE
 
    Open a shell on your self-hosted runner machine and run each shell command in the order shown.
 
-   > \[!NOTE]
+   > [!NOTE]
    > On Windows, if you want to install the self-hosted runner application as a service, you must open a shell with administrator privileges. We also recommend that you use `C:\actions-runner` as the directory for the self-hosted runner application so that Windows system accounts can access the runner directory.
 
    The instructions walk you through completing these tasks:
@@ -109,7 +109,7 @@ You can add self-hosted runners at the organization level, where they can be use
 
    Open a shell on your self-hosted runner machine and run each shell command in the order shown.
 
-   > \[!NOTE]
+   > [!NOTE]
    > On Windows, if you want to install the self-hosted runner application as a service, you must open a shell with administrator privileges. We also recommend that you use `C:\actions-runner` as the directory for the self-hosted runner application so that Windows system accounts can access the runner directory.
 
    The instructions walk you through completing these tasks:
@@ -133,7 +133,7 @@ The self-hosted runner application must be active for the runner to accept jobs.
 
 For more information, see [Monitoring and troubleshooting self-hosted runners](/en/actions/how-tos/manage-runners/self-hosted-runners/monitor-and-troubleshoot).
 
-> \[!NOTE]
+> [!NOTE]
 > For security reasons, public repositories can't use runners in a runner group by default, but you can override this in the runner group's settings. For more information, see [Managing access to self-hosted runners using groups](/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access#changing-which-repositories-can-access-a-runner-group).
 
 ## Adding a self-hosted runner to an enterprise

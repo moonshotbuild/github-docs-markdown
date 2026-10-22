@@ -17,7 +17,7 @@ breadcrumbs:
 
 Migrate from GitHub Enterprise Server to GHE.com with minimal downtime.
 
-> \[!TIP] As you follow this guide, you can refer to the [Enterprise Live Migrations CLI reference](/en/migrations/elm/elm-cli-reference) for more detailed usage information. If you encounter errors, see [Troubleshooting live migrations from GitHub Enterprise Server to GHE.com](/en/migrations/elm/troubleshooting).
+> [!TIP] As you follow this guide, you can refer to the [Enterprise Live Migrations CLI reference](/en/migrations/elm/elm-cli-reference) for more detailed usage information. If you encounter errors, see [Troubleshooting live migrations from GitHub Enterprise Server to GHE.com](/en/migrations/elm/troubleshooting).
 
 ## Prerequisites
 
@@ -58,6 +58,7 @@ The operator must authenticate to both the source and destination enterprise wit
 1. On **GitHub Enterprise Server**, create a personal access token (classic) and select the required scope:
 
    * `admin:enterprise`
+   * `admin:org`
 
    You will use this token as the **Source token** when configuring the ELM CLI.
 
@@ -121,7 +122,7 @@ ELM must authenticate with a personal access token (classic) for both the source
 
    This is your target token.
 
-   > \[!IMPORTANT]
+   > [!IMPORTANT]
    > If single sign-on is enforced on the target organization on GHE.com, you must authorize the GHE.com token for SSO.
 
 ### Configure your organization's ELM secrets
@@ -150,7 +151,7 @@ You can also set the tokens interactively, using `gh elm config org-tokens EXIST
 
 Create a new migration by specifying the source and target repository details.
 
-> \[!NOTE] The `target-org` can be new or existing. If the target organization doesn't already exist, it will be created during the migration. However, no settings from the source organization will be migrated.
+> [!NOTE] The `target-org` can be new or existing. If the target organization doesn't already exist, it will be created during the migration. However, no settings from the source organization will be migrated.
 
 ```shell copy
 gh elm migration create \

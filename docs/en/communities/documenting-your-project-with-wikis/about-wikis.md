@@ -27,12 +27,12 @@ If you create a wiki in a public repository, the wiki is available to the public
 
 You can edit wikis directly on GitHub, or you can edit wiki files locally. By default, only people with write access to your repository can make changes to wikis, although you can allow everyone on GitHub.com to contribute to a wiki in a public repository. For more information, see [Changing access permissions for wikis](/en/communities/documenting-your-project-with-wikis/changing-access-permissions-for-wikis).
 
-> \[!NOTE]
+> [!NOTE]
 > Search engines will only index wikis with 500 or more stars that you configure to prevent public editing. For more information, see [Changing access permissions for wikis](/en/communities/documenting-your-project-with-wikis/changing-access-permissions-for-wikis).
 >
 > If you need search engines to index your content, you can use GitHub Pages in a public repository. For more information, see [GitHub Pages](/en/pages).
 
-> \[!NOTE]
+> [!NOTE]
 > For performance reasons, wikis have a soft limit of 5,000 total files, regardless of file type. If you exceed this limit, some pages may be inaccessible to users. If you need a larger wiki, we recommend using GitHub Pages. For more information, see [GitHub Pages](/en/pages).
 
 ## Further reading

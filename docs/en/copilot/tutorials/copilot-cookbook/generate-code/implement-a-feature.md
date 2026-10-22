@@ -49,7 +49,7 @@ Switch to plan mode so GitHub Copilot CLI thinks through the change before touch
 Follow the same conventions as the existing GET /subscriptions/{id} endpoint.
 ```
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 GitHub Copilot CLI returns a plan similar to:
 

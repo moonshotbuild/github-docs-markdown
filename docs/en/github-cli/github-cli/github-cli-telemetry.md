@@ -23,7 +23,7 @@ As agentic adoption of GitHub CLI grows, visibility into how features are used i
 
 For example, when a new subcommand is shipped, telemetry reveals whether anyone is using it and how. If adoption is low, that signals a need to revisit the feature's discoverability or design. If a subcommand sees high usage with certain flags, that shows where to invest in a better experience.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Telemetry data is not collected when the target is GitHub Enterprise Server or the user has authenticated GitHub CLI with a GitHub Enterprise Server host.
 
 ## Reviewing telemetry
@@ -99,7 +99,7 @@ Telemetry payload:
 
 Some commands may include additional telemetry dimensions based on the context. In this example, the `skill_` fields are included because the `repo_visibility` is `public`.
 
-> \[!NOTE]
+> [!NOTE]
 > This command can only log telemetry for the exact command and context in which it ran. Changing environment variables or authenticated accounts may change the events and event dimensions included in the payload.
 
 ## How to opt out
@@ -124,7 +124,7 @@ export DO_NOT_TRACK=true
 gh config set telemetry disabled
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > The environment variables take precedence over the configuration value.
 
 ## Where data is sent

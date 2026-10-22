@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Reinstating a former member of your organization
 
-You can add former members to your organization, and choose whether to restore the person's former role, access permissions, forks, and settings.
+You can invite former organization members to rejoin your organization, and choose whether to restore the person's former role, access permissions, forks, and settings.
 
 ## About member reinstatement
 

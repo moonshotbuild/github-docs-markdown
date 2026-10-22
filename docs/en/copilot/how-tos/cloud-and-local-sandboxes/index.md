@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/how-tos/cloud-and-local-sandboxes"
 title: "Cloud and local sandboxes for GitHub Copilot"
-intro: "Configure local sandboxing for your Copilot CLI sessions, and manage cloud sandbox access for your organization or enterprise."
+intro: "Configure local sandboxing for your sessions in the GitHub Copilot app and Copilot CLI, and manage cloud sandbox access for your organization or enterprise."
 product: "GitHub Copilot"
 document_type: "subcategory"
 breadcrumbs:
@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Cloud and local sandboxes for GitHub Copilot
 
-Configure local sandboxing for your Copilot CLI sessions, and manage cloud sandbox access for your organization or enterprise.
+Configure local sandboxing for your sessions in the GitHub Copilot app and Copilot CLI, and manage cloud sandbox access for your organization or enterprise.
 
 ## Links
 
@@ -25,8 +25,8 @@ Configure local sandboxing for your Copilot CLI sessions, and manage cloud sandb
 
 * [Using local sandboxing](/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing)
 
-  Enable local sandboxing so that Copilot CLI runs the commands and tools it invokes on your behalf inside an operating-system sandbox.
+  Enable local sandboxing to restrict what Copilot can access on your machine in Copilot CLI or VS Code.
 
 * [Configuring local sandbox settings](/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings)
 
-  Use the /sandbox slash command in Copilot CLI to control how the local sandbox restricts filesystem access, network connectivity, and system capabilities.
+  Configure local sandboxing in the GitHub Copilot app or Copilot CLI to restrict filesystem access, network connectivity, and credential use.

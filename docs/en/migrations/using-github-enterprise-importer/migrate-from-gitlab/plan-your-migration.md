@@ -26,7 +26,7 @@ Figure out your timeline first, since it will largely shape your approach. The f
 * Number of repositories (projects)
 * Number of merge requests
 
-> \[!NOTE] Migration timing is largely based on the number of merge requests in a repository. If you want to migrate 1,000 repositories, and each repository has 100 merge requests on average, your migration will likely be very quick. If you want to migrate only 100 repositories, but the repositories each have 75,000 merge requests on average, the migration will take much longer and require more planning and testing.
+> [!NOTE] Migration timing is largely based on the number of merge requests in a repository. If you want to migrate 1,000 repositories, and each repository has 100 merge requests on average, your migration will likely be very quick. If you want to migrate only 100 repositories, but the repositories each have 75,000 merge requests on average, the migration will take much longer and require more planning and testing.
 
 We recommend the `inventory-report` command in the GL2GH extension of the GitHub CLI. This command connects to the GitLab API and creates two CSV files. `groups.csv` lists your GitLab groups, and `projects.csv` lists your projects, including the number of merge requests.
 
@@ -50,7 +50,7 @@ Next, plan the organizational structure you'll create in GitHub. GitLab and GitH
 
 After migrating to GitHub, you should have only one enterprise account and a number of organizations owned by that enterprise. Each top-level group from GitLab typically corresponds to a single organization on GitHub. For guidance on how many organizations to create, see [Best practices for organizing work in your enterprise](/en/enterprise-cloud@latest/admin/concepts/enterprise-best-practices/organize-work).
 
-> \[!NOTE] GitHub does not have an equivalent of GitLab's nested subgroups. We do not recommend creating an organization on GitHub for each subgroup, as this may result in a large list of ungrouped repositories within each organization. Instead, you can manage access to groups of repositories by creating teams.
+> [!NOTE] GitHub does not have an equivalent of GitLab's nested subgroups. We do not recommend creating an organization on GitHub for each subgroup, as this may result in a large list of ungrouped repositories within each organization. Instead, you can manage access to groups of repositories by creating teams.
 
 If you want to break your migration effort into batches, the new structure can help you determine them. If you have more than one group in GitLab, and each group's repositories are reasonably sized batches, consider batching by group.
 

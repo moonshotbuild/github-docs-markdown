@@ -23,7 +23,7 @@ You can block a user in your account settings, from the user's profile, or from 
 
 When you block a user, you can also close any open issues, pull requests, and discussions they have opened in repositories you own. GitHub will not notify the user when you block them. If you want to avoid contributing to the same project as someone you've blocked, you can choose to display a warning on any repositories with prior contributions from a blocked user. For more information, see [Blocking a user in your account settings](#blocking-a-user-in-your-account-settings). You may still see the activity of blocked users in shared spaces and blocked users can delete their existing content.
 
-> \[!TIP]
+> [!TIP]
 > If you're blocking a user because of a heated conversation, consider locking the conversation so only collaborators can comment. For more information, see [Locking conversations](/en/communities/moderating-comments-and-conversations/locking-conversations).
 
 When you block a user:
@@ -95,7 +95,7 @@ You must own the repository to block a user from its content.
 4. Optionally, add a note to describe why a user was blocked. The note will only be visible to you.
 5. Click **Block user**.
 
-> \[!NOTE]
+> [!NOTE]
 > If you're being harassed, visit [GitHub Support](https://support.github.com) to report abuse. GitHub does not tolerate abuse. For more information on GitHub's policies, see our [Terms of Service](/en/site-policy/github-terms/github-terms-of-service) and [Community Guidelines](/en/site-policy/github-terms/github-community-guidelines).
 
 ## Further reading

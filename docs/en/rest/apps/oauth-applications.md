@@ -32,31 +32,34 @@ Tokens for OAuth apps have the prefix `gho_`, while OAuth tokens for GitHub Apps
 DELETE /applications/{client_id}/grant
 ```
 
-OAuth and GitHub application owners can revoke a grant for their application and a specific user. You must provide a valid OAuth access_token as an input parameter and the grant for the token's owner will be deleted.
+OAuth and GitHub application owners can revoke a grant for their application and a specific user. You must provide a valid OAuth access\_token as an input parameter and the grant for the token's owner will be deleted.
 Deleting an application's grant will also delete all OAuth tokens associated with the application for the user. Once deleted, the application will have no access to the user's account and will no longer be listed on the application authorizations settings screen within GitHub.
+
+> [!NOTE]
+> This endpoint requires [Basic authentication](/en/rest/authentication/authenticating-to-the-rest-api#using-basic-authentication). Use the application's `client_id` as the username and the `client_secret` as the password. Do not send an `Authorization: Bearer` header with this request, because it replaces the Basic credentials.
 
 ### Parameters
 
 #### Headers
 
-- **`accept`** (string)
+* **`accept`** (string)
   Setting to `application/vnd.github+json` is recommended.
 
 #### Path and query parameters
 
-- **`client_id`** (string) (required)
+* **`client_id`** (string) (required)
   The client ID of the GitHub app.
 
 #### Body parameters
 
-- **`access_token`** (string) (required)
+* **`access_token`** (string) (required)
   The OAuth access token used to authenticate to the GitHub API.
 
 ### HTTP response status codes
 
-- **204** - No Content
+* **204** - No Content
 
-- **422** - Validation failed, or the endpoint has been spammed.
+* **422** - Validation failed, or the endpoint has been spammed.
 
 ### Code examples
 
@@ -68,6 +71,7 @@ Deleting an application's grant will also delete all OAuth tokens associated wit
 curl -L \
   -X DELETE \
   https://api.github.com/applications/Iv1.8a61f9b3a7aba766/grant \
+  -u "<YOUR_CLIENT_ID>:<YOUR_CLIENT_SECRET>" \
   -d '{
   "access_token": "e72e16c7e42f292c6912e7710c838347ae178b4a"
 }'
@@ -83,30 +87,33 @@ POST /applications/{client_id}/token
 
 OAuth applications and GitHub applications with OAuth authorizations can use this API method for checking OAuth token validity without exceeding the normal rate limits for failed login attempts. Authentication works differently with this particular endpoint. Invalid tokens will return 404 NOT FOUND.
 
+> [!NOTE]
+> This endpoint requires [Basic authentication](/en/rest/authentication/authenticating-to-the-rest-api#using-basic-authentication). Use the application's `client_id` as the username and the `client_secret` as the password. Do not send an `Authorization: Bearer` header with this request, because it replaces the Basic credentials.
+
 ### Parameters
 
 #### Headers
 
-- **`accept`** (string)
+* **`accept`** (string)
   Setting to `application/vnd.github+json` is recommended.
 
 #### Path and query parameters
 
-- **`client_id`** (string) (required)
+* **`client_id`** (string) (required)
   The client ID of the GitHub app.
 
 #### Body parameters
 
-- **`access_token`** (string) (required)
-  The access_token of the OAuth or GitHub application.
+* **`access_token`** (string) (required)
+  The access\_token of the OAuth or GitHub application.
 
 ### HTTP response status codes
 
-- **200** - OK
+* **200** - OK
 
-- **404** - Resource not found
+* **404** - Resource not found
 
-- **422** - Validation failed, or the endpoint has been spammed.
+* **422** - Validation failed, or the endpoint has been spammed.
 
 ### Code examples
 
@@ -118,6 +125,7 @@ OAuth applications and GitHub applications with OAuth authorizations can use thi
 curl -L \
   -X POST \
   https://api.github.com/applications/Iv1.8a61f9b3a7aba766/token \
+  -u "<YOUR_CLIENT_ID>:<YOUR_CLIENT_SECRET>" \
   -d '{
   "access_token": "e72e16c7e42f292c6912e7710c838347ae178b4a"
 }'
@@ -242,28 +250,31 @@ PATCH /applications/{client_id}/token
 
 OAuth applications and GitHub applications with OAuth authorizations can use this API method to reset a valid OAuth token without end-user involvement. Applications must save the "token" property in the response because changes take effect immediately. Invalid tokens will return 404 NOT FOUND.
 
+> [!NOTE]
+> This endpoint requires [Basic authentication](/en/rest/authentication/authenticating-to-the-rest-api#using-basic-authentication). Use the application's `client_id` as the username and the `client_secret` as the password. Do not send an `Authorization: Bearer` header with this request, because it replaces the Basic credentials.
+
 ### Parameters
 
 #### Headers
 
-- **`accept`** (string)
+* **`accept`** (string)
   Setting to `application/vnd.github+json` is recommended.
 
 #### Path and query parameters
 
-- **`client_id`** (string) (required)
+* **`client_id`** (string) (required)
   The client ID of the GitHub app.
 
 #### Body parameters
 
-- **`access_token`** (string) (required)
-  The access_token of the OAuth or GitHub application.
+* **`access_token`** (string) (required)
+  The access\_token of the OAuth or GitHub application.
 
 ### HTTP response status codes
 
-- **200** - OK
+* **200** - OK
 
-- **422** - Validation failed, or the endpoint has been spammed.
+* **422** - Validation failed, or the endpoint has been spammed.
 
 ### Code examples
 
@@ -275,6 +286,7 @@ OAuth applications and GitHub applications with OAuth authorizations can use thi
 curl -L \
   -X PATCH \
   https://api.github.com/applications/Iv1.8a61f9b3a7aba766/token \
+  -u "<YOUR_CLIENT_ID>:<YOUR_CLIENT_SECRET>" \
   -d '{
   "access_token": "e72e16c7e42f292c6912e7710c838347ae178b4a"
 }'
@@ -292,28 +304,31 @@ DELETE /applications/{client_id}/token
 
 OAuth  or GitHub application owners can revoke a single token for an OAuth application or a GitHub application with an OAuth authorization.
 
+> [!NOTE]
+> This endpoint requires [Basic authentication](/en/rest/authentication/authenticating-to-the-rest-api#using-basic-authentication). Use the application's `client_id` as the username and the `client_secret` as the password. Do not send an `Authorization: Bearer` header with this request, because it replaces the Basic credentials.
+
 ### Parameters
 
 #### Headers
 
-- **`accept`** (string)
+* **`accept`** (string)
   Setting to `application/vnd.github+json` is recommended.
 
 #### Path and query parameters
 
-- **`client_id`** (string) (required)
+* **`client_id`** (string) (required)
   The client ID of the GitHub app.
 
 #### Body parameters
 
-- **`access_token`** (string) (required)
+* **`access_token`** (string) (required)
   The OAuth access token used to authenticate to the GitHub API.
 
 ### HTTP response status codes
 
-- **204** - No Content
+* **204** - No Content
 
-- **422** - Validation failed, or the endpoint has been spammed.
+* **422** - Validation failed, or the endpoint has been spammed.
 
 ### Code examples
 
@@ -325,6 +340,7 @@ OAuth  or GitHub application owners can revoke a single token for an OAuth appli
 curl -L \
   -X DELETE \
   https://api.github.com/applications/Iv1.8a61f9b3a7aba766/token \
+  -u "<YOUR_CLIENT_ID>:<YOUR_CLIENT_SECRET>" \
   -d '{
   "access_token": "e72e16c7e42f292c6912e7710c838347ae178b4a"
 }'

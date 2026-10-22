@@ -103,7 +103,7 @@ you can also upload that same key again for use as a signing key. There's no lim
 
 GitHub uses [ssh\_data](https://github.com/github/ssh_data), an open source Ruby library, to confirm that your locally signed commits and tags are cryptographically verifiable against a public key you have added to your account on GitHub.com.
 
-> \[!NOTE]
+> [!NOTE]
 > SSH signature verification is available in Git 2.34 or later. To update your version of Git, see the [Git](https://git-scm.com/downloads) website.
 
 To sign commits using SSH and have those commits verified on GitHub, follow these steps:
@@ -121,7 +121,7 @@ You can use S/MIME to sign commits with an X.509 key issued by your organization
 
 GitHub uses [the Debian ca-certificates package](https://packages.debian.org/bullseye/ca-certificates), the same trust store used by Mozilla browsers, to confirm that your locally signed commits and tags are cryptographically verifiable against a public key in a trusted root certificate.
 
-> \[!NOTE]
+> [!NOTE]
 > S/MIME signature verification is available in Git 2.19 or later. To update your version of Git, see the [Git](https://git-scm.com/downloads) website.
 
 To sign commits using S/MIME and have those commits verified on GitHub, follow these steps:

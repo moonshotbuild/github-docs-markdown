@@ -23,7 +23,7 @@ The Copilot usage metrics APIs do not publish a single pre-aggregated team repor
 
 The same join recipe supports any team-level slice you need: per `(team, day)`, per `(team, day, language)`, per `(team, day, IDE)`, over rolling windows, and so on.
 
-> \[!NOTE]
+> [!NOTE]
 > If you only need a UI-based view of team-level adoption, the impact dashboard's user-team mapping surfaces team-level adoption cohort data natively, without requiring you to build the join described in this article. See [Viewing the Copilot impact dashboard](/en/copilot/how-tos/administer-copilot/view-impact-dashboard). Use the manual join described below when you need raw per-team NDJSON data, such as for custom BI reporting, or team-level metrics beyond adoption cohorts.
 
 ## Fetching the reports
@@ -69,7 +69,7 @@ These reports list each user's team memberships on a given day.
 
 A user belonging to multiple teams on the same day appears in multiple rows—one row per `(user, team)` pair.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > **Teams with fewer than 5 seated Copilot users are excluded from the user-teams reports.**
 >
 > Implications:
@@ -89,7 +89,7 @@ These reports contain each user's Copilot activity for a given day.
 
 For the full list of fields available in these reports, see [Data available in Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/copilot-usage-metrics).
 
-> \[!WARNING]
+> [!WARNING]
 > Do not join the rolling 28-day per-user reports (`users_28_day`, `organization_users_28_day`) with the daily user-teams report. The user-teams report reflects team membership on a single day, so joining 28 days of activity against a single-day membership snapshot attributes the full 28 days of activity to whichever teams the user happens to belong to on the join day. This mis-attributes activity to the wrong teams whenever team membership changed during the window. Always join daily activity with daily user-teams, then aggregate to your desired window.
 
 ### Entity-level reports

@@ -28,7 +28,7 @@ GitHub will display your profile README on your profile page if all of the follo
 * The repository contains a file named README.md in its root.
 * The README.md file contains any content.
 
-> \[!NOTE]
+> [!NOTE]
 > If you created a public repository with the same name as your username before July 2020, GitHub won't automatically show the repository's README on your profile. You can manually share the repository's README to your profile by going to the repository on GitHub and clicking **Share to profile**.
 
 ## Adding a profile README

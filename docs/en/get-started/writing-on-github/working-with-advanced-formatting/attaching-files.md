@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can convey information by attaching a variety of file types to your issues and pull requests.
 
-> \[!NOTE]
+> [!NOTE]
 > For public repositories, uploaded files can be accessed without authentication. In the case of private and internal repositories, only people with access to the repository can view the uploaded files.
 
 You can attach files to issues, pull requests, and comments in your browser. You can also attach local images and videos from the command line with GitHub CLI. For more information, see [Attaching files with GitHub CLI](/en/github-cli/github-cli/attaching-files-with-github-cli).
@@ -35,7 +35,7 @@ For a pull request, you can also click <svg version="1.1" width="16" height="16"
 
 When you attach a file, it is uploaded immediately to GitHub and the text field is updated to show the anonymized URL for the file. For more information on anonymized URLs see [About anonymized URLs](/en/authentication/keeping-your-account-and-data-secure/about-anonymized-urls).
 
-> \[!NOTE]
+> [!NOTE]
 > In many browsers, you can copy-and-paste images directly into the box.
 
 The maximum file size is:
@@ -45,7 +45,7 @@ The maximum file size is:
 * 100MB for videos uploaded to a repository owned by a user or organization on a paid GitHub plan
 * 25MB for all other files
 
-> \[!NOTE]
+> [!NOTE]
 > To upload videos greater than 10MB to a repository owned by a user or organization on a paid GitHub plan, you must either be an organization member or outside collaborator, or be on a paid plan.
 
 ## Supported file types
@@ -60,7 +60,7 @@ The following image and media file types are supported in all contexts.
 * SVG (`.svg`)
 * Video (`.mp4`, `.mov`, `.webm`)
 
-  > \[!NOTE]
+  > [!NOTE]
   > Video codec compatibility is browser specific, and it's possible that a video you upload to one browser is not viewable on another browser. At the moment we recommend using H.264 for greatest compatibility.
 
 ## Additional file types
@@ -102,7 +102,7 @@ The following file types are supported for uploads in issue comments, pull reque
 * XML files (`.xml`)
 * YAML files (`.yaml`, `.yml`)
 
-> \[!NOTE]
+> [!NOTE]
 > If you use Linux and try to upload a `.patch` file, you will receive an error message. This is a known issue.
 
 ### Archive and compressed files

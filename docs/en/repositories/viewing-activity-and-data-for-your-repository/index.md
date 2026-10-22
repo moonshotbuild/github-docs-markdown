@@ -35,7 +35,7 @@ Gain insight into your repository by viewing activity and data.
 
 * [Viewing a project's contributors](/en/repositories/viewing-activity-and-data-for-your-repository/viewing-a-projects-contributors)
 
-  You can see who contributed commits to a repository.
+  You can see who contributed commits to a repository and its dependencies.
 
 * [Analyzing changes to a repository's content](/en/repositories/viewing-activity-and-data-for-your-repository/analyzing-changes-to-a-repositorys-content)
 

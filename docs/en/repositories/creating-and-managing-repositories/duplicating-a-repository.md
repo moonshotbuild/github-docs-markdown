@@ -17,7 +17,7 @@ breadcrumbs:
 
 To maintain a mirror of a repository without forking it, you can run a special clone command, then mirror-push to the new repository.
 
-> \[!NOTE]
+> [!NOTE]
 > If you have a project hosted on another Git-based hosting service, you can automatically import your project to GitHub using the GitHub Importer tool. For more information, see [About GitHub Importer](/en/migrations/importing-source-code/using-github-importer/about-github-importer).
 
 Before you can push the original repository to your new copy, or *mirror*, of the repository, you must [create the new repository](/en/repositories/creating-and-managing-repositories/creating-a-new-repository) on GitHub.com. In these examples, `exampleuser/new-repository` or `exampleuser/mirrored` are the mirrors.

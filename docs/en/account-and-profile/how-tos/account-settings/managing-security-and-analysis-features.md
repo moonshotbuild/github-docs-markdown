@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can control features that secure and analyze the code in your projects on GitHub.
 
-> \[!NOTE] This topic tells you how you can manage the security and analysis features for all your existing or new repositories. For information on managing these settings for individual repositories, see [Managing security and analysis settings for your repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository).
+> [!NOTE] This topic tells you how you can manage the security and analysis features for all your existing or new repositories. For information on managing these settings for individual repositories, see [Managing security and analysis settings for your repository](/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository).
 
 ## Enabling or disabling features for existing repositories
 

@@ -21,7 +21,7 @@ Use the REST API to retrieve information provided in your repository graph.
 
 You can use these endpoints to retrieve information provided in your repository graph, for repositories that you have write access to. For more information, see [Viewing traffic to a repository](/en/repositories/viewing-activity-and-data-for-your-repository/viewing-traffic-to-a-repository).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get repository clones

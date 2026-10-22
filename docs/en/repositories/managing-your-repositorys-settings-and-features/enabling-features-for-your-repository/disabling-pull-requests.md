@@ -33,5 +33,5 @@ If you decide to enable pull requests again in the future, any pull requests tha
 
    In organization repositories, a collaborator is a user who has been granted the write, maintain, or admin role for the repository. For more information about organization roles, see [Repository roles for an organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization#repository-roles-for-organizations).
 
-> \[!TIP]
+> [!TIP]
 > Please contact us through the [GitHub Support portal](https://support.github.com/) if you want to turn off pull requests because of abuse from strangers. GitHub does not tolerate abuse. For more information on GitHub's policies, see our [Terms of Service](/en/site-policy/github-terms/github-terms-of-service) and [Community Guidelines](/en/site-policy/github-terms/github-community-guidelines).

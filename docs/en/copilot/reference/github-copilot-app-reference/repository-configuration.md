@@ -39,7 +39,7 @@ For UI-based customization steps, see [Customizing the GitHub Copilot app](/en/c
 
 When the app detects a configuration from the repository, it does not apply repository instructions, scripts, or other settings from the file until you review and accept the configuration. This protects you from running commands or applying settings that were added by another contributor. Configurations that you create or update through the app UI are trusted automatically.
 
-> \[!WARNING]
+> [!WARNING]
 > Before accepting a repository configuration, review every configured command and the dependencies it runs. Scripts and their child processes receive the GitHub credentials described later in this article, so never configure them to log or persist these environment variables.
 
 If the file changes outside the app, including changes to whitespace or comments, you must review and accept the updated configuration before the app applies it. Until you accept the current version, the app continues to use the project settings that were previously configured in the app.
@@ -129,7 +129,7 @@ Set automation options under `automation`:
 * `automation.auto_issue_session` (`boolean`) controls whether the app automatically starts a session with issue context. If omitted, the effective default is `true`.
 * `automation.remote_control` (`boolean`) controls whether sessions can be accessed from the GitHub web interface or GitHub Mobile. If omitted, the effective default is `false`.
 
-If your Copilot seat comes from an organization, the applicable "Store local sessions in the Cloud" policy must be set to "View and control" for remote control to be available. Enterprise-managed `remoteControl` settings can further restrict remote control even when `automation.remote_control` is `true`. For more information, see [About remote control of GitHub Copilot CLI sessions](/en/copilot/concepts/agents/copilot-cli/about-remote-control) and [Enterprise managed settings](/en/copilot/reference/enterprise-administrators/enterprise-managed-settings).
+If your Copilot seat comes from an organization, the applicable "Store local sessions in the Cloud" policy must be set to "View and control" for remote control to be available. Enterprise-managed `remoteControl` settings can further restrict remote control even when `automation.remote_control` is `true`. For more information, see [Remote control of GitHub Copilot CLI sessions](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-remote-control) and [Enterprise managed settings](/en/copilot/reference/enterprise-administrators/enterprise-managed-settings).
 
 ## Runtime environment variables for scripts
 

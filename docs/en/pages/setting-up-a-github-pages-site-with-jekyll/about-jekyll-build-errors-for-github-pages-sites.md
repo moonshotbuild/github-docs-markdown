@@ -17,7 +17,7 @@ breadcrumbs:
 
 If Jekyll encounters an error building your GitHub Pages site locally or on GitHub, you'll receive an error message with more information.
 
-> \[!NOTE] While the `github-pages` gem remains supported for some workflows, GitHub Actions is now the recommended approach for deploying and automating GitHub Pages sites.
+> [!NOTE] While the `github-pages` gem remains supported for some workflows, GitHub Actions is now the recommended approach for deploying and automating GitHub Pages sites.
 
 ## About Jekyll build errors
 
@@ -27,7 +27,7 @@ If you are publishing from a branch, sometimes GitHub Pages will not attempt to 
 * You're pushing with a deploy key. If you want to automate pushes to your site's repository, you can set up a machine user instead. For more information, see [Managing deploy keys](/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#machine-users).
 * You're using a CI service that isn't configured to build your publishing source. For example, Travis CI won't build the `gh-pages` branch unless you add the branch to a safe list. For more information, see [Customizing the build](https://docs.travis-ci.com/user/customizing-the-build/#safelisting-or-blocklisting-branches) on Travis CI, or your CI service's documentation.
 
-> \[!NOTE]
+> [!NOTE]
 > It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub.
 
 If Jekyll does attempt to build your site and encounters an error, you will receive a build error message.

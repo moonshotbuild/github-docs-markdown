@@ -21,7 +21,7 @@ breadcrumbs:
 
 Integrate your preferred custom models with GitHub Copilot by using your own LLM API keys, and make them available for organizations in your enterprise account.
 
-> \[!NOTE]
+> [!NOTE]
 > This feature is in public preview and subject to change.
 
 You can add custom models to your enterprise or organization by providing your own API keys. This enables teams to use your preferred large language model (LLM) providers with Copilot Chat, Copilot CLI, and IDEs.
@@ -38,7 +38,7 @@ API keys from the following providers are supported:
 
 Fine-tuned models are also supported, but functionality and quality of results can vary depending on the fine-tuning setup. You should test your model and review its outputs carefully before using it in production.
 
-> \[!NOTE] A separate feature allows users to configure their own LLM keys locally in various clients. See [Bring your own key for GitHub Copilot](/en/copilot/concepts/models/bring-your-own-key).
+> [!NOTE] A separate feature allows users to configure their own LLM keys locally in various clients. See [Bring your own key for GitHub Copilot](/en/copilot/concepts/models/bring-your-own-key).
 
 ## Why bring your own API keys?
 
@@ -51,7 +51,7 @@ As an enterprise owner, you may have specific requirements for governance, data 
 
 ## Adding your key to an enterprise account
 
-> \[!IMPORTANT] We highly recommend adhering to the principle of least privilege by assigning only the minimum necessary scopes to your API keys.
+> [!IMPORTANT] We highly recommend adhering to the principle of least privilege by assigning only the minimum necessary scopes to your API keys.
 
 After you've added your key and selected one or more models, you and members of your organizations will be able to use them with Copilot Chat, Copilot CLI, and IDEs. Your models will appear at the bottom of the model picker, under the enterprise name.
 
@@ -95,7 +95,7 @@ You can choose whether the models you have added are available to organizations 
 5. Above the list of API keys, click the **Added models** tab.
 6. Next to a model, click **Configure**. If any organizations already have access to the model, instead of "Configure", you will need to click **All organizations** or **X organizations**.
 7. In the modal that opens, click the **Access** tab.
-   > \[!NOTE] The model must be set to 'Enabled' before the "Access" tab will be available.
+   > [!NOTE] The model must be set to 'Enabled' before the "Access" tab will be available.
 8. Choose how the model should be made available to organizations:
    * To make the model available to all organizations in your enterprise account, select **Allow for all organizations**.
    * To only make the model available for specific organizations, select **Choose per organization**, and check or uncheck the organizations listed below.
@@ -104,5 +104,5 @@ You can choose whether the models you have added are available to organizations 
 ## Further reading
 
 * [Enabling custom models for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/enable-custom-models) in our documentation for organizations.
-* [About GitHub Copilot Chat](/en/copilot/concepts/chat)
+* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 * [Supported surfaces for GitHub Copilot policies](/en/copilot/reference/supported-surfaces-for-policies)

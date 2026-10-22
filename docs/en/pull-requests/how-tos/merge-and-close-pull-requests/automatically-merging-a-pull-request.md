@@ -27,7 +27,7 @@ Auto-merge is disabled if someone without write permissions pushes new changes t
 
 ## Enabling auto-merge
 
-> \[!NOTE]
+> [!NOTE]
 > The option to enable auto-merge is shown only on pull requests that cannot be merged immediately. For example, when a branch protection rule enforces "Require pull request reviews before merging" or "Require status checks to pass before merging" and these conditions are not yet met. For more information, see [Managing a branch protection rule](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule).
 
 People with write permissions to a repository can enable auto-merge for a pull request.
@@ -46,7 +46,7 @@ People with write permissions to a repository can enable auto-merge for a pull r
 
 6. If you chose the merge or squash and merge methods, type a commit message and description and choose the email address you want to author the merge commit.
 
-   > \[!NOTE]
+   > [!NOTE]
    > The email dropdown menu is not available if you have email privacy enabled or if you only have one verified and visible email associated with your GitHub account.
 
 7. Click **Confirm auto-merge**.

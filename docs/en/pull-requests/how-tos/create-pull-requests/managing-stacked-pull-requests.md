@@ -76,7 +76,7 @@ If a rebase encounters a conflict, `gh stack rebase` stops and lists the conflic
 * Resolve the markers in the affected files, stage them with `git add`, then run `gh stack rebase --continue`.
 * To start over, run `gh stack rebase --abort` to restore all branches to their pre-rebase state.
 
-> \[!NOTE]
+> [!NOTE]
 > You can also trigger a server-side rebase from the pull request, but those commits are not signed. If your repository requires signed commits, rebase from GitHub CLI so the commits follow your local Git commit signature configuration.
 
 ### Rebasing from the GitHub website
@@ -89,7 +89,7 @@ When a stack is not linear, a **Rebase stack** button appears in the merge box. 
 
 After the rebase completes, every pull request reflects the updated branches and CI checks are re-triggered.
 
-> \[!NOTE]
+> [!NOTE]
 > Commits created by a server-side rebase are **not** signed. If your repository requires signed commits, rebase from GitHub CLI with `gh stack rebase` so the commits follow your local Git commit signature configuration, then push with `gh stack push`.
 
 ## Restructuring a stack

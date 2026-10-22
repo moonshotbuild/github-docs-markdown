@@ -50,7 +50,7 @@ If you still cannot create a codespace for a repository where GitHub Codespaces 
 
 If the creation of a codespace fails, it's likely to be due to a temporary infrastructure issue in the cloud - for example, a problem provisioning a virtual machine for the codespace. A less common reason for failure is if it takes longer than an hour to build the container. In this case, the build is canceled and codespace creation will fail.
 
-> \[!NOTE]
+> [!NOTE]
 > A codespace that was not successfully created is never going to be usable and should be deleted. For more information, see [Deleting a codespace](/en/codespaces/developing-in-a-codespace/deleting-a-codespace).
 
 If you create a codespace and the creation fails:
@@ -61,7 +61,7 @@ If you create a codespace and the creation fails:
 
    One common scenario where this could happen is if you have a script running that is prompting for user input and waiting for an answer. If this is the case, remove the interactive prompt so that the build can complete non-interactively.
 
-> \[!NOTE]
+> [!NOTE]
 > To view the logs during a build:
 >
 > * **In the browser**, if the initial steps of the build process take more than a few seconds, the "Setting up your codespace" page is displayed. Click **View logs.**

@@ -23,7 +23,7 @@ Git worktrees let you check out multiple branches of the same repository at the 
 
 GitHub Desktop provides built-in support for creating, switching between, renaming, and deleting worktrees. When your repository has worktrees, a **Worktree** dropdown appears in the toolbar between the **Repository** and **Branch** dropdowns.
 
-> \[!NOTE]
+> [!NOTE]
 > The **Worktree** dropdown is only visible when you have at least one linked worktree. To create your first worktree, use the **Repository** menu or right-click the **Repository** dropdown in the toolbar.
 
 Each worktree is associated with a branch (or a detached HEAD commit). The main worktree is your original repository clone, and linked worktrees are additional checkouts you create.

@@ -52,7 +52,7 @@ If you scan pull requests, then the results appear as alerts in a pull request c
 
 Using the `pull_request` trigger, configured to scan the pull request's merge commit rather than the head commit, will produce more efficient and accurate results than scanning the head of the branch on each push. However, if you use a CI/CD system that cannot be configured to trigger on pull requests, you can still use the `on:push` trigger and code scanning will map the results to open pull requests on the branch and add the alerts as annotations on the pull request. For more information, see [Scanning on push](#scanning-on-push).
 
-> \[!NOTE]
+> [!NOTE]
 > If your repository is configured with a merge queue, you need to include the `merge_group` event as an additional trigger for code scanning. This will ensure that pull requests are also scanned when they are added to a merge queue. For more information, see [Managing a merge queue](/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue).
 
 ### Avoiding unnecessary scans of pull requests
@@ -70,7 +70,7 @@ on:
       - '**/*.txt'
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > `on:pull_request:paths-ignore` and `on:pull_request:paths` set conditions that determine whether the actions in the workflow will run on a pull request. They don't determine what files will be analyzed when the actions *are* run. When a pull request contains any files that are not matched by `on:pull_request:paths-ignore` or `on:pull_request:paths`, the workflow runs the actions and scans all of the files changed in the pull request, including those matched by `on:pull_request:paths-ignore` or `on:pull_request:paths`, unless the files have been excluded. For information on how to exclude files from analysis, see [Specifying directories to scan](#specifying-directories-to-scan).
 
 For more information about using `on:pull_request:paths-ignore` and `on:pull_request:paths` to determine when a workflow will run for a pull request, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#onpushpull_requestpull_request_targetpathspaths-ignore).
@@ -79,7 +79,7 @@ For more information about using `on:pull_request:paths-ignore` and `on:pull_req
 
 If you use the default CodeQL analysis workflow, the workflow will scan the code in your repository once a week, in addition to the scans triggered by events. To adjust this schedule, edit the `cron` value for the `on.schedule` event in the workflow. For more information, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#onschedule).
 
-> \[!NOTE]
+> [!NOTE]
 > This event will only trigger a workflow run if the workflow file exists on the default branch.
 
 ### Example
@@ -104,7 +104,7 @@ This workflow scans:
 
 ## Operating system
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Code scanning of Swift code uses macOS runners by default. GitHub-hosted macOS runners are more expensive than Linux and Windows runners, so you should consider only scanning the build step. For more information about configuring code scanning for Swift, see [CodeQL code scanning for compiled languages](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages). For more information about pricing for GitHub-hosted runners, see [GitHub Actions billing](/en/billing/concepts/product-billing/github-actions).
 >
@@ -165,7 +165,7 @@ CodeQL code scanning supports code written in the following languages:
 * Swift
 * GitHub Actions workflows
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Use `java-kotlin` to analyze code written in Java, Kotlin or both.
 > * Use `javascript-typescript` to analyze code written in JavaScript, TypeScript or both.
@@ -189,7 +189,7 @@ CodeQL uses the following language identifiers:
 |                          |                         |                                           |
 | Swift                    | `swift`                 |                                           |
 
-> \[!NOTE]
+> [!NOTE]
 > If you specify one of the alternative identifiers, this is equivalent to using the standard language identifier. For example, specifying `javascript` instead of `javascript-typescript` will not exclude analysis of TypeScript code. Instead, you can use a custom configuration file to exclude files from analysis using the `paths-ignore` setting. For more information, see [Using a custom configuration file](/en/code-security/reference/code-scanning/workflow-configuration-options#custom-configuration-files) and [Specifying directories to scan](/en/code-security/reference/code-scanning/workflow-configuration-options#specifying-directories-to-scan).
 
 These language identifiers can be used as arguments to the `languages` input of the `init` action. We recommend that only one language is provided as an argument:
@@ -229,7 +229,7 @@ For compiled languages, the matrix can also be used to configure which build mod
 
 If your workflow does not provide an argument to the `languages` input of the `init` action, then CodeQL is configured to run analyses sequentially. In this case, CodeQL automatically detects, and attempts to analyze, any supported languages in the repository. Depending on the size of the repository and the number of languages, this may take a long time. If analysis for one language fails in this mode, then the analysis for all languages fails. Therefore, we do not recommend this configuration.
 
-> \[!NOTE]
+> [!NOTE]
 > When analyzing languages sequentially, the default build-mode for every language will be used. Alternatively, if you provide an explicit `autobuild` step, then every language that supports the `autobuild` mode will use it while other languages use their default mode. If a more complex build-mode configuration than this is required, then you will need to configure a matrix.
 
 ## Alert severities for check failures
@@ -271,7 +271,7 @@ Your specified category will not overwrite the details of the `runAutomationDeta
 
 If your codebase depends on a library or framework that is not recognized by the standard queries in CodeQL, you can extend the CodeQL coverage in your code scanning workflow by specifying published CodeQL model packs. For more information about creating your own model packs, see [Creating and working with CodeQL packs](/en/code-security/tutorials/customize-code-scanning/create-and-work-with-codeql-packs#creating-a-codeql-model-pack).
 
-> \[!NOTE]
+> [!NOTE]
 > CodeQL model packs are currently in public preview and subject to change. Model packs are supported for C/C++, C#, Java/Kotlin, Python, Ruby, and Rust analysis.
 >
 > The CodeQL model editor in the CodeQL extension for Visual Studio Code supports modeling dependencies for C#, Java/Kotlin, Python, and Ruby.
@@ -294,7 +294,7 @@ In this example, the default queries will be run for Java, as well as the querie
 
 When you use CodeQL to scan code, the CodeQL analysis engine generates a database from the code and runs queries on it. CodeQL analysis uses a default set of queries, but you can specify more queries to run, in addition to the default queries.
 
-> \[!TIP]
+> [!TIP]
 > You can also specify the queries you want to exclude from analysis, or include in the analysis. This requires the use of a custom configuration file. For more information, see [Custom configuration files](#custom-configuration-files) and [Excluding specific queries from analysis](#excluding-specific-queries-from-analysis) below.
 
 You can run extra queries if they are part of a CodeQL pack published to the GitHub Container registry or a CodeQL pack stored in a repository. For more information, see [Code scanning with CodeQL](/en/code-security/concepts/code-scanning/codeql/codeql-code-scanning#running-additional-queries).
@@ -312,7 +312,7 @@ We don't recommend referencing query suites directly from the `github/codeql` re
 
 To add one or more CodeQL query packs, add a `with: packs:` entry within the `uses: github/codeql-action/init@v4` section of the workflow. Within `packs` you specify one or more packages to use and, optionally, which version to download. Where you don't specify a version, the latest version is downloaded. If you want to use packages that are not publicly available, you need to set the `GITHUB_TOKEN` environment variable to a secret that has access to the packages. For more information, see [Use GITHUB\_TOKEN for authentication in workflows](/en/actions/tutorials/authenticate-with-github_token) and [Using secrets in GitHub Actions](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets).
 
-> \[!NOTE]
+> [!NOTE]
 > For workflows that generate CodeQL databases for multiple languages, you must instead specify the CodeQL query packs in a configuration file. For more information, see [Specifying CodeQL query packs](#specifying-codeql-query-packs) below.
 
 In the example below, `scope` is the organization or personal account that published the package. When the workflow runs, the four CodeQL query packs are downloaded from GitHub and the default queries or query suite for each pack run:
@@ -329,7 +329,7 @@ In the example below, `scope` is the organization or personal account that publi
     packs: scope/pack1,scope/pack2@1.2.3,scope/pack3@~3.2.1,scope/pack4@4.5.6:path/to/queries
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > If you specify a particular version of a query pack to use, beware that the version you specify may eventually become too old to be used efficiently by the default CodeQL engine used by the CodeQL action. To ensure optimal performance, if you need to specify exact query pack versions, you should consider reviewing periodically whether the pinned version of the query pack needs to be moved forward.
 >
 > For more information about pack compatibility, see [CodeQL query packs reference](/en/code-security/reference/code-scanning/codeql/codeql-cli/codeql-query-packs#codeql-pack-compatibility).
@@ -480,7 +480,7 @@ packs:
 
 ### Extending CodeQL coverage with threat models
 
-> \[!NOTE]
+> [!NOTE]
 > Threat models are currently in public preview and subject to change. During the public preview, threat models are supported only by analysis for Java/Kotlin and C#.
 
 The default threat model includes remote sources of untrusted data. You can extend the CodeQL threat model to include local sources of untrusted data (for example: command-line arguments, environment variables, file systems, and databases) by specifying `threat-models: local` in a custom configuration file. If you extend the threat model, the default threat model will also be used.
@@ -524,7 +524,7 @@ query-filters:
 
 To find the id of a query, you can click the alert in the list of alerts in the **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-shield" aria-label="shield" role="img"><path d="M7.467.133a1.748 1.748 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667Zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.196.196 0 0 0 .154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.251.251 0 0 0-.174-.237l-5.25-1.68ZM8.75 4.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 1.5 0ZM9 10.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg> Security and quality** tab. This opens the alert details page. The `Rule ID` field contains the query id. For more information about the alert details page, see [Code scanning alerts](/en/code-security/concepts/code-scanning/code-scanning-alerts#about-alert-details).
 
-> \[!TIP]
+> [!TIP]
 >
 > * The order of the filters is important. The first filter instruction that appears after the instructions about the queries and query packs determines whether the queries are included or excluded by default.
 > * Subsequent instructions are executed in order and the instructions that appear later in the file take precedence over the earlier instructions.
@@ -545,7 +545,7 @@ paths-ignore:
   - '**/*.test.js'
 ```
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The `paths` and `paths-ignore` keywords, used in the context of the code scanning configuration file, should not be confused with the same keywords when used for `on.<push|pull_request>.paths` in a workflow. When they are used to modify `on.<push|pull_request>` in a workflow, they determine whether the actions will be run when someone modifies code in the specified directories. For more information, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax#onpushpull_requestpull_request_targetpathspaths-ignore).
 > * The filter pattern characters `?`, `+`, `[`, `]`, and `!` are not supported and will be matched literally.
@@ -631,7 +631,7 @@ This step in a GitHub Actions workflow file uses a `config` input to disable the
 
 You can use the same approach to specify any valid configuration options in the workflow file.
 
-> \[!TIP]
+> [!TIP]
 > You can share one configuration across multiple repositories using GitHub Actions variables. One benefit of this approach is that you can update the configuration in a single place without editing the workflow file.
 >
 > In the following example, `vars.CODEQL_CONF` is a GitHub Actions variable. Its value can be the contents of any valid configuration file. For more information, see [Store information in variables](/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables#defining-configuration-variables-for-multiple-workflows).

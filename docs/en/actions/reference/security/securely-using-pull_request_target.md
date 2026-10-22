@@ -91,7 +91,7 @@ For each affected workflow, decide whether `pull_request_target` is still requir
 * If the workflow must continue to use `pull_request_target`, create or update an applicable Actions event policy that explicitly allows `pull_request_target`.
 * If you do not want to allow `pull_request_target`, leave the default policy in place. After enforcement, GitHub will block workflows triggered by that event.
 
-> \[!WARNING]
+> [!WARNING]
 > Only allow `pull_request_target` when it is necessary. Workflows triggered by this event should not check out, build, or run code from an untrusted pull request with access to repository secrets or a privileged `GITHUB_TOKEN`.
 
 For more information about configuring event policies and viewing insights, see [Governing execution of GitHub Actions workflows](/en/actions/how-tos/administer/control-workflow-execution). To manage policies programmatically, see [REST API endpoints for GitHub Actions policies](/en/rest/actions/policies).

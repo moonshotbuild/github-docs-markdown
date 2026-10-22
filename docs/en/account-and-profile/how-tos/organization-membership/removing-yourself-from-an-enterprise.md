@@ -23,7 +23,7 @@ If your personal GitHub account is a member of an enterprise, you can leave the 
 
 After leaving an enterprise, you will no longer be a member of any organization in the enterprise, and you will lose GitHub Copilot licenses and other privileges granted through the enterprise.
 
-> \[!NOTE] If you use a managed user account provided by your enterprise, only administrators can remove you from the enterprise. You're using a managed user account if all usernames in your enterprise end with a pattern like `_CODE`, or if you access the enterprise at a domain like `octocorp.ghe.com`.
+> [!NOTE] If you use a managed user account provided by your enterprise, only administrators can remove you from the enterprise. You're using a managed user account if all usernames in your enterprise end with a pattern like `_CODE`, or if you access the enterprise at a domain like `octocorp.ghe.com`.
 
 ## Leaving an enterprise
 

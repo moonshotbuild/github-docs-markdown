@@ -83,7 +83,7 @@ Tell me how I can convert this Perl script to Typescript. The functionality and 
 
 Copilot generates the following Typescript code.
 
-> \[!NOTE] Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 ```typescript copy
 import * as fs from 'fs';
@@ -152,5 +152,5 @@ Copilot goes on to explain how to run the new file using Node.
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

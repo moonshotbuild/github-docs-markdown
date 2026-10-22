@@ -17,9 +17,6 @@ breadcrumbs:
 
 Create a stack of small, dependent pull requests that can be quickly reviewed.
 
-> \[!NOTE]
-> Stacked pull requests are in public preview and subject to change.
-
 Large pull requests are difficult to review and create bottlenecks, especially when AI helps you generate a high volume of code in a short time. Review quality also degrades as pull request size increases. Reviewers may skim the result, miss issues, or procrastinate and leave the pull request until it grows stale and develops merge conflicts.
 
 Stacked pull requests keep large code changes reviewable.
@@ -44,7 +41,7 @@ gh extension install github/gh-stack
 gh skill install github/gh-stack
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Throughout this tutorial, if you prefer to run stack commands yourself instead of letting Copilot do it, you'll need to use GitHub CLI.
 
 ## 1. Design a stack before you generate code

@@ -23,7 +23,7 @@ Update your pull request branch with changes from the base branch to resolve con
 
 Before merging, update your pull request branch with changes from the base branch to catch conflicts or test failures early. You can update the branch from the pull request page when there are no merge conflicts and the branch is behind the base branch.
 
-> \[!NOTE]
+> [!NOTE]
 > You may not be able to use the `Update branch` button if the HEAD branch of your pull request is a protected branch. See [About protected branches](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
 
 If changes to the base branch cause merge conflicts in your pull request branch, resolve the conflicts before updating the branch. See [Merge conflicts](/en/pull-requests/reference/merge-conflicts).

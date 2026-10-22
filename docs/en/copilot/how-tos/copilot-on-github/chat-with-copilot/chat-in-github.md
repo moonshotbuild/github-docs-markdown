@@ -43,7 +43,7 @@ Copilot Chat is available from any page on GitHub. Some questions work best in a
 
 ### Viewing an editing generated files
 
-> \[!NOTE]
+> [!NOTE]
 > This feature is currently in public preview and subject to change.
 
 Copilot may generate files as part of its response, which you can view, edit, and download from the side panel.

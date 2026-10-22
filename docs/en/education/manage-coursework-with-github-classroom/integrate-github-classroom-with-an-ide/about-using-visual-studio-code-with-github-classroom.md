@@ -19,11 +19,11 @@ breadcrumbs:
 
 You can configure Visual Studio Code as the preferred editor for assignments in GitHub Classroom.
 
-> \[!WARNING]
+> [!WARNING]
 > **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
 > For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
 
-> \[!NOTE]
+> [!NOTE]
 > The [GitHub Classroom extension for VS Code](https://aka.ms/classroom-vscode-ext) is no longer in active development. The **Open in VS Code** badge in student repositories still works, but other features of the extension may not function as expected.
 
 ## About Visual Studio Code
@@ -44,7 +44,7 @@ When creating an assignment, VS Code can be added as the preferred editor for an
 
 This will include an "Open in VS Code" badge in all student repositories. This badge handles installing VS Code, the Classroom extension pack, and opening to the active assignment with one click.
 
-> \[!NOTE]
+> [!NOTE]
 > The student must have Git installed on their computer to push code from VS Code to their repository. This is not automatically installed when clicking the **Open in VS Code** button. The student can download Git from [Git download](https://git-scm.com/downloads).
 
 ### How to use GitHub Classroom extension pack

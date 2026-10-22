@@ -21,10 +21,10 @@ You can install OAuth apps from GitHub Marketplace to use in your organization.
 
 ## About installing OAuth apps in your organization
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to installing and purchasing apps from GitHub Marketplace only. For more information on apps purchased from integrators, see [About GitHub integrations](/en/integrations/concepts/about-integrations).
 
-> \[!TIP]
+> [!TIP]
 > If an app requires organization-level access, then only an organization owner can purchase, install, or cancel the app, and manage app billing for the organization. If the app doesn't require organization-level access, then a repository administrator can install and uninstall the app.
 
 If you choose a paid plan, you'll pay for your app subscription on your organization's current billing date using your organization's existing payment method.

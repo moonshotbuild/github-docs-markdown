@@ -37,7 +37,7 @@ To enable validity checks from the UI:
 4. Under "Secret Protection", to the right of "Validity checks", click **Enable**.
 5. Scroll to the bottom of the page and click **Save changes**.
 
-> \[!NOTE]
+> [!NOTE]
 > You can also use the REST API to enable validity checks for partner patterns for your repository. For more information, see [REST API endpoints for repositories](/en/rest/repos/repos#update-a-repository).
 
 Alternatively, organization owners and enterprise administrators can enable the feature for all repositories in the organization or enterprise. For more information, see [Creating a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/create-custom-configuration) and [Creating a custom security configuration for your enterprise](/en/code-security/how-tos/secure-at-scale/configure-enterprise-security/establish-complete-coverage/create-custom-configuration).

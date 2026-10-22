@@ -21,7 +21,7 @@ Use the REST API to interact with pull request review comments.
 
 Pull request review comments are comments made on a portion of the unified diff during a pull request review. These are different from commit comments and issue comments in a pull request. For more information, see [REST API endpoints for commit comments](/en/rest/commits/comments) and [REST API endpoints for issue comments](/en/rest/issues/comments).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List review comments in a repository

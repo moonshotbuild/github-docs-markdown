@@ -23,7 +23,7 @@ Review the coverage summary posted on your pull requests to identify files with 
 
 * Code coverage is configured for your repository. See [Setting up code coverage for your repository](/en/code-security/how-tos/maintain-quality-code/set-up-code-coverage).
 
-> \[!NOTE]
+> [!NOTE]
 > The coverage summary comment reports **line coverage**. See [Code coverage reference](/en/code-security/reference/code-quality/code-coverage).
 
 ## Reading the coverage summary comment

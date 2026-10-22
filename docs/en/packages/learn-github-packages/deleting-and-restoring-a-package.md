@@ -28,7 +28,7 @@ On GitHub if you have the required access, you can delete:
 * A specific version of a private package
 * A specific version of a public package, if the package version doesn't have more than 5,000 downloads
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * You cannot delete a public package if any version of the package has more than 5,000 downloads. In this scenario, contact us through the [GitHub Support portal](https://support.github.com/) for further assistance.
 > * When deleting public packages, be aware that you may break projects that depend on your package.
@@ -40,12 +40,12 @@ On GitHub, you can also restore an entire package or package version, if:
 
 ## Packages API support
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Packages only supports authentication using a personal access token (classic). For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 You can use the REST API to manage your packages. For more information, see the [REST API endpoints for packages](/en/rest/packages).
 
-> \[!NOTE]
+> [!NOTE]
 > The ability for GitHub Actions workflows to delete and restore packages using the REST API is currently in public preview and subject to change.
 
 With registries that support granular permissions, you can use a `GITHUB_TOKEN` in a GitHub Actions workflow to delete or restore packages using the REST API. The token must have `admin` permission to the package. If your workflow publishes a package, the `admin` role is granted by default to the repository where the workflow is stored. For existing packages not published by a workflow, you need to grant the repository the `admin` role to be able to use a GitHub Actions workflow to delete or restore packages using the REST API. For more information, see [Configuring a package's access control and visibility](/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility#ensuring-workflow-access-to-your-package).

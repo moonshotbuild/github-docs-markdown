@@ -33,7 +33,7 @@ Before you submit a project, make sure:
 * You have a clear project scope that can be completed by a small team within a defined timeframe.
 * You have a GitHub repository (or are ready to create one) where volunteers will contribute.
 
-> \[!NOTE]
+> [!NOTE]
 > Organizations that are not part of GitHub for Nonprofits can still add individual issues to the For Good First Issue list, but Project Pods are exclusively available to verified nonprofits.
 
 ## Understanding Project Pods
@@ -131,7 +131,7 @@ After you submit your project, the GitHub Social Impact team will review it. Her
   * Lack of defined tasks or issues in the repository
   * Insufficient information about required skills or technology
 
-> \[!NOTE]
+> [!NOTE]
 > A revision request does not mean your idea is not valuable. It means adjustments will help volunteers engage more effectively. You are welcome to revise and resubmit at any time.
 
 ## Step 4: Working with your volunteer Pod

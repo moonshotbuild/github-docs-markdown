@@ -38,7 +38,7 @@ Copilot cloud agent has its own dedicated **Agents** secrets and variables, alon
 
 Variables and secrets that you configure are exposed to Copilot as environment variables, except secrets and variables prefixed with `COPILOT_MCP_`, which are only available to MCP servers.
 
-> \[!NOTE]
+> [!NOTE]
 > If you previously configured secrets or variables in the `copilot` environment in a repository's GitHub Actions settings, those secrets and variables have been automatically migrated to the new repository-level **Agents** type. You don't need to take any action, and you can manage them from the new location going forward.
 
 ## Configuring repository-level secrets and variables
@@ -83,7 +83,7 @@ Once configured, Agents secrets and variables are automatically available to Cop
 
 Secret values are masked in Copilot cloud agent session logs.
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot cloud agent does not have access to GitHub Actions, Codespaces, or Dependabot secrets and variables. Only Agents secrets and variables are passed to the agent.
 
 ## Naming requirements for secrets and variables

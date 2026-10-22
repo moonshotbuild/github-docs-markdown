@@ -66,7 +66,7 @@ You should build a migration inventory with a list of all of the repositories in
 
 If you’re migrating from GitHub Enterprise Cloud or GitHub Enterprise Server, you can obtain this data with the `gh-repo-stats` extension for the GitHub CLI. With just a few commands, `gh-repo-stats` will connect with your migration origin's API and create a CSV with all of the recommended fields. For more information, see the [mona-actions/gh-repo-stats](https://github.com/mona-actions/gh-repo-stats/) repository.
 
-> \[!NOTE]
+> [!NOTE]
 > `gh-repo-stats` is a third-party open-source tool which is not supported by GitHub Support. If you need help with this tool, [open an issue](https://github.com/mona-actions/gh-repo-stats/issues) in its repository.
 
 If you’re migrating from Azure DevOps, we recommend the `inventory-report` command in the ADO2GH extension of the GitHub CLI. The `inventory-report` command will connect with the Azure DevOps API, then build a simple CSV with some of the fields suggested above. For more information about how to install the ADO2GH extension of the GitHub CLI, see [Migrate your repositories from Azure DevOps to GitHub](/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github).

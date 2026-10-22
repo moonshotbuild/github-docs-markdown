@@ -27,7 +27,7 @@ Each reminder is only triggered for up to **five** repositories. Users can eithe
 
 This limit is **per reminder configuration** and **per repository owner**. If you want reminders for more than five repositories per owner, you can configure additional reminders.
 
-> \[!NOTE]
+> [!NOTE]
 > Reminders are not sent when changes are merged from upstream into a fork.
 
 ## Next steps

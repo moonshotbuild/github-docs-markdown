@@ -190,7 +190,7 @@ For more information about environments and required approvals, see [Managing en
 
 ## Using custom deployment protection rules
 
-> \[!NOTE]
+> [!NOTE]
 > Custom deployment protection rules are currently in public preview and subject to change.
 
 You can enable your own custom protection rules to gate deployments with third-party services. For example, you can use services such as Datadog, Honeycomb, and ServiceNow to provide automated approvals for deployments to GitHub.

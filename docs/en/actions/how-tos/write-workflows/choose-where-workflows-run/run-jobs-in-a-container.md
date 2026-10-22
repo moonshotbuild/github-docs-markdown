@@ -27,7 +27,7 @@ Use `jobs.<job_id>.container` to create a container to run any steps in a job th
 
 If you do not set a `container`, all steps will run directly on the host specified by `runs-on` unless a step refers to an action configured to run in a container.
 
-> \[!NOTE]
+> [!NOTE]
 > The default shell for `run` steps inside a container is `sh` instead of `bash`. This can be overridden with [`jobs.<job_id>.defaults.run`](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_iddefaultsrun) or [`jobs.<job_id>.steps[*].shell`](/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstepsshell).
 
 ### Example: Running a job within a container
@@ -75,7 +75,7 @@ For reference information, see [Dockerfile support for GitHub Actions](/en/actio
 
 Use `jobs.<job_id>.container.image` to define the Docker image to use as the container to run the action. The value can be the Docker Hub image name or a registry name.
 
-> \[!NOTE]
+> [!NOTE]
 > Docker Hub normally imposes rate limits on both push and pull operations which will affect jobs on self-hosted runners. However, GitHub-hosted runners are not subject to these limits based on an agreement between GitHub and Docker.
 
 ## Defining credentials for a container registry
@@ -123,5 +123,5 @@ volumes:
 
 Use `jobs.<job_id>.container.options` to configure additional Docker container resource options. For a list of options, see [`docker create` options](https://docs.docker.com/engine/reference/commandline/create/#options).
 
-> \[!WARNING]
+> [!WARNING]
 > The `--network` and `--entrypoint` options are not supported.

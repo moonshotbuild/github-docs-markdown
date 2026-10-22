@@ -44,7 +44,7 @@ You can only access billing information for an account where you are an owner, a
 
 If you have questions, please contact [GitHub Support](https://support.github.com).
 
-> \[!NOTE] When you enable GitHub Secret Protection, GitHub Code Security, or GitHub Advanced Security, there is a delay of up to two hours before the change is shown in the usage data on the "Billing and licensing" tab.
+> [!NOTE] When you enable GitHub Secret Protection, GitHub Code Security, or GitHub Advanced Security, there is a delay of up to two hours before the change is shown in the usage data on the "Billing and licensing" tab.
 
 ## Accessing billing information programmatically
 

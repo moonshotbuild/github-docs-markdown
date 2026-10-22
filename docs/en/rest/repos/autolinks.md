@@ -23,7 +23,7 @@ To help streamline your workflow, you can use the REST API to add autolinks to e
 
 GitHub Apps require repository administration permissions with read or write access to use these endpoints.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get all autolinks of a repository

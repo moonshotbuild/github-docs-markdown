@@ -21,7 +21,7 @@ breadcrumbs:
 
 You can manage security campaigns directly from the security overview for your organization.
 
-> \[!NOTE]
+> [!NOTE]
 > Campaigns for secret scanning alerts are currently in public preview and are subject to change.
 
 ## Creating a security campaign
@@ -80,7 +80,7 @@ Additional default filters for code scanning alerts:
 
 * `autofilter:true` includes only alerts that appear to be in application code.
 
-> \[!NOTE]
+> [!NOTE]
 > When agentic autofix is enabled for your organization, the `autofix` filter is unavailable. Adding `autofix:supported` does not change the results. For alerts in repositories where agentic autofix is enabled, you can use **Assign to Copilot** for any code scanning alert in a campaign.
 
 For more information about filtering alerts, see [Running a security campaign to fix alerts at scale](/en/code-security/tutorials/secure-your-organization/best-practice-fix-alerts-at-scale#2-select-alerts-for-your-campaign) and [Filtering alerts in security overview](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview).
@@ -112,7 +112,7 @@ The new campaign is shown in the sidebar of the **<svg version="1.1" width="16" 
 * **Code campaigns**: Anyone with **write** access to a repository included in the campaign is notified.
 * **Secret campaigns**: Anyone with access to see the alert list view for a repository included in the campaign is notified.
 
-> \[!TIP]
+> [!TIP]
 > You can assign a campaign alert to anyone with **write** access to the repository. See [Assigning alerts](/en/code-security/concepts/security-at-scale/about-security-campaigns#about-assigning-alerts).
 
 For more information about the developer experience, see [Fixing alerts in a security campaign](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/fixing-alerts-in-security-campaign).

@@ -83,7 +83,7 @@ Anyone with push access to a pull request can fix a code scanning alert that's i
 
 GitHub Copilot Autofix is an expansion of code scanning that provides you with targeted recommendations to help you fix code scanning alerts (including CodeQL alerts) in pull requests. The potential fixes are generated automatically by large language models (LLMs) using data from the codebase, the pull request, and from code scanning analysis.
 
-> \[!NOTE]
+> [!NOTE]
 > You do not need a subscription to GitHub Copilot to use GitHub Copilot Autofix. Copilot Autofix is available to all public repositories on GitHub.com, as well as internal or private repositories owned by organizations and enterprises that have a license for GitHub Code Security.
 
 ![Screenshot of the check failure for a code scanning alert in a pull request. Part of the "autofix" suggestion is outlined in dark orange.](/assets/images/help/code-scanning/alert+autofix.png)
@@ -92,7 +92,7 @@ GitHub Copilot Autofix is an expansion of code scanning that provides you with t
 
 When Copilot Autofix is enabled for a repository, alerts are displayed in pull requests as normal and information from any alerts found by code scanning is automatically sent to the LLM for processing. When LLM analysis is complete, any results are published as comments on relevant alerts. For more information, see [Application card: GitHub security and quality AI features](/en/code-security/responsible-use/security-and-quality-ai-features).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Copilot Autofix supports a subset of CodeQL queries. For information about the availability of Copilot Autofix, see the query tables linked from [Queries for CodeQL analysis](/en/code-security/reference/code-scanning/codeql/codeql-queries).
 > * When analysis is complete, all relevant results are published to the pull request at once. If at least one alert in your pull request has an Copilot Autofix suggestion, you should assume that the LLM has finished identifying potential fixes for your code.

@@ -23,7 +23,7 @@ These endpoints are only available to authenticated members of the team's [organ
 
 Where `pull` and `push` permissions are accepted, these will map to the **Read** and **Write** roles for an organization repository. For more information about repository roles, see [Repository roles for an organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List teams
@@ -162,21 +162,21 @@ When you create a new team, you automatically become a team maintainer without e
   The level of privacy this team should have. The options are:
   For a non-nested team:
 
-secret - only visible to organization owners and members of this team.
-closed - visible to all members of this organization.
-Default: secret
-For a parent or child team:
-closed - visible to all members of this organization.
-Default for child team: closed
-Can be one of: `secret`, `closed`
+  secret - only visible to organization owners and members of this team.
+  closed - visible to all members of this organization.
+  Default: secret
+  For a parent or child team:
+  closed - visible to all members of this organization.
+  Default for child team: closed
+  Can be one of: `secret`, `closed`
 
 * **`notification_setting`** (string)
   The notification setting the team has chosen. The options are:
 
-notifications\_enabled - team members receive notifications when the team is @mentioned.
-notifications\_disabled - no one receives notifications.
-Default: notifications\_enabled
-Can be one of: `notifications_enabled`, `notifications_disabled`
+  notifications\_enabled - team members receive notifications when the team is @mentioned.
+  notifications\_disabled - no one receives notifications.
+  Default: notifications\_enabled
+  Can be one of: `notifications_enabled`, `notifications_disabled`
 
 * **`parent_team_id`** (integer)
   The ID of a team to set as the parent team.
@@ -394,18 +394,18 @@ You can also specify a team by org\_id and team\_id using the route PATCH /organ
   The level of privacy this team should have. Editing teams without specifying this parameter leaves privacy intact. When a team is nested, the privacy for parent teams cannot be secret. The options are:
   For a non-nested team:
 
-secret - only visible to organization owners and members of this team.
-closed - visible to all members of this organization.
-For a parent or child team:
-closed - visible to all members of this organization.
-Can be one of: `secret`, `closed`
+  secret - only visible to organization owners and members of this team.
+  closed - visible to all members of this organization.
+  For a parent or child team:
+  closed - visible to all members of this organization.
+  Can be one of: `secret`, `closed`
 
 * **`notification_setting`** (string)
   The notification setting the team has chosen. Editing teams without specifying this parameter leaves notification\_setting intact. The options are:
 
-notifications\_enabled - team members receive notifications when the team is @mentioned.
-notifications\_disabled - no one receives notifications.
-Can be one of: `notifications_enabled`, `notifications_disabled`
+  notifications\_enabled - team members receive notifications when the team is @mentioned.
+  notifications\_disabled - no one receives notifications.
+  Can be one of: `notifications_enabled`, `notifications_disabled`
 
 * **`permission`** (string)
   Closing down notice. The permission that new repositories will be added to the team with when none is specified.
@@ -1154,18 +1154,18 @@ With nested teams, the privacy for parent teams cannot be secret.
   The level of privacy this team should have. Editing teams without specifying this parameter leaves privacy intact. The options are:
   For a non-nested team:
 
-secret - only visible to organization owners and members of this team.
-closed - visible to all members of this organization.
-For a parent or child team:
-closed - visible to all members of this organization.
-Can be one of: `secret`, `closed`
+  secret - only visible to organization owners and members of this team.
+  closed - visible to all members of this organization.
+  For a parent or child team:
+  closed - visible to all members of this organization.
+  Can be one of: `secret`, `closed`
 
 * **`notification_setting`** (string)
   The notification setting the team has chosen. Editing teams without specifying this parameter leaves notification\_setting intact. The options are:
 
-notifications\_enabled - team members receive notifications when the team is @mentioned.
-notifications\_disabled - no one receives notifications.
-Can be one of: `notifications_enabled`, `notifications_disabled`
+  notifications\_enabled - team members receive notifications when the team is @mentioned.
+  notifications\_disabled - no one receives notifications.
+  Can be one of: `notifications_enabled`, `notifications_disabled`
 
 * **`permission`** (string)
   Closing down notice. The permission that new repositories will be added to the team with when none is specified.

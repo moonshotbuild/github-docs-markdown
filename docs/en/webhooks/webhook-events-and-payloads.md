@@ -93,18 +93,18 @@ You can choose to have payloads delivered in JSON format (`application/json`) or
 
 ## Common payload parameters
 
-Most webhook events include these standard parameters:
+Many webhook events include these parameters. Not every event includes each one, and whether a parameter is required varies by event.
 
 | Name           | Type     | Description                                                                                                                                                                                                                                       |
 | -------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `action`       | `string` | **Required.**                                                                                                                                                                                                                                     |
+| `action`       | `string` |                                                                                                                                                                                                                                                   |
 | `enterprise`   | `object` | An enterprise on GitHub. Webhook payloads contain the enterprise property when the webhook is configured on an enterprise account or an organization that's part of an enterprise account. For more information, see "About enterprise accounts." |
 | `installation` | `object` | The GitHub App installation. Webhook payloads contain the installation property when the event is configured for and sent to a GitHub App. For more information, see "Using webhooks with GitHub Apps."                                           |
 | `organization` | `object` | A GitHub organization. Webhook payloads contain the organization property when the webhook is configured for an organization, or when the event occurs from activity in a repository owned by an organization.                                    |
-| `repository`   | `object` | **Required.** The repository on GitHub where the event occurred. Webhook payloads contain the repository property when the event occurs from activity in a repository.                                                                            |
-| `sender`       | `object` | **Required.** A GitHub user.                                                                                                                                                                                                                      |
+| `repository`   | `object` | The repository on GitHub where the event occurred. Webhook payloads contain the repository property when the event occurs from activity in a repository.                                                                                          |
+| `sender`       | `object` | A GitHub user.                                                                                                                                                                                                                                    |
 
-Events below list only their additional parameters beyond these common ones.
+Events below omit these common parameters from their own tables.
 
 ## branch\_protection\_configuration
 

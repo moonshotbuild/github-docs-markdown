@@ -51,7 +51,7 @@ If you use the REST API for secret scanning, you can use the `Secret type` to re
 | Extended metadata              | ✗ | ✗ |                                                                                                                                                                  Some                                                                                                                                                                 |
 | Base64 format support          | ✗ | ✗ |                                                                                                                                                                  Some                                                                                                                                                                 |
 
-> \[!NOTE]
+> [!NOTE]
 > Validity and extended metadata checks for partner patterns are only available to users with GitHub Team or GitHub Enterprise who enable the feature as part of GitHub Secret Protection.
 
 ## Supported generic patterns
@@ -71,7 +71,7 @@ Precision levels are estimated based on the pattern type's typical false positiv
 | Generic  | postgres\_connection\_string         | Connection strings for PostgreSQL databases containing credentials     | High      |
 | Generic  | rsa\_private\_key                    | RSA private keys used for cryptographic operations                     | High      |
 
-> \[!NOTE]
+> [!NOTE]
 > Validity checks are **not supported** for generic patterns.
 
 ## Supported AI-detected patterns
@@ -82,13 +82,13 @@ Secret scanning uses Copilot to detect generic secrets using AI. See [Applicatio
 | -------- | :------- |
 | Generic  | password |
 
-> \[!NOTE] Push protection and validity checks are not supported for passwords.
+> [!NOTE] Push protection and validity checks are not supported for passwords.
 
 ## Supported provider patterns
 
 Use the table below to search, filter, and browse all supported patterns. You can filter by provider name, push protection support, validity checks, and more.
 
-> \[!NOTE] Service providers update the patterns used to generate tokens periodically and may support more than one version of a token. Push protection only supports the most recent token versions that secret scanning can identify with confidence. This avoids push protection blocking commits unnecessarily when a result may be a false positive, which is more likely to happen with legacy tokens.
+> [!NOTE] Service providers update the patterns used to generate tokens periodically and may support more than one version of a token. Push protection only supports the most recent token versions that secret scanning can identify with confidence. This avoids push protection blocking commits unnecessarily when a result may be a false positive, which is more likely to happen with legacy tokens.
 
 ## Supported patterns
 
@@ -359,6 +359,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | hCaptcha | hCaptcha Siteverify Secret | hcaptcha_siteverify_secret | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Heroku | Heroku Platform API OAuth2 Token | heroku_platform_api_oauth2_token | ✗ | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Heroku | Heroku Postgres Connection URL | heroku_postgres_connection_url | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
+| Hex | Hex API key | hexpm_api_key | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
 | Highnote | Highnote RK Live Key | highnote_rk_live_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Highnote | Highnote RK Test Key | highnote_rk_test_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Highnote | Highnote SK Live Key | highnote_sk_live_key | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |

@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/copilot/how-tos/copilot-sdk"
   - title: "Features"
     href: "/en/copilot/how-tos/copilot-sdk/features"
-  - title: "Session limits"
+  - title: "Session Limits"
     href: "/en/copilot/how-tos/copilot-sdk/features/session-limits"
 ---
 

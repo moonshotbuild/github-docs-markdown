@@ -23,7 +23,7 @@ breadcrumbs:
 
 Customize GitHub Copilot Chat responses to match your personal preferences.
 
-> \[!NOTE] Personal custom instructions are only supported for GitHub Copilot Chat in GitHub.
+> [!NOTE] Personal custom instructions are only supported for GitHub Copilot Chat in GitHub.
 
 You can layer multiple types of custom instructions to shape GitHub Copilot Chat responses. For an overview, see [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions).
 

@@ -23,7 +23,7 @@ In this section, we're going to focus on the basics of authentication. Specifica
 we're going to create a Ruby server (using [Sinatra](http://www.sinatrarb.com/)) that implements
 the [web flow](/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps) of an application in several different ways.
 
-> \[!TIP]
+> [!TIP]
 > You can download the complete source code for this project [from the platform-samples repo](https://github.com/github/platform-samples/tree/master/api/).
 
 ## Registering your app
@@ -44,7 +44,7 @@ is set to `http://127.0.0.1:4567`. Let's fill in the callback URL as `http://127
 
 ## Accepting user authorization
 
-> \[!WARNING]
+> [!WARNING]
 > **Retired Notice:** Authenticating to the GitHub API is no longer accessible using query parameters. Authenticating to the API should be done with [HTTP basic authentication](/en/rest/authentication/authenticating-to-the-rest-api#using-basic-authentication). For more information, including scheduled brownouts, see the [blog post](https://developer.github.com/changes/2020-02-10-deprecating-auth-through-query-param/).
 
 Now, let's start filling out our simple server. Create a file called *server.rb* and paste this into it:

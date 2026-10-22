@@ -16,7 +16,7 @@ breadcrumbs:
 
 <!-- markdownlint-disable search-replace -->
 
-> \[!NOTE]
+> [!NOTE]
 > The GitHub Corporate Terms of Service were deprecated effective 30 November 2021, and are no longer used for new customers. The terms below apply *only* to those GitHub customers with executed agreements that explicitly reference the Corporate Terms of Service. All other business or institution customers are directed to the GitHub Customer Agreement terms available at [github.com/customer-terms](https://github.com/customer-terms).
 
 ## GitHub Corporate Terms of Service

@@ -23,7 +23,7 @@ You can manage Codespaces that are billed to your
 organization. For more information,
 see [Codespaces documentation](/en/codespaces).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List codespaces for the organization

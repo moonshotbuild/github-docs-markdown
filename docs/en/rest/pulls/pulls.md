@@ -36,7 +36,7 @@ Pull requests have these possible link relations:
 * `commits`: The API location of this pull request's [commits](#list-commits-on-a-pull-request)
 * `statuses`: The API location of this pull request's [commit statuses](/en/rest/commits#commit-statuses), which are the statuses of its `head` branch
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List pull requests

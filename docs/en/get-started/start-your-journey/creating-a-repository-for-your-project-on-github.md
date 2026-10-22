@@ -21,7 +21,7 @@ In this tutorial, you'll create the repository you'll use throughout this series
 
 `stargazers-log` is a simple website that tracks and displays repositories you have starred. It helps you build a personal catalog of tools and code examples you care about. Starring repositories also helps you bookmark projects for later and show appreciation to maintainers.
 
-> \[!NOTE]
+> [!NOTE]
 > As you follow this series, if you use GitHub Enterprise Cloud with data residency or GitHub Enterprise Server, you will need to substitute references and links to GitHub.com with your enterprise's dedicated URL.
 
 ## Prerequisites

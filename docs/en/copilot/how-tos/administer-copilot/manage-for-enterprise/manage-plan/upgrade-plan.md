@@ -23,7 +23,7 @@ breadcrumbs:
 
 Change your organizations' plans from Copilot Business to Copilot Enterprise.
 
-> \[!NOTE]
+> [!NOTE]
 > You must already have a paid Copilot Business plan to upgrade to Copilot Enterprise. Trial plans are not eligible for upgrade.
 
 1. Navigate to your enterprise. For example, from the [Enterprises](https://github.com/settings/enterprises?ref_product=ghec\&ref_type=engagement\&ref_style=text) page on GitHub.com.

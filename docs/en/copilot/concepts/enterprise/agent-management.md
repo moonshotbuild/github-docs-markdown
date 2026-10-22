@@ -45,7 +45,7 @@ You can manage your enterprise-level custom agents:
 * From the AI Controls view
 * Using the REST API. See [REST API endpoints for Copilot custom agents](/en/rest/copilot/copilot-custom-agents).
 
-For more detailed information on custom agents, see [About custom agents](/en/copilot/concepts/agents/cloud-agent/about-custom-agents).
+For more detailed information on custom agents, see [Custom agents](/en/copilot/concepts/customizations/custom-agents).
 
 ## Agent sessions
 

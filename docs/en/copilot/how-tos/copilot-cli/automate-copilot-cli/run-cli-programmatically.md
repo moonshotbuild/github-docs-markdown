@@ -39,7 +39,7 @@ To use Copilot CLI programmatically you can do either of the following.
   echo "Explain this file: ./complex.ts" | copilot
   ```
 
-  > \[!NOTE]
+  > [!NOTE]
   > Piped input is ignored if you also provide a prompt with the `-p` or `--prompt` option.
 
 ## Tips for using Copilot CLI programmatically
@@ -138,7 +138,7 @@ Save the session transcript to a gist on GitHub.com for easy sharing.
 copilot -p 'Summarize the architecture of this project' --share-gist
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Gists are not available to Enterprise Managed Users, or if you use GitHub Enterprise Cloud with data residency (\*.ghe.com).
 
 ## Shell scripting patterns

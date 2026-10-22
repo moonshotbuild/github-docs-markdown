@@ -10,5 +10,5 @@ document_type: "product"
 Use the Search API to search programmatically:
 
 ```
-curl "https://docs.github.com/api/search?query=actions&language=en&version=free-pro-team@latest"
+curl "https://docs.github.com/api/search/v1?query=actions&client_name=docs-api-example&language=en&version=free-pro-team@latest"
 ```

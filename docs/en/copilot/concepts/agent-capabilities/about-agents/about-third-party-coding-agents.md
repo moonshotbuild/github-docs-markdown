@@ -21,7 +21,7 @@ breadcrumbs:
 
 You can use third-party coding agents alongside Copilot cloud agent to work asynchronously on your development tasks on GitHub.
 
-> \[!NOTE] Third-party coding agents are currently in public preview.
+> [!NOTE] Third-party coding agents are currently in public preview.
 
 ## Introduction
 
@@ -56,7 +56,7 @@ The following third-party agents are supported on GitHub.
 
 ### Anthropic Claude
 
-> \[!NOTE]
+> [!NOTE]
 > The Anthropic Claude coding agent is currently in public preview.
 
 The Anthropic Claude coding agent uses the Claude Agent SDK and can be powered by your existing Copilot subscription. For information about Anthropic Claude, see the [Anthropic Claude documentation](https://platform.claude.com/docs/en/agent-sdk/overview).
@@ -75,7 +75,7 @@ If you select **Auto**, it will choose one of the available models listed above.
 
 ### OpenAI Codex
 
-> \[!NOTE]
+> [!NOTE]
 > OpenAI Codex integration is currently in public preview.
 
 The OpenAI Codex coding agent and the VS Code OpenAI Codex integration use the Codex SDK and can be powered by your existing Copilot subscription. For more information about how OpenAI Codex works, see the [OpenAI Codex documentation](https://developers.openai.com/codex).
@@ -90,7 +90,7 @@ If you select **Auto**, it will choose one of the available models listed above.
 
 #### VS Code extension
 
-> \[!NOTE]
+> [!NOTE]
 > The "Sign in with Copilot" option in the OpenAI Codex VS Code extension is only available to GitHub Copilot Pro+ and Copilot Max subscribers.
 
 Use "Sign in with Copilot" when launching the extension. You can see this integration in the [Agent Sessions view](https://code.visualstudio.com/docs/copilot/chat/chat-sessions#_agent-sessions-view) in VS Code Insiders along with progress on their running tasks. All usage is subject to GitHub rate limits and billing.

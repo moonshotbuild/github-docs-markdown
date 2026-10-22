@@ -39,7 +39,7 @@ Reviews can be requested from specific people or teams when they need feedback f
 
 To request a review, you need write access to the repository. You can request a review from a person or team with read access to the repository, and they receive a notification.
 
-> \[!WARNING]
+> [!WARNING]
 > Requesting a review from a large team can notify every team member. You can reduce notifications by enabling auto assignment, or by enabling **Only notify requested team members** and also requesting a specific team member. See [Managing code review settings for your team](/en/organizations/organizing-members-into-teams/managing-code-review-settings-for-your-team).
 
 * Pull request authors can request reviews only if they are repository owners or collaborators with write access.

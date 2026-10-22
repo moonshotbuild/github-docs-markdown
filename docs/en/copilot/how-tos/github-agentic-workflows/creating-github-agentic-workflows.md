@@ -19,7 +19,7 @@ breadcrumbs:
 
 Build custom AI-powered automations tailored to your repository's needs.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Agentic Workflows are in public preview and subject to change.
 
 ## About creating GitHub Agentic Workflows
@@ -65,7 +65,7 @@ You can set up authentication with your chosen AI engine (coding agent) in two w
 
 ### Using the built-in `GITHUB_TOKEN`
 
-> \[!TIP]
+> [!TIP]
 > If you use GitHub Copilot in an organization-owned repository, the built-in `GITHUB_TOKEN` approach in this section is strongly recommended.
 
 If you are using GitHub Copilot in an organization-owned repository, you can use GitHub Actions' built-in `GITHUB_TOKEN` instead of a personal access token. This bills the workflow's usage directly to your organization and avoids the need to manage a personal access token secret for Copilot requests. To set this up:

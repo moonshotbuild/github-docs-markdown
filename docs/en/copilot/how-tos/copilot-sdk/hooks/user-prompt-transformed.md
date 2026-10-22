@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/copilot/how-tos/copilot-sdk"
   - title: "Use hooks"
     href: "/en/copilot/how-tos/copilot-sdk/hooks"
-  - title: "User prompt transformed"
+  - title: "User Prompt Transformed"
     href: "/en/copilot/how-tos/copilot-sdk/hooks/user-prompt-transformed"
 ---
 

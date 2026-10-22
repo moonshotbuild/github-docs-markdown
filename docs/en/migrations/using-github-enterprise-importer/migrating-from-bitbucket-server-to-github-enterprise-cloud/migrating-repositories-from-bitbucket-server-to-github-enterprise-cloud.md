@@ -41,7 +41,7 @@ Alternatively, you can download a standalone binary from the [releases page](htt
 
 1. Install the GitHub CLI. For installation instructions for GitHub CLI, see the [GitHub CLI repository](https://github.com/cli/cli#installation).
 
-   > \[!NOTE]
+   > [!NOTE]
    > You need version 2.4.0 or newer of GitHub CLI. You can check the version you have installed with the `gh --version` command.
 2. Install the BBS2GH extension.
 
@@ -157,7 +157,7 @@ You will also need an AWS access key and secret key with the following permissio
 }
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Enterprise Importer does not delete your archive from AWS after your migration is finished. To reduce storage costs, we recommend configuring auto-deletion of your archive after a period of time. For more information, see [Setting lifecycle configuration on a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-set-lifecycle-configuration-intro.html) in the AWS documentation.
 
 When you're ready to run your migration, you will need to provide your AWS credentials to the GitHub CLI: region, access key, secret key, and session token (if required). You can pass them as arguments, or set environment variables called `AWS_REGION`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_SESSION_TOKEN`.
@@ -168,7 +168,7 @@ You will also need to pass in the name of the S3 bucket using the `--aws-bucket-
 
 In Azure, create a storage account and make a note of your connection string. For more information, see [Manage storage account access keys](https://learn.microsoft.com/en-gb/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#regenerate-access-keys) in Microsoft Docs.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Enterprise Importer does not delete your archive from Azure Blob Storage after your migration is finished. To reduce storage costs, we recommend configuring auto-deletion of your archive after a period of time. For more information, see [Optimize costs by automatically managing the data lifecycle](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview) in Microsoft Docs.
 
 When you're ready to run your migration, you can either pass your connection string into the GitHub CLI as an argument, or pass it in using an environment variable called `AZURE_STORAGE_CONNECTION_STRING`.
@@ -239,7 +239,7 @@ Replace the placeholders in the command above with the following values.
 | AWS-BUCKET-NAME       | The bucket name for your AWS S3 bucket                                                                                                                                                                                                                                                                                                                                                                         |
 | ARCHIVE-DOWNLOAD-HOST | The host to use to connect to the Bitbucket Server/Data Center instance via SSH or SMB. You only need to specify this if you are running a [Bitbucket Data Center cluster](https://confluence.atlassian.com/bitbucketserver/set-up-a-bitbucket-data-center-cluster-996641208.html) or your Bitbucket Server is behind a load balancer.                                                                         |
 
-> \[!NOTE]
+> [!NOTE]
 > If you get an error mentioning `Renci.SshNet`, then the CLI is having issues making an SFTP connection to your server to download your migration archive. For information about how to troubleshoot these issues, see [Troubleshooting your migration with GitHub Enterprise Importer](/en/migrations/troubleshooting/troubleshooting-your-migration-with-github-enterprise-importer#cipher-name-is-not-supported-error).
 
 ### Downloading the migration archive manually
@@ -325,7 +325,7 @@ We recommend that you review your migrated repositories for a soundness check.
 
 If you want to migrate multiple repositories to GitHub Enterprise Cloud at once, use the GitHub CLI to generate a migration script. The resulting script will contain a list of migration commands, one per repository.
 
-> \[!NOTE]
+> [!NOTE]
 > Generating a script outputs a PowerShell script. If you're using Terminal, you will need to output the script with the `.ps1` file extension and install PowerShell for either [Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-macos?view=powershell-7.2) or [Linux](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-linux?view=powershell-7.2) to run it.
 
 ### Generating a migration script

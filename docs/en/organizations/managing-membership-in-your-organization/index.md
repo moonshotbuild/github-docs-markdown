@@ -13,7 +13,7 @@ breadcrumbs:
 
 # Managing membership in your organization
 
-After you create your organization, you can add people as members of the organization. You can also remove members of the organization, and reinstate former members.
+After you create your organization, you can invite people to become members of the organization. You can also remove members of the organization, and reinstate former members.
 
 ## Links
 
@@ -25,17 +25,13 @@ After you create your organization, you can add people as members of the organiz
 
   Organization owners can edit or cancel an invitation to become a member of your organization any time before the user accepts.
 
-* [Adding people to your organization](/en/adding-people-to-your-organization)
-
-  You can make anyone a member of your organization using their GitHub username or email address.
-
 * [Removing a member from your organization](/en/organizations/managing-membership-in-your-organization/removing-a-member-from-your-organization)
 
   If members of your organization no longer require access to any repositories owned by the organization, you can remove them from the organization.
 
 * [Reinstating a former member of your organization](/en/organizations/managing-membership-in-your-organization/reinstating-a-former-member-of-your-organization)
 
-  You can add former members to your organization, and choose whether to restore the person's former role, access permissions, forks, and settings.
+  You can invite former organization members to rejoin your organization, and choose whether to restore the person's former role, access permissions, forks, and settings.
 
 * [Exporting member information for your organization](/en/organizations/managing-membership-in-your-organization/exporting-member-information-for-your-organization)
 

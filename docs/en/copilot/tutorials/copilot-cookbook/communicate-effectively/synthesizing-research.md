@@ -168,11 +168,11 @@ The EcoSmart Bottle demonstrates how everyday products can be reimagined to prom
 ---
 ```
 
-> \[!NOTE] This research is a fictional example and does not represent real product development or studies.
+> [!NOTE] This research is a fictional example and does not represent real product development or studies.
 
 ## Example response
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 ```text
 ## EcoSmart Bottle: Key Trends and Insights
@@ -201,5 +201,5 @@ The EcoSmart Bottle demonstrates a growing trend toward holistic, smart consumer
 
 ## Further reading
 
-* [Prompt engineering for GitHub Copilot Chat](/en/copilot/concepts/prompting/prompt-engineering)
+* [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)

@@ -47,7 +47,7 @@ While ARC may be deployed successfully with different tooling and configurations
 
 For more information about contacting GitHub Support, see [Contacting GitHub Support](/en/support/contacting-github-support).
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * ARC is only supported on GitHub Enterprise Server versions 3.9 and greater.
 

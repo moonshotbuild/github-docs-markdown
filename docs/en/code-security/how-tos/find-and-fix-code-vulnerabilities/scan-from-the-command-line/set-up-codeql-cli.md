@@ -34,7 +34,7 @@ If you plan to use the CodeQL CLI for security research or to test or contribute
 If you are using macOS on Apple Silicon (for example, Apple M1), ensure that the [Xcode command-line developer
 tools](https://developer.apple.com/library/archive/technotes/tn2339/_index.html) and [Rosetta 2](https://support.apple.com/en-us/HT211861) are installed.
 
-> \[!NOTE]
+> [!NOTE]
 > The CodeQL CLI is currently not compatible with non-glibc Linux distributions such as (muslc-based) Alpine Linux.
 
 ### 1. Download the CodeQL CLI tar archive
@@ -80,7 +80,7 @@ Once extracted, you can run CodeQL processes by running the `codeql` executable 
 
 At this point, you can execute CodeQL commands. For a full list of the CodeQL CLI commands, see [CodeQL CLI commands manual](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual).
 
-> \[!NOTE]
+> [!NOTE]
 > If you add `codeql` to your `PATH`, it can be accessed by CodeQL for Visual Studio Code to compile and run queries. For more information about configuring VS Code to access the CodeQL CLI, see [Managing the CodeQL CLI in the VS Code extension](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/scan-from-vs-code/manage-codeql-cli).
 
 ## Testing the CodeQL CLI configuration
@@ -120,7 +120,7 @@ Optionally, you can download some CodeQL packs containing pre-compiled queries y
 
 The `codeql resolve packs` command is useful for diagnosing problems when the CodeQL CLI is unable to locate query packs that you expect to be available for analysis.
 
-> \[!NOTE] The `codeql resolve packs` command is available in the CodeQL CLI versions 2.19.0 and later. For earlier versions of the CLI, you should run the `codeql resolve qlpacks` command, which produces similar, but less detailed output.
+> [!NOTE] The `codeql resolve packs` command is available in the CodeQL CLI versions 2.19.0 and later. For earlier versions of the CLI, you should run the `codeql resolve qlpacks` command, which produces similar, but less detailed output.
 
 ## Next steps
 

@@ -42,7 +42,7 @@ You can also search for a specific dependency using the search bar. Dependencies
 
    ![Screenshot of the "Dependency graph" page. The "Dependents" tab is highlighted with an orange outline.](/assets/images/help/graphs/dependency-graph-dependents-tab.png)
 
-   > \[!NOTE] GitHub currently only determines dependents for public repositories.
+   > [!NOTE] GitHub currently only determines dependents for public repositories.
 
 ### Dependencies view
 

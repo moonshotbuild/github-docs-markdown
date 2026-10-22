@@ -23,7 +23,7 @@ This reference article shows you which GitHub tools to use and which GitHub surf
 
 For full guidance on how to respond to a security incident, including **containment strategies**, see [Responding to a security incident](/en/code-security/tutorials/secure-your-organization/respond-to-a-security-incident).
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > The availability of each tool (and the data it provides) varies by GitHub plan, role, permissions, feature enablement, and pre-incident configuration (for example, audit log streaming and IP address disclosure require prior set up). For more information, see [Investigation tools for security incidents](/en/code-security/reference/security-incident-response/investigation-tools).
 >
 > Be aware that real-world security incidents rarely involve a single attack vector. A credential compromise may lead to malicious code injection, which may enable data exfiltration. As you investigate a threat signal, be prepared to move into other investigation areas, and to loop through containment, deeper investigation and remediation as you uncover new indicators of compromise and as your understanding of the threat model evolves.
@@ -139,7 +139,7 @@ You found suspicious code in your repository, a security researcher reported an 
 * [GITHUB\_TOKEN](/en/actions/concepts/security/github_token)
 * [Secure use reference](/en/actions/reference/security/secure-use)
 
-> \[!NOTE]
+> [!NOTE]
 > \[!NOTE] Runner IP addresses are dynamically assigned from shared infrastructure and may be flagged due to unrelated activity. For more information, see [Troubleshooting workflows](/en/actions/how-tos/troubleshoot-workflows#runner-ip-addresses-flagged-by-security-scanners).
 
 ## Malware and supply chain attacks

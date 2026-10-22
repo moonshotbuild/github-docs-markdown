@@ -45,7 +45,7 @@ The default funnel order is `has:patch, severity:critical,high, epss-percentage:
 5. In the "Configure funnel order" dialog, move the criteria as desired.
 6. Once you're done, click **Move** to save your changes.
 
-> \[!TIP] You can reset the funnel order back to the default settings by clicking **Reset to default** to the right of the graph.
+> [!TIP] You can reset the funnel order back to the default settings by clicking **Reset to default** to the right of the graph.
 
 ## Using metrics effectively
 

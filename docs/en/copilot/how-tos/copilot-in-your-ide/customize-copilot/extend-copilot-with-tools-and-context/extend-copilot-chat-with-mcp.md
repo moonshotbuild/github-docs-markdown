@@ -25,7 +25,7 @@ Connect MCP servers to Copilot Chat to share context from other applications.
 
 ## Introduction
 
-The Model Context Protocol (MCP) is an open standard that defines how applications share context with large language models (LLMs). For an overview of MCP, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+The Model Context Protocol (MCP) is an open standard that defines how applications share context with large language models (LLMs). For an overview of MCP, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 For a curated list of MCP servers from partners and the community, see the [GitHub MCP Registry](https://github.com/mcp).
 
@@ -45,7 +45,7 @@ MCP servers can be configured manually in a configuration file, or through the G
 
 ### Using the GitHub MCP Registry
 
-> \[!NOTE]
+> [!NOTE]
 > The GitHub MCP Registry is in public preview and may change.
 
 Only MCP servers listed in the GitHub MCP Registry can be added through the registry. Other servers can be configured manually. See [Configuring MCP servers manually](#configuring-mcp-servers-manually).
@@ -64,7 +64,7 @@ To configure MCP servers in Visual Studio Code, you need to set up a configurati
 * **A specific repository**. This enables you to share MCP servers with anyone who opens the project in Visual Studio Code. To do this, create a `.vscode/mcp.json` file in the root of your repository.
 * **Your personal instance of Visual Studio Code**. You will be the only person who has access to configured MCP servers. To do this, add the configuration to your `settings.json` file in Visual Studio Code. MCP servers configured this way will be available in all workspaces.
 
-  > \[!NOTE] We recommend you use only one location per server. Adding the same server to both locations may cause conflicts and unexpected behavior.
+  > [!NOTE] We recommend you use only one location per server. Adding the same server to both locations may cause conflicts and unexpected behavior.
 
 The steps below show how to configure the Fetch MCP server in your `.vscode/mcp.json` file. The Fetch MCP server is a simple MCP server that provides web content fetching capabilities. For more information on the Fetch MCP server, see [the Fetch directory](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) in the MCP Server repository.
 

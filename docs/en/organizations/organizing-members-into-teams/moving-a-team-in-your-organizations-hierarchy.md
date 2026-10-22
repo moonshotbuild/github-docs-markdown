@@ -21,7 +21,7 @@ Organization owners can change the parent of any team. Team maintainers can chan
 
 Child teams inherit the access permissions of the parent team. For more information on team hierarchies, see [About organization teams](/en/organizations/organizing-members-into-teams/about-teams#nested-teams).
 
-> \[!TIP]
+> [!TIP]
 >
 > * You cannot change a team's parent to a secret team. For more information, see [About organization teams](/en/organizations/organizing-members-into-teams/about-teams).
 > * You cannot nest a parent team beneath one of its child teams.

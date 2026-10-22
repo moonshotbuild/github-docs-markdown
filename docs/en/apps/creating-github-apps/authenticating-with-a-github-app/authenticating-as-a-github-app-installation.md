@@ -73,7 +73,7 @@ To authenticate as an installation with an installation access token, first use 
 
    For more information about this endpoint, see [REST API endpoints for GitHub Apps](/en/rest/apps/apps).
 
-   > \[!NOTE]
+   > [!NOTE]
    > In most cases, you can use `Authorization: Bearer` or `Authorization: token` to pass a token. However, if you are passing a JSON web token (JWT), you must use `Authorization: Bearer`.
 
 ### Authenticating with an installation access token
@@ -96,7 +96,7 @@ curl --request GET \
 
 You can use GitHub's Octokit.js SDK to authenticate as an app installation. One advantage of using the SDK to authenticate is that you do not need to generate a JSON web token (JWT) yourself. Additionally, the SDK will take care of regenerating an installation access token for you so you don't need to worry about the one hour expiration.
 
-> \[!NOTE]
+> [!NOTE]
 > You must install and import `octokit` in order to use the Octokit.js library. The following example uses import statements in accordance with ES6. For more information about different installation and import methods, see [the Octokit.js README's Usage section](https://github.com/octokit/octokit.js/#usage).
 
 ### Using Octokit.js to authenticate with an installation ID

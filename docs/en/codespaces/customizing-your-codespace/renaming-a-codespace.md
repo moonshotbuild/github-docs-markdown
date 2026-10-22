@@ -31,7 +31,7 @@ To find the display name of a codespace:
 
   ![Screenshot of the "Remote Explorer" in VS Code. The codespace display name, "psychic chainsaw," is highlighted with a dark orange outline.](/assets/images/help/codespaces/codespaces-remote-explorer.png)
 
-  > \[!NOTE]
+  > [!NOTE]
   > If the Remote Explorer is not displayed in the Activity Bar:
   >
   > 1. Access the Command Palette. For example, by pressing <kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>P</kbd> (Mac) / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows/Linux).

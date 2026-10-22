@@ -55,7 +55,7 @@ There are three sections on the meta endpoint you can choose to allow-list based
 * `domains.actions`: A middle-ground domain list, with some GitHub-owned domains wildcarded, but other domains listed specifically.
 * `domains.actions_inbound.wildcard_domains`: A list with primarily wildcarded domains. This will be the most stable from a domain change perspective.
 
-> \[!WARNING]
+> [!WARNING]
 > Required domains on the meta endpoint are subject to change. GitHub ensures a domain is on the meta endpoint for at least one week before it goes into use. The meta endpoint does not provide a "last updated" date, so you cannot rely on a timestamp to detect changes.
 >
 > If you plan to use the more specific domain lists, you must check for new domains on a weekly basis and update your network control systems appropriately, or your GitHub Actions jobs may experience unintended issues. Because new domains are published at least a week before they are required, a weekly check leaves enough lead time to apply changes before they take effect. The middle-ground list that allows for some GitHub domain wildcards will be much more stable, and the full wildcard list should see very little change.
@@ -64,10 +64,10 @@ You can use any technology of your choice for doing DNS/domain control on your A
 
 #### IP address controls
 
-> \[!WARNING]
+> [!WARNING]
 > The IP-based `.bicep` template below is closing down and will be removed on or after July 1, 2026. It remains available to support migration to DNS/domain-based control (see "DNS/domain control" above). Customers who hard-code or template this IP list (for example, in Terraform) are at risk of broken traffic when the underlying Azure IP ranges change, because this static list is not kept up to date. Migrate to the meta endpoint domains before this template is removed.
 
-> \[!NOTE]
+> [!NOTE]
 > To determine the appropriate subnet IP address range, we recommend adding a 30% buffer to the maximum job concurrency you anticipate. For instance, if your network configuration's runners are set to a maximum job concurrency of 300, it's recommended to utilize a subnet IP address range that can accommodate at least 390 runners. This buffer helps ensure that your network can handle unexpected increases in VM needs to meet job concurrency without running out of IP addresses.
 
 If you control outbound access using IP addresses during the transition period, save the following `.bicep` file. Name the file `actions-nsg-deployment.bicep`.
@@ -282,7 +282,7 @@ resource actions_NSG 'Microsoft.Network/networkSecurityGroups@2017-06-01' = {
 
 ### 1. Obtain the `databaseId` for your organization
 
-> \[!TIP]
+> [!TIP]
 > Your token will require at minimum `read:org` permissions to perform a successful query.
 
 You can use the following GraphQL query to retrieve your organization `databaseId`. You will use the organization `databaseId` for the value of the `DATABASE_ID` environment variable in the next step. For more information on working with GraphQL, see [Forming calls with GraphQL](/en/graphql/guides/forming-calls-with-graphql).
@@ -326,7 +326,7 @@ Use the following script to set up a subnet for Azure private networking. The sc
 
 To use the script, fill in the placeholder environment variable values with the actual values and run the script from a bash shell or Windows Subsystem for Linux.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Run the following script in the same directory where you saved the `actions-nsg-deployment.bicep` file.
 > * When setting the `YOUR_AZURE_LOCATION` environment variable, use your region’s name. This value is different than your region’s display name. To see a list of names and display names, use `az account list-locations -o table`.
@@ -429,7 +429,7 @@ Ensure your Azure resources have been configured *before* adding a network confi
 
 ### 2. Create a runner group for your organization
 
-> \[!NOTE]
+> [!NOTE]
 > For the runner group to be accessible by repositories within your organizations, those repositories must have access to that runner group at the organization level. For more information, see [Controlling access to larger runners](/en/actions/how-tos/manage-runners/larger-runners/control-access#changing-which-repositories-can-access-a-runner-group).
 
 1. Create a new runner group for your organization. For more information about how to create a runner group, see [Controlling access to larger runners](/en/actions/how-tos/manage-runners/larger-runners/control-access#creating-a-runner-group-for-an-organization).
@@ -439,7 +439,7 @@ Ensure your Azure resources have been configured *before* adding a network confi
 
 ### 3. Add the GitHub-hosted runner to the organization runner group
 
-> \[!NOTE]
+> [!NOTE]
 > When adding your GitHub-hosted runner to a runner group, select the runner group you created in the previous procedures.
 
 1. Add the GitHub-hosted runner to the runner group. For more information, see [Managing larger runners](/en/actions/how-tos/manage-runners/larger-runners/manage-larger-runners#adding-a-larger-runner-to-an-organization).
@@ -458,7 +458,7 @@ Ensure your Azure resources have been configured *before* adding a network confi
 
 ### 5. Optionally, add a failover network to a network configuration
 
-> \[!NOTE]
+> [!NOTE]
 > VNET failover is in public preview and subject to change.
 
 You can configure a failover network for your network configuration. A failover network is a secondary Azure Virtual Network subnet, which can be in a different Azure region from your primary subnet. If your primary subnet becomes unavailable due to a regional outage or other disruption, you can enable the failover network to route runner traffic through the secondary subnet, maintaining continuity for your GitHub Actions workflows.
@@ -498,7 +498,7 @@ After adding a failover network, you can enable it to route traffic through the 
 6. To switch to the failover network, click **Enable failover VNET**. Runner traffic will be routed through the failover subnet.
 7. To switch back to the primary network, click **Disable failover VNET**. Runner traffic will return to the primary subnet.
 
-> \[!NOTE]
+> [!NOTE]
 > If GitHub enables failover automatically during a regional outage, you will be notified via audit log event and email. You must manually disable the failover to return to the primary subnet when the outage is resolved.
 
 ## Deleting a subnet

@@ -50,7 +50,7 @@ When you install the SDK, the Copilot runtime is included automatically (Node.js
 
 ## Quick start
 
-> \[!NOTE]
+> [!NOTE]
 > Each SDK has a minimum language runtime requirement—see the Prerequisites section of the [Node.js](https://github.com/github/copilot-sdk/tree/main/nodejs/README.md#prerequisites), [Python](https://github.com/github/copilot-sdk/tree/main/python/README.md#prerequisites), [Go](https://github.com/github/copilot-sdk/tree/main/go/README.md#prerequisites), [Rust](https://github.com/github/copilot-sdk/tree/main/rust/README.md#prerequisites), [Java](https://github.com/github/copilot-sdk/tree/main/java/README.md#prerequisites), or [.NET](https://github.com/github/copilot-sdk/tree/main/dotnet/README.md#prerequisites) README—since an unsupported runtime (e.g. Python below the stated floor) can cause `pip`/package managers to silently resolve an outdated SDK release instead of reporting a version conflict.
 
 <div class="ghd-codetabs">
@@ -90,7 +90,7 @@ await client.stop()
 
 <div class="ghd-codetab" data-lang="go" data-label="Go"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">Go</div>
 
-> \[!NOTE]
+> [!NOTE]
 > Unlike Node.js, Python, and .NET, the Go SDK does not include a CLI as an automatic dependency. With no explicit path, `NewClient(nil)` uses an embedded CLI when available, then falls back to `copilot` on `PATH`. To embed a CLI, run the [bundler tool](https://github.com/github/copilot-sdk/tree/main/go/README.md#distributing-your-application-with-an-embedded-github-copilot-cli) at build time. You can also set `COPILOT_CLI_PATH` or point a `Connection` at an existing binary. See [Local CLI setup](/en/copilot/how-tos/copilot-sdk/setup/local-cli) for details.
 
 ```golang
@@ -125,7 +125,7 @@ Console.WriteLine(response?.Data.Content);
 
 <div class="ghd-codetab" data-lang="java" data-label="Java"><div class="ghd-codetab-fallback-label" role="heading" aria-level="3">Java</div>
 
-> \[!NOTE]
+> [!NOTE]
 > The Java SDK does not bundle or embed the Copilot CLI. Install the CLI separately and either make `copilot` available on your `PATH` or set its location with `setCliPath(...)` (or connect to a running CLI server with `setCliUrl(...)`).
 
 ```java

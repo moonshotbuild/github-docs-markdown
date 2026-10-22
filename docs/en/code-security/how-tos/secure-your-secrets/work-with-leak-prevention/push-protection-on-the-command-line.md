@@ -99,7 +99,7 @@ To resolve a blocked push, you must remove the secret from all of the commits it
 
 8. Add your changes to the staging area using `git add .`.
 
-   > \[!NOTE] The full command is `git add .`:
+   > [!NOTE] The full command is `git add .`:
    >
    > * There is a space between `add` and `.`.
    > * The period following the space is part of the command.
@@ -112,7 +112,7 @@ To resolve a blocked push, you must remove the secret from all of the commits it
 
 ## Bypassing push protection
 
-> \[!NOTE] If you don't see the option to bypass a block, you should remove the secret from the commit, or submit a request for "bypass privileges" in order to push the blocked secret. See [Requesting bypass privileges](#requesting-bypass-privileges).
+> [!NOTE] If you don't see the option to bypass a block, you should remove the secret from the commit, or submit a request for "bypass privileges" in order to push the blocked secret. See [Requesting bypass privileges](#requesting-bypass-privileges).
 
 1. Visit the URL returned by GitHub when your push was blocked, **as the same user that performed the push**. If a different user attempts to visit this URL, they will receive a `404` error.
 
@@ -122,7 +122,7 @@ To resolve a blocked push, you must remove the secret from all of the commits it
    * If the detected string is not a secret, click **It's a false positive**.
 
    * If the secret is real but you intend to fix it later, click **I'll fix it later**.
-   > \[!NOTE]
+   > [!NOTE]
    > You are required to specify a reason for bypassing push protection if the repository has secret scanning enabled.
    >
    > When pushing to a *public* repository that doesn't have secret scanning enabled, you are still protected from accidentally pushing secrets thanks to *push protection for users*, which is on by default for your user account.

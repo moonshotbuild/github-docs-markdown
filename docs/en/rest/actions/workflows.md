@@ -21,7 +21,7 @@ Use the REST API to interact with workflows in GitHub Actions.
 
 You can use the REST API to view workflows for a repository in GitHub Actions. Workflows automate your software development life cycle with a wide range of tools and services. For more information, see [Workflows](/en/actions/concepts/workflows-and-actions/workflows) in the GitHub Actions documentation.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List repository workflows

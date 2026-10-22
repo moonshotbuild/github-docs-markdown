@@ -138,7 +138,7 @@ For more information, see `allow` in [Dependabot options reference](/en/code-sec
 
 By default, Dependabot creates version update pull requests only for the dependencies that are explicitly defined in a manifest (`direct` dependencies). This configuration uses `allow` to tell Dependabot that we want it to maintain `all` types of dependency. That is, both the `direct` dependencies and their dependencies (also known as indirect dependencies, sub-dependencies, or transient dependencies). In addition, the configuration tells Dependabot to ignore all dependencies with a name matching the pattern `org.xwiki.*` because we have a different process for maintaining them.
 
-> \[!TIP]
+> [!TIP]
 > Dependabot checks for all **allowed** dependencies, then filters out any **ignored** dependencies. If a dependency is matched by an **allow** and an **ignore** statement, then it is ignored. You can also use `update-types` in `allow` rules to restrict updates to specific semantic versioning levels.
 
 ```yaml copy
@@ -177,7 +177,7 @@ updates:
 
 You can use `update-types` with `allow` to restrict updates to specific semantic versioning (SemVer) levels. This is useful when you want to be explicit about which types of updates Dependabot should create pull requests for.
 
-> \[!NOTE]
+> [!NOTE]
 > `update-types` only affects *version* updates, not *security* updates. Security updates will always be created regardless of the `update-types` setting.
 
 For more information, see `update-types` in [Dependabot options reference](/en/code-security/reference/supply-chain-security/dependabot-options-reference#update-types-allow).

@@ -21,7 +21,7 @@ breadcrumbs:
 
 In supported entrypoints, when starting a task with Copilot cloud agent, you can select the model used, and, for supported models, the reasoning level.
 
-> \[!NOTE]
+> [!NOTE]
 > For an overview of Copilot cloud agent, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
 
 ## Introduction
@@ -30,7 +30,7 @@ In supported entrypoints, you can select the model used by Copilot cloud agent.
 
 You may find that different models perform better, or provide more useful responses, depending on the type of tasks you give Copilot.
 
-> \[!NOTE]
+> [!NOTE]
 > Model selection for Copilot cloud agent is only supported when assigning an issue to Copilot on GitHub.com, when mentioning `@copilot` in a pull request comment on GitHub.com, or when starting a task from the agents tab, agents panel, GitHub Mobile or the Raycast launcher. Where a model picker is not available, Auto will be used automatically. See [Starting GitHub Copilot sessions](/en/copilot/how-tos/use-copilot-agents/cloud-agent/start-copilot-sessions).
 
 ## Supported models
@@ -42,9 +42,9 @@ The following options are currently available:
 * Claude Opus 5.5
 * Claude Sonnet 5.5
 * Claude Haiku 4.5
-* Gemini 3.7 Flash
+* Claude Haiku 5.5
 * Gemini 3.8 Flash
-* GPT-5.4 mini
+* Gemini 4 Argon
 * GPT-5.6 Luna
 * GPT-5.6 Sol
 * GPT-5.6 Terra
@@ -57,7 +57,7 @@ The following options are currently available:
 * Grok 4.7
 * MAI-Code-1.1-Flash
 
-> \[!NOTE] If you select **Auto**, Copilot auto model selection will select the best model based on availability and to help reduce rate limiting. See [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection).
+> [!NOTE] If you select **Auto**, Copilot auto model selection will select the best model based on availability and to help reduce rate limiting. See [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection).
 
 ## Reasoning level
 

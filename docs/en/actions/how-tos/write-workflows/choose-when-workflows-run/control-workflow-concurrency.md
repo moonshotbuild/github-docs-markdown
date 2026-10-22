@@ -38,7 +38,7 @@ To allow more than one `pending` job or workflow run to wait in the same concurr
 
 The combination of `queue: max` and `cancel-in-progress: true` is not allowed and will result in a workflow validation error.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The concurrency group name is case insensitive. For example, `prod` and `Prod` will be treated as the same concurrency group.
 > * Jobs or workflow runs in the same concurrency group are processed in first-in-first-out (FIFO) order according to the time each one started waiting on the concurrency group, not the time each workflow was dispatched. Since the actual start time of a job or run may vary, ordering is not guaranteed.

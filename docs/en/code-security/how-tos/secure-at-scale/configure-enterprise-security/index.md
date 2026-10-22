@@ -21,10 +21,6 @@ Configure and standardize security features across your enterprise, including es
 
 ## Links
 
-* [Establish complete coverage](/en/establish-complete-coverage)
-
-  Learn how to establish comprehensive, enterprise-wide security coverage by enabling GitHub Advanced Security, applying recommended or custom security configurations, and configuring additional secret scanning settings across your enterprise.
-
 * [Manage your coverage](/en/code-security/how-tos/secure-at-scale/configure-enterprise-security/manage-your-coverage)
 
   Review and manage your enterprise's repository security coverage by adjusting which repositories are included in your custom security configurations and removing unneeded configurations.

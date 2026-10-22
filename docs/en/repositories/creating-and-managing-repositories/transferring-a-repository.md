@@ -52,7 +52,7 @@ When you transfer a repository, its issues, pull requests, wiki, stars, and watc
   git remote set-url origin NEW_URL
   ```
 
-  > \[!WARNING]
+  > [!WARNING]
   > If you create a new repository or fork at the previous repository location, the redirects to the transferred repository will be permanently deleted.
 * When you transfer a repository from an organization to a personal account, the repository's read-only collaborators will not be transferred. This is because collaborators can't have read-only access to repositories owned by a personal account. For more information about repository permission levels, see [Permission levels for a personal account repository](/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/permission-levels-for-a-personal-account-repository) and [Repository roles for an organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization).
 * Sponsors who have access to the repository through a sponsorship tier may be affected. See [Managing your sponsorship tiers](/en/sponsors/receiving-sponsorships-through-github-sponsors/managing-your-sponsorship-tiers#adding-a-repository-to-a-sponsorship-tier).
@@ -83,7 +83,7 @@ If you published a GitHub Pages site in a private repository and added a custom 
      * Select the dropdown menu and click an organization.
      * Optionally, in the "Repository name" field, type a new name for the repository.
 
-       > \[!NOTE]
+       > [!NOTE]
        > You must be an owner of the target organization to rename the repository.
 
    * To specify an organization or username, select **Specify an organization or username**, then type the organization name or the new owner's username.
@@ -106,7 +106,7 @@ If you have owner permissions in an organization or admin permissions to one of 
      * Select the dropdown menu and click an organization.
      * Optionally, in the "Repository name" field, type a new name for the repository.
 
-       > \[!NOTE]
+       > [!NOTE]
        > You must be an owner of the target organization to rename the repository.
 
    * To specify an organization or username, select **Specify an organization or username**, then type the organization name or the new owner's username.

@@ -23,7 +23,7 @@ Use GitHub Apps to automate protecting deployments with third-party systems.
 
 ## Prerequisites
 
-> \[!NOTE]
+> [!NOTE]
 > Custom deployment protection rules are currently in public preview and subject to change.
 
 For general information about deployment protection rules, see [Deploying with GitHub Actions](/en/actions/how-tos/deploy/configure-and-manage-deployments/control-deployments#using-custom-deployment-protection-rules).

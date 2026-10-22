@@ -21,7 +21,7 @@ You can limit how many branches and tags can be updated in a single push.
 
 ## About the push policy
 
-> \[!NOTE]
+> [!NOTE]
 > The push policy is currently in public preview and subject to change.
 
 By default, there is no limit to the number of branches and tags that can be updated in a single push.

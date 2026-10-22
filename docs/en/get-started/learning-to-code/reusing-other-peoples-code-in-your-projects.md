@@ -68,7 +68,7 @@ To identify the license for [new2code/python-factorial](https://github.com/new2c
 
 We want to copy the entire `factorial_finder.py` file, so the MIT license indicates that we should include a copy of the license in our own project. At the top of your Python file, paste the license as a comment.
 
-> \[!TIP] You can learn what's allowed by other common licenses with the [Choose a license](https://choosealicense.com/licenses/) tool.
+> [!TIP] You can learn what's allowed by other common licenses with the [Choose a license](https://choosealicense.com/licenses/) tool.
 
 ### 3. Using and modifying code snippets
 

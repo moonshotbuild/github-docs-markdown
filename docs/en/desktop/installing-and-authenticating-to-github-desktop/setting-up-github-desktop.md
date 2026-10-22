@@ -41,7 +41,7 @@ After authenticating your account, you are ready to manage and contribute to pro
 
 To start working with GitHub Desktop, you need to configure the name and email associated with your Git commits. See [Configuring Git for GitHub Desktop](/en/desktop/configuring-and-customizing-github-desktop/configuring-git-for-github-desktop).
 
-> \[!NOTE] If you also want to use Git on the command line, you need to install Git yourself. The latest version of Git is available from <https://git-scm.com/downloads>.
+> [!NOTE] If you also want to use Git on the command line, you need to install Git yourself. The latest version of Git is available from <https://git-scm.com/downloads>.
 
 ## Part 4: Customizing GitHub Desktop
 

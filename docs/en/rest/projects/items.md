@@ -48,7 +48,7 @@ List all items for a specific organization-owned project accessible by the authe
 
 - **`fields`** (string)
   Limit results to specific fields, by their IDs. If not specified, the title field will be returned.
-Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
+  Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
 
 - **`before`** (string)
   A cursor, as given in the Link header. If specified, the query only searches for results before this cursor. For more information, see "Using pagination in the REST API."
@@ -2102,7 +2102,7 @@ Get a specific item from an organization-owned project.
 
 - **`fields`** (string)
   Limit results to specific fields, by their IDs. If not specified, the title field will be returned.
-Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
+  Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
 
 ### HTTP response status codes
 
@@ -2197,9 +2197,9 @@ Update a specific item in an organization-owned project.
   - **`value`** (null or string or number) (required)
     The new value for the field:
 
-For text, number, and date fields, provide the new value directly.
-For single select and iteration fields, provide the ID of the option or iteration.
-To clear the field, set this to null.
+    For text, number, and date fields, provide the new value directly.
+    For single select and iteration fields, provide the ID of the option or iteration.
+    To clear the field, set this to null.
 
 ### HTTP response status codes
 
@@ -2401,8 +2401,8 @@ List items in an organization project with the saved view's filter applied.
 
 - **`fields`** (string)
   Limit results to specific fields, by their IDs. If not specified, the
-title field will be returned.
-Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
+  title field will be returned.
+  Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
 
 - **`before`** (string)
   A cursor, as given in the Link header. If specified, the query only searches for results before this cursor. For more information, see "Using pagination in the REST API."
@@ -2480,7 +2480,7 @@ List all items for a specific user-owned project accessible by the authenticated
 
 - **`fields`** (string)
   Limit results to specific fields, by their IDs. If not specified, the title field will be returned.
-Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
+  Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
 
 ### HTTP response status codes
 
@@ -2647,7 +2647,7 @@ Get a specific item from a user-owned project.
 
 - **`fields`** (string)
   Limit results to specific fields, by their IDs. If not specified, the title field will be returned.
-Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
+  Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
 
 ### HTTP response status codes
 
@@ -2710,9 +2710,9 @@ Update a specific item in a user-owned project.
   - **`value`** (null or string or number) (required)
     The new value for the field:
 
-For text, number, and date fields, provide the new value directly.
-For single select and iteration fields, provide the ID of the option or iteration.
-To clear the field, set this to null.
+    For text, number, and date fields, provide the new value directly.
+    For single select and iteration fields, provide the ID of the option or iteration.
+    To clear the field, set this to null.
 
 ### HTTP response status codes
 
@@ -2914,8 +2914,8 @@ List items in a user project with the saved view's filter applied.
 
 - **`fields`** (string)
   Limit results to specific fields, by their IDs. If not specified, the
-title field will be returned.
-Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
+  title field will be returned.
+  Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
 
 - **`before`** (string)
   A cursor, as given in the Link header. If specified, the query only searches for results before this cursor. For more information, see "Using pagination in the REST API."

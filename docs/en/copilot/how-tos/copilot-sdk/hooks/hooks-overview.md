@@ -31,6 +31,9 @@ Hooks allow you to intercept and customize the behavior of Copilot sessions at k
 * **Handle errors** - implement custom error handling
 * **Audit and log** - track all interactions for compliance
 
+For filesystem hooks loaded from additional startup directories rather than
+registered SDK callbacks, see [Working with hooks](/en/copilot/how-tos/copilot-sdk/features/hooks#repository-hooks-from-additional-directories).
+
 ## Available hooks
 
 | Hook                                                                                                  | Trigger                                           | Use Case                                    |

@@ -21,6 +21,8 @@ Repositories can be locked to prevent changes, often for migrations.
 
 When you migrate repositories to or from GitHub products, your origin and destination repositories may be “locked” for migration. While a repository is locked, you cannot make any changes to the repository, such as pushing commits, creating issues, or commenting on pull requests.
 
+While a repository is locked, webhooks are not delivered for any events in the repository.
+
 Whether your repositories will be locked during migration depends on the tooling you use and the options you choose when you run the migration. When a repository is locked, a banner with the following text is displayed on the repository's page on GitHub:
 
 > This repository is currently being migrated. It's locked while the migration is in progress.
@@ -33,7 +35,7 @@ While a migration is in progress, access to the destination repository is locked
 
 GitHub Enterprise Importer does not lock source repositories by default. Source repositories will only be locked if you specify the `--lock-source-repo` option in the GitHub CLI, or the `lockSource` attribute in the `startRepositoryMigration` GraphQL mutation.
 
-> \[!NOTE]
+> [!NOTE]
 > We do not recommend locking source repositories unless you are certain you will not want to unlock them later. Consider archiving the repositories instead. For more information, see [Archiving repositories](/en/repositories/archiving-a-github-repository/archiving-repositories).
 
 For information about how to unlock repositories that were locked by GitHub Enterprise Importer, see [Troubleshooting your migration with GitHub Enterprise Importer](/en/migrations/troubleshooting/troubleshooting-your-migration-with-github-enterprise-importer#locked-repositories).

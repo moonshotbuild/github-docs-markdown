@@ -21,7 +21,7 @@ Learn about base models, long-term support (LTS) models, and how they affect mod
 
 ## About base models
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 >
 > * On March 18, 2026, GitHub designated GPT-5.3-Codex as the base model.
 > * Base models apply only to Copilot Business and Copilot Enterprise.
@@ -38,7 +38,7 @@ When a new model is designated a base model, the following timeline applies:
 
 ## About long-term support (LTS) models
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 >
 > * On March 18, 2026, GitHub designated GPT-5.3-Codex as the LTS model.
 > * LTS models apply only to Copilot Business and Copilot Enterprise.

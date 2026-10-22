@@ -25,7 +25,7 @@ Rationale and confidence need no extra configuration. When an automation's agent
 
 ## Setting your repository's automation level
 
-> \[!NOTE]
+> [!NOTE]
 > Configuring an automation level is rolling out gradually and might not be available in your repository yet.
 
 Your repository's automation level sets the confidence threshold used to route every supported change. Changes rated below the threshold are held as suggestions; changes at or above it apply automatically. The default level is **Cautious**, so only high-confidence changes apply automatically until you change it.

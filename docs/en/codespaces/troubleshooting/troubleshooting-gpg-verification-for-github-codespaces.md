@@ -80,7 +80,7 @@ If you want to keep automatic GPG verification for GitHub Codespaces enabled, yo
 
 For example, if the global `.gitconfig` file on your local machine contains a `gpg.program` value, and you have pushed this file to a dotfiles repository that is linked with GitHub Codespaces, then you may want to remove `gpg.program` from this file and set it at the system level on your local machine instead.
 
-> \[!NOTE]
+> [!NOTE]
 > Any changes to your dotfiles repository will apply to new codespaces you create, but not to your existing codespaces.
 
 1. On your local machine, open a terminal.

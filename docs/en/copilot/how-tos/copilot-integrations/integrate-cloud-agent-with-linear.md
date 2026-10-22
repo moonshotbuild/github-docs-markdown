@@ -19,14 +19,14 @@ breadcrumbs:
 
 Use the Copilot integration in Linear to provide context, customize how the agent runs, and open pull requests, all from within your Linear workspace.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Copilot uses AI. Check for mistakes. See [Application card: GitHub Copilot Agents](/en/copilot/responsible-use/agents).
 
 The Copilot integration in Linear allows you to invoke Copilot cloud agent without leaving your Linear workspace. From within a Linear issue you can initiate cloud agent sessions, customize which model, custom agent, or branches the agent uses, steer a session, and open pull requests, all using the context of your issue description and comments.
 
-For information about additional Copilot integrations, see [About Copilot integrations](/en/copilot/concepts/tools/about-copilot-integrations).
+For information about additional Copilot integrations, see [Copilot integrations](/en/copilot/concepts/agent-capabilities/choosing-and-delegating-agent-work/about-copilot-integrations).
 
-> \[!NOTE]
+> [!NOTE]
 > When you mention @GitHub in, or assign Copilot to, a Linear issue, the agent captures the entire issue description and comments as context for your request. This helps the agent to understand the issue and implement an appropriate solution, based on all of the information in the issue. This context is stored in the pull request.
 
 ## Prerequisites
@@ -36,7 +36,7 @@ For information about additional Copilot integrations, see [About Copilot integr
 
 ## Installing the Copilot app in Linear
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * To install the Copilot app in Linear, you must be an owner of the organization or enterprise where you want to install the app. You must also be a workspace administrator in Linear.
 > * If your organization is part of an enterprise that uses GitHub Enterprise Cloud with data residency, install the integration from the list of apps available to your enterprise at `SUBDOMAIN.ghe.com/apps/external-app/github-copilot-for-linear`. Replace SUBDOMAIN with your enterprise's subdomain of GHE.com.
@@ -101,5 +101,5 @@ After you trigger Copilot cloud agent from a Linear issue, you can continue to d
 
 ## Further reading
 
-* [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
+* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 * [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/enterprise/cloud-agent-access)

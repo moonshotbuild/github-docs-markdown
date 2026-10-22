@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can use GitHub Codespaces as the preferred editor in your assignments to give students access to a browser-based Visual Studio Code environment with one-click setup.
 
-> \[!WARNING]
+> [!WARNING]
 > **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
 > For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
 
@@ -35,19 +35,19 @@ Setting GitHub Codespaces as the preferred editor for an assignment in GitHub Cl
 
 For assignments with complex setup environments, teachers can customize the dev container configuration for a repository's codespaces. This ensures that when a student creates a codespace, it automatically opens with the development environment configured by the teacher. For more information on dev containers, see [Introduction to dev containers](/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers).
 
-> \[!NOTE]
+> [!NOTE]
 > Individual codespaces are automatically deleted if they are stopped and left unused for a prolonged period. See [Configuring automatic deletion of your codespaces](/en/codespaces/setting-your-user-preferences/configuring-automatic-deletion-of-your-codespaces).
 
 Verified students get free use of GitHub Codespaces, up to 180 core hours per month, for their personal accounts. The monthly amount of storage and core hours of usage available to students is equivalent to the amount included with GitHub Pro accounts. For more information, see [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces).
 
-> \[!NOTE]
+> [!NOTE]
 > If students use GitHub Codespaces in their assignment repositories for GitHub Classroom, the usage will be charged to the organization that owns the classroom, and will not affect the usage for a student's personal account.
 
 ## About the Codespaces Education benefit for verified teachers
 
 The Codespaces Education benefit gives verified teachers a free monthly allowance of GitHub Codespaces hours to use in GitHub Classroom. The free allowance is estimated to be enough for a class of 50 with 5 assignments per month, on a 2 core machine with 1 codespace stored per student.
 
-> \[!NOTE]
+> [!NOTE]
 > The Codespaces Education benefit is currently in public preview and subject to change. During the public preview release, your organization will not be charged if you exceed the free allowance.
 
 To become a verified teacher, you need to be approved for an educator or teacher benefit. See [Apply to GitHub Education as a teacher](/en/education/about-github-education/github-education-for-teachers/apply-to-github-education-as-a-teacher).

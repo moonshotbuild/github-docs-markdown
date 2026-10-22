@@ -31,7 +31,7 @@ You can access any advisory in the GitHub Advisory Database.
 
 2. Optionally, to filter the list of advisories, use the search field or the drop-down menus at the top of the list.
 
-   > \[!NOTE]
+   > [!NOTE]
    > You can use the sidebar on the left to explore GitHub-reviewed and unreviewed advisories separately, or to filter by ecosystem.
 
 3. Click an advisory to view details. By default, you will see GitHub-reviewed advisories for security vulnerabilities. To show malware advisories, use `type:malware` in the search bar.

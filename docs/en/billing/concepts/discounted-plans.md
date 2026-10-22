@@ -17,7 +17,7 @@ breadcrumbs:
 
 GitHub provides discounts to students, educators, educational institutions, nonprofits, and libraries.
 
-> \[!TIP]
+> [!TIP]
 > Discounts for an account's plan do not apply to other subscriptions or usage-based billing.
 
 ## Discounts for personal accounts

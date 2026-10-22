@@ -19,7 +19,7 @@ breadcrumbs:
 
 When you create a GitHub Marketplace listing, GitHub saves it in draft mode until you submit the app for approval. Your listing shows customers how they can use your app.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 ## Create a new draft GitHub Marketplace listing
@@ -38,7 +38,7 @@ To create a GitHub Marketplace listing:
 
 3. In the left sidebar, click either **OAuth Apps** or **GitHub Apps** depending on the app you're adding to GitHub Marketplace.
 
-   > \[!NOTE]
+   > [!NOTE]
    > You can also add a listing by navigating to <https://github.com/marketplace/new>, viewing your available apps, and clicking **Create draft listing**.
 
    ![Screenshot of the sidebar on the "Developer Settings" page of GitHub. Options labeled "GitHub Apps" and "OAuth apps" are outlined in dark orange.](/assets/images/settings/apps-choose-app.png)
@@ -51,7 +51,7 @@ To create a GitHub Marketplace listing:
 
    ![Screenshot of a draft GitHub Marketplace listing. Under "Publish your app to Marketplace," unfinished actions are marked with orange circles.](/assets/images/marketplace/marketplace-listing-overview.png)
 
-> \[!NOTE]
+> [!NOTE]
 > In the "Contact info" section of your listing, we recommend using individual email addresses, rather than group emails addresses like <support@domain.com>. GitHub will use these email addresses to contact you about updates to GitHub Marketplace that might affect your listing, new feature releases, marketing opportunities, payouts, and information on conferences and sponsorships.
 
 ## Editing your listing

@@ -28,7 +28,7 @@ You can use discussions insights to help understand the contribution activity, p
 
 ![Screenshot of the "Community insights" page. A dashboard displays graphs for data related to Discussions, such as page views.](/assets/images/help/discussions/discussions-dashboard.png)
 
-> \[!NOTE]
+> [!NOTE]
 > To view the exact data for a time period, hover over that time period in the graph.
 
 ## Viewing discussions insights

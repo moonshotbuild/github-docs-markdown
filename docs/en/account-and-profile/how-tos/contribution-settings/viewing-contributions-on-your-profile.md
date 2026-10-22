@@ -29,14 +29,14 @@ Before you view contributions on your profile, you should understand what counts
 
 2. To see a visual representation of your contributions, scroll down to the section labeled "NUMBER contributions in the last year".
 
-   > \[!NOTE]
+   > [!NOTE]
    > Commits will only appear on your contributions calendar if the email address you used to author the commits is connected to your GitHub account. For more information, see [Troubleshooting missing contributions](/en/account-and-profile/how-tos/contribution-settings/troubleshooting-missing-contributions#your-local-git-commit-email-isnt-connected-to-your-account)
 
 3. To view contributions made on a specific day, click the square corresponding to that day.
 
 4. To view contributions made over a specific time span, click the square corresponding to the start of the time span, press <kbd>Shift</kbd>, then click the square corresponding to the end of the time span.
 
-   > \[!NOTE]
+   > [!NOTE]
    > You can select up to a one-month range on your contributions calendar. If you select a larger time span, we will only display one month of contributions.
 
 ## Viewing a timeline of your contributions

@@ -94,7 +94,7 @@ The OSV specification allows a single `affected` entry to contain multiple `rang
 | `SEMVER`    | **Fully supported.** Supports `introduced`, `fixed`, and `last_affected` events. The `last_affected` event is parsed as a `<=` upper-bound comparator. |
 | `GIT`       | **Not supported.** Git commit-based ranges are not processed.                                                                                          |
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * For `ECOSYSTEM` ranges, only one `introduced` and one `fixed` (or `last_affected`) event per range is supported. If you need to express multiple disjoint version ranges for the same package, use separate `affected` entries or separate ranges.
 > * `SEMVER` ranges support multiple `introduced`/`fixed` pairs within a single range (e.g., `[1.0.0, 1.0.2)` and `[3.0.0, 3.2.5)` in one events array).
@@ -147,7 +147,7 @@ The OSV specification treats several fields as optional, but GitHub requires the
 | `CVE-YYYY-NNNNN`                  | **Supported.** Extracted as the CVE identifier. Only the first CVE alias is used. |
 | Other formats (GHSA, PYSEC, etc.) | **Not supported.** Stripped during processing.                                    |
 
-> \[!NOTE]
+> [!NOTE]
 > If the vulnerability `id` field starts with `GHSA-`, it is recognized as a GHSA identifier. However, GHSA entries in the `aliases` array are stripped and not preserved.
 
 ### Field size constraints
@@ -168,7 +168,7 @@ Submissions exceeding these limits are rejected with a descriptive 422 error ind
 | `affected[].ranges[].events[].fixed` | `vulnerable_version_ranges.fixed_in`     | No limit                          | **50**       | characters |
 | Computed vulnerable version range    | `vulnerable_version_ranges.requirements` | No limit                          | **65,535**   | bytes      |
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The `fixed_in` (first patched version) limit of 50 characters is the most commonly encountered constraint. Some ecosystems use long pre-release version strings (e.g., `1.0.0-alpha.gamma.delta.epsilon.zeta.eta.theta`) that exceed this limit.
 > * `varchar` columns are validated by character count; `varbinary` and `text` columns are validated by byte size (relevant for multi-byte UTF-8 characters).

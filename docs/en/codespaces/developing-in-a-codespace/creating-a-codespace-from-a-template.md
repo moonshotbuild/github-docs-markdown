@@ -31,7 +31,7 @@ As an example, if you create a codespace from GitHub's React template, you'll ar
 
 The files and configuration included in templates are defined in template repositories. The template repository is cloned into your codespace when you create the codespace. After that, the link is severed, and your codespace won't be linked to a remote repository until you publish to one.
 
-> \[!TIP]
+> [!TIP]
 > To help people get started with your framework, library, or other project, you can set up a template repository for use with GitHub Codespaces. For more information, see [Setting up a template repository for GitHub Codespaces](/en/codespaces/setting-up-your-project-for-codespaces/setting-up-your-repository/setting-up-a-template-repository-for-github-codespaces).
 
 ## Creating a codespace from a GitHub template
@@ -61,7 +61,7 @@ You can create a codespace from any template repository, then publish your work 
 
    ![Screenshot of the "Use this template" button and the dropdown menu expanded to show the "Open in a codespace" option.](/assets/images/help/repository/use-this-template-button.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you're a maintainer of the template repository, and want to commit changes to the template repository itself, you should create a codespace from the **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-code" aria-label="code" role="img"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path></svg> Code** dropdown. For more information, see [Creating a codespace for a repository](/en/codespaces/developing-in-a-codespace/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository).
 
 When you create a new codespace from a template, it is always opened in the Visual Studio Code web client. You can reopen an existing codespace in any supported editor. For more information, see [Opening an existing codespace](/en/codespaces/developing-in-a-codespace/opening-an-existing-codespace).
@@ -74,7 +74,7 @@ You can save your files, close and stop your codespace, and come back to your wo
 
 However, if you delete an unpublished codespace, or if it's automatically deleted by being left unused for the duration of the retention period, then your work will be deleted too. To persist your work, and to allow others to work on your project, you will need to publish your codespace to a repository on GitHub.
 
-> \[!NOTE]
+> [!NOTE]
 > If an unpublished codespace is currently billed to an organization, publishing the codespace transfers ownership and billing of the codespace to your personal account. See [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces#how-costs-are-assigned-to-a-billable-account).
 
 ### Publishing from VS Code
@@ -89,7 +89,7 @@ If you're working in a codespace, you can publish it from the VS Code web client
 
    ![Screenshot of the "Source control" side bar with the staging button (a plus sign), to the right of "Changes," highlighted with a dark orange outline.](/assets/images/help/codespaces/codespaces-commit-stage.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you start from GitHub's blank template, you will not see a list of changes unless you have already initialized your directory as a Git repository. To publish codespaces created from the blank template, click **Publish to GitHub** in the "Source Control" view, then skip to step 5.
 
 3. To commit your staged changes, type a commit message describing the change you've made, then click **Commit**.

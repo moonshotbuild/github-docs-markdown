@@ -19,7 +19,7 @@ breadcrumbs:
 
 Follow these steps to delete your app listing from GitHub Marketplace.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 You can follow these steps to remove your app from GitHub Marketplace. The listing will be removed from GitHub Marketplace immediately. Existing subscriptions will be canceled at the end of the current billing cycle. Although the app will be removed from GitHub Marketplace, you will not be able to delete your app until the current billing cycle ends.

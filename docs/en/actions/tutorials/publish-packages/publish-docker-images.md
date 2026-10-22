@@ -23,7 +23,7 @@ In this tutorial, you'll learn how to publish Docker images to a registry, such 
 
 This guide shows you how to create a workflow that performs a Docker build, and then publishes Docker images to Docker Hub or GitHub Packages. With a single workflow, you can publish images to a single registry or to multiple registries.
 
-> \[!NOTE]
+> [!NOTE]
 > If you want to push to another third-party Docker registry, the example in the [Publishing images to GitHub Packages](#publishing-images-to-github-packages) section can serve as a good template.
 
 ## Prerequisites
@@ -46,7 +46,7 @@ In this guide, we will use the Docker `build-push-action` action to build the Do
 
 ## Publishing images to Docker Hub
 
-> \[!NOTE]
+> [!NOTE]
 > Docker Hub normally imposes rate limits on both push and pull operations which will affect jobs on self-hosted runners. However, GitHub-hosted runners are not subject to these limits based on an agreement between GitHub and Docker.
 
 Each time you create a new release on GitHub, you can trigger a workflow to publish your image. The workflow in the example below runs when the `release` event triggers with the `published` activity type.
@@ -153,7 +153,7 @@ The `build-push-action` options required for GitHub Packages are:
 * `push`: If set to `true`, the image will be pushed to the registry if it is built successfully.
 * `tags` and `labels`: These are populated by output from `metadata-action`.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * This workflow uses actions that are not certified by GitHub. They are provided by a third-party and are governed by separate terms of service, privacy policy, and support documentation.
 > * GitHub recommends pinning actions to a commit SHA. To get a newer version, you will need to update the SHA. You can also reference a tag or branch, but the action may change without warning.
@@ -290,7 +290,7 @@ jobs:
 The above workflow checks out the GitHub repository, uses the `login-action` twice to log in to both registries and generates tags and labels with the `metadata-action` action.
 Then the `build-push-action` action builds and pushes the Docker image to Docker Hub and the Container registry.
 
-> \[!NOTE]
+> [!NOTE]
 > When pushing to multiple registries:
 >
 > * Image digests may differ between registries, making attestation verification difficult.

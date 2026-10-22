@@ -17,14 +17,14 @@ breadcrumbs:
 
 # Importing an external Git repository using the command line
 
-If your source code is tracked in a Git repository, you can import the repository using Git on the command line.
+If your Git repository is stored on a code hosting service that is not accessible from the public internet, you can import the repository using Git on the command line.
 
 Before you start, make sure you know:
 
 * Your GitHub username
 * The clone URL for the external repository, such as `https://external-host.com/user/repo.git` or `git://external-host.com/user/repo.git` (perhaps with a `user@` in front of the `external-host.com` domain name)
 
-> \[!NOTE]
+> [!NOTE]
 > For purposes of demonstration, we'll use:
 >
 > * An external account named **extuser**

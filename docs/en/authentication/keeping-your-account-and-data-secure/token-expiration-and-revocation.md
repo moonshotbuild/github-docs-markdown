@@ -21,7 +21,7 @@ When a token has expired or has been revoked, it can no longer be used to authen
 
 This article explains the possible reasons your GitHub token might be revoked or expire.
 
-> \[!NOTE]
+> [!NOTE]
 > When a personal access token, OAuth app token, or GitHub App token expires or is revoked, you may see an `oauth_authorization.destroy` action in your security log. For more information, see [Reviewing your security log](/en/authentication/keeping-your-account-and-data-secure/reviewing-your-security-log).
 
 ## Token revoked after reaching its expiration date

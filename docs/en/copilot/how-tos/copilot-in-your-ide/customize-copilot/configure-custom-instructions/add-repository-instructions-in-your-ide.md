@@ -59,7 +59,7 @@ VS Code supports three types of repository custom instructions. For details of w
 
   You can create one or more `AGENTS.md` files, stored anywhere within the repository. When Copilot is working, the nearest `AGENTS.md` file in the directory tree will take precedence. For more information, see the [agentsmd/agents.md repository](https://github.com/agentsmd/agents.md).
 
-  > \[!NOTE]
+  > [!NOTE]
   > Support of `AGENTS.md` files outside of the workspace root is currently turned off by default. For details of how to enable this feature, see [Use custom instructions in VS Code](https://code.visualstudio.com/docs/copilot/customization/custom-instructions#_use-an-agentsmd-file) in the VS Code documentation.
 
 ## Creating repository-wide custom instructions
@@ -166,7 +166,7 @@ Custom instructions are enabled for Copilot code review by default but you can d
 
 ## Enabling and using prompt files
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Copilot prompt files are in public preview and subject to change. Prompt files are only available in VS Code, Visual Studio, and JetBrains IDEs. See [Prompt files for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-files).
 > * For community-contributed examples of prompt files for specific languages and scenarios, see the [Awesome GitHub Copilot Customizations](https://awesome-copilot.github.com) site.
@@ -354,7 +354,7 @@ Custom instructions are enabled for Copilot code review by default but you can d
 
 ## Using prompt files
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Copilot prompt files are in public preview and subject to change. Prompt files are only available in VS Code, Visual Studio, and JetBrains IDEs. See [Prompt files for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-files).
 > * For community-contributed examples of prompt files for specific languages and scenarios, see the [Awesome GitHub Copilot Customizations](https://awesome-copilot.github.com) site.
@@ -455,7 +455,7 @@ Custom instructions are not visible in the Chat view or inline chat, but you can
 
 ## Using prompt files
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Copilot prompt files are in public preview and subject to change. Prompt files are only available in VS Code, Visual Studio, and JetBrains IDEs. See [Prompt files for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-files).
 > * For community-contributed examples of prompt files for specific languages and scenarios, see the [Awesome GitHub Copilot Customizations](https://awesome-copilot.github.com) site.
@@ -560,7 +560,7 @@ Custom instructions are not visible in the Chat view or inline chat, but you can
 
 <div class="ghd-tool eclipse">
 
-> \[!NOTE] This feature is currently in public preview and is subject to change.
+> [!NOTE] This feature is currently in public preview and is subject to change.
 
 This version of this article is for using repository custom instructions in Eclipse. Click the tabs above for instructions on using custom instructions in other environments.
 

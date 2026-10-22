@@ -17,7 +17,7 @@ breadcrumbs:
 
 Learn how to use GitHub Copilot inline suggestions responsibly by understanding their purposes, capabilities, and limitations.
 
-> \[!NOTE] You are currently viewing the documentation for Free, Pro, and Team plans. GitHub Copilot Enterprise is only available to customers on the GitHub Enterprise Cloud plan. For full documentation of Copilot Enterprise, see [About GitHub Copilot](/en/enterprise-cloud@latest/copilot/get-started/about-github-copilot) in the GitHub Enterprise Cloud documentation.
+> [!NOTE] You are currently viewing the documentation for Free, Pro, and Team plans. GitHub Copilot Enterprise is only available to customers on the GitHub Enterprise Cloud plan. For full documentation of Copilot Enterprise, see [About GitHub Copilot](/en/enterprise-cloud@latest/copilot/get-started/about-github-copilot) in the GitHub Enterprise Cloud documentation.
 
 ## What is an Application Card?
 
@@ -185,7 +185,7 @@ Responsible AI is a shared commitment between GitHub and its customers. While Gi
 * **Use secure coding and code review practices**: While inline suggestions can generate syntactically correct code, it may not always be secure. You should always follow best practices for secure coding, such as avoiding hard-coded passwords or SQL injection vulnerabilities, as well as following code review best practices.
 * **Stay up to date**: Copilot inline suggestions are still an evolving technology. You should stay up to date with any updates or changes to the tool, as well as any new security risks or best practices that may emerge. Automated extension updates are enabled by default in Visual Studio Code, Visual Studio, and the JetBrains suite of IDEs.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Users assume all risks associated with generated code including security vulnerabilities, bugs, and IP infringement.
 
 ## 11. Learn more about GitHub Copilot inline suggestions

@@ -578,13 +578,13 @@ application/vnd.github.full+json: Returns raw, text, and HTML representations. R
 
 - **`issue_field_values`** (string)
   A comma-separated list of issue field filters in field_slug:value format.
-Only issues matching all specified field values are returned.
-Requires issue fields to be enabled for the repository. Issue fields are
-not available for user-owned repositories, and field availability for
-organization-owned public repositories depends on the organization's
-visibility settings. For example, priority:Urgent,severity:High filters
-issues where the priority field is Urgent AND the severity field is
-High.
+  Only issues matching all specified field values are returned.
+  Requires issue fields to be enabled for the repository. Issue fields are
+  not available for user-owned repositories, and field availability for
+  organization-owned public repositories depends on the organization's
+  visibility settings. For example, priority:Urgent,severity:High filters
+  issues where the priority field is Urgent AND the severity field is
+  High.
 
 - **`labels`** (string)
   A list of comma separated label names. Example: bug,ui,@high
@@ -1653,10 +1653,10 @@ Note that, if you choose not to pass any parameters, you'll need to set Content-
 - **`lock_reason`** (string)
   The reason for locking the issue or pull request conversation. Lock will fail if you don't use one of these reasons:
 
-off-topic
-too heated
-resolved
-spam
+  off-topic
+  too heated
+  resolved
+  spam
   Can be one of: `off-topic`, `too heated`, `resolved`, `spam`
 
 ### HTTP response status codes

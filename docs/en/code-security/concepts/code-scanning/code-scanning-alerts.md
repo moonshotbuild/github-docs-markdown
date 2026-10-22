@@ -27,7 +27,7 @@ By default, code scanning analyzes your code periodically on the default branch 
 
 You can use GitHub Copilot Autofix to generate fixes automatically for code scanning alerts, including CodeQL alerts. For more information, see [Resolving code scanning alerts](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/resolve-alerts#generating-a-suggested-fix).
 
-For code scanning alerts from CodeQL analysis, you can use security overview to see how CodeQL is performing in pull requests in repositories across your organization, and to identify repositories where you may need to take action. For more information, see [CodeQL pull request alert metrics](/en/code-security/concepts/code-scanning/pull-request-alert-metrics).
+For code scanning alerts from CodeQL analysis, you can use security overview to see how CodeQL is performing in pull requests in repositories across your organization, and to identify repositories where you may need to take action. For more information, see [Code scanning on pull requests](/en/code-security/concepts/code-scanning/code-scanning-on-pull-requests).
 
 You can audit the actions taken in response to code scanning alerts using GitHub tools. For more information, see [Auditing security alerts](/en/code-security/concepts/security-at-scale/audit-security-alerts).
 
@@ -78,7 +78,7 @@ When you click through to see details for the alert, you can see that the file p
 
 ![Screenshot showing the details of an alert. The file path and "Test" label are highlighted with a dark orange outline.](/assets/images/help/repository/code-scanning-library-alert-show.png)
 
-> \[!NOTE]
+> [!NOTE]
 > Experimental alerts for code scanning were available a public preview release for JavaScript using experimental technology in the CodeQL action. This feature was retired. For more information, see [CodeQL code scanning deprecates ML-powered alerts](https://github.blog/changelog/2023-09-29-codeql-code-scanning-deprecates-ml-powered-alerts/).
 
 ## About alert severity and security severity levels

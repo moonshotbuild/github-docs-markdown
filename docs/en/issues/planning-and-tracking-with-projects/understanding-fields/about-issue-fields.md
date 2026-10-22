@@ -66,5 +66,5 @@ Issue fields are available as data sources in project charts. You can create cha
 
 Projects support up to 50 fields in total. Issue fields and system fields count toward this limit. If a project is already at the field limit, you need to remove existing fields before issue fields can be added.
 
-> \[!NOTE]
+> [!NOTE]
 > Issue fields only apply to issues owned by the same organization. If a project contains pull requests, draft issues, or issues from another organization, issue field columns show empty cells for those items.

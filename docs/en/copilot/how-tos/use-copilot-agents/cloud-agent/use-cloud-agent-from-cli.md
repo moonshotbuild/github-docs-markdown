@@ -21,7 +21,7 @@ breadcrumbs:
 
 Start and track Copilot cloud agent sessions from the GitHub CLI.
 
-> \[!NOTE]
+> [!NOTE]
 > The `agent-task` command set is only available in v2.80.0 or later of the GitHub CLI. This command set is a public preview and is subject to change.
 
 ## Starting a session

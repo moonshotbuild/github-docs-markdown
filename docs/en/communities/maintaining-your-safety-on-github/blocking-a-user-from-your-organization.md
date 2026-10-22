@@ -23,7 +23,7 @@ You can also close any open issues, pull requests, and discussions the user has 
 
 When you block a user, you can choose to block them indefinitely or for a specific amount of time. If you block someone for a specific amount of time, they are automatically unblocked after the chosen time expires. If you block someone indefinitely, you can unblock them manually at any time. For more information, see [Unblocking a user from your organization](/en/communities/maintaining-your-safety-on-github/unblocking-a-user-from-your-organization).
 
-> \[!TIP]
+> [!TIP]
 > If you're blocking a user because of a heated conversation, consider locking the conversation so only collaborators can comment. For more information, see [Locking conversations](/en/communities/moderating-comments-and-conversations/locking-conversations).
 
 At the time that you block a user from your organization:

@@ -27,7 +27,7 @@ You can choose whether Git Large File Storage (Git LFS) objects are included in 
 
 ## Creating a release
 
-> \[!TIP]
+> [!TIP]
 > If you have enabled immutable releases for your repository, it's recommended to create releases as drafts first, attach all assets, and then publish. This ensures all assets are in place before the release becomes immutable. For more information, see [Immutable releases](/en/code-security/concepts/supply-chain-security/immutable-releases).
 
 <div class="ghd-tool webui">
@@ -61,7 +61,7 @@ You can choose whether Git Large File Storage (Git LFS) objects are included in 
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 1. To create a release, use the `gh release create` subcommand. Replace `tag` with the desired tag for the release.
@@ -86,7 +86,7 @@ If you @mention any GitHub users in the notes, the published release will includ
 
 ## Editing a release
 
-> \[!NOTE]
+> [!NOTE]
 > If you have enabled immutable releases for your repository, you cannot add, replace, or delete assets after a release is published, and you cannot move or delete its tag while the release exists. You can still edit the title and release notes, and change whether the release is a pre-release or the latest release. See [Immutable releases](/en/code-security/concepts/supply-chain-security/immutable-releases).
 
 <div class="ghd-tool webui">

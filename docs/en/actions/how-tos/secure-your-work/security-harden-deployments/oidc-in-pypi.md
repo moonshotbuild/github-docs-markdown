@@ -43,7 +43,7 @@ To use OIDC with PyPI, add a trust configuration that links each project on PyPI
 
 2. Configure a trust relationship between the PyPI project and a GitHub repository (and workflow within the repository). For example, if your GitHub repository is at `myorg/myproject` and your release workflow is defined in `release.yml` with an environment of `release`, you should use the following settings for your trusted publisher on PyPI.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Enter these values carefully. Giving the incorrect user, repository, or workflow the ability to publish to your PyPI project is equivalent to sharing an API token.
 
    * Owner: `myorg`
@@ -55,7 +55,7 @@ To use OIDC with PyPI, add a trust configuration that links each project on PyPI
 
 Once your trusted publisher is registered on PyPI, you can update your release workflow to use trusted publishing.
 
-> \[!NOTE]
+> [!NOTE]
 > When environments are used in workflows or in OIDC policies, we recommend adding protection rules to the environment for additional security. For example, you can configure deployment rules on an environment to restrict which branches and tags can deploy to the environment or access environment secrets. For more information, see [Managing environments for deployment](/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments).
 
 The [`pypa/gh-action-pypi-publish`](https://github.com/marketplace/actions/pypi-publish) action has built-in support for trusted publishing, which can be enabled by giving its containing job the `id-token: write` permission and omitting `username` and `password`.

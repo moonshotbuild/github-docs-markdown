@@ -25,7 +25,7 @@ This page lists endpoints that you can access while authenticated as a GitHub Ap
 
 See [REST API endpoints for GitHub App installations](/en/rest/apps/installations) for a list of endpoints that require authentication as a GitHub App installation.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get the authenticated app
@@ -1198,6 +1198,9 @@ which repositories the token can access and which permissions are granted to the
 token.
 Invalid tokens will return 404 NOT FOUND.
 
+> [!NOTE]
+> This endpoint requires [Basic authentication](/en/rest/authentication/authenticating-to-the-rest-api#using-basic-authentication). Use the application's `client_id` as the username and the `client_secret` as the password. Do not send an `Authorization: Bearer` header with this request, because it replaces the Basic credentials.
+
 ### Parameters
 
 #### Headers
@@ -1423,6 +1426,7 @@ Invalid tokens will return 404 NOT FOUND.
 curl -L \
   -X POST \
   https://api.github.com/applications/Iv1.8a61f9b3a7aba766/token/scoped \
+  -u "<YOUR_CLIENT_ID>:<YOUR_CLIENT_SECRET>" \
   -d '{
   "access_token": "e72e16c7e42f292c6912e7710c838347ae178b4a",
   "target": "octocat",

@@ -19,7 +19,7 @@ breadcrumbs:
 
 Find out how many alerts are being raised and addressed for a custom pattern.
 
-> \[!NOTE] Metrics for custom patterns are in public preview and subject to change.
+> [!NOTE] Metrics for custom patterns are in public preview and subject to change.
 
 Activity overviews for custom patterns are available at the repository, organization, and enterprise levels. Each overview displays alerts generated and push protection blocks over the last 30 days.
 

@@ -29,7 +29,7 @@ Repository administrators can also enable rulesets for a branch, which will prev
 
 ## Pushing changes to GitHub
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Desktop will reject a push if it exceeds certain limits.
 >
 > * A push contains a large file over 100 MiB in size.

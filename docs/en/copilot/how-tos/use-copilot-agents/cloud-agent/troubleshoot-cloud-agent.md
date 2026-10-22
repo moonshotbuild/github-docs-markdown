@@ -33,7 +33,7 @@ If you *do* have a paid Copilot plan, check that Copilot cloud agent  has not be
 
 * For personal repositories, the availability of Copilot cloud agent in the repository is configured in your account settings. See [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#disabling-or-enabling-copilot-cloud-agent-in-your-repositories).
 
-> \[!NOTE]
+> [!NOTE]
 > You can check whether Copilot cloud agent has been enabled for you in the features page of your Copilot settings: [github.com/settings/copilot/features](https://github.com/settings/copilot/features).
 
 ## I have an Enterprise Managed User account and Copilot won't work in my personal repository
@@ -50,7 +50,7 @@ To use Copilot cloud agent, you'll need to work with repositories owned by your 
 
 If you asked Copilot to create a pull request and it responds that it cannot directly create a pull request, check that Copilot cloud agent is available.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > In VS Code, Visual Studio, and JetBrains IDEs, you must mention the `@github` chat participant in your prompt. You can omit this in Copilot Chat on GitHub.com.
 
 ## I assigned an issue to Copilot, but nothing is happening

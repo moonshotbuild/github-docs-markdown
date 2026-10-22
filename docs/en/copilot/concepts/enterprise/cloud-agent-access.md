@@ -19,7 +19,7 @@ breadcrumbs:
 
 Find out about Copilot cloud agent policies available for GitHub Copilot Enterprise and GitHub Copilot Business, and about disabling the agent for specific repositories.
 
-> \[!NOTE]
+> [!NOTE]
 > For an introduction to Copilot cloud agent, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
 
 ## Overview

@@ -135,14 +135,14 @@ If you want to open another repository in the default editor, you can use the re
 
 <div class="ghd-tool mac">
 
-> \[!TIP]
+> [!TIP]
 > You can use the <kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>A</kbd> keyboard shortcut to open a repository in the default editor.
 
 </div>
 
 <div class="ghd-tool windows">
 
-> \[!TIP]
+> [!TIP]
 > You can use the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd> keyboard shortcut to open a repository in the default editor.
 
 </div>

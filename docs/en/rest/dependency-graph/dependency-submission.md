@@ -27,7 +27,7 @@ Submitted dependencies will receive Dependabot alerts and Dependabot security up
 
 Submitted dependencies will be shown in dependency review, but are *not* available in your organization's dependency insights.
 
-> \[!NOTE]
+> [!NOTE]
 > The dependency review API and the dependency submission API work together. This means that the dependency review API will include dependencies submitted via the dependency submission API.
 
 You can submit dependencies in the form of a snapshot. A snapshot is a set of dependencies associated with a commit SHA and other metadata, that reflects the current state of your repository for a commit. You can choose to use pre-made actions or create your own actions to submit your dependencies in the required format each time your project is built. For more information, see [Using the dependency submission API](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/use-dependency-submission-api).
@@ -45,7 +45,7 @@ Dependency graph displays only one instance of each manifest file using the foll
 3. **Automatic submissions** have the next priority since they are also created during artifact builds, but are not submitted by users.
 4. **Static analysis results** are used when no other data is available.
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Create a snapshot of dependencies for a repository

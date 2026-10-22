@@ -81,7 +81,7 @@ Enforce consistent code standards, security, and compliance across branches and 
 
 Create unfalsifiable provenance and integrity guarantees for the software you build. For more information, see [Using artifact attestations to establish provenance for builds](/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations).
 
-> \[!NOTE]
+> [!NOTE]
 > If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, artifact attestations are only available for public repositories. To use artifact attestations in private or internal repositories, you must be on a GitHub Enterprise Cloud plan.
 
 ### Secret scanning alerts for partners

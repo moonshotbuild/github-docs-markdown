@@ -25,7 +25,7 @@ Without a `dependabot.yml` file, Dependabot can still create security updates fo
 
 The `dependabot.yml` file uses YAML syntax. If you're new to YAML and want to learn more, see [Learn YAML in five minutes](https://learnxinyminutes.com/yaml/).
 
-> \[!NOTE]
+> [!NOTE]
 > Dependabot alerts are configured in the repository or organization "Settings" tab and not in the `dependabot.yml` file, see [Configuring Dependabot alerts](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-dependabot-alerts).
 
 ## What the `dependabot.yml` file does

@@ -107,7 +107,7 @@ To test and gradually roll out support for expiring tokens, you can opt in to re
 
 ## Enable wildcard matching for callback URLs only when necessary
 
-> \[!WARNING]
+> [!WARNING]
 > Enabling wildcard matching can expose your app to security risks, because it allows an attacker to send authorization codes to any subdomain or subdirectory of the callback URL. Only enable wildcard matching if you absolutely need it and you are entirely certain that you control all possible subdomains and paths of the callback URL. For more information, see the [OAuth 2.0 Security Best Current Practice](https://www.rfc-editor.org/info/rfc9700/#section-4.1.1-11).
 
 ## Make a plan for handling security breaches

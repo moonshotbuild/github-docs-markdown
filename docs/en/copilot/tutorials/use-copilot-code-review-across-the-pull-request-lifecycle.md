@@ -124,6 +124,6 @@ For planning and setup details, see [Configuring runners for GitHub Copilot code
 
 ## Next steps
 
-* For broader concepts, including review effort and agentic capabilities, see [About GitHub Copilot code review](/en/copilot/concepts/agents/code-review).
+* For broader concepts, including review effort and agentic capabilities, see [GitHub Copilot code review](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review).
 * To tune automated review quality for specific repositories, see [Build an optimized review process with Copilot](/en/copilot/tutorials/optimize-code-reviews).
 * For excluded file types and other limits, see [Files excluded from GitHub Copilot code review](/en/copilot/reference/review-excluded-files).

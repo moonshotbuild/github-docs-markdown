@@ -21,7 +21,7 @@ breadcrumbs:
 
 Learn about what changed with billing and what your options are as a Copilot Pro and Copilot Pro+ annual plan subscriber on the legacy billing model.
 
-> \[!IMPORTANT] This article only applies to Copilot Pro and Copilot Pro+ subscribers on an existing annual plan who remained on legacy premium request-based billing after June 1, 2026.
+> [!IMPORTANT] This article only applies to Copilot Pro and Copilot Pro+ subscribers on an existing annual plan who remained on legacy premium request-based billing after June 1, 2026.
 
 ## What changed with Copilot billing?
 

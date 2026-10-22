@@ -27,7 +27,7 @@ When you link a pull request to the issue the pull request addresses, collaborat
 
 When you merge a linked pull request into the **default branch** of a repository, its linked issue is automatically closed. For more information about the default branch, see [Changing the default branch](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/changing-the-default-branch).
 
-> \[!NOTE]
+> [!NOTE]
 > The special keywords in a pull request description are interpreted only when the pull request targets the repository's *default* branch. If the pull request targets *any other branch*, then these keywords are ignored, no links are created, and merging the PR has no effect on the issues.
 
 ## Linking a pull request to an issue using a keyword

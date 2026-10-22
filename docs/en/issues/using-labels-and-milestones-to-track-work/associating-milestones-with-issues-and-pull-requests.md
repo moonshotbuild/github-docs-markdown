@@ -29,7 +29,7 @@ You can associate similar issues and pull requests with a milestone to better tr
    ![Screenshot of the list of issues for a repository. In the header above the list, a dropdown menu, labeled "Milestones," is outlined in dark orange.](/assets/images/help/issues/issues-assigning-milestone-dropdown.png)
 5. In the "Filter milestones" field, start typing the name of an existing milestone, then click the milestone's name to associate it with the item.
 
-> \[!TIP]
+> [!TIP]
 > As you're working on issues and pull requests, you can [track the progress of your milestone](/en/issues/using-labels-and-milestones-to-track-work/viewing-your-milestones-progress).
 
 ## Further reading

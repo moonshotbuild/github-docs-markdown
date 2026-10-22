@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can delete GitHub Apps that you own if you no longer want to use or maintain the app.
 
-> \[!NOTE]
+> [!NOTE]
 > If you want to remove a GitHub App that you use but do not own, see [Reviewing and modifying installed GitHub Apps](/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#blocking-access) instead.
 
 ## About deleting GitHub Apps
@@ -26,7 +26,7 @@ If you own a GitHub App or are an app manager for a GitHub App, you can delete t
 
 When you delete a GitHub App registration, the app will be uninstalled from all accounts that the app is installed on.
 
-> \[!NOTE]
+> [!NOTE]
 > If your GitHub App is published on GitHub Marketplace, you must remove your app from GitHub Marketplace before you can delete your app. For more information, see [Deleting your app listing from GitHub Marketplace](/en/apps/github-marketplace/listing-an-app-on-github-marketplace/deleting-your-app-listing-from-github-marketplace).
 
 ## Deleting a GitHub App

@@ -252,15 +252,15 @@ true if the user enabled private contribution counts.
 * `issueContributions` (CreatedIssueContributionConnection!): A list of issues the user opened.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
-  * `excludeFirst` (Boolean): Should the user's first issue ever be excluded from the result.
-  * `excludePopular` (Boolean): Should the user's most commented issue be excluded from the result.
+  * `excludeFirst` (Boolean): Should the user's first issue ever be excluded from the result. Default: `false`.
+  * `excludePopular` (Boolean): Should the user's most commented issue be excluded from the result. Default: `false`.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ContributionOrder): Ordering options for contributions returned from the connection.
+  * `orderBy` (ContributionOrder): Ordering options for contributions returned from the connection. Default: `{direction: DESC}`.
 
 * `issueContributionsByRepository` ([IssueContributionsByRepository!]!): Issue contributions made by the user, grouped by repository.
-  * `excludeFirst` (Boolean): Should the user's first issue ever be excluded from the result.
-  * `excludePopular` (Boolean): Should the user's most commented issue be excluded from the result.
+  * `excludeFirst` (Boolean): Should the user's first issue ever be excluded from the result. Default: `false`.
+  * `excludePopular` (Boolean): Should the user's most commented issue be excluded from the result. Default: `false`.
   * `maxRepositories` (Int): How many repositories should be included. Default: `25`.
 
 * `joinedGitHubContribution` (JoinedGitHubContribution): When the user signed up for GitHub. This will be null if that sign up date
@@ -278,15 +278,15 @@ specified time frame.
 * `pullRequestContributions` (CreatedPullRequestContributionConnection!): Pull request contributions made by the user.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
-  * `excludeFirst` (Boolean): Should the user's first pull request ever be excluded from the result.
-  * `excludePopular` (Boolean): Should the user's most commented pull request be excluded from the result.
+  * `excludeFirst` (Boolean): Should the user's first pull request ever be excluded from the result. Default: `false`.
+  * `excludePopular` (Boolean): Should the user's most commented pull request be excluded from the result. Default: `false`.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ContributionOrder): Ordering options for contributions returned from the connection.
+  * `orderBy` (ContributionOrder): Ordering options for contributions returned from the connection. Default: `{direction: DESC}`.
 
 * `pullRequestContributionsByRepository` ([PullRequestContributionsByRepository!]!): Pull request contributions made by the user, grouped by repository.
-  * `excludeFirst` (Boolean): Should the user's first pull request ever be excluded from the result.
-  * `excludePopular` (Boolean): Should the user's most commented pull request be excluded from the result.
+  * `excludeFirst` (Boolean): Should the user's first pull request ever be excluded from the result. Default: `false`.
+  * `excludePopular` (Boolean): Should the user's most commented pull request be excluded from the result. Default: `false`.
   * `maxRepositories` (Int): How many repositories should be included. Default: `25`.
 
 * `pullRequestReviewContributions` (CreatedPullRequestReviewContributionConnection!): Pull request review contributions made by the user. Returns the most recently
@@ -295,7 +295,7 @@ submitted review for each PR reviewed by the user.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ContributionOrder): Ordering options for contributions returned from the connection.
+  * `orderBy` (ContributionOrder): Ordering options for contributions returned from the connection. Default: `{direction: DESC}`.
 
 * `pullRequestReviewContributionsByRepository` ([PullRequestReviewContributionsByRepository!]!): Pull request review contributions made by the user, grouped by repository.
   * `maxRepositories` (Int): How many repositories should be included. Default: `25`.
@@ -303,36 +303,36 @@ submitted review for each PR reviewed by the user.
 * `repositoryContributions` (CreatedRepositoryContributionConnection!): A list of repositories owned by the user that the user created in this time range.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
-  * `excludeFirst` (Boolean): Should the user's first repository ever be excluded from the result.
+  * `excludeFirst` (Boolean): Should the user's first repository ever be excluded from the result. Default: `false`.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (ContributionOrder): Ordering options for contributions returned from the connection.
+  * `orderBy` (ContributionOrder): Ordering options for contributions returned from the connection. Default: `{direction: DESC}`.
 
 * `restrictedContributionsCount` (Int!): A count of contributions made by the user that the viewer cannot access. Only
 non-zero when the user has chosen to share their private contribution counts.
 * `startedAt` (DateTime!): The beginning date and time of this collection.
 * `totalCommitContributions` (Int!): How many commits were made by the user in this time span.
 * `totalIssueContributions` (Int!): How many issues the user opened.
-  * `excludeFirst` (Boolean): Should the user's first issue ever be excluded from this count.
-  * `excludePopular` (Boolean): Should the user's most commented issue be excluded from this count.
+  * `excludeFirst` (Boolean): Should the user's first issue ever be excluded from this count. Default: `false`.
+  * `excludePopular` (Boolean): Should the user's most commented issue be excluded from this count. Default: `false`.
 
 * `totalPullRequestContributions` (Int!): How many pull requests the user opened.
-  * `excludeFirst` (Boolean): Should the user's first pull request ever be excluded from this count.
-  * `excludePopular` (Boolean): Should the user's most commented pull request be excluded from this count.
+  * `excludeFirst` (Boolean): Should the user's first pull request ever be excluded from this count. Default: `false`.
+  * `excludePopular` (Boolean): Should the user's most commented pull request be excluded from this count. Default: `false`.
 
 * `totalPullRequestReviewContributions` (Int!): How many pull request reviews the user left.
 * `totalRepositoriesWithContributedCommits` (Int!): How many different repositories the user committed to.
 * `totalRepositoriesWithContributedIssues` (Int!): How many different repositories the user opened issues in.
-  * `excludeFirst` (Boolean): Should the user's first issue ever be excluded from this count.
-  * `excludePopular` (Boolean): Should the user's most commented issue be excluded from this count.
+  * `excludeFirst` (Boolean): Should the user's first issue ever be excluded from this count. Default: `false`.
+  * `excludePopular` (Boolean): Should the user's most commented issue be excluded from this count. Default: `false`.
 
 * `totalRepositoriesWithContributedPullRequestReviews` (Int!): How many different repositories the user left pull request reviews in.
 * `totalRepositoriesWithContributedPullRequests` (Int!): How many different repositories the user opened pull requests in.
-  * `excludeFirst` (Boolean): Should the user's first pull request ever be excluded from this count.
-  * `excludePopular` (Boolean): Should the user's most commented pull request be excluded from this count.
+  * `excludeFirst` (Boolean): Should the user's first pull request ever be excluded from this count. Default: `false`.
+  * `excludePopular` (Boolean): Should the user's most commented pull request be excluded from this count. Default: `false`.
 
 * `totalRepositoryContributions` (Int!): How many repositories the user created.
-  * `excludeFirst` (Boolean): Should the user's first repository ever be excluded from this count.
+  * `excludeFirst` (Boolean): Should the user's first repository ever be excluded from this count. Default: `false`.
 
 * `user` (User!): The user who made the contributions in this collection.
 
@@ -643,7 +643,7 @@ A User who is an outside collaborator of an enterprise through one or more organ
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (RepositoryOrder): Ordering options for repositories.
+  * `orderBy` (RepositoryOrder): Ordering options for repositories. Default: `{field: NAME, direction: ASC}`.
 
 ## EnterpriseTeamMemberConnection - object
 
@@ -772,7 +772,7 @@ Entities that have members who can set status messages.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (UserStatusOrder): Ordering options for user statuses returned from the connection.
+  * `orderBy` (UserStatusOrder): Ordering options for user statuses returned from the connection. Default: `{field: UPDATED_AT, direction: DESC}`.
 
 ### Implemented by
 
@@ -1313,7 +1313,7 @@ provided from argument.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
   * `membershipType` (EnterpriseMembershipType): Filter enterprises returned based on the user's membership type. Default: `ALL`.
-  * `orderBy` (EnterpriseOrder): Ordering options for the User's enterprises.
+  * `orderBy` (EnterpriseOrder): Ordering options for the User's enterprises. Default: `{field: NAME, direction: ASC}`.
 
 * `estimatedNextSponsorsPayoutInCents` (Int!): The estimated next GitHub Sponsors payout for this user/organization in cents (USD).
 * `followers` (FollowerConnection!): A list of users the given user is followed by. _(Pagination: `after`, `before`, `first`, `last`)_
@@ -1374,7 +1374,7 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorAndLifetimeValueOrder): Ordering options for results returned from the connection.
+  * `orderBy` (SponsorAndLifetimeValueOrder): Ordering options for results returned from the connection. Default: `{field: SPONSOR_LOGIN, direction: ASC}`.
 
 * `lists` (UserListConnection!): A user-curated list of repositories. _(Pagination: `after`, `before`, `first`, `last`)_
 * `location` (String): The user's public profile location.
@@ -1400,7 +1400,7 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
   * `names` ([String]): Find packages by their names.
-  * `orderBy` (PackageOrder): Ordering of the returned packages.
+  * `orderBy` (PackageOrder): Ordering of the returned packages. Default: `{field: CREATED_AT, direction: DESC}`.
   * `packageType` (PackageType): Filter registry package by type.
   * `repositoryId` (ID): Find packages in a repository by ID.
 
@@ -1442,7 +1442,7 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
   * `minPermissionLevel` (ProjectV2PermissionLevel): Filter projects based on user role. Default: `READ`.
-  * `orderBy` (ProjectV2Order): How to order the returned projects.
+  * `orderBy` (ProjectV2Order): How to order the returned projects. Default: `{field: NUMBER, direction: DESC}`.
   * `query` (String): A project to search for under the owner.
 
 * `pronouns` (String): The user's profile pronouns.
@@ -1474,7 +1474,7 @@ current viewer owns.
   * `orderBy` (RepositoryOrder): Ordering options for repositories returned from the connection.
   * `ownerAffiliations` ([RepositoryAffiliation]): Array of owner's affiliation options for repositories returned from the
 connection. For example, OWNER will include only repositories that the
-organization or user being viewed owns.
+organization or user being viewed owns. Default: `[OWNER, COLLABORATOR]`.
   * `privacy` (RepositoryPrivacy): If non-null, filters repositories according to privacy. Internal
 repositories are considered private; consider using the visibility argument
 if only internal repositories are needed. Cannot be combined with the
@@ -1503,7 +1503,7 @@ GitHub.com UI uses [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY].
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `onlyAnswers` (Boolean): Filter discussion comments to only those that were marked as the answer.
+  * `onlyAnswers` (Boolean): Filter discussion comments to only those that were marked as the answer. Default: `false`.
   * `repositoryId` (ID): Filter discussion comments to only those in a specific repository.
 
 * `repositoryDiscussions` (DiscussionConnection!): Discussions this user has started.
@@ -1513,9 +1513,9 @@ including both answered and unanswered discussions.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (DiscussionOrder): Ordering options for discussions returned from the connection.
+  * `orderBy` (DiscussionOrder): Ordering options for discussions returned from the connection. Default: `{field: CREATED_AT, direction: DESC}`.
   * `repositoryId` (ID): Filter discussions to only those in a specific repository.
-  * `states` ([DiscussionState!]): A list of states to filter the discussions by.
+  * `states` ([DiscussionState!]): A list of states to filter the discussions by. Default: `[]`.
 
 * `resourcePath` (URI!): The HTTP path for this user.
 * `savedReplies` (SavedReplyConnection): Replies this user has saved.
@@ -1523,7 +1523,7 @@ including both answered and unanswered discussions.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SavedReplyOrder): The field to order saved replies by.
+  * `orderBy` (SavedReplyOrder): The field to order saved replies by. Default: `{field: UPDATED_AT, direction: DESC}`.
 
 * `socialAccounts` (SocialAccountConnection!): The user's social media accounts, ordered as they appear on the user's profile. _(Pagination: `after`, `before`, `first`, `last`)_
 * `sponsoring` (SponsorConnection!): List of users and organizations this entity is sponsoring.
@@ -1531,28 +1531,28 @@ including both answered and unanswered discussions.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorOrder): Ordering options for the users and organizations returned from the connection.
+  * `orderBy` (SponsorOrder): Ordering options for the users and organizations returned from the connection. Default: `{field: RELEVANCE, direction: DESC}`.
 
 * `sponsors` (SponsorConnection!): List of sponsors for this user or organization.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorOrder): Ordering options for sponsors returned from the connection.
+  * `orderBy` (SponsorOrder): Ordering options for sponsors returned from the connection. Default: `{field: RELEVANCE, direction: DESC}`.
   * `tierId` (ID): If given, will filter for sponsors at the given tier. Will only return
 sponsors whose tier the viewer is permitted to see.
 
 * `sponsorsActivities` (SponsorsActivityConnection!): Events involving this sponsorable, such as new sponsorships.
-  * `actions` ([SponsorsActivityAction!]): Filter activities to only the specified actions.
+  * `actions` ([SponsorsActivityAction!]): Filter activities to only the specified actions. Default: `[]`.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `includeAsSponsor` (Boolean): Whether to include those events where this sponsorable acted as the sponsor.
 Defaults to only including events where this sponsorable was the recipient
-of a sponsorship.
+of a sponsorship. Default: `false`.
   * `includePrivate` (Boolean): Whether or not to include private activities in the result set. Defaults to including public and private activities. Default: `true`.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorsActivityOrder): Ordering options for activity returned from the connection.
+  * `orderBy` (SponsorsActivityOrder): Ordering options for activity returned from the connection. Default: `{field: TIMESTAMP, direction: DESC}`.
   * `period` (SponsorsActivityPeriod): Filter activities returned to only those that occurred in the most recent
 specified time period. Set to ALL to avoid filtering by when the activity
 occurred. Will be ignored if since or until is given. Default: `MONTH`.
@@ -1573,7 +1573,7 @@ get the sponsorship back even if it has been cancelled. Default: `true`.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
-  * `orderBy` (SponsorshipNewsletterOrder): Ordering options for sponsorship updates returned from the connection.
+  * `orderBy` (SponsorshipNewsletterOrder): Ordering options for sponsorship updates returned from the connection. Default: `{field: CREATED_AT, direction: DESC}`.
 
 * `sponsorshipsAsMaintainer` (SponsorshipConnection!): The sponsorships where this user or organization is the maintainer receiving the funds.
   * `activeOnly` (Boolean): Whether to include only sponsorships that are active right now, versus all
@@ -1581,7 +1581,7 @@ sponsorships this maintainer has ever received. Default: `true`.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
-  * `includePrivate` (Boolean): Whether or not to include private sponsorships in the result set.
+  * `includePrivate` (Boolean): Whether or not to include private sponsorships in the result set. Default: `false`.
   * `last` (Int): Returns the last n elements from the list.
   * `orderBy` (SponsorshipOrder): Ordering options for sponsorships returned from this connection. If left
 blank, the sponsorships will be ordered based on relevancy to the viewer.
@@ -1620,7 +1620,7 @@ blank, the sponsorships will be ordered based on relevancy to the viewer.
 spent on GitHub to fund sponsorships. Only returns a value when viewed by the
 user themselves or by a user who can manage sponsorships for the requested organization.
   * `since` (DateTime): Filter payments to those that occurred on or after this time.
-  * `sponsorableLogins` ([String!]): Filter payments to those made to the users or organizations with the specified usernames.
+  * `sponsorableLogins` ([String!]): Filter payments to those made to the users or organizations with the specified usernames. Default: `[]`.
   * `until` (DateTime): Filter payments to those that occurred before this time.
 
 * `twitterUsername` (String): The user's Twitter username.
@@ -1650,7 +1650,7 @@ viewer is an owner or collaborator, or member.
   * `orderBy` (RepositoryOrder): Ordering options for repositories returned from the connection.
   * `ownerAffiliations` ([RepositoryAffiliation]): Array of owner's affiliation options for repositories returned from the
 connection. For example, OWNER will include only repositories that the
-organization or user being viewed owns.
+organization or user being viewed owns. Default: `[OWNER, COLLABORATOR]`.
   * `privacy` (RepositoryPrivacy): If non-null, filters repositories according to privacy. Internal
 repositories are considered private; consider using the visibility argument
 if only internal repositories are needed. Cannot be combined with the
@@ -1683,7 +1683,7 @@ The possible durations that a user can be blocked for.
 
 ## UserBlockedEvent - object
 
-Represents auser_blockedevent on a given user.
+Represents a user_blocked event on a given user.
 
 **Implements:** Node
 

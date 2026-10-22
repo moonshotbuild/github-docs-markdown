@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/copilot/how-tos/copilot-sdk"
   - title: "Features"
     href: "/en/copilot/how-tos/copilot-sdk/features"
-  - title: "Context management"
+  - title: "Context Management"
     href: "/en/copilot/how-tos/copilot-sdk/features/context-management"
 ---
 

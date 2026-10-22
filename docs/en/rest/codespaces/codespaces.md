@@ -21,7 +21,7 @@ Use the REST API to manage GitHub Codespaces.
 
 You can manage Codespaces using the REST API. These endpoints are available for authenticated users, OAuth apps, and GitHub Apps. For more information, see [Codespaces documentation](/en/codespaces).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List codespaces in a repository for the authenticated user

@@ -35,7 +35,7 @@ Pull request authors can set these permissions when they create a pull request f
 
 4. On user-owned forks, if you want to allow anyone with push access to the upstream repository to make changes to your pull request, select **Allow edits from maintainers**.
 
-   > \[!WARNING]
+   > [!WARNING]
    > If your fork contains GitHub Actions workflows, the option is **Allow edits and access to secrets by maintainers**. Allowing edits on a fork's branch that contains GitHub Actions workflows also allows a maintainer to edit the forked repository's workflows, which can potentially reveal values of secrets and grant access to other branches.
 
    ![Screenshot of a pull request. On the bottom right, the "Allow edits and access to secrets by maintainers" checkbox is enabled and outlined in orange.](/assets/images/help/pull_requests/allow-edits-and-access-by-maintainers.png)

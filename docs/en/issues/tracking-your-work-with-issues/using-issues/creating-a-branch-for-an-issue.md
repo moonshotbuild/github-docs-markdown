@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can create a branch to work on an issue directly from the issue page and get started right away.
 
-> \[!NOTE]
+> [!NOTE]
 > The ability to create a branch for an issue is currently in public preview and subject to change.
 
 ## About branches connected to an issue

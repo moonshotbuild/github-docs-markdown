@@ -22,7 +22,7 @@ GitHub credentials include your password, access tokens, SSH keys, and applicati
 1. To request a new password, visit <https://github.com/password_reset>.
 
 2. Enter the email address associated with your account, then click **Send password reset email.**
-   > \[!NOTE]
+   > [!NOTE]
    > Only primary and backup email addresses can be used to request a new password. Unless you have previously chosen a specific backup email address, all verified emails are considered backup email addresses.
 
 3. GitHub will email you a link that will allow you to reset your password. You must click on this link within 3 hours of receiving the email. If you didn't receive an email from us, make sure to check your spam folder.
@@ -33,14 +33,14 @@ GitHub credentials include your password, access tokens, SSH keys, and applicati
    * If you have set up [GitHub Mobile](https://github.com/mobile), you will be sent a push notification to verify your identity. If you didn't receive a notification, click "More options", then **Authenticate with GitHub Mobile**.
 
    * Alternatively, type your TOTP or SMS authentication code, or one of your recovery codes, and click **Verify**.
-   > \[!NOTE]
+   > [!NOTE]
    > If you've lost access to your two-factor authentication credentials and your recovery codes, you can start account recovery request. See [Recovering your account if you lose your 2FA credentials](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/recovering-your-account-if-you-lose-your-2fa-credentials#recovering-without-your-password-or-two-factor-authentication-credentials).
 
 5. In the text field under **Password**, type a new password. Then, in the text field under **Confirm password**, type the password again.
 
 6. Click **Change password**. For help creating a strong password, see [Creating a strong password](/en/authentication/keeping-your-account-and-data-secure/creating-a-strong-password).
 
-> \[!TIP]
+> [!TIP]
 > To avoid losing your password in the future, we suggest using a secure password manager.
 
 ## Changing an existing password
@@ -55,7 +55,7 @@ GitHub only inspects the password at the time you type it, and never stores the 
 4. Under "Change password", type your old password, a strong new password, and confirm your new password. For help creating a strong password, see [Creating a strong password](/en/authentication/keeping-your-account-and-data-secure/creating-a-strong-password).
 5. Click **Update password**.
 
-> \[!TIP]
+> [!TIP]
 > For greater security, enable two-factor authentication in addition to changing your password. See [About two-factor authentication](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication) for more details.
 
 ## Updating your access tokens

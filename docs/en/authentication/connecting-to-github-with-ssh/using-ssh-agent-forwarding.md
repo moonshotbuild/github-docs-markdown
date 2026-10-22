@@ -47,7 +47,7 @@ We're off to a great start. Let's set up SSH to allow agent forwarding to your s
       ForwardAgent yes
    ```
 
-> \[!WARNING]
+> [!WARNING]
 > You may be tempted to use a wildcard like `Host *` to just apply this setting to all SSH connections. That's not really a good idea, as you'd be sharing your local SSH keys with *every* server you SSH into. They won't have direct access to the keys, but they will be able to use them *as you* while the connection is established. **You should only add servers you trust and that you intend to use with agent forwarding.**
 
 ## Testing SSH agent forwarding
@@ -149,14 +149,14 @@ If the command says that no identity is available, you'll need to add your key:
 ssh-add YOUR-KEY
 ```
 
-> \[!TIP]
+> [!TIP]
 > On macOS, `ssh-agent` will "forget" this key, once it gets restarted during reboots. But you can import your SSH keys into Keychain using this command:
 >
 > ```shell
 > ssh-add --apple-use-keychain YOUR-KEY
 > ```
 
-> \[!NOTE]
+> [!NOTE]
 > The `--apple-use-keychain` option stores the passphrase in your keychain for you when you add an SSH key to the ssh-agent. If you chose not to add a passphrase to your key, run the command without the `--apple-use-keychain` option.
 >
 > The `--apple-use-keychain` option is in Apple's standard version of `ssh-add`. In macOS versions prior to Monterey (12.0), the `--apple-use-keychain` and `--apple-load-keychain` flags used the syntax `-K` and `-A`, respectively.

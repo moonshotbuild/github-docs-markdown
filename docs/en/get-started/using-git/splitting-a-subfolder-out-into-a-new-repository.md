@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can turn a folder within a Git repository into a brand new repository.
 
-> \[!NOTE]
+> [!NOTE]
 > You need Git version 2.22.0 or later to follow these instructions, otherwise `git filter-repo` will not work.
 
 If you create a new clone of the repository, you won't lose any of your Git history or changes when you split a folder into a separate repository. However, note that the new repository won't have the branches and tags of the original repository.
@@ -44,7 +44,7 @@ If you create a new clone of the repository, you won't lose any of your Git hist
 
    <div class="ghd-tool windows">
 
-   > \[!TIP]
+   > [!TIP]
    > Windows users should use `/` to delimit folders.
 
    </div>
@@ -69,7 +69,7 @@ If you create a new clone of the repository, you won't lose any of your Git hist
 
    ![Screenshot of the "Quick Setup" header in a repository. Next to the remote URL, an icon of two overlapping squares is outlined in orange.](/assets/images/help/repository/copy-remote-repository-url-quick-setup.png)
 
-   > \[!TIP]
+   > [!TIP]
    > For information on the difference between HTTPS and SSH URLs, see [About remote repositories](/en/get-started/git-basics/about-remote-repositories).
 
 8. Add a new remote name with the URL you copied for your repository. For example, `origin` or `upstream` are two common choices.

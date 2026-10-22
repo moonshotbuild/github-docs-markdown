@@ -46,7 +46,7 @@ To troubleshoot, make sure that your `_config.yml` file follows these rules:
 
 To identify any errors, you can copy and paste the contents of your YAML file into a YAML linter, such as [YAML Validator](http://codebeautify.org/yaml-validator).
 
-> \[!NOTE]
+> [!NOTE]
 > If your repository contains symbolic links, you will need to publish your site using a GitHub Actions workflow. For more information about GitHub Actions, see [GitHub Actions documentation](/en/actions).
 
 ## Date is not a valid datetime

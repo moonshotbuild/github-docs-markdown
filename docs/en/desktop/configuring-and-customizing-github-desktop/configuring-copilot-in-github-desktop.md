@@ -28,7 +28,7 @@ You can also configure Copilot in GitHub Desktop to use your own LLM provider (B
 * You have an API key or bearer token from a supported LLM provider, or you have a local model running, such as Ollama.
 * You have the base URL and at least one model identifier for the provider you want to use.
 
-> \[!NOTE]
+> [!NOTE]
 > Custom LLM providers in GitHub Desktop require access to Copilot in GitHub Desktop. To use your own LLM models with Copilot CLI, see [Adding LLM models to GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models).
 
 ## Supported provider types

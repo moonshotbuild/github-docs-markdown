@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can test new optional features for your GitHub Apps.
 
-> \[!WARNING]
+> [!WARNING]
 > Optional features are subject to change.
 
 ## Activating optional features for GitHub Apps

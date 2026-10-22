@@ -38,7 +38,7 @@ In this migration:
 
 The source and destination API endpoints must be specified independently. Do not use the destination API URL for source operations.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > GitHub Enterprise Cloud with data residency API URLs use the format `https://api.SUBDOMAIN.ghe.com`. This is different from a GitHub Enterprise Server API URL, which typically uses the format `https://HOSTNAME/api/v3`.
 
 ## Prerequisites
@@ -216,7 +216,7 @@ gh gei wait-for-migration \
 
 Replace `MIGRATION_ID` with the ID returned by `gh gei migrate-repo`.
 
-> \[!NOTE]
+> [!NOTE]
 > Include both API URL arguments when checking. The source API URL is required for GEI commands that retrieve source-side migration information and logs.
 
 ## Download migration logs

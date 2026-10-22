@@ -36,7 +36,7 @@ Read access to the repository is required to perform these steps.
 
 <div class="ghd-tool cli">
 
-> \[!NOTE]
+> [!NOTE]
 > To learn more about GitHub CLI, see [About GitHub CLI](/en/github-cli/github-cli/about-github-cli).
 
 ## Viewing recent workflow runs

@@ -21,7 +21,7 @@ A stack is a series of pull requests in the same repository where each pull requ
 
 Every pull request in a stack is evaluated against rules for the **base of the stack** — typically `main` — regardless of which branch it directly targets. This means mid-stack pull requests are held to the same standard as the bottom pull request.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Stacked pull requests require all branches to be in the same repository. Cross-fork stacks are not supported.
 > * Stacked pull requests are not supported in GitHub Desktop.
@@ -83,7 +83,7 @@ Before a pull request in a stack can merge, all of the following must be true:
 
 For example, in the stack `main ← PR1 ← PR2 ← PR3`, merging PR #3 requires PR #1 and PR #2 to also pass checks, have required reviews, and satisfy all branch protection rules.
 
-> \[!NOTE] Stacked pull requests support merging with **bypass rules**, but only the bottom pull request can be merged this way. You cannot merge the whole stack with bypass rules. See [Creating rulesets for a repository](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository#granting-bypass-permissions-for-your-branch-or-tag-ruleset)
+> [!NOTE] Stacked pull requests support merging with **bypass rules**, but only the bottom pull request can be merged this way. You cannot merge the whole stack with bypass rules. See [Creating rulesets for a repository](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository#granting-bypass-permissions-for-your-branch-or-tag-ruleset)
 
 ## Merge methods
 
@@ -97,7 +97,7 @@ Stacks support all three merge methods. In each case, the pull requests land as 
 
 Stacks fully support merge queues. All pull requests in the stack are added to the queue in the correct order. If a pull request is removed or ejected from the queue, all pull requests above it in the stack are also removed.
 
-> \[!NOTE]
+> [!NOTE]
 > To keep a stack together, the merge queue allows the merge group to exceed its configured maximum size by up to 50 percent. If the stack is too large to fit within that buffer, it will automatically be put into the next merge group as a single unit.
 
 ## Linear history

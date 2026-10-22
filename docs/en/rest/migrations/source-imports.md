@@ -19,12 +19,12 @@ Use the REST API to start an import from a Git source repository.
 
 ## About source imports
 
-> \[!WARNING]
+> [!WARNING]
 > Due to very low levels of usage and available alternatives, the Source Imports API has been retired. For more details and alternatives, see the [changelog](https://gh.io/source-imports-api-deprecation).
 
 You can use these endpoints to start an import from a Git repository hosted with another service. This is the same functionality as the GitHub Importer. For more information, see [Importing a repository with GitHub Importer](/en/migrations/importing-source-code/using-github-importer/importing-a-repository-with-github-importer). A typical source import would start the import and then (optionally) update the authors and/or update the preference for using Git LFS if large files exist in the import. You can also create a webhook that listens for the [`RepositoryImportEvent`](/en/webhooks/webhook-events-and-payloads#repository_import) to find out the status of the import.
 
-> \[!NOTE]
+> [!NOTE]
 > These endpoints only support authentication using a personal access token (classic). For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 The following diagram provides a more detailed example:
@@ -102,7 +102,7 @@ The following diagram provides a more detailed example:
      |                              |                                              |
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Get an import status

@@ -35,7 +35,7 @@ In responses from the REST API, `watchers`, `watchers_count`, and `stargazers_co
 
 In July 2026, to ensure responsible use of this data and to protect users from misuse, we are introducing new access restrictions to the endpoints related to starring. Access to the stargazers listing endpoints will be limited to admins and collaborators. For more information, see the [changelog post](https://github.blog/changelog/2026-06-30-upcoming-access-restrictions-to-public-api-endpoints-and-ui-views/).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List stargazers

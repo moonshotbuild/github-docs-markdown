@@ -21,7 +21,7 @@ GitHub automatically runs the jobs that generate Dependabot pull requests on Git
 
 ## About Dependabot on GitHub Actions runners
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > If Dependabot is enabled for a repository, it will always run on GitHub Actions, **bypassing both Actions policy checks and disablement at the repository or organization level**. This ensures that security and version update workflows always run when Dependabot is enabled.
 
 Using GitHub Actions runners allows you to more easily identify Dependabot job errors and manually detect and troubleshoot failed runs. You can also integrate Dependabot into your CI/CD pipelines by using GitHub Actions APIs and webhooks to detect Dependabot job status such as failed runs, and perform downstream processing. For more information, see [REST API endpoints for GitHub Actions](/en/rest/actions) and [Webhook events and payloads](/en/webhooks/webhook-events-and-payloads).
@@ -33,7 +33,7 @@ New repositories that you create in your user account or in your organization wi
 
 Future releases of GitHub will remove the ability to disable running Dependabot on GitHub Actions.
 
-> \[!NOTE] Enabling Dependabot on GitHub Actions may increase the number of concurrent jobs run in your account. If required, customers on enterprise plans can request a higher limit for concurrent jobs. For more information, contact us through the [GitHub Support portal](https://support.github.com/), or contact your sales representative.
+> [!NOTE] Enabling Dependabot on GitHub Actions may increase the number of concurrent jobs run in your account. If required, customers on enterprise plans can request a higher limit for concurrent jobs. For more information, contact us through the [GitHub Support portal](https://support.github.com/), or contact your sales representative.
 
 ## Dynamic workflows
 
@@ -51,7 +51,7 @@ You can run Dependabot on GitHub Actions using:
 
 Running Dependabot on standard GitHub-hosted or self-hosted runners **does not** count towards your included GitHub Actions minutes. For Dependabot on larger runners, GitHub will bill your organization at the regular rate. See [Actions runner pricing](/en/billing/reference/actions-runner-pricing).
 
-> \[!NOTE]
+> [!NOTE]
 > Private networking is supported with either an Azure Virtual Network (VNET) or the Actions Runner Controller (ARC) for Dependabot on GitHub Actions. See [Setting up Dependabot to run on self-hosted action runners using the Actions Runner Controller](/en/code-security/tutorials/secure-your-dependencies/setting-dependabot-to-run-on-self-hosted-runners-using-arc) and [Setting up Dependabot to run on github-hosted action runners using the Azure Private Network](/en/code-security/how-tos/secure-at-scale/configure-enterprise-security/configure-specific-tools/setting-dependabot-to-run-on-github-hosted-runners-using-vnet).
 
 ## How runner settings interact
@@ -61,7 +61,7 @@ You can select a runner type for Dependabot at the organization or repository le
 * **Standard GitHub runner** uses the default GitHub-hosted environment.
 * **Labeled runner** sends jobs to self-hosted or larger runners that match the configured label. If you do not specify a label, Dependabot uses the `dependabot` label. You can also specify a runner group to limit jobs to matching runners in that group.
 
-> \[!WARNING]
+> [!WARNING]
 > If the specified runner group does not exist, Dependabot reports an error immediately. If the group exists but no online runner in the group matches the configured label, the job remains queued until a matching runner is available. Make sure the repository can access the specified runner group.
 
 Labeled runners are not available for public repositories. These repositories use standard GitHub-hosted runners.

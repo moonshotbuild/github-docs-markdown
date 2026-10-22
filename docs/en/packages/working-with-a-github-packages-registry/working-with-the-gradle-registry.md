@@ -21,7 +21,7 @@ You can configure Gradle to publish packages to the GitHub Packages Gradle regis
 
 ## Authenticating to GitHub Packages
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Packages only supports authentication using a personal access token (classic). For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 You need an access token to publish, install, and delete private, internal, and public packages.
@@ -39,11 +39,11 @@ For more information about `GITHUB_TOKEN` used in GitHub Actions workflows, see 
 
 You must use a personal access token (classic) with the appropriate scopes to publish and install packages in GitHub Packages. For more information, see [Introduction to GitHub Packages](/en/packages/learn-github-packages/introduction-to-github-packages#authenticating-to-github-packages).
 
-You can authenticate to GitHub Packages with Gradle using either Gradle Groovy or Kotlin DSL by editing your *build.gradle* file (Gradle Groovy) or *build.gradle.kts* file (Kotlin DSL) file to include your personal access token (classic). You can also configure Gradle Groovy and Kotlin DSL to recognize a single package or multiple packages in a repository.
+You can authenticate to GitHub Packages with Gradle using either Gradle Groovy or Kotlin DSL by editing your `build.gradle` file (Gradle Groovy) or `build.gradle.kts` file (Kotlin DSL) (`settings.gradle` or `settings.gradle.kts` if you centralize repository declarations in the settings script to use published packages) to include your personal access token (classic). You can also configure Gradle Groovy and Kotlin DSL to recognize a single package or multiple packages in a repository.
 
 Replace USERNAME with your GitHub username, TOKEN with your personal access token (classic), REPOSITORY with the name of the repository containing the package you want to publish, and OWNER with the name of the personal account or organization on GitHub that owns the repository. Because uppercase letters aren't supported, you must use lowercase letters for the repository owner even if the GitHub user or organization name contains uppercase letters.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Packages supports `SNAPSHOT` versions of Apache Maven. To use the GitHub Packages repository for downloading `SNAPSHOT` artifacts, enable SNAPSHOTS in the POM of the consuming project or your *\~/.m2/settings.xml* file. For an example, see [Working with the Apache Maven registry](/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry).
 
 #### Example using Gradle Groovy for a single package in a repository
@@ -58,8 +58,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/OWNER/REPOSITORY")
             credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+                username = providers.gradleProperty("gpr.user").getOrNull() ?: System.getenv("USERNAME")
+                password = providers.gradleProperty("gpr.key").getOrNull() ?: System.getenv("TOKEN")
             }
         }
     }
@@ -85,8 +85,8 @@ subprojects {
                 name = "GitHubPackages"
                 url = uri("https://maven.pkg.github.com/OWNER/REPOSITORY")
                 credentials {
-                    username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-                    password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+                    username = providers.gradleProperty("gpr.user").getOrNull() ?: System.getenv("USERNAME")
+                    password = providers.gradleProperty("gpr.key").getOrNull() ?: System.getenv("TOKEN")
                 }
             }
         }
@@ -111,8 +111,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/OWNER/REPOSITORY")
             credentials {
-                username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+                username = providers.gradleProperty("gpr.user").getOrNull() ?: System.getenv("USERNAME")
+                password = providers.gradleProperty("gpr.key").getOrNull() ?: System.getenv("TOKEN")
             }
         }
     }
@@ -138,8 +138,8 @@ subprojects {
                 name = "GitHubPackages"
                 url = uri("https://maven.pkg.github.com/OWNER/REPOSITORY")
                 credentials {
-                    username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-                    password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+                    username = providers.gradleProperty("gpr.user").getOrNull() ?: System.getenv("USERNAME")
+                    password = providers.gradleProperty("gpr.key").getOrNull() ?: System.getenv("TOKEN")
                 }
             }
         }
@@ -171,7 +171,7 @@ To use a published package from GitHub Packages, add the package as a dependency
 
 1. Authenticate to GitHub Packages. For more information, see [Authenticating to GitHub Packages](#authenticating-to-github-packages).
 
-2. Add the package dependencies to your *build.gradle* file (Gradle Groovy) or *build.gradle.kts* file (Kotlin DSL) file.
+2. Add the package dependencies to your `build.gradle` file (Gradle Groovy) or `build.gradle.kts` file (Kotlin DSL).
 
    Example using Gradle Groovy:
 
@@ -189,7 +189,7 @@ To use a published package from GitHub Packages, add the package as a dependency
    }
    ```
 
-3. Add the repository to your *build.gradle* file (Gradle Groovy) or *build.gradle.kts* file (Kotlin DSL) file.
+3. Add the repository to your `build.gradle` file (Gradle Groovy) or `build.gradle.kts` file (Kotlin DSL), or to your `settings.gradle` file (Gradle Groovy) or `settings.gradle.kts` file (Kotlin DSL) in the `dependencyResolutionManagement` block if you centralize repository declarations in the settings script. For more information, see [Centralizing Repository Declarations](https://docs.gradle.org/current/userguide/centralizing_repositories.html) in the Gradle documentation.
 
    Example using Gradle Groovy:
 
@@ -198,10 +198,10 @@ To use a published package from GitHub Packages, add the package as a dependency
        maven {
            url = uri("https://maven.pkg.github.com/OWNER/REPOSITORY")
            credentials {
-               username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-               password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+               username = providers.gradleProperty("gpr.user").getOrNull() ?: System.getenv("USERNAME")
+               password = providers.gradleProperty("gpr.key").getOrNull() ?: System.getenv("TOKEN")
            }
-      }
+       }
    }
    ```
 
@@ -212,8 +212,8 @@ To use a published package from GitHub Packages, add the package as a dependency
        maven {
            url = uri("https://maven.pkg.github.com/OWNER/REPOSITORY")
            credentials {
-               username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-               password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+               username = providers.gradleProperty("gpr.user").getOrNull() ?: System.getenv("USERNAME")
+               password = providers.gradleProperty("gpr.key").getOrNull() ?: System.getenv("TOKEN")
            }
        }
    }

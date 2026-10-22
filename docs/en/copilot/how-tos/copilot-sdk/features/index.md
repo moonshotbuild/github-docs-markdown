@@ -25,6 +25,10 @@ These guides cover the capabilities you can add to your Copilot SDK application.
 
   How the Copilot CLI processes a user message end-to-end: from prompt to session.idle.
 
+* [Changing tools during a session](/en/copilot/how-tos/copilot-sdk/features/changing-tools)
+
+  An application can replace the tools it supplies to a live session without recreating it. For example, a web page can offer different tools as the user navigates, or a client that takes over a session can bring its own tools. Each SDK replaces the client's complete tool set and the handlers that serve it in one call.
+
 * [Citations](/en/copilot/how-tos/copilot-sdk/features/citations)
 
   Citations link spans of an assistant response back to the sources that support them. Turn on enableCitations when you create or resume a session, then read the citations payload on assistant.message events to render footnotes, source lists, or inline links.
@@ -44,6 +48,10 @@ These guides cover the capabilities you can add to your Copilot SDK application.
 * [Custom agents and sub-agent orchestration](/en/copilot/how-tos/copilot-sdk/features/custom-agents)
 
   Define specialized agents with scoped tools and prompts, then let Copilot orchestrate them as sub-agents within a single session. For dispatching multiple sub-agents in parallel, see Fleet mode.
+
+* [Customization discovery locations](/en/copilot/how-tos/copilot-sdk/features/customization-locations)
+
+  GitHub Copilot can discover versioned skills, agents, instructions, and file hooks directly from package installations, submodules, and vendored directories. You don't need to copy them into conventional directories.
 
 * [Fleet mode](/en/copilot/how-tos/copilot-sdk/features/fleet-mode)
 
@@ -67,7 +75,7 @@ These guides cover the capabilities you can add to your Copilot SDK application.
 
 * [Remote sessions](/en/copilot/how-tos/copilot-sdk/features/remote-sessions)
 
-  Remote sessions sync to GitHub so users can access locally running Copilot sessions from the agents panel or on mobile. When enabled, the SDK produces a URL to the session log that can be shared as a link or QR code.
+  Remote sessions let users access their Copilot session from GitHub web and mobile via Mission Control. When enabled, the SDK connects each session to Mission Control, producing a URL that can be shared as a link or QR code.
 
 * [Session limits](/en/copilot/how-tos/copilot-sdk/features/session-limits)
 

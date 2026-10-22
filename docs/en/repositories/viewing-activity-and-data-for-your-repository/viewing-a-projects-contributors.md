@@ -15,11 +15,11 @@ breadcrumbs:
 
 # Viewing a project's contributors
 
-You can see who contributed commits to a repository.
+You can see who contributed commits to a repository and its dependencies.
 
 ## About contributors
 
-> \[!NOTE]
+> [!NOTE]
 > Certain contributor, commit, and code frequency insights are only available for repositories that have fewer than 10,000 commits.
 
 You can view the top 100 contributors to a repository in the contributors graph. Merge commits and empty commits aren't counted as contributions for this graph.
@@ -45,7 +45,7 @@ If you don't appear in a repository's contributors graph, it may be because:
 * Your commits haven't been merged into the default branch.
 * The email address you used to author the commits isn't connected to your GitHub account.
 
-> \[!TIP]
+> [!TIP]
 > To list all commit contributors in a repository, see [REST API endpoints for repositories](/en/rest/repos/repos#list-repository-contributors).
 
 If all your commits in the repository are on non-default branches, you won't be in the contributors graph. For example, commits on the `gh-pages` branch aren't included in the graph unless `gh-pages` is the repository's default branch. To have your commits merged into the default branch, you can create a pull request. For more information, see [Pull requests](/en/pull-requests/reference/pull-requests).

@@ -27,7 +27,7 @@ The **visibility** of custom properties matches the visibility of the repository
 
 ## About custom property suggestions
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot suggestions for repository custom property definitions are in public preview.
 
 When you create a single select or multi select property, Copilot can suggest allowed values for the property definition. Select a suggestion to add it to the list of allowed values.
@@ -43,7 +43,7 @@ Custom property names and values may only contain certain characters:
 
 ## Syncing custom properties with an external system
 
-> \[!NOTE] External custom properties are in public preview and subject to change.
+> [!NOTE] External custom properties are in public preview and subject to change.
 
 You can automatically write metadata from an external system, such as a software catalog or internal developer portal, to repository custom properties on GitHub. This makes the external system the source of truth for these properties, and helps you keep business context such as ownership, service tier, or compliance status up to date in your repositories. External properties can be used in the same places as custom properties that are managed on GitHub.
 

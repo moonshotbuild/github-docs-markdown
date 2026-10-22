@@ -64,7 +64,7 @@ Once you have enabled validity checks for partner patterns for your repository, 
 
 ## Reviewing GitHub token metadata
 
-> \[!NOTE]
+> [!NOTE]
 > Metadata for GitHub tokens is currently in public preview and subject to change.
 
 In the view for an active GitHub token alert, you can review certain metadata about the token. This metadata may help you identify the token and decide what remediation steps to take.
@@ -86,7 +86,7 @@ Metadata for GitHub tokens is available for active tokens in any repository with
 
 ## Reviewing extended metadata for a token
 
-> \[!NOTE] Extended metadata checks for tokens is in public preview and subject to change.
+> [!NOTE] Extended metadata checks for tokens is in public preview and subject to change.
 
 In the view for an active GitHub token alert, you can see extended metadata information, such as owner and contact details.
 

@@ -64,7 +64,7 @@ The log contains a record of each command you issued and all of the API requests
 
 If you see an error like `No access to createMigrationMutation` or `Missing permissions`, your personal account does not have the required access to run the migration. Make sure you're either an organization owner or have been granted the migrator role. For more information about granting the migrator role, see [About GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/understanding-github-enterprise-importer/about-github-enterprise-importer).
 
-> \[!NOTE]
+> [!NOTE]
 > If you're migrating between GitHub products, make sure you're an organization owner or have been granted the migrator role for both the source and target organizations.
 
 ### Resource is protected by organization SAML enforcement
@@ -148,7 +148,7 @@ Even if your migration succeeds, you should still review the migration log to ch
 
 Warnings in the migration log point to specific items within the repository which could not be migrated. For more information, see [Accessing your migration logs for GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/completing-your-migration-with-github-enterprise-importer/accessing-your-migration-logs-for-github-enterprise-importer).
 
-> \[!NOTE]
+> [!NOTE]
 > If the "Migration Log" issue includes "Migration completed" at the bottom, the repository was migrated. Warnings only indicate that specific items within the repository, such as a comment on a pull request, may not have migrated correctly.
 
 * [Warning: "Repository metadata too big to migrate"](#warning-repository-metadata-too-big-to-migrate)
@@ -164,7 +164,7 @@ If you see "Repository metadata too big to migrate" in the "Migration Log" issue
 
 If you're migrating from Azure DevOps, pull request comments on lines that were never changed in the pull request cannot be migrated to GitHub. You'll see this warning for every comment that cannot be migrated for this reason.
 
-> \[!NOTE]
+> [!NOTE]
 > Only comments on lines that weren't changed in a pull request are affected by this limitation. Comments on lines that were changed in a pull request are migrated.
 
 Be aware that the affected comments will not be in the migrated repository, but these warnings do not require further action from you.
@@ -202,7 +202,7 @@ The process for unlocking a repository depends on the GitHub product where the r
 * If the locked repository is on GitHub Enterprise Server, a site administrator can unlock the repository using the site admin dashboard. For more information, see [Locking a repository](/en/enterprise-server@3.22/admin/managing-accounts-and-repositories/managing-repositories-in-your-enterprise/locking-a-repository) in the GitHub Enterprise Server documentation.
 * If the locked repository is on GitHub.com, you can contact us through the [GitHub Support portal](https://support.github.com) to unlock the repository.
 
-> \[!NOTE]
+> [!NOTE]
 > If your migration failed, not all of your data was migrated. If you choose to unlock and use the repository, there will be data loss. Deleting the locked repository and retrying the migration may be a better option.
 
 ## Contacting GitHub Support

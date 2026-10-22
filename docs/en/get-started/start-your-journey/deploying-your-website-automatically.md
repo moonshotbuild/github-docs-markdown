@@ -19,7 +19,7 @@ Automate your code deployment with GitHub Actions and GitHub Pages to publish up
 
 Your feature is merged, so now you can share it. In this tutorial, you'll set up automatic deployment so every push to `main` publishes your software project to a live website.
 
-> \[!NOTE]
+> [!NOTE]
 > The URL of your GitHub Pages site depends on which version of GitHub you use.
 >
 > * On GitHub.com, your site is published at `YOUR-USERNAME.github.io/REPOSITORY`.
@@ -123,6 +123,6 @@ Across this series, you built a complete software project and practiced the GitH
 
 * Expand your understanding of Git and GitHub. For more information, see [Git and GitHub learning resources](/en/get-started/start-your-journey/git-and-github-learning-resources).
 * Explore Copilot Chat to learn faster and get help as you code. For more information, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/chat).
-* Go deeper with AI and learn how agents can act like a practical coding partner by turning ideas into small actionable steps, generating examples, and handling repetitive work. For more information, see [Concepts for GitHub Copilot agents](/en/copilot/concepts/agents).
+* Go deeper with AI and learn how agents can act like a practical coding partner by turning ideas into small actionable steps, generating examples, and handling repetitive work. For more information, see [Agent capabilities](/en/copilot/concepts/agent-capabilities).
 * Learn more about automating your software projects with GitHub Actions workflows. For more information, see [Understanding GitHub Actions](/en/actions/get-started/understand-github-actions).
 * Add a custom domain or explore more ways to publish your website with GitHub Pages. For more information, see [Getting started with GitHub Pages](/en/pages/getting-started-with-github-pages).

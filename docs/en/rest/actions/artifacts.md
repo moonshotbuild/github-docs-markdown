@@ -21,7 +21,7 @@ Use the REST API to interact with artifacts in GitHub Actions.
 
 You can use the REST API to download, delete, and retrieve information about workflow artifacts in GitHub Actions. Artifacts enable you to share data between jobs in a workflow and store data once that workflow has completed. For more information, see [Store and share data with workflow artifacts](/en/actions/tutorials/store-and-share-data).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List artifacts for a repository

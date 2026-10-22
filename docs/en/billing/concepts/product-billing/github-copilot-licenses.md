@@ -31,7 +31,7 @@ Copilot licenses are required for each user who uses Copilot. Licenses are avail
 | **Organizations**     | Copilot Business: $19 USD per user per month (billed monthly).                                                                                                                                                                                                                                              |
 | **Enterprises**       | Choose Copilot Business or Copilot Enterprise, or mix them across organizations. Both are billed monthly, pricing varies.                                                                                                                                                                                   |
 
-> \[!NOTE] If you have an active Copilot Pro, Copilot Pro+, or Copilot Max plan, and are then assigned a seat as part of a Copilot Business or Copilot Enterprise plan, your personal Copilot plan will be automatically canceled. You will receive a prorated refund for any remaining portion of your personal plan's current billing cycle. You will then be able to continue using Copilot according to the policies set by your company.
+> [!NOTE] If you have an active Copilot Pro, Copilot Pro+, or Copilot Max plan, and are then assigned a seat as part of a Copilot Business or Copilot Enterprise plan, your personal Copilot plan will be automatically canceled. You will receive a prorated refund for any remaining portion of your personal plan's current billing cycle. You will then be able to continue using Copilot according to the policies set by your company.
 
 ## Free use of Copilot
 
@@ -95,7 +95,7 @@ To help manage your budget for Copilot licenses, consider the following strategi
 * You can set budgets for your personal account to receive email alerts at 75%, 90%, and 100% of the budget.
 * Budgets help you monitor spending but do not stop license charges.
 
-> \[!NOTE] Additional usage may be capped. If you use all AI credits available on your plan, we recommend upgrading to a higher plan.
+> [!NOTE] Additional usage may be capped. If you use all AI credits available on your plan, we recommend upgrading to a higher plan.
 
 For more information about using budgets to control spending, see [Setting up budgets to control spending on metered products](/en/billing/how-tos/set-up-budgets).
 

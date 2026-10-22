@@ -31,7 +31,7 @@ After configuring code scanning using default setup or a custom GitHub Actions w
 
 2. Click the entry for the code scanning workflow.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you are looking for the CodeQL workflow run triggered by enabling default setup, the text of the entry is "CodeQL."
 
 3. Click the job name on the left. For example, **Analyze (LANGUAGE)**.

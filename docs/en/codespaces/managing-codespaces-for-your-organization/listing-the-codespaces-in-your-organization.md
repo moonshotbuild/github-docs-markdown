@@ -46,7 +46,7 @@ To list all of the current codespaces for an organization that were created by a
 gh codespace list --org ORGANIZATION --user USER
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > In the above commands, replace `ORGANIZATION` with the name of the organization you are querying. You must be an owner of the organization.
 
 ### Using the REST API to list codespaces

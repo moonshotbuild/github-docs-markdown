@@ -47,7 +47,7 @@ When you publish a package that is scoped to a personal account or an organizati
 
 ## Connecting a repository to a container image using the command line
 
-> \[!NOTE]
+> [!NOTE]
 > If you publish a package that is linked to a repository, the package automatically inherits the access permissions of the linked repository, and GitHub Actions workflows in the linked repository automatically get access to the package, unless your organization has disabled automatic inheritance of access permissions. For more information, see [Configuring a package's access control and visibility](/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility#about-inheritance-of-access-permissions).
 
 1. In your Dockerfile, add this line, replacing `OWNER` and `REPO` with your details:
@@ -115,7 +115,7 @@ When you publish a package that is scoped to a personal account or an organizati
 
 ## Unlinking a repository from a package on GitHub
 
-> \[!NOTE]
+> [!NOTE]
 > Unlinking a package from a repository will remove the repository information from the package's landing page and can affect the access pattern depending on whether the package inherits its access permissions from the repository. For more information, see [Configuring a package's access control and visibility](/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility#about-inheritance-of-access-permissions). This behavior does not apply to Apache Maven packages, as outlined in [About permissions for GitHub Packages](/en/packages/learn-github-packages/about-permissions-for-github-packages#granular-permissions-for-userorganization-scoped-packages).
 
 1. On GitHub, navigate to the settings page of the Package you'd like to unlink.

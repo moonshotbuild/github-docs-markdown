@@ -29,7 +29,7 @@ Prebuilds are created using GitHub Actions. As a result, GitHub Actions must be 
 
 You can set up prebuilds in any repository owned by a personal account. The prebuild will consume storage space that will either incur a billable charge or, for repositories owned by your personal account, will use some of your monthly included storage.
 
-> \[!NOTE]
+> [!NOTE]
 > If you create prebuilds for a forked repository, the storage cost of those prebuilds is subtracted from your monthly included storage, while available. If you have used all of your included storage, and you have set up billing, your personal account will be billed. This is true even when the codespaces you create for a fork are paid for by the organization that owns the parent repository. See [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces#how-costs-are-assigned-to-a-billable-account).
 
 For repositories owned by an organization, you can set up prebuilds if the organization is on a GitHub Team or GitHub Enterprise plan. Additionally, you must have added a payment method and set a spending limit for GitHub Codespaces on the organization account or its parent enterprise. See [Setting up budgets to control spending on metered products](/en/billing/how-tos/set-up-budgets#managing-budgets-for-your-organization-or-enterprise) and [GitHub's plans](/en/get-started/learning-about-github/githubs-plans).
@@ -52,7 +52,7 @@ For repositories owned by an organization, you can set up prebuilds if the organ
 
    ![Screenshot of the "Configuration" settings for a prebuild with a dropdown menu listing branches to select. The "main" branch is currently selected.](/assets/images/help/codespaces/prebuilds-choose-branch.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    > Any branches created from a prebuild-enabled base branch will typically also get prebuilds for the same dev container configuration. For example, if you enable prebuilds for a dev container configuration file on the default branch of the repository, branches based on the default branch will, in most cases, also get prebuilds for the same dev container configuration.
 
 6. Optionally, in the **Configuration file** dropdown menu that's displayed, choose the `devcontainer.json` configuration file that you want to use for your prebuilds. See [Introduction to dev containers](/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers#devcontainerjson).
@@ -67,7 +67,7 @@ For repositories owned by an organization, you can set up prebuilds if the organ
 
      * `.devcontainer/devcontainer.json`
 
-       > \[!NOTE]
+       > [!NOTE]
        > Prebuild updates are not triggered by changes to `devcontainer.json` files within subdirectories of `.devcontainer`.
 
      * The Dockerfile referenced in the `build.dockerfile` property of the `.devcontainer/devcontainer.json` file.
@@ -84,7 +84,7 @@ For repositories owned by an organization, you can set up prebuilds if the organ
 
    ![Screenshot of the "Region availability" settings. "Reduce prebuild available to only specific regions" is selected with two regions selected.](/assets/images/help/codespaces/prebuilds-regions.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    >
    > * The prebuild in each region incurs individual storage charges. You should, therefore, only enable prebuilds for regions in which you know they'll be used.
    > * Developers can set their default region for GitHub Codespaces, which can allow you to enable prebuilds for fewer regions. See [Setting your default region for GitHub Codespaces](/en/codespaces/setting-your-user-preferences/setting-your-default-region-for-github-codespaces).
@@ -103,7 +103,7 @@ For repositories owned by an organization, you can set up prebuilds if the organ
 
     ![Screenshot of the "Failure notifications" setting. The team named "octocat-team" has been added.](/assets/images/help/codespaces/prebuilds-failure-notification-setting.png)
 
-    > \[!NOTE]
+    > [!NOTE]
     > People will only receive notifications of failed prebuilds if they have enabled notifications for failed Actions workflows in their personal settings. See [Notifications for workflow runs](/en/actions/concepts/workflows-and-actions/notifications-for-workflow-runs).
 
 11. Optionally, at the bottom of the page, click **Show advanced options**.
@@ -122,7 +122,7 @@ For repositories owned by an organization, you can set up prebuilds if the organ
 
     Click **Authorize and continue** to grant these permissions for creation of prebuilds. Alternatively, you can click **Continue without authorizing** but, if you do so, codespaces created from the resulting prebuilds may not work properly.
 
-    > \[!NOTE]
+    > [!NOTE]
     > Users who create codespaces using this prebuild will also be asked to grant these permissions.
 
 After you create a prebuild configuration it is listed on the GitHub Codespaces page of your repository settings. A GitHub Actions workflow is queued and then run to create prebuilds in the regions you specified, based on the branch and dev container configuration file you selected.

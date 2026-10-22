@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can create an assignment for students in your course to complete individually.
 
-> \[!WARNING]
+> [!WARNING]
 > **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
 > For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
 
@@ -91,7 +91,7 @@ Optionally, decide whether to provide empty repositories or starter code, and pr
 
 By default, a new assignment will create an empty repository for each student on the roster for the classroom. You can optionally choose a template repository as starter code for the assignment. For more information, see [Create an assignment from a template repository](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/create-an-assignment-from-a-template-repository).
 
-> \[!NOTE]
+> [!NOTE]
 > The template repository must belong to your organization or be a public repository on GitHub.
 
 Under "Add a template repository to give students starter code", select the **Select a repository** drop-down, then type a search query. In the list of results, click the template repository you'd like to use for starter code.
@@ -147,7 +147,7 @@ To create the assignment, click **Create assignment**.
 
 By default, GitHub Classroom enables an invitation URL for each assignment you create. Students can accept and submit the assignment while the invitation URL is enabled. You can share the URL with your students on your LMS, course homepage, or wherever you post assignments. Students can also navigate to the assignment on GitHub Classroom if the student has already accepted an assignment for the classroom.
 
-> \[!WARNING]
+> [!WARNING]
 > Be careful where you share invitation URLs. Anyone with an invitation URL for an assignment can accept the invitation and associate a personal account on GitHub with an identifier in your roster.
 
 You can see whether a student has joined the classroom and accepted or submitted an assignment in the **Classroom roster** tab for the assignment. You can also link students' GitHub aliases to their associated roster identifier and vice versa in this tab. To prevent acceptance or submission of an assignment by students, you can change the "Assignment Status" within the "Edit assignment" view. When an assignment is Active, students will be able to accept it using the invitation link. When it is Inactive, this link will no longer be valid.

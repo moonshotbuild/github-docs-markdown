@@ -23,7 +23,7 @@ You can create a PostgreSQL service container to use in your workflow. This guid
 
 This guide shows you workflow examples that configure a service container using the Docker Hub `postgres` image. The workflow runs a script that connects to the PostgreSQL service, creates a table, and then populates it with data. To test that the workflow creates and populates the PostgreSQL table, the script prints the data from the table to the console.
 
-> \[!NOTE]
+> [!NOTE]
 > If your workflows use Docker container actions, job containers, or service containers, then you must use a Linux runner:
 >
 > * If you are using GitHub-hosted runners, you must use an Ubuntu runner.

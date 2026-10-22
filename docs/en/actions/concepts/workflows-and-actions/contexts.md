@@ -29,7 +29,7 @@ You can access contexts using the expression syntax. For more information, see [
 
 `${{ <context> }}`
 
-> \[!WARNING]
+> [!WARNING]
 > When creating workflows and actions, you should always consider whether your code might execute untrusted input from possible attackers. Certain contexts should be treated as untrusted input, as an attacker could insert their own malicious content. For more information, see [Secure use reference](/en/actions/reference/security/secure-use#good-practices-for-mitigating-script-injection-attacks).
 
 ## Determining when to use contexts

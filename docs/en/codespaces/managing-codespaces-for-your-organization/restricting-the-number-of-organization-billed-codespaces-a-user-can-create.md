@@ -67,7 +67,7 @@ Policies with the "Maximum codespaces per user" constraint are applied to every 
     * [Restricting the idle timeout period](/en/codespaces/managing-codespaces-for-your-organization/restricting-the-idle-timeout-period)
 
     * [Restricting the retention period for codespaces](/en/codespaces/managing-codespaces-for-your-organization/restricting-the-retention-period-for-codespaces)
-    > \[!NOTE]
+    > [!NOTE]
     > When you add a constraint to a policy that already contains the "Maximum codespaces per user" constraint, you won't be able to restrict the additional constraint to specific repositories, as the "Maximum codespaces per user" constraint applies to all repositories in the organization.
 
 12. After you've finished adding constraints to your policy, click **Save**.

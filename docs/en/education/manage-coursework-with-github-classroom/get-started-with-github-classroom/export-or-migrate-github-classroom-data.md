@@ -19,7 +19,7 @@ breadcrumbs:
 
 Export your GitHub Classroom data to local files or migrate your data to a partner platform.
 
-> \[!WARNING]
+> [!WARNING]
 > **Closing down:** The GitHub Classroom application is closing down and will be retired on August 28, 2026.
 > For more information, see the [GitHub Classroom closing down notice](https://gh.io/classroom-sunset).
 
@@ -47,7 +47,7 @@ Watch the [on-demand webinar about using GitHub with Codio](https://www.codio.co
 
 ### Migrating to Classroom 50
 
-> \[!NOTE]
+> [!NOTE]
 > Classroom 50 will become generally available on July 1, 2026.
 
 Classroom 50 uses GitHub repositories and actions for autograding, so it's very similar to the current GitHub Classroom setup.

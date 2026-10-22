@@ -81,7 +81,7 @@ There are two forms of secret scanning available: **Secret scanning alerts for p
   * Public repositories owned by organizations
   * Private and internal repositories owned by organizations using GitHub Team or GitHub Enterprise Cloud, with a license for GitHub Code Security
 
-> \[!TIP]
+> [!TIP]
 > Regardless of the enablement status of secret scanning and push protection, organizations on GitHub Team and GitHub Enterprise can run a free report to scan the code in the organization for leaked secrets. See [Secret security with GitHub](/en/code-security/concepts/secret-security/secret-security-with-github).
 
 For more information about secret scanning, see [Secret scanning](/en/code-security/concepts/secret-security/secret-scanning).
@@ -104,7 +104,7 @@ If a user pushes sensitive data, ask them to remove it by using the `git filter-
 
 If you're unable to coordinate directly with the repository owner to remove data that you're confident you own, you can fill out a DMCA takedown notice form and tell GitHub Support.  Make sure to include the problematic commit hashes.  For more information, see [DMCA takedown notice](https://support.github.com/contact/dmca-takedown).
 
-> \[!NOTE]
+> [!NOTE]
 > If one of your repositories has been taken down due to a false claim, you should fill out a DMCA
 > counter notice form and alert GitHub Support. For more information, see [DMCA counter notice](https://support.github.com/contact/dmca-counter-notice).
 

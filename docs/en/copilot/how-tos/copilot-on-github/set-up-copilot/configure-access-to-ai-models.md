@@ -33,7 +33,7 @@ For a list of available AI models, see [Supported AI models in GitHub Copilot](/
 
 For individual Copilot plans, you can use AI models directly within Copilot without configuring access or managing policies. Copilot Free and Copilot Student only have access to auto model selection.
 
-> \[!NOTE]
+> [!NOTE]
 > Models available depend on your plan. See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#supported-ai-models-per-copilot-plan).
 
 ## Setup for organization and enterprise plans

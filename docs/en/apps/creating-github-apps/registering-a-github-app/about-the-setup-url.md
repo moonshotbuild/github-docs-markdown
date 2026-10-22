@@ -23,7 +23,7 @@ When you register a GitHub App, you can specify a setup URL. When users install 
 
 If you specify a setup URL, you can also select **Redirect on update** to specify that users should be redirected to the setup URL after they update an installation. An update includes adding or removing access to a repository for an installation.
 
-> \[!WARNING]
+> [!WARNING]
 > When GitHub redirects users to the setup URL, it includes an `installation_id` query parameter. Bad actors can hit this URL with a spoofed `installation_id`. Therefore, you should not rely on the validity of the `installation_id` parameter. Instead, you should generate a user access token for the user who installed the GitHub App and then check that the installation is associated with that user. For more information, see [Generating a user access token for a GitHub App](/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-a-user-access-token-for-a-github-app).
 
 Although the setup URL is optional during GitHub App registration, it is required if you want to allow users to purchase your app in GitHub Marketplace. For more information, see [Handling new purchases and free trials](/en/apps/github-marketplace/using-the-github-marketplace-api-in-your-app/handling-new-purchases-and-free-trials).

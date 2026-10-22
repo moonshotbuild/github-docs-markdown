@@ -30,7 +30,7 @@ Before you can use a CodeQL query pack to analyze a database, you must download 
 | <code><span style="white-space: nowrap;">\<scope/name\@version:path></span></code> |                                                     <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Required" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>                                                    | Specify the scope and name of one or more CodeQL query packs to download using a comma-separated list. Optionally, include the version to download and unzip. By default the latest version of this pack is downloaded. Optionally, include a path to a query, directory, or query suite to run. If no path is included, then run the default queries of this pack. |
 | <code><span style="white-space: nowrap;">--github-auth-stdin</span></code>         | <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-x" aria-label="Optional" role="img"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg> | Pass the CLI the GitHub App or personal access token created for authentication with GitHub's REST API from your secret store via standard input. This is not needed if the command has access to a `GITHUB_TOKEN` environment variable set with this token.                                                                                                        |
 
-> \[!NOTE]
+> [!NOTE]
 > If you specify a particular version of a query pack to use, be aware that the version you specify may eventually become too old for the latest version of CodeQL to make efficient use of. To ensure optimal performance, if you need to specify exact query pack versions, you should reevaluate which versions you pin to whenever you upgrade the CodeQL CLI you're using.
 >
 > For more information about pack compatibility, see [CodeQL query packs reference](/en/code-security/reference/code-scanning/codeql/codeql-cli/codeql-query-packs#codeql-pack-compatibility).
@@ -117,7 +117,7 @@ pack.
 
 * `suites/my-suite.qls` - All queries in the `suites/my-suite.qls` file relative to the current working directory.
 
-> \[!TIP]
+> [!TIP]
 > The default query suite of the standard CodeQL query packs are `codeql-suites/<lang>-code-scanning.qls`. Several other useful query suites can also be found in the `codeql-suites` directory of each pack. For example, the `codeql/cpp-queries` pack contains the following query suites:
 >
 > * `cpp-code-scanning.qls` - Standard Code Scanning queries for C++. The default query suite for this pack.

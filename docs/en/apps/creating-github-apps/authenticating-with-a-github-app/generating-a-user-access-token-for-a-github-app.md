@@ -21,7 +21,7 @@ You can generate a user access token for your GitHub App in order to attribute a
 
 ## About user access tokens
 
-> \[!NOTE] User access tokens that expire are currently an optional feature and are subject to change. To opt in or out of the token expiration feature, see [Activating optional features for GitHub Apps](/en/apps/maintaining-github-apps/activating-optional-features-for-github-apps). For more information, see [Expiring user-to-server access tokens for GitHub Apps](https://developer.github.com/changes/2020-04-30-expiring-user-to-server-access-tokens-for-github-apps).
+> [!NOTE] User access tokens that expire are currently an optional feature and are subject to change. To opt in or out of the token expiration feature, see [Activating optional features for GitHub Apps](/en/apps/maintaining-github-apps/activating-optional-features-for-github-apps). For more information, see [Expiring user-to-server access tokens for GitHub Apps](https://developer.github.com/changes/2020-04-30-expiring-user-to-server-access-tokens-for-github-apps).
 >
 > If a user reports that they cannot see resources owned by their organization after authorizing your GitHub App and the organization uses SAML SSO, instruct the user to start an active SAML session for their organization before reauthorizing. For more information, see [SAML and GitHub Apps](/en/enterprise-cloud@latest/apps/using-github-apps/saml-and-github-apps) in the GitHub Enterprise Cloud documentation.
 

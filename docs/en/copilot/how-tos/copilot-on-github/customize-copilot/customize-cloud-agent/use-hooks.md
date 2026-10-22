@@ -23,13 +23,13 @@ breadcrumbs:
 
 Run automated checks—like linting, formatting, or security scans—at key points during agent execution to enforce quality standards.
 
-Hooks allow you to extend and customize the behavior of GitHub Copilot agents by executing custom shell commands at key points during agent execution. For a conceptual overview of hooks—including details of the available hook triggers—see [About hooks for GitHub Copilot](/en/copilot/concepts/agents/hooks).
+Hooks allow you to extend and customize the behavior of GitHub Copilot agents by executing custom shell commands at key points during agent execution. For a conceptual overview of hooks—including details of the available hook triggers—see [Hooks for GitHub Copilot](/en/copilot/concepts/agents/hooks).
 
 ## Creating a hook in a repository on GitHub
 
 1. Create a new `NAME.json` file (where `NAME` describes the purpose of the file) in the `.github/hooks/` folder of your repository.
 
-   > \[!IMPORTANT]
+   > [!IMPORTANT]
    > The hooks configuration file **must be present** on your repository's default branch to be used by Copilot cloud agent.
 
 2. In your text editor, copy and paste the following hook template. Remove any hooks you don't plan on using from the `hooks` array.
@@ -50,7 +50,7 @@ Hooks allow you to extend and customize the behavior of GitHub Copilot agents by
 
 3. Configure your hook syntax under the `bash` and `powershell` keys, or directly reference script files you have created.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Include both a `bash` key (with a script for Linux and macOS) and a `powershell` key (for a script for Windows) to allow the hooks to run on all three operating systems. Copilot uses the appropriate key based on the user's operating system.
 
    * This example runs a script that outputs the start date of the session to a log file using the `sessionStart` hook:

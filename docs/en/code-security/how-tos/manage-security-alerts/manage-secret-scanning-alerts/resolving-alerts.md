@@ -32,7 +32,7 @@ Once a secret has been committed to a repository, you should consider the secret
 
 ### Reporting a leaked secret in a private repository
 
-> \[!NOTE]
+> [!NOTE]
 > Reporting a privately exposed secret to GitHub is in public preview and subject to change. The feature is currently only available for GitHub personal access tokens (v1 and v2).
 
 1. On GitHub, navigate to the main page of the repository.
@@ -45,13 +45,13 @@ Once a secret has been committed to a repository, you should consider the secret
 
 5. In the alert view for the leaked secret, click **Report leak**.
 
-   > \[!NOTE] In order to prevent breaking workflows, consider first rotating the secret before continuing, as disclosing it could lead to the secret being revoked. If possible, you should also reach out to the token owner to let them know about the leak and coordinate a remediation plan.
+   > [!NOTE] In order to prevent breaking workflows, consider first rotating the secret before continuing, as disclosing it could lead to the secret being revoked. If possible, you should also reach out to the token owner to let them know about the leak and coordinate a remediation plan.
 
 6. Review the information in the dialog box, then click **I understand the consequence, report this secret**.
 
 ## Closing alerts
 
-> \[!NOTE]
+> [!NOTE]
 > Secret scanning doesn't automatically close alerts when the corresponding token has been removed from the repository. You must manually close these alerts in the alert list on GitHub.
 
 If a branch ruleset requires secret scanning alerts to be resolved, an open alert introduced by a pull request can block merging. After fixing the exposed secret, close the alert using the following steps. After all blocking alerts are closed, the alerts no longer prevent merging. The rule can continue to block merging until a secret scanning scan completes for the pull request's head commit.

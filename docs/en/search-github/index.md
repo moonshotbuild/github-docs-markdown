@@ -77,10 +77,6 @@ Learn how to use the search functions available on GitHub to find different type
 
   You can sort GitHub search results using the Sort menu, or by adding a `sort` qualifier to your query.
 
-* [Enabling repository search across environments](/en/enabling-repository-search-across-environments)
-
-  Unify search results in GitHub Enterprise Server by connecting your account on GitHub.com or GHE.com.
-
 * [Finding files on GitHub](/en/search-github/searching-on-github/finding-files-on-github)
 
   You can search for a file in a repository using the file finder. To search for a file in multiple repositories on GitHub, use the path code search qualifier.

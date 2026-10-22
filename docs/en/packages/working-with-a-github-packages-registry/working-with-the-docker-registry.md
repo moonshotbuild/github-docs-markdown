@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Working with the Docker registry
 
-You can push and pull your Docker images using the GitHub Packages Docker registry.
+The Docker registry has now been replaced by the Container registry.
 
 <!-- Main versioning block. Short page for dotcom -->
 

@@ -26,7 +26,7 @@ You can use the API to:
 
 For more information about secret scanning, see [Secret scanning](/en/code-security/concepts/secret-security/secret-scanning).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List secret scanning alerts for an organization

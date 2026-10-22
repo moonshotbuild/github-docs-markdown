@@ -21,7 +21,7 @@ breadcrumbs:
 
 Model multipliers for Copilot Pro and Copilot Pro+ subscribers staying on annual plans under request-based billing.
 
-> \[!IMPORTANT] On June 1, 2026, GitHub moved to usage-based billing. The model multipliers in this article apply only to Copilot Pro and Copilot Pro+ subscribers on an existing **annual plan** who remained on the legacy **premium request-based billing** model after June 1, 2026.
+> [!IMPORTANT] On June 1, 2026, GitHub moved to usage-based billing. The model multipliers in this article apply only to Copilot Pro and Copilot Pro+ subscribers on an existing **annual plan** who remained on the legacy **premium request-based billing** model after June 1, 2026.
 >
 > To learn more about these billing changes, including what your options are as an existing Copilot Pro and Copilot Pro+ subscriber on an annual plan, see [What changed with Copilot billing (legacy)](/en/copilot/reference/copilot-billing/request-based-billing-legacy/what-changed-with-billing).
 
@@ -33,19 +33,18 @@ The models included with Copilot plans are subject to change.
 
 Model multipliers and costs are subject to change.
 
-> \[!NOTE] Users on legacy annual Copilot plans will not receive access to new models and features.
+> [!NOTE] Users on legacy annual Copilot plans will not receive access to new models and features.
 
 ## Model multipliers
 
 The following table shows the model multipliers per supported model.
 
-> \[!NOTE]
+> [!NOTE]
 > The multiplier for these models are subject to change.
 >
 > * Claude Sonnet 4.6
-> * GPT-5.4 mini
 >
-> If you use auto model selection in Copilot Chat, Copilot CLI, GitHub Copilot app, or Copilot cloud agent, you qualify for a 10% discount. For example, if a model has a multiplier of 1x you'll be billed at 0.9x instead.
+> If you use auto model selection in Copilot Chat, Copilot CLI, the GitHub Copilot app, or Copilot cloud agent, you qualify for a 10% discount. For example, if a model has a multiplier of 1x you'll be billed at 0.9x instead.
 
 | Model              | Multiplier |
 | ------------------ | ---------: |
@@ -71,14 +70,6 @@ The following table shows the model multipliers per supported model.
 | GPT-5.1-Codex-Max  |          3 |
 |                    |            |
 | GPT-5.3-Codex      |          6 |
-|                    |            |
-| GPT-5.4            |          6 |
-|                    |            |
-| GPT-5.4 mini       |          6 |
-|                    |            |
-| GPT-5.5            |         57 |
-|                    |            |
-| GPT-5 mini         |       0.33 |
 |                    |            |
 | MAI-Code-1.1-Flash |       0.25 |
 |                    |            |

@@ -22,7 +22,7 @@ Use the REST API to interact with a Git blob (binary large object), the object t
 A Git blob (binary large object) is the object type used to store the contents of each file in a repository. The file's SHA-1 hash is computed and stored in the blob object. These endpoints allow you to read and write [blob objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
 to your Git database on GitHub. Blobs leverage custom media types. For more information about the use of media types in the API, see [Getting started with the REST API](/en/rest/using-the-rest-api/getting-started-with-the-rest-api#media-types).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## Create a blob

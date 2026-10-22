@@ -33,7 +33,7 @@ Learn core concepts for GitHub's code scanning features.
 
 * [About autofix for code scanning](/en/code-security/concepts/code-scanning/autofix-for-code-scanning)
 
-  Autofix automatically generates fixes for code scanning alerts, helping you remediate existing vulnerabilities.
+  Autofix generates potential fixes for code scanning alerts, helping you remediate existing vulnerabilities.
 
 * [AI Scan for pull requests](/en/code-security/concepts/code-scanning/ai-powered-security-detections)
 
@@ -71,9 +71,9 @@ Learn core concepts for GitHub's code scanning features.
 
   The tool status page provides visibility into the health and performance of code scanning tools in your repository.
 
-* [CodeQL pull request alert metrics](/en/code-security/concepts/code-scanning/pull-request-alert-metrics)
+* [Code scanning on pull requests](/en/code-security/concepts/code-scanning/code-scanning-on-pull-requests)
 
-  Understand CodeQL's performance in pull requests across your organizations.
+  Understand how CodeQL and AI Scan find and help prevent vulnerabilities in pull requests across your organizations.
 
 * [Repository properties for code scanning](/en/code-security/concepts/code-scanning/repository-properties)
 

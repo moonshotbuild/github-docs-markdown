@@ -142,11 +142,11 @@ and "Best practices for using the REST API."
   - **`value`** (string or number or array) (required)
     The value to set for the field. The type depends on the field's data type:
 
-For text fields: provide a string value
-For single_select fields: provide the option name as a string (must match an existing option)
-For number fields: provide a numeric value
-For multi_select fields: provide an array of option names (must match existing options)
-For date fields: provide an ISO 8601 date string
+    For text fields: provide a string value
+    For single_select fields: provide the option name as a string (must match an existing option)
+    For number fields: provide a numeric value
+    For multi_select fields: provide an array of option names (must match existing options)
+    For date fields: provide an ISO 8601 date string
 
 ### HTTP response status codes
 
@@ -240,10 +240,10 @@ and "Best practices for using the REST API."
   - **`value`** (string or number) (required)
     The value to set for the field. The type depends on the field's data type:
 
-For text fields: provide a string value
-For single_select fields: provide the option name as a string (must match an existing option)
-For number fields: provide a numeric value
-For date fields: provide an ISO 8601 date string
+    For text fields: provide a string value
+    For single_select fields: provide the option name as a string (must match an existing option)
+    For number fields: provide a numeric value
+    For date fields: provide an ISO 8601 date string
 
 ### HTTP response status codes
 

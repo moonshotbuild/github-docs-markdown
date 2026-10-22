@@ -119,7 +119,7 @@ For more information, see [Planning with agents in VS Code](https://code.visuals
 
 <div class="ghd-tool xcode">
 
-> \[!NOTE]
+> [!NOTE]
 > Plan mode is currently in public preview and subject to change.
 
 ## Using plan mode
@@ -160,7 +160,7 @@ For more information, see [Planning with agents in VS Code](https://code.visuals
 
 <div class="ghd-tool eclipse">
 
-> \[!NOTE]
+> [!NOTE]
 > Plan mode is currently in public preview and subject to change.
 
 ## Using plan mode

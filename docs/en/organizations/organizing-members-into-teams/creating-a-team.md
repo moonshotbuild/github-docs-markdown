@@ -39,7 +39,7 @@ Organizations that use GitHub Enterprise Cloud can use team synchronization to a
 
 9. Under "Team notifications", select **Enabled** or **Disabled**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > This setting only applies to @mentions of the team name. This setting does not affect notifications for reviews requested from the team.
 
 10. Click **Create team**.

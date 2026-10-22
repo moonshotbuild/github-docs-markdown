@@ -52,7 +52,7 @@ copilot
 
 You're now in an interactive Copilot CLI session. Anything you type at the prompt is sent to the model, which can read files in the repository, run shell commands such as `git log` or `grep`, and answer your questions based on what it finds.
 
-> \[!TIP]
+> [!TIP]
 >
 > * If you trust Copilot CLI to run commands without prompting for approval, while blocking file changes, start with `copilot --deny-tool='write' --allow-all-tools`. See [Allowing and denying tool use](/en/copilot/how-tos/copilot-cli/use-copilot-cli/allowing-tools).
 > * If you're working in a very large codebase, you may get better results by starting Copilot CLI from the relevant subdirectory. This limits the context to the most relevant files.

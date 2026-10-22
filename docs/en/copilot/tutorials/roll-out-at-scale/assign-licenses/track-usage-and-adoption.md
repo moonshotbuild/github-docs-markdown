@@ -49,7 +49,7 @@ Use the "IDE active users" and "IDE daily active users" charts to confirm that d
 | IDE daily active users  | How many unique users are using Copilot each day.                                 | Look for an upward trend in the first two weeks after rollout. A flat line may signal that users need additional enablement or setup guidance. |
 | IDE weekly active users | Rolling 7-day total of active users.                                              | Use this to track consistency. Steady or increasing WAU indicates successful activation and recurring use.                                     |
 
-> \[!NOTE]
+> [!NOTE]
 > Copilot usage metrics primarily reflect activity in supported IDEs. Server-side telemetry supplements client-side IDE telemetry to surface additional active users. Usage in Copilot Chat on GitHub.com, GitHub Mobile, Copilot code review, or Copilot CLI is not included in dashboard data.
 
 ## Step 3: Identify early adoption signals
@@ -64,7 +64,7 @@ Once licenses are active, focus on the metrics that indicate healthy early adopt
 
 Healthy early adoption usually looks like 60–80% of assigned users showing activity within the first month.
 
-> \[!TIP]
+> [!TIP]
 > These signals show whether developers are trying Copilot, but not whether that usage is deepening into agent-driven workflows. For a cohort-based view of adoption depth, see [Viewing the Copilot impact dashboard](/en/copilot/how-tos/administer-copilot/view-impact-dashboard).
 
 ## Step 4: Act on limited adoption signals

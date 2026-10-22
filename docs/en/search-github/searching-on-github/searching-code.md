@@ -17,7 +17,7 @@ breadcrumbs:
 
 You only need to use the legacy code search syntax if you are using the code search API.
 
-> \[!NOTE]
+> [!NOTE]
 > This article covers the syntax for legacy code search, which you should only need to use for the [REST API endpoint for searching code](/en/rest/search/search#search-code).
 >
 > For information on the code search syntax that you can use on GitHub, see [Understanding GitHub Code Search syntax](/en/search-github/github-code-search/understanding-github-code-search-syntax).
@@ -26,7 +26,7 @@ You can search globally across all of GitHub, or scope your search to a particul
 
 You can only search code using these code search qualifiers. Search qualifiers specifically for repositories, users, or commits, will not work when searching for code.
 
-> \[!TIP]
+> [!TIP]
 >
 > * This article contains links to example searches on the GitHub.com website, but you can use the same search filters in any GitHub platform. In the linked example searches, replace `github.com` with the hostname for your GitHub platform.
 > * For a list of search syntaxes that you can add to any search qualifier to further improve your results, see [Understanding the search syntax](/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax).

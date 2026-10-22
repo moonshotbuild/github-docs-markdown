@@ -21,7 +21,7 @@ breadcrumbs:
 
 Learn how to enable extended metadata checks for detected secrets so alerts detected by secret scanning include additional information that help you assess and remediate leaks faster.
 
-> \[!NOTE] Extended metadata checks for tokens is in public preview and subject to change.
+> [!NOTE] Extended metadata checks for tokens is in public preview and subject to change.
 
 This article shows how you can enable extended metadata checks for individual repositories through repository settings. Alternatively, you can enable them at scale using **security configurations** at the organization or enterprise level. See [Creating a custom security configuration](/en/code-security/how-tos/secure-at-scale/configure-organization-security/establish-complete-coverage/create-custom-configuration) or [Creating a custom security configuration for your enterprise](/en/code-security/how-tos/secure-at-scale/configure-enterprise-security/establish-complete-coverage/create-custom-configuration).
 

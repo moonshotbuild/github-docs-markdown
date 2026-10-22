@@ -46,7 +46,7 @@ Download and install dependencies for your CodeQL query and library packs in Vis
 
 ## Next steps
 
-> \[!NOTE]
+> [!NOTE]
 > CodeQL model packs are currently in public preview and subject to change. Model packs are supported for C/C++, C#, Java/Kotlin, Python, Ruby, and Rust analysis.
 >
 > The CodeQL model editor in the CodeQL extension for Visual Studio Code supports modeling dependencies for C#, Java/Kotlin, Python, and Ruby.

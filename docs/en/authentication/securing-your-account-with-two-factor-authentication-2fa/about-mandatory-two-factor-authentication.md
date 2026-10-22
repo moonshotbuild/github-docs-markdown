@@ -39,7 +39,7 @@ Mandatory 2FA is required by GitHub itself to improve security for both individu
 
 Your account's eligibility for mandatory 2FA **does not** impact the eligibility of other individuals. For example, if you are an organization owner, and your account is eligible for mandatory 2FA, that does not impact the eligibility of other accounts within your organization.
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub Enterprise Managed Users and on-premise GitHub Enterprise Server users are **not** required to enable 2FA. Mandatory 2FA enablement only applies to users with a password on GitHub.com.
 
 ## About failure to enable mandatory 2FA
@@ -58,7 +58,7 @@ Currently, we don't support passkeys or security keys as primary 2FA methods sin
 * [About SAML SSO and mandatory 2FA](#about-saml-sso-and-mandatory-2fa)
 * [About email verification and mandatory 2FA](#about-email-verification-and-mandatory-2fa)
 
-> \[!NOTE]
+> [!NOTE]
 > We recommend retaining cookies on GitHub.com. If you set your browser to wipe your cookies every day, you'll never have a verified device for account recovery purposes, as the [`_device_id` cookie](/en/site-policy/privacy-policies/github-cookies) is used to securely prove you've used that device previously. For more information, see [Recovering your account if you lose your 2FA credentials](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/recovering-your-account-if-you-lose-your-2fa-credentials#authenticating-with-a-verified-device-ssh-token-or-personal-access-token).
 
 ### About TOTP apps and mandatory 2FA
@@ -69,7 +69,7 @@ If you do not want to download an app on your mobile device, there are multiple 
 
 You can also manually set up any app that generates a code compatible with RFC 6238. For more information on manually setting up a TOTP app, see [Configuring two-factor authentication](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-app). For more information on RFC 6238, see [TOTP: Time-Based One-Time Password Algorithm](https://datatracker.ietf.org/doc/html/rfc6238) in the IETF documentation.
 
-> \[!NOTE]
+> [!NOTE]
 > If you are using FreeOTP for 2FA, you may see a warning about weak cryptographic parameters. GitHub uses an 80 bit secret to ensure compatibility with older versions of Google Authenticator. 80 bits is lower than the 128 bits recommended by the HOTP RFC, but at this time we have no plans to change this and recommend ignoring this message. For more information, see [HOTP: An HMAC-Based One-Time Password Algorithm](https://www.ietf.org/rfc/rfc4226.txt) in the IETF documentation.
 
 ### About SAML SSO and mandatory 2FA
@@ -90,5 +90,5 @@ Unattended or shared access accounts in your organization, such as bots and serv
 
 If you have been selected for mandatory 2FA, that **does not** mean you have to provide GitHub with your phone number. You only have to provide your phone number if you use SMS for 2FA. Instead, we recommend configuring a TOTP app as your primary 2FA method. For more information, see [Configuring two-factor authentication](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-app).
 
-> \[!NOTE]
+> [!NOTE]
 > Your region may not be listed in the available SMS options. We monitor SMS delivery success rates on a per region basis, and disallow setup for regions that have poor delivery rates. If you don't see your region on the list, you must set up a TOTP app instead. For more information on supported regions for SMS, see [Countries where SMS authentication is supported](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/countries-where-sms-authentication-is-supported).

@@ -21,7 +21,7 @@ You can publish actions in GitHub Marketplace and share actions you've created w
 
 ## Prerequisites
 
-> \[!NOTE]
+> [!NOTE]
 > You must accept the terms of service to publish actions in GitHub Marketplace.
 
 Before you can publish an action, you'll need to create an action in your repository. For more information, see [Reusing automations](/en/actions/how-tos/reuse-automations).
@@ -51,7 +51,7 @@ To draft a new release and publish the action to GitHub Marketplace, follow thes
 
 3. Under "Release Action", select **Publish this Action to the GitHub Marketplace**.
 
-   > \[!NOTE]
+   > [!NOTE]
    > The "Publish" checkbox is disabled if the account that owns the repository has not yet accepted the GitHub Marketplace Developer Agreement. If you own the repository or are an organization owner, click the link to "accept the GitHub Marketplace Developer Agreement", then accept the agreement. If there is no link, send the organization owner a link to this "Release Action" page and ask them to accept the agreement.
 
 4. If the labels in your metadata file contain any problems, you will see an error message or a warning message. Address them by updating your metadata file. Once complete, you will see an "Everything looks good!" message.
@@ -88,7 +88,7 @@ When a repository admin transfers an action repository, GitHub automatically cre
 
 Actions published on GitHub Marketplace are linked to a repository by their unique `name` identifier, meaning you can publish new releases of an action from the transferred repository under the same GitHub Marketplace listing. If an action repository is deleted, the GitHub Marketplace listing is also deleted, and the unique `name` identifier becomes available.
 
-> \[!NOTE]
+> [!NOTE]
 > The "Verified" badge seen on an organization's GitHub profile is different from the verified creator badge on GitHub Marketplace. If you transfer an action repository, the GitHub Marketplace listing will lose the verified creator badge unless the new owner is also a verified creator.
 
 ## About badges in GitHub Marketplace

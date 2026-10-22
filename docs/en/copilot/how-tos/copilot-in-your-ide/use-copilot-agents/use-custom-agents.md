@@ -21,9 +21,9 @@ breadcrumbs:
 
 You can create specialized agents with tailored expertise for specific development tasks, and invoke them from chat in your IDE.
 
-Custom agents allow you to tailor Copilot's expertise for specific tasks. For a conceptual overview of custom agents, see [About custom agents](/en/copilot/concepts/agents/cloud-agent/about-custom-agents).
+Custom agents allow you to tailor Copilot's expertise for specific tasks. For a conceptual overview of custom agents, see [Custom agents](/en/copilot/concepts/customizations/custom-agents).
 
-> \[!NOTE]
+> [!NOTE]
 > Custom agents are in public preview for JetBrains IDEs, Eclipse, and Xcode, and subject to change.
 
 <div class="ghd-tool vscode">

@@ -21,7 +21,7 @@ breadcrumbs:
 
 Use GitHub Copilot to orchestrate work on complex tasks, potentially combining deterministic operations, agents, tools, API calls, and user interactions.
 
-> \[!NOTE] This feature is in public preview and is subject to change.
+> [!NOTE] This feature is in public preview and is subject to change.
 
 This article explains what dynamic workflows are and what they can do. For details of how to use them, see [Using dynamic workflows](/en/copilot/how-tos/use-copilot-agents/use-dynamic-workflows).
 
@@ -59,7 +59,7 @@ Run the java-security-review dynamic workflow on the java files in the current d
 
 When you start a dynamic workflow from a prompt, Copilot runs it in the background, and reports back when it's finished. You can continue working in your session while it runs.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Your chat agent only creates or runs a dynamic workflow when you explicitly ask it to, or when a skill or slash command instructs it to do so.
 
 In Copilot CLI, you can also run an existing dynamic workflow directly from your terminal with `copilot workflow run WORKFLOW-NAME`. You don't need to open an interactive chat or ask an agent to start it. The workflow can still use agents to carry out its steps.
@@ -160,7 +160,7 @@ You can set the following limits for a dynamic workflow:
 * The maximum active running time, including time used before a pause. Time while the run is paused does not count.
 * The approximate maximum number of AI credits that the workflow's agents and their subagents can consume.
 
-  > \[!NOTE]
+  > [!NOTE]
   > Copilot tracks the credits used by the workflow's agents and stops new work when the total reaches the limit. Usage is reported after it occurs, so work already underway can take the total past the limit. This is an approximate maximum, not a hard ceiling.
 
 Limits can be defined in three places:

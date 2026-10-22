@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/copilot/how-tos/copilot-sdk"
   - title: "Features"
     href: "/en/copilot/how-tos/copilot-sdk/features"
-  - title: "Client info"
+  - title: "Client Info"
     href: "/en/copilot/how-tos/copilot-sdk/features/client-info"
 ---
 

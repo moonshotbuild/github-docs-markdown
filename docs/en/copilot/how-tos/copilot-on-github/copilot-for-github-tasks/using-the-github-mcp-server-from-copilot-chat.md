@@ -23,7 +23,7 @@ Perform GitHub tasks—like creating branches, merging pull requests, and search
 
 The GitHub MCP server is pre-configured in Copilot Chat in GitHub with a limited set of skills, so you can use it immediately. Instruct Copilot Chat to perform tasks like creating branches or merging pull requests on your behalf.
 
-For a full list of available skills, see [GitHub Copilot Chat cheat sheet](/en/copilot/reference/chat-cheat-sheet#mcp-skills). For more about MCP, see [About Model Context Protocol (MCP)](/en/copilot/concepts/context/mcp).
+For a full list of available skills, see [GitHub Copilot Chat cheat sheet](/en/copilot/reference/chat-cheat-sheet#mcp-skills). For more about MCP, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
 ## Use the GitHub MCP server
 

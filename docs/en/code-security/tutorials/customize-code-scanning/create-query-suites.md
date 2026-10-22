@@ -21,7 +21,7 @@ You can create query suites for queries you frequently use in your CodeQL analys
 
 You can create query suites for the queries that you want to frequently use in your CodeQL analyses. For more information, see [CodeQL query suites](/en/code-security/concepts/code-scanning/codeql/codeql-query-suites).
 
-> \[!NOTE]
+> [!NOTE]
 > Any custom queries that you want to add to a query suite must be in a [CodeQL pack](/en/code-security/tutorials/customize-code-scanning/customize-analysis) and contain the correct query metadata. For more information, see [Writing custom queries for the CodeQL CLI](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/scan-from-the-command-line/write-custom-queries).
 
 ## Locating queries to add to a query suite
@@ -74,7 +74,7 @@ queries using:
   The `version` field is optional and specifies a range of compatible versions of this CodeQL pack.
   If you don’t specify a version, then the most recent version of the pack is used.
 
-> \[!NOTE]
+> [!NOTE]
 > When pathnames appear in query suite definitions, they must always be given with a forward slash, `/`, as a directory separator. This ensures that query suite definitions work on all operating systems.
 
 You must add at least one `query`, `queries`, or `qlpack` instruction to
@@ -230,7 +230,7 @@ use:
     - very-high
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > You can use the `codeql resolve queries /path/to/suite.qls` command to see which queries are selected by a query suite definition. For more information, see [resolve queries](/en/code-security/reference/code-scanning/codeql/codeql-cli-manual/resolve-queries).
 
 ## Reusing existing query suite definitions

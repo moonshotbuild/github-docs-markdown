@@ -64,7 +64,7 @@ codeql pack publish
 
 The published package will be displayed in the packages section of GitHub organization specified by the scope in the `qlpack.yml` file.
 
-> \[!NOTE]
+> [!NOTE]
 > If you're publishing model packs to the GitHub Container registry in order to extend coverage to all repositories in an organization as part of a default setup configuration, then you need to ensure that repositories running code scanning can access those model packs. For more information, see [Editing your configuration of default setup](/en/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/edit-default-setup) and [Configuring a package's access control and visibility](/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility).
 
 ## Downloading an existing CodeQL pack
@@ -109,5 +109,5 @@ The `analyze` command will run the default suite of any specified CodeQL packs. 
 codeql <database> analyze <scope>/<pack> <scope>/<other-pack>
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > The `codeql pack download` command stores the pack it downloads in an internal location that is not intended for local modification. Unexpected (and hard to troubleshoot) behavior may result if the pack is modified after downloading. For more information about customizing packs, see [Creating and working with CodeQL packs](/en/code-security/tutorials/customize-code-scanning/create-and-work-with-codeql-packs).

@@ -41,7 +41,7 @@ You can create up to 25 saved views.
 2. On the left sidebar, to the right of "Views", click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-plus" aria-label="Create view" role="img"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>**.
 3. Add a title, description, and custom icon for your view.
 4. Under "Query", build your search query using the advanced filters. For help using filters, see [Searching issues and pull requests](/en/search-github/searching-on-github/searching-issues-and-pull-requests).
-   > \[!TIP] Use the `is:pr` filter to include pull requests in the saved view.
+   > [!TIP] Use the `is:pr` filter to include pull requests in the saved view.
 5. Click **Save view**.
 
 ### Edit, duplicate or delete a saved view

@@ -25,7 +25,7 @@ If you allow auto-merge for pull requests in your repository, people with write 
 
 ## Managing auto-merge
 
-> \[!NOTE]
+> [!NOTE]
 > The option to enable auto-merge is shown only on pull requests that cannot be merged immediately. For example, when a branch protection rule enforces "Require pull request reviews before merging" or "Require status checks to pass before merging" and these conditions are not yet met. For more information, see [Managing a branch protection rule](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule).
 
 1. On GitHub, navigate to the main page of the repository.

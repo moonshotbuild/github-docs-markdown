@@ -87,7 +87,7 @@ Your app should never use a personal access token or GitHub password to authenti
 
 ## Enable wildcard matching for callback URLs only when necessary
 
-> \[!WARNING]
+> [!WARNING]
 > Enabling wildcard matching can expose your app to security risks, because it allows an attacker to send authorization codes to any subdomain or subdirectory of the callback URL. Only enable wildcard matching if you absolutely need it and you are entirely certain that you control all possible subdomains and paths of the callback URL. For more information, see the [OAuth 2.0 Security Best Current Practice](https://www.rfc-editor.org/info/rfc9700/#section-4.1.1-11).
 
 ## Check authorization thoroughly, durably, and often
@@ -125,6 +125,8 @@ This is why it's critical to track the source of the data that your app is savin
 ## Expire tokens
 
 GitHub strongly encourages you to use user access tokens that expire. If you previously opted out of using user access tokens that expire but want to re-enable this feature, see [Activating optional features for GitHub Apps](/en/apps/maintaining-github-apps/activating-optional-features-for-github-apps).
+
+To test and gradually roll out support for expiring tokens, request the `offline_access` scope when you sign in a user. This scope gives you an expiring user access token and a refresh token for an individual authorization, even if your app is configured not to use expiring tokens. To confirm that you received an expiring token, check for the `expires_in` field in the token response.
 
 Installation access tokens expire after one hour, expiring user access tokens expire after eight hours, and refresh tokens expire after six months. However, you can also revoke tokens as soon as you no longer need them. For more information, see [`DELETE /installation/token`](/en/rest/apps/installations#revoke-an-installation-access-token) to revoke an installation access token and [`DELETE /applications/{client_id}/token`](/en/rest/apps/oauth-applications#delete-an-app-token) to revoke a user access token.
 

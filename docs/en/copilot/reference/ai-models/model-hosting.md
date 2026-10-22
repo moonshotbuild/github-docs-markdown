@@ -25,12 +25,8 @@ GitHub Copilot can use a variety of AI models. This article explains how these m
 
 Used for:
 
-* GPT-5 mini
 * GPT-5.3-Codex
-* GPT-5.4
-* GPT-5.4 mini
 * GPT-5.4 nano
-* GPT-5.5
 * GPT-5.6 Luna
 * GPT-5.6 Sol
 * GPT-5.6 Terra
@@ -52,6 +48,7 @@ All input requests and output responses processed by GitHub Copilot's models con
 Used for:
 
 * Claude Haiku 4.5
+* Claude Haiku 5.5
 * Claude Sonnet 4.6
 * Claude Sonnet 5
 * Claude Sonnet 5.5
@@ -62,7 +59,7 @@ Used for:
 * Claude Fable 5
 * Claude Fable 5.1
 
-> \[!WARNING]
+> [!WARNING]
 > When Claude Fable 5 or Claude Fable 5.1 is used, Anthropic retains data, including prompts and outputs, by default to operate safety classifiers that detect harmful use.
 >
 > Customers can request to use Claude Fable 5 or Claude Fable 5.1 with zero data retention (ZDR) through the end of 2026 under a time-bound exemption while Anthropic rolls out Enterprise Frontier Safeguards (EFS). After that point, continued use of these models would require EFS, which will enable eligible customers to keep their data under their own control while also enabling automated safety monitoring. For an enterprise that has been approved and configured for this type of access, Claude Fable 5 and Claude Fable 5.1 requests will use the ZDR endpoint through the end of 2026 when the models are enabled.
@@ -93,12 +90,12 @@ When using Claude, input prompts and output completions continue to run through 
 
 Used for:
 
-* Gemini 3.7 Flash
 * Gemini 3.8 Flash
+* Gemini 4 Argon
 
 GitHub Copilot uses Gemini models hosted on Google Cloud Platform (GCP). When using Gemini models, prompts and metadata are sent to GCP, which makes the [following data commitment](https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance): *Gemini doesn't use your prompts, or its responses, as data to train its models.*
 
-To provide better service quality and reduce latency, GitHub uses [prompt caching](https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance#customer_data_retention_and_achieving_zero_data_retention).
+To provide better service quality and reduce latency, GitHub uses [Google's Durable Caching](https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention#durable-data-caching). Cached data is encrypted and held for up to 24 hours. Cached data is never used to train or fine-tune models.
 
 When using Gemini models, input prompts and output completions continue to run through GitHub Copilot's content filters for public code matching, when applied, along with those for harmful or offensive content.
 

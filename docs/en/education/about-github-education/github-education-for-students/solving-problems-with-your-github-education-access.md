@@ -43,7 +43,7 @@ If you have other questions or concerns about the school domain please ask your 
 
 If your academic email address was already used to request a GitHub Student Developer Pack for a different GitHub account, you cannot reuse the academic email address to successfully apply for another GitHub Student Developer Pack.
 
-> \[!NOTE]
+> [!NOTE]
 > It is against the GitHub [Terms of Service](/en/site-policy/github-terms/github-terms-of-service#3-account-requirements) to maintain more than one individual account.
 
 If you have more than one personal account, you must merge your accounts. To retain the discount, keep the account that was granted the discount. You can rename the retained account and keep your contribution history by adding all your email addresses to the retained account.

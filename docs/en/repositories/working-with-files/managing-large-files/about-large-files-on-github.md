@@ -27,7 +27,7 @@ GitHub tries to provide abundant storage for all Git repositories, although ther
 
 GitHub limits the size of files allowed in repositories. If you attempt to add or update a file that is larger than 50 MiB, you will receive a warning from Git. The changes will still successfully push to your repository, but you can consider removing the commit to minimize performance impact. For more information, see [Removing files from a repository's history](#removing-files-from-a-repositorys-history).
 
-> \[!NOTE]
+> [!NOTE]
 > If you add a file to a repository via a browser, the file can be no larger than 25 MiB. For more information, see [Adding a file to a repository](/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
 
 GitHub blocks files larger than 100 MiB.
@@ -48,7 +48,7 @@ Git is not designed to serve as a backup tool. However, there are many solutions
 
 ## Removing files from a repository's history
 
-> \[!WARNING]
+> [!WARNING]
 > These procedures will permanently remove files from the repository on your computer and GitHub.com. If the file is important, make a local backup copy in a directory outside of the repository.
 
 ### Removing a file added in the most recent unpushed commit

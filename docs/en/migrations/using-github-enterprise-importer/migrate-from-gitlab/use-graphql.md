@@ -19,7 +19,7 @@ breadcrumbs:
 
 You can build your own tooling to migrate repositories from GitLab to GitHub Enterprise Cloud using the GraphQL API.
 
-> \[!NOTE] You can also use GL2GH extension of the GitHub CLI to perform your migration. See [Understand migrations from GitLab to GitHub](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab/understand-migrations).
+> [!NOTE] You can also use GL2GH extension of the GitHub CLI to perform your migration. See [Understand migrations from GitLab to GitHub](/en/migrations/using-github-enterprise-importer/migrate-from-gitlab/understand-migrations).
 
 ## Step 0: Get ready to use the GitHub GraphQL API
 
@@ -169,7 +169,7 @@ curl --header "Authorization: Bearer YOUR-TOKEN" \
   "https://api.github.com/orgs/ORGANIZATION"
 ```
 
-> \[!NOTE] If you're migrating to GHE.com, replace `https://api.github.com` with the base API URL for your enterprise's subdomain, such as `https://api.octocorp.ghe.com`.
+> [!NOTE] If you're migrating to GHE.com, replace `https://api.github.com` with the base API URL for your enterprise's subdomain, such as `https://api.octocorp.ghe.com`.
 
 Upload the archive with a `POST` request, replacing `ORGANIZATION-ID` with your organization's database ID. This request works for archives up to 100 MiB. For larger archives, use an external blob storage provider.
 
@@ -181,7 +181,7 @@ curl --request POST \
   "https://uploads.github.com/organizations/ORGANIZATION-ID/gei/archive?name=archive.tar.gz"
 ```
 
-> \[!NOTE] If you're migrating to GHE.com, replace `uploads.github.com` with the uploads host for your enterprise's subdomain, such as `uploads.octocorp.ghe.com`.
+> [!NOTE] If you're migrating to GHE.com, replace `uploads.github.com` with the uploads host for your enterprise's subdomain, such as `uploads.octocorp.ghe.com`.
 
 The response includes a `uri` in the format `gei://archive/GUID`. Use this value as the `gitArchiveUrl` in the next step.
 

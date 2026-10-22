@@ -31,7 +31,7 @@ GitHub bills invoiced GitHub Enterprise customers through an enterprise account 
 
    ![Screenshot of the Billing and licensing "Overview" page for an invoiced enterprise account. A link, labeled "View invoice", is outlined in orange.](/assets/images/help/business-accounts/view-invoice-link.png)
 
-   > \[!TIP]
+   > [!TIP]
    > If all your invoices are paid, the "Latest invoice" section is labeled "Estimated next payment". To view paid invoices, in the sidebar, click **Past invoices**.
 
 To understand the components of your invoice, see [Viewing usage for your GitHub Enterprise plan](/en/billing/how-tos/manage-plan-and-licenses/view-enterprise-usage) and [Viewing your usage of metered products and licenses](/en/billing/how-tos/products/view-productlicense-use).

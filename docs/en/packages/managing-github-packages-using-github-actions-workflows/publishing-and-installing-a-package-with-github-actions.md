@@ -31,7 +31,7 @@ Some GitHub Packages registries support granular permissions. This means you can
 
 For registries that support granular permissions, if your GitHub Actions workflow is using a personal access token to authenticate to a registry, we highly recommend you update your workflow to use the `GITHUB_TOKEN`. For guidance on updating your workflows that authenticate to a registry with a personal access token, see [Publishing and installing a package with GitHub Actions](/en/packages/managing-github-packages-using-github-actions-workflows/publishing-and-installing-a-package-with-github-actions#upgrading-a-workflow-that-accesses-a-registry-using-a-personal-access-token).
 
-> \[!NOTE]
+> [!NOTE]
 > The ability for GitHub Actions workflows to delete and restore packages using the REST API is currently in public preview and subject to change.
 
 You can use a `GITHUB_TOKEN` in a GitHub Actions workflow to delete or restore a package using the REST API, if the token has `admin` permission to the package. Repositories that publish packages using a workflow, and repositories that you have explicitly connected to packages, are automatically granted `admin` permission to packages in the repository.
@@ -89,7 +89,7 @@ The following example demonstrates how you can use GitHub Actions to build  your
 
 Create a new workflow file in your repository (such as `.github/workflows/deploy-image.yml`), and add the following YAML.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * This workflow uses actions that are not certified by GitHub. They are provided by a third-party and are governed by separate terms of service, privacy policy, and support documentation.
 > * GitHub recommends pinning actions to a commit SHA. To get a newer version, you will need to update the SHA. You can also reference a tag or branch, but the action may change without warning.
@@ -182,7 +182,7 @@ Using the `GITHUB_TOKEN`, instead of a personal access token (classic) with the 
 2. To ensure your package has access to your workflow, you must add the repository where the workflow is stored to your package. Under "Manage Actions access", click **Add repository** and search for the repository you want to add.
    ![Screenshot of the "Manage Actions access" section of the package settings page. The "Add repository" button is highlighted with an orange outline.](/assets/images/help/package-registry/add-repository-button.png)
 
-   > \[!NOTE]
+   > [!NOTE]
    > Adding a repository to your package by using the **Add Repository** button under "Manage Actions access" in the package's settings is different than connecting your package to a repository. For more information, see [Configuring a package's access control and visibility](/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility#ensuring-workflow-access-to-your-package) and [Connecting a repository to a package](/en/packages/learn-github-packages/connecting-a-repository-to-a-package).
 
 3. Optionally, use the **Role** drop-down menu to select the default access level that you'd like the repository to have to your package.

@@ -46,7 +46,7 @@ jobs:
 
 Skipped jobs display the message "This check was skipped."
 
-> \[!NOTE]
+> [!NOTE]
 > A job that is skipped will report its status as "Success". It will not prevent a pull request from merging, even if it is a required check.
 
 To debug why a job was skipped or ran unexpectedly, you can view job condition expression logs. For more information, see [Viewing job condition expression logs](/en/actions/how-tos/monitor-workflows/view-job-condition-logs).

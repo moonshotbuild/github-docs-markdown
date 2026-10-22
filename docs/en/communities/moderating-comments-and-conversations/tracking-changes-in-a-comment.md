@@ -25,7 +25,7 @@ Anyone with read access to a repository can view a comment's edit history.
 
 2. At the top of the comment, click **edited** to open the edit history.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you don't see the **edited** option, then the comment doesn't have an edit history.
 
 3. To view the details of a specific change, select it from the list of edits.
@@ -42,7 +42,7 @@ When you delete sensitive information from the comment's edit history, the perso
 
 2. At the top of the comment, click **edited** to open the edit history.
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you don't see the **edited** option, then the comment doesn't have an edit history.
 
 3. To view the details of a specific change, select it from the list of edits.

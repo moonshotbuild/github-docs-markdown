@@ -21,7 +21,7 @@ Use the REST API to view and modify comments on a gist.
 
 You can use the REST API to view and modify comments on a gist. For more information about gists, see [Editing and sharing content with gists](/en/get-started/writing-on-github/editing-and-sharing-content-with-gists).
 
-> \[!NOTE]
+> [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
 ## List gist comments

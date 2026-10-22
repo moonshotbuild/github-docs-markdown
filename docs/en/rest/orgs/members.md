@@ -200,10 +200,10 @@ and "Best practices for using the REST API."
 - **`role`** (string)
   The role for the new member.
 
-admin - Organization owners with full administrative rights to the organization and complete access to all repositories and teams.
-direct_member - Non-owner organization members with ability to see other members and join teams by invitation.
-billing_manager - Non-owner organization members with ability to manage the billing settings of your organization.
-reinstate - The previous role assigned to the invitee before they were removed from your organization. Can be one of the roles listed above. Only works if the invitee was previously part of your organization.
+  admin - Organization owners with full administrative rights to the organization and complete access to all repositories and teams.
+  direct_member - Non-owner organization members with ability to see other members and join teams by invitation.
+  billing_manager - Non-owner organization members with ability to manage the billing settings of your organization.
+  reinstate - The previous role assigned to the invitee before they were removed from your organization. Can be one of the roles listed above. Only works if the invitee was previously part of your organization.
   Default: `direct_member`
   Can be one of: `admin`, `direct_member`, `billing_manager`, `reinstate`
 
@@ -717,8 +717,8 @@ To prevent abuse, organization owners are limited to creating 50 organization in
 - **`role`** (string)
   The role to give the user in the organization. Can be one of:
 
-admin - The user will become an owner of the organization.
-member - The user will become a non-owner member of the organization.
+  admin - The user will become an owner of the organization.
+  member - The user will become a non-owner member of the organization.
   Default: `member`
   Can be one of: `admin`, `member`
 

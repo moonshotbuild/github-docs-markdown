@@ -29,7 +29,7 @@ You don't need a special type of enterprise account to do this. In any enterpris
 
 This means that in an enterprise with no organizations, you are only billed for Copilot Business. As soon as a user joins an organization, that user consumes a GitHub Enterprise Cloud license. If your enterprise already contains an organization, its members are already consuming licenses, even if you don't add anyone else. See [People who consume a license in an organization](/en/billing/reference/github-license-users#organizations-on-github-enterprise-cloud).
 
-> \[!NOTE]
+> [!NOTE]
 > GitHub no longer provisions a special kind of enterprise account for Copilot Business. You can achieve the same result yourself in a standard enterprise account without organizations.
 
 ## How will I manage access for users?

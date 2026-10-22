@@ -80,7 +80,7 @@ While this is functional, it lacks clarity and robustness. The intent of types a
 
 Copilot would review the code and may make the following comment and code suggestion.
 
-> \[!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
+> [!NOTE] The following response is an example. Copilot Chat responses are non-deterministic, so you may get a different response from the one shown here.
 
 ```copilot
 Missing error handling for network calls
@@ -141,7 +141,7 @@ def notify_inventory(product_id: str, quantity: int) -> bool:
 
 The response from Copilot follows guidance from your custom instructions in its recommendation. In this example, it follows the PEP 8 and 257 style guidance for Python and suggests an improvement to better handle timeouts and error logging, while concisely explaining the reasoning behind the suggestions.
 
-> \[!NOTE] Always carefully review Copilot's suggestions before accepting and committing.
+> [!NOTE] Always carefully review Copilot's suggestions before accepting and committing.
 
 Automatic review comments like these support you in building your own understanding when you're coding or can help you focus and narrow feedback given to others when reviewing.
 
@@ -202,7 +202,7 @@ def check_password(password: str, known_hash):
     return ph.verify(known_hash, password)
 ```
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * Always verify and validate any changes Copilot suggests before accepting them.
 > * In this example, Copilot code review may also highlight the need to generate unique salts.

@@ -19,7 +19,7 @@ Reference information for your GitHub profile.
 
 ## Visibility of profile information
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Any details you add to your **public** profile will be visible to all GitHub users, including in regions where local laws, regulations, or cultural norms may pose risks to expressing your identity. We respect everyone's decision about whether or not to share information about themselves on their GitHub profile.
 
 The name that is displayed on your profile may also be displayed next to comments you make on private repositories owned by an organization. For more information, see [Managing the display of member names in your organization](/en/organizations/managing-organization-settings/managing-the-display-of-member-names-in-your-organization).
@@ -32,7 +32,7 @@ Links to your social accounts are visible to anyone who can view your profile.
 
 When you sign up for an account, GitHub provides you with a randomly generated "identicon". [Your identicon](https://github.com/blog/1586-identicons) generates from a hash of your user ID, so there's no way to control its color or pattern. You can replace your identicon with an image that represents you.
 
-> \[!NOTE] Your profile picture should be a PNG, JPG, or GIF file, and it must be less than 1 MB in size and smaller than 3000 by 3000 pixels. For the best quality rendering, we recommend keeping the image at about 500 by 500 pixels.
+> [!NOTE] Your profile picture should be a PNG, JPG, or GIF file, and it must be less than 1 MB in size and smaller than 3000 by 3000 pixels. For the best quality rendering, we recommend keeping the image at about 500 by 500 pixels.
 
 If you use Gravatar, and your Gravatar image is associated with the email you use for GitHub, the image will be shown as your GitHub profile picture by default (rather than an identicon). To change your profile picture, you can either upload a new image to Gravatar, or upload a new image to GitHub and override the Gravatar image.
 
@@ -96,7 +96,7 @@ Achievements celebrate specific events and actions that happen on GitHub. They w
 
 To stop private contributions from counting toward your Achievements, or to turn off Achievements entirely, see [Manage visibility settings for private contributions and achievements](/en/account-and-profile/how-tos/contribution-settings/manage-visibility-settings-for-private-contributions-and-achievements).
 
-> \[!NOTE]
+> [!NOTE]
 > This feature is currently in public preview and subject to change.
 
 ## Profile name changes for enterprise with managed users

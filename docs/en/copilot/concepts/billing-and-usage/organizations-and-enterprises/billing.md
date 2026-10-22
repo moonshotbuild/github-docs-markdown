@@ -35,6 +35,14 @@ Copilot features that use AI models consume AI credits. This includes Copilot Ch
 
 Code completions and next edit suggestions are **not** billed in AI credits. They remain unlimited for all paid plans.
 
+## How is GitHub App usage billed?
+
+A GitHub App installed on an organization can use an installation access token to make Copilot requests without a user signing in. The organization that owns the installation pays for the usage, and the organization’s model policies and spending controls apply.
+
+You cannot create a budget for an individual app or installation. This authentication method does not require the **Allow use of Copilot CLI billed to the organization** policy, which applies to a different authentication path.
+
+For information about approving access, identifying app usage, and blocking an app, see [Manage GitHub Apps that use your organization's Copilot](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-app-copilot-access).
+
 ## How do AI credits work?
 
 Each assigned Copilot license comes with a monthly amount of **included AI credits**:
@@ -57,7 +65,7 @@ When your pooled AI credits are exhausted, what happens next depends on how you 
 * **Additional usage allowed**: Usage continues at published per-credit rates. The additional spend is charged to your organization or enterprise. Note that additional usage **may be capped**: if you hit the cap, you'll need to pay off any additional usage you've already consumed in order to continue.
 * **Additional usage not allowed**: Usage is blocked until the next billing cycle when monthly amounts are refreshed.
 
-> \[!NOTE]
+> [!NOTE]
 > Additional usage is **enabled by default** for organizations and enterprises. If you want to prevent any spending beyond your included AI credits, an administrator must explicitly disable the **AI credits paid usage** policy in your enterprise's or organization's AI Controls settings.
 
 If you have set a user-level budget and a user exhausts it, that user's access to Copilot is halted, regardless of whether the organization's pool still has capacity. A user can also be blocked by an enterprise spending limit before they reach their individual user-level budget, if the spending limit runs out first. There is no automatic fallback to lower-cost models when a budget is exhausted. For more information about how these controls interact, see [Budgets for usage-based billing](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/budgets).
@@ -79,7 +87,7 @@ For a full explanation of how these controls work together and when usage gets b
 
 For the best experience with usage-based billing, update your IDE, client, and Copilot extension to at least the versions listed below.
 
-> \[!NOTE]
+> [!NOTE]
 > Older versions will continue to work, but may display incorrect model pricing, inaccurate usage information, or outdated billing terminology. Usage alert notifications may also not appear as expected.
 
 | IDE, client, or extension    | Minimum version |

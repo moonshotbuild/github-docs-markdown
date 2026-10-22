@@ -25,7 +25,7 @@ There are three types of migrations you can perform:
 * A migration from a GitHub.com organization to a GitHub Enterprise Server instance. You can migrate any number of repositories owned by the organization. Before performing a migration, you must have [administrative access](/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization) to the GitHub.com organization as well as site administrator access to the target instance.
 * *Trial runs* are migrations that import data to a [staging instance](/en/enterprise-server@3.22/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/setting-up-a-staging-instance). These can be useful to see what *would* happen if a migration were applied to GitHub.com. **We strongly recommend that you perform a trial run on a staging instance before importing data to your production instance.**
 
-> \[!NOTE]
+> [!NOTE]
 > The use of ghe-migrator is **not recommended** for transferring a GitHub Enterprise Server instance between hypervisors. Instead, we suggest either backing up and restoring to the new location with GitHub Enterprise Server Backup Utilities, or creating a replica in the new location and then failing over to the replica appliance. For more information, see [About the backup service for GitHub Enterprise Server](/en/enterprise-server@3.22/admin/backing-up-and-restoring-your-instance/configuring-backups-on-your-instance), [Creating a high availability replica](/en/enterprise-server@3.22/admin/monitoring-and-managing-your-instance/configuring-high-availability/creating-a-high-availability-replica) and [Initiating a failover to your replica appliance](/en/enterprise-server@3.22/admin/monitoring-and-managing-your-instance/configuring-high-availability/initiating-a-failover-to-your-replica-appliance).
 
 ## Migrated data
@@ -34,7 +34,7 @@ With ghe-migrator, everything revolves around a repository. Most data associated
 
 The items in the table below can be migrated with a repository. Any items not shown in the list of migrated data cannot be migrated, including Git LFS assets.
 
-> \[!NOTE]
+> [!NOTE]
 > Fork relationships do not persist after a migration.
 
 | Data associated with a migrated repository | Notes                                                                                                                                                                                                     |

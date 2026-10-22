@@ -21,11 +21,11 @@ breadcrumbs:
 
 Create and test your first custom instruction with this simple example.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * The examples in this library are intended for inspiration—you are encouraged to adjust them to be more specific to your projects, languages, and team processes.
 > * For community-contributed examples of custom instructions for specific languages and scenarios, see the [Awesome GitHub Copilot Customizations](https://github.com/github/awesome-copilot/blob/main/docs/README.instructions.md) repository.
-> * You can apply custom instructions across different scopes, depending on the platform or IDE where you are creating them. For more information, see "[About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization)."
+> * You can apply custom instructions across different scopes, depending on the platform or IDE where you are creating them. For more information, see "[Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions)."
 
 ## About customizations
 
@@ -115,6 +115,6 @@ To quickly test out the difference that custom instructions can make, you can us
 
 ## Further reading
 
-* [About customizing GitHub Copilot responses](/en/copilot/concepts/prompting/response-customization) - Overview of response customization in GitHub Copilot
+* [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions) - Overview of response customization in GitHub Copilot
 * [Add custom instructions for Copilot](/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions) - How to configure custom instructions
 * [Awesome GitHub Copilot Customizations](https://github.com/github/awesome-copilot/blob/main/README.md) - Repository of community-contributed custom instructions and other customizations for specific languages and scenarios

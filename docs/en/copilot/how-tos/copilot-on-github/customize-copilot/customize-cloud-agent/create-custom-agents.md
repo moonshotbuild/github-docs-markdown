@@ -23,9 +23,9 @@ breadcrumbs:
 
 You can create specialized agents with tailored expertise for specific development tasks.
 
-Custom agents allow you to tailor Copilot's expertise for specific tasks. For a conceptual overview of custom agents, see [About custom agents](/en/copilot/concepts/agents/cloud-agent/about-custom-agents).
+Custom agents allow you to tailor Copilot's expertise for specific tasks. For a conceptual overview of custom agents, see [Custom agents](/en/copilot/concepts/customizations/custom-agents).
 
-> \[!NOTE]
+> [!NOTE]
 > Custom agents are in public preview for JetBrains IDEs, Eclipse, and Xcode, and subject to change.
 
 ## Creating a custom agent profile in a repository on GitHub
@@ -34,7 +34,7 @@ Custom agents allow you to tailor Copilot's expertise for specific tasks. For a 
 
 2. Using the dropdown menu in the prompt box, select the repository you want to create the custom agent profile in.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Organization owners can create organization-level custom agents in the organization's `.github` or `.github-private` repository that are available across all repositories within their organization. Enterprise owners can create enterprise-level custom agents in the `.github-private` repository of an organization designated in enterprise settings, available across all organizations in the enterprise. For more information, see [Preparing to use custom agents in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/prepare-for-custom-agents) and [Preparing to use custom agents in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/prepare-for-custom-agents).
 
 3. Optionally, select the branch you want to create the agent profile in. The default is the main branch.

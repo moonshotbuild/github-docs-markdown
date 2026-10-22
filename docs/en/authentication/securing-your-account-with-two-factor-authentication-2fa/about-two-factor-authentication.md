@@ -17,7 +17,7 @@ breadcrumbs:
 
 Two-factor authentication (2FA) is an extra layer of security used when logging into websites or apps. With 2FA, you have to log in with your username and password and provide another form of authentication that only you know or have access to.
 
-> \[!NOTE]
+> [!NOTE]
 > As of March 2023, GitHub required all users who contribute code on GitHub.com to enable one or more forms of two-factor authentication (2FA). If you were in an eligible group, you would have received a notification email when that group was selected for enrollment, marking the beginning of a 45-day 2FA enrollment period, and you would have seen banners asking you to enroll in 2FA on GitHub.com. If you didn't receive a notification, then you were not part of a group required to enable 2FA, though we strongly recommend it.
 >
 > For more information about the 2FA enrollment rollout, see [this blog post](https://github.blog/2023-03-09-raising-the-bar-for-software-security-github-2fa-begins-march-13).
@@ -32,7 +32,7 @@ You can also use GitHub Mobile for 2FA after configuring a TOTP mobile app or te
 
 You can also configure additional recovery methods in case you lose access to your two-factor authentication credentials. For more information on setting up 2FA, see [Configuring two-factor authentication](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication) and [Configuring two-factor authentication recovery methods](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication-recovery-methods).
 
-> \[!NOTE]
+> [!NOTE]
 > If you cannot use any recovery methods, you have permanently lost access to your account. However, you can unlink an email address tied to the locked account. The unlinked email address can then be linked to a new or existing account. For more information, see [Unlinking your email address from a locked account](/en/account-and-profile/how-tos/account-management/unlinking-your-email-address-from-a-locked-account).
 
 We **strongly** urge you to enable 2FA for the safety of your account, not only on GitHub, but on other websites and apps that support 2FA. You can enable 2FA to access GitHub and GitHub Desktop.
@@ -45,7 +45,7 @@ For more information, see [Accessing GitHub using two-factor authentication](/en
 
 When you configure two-factor authentication, you'll download and save your 2FA recovery codes. If you lose access to your phone, you can authenticate to GitHub using your recovery codes. For more information, see [Recovering your account if you lose your 2FA credentials](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/recovering-your-account-if-you-lose-your-2fa-credentials).
 
-> \[!WARNING]
+> [!WARNING]
 > For security reasons, GitHub Support [will not be able to restore access to accounts](/en/site-policy/other-site-policies/github-account-recovery-policy) with two-factor authentication enabled if you lose your two-factor authentication credentials or lose access to your account recovery methods. For more information, see [Recovering your account if you lose your 2FA credentials](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/recovering-your-account-if-you-lose-your-2fa-credentials).
 
 ## Requiring two-factor authentication in your organization

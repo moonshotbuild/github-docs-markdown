@@ -19,11 +19,11 @@ breadcrumbs:
 
 Find, run, monitor, and resume dynamic workflows in GitHub Copilot CLI and the GitHub Copilot app.
 
-> \[!NOTE] This feature is in public preview and is subject to change.
+> [!NOTE] This feature is in public preview and is subject to change.
 
 This article explains how to create, use, and share dynamic workflows in GitHub Copilot CLI and the GitHub Copilot app.
 
-For an overview of what dynamic workflows are and how they work, see [Dynamic workflows](/en/copilot/concepts/agents/dynamic-workflows).
+For an overview of what dynamic workflows are and how they work, see [Dynamic workflows](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/dynamic-workflows).
 
 ## Prerequisite
 
@@ -57,8 +57,8 @@ If you don't have any dynamic workflows yet, you can create one. See [Creating a
    Run the java-security-checks dynamic workflow on the java files in the current directory, with an AI credit limit of 500.
    ```
 
-   > \[!IMPORTANT]
-   > Setting limits on a dynamic workflow is optional but recommended, as it helps control resource usage and prevent excessive consumption of AI credits. For more information about the limits you can set, see [Dynamic workflows](/en/copilot/concepts/agents/dynamic-workflows#limiting-a-dynamic-workflow).
+   > [!IMPORTANT]
+   > Setting limits on a dynamic workflow is optional but recommended, as it helps control resource usage and prevent excessive consumption of AI credits. For more information about the limits you can set, see [Dynamic workflows](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/dynamic-workflows#limiting-a-dynamic-workflow).
 
 2. Depending on your current permission approval settings, Copilot asks you to approve the dynamic workflow run before it starts. Choose **Yes**.
 
@@ -72,7 +72,7 @@ If the extension provides another way to start its workflow, such as a slash com
 
    Use `--args` to supply inputs for the workflow as JSON.
 
-   > \[!IMPORTANT]
+   > [!IMPORTANT]
    > This command does not display permission approval prompts, even when you run it in a terminal. Grant the permissions the workflow's agents need before starting, for example with `--allow-tool` or `--allow-url`. Requests that cannot be approved automatically are denied. For more information, see [GitHub Copilot CLI programmatic reference](/en/copilot/reference/copilot-cli-reference/cli-programmatic-reference#tools-for-the---allow-tool-option).
 
    For example, suppose you have a workflow named `java-security-checks` that accepts a `directory` input and needs permission to read files:
@@ -95,7 +95,7 @@ If the extension provides another way to start its workflow, such as a slash com
 
 2. Watch the phases and progress messages reported by the workflow. When it completes, the command prints its result, if it returns one, and exits. If it pauses or stops without completing, the command reports the run's status and run ID. To interrupt a run, press <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
-The workflow's configured limits and your personal default limits still apply. See [Dynamic workflows](/en/copilot/concepts/agents/dynamic-workflows#limiting-a-dynamic-workflow).
+The workflow's configured limits and your personal default limits still apply. See [Dynamic workflows](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/dynamic-workflows#limiting-a-dynamic-workflow).
 
 ### Saving the result to a file
 
@@ -136,7 +136,7 @@ By default, Copilot creates a workflow in an extension for your current session.
    Create a dynamic workflow named review-changed that lists changed files, asks an agent to review them, and summarizes the findings.
    ```
 
-   > \[!NOTE]
+   > [!NOTE]
    > If you don't supply a name for the workflow, Copilot chooses one during authoring.
 
 2. Depending on your current permission approval settings, you will be asked to allow Copilot to author a new dynamic workflow. Choose **Yes**.
@@ -213,7 +213,7 @@ You can monitor a run's progress and AI credits usage, along with any phases and
 
 **In the Copilot app:**
 
-> \[!NOTE]
+> [!NOTE]
 > Run monitoring is only available for local sessions.
 
 If you are running, or have run, a dynamic workflow in the current session, a **Workflows** button is displayed above the prompt box.

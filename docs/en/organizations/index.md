@@ -85,10 +85,6 @@ You can use organizations to collaborate with a large number of people across ma
 
   You can use your organization's news feed to keep up with recent activity on repositories owned by that organization.
 
-* [Viewing insights for dependencies in your organization](/en/viewing-insights-for-dependencies-in-your-organization)
-
-  Organization dependency insights provide data about your organization dependencies.
-
 * [Viewing GitHub Actions metrics for your organization](/en/organizations/collaborating-with-groups-in-organizations/viewing-github-actions-metrics-for-your-organization)
 
   GitHub Actions metrics provide insights into how and where your organization is using resources for its CI/CD pipelines.
@@ -101,17 +97,13 @@ You can use organizations to collaborate with a large number of people across ma
 
   Organization owners can edit or cancel an invitation to become a member of your organization any time before the user accepts.
 
-* [Adding people to your organization](/en/adding-people-to-your-organization)
-
-  You can make anyone a member of your organization using their GitHub username or email address.
-
 * [Removing a member from your organization](/en/organizations/managing-membership-in-your-organization/removing-a-member-from-your-organization)
 
   If members of your organization no longer require access to any repositories owned by the organization, you can remove them from the organization.
 
 * [Reinstating a former member of your organization](/en/organizations/managing-membership-in-your-organization/reinstating-a-former-member-of-your-organization)
 
-  You can add former members to your organization, and choose whether to restore the person's former role, access permissions, forks, and settings.
+  You can invite former organization members to rejoin your organization, and choose whether to restore the person's former role, access permissions, forks, and settings.
 
 * [Exporting member information for your organization](/en/organizations/managing-membership-in-your-organization/exporting-member-information-for-your-organization)
 
@@ -129,17 +121,9 @@ You can use organizations to collaborate with a large number of people across ma
 
   Learn how to view organization role permissions and manage organization role assignments.
 
-* [Permissions of custom organization roles](/en/permissions-of-custom-organization-roles)
-
-  You can control access to your organization's settings with custom organization roles.
-
 * [Permissions of predefined organization roles](/en/organizations/managing-peoples-access-to-your-organization-with-roles/permissions-of-predefined-organization-roles)
 
   Learn about the predefined organization roles and the permissions each role grants in your organization.
-
-* [Managing custom organization roles](/en/managing-custom-organization-roles)
-
-  You can create, edit, and assign custom organization roles in an organization's settings.
 
 * [Maintaining ownership continuity for your organization](/en/organizations/managing-peoples-access-to-your-organization-with-roles/maintaining-ownership-continuity-for-your-organization)
 
@@ -164,14 +148,6 @@ You can use organizations to collaborate with a large number of people across ma
 * [Repository roles for an organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization)
 
   You can customize access to each repository in your organization by assigning granular roles, giving people access to the features and tasks they need.
-
-* [About custom repository roles](/en/about-custom-repository-roles)
-
-  You can more granularly control access to your organization's repositories with custom repository roles.
-
-* [Managing custom repository roles for an organization](/en/managing-custom-repository-roles-for-an-organization)
-
-  Learn how to create, edit, or delete custom repository roles for your organization.
 
 * [Setting base permissions for an organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/setting-base-permissions-for-an-organization)
 
@@ -207,7 +183,7 @@ You can use organizations to collaborate with a large number of people across ma
 
 * [Converting an outside collaborator to an organization member](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/converting-an-outside-collaborator-to-an-organization-member)
 
-  If you would like to give an outside collaborator on your organization's repositories broader permissions within your organization, you can make them a member of the organization.
+  If you would like to give an outside collaborator on your organization's repositories broader permissions within your organization, you can invite them to become a member of the organization.
 
 * [Reinstating a former outside collaborator's access to your organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/reinstating-a-former-outside-collaborators-access-to-your-organization)
 
@@ -223,7 +199,7 @@ You can use organizations to collaborate with a large number of people across ma
 
 * [Adding organization members to a team](/en/organizations/organizing-members-into-teams/adding-organization-members-to-a-team)
 
-  People with owner or team maintainer permissions can add organization members to teams. People with owner permissions can also add non-members to a team and the organization.
+  People with owner or team maintainer permissions can add organization members to teams. People with owner permissions can also invite non-members to join a team and the organization.
 
 * [Assigning the team maintainer role to a team member](/en/organizations/organizing-members-into-teams/assigning-the-team-maintainer-role-to-a-team-member)
 
@@ -248,10 +224,6 @@ You can use organizations to collaborate with a large number of people across ma
 * [Configuring team notifications](/en/organizations/organizing-members-into-teams/configuring-team-notifications)
 
   Team maintainers and organization owners can configure notifications for specific teams.
-
-* [Synchronizing a team with an identity provider group](/en/synchronizing-a-team-with-an-identity-provider-group)
-
-  You can synchronize a GitHub team with a supported identity provider (IdP) group to automatically add and remove team members.
 
 * [Moving a team in your organization's hierarchy](/en/organizations/organizing-members-into-teams/moving-a-team-in-your-organizations-hierarchy)
 
@@ -303,11 +275,7 @@ You can use organizations to collaborate with a large number of people across ma
 
 * [Limiting OAuth app and GitHub App access requests and installations](/en/organizations/managing-programmatic-access-to-your-organization/limiting-oauth-app-and-github-app-access-requests-and-installations)
 
-  As an organization owner, you can control which users can request organization access for apps.
-
-* [Viewing API insights in your organization](/en/viewing-api-insights-in-your-organization)
-
-  You can view REST API activity for your entire organization or specific apps and users.
+  As an organization owner, you can control which users can request organization access for apps, and whether repository admins can install GitHub Apps.
 
 * [GitHub credential types reference](/en/organizations/managing-programmatic-access-to-your-organization/github-credential-types)
 
@@ -343,11 +311,7 @@ You can use organizations to collaborate with a large number of people across ma
 
 * [Transferring organization ownership](/en/organizations/managing-organization-settings/transferring-organization-ownership)
 
-  To make someone else the owner of an organization account, you must add a new owner and then remove yourself from the account.
-
-* [Governing how people use repositories in your organization](/en/governing-how-people-use-repositories-in-your-organization)
-
-  Create a repository policy to control who can do things like create and delete repositories.
+  To make someone else the owner of an organization account, you must add a new owner, ensure that the billing information is updated, and then remove yourself from the account.
 
 * [Restricting repository creation in your organization](/en/organizations/managing-organization-settings/restricting-repository-creation-in-your-organization)
 
@@ -393,10 +357,6 @@ You can use organizations to collaborate with a large number of people across ma
 
   Control how long checks, workflow runs, commit statuses, artifacts, and logs are retained in your organization.
 
-* [Setting permissions for adding outside collaborators](/en/setting-permissions-for-adding-outside-collaborators)
-
-  To protect your organization's data and the number of paid licenses used in your organization, you can configure who can add outside collaborators to organization repositories.
-
 * [Allowing people to delete issues in your organization](/en/organizations/managing-organization-settings/allowing-people-to-delete-issues-in-your-organization)
 
   Organization owners can allow certain people to delete issues in repositories owned by your organization.
@@ -417,17 +377,9 @@ You can use organizations to collaborate with a large number of people across ma
 
   You can require users to automatically sign off all commits they make in GitHub's web interface to repositories owned by your organization.
 
-* [Restricting deploy keys in your organization](/en/restricting-deploy-keys-in-your-organization)
-
-  To protect your organization's data, you can configure permissions for creating deploy keys in your organization.
-
 * [Setting team creation permissions in your organization](/en/organizations/managing-organization-settings/setting-team-creation-permissions-in-your-organization)
 
   You can allow all organization members to create teams or limit team creation to organization owners.
-
-* [Creating an announcement banner for your organization](/en/creating-an-announcement-banner-for-your-organization)
-
-  Organization owners can create announcement banners for the organization.
 
 * [Managing scheduled reminders for your organization](/en/organizations/managing-organization-settings/managing-scheduled-reminders-for-your-organization)
 
@@ -440,10 +392,6 @@ You can use organizations to collaborate with a large number of people across ma
 * [Managing default labels for repositories in your organization](/en/organizations/managing-organization-settings/managing-default-labels-for-repositories-in-your-organization)
 
   You can customize the labels that are included in every new repository in your organization.
-
-* [Changing the visibility of your organization's dependency insights](/en/changing-the-visibility-of-your-organizations-dependency-insights)
-
-  You can allow all organization members to view dependency insights for your organization or limit viewing to organization owners.
 
 * [Managing the display of member names in your organization](/en/organizations/managing-organization-settings/managing-the-display-of-member-names-in-your-organization)
 
@@ -515,7 +463,7 @@ You can use organizations to collaborate with a large number of people across ma
 
 * [Requiring two-factor authentication in your organization](/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization)
 
-  Organization owners can require organization members and outside collaborators to enable two-factor authentication for their personal accounts, making it harder for malicious actors to access an organization's repositories and settings.
+  Organization owners can require organization members, outside collaborators, and billing managers to enable two-factor authentication for their personal accounts, making it harder for malicious actors to access an organization's repositories and settings.
 
 * [Managing bots and service accounts with two-factor authentication](/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/managing-bots-and-service-accounts-with-two-factor-authentication)
 
@@ -525,21 +473,9 @@ You can use organizations to collaborate with a large number of people across ma
 
   You can control features that secure and analyze the code in your organization's projects on GitHub.
 
-* [Managing allowed IP addresses for your organization](/en/managing-allowed-ip-addresses-for-your-organization)
-
-  You can restrict access to your organization's private assets by configuring a list of IP addresses that are allowed to connect.
-
-* [Restricting email notifications for your organization](/en/restricting-email-notifications-for-your-organization)
-
-  To prevent organization information from leaking into personal email accounts, you can restrict the domains where members can receive email notifications about organization activity.
-
 * [Reviewing the audit log for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization)
 
   The audit log allows organization admins to quickly review the actions performed by members of your organization. It includes details such as who performed the action, what the action was, and when it was performed.
-
-* [Identifying audit log events performed by an access token](/en/identifying-audit-log-events-performed-by-an-access-token)
-
-  You can identify the actions performed by a specific token in your organization.
 
 * [Displaying IP addresses in the audit log for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/displaying-ip-addresses-in-the-audit-log-for-your-organization)
 
@@ -552,18 +488,6 @@ You can use organizations to collaborate with a large number of people across ma
 * [Accessing compliance reports for your organization](/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/accessing-compliance-reports-for-your-organization)
 
   You can access GitHub's compliance reports, such as our SOC reports and Cloud Security Alliance CAIQ self-assessment (CSA CAIQ), for your organization.
-
-* [Managing SAML single sign-on for your organization](/en/managing-saml-single-sign-on-for-your-organization)
-
-  Organization owners can manage organization members' identities and access to the organization with SAML single sign-on (SSO).
-
-* [Granting access to your organization with SAML single sign-on](/en/granting-access-to-your-organization-with-saml-single-sign-on)
-
-  Organization owners can grant access to their organization with SAML single sign-on. This access can be granted to organization members, bots, and service accounts.
-
-* [Managing Git access to your organization's repositories](/en/managing-git-access-to-your-organizations-repositories)
-
-  You can add an SSH certificate authority (CA) to your organization and allow members to access the organization's repositories over Git using keys signed by the SSH CA.
 
 * [Converting an Owners team to improved organization permissions](/en/organizations/migrating-to-improved-organization-permissions/converting-an-owners-team-to-improved-organization-permissions)
 

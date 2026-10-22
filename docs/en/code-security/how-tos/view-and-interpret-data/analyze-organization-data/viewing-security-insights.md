@@ -27,7 +27,7 @@ The **Prevention** tab includes AI Scan metrics for your organization or enterpr
 
 You can download a CSV file of the overview dashboard data for your organization or enterprise. For more information, see [Exporting data from security overview](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/export-data).
 
-> \[!NOTE] The summary views ("Overview", "Coverage" and "Risk") show data only for default alerts. Secret scanning alerts for ignored directories and generic alerts are all omitted from these views. Consequently, the individual alert views may include a larger number of open and closed alerts.
+> [!NOTE] The summary views ("Overview", "Coverage" and "Risk") show data only for default alerts. Secret scanning alerts for ignored directories and generic alerts are all omitted from these views. Consequently, the individual alert views may include a larger number of open and closed alerts.
 
 ## Viewing the security overview dashboard
 

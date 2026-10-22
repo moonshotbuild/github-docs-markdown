@@ -27,7 +27,7 @@ By default, members of an organization will have **Read** permissions to the org
 
 If someone with admin access to an organization's repository grants a member a higher level of access for the repository, the higher level of access overrides the base permission.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * All changes to base permissions will affect both new and existing members.
 > * When you change base permissions for an organization, permissions for private forks are not automatically updated.

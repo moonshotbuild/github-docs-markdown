@@ -67,7 +67,7 @@ copilot --headless --host 0.0.0.0 --port 4321
 
 For production, run it as a system service or in a container.
 
-> \[!NOTE]
+> [!NOTE]
 > There is no official pre-built Docker image for the Copilot CLI. You can build your own from the [GitHub releases](https://github.com/github/copilot-cli/releases):
 
 ```dockerfile

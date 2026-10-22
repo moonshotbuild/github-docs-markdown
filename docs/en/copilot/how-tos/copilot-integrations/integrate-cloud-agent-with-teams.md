@@ -19,14 +19,14 @@ breadcrumbs:
 
 You can use the GitHub integration in Teams to provide context and open pull requests all from within your Teams channels.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * This feature is currently in public preview and subject to change.
 > * GitHub Copilot uses AI. Check for mistakes. See [Application card: GitHub Copilot Agents](/en/copilot/responsible-use/agents).
 
 The GitHub integration in Microsoft Teams allows you to interact with Copilot cloud agent all from within your Teams conversations. Within Teams you can initiate cloud agent sessions to investigate, plan, write code, and create issues and pull requests, using the context of your conversation. Your team's collaborative decisions stay connected to your code, bridging the gap between where discussions happen and where implementation lives.
 
-For information about additional Copilot integrations, see [About Copilot integrations](/en/copilot/concepts/tools/about-copilot-integrations).
+For information about additional Copilot integrations, see [Copilot integrations](/en/copilot/concepts/agent-capabilities/choosing-and-delegating-agent-work/about-copilot-integrations).
 
 ## Security considerations
 
@@ -40,7 +40,7 @@ The identity Copilot uses depends on whether you interact with it in a direct me
 
 * When you use Copilot in a shared context, such as a group thread or channel, Copilot creates artifacts, such as pull requests, under its app identity rather than your personal account.
 
-  > \[!NOTE]
+  > [!NOTE]
   > Pull requests created in a shared context by Copilot use the app's identity. If you use repository rulesets, because these pull requests aren't attributed to a person, one more approval is required before merging, as long as the repository already requires at least one approval. This is enabled by default. See [Available rules for rulesets](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets#additional-approval-for-unattributed-copilot-pull-requests).
 
 Only users with **write** access to a repository can trigger Copilot to make changes, but any conversation participant can provide input. Guest members of a workspace, and outside collaborators to repositories are not able to start or steer a session with Copilot in Teams.
@@ -61,7 +61,7 @@ You can keep steering from Teams, or continue the work on the agent-generated ar
 * You must have a Teams account.
 * To use Copilot cloud agent, you must have cloud sandboxes enabled for your Copilot plan. See [Cloud sandboxing for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes#cloud-sandboxing).
 
-  > \[!NOTE]
+  > [!NOTE]
   > Cloud sandbox policies share the same configuration as Copilot cloud agent policies. Members of an organization or enterprise, including an enterprise with managed users may need their owner to enable cloud sandboxes and Copilot cloud agent before they can use Copilot in Teams. See [Enabling or disabling cloud sandboxes for your organization or enterprise](/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization).
 
 ## Installing the GitHub app in Teams
@@ -137,5 +137,5 @@ You can view and share feedback in our [discussion forum](https://github.com/org
 
 ## Further reading
 
-* [About GitHub Copilot cloud agent](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
+* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 * [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/enterprise/cloud-agent-access)

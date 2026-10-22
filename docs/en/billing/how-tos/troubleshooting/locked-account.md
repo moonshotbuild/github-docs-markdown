@@ -21,6 +21,8 @@ Your account's paid features are locked if your payment is past due because of b
 
 You can unlock and access your account by updating your account's payment method and resuming paid status. We do not ask you to pay for the time elapsed in locked mode.
 
+A failed authorization hold when you try to sign up for Copilot or increase a budget can also lock your personal account billing and block GitHub Actions or other free-tier access. This can happen even if you plan to stay on GitHub Free, have removed the payment method, or see no active Copilot plan or balance in the "Billing and licensing" section under your account's settings page.
+
 You can downgrade your user account or organization to GitHub Free to continue with the same advanced features in public repositories. For more information, see [Downgrading your account's plan](/en/billing/how-tos/manage-plan-and-licenses/downgrade-plan).
 
 ## Unlocking an account's features due to a declined payment
@@ -42,9 +44,9 @@ If your account's advanced features are locked due to a declined payment, you'll
    * **Bank card or PayPal**: In "Payment method", click **Edit** to update your payment information or click **Remove** to remove your payment information.
    * **Azure subscription**: Under "Azure subscription", click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-pencil" aria-label="Edit Azure Subscription" role="img"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg> to edit your subscription or <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-trash" aria-label="Delete Azure Subscription" role="img"><path d="M11 1.75V3h2.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75ZM4.496 6.675l.66 6.6a.25.25 0 0 0 .249.225h5.19a.25.25 0 0 0 .249-.225l.66-6.6a.75.75 0 0 1 1.492.149l-.66 6.6A1.748 1.748 0 0 1 10.595 15h-5.19a1.75 1.75 0 0 1-1.741-1.575l-.66-6.6a.75.75 0 1 1 1.492-.15ZM6.5 1.75V3h3V1.75a.25.25 0 0 0-.25-.25h-2.5a.25.25 0 0 0-.25.25Z"></path></svg> to remove your subscription. See [Connecting an Azure subscription](/en/billing/how-tos/set-up-payment/connect-azure-sub).
 
-> \[!NOTE]
+> [!NOTE]
 >
-> * You may see an authorization hold on your provided payment method once it's updated or after accruing significant usage of metered services. Authorization holds are temporary and are released as quickly as possible.
+> * You may see an authorization hold on your provided payment method once it's updated or after accruing significant usage of metered services. GitHub initiates the release immediately, but your bank or card issuer may take a few days to make the funds available again. See [Troubleshooting authorization holds](/en/billing/how-tos/troubleshooting/authorization-holds).
 > * If you have a paid subscription and remove your payment method, your subscription will automatically cancel on your next renewal date.
 > * If you are currently on an active paid trial, you will not be able to remove your payment method.
 > * To remove a payment method, you must have a balance of zero, and no billable metered usage in the current month, or the previous month if has yet to be paid.
@@ -55,7 +57,7 @@ If the new billing information is approved, we will immediately charge you for t
 
 When initiating a subscription or trial, we verify the entered payment method using an authorization hold. If the hold is unsuccessful, the chosen subscription or trial will not activate.
 
-If your account's advanced features are locked due to a failed authorization hold, you'll need to update your billing information to trigger a new authorization.
+If you want to continue with the chosen subscription, update your billing information to trigger a new authorization.
 
 1. In the upper-right corner of any page on GitHub, click your profile picture.
 
@@ -72,11 +74,13 @@ If your account's advanced features are locked due to a failed authorization hol
    * **Bank card or PayPal**: In "Payment method", click **Edit** to update your payment information or click **Remove** to remove your payment information.
    * **Azure subscription**: Under "Azure subscription", click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-pencil" aria-label="Edit Azure Subscription" role="img"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg> to edit your subscription or <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-trash" aria-label="Delete Azure Subscription" role="img"><path d="M11 1.75V3h2.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75ZM4.496 6.675l.66 6.6a.25.25 0 0 0 .249.225h5.19a.25.25 0 0 0 .249-.225l.66-6.6a.75.75 0 0 1 1.492.149l-.66 6.6A1.748 1.748 0 0 1 10.595 15h-5.19a1.75 1.75 0 0 1-1.741-1.575l-.66-6.6a.75.75 0 1 1 1.492-.15ZM6.5 1.75V3h3V1.75a.25.25 0 0 0-.25-.25h-2.5a.25.25 0 0 0-.25.25Z"></path></svg> to remove your subscription. See [Connecting an Azure subscription](/en/billing/how-tos/set-up-payment/connect-azure-sub).
 
-> \[!NOTE]
+> [!NOTE]
 >
-> * You may see an authorization hold on your provided payment method once it's updated or after accruing significant usage of metered services. Authorization holds are temporary and are released as quickly as possible.
+> * You may see an authorization hold on your provided payment method once it's updated or after accruing significant usage of metered services. GitHub initiates the release immediately, but your bank or card issuer may take a few days to make the funds available again. See [Troubleshooting authorization holds](/en/billing/how-tos/troubleshooting/authorization-holds).
 > * If you have a paid subscription and remove your payment method, your subscription will automatically cancel on your next renewal date.
 > * If you are currently on an active paid trial, you will not be able to remove your payment method.
 > * To remove a payment method, you must have a balance of zero, and no billable metered usage in the current month, or the previous month if has yet to be paid.
 
 If the new authorization is successful, the account will automatically unlock and you will be able to proceed with the chosen subscription.
+
+If the "Billing and licensing" section under your account's settings page shows no active subscription, balance, or payment issue to resolve, contact us through the [GitHub Support portal](https://support.github.com) to request a review of the billing lock.

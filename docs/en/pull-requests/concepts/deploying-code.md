@@ -50,7 +50,7 @@ As merging gets busier, teams add controls to keep merges safe and predictable:
 * **Rulesets and branch protections** can require an up-to-date branch, signed commits, linear history, or specific status checks before merging.
 * A **merge queue** lets a high-traffic protected branch accept many pull requests without breaking. It tests each one against the latest version of the base branch and merges them in order once checks pass. When a branch uses a merge queue, the available merge options differ from a standard merge.
 
-> \[!NOTE]
+> [!NOTE]
 >
 > Pull request merge queues are available in any public repository owned by an organization, or in private repositories owned by organizations using GitHub Enterprise Cloud. See [GitHub's plans](/en/get-started/learning-about-github/githubs-plans).
 

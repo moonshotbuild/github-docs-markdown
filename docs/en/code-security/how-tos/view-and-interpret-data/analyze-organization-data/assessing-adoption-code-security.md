@@ -23,7 +23,7 @@ See which teams and repositories have already enabled features for secure coding
 
 You can use security overview to see which repositories and teams have already enabled each security feature, and where people need more encouragement to adopt these features.
 
-> \[!NOTE] "Pull request alerts" are reported as enabled only when code scanning has analyzed at least one pull request since alerts were enabled for the repository.
+> [!NOTE] "Pull request alerts" are reported as enabled only when code scanning has analyzed at least one pull request since alerts were enabled for the repository.
 
 ## Viewing the enablement of security features for an organization
 
@@ -62,7 +62,7 @@ You can view data to assess the enablement of security features across organizat
 
    * Click in the search box to add further filters to the repositories displayed.
 
-   > \[!TIP]
+   > [!TIP]
    > You can use the `owner` filter in the search field to filter the data by organization. For more information, see [Filtering alerts in security overview](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview).
 
 ## Viewing enablement trends for an organization
@@ -93,7 +93,7 @@ You can view data to assess the enablement status and enablement status trends o
    * Use the date picker to set the time range that you want to view enablement trends for.
    * Click in the search box to add further filters on the enablement trends displayed. For more information, see [Filtering alerts in security overview](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview).
 
-> \[!TIP] You can use the `owner:` filter in the search field to filter the data by organization. For more information, see [Filtering alerts in security overview](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview).
+> [!TIP] You can use the `owner:` filter in the search field to filter the data by organization. For more information, see [Filtering alerts in security overview](/en/code-security/how-tos/manage-security-alerts/remediate-alerts-at-scale/filtering-alerts-in-security-overview).
 
 ## Acting on enablement data
 

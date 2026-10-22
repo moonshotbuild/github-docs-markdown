@@ -53,7 +53,7 @@ If you only rewrite your history and force push it, the commits with sensitive d
 
 You cannot remove sensitive data from other users' clones of your repository; you will have to send them the instructions from [Make sure other copies are cleaned up: clones of colleagues](https://htmlpreview.github.io/?https://github.com/newren/git-filter-repo/blob/docs/html/git-filter-repo.html#_make_sure_other_copies_are_cleaned_up_clones_of_colleagues) in the `git-filter-repo` manual to have them do so themselves.  However, you can permanently remove cached views and references to the sensitive data in pull requests on GitHub by contacting us through the [GitHub Support portal](https://support.github.com).
 
-> \[!IMPORTANT] GitHub Support won't remove non-sensitive data, and will only assist in the removal of sensitive data in cases where we determine that the risk can't be mitigated by rotating affected credentials.
+> [!IMPORTANT] GitHub Support won't remove non-sensitive data, and will only assist in the removal of sensitive data in cases where we determine that the risk can't be mitigated by rotating affected credentials.
 
 If the commit that introduced the sensitive data exists in any forks, it will continue to be accessible there. You will need to coordinate with the owners of the forks, asking them to remove the sensitive data or delete the fork entirely. GitHub cannot provide contact information for these owners.
 
@@ -89,7 +89,7 @@ Consider these limitations and challenges in your decision to rewrite your repos
    git-filter-repo --sensitive-data-removal --invert-paths --path PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA
    ```
 
-   > \[!IMPORTANT] If the file with sensitive data used to exist at any other paths (because it was moved or renamed), you must either add an extra `--path` argument for that file, or run this command a second time naming the alternative path.
+   > [!IMPORTANT] If the file with sensitive data used to exist at any other paths (because it was moved or renamed), you must either add an extra `--path` argument for that file, or run this command a second time naming the alternative path.
 
    If you want to replace all text listed in `../passwords.txt` from any non-binary files found anywhere in your repository's history, run the following command:
 
@@ -147,7 +147,7 @@ After using `git-filter-repo` to remove the sensitive data and pushing your chan
 
    * If LFS Objects are involved, delete and/or purge the orphaned LFS objects.
 
-   > \[!IMPORTANT] GitHub Support won't remove non-sensitive data, and will only assist in the removal of sensitive data in cases where we determine that the risk can't be mitigated by rotating affected credentials.
+   > [!IMPORTANT] GitHub Support won't remove non-sensitive data, and will only assist in the removal of sensitive data in cases where we determine that the risk can't be mitigated by rotating affected credentials.
 
 2. Collaborators must [rebase](https://git-scm.com/book/en/v2/Git-Branching-Rebasing), *not* merge, any branches they created off of your old (tainted) repository history. One merge commit could reintroduce some or all of the tainted history that you just went to the trouble of purging.  They may need to take additional steps as well; see [Make sure other copies are cleaned up: clones of colleagues](https://htmlpreview.github.io/?https://github.com/newren/git-filter-repo/blob/docs/html/git-filter-repo.html#_make_sure_other_copies_are_cleaned_up_clones_of_colleagues) in the `git-filter-repo` manual.
 

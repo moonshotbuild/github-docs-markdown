@@ -33,7 +33,7 @@ A stack is a series of pull requests in the same repository where each pull requ
 gh extension install github/gh-stack
 ```
 
-> \[!TIP]
+> [!TIP]
 > To use stacked pull requests with AI coding agents, like GitHub Copilot, install the `gh-stack` skill.
 >
 > ```shell copy

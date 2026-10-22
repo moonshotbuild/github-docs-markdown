@@ -17,12 +17,12 @@ breadcrumbs:
 
 If you disable two-factor authentication for your personal account, you may lose access to organizations you belong to.
 
-> \[!NOTE]
+> [!NOTE]
 > As of March 2023, GitHub required all users who contribute code on GitHub.com to enable one or more forms of two-factor authentication (2FA). If you were in an eligible group, you would have received a notification email when that group was selected for enrollment, marking the beginning of a 45-day 2FA enrollment period, and you would have seen banners asking you to enroll in 2FA on GitHub.com. If you didn't receive a notification, then you were not part of a group required to enable 2FA, though we strongly recommend it.
 >
 > For more information about the 2FA enrollment rollout, see [this blog post](https://github.blog/2023-03-09-raising-the-bar-for-software-security-github-2fa-begins-march-13).
 
-> \[!WARNING]
+> [!WARNING]
 > If you're a member or billing manager to a repository of an organization that requires two-factor authentication and you disable 2FA, you'll lose your access to their repositories. To regain access to the organization, re-enable 2FA.
 
 We strongly recommend using two-factor authentication (2FA) to secure your account. If you need to disable 2FA, we recommend re-enabling it as soon as possible.

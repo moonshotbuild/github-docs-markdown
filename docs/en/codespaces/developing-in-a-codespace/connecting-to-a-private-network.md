@@ -30,7 +30,7 @@ There are currently two methods of accessing resources on a private network with
 
 ### Using the GitHub CLI extension to access remote resources
 
-> \[!WARNING]
+> [!WARNING]
 > The GitHub CLI extension is closing down and is no longer supported.
 
 The GitHub CLI extension allows you to create a bridge between a codespace and your local machine, so that the codespace can access any remote resource that is accessible from your machine. The codespace uses your local machine as a network gateway to reach those resources. For more information, see [Using GitHub CLI to access remote resources](https://github.com/github/gh-net#codespaces-network-bridge).

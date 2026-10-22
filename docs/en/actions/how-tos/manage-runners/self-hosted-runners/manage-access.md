@@ -23,12 +23,12 @@ You can use policies to limit access to self-hosted runners that have been added
 
 ## Creating a self-hosted runner group for an organization
 
-> \[!WARNING]
+> [!WARNING]
 > We recommend that you only use self-hosted runners with private repositories. This is because forks of your public repository can potentially run dangerous code on your self-hosted runner machine by creating a pull request that executes the code in a workflow.
 >
 > For more information, see [Secure use reference](/en/actions/reference/security/secure-use).
 
-> \[!NOTE]
+> [!NOTE]
 > When creating a runner group, you must choose a policy that defines which repositories have access to the runner group. To change which repositories and workflows can access the runner group, organization owners can set a policy for the organization. For more information, see [Managing access to self-hosted runners using groups](/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access#changing-which-repositories-can-access-a-runner-group).
 
 All organizations have a single default runner group. Organization owners using the GitHub Team plan can create additional organization-level runner groups.
@@ -57,7 +57,7 @@ For information about how to create a runner group with the REST API, see [REST 
 
 ## Changing which repositories can access a runner group
 
-> \[!WARNING]
+> [!WARNING]
 > We recommend that you only use self-hosted runners with private repositories. This is because forks of your public repository can potentially run dangerous code on your self-hosted runner machine by creating a pull request that executes the code in a workflow.
 >
 > For more information, see [Secure use reference](/en/actions/reference/security/secure-use).

@@ -21,7 +21,7 @@ breadcrumbs:
 
 Run code scanning default setup more quickly on bigger codebases using larger runners.
 
-> \[!NOTE]
+> [!NOTE]
 > Support for larger runners for code scanning default setup is currently in public preview and subject to change.
 
 ## Provisioning organization-level larger runners for default setup

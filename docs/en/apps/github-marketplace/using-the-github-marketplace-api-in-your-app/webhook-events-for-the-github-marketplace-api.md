@@ -19,7 +19,7 @@ breadcrumbs:
 
 A GitHub Marketplace app receives information about changes to a user's plan from the Marketplace purchase event webhook. A Marketplace purchase event is triggered when a user purchases, cancels, or changes their payment plan.
 
-> \[!NOTE]
+> [!NOTE]
 > This article applies to publishing apps in GitHub Marketplace only. For more information about publishing GitHub Actions in GitHub Marketplace, see [Publishing actions in GitHub Marketplace](/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace).
 
 For more information about the GitHub Marketplace webhook payload, see [Webhook events and payloads](/en/webhooks/webhook-events-and-payloads#marketplace_purchase).
@@ -28,5 +28,5 @@ Webhooks `POST` requests have special headers. See [Webhook events and payloads]
 
 Cancellations and downgrades take effect on the first day of the next billing cycle. Events for downgrades and cancellations are sent when the new plan takes effect at the beginning of the next billing cycle. Events for new purchases and upgrades begin immediately. Use the `effective_date` in the webhook payload to determine when a change will begin.
 
-> \[!NOTE]
+> [!NOTE]
 > If you notice any spammy GitHub Marketplace purchases or other malicious behavior, please complete the [report abuse](https://github.com/contact/report-abuse) form with more information on the user.

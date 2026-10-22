@@ -33,7 +33,7 @@ GitHub displays the validation status of the secret in the alert view, so you ca
 
 ## About extended metadata checks
 
-> \[!NOTE] Extended metadata checks in security configurations is currently in public preview and subject to change.
+> [!NOTE] Extended metadata checks in security configurations is currently in public preview and subject to change.
 
 Extended metadata checks provide **additional contextual information** about detected secrets. They are often referred to as **analyzers** in other tools.
 

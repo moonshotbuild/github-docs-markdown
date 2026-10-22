@@ -25,7 +25,7 @@ You can make CLI plugins that you've created easy to install by adding them to a
 
 Plugin marketplaces are registries of plugins for Copilot CLI. They can be located on GitHub.com, in any other online Git hosting service, or on your local or shared file system. By creating a marketplace and adding your plugins to it, you can make it easy for other users to find and install your plugins.
 
-> \[!NOTE]
+> [!NOTE]
 > You can find help on using plugins by entering `copilot plugin [SUBCOMMAND] --help` in the terminal.
 
 ## Prerequisite
@@ -36,7 +36,7 @@ You have created one or more plugins that you want to share. See [Creating a plu
 
 1. Create a `marketplace.json` file that provides metadata about your marketplace and lists the plugins that are available in the marketplace.
 
-   > \[!NOTE]
+   > [!NOTE]
    > The `marketplace.json` file is the only required component of a plugin marketplace. Adding it to a repository allows Copilot CLI to recognize the repository as a plugin marketplace, and provides an easy way for users to install plugins.
 
    **Example `marketplace.json` file**
@@ -82,7 +82,7 @@ You have created one or more plugins that you want to share. See [Creating a plu
 
 2. Add the `marketplace.json` file to the `.github/plugin` directory of a repository.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Copilot CLI also looks for the `marketplace.json` file in the `.claude-plugin/` directory.
 
 3. For each plugin defined in the `marketplace.json` file, add the relevant plugin directory to the appropriate location in the repository.
