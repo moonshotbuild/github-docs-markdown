@@ -73,7 +73,7 @@ When first contributing to a project, starting with minor fixes like documentati
 
 5. Read through the context Copilot provided, along with the comments from other contributors and maintainers to see if the issue is one you want to work on. If you have specific questions you can ask directly in the issue or in the project's Discord, IRC, or Slack, if applicable.
 
-> \[!TIP] If you ever work on an issue **without** the `help wanted` or `good first issue` labels, it's a good idea to ask the maintainers in the issue if you can open a pull request, to confirm your planned contribution aligns with the project's goals.
+> [!TIP] If you ever work on an issue **without** the `help wanted` or `good first issue` labels, it's a good idea to ask the maintainers in the issue if you can open a pull request, to confirm your planned contribution aligns with the project's goals.
 
 ## Creating your own copy of a project
 
@@ -167,7 +167,7 @@ Now that you've pushed your changes to GitHub, you're ready to open a pull reque
 5. Ensure the **head** repository is your fork (`YOUR-USERNAME/docs`) and the compare branch is your branch.
 6. Type a title and description for your pull request. In the description, reference the issue that your pull request will close. For example, `Closes: #15`. This will provide context for your pull request and automatically close the issue out once the pull request is merged.
 
-> \[!TIP] Avoid force pushing once a pull request has been submitted for review. This makes it more difficult for maintainers to see that you are addressing their feedback.
+> [!TIP] Avoid force pushing once a pull request has been submitted for review. This makes it more difficult for maintainers to see that you are addressing their feedback.
 
 ## Working with project maintainers
 

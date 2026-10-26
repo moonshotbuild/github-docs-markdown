@@ -33,7 +33,7 @@ The instructions below will guide you through configuring your environment to us
   * Docker is [installed](https://docs.docker.com/get-docker/) and running.
 
   * [GitHub CLI](https://cli.github.com) is installed.
-  > \[!NOTE]
+  > [!NOTE]
   > The GitHub Actions Importer container and CLI do not need to be installed on the same server as your CI platform.
 
 ### Limitations
@@ -308,7 +308,7 @@ GitHub Actions Importer uses the following environment variables to connect to y
 
 * `JENKINS_ACCESS_TOKEN`: The Jenkins API token used to view Jenkins resources.
 
-  > \[!NOTE]
+  > [!NOTE]
   > This token requires access to all jobs that you want to migrate or audit. In cases where a folder or job does not inherit access control lists from their parent, you must grant explicit permissions or full admin privileges.
 
 * `JENKINS_USERNAME`: The username of the user account that created the Jenkins API token.

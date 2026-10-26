@@ -31,7 +31,7 @@ The instructions below will guide you through configuring your environment to us
   * Docker is [installed](https://docs.docker.com/get-docker/) and running.
 
   * [GitHub CLI](https://cli.github.com) is installed.
-  > \[!NOTE]
+  > [!NOTE]
   > The GitHub Actions Importer container and CLI do not need to be installed on the same server as your CI platform.
 
 ### Limitations

@@ -35,11 +35,11 @@ Before enabling Copilot cloud agent for members, understand how Copilot cloud ag
 
 1. Learn about Copilot cloud agent, including the costs and how it differs from other AI tools your developers may be used to. See [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
 2. Learn about the tasks that Copilot cloud agent is best suited for. These are generally well-defined and scoped issues, such as increasing test coverage, fixing bugs or flaky tests, or updating config files or documentation. See [Best practices for using GitHub Copilot to work on tasks](/en/copilot/tutorials/cloud-agent/get-the-best-results).
-3. Consider how Copilot cloud agent fits alongside other tools in your organization's workflows. For an example scenario that walks through how to use Copilot cloud agent alongside other AI features on GitHub, see [Integrating agentic AI into your enterprise's software development lifecycle](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents).
+3. Consider how Copilot cloud agent fits alongside other tools in your organization's workflows. For an example scenario that walks through how to use Copilot cloud agent alongside other AI features on GitHub, see [Planning an AI agent rollout in your enterprise](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents).
 
 ## 2. Secure
 
-Build on Copilot cloud agent's built-in protections before enabling it in an organization. See [Building guardrails for GitHub Copilot cloud agent](/en/copilot/tutorials/cloud-agent/build-guardrails).
+Build on Copilot cloud agent's built-in protections before enabling it in an organization. See [Building guardrails for GitHub Copilot cloud agent in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails).
 
 ## 3. Pilot
 

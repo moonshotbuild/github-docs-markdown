@@ -535,66 +535,66 @@ When either limit is reached, Dependabot reports an error and stops opening addi
 
 **Required option.** Define one `package-ecosystem` element for each package manager that you want Dependabot to monitor for new versions. The repository must also contain a dependency manifest or lock file for each package manager, see [Example `dependabot.yml` file](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-version-updates#example-dependabotyml-file).
 
-| Package manager | YAML value       |  Supported versions  |
-| --------------- | ---------------- | :------------------: |
-|                 |                  |                      |
-| Bazel           | `bazel`          |      v7, v8, v9      |
-|                 |                  |                      |
-| Bun             | `bun`            |       >=v1.1.39      |
-| Bundler         | `bundler`        |          v2          |
-| Cargo           | `cargo`          |          v1          |
-| Composer        | `composer`       |          v2          |
-|                 |                  |                      |
-| Conda           | `conda`          |    Not applicable    |
-|                 |                  |                      |
-|                 |                  |                      |
-| Deno            | `deno`           |         >=v2         |
-|                 |                  |                      |
-| Dev containers  | `devcontainers`  |    Not applicable    |
-| Docker          | `docker`         |          v1          |
-| Docker Compose  | `docker-compose` |        v2, v3        |
-| .NET SDK        | `dotnet-sdk`     |    >=.NET Core 3.1   |
-| Helm Charts     | `helm`           |          v3          |
-| Hex             | `mix`            |          v1          |
-|                 |                  |                      |
-| Julia           | `julia`          |        >=v1.10       |
-|                 |                  |                      |
-| elm-package     | `elm`            |         v0.19        |
-| git submodule   | `gitsubmodule`   |    Not applicable    |
-| GitHub Actions  | `github-actions` |    Not applicable    |
-| Go modules      | `gomod`          |          v1          |
-| Gradle          | `gradle`         |    Not applicable    |
-| Maven           | `maven`          |    Not applicable    |
-|                 |                  |                      |
-| Nix flakes      | `nix`            |    Not applicable    |
-|                 |                  |                      |
-| npm             | `npm`            | v7, v8, v9, v10, v11 |
-| NuGet           | `nuget`          |       <=6.12.0       |
-|                 |                  |                      |
-| OpenTofu        | `opentofu`       |    Not applicable    |
-|                 |                  |                      |
-| pip             | `pip`            |        26.1.1        |
-| pip-compile     | `pip`            |         7.5.3        |
-| pipenv          | `pip`            |       2024.4.1       |
-| pnpm            | `npm`            |    v7, v8, v9, v10   |
-| poetry          | `pip`            |          v2          |
-|                 |                  |                      |
-| pre-commit      | `pre-commit`     |    Not applicable    |
-|                 |                  |                      |
-| pub             | `pub`            |          v2          |
-|                 |                  |                      |
-| Rust toolchain  | `rust-toolchain` |    Not applicable    |
-|                 |                  |                      |
-|                 |                  |                      |
-| sbt             | `sbt`            |    Not applicable    |
-|                 |                  |                      |
-| Swift           | `swift`          |        v5, v6        |
-| Terraform       | `terraform`      |  >= 0.13, <= 1.15.x  |
-| uv              | `uv`             |         v0.11        |
-|                 |                  |                      |
-| vcpkg           | `vcpkg`          |    Not applicable    |
-|                 |                  |                      |
-| yarn            | `npm`            |    v1, v2, v3, v4    |
+| Package manager | YAML value       |     Supported versions    |
+| --------------- | ---------------- | :-----------------------: |
+|                 |                  |                           |
+| Bazel           | `bazel`          |         v7, v8, v9        |
+|                 |                  |                           |
+| Bun             | `bun`            |         >=v1.1.39         |
+| Bundler         | `bundler`        |             v2            |
+| Cargo           | `cargo`          |             v1            |
+| Composer        | `composer`       |             v2            |
+|                 |                  |                           |
+| Conda           | `conda`          |       Not applicable      |
+|                 |                  |                           |
+|                 |                  |                           |
+| Deno            | `deno`           |            >=v2           |
+|                 |                  |                           |
+| Dev containers  | `devcontainers`  |       Not applicable      |
+| Docker          | `docker`         |             v1            |
+| Docker Compose  | `docker-compose` |           v2, v3          |
+| .NET SDK        | `dotnet-sdk`     |      >=.NET Core 3.1      |
+| Helm Charts     | `helm`           |             v3            |
+| Hex             | `mix`            |             v1            |
+|                 |                  |                           |
+| Julia           | `julia`          |          >=v1.10          |
+|                 |                  |                           |
+| elm-package     | `elm`            |           v0.19           |
+| git submodule   | `gitsubmodule`   |       Not applicable      |
+| GitHub Actions  | `github-actions` |       Not applicable      |
+| Go modules      | `gomod`          |             v1            |
+| Gradle          | `gradle`         |       Not applicable      |
+| Maven           | `maven`          |       Not applicable      |
+|                 |                  |                           |
+| Nix flakes      | `nix`            |       Not applicable      |
+|                 |                  |                           |
+| npm             | `npm`            | v7, v8, v9, v10, v11, v12 |
+| NuGet           | `nuget`          |          <=6.12.0         |
+|                 |                  |                           |
+| OpenTofu        | `opentofu`       |       Not applicable      |
+|                 |                  |                           |
+| pip             | `pip`            |           26.1.1          |
+| pip-compile     | `pip`            |           7.5.3           |
+| pipenv          | `pip`            |          2024.4.1         |
+| pnpm            | `npm`            | v7, v8, v9, v10, v11, v12 |
+| poetry          | `pip`            |             v2            |
+|                 |                  |                           |
+| pre-commit      | `pre-commit`     |       Not applicable      |
+|                 |                  |                           |
+| pub             | `pub`            |             v2            |
+|                 |                  |                           |
+| Rust toolchain  | `rust-toolchain` |       Not applicable      |
+|                 |                  |                           |
+|                 |                  |                           |
+| sbt             | `sbt`            |       Not applicable      |
+|                 |                  |                           |
+| Swift           | `swift`          |           v5, v6          |
+| Terraform       | `terraform`      |     >= 0.13, <= 1.15.x    |
+| uv              | `uv`             |           v0.11           |
+|                 |                  |                           |
+| vcpkg           | `vcpkg`          |       Not applicable      |
+|                 |                  |                           |
+| yarn            | `npm`            |       v1, v2, v3, v4      |
 
 ## `pull-request-branch-name` <svg version="1.1" width="24" height="24" viewBox="0 0 24 24" class="octicon octicon-versions" aria-label="Version updates" role="img"><path d="M10 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2Zm-.5-2a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H10a.5.5 0 0 0-.5.5ZM6.17 4.165a.75.75 0 0 1-.335 1.006c-.228.114-.295.177-.315.201a.035.035 0 0 0-.008.016.423.423 0 0 0-.012.112v13c0 .07.008.102.012.112a.03.03 0 0 0 .008.016c.02.024.087.087.315.201a.749.749 0 1 1-.67 1.342c-.272-.136-.58-.315-.81-.598C4.1 19.259 4 18.893 4 18.5v-13c0-.393.1-.759.355-1.073.23-.283.538-.462.81-.598a.75.75 0 0 1 1.006.336ZM2.15 5.624a.75.75 0 0 1-.274 1.025c-.15.087-.257.17-.32.245C1.5 6.96 1.5 6.99 1.5 7v10c0 .01 0 .04.056.106.063.074.17.158.32.245a.75.75 0 0 1-.752 1.298C.73 18.421 0 17.907 0 17V7c0-.907.73-1.42 1.124-1.65a.75.75 0 0 1 1.025.274Z"></path></svg> <svg version="1.1" width="24" height="24" viewBox="0 0 24 24" class="octicon octicon-shield-check" aria-label="Security updates" role="img"><path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"></path><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"></path></svg>
 

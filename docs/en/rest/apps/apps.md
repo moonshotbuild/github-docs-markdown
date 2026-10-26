@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/apps/apps"
 ---
 
-# REST API endpoints for GitHub Apps
+# REST API endpoints for {% data variables.product.prodname\_github\_apps %}
 
 Use the REST API to interact with GitHub Apps
 

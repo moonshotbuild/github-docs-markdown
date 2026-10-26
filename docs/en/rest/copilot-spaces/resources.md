@@ -126,6 +126,86 @@ Fine-grained tokens and GitHub App user access tokens must have been granted acc
 
 - **422** - Validation failed, or the endpoint has been spammed.
 
+### Code examples
+
+#### Example 1: Status Code 201
+
+**Request:**
+
+```curl
+curl -L \
+  -X POST \
+  https://api.github.com/orgs/ORG/copilot-spaces/SPACE_NUMBER/resources \
+  -d '{
+  "resource_type": "free_text",
+  "metadata": {
+    "name": "notes.txt",
+    "text": "Some helpful notes"
+  }
+}'
+```
+
+**Response schema (Status: 201):**
+
+* `id`: required, integer
+* `resource_type`: required, string, enum: `repository`, `github_file`, `free_text`, `github_issue`, `github_pull_request`, `media_content`, `uploaded_text_file`
+* `copilot_chat_attachment_id`: integer or null
+* `metadata`: required, object, additional properties allowed
+* `created_at`: required, string, format: date-time
+* `updated_at`: required, string, format: date-time
+
+#### Example 2: Status Code 201
+
+**Request:**
+
+```curl
+curl -L \
+  -X POST \
+  https://api.github.com/orgs/ORG/copilot-spaces/SPACE_NUMBER/resources \
+  -d '{
+  "resource_type": "repository",
+  "metadata": {
+    "repository_id": 42
+  }
+}'
+```
+
+**Response schema (Status: 201):**
+
+* `id`: required, integer
+* `resource_type`: required, string, enum: `repository`, `github_file`, `free_text`, `github_issue`, `github_pull_request`, `media_content`, `uploaded_text_file`
+* `copilot_chat_attachment_id`: integer or null
+* `metadata`: required, object, additional properties allowed
+* `created_at`: required, string, format: date-time
+* `updated_at`: required, string, format: date-time
+
+#### Example 3: Status Code 201
+
+**Request:**
+
+```curl
+curl -L \
+  -X POST \
+  https://api.github.com/orgs/ORG/copilot-spaces/SPACE_NUMBER/resources \
+  -d '{
+  "resource_type": "github_file",
+  "metadata": {
+    "repository_id": 42,
+    "file_path": "README.md",
+    "sha": "abc123"
+  }
+}'
+```
+
+**Response schema (Status: 201):**
+
+* `id`: required, integer
+* `resource_type`: required, string, enum: `repository`, `github_file`, `free_text`, `github_issue`, `github_pull_request`, `media_content`, `uploaded_text_file`
+* `copilot_chat_attachment_id`: integer or null
+* `metadata`: required, object, additional properties allowed
+* `created_at`: required, string, format: date-time
+* `updated_at`: required, string, format: date-time
+
 ## Get a resource for an organization Copilot Space
 
 ```
@@ -177,12 +257,7 @@ curl -L \
 
 **Response schema (Status: 200):**
 
-* `id`: required, integer
-* `resource_type`: required, string, enum: `repository`, `github_file`, `free_text`, `github_issue`, `github_pull_request`, `media_content`, `uploaded_text_file`
-* `copilot_chat_attachment_id`: integer or null
-* `metadata`: required, object, additional properties allowed
-* `created_at`: required, string, format: date-time
-* `updated_at`: required, string, format: date-time
+Same response schema as [Create a resource for an organization Copilot Space](#create-a-resource-for-an-organization-copilot-space).
 
 ## Set a resource for an organization Copilot Space
 
@@ -248,7 +323,7 @@ curl -L \
 
 **Response schema (Status: 200):**
 
-Same response schema as [Get a resource for an organization Copilot Space](#get-a-resource-for-an-organization-copilot-space).
+Same response schema as [Create a resource for an organization Copilot Space](#create-a-resource-for-an-organization-copilot-space).
 
 ## Delete a resource from an organization Copilot Space
 
@@ -399,6 +474,71 @@ OAuth app tokens and personal access tokens (classic) need the write:user scope 
 
 - **422** - Validation failed, or the endpoint has been spammed.
 
+### Code examples
+
+#### Example 1: Status Code 201
+
+**Request:**
+
+```curl
+curl -L \
+  -X POST \
+  https://api.github.com/users/USERNAME/copilot-spaces/SPACE_NUMBER/resources \
+  -d '{
+  "resource_type": "free_text",
+  "metadata": {
+    "name": "notes.txt",
+    "text": "Some helpful notes"
+  }
+}'
+```
+
+**Response schema (Status: 201):**
+
+Same response schema as [Create a resource for an organization Copilot Space](#create-a-resource-for-an-organization-copilot-space).
+
+#### Example 2: Status Code 201
+
+**Request:**
+
+```curl
+curl -L \
+  -X POST \
+  https://api.github.com/users/USERNAME/copilot-spaces/SPACE_NUMBER/resources \
+  -d '{
+  "resource_type": "repository",
+  "metadata": {
+    "repository_id": 42
+  }
+}'
+```
+
+**Response schema (Status: 201):**
+
+Same response schema as [Create a resource for an organization Copilot Space](#create-a-resource-for-an-organization-copilot-space).
+
+#### Example 3: Status Code 201
+
+**Request:**
+
+```curl
+curl -L \
+  -X POST \
+  https://api.github.com/users/USERNAME/copilot-spaces/SPACE_NUMBER/resources \
+  -d '{
+  "resource_type": "github_file",
+  "metadata": {
+    "repository_id": 42,
+    "file_path": "README.md",
+    "sha": "abc123"
+  }
+}'
+```
+
+**Response schema (Status: 201):**
+
+Same response schema as [Create a resource for an organization Copilot Space](#create-a-resource-for-an-organization-copilot-space).
+
 ## Get a resource for a Copilot Space for a user
 
 ```
@@ -449,7 +589,7 @@ curl -L \
 
 **Response schema (Status: 200):**
 
-Same response schema as [Get a resource for an organization Copilot Space](#get-a-resource-for-an-organization-copilot-space).
+Same response schema as [Create a resource for an organization Copilot Space](#create-a-resource-for-an-organization-copilot-space).
 
 ## Set a resource for a Copilot Space for a user
 
@@ -514,7 +654,7 @@ curl -L \
 
 **Response schema (Status: 200):**
 
-Same response schema as [Get a resource for an organization Copilot Space](#get-a-resource-for-an-organization-copilot-space).
+Same response schema as [Create a resource for an organization Copilot Space](#create-a-resource-for-an-organization-copilot-space).
 
 ## Delete a resource from a Copilot Space for a user
 

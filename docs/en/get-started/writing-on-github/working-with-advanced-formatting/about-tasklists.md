@@ -21,7 +21,7 @@ You can use tasklists to break the work for an issue or pull request into smalle
 
 ## About tasklists
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Tasklist blocks are retired. You can read more about this on the [GitHub Blog](https://github.blog/changelog/2025-02-18-github-issues-projects-february-18th-update/).
 >
 > You can use sub-issues as the replacement for tasklist blocks. Sub-issues provide a dedicated section within each issue, making it easier to track related work without relying on Markdown. For more information about sub-issues, see [Adding sub-issues](/en/issues/tracking-your-work-with-issues/using-issues/adding-sub-issues).
@@ -53,7 +53,7 @@ To create a task list, preface list items with a hyphen and space followed by `[
 
 ![Screenshot showing the rendered version of the markdown. The references to issues are rendered as issue titles.](/assets/images/help/writing/task-list-rendered-simple.png)
 
-> \[!NOTE]
+> [!NOTE]
 > You cannot create tasklist items within closed issues or issues with linked pull requests.
 
 ## Reordering tasks

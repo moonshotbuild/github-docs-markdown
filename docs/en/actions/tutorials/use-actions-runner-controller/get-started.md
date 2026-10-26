@@ -71,7 +71,7 @@ In order to use ARC, ensure you have the following.
 
    * This example command installs the latest version of the Helm chart. To install a specific version, you can pass the `--version` argument with the version of the chart you wish to install. You can find the list of releases in the [GitHub Container Registry](https://github.com/actions/actions-runner-controller/pkgs/container/actions-runner-controller-charts%2Fgha-runner-scale-set).
 
-     > \[!NOTE]
+     > [!NOTE]
      >
      > * As a security best practice, create your runner pods in a different namespace than the namespace containing your operator pods.
      > * As a security best practice, create Kubernetes secrets and pass the secret references. Passing your secrets in plain text via the CLI can pose a security risk. For more information, see [Deploying runner scale sets with Actions Runner Controller](/en/actions/how-tos/manage-runners/use-actions-runner-controller/deploy-runner-scale-sets).

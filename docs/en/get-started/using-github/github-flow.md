@@ -27,7 +27,7 @@ To follow GitHub flow, you will need a GitHub account and a repository. For info
 
 ## Following GitHub flow
 
-> \[!TIP]
+> [!TIP]
 > You can complete all steps of GitHub flow through the GitHub web interface, command line and [GitHub CLI](https://cli.github.com), or [GitHub Desktop](/en/desktop). For more information about the tools you can use to connect to GitHub, see [Connecting to GitHub](/en/get-started/using-github/connecting-to-github).
 
 ### Create a branch
@@ -50,7 +50,7 @@ By committing and pushing your changes, you back up your work to remote storage.
 
 Continue to make, commit, and push changes to your branch until you are ready to ask for feedback.
 
-> \[!TIP]
+> [!TIP]
 > Make a separate branch for each set of unrelated changes. This makes it easier for reviewers to give feedback. It also makes it easier for you and future collaborators to understand the changes and to revert or build on them. Additionally, if there is a delay in one set of changes, your other changes aren't also delayed.
 
 ### Create a pull request

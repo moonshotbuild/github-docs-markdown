@@ -80,6 +80,10 @@ All other controls do **not** affect Copilot CLI, notably:
 
 * **IDE-specific policies**: Policies configured for specific IDEs or editor extensions
 
+## Applying guardrails so teams follow organizational policies
+
+You can apply guardrails to keep developer's use within organizational policies. First, work with platform and security teams to decide which Copilot CLI actions need review, ultimately agreeing on what usage information to log. Prefer collecting only the minimum data needed (for example, metadata rather than full prompt contents), and redact or mask secrets and personal data before writing any logs. If teams configure repository-scoped hooks to log prompts and tool use, ensure log access is restricted to authorized personnel and follow your organization's retention and deletion requirements so sensitive data is not stored longer than necessary. These hooks can also block selected command patterns. See [Rolling out Copilot CLI hooks for your teams](/en/copilot/tutorials/copilot-cli-hooks).
+
 ## Why can't my developers access Copilot CLI?
 
 If you expect a user to have access to Copilot CLI and they don't:

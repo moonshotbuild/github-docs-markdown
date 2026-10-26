@@ -131,7 +131,7 @@ In addition to your onboarding resources, you may want to provide a library of l
 
 If your organization has specific Copilot usage guidelines, these should be clearly communicated in onboarding materials and anywhere else that teams might look for information. For example, if you plan to revoke access to Copilot for users who have not used it in a certain period of time, ensure that your users are aware of this policy.
 
-Many users may not be aware of all of Copilot's capabilities. You should offer guidance on how you expect the different features to fit into your organization's workflows, and provide training to support this. For an end-to-end example, see [Integrating agentic AI into your enterprise's software development lifecycle](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents).
+Many users may not be aware of all of Copilot's capabilities. You should offer guidance on how you expect the different features to fit into your organization's workflows, and provide training to support this. For an end-to-end example, see [Planning an AI agent rollout in your enterprise](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents).
 
 ### Ongoing analysis and optimization
 

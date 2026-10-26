@@ -1941,6 +1941,24 @@ OAuth app tokens and personal access tokens (classic) need the repo scope to use
 * **`repo`** (string) (required)
   The name of the repository without the .git extension. The name is not case sensitive.
 
+#### Body parameters
+
+* **`language`** (string) (required)
+  The language targeted by the CodeQL query
+  Can be one of: `actions`, `cpp`, `csharp`, `go`, `java`, `javascript`, `python`, `ruby`, `rust`, `swift`
+
+* **`query_pack`** (string) (required)
+  A Base64-encoded tarball containing a CodeQL query and all its dependencies
+
+* **`repositories`** (array of strings)
+  List of repository names (in the form owner/repo-name) to run the query against. Precisely one property from repositories, repository\_lists and repository\_owners is required.
+
+* **`repository_lists`** (array of strings)
+  List of repository lists to run the query against. Precisely one property from repositories, repository\_lists and repository\_owners is required.
+
+* **`repository_owners`** (array of strings)
+  List of organization or user names whose repositories the query should be run against. Precisely one property from repositories, repository\_lists and repository\_owners is required.
+
 ### HTTP response status codes
 
 * **201** - Variant analysis submitted for processing

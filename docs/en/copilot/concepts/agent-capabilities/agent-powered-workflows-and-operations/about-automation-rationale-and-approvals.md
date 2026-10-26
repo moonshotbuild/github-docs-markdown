@@ -21,7 +21,7 @@ breadcrumbs:
 
 When automations triage issues, it explains each change, rates its confidence, and holds lower-confidence changes for your review.
 
-> \[!NOTE]
+> [!NOTE]
 > Rationale, confidence, and approvals for automations are in public preview and subject to change.
 
 Automations run an agent to triage issues for you, applying labels, setting types and fields, assigning issues, and closing them, without a person initiating each change. Rationale, confidence, and approvals give you visibility into that automated work and control over when it applies.
@@ -63,7 +63,7 @@ Suggestions appear in a panel on the issue. From the panel you can:
 
 A small team moving quickly might choose **Full automation**, while a busy public repository can choose **Cautious** or **Full control** to hold more changes for review where the stakes are higher.
 
-> \[!NOTE]
+> [!NOTE]
 > Approvals are a workflow convenience, not a security control. They don't enforce a server-side boundary, so an agent with permission to change issues can apply changes directly instead of proposing them, including through the REST and GraphQL APIs. Use repository and agent permissions, not approvals, to control what an automation is allowed to do.
 
 ## Next steps

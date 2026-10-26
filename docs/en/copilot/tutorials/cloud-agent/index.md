@@ -31,9 +31,9 @@ Find out how to get great results from Copilot cloud agent.
 
   Find and fix problems in a project with Copilot cloud agent.
 
-* [Building guardrails for GitHub Copilot cloud agent](/en/copilot/tutorials/cloud-agent/build-guardrails)
+* [Building guardrails for GitHub Copilot cloud agent in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails)
 
-  Configure your enterprise so that Copilot cloud agent will operate in a secure, compliant environment.
+  Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot cloud agent.
 
 * [Giving GitHub Copilot cloud agent access to resources in your organization](/en/copilot/tutorials/cloud-agent/give-access-to-resources)
 

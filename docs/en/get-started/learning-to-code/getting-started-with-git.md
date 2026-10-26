@@ -49,7 +49,7 @@ Now, you can take your first steps into Git by creating a **repository**. Think 
 2. Name the repository `learning-git`.
 3. Select **Initialize this repository with a README** to create a blank `README.md` file automatically.
 
-   > \[!TIP] It's standard practice to include a `README.md` file, also known as a README, in your projects. READMEs typically contain information that helps others understand, set up, and run your project.
+   > [!TIP] It's standard practice to include a `README.md` file, also known as a README, in your projects. READMEs typically contain information that helps others understand, set up, and run your project.
 4. Click **Create repository**.
 
 ### Creating a remote repository
@@ -109,7 +109,7 @@ When you're happy with the changes you've made on a branch, you can publish your
 
 6. To bring your changes into the `main` branch, at the bottom of the page, click **Merge pull request**.
 
-   > \[!NOTE] When you're working on a project with other developers, it's standard practice for someone else to review your pull request before it's merged.
+   > [!NOTE] When you're working on a project with other developers, it's standard practice for someone else to review your pull request before it's merged.
 
 7. Near the bottom of the page, click **Delete branch**. Deleting branches that have been merged into `main` helps keep your repository clean and easy to navigate.
 

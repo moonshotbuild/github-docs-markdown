@@ -25,7 +25,8 @@ Choose which organizations can use Copilot cloud agent and connect it to MCP ser
 
 ## Prerequisites
 
-You may want to run a trial before enabling Copilot cloud agent for the enterprise. See [Piloting GitHub Copilot cloud agent in your organization](/en/copilot/tutorials/cloud-agent/pilot-cloud-agent).
+* Optionally, run a trial. See [Piloting GitHub Copilot cloud agent in your organization](/en/copilot/tutorials/cloud-agent/pilot-cloud-agent).
+* Review enterprise policies, repository protections, and runner settings with organization owners and repository administrators. See [Building guardrails for GitHub Copilot cloud agent in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails).
 
 ## Enabling Copilot cloud agent
 

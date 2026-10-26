@@ -21,7 +21,7 @@ breadcrumbs:
 
 Copilot can interact with desktop applications to automate tasks that cannot be completed with a more direct tool.
 
-> \[!NOTE]
+> [!NOTE]
 > Computer use is in public preview and subject to change.
 
 ## About computer use
@@ -39,7 +39,7 @@ Computer use can help you complete tasks such as:
 * Entering or updating information in GUI-only software.
 * Moving information between applications as part of a multi-step workflow.
 
-> \[!TIP]
+> [!TIP]
 > Computer use is designed for tasks that require interaction with a visual interface. If an API, MCP server, terminal command, filesystem tool, or dedicated browser tool can complete the task directly, that tool typically provides more structured information and predictable results.
 
 ## Capabilities
@@ -77,7 +77,7 @@ On macOS, computer use guides you through granting:
 
 Computer use interprets interfaces that can change between application versions, operating systems, and window states. It can select the wrong control, enter text in the wrong location, or have difficulty with non-standard or dynamic controls and complex workflows. Changes in timing or window state can produce different results, cause computer use to repeat an action, or prevent it from continuing.
 
-> \[!WARNING]
+> [!WARNING]
 > Computer use can automate interactions across desktop applications, but it also introduces security risks. Ambiguous instructions or unexpected on-screen content may cause unintended actions that affect your device, data, or connected accounts, including access to personal, financial, or enterprise systems. Computer use is not a substitute for human judgment. Review the target application, requested permissions, and result, particularly before allowing actions that modify data or affect other people.
 
 Application windows may display sensitive information, including information about other people. Only use computer use with applications and tasks whose visible content you are comfortable providing as context to Copilot.

@@ -38,7 +38,7 @@ If you have low vision, you may benefit from a high contrast theme, with greater
 
    * If you would like to choose a theme which is currently in public preview, you will first need to enable it with feature preview. For more information, see [Exploring early access releases with feature preview](/en/get-started/using-github/exploring-early-access-releases-with-feature-preview).
 
-> \[!NOTE]
+> [!NOTE]
 > You can also change your theme settings with the command palette. For more information, see [GitHub Command Palette](/en/get-started/accessibility/github-command-palette).
 
 ## Further reading

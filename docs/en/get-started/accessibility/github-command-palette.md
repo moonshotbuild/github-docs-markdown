@@ -17,7 +17,7 @@ breadcrumbs:
 
 Use the command palette to navigate, search, and run commands directly from your keyboard.
 
-> \[!NOTE]
+> [!NOTE]
 > The GitHub Command Palette is currently in public preview and is subject to change.
 
 The GitHub Command Palette is deactivated by default. You can enable the GitHub Command Palette with feature preview. See [Exploring early access releases with feature preview](/en/get-started/using-github/exploring-early-access-releases-with-feature-preview).
@@ -51,7 +51,7 @@ When you open the command palette, it shows your location at the top left and us
 
 ![Screenshot of the command palette. "octo-org" is highlighted with an orange outline.](/assets/images/help/command-palette/command-palette-launch.png)
 
-> \[!NOTE]
+> [!NOTE]
 >
 > * If you are editing Markdown text, open the command palette with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>K</kbd> (Windows and Linux) or <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>K</kbd> (Mac).
 > * If you are working on a project, a project-specific command palette is displayed instead. For more information, see [Changing the layout of a view](/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view).
@@ -101,7 +101,7 @@ You can use the command palette to search for anything on GitHub.
 
 4. Begin entering your search terms. The command palette will offer you a range of suggested searches based on your search scope.
 
-   > \[!TIP]
+   > [!TIP]
    > You can also use the full syntax of GitHub's integrated search within the command palette. For more information, see [Search on GitHub documentation](/en/search-github).
 
 5. Use the arrow keys to highlight the search result you want and use <kbd>Enter</kbd> to jump to your chosen location. Alternatively, use <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (Windows and Linux) or <kbd>Command</kbd>+<kbd>Enter</kbd> (Mac) to open the location in a new browser tab.

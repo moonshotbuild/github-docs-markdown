@@ -79,7 +79,7 @@ If your organization is owned by an enterprise that has a Copilot subscription, 
 
 * If **you're on GitHub.com and pay by credit card or PayPal**, you can [subscribe here](https://github.com/github-copilot/purchase?ref_product=copilot\&ref_type=purchase\&ref_style=button).
 
-  > \[!NOTE] If you are currently in a trial of GitHub Enterprise Cloud, you must convert to a paid enterprise before you can purchase GitHub Copilot.
+  > [!NOTE] If you are currently in a trial of GitHub Enterprise Cloud, you must convert to a paid enterprise before you can purchase GitHub Copilot.
 
 * For **any other payment method and enterprises on GHE.com**, [contact GitHub's Sales team](https://github.com/enterprise/contact?ref_product=copilot\&ref_type=engagement\&ref_style=text).
 

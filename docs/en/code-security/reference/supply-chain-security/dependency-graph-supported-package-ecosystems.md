@@ -67,6 +67,7 @@ In the table below:
 > * If you list your Python dependencies within a `setup.py` file, we may not be able to parse and list every dependency in your project.
 > * GitHub Actions workflows must be located in the `.github/workflows/` directory of a repository to be recognized as manifests. Any actions or workflows referenced using the syntax `jobs[*].steps[*].uses` or `jobs.<job_id>.uses` will be parsed as dependencies. For more information, see [Workflow syntax for GitHub Actions](/en/actions/reference/workflows-and-actions/workflow-syntax).
 > * For GitHub Actions, alerts are only generated for actions that use semantic versioning, not SHA versioning. For more information, see [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts) and [Dependabot version updates](/en/code-security/concepts/supply-chain-security/dependabot-version-updates).
+> * When pnpm writes `pnpm-lock.yaml` as two YAML documents, the dependency graph does not detect the dependencies in that file. This is the default format for pnpm 12 projects that pin a pnpm version. For more information, see [Dependabot supported ecosystems and repositories](/en/code-security/reference/supply-chain-security/supported-ecosystems-and-repositories#pnpm).
 
 ### Community-maintained ecosystems
 

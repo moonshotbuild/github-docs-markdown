@@ -421,6 +421,14 @@ Your fine-grained personal access token can make requests to the following REST 
 
 ## activity
 
+* [`GET /events`](/en/rest/activity/events#list-public-events)
+
+* [`GET /feeds`](/en/rest/activity/feeds#get-feeds)
+
+* [`GET /networks/{owner}/{repo}/events`](/en/rest/activity/events#list-public-events-for-a-network-of-repositories)
+
+* [`GET /orgs/{org}/events`](/en/rest/activity/events#list-public-organization-events)
+
 * [`GET /repos/{owner}/{repo}/events`](/en/rest/activity/events#list-repository-events)
 
 * [`GET /repos/{owner}/{repo}/stargazers`](/en/rest/activity/starring#list-stargazers)
@@ -441,7 +449,15 @@ Your fine-grained personal access token can make requests to the following REST 
 
 * [`GET /user/subscriptions`](/en/rest/activity/watching#list-repositories-watched-by-the-authenticated-user)
 
+* [`GET /users/{username}/events`](/en/rest/activity/events#list-events-for-the-authenticated-user)
+
 * [`GET /users/{username}/events/orgs/{org}`](/en/rest/activity/events#list-organization-events-for-the-authenticated-user)
+
+* [`GET /users/{username}/events/public`](/en/rest/activity/events#list-public-events-for-a-user)
+
+* [`GET /users/{username}/received_events`](/en/rest/activity/events#list-events-received-by-the-authenticated-user)
+
+* [`GET /users/{username}/received_events/public`](/en/rest/activity/events#list-public-events-received-by-a-user)
 
 * [`GET /users/{username}/starred`](/en/rest/activity/starring#list-repositories-starred-by-a-user)
 
@@ -511,9 +527,15 @@ Your fine-grained personal access token can make requests to the following REST 
 
 ## apps
 
+* [`GET /apps/{app_slug}`](/en/rest/apps/apps#get-an-app)
+
 * [`PUT /user/installations/{installation_id}/repositories/{repository_id}`](/en/rest/apps/installations#add-a-repository-to-an-app-installation)
 
 * [`DELETE /user/installations/{installation_id}/repositories/{repository_id}`](/en/rest/apps/installations#remove-a-repository-from-an-app-installation)
+
+* [`GET /user/marketplace_purchases`](/en/rest/apps/marketplace#list-subscriptions-for-the-authenticated-user)
+
+* [`GET /user/marketplace_purchases/stubbed`](/en/rest/apps/marketplace#list-subscriptions-for-the-authenticated-user-stubbed)
 
 ## billing
 
@@ -718,6 +740,12 @@ Your fine-grained personal access token can make requests to the following REST 
 * [`GET /orgs/{org}/code-security/configurations/{configuration_id}/repositories`](/en/rest/code-security/configurations#get-repositories-associated-with-a-code-security-configuration)
 
 * [`GET /repos/{owner}/{repo}/code-security-configuration`](/en/rest/code-security/configurations#get-the-code-security-configuration-associated-with-a-repository)
+
+## codes-of-conduct
+
+* [`GET /codes_of_conduct`](/en/rest/codes-of-conduct/codes-of-conduct#get-all-codes-of-conduct)
+
+* [`GET /codes_of_conduct/{key}`](/en/rest/codes-of-conduct/codes-of-conduct#get-a-code-of-conduct)
 
 ## codespaces
 
@@ -1061,25 +1089,51 @@ Your fine-grained personal access token can make requests to the following REST 
 
 * [`DELETE /repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/{protection_rule_id}`](/en/rest/deployments/protection-rules#disable-a-custom-protection-rule-for-an-environment)
 
+## emojis
+
+* [`GET /emojis`](/en/rest/emojis/emojis#get-emojis)
+
 ## gists
 
+* [`GET /gists`](/en/rest/gists/gists#list-gists-for-the-authenticated-user)
+
 * [`POST /gists`](/en/rest/gists/gists#create-a-gist)
+
+* [`GET /gists/public`](/en/rest/gists/gists#list-public-gists)
+
+* [`GET /gists/starred`](/en/rest/gists/gists#list-starred-gists)
+
+* [`GET /gists/{gist_id}`](/en/rest/gists/gists#get-a-gist)
 
 * [`PATCH /gists/{gist_id}`](/en/rest/gists/gists#update-a-gist)
 
 * [`DELETE /gists/{gist_id}`](/en/rest/gists/gists#delete-a-gist)
 
+* [`GET /gists/{gist_id}/comments`](/en/rest/gists/comments#list-gist-comments)
+
 * [`POST /gists/{gist_id}/comments`](/en/rest/gists/comments#create-a-gist-comment)
+
+* [`GET /gists/{gist_id}/comments/{comment_id}`](/en/rest/gists/comments#get-a-gist-comment)
 
 * [`PATCH /gists/{gist_id}/comments/{comment_id}`](/en/rest/gists/comments#update-a-gist-comment)
 
 * [`DELETE /gists/{gist_id}/comments/{comment_id}`](/en/rest/gists/comments#delete-a-gist-comment)
 
+* [`GET /gists/{gist_id}/commits`](/en/rest/gists/gists#list-gist-commits)
+
+* [`GET /gists/{gist_id}/forks`](/en/rest/gists/gists#list-gist-forks)
+
 * [`POST /gists/{gist_id}/forks`](/en/rest/gists/gists#fork-a-gist)
+
+* [`GET /gists/{gist_id}/star`](/en/rest/gists/gists#check-if-a-gist-is-starred)
 
 * [`PUT /gists/{gist_id}/star`](/en/rest/gists/gists#star-a-gist)
 
 * [`DELETE /gists/{gist_id}/star`](/en/rest/gists/gists#unstar-a-gist)
+
+* [`GET /gists/{gist_id}/{sha}`](/en/rest/gists/gists#get-a-gist-revision)
+
+* [`GET /users/{username}/gists`](/en/rest/gists/gists#list-gists-for-a-user)
 
 ## git
 
@@ -1108,6 +1162,12 @@ Your fine-grained personal access token can make requests to the following REST 
 * [`POST /repos/{owner}/{repo}/git/trees`](/en/rest/git/trees#create-a-tree)
 
 * [`GET /repos/{owner}/{repo}/git/trees/{tree_sha}`](/en/rest/git/trees#get-a-tree)
+
+## gitignore
+
+* [`GET /gitignore/templates`](/en/rest/gitignore/gitignore#get-all-gitignore-templates)
+
+* [`GET /gitignore/templates/{name}`](/en/rest/gitignore/gitignore#get-a-gitignore-template)
 
 ## interactions
 
@@ -1144,6 +1204,10 @@ Your fine-grained personal access token can make requests to the following REST 
 * [`DELETE /user/interaction-limits`](/en/rest/interactions/user#remove-interaction-restrictions-from-your-public-repositories)
 
 ## issues
+
+* [`GET /issues`](/en/rest/issues/issues#list-issues-assigned-to-the-authenticated-user)
+
+* [`GET /orgs/{org}/issues`](/en/rest/issues/issues#list-organization-issues-assigned-to-the-authenticated-user)
 
 * [`GET /repos/{owner}/{repo}/assignees`](/en/rest/issues/assignees#list-assignees)
 
@@ -1261,13 +1325,33 @@ Your fine-grained personal access token can make requests to the following REST 
 
 * [`GET /repos/{owner}/{repo}/milestones/{milestone_number}/labels`](/en/rest/issues/labels#list-labels-for-issues-in-a-milestone)
 
+* [`GET /user/issues`](/en/rest/issues/issues#list-user-account-issues-assigned-to-the-authenticated-user)
+
 ## licenses
+
+* [`GET /licenses`](/en/rest/licenses/licenses#get-all-commonly-used-licenses)
+
+* [`GET /licenses/{license}`](/en/rest/licenses/licenses#get-a-license)
 
 * [`GET /repos/{owner}/{repo}/license`](/en/rest/licenses/licenses#get-the-license-for-a-repository)
 
 ## markdown
 
 * [`POST /markdown`](/en/rest/markdown/markdown#render-a-markdown-document)
+
+* [`POST /markdown/raw`](/en/rest/markdown/markdown#render-a-markdown-document-in-raw-mode)
+
+## meta
+
+* [`GET /`](/en/rest/meta/meta#github-api-root)
+
+* [`GET /meta`](/en/rest/meta/meta#get-github-meta-information)
+
+* [`GET /octocat`](/en/rest/meta/meta#get-octocat)
+
+* [`GET /versions`](/en/rest/meta/meta#get-all-api-versions)
+
+* [`GET /zen`](/en/rest/meta/meta#get-the-zen-of-github)
 
 ## metrics
 
@@ -1311,6 +1395,10 @@ Your fine-grained personal access token can make requests to the following REST 
 
 ## orgs
 
+* [`GET /organizations`](/en/rest/orgs/orgs#list-organizations)
+
+* [`GET /orgs/{org}`](/en/rest/orgs/orgs#get-an-organization)
+
 * [`PATCH /orgs/{org}`](/en/rest/orgs/orgs#update-an-organization)
 
 * [`DELETE /orgs/{org}`](/en/rest/orgs/orgs#delete-an-organization)
@@ -1329,6 +1417,8 @@ Your fine-grained personal access token can make requests to the following REST 
 
 * [`GET /orgs/{org}/artifacts/{subject_digest}/metadata/storage-records`](/en/rest/orgs/artifact-metadata#list-artifact-storage-records)
 
+* [`POST /orgs/{org}/attestations/bulk-list`](/en/rest/orgs/attestations#list-attestations-by-bulk-subject-digests)
+
 * [`POST /orgs/{org}/attestations/delete-request`](/en/rest/orgs/attestations#delete-attestations-in-bulk)
 
 * [`DELETE /orgs/{org}/attestations/digest/{subject_digest}`](/en/rest/orgs/attestations#delete-attestations-by-subject-digest)
@@ -1336,6 +1426,8 @@ Your fine-grained personal access token can make requests to the following REST 
 * [`GET /orgs/{org}/attestations/repositories`](/en/rest/orgs/attestations#list-attestation-repositories)
 
 * [`DELETE /orgs/{org}/attestations/{attestation_id}`](/en/rest/orgs/attestations#delete-attestations-by-id)
+
+* [`GET /orgs/{org}/attestations/{subject_digest}`](/en/rest/orgs/attestations#list-attestations)
 
 * [`GET /orgs/{org}/blocks`](/en/rest/orgs/blocking#list-users-blocked-by-an-organization)
 
@@ -1527,9 +1619,23 @@ Your fine-grained personal access token can make requests to the following REST 
 
 * [`POST /orgs/{org}/{security_product}/{enablement}`](/en/rest/orgs/orgs#enable-or-disable-a-security-feature-for-an-organization)
 
+* [`GET /user/memberships/orgs`](/en/rest/orgs/members#list-organization-memberships-for-the-authenticated-user)
+
 * [`GET /user/memberships/orgs/{org}`](/en/rest/orgs/members#get-an-organization-membership-for-the-authenticated-user)
 
 * [`PATCH /user/memberships/orgs/{org}`](/en/rest/orgs/members#update-an-organization-membership-for-the-authenticated-user)
+
+* [`GET /user/orgs`](/en/rest/orgs/orgs#list-organizations-for-the-authenticated-user)
+
+* [`GET /users/{username}/orgs`](/en/rest/orgs/orgs#list-organizations-for-a-user)
+
+## packages
+
+* [`GET /orgs/{org}/docker/conflicts`](/en/rest/packages/packages#get-list-of-conflicting-packages-during-docker-migration-for-organization)
+
+* [`GET /user/docker/conflicts`](/en/rest/packages/packages#get-list-of-conflicting-packages-during-docker-migration-for-authenticated-user)
+
+* [`GET /users/{username}/docker/conflicts`](/en/rest/packages/packages#get-list-of-conflicting-packages-during-docker-migration-for-user)
 
 ## pages
 
@@ -1671,6 +1777,10 @@ Your fine-grained personal access token can make requests to the following REST 
 
 * [`POST /repos/{owner}/{repo}/stacks/{stack_number}/unstack`](/en/rest/pulls/stacks#remove-pull-requests-from-a-pull-request-stack)
 
+## rate-limit
+
+* [`GET /rate_limit`](/en/rest/rate-limit/rate-limit#get-rate-limit-status-for-the-authenticated-user)
+
 ## reactions
 
 * [`GET /repos/{owner}/{repo}/comments/{comment_id}/reactions`](/en/rest/reactions/reactions#list-reactions-for-a-commit-comment)
@@ -1696,6 +1806,12 @@ Your fine-grained personal access token can make requests to the following REST 
 * [`POST /repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions`](/en/rest/reactions/reactions#create-reaction-for-a-pull-request-review-comment)
 
 * [`DELETE /repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions/{reaction_id}`](/en/rest/reactions/reactions#delete-a-pull-request-comment-reaction)
+
+* [`GET /repos/{owner}/{repo}/releases/{release_id}/reactions`](/en/rest/reactions/reactions#list-reactions-for-a-release)
+
+* [`POST /repos/{owner}/{repo}/releases/{release_id}/reactions`](/en/rest/reactions/reactions#create-reaction-for-a-release)
+
+* [`DELETE /repos/{owner}/{repo}/releases/{release_id}/reactions/{reaction_id}`](/en/rest/reactions/reactions#delete-a-release-reaction)
 
 ## releases
 
@@ -1871,7 +1987,19 @@ Your fine-grained personal access token can make requests to the following REST 
 
 ## search
 
+* [`GET /search/code`](/en/rest/search/search#search-code)
+
+* [`GET /search/commits`](/en/rest/search/search#search-commits)
+
+* [`GET /search/issues`](/en/rest/search/search#search-issues-and-pull-requests)
+
 * [`GET /search/labels`](/en/rest/search/search#search-labels)
+
+* [`GET /search/repositories`](/en/rest/search/search#search-repositories)
+
+* [`GET /search/topics`](/en/rest/search/search#search-topics)
+
+* [`GET /search/users`](/en/rest/search/search#search-users)
 
 ## secret-scanning
 
@@ -1910,6 +2038,10 @@ Your fine-grained personal access token can make requests to the following REST 
 * [`GET /repos/{owner}/{repo}/secret-scanning/scan-history`](/en/rest/secret-scanning/secret-scanning#get-secret-scanning-scan-history-for-a-repository)
 
 ## security-advisories
+
+* [`GET /advisories`](/en/rest/security-advisories/global-advisories#list-global-security-advisories)
+
+* [`GET /advisories/{ghsa_id}`](/en/rest/security-advisories/global-advisories#get-a-global-security-advisory)
 
 * [`GET /orgs/{org}/security-advisories`](/en/rest/security-advisories/repository-advisories#list-repository-security-advisories-for-an-organization)
 
@@ -1991,7 +2123,11 @@ Your fine-grained personal access token can make requests to the following REST 
 
 * [`GET /teams/{team_id}/teams`](/en/rest/teams/teams#list-child-teams-legacy)
 
+* [`GET /user/teams`](/en/rest/teams/teams#list-teams-for-the-authenticated-user)
+
 ## users
+
+* [`GET /user`](/en/rest/users/users#get-the-authenticated-user)
 
 * [`PATCH /user`](/en/rest/users/users#update-the-authenticated-user)
 
@@ -2039,6 +2175,8 @@ Your fine-grained personal access token can make requests to the following REST 
 
 * [`GET /user/public_emails`](/en/rest/users/emails#list-public-email-addresses-for-the-authenticated-user)
 
+* [`GET /user/social_accounts`](/en/rest/users/social-accounts#list-social-accounts-for-the-authenticated-user)
+
 * [`POST /user/social_accounts`](/en/rest/users/social-accounts#add-social-accounts-for-the-authenticated-user)
 
 * [`DELETE /user/social_accounts`](/en/rest/users/social-accounts#delete-social-accounts-for-the-authenticated-user)
@@ -2051,10 +2189,32 @@ Your fine-grained personal access token can make requests to the following REST 
 
 * [`DELETE /user/ssh_signing_keys/{ssh_signing_key_id}`](/en/rest/users/ssh-signing-keys#delete-an-ssh-signing-key-for-the-authenticated-user)
 
+* [`GET /user/{account_id}`](/en/rest/users/users#get-a-user-using-their-id)
+
+* [`GET /users`](/en/rest/users/users#list-users)
+
+* [`GET /users/{username}`](/en/rest/users/users#get-a-user)
+
+* [`POST /users/{username}/attestations/bulk-list`](/en/rest/users/attestations#list-attestations-by-bulk-subject-digests)
+
 * [`POST /users/{username}/attestations/delete-request`](/en/rest/users/attestations#delete-attestations-in-bulk)
 
 * [`DELETE /users/{username}/attestations/digest/{subject_digest}`](/en/rest/users/attestations#delete-attestations-by-subject-digest)
 
 * [`DELETE /users/{username}/attestations/{attestation_id}`](/en/rest/users/attestations#delete-attestations-by-id)
 
+* [`GET /users/{username}/attestations/{subject_digest}`](/en/rest/users/attestations#list-attestations)
+
+* [`GET /users/{username}/followers`](/en/rest/users/followers#list-followers-of-a-user)
+
+* [`GET /users/{username}/following`](/en/rest/users/followers#list-the-people-a-user-follows)
+
+* [`GET /users/{username}/following/{target_user}`](/en/rest/users/followers#check-if-a-user-follows-another-user)
+
+* [`GET /users/{username}/gpg_keys`](/en/rest/users/gpg-keys#list-gpg-keys-for-a-user)
+
 * [`GET /users/{username}/keys`](/en/rest/users/keys#list-public-keys-for-a-user)
+
+* [`GET /users/{username}/social_accounts`](/en/rest/users/social-accounts#list-social-accounts-for-a-user)
+
+* [`GET /users/{username}/ssh_signing_keys`](/en/rest/users/ssh-signing-keys#list-ssh-signing-keys-for-a-user)

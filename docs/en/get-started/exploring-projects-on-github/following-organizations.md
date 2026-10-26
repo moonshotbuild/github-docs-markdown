@@ -17,7 +17,7 @@ breadcrumbs:
 
 You can follow organizations on GitHub to receive notifications about their activity.
 
-> \[!NOTE]
+> [!NOTE]
 > The ability to follow organizations is currently in public preview and subject to change.
 
 ## About followers

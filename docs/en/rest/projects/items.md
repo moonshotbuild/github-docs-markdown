@@ -142,6 +142,24 @@ Add an issue or pull request item to the specified organization owned project.
 - **`project_number`** (integer) (required)
   The project's number.
 
+#### Body parameters
+
+- **`type`** (string) (required)
+  The type of item to add to the project. Must be either Issue or PullRequest.
+  Can be one of: `Issue`, `PullRequest`
+
+- **`id`** (integer)
+  The unique identifier of the issue or pull request to add to the project.
+
+- **`owner`** (string)
+  The repository owner login.
+
+- **`repo`** (string)
+  The repository name.
+
+- **`number`** (integer)
+  The issue or pull request number.
+
 ### HTTP response status codes
 
 - **201** - Created
@@ -2530,6 +2548,24 @@ Add an issue or pull request item to the specified user owned project.
 
 - **`project_number`** (integer) (required)
   The project's number.
+
+#### Body parameters
+
+- **`type`** (string) (required)
+  The type of item to add to the project. Must be either Issue or PullRequest.
+  Can be one of: `Issue`, `PullRequest`
+
+- **`id`** (integer)
+  The unique identifier of the issue or pull request to add to the project.
+
+- **`owner`** (string)
+  The repository owner login.
+
+- **`repo`** (string)
+  The repository name.
+
+- **`number`** (integer)
+  The issue or pull request number.
 
 ### HTTP response status codes
 

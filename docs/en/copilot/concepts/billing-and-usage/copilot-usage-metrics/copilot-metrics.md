@@ -50,6 +50,20 @@ The data **does not include** activity from other Copilot surfaces, such as:
 
 License and seat management data are not included in Copilot usage metrics reports. To view or manage license assignments, use the Copilot user management API, which is the source of truth for license and seat information. See [REST API endpoints for Copilot user management](/en/rest/copilot/copilot-user-management).
 
+### Troubleshooting missing usage data
+
+Detailed breakdowns depend on client-side telemetry from the IDE or Copilot CLI. This telemetry provides data about features, languages, models, accepted suggestions, and lines of code. Server-side telemetry can show that a user was active, but it can't observe what happens in the editor.
+
+If client-side telemetry is missing, reports may contain lower numbers or empty breakdowns even when server-side data shows activity. Common causes include:
+
+| Cause                                                                                                   | Effect on your reports                                                                                                                                                    | What you can check                                                                                                                 |
+| :------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------- |
+| Telemetry is turned off in the IDE, for example with the `telemetry.telemetryLevel` setting in VS Code. | The IDE sends no detailed activity. The user may still be counted as active through server-side telemetry, but feature, language, and lines of code breakdowns are empty. | Confirm that IDE telemetry is enabled for your developers.                                                                         |
+| A network proxy, firewall, or VPN blocks the Copilot telemetry endpoint.                                | Same as when telemetry is turned off.                                                                                                                                     | Allow the Copilot client telemetry endpoint. See [Copilot allowlist reference](/en/copilot/reference/copilot-allowlist-reference). |
+| The client isn't a supported IDE and doesn't send Copilot telemetry.                                    | The user may be counted as active through server-side telemetry, but the client doesn't appear in `totals_by_ide` or detailed breakdowns.                                 | Use a supported IDE for complete metrics.                                                                                          |
+
+If a gap persists after you check the causes above, contact us through the [GitHub Support portal](https://support.github.com) and include the affected users, IDEs, versions, and dates.
+
 ## Why Copilot usage metrics may differ across API resources
 
 The following API resources expose Copilot-related data, but they are not interchangeable and should not be compared directly. Each API resource is designed for a specific use case and data model, and differences in totals or coverage are expected. Use this table to understand which API resource best fits your reporting needs.
@@ -86,19 +100,47 @@ In short: users must be licensed somewhere in the enterprise to appear in its me
 
 To be included in the Copilot usage metrics, end users must use one of the following IDEs and Copilot Chat extension versions.
 
+Older versions may not send all the events that usage metrics rely on, or may attribute activity to the wrong IDE. Keep IDEs and Copilot extensions current, and use device management tooling to enforce these minimum versions where possible.
+
 | IDE                  | Minimum IDE version | Minimum Copilot Chat extension version |
 | :------------------- | :------------------ | :------------------------------------- |
 | Eclipse              | 4.31                | 0.9.3.202507240902                     |
 | JetBrains / IntelliJ | 2024.2.6            | 1.5.52-241                             |
 | Visual Studio        | 17.14.13            | 18.0.471.29466                         |
 | VS Code              | 1.107.1             | 0.35.3                                 |
-| Xcode                | 13.2.1              | 0.40.0                                 |
+| Xcode                | 14.3.1              | 0.40.0                                 |
+
+In per-user reports, each `totals_by_ide` entry includes `last_known_ide_version` and `last_known_plugin_version`. Use these fields to identify developers who need to update. See [Data available in Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/copilot-usage-metrics).
+
+### Version requirements for SDK-based agent activity
+
+Some IDEs run Copilot agent sessions through the Copilot SDK. Some versions of these IDEs don't identify themselves when they send agent activity, so that activity is left out of usage metrics. This causes agent interactions and agent lines of code to be undercounted. To include this activity, end users must use one of the following versions or later:
+
+| IDE                               | Minimum version for SDK-based agent activity | Affected versions                                |
+| :-------------------------------- | :------------------------------------------- | :----------------------------------------------- |
+| VS Code                           | 1.139.0                                      | 1.134 through 1.138, when using the agent window |
+| Copilot plugin for JetBrains IDEs | 1.20.0                                       | 1.15.0 through 1.19.x                            |
+| Visual Studio                     | 18.12                                        | Insiders (preview) builds before 18.12           |
+
+If you're planning IDE updates, move developers directly to these versions or later. Generally available versions of Visual Studio aren't affected.
+
+For JetBrains IDEs, avoid Copilot plugin versions 1.15.0 through 1.19.x.
+
+Eclipse and Xcode don't run agent sessions through the Copilot SDK, so they aren't affected.
+
+Missing data can't be backfilled, because activity from affected versions doesn't identify which IDE it came from.
+
+Some of this activity was counted as Copilot CLI activity instead, which can inflate Copilot CLI metrics. This clears up as developers update the affected IDEs, but earlier Copilot CLI metrics can't be corrected. Copilot CLI users don't need to update.
+
+This issue affects only how activity is attributed in usage metrics. Billing is not affected.
 
 ## Data freshness
 
 The data in the dashboards and API reports is updated on a regular schedule.
 
 You can expect data to be available within **two full days**. This means that data for a given day is processed and made available within two full UTC days after that day closes.
+
+Telemetry that is still being processed can make the most recent days appear incomplete. Wait for the processing window to close before investigating a gap.
 
 ## What does the data measure?
 
@@ -113,6 +155,8 @@ Copilot usage metrics can be grouped into a few main categories: Adoption, engag
 **Lines of Code (LoC) metrics** measure the number of lines Copilot suggested, added, or deleted in the editor, providing a directional view of Copilot’s tangible output. For example, "Lines added" shows how much code was actually accepted and inserted into the editor.
 
 **Pull request lifecycle metrics** measure how Copilot activity relates to pull request outcomes and delivery flow. These metrics include pull request creation and merge counts, median time to merge, and review suggestion activity. By comparing overall pull request activity with pull requests created by Copilot, you can evaluate how AI-assisted workflows influence throughput and cycle time at the organization or enterprise level.
+
+Model breakdowns can include models that developers didn't select directly. For example, Copilot can use other models for Auto model selection or for background tasks.
 
 ### Understanding adoption cohorts
 
@@ -144,6 +188,53 @@ The impact dashboard's **adoption multiplier** divides the average amount of pul
 This shows the relative impact of deeper adoption, independent of how many users fall into each phase. This is a measurement to understand the potential lift that becoming a more engaged user can provide.
 
 For example, if users in the engaged cohorts averaged 20 pull requests/user/month and the passive cohort averaged 10, then the equation is 20 / 10 = 2x multiplier.
+
+### Understanding industry comparisons
+
+The impact dashboard's **Industry comparison** widget compares two measures for your enterprise, or for an organization that isn't owned by an enterprise, with aggregated results from participating peers:
+
+* **Agentic adoption**: The percentage of active users in your enterprise or organization who are agent-first or multi-agent users.
+* **Leverage**: The ratio between the pull request merge rate for agentic users and the rate for non-agentic users (per user per month). For example, a leverage score of 4.1x means that agentic users merged pull requests at 4.1 times the rate of non-agentic users during the reporting period.
+
+Each comparison covers the 28-day reporting period shown in the widget. Peer cohorts use the company size and industry selected when you opt in. Company size options are 1–999, 1,000–4,999, and 5,000+ employees, and there are ten industry options. These values are self-reported and aren't verified. You can compare with peers in your selected industry or across all industries.
+
+When enough eligible peers are available, each card shows:
+
+* Where your score ranks within the cohort.
+* The difference between your score and the peer median.
+* The difference between your score and the top decile.
+
+The top-decile comparison requires a larger peer cohort than the median comparison, so the median can be available when the top decile isn't. Enterprises and organizations with very few active users can view comparisons, but they aren't counted toward any peer cohort.
+
+The chart plots your enterprise's score against the distribution of peer scores and marks the peer median and top decile. Some markers may be unavailable if the cohort does not contain enough eligible peers.
+
+For comparisons within your selected industry, the dashboard expands the peer cohort in this order until enough eligible peers are available:
+
+1. Participating peers with the same company size and industry.
+2. Participating peers with the same company size, across all industries.
+
+Comparisons always use peers with the same company size. The widget shows which peer cohort was used, so you can tell when a comparison has been expanded beyond your selected industry.
+
+For GitHub Enterprise Cloud with data residency, peer cohorts include only participants hosted in the same data residency region. The dashboard applies the same cohort expansion within that region and does not combine data across regions.
+
+The dashboard does not use a cohort based only on industry. Comparisons across all industries use participating peers, rather than all GitHub users or enterprises.
+
+Participation is controlled by the **Copilot metrics industry comparison** policy and is disabled by default. Enterprises, and organizations that aren't owned by an enterprise, can participate. Organizations owned by an enterprise participate through their enterprise. Enterprises used only to assign Copilot Business licenses can't participate, because leverage can't be calculated for them. Enabling the policy both contributes your aggregated metrics to peer cohorts and lets you view comparisons. For details, see [Viewing the Copilot impact dashboard](/en/copilot/how-tos/administer-copilot/view-impact-dashboard#opting-in-to-industry-comparisons).
+
+Rankings appear only after enough enterprises and organizations have opted in to form a peer cohort. If there are not enough eligible peers after the dashboard applies the fallback cohorts, it doesn't show a ranking. A ranking is also unavailable when your own score can't be calculated, such as when there are no active users in the reporting period or no non-agentic users to provide a baseline for leverage.
+
+#### How industry comparisons protect your data
+
+* **Opt-in only.** Nothing is contributed until an enterprise owner, or the owner of an organization that isn't owned by an enterprise, enables the **Copilot metrics industry comparison** policy. Enterprises used only to assign Copilot Business licenses never contribute.
+* **Only two summary scores are contributed.** Each participant contributes its agentic adoption and leverage scores for the 28-day reporting period. No user names, user-level activity, code, repository content, or pull request content is contributed.
+* **Results are aggregated.** Your scores are combined with those of other participants to calculate cohort statistics, such as the median and top decile. Other participants can't see your enterprise or organization name, which enterprises and organizations participate, or how many participants are in a cohort.
+* **Cohort statistics aren't linked to participants.** When cohort statistics are calculated, participants' scores are combined into results that are stored only by date, company size, and industry. These results contain no enterprise, organization, or user identifiers, so they can't be linked back to a specific participant.
+* **Rankings are calculated on GitHub's servers.** Your own scores are stored with the rest of your Copilot usage metrics. To show your ranking, GitHub compares your scores with the cohort statistics for the same reporting period. Other participants' scores are never looked up or compared individually.
+* **Small cohorts are suppressed.** A cohort's statistics are shown only when it contains enough participants and users. Enterprises and organizations with very few active users aren't counted toward any cohort, so a small number of developers can't shape the results.
+* **Company size and industry stay private.** The company size and industry you select are used only to group participants into cohorts. They aren't shown to other participants or verified by GitHub.
+* **Data residency is respected.** For GitHub Enterprise Cloud with data residency, data is never combined across data residency regions.
+* **Results stay in the dashboard.** Industry comparisons aren't included in downloads, NDJSON exports, or the Copilot usage metrics API.
+* **Aggregated results are short-lived.** Cohort statistics are recalculated daily and deleted after 30 days. If you opt out, the dashboard stops showing comparisons immediately, and your data is excluded from cohorts starting with the next daily update. Each daily calculation uses your current opt-in setting, so if earlier results are recalculated after you opt out, your data isn't added back.
 
 ### Estimating potential return on investment
 

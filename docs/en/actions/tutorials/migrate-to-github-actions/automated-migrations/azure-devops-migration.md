@@ -33,7 +33,7 @@ The instructions below will guide you through configuring your environment to us
   * Docker is [installed](https://docs.docker.com/get-docker/) and running.
 
   * [GitHub CLI](https://cli.github.com) is installed.
-  > \[!NOTE]
+  > [!NOTE]
   > The GitHub Actions Importer container and CLI do not need to be installed on the same server as your CI platform.
 
 ### Limitations
@@ -631,7 +631,7 @@ GitHub Actions Importer supports the parameters listed in the table below.
 | stage           | `job`                                      | Partially supported |
 | stageList       | `job`                                      | Partially supported |
 
-> \[!NOTE]
+> [!NOTE]
 > A template used under the `step` key with this parameter type is only serialized as a composite action if the steps are used at the beginning or end of the template steps. A template used under the `stage`, `deployment`, and `job` keys with this parameter type are not transformed into a reusable workflow, and instead are serialized as a standalone workflow.
 
 ## Legal notice

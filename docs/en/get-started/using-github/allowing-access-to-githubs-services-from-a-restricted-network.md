@@ -25,7 +25,7 @@ In rare cases, an institution's network access policy may restrict access to spe
 
 You can use the REST API to retrieve a list of GitHub's domain names.
 
-> \[!WARNING]
+> [!WARNING]
 > The list of domains from the REST API is not intended to be comprehensive. If you block access to services using DNS, but selectively allow access to GitHub's domain names, any or all of GitHub and related services may not function properly or at all for your end users.
 
 For more information, see [REST API endpoints for meta data](/en/rest/meta).

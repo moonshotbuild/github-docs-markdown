@@ -56,7 +56,7 @@ For more information, see [Asking GitHub Copilot questions in GitHub](/en/copilo
 
 ## Step 2: Assign an issue to Copilot
 
-> \[!NOTE]
+> [!NOTE]
 > To use Copilot cloud agent in this quickstart, upgrade to a paid plan such as [Copilot Pro](https://github.com/github-copilot/signup?ref_product=copilot\&ref_type=purchase\&ref_style=text\&ref_plan=pro).
 >
 > Without access to a paid plan, you can instead learn about the remaining steps by using Copilot in your preferred editor. See [Quickstart for using GitHub Copilot in your IDE](/en/copilot/get-started/quickstart-for-using-github-copilot-in-your-ide).

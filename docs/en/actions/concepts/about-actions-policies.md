@@ -38,11 +38,11 @@ When enforced, disallowed workflow runs will fail with an error. For example:
 Event 'workflow_dispatch' is not allowed to trigger Actions workflows. Workflow file: '.github/workflows/0-welcome.yml'.
 ```
 
-<!-- expires 2026-11-02 -->
+<!-- expires 2026-12-02 -->
 
-> [!NOTE] GitHub has added a default policy that will block the `pull_request_target` event in public repositories. This policy will be enforced on November 2, 2026. See [Securely using pull\_request\_target](/en/actions/reference/security/securely-using-pull_request_target#default-policy-for-pull_request_target).
+> [!NOTE] GitHub has added a default policy that will block the `pull_request_target` event in public repositories. This policy will be enforced on December 2, 2026. See [Securely using pull\_request\_target](/en/actions/reference/security/securely-using-pull_request_target#default-policy-for-pull_request_target).
 
-<!-- end expires 2026-11-02 -->
+<!-- end expires 2026-12-02 -->
 
 ### Available rules
 

@@ -33,7 +33,7 @@ For more information on creating links, see [Basic writing and formatting syntax
 
 Within conversations on GitHub, references to issues and pull requests are automatically converted to shortened links.
 
-> \[!NOTE]
+> [!NOTE]
 > Autolinked references are not created in wikis or files in a repository.
 
 | Reference type                                                   | Raw reference                                    | Short link                                                                             |
@@ -56,7 +56,7 @@ The URL of a label can be found by navigating to the labels page and clicking on
 https://github.com/github/docs/labels/enhancement
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > If the label name contains a period (`.`), the label will not automatically render from the label URL.
 
 ## Commit SHAs
@@ -83,7 +83,7 @@ If custom autolink references are configured for a repository, then references t
 By default, references generate a backlink. For example, manually linking to an issue in a pull request will automatically generate another link from the issue *back* to the pull request.
 To avoid this behavior, you can use `redirect.github.com` instead of `github.com` when constructing the URL in your reference. If you do use a `redirect.github.com` URL in your reference link, no pop-up window will appear when hovering over it.
 
-> \[!NOTE]
+> [!NOTE]
 > This method is not supported in GitHub Enterprise Cloud with Data Residency (`ghe.com`).
 
 ## Further reading

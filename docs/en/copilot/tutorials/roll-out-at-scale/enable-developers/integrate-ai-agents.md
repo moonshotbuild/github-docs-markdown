@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents"
-title: "Integrating agentic AI into your enterprise's software development lifecycle"
-intro: "See how agents can boost productivity across your enterprise."
+title: "Planning an AI agent rollout in your enterprise"
+intro: "Identify where AI agents can help your teams, and plan the governance and support needed to adopt them across your enterprise."
 product: "GitHub Copilot"
 document_type: "article"
 breadcrumbs:
@@ -13,13 +13,15 @@ breadcrumbs:
     href: "/en/copilot/tutorials/roll-out-at-scale"
   - title: "Enable developers"
     href: "/en/copilot/tutorials/roll-out-at-scale/enable-developers"
-  - title: "Integrate AI agents"
+  - title: "Plan an AI agent rollout"
     href: "/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents"
 ---
 
-# Integrating agentic AI into your enterprise's software development lifecycle
+# Planning an AI agent rollout in your enterprise
 
-See how agents can boost productivity across your enterprise.
+Identify where AI agents can help your teams, and plan the governance and support needed to adopt them across your enterprise.
+
+This tutorial helps enterprise owners, AI managers, and engineering leaders plan an AI agent rollout. You'll identify which features to enable, which controls to review, and which teams to involve before rollout.
 
 ## About AI agents on GitHub
 
@@ -38,7 +40,7 @@ GitHub Copilot's agentic features are integrated into GitHub's platform, providi
 
 You're an engineering manager at Mona's, a boutique umbrella retailer. Your team is adding an **AI-powered widget** to the online store that recommends umbrellas based on the user's location and local weather.
 
-To meet a tight deadline, you want to speed up each stage for both developers and non-developers, while keeping maintenance manageable after launch.
+To meet a tight deadline, you want to speed up each stage for both developers and non-developers, while keeping maintenance manageable after launch. You work with your enterprise's administrators to decide which features to make available and how to govern their use.
 
 > [!NOTE] GitHub is continually expanding its AI-powered platform. Some of the features described in this article are in public preview, and may not be enabled for enterprises by default. You will find resources for each feature in the [Get started with agentic AI](#get-started-with-agentic-ai) section.
 
@@ -112,3 +114,11 @@ To meet a tight deadline, you want to speed up each stage for both developers an
 2. A security manager requests **Copilot Autofix** to automatically suggest a fix for the vulnerability, which a developer reviews and approves.
 
    ![Screenshot of a code scanning alert on GitHub.com. A button labeled "Generate fix" is outlined in orange.](/assets/images/help/copilot/sdlc-guide/autofix.png)
+
+## Plan your rollout
+
+Use the example above to identify where AI agents can help your teams. Work with your enterprise's administrators to plan for:
+
+* **Pilot teams and tasks**: Choose a team and a workflow to try first, such as backlog maintenance or pull request review.
+* **Governance requirements**: Identify the policies, approved MCP servers, and repository protections needed for that workflow.
+* **Rollout responsibilities**: Agree who will configure enterprise policies, prepare repositories, train developers, and review the pilot's results.

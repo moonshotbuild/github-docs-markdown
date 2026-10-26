@@ -124,6 +124,44 @@ Delete artifact attestations in bulk by either subject digests or unique ID.
 
 - **404** - Resource not found
 
+### Code examples
+
+#### Delete by subject digests
+
+**Request:**
+
+```curl
+curl -L \
+  -X POST \
+  https://api.github.com/users/USERNAME/attestations/delete-request \
+  -d '{
+  "subject_digests": [
+    "sha256:abc123",
+    "sha512:def456"
+  ]
+}'
+```
+
+**Response schema (Status: 200):**
+
+#### Delete by attestation IDs
+
+**Request:**
+
+```curl
+curl -L \
+  -X POST \
+  https://api.github.com/users/USERNAME/attestations/delete-request \
+  -d '{
+  "attestation_ids": [
+    111,
+    222
+  ]
+}'
+```
+
+**Response schema (Status: 200):**
+
 ## Delete attestations by subject digest
 
 ```

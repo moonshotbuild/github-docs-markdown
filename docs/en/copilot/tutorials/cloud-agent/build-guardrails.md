@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/tutorials/cloud-agent/build-guardrails"
-title: "Building guardrails for GitHub Copilot cloud agent"
-intro: "Configure your enterprise so that Copilot cloud agent will operate in a secure, compliant environment."
+title: "Building guardrails for GitHub Copilot cloud agent in your enterprise"
+intro: "Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot cloud agent."
 product: "GitHub Copilot"
 document_type: "article"
 breadcrumbs:
@@ -11,13 +11,15 @@ breadcrumbs:
     href: "/en/copilot/tutorials"
   - title: "Cloud agent"
     href: "/en/copilot/tutorials/cloud-agent"
-  - title: "Build guardrails"
+  - title: "Build enterprise guardrails"
     href: "/en/copilot/tutorials/cloud-agent/build-guardrails"
 ---
 
-# Building guardrails for GitHub Copilot cloud agent
+# Building guardrails for GitHub Copilot cloud agent in your enterprise
 
-Configure your enterprise so that Copilot cloud agent will operate in a secure, compliant environment.
+Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot cloud agent.
+
+This tutorial is for enterprise owners, AI managers, and organization owners preparing to enable Copilot cloud agent for their teams.
 
 Before you enable Copilot cloud agent, it is good practice to set up your enterprise so you can be confident Copilot will operate within secure, predictable guardrails.
 

@@ -57,17 +57,17 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
 ### Preparing for agents
 
-* [Integrating agentic AI into your enterprise's software development lifecycle](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
+* [Planning an AI agent rollout in your enterprise](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
 
-  See how agents can boost productivity across your enterprise.
+  Identify where AI agents can help your teams, and plan the governance and support needed to adopt them across your enterprise.
 
 * [Agent management for enterprises](/en/copilot/concepts/enterprise/agent-management)
 
   Maintain your enterprise's security and compliance standards and supercharge your developers by managing agents with AI Controls.
 
-* [Building guardrails for GitHub Copilot cloud agent](/en/copilot/tutorials/cloud-agent/build-guardrails)
+* [Building guardrails for GitHub Copilot cloud agent in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails)
 
-  Configure your enterprise so that Copilot cloud agent will operate in a secure, compliant environment.
+  Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot cloud agent.
 
 * [Configuring an MCP server allowlist for your enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-enterprise-allowlist)
 
@@ -95,9 +95,9 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
   Control the use of Copilot CLI within your enterprise.
 
-* [Using hooks with Copilot CLI for predictable, policy-compliant execution](/en/copilot/tutorials/copilot-cli-hooks)
+* [Rolling out Copilot CLI hooks for your teams](/en/copilot/tutorials/copilot-cli-hooks)
 
-  Use hooks to log user prompts and control which tools Copilot CLI can run in a repository, so teams can automate safely within your organization's security and compliance requirements.
+  Give your platform teams visibility into Copilot CLI usage and help developers follow organizational policies with repository-scoped hooks.
 
 * [Enabling GitHub Copilot code review in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/enable-copilot-code-review)
 

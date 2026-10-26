@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/pages/pages"
 ---
 
-# REST API endpoints for {% data variables.product.prodname_pages %}
+# REST API endpoints for GitHub Pages
 
 Use the REST API to interact with GitHub Pages sites and builds.
 

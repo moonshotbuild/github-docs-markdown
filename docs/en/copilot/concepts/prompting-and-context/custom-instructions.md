@@ -27,7 +27,7 @@ Prompt files provide another way to give Copilot task-specific instructions and 
 
 The types of custom instructions available, and the Copilot features that use them, vary by client and surface (GitHub.com, Visual Studio Code, Visual Studio, JetBrains IDEs, Xcode, and Eclipse). To check which types your environment supports, see [Support for different types of custom instructions](/en/copilot/reference/custom-instructions-support). For supported IDEs and versions, see [Copilot feature matrix](/en/copilot/reference/copilot-feature-matrix).
 
-> \[!NOTE]
+> [!NOTE]
 > Due to the non-deterministic nature of AI, Copilot may not always follow your custom instructions in exactly the same way every time they are used.
 
 ## Types of custom instructions
@@ -80,7 +80,7 @@ Which types of repository custom instructions you can use (repository-wide, path
 
 ## About organization custom instructions
 
-> \[!NOTE]
+> [!NOTE]
 > **Support:** Organization custom instructions are currently only supported for Copilot Chat on GitHub.com, Copilot code review on GitHub.com and Copilot cloud agent on GitHub.com.
 
 Organization owners can add instructions to tailor Copilot to the needs and preferences of their organization. These instructions are used for all members of the organization, regardless of whether they receive their Copilot subscription from that organization.
@@ -135,7 +135,7 @@ For example:
 
 Instructions about testing, commit messages, or code review can provide useful context. However, the Copilot features that use a particular instruction vary by client and surface, and custom instructions do not guarantee that generated content will comply with a policy.
 
-> \[!NOTE]
+> [!NOTE]
 > When reviewing a pull request, Copilot reads repository custom instructions, agent instructions, and agent skills from the head branch (the branch with your changes), not the base branch. For example, when merging `my-feature-branch` into `main`, Copilot uses the instructions and skills in `my-feature-branch`, so you can test changes to them in the same pull request without merging them first.
 
 ## Writing effective custom instructions

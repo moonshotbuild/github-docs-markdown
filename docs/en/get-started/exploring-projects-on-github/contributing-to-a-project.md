@@ -40,7 +40,7 @@ This tutorial uses [the Spoon-Knife project](https://github.com/octocat/Spoon-Kn
 
    ![Screenshot of the main page of repository. A button, labeled with a fork icon and "Fork 59.3k," is outlined in dark orange.](/assets/images/help/repository/fork-button.png)
 3. Under "Owner," select the dropdown menu and click an owner for the forked repository.
-   > \[!NOTE] If your username is grayed out, it's because the fork already exists. Instead, you should bring your existing fork up to date. For more information, see [Syncing a fork](/en/pull-requests/how-tos/work-with-forks/syncing-a-fork#syncing-a-fork-branch-from-the-web-ui).
+   > [!NOTE] If your username is grayed out, it's because the fork already exists. Instead, you should bring your existing fork up to date. For more information, see [Syncing a fork](/en/pull-requests/how-tos/work-with-forks/syncing-a-fork#syncing-a-fork-branch-from-the-web-ui).
 4. By default, forks are named the same as their upstream repositories. Optionally, to further distinguish your fork, in the "Repository name" field, type a name.
 5. Optionally, in the "Description" field, type a description of your fork.
 6. Optionally, select **Copy the DEFAULT branch only**.
@@ -48,7 +48,7 @@ This tutorial uses [the Spoon-Knife project](https://github.com/octocat/Spoon-Kn
    For many forking scenarios, such as contributing to open-source projects, you only need to copy the default branch. If you do not select this option, all branches will be copied into the new fork.
 7. Click **Create fork**.
 
-> \[!NOTE]
+> [!NOTE]
 > If you want to copy additional branches from the upstream repository, you can do so from the **Branches** page. For more information, see [Managing branches within your repository](/en/pull-requests/how-tos/commit-changes/managing-branches-within-your-repository).
 
 ## Cloning a fork to your computer

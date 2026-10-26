@@ -52,7 +52,7 @@ If Copilot included a link to search results, follow the link. If not, form your
 3. Optionally, under "Repositories options", next to "With this many stars", type `>150`. This will help you find popular repositories that are likely well maintained.
 4. Back at the top of the page, click **Search**.
 
-> \[!TIP]
+> [!TIP]
 > We can further narrow down your search results by adding topics and text to the search query. For example, `topic:jekyll "blog"` would return repositories the owner has classified as related to Jekyll and with the word "blog" in the repository name or description. For a list of popular topics, see [Topics on GitHub](https://github.com/topics).
 
 ### Choosing a project
@@ -127,7 +127,7 @@ Let's ask Copilot to explain what's happening on line 11, with the `{% include %
 
 Copilot will explain that the line is including the `license-overview.html` file and passing along `"agpl-3.0"` as the `license-id` to display.
 
-> \[!TIP]
+> [!TIP]
 > If you don't understand a response from Copilot Chat, you can always ask it to simplify the answer or expand on a particular part of it.
 
 ### Reading comments
@@ -148,7 +148,7 @@ If you use a search engine to search for the programming language and the functi
 
 For our example, searching for `jekyll include` in a search engine should return the ["Includes" documentation](https://jekyllrb.com/docs/includes/) in the Jekyll documentation. If we read further into Jekyll's documentation, we can see that the licenses themselves are a [collection](https://jekyllrb.com/docs/collections/) in the [`_licenses`](https://github.com/github/choosealicense.com/tree/gh-pages/_licenses) directory.
 
-> \[!TIP] If you can't find a function in a programming language reference, it's likely that the function is defined in the codebase itself. Ask [GitHub Copilot](https://github.com/copilot) to locate it.
+> [!TIP] If you can't find a function in a programming language reference, it's likely that the function is defined in the codebase itself. Ask [GitHub Copilot](https://github.com/copilot) to locate it.
 
 To summarize what we've learned: the [`licenses.html`](https://github.com/github/choosealicense.com/blob/gh-pages/licenses.html) file includes [`/_includes/license-overview.html`](https://github.com/github/choosealicense.com/blob/gh-pages/_includes/license-overview.html) for each license shown. The [`/_includes/license-overview.html`](https://github.com/github/choosealicense.com/blob/gh-pages/_includes/license-overview.html) file matches the `license-id` provided to a license in the [`/_licenses`](https://github.com/github/choosealicense.com/tree/gh-pages/_licenses) collection and renders the details.
 

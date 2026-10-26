@@ -532,6 +532,45 @@ OAuth app tokens and personal access tokens (classic) need the admin:org scope t
 
 - **422** - Validation failed, or the endpoint has been spammed.
 
+### Code examples
+
+#### Update a secret-based private registry
+
+**Request:**
+
+```curl
+curl -L \
+  -X PATCH \
+  https://api.github.com/orgs/ORG/private-registries/SECRET_NAME \
+  -d '{
+  "username": "monalisa",
+  "encrypted_value": "c2VjcmV0",
+  "key_id": "012345678912345678"
+}'
+```
+
+**Response schema (Status: 204):**
+
+#### Update an OIDC private registry (Azure)
+
+**Request:**
+
+```curl
+curl -L \
+  -X PATCH \
+  https://api.github.com/orgs/ORG/private-registries/SECRET_NAME \
+  -d '{
+  "tenant_id": "12345678-1234-1234-1234-123456789012",
+  "visibility": "selected",
+  "selected_repository_ids": [
+    1296269,
+    1296280
+  ]
+}'
+```
+
+**Response schema (Status: 204):**
+
 ## Delete a private registry for an organization
 
 ```

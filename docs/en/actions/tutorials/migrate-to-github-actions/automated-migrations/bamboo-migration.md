@@ -34,7 +34,7 @@ The instructions below will guide you through configuring your environment to us
   * Docker is [installed](https://docs.docker.com/get-docker/) and running.
 
   * [GitHub CLI](https://cli.github.com) is installed.
-  > \[!NOTE]
+  > [!NOTE]
   > The GitHub Actions Importer container and CLI do not need to be installed on the same server as your CI platform.
 
 ### Limitations
@@ -465,7 +465,7 @@ GitHub Actions Importer uses the mapping in the table below to convert default B
 | `bamboo.shortPlanKey`                            | `${{ github.workflow }}`                                                              |
 | `bamboo.shortPlanName`                           | `${{ github.workflow }}`                                                              |
 
-> \[!NOTE]
+> [!NOTE]
 > Unknown variables are transformed to `${{ env.<variableName> }}` and must be replaced or added under `env` for proper operation. For example, `${bamboo.jira.baseUrl}` will become `${{ env.jira_baseUrl }}`.
 
 ### System Variables

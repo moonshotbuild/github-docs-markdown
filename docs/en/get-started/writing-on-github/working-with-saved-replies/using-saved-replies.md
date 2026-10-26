@@ -29,7 +29,7 @@ When commenting on an issue or pull request, you can add a saved reply that you'
 5. From the list, select the saved reply you'd like to add to your comment. Optionally, edit the content of the saved reply.
 6. Select **Comment** to add your comment.
 
-> \[!TIP]
+> [!TIP]
 >
 > * You can use a keyboard shortcut to autofill the comment with a saved reply. For more information, see [Keyboard shortcuts](/en/get-started/accessibility/keyboard-shortcuts#comments).
 > * You can filter the list by typing the title of the saved reply.

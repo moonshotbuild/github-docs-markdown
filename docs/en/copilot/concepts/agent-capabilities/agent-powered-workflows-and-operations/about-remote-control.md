@@ -60,7 +60,7 @@ When connected to a session remotely from GitHub.com or GitHub Mobile, you can:
 * **Switch modes**: Change the session mode—for example, between interactive and plan mode.
 * **End the current operation**: Cancel the agent's current work.
 
-> \[!NOTE]
+> [!NOTE]
 > Slash commands—such as `/allow-all`—are not currently available from the remote interface.
 
 ## Reconnection

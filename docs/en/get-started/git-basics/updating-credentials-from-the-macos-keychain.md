@@ -17,7 +17,7 @@ breadcrumbs:
 
 You'll need to update your saved credentials in the git-credential-osxkeychain helper if you change your username, password, or personal access token on GitHub.
 
-> \[!NOTE]
+> [!NOTE]
 > Updating credentials from the macOS Keychain only applies to users who manually configured a personal access token using the `osxkeychain` helper that is built-in to macOS.
 >
 > We recommend you either [configure SSH](/en/authentication/connecting-to-github-with-ssh) or upgrade to the [Git Credential Manager](/en/get-started/git-basics/caching-your-github-credentials-in-git) (GCM) instead. GCM can manage authentication on your behalf (no more manual personal access tokens) including 2FA (two-factor auth).

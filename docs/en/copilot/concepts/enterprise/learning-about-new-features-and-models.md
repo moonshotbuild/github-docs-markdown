@@ -83,13 +83,9 @@ For more information, see [Utility models](/en/copilot/concepts/models/utility-m
 
 ### Default enablement
 
-For enterprises with Copilot Business or Copilot Enterprise plans, two separate policies control whether unconfigured generally available (GA) features and models default to enabled or disabled. If these policies are enabled, users benefit from the latest features and models without the need for administrator intervention.
+For enterprises with Copilot Business or Copilot Enterprise plans, two separate policies control whether unconfigured generally available (GA) features and models default to enabled or disabled.
 
-<!-- expires 2026-10-22 -->
-
-The models policy is already active. The feature policy will become active soon.
-
-<!-- end expires 2026-10-22 -->
+If these policies are enabled, users benefit from the latest features and models without the need for administrator intervention.
 
 For more information, see [About default availability of Copilot features and models](/en/copilot/concepts/enterprise/default-availability).
 

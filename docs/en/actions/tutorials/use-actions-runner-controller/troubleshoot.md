@@ -163,7 +163,7 @@ You can have a maximum of 10,000 self-hosted runners in one runner group. If thi
 
 ## Runner updates
 
-> \[!WARNING] Any updates released for the software, including major, minor, or patch releases, are considered as an available update. If you do not perform a software update within 30 days, the GitHub Actions service will not queue jobs to your runner. In addition, if a critical security update is required, the GitHub Actions service will not queue jobs to your runner until it has been updated.
+> [!WARNING] Any updates released for the software, including major, minor, or patch releases, are considered as an available update. If you do not perform a software update within 30 days, the GitHub Actions service will not queue jobs to your runner. In addition, if a critical security update is required, the GitHub Actions service will not queue jobs to your runner until it has been updated.
 
 Validate that your runner software version and/or custom runner image(s) in use are running the latest version.
 

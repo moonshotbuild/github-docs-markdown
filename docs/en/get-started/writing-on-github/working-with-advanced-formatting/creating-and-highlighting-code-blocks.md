@@ -33,7 +33,7 @@ function test() {
 
 ![Screenshot of rendered GitHub Markdown showing the use of triple backticks to create code blocks. The block begins with "function test() {."](/assets/images/help/writing/fenced-code-block-rendered.png)
 
-> \[!TIP]
+> [!TIP]
 > To preserve your formatting within a list, make sure to indent non-fenced code blocks by eight spaces.
 
 To display triple backticks in a fenced code block, wrap them inside quadruple backticks.
@@ -72,7 +72,7 @@ This will display the code block with syntax highlighting:
 
 ![Screenshot of three lines of Ruby code as displayed on GitHub. Elements of the code display in purple, blue, and red type for scannability.](/assets/images/help/writing/code-block-syntax-highlighting-rendered.png)
 
-> \[!TIP]
+> [!TIP]
 > When you create a fenced code block that you also want to have syntax highlighting on a GitHub Pages site, use lower-case language identifiers. For more information, see [About GitHub Pages and Jekyll](/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#syntax-highlighting).
 
 We use [Linguist](https://github.com/github-linguist/linguist) to perform language detection and to select [third-party grammars](https://github.com/github-linguist/linguist/blob/main/vendor/README.md) for syntax highlighting. You can find out which keywords are valid in [the languages YAML file](https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml).

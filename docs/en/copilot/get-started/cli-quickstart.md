@@ -63,7 +63,7 @@ Use one of these commands:
 
 4. When prompted, confirm that you trust that the files in the current directory are suitable for use with an AI tool.
 
-   > \[!NOTE]
+   > [!NOTE]
    > Copilot won't make changes to your files without your explicit approval.
 
 5. Try asking Copilot a question, for example:

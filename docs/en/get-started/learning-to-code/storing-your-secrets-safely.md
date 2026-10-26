@@ -120,7 +120,7 @@ Everyone makes mistakes, and it's possible that you'll accidentally commit a sec
 
 Now, let's try following our best practices. First, we'll create a personal access token which will allow the action to act on your behalf (the comment it creates will appear to come from your user account).
 
-> \[!NOTE] Notice how we follow the Principle of Least Privilege for each configuration step. Your token will have the shortest expiration necessary, only have access to the repository it needs, and have the minimum permissions needed to work.
+> [!NOTE] Notice how we follow the Principle of Least Privilege for each configuration step. Your token will have the shortest expiration necessary, only have access to the repository it needs, and have the minimum permissions needed to work.
 
 1. Navigate to the [new personal access token page](https://github.com/settings/personal-access-tokens/new).
 2. Under "Token name", give your new token a name. You can use something like "Action token".

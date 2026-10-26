@@ -131,7 +131,7 @@ If you aren't getting the responses you want when you ask Copilot for suggestion
 * Structure your code into modular, scoped components.
 * Include unit tests.
 
-> \[!Tip]
+> [!Tip]
 > Use Copilot to help your code follow best practices. For example, ask Copilot to add comments or to break a large function into smaller functions.
 
 ## Further reading

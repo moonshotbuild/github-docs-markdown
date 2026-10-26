@@ -103,9 +103,9 @@ Leaked credentials expose your organization to data breaches. GitHub Secret Prot
 
   Learn about additional features that can help you evaluate alerts and prioritize their remediation, such as checking a secret's validity.
 
-* [Viewing public monitoring alerts](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-public-monitoring-alerts)
+* [Viewing and managing public monitoring alerts](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-public-monitoring-alerts)
 
-  Find out which credentials your enterprise members have exposed in public repositories across GitHub.
+  Find and manage alerts for credentials your enterprise members have exposed in public repositories across GitHub.
 
 ### Phase 5: Scale, customize, and automate
 

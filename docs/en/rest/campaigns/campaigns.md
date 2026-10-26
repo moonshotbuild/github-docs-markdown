@@ -194,6 +194,37 @@ in the campaign.
 - **`org`** (string) (required)
   The organization name. The name is not case sensitive.
 
+#### Body parameters
+
+- **`name`** (string) (required)
+  The name of the campaign
+
+- **`description`** (string) (required)
+  A description for the campaign
+
+- **`managers`** (array of strings)
+  The logins of the users to set as the campaign managers. At this time, only a single manager can be supplied.
+
+- **`team_managers`** (array of strings)
+  The slugs of the teams to set as the campaign managers.
+
+- **`ends_at`** (string) (required)
+  The end date and time of the campaign. The date must be in the future.
+
+- **`contact_link`** (string or null)
+  The contact link of the campaign. Must be a URI.
+
+- **`code_scanning_alerts`** (array of objects or null)
+  The code scanning alerts to include in this campaign
+  - **`repository_id`** (integer) (required)
+    The repository id
+  - **`alert_numbers`** (array of integers) (required)
+    The alert numbers
+
+- **`generate_issues`** (boolean)
+  If true, will automatically generate issues for the campaign. The default is false.
+  Default: `false`
+
 ### HTTP response status codes
 
 - **200** - OK

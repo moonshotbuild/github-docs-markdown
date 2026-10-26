@@ -49,9 +49,9 @@ Learn how to assess security risks, track feature adoption, view key metrics, an
 
   Monitor push protection's performance across your organization to identify repositories where you may need to take action.
 
-* [Viewing public monitoring alerts](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-public-monitoring-alerts)
+* [Viewing and managing public monitoring alerts](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-public-monitoring-alerts)
 
-  Find out which credentials your enterprise members have exposed in public repositories across GitHub.
+  Find and manage alerts for credentials your enterprise members have exposed in public repositories across GitHub.
 
 * [Viewing metrics for Dependabot alerts](/en/code-security/how-tos/view-and-interpret-data/analyze-organization-data/viewing-metrics-for-dependabot-alerts)
 
