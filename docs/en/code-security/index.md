@@ -149,9 +149,21 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   Autofix generates potential fixes for code scanning alerts, helping you remediate existing vulnerabilities.
 
+* [About AI Scan](/en/code-security/concepts/code-scanning/ai-scan)
+
+  AI Scan extends code scanning with AI-based detection to help find security vulnerabilities.
+
 * [AI Scan for pull requests](/en/code-security/concepts/code-scanning/ai-powered-security-detections)
 
   AI Scan uses an AI-based scanning engine to find security vulnerabilities in pull requests for languages and frameworks not covered by CodeQL.
+
+* [AI Scan for a repository's backlog](/en/code-security/concepts/code-scanning/ai-scan-for-repositories)
+
+  Find additional security vulnerabilities across languages and manage the results in your existing code scanning backlog.
+
+* [AI applications scanning for pull requests](/en/code-security/concepts/code-scanning/ai-applications-scanning-for-pull-requests)
+
+  Catch risky data flows in AI applications and agents, such as indirect prompt injection, before they reach production.
 
 * [About setup types for code scanning](/en/code-security/concepts/code-scanning/setup-types)
 
@@ -252,6 +264,10 @@ Build security and code quality into your GitHub workflow with integrated toolin
 * [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts)
 
   Dependabot alerts help you find and fix vulnerable dependencies before they become security risks.
+
+* [About reachability analysis for Dependabot alerts](/en/code-security/concepts/supply-chain-security/about-reachability-analysis-for-dependabot-alerts)
+
+  Reachability analysis helps prioritize Dependabot alerts by identifying whether your application can reach vulnerable dependency code.
 
 * [Dependabot malware alerts](/en/code-security/concepts/supply-chain-security/malware-alerts)
 
@@ -453,9 +469,9 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   You can enable secret scanning to detect additional potential secrets at the repository and organization levels.
 
-* [Enabling generic secret detection for AI-detected secrets](/en/code-security/how-tos/secure-your-secrets/detect-secret-leaks/enabling-secret-scanning-for-ai-detected-secrets)
+* [Enabling scanning for AI-detected secrets](/en/code-security/how-tos/secure-your-secrets/detect-secret-leaks/enabling-secret-scanning-for-ai-detected-secrets)
 
-  You can enable generic secret detection for your repository or organization. Alerts for generic secrets, such as passwords, are displayed in a separate list on the secret scanning alerts page.
+  You can enable scanning for AI-detected secrets for your repository or organization. Alerts for generic secrets found using AI, such as passwords, are displayed in a separate list on the secret scanning alerts page.
 
 * [Defining custom patterns for secret scanning](/en/code-security/how-tos/secure-your-secrets/customize-leak-detection/define-custom-patterns)
 
@@ -484,6 +500,10 @@ Build security and code quality into your GitHub workflow with integrated toolin
 * [Enabling push protection for your repository](/en/code-security/how-tos/secure-your-secrets/prevent-future-leaks/enable-push-protection)
 
   With push protection, secret scanning blocks contributors from pushing secrets to a repository and generates an alert whenever a contributor bypasses the block.
+
+* [Enabling push protection for AI-detected secrets](/en/code-security/how-tos/secure-your-secrets/prevent-future-leaks/enable-ai-push-protection)
+
+  Block pushes that contain passwords and other unstructured secrets found using AI.
 
 * [Managing push protection for users](/en/code-security/how-tos/secure-your-secrets/prevent-future-leaks/manage-user-push-protection)
 
@@ -657,6 +677,10 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   Prevent malware attacks by identifying and remediating malicious dependencies.
 
+* [Configuring reachability analysis for Dependabot alerts](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-reachability-analysis)
+
+  Enable reachability analysis to prioritize alerts based on whether your application can call vulnerable functions in its dependencies.
+
 * [Protecting endpoints with GitHub package firewall](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/protecting-endpoints-with-package-firewall)
 
   Protect dependency installations on developer machines, AI agents, and CI runners with GitHub package firewall.
@@ -824,6 +848,10 @@ Build security and code quality into your GitHub workflow with integrated toolin
 * [Assessing code scanning alerts for your repository](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/assess-alerts)
 
   From the security view, you can explore and evaluate alerts for potential vulnerabilities or errors in your project's code.
+
+* [Viewing and managing AI Scan alerts on your repository''s default branch](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/viewing-and-managing-ai-scan-alerts)
+
+  Run an AI Scan, review the alerts in your code scanning backlog, and check fixes for security vulnerabilities.
 
 * [Triaging code scanning alerts in pull requests](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/triage-alerts-in-pull-requests)
 

@@ -1003,6 +1003,18 @@ OAuth app tokens and personal access tokens (classic) need the repo scope to use
 * **`run_id`** (integer) (required)
   The unique identifier of the workflow run.
 
+#### Body parameters
+
+* **`environment_name`** (string) (required)
+  The name of the environment to approve or reject.
+
+* **`comment`** (string)
+  Comment associated with the pending deployment protection rule. Required when state is not provided.
+
+* **`state`** (string)
+  Whether to approve or reject deployment to the specified environments.
+  Can be one of: `approved`, `rejected`
+
 ### HTTP response status codes
 
 * **204** - No Content
@@ -1640,7 +1652,7 @@ This endpoint will return up to 1,000 results for each search when using the fol
 * **`repo`** (string) (required)
   The name of the repository without the .git extension. The name is not case sensitive.
 
-* **`workflow_id`** (string) (required)
+* **`workflow_id`** (integer or string) (required)
   The ID of the workflow. You can also pass the workflow file name as a string.
 
 * **`actor`** (string)

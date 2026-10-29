@@ -40,6 +40,14 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /enterprises/{enterprise}/copilot/metrics/reports/users-1-day` | read | UAT, IAT | ✗ |
 | `GET /enterprises/{enterprise}/copilot/metrics/reports/users-28-day/latest` | read | UAT, IAT | ✗ |
 
+## Enterprise permissions for "Enterprise security products"
+
+| Endpoint | Access | Tokens | Additional Permissions |
+|----------|--------|--------|------------------------|
+| `PATCH /enterprises/{enterprise}/dependabot/repository-access` | write | UAT, IAT | ✓ |
+| `PUT /enterprises/{enterprise}/dependabot/repository-access/default-level` | write | UAT, IAT | ✓ |
+| `GET /enterprises/{enterprise}/dependabot/repository-access` | read | UAT, IAT | ✓ |
+
 ## Organization permissions for "API Insights"
 
 | Endpoint | Access | Tokens | Additional Permissions |
@@ -1112,6 +1120,9 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `POST /repos/{owner}/{repo}/issues/comments/{comment_id}/reactions` | write | UAT, IAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/issues/comments/{comment_id}/reactions/{reaction_id}` | write | UAT, IAT | ✗ |
 | `PATCH /repos/{owner}/{repo}/issues/{issue_number}` | write | UAT, IAT | ✓ |
+| `POST /repos/{owner}/{repo}/issues/{issue_number}/artifacts` | write | UAT, IAT | ✗ |
+| `PATCH /repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}` | write | UAT, IAT | ✗ |
+| `DELETE /repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/issues/{issue_number}/assignees` | write | UAT, IAT | ✓ |
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/assignees` | write | UAT, IAT | ✓ |
 | `POST /repos/{owner}/{repo}/issues/{issue_number}/comments` | write | UAT, IAT | ✓ |
@@ -1150,6 +1161,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/issues/events` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/issues/events/{event_id}` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}` | read | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/artifacts` | read | UAT, IAT | ✓ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/assignees/{assignee}` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/comments` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by` | read | UAT, IAT | ✗ |
@@ -1279,6 +1292,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/issues/comments` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/comments/{comment_id}` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/events/{event_id}` | read | UAT, IAT | ✓ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/artifacts` | read | UAT, IAT | ✓ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/assignees/{assignee}` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/comments` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/events` | read | UAT, IAT | ✓ |
@@ -1323,9 +1338,13 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `POST /repos/{owner}/{repo}/security-advisories` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/security-advisories/reports` | write | UAT, IAT | ✗ |
 | `PATCH /repos/{owner}/{repo}/security-advisories/{ghsa_id}` | write | UAT, IAT | ✗ |
+| `POST /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments` | write | UAT, IAT | ✗ |
+| `PATCH /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments/{comment_id}` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/security-advisories/{ghsa_id}/cve` | write | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/security-advisories` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/security-advisories/{ghsa_id}` | read | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments` | read | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments/{comment_id}` | read | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/security-advisories/{ghsa_id}/forks` | read | UAT, IAT | ✓ |
 
 ## Repository permissions for "Secret scanning alerts"

@@ -29,7 +29,7 @@ It's best to review changes in a pull request one file at a time:
 * The **progress bar** in the pull request header shows how many files you've viewed.
 * When you've finished, you can **approve** the pull request or **request changes** by submitting your review with a summary comment.
 
-If the pull request was raised by GitHub Copilot, then Copilot will respond to your comments when you submit them. Copilot will push a new commit to the pull request with further changes. See [GitHub Copilot on GitHub.com](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent).
+If the pull request was raised by GitHub Copilot, then Copilot will respond to your comments when you submit them. Copilot will push a new commit to the pull request with further changes. See [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent).
 
 <div class="ghd-tool webui">
 

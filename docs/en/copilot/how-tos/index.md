@@ -31,7 +31,7 @@ Learn how to use GitHub Copilot.
 
 * [Cloud and local sandboxes for GitHub Copilot](/en/copilot/how-tos/cloud-and-local-sandboxes)
 
-  Configure local sandboxing for your sessions in the GitHub Copilot app and Copilot CLI, and manage cloud sandbox access for your organization or enterprise.
+  Configure local sandboxing for your sessions in the GitHub Copilot app and Copilot CLI, and manage cloud sandboxes for your organization or enterprise.
 
 * [GitHub Copilot app](/en/copilot/how-tos/github-copilot-app)
 
@@ -39,7 +39,7 @@ Learn how to use GitHub Copilot.
 
 * [Copilot SDK](/en/copilot/how-tos/copilot-sdk)
 
-  Welcome to the GitHub Copilot SDK docs. Whether you're building your first Copilot-powered app or deploying to production, you'll find what you need here.
+  Welcome to the Copilot SDK docs. Whether you're building your first Copilot-powered app or deploying to production, you'll find what you need here.
 
 * [GitHub Agentic Workflows](/en/copilot/how-tos/github-agentic-workflows)
 

@@ -634,7 +634,7 @@ The authenticated user must have read permission for the GitHub Pages site.
 - **`repo`** (string) (required)
   The name of the repository without the .git extension. The name is not case sensitive.
 
-- **`pages_deployment_id`** (string) (required)
+- **`pages_deployment_id`** (integer or string) (required)
   The ID of the Pages deployment. You can also give the commit SHA of the deployment.
 
 ### HTTP response status codes
@@ -683,7 +683,7 @@ The authenticated user must have write permissions for the GitHub Pages site.
 - **`repo`** (string) (required)
   The name of the repository without the .git extension. The name is not case sensitive.
 
-- **`pages_deployment_id`** (string) (required)
+- **`pages_deployment_id`** (integer or string) (required)
   The ID of the Pages deployment. You can also give the commit SHA of the deployment.
 
 ### HTTP response status codes

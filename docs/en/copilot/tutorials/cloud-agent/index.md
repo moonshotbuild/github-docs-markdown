@@ -21,20 +21,16 @@ Find out how to get great results from Copilot cloud agent.
 
 * [Best practices for using GitHub Copilot to work on tasks](/en/copilot/tutorials/cloud-agent/get-the-best-results)
 
-  Learn how to get the best results from Copilot cloud agent.
-
-* [Piloting GitHub Copilot cloud agent in your organization](/en/copilot/tutorials/cloud-agent/pilot-cloud-agent)
-
-  Follow best practices to enable Copilot cloud agent in your organization.
+  Learn how to get the best results from Copilot in the cloud.
 
 * [Using GitHub Copilot cloud agent to improve a project](/en/copilot/tutorials/cloud-agent/improve-a-project)
 
-  Find and fix problems in a project with Copilot cloud agent.
+  Find and fix problems in a project with Copilot.
 
-* [Building guardrails for GitHub Copilot cloud agent in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails)
+* [Building a secure cloud environment for agents in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails)
 
-  Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot cloud agent.
+  Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot in the cloud.
 
-* [Giving GitHub Copilot cloud agent access to resources in your organization](/en/copilot/tutorials/cloud-agent/give-access-to-resources)
+* [Giving GitHub Copilot cloud sessions access to resources in your organization](/en/copilot/tutorials/cloud-agent/give-access-to-resources)
 
-  Get more out of Copilot by giving it access to approved MCP servers and internal packages.
+  Get more out of Copilot by giving it access to approved MCP servers and internal packages in cloud sessions.

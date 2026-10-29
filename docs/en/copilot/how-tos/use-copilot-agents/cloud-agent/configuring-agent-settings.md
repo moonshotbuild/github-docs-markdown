@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/how-tos/use-copilot-agents/cloud-agent/configuring-agent-settings"
-title: "Configuring settings for GitHub Copilot cloud agent"
-intro: "Learn how to configure settings for Copilot cloud agent"
+title: "Configuring settings for GitHub Copilot in the cloud"
+intro: "Learn how to configure settings for Copilot in the cloud"
 product: "GitHub Copilot"
 document_type: "article"
 breadcrumbs:
@@ -17,9 +17,33 @@ breadcrumbs:
     href: "/en/copilot/how-tos/use-copilot-agents/cloud-agent/configuring-agent-settings"
 ---
 
-# Configuring settings for GitHub Copilot cloud agent
+# Configuring settings for GitHub Copilot in the cloud
 
-Learn how to configure settings for Copilot cloud agent
+Learn how to configure settings for Copilot in the cloud
+
+<a name="configuring-plugins-for-github-copilot-cloud-agent"></a> <a name="configuring-plugins-for-copilot-cloud-agent"></a>
+
+## Configuring plugins for Copilot in the cloud
+
+To configure plugins for Copilot in the cloud, add the marketplace and plugin to `.github/copilot/settings.json` in the repository. For example:
+
+```json copy
+{
+  "extraKnownMarketplaces": {
+    "MARKETPLACE-NAME": {
+      "source": {
+        "source": "github",
+        "repo": "OWNER/REPOSITORY"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "PLUGIN-NAME@MARKETPLACE-NAME": true
+  }
+}
+```
+
+Replace `OWNER/REPOSITORY` with the marketplace repository, `MARKETPLACE-NAME` with the `name` in its `marketplace.json` file, and `PLUGIN-NAME` with the plugin name. Commit the settings file to share this configuration. There is no local override for these settings. For the supported settings, see [GitHub Copilot CLI configuration directory](/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference#repository-settings-githubcopilotsettingsjson).
 
 ## Enabling or disabling built-in code quality and security validation tools
 
@@ -34,7 +58,7 @@ You must be a repository administrator to configure these settings.
 
    ![Screenshot of a repository header showing the tabs. The "Settings" tab is highlighted by a dark orange outline.](/assets/images/help/repository/repo-actions-settings.png)
 3. In the sidebar, under "Code, planning, and automation", click **Copilot** then **Cloud agent**.
-4. In the "Validation tools" section, toggle the tool, or tools, you want to enable or disable.
+4. On the "Copilot in the cloud" page, in the "Validation tools" section, toggle the tool, or tools, you want to enable or disable.
 
 ## Allowing GitHub Actions workflows to run automatically when Copilot pushes
 
@@ -57,4 +81,4 @@ You must be a repository administrator to configure these settings.
 
    ![Screenshot of a repository header showing the tabs. The "Settings" tab is highlighted by a dark orange outline.](/assets/images/help/repository/repo-actions-settings.png)
 3. In the sidebar, under "Code, planning, and automation", click **Copilot** then **cloud agent**.
-4. In the "Actions workflow approval" section, disable the **Require approval for workflow runs** setting.
+4. On the "Copilot in the cloud" page, in the "Policies" section, disable the **Require approval for workflow runs** setting.

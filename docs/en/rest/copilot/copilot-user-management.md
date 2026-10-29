@@ -90,7 +90,7 @@ curl -L \
 * `platform_chat`: string, enum: `enabled`, `disabled`, `unconfigured`
 * `cli`: string, enum: `enabled`, `disabled`, `unconfigured`
 * `seat_management_setting`: required, string, enum: `assign_all`, `assign_selected`, `disabled`, `unconfigured`
-* `plan_type`: string, enum: `business`, `enterprise`
+* `plan_type`: string, enum: `business`, `enterprise`, `access`
 
 ## List all Copilot seat assignments for an organization
 
@@ -260,7 +260,7 @@ curl -L \
   * `last_authenticated_at`: string or null, format: date-time
   * `created_at`: required, string, format: date-time
   * `updated_at`: string, format: date-time, deprecated
-  * `plan_type`: string, enum: `business`, `enterprise`, `unknown`
+  * `plan_type`: string, enum: `business`, `enterprise`, `unknown`, `access`
 
 ## Add teams to the Copilot subscription for an organization
 
@@ -711,4 +711,4 @@ curl -L \
 * `last_authenticated_at`: string or null, format: date-time
 * `created_at`: required, string, format: date-time
 * `updated_at`: string, format: date-time, deprecated
-* `plan_type`: string, enum: `business`, `enterprise`, `unknown`
+* `plan_type`: string, enum: `business`, `enterprise`, `unknown`, `access`

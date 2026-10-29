@@ -35,7 +35,7 @@ For more information on how to ask questions, see [Asking GitHub Copilot questio
 
 Copilot cloud agent uses semantic code search to find relevant code based on meaning, rather than relying solely on exact text matches with tools like `grep`. When the agent doesn't know the precise names or patterns to search for, semantic code search helps it locate the right code faster. No configuration is required—the agent automatically uses semantic code search when appropriate.
 
-For more information about Copilot cloud agent, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
+For more information about Copilot cloud agent, see [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
 
 ## About index creation and use
 

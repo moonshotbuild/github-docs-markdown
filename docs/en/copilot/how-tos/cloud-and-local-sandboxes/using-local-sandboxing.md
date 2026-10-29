@@ -21,7 +21,7 @@ Enable local sandboxing to restrict what Copilot can access on your machine in C
 
 ## Introduction
 
-Local sandboxing restricts access to files, network resources, and credentials on your machine. This article explains how to enable and disable local sandboxing in Copilot CLI and the Copilot app. For a conceptual overview of cloud and local sandboxes for Copilot, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes). For information on adjusting sandbox settings, see [Configuring local sandbox settings](/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings).
+Local sandboxing restricts access to files, network resources, and credentials on your machine. This article explains how to enable and disable local sandboxing in Copilot CLI and the Copilot app. For a conceptual overview of cloud and local sandboxes for Copilot, see [About local sandboxing for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes). For information on adjusting sandbox settings, see [Configuring local sandbox settings](/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings).
 
 For information on using local sandboxing in Visual Studio Code, see [Sandbox agent terminal commands](https://code.visualstudio.com/docs/agents/run/agent-sandboxing) in the VS Code documentation.
 
@@ -46,7 +46,7 @@ You can also mask additional environment variables, such as API tokens. Commands
 
 On Windows, this requires a version that supports connections from the sandbox to services on your computer (host loopback). You must also enable **Allow local network** on the **Network** tab in `/sandbox config`. This also permits private-network access, not just access to the credential proxy.
 
-For a conceptual overview of sandboxing in Copilot CLI, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
+For a conceptual overview of sandboxing in Copilot CLI, see [About local sandboxing for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
 
 ### Sandbox commands
 
@@ -239,5 +239,5 @@ An enterprise owner can prevent users from running tools outside the sandbox. Fo
 
 ## Further reading
 
-* [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes)
+* [About local sandboxing for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes)
 * [Configuring local sandbox settings](/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings)

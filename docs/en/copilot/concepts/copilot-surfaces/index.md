@@ -27,9 +27,9 @@ Learn about the different places where you can use GitHub Copilot.
 
   Find out about using Copilot from the command line.
 
-* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
+* [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 
-  Explore your repositories, plan changes, and delegate coding tasks to GitHub Copilot without leaving GitHub.com.
+  Move from repository questions to planned code changes and review in one continuous session with GitHub Copilot on GitHub.com and GitHub Mobile.
 
 * [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides)
 

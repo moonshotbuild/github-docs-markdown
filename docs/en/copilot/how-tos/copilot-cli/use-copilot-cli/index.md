@@ -37,6 +37,10 @@ Understand the different ways you can use GitHub Copilot in your terminal.
 
   Speak your prompts to GitHub Copilot CLI instead of typing them, using the CLI's speech-to-text feature.
 
+* [Choosing a model in GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/choose-a-model)
+
+  Choose which large language model you want Copilot CLI to use for a task.
+
 * [Using GitHub Copilot CLI to interact with desktop applications](/en/copilot/how-tos/copilot-cli/use-copilot-cli/computer-use)
 
   With computer use, allow Copilot to interact with local desktop applications from GitHub Copilot CLI.

@@ -23,6 +23,10 @@ Create specialized agents with tailored expertise and extend their capabilities 
 
 ## Links
 
+* [Personalizing your cloud sessions](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/personalize-cloud-sessions)
+
+  Bring your personal instructions, skills, and custom agents to your sessions with Copilot in the cloud using a dotfiles repository.
+
 * [Creating custom agents for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents)
 
   You can create specialized agents with tailored expertise for specific development tasks.
@@ -35,9 +39,13 @@ Create specialized agents with tailored expertise and extend their capabilities 
 
   Run automated checks—like linting, formatting, or security scans—at key points during agent execution to enforce quality standards.
 
-* [Configure the development environment](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment)
+* [Configure the development environment for agents on GitHub Actions](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment)
 
   Pre-install tools and dependencies so Copilot cloud agent can build, test, and validate changes reliably.
+
+* [Creating a custom environment for agents](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-a-custom-environment)
+
+  Run Copilot sessions with your own tools and dependencies on a Linux machine or codespace.
 
 * [Configure secrets and variables for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/configure-secrets-and-variables)
 

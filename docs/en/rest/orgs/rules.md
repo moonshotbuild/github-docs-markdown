@@ -136,6 +136,7 @@ Array of `Repository ruleset`:
             * `allowed_actors`: array of object
             * `enabled`: required, boolean
           * `require_code_owner_review`: required, boolean
+          * `require_extra_approval_for_unattributed_changes`: boolean
           * `require_last_push_approval`: required, boolean
           * `required_approving_review_count`: required, integer, minimum: 0, maximum: 10
           * `required_review_thread_resolution`: required, boolean
@@ -223,6 +224,7 @@ Array of `Repository ruleset`:
       * **file_path_restriction**
         * `type`: required, string, enum: `file_path_restriction`
         * `parameters`: object:
+          * `ignored_file_paths`: array of string
           * `restricted_file_paths`: required, array of string
       * **max_file_path_length**
         * `type`: required, string, enum: `max_file_path_length`
@@ -235,6 +237,7 @@ Array of `Repository ruleset`:
       * **max_file_size**
         * `type`: required, string, enum: `max_file_size`
         * `parameters`: object:
+          * `ignored_file_paths`: array of string
           * `max_file_size`: required, integer, minimum: 1, maximum: 100
   * `created_at`: string, format: date-time
   * `updated_at`: string, format: date-time
@@ -396,6 +399,8 @@ Create a repository ruleset for an organization.
           Whether to restrict review dismissal to specific actors.
       - **`require_code_owner_review`** (boolean) (required)
         Require an approving review in pull requests that modify files that have a designated code owner.
+      - **`require_extra_approval_for_unattributed_changes`** (boolean)
+        When Copilot opens a pull request without a human collaborator, require one more approving review if a non-zero approval count is required.
       - **`require_last_push_approval`** (boolean) (required)
         Whether the most recent reviewable push must be approved by someone other than the person who pushed it.
       - **`required_approving_review_count`** (integer) (required)
@@ -509,6 +514,8 @@ Create a repository ruleset for an organization.
     - **`type`** (string) (required)
       Can be one of: `file_path_restriction`
     - **`parameters`** (object)
+      - **`ignored_file_paths`** (array of strings)
+        Files matching these patterns are allowed even when they also match a restricted path.
       - **`restricted_file_paths`** (array of strings) (required)
         The file paths that are restricted from being pushed to the commit graph.
   - **`max_file_path_length`** (object)
@@ -530,6 +537,8 @@ Create a repository ruleset for an organization.
     - **`type`** (string) (required)
       Can be one of: `max_file_size`
     - **`parameters`** (object)
+      - **`ignored_file_paths`** (array of strings)
+        Files matching these patterns may exceed the maximum size.
       - **`max_file_size`** (integer) (required)
         The maximum file size allowed in megabytes. This limit does not apply to Git Large File Storage (Git LFS).
   - **`workflows`** (object)
@@ -702,6 +711,7 @@ curl -L \
             * `type`: required, string, enum: `User`, `Team`, `IntegrationInstallation`, `RepositoryRole`
           * `enabled`: required, boolean
         * `require_code_owner_review`: required, boolean
+        * `require_extra_approval_for_unattributed_changes`: boolean
         * `require_last_push_approval`: required, boolean
         * `required_approving_review_count`: required, integer, minimum: 0, maximum: 10
         * `required_review_thread_resolution`: required, boolean
@@ -791,6 +801,7 @@ curl -L \
     * **file_path_restriction**
       * `type`: required, string, enum: `file_path_restriction`
       * `parameters`: object:
+        * `ignored_file_paths`: array of string
         * `restricted_file_paths`: required, array of string
     * **max_file_path_length**
       * `type`: required, string, enum: `max_file_path_length`
@@ -803,6 +814,7 @@ curl -L \
     * **max_file_size**
       * `type`: required, string, enum: `max_file_size`
       * `parameters`: object:
+        * `ignored_file_paths`: array of string
         * `max_file_size`: required, integer, minimum: 1, maximum: 100
 * `created_at`: string, format: date-time
 * `updated_at`: string, format: date-time
@@ -1015,6 +1027,8 @@ Update a ruleset for an organization.
           Whether to restrict review dismissal to specific actors.
       - **`require_code_owner_review`** (boolean) (required)
         Require an approving review in pull requests that modify files that have a designated code owner.
+      - **`require_extra_approval_for_unattributed_changes`** (boolean)
+        When Copilot opens a pull request without a human collaborator, require one more approving review if a non-zero approval count is required.
       - **`require_last_push_approval`** (boolean) (required)
         Whether the most recent reviewable push must be approved by someone other than the person who pushed it.
       - **`required_approving_review_count`** (integer) (required)
@@ -1128,6 +1142,8 @@ Update a ruleset for an organization.
     - **`type`** (string) (required)
       Can be one of: `file_path_restriction`
     - **`parameters`** (object)
+      - **`ignored_file_paths`** (array of strings)
+        Files matching these patterns are allowed even when they also match a restricted path.
       - **`restricted_file_paths`** (array of strings) (required)
         The file paths that are restricted from being pushed to the commit graph.
   - **`max_file_path_length`** (object)
@@ -1149,6 +1165,8 @@ Update a ruleset for an organization.
     - **`type`** (string) (required)
       Can be one of: `max_file_size`
     - **`parameters`** (object)
+      - **`ignored_file_paths`** (array of strings)
+        Files matching these patterns may exceed the maximum size.
       - **`max_file_size`** (integer) (required)
         The maximum file size allowed in megabytes. This limit does not apply to Git Large File Storage (Git LFS).
   - **`workflows`** (object)

@@ -128,6 +128,6 @@ You can debug hooks using the following methods:
 ## Further reading
 
 * [GitHub Copilot hooks reference](/en/copilot/reference/hooks-reference)
-* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
+* [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 * [GitHub Copilot CLI](/en/copilot/concepts/copilot-surfaces/copilot-cli)
-* [Configure the development environment](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment)
+* [Configure the development environment for agents on GitHub Actions](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment)

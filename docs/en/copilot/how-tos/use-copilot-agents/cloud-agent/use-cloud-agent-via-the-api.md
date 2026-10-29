@@ -408,5 +408,5 @@ gh api \
 ## Further reading
 
 * [REST API endpoints for agent tasks](/en/rest/agent-tasks/agent-tasks)
-* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
+* [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 * [Starting GitHub Copilot sessions](/en/copilot/how-tos/use-copilot-agents/cloud-agent/start-copilot-sessions)

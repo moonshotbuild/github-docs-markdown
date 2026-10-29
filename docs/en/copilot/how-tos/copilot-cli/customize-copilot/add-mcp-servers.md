@@ -23,6 +23,20 @@ Extend Copilot's capabilities by connecting Model Context Protocol (MCP) servers
 
 The Model Context Protocol (MCP) is an open standard that defines how applications share context with large language models (LLMs). You can connect MCP servers to GitHub Copilot CLI to give Copilot access to external tools, data sources, and services. For an overview of MCP, see [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp).
 
+## Connecting services
+
+> [!NOTE]
+> Copilot connectors are in public preview and are subject to change.
+
+Connect an external service once to give Copilot access to its tools and context. You can then use the connection across supported Copilot surfaces without repeating setup or signing in separately in each one. GitHub handles MCP server configuration and authentication for you.
+
+If your organization or enterprise provides your Copilot subscription, an administrator may need to update its policies to allow connectors. See [Copilot connectors](/en/copilot/concepts/customizations/copilot-connectors).
+
+1. In an interactive CLI session, enter `/mcp` to open the MCP server dashboard.
+2. Use the <kbd>←</kbd> and <kbd>→</kbd> keys to switch to the **Connectors** view.
+3. Select a connector, press <kbd>Enter</kbd>, then select **Connect**.
+4. Follow the prompts to sign in to the service and approve access.
+
 ## Adding an MCP server
 
 > [!NOTE]

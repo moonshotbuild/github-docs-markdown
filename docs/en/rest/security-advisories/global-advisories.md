@@ -57,14 +57,14 @@ By default, all responses will exclude advisories for malware, because malware a
   If specified, only advisories with these severities will be returned.
   Can be one of: `unknown`, `low`, `medium`, `high`, `critical`
 
-- **`cwes`** (string)
+- **`cwes`** (string or array of strings)
   If specified, only advisories with these Common Weakness Enumerations (CWEs) will be returned.
   Example: cwes=79,284,22 or cwes[]=79&cwes[]=284&cwes[]=22
 
 - **`is_withdrawn`** (boolean)
   Whether to only return advisories that have been withdrawn.
 
-- **`affects`** (string)
+- **`affects`** (string or array of strings)
   If specified, only return advisories that affect any of package or package@version. A maximum of 1000 packages can be specified.
   If the query parameter causes the URL to exceed the maximum URL length supported by your client, you must specify fewer packages.
   Example: affects=package1,package2@1.0.0,package3@2.0.0 or affects[]=package1&affects[]=package2@1.0.0

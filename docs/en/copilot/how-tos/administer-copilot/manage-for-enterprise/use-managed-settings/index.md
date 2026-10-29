@@ -31,9 +31,13 @@ Govern how enterprise members can use Copilot across clients.
 
   Choose from different deployment methods to deliver managed settings keys to users.
 
-* [Overriding enterprise-managed settings for teams](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/override-settings-for-teams)
+* [Overriding enterprise-managed settings for enterprise teams](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/override-settings-for-teams)
 
-  Avoid overly restrictive configuration by overriding default settings for specific teams.
+  Avoid overly restrictive configuration by overriding default settings for specific enterprise teams.
+
+* [Managing plugin marketplaces and plugins with enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/manage-plugin-marketplaces-and-plugins)
+
+  Control which plugin marketplaces are available to enterprise members and which plugins are required or blocked.
 
 * [Using enterprise-managed settings without organizations](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/copilot-business-only)
 

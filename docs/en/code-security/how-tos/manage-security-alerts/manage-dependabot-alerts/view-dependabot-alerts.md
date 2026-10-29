@@ -37,6 +37,8 @@ You can view, sort, and filter Dependabot alerts to focus on the alerts that mat
 
 By default, alerts are sorted by **Most important**, which helps you prioritize fixes based on factors such as potential impact, actionability, and relevance. This prioritization is continuously improved and considers signals like CVSS score, dependency scope, and whether vulnerable function calls are detected.
 
+When reachability analysis is enabled, **Most important** ranks alerts marked "Reachable," "Potentially reachable," or "Reachability unavailable" higher. Only alerts marked "Unreachable" are deprioritized. To enable analysis for your repository, see [Configuring reachability analysis for Dependabot alerts](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-reachability-analysis).
+
 You can view all open and closed Dependabot alerts and corresponding Dependabot security updates in your repository's Dependabot tab.
 
 When you assign an alert to an AI agent, the agent automatically creates a session and opens a draft pull request with a proposed fix. If the agent can't generate a fix, it remains as an assignee of the alert. You can click **View Session** on the alert timeline to review the agent's log and understand why no pull request was created. Only a user can remove the agent as an assignee.
@@ -50,9 +52,11 @@ When you assign an alert to an AI agent, the agent automatically creates a sessi
 4. Optionally, refine the list of alerts:
    * Use the dropdown menus at the top of the list to sort or filter alerts.
 
-     ![Screenshot of the filter and sort menus in the Dependabot tab.](/assets/images/help/graphs/dependabot-alerts-filters-checkbox.png)
+     ![Screenshot of the filter and sort menus in the Dependabot tab.](/assets/images/help/graphs/dependabot-alerts-filters-checkbox-with-reachability.png)
 
    * Type directly in the search bar to filter alerts, including full-text search across alert details and related security advisories.
+
+   * If reachability analysis is enabled, use the **Reachability** dropdown menu to filter by verdict. Analysis currently supports JavaScript and TypeScript dependencies. For example, select "Reachable" and "Potentially reachable", or type `reachability:reachable,potentially-reachable` in the search bar.
 
    * Click a label on an alert to automatically filter the list by that label.
 
@@ -80,8 +84,17 @@ When you assign an alert to an AI agent, the agent automatically creates a sessi
 ### Tips for prioritizing alerts
 
 * Use the **Most important** sort order to focus on alerts with the highest potential impact.
+
+* Prioritize alerts labeled "Reachable" or "Potentially reachable", considering severity, EPSS, dependency scope, and dependency relationship alongside reachability.
+
+* Give "Unreachable" alerts a lower priority, but do not dismiss them solely because of that verdict. Results can change as your code or the advisory changes.
+
+* For "Reachability unavailable" results, use the other prioritization signals. An unavailable result does not mean the vulnerable function cannot be called.
+
 * Prioritize alerts that affect production dependencies over development dependencies.
+
 * Use the **Assignees** feature to clarify who is responsible for addressing each alert, so your team can track and remediate vulnerabilities more effectively.
+
 * Use Dependabot auto-triage rules to automatically prioritize or manage alerts. See [Dependabot auto-triage rules](/en/code-security/concepts/supply-chain-security/dependabot-auto-triage-rules).
 
 For more information about supported ecosystems and manifest files for dependency scope, see [Supported ecosystems and manifests for dependency scope](/en/code-security/reference/supply-chain-security/supported-ecosystems-and-manifests-for-dependency-scope).
@@ -93,6 +106,20 @@ To retrieve alerts programmatically, see the [REST API endpoints for Dependabot 
 ## Reviewing and fixing alerts
 
 You can review the details of a Dependabot alert to understand the vulnerability and how to fix it.
+
+### Reviewing reachability evidence
+
+> [!NOTE]
+> Reachability analysis for Dependabot alerts is in public preview and subject to change. Reachability analysis supports JavaScript repositories that use npm, pnpm, or Yarn, and TypeScript repositories.
+
+Reachability analysis adds a verdict to your alerts and, for reachable alerts, call-path evidence that shows how your code can call a vulnerable function. A call path does not prove that a vulnerability can be exploited. For information about verdict definitions and feature availability, see [About reachability analysis for Dependabot alerts](/en/code-security/concepts/supply-chain-security/about-reachability-analysis-for-dependabot-alerts).
+
+1. Open an alert with a "Reachable" verdict.
+2. In the "Reachability call paths" section, review the code location, then click **View call paths**.
+3. Follow the path from your repository's code through its dependencies to the vulnerable function. Use the code locations to identify where your application calls the affected dependency.
+4. If multiple sample paths are available, use the dropdown menu in the dialog to inspect another path.
+
+The dialog shows up to five sample paths, not every possible call path. Verdicts reflect the most recent completed scan, not necessarily your latest code changes. Use this evidence to prioritize and plan remediation. Reachability analysis does not automatically close or dismiss alerts.
 
 ### Fixing vulnerable dependencies
 

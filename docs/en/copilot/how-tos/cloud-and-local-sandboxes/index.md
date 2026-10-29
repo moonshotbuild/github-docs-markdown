@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/how-tos/cloud-and-local-sandboxes"
 title: "Cloud and local sandboxes for GitHub Copilot"
-intro: "Configure local sandboxing for your sessions in the GitHub Copilot app and Copilot CLI, and manage cloud sandbox access for your organization or enterprise."
+intro: "Configure local sandboxing for your sessions in the GitHub Copilot app and Copilot CLI, and manage cloud sandboxes for your organization or enterprise."
 product: "GitHub Copilot"
 document_type: "subcategory"
 breadcrumbs:
@@ -15,13 +15,13 @@ breadcrumbs:
 
 # Cloud and local sandboxes for GitHub Copilot
 
-Configure local sandboxing for your sessions in the GitHub Copilot app and Copilot CLI, and manage cloud sandbox access for your organization or enterprise.
+Configure local sandboxing for your sessions in the GitHub Copilot app and Copilot CLI, and manage cloud sandboxes for your organization or enterprise.
 
 ## Links
 
-* [Enabling or disabling cloud sandboxes for your organization or enterprise](/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization)
+* [Managing cloud sandboxes for your organization or enterprise](/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization)
 
-  You can control whether members of your organization or enterprise can use cloud sandboxes by managing the cloud sandbox access policy in your organization or enterprise settings.
+  Decide which members can use Copilot features that run in cloud sandboxes, and keep cloud sandbox spending under control.
 
 * [Using local sandboxing](/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing)
 

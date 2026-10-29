@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/how-tos/copilot-sdk"
 title: "Copilot SDK"
-intro: "Welcome to the GitHub Copilot SDK docs. Whether you're building your first Copilot-powered app or deploying to production, you'll find what you need here."
+intro: "Welcome to the Copilot SDK docs. Whether you're building your first Copilot-powered app or deploying to production, you'll find what you need here."
 product: "GitHub Copilot"
 document_type: "subcategory"
 breadcrumbs:
@@ -15,7 +15,7 @@ breadcrumbs:
 
 # Copilot SDK
 
-Welcome to the GitHub Copilot SDK docs. Whether you're building your first Copilot-powered app or deploying to production, you'll find what you need here.
+Welcome to the Copilot SDK docs. Whether you're building your first Copilot-powered app or deploying to production, you'll find what you need here.
 
 ## Links
 

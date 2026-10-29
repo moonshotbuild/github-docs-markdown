@@ -144,3 +144,8 @@ document_type: "homepage"
 * [GitHub for Nonprofits documentation](/en/nonprofit)
 
   GitHub for Nonprofits helps you teach or learn software development with the tools and support of GitHub's platform and community.
+
+* [Mo's Diner](/en/mos-diner)
+
+  Thanks for coming to Mo's Diner!
+  Now enjoy the recipes to help you get the most out of GitHub, from planning your projects to maintaining main.

@@ -49,18 +49,14 @@ Learn how to customize Copilot CLI to maximize its usefulness when working on a 
 
   Create specialized agents with tailored expertise for specific development tasks.
 
-* [Adding LLM models to GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models)
+* [Adding LLM models to GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/add-llm-models)
 
-  Use a model from an external provider of your choice in Copilot by supplying your own API key.
+  Use your preferred remote or local models in Copilot CLI.
 
 * [Finding and installing plugins for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-finding-installing)
 
-  Extend Copilot's functionality by installing plugins created by the community or by your team.
+  Extend Copilot by installing plugins created by the community or your organization.
 
 * [Creating a plugin for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-creating)
 
   Create a plugin to share customizations in an easy-to-install package.
-
-* [Creating a plugin marketplace for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-marketplace)
-
-  You can make CLI plugins that you've created easy to install by adding them to a marketplace.

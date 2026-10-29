@@ -21,10 +21,14 @@ Manage and curate memories for Copilot agents.
 
 ## Links
 
+* [Manually creating memories for GitHub Copilot](/en/copilot/how-tos/use-copilot-agents/copilot-memory/create-memories)
+
+  Prompt Copilot to remember a personal preference or a fact about a repository.
+
 * [Managing Copilot Memory for your personal account](/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-for-yourself)
 
   Review and manage the coding conventions, preferences, and other details that Copilot has stored from your interactions.
 
-* [Managing Copilot Memory for an organization or enterprise](/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-as-administrator)
+* [Managing Copilot Memory for an enterprise, organization, or repository](/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-as-administrator)
 
-  Manage Copilot Memory settings and stored memories for an organization or enterprise.
+  Manage Copilot Memory settings and stored memories for an enterprise, an organization, or a repository.

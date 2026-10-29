@@ -105,6 +105,10 @@ Learn how you can use GitHub Issues to plan and track your work.
 
   Learn how to navigate issue hierarchy in your repositories.
 
+* [Using artifacts with issues](/en/issues/tracking-your-work-with-issues/using-issues/using-artifacts-with-issues)
+
+  Keep plans, research, links, and interactive HTML alongside the issue they support.
+
 * [Filtering and searching issues and pull requests](/en/issues/tracking-your-work-with-issues/using-issues/filtering-and-searching-issues-and-pull-requests)
 
   To find detailed information about a repository on GitHub, you can filter, sort, and search issues and pull requests that are relevant to the repository.

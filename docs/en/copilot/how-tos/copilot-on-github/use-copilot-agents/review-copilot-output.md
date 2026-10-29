@@ -28,7 +28,7 @@ When Copilot finishes a coding task and requests your review, check the pull req
 > [!IMPORTANT]
 > If your repository requires pull request approvals, **your approval of a Copilot pull request won't count** toward the required number. Another reviewer must approve the pull request before it can be merged.
 
-To request changes from Copilot on its pull request, mention `@copilot` in a comment, or push commits directly to the branch. For more information, see [Using Copilot cloud agent on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github).
+To request changes from Copilot on its pull request, mention `@copilot` in a comment, or push commits directly to the branch. For more information, see [Using Copilot in the cloud on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github).
 
 ## Manage GitHub Actions workflow runs
 
@@ -40,7 +40,9 @@ To allow GitHub Actions workflows to run, click the **Approve and run workflows*
 
 ![Screenshot of the merge box on a pull request from Copilot with the "Approve and run workflows" button.](/assets/images/help/copilot/cloud-agent/approve-and-run-workflows.png)
 
-Optionally, you can configure Copilot cloud agent to allow GitHub Actions workflows to run without human intervention. For more information, see [Configuring settings for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/configuring-agent-settings).
+Optionally, you can configure Copilot cloud agent to allow GitHub Actions workflows to run without human intervention. For more information, see [Configuring settings for GitHub Copilot in the cloud](/en/copilot/how-tos/use-copilot-agents/cloud-agent/configuring-agent-settings).
+
+To have Copilot watch a pull request and fix failed GitHub Actions workflows or merge conflicts automatically, enable Agent Merge with **Watch and fix** in the merge box. See [Getting pull requests ready to merge with Agent Merge](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/get-pull-requests-ready-to-merge).
 
 ## Give feedback on Copilot's work
 

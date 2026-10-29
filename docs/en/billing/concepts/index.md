@@ -19,7 +19,7 @@ Learn the core concepts that you'll need to understand how to pay for your GitHu
 
 * [Billing cycles](/en/billing/concepts/billing-cycles)
 
-  Learn about the billing cycles for self-serve, Azure, and invoiced payment methods.
+  Understand when usage is measured, included amounts reset, and charges are billed for self-serve, Azure, and invoiced payment methods.
 
 * [Budgets and alerts](/en/billing/concepts/budgets-and-alerts)
 

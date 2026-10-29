@@ -21,7 +21,7 @@ Resolve simple merge conflicts directly on GitHub using the conflict editor or h
 
 You can resolve simple competing line change conflicts on GitHub. For other conflicts, use the command line. See [Resolving a merge conflict using the command line](/en/pull-requests/how-tos/merge-and-close-pull-requests/resolving-a-merge-conflict-using-the-command-line).
 
-If Copilot cloud agent is enabled for the repository, you can click **Fix with Copilot** in the merge box to have Copilot resolve conflicts automatically. See [Using Copilot cloud agent on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github#resolving-merge-conflicts).
+If Copilot cloud agent is enabled for the repository, you can click **Fix with Copilot** in the merge box to have Copilot resolve conflicts automatically. See [Using Copilot in the cloud on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github#resolving-merge-conflicts).
 
 > [!WARNING]
 > Resolving conflicts on GitHub merges the entire [base branch](/en/get-started/learning-about-github/github-glossary#base-branch) into the [head branch](/en/get-started/learning-about-github/github-glossary#head-branch). If the head branch is the default or protected branch, you may be prompted to create a new head branch. See [About protected branches](/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).

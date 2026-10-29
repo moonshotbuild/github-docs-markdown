@@ -21,9 +21,7 @@ breadcrumbs:
 
 Create a plugin to share customizations in an easy-to-install package.
 
-## Introduction
-
-Plugins are packages that extend the functionality of Copilot CLI. See [Plugins for GitHub Copilot](/en/copilot/concepts/agents/about-plugins).
+Plugins are packages that extend the functionality of Copilot CLI. For a cross-client overview, see [Plugins for GitHub Copilot](/en/copilot/concepts/customizations/plugins).
 
 > [!NOTE]
 > You can find help on using plugins by entering `copilot plugin [SUBCOMMAND] --help` in the terminal.
@@ -32,12 +30,12 @@ Plugins are packages that extend the functionality of Copilot CLI. See [Plugins 
 
 A plugin consists of a directory with a specific structure and a `plugin.json` manifest file. Agent Plugins 1.0 requires the manifest at the plugin root. Legacy plugins support additional manifest locations. A plugin can also contain any combination of agents, skills, hooks, and MCP server configurations.
 
-Copilot CLI supports two plugin formats:
+Agent Plugins 1.0 is a portable format for skills and MCP servers across compatible clients. Copilot CLI also supports a legacy Copilot format.
 
-* Agent Plugins 1.0, a portable format for skills and MCP servers. Declaring the canonical `$schema` in `plugin.json` opts the plugin into this format.
-* The legacy Copilot format, which supports Copilot-specific components and configurable component paths. A manifest without the Agent Plugins `$schema` continues to use this format.
+* To use Agent Plugins 1.0, declare the canonical `$schema` in `plugin.json`.
+* The legacy format supports Copilot-specific components and configurable component paths. In Copilot CLI, a manifest without the Agent Plugins `$schema` uses this format.
 
-Both formats are supported. Choose Agent Plugins 1.0 when you want to make skills and MCP servers portable across compatible clients. Choose the legacy format when you need custom component paths or are maintaining an existing Copilot-specific plugin. In Agent Plugins 1.0, skills and MCP servers are portable, and Copilot-specific components such as agents, commands, rules, hooks, and LSP servers come from the `com.github.copilot` directory in the plugin.
+Choose Agent Plugins 1.0 when you want to share skills and MCP servers across compatible clients. Check the client documentation to confirm which other components it supports. Choose the legacy format when you need configurable component paths in Copilot CLI or are maintaining an existing Copilot-specific plugin.
 
 ## Creating a plugin
 
@@ -64,7 +62,7 @@ Both formats are supported. Choose Agent Plugins 1.0 when you want to make skill
    }
    ```
 
-   The schema allows only `$schema`, `name`, `version`, `description`, `author`, `homepage`, `repository`, `license`, `keywords`, and `extensions` as top-level fields. Unknown top-level fields are reported and ignored. The `extensions` field is a map of client-specific data keyed by reverse-domain namespace.
+   The schema allows only `$schema`, `name`, `version`, `description`, `author`, `homepage`, `repository`, `license`, `keywords`, and `extensions` as top-level fields. Copilot CLI reports and ignores unknown top-level fields. The `extensions` field is a map of client-specific data keyed by reverse-domain namespace.
 
    To create a legacy plugin, omit the Agent Plugins `$schema`. You can use component path fields in the manifest:
 
@@ -141,7 +139,11 @@ Both formats are supported. Choose Agent Plugins 1.0 when you want to make skill
 
       The `streamable-http` transport name is accepted for Streamable HTTP servers. For `stdio` servers, Copilot CLI provides `PLUGIN_ROOT` and `PLUGIN_DATA` environment variables and expands `${PLUGIN_ROOT}` and `${PLUGIN_DATA}` in `args`, `env` values, and `cwd`.
 
-4. Install your plugin locally, so that you can test it as you develop it.
+## Test your plugin with GitHub Copilot CLI
+
+The following commands test a plugin in Copilot CLI.
+
+1. Install your plugin locally, so that you can test it as you develop it.
 
    For example, where `./my-plugin` is the path to your plugin directory, enter:
 
@@ -149,7 +151,7 @@ Both formats are supported. Choose Agent Plugins 1.0 when you want to make skill
    copilot plugin install ./my-plugin
    ```
 
-5. Verify that the plugin loaded successfully by viewing your list of installed plugins:
+2. Verify that the plugin loaded successfully by viewing your list of installed plugins:
 
    ```shell copy
    copilot plugin list
@@ -161,7 +163,7 @@ Both formats are supported. Choose Agent Plugins 1.0 when you want to make skill
    /plugin list
    ```
 
-6. Verify that the agents, skills, hooks, and MCP server configurations you defined are loaded correctly.
+3. Verify that the agents, skills, hooks, and MCP server configurations you defined are loaded correctly.
 
    For example, in an interactive session, to check that custom agents defined in the plugin were loaded, enter:
 
@@ -175,29 +177,34 @@ Both formats are supported. Choose Agent Plugins 1.0 when you want to make skill
    /skills list
    ```
 
-7. Use the functionality provided by your plugin's components to verify that each component works as expected.
+4. Use the functionality provided by your plugin's components to verify that each component works as expected.
 
-8. Iterate on your plugin development, as required.
+5. Iterate on your plugin development, as required.
 
    > [!IMPORTANT]
-   > When you install a plugin its components are cached and the CLI reads from the cache for subsequent sessions. To pick up changes made to a local plugin install it again:
+   > When you install a plugin, its components are cached and Copilot CLI reads from the cache for subsequent sessions. To pick up changes made to a local plugin, install it again:
    >
    > ```shell copy
    > copilot plugin install ./my-plugin
    > ```
 
-9. After you have finished testing, you can uninstall the local version of your plugin by entering:
+6. After you have finished testing, you can uninstall the local version of your plugin by entering:
 
    ```shell copy
    copilot plugin uninstall NAME
    ```
 
-   > [!NOTE]
-   > To uninstall a plugin, use the name of the plugin as specified in the `name` field of the plugin's `plugin.json` manifest file, not the path to the plugin's directory.
+   Use the value of the `name` field in the plugin's `plugin.json` manifest for `NAME`, not the path to the plugin directory.
 
-## Distributing your plugin
+## Add evaluations for your plugin
 
-To distribute your plugin, you can add it to a marketplace. See [Creating a plugin marketplace for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-marketplace).
+Treat plugin context as agentic infrastructure. Add evaluations for the behaviors your plugin is meant to support, and run them when you change its instructions, tools, or other components.
+
+## Distribute your plugin
+
+To share your plugin with others, add it to a marketplace. See [Creating and sharing a plugin marketplace on GitHub](/en/copilot/how-tos/copilot-on-github/customize-copilot/create-and-share-plugin-marketplaces).
+
+Repository defaults can enable your plugin for a project. Members can override these defaults locally, but enterprise managed settings can require or block the plugin and always take precedence.
 
 ## Further reading
 

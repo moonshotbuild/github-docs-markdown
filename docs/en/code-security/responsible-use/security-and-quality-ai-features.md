@@ -349,7 +349,7 @@ For additional guidance on the responsible use of GitHub Security AI features, w
 
 * [Secret scanning](/en/code-security/concepts/secret-security/secret-scanning)
 
-* [Enabling generic secret detection for AI-detected secrets](/en/code-security/how-tos/secure-your-secrets/detect-secret-leaks/enabling-secret-scanning-for-ai-detected-secrets)
+* [Enabling scanning for AI-detected secrets](/en/code-security/how-tos/secure-your-secrets/detect-secret-leaks/enabling-secret-scanning-for-ai-detected-secrets)
 
 * [Manage secret scanning alerts](/en/code-security/how-tos/manage-security-alerts/manage-secret-scanning-alerts)
 

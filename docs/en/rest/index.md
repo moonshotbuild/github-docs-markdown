@@ -533,6 +533,10 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to temporarily restrict which type of user can comment, open issues, or create pull requests in your public repositories.
 
+* [REST API endpoints for issue artifacts](/en/rest/issues/artifacts)
+
+  Use the REST API to manage issue artifacts.
+
 * [REST API endpoints for issue assignees](/en/rest/issues/assignees)
 
   Use the REST API to manage assignees on issues and pull requests.
@@ -708,6 +712,10 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 * [REST API endpoints for Project views](/en/rest/projects/views)
 
   Use the REST API to manage Project views
+
+* [REST API endpoints for Agent Merge](/en/rest/pulls/agent-merge)
+
+  Use the REST API to get, update, and disable Agent Merge for pull requests.
 
 * [REST API endpoints for pull request review comments](/en/rest/pulls/comments)
 

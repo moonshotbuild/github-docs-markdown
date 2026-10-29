@@ -46,7 +46,7 @@ List all items for a specific organization-owned project accessible by the authe
 - **`q`** (string)
   Search query to filter items, see Filtering projects for more information.
 
-- **`fields`** (string)
+- **`fields`** (string or array of strings)
   Limit results to specific fields, by their IDs. If not specified, the title field will be returned.
   Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
 
@@ -2118,7 +2118,7 @@ Get a specific item from an organization-owned project.
 - **`item_id`** (integer) (required)
   The unique identifier of the project item.
 
-- **`fields`** (string)
+- **`fields`** (string or array of strings)
   Limit results to specific fields, by their IDs. If not specified, the title field will be returned.
   Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
 
@@ -2417,7 +2417,7 @@ List items in an organization project with the saved view's filter applied.
 - **`view_number`** (integer) (required)
   The number that identifies the project view.
 
-- **`fields`** (string)
+- **`fields`** (string or array of strings)
   Limit results to specific fields, by their IDs. If not specified, the
   title field will be returned.
   Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
@@ -2496,7 +2496,7 @@ List all items for a specific user-owned project accessible by the authenticated
 - **`q`** (string)
   Search query to filter items, see Filtering projects for more information.
 
-- **`fields`** (string)
+- **`fields`** (string or array of strings)
   Limit results to specific fields, by their IDs. If not specified, the title field will be returned.
   Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
 
@@ -2681,7 +2681,7 @@ Get a specific item from a user-owned project.
 - **`item_id`** (integer) (required)
   The unique identifier of the project item.
 
-- **`fields`** (string)
+- **`fields`** (string or array of strings)
   Limit results to specific fields, by their IDs. If not specified, the title field will be returned.
   Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789
 
@@ -2948,7 +2948,7 @@ List items in a user project with the saved view's filter applied.
 - **`view_number`** (integer) (required)
   The number that identifies the project view.
 
-- **`fields`** (string)
+- **`fields`** (string or array of strings)
   Limit results to specific fields, by their IDs. If not specified, the
   title field will be returned.
   Example: fields[]=123&fields[]=456&fields[]=789 or fields=123,456,789

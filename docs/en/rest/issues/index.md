@@ -17,6 +17,10 @@ Use the REST API to view and manage issues, including issue assignees, comments,
 
 ## Links
 
+* [REST API endpoints for issue artifacts](/en/rest/issues/artifacts)
+
+  Use the REST API to manage issue artifacts.
+
 * [REST API endpoints for issue assignees](/en/rest/issues/assignees)
 
   Use the REST API to manage assignees on issues and pull requests.

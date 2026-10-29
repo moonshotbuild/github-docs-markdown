@@ -1487,6 +1487,8 @@ rebase. At least one option must be enabled.
 * `dismissStaleReviewsOnPush` (Boolean!): New, reviewable commits pushed will dismiss previous pull request review approvals.
 * `dismissalRestriction` (DismissalRestriction): Specify people, teams, or apps allowed to dismiss pull request reviews.
 * `requireCodeOwnerReview` (Boolean!): Require an approving review in pull requests that modify files that have a designated code owner.
+* `requireExtraApprovalForUnattributedChanges` (Boolean!): When Copilot opens a pull request without a human collaborator, require one
+more approving review if a non-zero approval count is required.
 * `requireLastPushApproval` (Boolean!): Whether the most recent reviewable push must be approved by someone other than the person who pushed it.
 * `requiredApprovingReviewCount` (Int!): The number of approving reviews that are required before a pull request can be merged.
 * `requiredReviewThreadResolution` (Boolean!): All conversations on code must be resolved before a pull request can be merged.
@@ -1504,6 +1506,8 @@ rebase. At least one option must be enabled.
 * `dismissStaleReviewsOnPush` (Boolean!): New, reviewable commits pushed will dismiss previous pull request review approvals.
 * `dismissalRestriction` (DismissalRestrictionInput): Specify people, teams, or apps allowed to dismiss pull request reviews.
 * `requireCodeOwnerReview` (Boolean!): Require an approving review in pull requests that modify files that have a designated code owner.
+* `requireExtraApprovalForUnattributedChanges` (Boolean): When Copilot opens a pull request without a human collaborator, require one
+more approving review if a non-zero approval count is required.
 * `requireLastPushApproval` (Boolean!): Whether the most recent reviewable push must be approved by someone other than the person who pushed it.
 * `requiredApprovingReviewCount` (Int!): The number of approving reviews that are required before a pull request can be merged.
 * `requiredReviewThreadResolution` (Boolean!): All conversations on code must be resolved before a pull request can be merged.

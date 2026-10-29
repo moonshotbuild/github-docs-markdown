@@ -27,27 +27,27 @@ Find out how Copilot can research a repository, plan and make code changes, and 
 
 * [Creating automations with Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-automations)
 
-  Create and manage automations to run Copilot cloud agent on a schedule or in response to events.
+  Create and manage automations to run Copilot cloud agent on a schedule, in response to events in a repository, or programmatically via the API.
 
 * [Managing rationale, confidence, and approvals for issues](/en/copilot/how-tos/use-copilot-agents/cloud-agent/manage-rationale-confidence-approvals)
 
-  Set up and manage rationale, confidence, and approvals for issues handled by automation.
+  Set up and manage rationale, confidence, and approvals for issues handled by automations.
 
 * [Changing the AI model for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model)
 
   In supported entrypoints, when starting a task with Copilot cloud agent, you can select the model used, and, for supported models, the reasoning level.
 
-* [Configuring settings for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/configuring-agent-settings)
+* [Configuring settings for GitHub Copilot in the cloud](/en/copilot/how-tos/use-copilot-agents/cloud-agent/configuring-agent-settings)
 
-  Learn how to configure settings for Copilot cloud agent
+  Learn how to configure settings for Copilot in the cloud
 
-* [Using Copilot cloud agent on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github)
+* [Using Copilot in the cloud on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github)
 
-  Start Copilot cloud agent sessions directly on GitHub, then iterate on the results without leaving your browser.
+  Start Copilot in the cloud sessions directly on GitHub, then iterate on the results without leaving your browser.
 
-* [Using Copilot cloud agent on GitHub Mobile](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-mobile)
+* [Using Copilot in the cloud on GitHub Mobile](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-mobile)
 
-  Start and track Copilot cloud agent sessions from the GitHub Mobile app.
+  Start and track Copilot in the cloud sessions from the GitHub Mobile app.
 
 * [Using agent apps](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-agent-apps)
 

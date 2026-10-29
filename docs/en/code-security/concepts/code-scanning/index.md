@@ -35,9 +35,21 @@ Learn core concepts for GitHub's code scanning features.
 
   Autofix generates potential fixes for code scanning alerts, helping you remediate existing vulnerabilities.
 
+* [About AI Scan](/en/code-security/concepts/code-scanning/ai-scan)
+
+  AI Scan extends code scanning with AI-based detection to help find security vulnerabilities.
+
 * [AI Scan for pull requests](/en/code-security/concepts/code-scanning/ai-powered-security-detections)
 
   AI Scan uses an AI-based scanning engine to find security vulnerabilities in pull requests for languages and frameworks not covered by CodeQL.
+
+* [AI Scan for a repository's backlog](/en/code-security/concepts/code-scanning/ai-scan-for-repositories)
+
+  Find additional security vulnerabilities across languages and manage the results in your existing code scanning backlog.
+
+* [AI applications scanning for pull requests](/en/code-security/concepts/code-scanning/ai-applications-scanning-for-pull-requests)
+
+  Catch risky data flows in AI applications and agents, such as indirect prompt injection, before they reach production.
 
 * [About setup types for code scanning](/en/code-security/concepts/code-scanning/setup-types)
 

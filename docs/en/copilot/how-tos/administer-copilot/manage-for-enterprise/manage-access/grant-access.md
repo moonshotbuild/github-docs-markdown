@@ -1,6 +1,6 @@
 ---
 source_path: "/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access"
-title: "Granting users access to GitHub Copilot in your enterprise"
+title: "Giving users GitHub Copilot in your enterprise"
 intro: "Enable Copilot for entire organizations or grant access directly to specific users."
 product: "GitHub Copilot"
 document_type: "article"
@@ -19,28 +19,37 @@ breadcrumbs:
     href: "/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access"
 ---
 
-# Granting users access to GitHub Copilot in your enterprise
+# Giving users GitHub Copilot in your enterprise
 
 Enable Copilot for entire organizations or grant access directly to specific users.
 
-There are two main ways to grant access to Copilot in an enterprise:
+## Prerequisites
 
-* **Assign licenses directly to users or teams** in the enterprise. This approach simplifies license management at scale and provides the option of granting Copilot licenses to users who don't consume a GitHub Enterprise license. This approach is currently only available for **Copilot Business** licenses.
-* **Enable Copilot for organizations**. This approach allows you to choose Copilot Business or Copilot Enterprise for individual organizations and give organization owners control to grant licenses to the users who need them most.
+Confirm which Copilot plan or billing model your enterprise uses. For a comparison of the enterprise options, see [Plans for GitHub Copilot](/en/copilot/get-started/plans#organization-and-enterprise-plans).
 
-## Assigning licenses to users or teams
+Before assigning seats, configure policies, budgets, and network requirements. See [Setting up GitHub Copilot for your enterprise](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-enterprise).
 
-You can assign Copilot Business licenses directly to users or enterprise teams.
+## Options for assigning GitHub Copilot
 
-When you assign licenses to an enterprise team, users receive or lose access to Copilot when they are added or removed from the team. If you use Enterprise Managed Users, you can sync the team with an identity provider (IdP) group and manage licensing from your IdP.
+Users must receive an assigned Copilot seat, regardless of billing model.
+
+The available assignment methods depend on your enterprise's plan or billing model.
+
+## Assigning seats directly
+
+With Copilot access or Copilot Business, enterprise owners can assign seats directly to individual members or enterprise teams. With Copilot access, you can also assign seats to all members of an organization. For guidance on organizing members before assignment, see [Best practices for organizing work in your enterprise](/en/enterprise-cloud@latest/admin/concepts/enterprise-best-practices/organize-work).
+
+When you assign seats to an enterprise team, each member receives a seat. Users receive or lose access when they are added or removed from the team. If you use Enterprise Managed Users, you can sync the team with an identity provider (IdP) group and manage licensing from your IdP.
 
 ### Prerequisites
 
-* Set the **Policies for enterprise-assigned users** policy to define a default setting for these users when other enterprise policies are set to "No policy". See [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies#defining-policies-for-your-enterprise).
-* If you want to assign licenses to users who are not already in your enterprise, you must first invite the users (personal accounts) or provision them from your identity provider (Enterprise Managed Users). For personal accounts, see [Adding users to your enterprise](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/add-users).
-* If you want to assign a license to an enterprise team, you must create the team first. See [Creating enterprise teams](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/create-enterprise-teams).
+* Set **Policies for enterprise-assigned users** to define whether policies set to "Let organizations decide" default to enabled or disabled for directly assigned users. See [Managing policies and features for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies#defining-policies-for-your-enterprise).
+* If you want to assign seats to users who are not already in your enterprise, first invite the users (personal accounts) or provision them from your IdP (Enterprise Managed Users). For personal accounts, see [Adding users to your enterprise](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/add-users).
+* If you want to assign seats to an enterprise team, create the team first. See [Creating enterprise teams](/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/create-enterprise-teams).
 
-### Assigning licenses
+### Assigning seats
+
+With Copilot access, members without a GitHub Enterprise Cloud license receive Copilot Standalone at $10 USD per month. Review the access charges before confirming an assignment.
 
 1. Navigate to your enterprise. For example, from the [Enterprises](https://github.com/settings/enterprises?ref_product=ghec\&ref_type=engagement\&ref_style=text) page on GitHub.com.
 
@@ -48,19 +57,26 @@ When you assign licenses to an enterprise team, users receive or lose access to 
 
 3. In the left sidebar, click **Licensing**.
 
-4. Next to "Copilot", click **Manage**.
+4. Open seat management for your billing model:
 
-   ![Screenshot of the Licensing page, with the "Manage" button highlighted in orange.](/assets/images/help/copilot/manage-licenses.png)
+   * With Copilot access, click **Manage** in the "Copilot access" section.
+   * With Copilot Business, click **Manage** next to "Copilot".
 
-5. Click the **All members** or **Enterprise Teams** tab.
+5. Start an assignment:
 
-6. Click **Assign licenses**.
+   * With Copilot access, on the **All members** tab, click **Assign access**.
+   * With Copilot Business, click the **All members** or **Enterprise Teams** tab, then click **Assign licenses**.
 
-7. Search for users or teams, then click **Add licenses**.
+6. Select the recipients and confirm the assignment:
 
-8. Optionally, disable Copilot for organizations to prevent organization owners from assigning licenses. See [Disabling Copilot for organizations in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/disable-for-organizations).
+   * With Copilot access, search for and select the members, then click **Review access**. Review the selected members, any Copilot Standalone charges, and the total monthly access cost. Usage is metered and billed separately. To confirm, click **Assign access**.
+   * With Copilot Business, search for users or teams, then click **Add licenses**.
+
+With Copilot Business, you can also prevent organization owners from assigning licenses by disabling access for organizations. See [Disabling Copilot for organizations in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/disable-for-organizations).
 
 ## Enabling Copilot for organizations
+
+With Copilot Business or Copilot Enterprise, enterprise owners can enable access for organizations so organization owners can assign seats to their members.
 
 If your enterprise has a Copilot Enterprise plan, you can assign licenses for either Copilot Enterprise or Copilot Business.
 
@@ -84,3 +100,20 @@ If your enterprise has a Copilot Enterprise plan, you can assign licenses for ei
       * If your enterprise has a Copilot Enterprise plan, click either **Copilot: Enterprise** or **Copilot: Business** to assign a specific Copilot plan to the organization.
 
 After you've enabled Copilot for an organization in your enterprise, owners of the organization can grant access to some or all members of the organization. See [Granting access to GitHub Copilot for members of your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-access/grant-access).
+
+## Removing member seats
+
+With Copilot access, the member-level **Remove access** action removes a member's seat, including assignments inherited from default, enterprise team, or organization settings. You do not need to remove the member from those teams or organizations. The member can still use Copilot until the end of the billing cycle.
+
+1. Navigate to your enterprise. For example, from the [Enterprises](https://github.com/settings/enterprises?ref_product=ghec\&ref_type=engagement\&ref_style=text) page on GitHub.com.
+2. At the top of the page, click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-credit-card" aria-label="credit-card" role="img"><path d="M10.75 9a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5h-1.5Z"></path><path d="M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25ZM14.5 6.5h-13v5.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Zm0-2.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25V5h13Z"></path></svg> Billing and licensing**.
+3. In the left sidebar, click **Licensing**.
+4. In the "Copilot access" section, click **Manage**.
+5. On the **All members** tab, find the member whose seat you want to remove.
+6. For that member, use **Remove access**.
+
+For billing and access effects, see [Making changes to your GitHub Copilot license](/en/copilot/reference/copilot-billing/license-changes#copilot-access).
+
+## Next steps
+
+After assigning access, ask developers to sign in with the account that has their enterprise-provided license. See [Quickstart for using GitHub Copilot in your IDE](/en/copilot/get-started/quickstart-for-using-github-copilot-in-your-ide).

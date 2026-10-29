@@ -27,11 +27,11 @@ Learn how agents work autonomously, use tools to act on your behalf, and operate
 
 * [Copilot automations](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automations)
 
-  Automations let you run Copilot cloud agent automatically, on a schedule or in response to events in a repository.
+  Automations let you run Copilot cloud agent automatically on a schedule, in response to events in a repository, or programmatically via the API.
 
 * [About rationale, confidence, and approvals for issues](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automation-rationale-and-approvals)
 
-  When automations triage issues, it explains each change, rates its confidence, and holds lower-confidence changes for your review.
+  When automations triage issues, they explain each change, rate their confidence, and hold lower-confidence changes for your review.
 
 * [Dynamic workflows](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/dynamic-workflows)
 
@@ -60,3 +60,7 @@ Learn how agents work autonomously, use tools to act on your behalf, and operate
 * [About computer use in GitHub Copilot](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/computer-use)
 
   Copilot can interact with desktop applications to automate tasks that cannot be completed with a more direct tool.
+
+* [About image generation in GitHub Copilot](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/image-generation)
+
+  Copilot can generate and edit images from your prompts and save them to your project, so you can create assets without leaving the conversation.

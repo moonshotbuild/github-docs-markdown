@@ -33,13 +33,13 @@ Organization owners can subscribe to Copilot, manage Copilot for their organizat
 
   Control the availability of GitHub Copilot features and models for users granted a license by your organization.
 
+* [Managing GitHub Copilot in the cloud for your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-copilot-in-the-cloud)
+
+  Enable Copilot in the cloud for your members and control the repositories where it is available.
+
 * [Manage GitHub Apps that use your organization's Copilot](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-app-copilot-access)
 
   Control which GitHub Apps can use your organization's Copilot and attribute their spending.
-
-* [Adding GitHub Copilot cloud agent to your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/add-copilot-cloud-agent)
-
-  Enable Copilot cloud agent for your members and control the repositories where it is available.
 
 * [Configuring runners for GitHub Copilot cloud agent in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/configure-runner-for-coding-agent)
 

@@ -29,6 +29,10 @@ Keep your supply chain secure by understanding and updating dependencies.
 
   Prevent malware attacks by identifying and remediating malicious dependencies.
 
+* [Configuring reachability analysis for Dependabot alerts](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configure-reachability-analysis)
+
+  Enable reachability analysis to prioritize alerts based on whether your application can call vulnerable functions in its dependencies.
+
 * [Protecting endpoints with GitHub package firewall](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/protecting-endpoints-with-package-firewall)
 
   Protect dependency installations on developer machines, AI agents, and CI runners with GitHub package firewall.

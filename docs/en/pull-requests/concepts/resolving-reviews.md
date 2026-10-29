@@ -64,4 +64,4 @@ You don't have to work through feedback by hand alone:
 
 * [Incorporating feedback in your pull request](/en/pull-requests/how-tos/review-pull-requests/incorporating-feedback-in-your-pull-request)
 
-* [GitHub Copilot on GitHub.com](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
+* [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)

@@ -49,7 +49,7 @@ You can create a new repository on your personal account or any organization whe
 
 8. Optionally, if the personal account or organization in which you're creating uses any GitHub Apps from GitHub Marketplace, select any apps you'd like to use in the repository.
 
-9. Optionally, if you have access to Copilot cloud agent, enter a prompt for Copilot to use to populate your repository. After the repository is created, Copilot will open a draft pull request, write the code requested, then request review from you. For more information, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent).
+9. Optionally, if you have access to Copilot cloud agent, enter a prompt for Copilot to use to populate your repository. After the repository is created, Copilot will open a draft pull request, write the code requested, then request review from you. For more information, see [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/agents/cloud-agent/about-cloud-agent).
 
 10. Click **Create repository**.
 

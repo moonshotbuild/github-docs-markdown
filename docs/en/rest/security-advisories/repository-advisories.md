@@ -914,6 +914,319 @@ curl -L \
 
 Same response schema as [Create a repository security advisory](#create-a-repository-security-advisory).
 
+## List repository security advisory comments
+
+```
+GET /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments
+```
+
+Lists comments on a repository security advisory.
+Accessing internal comments requires write access to the advisory.
+Callers with read-only access to the advisory receive only eligible post-publication comments. For unpublished advisories, these callers receive an empty list.
+
+### Parameters
+
+#### Headers
+
+- **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+- **`owner`** (string) (required)
+  The account owner of the repository. The name is not case sensitive.
+
+- **`repo`** (string) (required)
+  The name of the repository without the .git extension. The name is not case sensitive.
+
+- **`ghsa_id`** (string) (required)
+  The GHSA (GitHub Security Advisory) identifier of the advisory.
+
+- **`since`** (string)
+  Only show results that were last updated after the given time. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ.
+
+- **`per_page`** (integer)
+  The number of results per page (max 100). For more information, see "Using pagination in the REST API."
+  Default: `30`
+
+- **`page`** (integer)
+  The page number of the results to fetch. For more information, see "Using pagination in the REST API."
+  Default: `1`
+
+### HTTP response status codes
+
+- **200** - OK
+
+- **403** - Forbidden
+
+- **404** - Resource not found
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X GET \
+  https://api.github.com/repos/OWNER/REPO/security-advisories/GHSA_ID/comments
+```
+
+**Response schema (Status: 200):**
+
+Array of `Repository Advisory Comment`:
+  * `id`: required, integer, format: int64
+  * `node_id`: required, string
+  * `url`: required, string, format: uri
+  * `html_url`: required, string, format: uri
+  * `body`: required, string
+  * `user`: required, any of:
+    * **null**
+    * **Simple User**
+      * `name`: string or null
+      * `email`: string or null
+      * `login`: required, string
+      * `id`: required, integer, format: int64
+      * `node_id`: required, string
+      * `avatar_url`: required, string, format: uri
+      * `gravatar_id`: required, string or null
+      * `url`: required, string, format: uri
+      * `html_url`: required, string, format: uri
+      * `followers_url`: required, string, format: uri
+      * `following_url`: required, string
+      * `gists_url`: required, string
+      * `starred_url`: required, string
+      * `subscriptions_url`: required, string, format: uri
+      * `organizations_url`: required, string, format: uri
+      * `repos_url`: required, string, format: uri
+      * `events_url`: required, string
+      * `received_events_url`: required, string, format: uri
+      * `type`: required, string
+      * `site_admin`: required, boolean
+      * `starred_at`: string
+      * `user_view_type`: string
+  * `created_at`: required, string, format: date-time
+  * `updated_at`: required, string, format: date-time
+  * `advisory_url`: required, string, format: uri
+  * `author_association`: required, string, enum: `COLLABORATOR`, `CONTRIBUTOR`, `FIRST_TIMER`, `FIRST_TIME_CONTRIBUTOR`, `MANNEQUIN`, `MEMBER`, `NONE`, `OWNER`
+
+## Create a repository advisory comment
+
+```
+POST /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments
+```
+
+Creates a comment on a repository security advisory.
+In order to create a comment, the authenticated user must be an advisory collaborator, security manager, or repository administrator.
+
+### Parameters
+
+#### Headers
+
+- **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+- **`owner`** (string) (required)
+  The account owner of the repository. The name is not case sensitive.
+
+- **`repo`** (string) (required)
+  The name of the repository without the .git extension. The name is not case sensitive.
+
+- **`ghsa_id`** (string) (required)
+  The GHSA (GitHub Security Advisory) identifier of the advisory.
+
+#### Body parameters
+
+- **`body`** (string) (required)
+  The contents of the comment.
+
+### HTTP response status codes
+
+- **201** - Created
+
+- **403** - Forbidden
+
+- **404** - Resource not found
+
+- **422** - Validation failed, or the endpoint has been spammed.
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X POST \
+  https://api.github.com/repos/OWNER/REPO/security-advisories/GHSA_ID/comments \
+  -d '{
+  "body": "Thanks for the report. We are working on a fix."
+}'
+```
+
+**Response schema (Status: 201):**
+
+* `id`: required, integer, format: int64
+* `node_id`: required, string
+* `url`: required, string, format: uri
+* `html_url`: required, string, format: uri
+* `body`: required, string
+* `user`: required, any of:
+  * **null**
+  * **Simple User**
+    * `name`: string or null
+    * `email`: string or null
+    * `login`: required, string
+    * `id`: required, integer, format: int64
+    * `node_id`: required, string
+    * `avatar_url`: required, string, format: uri
+    * `gravatar_id`: required, string or null
+    * `url`: required, string, format: uri
+    * `html_url`: required, string, format: uri
+    * `followers_url`: required, string, format: uri
+    * `following_url`: required, string
+    * `gists_url`: required, string
+    * `starred_url`: required, string
+    * `subscriptions_url`: required, string, format: uri
+    * `organizations_url`: required, string, format: uri
+    * `repos_url`: required, string, format: uri
+    * `events_url`: required, string
+    * `received_events_url`: required, string, format: uri
+    * `type`: required, string
+    * `site_admin`: required, boolean
+    * `starred_at`: string
+    * `user_view_type`: string
+* `created_at`: required, string, format: date-time
+* `updated_at`: required, string, format: date-time
+* `advisory_url`: required, string, format: uri
+* `author_association`: required, string, enum: `COLLABORATOR`, `CONTRIBUTOR`, `FIRST_TIMER`, `FIRST_TIME_CONTRIBUTOR`, `MANNEQUIN`, `MEMBER`, `NONE`, `OWNER`
+
+## Get a repository advisory comment
+
+```
+GET /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments/{comment_id}
+```
+
+Get a comment on a repository security advisory using the comment's ID.
+Advisory collaborators can view all non-confidential comments on advisories they have access to.
+Other users can only view comments that are not considered internal.
+GitHub Apps and fine-grained personal access tokens with the repository_advisories: read permission can view all non-confidential comments, including internal comments.
+OAuth app tokens and personal access tokens (classic) need the repo or repository_advisories:read scope to get a comment on a security advisory in a private repository, or any unpublished security advisory that the authenticated user has access to.
+
+### Parameters
+
+#### Headers
+
+- **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+- **`owner`** (string) (required)
+  The account owner of the repository. The name is not case sensitive.
+
+- **`repo`** (string) (required)
+  The name of the repository without the .git extension. The name is not case sensitive.
+
+- **`ghsa_id`** (string) (required)
+  The GHSA (GitHub Security Advisory) identifier of the advisory.
+
+- **`comment_id`** (integer) (required)
+  The unique identifier of the comment.
+
+### HTTP response status codes
+
+- **200** - OK
+
+- **403** - Forbidden
+
+- **404** - Resource not found
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X GET \
+  https://api.github.com/repos/OWNER/REPO/security-advisories/GHSA_ID/comments/COMMENT_ID
+```
+
+**Response schema (Status: 200):**
+
+Same response schema as [Create a repository advisory comment](#create-a-repository-advisory-comment).
+
+## Update a repository advisory comment
+
+```
+PATCH /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments/{comment_id}
+```
+
+Update the body of a comment on a repository security advisory using the comment's ID.
+In order to update a comment, the authenticated user must be the author of the comment, or a security manager or administrator of the repository.
+OAuth app tokens and personal access tokens (classic) need the repo or repository_advisories:write scope to use this endpoint.
+
+### Parameters
+
+#### Headers
+
+- **`accept`** (string)
+  Setting to `application/vnd.github+json` is recommended.
+
+#### Path and query parameters
+
+- **`owner`** (string) (required)
+  The account owner of the repository. The name is not case sensitive.
+
+- **`repo`** (string) (required)
+  The name of the repository without the .git extension. The name is not case sensitive.
+
+- **`ghsa_id`** (string) (required)
+  The GHSA (GitHub Security Advisory) identifier of the advisory.
+
+- **`comment_id`** (integer) (required)
+  The unique identifier of the comment.
+
+#### Body parameters
+
+- **`body`** (string) (required)
+  The contents of the comment.
+
+### HTTP response status codes
+
+- **200** - OK
+
+- **403** - Forbidden
+
+- **404** - Resource not found
+
+- **422** - Validation failed, or the endpoint has been spammed.
+
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X PATCH \
+  https://api.github.com/repos/OWNER/REPO/security-advisories/GHSA_ID/comments/COMMENT_ID \
+  -d '{
+  "body": "Updated comment body."
+}'
+```
+
+**Response schema (Status: 200):**
+
+Same response schema as [Create a repository advisory comment](#create-a-repository-advisory-comment).
+
 ## Request a CVE for a repository security advisory
 
 ```

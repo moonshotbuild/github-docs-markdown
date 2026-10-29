@@ -53,9 +53,9 @@ Copilot cloud agent is enabled in all repositories by default, but you can block
 3. On the Copilot cloud agent page, under "Policies," click the dropdown button for "Repository access," then choose either **No repositories**, **All repositories**, or **Only selected repositories**.
 4. If you choose **Only selected repositories**, click **Select repositories** and choose the repositories where you want to enable Copilot cloud agent.
 
-For GitHub Copilot Business and GitHub Copilot Enterprise subscribers, the ability to use Copilot cloud agent is controlled by policy settings defined at the organization level. See [Adding GitHub Copilot cloud agent to your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/add-copilot-cloud-agent).
+For GitHub Copilot Business and GitHub Copilot Enterprise subscribers, the ability to use Copilot cloud agent is controlled by policy settings defined at the organization level. See [Managing GitHub Copilot in the cloud for your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/add-copilot-cloud-agent).
 
-If the organization is owned by an enterprise, enablement may be controlled at the enterprise level. See [Enabling GitHub Copilot cloud agent in your enterprise](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/enable-copilot-cloud-agent).
+If the organization is owned by an enterprise, enablement may be controlled at the enterprise level. See [Managing GitHub Copilot in the cloud for your enterprise or organization](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/enable-copilot-cloud-agent).
 
 ## Enabling or disabling third-party coding agents in your repositories
 

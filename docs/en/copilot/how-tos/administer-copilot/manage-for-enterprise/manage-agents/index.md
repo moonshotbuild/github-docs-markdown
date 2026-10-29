@@ -35,9 +35,9 @@ Maintain your enterprise's security and compliance standards and empower your de
 
   Track agentic activity in your enterprise to ensure continued compliance.
 
-* [Enabling GitHub Copilot cloud agent in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/enable-copilot-cloud-agent)
+* [Managing GitHub Copilot in the cloud for your enterprise or organization](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/manage-copilot-in-the-cloud)
 
-  Choose which organizations can use Copilot cloud agent and connect it to MCP servers.
+  Allow users to use Copilot on GitHub and start cloud sessions from local clients.
 
 * [Blocking agentic features in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/block-agentic-features)
 

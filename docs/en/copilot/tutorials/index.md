@@ -205,23 +205,19 @@ Build skills and knowledge about GitHub Copilot through examples and hands-on ac
 
 * [Best practices for using GitHub Copilot to work on tasks](/en/copilot/tutorials/cloud-agent/get-the-best-results)
 
-  Learn how to get the best results from Copilot cloud agent.
-
-* [Piloting GitHub Copilot cloud agent in your organization](/en/copilot/tutorials/cloud-agent/pilot-cloud-agent)
-
-  Follow best practices to enable Copilot cloud agent in your organization.
+  Learn how to get the best results from Copilot in the cloud.
 
 * [Using GitHub Copilot cloud agent to improve a project](/en/copilot/tutorials/cloud-agent/improve-a-project)
 
-  Find and fix problems in a project with Copilot cloud agent.
+  Find and fix problems in a project with Copilot.
 
-* [Building guardrails for GitHub Copilot cloud agent in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails)
+* [Building a secure cloud environment for agents in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails)
 
-  Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot cloud agent.
+  Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot in the cloud.
 
-* [Giving GitHub Copilot cloud agent access to resources in your organization](/en/copilot/tutorials/cloud-agent/give-access-to-resources)
+* [Giving GitHub Copilot cloud sessions access to resources in your organization](/en/copilot/tutorials/cloud-agent/give-access-to-resources)
 
-  Get more out of Copilot by giving it access to approved MCP servers and internal packages.
+  Get more out of Copilot by giving it access to approved MCP servers and internal packages in cloud sessions.
 
 * [Getting started with budget controls](/en/copilot/tutorials/budgets/getting-started-with-budget-controls)
 
@@ -249,7 +245,7 @@ Build skills and knowledge about GitHub Copilot through examples and hands-on ac
 
 * [Choosing your enterprise's plan for GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/assign-licenses/choose-enterprise-plan)
 
-  Choose between Copilot Business and Copilot Enterprise.
+  Compare enterprise access charges, usage allowances, and capabilities to choose a Copilot plan for your rollout.
 
 * [Setting up a self-serve process for GitHub Copilot licenses](/en/copilot/tutorials/roll-out-at-scale/assign-licenses/set-up-self-serve-licenses)
 
@@ -291,7 +287,7 @@ Build skills and knowledge about GitHub Copilot through examples and hands-on ac
 
   Roll out the GitHub Copilot app so developers can direct agents across parallel tasks while you control access, model availability, and external tools.
 
-* [Planning an AI agent rollout in your enterprise](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
+* [Understanding how AI agents fit into your enterprise's workflows](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
 
   Identify where AI agents can help your teams, and plan the governance and support needed to adopt them across your enterprise.
 

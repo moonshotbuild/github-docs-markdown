@@ -25,7 +25,7 @@ Use the agents panel on GitHub to monitor and manage agent sessions across your 
 
 ## Monitor agent activity
 
-Track sessions from the agents panel (available from any page on GitHub) or from the [agents page](https://github.com/copilot/agents?ref_product=copilot\&ref_type=engagement\&ref_style=text). Sessions that you started, or that another user prompted Copilot to work on, appear in your sessions list.
+Track sessions from the agents panel (available from any page on GitHub) or from your [Copilot home page](https://github.com/copilot?ref_product=copilot\&ref_type=engagement\&ref_style=text\&utm_source=managing-agent-sessions-article-product-cta\&utm_medium=docs\&utm_campaign=universe-2026). Sessions that you started, or that another user prompted Copilot to work on, appear in your sessions list.
 
 Click a session to open the session log and overview, where you can monitor the agent's progress, token usage, and session length.
 
@@ -41,7 +41,7 @@ Commits from Copilot cloud agent are authored by Copilot, with the person who st
 
 If Copilot is heading in the wrong direction, or you realize your original prompt needs adjusting, you can redirect it without stopping the session.
 
-1. Open the [agents page](https://github.com/copilot/agents?ref_product=copilot\&ref_type=engagement\&ref_style=text) and select the session.
+1. Open your [Copilot home page](https://github.com/copilot?ref_product=copilot\&ref_type=engagement\&ref_style=text\&utm_source=manage-track-agents-home-1\&utm_medium=docs\&utm_campaign=universe-2026) and select the session.
 
 2. In the prompt box below the session log, type your follow-up. For example:
 
@@ -52,6 +52,29 @@ If Copilot is heading in the wrong direction, or you realize your original promp
 3. Press <kbd>Enter</kbd>. Copilot implements your input after it finishes its current tool call.
 
 Each steering message consumes AI credits. Steering is not available for third-party coding agents.
+
+## Continue a session from another client
+
+Sessions that run in a cloud sandbox aren't tied to the device or client where you started them. The session, its files, and its in-progress work live in GitHub-hosted infrastructure. So you can move between clients as your day changes, without copying files, reinstalling dependencies, or explaining the task again. For more information, see [About cloud sandboxes for GitHub Copilot](/en/copilot/concepts/security-governance-and-network-settings/about-cloud-sandboxes#continue-sessions-across-clients).
+
+Here's how a single session might move with you from your desk to your phone and back.
+
+1. **Start in the GitHub Copilot app.** At your desk, you start a session in a cloud sandbox and describe the task. Copilot starts working in the cloud, so you can close your laptop and the session keeps running.
+
+2. **Steer from GitHub Mobile.** On the go, you open the session on your phone to check Copilot's progress. If it's heading in the wrong direction, you send a follow-up prompt to redirect it.
+
+3. **Review on GitHub.com.** Later, from any browser, you open the session to read the session log and check the changes Copilot made after your follow-up.
+
+4. **Finish in Copilot CLI.** Back in your terminal, you resume the same session, with its full history and work intact, and keep working until you're ready to open a pull request.
+
+At each step, you work with the same session. Copilot keeps the conversation and the work so far, so each client picks up where the last one left off.
+
+### Find your sessions in each client
+
+* **GitHub.com**: Go to [github.com/copilot](https://github.com/copilot?ref_product=copilot\&ref_type=engagement\&ref_style=text\&utm_source=manage-track-agents-home-2\&utm_medium=docs\&utm_campaign=universe-2026). Your most recent sessions are listed under "Pick up where you left off." To see all your sessions, click **View all**.
+* **GitHub Mobile**: Tap **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-copilot" aria-label="copilot" role="img"><path d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z"></path><path d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z"></path></svg> Copilot** in the bottom-right corner. Your sessions are listed under "Agent sessions."
+* **Copilot CLI**: Open the **Sessions** tab, or enter `/resume` in an interactive session. Cloud sessions appear alongside your local sessions. For more information, see [Working with multiple GitHub Copilot CLI sessions](/en/copilot/how-tos/copilot-cli/use-copilot-cli/work-with-multiple-sessions).
+* **GitHub Copilot app**: Your sessions appear in the sidebar. Click a session to open it.
 
 ## Stop a session
 
@@ -108,16 +131,6 @@ Show me sessions where the agent struggled or I had to correct it multiple times
 Copilot can search across your prompts, responses, file changes, and other context from your synced sessions.
 
 For CLI-specific session querying and `/chronicle` commands, see [Using GitHub Copilot CLI session data](/en/copilot/how-tos/copilot-cli/use-copilot-cli/chronicle). For conceptual information about how session data is stored and synced, see [About GitHub Copilot session data](/en/copilot/concepts/security-governance-and-network-settings/session-data).
-
-## Continue a session's work in GitHub Copilot Chat
-
-You can pass context between Copilot Chat and your Copilot cloud agent sessions on GitHub.
-
-When you start a session from Copilot Chat, it incorporates the context of your conversation, and while the session runs, Copilot Chat reflects its status so you can ask follow-up questions.
-
-When a session is complete, or when you are viewing a pull request Copilot created, you can ask what changed, what was validated, and why, and Copilot will answer by drawing on the session logs. You can also start another session directly from Copilot Chat.
-
-For more information, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github) and [Using GitHub Copilot to explore pull requests](/en/copilot/tutorials/explore-pull-requests).
 
 ## Further reading
 

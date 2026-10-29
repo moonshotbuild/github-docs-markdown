@@ -25,6 +25,8 @@ You can configure code scanning to check the code in a repository using the defa
 
 By default, code scanning analyzes your code periodically on the default branch and during pull requests. For information about managing alerts on a pull request, see [Triaging code scanning alerts in pull requests](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/triage-alerts-in-pull-requests).
 
+AI Scan for repositories adds alerts from on-demand scans of your default branch to the same alert list as CodeQL. You can use existing alert assignment, remediation, security campaign, and issue-linking workflows with these alerts. See [AI Scan for a repository's backlog](/en/code-security/concepts/code-scanning/ai-scan-for-repositories).
+
 You can use GitHub Copilot Autofix to generate fixes automatically for code scanning alerts, including CodeQL alerts. For more information, see [Resolving code scanning alerts](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/resolve-alerts#generating-a-suggested-fix).
 
 For code scanning alerts from CodeQL analysis, you can use security overview to see how CodeQL is performing in pull requests in repositories across your organization, and to identify repositories where you may need to take action. For more information, see [Code scanning on pull requests](/en/code-security/concepts/code-scanning/code-scanning-on-pull-requests).

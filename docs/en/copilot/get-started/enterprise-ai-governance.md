@@ -27,11 +27,11 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
 * [Choosing your enterprise's plan for GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/assign-licenses/choose-enterprise-plan)
 
-  Choose between Copilot Business and Copilot Enterprise.
+  Compare enterprise access charges, usage allowances, and capabilities to choose a Copilot plan for your rollout.
 
 * [Setting up GitHub Copilot for your enterprise](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-enterprise)
 
-  Enable GitHub Copilot across your enterprise so developers can write code faster.
+  Prepare policies, spending controls, and access to roll out GitHub Copilot across your enterprise.
 
 ### Governance basics
 
@@ -57,17 +57,13 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
 ### Preparing for agents
 
-* [Planning an AI agent rollout in your enterprise](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
+* [Understanding how AI agents fit into your enterprise's workflows](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
 
   Identify where AI agents can help your teams, and plan the governance and support needed to adopt them across your enterprise.
 
-* [Agent management for enterprises](/en/copilot/concepts/enterprise/agent-management)
+* [Building a secure cloud environment for agents in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails)
 
-  Maintain your enterprise's security and compliance standards and supercharge your developers by managing agents with AI Controls.
-
-* [Building guardrails for GitHub Copilot cloud agent in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails)
-
-  Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot cloud agent.
+  Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot in the cloud.
 
 * [Configuring an MCP server allowlist for your enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-enterprise-allowlist)
 
@@ -83,13 +79,13 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
   Roll out the GitHub Copilot app so developers can direct agents across parallel tasks while you control access, model availability, and external tools.
 
-* [Enabling GitHub Copilot cloud agent in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/enable-copilot-cloud-agent)
+* [Managing GitHub Copilot in the cloud for your enterprise or organization](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/manage-copilot-in-the-cloud)
 
-  Choose which organizations can use Copilot cloud agent and connect it to MCP servers.
+  Allow users to use Copilot on GitHub and start cloud sessions from local clients.
 
-* [Giving GitHub Copilot cloud agent access to resources in your organization](/en/copilot/tutorials/cloud-agent/give-access-to-resources)
+* [Giving GitHub Copilot cloud sessions access to resources in your organization](/en/copilot/tutorials/cloud-agent/give-access-to-resources)
 
-  Get more out of Copilot by giving it access to approved MCP servers and internal packages.
+  Get more out of Copilot by giving it access to approved MCP servers and internal packages in cloud sessions.
 
 * [Administering Copilot CLI for your enterprise](/en/copilot/how-tos/copilot-cli/administer-copilot-cli-for-your-enterprise)
 

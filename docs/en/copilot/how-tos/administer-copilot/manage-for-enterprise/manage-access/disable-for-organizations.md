@@ -23,7 +23,9 @@ breadcrumbs:
 
 Disable GitHub Copilot for some or all of the organizations in your enterprise.
 
-When you disable GitHub Copilot for organizations, organization owners cannot assign GitHub Copilot licenses to members of their organization. Enterprise owners will still be able to assign Copilot Business licenses to users and teams in the enterprise settings.
+This procedure applies to Copilot Business and Copilot Enterprise. When you disable access for organizations, organization owners cannot assign licenses to their members. Enterprise owners can still assign Copilot Business seats directly to users and teams in the enterprise settings.
+
+For how seat assignment works with Copilot access, see [GitHub Copilot seats and billing cycles for organizations and enterprises](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/seats-and-billing-cycles#seat-assignment).
 
 1. Navigate to your enterprise. For example, from the [Enterprises](https://github.com/settings/enterprises?ref_product=ghec\&ref_type=engagement\&ref_style=text) page on GitHub.com.
 

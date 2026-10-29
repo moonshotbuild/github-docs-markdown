@@ -1057,6 +1057,9 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `POST /repos/{owner}/{repo}/issues/comments/{comment_id}/reactions` | write | PAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/issues/comments/{comment_id}/reactions/{reaction_id}` | write | PAT | ✗ |
 | `PATCH /repos/{owner}/{repo}/issues/{issue_number}` | write | PAT | ✓ |
+| `POST /repos/{owner}/{repo}/issues/{issue_number}/artifacts` | write | PAT | ✗ |
+| `PATCH /repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}` | write | PAT | ✗ |
+| `DELETE /repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/issues/{issue_number}/assignees` | write | PAT | ✓ |
 | `DELETE /repos/{owner}/{repo}/issues/{issue_number}/assignees` | write | PAT | ✓ |
 | `POST /repos/{owner}/{repo}/issues/{issue_number}/comments` | write | PAT | ✓ |
@@ -1095,6 +1098,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/issues/events` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/issues/events/{event_id}` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/artifacts` | read | PAT | ✓ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/assignees/{assignee}` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/comments` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by` | read | PAT | ✗ |
@@ -1223,6 +1228,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/issues/comments` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/comments/{comment_id}` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/events/{event_id}` | read | PAT | ✓ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/artifacts` | read | PAT | ✓ |
+| `GET /repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/assignees/{assignee}` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/comments` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/issues/{issue_number}/events` | read | PAT | ✓ |
@@ -1267,9 +1274,13 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `POST /repos/{owner}/{repo}/security-advisories` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/security-advisories/reports` | write | PAT | ✗ |
 | `PATCH /repos/{owner}/{repo}/security-advisories/{ghsa_id}` | write | PAT | ✗ |
+| `POST /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments` | write | PAT | ✗ |
+| `PATCH /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments/{comment_id}` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/security-advisories/{ghsa_id}/cve` | write | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/security-advisories` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/security-advisories/{ghsa_id}` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments/{comment_id}` | read | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/security-advisories/{ghsa_id}/forks` | read | PAT | ✓ |
 
 ## Repository permissions for "Secret scanning alerts"

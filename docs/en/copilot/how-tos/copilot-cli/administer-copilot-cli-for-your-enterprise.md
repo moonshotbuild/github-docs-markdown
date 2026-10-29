@@ -48,7 +48,7 @@ Users can only access AI models that are enabled at the enterprise level. When y
 
 Enterprise and organization owners can provide keys for custom models. Users can select these like any other model: with the Copilot CLI model selector, the `--model` flag, or environment variables. See [Enabling custom models for GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/enable-custom-models).
 
-Separately, users can also provide their own LLM keys locally. This is not controlled by enterprise policies. See [Adding LLM models to GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models).
+Separately, users can also provide their own LLM keys locally. This is not controlled by enterprise policies. See [Adding LLM models to GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/add-llm-models).
 
 ### Custom agents
 

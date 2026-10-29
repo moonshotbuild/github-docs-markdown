@@ -28,7 +28,7 @@ Local sandboxing limits access to files, network resources, and credentials on y
 > [!NOTE]
 > If you get your Copilot license from an enterprise, some or all sandbox settings may be controlled by enterprise managed settings.
 
-For a conceptual overview of cloud and local sandboxes for Copilot, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes). For detailed instructions on using local sandboxing, see [Using local sandboxing](/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing).
+For a conceptual overview of cloud and local sandboxes for Copilot, see [About local sandboxing for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes). For detailed instructions on using local sandboxing, see [Using local sandboxing](/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing).
 
 ## Prerequisites
 
@@ -349,5 +349,5 @@ The steps above show your saved settings. To see the **effective** policy—the 
 ## Further reading
 
 * [Using local sandboxing](/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing)
-* [Enabling or disabling cloud sandboxes for your organization or enterprise](/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization)
+* [Managing cloud sandboxes for your organization or enterprise](/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization)
 * [Configuring GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/configure-copilot-cli)

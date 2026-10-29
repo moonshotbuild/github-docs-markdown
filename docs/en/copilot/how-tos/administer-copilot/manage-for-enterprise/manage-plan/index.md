@@ -25,7 +25,7 @@ Enterprise owners can manage the Copilot plan for the enterprise.
 
 * [Subscribing to GitHub Copilot for your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-plan/subscribe)
 
-  Enterprise owners can set up a Copilot Enterprise or Copilot Business plan for their enterprise.
+  Activate a Copilot plan to manage access and usage across your enterprise.
 
 * [Canceling GitHub Copilot for your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-plan/cancel-plan)
 

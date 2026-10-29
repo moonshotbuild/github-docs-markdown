@@ -25,7 +25,7 @@ Agent apps let you use partner-built agents directly in your workflows on GitHub
 
 ## Introduction
 
-Agent apps are GitHub Apps that expose agents on GitHub. GitHub partners build agent apps to bring their tools and services into your development workflow. These agent apps are agents you can delegate work to alongside Copilot cloud agent and other third-party agents. Agent apps are powered by Copilot cloud agent. To learn more, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
+Agent apps are GitHub Apps that expose agents on GitHub. GitHub partners build agent apps to bring their tools and services into your development workflow. These agent apps are agents you can delegate work to alongside Copilot cloud agent and other third-party agents. Agent apps are powered by Copilot cloud agent. To learn more, see [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
 
 For example, an agent app could analyze your product analytics, scan your application for security vulnerabilities, or add feature flags to a pull request, then connect back to the partner's systems to complete the task.
 
@@ -39,7 +39,7 @@ You can start an agent app's agent from the following entry points on GitHub.com
 * **Pull request comment**: Mention `@AGENT-NAME` in a comment on a pull request to ask the agent to make changes.
 * **Agents UI**: Select the agent app under the prompt box in the Agents tab or panel, then start a task with a prompt.
 
-You can use these entry points in the same way as you use Copilot cloud agent and other third-party coding agents. For more information, see [Using agent apps](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-agent-apps).
+You can use these entry points in the same way as you use Copilot and other third-party coding agents. For more information, see [Using agent apps](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-agent-apps).
 
 ## How agent apps work
 
@@ -60,10 +60,10 @@ By default, agent apps have access to the models that are enabled in the organiz
 
 ## Billing
 
-Agent apps are powered by Copilot cloud agent. When you use an agent app, the AI usage is billed to your Copilot subscription, and sessions consume AI credits in the same way as Copilot cloud agent. See [GitHub Copilot billing](/en/billing/concepts/product-billing/github-copilot-billing).
+Agent apps are powered by Copilot. When you use an agent app, the AI usage is billed to your Copilot subscription, and sessions consume AI credits in the same way as Copilot. See [GitHub Copilot billing](/en/billing/concepts/product-billing/github-copilot-billing).
 
 ## Next steps
 
 * To learn about using an agent app, see [Using agent apps](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-agent-apps).
 * To install an agent app and opt in to its agent features, see [About using GitHub Apps](/en/apps/using-github-apps/about-using-github-apps).
-* To enable using agent apps in an organization owned by an enterprise, an administrator must enable the "agent apps" policy at the enterprise level before you can use it. See [Enabling GitHub Copilot cloud agent in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/enable-copilot-cloud-agent#enabling-agent-apps-and-third-party-agents).
+* To enable using agent apps in an organization owned by an enterprise, an administrator must enable the "agent apps" policy at the enterprise level before you can use it. See [Managing GitHub Copilot in the cloud for your enterprise or organization](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/enable-copilot-cloud-agent#enabling-agent-apps-and-third-party-agents).

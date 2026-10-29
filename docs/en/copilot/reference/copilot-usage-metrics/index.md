@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/reference/copilot-usage-metrics"
 title: "GitHub Copilot usage metrics"
-intro: "Find information about usage metrics for GitHub Copilot."
+intro: "Interpret and validate GitHub Copilot usage metrics with guidance on data reconciliation, methodology, team-level analysis, metric definitions, and example schemas."
 product: "GitHub Copilot"
 document_type: "subcategory"
 breadcrumbs:
@@ -15,7 +15,7 @@ breadcrumbs:
 
 # GitHub Copilot usage metrics
 
-Find information about usage metrics for GitHub Copilot.
+Interpret and validate GitHub Copilot usage metrics with guidance on data reconciliation, methodology, team-level analysis, metric definitions, and example schemas.
 
 ## Links
 

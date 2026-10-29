@@ -25,6 +25,10 @@ Discover how to assess, manage, and resolve code scanning alerts to keep your co
 
   From the security view, you can explore and evaluate alerts for potential vulnerabilities or errors in your project's code.
 
+* [Viewing and managing AI Scan alerts on your repository''s default branch](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/viewing-and-managing-ai-scan-alerts)
+
+  Run an AI Scan, review the alerts in your code scanning backlog, and check fixes for security vulnerabilities.
+
 * [Triaging code scanning alerts in pull requests](/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/triage-alerts-in-pull-requests)
 
   When code scanning identifies a problem in a pull request, you can review the highlighted code and resolve the alert.

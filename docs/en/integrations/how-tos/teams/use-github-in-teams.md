@@ -21,11 +21,9 @@ Learn how to use GitHub in Teams to improve collaboration and streamline your wo
 
 The GitHub integration for Microsoft Teams lets you connect your GitHub account to the GitHub app in Teams. Once connected, you can subscribe to notifications, run commands, and collaborate on issues and pull requests directly within Teams.
 
-You can also use the GitHub integration to initiate and steer Copilot cloud agent sessions in a conversation, including asking Copilot to perform deep research, planning and triage tasks within a thread. Teammates can collaborate with each other and the agent, add context, correct assumptions, continue an agent task, and review the resulting artifacts.
+The GitHub app brings GitHub notifications and Copilot together. You can receive repository updates in a channel, group chat, or private chat, then reply to a notification and @mention GitHub to delegate a task to Copilot. Copilot uses the linked issue or pull request and the thread conversation to understand the task.
 
-> [!NOTE]
->
-> * GitHub Copilot in Teams is currently in public preview and subject to change.
+You can also use the GitHub integration to initiate and steer Copilot cloud agent sessions in a conversation, including asking Copilot to perform deep research, planning and triage tasks within a thread. Teammates can collaborate with each other and the agent, add context, correct assumptions, continue an agent task, and review the resulting artifacts. You can also select the model, connect MCP servers, work across multiple repositories in one session, and benefit from Copilot Memory.
 
 ## Connecting your GitHub account to the GitHub app in Teams
 
@@ -109,20 +107,31 @@ The GitHub app integrates Copilot cloud agent into Teams. You can summon Copilot
 
 Use Copilot in direct messages, threads, and channels. Besides creating issues, pull requests and other artifacts, working with Copilot in Teams allows you to:
 
-* Move directly from discussion to investigation and implementation.
-* Ask questions and investigate failures.
-* Plan work before implementation.
-* Collaboratively steer an agent with teammates.
-* Delegate work from any device.
-* Let tasks run asynchronously.
-* Review the resulting work in the open.
-* Resume work on the agent-generated artifacts outside of Teams, in GitHub, the terminal, or your preferred code editor.
+* Move from discussion to investigation, planning, and implementation.
+* Ask questions, investigate failures, and steer an agent together with teammates.
+* Delegate work from any device and let tasks run asynchronously.
+* Choose the model, connect MCP servers, and work across multiple repositories.
+* Follow the plan, changes, and pull request in a canvas beside your conversation.
+* Use Copilot Memory, which is currently in public preview and subject to change, to help Copilot learn from your work over time.
+* Review the resulting work in the open, then resume it outside of Teams, in GitHub, the terminal, or your preferred code editor.
+
+For example, to investigate a failure before changing code:
+
+```text
+@GitHub Investigate this failed workflow and explain the cause before changing code.
+```
+
+To work across multiple repositories:
+
+```text
+@GitHub Update the API in octo-org/service and its client in octo-org/web, then open linked pull requests.
+```
+
+You need write access to every selected repository to start or steer work. Anyone in the conversation can add context.
 
 For more information, see [Integrating Copilot cloud agent with Teams](/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-teams).
 
-## Feedback and support
-
-You can view and share feedback in our [discussion forum](https://github.com/orgs/community/discussions/205453).
+To change the settings for Copilot cloud agent in Teams, use the `@GitHub settings` command. These settings don't create notification subscriptions or review reminders. To change the model for only the current conversation, ask Copilot to choose a model.
 
 ## Further reading
 

@@ -48,7 +48,7 @@ Each person who suggested a change included in the commit will be a co-author of
 
 ## Delegating review comments to Copilot
 
-If you have access to Copilot cloud agent, you can delegate review comments to have Copilot implement the feedback. For more information, see [Using Copilot cloud agent on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github#delegating-review-comments).
+If you have access to Copilot cloud agent, you can delegate review comments to have Copilot implement the feedback. For more information, see [Using Copilot in the cloud on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github#delegating-review-comments).
 
 ## Re-requesting a review
 

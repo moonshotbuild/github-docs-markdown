@@ -47,6 +47,10 @@ GitHub's security features help you keep track of your projects' dependencies an
 
   Dependabot alerts help you find and fix vulnerable dependencies before they become security risks.
 
+* [About reachability analysis for Dependabot alerts](/en/code-security/concepts/supply-chain-security/about-reachability-analysis-for-dependabot-alerts)
+
+  Reachability analysis helps prioritize Dependabot alerts by identifying whether your application can reach vulnerable dependency code.
+
 * [Dependabot malware alerts](/en/code-security/concepts/supply-chain-security/malware-alerts)
 
   Dependabot malware alerts help you identify malware in your dependencies to protect your project and its users.

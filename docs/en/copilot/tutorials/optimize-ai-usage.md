@@ -45,26 +45,26 @@ Some models also support configurable reasoning levels, which control how much t
 
 See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#models-with-extended-capabilities).
 
-### Use Copilot auto model selection as your default
+### Use Copilot Fusion as your default
 
-Auto model selection chooses a capable model for you, based on the intent of your task.
+Copilot Fusion evaluates each task and uses capability signals for reasoning, code generation, debugging, and tool use, to select the most efficient execution pattern that meets the quality bar for your chosen effort level. Execution patterns either choose a single best model for the task or use multiple models to do review passes for the best result for your task.
 
-A small router looks at your prompt and sends it to the model that can **handle it most efficiently**, reserving expensive reasoning models for complex problems. It also avoids models that burn through a token budget quickly.
+Selecting an effort level lets you prioritize the quality, cost, and capability tradeoffs that the system prioritizes for each prompt. There are three effort levels you can choose from:
 
-Auto model selection also **protects your cache**. It changes models at natural cache boundaries, when a new session starts or after you run `/compact`. As conversations evolve, it will re-route at points where quality improvements outweigh cache loss. To understand more about why this matters, see [4. Preserve the cache](#4-preserve-the-cache).
+* **Fusion Standard**: Balances cost, quality, and latency.
+* **Fusion High**: Balanced orchestration with moderate token savings.
+* **Fusion Max**: Frontier capability while still considering token efficiency.
 
-Auto model selection also routes around degraded or busy models, so you hit fewer rate limits and errors.
+Copilot Fusion keeps your main conversation on the same model whenever possible, so the conversation continues to benefit from cached tokens. Models that assist, such as a reviewer, receive only the context they need. To understand more about why this matters, see [4. Preserve the cache](#4-preserve-the-cache).
 
-If you are on a paid Copilot plan, you qualify for a 10% discount on model costs while using auto model selection in Copilot Chat, Copilot CLI, the GitHub Copilot app, or Copilot cloud agent.
-
-<!-- expires 2026-10-28 -->
+<!-- expires 2026-11-30 -->
 
 > [!NOTE]
-> If you are on the Copilot Max plan, you'll receive a 30% discount through October 28, 2026 while using auto model selection.
+> Through November 30, 2026, users on paid Copilot plans receive a 30% discount on model costs when using Copilot Fusion.
 
-<!-- end expires 2026-10-28 -->
+<!-- end expires 2026-11-30 -->
 
-For information on the feature and its availability, see [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection#copilot-chat-in-ides).
+For more information, see [About GitHub Copilot Fusion](/en/copilot/concepts/models/copilot-fusion).
 
 ### Use cheaper models for subagents
 

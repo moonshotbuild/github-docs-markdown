@@ -121,6 +121,7 @@ curl -L \
 * `hooks`: array of string
 * `github_enterprise_importer`: array of string
 * `web`: array of string
+* `shared_ingress`: array of string
 * `api`: array of string
 * `git`: array of string
 * `packages`: array of string

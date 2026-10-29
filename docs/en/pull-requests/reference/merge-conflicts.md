@@ -27,7 +27,7 @@ Resolving a merge conflict means choosing the final content that should appear a
 
 * Simple line conflicts can often be resolved on GitHub. See [Resolving a merge conflict on GitHub](/en/pull-requests/how-tos/merge-and-close-pull-requests/resolving-a-merge-conflict-on-github).
 * More complex conflicts must be resolved in a local clone and pushed back to the pull request branch. See [Resolving a merge conflict using the command line](/en/pull-requests/how-tos/merge-and-close-pull-requests/resolving-a-merge-conflict-using-the-command-line).
-* If you have access to Copilot cloud agent and it is enabled for the repository, Copilot can help resolve conflicts from the merge box. See [Using Copilot cloud agent on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github#resolving-merge-conflicts).
+* If you have access to Copilot cloud agent and it is enabled for the repository, Copilot can help resolve conflicts from the merge box. See [Using Copilot in the cloud on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github#resolving-merge-conflicts).
 
 On the command line, Git tells you when a merge cannot finish automatically. You cannot push the merged result until you resolve the conflict and commit the resolution.
 

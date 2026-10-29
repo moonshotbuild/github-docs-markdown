@@ -41,6 +41,10 @@ Find information to apply to your work with GitHub Copilot.
 
   Find information on options and settings for Copilot CLI.
 
+* [Plugin and marketplace reference](/en/copilot/reference/plugin-and-marketplace-reference)
+
+  Find shared plugin and marketplace terms, file formats, and links to surface-specific documentation.
+
 * [GitHub Copilot app reference](/en/copilot/reference/github-copilot-app-reference)
 
   Find reference information for repository configuration, slash commands, and GitHub-provided built-in skills in the GitHub Copilot app.
@@ -55,7 +59,11 @@ Find information to apply to your work with GitHub Copilot.
 
 * [GitHub Copilot hooks reference](/en/copilot/reference/hooks-reference)
 
-  Find hook events, configuration formats, and input payloads for hooks in Copilot CLI and Copilot cloud agent.
+  Find hook events, configuration formats, and input payloads for hooks in Copilot CLI and Copilot in the cloud.
+
+* [Supported Copilot connectors](/en/copilot/reference/supported-connectors)
+
+  Find the services you can connect to Copilot.
 
 * [Supported surfaces for GitHub Copilot policies](/en/copilot/reference/supported-surfaces-for-policies)
 
@@ -79,7 +87,7 @@ Find information to apply to your work with GitHub Copilot.
 
 * [GitHub Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics)
 
-  Find information about usage metrics for GitHub Copilot.
+  Interpret and validate GitHub Copilot usage metrics with guidance on data reconciliation, methodology, team-level analysis, metric definitions, and example schemas.
 
 * [Enterprise administrators](/en/copilot/reference/enterprise-administrators)
 

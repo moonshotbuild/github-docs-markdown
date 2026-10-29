@@ -29,11 +29,11 @@ Before you begin, see [About enterprise accounts for Copilot Business](/en/copil
 
 If you will pay by credit card or PayPal, you can create an enterprise account and purchase Copilot Business yourself.
 
-> [!NOTE] For other payment methods, contact [GitHub's Sales team](https://github.com/enterprise/contact?ref_product=copilot\&ref_type=engagement\&ref_style=text) and ask for an enterprise account with Copilot enabled.
+> [!NOTE] For other payment methods, contact [GitHub's Sales team](https://github.com/enterprise/contact?ref_product=copilot\&ref_type=engagement\&ref_style=text\&utm_source=setting-up-enterprise-business-article-contact-sales-cta\&utm_medium=docs\&utm_campaign=universe-2026) and ask for an enterprise account with Copilot enabled.
 
 1. Start a trial of GitHub Enterprise Cloud.
 
-   <a href="https://github.com/account/enterprises/new?ref_product=ghec&ref_type=trial&ref_style=button&ref_plan=enterprise" target="_blank" class="btn btn-primary mt-3 mr-3 no-underline"><span>Set up a trial of GitHub Enterprise Cloud</span> <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-link-external" aria-label="link external icon" role="img"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>
+   <a href="https://github.com/account/enterprises/new?ref_product=ghec&ref_type=trial&ref_style=button&ref_plan=enterprise&utm_source=set-up-enterprise-business-article-enterprise-account-trial&utm_medium=docs&utm_campaign=universe-2026" target="_blank" class="btn btn-primary mt-3 mr-3 no-underline"><span>Set up a trial of GitHub Enterprise Cloud</span> <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-link-external" aria-label="link external icon" role="img"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>
 
 2. End the trial immediately and add a credit card or PayPal as a payment method. This is required because trial enterprises cannot sign up for Copilot Business. However, with the setup described in this article, you will **not** pay for GitHub Enterprise Cloud licenses even when the trial has ended.
 
@@ -53,15 +53,15 @@ Group users to scale license assignment by creating enterprise teams. Unaffiliat
 
 An enterprise owner must purchase a Copilot Business plan so you can start assigning licenses to users.
 
-If you pay by credit card or PayPal, you can [subscribe to Copilot Business](https://github.com/github-copilot/purchase?ref_product=copilot\&ref_type=purchase\&ref_style=button\&ref_plan=business) yourself.
+If you pay by credit card or PayPal, you can [subscribe to Copilot Business](https://github.com/github-copilot/purchase?ref_product=copilot\&ref_type=purchase\&ref_style=button\&ref_plan=business\&utm_source=set-up-enterprise-business-article-business-cta\&utm_medium=docs\&utm_campaign=universe-2026) yourself.
 
-For other payment methods, [contact GitHub's Sales team](https://github.com/enterprise/contact?ref_product=copilot\&ref_type=engagement\&ref_style=text).
+For other payment methods, [contact GitHub's Sales team](https://github.com/enterprise/contact?ref_product=copilot\&ref_type=engagement\&ref_style=text\&utm_source=set-up-enterprise-business-article-contact-enterprise-sales\&utm_medium=docs\&utm_campaign=universe-2026).
 
 ## Assign Copilot licenses
 
 Give people access to Copilot by assigning Copilot Business licenses to users or enterprise teams.
 
-For detailed steps, see [Granting users access to GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access#assigning-licenses-to-users-or-teams).
+For detailed steps, see [Giving users GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access#assigning-seats-directly).
 
 ## Govern the use of Copilot in your enterprise
 

@@ -25,7 +25,7 @@ Technical debt accumulates in every codebase: duplicate code, missing tests, out
 
 This tutorial is designed to help engineering teams and technical leads reduce technical debt while maintaining the pace at which new features are delivered. You should have:
 
-* A Copilot subscription with access to Copilot cloud agent
+* A Copilot subscription with access to Copilot in the cloud
 * Admin access to at least one repository
 * Familiarity with your team's development workflow
 
@@ -34,7 +34,7 @@ This tutorial is designed to help engineering teams and technical leads reduce t
 By the end of this tutorial, you'll have learned about:
 
 * Using Copilot to implement in-the-moment fixes
-* Leveraging Copilot cloud agent for large-scale cleanup tasks
+* Leveraging Copilot in the cloud for large-scale cleanup tasks
 * Creating custom instructions to align Copilot with your team's standards
 * Measuring the impact of Copilot on your technical debt
 
@@ -122,13 +122,13 @@ By adopting the in-the-moment fix approach, you help to ensure that substandard 
 
 For more details on using Copilot in your IDE, see [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide).
 
-## Using Copilot cloud agent for large-scale refactoring
+## Using Copilot for large-scale refactoring
 
-Some refactoring tasks are just too big to complete while everyone on the team is busy developing new features. In this situation you can use Copilot cloud agent to handle these tasks autonomously. Human effort will still be required—at a minimum for reviewing the changes Copilot cloud agent proposes—but getting Copilot to do the bulk of the work can allow you to carry out large-scale refactoring with much less impact on your team's productivity.
+Some refactoring tasks are just too big to complete while everyone on the team is busy developing new features. In this situation you can use Copilot to handle these tasks autonomously. Human effort will still be required—at a minimum for reviewing the changes Copilot proposes—but getting Copilot to do the bulk of the work can allow you to carry out large-scale refactoring with much less impact on your team's productivity.
 
-### When to use Copilot cloud agent
+### When to use Copilot in the cloud
 
-Use Copilot cloud agent for tasks that:
+Use Copilot in the cloud for tasks that:
 
 * Touch many files across your codebase
 * Require systematic changes (like removing old feature flags)
@@ -143,7 +143,7 @@ Examples include:
 * Updating dependency versions
 * Standardizing import patterns
 
-### Workflow for Copilot cloud agent
+### Workflow for Copilot in the cloud
 
 1. Create a GitHub issue describing the refactoring task.
 
@@ -164,7 +164,7 @@ Examples include:
 
 2. Assign the issue to the **Copilot** user.
 
-3. Copilot cloud agent will:
+3. Copilot will:
 
    * Set up a development environment
    * Open a draft pull request
@@ -175,7 +175,7 @@ Examples include:
 
 4. Review the pull request just as you would a pull request raised by a human.
 
-5. Leave comments if changes are needed—Copilot cloud agent will update the pull request based on your feedback.
+5. Leave comments if changes are needed—Copilot will update the pull request based on your feedback.
 
 6. Iterate in this way until the work is completed correctly.
 
@@ -185,7 +185,7 @@ For more information, see [Starting GitHub Copilot sessions](/en/copilot/how-tos
 
 ### Safety guardrails
 
-Copilot cloud agent operates with built-in safety measures:
+Copilot operates with built-in safety measures:
 
 * It can only push to its own `copilot/*` branches
 * It cannot merge pull requests—requires your approval
@@ -249,7 +249,7 @@ Start small to validate Copilot's impact on your technical debt before rolling i
 
 ### Week 1: Set up and establish baselines
 
-1. Ensure all pilot participants have Copilot access with Copilot cloud agent enabled.
+1. Ensure all pilot participants have Copilot access with Copilot in the cloud enabled.
 
 2. Count the technical debt items in your backlog:
 
@@ -276,7 +276,7 @@ Start small to validate Copilot's impact on your technical debt before rolling i
 
 3. Use Copilot in your IDE for quick fixes as you encounter issues.
 
-4. Assign larger cleanup tasks to Copilot cloud agent.
+4. Assign larger cleanup tasks to Copilot.
 
 5. Review all Copilot-generated PRs carefully.
 
@@ -288,7 +288,7 @@ After the pilot, measure your results:
 
 * How much faster are refactoring pull requests getting merged?
 * How many review rounds do they require now?
-* Which types of code change suggestions, made by Copilot cloud agent in pull requests, did developers accept most often?
+* Which types of code change suggestions, made by Copilot in pull requests, did developers accept most often?
 * Which suggestions needed the most revision?
 * Are your technical debt metrics improving?
 
@@ -335,21 +335,21 @@ If Copilot consistently suggests code that doesn't match your needs:
 * Review your custom instructions—they may be too vague or contradictory
 * Provide more specific context in your prompts
 * Add examples of good code to your custom instructions
-* Leave detailed feedback in pull request reviews to allow Copilot cloud agent to fix the problems
+* Leave detailed feedback in pull request reviews to allow Copilot to fix the problems
 
 ### Pull requests are too large to review
 
-If Copilot cloud agent creates pull requests that are difficult to review:
+If Copilot creates pull requests that are difficult to review:
 
 * Break large tasks into smaller, focused issues
-* Ask Copilot cloud agent to handle one file or directory at a time
+* Ask Copilot to handle one file or directory at a time
 * Use more specific issue descriptions
 
 ### Changes break tests
 
 If refactoring introduces test failures:
 
-* Ensure your test suite runs reliably before using Copilot cloud agent
+* Ensure your test suite runs reliably before using Copilot
 * Review Copilot changes carefully before merging
 * Ask Copilot to update tests along with the code changes
 
@@ -367,7 +367,7 @@ If your team isn't using Copilot for technical debt:
 In this tutorial, you learned how to use Copilot to systematically reduce technical debt. You now know how to:
 
 * Fix technical debt immediately using Copilot in your IDE
-* Assign large refactoring tasks to Copilot cloud agent
+* Assign large refactoring tasks to Copilot
 * Create custom instructions that align Copilot with your team's standards
 * Run a pilot program to validate the approach
 * Measure Copilot's impact on technical debt
@@ -387,7 +387,7 @@ After reading this tutorial, do you feel confident you can use Copilot to reduce
 ## Next steps
 
 * **Expand your pilot**: Roll out to more repositories based on your pilot results.
-* **Automate dependency updates**: Create recurring issues for Copilot cloud agent to handle dependency updates.
+* **Automate dependency updates**: Create recurring issues for Copilot to handle dependency updates.
 * **Build a refactoring queue**: Label issues in your backlog as good for Copilot then regularly assign a batch of these to Copilot to work on.
 * **Share best practices**: Document successful prompts and custom instructions for your team.
 

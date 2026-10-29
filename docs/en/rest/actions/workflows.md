@@ -115,7 +115,7 @@ OAuth app tokens and personal access tokens (classic) need the repo scope to use
 * **`repo`** (string) (required)
   The name of the repository without the .git extension. The name is not case sensitive.
 
-* **`workflow_id`** (string) (required)
+* **`workflow_id`** (integer or string) (required)
   The ID of the workflow. You can also pass the workflow file name as a string.
 
 ### HTTP response status codes
@@ -172,7 +172,7 @@ OAuth tokens and personal access tokens (classic) need the repo scope to use thi
 * **`repo`** (string) (required)
   The name of the repository without the .git extension. The name is not case sensitive.
 
-* **`workflow_id`** (string) (required)
+* **`workflow_id`** (integer or string) (required)
   The ID of the workflow. You can also pass the workflow file name as a string.
 
 ### HTTP response status codes
@@ -218,7 +218,7 @@ OAuth tokens and personal access tokens (classic) need the repo scope to use thi
 * **`repo`** (string) (required)
   The name of the repository without the .git extension. The name is not case sensitive.
 
-* **`workflow_id`** (string) (required)
+* **`workflow_id`** (integer or string) (required)
   The ID of the workflow. You can also pass the workflow file name as a string.
 
 #### Body parameters
@@ -282,7 +282,7 @@ OAuth tokens and personal access tokens (classic) need the repo scope to use thi
 * **`repo`** (string) (required)
   The name of the repository without the .git extension. The name is not case sensitive.
 
-* **`workflow_id`** (string) (required)
+* **`workflow_id`** (integer or string) (required)
   The ID of the workflow. You can also pass the workflow file name as a string.
 
 ### HTTP response status codes
@@ -333,7 +333,7 @@ OAuth app tokens and personal access tokens (classic) need the repo scope to use
 * **`repo`** (string) (required)
   The name of the repository without the .git extension. The name is not case sensitive.
 
-* **`workflow_id`** (string) (required)
+* **`workflow_id`** (integer or string) (required)
   The ID of the workflow. You can also pass the workflow file name as a string.
 
 ### HTTP response status codes

@@ -1,6 +1,6 @@
 ---
 source_path: "/en/copilot/how-tos/copilot-on-github/use-copilot-agents/research-plan-iterate"
-title: "Research, plan, and iterate on code changes with Copilot cloud agent"
+title: "Research, plan, and iterate on code changes with Copilot"
 intro: "Perform deep research on a repository, create an implementation plan, and make iterative code changes on a branch, then create a pull request when you're ready."
 product: "GitHub Copilot"
 document_type: "article"
@@ -17,11 +17,11 @@ breadcrumbs:
     href: "/en/copilot/how-tos/copilot-on-github/use-copilot-agents/research-plan-iterate"
 ---
 
-# Research, plan, and iterate on code changes with Copilot cloud agent
+# Research, plan, and iterate on code changes with Copilot
 
 Perform deep research on a repository, create an implementation plan, and make iterative code changes on a branch, then create a pull request when you're ready.
 
-Copilot cloud agent lets you:
+Copilot lets you:
 
 * **Research** a repository by asking Copilot questions.
 * **Plan** and refine an approach before Copilot makes changes.
@@ -29,7 +29,7 @@ Copilot cloud agent lets you:
 
 Sessions do not create pull requests automatically. To create one immediately, include that in your prompt—for example, "Create a pull request to ...".
 
-> [!NOTE] These capabilities are only available with Copilot cloud agent on GitHub.com, and in public preview for the Teams and Slack integrations. Other Cloud agent integrations (such as Azure Boards, JIRA, or Linear) only support creating a pull request directly.
+> [!NOTE] These capabilities are only available with Copilot on GitHub.com, and in the Teams and Slack integrations. Other Cloud agent integrations (such as Azure Boards, JIRA, or Linear) only support creating a pull request directly.
 
 ## Perform deep research
 
@@ -72,4 +72,4 @@ Cloud agent processes images—such as screenshots, sketches, or designs—as pa
 
 ## Further reading
 
-* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
+* [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/copilot-surfaces/copilot-on-github)

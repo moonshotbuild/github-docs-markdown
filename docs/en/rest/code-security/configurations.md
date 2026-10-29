@@ -85,6 +85,7 @@ Array of objects:
   * `dependency_graph_autosubmit_action_options`: object:
     * `labeled_runners`: boolean
   * `dependabot_alerts`: string, enum: `enabled`, `disabled`, `not_set`
+  * `dependabot_reachability`: string, enum: `enabled`, `disabled`, `not_set`
   * `dependabot_security_updates`: string, enum: `enabled`, `disabled`, `not_set`
   * `dependabot_delegated_alert_dismissal`: string or null, enum: `enabled`, `disabled`, `not_set`, `null`
   * `code_scanning_options`: object or null:
@@ -106,6 +107,7 @@ Array of objects:
   * `secret_scanning_validity_checks`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_non_provider_patterns`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_generic_secrets`: string, enum: `enabled`, `disabled`, `not_set`
+  * `secret_scanning_generic_secrets_push_protection`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_delegated_alert_dismissal`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_extended_metadata`: string, enum: `enabled`, `disabled`, `not_set`
   * `private_vulnerability_reporting`: string, enum: `enabled`, `disabled`, `not_set`
@@ -178,6 +180,13 @@ OAuth app tokens and personal access tokens (classic) need the admin:enterprise 
   Default: `disabled`
   Can be one of: `enabled`, `disabled`, `not_set`
 
+- **`dependabot_reachability`** (string)
+  The enablement status of reachability analysis for Dependabot. Only available for enterprises with access to reachability analysis.
+  Requires Dependabot alerts to be enabled when set to enabled. Must be disabled when Dependabot alerts is disabled.
+  not_set leaves existing repository settings unchanged.
+  Default: `disabled`
+  Can be one of: `enabled`, `disabled`, `not_set`
+
 - **`dependabot_security_updates`** (string)
   The enablement status of Dependabot security updates
   Default: `disabled`
@@ -232,6 +241,11 @@ OAuth app tokens and personal access tokens (classic) need the admin:enterprise 
 
 - **`secret_scanning_generic_secrets`** (string)
   The enablement status of Copilot secret scanning
+  Default: `disabled`
+  Can be one of: `enabled`, `disabled`, `not_set`
+
+- **`secret_scanning_generic_secrets_push_protection`** (string)
+  The enablement status of generic secrets push protection
   Default: `disabled`
   Can be one of: `enabled`, `disabled`, `not_set`
 
@@ -299,6 +313,7 @@ curl -L \
 * `dependency_graph_autosubmit_action_options`: object:
   * `labeled_runners`: boolean
 * `dependabot_alerts`: string, enum: `enabled`, `disabled`, `not_set`
+* `dependabot_reachability`: string, enum: `enabled`, `disabled`, `not_set`
 * `dependabot_security_updates`: string, enum: `enabled`, `disabled`, `not_set`
 * `dependabot_delegated_alert_dismissal`: string or null, enum: `enabled`, `disabled`, `not_set`, `null`
 * `code_scanning_options`: object or null:
@@ -320,6 +335,7 @@ curl -L \
 * `secret_scanning_validity_checks`: string, enum: `enabled`, `disabled`, `not_set`
 * `secret_scanning_non_provider_patterns`: string, enum: `enabled`, `disabled`, `not_set`
 * `secret_scanning_generic_secrets`: string, enum: `enabled`, `disabled`, `not_set`
+* `secret_scanning_generic_secrets_push_protection`: string, enum: `enabled`, `disabled`, `not_set`
 * `secret_scanning_delegated_alert_dismissal`: string, enum: `enabled`, `disabled`, `not_set`
 * `secret_scanning_extended_metadata`: string, enum: `enabled`, `disabled`, `not_set`
 * `private_vulnerability_reporting`: string, enum: `enabled`, `disabled`, `not_set`
@@ -382,6 +398,7 @@ Array of objects:
     * `dependency_graph_autosubmit_action_options`: object:
       * `labeled_runners`: boolean
     * `dependabot_alerts`: string, enum: `enabled`, `disabled`, `not_set`
+    * `dependabot_reachability`: string, enum: `enabled`, `disabled`, `not_set`
     * `dependabot_security_updates`: string, enum: `enabled`, `disabled`, `not_set`
     * `dependabot_delegated_alert_dismissal`: string or null, enum: `enabled`, `disabled`, `not_set`, `null`
     * `code_scanning_options`: object or null:
@@ -403,6 +420,7 @@ Array of objects:
     * `secret_scanning_validity_checks`: string, enum: `enabled`, `disabled`, `not_set`
     * `secret_scanning_non_provider_patterns`: string, enum: `enabled`, `disabled`, `not_set`
     * `secret_scanning_generic_secrets`: string, enum: `enabled`, `disabled`, `not_set`
+    * `secret_scanning_generic_secrets_push_protection`: string, enum: `enabled`, `disabled`, `not_set`
     * `secret_scanning_delegated_alert_dismissal`: string, enum: `enabled`, `disabled`, `not_set`
     * `secret_scanning_extended_metadata`: string, enum: `enabled`, `disabled`, `not_set`
     * `private_vulnerability_reporting`: string, enum: `enabled`, `disabled`, `not_set`
@@ -524,6 +542,12 @@ OAuth app tokens and personal access tokens (classic) need the admin:enterprise 
   The enablement status of Dependabot alerts
   Can be one of: `enabled`, `disabled`, `not_set`
 
+- **`dependabot_reachability`** (string)
+  The enablement status of reachability analysis for Dependabot. Only available for enterprises with access to reachability analysis.
+  Requires Dependabot alerts to be enabled when set to enabled. Must be disabled when Dependabot alerts is disabled.
+  not_set leaves existing repository settings unchanged. Omit this field to preserve the configuration's current value.
+  Can be one of: `enabled`, `disabled`, `not_set`
+
 - **`dependabot_security_updates`** (string)
   The enablement status of Dependabot security updates
   Can be one of: `enabled`, `disabled`, `not_set`
@@ -572,6 +596,11 @@ OAuth app tokens and personal access tokens (classic) need the admin:enterprise 
 
 - **`secret_scanning_generic_secrets`** (string)
   The enablement status of Copilot secret scanning
+  Default: `disabled`
+  Can be one of: `enabled`, `disabled`, `not_set`
+
+- **`secret_scanning_generic_secrets_push_protection`** (string)
+  The enablement status of generic secrets push protection
   Default: `disabled`
   Can be one of: `enabled`, `disabled`, `not_set`
 
@@ -817,6 +846,7 @@ curl -L \
   * `dependency_graph_autosubmit_action_options`: object:
     * `labeled_runners`: boolean
   * `dependabot_alerts`: string, enum: `enabled`, `disabled`, `not_set`
+  * `dependabot_reachability`: string, enum: `enabled`, `disabled`, `not_set`
   * `dependabot_security_updates`: string, enum: `enabled`, `disabled`, `not_set`
   * `dependabot_delegated_alert_dismissal`: string or null, enum: `enabled`, `disabled`, `not_set`, `null`
   * `code_scanning_options`: object or null:
@@ -838,6 +868,7 @@ curl -L \
   * `secret_scanning_validity_checks`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_non_provider_patterns`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_generic_secrets`: string, enum: `enabled`, `disabled`, `not_set`
+  * `secret_scanning_generic_secrets_push_protection`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_delegated_alert_dismissal`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_extended_metadata`: string, enum: `enabled`, `disabled`, `not_set`
   * `private_vulnerability_reporting`: string, enum: `enabled`, `disabled`, `not_set`
@@ -1107,6 +1138,13 @@ OAuth app tokens and personal access tokens (classic) need the write:org scope t
   Default: `disabled`
   Can be one of: `enabled`, `disabled`, `not_set`
 
+- **`dependabot_reachability`** (string)
+  The enablement status of reachability analysis for Dependabot. Only available for organizations with access to reachability analysis.
+  Requires Dependabot alerts to be enabled when set to enabled. Must be disabled when Dependabot alerts is disabled.
+  not_set leaves existing repository settings unchanged.
+  Default: `disabled`
+  Can be one of: `enabled`, `disabled`, `not_set`
+
 - **`dependabot_security_updates`** (string)
   The enablement status of Dependabot security updates
   Default: `disabled`
@@ -1185,6 +1223,11 @@ OAuth app tokens and personal access tokens (classic) need the write:org scope t
 
 - **`secret_scanning_generic_secrets`** (string)
   The enablement status of Copilot secret scanning
+  Default: `disabled`
+  Can be one of: `enabled`, `disabled`, `not_set`
+
+- **`secret_scanning_generic_secrets_push_protection`** (string)
+  The enablement status of generic secrets push protection
   Default: `disabled`
   Can be one of: `enabled`, `disabled`, `not_set`
 
@@ -1463,6 +1506,12 @@ OAuth app tokens and personal access tokens (classic) need the write:org scope t
   The enablement status of Dependabot alerts
   Can be one of: `enabled`, `disabled`, `not_set`
 
+- **`dependabot_reachability`** (string)
+  The enablement status of reachability analysis for Dependabot. Only available for organizations with access to reachability analysis.
+  Requires Dependabot alerts to be enabled when set to enabled. Must be disabled when Dependabot alerts is disabled.
+  not_set leaves existing repository settings unchanged. Omit this field to preserve the configuration's current value.
+  Can be one of: `enabled`, `disabled`, `not_set`
+
 - **`dependabot_security_updates`** (string)
   The enablement status of Dependabot security updates
   Can be one of: `enabled`, `disabled`, `not_set`
@@ -1533,6 +1582,10 @@ OAuth app tokens and personal access tokens (classic) need the write:org scope t
 
 - **`secret_scanning_generic_secrets`** (string)
   The enablement status of Copilot secret scanning
+  Can be one of: `enabled`, `disabled`, `not_set`
+
+- **`secret_scanning_generic_secrets_push_protection`** (string)
+  The enablement status of generic secrets push protection
   Can be one of: `enabled`, `disabled`, `not_set`
 
 - **`secret_scanning_delegated_alert_dismissal`** (string)
@@ -1912,6 +1965,7 @@ curl -L \
   * `dependency_graph_autosubmit_action_options`: object:
     * `labeled_runners`: boolean
   * `dependabot_alerts`: string, enum: `enabled`, `disabled`, `not_set`
+  * `dependabot_reachability`: string, enum: `enabled`, `disabled`, `not_set`
   * `dependabot_security_updates`: string, enum: `enabled`, `disabled`, `not_set`
   * `dependabot_delegated_alert_dismissal`: string or null, enum: `enabled`, `disabled`, `not_set`, `null`
   * `code_scanning_options`: object or null:
@@ -1933,6 +1987,7 @@ curl -L \
   * `secret_scanning_validity_checks`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_non_provider_patterns`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_generic_secrets`: string, enum: `enabled`, `disabled`, `not_set`
+  * `secret_scanning_generic_secrets_push_protection`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_delegated_alert_dismissal`: string, enum: `enabled`, `disabled`, `not_set`
   * `secret_scanning_extended_metadata`: string, enum: `enabled`, `disabled`, `not_set`
   * `private_vulnerability_reporting`: string, enum: `enabled`, `disabled`, `not_set`

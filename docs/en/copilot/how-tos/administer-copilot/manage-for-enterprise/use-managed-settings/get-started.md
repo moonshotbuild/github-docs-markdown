@@ -36,7 +36,7 @@ The following clients are supported, although not every client supports every pr
 * Copilot CLI
 * VS Code
 * The GitHub Copilot app
-* Copilot cloud agent
+* Copilot in the cloud
 * JetBrains IDEs
 
 For a full reference of supported keys, see [Enterprise managed settings](/en/copilot/reference/enterprise-administrators/enterprise-managed-settings).
@@ -118,7 +118,7 @@ After you complete this section, your `.github-private` repository will have the
 
 5. Commit and push your changes to the default branch.
 
-Later, you can add different overrides for other keys and other teams. **For a more complete example**, see [Overriding enterprise-managed settings for teams](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/override-settings-for-teams).
+Later, you can add different overrides for other keys and other teams. **For a more complete example**, see [Overriding enterprise-managed settings for enterprise teams](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/override-settings-for-teams).
 
 ## 4. Validate and check the settings
 

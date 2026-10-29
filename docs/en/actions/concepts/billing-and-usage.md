@@ -1,7 +1,7 @@
 ---
 source_path: "/en/actions/concepts/billing-and-usage"
 title: "Billing and usage"
-intro: "There are usage limits for GitHub Actions workflows. Usage charges apply to repositories that go beyond the amount of free minutes and storage for a repository."
+intro: "Understand which GitHub Actions usage is included with your plan, when charges apply, and which usage limits administrators can manage."
 product: "GitHub Actions"
 document_type: "article"
 breadcrumbs:
@@ -15,11 +15,13 @@ breadcrumbs:
 
 # Billing and usage
 
-There are usage limits for GitHub Actions workflows. Usage charges apply to repositories that go beyond the amount of free minutes and storage for a repository.
+Understand which GitHub Actions usage is included with your plan, when charges apply, and which usage limits administrators can manage.
 
 ## About billing for GitHub Actions
 
-GitHub Actions usage is free for standard GitHub-hosted runners in public repositories, and for self-hosted runners. See [Choosing the runner for a job](/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job#standard-github-hosted-runners-for-public-repositories). For private repositories, each GitHub account receives a quota of free minutes and storage for use with GitHub-hosted runners, depending on the account's plan. Any usage beyond the included amounts is billed to your account. For more information, see [GitHub Actions billing](/en/billing/concepts/product-billing/github-actions).
+GitHub Actions usage is free for standard GitHub-hosted runners in public repositories, and for self-hosted runners. See [Choosing the runner for a job](/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job#standard-github-hosted-runners-for-public-repositories).
+
+For private repositories, each GitHub account receives storage and a monthly included compute usage, depending on the account's plan. The cost of eligible runner usage draws from the included compute usage, which is also available for cloud sandbox compute and memory. Additional usage is billed to your account. For more information, see [GitHub Actions billing](/en/billing/concepts/product-billing/github-actions).
 
 ## Availability
 

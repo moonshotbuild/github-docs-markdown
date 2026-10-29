@@ -27,9 +27,9 @@ Delegate tasks to GitHub Copilot agents, track their progress, and review the re
 
 * [Kick off a task with Copilot agents on GitHub](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/kick-off-a-task)
 
-  Decide whether Copilot cloud agent creates a pull request immediately or works on a branch you review and iterate on first.
+  Move from an idea for a task, to code you can review, by starting Copilot in the cloud from an issue, a prompt, or a new repository.
 
-* [Research, plan, and iterate on code changes with Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/research-plan-iterate)
+* [Research, plan, and iterate on code changes with Copilot](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/research-plan-iterate)
 
   Perform deep research on a repository, create an implementation plan, and make iterative code changes on a branch, then create a pull request when you're ready.
 
@@ -44,3 +44,7 @@ Delegate tasks to GitHub Copilot agents, track their progress, and review the re
 * [Review output from Copilot](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/review-copilot-output)
 
   Copilot pull requests deserve the same thorough review as any contribution.
+
+* [Getting pull requests ready to merge with Agent Merge](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/watch-and-fix-pull-requests)
+
+  Let Copilot watch your pull requests, and fix failed workflows and merge conflicts, while you focus on other work.

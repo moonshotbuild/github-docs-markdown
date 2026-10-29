@@ -40,4 +40,4 @@ You can also start sessions automatically, on a schedule or in response to event
 
 Copilot will start working on the task in the background. Some entry points open a pull request automatically. In other cases, you can prompt Copilot to open a pull request, or create a pull request when Copilot finishes work, from the session logs.
 
-For more information, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
+For more information, see [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/copilot-surfaces/copilot-on-github).

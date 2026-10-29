@@ -45,6 +45,14 @@ Understanding how Copilot is used across your enterprise is the first step to de
 
   Copilot usage and adoption metrics reveal patterns in how developers engage with Copilot across your enterprise.
 
+* [Reconciling Copilot usage metrics across dashboards, APIs, and reports](/en/copilot/reference/copilot-usage-metrics/reconciling-usage-metrics)
+
+  Copilot usage metrics are derived from the same underlying telemetry but are aggregated and presented differently across dashboards, APIs, and exported reports.
+
+* [Team-level Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/team-level-metrics)
+
+  Construct team-level GitHub Copilot usage metrics by joining the daily user-teams report with the daily per-user usage metrics report.
+
 ### Phase 3: See how code is generated
 
 * [Viewing the code generation dashboard](/en/copilot/how-tos/administer-copilot/view-code-generation)

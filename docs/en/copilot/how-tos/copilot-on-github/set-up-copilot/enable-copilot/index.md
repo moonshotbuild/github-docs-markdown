@@ -33,7 +33,7 @@ Get started with GitHub Copilot for yourself, your organization, or your enterpr
 
 * [Setting up GitHub Copilot for your enterprise](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-enterprise)
 
-  Enable GitHub Copilot across your enterprise so developers can write code faster.
+  Prepare policies, spending controls, and access to roll out GitHub Copilot across your enterprise.
 
 * [Setting up an enterprise for GitHub Copilot Business only](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-a-dedicated-enterprise-for-copilot-business)
 

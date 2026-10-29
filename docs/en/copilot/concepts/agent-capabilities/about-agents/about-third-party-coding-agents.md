@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/concepts/agent-capabilities/about-agents/about-third-party-coding-agents"
 title: "Third-party coding agents"
-intro: "You can use third-party coding agents alongside Copilot cloud agent to work asynchronously on your development tasks on GitHub."
+intro: "You can use third-party coding agents alongside Copilot to work asynchronously on your development tasks on GitHub."
 product: "GitHub Copilot"
 document_type: "article"
 breadcrumbs:
@@ -19,21 +19,21 @@ breadcrumbs:
 
 # Third-party coding agents
 
-You can use third-party coding agents alongside Copilot cloud agent to work asynchronously on your development tasks on GitHub.
+You can use third-party coding agents alongside Copilot to work asynchronously on your development tasks on GitHub.
 
 > [!NOTE] Third-party coding agents are currently in public preview.
 
 ## Introduction
 
-You can use third-party coding agents alongside Copilot cloud agent to work asynchronously on your development tasks. You can assign an existing issue or give a prompt to an agent, which will work on the required changes and create a pull request. When the agent finishes, it will request a review from you, and you can leave pull request comments to ask the agent to iterate.
+You can use third-party coding agents alongside Copilot to work asynchronously on your development tasks. You can assign an existing issue or give a prompt to an agent, which will work on the required changes and create artifact, such as a pull request. When the agent finishes, it will tell you, and a pull request was created it will request a review from you. You can then leave comments asking the agent to iterate.
 
-Coding agents are subject to the same security protections, mitigations, and limitations as Copilot cloud agent. To learn more about how you can use coding agents, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
+Coding agents are subject to the same security protections, mitigations, and limitations as Copilot. To learn more about how you can use coding agents, see [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
 
 ### Where you can use coding agents
 
 You can kick off tasks with coding agents in the following locations:
 
-* **The Agents tab**: Select an agent under the prompt box in the [Agents tab](https://github.com/copilot/agents?ref_product=copilot\&ref_type=engagement\&ref_style=text\&utm_source=docs-3p-agents-tab-cta\&utm_medium=docs\&utm_campaign=agent-3p-platform-feb-2026), then kick off a new task and watch the agent get to work on a pull request.
+* **The Agents tab**: In the Agents tab of a repository (`https://github.com/OWNER/REPO_NAME/agents`), click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-copilot" aria-label="copilot" role="img"><path d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z"></path><path d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z"></path></svg> under the prompt box to select an agent, then kick off a new task and watch the agent get to work.
 * **Issues**: Assign the agent to an existing issue in a repository.
 * **Pull requests**: Mention `@AGENT_NAME` in a comment on an existing pull request to ask it to make changes.
 * On [**GitHub Mobile**](/en/copilot/how-tos/copilot-on-github/chat-with-copilot/chat-in-mobile): From the **Home** view, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-plus" aria-label="plus" role="img"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg> to start a new agent session.
@@ -41,9 +41,9 @@ You can kick off tasks with coding agents in the following locations:
 
 ### Making coding agents available
 
-Before you can assign tasks to coding agents on GitHub, they must be enabled in your account policies.
+Before you can assign tasks to coding agents on GitHub, they must be enabled in your account settings, your organization policies, or the "Agents" section of an enterprise's AI controls.
 
-* For **GitHub Copilot Pro, GitHub Copilot Pro+, and GitHub Copilot Max subscribers**, see [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#enabling-or-disabling-third-party-coding-agents-in-your-repositories).
+* For **GitHub Copilot Pro, GitHub Copilot Pro+, and GitHub Copilot Max subscribers**, see [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies).
 * For **GitHub Copilot Business and GitHub Copilot Enterprise subscribers**, see [Managing policies and features for GitHub Copilot in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies) or [Managing policies and features for GitHub Copilot in your enterprise](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies).
 
 These policies do not apply to **local** agents in Visual Studio Code. To configure agent settings in Visual Studio Code, see [Types of agents](https://code.visualstudio.com/docs/copilot/agents/overview#_types-of-agents) in the Visual Studio Code documentation. To adjust enterprise agent settings in Visual Studio Code, see [Enable or disable the use of agents](https://code.visualstudio.com/docs/enterprise/ai-settings#_enable-or-disable-the-use-of-agents) in the Visual Studio Code documentation.
@@ -117,7 +117,7 @@ Within your included GitHub Actions minutes and AI credits, you can use agents w
 
 ## Partner agents
 
-When enabling partner agents in your user or organization Copilot cloud agent settings, a GitHub App will be installed for the corresponding agent.
+When enabling partner agents in your user or organization Copilot settings, a GitHub App will be installed for the corresponding agent.
 
 * **Allow Claude coding agent** will install `anthropic code agent`
 * **Allow Codex coding agent** will install `openai code agent`

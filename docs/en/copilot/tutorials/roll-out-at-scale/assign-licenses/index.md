@@ -23,7 +23,7 @@ Learn recommended practices for assigning licenses and managing costs.
 
 * [Choosing your enterprise's plan for GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/assign-licenses/choose-enterprise-plan)
 
-  Choose between Copilot Business and Copilot Enterprise.
+  Compare enterprise access charges, usage allowances, and capabilities to choose a Copilot plan for your rollout.
 
 * [Setting up a self-serve process for GitHub Copilot licenses](/en/copilot/tutorials/roll-out-at-scale/assign-licenses/set-up-self-serve-licenses)
 

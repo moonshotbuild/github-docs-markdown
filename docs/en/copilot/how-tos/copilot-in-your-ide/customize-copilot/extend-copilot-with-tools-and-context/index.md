@@ -46,3 +46,7 @@ Connect Copilot to external tools with Model Context Protocol (MCP) servers, and
 * [Using GitHub Copilot Spaces in your IDE](/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/use-copilot-spaces)
 
   Use spaces to ground Copilot's responses in the right context for a specific task.
+
+* [Using plugins in Visual Studio Code](/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/using-plugins)
+
+  Add reusable capabilities to Visual Studio Code by installing plugins from a marketplace or a local source.

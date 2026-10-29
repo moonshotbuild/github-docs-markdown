@@ -23,7 +23,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Quickstart for using GitHub Copilot on GitHub.com](/en/copilot/get-started/quickstart-for-using-github-copilot-on-github-com)
 
-  Understand code and work faster by asking questions and assigning coding tasks to Copilot cloud agent without leaving GitHub.
+  Understand code and work faster by asking questions and assigning coding tasks to Copilot in the cloud without leaving GitHub.
 
 ## Articles
 
@@ -37,7 +37,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Quickstart for using GitHub Copilot on GitHub.com](/en/copilot/get-started/quickstart-for-using-github-copilot-on-github-com)
 
-  Understand code and work faster by asking questions and assigning coding tasks to Copilot cloud agent without leaving GitHub.
+  Understand code and work faster by asking questions and assigning coding tasks to Copilot in the cloud without leaving GitHub.
 
 * [Quickstart for using GitHub Copilot in your IDE](/en/copilot/get-started/quickstart-for-using-github-copilot-in-your-ide)
 
@@ -59,6 +59,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Discover the plans available for Copilot.
 
+* [What's changing with GitHub Enterprise and Copilot billing](/en/copilot/get-started/whats-changing-with-github-enterprise-and-copilot)
+
+  Compare access and usage charges to decide whether and when to transition your enterprise to the new Copilot billing model.
+
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)
 
   Learn how to get the most out of Copilot.
@@ -75,9 +79,9 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Find out about using Copilot from the command line.
 
-* [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
+* [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 
-  Explore your repositories, plan changes, and delegate coding tasks to GitHub Copilot without leaving GitHub.com.
+  Move from repository questions to planned code changes and review in one continuous session with GitHub Copilot on GitHub.com and GitHub Mobile.
 
 * [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides)
 
@@ -89,7 +93,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Third-party coding agents](/en/copilot/concepts/agent-capabilities/about-agents/about-third-party-coding-agents)
 
-  You can use third-party coding agents alongside Copilot cloud agent to work asynchronously on your development tasks on GitHub.
+  You can use third-party coding agents alongside Copilot to work asynchronously on your development tasks on GitHub.
 
 * [Agent apps](/en/copilot/concepts/agent-capabilities/about-agents/agent-apps)
 
@@ -125,11 +129,11 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Copilot automations](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automations)
 
-  Automations let you run Copilot cloud agent automatically, on a schedule or in response to events in a repository.
+  Automations let you run Copilot cloud agent automatically on a schedule, in response to events in a repository, or programmatically via the API.
 
 * [About rationale, confidence, and approvals for issues](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automation-rationale-and-approvals)
 
-  When automations triage issues, it explains each change, rates its confidence, and holds lower-confidence changes for your review.
+  When automations triage issues, they explain each change, rate their confidence, and hold lower-confidence changes for your review.
 
 * [Dynamic workflows](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/dynamic-workflows)
 
@@ -155,6 +159,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Copilot can interact with desktop applications to automate tasks that cannot be completed with a more direct tool.
 
+* [About image generation in GitHub Copilot](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/image-generation)
+
+  Copilot can generate and edit images from your prompts and save them to your project, so you can create assets without leaving the conversation.
+
 * [Prompt engineering for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-engineering)
 
   Follow these strategies to improve your Copilot results.
@@ -166,6 +174,14 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Custom instructions for GitHub Copilot](/en/copilot/concepts/prompting-and-context/custom-instructions)
 
   Customize GitHub Copilot responses to your preferences, project conventions, and organization requirements.
+
+* [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory)
+
+  Copilot Memory helps Copilot become more effective over time by remembering facts about your repositories and your personal coding preferences.
+
+* [About GitHub Copilot Dreaming](/en/copilot/concepts/prompting-and-context/copilot-dreaming)
+
+  Learn how Copilot Dreaming updates Copilot's context, how to enable it, and how to review run results.
 
 * [Prompt files for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-files)
 
@@ -179,10 +195,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Understand how organizing and sharing context with Copilot Spaces can improve your Copilot Chat in GitHub results and help your collaborators.
 
-* [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory)
-
-  Copilot Memory helps Copilot become more effective over time by remembering facts about your repositories and your personal coding preferences.
-
 * [Comparing Copilot customization features](/en/copilot/concepts/customizations/comparing-customizations)
 
   Choose the right way to give Copilot guidance, specialized expertise, and access to tools.
@@ -191,6 +203,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Give Copilot repeatable workflows with task-specific instructions, scripts, and resources.
 
+* [Allowing safe commands to run without manual approval](/en/copilot/concepts/customizations/allowing-safe-commands)
+
+  The assisted permissions option reduces manual approval prompts by using a large language model to assess permission requests.
+
 * [Custom agents](/en/copilot/concepts/customizations/custom-agents)
 
   Give Copilot reusable specialist roles with tailored instructions and tools.
@@ -198,6 +214,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp)
 
   Connect Copilot to external tools and data through Model Context Protocol (MCP) servers.
+
+* [Copilot connectors](/en/copilot/concepts/customizations/copilot-connectors)
+
+  Connect a service once to bring its tools and context into supported Copilot surfaces.
 
 * [Hooks for GitHub Copilot](/en/copilot/concepts/customizations/hooks)
 
@@ -209,7 +229,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Plugins for GitHub Copilot](/en/copilot/concepts/customizations/plugins)
 
-  Plugins are installable packages that extend Copilot with reusable agents, skills, hooks, and integrations.
+  Plugins package related customizations so you can install them together across supported Copilot surfaces.
 
 * [Using LSP servers with GitHub Copilot CLI](/en/copilot/concepts/customizations/lsp-servers)
 
@@ -219,7 +239,11 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Understand the types and availability of AI models in GitHub Copilot.
 
-* [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection)
+* [About GitHub Copilot Fusion](/en/copilot/concepts/models/copilot-fusion)
+
+  Automatically select the right models and execution pattern for each task.
+
+* [About GitHub Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection)
 
   Automatically select the best model for each task.
 
@@ -267,13 +291,17 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Understand what session data is, where it is stored, who can access it, and how it is managed.
 
-* [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/security-governance-and-network-settings/about-cloud-and-local-sandboxes)
+* [About local sandboxing for GitHub Copilot](/en/copilot/concepts/security-governance-and-network-settings/about-cloud-and-local-sandboxes)
 
-  Cloud and local sandboxes provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine or in fully isolated cloud environments.
+  Local sandboxes provide isolated execution environments that let Copilot safely interact with code, tools, filesystem, and network resources securely on your local machine.
 
 * [Understanding filesystem policies for local sandboxing in GitHub Copilot CLI](/en/copilot/concepts/security-governance-and-network-settings/understanding-local-sandboxing)
 
   When local sandboxing is enabled, Copilot CLI runs each sandboxed process or operation under a filesystem policy that controls which files and directories it can read and write. Learn how that policy is built and how to check the access it grants.
+
+* [About cloud sandboxes for GitHub Copilot](/en/copilot/concepts/security-governance-and-network-settings/about-cloud-sandboxes)
+
+  Cloud sandboxes are isolated environments that GitHub hosts, where Copilot runs your cloud sessions without using your machine.
 
 * [Risks and mitigations for GitHub Copilot cloud agent](/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations)
 
@@ -299,10 +327,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Stay informed about GitHub Copilot features and models, and make confident decisions about enabling them for your enterprise.
 
-* [Agent management for enterprises](/en/copilot/concepts/enterprise/agent-management)
-
-  Maintain your enterprise's security and compliance standards and supercharge your developers by managing agents with AI Controls.
-
 * [MCP server usage in your company](/en/copilot/concepts/enterprise/mcp-management)
 
   You can manage MCP server usage to provide your developers with valuable tools while maintaining security and compliance.
@@ -314,10 +338,6 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [OpenTelemetry for agent monitoring](/en/copilot/concepts/enterprise/opentelemetry)
 
   Understand how Copilot agents perform and interact with models and tools.
-
-* [Managing access to GitHub Copilot cloud agent](/en/copilot/concepts/enterprise/cloud-agent-access)
-
-  Find out about Copilot cloud agent policies available for GitHub Copilot Enterprise and GitHub Copilot Business, and about disabling the agent for specific repositories.
 
 * [About enterprise accounts for Copilot Business](/en/copilot/concepts/enterprise/about-enterprise-accounts-for-copilot-business)
 
@@ -333,7 +353,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Setting up GitHub Copilot for your enterprise](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-enterprise)
 
-  Enable GitHub Copilot across your enterprise so developers can write code faster.
+  Prepare policies, spending controls, and access to roll out GitHub Copilot across your enterprise.
 
 * [Setting up an enterprise for GitHub Copilot Business only](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-a-dedicated-enterprise-for-copilot-business)
 
@@ -387,6 +407,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Customize Copilot responses for members of your organization.
 
+* [Personalizing your cloud sessions](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/personalize-cloud-sessions)
+
+  Bring your personal instructions, skills, and custom agents to your sessions with Copilot in the cloud using a dotfiles repository.
+
 * [Creating custom agents for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-custom-agents)
 
   You can create specialized agents with tailored expertise for specific development tasks.
@@ -399,9 +423,13 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Run automated checks—like linting, formatting, or security scans—at key points during agent execution to enforce quality standards.
 
-* [Configure the development environment](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment)
+* [Configure the development environment for agents on GitHub Actions](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment)
 
   Pre-install tools and dependencies so Copilot cloud agent can build, test, and validate changes reliably.
+
+* [Creating a custom environment for agents](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/create-a-custom-environment)
+
+  Run Copilot sessions with your own tools and dependencies on a Linux machine or codespace.
 
 * [Configure secrets and variables for Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/configure-secrets-and-variables)
 
@@ -417,7 +445,11 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Configure MCP servers for your repository](/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers)
 
-  Configure Model Context Protocol (MCP) servers for your repository to give Copilot cloud agent and Copilot code review access to external tools and data sources.
+  Configure Model Context Protocol (MCP) servers for your repository to give Copilot cloud agent, Automations, and Copilot code review access to external tools and data sources.
+
+* [Creating and sharing a plugin marketplace on GitHub](/en/copilot/how-tos/copilot-on-github/customize-copilot/create-and-share-plugin-marketplaces)
+
+  Publish a GitHub-hosted marketplace so people can discover and install plugins in supported Copilot clients.
 
 * [Creating GitHub Copilot Spaces](/en/copilot/how-tos/copilot-on-github/customize-copilot/copilot-spaces/create-copilot-spaces)
 
@@ -445,9 +477,9 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Kick off a task with Copilot agents on GitHub](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/kick-off-a-task)
 
-  Decide whether Copilot cloud agent creates a pull request immediately or works on a branch you review and iterate on first.
+  Move from an idea for a task, to code you can review, by starting Copilot in the cloud from an issue, a prompt, or a new repository.
 
-* [Research, plan, and iterate on code changes with Copilot cloud agent](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/research-plan-iterate)
+* [Research, plan, and iterate on code changes with Copilot](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/research-plan-iterate)
 
   Perform deep research on a repository, create an implementation plan, and make iterative code changes on a branch, then create a pull request when you're ready.
 
@@ -462,6 +494,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Review output from Copilot](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/review-copilot-output)
 
   Copilot pull requests deserve the same thorough review as any contribution.
+
+* [Getting pull requests ready to merge with Agent Merge](/en/copilot/how-tos/copilot-on-github/use-copilot-agents/watch-and-fix-pull-requests)
+
+  Let Copilot watch your pull requests, and fix failed workflows and merge conflicts, while you focus on other work.
 
 * [Installing the GitHub Copilot extension in your environment](/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/install-copilot-extension)
 
@@ -506,6 +542,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Using GitHub Copilot Spaces in your IDE](/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/use-copilot-spaces)
 
   Use spaces to ground Copilot's responses in the right context for a specific task.
+
+* [Using plugins in Visual Studio Code](/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/using-plugins)
+
+  Add reusable capabilities to Visual Studio Code by installing plugins from a marketplace or a local source.
 
 * [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide)
 
@@ -582,6 +622,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Use voice input with Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/voice-input)
 
   Speak your prompts to GitHub Copilot CLI instead of typing them, using the CLI's speech-to-text feature.
+
+* [Choosing a model in GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/choose-a-model)
+
+  Choose which large language model you want Copilot CLI to use for a task.
 
 * [Using GitHub Copilot CLI to interact with desktop applications](/en/copilot/how-tos/copilot-cli/use-copilot-cli/computer-use)
 
@@ -663,21 +707,17 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Create specialized agents with tailored expertise for specific development tasks.
 
-* [Adding LLM models to GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models)
+* [Adding LLM models to GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/add-llm-models)
 
-  Use a model from an external provider of your choice in Copilot by supplying your own API key.
+  Use your preferred remote or local models in Copilot CLI.
 
 * [Finding and installing plugins for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-finding-installing)
 
-  Extend Copilot's functionality by installing plugins created by the community or by your team.
+  Extend Copilot by installing plugins created by the community or your organization.
 
 * [Creating a plugin for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-creating)
 
   Create a plugin to share customizations in an easy-to-install package.
-
-* [Creating a plugin marketplace for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-marketplace)
-
-  You can make CLI plugins that you've created easy to install by adding them to a marketplace.
 
 * [Administering Copilot CLI for your enterprise](/en/copilot/how-tos/copilot-cli/administer-copilot-cli-for-your-enterprise)
 
@@ -697,11 +737,19 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Customizing the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/customize-github-copilot-app)
 
-  Customize the GitHub Copilot app so it works the way you and your team do.
+  Customize the GitHub Copilot app for your workflows.
 
 * [Working with agent sessions in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/agent-sessions)
 
   Run multiple isolated agent sessions simultaneously, each with its own branch, and steer them using different session modes, models, and tools.
+
+* [Choosing a model in the Copilot app](/en/copilot/how-tos/github-copilot-app/choose-a-model)
+
+  Choose which large language model you want to use for a task in the Copilot app.
+
+* [Working with projects in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/working-with-projects)
+
+  Use a project to give Copilot an ongoing goal and let it coordinate the work across repositories, sessions, and recurring tasks.
 
 * [Using the GitHub Copilot app to interact with desktop applications](/en/copilot/how-tos/github-copilot-app/computer-use)
 
@@ -711,17 +759,21 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Use canvases in the GitHub Copilot app to build shared, agent-driven artifacts and interfaces for human-agent collaboration.
 
+* [Viewing and fixing security alerts in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/view-and-fix-security-alerts)
+
+  Work through code scanning alerts alongside your code using the GitHub security extension for the GitHub Copilot app.
+
 * [Managing issues and pull requests with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/managing-issues-and-pull-requests)
 
   Pick up an issue, direct an agent to implement changes, and land a pull request—all without leaving the GitHub Copilot app.
 
 * [Using automations in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/using-automations)
 
-  Automate recurring agent tasks so they run on a schedule or on demand, without manual intervention.
+  Automate recurring agent tasks so they run on a schedule, in response to repository events or on demand, without manual intervention.
 
-* [Adding LLM models to the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/use-byok-models)
+* [Adding LLM models to the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/add-llm-models)
 
-  Connect a model from an external provider of your choice by supplying your own API key, then use the model in agent sessions.
+  Connect a model from an external provider of your choice, hosted locally or in the cloud.
 
 * [Using deep links to open the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/open-with-deep-links)
 
@@ -909,27 +961,27 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Creating automations with Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-automations)
 
-  Create and manage automations to run Copilot cloud agent on a schedule or in response to events.
+  Create and manage automations to run Copilot cloud agent on a schedule, in response to events in a repository, or programmatically via the API.
 
 * [Managing rationale, confidence, and approvals for issues](/en/copilot/how-tos/use-copilot-agents/cloud-agent/manage-rationale-confidence-approvals)
 
-  Set up and manage rationale, confidence, and approvals for issues handled by automation.
+  Set up and manage rationale, confidence, and approvals for issues handled by automations.
 
 * [Changing the AI model for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model)
 
   In supported entrypoints, when starting a task with Copilot cloud agent, you can select the model used, and, for supported models, the reasoning level.
 
-* [Configuring settings for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/configuring-agent-settings)
+* [Configuring settings for GitHub Copilot in the cloud](/en/copilot/how-tos/use-copilot-agents/cloud-agent/configuring-agent-settings)
 
-  Learn how to configure settings for Copilot cloud agent
+  Learn how to configure settings for Copilot in the cloud
 
-* [Using Copilot cloud agent on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github)
+* [Using Copilot in the cloud on GitHub](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-github)
 
-  Start Copilot cloud agent sessions directly on GitHub, then iterate on the results without leaving your browser.
+  Start Copilot in the cloud sessions directly on GitHub, then iterate on the results without leaving your browser.
 
-* [Using Copilot cloud agent on GitHub Mobile](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-mobile)
+* [Using Copilot in the cloud on GitHub Mobile](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-on-mobile)
 
-  Start and track Copilot cloud agent sessions from the GitHub Mobile app.
+  Start and track Copilot in the cloud sessions from the GitHub Mobile app.
 
 * [Using agent apps](/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-agent-apps)
 
@@ -955,13 +1007,17 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Learn how to resolve problems that may occur when you assign tasks to Copilot.
 
+* [Manually creating memories for GitHub Copilot](/en/copilot/how-tos/use-copilot-agents/copilot-memory/create-memories)
+
+  Prompt Copilot to remember a personal preference or a fact about a repository.
+
 * [Managing Copilot Memory for your personal account](/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-for-yourself)
 
   Review and manage the coding conventions, preferences, and other details that Copilot has stored from your interactions.
 
-* [Managing Copilot Memory for an organization or enterprise](/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-as-administrator)
+* [Managing Copilot Memory for an enterprise, organization, or repository](/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-as-administrator)
 
-  Manage Copilot Memory settings and stored memories for an organization or enterprise.
+  Manage Copilot Memory settings and stored memories for an enterprise, an organization, or a repository.
 
 * [Using GitHub Copilot code review](/en/copilot/how-tos/use-copilot-agents/use-code-review)
 
@@ -1051,13 +1107,13 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Control the availability of GitHub Copilot features and models for users granted a license by your organization.
 
+* [Managing GitHub Copilot in the cloud for your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-copilot-in-the-cloud)
+
+  Enable Copilot in the cloud for your members and control the repositories where it is available.
+
 * [Manage GitHub Apps that use your organization's Copilot](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-app-copilot-access)
 
   Control which GitHub Apps can use your organization's Copilot and attribute their spending.
-
-* [Adding GitHub Copilot cloud agent to your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/add-copilot-cloud-agent)
-
-  Enable Copilot cloud agent for your members and control the repositories where it is available.
 
 * [Configuring runners for GitHub Copilot cloud agent in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/configure-runner-for-coding-agent)
 
@@ -1081,7 +1137,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Subscribing to GitHub Copilot for your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-plan/subscribe)
 
-  Enterprise owners can set up a Copilot Enterprise or Copilot Business plan for their enterprise.
+  Activate a Copilot plan to manage access and usage across your enterprise.
 
 * [Canceling GitHub Copilot for your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-plan/cancel-plan)
 
@@ -1095,7 +1151,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   You can downgrade organizations in your enterprise from Copilot Enterprise to Copilot Business.
 
-* [Granting users access to GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access)
+* [Giving users GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access)
 
   Enable Copilot for entire organizations or grant access directly to specific users.
 
@@ -1123,9 +1179,13 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Choose from different deployment methods to deliver managed settings keys to users.
 
-* [Overriding enterprise-managed settings for teams](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/override-settings-for-teams)
+* [Overriding enterprise-managed settings for enterprise teams](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/override-settings-for-teams)
 
-  Avoid overly restrictive configuration by overriding default settings for specific teams.
+  Avoid overly restrictive configuration by overriding default settings for specific enterprise teams.
+
+* [Managing plugin marketplaces and plugins with enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/manage-plugin-marketplaces-and-plugins)
+
+  Control which plugin marketplaces are available to enterprise members and which plugins are required or blocked.
 
 * [Using enterprise-managed settings without organizations](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/copilot-business-only)
 
@@ -1143,9 +1203,9 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Track agentic activity in your enterprise to ensure continued compliance.
 
-* [Enabling GitHub Copilot cloud agent in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/enable-copilot-cloud-agent)
+* [Managing GitHub Copilot in the cloud for your enterprise or organization](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/manage-copilot-in-the-cloud)
 
-  Choose which organizations can use Copilot cloud agent and connect it to MCP servers.
+  Allow users to use Copilot on GitHub and start cloud sessions from local clients.
 
 * [Blocking agentic features in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/block-agentic-features)
 
@@ -1267,6 +1327,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Find information about the `~/.copilot` directory, where Copilot CLI stores configuration, session data, and customizations.
 
+* [Plugin and marketplace reference](/en/copilot/reference/plugin-and-marketplace-reference)
+
+  Find shared plugin and marketplace terms, file formats, and links to surface-specific documentation.
+
 * [Repository configuration for the GitHub Copilot app](/en/copilot/reference/github-copilot-app-reference/repository-configuration)
 
   Define repository-specific instructions, scripts, and automation behavior for the GitHub Copilot app.
@@ -1289,7 +1353,11 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [GitHub Copilot hooks reference](/en/copilot/reference/hooks-reference)
 
-  Find hook events, configuration formats, and input payloads for hooks in Copilot CLI and Copilot cloud agent.
+  Find hook events, configuration formats, and input payloads for hooks in Copilot CLI and Copilot in the cloud.
+
+* [Supported Copilot connectors](/en/copilot/reference/supported-connectors)
+
+  Find the services you can connect to Copilot.
 
 * [Supported surfaces for GitHub Copilot policies](/en/copilot/reference/supported-surfaces-for-policies)
 
@@ -1561,23 +1629,19 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Best practices for using GitHub Copilot to work on tasks](/en/copilot/tutorials/cloud-agent/get-the-best-results)
 
-  Learn how to get the best results from Copilot cloud agent.
-
-* [Piloting GitHub Copilot cloud agent in your organization](/en/copilot/tutorials/cloud-agent/pilot-cloud-agent)
-
-  Follow best practices to enable Copilot cloud agent in your organization.
+  Learn how to get the best results from Copilot in the cloud.
 
 * [Using GitHub Copilot cloud agent to improve a project](/en/copilot/tutorials/cloud-agent/improve-a-project)
 
-  Find and fix problems in a project with Copilot cloud agent.
+  Find and fix problems in a project with Copilot.
 
-* [Building guardrails for GitHub Copilot cloud agent in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails)
+* [Building a secure cloud environment for agents in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails)
 
-  Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot cloud agent.
+  Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot in the cloud.
 
-* [Giving GitHub Copilot cloud agent access to resources in your organization](/en/copilot/tutorials/cloud-agent/give-access-to-resources)
+* [Giving GitHub Copilot cloud sessions access to resources in your organization](/en/copilot/tutorials/cloud-agent/give-access-to-resources)
 
-  Get more out of Copilot by giving it access to approved MCP servers and internal packages.
+  Get more out of Copilot by giving it access to approved MCP servers and internal packages in cloud sessions.
 
 * [Getting started with budget controls](/en/copilot/tutorials/budgets/getting-started-with-budget-controls)
 
@@ -1605,7 +1669,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Choosing your enterprise's plan for GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/assign-licenses/choose-enterprise-plan)
 
-  Choose between Copilot Business and Copilot Enterprise.
+  Compare enterprise access charges, usage allowances, and capabilities to choose a Copilot plan for your rollout.
 
 * [Setting up a self-serve process for GitHub Copilot licenses](/en/copilot/tutorials/roll-out-at-scale/assign-licenses/set-up-self-serve-licenses)
 
@@ -1639,7 +1703,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Roll out the GitHub Copilot app so developers can direct agents across parallel tasks while you control access, model availability, and external tools.
 
-* [Planning an AI agent rollout in your enterprise](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
+* [Understanding how AI agents fit into your enterprise's workflows](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
 
   Identify where AI agents can help your teams, and plan the governance and support needed to adopt them across your enterprise.
 

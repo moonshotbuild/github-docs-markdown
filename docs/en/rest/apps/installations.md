@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/apps/installations"
 ---
 
-# REST API endpoints for {% data variables.product.prodname\_github\_app %} installations
+# REST API endpoints for GitHub App installations
 
 Use the REST API to get information about GitHub App installations and perform actions within those installations.
 
@@ -60,6 +60,8 @@ List repositories that an app installation can access.
 * **401** - Requires authentication
 
 * **403** - Forbidden
+
+* **422** - Validation failed, or the endpoint has been spammed.
 
 ### Code examples
 

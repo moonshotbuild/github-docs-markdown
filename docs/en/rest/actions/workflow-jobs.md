@@ -179,7 +179,7 @@ If the repository is private, OAuth tokens and personal access tokens (classic) 
   The unique identifier of the job.
 
 * **`step_number`** (integer) (required)
-  The zero-based position number of the step in the job.
+  The number assigned to the step, as shown in the number field of the workflow job's steps array.
 
 ### HTTP response status codes
 

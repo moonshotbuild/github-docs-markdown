@@ -86,7 +86,7 @@ You will get the best results from Autopilot mode if you enable all permissions.
 
 Before granting Copilot wide-ranging permissions, consider using local sandboxing, or running the session in a cloud sandbox, to limit what Copilot can access.
 
-If you enable local sandboxing while using Autopilot mode, Copilot completes anything it can achieve inside the sandbox without interruption. However, any step that needs to escape the sandbox—for example, writing to a file outside the current working directory—is denied. For more information about local sandboxing, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
+If you enable local sandboxing while using Autopilot mode, Copilot completes anything it can achieve inside the sandbox without interruption. However, any step that needs to escape the sandbox—for example, writing to a file outside the current working directory—is denied. For more information about local sandboxing, see [About local sandboxing for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
 
 ## Comparing Autopilot mode, `--allow-all`, and `--no-ask-user`
 

@@ -199,7 +199,7 @@ Automate, customize, and execute your software development workflows right in yo
 
 * [Billing and usage](/en/actions/concepts/billing-and-usage)
 
-  There are usage limits for GitHub Actions workflows. Usage charges apply to repositories that go beyond the amount of free minutes and storage for a repository.
+  Understand which GitHub Actions usage is included with your plan, when charges apply, and which usage limits administrators can manage.
 
 * [About Actions policies](/en/actions/concepts/about-actions-policies)
 

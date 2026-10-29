@@ -76,6 +76,7 @@ If you do, keep in mind that these features incur usage costs (or require GitHub
      > When both "Code Security" and Dependency graph are enabled, this enables dependency review, see [Dependency review](/en/code-security/concepts/supply-chain-security/dependency-review).
    * **Automatic dependency submission**. To learn about automatic dependency submission, see [Configuring automatic dependency submission for your repository](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/submit-dependencies-automatically).
    * **Dependabot alerts**. To learn about Dependabot, see [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts).
+   * **Reachability analysis**. To learn about reachability analysis, see [About reachability analysis for Dependabot alerts](/en/code-security/concepts/supply-chain-security/about-reachability-analysis-for-dependabot-alerts).
    * **Security updates**. To learn about security updates, see [Dependabot security updates](/en/code-security/concepts/supply-chain-security/dependabot-security-updates).
    * **Prevent direct alert dismissals**. To learn more, see [Enabling delegated alert dismissal for Dependabot](/en/code-security/how-tos/manage-security-alerts/manage-dependabot-alerts/enable-delegated-alert-dismissal).
    * **Malware alerts**. To learn more, see [Dependabot malware alerts](/en/code-security/concepts/supply-chain-security/malware-alerts).
@@ -131,6 +132,7 @@ If you do, keep in mind that these features incur usage costs (or require GitHub
      > When both "GitHub Advanced Security" and Dependency graph are enabled, this enables dependency review, see [Dependency review](/en/code-security/concepts/supply-chain-security/dependency-review).
    * **Automatic dependency submission**. To learn about automatic dependency submission, see [Configuring automatic dependency submission for your repository](/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/submit-dependencies-automatically).
    * **Dependabot alerts**. To learn about Dependabot, see [Dependabot alerts](/en/code-security/concepts/supply-chain-security/dependabot-alerts).
+   * **Reachability analysis**. To learn about reachability analysis, see [About reachability analysis for Dependabot alerts](/en/code-security/concepts/supply-chain-security/about-reachability-analysis-for-dependabot-alerts).
    * **Security updates**. To learn about security updates, see [Dependabot security updates](/en/code-security/concepts/supply-chain-security/dependabot-security-updates).
    * **Prevent direct alert dismissals**. To learn more, see [Enabling delegated alert dismissal for Dependabot](/en/code-security/how-tos/manage-security-alerts/manage-dependabot-alerts/enable-delegated-alert-dismissal).
    * **Malware alerts**. To learn more, see [Dependabot malware alerts](/en/code-security/concepts/supply-chain-security/malware-alerts).

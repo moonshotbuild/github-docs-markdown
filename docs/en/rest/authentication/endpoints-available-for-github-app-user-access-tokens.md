@@ -1295,6 +1295,16 @@ Your GitHub App can make requests to the following REST endpoints with a user ac
 
 * [`PATCH /repos/{owner}/{repo}/issues/{issue_number}`](/en/rest/issues/issues#update-an-issue)
 
+* [`GET /repos/{owner}/{repo}/issues/{issue_number}/artifacts`](/en/rest/issues/artifacts#list-issue-artifacts)
+
+* [`POST /repos/{owner}/{repo}/issues/{issue_number}/artifacts`](/en/rest/issues/artifacts#create-an-issue-artifact)
+
+* [`GET /repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}`](/en/rest/issues/artifacts#get-an-issue-artifact)
+
+* [`PATCH /repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}`](/en/rest/issues/artifacts#update-an-issue-artifact)
+
+* [`DELETE /repos/{owner}/{repo}/issues/{issue_number}/artifacts/{artifact_number}`](/en/rest/issues/artifacts#delete-an-issue-artifact)
+
 * [`POST /repos/{owner}/{repo}/issues/{issue_number}/assignees`](/en/rest/issues/assignees#add-assignees-to-an-issue)
 
 * [`DELETE /repos/{owner}/{repo}/issues/{issue_number}/assignees`](/en/rest/issues/assignees#remove-assignees-from-an-issue)
@@ -2160,6 +2170,14 @@ Your GitHub App can make requests to the following REST endpoints with a user ac
 * [`GET /repos/{owner}/{repo}/security-advisories/{ghsa_id}`](/en/rest/security-advisories/repository-advisories#get-a-repository-security-advisory)
 
 * [`PATCH /repos/{owner}/{repo}/security-advisories/{ghsa_id}`](/en/rest/security-advisories/repository-advisories#update-a-repository-security-advisory)
+
+* [`GET /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments`](/en/rest/security-advisories/repository-advisories#list-repository-security-advisory-comments)
+
+* [`POST /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments`](/en/rest/security-advisories/repository-advisories#create-a-repository-advisory-comment)
+
+* [`GET /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments/{comment_id}`](/en/rest/security-advisories/repository-advisories#get-a-repository-advisory-comment)
+
+* [`PATCH /repos/{owner}/{repo}/security-advisories/{ghsa_id}/comments/{comment_id}`](/en/rest/security-advisories/repository-advisories#update-a-repository-advisory-comment)
 
 * [`POST /repos/{owner}/{repo}/security-advisories/{ghsa_id}/cve`](/en/rest/security-advisories/repository-advisories#request-a-cve-for-a-repository-security-advisory)
 

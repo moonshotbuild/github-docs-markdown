@@ -125,9 +125,9 @@ Leaked credentials expose your organization to data breaches. GitHub Secret Prot
 
   You can enable secret scanning to detect additional potential secrets at the repository and organization levels.
 
-* [Enabling generic secret detection for AI-detected secrets](/en/code-security/how-tos/secure-your-secrets/detect-secret-leaks/enabling-secret-scanning-for-ai-detected-secrets)
+* [Enabling scanning for AI-detected secrets](/en/code-security/how-tos/secure-your-secrets/detect-secret-leaks/enabling-secret-scanning-for-ai-detected-secrets)
 
-  You can enable generic secret detection for your repository or organization. Alerts for generic secrets, such as passwords, are displayed in a separate list on the secret scanning alerts page.
+  You can enable scanning for AI-detected secrets for your repository or organization. Alerts for generic secrets found using AI, such as passwords, are displayed in a separate list on the secret scanning alerts page.
 
 * [Scanning for secrets with the GitHub MCP server](/en/code-security/how-tos/use-ghas-with-ai-coding-agents/scan-for-secrets-with-github-mcp-server)
 

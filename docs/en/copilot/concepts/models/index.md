@@ -23,7 +23,11 @@ Learn about the AI models available for GitHub Copilot.
 
   Understand the types and availability of AI models in GitHub Copilot.
 
-* [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection)
+* [About GitHub Copilot Fusion](/en/copilot/concepts/models/copilot-fusion)
+
+  Automatically select the right models and execution pattern for each task.
+
+* [About GitHub Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection)
 
   Automatically select the best model for each task.
 

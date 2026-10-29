@@ -25,7 +25,7 @@ Integrate Copilot with other tools and platforms to streamline your workflow.
 
 Copilot cloud agent can be integrated with various tools and platforms to enhance its functionality and streamline your development workflow. With integrations, you can work with and trigger Copilot cloud agent from within your existing tools, providing the cloud agent with the context it needs to assist you effectively.
 
-For more information about Copilot cloud agent, see [GitHub Copilot on GitHub.com](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
+For more information about Copilot cloud agent, see [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/copilot-surfaces/copilot-on-github).
 
 ## Supported integrations
 

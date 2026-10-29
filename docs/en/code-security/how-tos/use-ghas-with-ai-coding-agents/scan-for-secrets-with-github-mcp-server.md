@@ -99,7 +99,7 @@ The plugin uses the MCP tools under the hood, so you'll still need to enable the
 
 Instructions for installing the plugin:
 
-* For **GitHub Copilot CLI**, see [Finding and installing plugins for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-finding-installing#installing-plugins).
+* For **GitHub Copilot CLI**, see [Finding and installing plugins for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-finding-installing).
 * For **Visual Studio Code**, see [Discover and install plugins](https://code.visualstudio.com/docs/copilot/customization/agent-plugins#_discover-and-install-plugins) in the Visual Studio Code documentation.
 
 ## Step 2: Scan your code

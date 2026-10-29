@@ -91,7 +91,7 @@ To hand a self-contained subtask to a separate agent with its own context, see [
 ## Further reading
 
 * [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide)
-* [GitHub Copilot on GitHub.com](/en/copilot/concepts/chat)
+* [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/chat)
 
 </div>
 
@@ -130,7 +130,7 @@ You can extend the agent with Model Context Protocol (MCP) servers, which add to
 ## Further reading
 
 * [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide)
-* [GitHub Copilot on GitHub.com](/en/copilot/concepts/chat)
+* [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/chat)
 
 </div>
 
@@ -184,7 +184,7 @@ To hand a self-contained subtask to a separate agent with its own context, see [
 ## Further reading
 
 * [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide)
-* [GitHub Copilot on GitHub.com](/en/copilot/concepts/chat)
+* [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/chat)
 
 </div>
 
@@ -229,7 +229,7 @@ To hand a self-contained subtask to a separate agent with its own context, see [
 ## Further reading
 
 * [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide)
-* [GitHub Copilot on GitHub.com](/en/copilot/concepts/chat)
+* [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/chat)
 
 </div>
 
@@ -273,6 +273,6 @@ To hand a self-contained subtask to a separate agent with its own context, see [
 ## Further reading
 
 * [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide)
-* [GitHub Copilot on GitHub.com](/en/copilot/concepts/chat)
+* [GitHub Copilot on GitHub.com and GitHub Mobile](/en/copilot/concepts/chat)
 
 </div>

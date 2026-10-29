@@ -31,6 +31,14 @@ Get more relevant responses from GitHub Copilot by writing effective prompts and
 
   Customize GitHub Copilot responses to your preferences, project conventions, and organization requirements.
 
+* [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory)
+
+  Copilot Memory helps Copilot become more effective over time by remembering facts about your repositories and your personal coding preferences.
+
+* [About GitHub Copilot Dreaming](/en/copilot/concepts/prompting-and-context/copilot-dreaming)
+
+  Learn how Copilot Dreaming updates Copilot's context, how to enable it, and how to review run results.
+
 * [Prompt files for GitHub Copilot](/en/copilot/concepts/prompting-and-context/prompt-files)
 
   Save task-specific instructions and context in reusable Markdown prompt files for individual Copilot interactions.
@@ -42,7 +50,3 @@ Get more relevant responses from GitHub Copilot by writing effective prompts and
 * [About GitHub Copilot Spaces](/en/copilot/concepts/prompting-and-context/spaces)
 
   Understand how organizing and sharing context with Copilot Spaces can improve your Copilot Chat in GitHub results and help your collaborators.
-
-* [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory)
-
-  Copilot Memory helps Copilot become more effective over time by remembering facts about your repositories and your personal coding preferences.

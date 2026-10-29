@@ -29,7 +29,7 @@ Boost productivity by encouraging developers to make the most of Copilot feature
 
   Roll out the GitHub Copilot app so developers can direct agents across parallel tasks while you control access, model availability, and external tools.
 
-* [Planning an AI agent rollout in your enterprise](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
+* [Understanding how AI agents fit into your enterprise's workflows](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
 
   Identify where AI agents can help your teams, and plan the governance and support needed to adopt them across your enterprise.
 

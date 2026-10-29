@@ -21,7 +21,7 @@ Learn how product costs are calculated if you exceed the usage included in your 
 
 * [GitHub Actions billing](/en/billing/concepts/product-billing/github-actions)
 
-  Learn how usage of GitHub Actions is measured against your free allowance and how to pay for additional use.
+  Understand which runner and storage costs your plan covers, how usage measured in different units draws from the included compute usage, and when additional charges apply.
 
 * [GitHub Advanced Security license billing](/en/billing/concepts/product-billing/github-advanced-security)
 

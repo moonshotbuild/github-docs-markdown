@@ -443,6 +443,20 @@ The archive will also contain an attachments directory that includes all attachm
 
 * **403** - Forbidden
 
+### Code examples
+
+#### Example
+
+**Request:**
+
+```curl
+curl -L \
+  -X GET \
+  https://api.github.com/user/migrations/MIGRATION_ID/archive
+```
+
+**Response schema (Status: 302):**
+
 ## Delete a user migration archive
 
 ```

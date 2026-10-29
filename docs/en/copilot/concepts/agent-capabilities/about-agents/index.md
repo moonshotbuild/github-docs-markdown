@@ -27,7 +27,7 @@ Learn about the agents you can use with GitHub Copilot.
 
 * [Third-party coding agents](/en/copilot/concepts/agent-capabilities/about-agents/about-third-party-coding-agents)
 
-  You can use third-party coding agents alongside Copilot cloud agent to work asynchronously on your development tasks on GitHub.
+  You can use third-party coding agents alongside Copilot to work asynchronously on your development tasks on GitHub.
 
 * [Agent apps](/en/copilot/concepts/agent-capabilities/about-agents/agent-apps)
 

@@ -85,6 +85,10 @@ Use Copilot directly from your terminal to answer questions, write and debug cod
 
   Speak your prompts to GitHub Copilot CLI instead of typing them, using the CLI's speech-to-text feature.
 
+* [Choosing a model in GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/choose-a-model)
+
+  Choose which large language model you want Copilot CLI to use for a task.
+
 * [Using GitHub Copilot CLI to interact with desktop applications](/en/copilot/how-tos/copilot-cli/use-copilot-cli/computer-use)
 
   With computer use, allow Copilot to interact with local desktop applications from GitHub Copilot CLI.
@@ -193,21 +197,17 @@ Use Copilot directly from your terminal to answer questions, write and debug cod
 
   Create specialized agents with tailored expertise for specific development tasks.
 
-* [Adding LLM models to GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models)
+* [Adding LLM models to GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/add-llm-models)
 
-  Use a model from an external provider of your choice in Copilot by supplying your own API key.
+  Use your preferred remote or local models in Copilot CLI.
 
 * [Finding and installing plugins for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-finding-installing)
 
-  Extend Copilot's functionality by installing plugins created by the community or by your team.
+  Extend Copilot by installing plugins created by the community or your organization.
 
 * [Creating a plugin for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-creating)
 
   Create a plugin to share customizations in an easy-to-install package.
-
-* [Creating a plugin marketplace for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-marketplace)
-
-  You can make CLI plugins that you've created easy to install by adding them to a marketplace.
 
 * [Administering Copilot CLI for your enterprise](/en/copilot/how-tos/copilot-cli/administer-copilot-cli-for-your-enterprise)
 

@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automation-rationale-and-approvals"
 title: "About rationale, confidence, and approvals for issues"
-intro: "When automations triage issues, it explains each change, rates its confidence, and holds lower-confidence changes for your review."
+intro: "When automations triage issues, they explain each change, rate their confidence, and hold lower-confidence changes for your review."
 product: "GitHub Copilot"
 document_type: "article"
 breadcrumbs:
@@ -19,14 +19,12 @@ breadcrumbs:
 
 # About rationale, confidence, and approvals for issues
 
-When automations triage issues, it explains each change, rates its confidence, and holds lower-confidence changes for your review.
+When automations triage issues, they explain each change, rate their confidence, and hold lower-confidence changes for your review.
 
 > [!NOTE]
 > Rationale, confidence, and approvals for automations are in public preview and subject to change.
 
-Automations run an agent to triage issues for you, applying labels, setting types and fields, assigning issues, and closing them, without a person initiating each change. Rationale, confidence, and approvals give you visibility into that automated work and control over when it applies.
-
-This capability is not specific to any one platform. It works the same whether the agent runs through Copilot cloud agent automations, [GitHub Agentic Workflows](https://gh.io/gh-aw), or the REST and GraphQL APIs.
+You can create an automation to triage issues for you, applying labels, setting types and fields, assigning issues, and closing them, without a person initiating each change. Rationale, confidence, and approvals give you visibility into that automated work and control over when it applies.
 
 This capability applies only to the changes an automation makes to **issues**. It does not apply to changes people make by hand, and it does not affect other actions an automation can take, such as opening pull requests or pushing code.
 

@@ -27,7 +27,7 @@ Learn how to sign up for and use GitHub Copilot.
 
 * [Quickstart for using GitHub Copilot on GitHub.com](/en/copilot/get-started/quickstart-for-using-github-copilot-on-github-com)
 
-  Understand code and work faster by asking questions and assigning coding tasks to Copilot cloud agent without leaving GitHub.
+  Understand code and work faster by asking questions and assigning coding tasks to Copilot in the cloud without leaving GitHub.
 
 * [Quickstart for using GitHub Copilot in your IDE](/en/copilot/get-started/quickstart-for-using-github-copilot-in-your-ide)
 
@@ -48,6 +48,10 @@ Learn how to sign up for and use GitHub Copilot.
 * [Plans for GitHub Copilot](/en/copilot/get-started/plans)
 
   Discover the plans available for Copilot.
+
+* [What's changing with GitHub Enterprise and Copilot billing](/en/copilot/get-started/whats-changing-with-github-enterprise-and-copilot)
+
+  Compare access and usage charges to decide whether and when to transition your enterprise to the new Copilot billing model.
 
 * [Best practices for using GitHub Copilot](/en/copilot/get-started/best-practices)
 

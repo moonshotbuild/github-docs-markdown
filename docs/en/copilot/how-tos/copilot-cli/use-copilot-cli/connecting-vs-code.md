@@ -82,7 +82,7 @@ When you ask Copilot to make changes to a file in the workspace, VS Code display
 
 > [!NOTE]
 >
-> * The diff view is not shown if you have allowed Copilot to edit files without your approval—for example, using the `--allow-all` or `--yolo` command-line options, or the `/allow-all` or `/yolo` slash commands. Instead, the proposed changes are applied directly to the file in the workspace without showing a diff, and the CLI continues immediately with the updated file content.
+> * The diff view is not shown if you have allowed Copilot to edit files without your approval—for example, using the `--allow-all` or `--yolo` command-line options, or the `/permissions allow-all` or `/yolo` slash commands. Instead, the proposed changes are applied directly to the file in the workspace without showing a diff, and the CLI continues immediately with the updated file content.
 > * If you prefer not to use the diff view in VS Code you can turn this feature off in the `/ide` menu. When you turn this off, the proposed file changes are displayed in the CLI.
 
 ## Viewing and resuming CLI sessions in VS Code

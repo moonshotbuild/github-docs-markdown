@@ -25,7 +25,7 @@ When you enable local sandboxing, Copilot CLI runs the commands it invokes on yo
 
 Most of this policy is assembled automatically, so that everyday commands keep working without setup. This article explains how Copilot arrives at the policy, and how to check the access it grants in a particular directory.
 
-For an overview of local sandboxing, including how to turn it on and off, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes) and [Using local sandboxing](/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing). For details of how to configure local sandboxing, see [Configuring local sandbox settings](/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings).
+For an overview of local sandboxing, including how to turn it on and off, see [About local sandboxing for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes) and [Using local sandboxing](/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing). For details of how to configure local sandboxing, see [Configuring local sandbox settings](/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings).
 
 ## What the policy applies to
 
@@ -145,6 +145,6 @@ Unlike most settings, where a single source wins, the sandbox policy is composed
 
 ## Further reading
 
-* [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes)
+* [About local sandboxing for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes)
 * [Using local sandboxing](/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing)
 * [Configuring local sandbox settings](/en/copilot/how-tos/cloud-and-local-sandboxes/configuring-local-sandbox-settings)

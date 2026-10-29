@@ -23,7 +23,7 @@ Enterprise owners can manage Copilot for organizations in the enterprise.
 
 ## Links
 
-* [Granting users access to GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access)
+* [Giving users GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access)
 
   Enable Copilot for entire organizations or grant access directly to specific users.
 

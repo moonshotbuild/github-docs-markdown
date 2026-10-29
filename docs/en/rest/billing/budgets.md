@@ -224,7 +224,10 @@ organization admin or billing manager.
   Can be one of: `organization`, `repository`, `multi_user_customer`, `user`
 
 * **`budget_entity_name`** (string)
-  The name of the entity to apply the budget to
+  The entity to apply the budget to. The expected value depends on budget\_scope.
+
+  repository: The repository name, or owner/repo.
+  organization, multi\_user\_customer, and user: Not used. For user, set the user field instead.
   Default: \`\`
 
 * **`budget_type`** (string)

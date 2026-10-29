@@ -268,3 +268,7 @@ These metrics can be used together to answer key questions about your teams' usa
 | How do I act on the insights from the dashboard?                  | See [Interpreting usage and adoption metrics for GitHub Copilot](/en/copilot/reference/copilot-usage-metrics/interpret-copilot-metrics#reviewing-adoption-cohorts) |
 
 Look for patterns across these signals rather than focusing on any single number. For example, a steady DAU paired with a rising acceptance rate indicates growing trust and value.
+
+## Analyze your metrics in more detail
+
+When you need to explain or validate your findings, use the reference articles to help you understand all the data available, how it compares across surfaces, and how it should be interpreted. See [GitHub Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics).

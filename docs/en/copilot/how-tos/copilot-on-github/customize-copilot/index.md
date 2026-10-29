@@ -39,7 +39,11 @@ Customize GitHub Copilot to fit your needs and get better results.
 
 * [Configure MCP servers for your repository](/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers)
 
-  Configure Model Context Protocol (MCP) servers for your repository to give Copilot cloud agent and Copilot code review access to external tools and data sources.
+  Configure Model Context Protocol (MCP) servers for your repository to give Copilot cloud agent, Automations, and Copilot code review access to external tools and data sources.
+
+* [Creating and sharing a plugin marketplace on GitHub](/en/copilot/how-tos/copilot-on-github/customize-copilot/create-and-share-plugin-marketplaces)
+
+  Publish a GitHub-hosted marketplace so people can discover and install plugins in supported Copilot clients.
 
 * [Copilot Spaces](/en/copilot/how-tos/copilot-on-github/customize-copilot/copilot-spaces)
 

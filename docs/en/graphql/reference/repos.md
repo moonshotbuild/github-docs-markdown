@@ -420,6 +420,7 @@ being pushed to the commit graph. This includes absolute paths that contain file
 
 ### Fields for `FilePathRestrictionParameters`
 
+* `ignoredFilePaths` ([String!]): Files matching these patterns are allowed even when they also match a restricted path.
 * `restrictedFilePaths` ([String!]!): The file paths that are restricted from being pushed to the commit graph.
 
 ## FilePathRestrictionParametersInput - input object
@@ -429,6 +430,7 @@ being pushed to the commit graph. This includes absolute paths that contain file
 
 ### Input fields for `FilePathRestrictionParametersInput`
 
+* `ignoredFilePaths` ([String!]): Files matching these patterns are allowed even when they also match a restricted path.
 * `restrictedFilePaths` ([String!]!): The file paths that are restricted from being pushed to the commit graph.
 
 ## FundingLink - object
@@ -533,6 +535,7 @@ Prevent commits with individual files that exceed the specified limit from being
 
 ### Fields for `MaxFileSizeParameters`
 
+* `ignoredFilePaths` ([String!]): Files matching these patterns may exceed the maximum size.
 * `maxFileSize` (Int!): The maximum file size allowed in megabytes. This limit does not apply to Git Large File Storage (Git LFS).
 
 ## MaxFileSizeParametersInput - input object
@@ -541,6 +544,7 @@ Prevent commits with individual files that exceed the specified limit from being
 
 ### Input fields for `MaxFileSizeParametersInput`
 
+* `ignoredFilePaths` ([String!]): Files matching these patterns may exceed the maximum size.
 * `maxFileSize` (Int!): The maximum file size allowed in megabytes. This limit does not apply to Git Large File Storage (Git LFS).
 
 ## MergeCommitMessage - enum

@@ -25,16 +25,16 @@ Learn how to resolve problems that may occur when you assign tasks to Copilot.
 
 You can only assign issues to Copilot if you have access to Copilot through a paid Copilot plan.
 
-If you do not already have a subscription for one of these plans, click this button for more information:<br> <a href="https://github.com/features/copilot/plans?ref_product=copilot&ref_type=engagement&ref_style=button" target="_blank" class="btn btn-primary mt-3 mr-3 no-underline"><span>Sign up for Copilot</span> <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-link-external" aria-label="link external icon" role="img"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>
+If you do not already have a subscription for one of these plans, click this button for more information:<br> <a href="https://github.com/features/copilot/plans?ref_product=copilot&ref_type=engagement&ref_style=button&utm_source=troubleshooting-cca-signup-cta&utm_medium=docs&utm_campaign=universe-2026" target="_blank" class="btn btn-primary mt-3 mr-3 no-underline"><span>Sign up for Copilot</span> <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-link-external" aria-label="link external icon" role="img"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>
 
 If you *do* have a paid Copilot plan, check that Copilot cloud agent  has not been manually disabled for the repository:
 
-* For organization-owned repositories, the availability of Copilot cloud agent in the repository is managed by the organization and/or enterprise administrators. See [Adding GitHub Copilot cloud agent to your organization](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-organization/add-copilot-cloud-agent).
+* For organization-owned repositories, the availability of Copilot cloud agent in the repository is managed by the organization and/or enterprise administrators. See [Managing GitHub Copilot in the cloud for your organization](/en/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-organization/add-copilot-cloud-agent).
 
 * For personal repositories, the availability of Copilot cloud agent in the repository is configured in your account settings. See [Managing GitHub Copilot policies as an individual subscriber](/en/copilot/how-tos/manage-your-account/manage-policies#disabling-or-enabling-copilot-cloud-agent-in-your-repositories).
 
 > [!NOTE]
-> You can check whether Copilot cloud agent has been enabled for you in the features page of your Copilot settings: [github.com/settings/copilot/features](https://github.com/settings/copilot/features).
+> You can check whether Copilot cloud agent has been enabled for you in the features page of your Copilot settings: [github.com/settings/copilot/features](https://github.com/settings/copilot/features?utm_source=troubleshooting-cca-article-features\&utm_medium=docs\&utm_campaign=universe-2026).
 
 ## I have an Enterprise Managed User account and Copilot won't work in my personal repository
 
@@ -52,6 +52,10 @@ If you asked Copilot to create a pull request and it responds that it cannot dir
 
 > [!IMPORTANT]
 > In VS Code, Visual Studio, and JetBrains IDEs, you must mention the `@github` chat participant in your prompt. You can omit this in Copilot Chat on GitHub.com.
+
+## Copilot can't start a session in a cloud sandbox
+
+If Copilot can't start a session that runs in a cloud sandbox, check that you can use Copilot in the cloud. If you get Copilot through an organization or enterprise, an owner must enable the **Copilot in the cloud** policy. See [Managing cloud sandboxes for your organization or enterprise](/en/copilot/how-tos/cloud-and-local-sandboxes/enabling-or-disabling-cloud-sandboxes-for-your-organization).
 
 ## I assigned an issue to Copilot, but nothing is happening
 
@@ -73,7 +77,7 @@ If this doesn't happen, Copilot may have been unassigned from the pull request, 
 
 Copilot can appear to be stuck for a while, and then get moving again.
 
-If the session remains stuck, it will time out after an hour. You can retry by unassigning the issue and then reassigning it to Copilot.
+If a session that runs on GitHub Actions remains stuck, it will time out after an hour. You can retry by unassigning the issue and then reassigning it to Copilot.
 
 If Copilot got stuck while responding to a comment, try adding the same comment to the pull request again.
 
@@ -85,7 +89,7 @@ To allow GitHub Actions workflows to run, click the **Approve and run workflows*
 
 ## Copilot is pushing changes which don't pass my CI checks
 
-While working on an issue, Copilot has access to its own ephemeral development environment, powered by GitHub Actions, where it can execute automated tests and linters to validate its work before it pushes.
+While working on an issue, Copilot has access to its own ephemeral development environment, either in a cloud sandbox or on GitHub Actions, where it can execute automated tests and linters to validate its work before it pushes.
 
 It is most likely to do this if given clear instructions on what to do. The best way to do this is with a `.github/copilot-instructions.md` file. See [Best practices for using GitHub Copilot to work on tasks](/en/copilot/tutorials/cloud-agent/get-the-best-results#adding-custom-instructions-to-your-repository).
 
@@ -108,4 +112,4 @@ The maximum image size allowed by Copilot cloud agent is 3.00 MiB. Images larger
 ## Further reading
 
 * [Best practices for using GitHub Copilot to work on tasks](/en/copilot/tutorials/cloud-agent/get-the-best-results)
-* [Configure the development environment](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment)
+* [Configure the development environment for agents on GitHub Actions](/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment)

@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/dependabot/alerts"
 ---
 
-# REST API endpoints for {% data variables.product.prodname\_dependabot\_alerts %}
+# REST API endpoints for Dependabot alerts
 
 Use the REST API to interact with Dependabot alerts for a repository.
 
@@ -78,7 +78,7 @@ OAuth app tokens and personal access tokens (classic) need the repo or security\
 
   Filters the list of alerts based on EPSS percentages. If specified, only alerts with the provided EPSS percentages will be returned.
 
-* **`has`** (string)
+* **`has`** (string or array of strings)
   Filters the list of alerts based on whether the alert has the given value. If specified, only alerts meeting this criterion will be returned.
   Multiple has filters can be passed to filter for alerts that have all of the values. Currently, only patch is supported.
 
@@ -245,6 +245,9 @@ Array of objects:
   * `created_at`: string, format: date-time
   * `url`: string, format: uri
 * `assignees`: array of `Simple User` (see above)
+* `reachability`: object, read-only:
+  * `verdict`: required, string, enum: `reachable`, `unreachable`, `potentially_reachable`, `unavailable`, `disabled`, read-only
+  * `reason`: string, enum: `unknown`, `unavailable_unsupported_ecosystem`, `unavailable_analysis_timed_out`, `potentially_reachable_invalid_manifest_path`, `potentially_reachable_missing_vulnerable_function_annotation`, `potentially_reachable_dependency_not_found`, `potentially_reachable_dependency_analysis_incomplete`, `potentially_reachable_repository_analysis_incomplete`, `potentially_reachable_call_found_outside_manifest_scope`, `potentially_reachable_unclassified_analysis_state`, `reachable_vulnerable_function_called`, `unreachable_vulnerable_function_not_called`, `potentially_reachable_unresolved_dynamic_call`, read-only
 * `repository`: required, `Simple Repository`:
   * `id`: required, integer, format: int64
   * `node_id`: required, string
@@ -350,7 +353,7 @@ OAuth app tokens and personal access tokens (classic) need the security\_events 
   A comma-separated list of Artifact Registry name strings. If specified, only alerts for repositories with storage records matching these registries will be returned.
   Can be: jfrog-artifactory
 
-* **`has`** (string)
+* **`has`** (string or array of strings)
   Filters the list of alerts based on whether the alert has the given value. If specified, only alerts meeting this criterion will be returned.
   Multiple has filters can be passed to filter for alerts that have all of the values.
 
@@ -480,7 +483,7 @@ OAuth app tokens and personal access tokens (classic) need the security\_events 
 
   Filters the list of alerts based on EPSS percentages. If specified, only alerts with the provided EPSS percentages will be returned.
 
-* **`has`** (string)
+* **`has`** (string or array of strings)
   Filters the list of alerts based on whether the alert has the given value. If specified, only alerts meeting this criterion will be returned.
   Multiple has filters can be passed to filter for alerts that have all of the values. Currently, only patch is supported.
 
@@ -649,6 +652,9 @@ Array of objects:
   * `created_at`: string, format: date-time
   * `url`: string, format: uri
 * `assignees`: array of `Simple User` (see above)
+* `reachability`: object, read-only:
+  * `verdict`: required, string, enum: `reachable`, `unreachable`, `potentially_reachable`, `unavailable`, `disabled`, read-only
+  * `reason`: string, enum: `unknown`, `unavailable_unsupported_ecosystem`, `unavailable_analysis_timed_out`, `potentially_reachable_invalid_manifest_path`, `potentially_reachable_missing_vulnerable_function_annotation`, `potentially_reachable_dependency_not_found`, `potentially_reachable_dependency_analysis_incomplete`, `potentially_reachable_repository_analysis_incomplete`, `potentially_reachable_call_found_outside_manifest_scope`, `potentially_reachable_unclassified_analysis_state`, `reachable_vulnerable_function_called`, `unreachable_vulnerable_function_not_called`, `potentially_reachable_unresolved_dynamic_call`, read-only
 
 ## Get a Dependabot alert
 
@@ -802,6 +808,9 @@ curl -L \
   * `created_at`: string, format: date-time
   * `url`: string, format: uri
 * `assignees`: array of `Simple User` (see above)
+* `reachability`: object, read-only:
+  * `verdict`: required, string, enum: `reachable`, `unreachable`, `potentially_reachable`, `unavailable`, `disabled`, read-only
+  * `reason`: string, enum: `unknown`, `unavailable_unsupported_ecosystem`, `unavailable_analysis_timed_out`, `potentially_reachable_invalid_manifest_path`, `potentially_reachable_missing_vulnerable_function_annotation`, `potentially_reachable_dependency_not_found`, `potentially_reachable_dependency_analysis_incomplete`, `potentially_reachable_repository_analysis_incomplete`, `potentially_reachable_call_found_outside_manifest_scope`, `potentially_reachable_unclassified_analysis_state`, `reachable_vulnerable_function_called`, `unreachable_vulnerable_function_not_called`, `potentially_reachable_unresolved_dynamic_call`, read-only
 
 ## Update a Dependabot alert
 

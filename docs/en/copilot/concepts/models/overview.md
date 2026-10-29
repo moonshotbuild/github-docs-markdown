@@ -40,9 +40,13 @@ The models you see in Copilot depend on several factors:
 * **Administrator policies.** If you're part of an organization or enterprise, administrators can enable or disable specific models, which affects what you and auto model selection can use. See [Configuring access to AI models in GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-access-to-ai-models).
 * **Model availability over time.** Providers periodically release new models and retire older ones, so the specific models available to you can change. Check [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models) for the current list.
 
+## Copilot Fusion
+
+Copilot Fusion is an advanced runtime model router and orchestrator. It chooses models and execution patterns for your task, then returns a single response. See [About GitHub Copilot Fusion](/en/copilot/concepts/models/copilot-fusion).
+
 ## Auto model selection
 
-Rather than requiring you to track every model's strengths yourself, you can select **Auto** in the model picker. Auto model selection then routes your request to an appropriate supported model based on the complexity of your task and real-time model availability. See [About Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection).
+Rather than requiring you to track every model's strengths yourself, you can select **Auto** in the model picker. Auto model selection then routes your request to an appropriate supported model based on the complexity of your task and real-time model availability. See [About GitHub Copilot auto model selection](/en/copilot/concepts/models/auto-model-selection).
 
 ## Bring your own key
 

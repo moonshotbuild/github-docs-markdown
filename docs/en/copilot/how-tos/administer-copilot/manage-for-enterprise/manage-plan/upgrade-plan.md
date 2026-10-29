@@ -36,7 +36,7 @@ Change your organizations' plans from Copilot Business to Copilot Enterprise.
 
 ## Next steps
 
-After upgrading to Copilot Enterprise, you can assign Copilot Enterprise or Copilot Business to individual organizations in the enterprise. See [Granting users access to GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access).
+After upgrading to Copilot Enterprise, you can assign Copilot Enterprise or Copilot Business to individual organizations in the enterprise. See [Giving users GitHub Copilot in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access).
 
 ## Troubleshooting plan migrations
 

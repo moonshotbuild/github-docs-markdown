@@ -41,7 +41,7 @@ Autopilot mode is available in GitHub Copilot CLI and the GitHub Copilot app.
 ## Things to consider
 
 * **Task suitability:** Use Autopilot mode for a task with a clear outcome and enough detail for the agent to make implementation decisions. Vague, exploratory, or open-ended tasks are more likely to require your guidance and may produce work that does not meet your expectations.
-* **Trust and access:** The agent may need permission to modify files, run commands, or access network resources. Grant only the access appropriate for the task. Consider using a local or cloud sandbox when the agent needs broad permissions within a restricted environment. For more information, see [About cloud and local sandboxes for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
+* **Trust and access:** The agent may need permission to modify files, run commands, or access network resources. Grant only the access appropriate for the task. Consider using a local or cloud sandbox when the agent needs broad permissions within a restricted environment. For more information, see [About local sandboxing for GitHub Copilot](/en/copilot/concepts/about-cloud-and-local-sandboxes).
 * **AI usage:** Autopilot mode can initiate multiple model interactions while working toward the goal. Monitor your AI credits while the task runs.
 * **Review:** You remain responsible for the work the agent performs. Review the changes and test results before you commit, push, or merge them.
 

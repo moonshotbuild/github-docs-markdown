@@ -27,6 +27,10 @@ Extend Copilot CLI for your own workflows, and for organizations, standardize ho
 
   Give Copilot repeatable workflows with task-specific instructions, scripts, and resources.
 
+* [Allowing safe commands to run without manual approval](/en/copilot/concepts/customizations/allowing-safe-commands)
+
+  The assisted permissions option reduces manual approval prompts by using a large language model to assess permission requests.
+
 * [Custom agents](/en/copilot/concepts/customizations/custom-agents)
 
   Give Copilot reusable specialist roles with tailored instructions and tools.
@@ -34,6 +38,10 @@ Extend Copilot CLI for your own workflows, and for organizations, standardize ho
 * [Model Context Protocol (MCP)](/en/copilot/concepts/customizations/mcp)
 
   Connect Copilot to external tools and data through Model Context Protocol (MCP) servers.
+
+* [Copilot connectors](/en/copilot/concepts/customizations/copilot-connectors)
+
+  Connect a service once to bring its tools and context into supported Copilot surfaces.
 
 * [Hooks for GitHub Copilot](/en/copilot/concepts/customizations/hooks)
 
@@ -45,7 +53,7 @@ Extend Copilot CLI for your own workflows, and for organizations, standardize ho
 
 * [Plugins for GitHub Copilot](/en/copilot/concepts/customizations/plugins)
 
-  Plugins are installable packages that extend Copilot with reusable agents, skills, hooks, and integrations.
+  Plugins package related customizations so you can install them together across supported Copilot surfaces.
 
 * [Using LSP servers with GitHub Copilot CLI](/en/copilot/concepts/customizations/lsp-servers)
 
