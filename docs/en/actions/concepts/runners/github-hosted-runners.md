@@ -97,6 +97,6 @@ If GitHub Actions services are temporarily unavailable, then a workflow run is d
 
 In addition, if the workflow run has been successfully queued, but has not been processed by a GitHub-hosted runner within 45 minutes, then the queued workflow run is discarded.
 
-## The `etc/hosts` file
+## The `/etc/hosts` file
 
-GitHub-hosted runners are provisioned with an `etc/hosts` file that blocks network access to various cryptocurrency mining pools and malicious sites. Hosts such as MiningMadness.com and cpu-pool.com are rerouted to localhost so that they do not present a significant security risk.
+GitHub-hosted runners are provisioned with an `/etc/hosts` file that blocks network access to various cryptocurrency mining pools and malicious sites. Hosts such as MiningMadness.com and cpu-pool.com are rerouted to localhost so that they do not present a significant security risk.

@@ -1,7 +1,7 @@
 ---
 source_path: "/en/copilot/tutorials/roll-out-at-scale/measure-copilot-impact"
 title: "Measure and demonstrate the impact of GitHub Copilot"
-intro: "Understanding how Copilot is used across your enterprise is the first step to demonstrating its value. Follow this path to establish a usage baseline, see how code is being generated, and connect adoption to measurable outcomes."
+intro: "Use Copilot metrics and engineering outcomes to assess your rollout and guide investment decisions."
 product: "GitHub Copilot"
 document_type: "article"
 breadcrumbs:
@@ -17,7 +17,7 @@ breadcrumbs:
 
 # Measure and demonstrate the impact of GitHub Copilot
 
-Understanding how Copilot is used across your enterprise is the first step to demonstrating its value. Follow this path to establish a usage baseline, see how code is being generated, and connect adoption to measurable outcomes.
+Use Copilot metrics and engineering outcomes to assess your rollout and guide investment decisions.
 
 ## Links
 
@@ -72,3 +72,9 @@ Understanding how Copilot is used across your enterprise is the first step to de
 * [Viewing the Copilot impact dashboard](/en/copilot/how-tos/administer-copilot/view-impact-dashboard)
 
   The impact dashboard shows how deeply your organization has adopted Copilot, and how that adoption connects to pull request output.
+
+### Phase 5: Communicate impact and guide investment decisions
+
+* [Communicate the impact of GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/communicate-copilot-impact)
+
+  Support renewal, rollout, and training decisions with a clear account of Copilot usage, costs, and engineering outcomes.

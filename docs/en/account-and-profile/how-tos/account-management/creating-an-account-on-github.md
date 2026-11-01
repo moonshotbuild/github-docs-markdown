@@ -39,11 +39,24 @@ Later, you can explore the different types of accounts that GitHub offers, and d
 2. Alternatively, click on **Continue with Google** to sign up using social login.
 3. Follow the prompts to create your personal account.
 
-During sign up, you'll be asked to verify your email address. Without a verified email address, you won't be able to complete some basic GitHub tasks, such as creating a repository.
+During sign up, you'll be asked to verify your email address.
 
 Some enterprises create managed user accounts for their users. You can't sign up for a personal account with an email address that's already verified for a managed user account.
 
 If you're having problems verifying your email address, there are some troubleshooting steps you can take. For more information, see [Troubleshooting email verification](/en/account-and-profile/how-tos/email-preferences/troubleshooting-email-verification).
+
+### Troubleshooting signup errors
+
+If you see `This email can't be used` or `We couldn't create your account` try the following:
+
+1. Use a different browser, or clear your browser's cookies and cache.
+2. Disable your browser extensions.
+3. Sign up on a different device and network.
+4. Wait a while, then try again.
+
+If you see `This email can't be used`, try a different email address or email domain. After you create your account, you can add or change email addresses. See [Changing your primary email address](/en/account-and-profile/how-tos/email-preferences/changing-your-primary-email-address).
+
+These suggestions may not resolve the issue. GitHub Support can't investigate individual account verification failures during signup.
 
 ## Next steps
 

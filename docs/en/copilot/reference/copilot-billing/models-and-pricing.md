@@ -32,7 +32,11 @@ How Copilot usage is tracked and billed depends on your plan type:
 
 When usage exceeds the included allowances for any Copilot plan, additional usage is billed in GitHub AI Credits at the per-token rates shown in the pricing tables below (1 AI credit = $0.01 USD).
 
-> [!NOTE] The option to purchase additional AI credits is not available if you subscribe, or have subscribed, to a Copilot plan through GitHub Mobile on iOS or Android.
+If you purchased Copilot Pro, Copilot Pro+, or Copilot Max through an in-app purchase on iOS or Android, you can't buy additional GitHub AI Credits through the app store. However, if your GitHub account has a payment method on file, additional paid usage beyond your included AI credits is billed to that payment method based on your budget settings.
+
+To avoid charges beyond your plan, create or edit a **Bundled AI credits budget**, set it to $0 USD, and enable **Stop usage when budget limit is reached**. See [Setting up budgets to control spending on metered products](/en/billing/how-tos/set-up-budgets#managing-budgets-for-your-personal-account).
+
+To manage all Copilot billing in one place, cancel your mobile subscription in the App Store or Google Play and re-subscribe on GitHub.com.
 
 ## Pricing tables
 

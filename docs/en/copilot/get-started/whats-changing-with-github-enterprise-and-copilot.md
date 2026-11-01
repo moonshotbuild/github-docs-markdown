@@ -17,7 +17,7 @@ breadcrumbs:
 
 Compare access and usage charges to decide whether and when to transition your enterprise to the new Copilot billing model.
 
-"Copilot access" is a new way for eligible enterprises to provide Copilot to their developers. In this model, there is no Copilot seat charge for users with an GitHub Enterprise Cloud license. For users without that license, Copilot Standalone costs $10 USD per user per month. In both cases, metered usage is billed separately.
+"Copilot access" is a new way for eligible enterprises to provide Copilot to their developers. In this model, there is no Copilot seat charge for users with a GitHub Enterprise Cloud license. For users without that license, Copilot Standalone costs $10 USD per user per month. In both cases, metered usage is billed separately.
 
 If you already use Copilot Business or Copilot Enterprise, you can retain your current plan. Transitioning is voluntary.
 
@@ -90,3 +90,5 @@ Before your transition takes effect:
 For an existing enterprise with Copilot Business or Copilot Enterprise, contact your GitHub or Microsoft account team. They can confirm eligibility, review the expected access and billing impact, and coordinate an available transition date. Contacting your account team does not itself change access or billing or guarantee a transition date.
 
 Transitions take effect on the first day of a month. Confirm the effective date with your account team.
+
+Don't have a dedicated account team? [Contact sales](https://github.com/enterprise/contact).

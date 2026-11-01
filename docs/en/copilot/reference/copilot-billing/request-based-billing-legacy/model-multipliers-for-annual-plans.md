@@ -55,20 +55,6 @@ The following table shows the model multipliers per supported model.
 |                    |            |
 | Claude Sonnet 4.6  |          9 |
 |                    |            |
-| Gemini 3 Pro       |          6 |
-|                    |            |
-| GPT-4o             |       0.33 |
-|                    |            |
-| GPT-4o mini        |       0.33 |
-|                    |            |
-| GPT-5.1            |          3 |
-|                    |            |
-| GPT-5.1-Codex      |          3 |
-|                    |            |
-| GPT-5.1-Codex-Mini |       0.33 |
-|                    |            |
-| GPT-5.1-Codex-Max  |          3 |
-|                    |            |
 | GPT-5.3-Codex      |          6 |
 |                    |            |
 | MAI-Code-1.1-Flash |       0.25 |
