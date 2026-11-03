@@ -165,6 +165,10 @@ Learn how to start building, shipping, and maintaining software with GitHub. Exp
 
   GitHub makes extra security features available to customers who purchase GitHub Code Security or GitHub Secret Protection. Some features are enabled for public repositories by default.
 
+* [About GitHub Code Quality](/en/get-started/learning-about-github/about-github-code-quality)
+
+  Decide whether GitHub Code Quality meets your team's needs, how it complements other GitHub products, and what to consider before purchasing.
+
 * [FAQ about changes to GitHub's plans](/en/get-started/learning-about-github/faq-about-changes-to-githubs-plans)
 
   As of April 14, 2020, GitHub announced that all of the core GitHub features are now free for everyone.
