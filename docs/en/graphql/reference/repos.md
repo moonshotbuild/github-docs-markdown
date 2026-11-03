@@ -1896,9 +1896,10 @@ The access level to a repository.
 * `ADMIN`: Can read, clone, and push to this repository. Can also manage issues, pull
 requests, and repository settings, including adding collaborators.
 * `MAINTAIN`: Can read, clone, and push to this repository. They can also manage issues, pull requests, and some repository settings.
+* `MODERATE`: Can read and clone this repository. Can also moderate and edit issues and manage pull requests without write access.
 * `READ`: Can read and clone this repository. Can also open and comment on issues and pull requests.
 * `TRIAGE`: Can read and clone this repository. Can also manage issues and pull requests.
-* `TRIAGE_PLUS`: Can read and clone this repository. Can also manage issues and pull requests, plus additional triage abilities.
+* `TRIAGE_PLUS`: Can read and clone this repository. Can also moderate and edit issues and manage pull requests without write access. **Deprecated:** TRIAGE_PLUS has been renamed to MODERATE. Use MODERATE instead. Removal on 2027-04-01 UTC.
 * `WRITE`: Can read, clone, and push to this repository. Can also manage issues and pull requests.
 
 ## RepositoryPlanFeatures - object

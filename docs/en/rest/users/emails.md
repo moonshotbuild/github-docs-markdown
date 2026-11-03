@@ -92,6 +92,7 @@ GET /user/emails
 Lists all of your email addresses, and specifies which one is visible
 to the public.
 OAuth app tokens and personal access tokens (classic) need the user:email scope to use this endpoint.
+For enterprise-managed users, if their email is unverified, this endpoint will return a placeholder email in the format <email+shortcode@domain.com> instead of their actual email. This placeholder email may cause issues with some third-party apps. Once the user has verified their email address, the endpoint will return their real email.
 
 ### Parameters
 

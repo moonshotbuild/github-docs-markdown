@@ -184,7 +184,7 @@ To enable prompt files, configure the workspace settings.
 ### Creating prompt files
 
 1. Open the command palette by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows/Linux) / <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Mac).
-2. Type "prompt" and select **Chat: Create Prompt**.
+2. Type "prompt" and select **Chat: New Prompt File**.
 3. Enter a name for the prompt file, excluding the `.prompt.md` file name extension. The name can contain alphanumeric characters and spaces and should describe the purpose of the prompt information the file will contain.
 4. Write the prompt instructions, using Markdown formatting.
 

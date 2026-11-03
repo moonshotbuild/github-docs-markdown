@@ -868,7 +868,7 @@ You can use the `permissions` key to add and remove `read` permissions for forke
 
 ### Permissions for workflow runs triggered by Dependabot
 
-Workflow runs triggered by Dependabot pull requests run as if they are from a forked repository, and therefore use a read-only `GITHUB_TOKEN`. These workflow runs cannot access any secrets. For information about strategies to keep these workflows secure, see [Secure use reference](/en/actions/reference/security/secure-use).
+By default, workflow runs triggered by Dependabot pull requests use a read-only `GITHUB_TOKEN` and cannot access secrets other than Dependabot secrets. You can use the `permissions` key in your workflow to increase the access for the token. For more information, see [Troubleshooting Dependabot on GitHub Actions](/en/code-security/reference/supply-chain-security/troubleshoot-dependabot/dependabot-on-actions). For information about strategies to keep these workflows secure, see [Secure use reference](/en/actions/reference/security/secure-use).
 
 ## `env`
 

@@ -26,6 +26,14 @@ Breaking changes are any changes that might require action from our integrators.
 
 We'll announce upcoming breaking changes at least three months before making changes to the GraphQL schema, to give integrators time to make the necessary adjustments. Changes go into effect on the first day of a quarter (January 1st, April 1st, July 1st, or October 1st). For example, if we announce a change on January 15th, it will be made on July 1st.
 
+## Changes scheduled for 2027-04-01
+
+- **Breaking** A change will be made to `RepositoryPermission.TRIAGE_PLUS`.
+
+  **Description:** TRIAGE_PLUS will be removed. Use MODERATE instead.
+
+  **Reason:** TRIAGE_PLUS has been renamed to MODERATE.
+
 ## Changes scheduled for 2027-01-01
 
 - **Breaking** A change will be made to `CheckAnnotation.databaseId`.

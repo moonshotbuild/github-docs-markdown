@@ -21,6 +21,16 @@ Breaking changes include changes that will break existing queries or could affec
 
 **2026** · [2025](/en/graphql/overview/changelog/2025) · [2024](/en/graphql/overview/changelog/2024) · [2023](/en/graphql/overview/changelog/2023) · [2022](/en/graphql/overview/changelog/2022) · [2021](/en/graphql/overview/changelog/2021) · [2020](/en/graphql/overview/changelog/2020) · [2019](/en/graphql/overview/changelog/2019) · [2018](/en/graphql/overview/changelog/2018) · [2017](/en/graphql/overview/changelog/2017)
 
+## Schema changes for 2026-11-02
+
+### The GraphQL schema includes these changes:
+
+* Enum value MODERATE was added to enum RepositoryPermission
+
+### The following changes will be made to the schema:
+
+* On member RepositoryPermission.TRIAGE\_PLUS:TRIAGE\_PLUS will be removed. Use MODERATE instead. Effective 2027-04-01.
+
 ## Schema changes for 2026-10-27
 
 ### The GraphQL schema includes these changes:
