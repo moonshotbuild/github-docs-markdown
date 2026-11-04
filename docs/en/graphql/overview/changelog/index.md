@@ -21,6 +21,36 @@ Breaking changes include changes that will break existing queries or could affec
 
 **2026** · [2025](/en/graphql/overview/changelog/2025) · [2024](/en/graphql/overview/changelog/2024) · [2023](/en/graphql/overview/changelog/2023) · [2022](/en/graphql/overview/changelog/2022) · [2021](/en/graphql/overview/changelog/2021) · [2020](/en/graphql/overview/changelog/2020) · [2019](/en/graphql/overview/changelog/2019) · [2018](/en/graphql/overview/changelog/2018) · [2017](/en/graphql/overview/changelog/2017)
 
+## Schema changes for 2026-11-03
+
+### The GraphQL schema includes these changes:
+
+* Type CopilotCodeReviewEffort was added
+* Enum value AUTO was added to enum CopilotCodeReviewEffort
+* Enum value BALANCED was added to enum CopilotCodeReviewEffort
+* Enum value LITE was added to enum CopilotCodeReviewEffort
+* Enum value MAX was added to enum CopilotCodeReviewEffort
+* Type CopilotCodeReviewRequestReason was added
+* Enum value ACTOR\_INELIGIBLE was added to enum CopilotCodeReviewRequestReason
+* Enum value APP\_NOT\_INSTALLED was added to enum CopilotCodeReviewRequestReason
+* Enum value LICENSED\_ORGANIZATION\_UNAVAILABLE was added to enum CopilotCodeReviewRequestReason
+* Enum value NO\_QUOTA\_REMAINING was added to enum CopilotCodeReviewRequestReason
+* Enum value REPOSITORY\_INELIGIBLE was added to enum CopilotCodeReviewRequestReason
+* Enum value REQUEST\_CONFLICT was added to enum CopilotCodeReviewRequestReason
+* Type RequestCopilotCodeReviewInput was added
+* Input field clientMutationId of type String was added to input object type RequestCopilotCodeReviewInput
+* Input field pullRequestId of type ID! was added to input object type RequestCopilotCodeReviewInput
+* Input field reviewEffort of type CopilotCodeReviewEffort was added to input object type RequestCopilotCodeReviewInput
+* Type RequestCopilotCodeReviewPayload was added
+* Field actor was added to object type RequestCopilotCodeReviewPayload
+* Field clientMutationId was added to object type RequestCopilotCodeReviewPayload
+* Field failureReason was added to object type RequestCopilotCodeReviewPayload
+* Field pullRequest was added to object type RequestCopilotCodeReviewPayload
+* Field reviewRequest was added to object type RequestCopilotCodeReviewPayload
+* Field success was added to object type RequestCopilotCodeReviewPayload
+* Field requestCopilotCodeReview was added to object type Mutation
+* Argument input: RequestCopilotCodeReviewInput! added to field Mutation.requestCopilotCodeReview
+
 ## Schema changes for 2026-11-02
 
 ### The GraphQL schema includes these changes:

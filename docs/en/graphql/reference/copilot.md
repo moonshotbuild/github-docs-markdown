@@ -32,6 +32,30 @@ Copilot Agentic fields in context of the current viewer.
 
 * User
 
+## CopilotCodeReviewEffort - enum
+
+The effort level for a Copilot code review. For more information, see Review effort level.
+
+### Values for `CopilotCodeReviewEffort`
+
+* `AUTO`: Copilot picks the effort for each pull request.
+* `BALANCED`: Balanced effort and depth.
+* `LITE`: Lower effort, faster review.
+* `MAX`: Highest effort, deepest review.
+
+## CopilotCodeReviewRequestReason - enum
+
+The stable reason a Copilot code review request was denied or conflicted with an existing request.
+
+### Values for `CopilotCodeReviewRequestReason`
+
+* `ACTOR_INELIGIBLE`: The actor is not eligible to request Copilot code reviews.
+* `APP_NOT_INSTALLED`: The Copilot code review reviewer app is not installed.
+* `LICENSED_ORGANIZATION_UNAVAILABLE`: The organization providing the Copilot license is unavailable.
+* `NO_QUOTA_REMAINING`: The actor has no Copilot code review quota remaining.
+* `REPOSITORY_INELIGIBLE`: The repository is not eligible for Copilot code reviews.
+* `REQUEST_CONFLICT`: A Copilot code review request is already pending for this pull request.
+
 ## CopilotEndpoints - object
 
 Copilot endpoint information.

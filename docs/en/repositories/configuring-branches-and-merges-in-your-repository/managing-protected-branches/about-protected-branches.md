@@ -154,6 +154,8 @@ For more information about merge queues, see [Managing a merge queue](/en/reposi
 
 You can require that changes are successfully deployed to specific environments before a branch can be merged. For example, you can use this rule to ensure that changes are successfully deployed to a staging environment before the changes merge to your default branch.
 
+For stacked pull requests, deploying a pull request also satisfies this requirement for pull requests below it while the stack has a linear history. See [Stacked pull requests](/en/pull-requests/reference/stacked-pull-requests#branch-protections-and-required-checks).
+
 ### Lock branch
 
 Locking a branch will make the branch read-only and ensures that no commits can be made to the branch. Locked branches can also not be deleted.

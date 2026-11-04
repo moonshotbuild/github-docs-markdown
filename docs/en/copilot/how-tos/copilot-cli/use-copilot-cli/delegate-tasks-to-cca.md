@@ -38,7 +38,7 @@ For more information, see [Using Autopilot mode in GitHub Copilot CLI](/en/copil
 
 ## Delegate tasks to Copilot cloud agent
 
-You can delegate a task to Copilot cloud agent on GitHub by using the `/delegate`slash command, followed by a prompt:
+You can delegate a task to Copilot cloud agent on GitHub by using the `/delegate` slash command, followed by a prompt:
 
 ```shell
 /delegate complete the API integration tests and fix any failing edge cases
@@ -51,6 +51,12 @@ Alternatively, prefix a prompt with `&` to delegate it:
 ```
 
 Copilot will ask to commit any of your unstaged changes as a checkpoint in a new branch it creates. Copilot cloud agent will open a draft pull request, make changes in the background, and request a review from you.
+
+By default, the pull request targets your current branch. To target a different branch, add `--base BRANCH-NAME` after `/delegate`. For example:
+
+```shell
+/delegate --base main complete the API integration tests and fix any failing edge cases
+```
 
 Copilot will provide a link to the pull request and agent session on GitHub once the session begins.
 
