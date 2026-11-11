@@ -37,7 +37,6 @@ If the stack is not linear, for example, after changes were pushed to a lower br
 > [!NOTE]
 >
 > * If you merge via the API and want to use stacked pull requests, you'll need use the asynchronous merge API for stacks. See [REST API endpoints for pull requests](/en/rest/pulls/pulls?apiVersion=2026-03-10#merge-a-pull-request-asynchronously).
-> * Auto-merge is not supported for stacked pull requests.
 
 ## Merging using a merge queue
 

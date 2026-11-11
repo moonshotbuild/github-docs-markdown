@@ -37,7 +37,7 @@ To access Copilot usage metrics, the **"Copilot usage metrics"** policy must be 
 1. Navigate to your enterprise. For example, from the [Enterprises](https://github.com/settings/enterprises?ref_product=ghec\&ref_type=engagement\&ref_style=text) page on GitHub.com.
 2. Click the **Insights** tab.
 
-The dashboard displays aggregated telemetry from developer IDEs and updates daily, though data may be up to 3 days behind UTC.
+The dashboard displays aggregated telemetry from developer IDEs and updates daily. Data for a given day is available within two full UTC days after that day closes.
 
 ## Step 2: Track license activation
 

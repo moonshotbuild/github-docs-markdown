@@ -117,3 +117,6 @@ For billing and access effects, see [Making changes to your GitHub Copilot licen
 ## Next steps
 
 After assigning access, ask developers to sign in with the account that has their enterprise-provided license. See [Quickstart for using GitHub Copilot in your IDE](/en/copilot/get-started/quickstart-for-using-github-copilot-in-your-ide).
+
+> [!TIP]
+> To plan policies, guardrails, and feature rollout across your enterprise, see [Adopting GitHub Copilot in your enterprise](/en/copilot/get-started/enterprise-ai-governance).

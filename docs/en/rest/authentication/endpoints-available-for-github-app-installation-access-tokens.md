@@ -879,6 +879,12 @@ Your GitHub App can make requests to the following REST endpoints with an instal
 
 * [`GET /enterprises/{enterprise}/copilot/metrics/reports/users-28-day/latest`](/en/rest/copilot/copilot-usage-metrics#get-copilot-users-usage-metrics)
 
+* [`PUT /enterprises/{enterprise}/copilot/policies/coding_agent`](/en/rest/copilot/copilot-coding-agent-management#set-the-coding-agent-policy-for-an-enterprise)
+
+* [`POST /enterprises/{enterprise}/copilot/policies/coding_agent/organizations`](/en/rest/copilot/copilot-coding-agent-management#add-organizations-to-the-enterprise-coding-agent-policy)
+
+* [`DELETE /enterprises/{enterprise}/copilot/policies/coding_agent/organizations`](/en/rest/copilot/copilot-coding-agent-management#remove-organizations-from-the-enterprise-coding-agent-policy)
+
 * [`GET /orgs/{org}/copilot/billing`](/en/rest/copilot/copilot-user-management#get-copilot-seat-information-and-settings-for-an-organization)
 
 * [`GET /orgs/{org}/copilot/billing/seats`](/en/rest/copilot/copilot-user-management#list-all-copilot-seat-assignments-for-an-organization)
@@ -921,7 +927,17 @@ Your GitHub App can make requests to the following REST endpoints with an instal
 
 * [`GET /orgs/{org}/members/{username}/copilot`](/en/rest/copilot/copilot-user-management#get-copilot-seat-assignment-details-for-a-user)
 
+* [`GET /orgs/{org}/teams/{team_slug}/copilot/customizations`](/en/rest/copilot/copilot-team-customizations#get-copilot-customizations-for-a-team)
+
+* [`PUT /orgs/{org}/teams/{team_slug}/copilot/customizations`](/en/rest/copilot/copilot-team-customizations#set-copilot-customizations-for-a-team)
+
+* [`DELETE /orgs/{org}/teams/{team_slug}/copilot/customizations`](/en/rest/copilot/copilot-team-customizations#delete-copilot-customizations-for-a-team)
+
 * [`GET /repos/{owner}/{repo}/copilot/cloud-agent/configuration`](/en/rest/copilot/copilot-cloud-agent-management#get-copilot-cloud-agent-configuration-for-a-repository)
+
+* [`GET /repos/{owner}/{repo}/copilot/code-review/settings`](/en/rest/copilot/copilot-code-review#get-copilot-code-review-settings-for-a-repository)
+
+* [`PATCH /repos/{owner}/{repo}/copilot/code-review/settings`](/en/rest/copilot/copilot-code-review#update-copilot-code-review-settings-for-a-repository)
 
 ## copilot-spaces
 
@@ -992,6 +1008,10 @@ Your GitHub App can make requests to the following REST endpoints with an instal
 * [`GET /repos/{owner}/{repo}/dependabot/alerts/{alert_number}`](/en/rest/dependabot/alerts#get-a-dependabot-alert)
 
 * [`PATCH /repos/{owner}/{repo}/dependabot/alerts/{alert_number}`](/en/rest/dependabot/alerts#update-a-dependabot-alert)
+
+* [`GET /repos/{owner}/{repo}/dependabot/runner-settings`](/en/rest/dependabot/runner-settings#get-repository-dependabot-runner-settings)
+
+* [`PUT /repos/{owner}/{repo}/dependabot/runner-settings`](/en/rest/dependabot/runner-settings#set-repository-dependabot-runner-settings)
 
 * [`GET /repos/{owner}/{repo}/dependabot/secrets`](/en/rest/dependabot/secrets#list-repository-secrets)
 
@@ -1706,6 +1726,8 @@ Your GitHub App can make requests to the following REST endpoints with an instal
 * [`POST /repos/{owner}/{repo}/pulls/{pull_number}/comments/{comment_id}/replies`](/en/rest/pulls/comments#create-a-reply-for-a-review-comment)
 
 * [`GET /repos/{owner}/{repo}/pulls/{pull_number}/commits`](/en/rest/pulls/pulls#list-commits-on-a-pull-request)
+
+* [`POST /repos/{owner}/{repo}/pulls/{pull_number}/copilot-code-review`](/en/rest/pulls/copilot-code-review#request-a-copilot-code-review-for-a-pull-request)
 
 * [`GET /repos/{owner}/{repo}/pulls/{pull_number}/files`](/en/rest/pulls/pulls#list-pull-requests-files)
 

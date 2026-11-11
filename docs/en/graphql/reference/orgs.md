@@ -291,6 +291,8 @@ An account on GitHub, with one or more owners, that has repositories, members an
 * `avatarUrl` (URI!): A URL pointing to the organization's public avatar.
   * `size` (Int): The size of the resulting square image.
 
+* `copilotCodeReviewRunnerConfiguration` (OrganizationCopilotCodeReviewRunnerConfiguration): The effective runner configuration that Copilot code review uses. Requires organization Copilot read permissions.
+* `copilotCodeReviewSettings` (OrganizationCopilotCodeReviewSettings): The organization's Copilot code review settings. Requires organization Copilot read permissions.
 * `createdAt` (DateTime!): Identifies the date and time when the object was created.
 * `databaseId` (Int): Identifies the primary key from the database.
 * `description` (String): The organization's public profile description.
@@ -391,6 +393,7 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
 * `newTeamUrl` (URI!): The HTTP URL creating a new team.
 * `notificationDeliveryRestrictionEnabledSetting` (NotificationRestrictionSettingValue!): Indicates if email notification delivery for this organization is restricted to verified or approved domains.
 * `organizationBillingEmail` (String): The billing email for the organization.
+* `organizationCopilotCodeReviewPolicy` (OrganizationCopilotCodeReviewPolicy): The configured and effective Copilot code review policy. Requires organization Copilot read permissions.
 * `packages` (PackageConnection!): A list of packages under the owner.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
@@ -409,7 +412,13 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
   * `last` (Int): Returns the last n elements from the list.
   * `types` ([PinnableItemType!]): Filter the types of pinnable items that are returned.
 
-* `pinnedIssueFields` (IssueFieldsConnection): An ordered list of issue fields pinned to issues when no type is selected. _(Pagination: `after`, `before`, `first`, `last`)_
+* `pinnedIssueFields` (IssueFieldsConnection): An ordered list of issue fields pinned to issues when no type is selected.
+  * `after` (String): Returns the elements in the list that come after the specified cursor.
+  * `before` (String): Returns the elements in the list that come before the specified cursor.
+  * `first` (Int): Returns the first n elements from the list.
+  * `last` (Int): Returns the last n elements from the list.
+  * `orderBy` (PinnedIssueFieldOrder): The order in which to return pinned issue fields. Default: `{field: POSITION, direction: ASC}`.
+
 * `pinnedItems` (PinnableItemConnection!): A list of repositories and gists this profile owner has pinned to their profile.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.

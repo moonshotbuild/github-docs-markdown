@@ -635,7 +635,7 @@ When you have team synchronization set up for a team with your organization's id
 
 * **204** - No Content
 
-* **404** - Not Found if team synchronization is setup
+* **404** - Not Found if team synchronization is set up
 
 ### Code examples
 

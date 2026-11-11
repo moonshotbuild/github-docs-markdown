@@ -72,6 +72,7 @@ The alert will only close automatically if the applied fix changes the exact lin
 ## Limitations
 
 * Scans analyze the default branch only.
+* Self-hosted runners are not supported.
 * Scans are manually triggered. Scheduled scans and automatic scans on push are not supported.
 * The agent selects which code to examine within a time budget. A scan does not exhaustively analyze every file or guarantee that it finds every vulnerability.
 * Matching against existing CodeQL alerts is best effort, so duplicate alerts can occur.

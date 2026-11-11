@@ -37,7 +37,7 @@ Reusables can include Liquid conditionals to conditionally render content depend
 
 Variables are short strings of reusable text.
 
-We use YAML files for variables.
+We use YAML files for variables. Define each variable as a string value with a top-level key. You can organize the files in subdirectories.
 
 The path, filename, and keys within each YAML file determine what its path will be in the data object.
 
@@ -45,12 +45,8 @@ For example, this YAML file, `data/variables/foo/bar.yml`, contains two variable
 
 ```yaml
 # the YAML file can contain multiple short strings in one file
-meaning_of_life: 42
-
-# the strings can also be nested if needed
-nested:
-  values:
-    too: Yes!
+meaning_of_life: '42'
+affirmation: 'Yes!'
 ```
 
-The values would be accessible as `{% data foo.bar.meaning_of_life %}` and `{% data foo.bar.nested.values.too %}`.
+The values would be accessible as `{% data variables.foo.bar.meaning_of_life %}` and `{% data variables.foo.bar.affirmation %}`.

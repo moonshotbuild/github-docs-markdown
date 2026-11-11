@@ -29,6 +29,14 @@ Some endpoints require more than one permission. Other endpoints work with any o
 
 **Token types:** UAT = user access token, IAT = installation access token
 
+## Enterprise permissions for "Enterprise AI controls"
+
+| Endpoint | Access | Tokens | Additional Permissions |
+|----------|--------|--------|------------------------|
+| `PUT /enterprises/{enterprise}/copilot/policies/coding_agent` | write | UAT, IAT | ✗ |
+| `POST /enterprises/{enterprise}/copilot/policies/coding_agent/organizations` | write | UAT, IAT | ✗ |
+| `DELETE /enterprises/{enterprise}/copilot/policies/coding_agent/organizations` | write | UAT, IAT | ✗ |
+
 ## Enterprise permissions for "Enterprise Copilot metrics"
 
 | Endpoint | Access | Tokens | Additional Permissions |
@@ -249,8 +257,11 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /orgs/{org}/copilot/coding-agent/permissions/repositories` | write | UAT, IAT | ✗ |
 | `PUT /orgs/{org}/copilot/coding-agent/permissions/repositories/{repository_id}` | write | UAT, IAT | ✓ |
 | `DELETE /orgs/{org}/copilot/coding-agent/permissions/repositories/{repository_id}` | write | UAT, IAT | ✓ |
+| `PUT /orgs/{org}/teams/{team_slug}/copilot/customizations` | write | UAT, IAT | ✗ |
+| `DELETE /orgs/{org}/teams/{team_slug}/copilot/customizations` | write | UAT, IAT | ✗ |
 | `GET /orgs/{org}/copilot/coding-agent/permissions` | read | UAT, IAT | ✗ |
 | `GET /orgs/{org}/copilot/coding-agent/permissions/repositories` | read | UAT, IAT | ✗ |
+| `GET /orgs/{org}/teams/{team_slug}/copilot/customizations` | read | UAT, IAT | ✗ |
 
 ## Organization permissions for "Copilot content exclusion"
 
@@ -712,6 +723,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PATCH /repos/{owner}/{repo}/code-scanning/default-setup` | write | UAT, IAT | ✗ |
 | `PUT /repos/{owner}/{repo}/collaborators/{username}` | write | UAT, IAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/collaborators/{username}` | write | UAT, IAT | ✗ |
+| `PATCH /repos/{owner}/{repo}/copilot/code-review/settings` | write | UAT, IAT | ✗ |
+| `PUT /repos/{owner}/{repo}/dependabot/runner-settings` | write | UAT, IAT | ✗ |
 | `PUT /repos/{owner}/{repo}/environments/{environment_name}` | write | UAT, IAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/environments/{environment_name}` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies` | write | UAT, IAT | ✗ |
@@ -787,6 +800,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/code-scanning/default-setup` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/code-security-configuration` | read | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/copilot/code-review/settings` | read | UAT, IAT | ✗ |
+| `GET /repos/{owner}/{repo}/dependabot/runner-settings` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/apps` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/immutable-releases` | read | UAT, IAT | ✗ |
 | `GET /repos/{owner}/{repo}/interaction-limits` | read | UAT, IAT | ✗ |
@@ -1274,6 +1289,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PATCH /repos/{owner}/{repo}/pulls/{pull_number}` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/comments` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/comments/{comment_id}/replies` | write | UAT, IAT | ✗ |
+| `POST /repos/{owner}/{repo}/pulls/{pull_number}/copilot-code-review` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers` | write | UAT, IAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers` | write | UAT, IAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers/rerequest` | write | UAT, IAT | ✗ |

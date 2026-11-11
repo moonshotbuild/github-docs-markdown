@@ -236,6 +236,14 @@ along with its version history ordered from newest to oldest.
 - **`artifact_number`** (integer) (required)
   The artifact number within the issue.
 
+- **`per_page`** (integer)
+  The number of results per page (max 100). For more information, see "Using pagination in the REST API."
+  Default: `30`
+
+- **`page`** (integer)
+  The page number of the results to fetch. For more information, see "Using pagination in the REST API."
+  Default: `1`
+
 ### HTTP response status codes
 
 - **200** - The requested artifact.
@@ -282,6 +290,8 @@ curl -L \
     * `updated_at`: required, string or null, format: date-time
   * **object**
     * `artifact`: required, `Issue artifact` (see above)
+    * `has_next_page`: required, boolean
+    * `total_count`: required, integer, minimum: 0
     * `versions`: required, array of objects:
       * `version`: required, integer
       * `name`: required, string

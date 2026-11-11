@@ -236,6 +236,7 @@ Use the table below to search, filter, and browse all supported patterns. You ca
 | CircleCI | CircleCI Project Access Token | circleci_project_access_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | CircleCI | CircleCI Release API Token | circleci_release_integration_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Clojars | Clojars Deploy Token | clojars_deploy_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
+| Cloudflare | Cloudflare Access Service Token | cloudflare_access_service_token | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ |
 | Cloudflare | Cloudflare Account API Token | cloudflare_account_api_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Cloudflare | Cloudflare Global User API Key | cloudflare_global_user_api_key | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
 | Cloudflare | Cloudflare User API Token | cloudflare_user_api_token | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |

@@ -445,6 +445,7 @@ Array of `Organization Custom Property`:
 * `description`: string or null
 * `allowed_values`: array of string or null
 * `values_editable_by`: string or null, enum: `org_actors`, `org_and_repo_actors`, `null`
+* `regex`: string or null
 * `require_explicit_values`: boolean
 
 ## Create or update custom properties for an organization
@@ -480,11 +481,6 @@ A user, or a user on a team, with the fine-grained permission of custom\_propert
   The array of custom properties to create or update.
   * **`property_name`** (string) (required)
     The name of the property
-  * **`url`** (string)
-    The URL that can be used to fetch, update, or delete info about this property via the API.
-  * **`source_type`** (string)
-    The source type of the property
-    Can be one of: `organization`, `enterprise`
   * **`value_type`** (string) (required)
     The type of the value for the property
     Can be one of: `string`, `single_select`, `multi_select`, `true_false`, `url`
@@ -500,6 +496,9 @@ A user, or a user on a team, with the fine-grained permission of custom\_propert
   * **`values_editable_by`** (string or null)
     Who can edit the values of the property
     Can be one of: `org_actors`, `org_and_repo_actors`, `null`
+  * **`regex`** (string or null)
+    A regular expression (RE2 syntax) that values of the property must match.
+    Only supported for properties with a value\_type of string.
   * **`require_explicit_values`** (boolean)
     Whether setting properties values is mandatory
 
@@ -609,6 +608,7 @@ curl -L \
 * `description`: string or null
 * `allowed_values`: array of string or null
 * `values_editable_by`: string or null, enum: `org_actors`, `org_and_repo_actors`, `null`
+* `regex`: string or null
 * `require_explicit_values`: boolean
 
 ## Create or update a custom property for an organization
@@ -660,6 +660,10 @@ A user, or a user on a team, with the fine-grained permission of custom\_propert
 * **`values_editable_by`** (string or null)
   Who can edit the values of the property
   Can be one of: `org_actors`, `org_and_repo_actors`, `null`
+
+* **`regex`** (string or null)
+  A regular expression (RE2 syntax) that values of the property must match.
+  Only supported for properties with a value\_type of string.
 
 * **`require_explicit_values`** (boolean)
   Whether setting properties values is mandatory

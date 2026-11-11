@@ -87,7 +87,7 @@ Here is an example of an issue created for a large initiative, front-end work, i
 
 You can add sub-issues to an issue to quickly break down larger pieces of work into smaller issues. Sub-issues add support for hierarchies of issues on GitHub by creating relationships between your issues. You can create multiple levels of sub-issues that accurately represent your project by breaking down tasks into exactly the amount of detail that you and your team require. See [Adding sub-issues](/en/issues/tracking-your-work-with-issues/using-issues/adding-sub-issues) and [Browsing sub-issues](/en/issues/tracking-your-work-with-issues/using-issues/browsing-sub-issues).
 
-You can use issue types to classify work in repositories across the organization, such as tasks, bugs, and features. See [Managing issue types in an organization](/en/issues/tracking-your-work-with-issues/using-issues/managing-issue-types-in-an-organization).
+You can use issue types to classify work in repositories across the organization, such as tasks, bugs, and features. See [Managing issue types](/en/issues/tracking-your-work-with-issues/using-issues/managing-issue-types-in-an-organization).
 
 ![Screenshot of the sub-issues section below the issue description.](/assets/images/help/issues/sub-issue.png)
 
@@ -193,7 +193,7 @@ You have now learned about the tools GitHub offers for planning and tracking you
 * [Changing the layout of a view](/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view) for learning how to customize views for projects
 * [Tracking your work with issues](/en/issues/tracking-your-work-with-issues) for learning more about different ways to create and manage issues
 * [About issue and pull request templates](/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates) for learning more about issue templates
-* [Managing issue types in an organization](/en/issues/tracking-your-work-with-issues/using-issues/managing-issue-types-in-an-organization) for managing issue types
+* [Managing issue types](/en/issues/tracking-your-work-with-issues/using-issues/managing-issue-types-in-an-organization) for managing issue types
 * [Managing labels](/en/issues/using-labels-and-milestones-to-track-work/managing-labels) for learning how to create, edit and delete labels
 * [Adding sub-issues](/en/issues/tracking-your-work-with-issues/using-issues/adding-sub-issues) for learning about adding sub-issues
 * [About tasklists](/en/get-started/writing-on-github/working-with-advanced-formatting/about-tasklists) for learning more about task lists

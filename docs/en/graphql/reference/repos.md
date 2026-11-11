@@ -1128,7 +1128,7 @@ visibility argument.
   * `number` (Int!): The number for the issue to be returned.
 
 * `issueCreationPolicy` (IssueCreationPolicy): The policy controlling who can create issues in this repository.
-* `issueFields` (IssueFieldsConnection): A list of the repository's issue fields, inherited from the organization.
+* `issueFields` (IssueFieldsConnection): A list of the repository's issue fields, inherited from the repository's owner.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
   * `first` (Int): Returns the first n elements from the list.
@@ -1233,6 +1233,13 @@ visibility argument.
   * `last` (Int): Returns the last n elements from the list.
   * `orderBy` (PinnedEnvironmentOrder): Ordering options for the environments. Default: `{field: POSITION, direction: ASC}`.
 
+* `pinnedIssueFields` (IssueFieldsConnection): An ordered list of the repository owner's issue fields pinned to issues when no type is selected.
+  * `after` (String): Returns the elements in the list that come after the specified cursor.
+  * `before` (String): Returns the elements in the list that come before the specified cursor.
+  * `first` (Int): Returns the first n elements from the list.
+  * `last` (Int): Returns the last n elements from the list.
+  * `orderBy` (PinnedIssueFieldOrder): The order in which to return pinned issue fields. Default: `{field: POSITION, direction: ASC}`.
+
 * `pinnedIssues` (PinnedIssueConnection): A list of pinned issues for this repository. _(Pagination: `after`, `before`, `first`, `last`)_
 * `planFeatures` (RepositoryPlanFeatures!): Returns information about the availability of certain features and limits based on the repository's billing plan.
 * `primaryLanguage` (Language): The primary language of the repository's code.
@@ -1307,6 +1314,7 @@ to repository maintainers and administrators.
   * `last` (Int): Returns the last n elements from the list.
   * `orderBy` (ReleaseOrder): Order for connection.
 
+* `repositoryCopilotCodeReviewSettings` (RepositoryCopilotCodeReviewSettings): The repository's Copilot code review settings. Requires repository administration access.
 * `repositoryCustomPropertyValue` (RepositoryCustomPropertyValue): A custom property value for the repository.
   * `propertyName` (String!): The name of the custom property to retrieve the value for.
 

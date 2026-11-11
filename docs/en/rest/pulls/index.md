@@ -25,6 +25,10 @@ Use the REST API to manage pull requests and pull request reviews.
 
   Use the REST API to interact with pull request review comments.
 
+* [REST API endpoints for Copilot code review](/en/rest/pulls/copilot-code-review)
+
+  Use the REST API to manage Copilot code review.
+
 * [REST API endpoints for pull requests](/en/rest/pulls/pulls)
 
   Use the REST API to interact with pull requests.

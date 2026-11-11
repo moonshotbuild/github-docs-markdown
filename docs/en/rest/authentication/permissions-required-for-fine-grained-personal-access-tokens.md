@@ -228,8 +228,11 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /orgs/{org}/copilot/coding-agent/permissions/repositories` | write | PAT | ✗ |
 | `PUT /orgs/{org}/copilot/coding-agent/permissions/repositories/{repository_id}` | write | PAT | ✓ |
 | `DELETE /orgs/{org}/copilot/coding-agent/permissions/repositories/{repository_id}` | write | PAT | ✓ |
+| `PUT /orgs/{org}/teams/{team_slug}/copilot/customizations` | write | PAT | ✗ |
+| `DELETE /orgs/{org}/teams/{team_slug}/copilot/customizations` | write | PAT | ✗ |
 | `GET /orgs/{org}/copilot/coding-agent/permissions` | read | PAT | ✗ |
 | `GET /orgs/{org}/copilot/coding-agent/permissions/repositories` | read | PAT | ✗ |
+| `GET /orgs/{org}/teams/{team_slug}/copilot/customizations` | read | PAT | ✗ |
 
 ## Organization permissions for "Copilot content exclusion"
 
@@ -669,6 +672,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PATCH /repos/{owner}/{repo}/code-scanning/default-setup` | write | PAT | ✗ |
 | `PUT /repos/{owner}/{repo}/collaborators/{username}` | write | PAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/collaborators/{username}` | write | PAT | ✗ |
+| `PATCH /repos/{owner}/{repo}/copilot/code-review/settings` | write | PAT | ✗ |
+| `PUT /repos/{owner}/{repo}/dependabot/runner-settings` | write | PAT | ✗ |
 | `PUT /repos/{owner}/{repo}/environments/{environment_name}` | write | PAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/environments/{environment_name}` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies` | write | PAT | ✗ |
@@ -742,6 +747,8 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/code-scanning/default-setup` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/code-security-configuration` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/copilot/code-review/settings` | read | PAT | ✗ |
+| `GET /repos/{owner}/{repo}/dependabot/runner-settings` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/apps` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/immutable-releases` | read | PAT | ✗ |
 | `GET /repos/{owner}/{repo}/interaction-limits` | read | PAT | ✗ |
@@ -1210,6 +1217,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PATCH /repos/{owner}/{repo}/pulls/{pull_number}` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/comments` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/comments/{comment_id}/replies` | write | PAT | ✗ |
+| `POST /repos/{owner}/{repo}/pulls/{pull_number}/copilot-code-review` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers` | write | PAT | ✗ |
 | `DELETE /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers` | write | PAT | ✗ |
 | `POST /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers/rerequest` | write | PAT | ✗ |

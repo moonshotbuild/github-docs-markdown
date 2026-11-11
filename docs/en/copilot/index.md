@@ -281,7 +281,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [GitHub Copilot usage metrics](/en/copilot/concepts/billing-and-usage/copilot-usage-metrics/copilot-metrics)
 
-  Copilot usage metrics provide visibility into how Copilot is adopted and used across your organization, including engagement, activity, code generation, and pull request lifecycle trends.
+  Understand how your teams adopt Copilot and where enablement can help them get more value from AI-assisted development.
 
 * [Content exclusion for GitHub Copilot](/en/copilot/concepts/security-governance-and-network-settings/content-exclusion)
 
@@ -1415,6 +1415,14 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Copilot usage metrics data is available through the dashboard and APIs, using a consistent set of fields to represent adoption, usage, and code generation activity.
 
+* [Coverage and requirements for Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/usage-metrics-coverage)
+
+  Check which activity Copilot usage metrics include and which IDE versions are required for detailed reporting.
+
+* [Industry comparisons for Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/industry-comparisons)
+
+  Understand how Copilot industry comparisons calculate peer benchmarks and protect participant data.
+
 * [Interpreting usage and adoption metrics for GitHub Copilot](/en/copilot/reference/copilot-usage-metrics/interpret-copilot-metrics)
 
   Copilot usage and adoption metrics reveal patterns in how developers engage with Copilot across your enterprise.
@@ -1450,6 +1458,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [MCP private registry enforcement](/en/copilot/reference/enterprise-administrators/mcp-private-registry-enforcement)
 
   Understand the logic and limitations of MCP private registry enforcement using a private registry server.
+
+* [OpenTelemetry reference](/en/copilot/reference/enterprise-administrators/opentelemetry-reference)
+
+  Find configuration options and telemetry data to monitor Copilot agent activity across clients.
 
 * [Feature availability when GitHub Copilot policies conflict in organizations](/en/copilot/reference/enterprise-administrators/policy-conflicts)
 

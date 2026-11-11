@@ -405,6 +405,10 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to manage repository-level settings for Copilot cloud agent.
 
+* [REST API endpoints for Copilot code review](/en/rest/copilot/copilot-code-review)
+
+  Use the REST API to manage Copilot code review.
+
 * [REST API endpoints for Copilot cloud agent management](/en/rest/copilot/copilot-coding-agent-management)
 
   Use the REST API to manage settings for Copilot cloud agent.
@@ -412,6 +416,10 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 * [REST API endpoints for Copilot content exclusion management](/en/rest/copilot/copilot-content-exclusion-management)
 
   Use the REST API to manage Copilot content exclusion rules.
+
+* [REST API endpoints for Copilot team customizations](/en/rest/copilot/copilot-team-customizations)
+
+  Use the REST API to manage Copilot customizations for a team.
 
 * [REST API endpoints for Copilot usage metrics](/en/rest/copilot/copilot-usage-metrics)
 
@@ -444,6 +452,10 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 * [REST API endpoints for Dependabot repository access](/en/rest/dependabot/repository-access)
 
   Use the REST API to manage which repositories Dependabot can access within an organization.
+
+* [REST API endpoints for Dependabot runner settings](/en/rest/dependabot/runner-settings)
+
+  Use the REST API to get and set Dependabot runner settings.
 
 * [REST API endpoints for Dependabot secrets](/en/rest/dependabot/secrets)
 
@@ -720,6 +732,10 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 * [REST API endpoints for pull request review comments](/en/rest/pulls/comments)
 
   Use the REST API to interact with pull request review comments.
+
+* [REST API endpoints for Copilot code review](/en/rest/pulls/copilot-code-review)
+
+  Use the REST API to manage Copilot code review.
 
 * [REST API endpoints for pull requests](/en/rest/pulls/pulls)
 

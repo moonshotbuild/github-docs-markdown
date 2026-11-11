@@ -112,6 +112,8 @@ Array of `Pull Request Review`:
       * `user_view_type`: string
   * `body`: required, string
   * `state`: required, string
+  * `is_copilot_code_review`: boolean
+  * `copilot_code_review_effort`: string or null
   * `html_url`: required, string, format: uri
   * `pull_request_url`: required, string, format: uri
   * `_links`: required, object:
@@ -252,6 +254,8 @@ curl -L \
     * `user_view_type`: string
 * `body`: required, string
 * `state`: required, string
+* `is_copilot_code_review`: boolean
+* `copilot_code_review_effort`: string or null
 * `html_url`: required, string, format: uri
 * `pull_request_url`: required, string, format: uri
 * `_links`: required, object:
@@ -510,6 +514,11 @@ curl -L \
 **Response schema (Status: 200):**
 
 Array of `Legacy Review Comment`:
+  * `is_copilot_code_review`: boolean
+  * `copilot_code_review_sources`: array of objects:
+    * `kind`: required, string, enum: `SKILL`, `MCP`, `CUSTOM_INSTRUCTIONS`
+    * `name`: required, string
+    * `path`: string
   * `url`: required, string, format: uri
   * `pull_request_review_id`: required, integer or null, format: int64
   * `id`: required, integer, format: int64

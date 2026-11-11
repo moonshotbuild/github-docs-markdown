@@ -752,8 +752,8 @@ curl -L \
 
 Array of objects:
 
-* `type`: string, enum: `commit`, `wiki_commit`, `issue_title`, `issue_body`, `issue_comment`, `discussion_title`, `discussion_body`, `discussion_comment`, `pull_request_title`, `pull_request_body`, `pull_request_comment`, `pull_request_review`, `pull_request_review_comment`
-* `details`: one of:
+* `type`: string, enum: `commit`, `wiki_commit`, `issue_title`, `issue_body`, `issue_comment`, `discussion_title`, `discussion_body`, `discussion_comment`, `pull_request_title`, `pull_request_body`, `pull_request_comment`, `pull_request_review`, `pull_request_review_comment`, `actions_log`
+* `details`: any of:
   * **object**
     * `path`: required, string
     * `start_line`: required, number
@@ -805,6 +805,12 @@ Array of objects:
   * **object**
     * `pull_request_review_comment_url`: required, string, format: uri
     * `html_url`: string, format: uri
+  * **object**
+    * `path`: required, string
+    * `start_line`: required, number
+    * `end_line`: required, number
+    * `start_column`: required, number
+    * `end_column`: required, number
 
 ## Create a push protection bypass
 

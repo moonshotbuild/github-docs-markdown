@@ -35,6 +35,10 @@ Find information to apply to your work as an enterprise administrator for GitHub
 
   Understand the logic and limitations of MCP private registry enforcement using a private registry server.
 
+* [OpenTelemetry reference](/en/copilot/reference/enterprise-administrators/opentelemetry-reference)
+
+  Find configuration options and telemetry data to monitor Copilot agent activity across clients.
+
 * [Feature availability when GitHub Copilot policies conflict in organizations](/en/copilot/reference/enterprise-administrators/policy-conflicts)
 
   Delegating Copilot policy decisions to organizations affects users granted a license by organizations with different policies.

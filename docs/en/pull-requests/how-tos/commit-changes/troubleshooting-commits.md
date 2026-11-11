@@ -68,7 +68,17 @@ Use `git fetch upstream` for a fork's upstream repository, or `git fetch origin`
 
 ### The branch that contained the commit was deleted
 
-If the branch was deleted or force pushed, ask a collaborator who still has the commit locally to push it to a new branch.
+If a force push overwrote branch history, you may be able to recover it on GitHub, including in a private repository. You need write access to create a recovery branch. This workflow only works if the previous commit still opens on GitHub.
+
+1. Open the repository's activity view. See [Using the activity view to see changes to a repository](/en/repositories/viewing-activity-and-data-for-your-repository/using-the-activity-view-to-see-changes-to-a-repository).
+2. Use the branch dropdown to select the affected branch. In the **All activity** dropdown, select **Force pushes**.
+3. Find the force-push event that overwrote the history. If available, you can select **Compare changes** from the event's <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-kebab-horizontal" aria-label="The horizontal kebab icon" role="img"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg> menu to view the comparison.
+4. If you choose to view the comparison, copy the base commit SHA, the first SHA in the comparison URL. Otherwise, use the event's **before** commit SHA, which was the branch tip before the force push, not its **after** SHA.
+5. Open `https://github.com/OWNER/REPO/tree/BEFORE_SHA`, replacing `OWNER` and `REPO` with the repository owner and name, and `BEFORE_SHA` with the previous commit SHA.
+6. If the commit opens, select the branch dropdown above the file list. Type a new recovery-branch name, such as `recover-history`, then select **Create branch**.
+7. On the new branch, check the files and commit history to verify that the expected history is present.
+
+If you cannot find or open the SHA, or if the branch was deleted, ask a collaborator who still has the commit in a local clone to push it to a new branch.
 
 ```shell
 git branch recover-B B

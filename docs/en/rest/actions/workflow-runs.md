@@ -145,6 +145,8 @@ This endpoint will return up to 1,000 results for each search when using the fol
 
 * **200** - OK
 
+* **304** - Not modified
+
 ### Code examples
 
 #### Example

@@ -37,7 +37,7 @@ Learn about the different fields and custom field types, how to add fields to yo
 
 * [About issue fields in projects](/en/issues/planning-and-tracking-with-projects/understanding-fields/about-issue-fields)
 
-  Learn how to use organization-level issue fields in your projects to track structured metadata like priority, effort, and dates.
+  Learn how to use issue fields in your projects to track structured metadata like priority, effort, and dates.
 
 * [About parent issue and sub-issue progress fields](/en/issues/planning-and-tracking-with-projects/understanding-fields/about-parent-issue-and-sub-issue-progress-fields)
 

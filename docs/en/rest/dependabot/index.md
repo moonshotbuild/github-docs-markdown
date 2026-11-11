@@ -25,6 +25,10 @@ Use the REST API to interact with Dependabot alerts and secrets for an organizat
 
   Use the REST API to manage which repositories Dependabot can access within an organization.
 
+* [REST API endpoints for Dependabot runner settings](/en/rest/dependabot/runner-settings)
+
+  Use the REST API to get and set Dependabot runner settings.
+
 * [REST API endpoints for Dependabot secrets](/en/rest/dependabot/secrets)
 
   Use the REST API to manage Dependabot secrets for an organization or repository.

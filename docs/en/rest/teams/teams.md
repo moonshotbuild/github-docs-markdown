@@ -763,7 +763,7 @@ You can also specify a team by org\_id and team\_id using the route GET /organiz
 
 * **200** - Alternative response with repository permissions
 
-* **204** - Response if team has permission for the repository. This is the response when the repository media type hasn't been provded in the Accept header.
+* **204** - Response if team has permission for the repository. This is the response when the repository media type hasn't been provided in the Accept header.
 
 * **404** - Not Found if team does not have permission for the repository
 
@@ -944,7 +944,7 @@ For more information about the permission levels, see "Repository permission lev
 #### Body parameters
 
 * **`permission`** (string)
-  The permission to grant the team on this repository. We accept the following permissions to be set: pull, triage, push, maintain, admin and you can also specify a custom repository role name, if the owning organization has defined any. If no permission is specified, the team's permission attribute will be used to determine what permission to grant the team on this repository.
+  The permission to grant the team on this repository. We accept the following permissions to be set: pull, triage, moderate, push, maintain, admin and you can also specify a custom repository role name, if the owning organization has defined any. If no permission is specified, the team's permission attribute will be used to determine what permission to grant the team on this repository.
 
 ### HTTP response status codes
 
@@ -1424,7 +1424,7 @@ Note that, if you choose not to pass any parameters, you'll need to set Content-
 
 * **`permission`** (string)
   The permission to grant the team on this repository. If no permission is specified, the team's permission attribute will be used to determine what permission to grant the team on this repository.
-  Can be one of: `pull`, `push`, `admin`
+  Can be one of: `pull`, `moderate`, `push`, `admin`
 
 ### HTTP response status codes
 

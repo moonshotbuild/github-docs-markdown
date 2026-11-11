@@ -23,6 +23,14 @@ Interpret and validate GitHub Copilot usage metrics with guidance on data reconc
 
   Copilot usage metrics data is available through the dashboard and APIs, using a consistent set of fields to represent adoption, usage, and code generation activity.
 
+* [Coverage and requirements for Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/usage-metrics-coverage)
+
+  Check which activity Copilot usage metrics include and which IDE versions are required for detailed reporting.
+
+* [Industry comparisons for Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/industry-comparisons)
+
+  Understand how Copilot industry comparisons calculate peer benchmarks and protect participant data.
+
 * [Interpreting usage and adoption metrics for GitHub Copilot](/en/copilot/reference/copilot-usage-metrics/interpret-copilot-metrics)
 
   Copilot usage and adoption metrics reveal patterns in how developers engage with Copilot across your enterprise.

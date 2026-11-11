@@ -478,6 +478,26 @@ has access to Copilot code review and AI credits.
 * `reviewDraftPullRequests` (Boolean): Copilot automatically reviews draft pull requests before they are marked as ready for review.
 * `reviewOnPush` (Boolean): Copilot automatically reviews each new push to the pull request.
 
+## CopilotCodeReviewSource - object
+
+A validated source reported as contributing to a Copilot code review comment.
+
+### Fields for `CopilotCodeReviewSource`
+
+* `kind` (CopilotCodeReviewSourceKind!): The kind of contributing source.
+* `name` (String!): The reported source name, or "custom instructions" for CUSTOM_INSTRUCTIONS.
+* `path` (String): The validated repository-relative source path, if available. Commit OIDs are not exposed.
+
+## CopilotCodeReviewSourceKind - enum
+
+The kind of source reported as contributing to a Copilot code review comment.
+
+### Values for `CopilotCodeReviewSourceKind`
+
+* `CUSTOM_INSTRUCTIONS`: Custom instructions.
+* `MCP`: An MCP server.
+* `SKILL`: A skill.
+
 ## createPullRequest - mutation
 
 Create a new pull request.
@@ -1530,6 +1550,7 @@ A review object for a given pull request.
 * `bodyText` (String!): The body of this review rendered as plain text.
 * `comments` (PullRequestReviewCommentConnection!): A list of review comments for the current pull request review. _(Pagination: `after`, `before`, `first`, `last`)_
 * `commit` (Commit): Identifies the commit associated with this pull request review.
+* `copilotCodeReviewEffort` (CopilotCodeReviewEffort): The persisted effective effort used to produce this Copilot code review, or null if unavailable.
 * `createdAt` (DateTime!): Identifies the date and time when the object was created.
 * `createdViaEmail` (Boolean!): Check if this comment was created via an email reply.
 * `databaseId` (Int): Identifies the primary key from the database. **Deprecated:** databaseId will be removed because it does not support 64-bit signed integer identifiers. Use fullDatabaseId instead. Removal on 2024-07-01 UTC.
@@ -1537,6 +1558,7 @@ A review object for a given pull request.
 * `fullDatabaseId` (BigInt): Identifies the primary key from the database as a BigInt.
 * `id` (ID!): The Node ID of the PullRequestReview object.
 * `includesCreatedEdit` (Boolean!): Check if this comment was edited and includes an edit with the creation data.
+* `isCopilotCodeReview` (Boolean!): Whether this review was produced by Copilot code review. Bot authorship alone does not establish provenance.
 * `isMinimized` (Boolean!): Returns whether or not a comment has been minimized.
 * `lastEditedAt` (DateTime): The moment the editor made the last edit.
 * `minimizedReason` (String): Returns why the comment was minimized. One of abuse, off-topic,
@@ -1584,6 +1606,7 @@ A review comment associated with a given repository pull request.
 * `bodyHTML` (HTML!): The body rendered to HTML.
 * `bodyText` (String!): The comment body of this review comment rendered as plain text.
 * `commit` (Commit): Identifies the commit associated with the comment.
+* `copilotCodeReviewSources` ([CopilotCodeReviewSource!]!): Sources reported as contributing to this comment; may be incomplete.
 * `createdAt` (DateTime!): Identifies when the comment was created.
 * `createdViaEmail` (Boolean!): Check if this comment was created via an email reply.
 * `databaseId` (Int): Identifies the primary key from the database. **Deprecated:** databaseId will be removed because it does not support 64-bit signed integer identifiers. Use fullDatabaseId instead. Removal on 2024-07-01 UTC.
@@ -1593,6 +1616,7 @@ A review comment associated with a given repository pull request.
 * `fullDatabaseId` (BigInt): Identifies the primary key from the database as a BigInt.
 * `id` (ID!): The Node ID of the PullRequestReviewComment object.
 * `includesCreatedEdit` (Boolean!): Check if this comment was edited and includes an edit with the creation data.
+* `isCopilotCodeReview` (Boolean!): Whether this comment was produced by Copilot code review.
 * `isMinimized` (Boolean!): Returns whether or not a comment has been minimized.
 * `lastEditedAt` (DateTime): The moment the editor made the last edit.
 * `line` (Int): The end line number on the file to which the comment applies.

@@ -1356,6 +1356,20 @@ provided from argument.
   * `last` (Int): Returns the last n elements from the list.
   * `orderBy` (IssueCommentOrder): Ordering options for issue comments returned from the connection.
 
+* `issueFields` (IssueFieldsConnection): A list of the user's issue fields.
+  * `after` (String): Returns the elements in the list that come after the specified cursor.
+  * `before` (String): Returns the elements in the list that come before the specified cursor.
+  * `first` (Int): Returns the first n elements from the list.
+  * `last` (Int): Returns the last n elements from the list.
+  * `orderBy` (IssueFieldOrder): Ordering options for issue fields returned from the connection. Default: `{field: CREATED_AT, direction: ASC}`.
+
+* `issueTypes` (IssueTypeConnection): A list of the user's issue types.
+  * `after` (String): Returns the elements in the list that come after the specified cursor.
+  * `before` (String): Returns the elements in the list that come before the specified cursor.
+  * `first` (Int): Returns the first n elements from the list.
+  * `last` (Int): Returns the last n elements from the list.
+  * `orderBy` (IssueTypeOrder): Ordering options for issue types returned from the connection. Default: `{field: CREATED_AT, direction: ASC}`.
+
 * `issues` (IssueConnection!): A list of issues associated with this user.
   * `after` (String): Returns the elements in the list that come after the specified cursor.
   * `before` (String): Returns the elements in the list that come before the specified cursor.
@@ -1410,6 +1424,13 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
   * `first` (Int): Returns the first n elements from the list.
   * `last` (Int): Returns the last n elements from the list.
   * `types` ([PinnableItemType!]): Filter the types of pinnable items that are returned.
+
+* `pinnedIssueFields` (IssueFieldsConnection): An ordered list of issue fields pinned to issues when no type is selected.
+  * `after` (String): Returns the elements in the list that come after the specified cursor.
+  * `before` (String): Returns the elements in the list that come before the specified cursor.
+  * `first` (Int): Returns the first n elements from the list.
+  * `last` (Int): Returns the last n elements from the list.
+  * `orderBy` (PinnedIssueFieldOrder): The order in which to return pinned issue fields. Default: `{field: POSITION, direction: ASC}`.
 
 * `pinnedItems` (PinnableItemConnection!): A list of repositories and gists this profile owner has pinned to their profile.
   * `after` (String): Returns the elements in the list that come after the specified cursor.

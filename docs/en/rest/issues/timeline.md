@@ -730,6 +730,11 @@ Array of `Timeline Event` objects: any of:
   * `event`: string
   * `node_id`: string
   * `comments`: array of `Pull Request Review Comment`:
+    * `is_copilot_code_review`: boolean
+    * `copilot_code_review_sources`: array of objects:
+      * `kind`: required, string, enum: `SKILL`, `MCP`, `CUSTOM_INSTRUCTIONS`
+      * `name`: required, string
+      * `path`: string
     * `url`: required, string
     * `pull_request_review_id`: required, integer or null, format: int64
     * `id`: required, integer, format: int64

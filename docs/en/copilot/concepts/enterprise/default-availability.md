@@ -50,10 +50,7 @@ At the enterprise level, the policy has the following possible states.
 
 ### What counts as a feature?
 
-For the purposes of this policy, a "feature" refers to any policy configured on an enterprise's "Features & clients" page (`github.com/enterprises/ENTERPRISE/ai-controls/copilot/features`), **plus**:
-
-* The **Copilot code review** policy on the "Agents" page
-* The **MCP servers in Copilot** policy on the "MCP" page
+For the purposes of this policy, a "feature" refers to any policy configured on an enterprise's "Features & clients" page (`github.com/enterprises/ENTERPRISE/ai-controls/copilot/features`), **plus** the **MCP servers in Copilot** policy on the "MCP" page.
 
 The following policies are exceptions and are **not** affected:
 
@@ -74,7 +71,7 @@ The following models are **not** in scope. They are disabled by default, regardl
 
 * Pre-GA models
 * Open weight models (DeepSeek, Kimi K3)
-* Models that are not covered by GitHub's data retention agreement (Claude Fable 5, Claude Fable 5.1)
+* Models that are not covered by GitHub's data retention agreement (Claude Fable 5, Claude Fable 5.1, Claude Fable 5.2)
 * For enterprises that have restricted models to data-resident or FedRAMP-compliant models, any models that do not respect these policies
 
 ### Policy states

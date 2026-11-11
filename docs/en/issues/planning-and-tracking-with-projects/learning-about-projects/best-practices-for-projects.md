@@ -31,7 +31,7 @@ Breaking a large issue into smaller issues makes the work more manageable and en
 
 You can add sub-issues to an issue to quickly break down larger pieces of work into smaller issues. Sub-issues add support for hierarchies of issues on GitHub by creating relationships between your issues. You can create multiple levels of sub-issues that accurately represent your project by breaking down tasks into exactly the amount of detail that you and your team require. See [Adding sub-issues](/en/issues/tracking-your-work-with-issues/using-issues/adding-sub-issues) and [Browsing sub-issues](/en/issues/tracking-your-work-with-issues/using-issues/browsing-sub-issues).
 
-You can also use issue types to classify work in repositories across the organization alongside sub-issues. For more information, see [Managing issue types in an organization](/en/issues/tracking-your-work-with-issues/using-issues/managing-issue-types-in-an-organization).
+You can also use issue types to classify work in repositories across the organization alongside sub-issues. For more information, see [Managing issue types](/en/issues/tracking-your-work-with-issues/using-issues/managing-issue-types-in-an-organization).
 
 To ensure efficient progress, clearly define which issues are blocked by, or blocking, other issues. See [Creating issue dependencies](/en/issues/tracking-your-work-with-issues/using-issues/creating-issue-dependencies).
 

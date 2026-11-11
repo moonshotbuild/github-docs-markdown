@@ -17,14 +17,6 @@ breadcrumbs:
 
 Use the REST API to get budget information.
 
-## Authentication for enterprise budgets
-
-GitHub App authentication for enterprise cost center and budget endpoints is not generally available. The "Enterprise billing" permission shown in the generated endpoint details is not available to all enterprises when registering an enterprise-owned GitHub App, on either GitHub.com or GHE.com.
-
-The generated endpoint descriptions and authentication tables do not indicate whether your enterprise can grant this permission. Do not plan an integration using GitHub App user or installation access tokens unless your enterprise can grant this permission.
-
-For enterprise owners and billing managers, use a personal access token (classic) or an OAuth access token with the `manage_billing:enterprise` scope. The token's user must have access to the resources being requested. Fine-grained personal access tokens cannot access these enterprise endpoints. See [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
-
 ## Creating a user-scoped budget
 
 > [!IMPORTANT]
@@ -64,43 +56,43 @@ Each page returns up to 100 budgets.
 
 #### Headers
 
-* **`accept`** (string)
+- **`accept`** (string)
   Setting to `application/vnd.github+json` is recommended.
 
 #### Path and query parameters
 
-* **`org`** (string) (required)
+- **`org`** (string) (required)
   The organization name. The name is not case sensitive.
 
-* **`page`** (integer)
+- **`page`** (integer)
   The page number of the results to fetch.
   Default: `1`
 
-* **`per_page`** (integer)
+- **`per_page`** (integer)
   The number of results per page (max 100).
   Default: `10`
 
-* **`scope`** (string)
+- **`scope`** (string)
   Filter budgets by scope type.
 
   organization: Budgets scoped to the organization.
   repository: Budgets scoped to a repository.
-  multi\_user\_customer: Universal budgets that apply to all users in the organization.
+  multi_user_customer: Universal budgets that apply to all users in the organization.
   user: Budgets scoped to an individual user.
   Can be one of: `enterprise`, `organization`, `repository`, `cost_center`, `multi_user_customer`, `user`
 
-* **`user`** (string)
+- **`user`** (string)
   Filter consumed amount details for budgets by the specified user login.
 
 ### HTTP response status codes
 
-* **200** - Response when getting all budgets
+- **200** - Response when getting all budgets
 
-* **403** - Forbidden
+- **403** - Forbidden
 
-* **404** - Resource not found
+- **404** - Resource not found
 
-* **500** - Internal Error
+- **500** - Internal Error
 
 ### Code examples
 
@@ -189,80 +181,80 @@ organization admin or billing manager.
 
 #### Headers
 
-* **`accept`** (string)
+- **`accept`** (string)
   Setting to `application/vnd.github+json` is recommended.
 
 #### Path and query parameters
 
-* **`org`** (string) (required)
+- **`org`** (string) (required)
   The organization name. The name is not case sensitive.
 
 #### Body parameters
 
-* **`budget_amount`** (integer)
+- **`budget_amount`** (integer)
   The budget amount in whole dollars. For license-based products, this represents the number of licenses.
 
-* **`prevent_further_usage`** (boolean)
-  Whether to prevent additional spending once the budget is exceeded. For user and multi\_user\_customer scopes, this must be true.
+- **`prevent_further_usage`** (boolean)
+  Whether to prevent additional spending once the budget is exceeded. For user and multi_user_customer scopes, this must be true.
 
-* **`budget_alerting`** (object)
-  * **`will_alert`** (boolean)
+- **`budget_alerting`** (object)
+  - **`will_alert`** (boolean)
     Whether alerts are enabled for this budget. Rejected for user-scope as alerting is always disabled for them.
-  * **`alert_recipients`** (array of strings)
+  - **`alert_recipients`** (array of strings)
     Array of user login names who will receive alerts. Rejected for user-scope as alerting is always disabled for them.
 
-* **`budget_scope`** (string)
+- **`budget_scope`** (string)
   The scope of the budget for this organization.
 
   organization: Apply the budget to the organization.
   repository: Apply the budget to a specific repository in the organization.
-  multi\_user\_customer: Apply a universal budget to all users in the organization.
+  multi_user_customer: Apply a universal budget to all users in the organization.
   user: Apply the budget to a single user in the organization.
 
-  user and multi\_user\_customer scopes are only supported when
-  budget\_product\_sku is ai\_credits or premium\_requests.
+  user and multi_user_customer scopes are only supported when
+  budget_product_sku is ai_credits or premium_requests.
   Can be one of: `organization`, `repository`, `multi_user_customer`, `user`
 
-* **`budget_entity_name`** (string)
-  The entity to apply the budget to. The expected value depends on budget\_scope.
+- **`budget_entity_name`** (string)
+  The entity to apply the budget to. The expected value depends on budget_scope.
 
   repository: The repository name, or owner/repo.
-  organization, multi\_user\_customer, and user: Not used. For user, set the user field instead.
-  Default: \`\`
+  organization, multi_user_customer, and user: Not used. For user, set the user field instead.
+  Default: ``
 
-* **`budget_type`** (string)
-  The type of pricing model used by the budget. Determines how budget\_product\_sku is interpreted.
+- **`budget_type`** (string)
+  The type of pricing model used by the budget. Determines how budget_product_sku is interpreted.
 
-  BundlePricing: Covers all AI credit SKUs. Set budget\_product\_sku to ai\_credits.
-  ProductPricing: Covers all SKUs that belong to a product. Set budget\_product\_sku to a product such as actions or packages.
-  SkuPricing: Covers a single, specific SKU. Set budget\_product\_sku to a SKU such as actions\_linux.
+  BundlePricing: Covers all AI credit SKUs. Set budget_product_sku to ai_credits.
+  ProductPricing: Covers all SKUs that belong to a product. Set budget_product_sku to a product such as actions or packages.
+  SkuPricing: Covers a single, specific SKU. Set budget_product_sku to a SKU such as actions_linux.
 
-* **`budget_product_sku`** (string)
+- **`budget_product_sku`** (string)
   A single product or SKU that will be covered in the budget
 
-* **`user`** (string)
-  The username of the user for user scope budgets. This field is required when budget\_scope is user.
+- **`user`** (string)
+  The username of the user for user scope budgets. This field is required when budget_scope is user.
 
-* **`expires_at`** (string)
+- **`expires_at`** (string)
   The date the budget will expire in YYYY-MM-DD format. Only dates in the future are accepted.
   If not provided, the budget will not expire.
-  Only supported for budgets with budget\_scope of user
+  Only supported for budgets with budget_scope of user
 
 ### HTTP response status codes
 
-* **200** - Budget created successfully
+- **200** - Budget created successfully
 
-* **400** - Bad Request
+- **400** - Bad Request
 
-* **401** - Requires authentication
+- **401** - Requires authentication
 
-* **403** - Insufficient permissions
+- **403** - Insufficient permissions
 
-* **404** - Feature not enabled or organization not found
+- **404** - Feature not enabled or organization not found
 
-* **422** - Validation failed, or the endpoint has been spammed.
+- **422** - Validation failed, or the endpoint has been spammed.
 
-* **500** - Internal server error
+- **500** - Internal server error
 
 ### Code examples
 
@@ -318,30 +310,30 @@ Gets a budget by ID. The authenticated user must be an organization admin or bil
 
 #### Headers
 
-* **`accept`** (string)
+- **`accept`** (string)
   Setting to `application/vnd.github+json` is recommended.
 
 #### Path and query parameters
 
-* **`org`** (string) (required)
+- **`org`** (string) (required)
   The organization name. The name is not case sensitive.
 
-* **`budget_id`** (string) (required)
+- **`budget_id`** (string) (required)
   The ID corresponding to the budget.
 
 ### HTTP response status codes
 
-* **200** - Response when updating a budget
+- **200** - Response when updating a budget
 
-* **400** - Bad Request
+- **400** - Bad Request
 
-* **403** - Forbidden
+- **403** - Forbidden
 
-* **404** - Resource not found
+- **404** - Resource not found
 
-* **500** - Internal Error
+- **500** - Internal Error
 
-* **503** - Service unavailable
+- **503** - Service unavailable
 
 ### Code examples
 
@@ -384,51 +376,51 @@ Updates an existing budget for an organization. The authenticated user must be a
 
 #### Headers
 
-* **`accept`** (string)
+- **`accept`** (string)
   Setting to `application/vnd.github+json` is recommended.
 
 #### Path and query parameters
 
-* **`org`** (string) (required)
+- **`org`** (string) (required)
   The organization name. The name is not case sensitive.
 
-* **`budget_id`** (string) (required)
+- **`budget_id`** (string) (required)
   The ID corresponding to the budget.
 
 #### Body parameters
 
-* **`budget_amount`** (integer)
+- **`budget_amount`** (integer)
   The budget amount in whole dollars. For license-based products, this represents the number of licenses.
 
-* **`prevent_further_usage`** (boolean)
-  Whether to prevent additional spending once the budget is exceeded. For budgets with user or multi\_user\_customer scope, this must remain true.
+- **`prevent_further_usage`** (boolean)
+  Whether to prevent additional spending once the budget is exceeded. For budgets with user or multi_user_customer scope, this must remain true.
 
-* **`budget_alerting`** (object)
-  * **`will_alert`** (boolean)
+- **`budget_alerting`** (object)
+  - **`will_alert`** (boolean)
     Whether alerts are enabled for this budget. Ignored for user-scopes as alerting is always disabled for them.
-  * **`alert_recipients`** (array of strings)
+  - **`alert_recipients`** (array of strings)
     Array of user login names who will receive alerts. Ignored for user-scopes as alerting is always disabled for them.
 
-* **`expires_at`** (string or null or integer)
+- **`expires_at`** (string or null or integer)
   The date the budget will expire in YYYY-MM-DD format. Only dates in the future are accepted.
   If not set, the budget will not expire. Setting to null or 0 will remove the expiration date from a budget if set.
   Only supported for existing user-scoped budgets.
 
 ### HTTP response status codes
 
-* **200** - Budget updated successfully
+- **200** - Budget updated successfully
 
-* **400** - Bad Request
+- **400** - Bad Request
 
-* **401** - Requires authentication
+- **401** - Requires authentication
 
-* **403** - Forbidden
+- **403** - Forbidden
 
-* **404** - Budget not found or feature not enabled
+- **404** - Budget not found or feature not enabled
 
-* **422** - Validation failed, or the endpoint has been spammed.
+- **422** - Validation failed, or the endpoint has been spammed.
 
-* **500** - Internal server error
+- **500** - Internal server error
 
 ### Code examples
 
@@ -482,30 +474,30 @@ Deletes a budget by ID for an organization. The authenticated user must be an or
 
 #### Headers
 
-* **`accept`** (string)
+- **`accept`** (string)
   Setting to `application/vnd.github+json` is recommended.
 
 #### Path and query parameters
 
-* **`org`** (string) (required)
+- **`org`** (string) (required)
   The organization name. The name is not case sensitive.
 
-* **`budget_id`** (string) (required)
+- **`budget_id`** (string) (required)
   The ID corresponding to the budget.
 
 ### HTTP response status codes
 
-* **200** - Response when deleting a budget
+- **200** - Response when deleting a budget
 
-* **400** - Bad Request
+- **400** - Bad Request
 
-* **403** - Forbidden
+- **403** - Forbidden
 
-* **404** - Resource not found
+- **404** - Resource not found
 
-* **500** - Internal Error
+- **500** - Internal Error
 
-* **503** - Service unavailable
+- **503** - Service unavailable
 
 ### Code examples
 

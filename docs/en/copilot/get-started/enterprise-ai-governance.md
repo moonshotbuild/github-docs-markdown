@@ -19,7 +19,7 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
 ## Links
 
-### Getting started
+### Planning and setting up
 
 * [Resources for getting approval of GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/govern-at-scale/resources-for-approval)
 
@@ -33,7 +33,7 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
   Prepare policies, spending controls, and access to roll out GitHub Copilot across your enterprise.
 
-### Governance basics
+### Establishing governance controls
 
 * [Governing Copilot to support developer productivity](/en/copilot/tutorials/roll-out-at-scale/govern-at-scale/govern-for-adoption)
 
@@ -43,6 +43,10 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
   Control the availability of GitHub Copilot features and models for your users.
 
+* [Getting started with enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/get-started)
+
+  Configure enterprise managed settings to centrally control Copilot client behavior across your enterprise.
+
 * [Maintaining codebase standards in a GitHub Copilot rollout](/en/copilot/tutorials/roll-out-at-scale/govern-at-scale/maintain-codebase-standards)
 
   Stay in control of your enterprise's code with rulesets, security features, and effective training.
@@ -51,33 +55,21 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
   Check for changes to settings or licenses in your Copilot plan.
 
-* [Getting started with enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/get-started)
-
-  Configure enterprise managed settings to centrally control Copilot client behavior across your enterprise.
-
-### Preparing for agents
+### Preparing to govern agents
 
 * [Understanding how AI agents fit into your enterprise's workflows](/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents)
 
   Identify where AI agents can help your teams, and plan the governance and support needed to adopt them across your enterprise.
 
-* [Building a secure cloud environment for agents in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails)
-
-  Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot in the cloud.
-
 * [Configuring an MCP server allowlist for your enterprise](/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-enterprise-allowlist)
 
   Define which MCP servers your users can and cannot use without the need for a private registry.
 
-### Enabling agents
+### Rolling out agents in the cloud
 
-* [Driving team adoption of agentic GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/enable-developers/drive-team-agentic-adoption)
+* [Building a secure cloud environment for agents in your enterprise](/en/copilot/tutorials/cloud-agent/build-guardrails)
 
-  Help established teams build sustained habits with the GitHub Copilot app and Copilot CLI, then measure adoption and business impact.
-
-* [Rolling out the GitHub Copilot app to your team](/en/copilot/tutorials/roll-out-at-scale/enable-developers/copilot-app-for-teams)
-
-  Roll out the GitHub Copilot app so developers can direct agents across parallel tasks while you control access, model availability, and external tools.
+  Prepare enterprise policies, repository protections, and runner settings for a controlled rollout of Copilot in the cloud.
 
 * [Managing GitHub Copilot in the cloud for your enterprise or organization](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/manage-copilot-in-the-cloud)
 
@@ -87,6 +79,8 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
   Get more out of Copilot by giving it access to approved MCP servers and internal packages in cloud sessions.
 
+### Governing command-line usage
+
 * [Administering Copilot CLI for your enterprise](/en/copilot/how-tos/copilot-cli/administer-copilot-cli-for-your-enterprise)
 
   Control the use of Copilot CLI within your enterprise.
@@ -95,15 +89,25 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
   Give your platform teams visibility into Copilot CLI usage and help developers follow organizational policies with repository-scoped hooks.
 
+### Driving agentic adoption
+
+* [Rolling out the GitHub Copilot app to your team](/en/copilot/tutorials/roll-out-at-scale/enable-developers/copilot-app-for-teams)
+
+  Roll out the GitHub Copilot app so developers can direct agents across parallel tasks while you control access, model availability, and external tools.
+
 * [Enabling GitHub Copilot code review in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/enable-copilot-code-review)
 
   Apply consistent standards by having Copilot review every pull request.
+
+* [Driving team adoption of agentic GitHub Copilot](/en/copilot/tutorials/roll-out-at-scale/enable-developers/drive-team-agentic-adoption)
+
+  Help established teams build sustained habits with the GitHub Copilot app and Copilot CLI, then measure adoption and business impact.
 
 * [Monitoring agentic activity in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/monitor-agentic-activity)
 
   Track agentic activity in your enterprise to ensure continued compliance.
 
-### Adopting new features
+### Adopting new features and models
 
 * [Learning about new features and models](/en/copilot/concepts/enterprise/learning-about-new-features-and-models)
 

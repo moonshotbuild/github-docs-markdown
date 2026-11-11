@@ -94,7 +94,7 @@ The activity report provides visibility into usage of all generally available (G
 
 ### Limitations
 
-Telemetry from some third-party IDEs may be incomplete, particularly when users run older versions. For version requirements and troubleshooting guidance, see [GitHub Copilot usage metrics](/en/copilot/concepts/billing-and-usage/copilot-usage-metrics/copilot-metrics).
+Telemetry from some third-party IDEs may be incomplete, particularly when users run older versions. For IDE requirements for usage metrics, see [Coverage and requirements for Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/usage-metrics-coverage).
 
 The activity report may exclude usage of GitHub Copilot features that are not yet generally available (GA). Currently, the following feature is not fully recorded:
 

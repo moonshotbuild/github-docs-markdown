@@ -123,18 +123,22 @@ Anthropic models include a cache write cost in addition to cached input.
 |                                       |                |             |              |                          |        |              |             |        |
 | Claude Fable 5.1                      | GA             | Powerful    | Default      | Not applicable           | $10.00 |        $0.25 |      $12.50 | $50.00 |
 |                                       |                |             |              |                          |        |              |             |        |
+| Claude Fable 5.2                      | GA             | Powerful    | Default      | Not applicable           |  $8.00 |        $0.20 |      $10.00 | $40.00 |
+|                                       |                |             |              |                          |        |              |             |        |
 
 ### Google
 
 > [!NOTE] Models with a **Long context** tier, offer extended capabilities and longer context windows. See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#models-with-extended-capabilities)
 
-| Model                                 | Release status | Category  | Tier    | Threshold (input tokens) | Input | Cached input | Output |
-| ------------------------------------- | -------------- | --------- | ------- | ------------------------ | ----: | -----------: | -----: |
-|                                       |                |           |         |                          |       |              |        |
-| Gemini 3.8 Flash[^gemini-flash-promo] | GA             | Versatile | Default | Not applicable           | $0.75 |       $0.075 |  $3.75 |
-|                                       |                |           |         |                          |       |              |        |
-| Gemini 4 Argon[^gemini-4-argon-promo] | GA             | Powerful  | Default | Not applicable           | $2.00 |        $0.10 | $10.00 |
-|                                       |                |           |         |                          |       |              |        |
+| Model                                   | Release status | Category  | Tier    | Threshold (input tokens) | Input | Cached input | Output |
+| --------------------------------------- | -------------- | --------- | ------- | ------------------------ | ----: | -----------: | -----: |
+|                                         |                |           |         |                          |       |              |        |
+| Gemini 3.8 Flash[^gemini-flash-promo]   | GA             | Versatile | Default | Not applicable           | $0.75 |       $0.075 |  $3.75 |
+|                                         |                |           |         |                          |       |              |        |
+| Gemini 4 Argon[^gemini-4-argon-promo]   | GA             | Powerful  | Default | Not applicable           | $2.00 |        $0.10 | $10.00 |
+|                                         |                |           |         |                          |       |              |        |
+| Gemini 4 Carbon[^gemini-4-carbon-promo] | GA             | Powerful  | Default | Not applicable           | $2.00 |        $0.10 | $10.00 |
+|                                         |                |           |         |                          |       |              |        |
 
 ### Fine-tuned (GitHub)
 
@@ -226,5 +230,7 @@ Copilot Pro and Copilot Pro+ subscribers on **existing annual billing plans** us
 <!-- expires 2026-12-01 -->
 
 [^gemini-4-argon-promo]: Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026.
+
+[^gemini-4-carbon-promo]: Gemini 4 Carbon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026. Starting December 1, 2026, pricing is $4.00 per 1M input tokens, $0.20 per 1M cached input tokens, and $20.00 per 1M output tokens.
 
 <!-- end expires 2026-12-01 -->

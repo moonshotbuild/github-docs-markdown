@@ -67,13 +67,13 @@ Learn about using issues in your repositories.
 
   Slash commands can save you time by reducing the typing required to create complex Markdown.
 
-* [Managing issue types in an organization](/en/issues/tracking-your-work-with-issues/using-issues/managing-issue-types-in-an-organization)
+* [Managing issue types](/en/issues/tracking-your-work-with-issues/using-issues/managing-issue-types)
 
-  Learn about issue types and how to manage them in your organization.
+  Learn about issue types and how to manage them.
 
-* [Managing issue fields in your organization](/en/issues/tracking-your-work-with-issues/using-issues/managing-issue-fields-in-your-organization)
+* [Managing issue fields](/en/issues/tracking-your-work-with-issues/using-issues/managing-issue-fields)
 
-  You can create and manage custom issue fields to collect structured metadata across all issues in your organization.
+  You can create and manage custom issue fields to collect structured metadata across all issues in your organization-owned repositories or user-owned repositories.
 
 * [Adding and managing issue fields](/en/issues/tracking-your-work-with-issues/using-issues/adding-and-managing-issue-fields)
 

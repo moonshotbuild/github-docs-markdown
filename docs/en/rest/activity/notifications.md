@@ -99,6 +99,9 @@ List all notifications for the current user, sorted by most recently updated.
   If true, show notifications marked as read.
   Default: `false`
 
+* **`is_done`** (boolean)
+  Whether to return only done notifications (true) or exclude them (false). When omitted, notifications are not filtered by done status. Use all=true\&is\_done=true for done notifications or all=true\&is\_done=false for both read and unread inbox notifications. If all is omitted or false, is\_done=true returns no notifications.
+
 * **`participating`** (boolean)
   If true, only shows notifications in which the user is directly participating or mentioned.
   Default: `false`
@@ -827,6 +830,9 @@ Lists all notifications for the current user in the specified repository.
 * **`all`** (boolean)
   If true, show notifications marked as read.
   Default: `false`
+
+* **`is_done`** (boolean)
+  Whether to return only done notifications (true) or exclude them (false). When omitted, notifications are not filtered by done status. Use all=true\&is\_done=true for done notifications or all=true\&is\_done=false for both read and unread inbox notifications. If all is omitted or false, is\_done=true returns no notifications.
 
 * **`participating`** (boolean)
   If true, only shows notifications in which the user is directly participating or mentioned.

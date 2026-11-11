@@ -403,6 +403,7 @@ An account to manage multiple organizations with consolidated policy and billing
 
 * `billingEmail` (String): The enterprise's billing email.
 * `billingInfo` (EnterpriseBillingInfo): Enterprise billing information visible to enterprise billing managers.
+* `copilotCodeReviewPolicy` (EnterpriseCopilotCodeReviewPolicy): The configured Copilot code review policy. Requires enterprise AI controls read permissions.
 * `createdAt` (DateTime!): Identifies the date and time when the object was created.
 * `databaseId` (Int): Identifies the primary key from the database.
 * `description` (String): The description of the enterprise.

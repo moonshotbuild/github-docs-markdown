@@ -41,7 +41,7 @@ By default, Copilot leaves a "Comment" review, not an "Approve" review or a "Req
 
 Copilot's review comments work like comments from human reviewers. Add reactions, reply, resolve, or hide them. Any replies you add are visible to other people but not to Copilot.
 
-You can also request a review from Copilot through the GitHub REST API by requesting `copilot-pull-request-reviewer[bot]` as a reviewer. For more information, see [REST API endpoints for review requests](/en/rest/pulls/review-requests#request-reviewers-for-a-pull-request).
+You can also use the GitHub REST API to request reviews from Copilot and to identify reviews and comments from Copilot code review. For more information, see [REST API endpoints for review requests](/en/rest/pulls/review-requests#request-reviewers-for-a-pull-request), [REST API endpoints for pull request reviews](/en/rest/pulls/reviews), and [REST API endpoints for pull request review comments](/en/rest/pulls/comments).
 
 ## Work with suggested changes
 

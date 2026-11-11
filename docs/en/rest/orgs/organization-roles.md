@@ -73,7 +73,7 @@ curl -L \
   * `id`: required, integer, format: int64
   * `name`: required, string
   * `description`: string or null
-  * `base_role`: string or null, enum: `read`, `triage`, `write`, `maintain`, `admin`, `null`
+  * `base_role`: string or null, enum: `read`, `triage`, `moderate`, `write`, `maintain`, `admin`, `null`
   * `source`: string or null, enum: `Organization`, `Enterprise`, `Predefined`, `null`
   * `permissions`: required, array of string
   * `organization`: required, any of:
@@ -436,7 +436,7 @@ curl -L \
 * `id`: required, integer, format: int64
 * `name`: required, string
 * `description`: string or null
-* `base_role`: string or null, enum: `read`, `triage`, `write`, `maintain`, `admin`, `null`
+* `base_role`: string or null, enum: `read`, `triage`, `moderate`, `write`, `maintain`, `admin`, `null`
 * `source`: string or null, enum: `Organization`, `Enterprise`, `Predefined`, `null`
 * `permissions`: required, array of string
 * `organization`: required, any of:

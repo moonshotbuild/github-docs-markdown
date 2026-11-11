@@ -70,6 +70,7 @@ curl -L \
 **Response schema (Status: 200):**
 
 * `pr_scan`: required, string, enum: `enabled`, `disabled`
+* `repository_scan`: string, enum: `enabled`, `disabled`
 
 ## Update the AI Scan setting for an organization
 
@@ -96,7 +97,11 @@ OAuth app tokens and personal access tokens (classic) need the admin:org, repo, 
 #### Body parameters
 
 * **`pr_scan`** (string)
-  Whether AI Scan is enabled for the organization. Organization respects enterprise policy. Disabled organizations prevent repositories from enabling AI Scan. Enabled organizations enable AI Scan for their repositories, but individual repositories can opt out.
+  Whether AI Scan on pull requests is enabled for the organization. Organization respects enterprise policy. Disabled organizations prevent repositories from enabling AI Scan. Enabled organizations enable AI Scan for their repositories, but individual repositories can opt out.
+  Can be one of: `enabled`, `disabled`
+
+* **`repository_scan`** (string)
+  Whether the full repository AI Scan is enabled for the organization. Organization respects enterprise policy. Disabled organizations prevent repositories from enabling the full repository AI Scan. Enabled organizations enable it for their repositories, but individual repositories can opt out.
   Can be one of: `enabled`, `disabled`
 
 ### HTTP response status codes
@@ -120,7 +125,8 @@ curl -L \
   -X PATCH \
   https://api.github.com/orgs/ORG/code-scanning/ai-scan \
   -d '{
-  "pr_scan": "enabled"
+  "pr_scan": "enabled",
+  "repository_scan": "enabled"
 }'
 ```
 
@@ -411,7 +417,11 @@ OAuth app tokens and personal access tokens (classic) need the repo scope to use
 #### Body parameters
 
 * **`pr_scan`** (string)
-  Whether to enable or disable AI Scan for the repository.
+  Whether to enable or disable AI Scan on pull requests for the repository.
+  Can be one of: `enabled`, `disabled`
+
+* **`repository_scan`** (string)
+  Whether to enable or disable the full repository AI Scan for the repository.
   Can be one of: `enabled`, `disabled`
 
 ### HTTP response status codes

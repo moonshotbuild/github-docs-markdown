@@ -21,6 +21,203 @@ Breaking changes include changes that will break existing queries or could affec
 
 **2026** · [2025](/en/graphql/overview/changelog/2025) · [2024](/en/graphql/overview/changelog/2024) · [2023](/en/graphql/overview/changelog/2023) · [2022](/en/graphql/overview/changelog/2022) · [2021](/en/graphql/overview/changelog/2021) · [2020](/en/graphql/overview/changelog/2020) · [2019](/en/graphql/overview/changelog/2019) · [2018](/en/graphql/overview/changelog/2018) · [2017](/en/graphql/overview/changelog/2017)
 
+## Schema changes for 2026-11-11
+
+### The GraphQL schema includes these changes:
+
+* Enum value RESTRICTED was added to enum IssueFieldVisibility
+* Field pinnedIssueFields was added to object type Repository
+* Argument after: String added to field Repository.pinnedIssueFields
+* Argument before: String added to field Repository.pinnedIssueFields
+* Argument first: Int added to field Repository.pinnedIssueFields
+* Argument last: Int added to field Repository.pinnedIssueFields
+* Argument orderBy: PinnedIssueFieldOrder (with default value) added to field Repository.pinnedIssueFields
+* Field issueFields was added to object type User
+* Argument after: String added to field User.issueFields
+* Argument before: String added to field User.issueFields
+* Argument first: Int added to field User.issueFields
+* Argument last: Int added to field User.issueFields
+* Argument orderBy: IssueFieldOrder (with default value) added to field User.issueFields
+* Field issueTypes was added to object type User
+* Argument after: String added to field User.issueTypes
+* Argument before: String added to field User.issueTypes
+* Argument first: Int added to field User.issueTypes
+* Argument last: Int added to field User.issueTypes
+* Argument orderBy: IssueTypeOrder (with default value) added to field User.issueTypes
+* Field pinnedIssueFields was added to object type User
+* Argument after: String added to field User.pinnedIssueFields
+* Argument before: String added to field User.pinnedIssueFields
+* Argument first: Int added to field User.pinnedIssueFields
+* Argument last: Int added to field User.pinnedIssueFields
+* Argument orderBy: PinnedIssueFieldOrder (with default value) added to field User.pinnedIssueFields
+
+### The following changes will be made to the schema:
+
+* On member IssueFieldVisibility.ORG\_ONLY:ORG\_ONLY will be removed. Use RESTRICTED instead. Effective 2027-04-01.
+
+## Schema changes for 2026-11-10
+
+### The GraphQL schema includes these changes:
+
+* Type PinnedIssueFieldOrder was added
+* Input field direction of type OrderDirection! was added to input object type PinnedIssueFieldOrder
+* Input field field of type PinnedIssueFieldOrderField! was added to input object type PinnedIssueFieldOrder
+* Type PinnedIssueFieldOrderField was added
+* Enum value POSITION was added to enum PinnedIssueFieldOrderField
+* Argument orderBy: PinnedIssueFieldOrder (with default value) added to field Organization.pinnedIssueFields
+
+## Schema changes for 2026-11-05
+
+### The GraphQL schema includes these changes:
+
+* Type CopilotCodeReviewEffortLevel was added
+* Enum value AUTO was added to enum CopilotCodeReviewEffortLevel
+* Enum value BALANCED was added to enum CopilotCodeReviewEffortLevel
+* Enum value LITE was added to enum CopilotCodeReviewEffortLevel
+* Enum value MAX was added to enum CopilotCodeReviewEffortLevel
+* Type CopilotCodeReviewRunnerConfiguredBy was added
+* Enum value CODE\_REVIEW was added to enum CopilotCodeReviewRunnerConfiguredBy
+* Enum value CODING\_AGENT was added to enum CopilotCodeReviewRunnerConfiguredBy
+* Type CopilotCodeReviewRunnerType was added
+* Enum value LABELED was added to enum CopilotCodeReviewRunnerType
+* Enum value STANDARD was added to enum CopilotCodeReviewRunnerType
+* Type CopilotCodeReviewSeverityFilter was added
+* Enum value LOW was added to enum CopilotCodeReviewSeverityFilter
+* Enum value LOW\_AND\_MEDIUM was added to enum CopilotCodeReviewSeverityFilter
+* Enum value NO\_FILTER was added to enum CopilotCodeReviewSeverityFilter
+* Type EnterpriseCopilotCodeReviewPolicy was added
+* Field policyState was added to object type EnterpriseCopilotCodeReviewPolicy
+* Type EnterpriseCopilotCodeReviewPolicyState was added
+* Enum value CONFIGURED\_BY\_ORGANIZATION\_ADMINS was added to enum EnterpriseCopilotCodeReviewPolicyState
+* Enum value DISABLED\_FOR\_ALL\_ORGANIZATIONS was added to enum EnterpriseCopilotCodeReviewPolicyState
+* Enum value ENABLED\_FOR\_ALL\_ORGANIZATIONS was added to enum EnterpriseCopilotCodeReviewPolicyState
+* Type OrganizationCopilotCodeReviewDefaultEffort was added
+* Field configured was added to object type OrganizationCopilotCodeReviewDefaultEffort
+* Field editable was added to object type OrganizationCopilotCodeReviewDefaultEffort
+* Field effective was added to object type OrganizationCopilotCodeReviewDefaultEffort
+* Field githubDefault was added to object type OrganizationCopilotCodeReviewDefaultEffort
+* Field managedBy was added to object type OrganizationCopilotCodeReviewDefaultEffort
+* Type OrganizationCopilotCodeReviewEffortSetting was added
+* Enum value AUTO was added to enum OrganizationCopilotCodeReviewEffortSetting
+* Enum value BALANCED was added to enum OrganizationCopilotCodeReviewEffortSetting
+* Enum value INHERIT was added to enum OrganizationCopilotCodeReviewEffortSetting
+* Enum value LITE was added to enum OrganizationCopilotCodeReviewEffortSetting
+* Enum value MAX was added to enum OrganizationCopilotCodeReviewEffortSetting
+* Type OrganizationCopilotCodeReviewPolicy was added
+* Field configuredState was added to object type OrganizationCopilotCodeReviewPolicy
+* Field editable was added to object type OrganizationCopilotCodeReviewPolicy
+* Field effectiveState was added to object type OrganizationCopilotCodeReviewPolicy
+* Field managedBy was added to object type OrganizationCopilotCodeReviewPolicy
+* Type OrganizationCopilotCodeReviewPolicyConflict was added
+* Enum value POLICY\_MANAGED\_BY\_ENTERPRISE was added to enum OrganizationCopilotCodeReviewPolicyConflict
+* Type OrganizationCopilotCodeReviewPolicyManager was added
+* Enum value ENTERPRISE was added to enum OrganizationCopilotCodeReviewPolicyManager
+* Enum value ORGANIZATION was added to enum OrganizationCopilotCodeReviewPolicyManager
+* Type OrganizationCopilotCodeReviewPolicyState was added
+* Enum value DISABLED was added to enum OrganizationCopilotCodeReviewPolicyState
+* Enum value ENABLED was added to enum OrganizationCopilotCodeReviewPolicyState
+* Type OrganizationCopilotCodeReviewRunnerConfiguration was added
+* Field allowRepositoryCustomization was added to object type OrganizationCopilotCodeReviewRunnerConfiguration
+* Field configuredBy was added to object type OrganizationCopilotCodeReviewRunnerConfiguration
+* Field runnerGroupName was added to object type OrganizationCopilotCodeReviewRunnerConfiguration
+* Field runnerLabels was added to object type OrganizationCopilotCodeReviewRunnerConfiguration
+* Field runnerType was added to object type OrganizationCopilotCodeReviewRunnerConfiguration
+* Type OrganizationCopilotCodeReviewSettings was added
+* Field availableReviewEfforts was added to object type OrganizationCopilotCodeReviewSettings
+* Field defaultReviewEffort was added to object type OrganizationCopilotCodeReviewSettings
+* Type OrganizationCopilotCodeReviewSettingsConflict was added
+* Enum value SETTING\_NOT\_EDITABLE was added to enum OrganizationCopilotCodeReviewSettingsConflict
+* Type RepositoryCopilotCodeReviewEffort was added
+* Field configured was added to object type RepositoryCopilotCodeReviewEffort
+* Field effective was added to object type RepositoryCopilotCodeReviewEffort
+* Type RepositoryCopilotCodeReviewEffortSetting was added
+* Enum value AUTO was added to enum RepositoryCopilotCodeReviewEffortSetting
+* Enum value BALANCED was added to enum RepositoryCopilotCodeReviewEffortSetting
+* Enum value INHERIT was added to enum RepositoryCopilotCodeReviewEffortSetting
+* Enum value LITE was added to enum RepositoryCopilotCodeReviewEffortSetting
+* Enum value MAX was added to enum RepositoryCopilotCodeReviewEffortSetting
+* Type RepositoryCopilotCodeReviewSettings was added
+* Field availableReviewEfforts was added to object type RepositoryCopilotCodeReviewSettings
+* Field customInstructionsEnabled was added to object type RepositoryCopilotCodeReviewSettings
+* Field mcpEnabled was added to object type RepositoryCopilotCodeReviewSettings
+* Field reviewEffort was added to object type RepositoryCopilotCodeReviewSettings
+* Field severityFilter was added to object type RepositoryCopilotCodeReviewSettings
+* Type UpdateEnterpriseCopilotCodeReviewPolicyInput was added
+* Input field clientMutationId of type String was added to input object type UpdateEnterpriseCopilotCodeReviewPolicyInput
+* Input field enterpriseId of type ID! was added to input object type UpdateEnterpriseCopilotCodeReviewPolicyInput
+* Input field policyState of type EnterpriseCopilotCodeReviewPolicyState! was added to input object type UpdateEnterpriseCopilotCodeReviewPolicyInput
+* Type UpdateEnterpriseCopilotCodeReviewPolicyPayload was added
+* Field clientMutationId was added to object type UpdateEnterpriseCopilotCodeReviewPolicyPayload
+* Field policy was added to object type UpdateEnterpriseCopilotCodeReviewPolicyPayload
+* Type UpdateOrganizationCopilotCodeReviewPolicyInput was added
+* Input field clientMutationId of type String was added to input object type UpdateOrganizationCopilotCodeReviewPolicyInput
+* Input field organizationId of type ID! was added to input object type UpdateOrganizationCopilotCodeReviewPolicyInput
+* Input field state of type OrganizationCopilotCodeReviewPolicyState! was added to input object type UpdateOrganizationCopilotCodeReviewPolicyInput
+* Type UpdateOrganizationCopilotCodeReviewPolicyPayload was added
+* Field clientMutationId was added to object type UpdateOrganizationCopilotCodeReviewPolicyPayload
+* Field conflict was added to object type UpdateOrganizationCopilotCodeReviewPolicyPayload
+* Field policy was added to object type UpdateOrganizationCopilotCodeReviewPolicyPayload
+* Type UpdateOrganizationCopilotCodeReviewRunnerConfigurationInput was added
+* Input field allowRepositoryCustomization of type Boolean was added to input object type UpdateOrganizationCopilotCodeReviewRunnerConfigurationInput
+* Input field clientMutationId of type String was added to input object type UpdateOrganizationCopilotCodeReviewRunnerConfigurationInput
+* Input field organizationId of type ID! was added to input object type UpdateOrganizationCopilotCodeReviewRunnerConfigurationInput
+* Input field runnerGroupName of type String was added to input object type UpdateOrganizationCopilotCodeReviewRunnerConfigurationInput
+* Input field runnerLabels of type \[String!] was added to input object type UpdateOrganizationCopilotCodeReviewRunnerConfigurationInput
+* Input field runnerType of type CopilotCodeReviewRunnerType! was added to input object type UpdateOrganizationCopilotCodeReviewRunnerConfigurationInput
+* Type UpdateOrganizationCopilotCodeReviewRunnerConfigurationPayload was added
+* Field clientMutationId was added to object type UpdateOrganizationCopilotCodeReviewRunnerConfigurationPayload
+* Field runnerConfiguration was added to object type UpdateOrganizationCopilotCodeReviewRunnerConfigurationPayload
+* Type UpdateOrganizationCopilotCodeReviewSettingsInput was added
+* Input field clientMutationId of type String was added to input object type UpdateOrganizationCopilotCodeReviewSettingsInput
+* Input field defaultReviewEffort of type OrganizationCopilotCodeReviewEffortSetting was added to input object type UpdateOrganizationCopilotCodeReviewSettingsInput
+* Input field organizationId of type ID! was added to input object type UpdateOrganizationCopilotCodeReviewSettingsInput
+* Type UpdateOrganizationCopilotCodeReviewSettingsPayload was added
+* Field clientMutationId was added to object type UpdateOrganizationCopilotCodeReviewSettingsPayload
+* Field conflict was added to object type UpdateOrganizationCopilotCodeReviewSettingsPayload
+* Field settings was added to object type UpdateOrganizationCopilotCodeReviewSettingsPayload
+* Type UpdateRepositoryCopilotCodeReviewSettingsInput was added
+* Input field clientMutationId of type String was added to input object type UpdateRepositoryCopilotCodeReviewSettingsInput
+* Input field customInstructionsEnabled of type Boolean was added to input object type UpdateRepositoryCopilotCodeReviewSettingsInput
+* Input field mcpEnabled of type Boolean was added to input object type UpdateRepositoryCopilotCodeReviewSettingsInput
+* Input field repositoryId of type ID! was added to input object type UpdateRepositoryCopilotCodeReviewSettingsInput
+* Input field reviewEffort of type RepositoryCopilotCodeReviewEffortSetting was added to input object type UpdateRepositoryCopilotCodeReviewSettingsInput
+* Input field severityFilter of type CopilotCodeReviewSeverityFilter was added to input object type UpdateRepositoryCopilotCodeReviewSettingsInput
+* Type UpdateRepositoryCopilotCodeReviewSettingsPayload was added
+* Field clientMutationId was added to object type UpdateRepositoryCopilotCodeReviewSettingsPayload
+* Field settings was added to object type UpdateRepositoryCopilotCodeReviewSettingsPayload
+* Field copilotCodeReviewPolicy was added to object type Enterprise
+* Field updateEnterpriseCopilotCodeReviewPolicy was added to object type Mutation
+* Argument input: UpdateEnterpriseCopilotCodeReviewPolicyInput! added to field Mutation.updateEnterpriseCopilotCodeReviewPolicy
+* Field updateOrganizationCopilotCodeReviewPolicy was added to object type Mutation
+* Argument input: UpdateOrganizationCopilotCodeReviewPolicyInput! added to field Mutation.updateOrganizationCopilotCodeReviewPolicy
+* Field updateOrganizationCopilotCodeReviewRunnerConfiguration was added to object type Mutation
+* Argument input: UpdateOrganizationCopilotCodeReviewRunnerConfigurationInput! added to field Mutation.updateOrganizationCopilotCodeReviewRunnerConfiguration
+* Field updateOrganizationCopilotCodeReviewSettings was added to object type Mutation
+* Argument input: UpdateOrganizationCopilotCodeReviewSettingsInput! added to field Mutation.updateOrganizationCopilotCodeReviewSettings
+* Field updateRepositoryCopilotCodeReviewSettings was added to object type Mutation
+* Argument input: UpdateRepositoryCopilotCodeReviewSettingsInput! added to field Mutation.updateRepositoryCopilotCodeReviewSettings
+* Field copilotCodeReviewRunnerConfiguration was added to object type Organization
+* Field copilotCodeReviewSettings was added to object type Organization
+* Field organizationCopilotCodeReviewPolicy was added to object type Organization
+* Field repositoryCopilotCodeReviewSettings was added to object type Repository
+
+## Schema changes for 2026-11-04
+
+### The GraphQL schema includes these changes:
+
+* Type CopilotCodeReviewSource was added
+* Field kind was added to object type CopilotCodeReviewSource
+* Field name was added to object type CopilotCodeReviewSource
+* Field path was added to object type CopilotCodeReviewSource
+* Type CopilotCodeReviewSourceKind was added
+* Enum value CUSTOM\_INSTRUCTIONS was added to enum CopilotCodeReviewSourceKind
+* Enum value MCP was added to enum CopilotCodeReviewSourceKind
+* Enum value SKILL was added to enum CopilotCodeReviewSourceKind
+* Field copilotCodeReviewEffort was added to object type PullRequestReview
+* Field isCopilotCodeReview was added to object type PullRequestReview
+* Field copilotCodeReviewSources was added to object type PullRequestReviewComment
+* Field isCopilotCodeReview was added to object type PullRequestReviewComment
+
 ## Schema changes for 2026-11-03
 
 ### The GraphQL schema includes these changes:

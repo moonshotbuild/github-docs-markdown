@@ -28,6 +28,8 @@ When you enable push protection for AI-detected secrets, GitHub uses AI to find 
 
 Push protection for AI-detected secrets consumes AI credits in addition to your GitHub Secret Protection or GitHub Advanced Security license. See [Push protection](/en/code-security/concepts/secret-security/push-protection#generic-secrets-found-with-ai) and [GitHub Advanced Security license billing](/en/billing/concepts/product-billing/github-advanced-security#secret-protection-ai-credits).
 
+Usage is billed to the organization that owns the repository. For organization-owned repositories in an enterprise, usage counts toward the enterprise's pool of AI credits. Only repositories in the personal namespace of a managed user account consume the repository owner's individual pool, regardless of who pushes. Otherwise, users' individual pools are not charged.
+
 ## Prerequisites
 
 * Your repository must have GitHub Secret Protection or GitHub Advanced Security enabled.

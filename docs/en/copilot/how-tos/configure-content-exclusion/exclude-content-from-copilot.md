@@ -19,9 +19,9 @@ breadcrumbs:
 
 Learn how to prevent Copilot from accessing certain content.
 
-## Configuring content exclusion for your repository
+You can configure content exclusion to make Copilot ignore certain files. For more information and a list of supported clients, see [Content exclusion for GitHub Copilot](/en/copilot/concepts/security-governance-and-network-settings/content-exclusion).
 
-You can use your repository settings to specify content in your repository that GitHub Copilot should ignore.
+## Configuring content exclusion for your repository
 
 1. On GitHub, navigate to the main page of the repository.
 

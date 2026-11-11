@@ -70,7 +70,7 @@ You can use the default labels, or you can create a new label. For more informat
 
 ## Adding issue types
 
-You can add an issue type to classify work across the organization. See [Managing issue types in an organization](/en/issues/tracking-your-work-with-issues/using-issues/managing-issue-types-in-an-organization).
+You can add an issue type to classify work across the organization. See [Managing issue types](/en/issues/tracking-your-work-with-issues/using-issues/managing-issue-types-in-an-organization).
 
 ![Screenshot of the new issue form. In the right sidebar, the "Type" section is outlined in dark orange.](/assets/images/help/issues/issue-type.png)
 

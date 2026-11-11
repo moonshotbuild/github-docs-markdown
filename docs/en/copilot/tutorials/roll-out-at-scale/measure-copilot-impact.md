@@ -25,7 +25,7 @@ Use Copilot metrics and engineering outcomes to assess your rollout and guide in
 
 * [GitHub Copilot usage metrics](/en/copilot/concepts/billing-and-usage/copilot-usage-metrics/copilot-metrics)
 
-  Copilot usage metrics provide visibility into how Copilot is adopted and used across your organization, including engagement, activity, code generation, and pull request lifecycle trends.
+  Understand how your teams adopt Copilot and where enablement can help them get more value from AI-assisted development.
 
 * [Data available in Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/copilot-usage-metrics)
 

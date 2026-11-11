@@ -34,6 +34,12 @@ We'll announce upcoming breaking changes at least three months before making cha
 
   **Reason:** TRIAGE_PLUS has been renamed to MODERATE.
 
+- **Breaking** A change will be made to `IssueFieldVisibility.ORG_ONLY`.
+
+  **Description:** ORG_ONLY will be removed. Use RESTRICTED instead.
+
+  **Reason:** ORG_ONLY will be removed.
+
 ## Changes scheduled for 2027-01-01
 
 - **Breaking** A change will be made to `CheckAnnotation.databaseId`.
