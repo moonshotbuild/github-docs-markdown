@@ -1125,6 +1125,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/milestones` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/milestones/{milestone_number}` | read | PAT | ✓ |
 | `GET /repos/{owner}/{repo}/milestones/{milestone_number}/labels` | read | PAT | ✓ |
+| `GET /repos/{owner}/{repo}/planning-statuses` | read | PAT | ✗ |
 
 ## Repository permissions for "Metadata"
 
@@ -1435,6 +1436,24 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /user/interaction-limits` | write | PAT | ✗ |
 | `DELETE /user/interaction-limits` | write | PAT | ✗ |
 | `GET /user/interaction-limits` | read | PAT | ✗ |
+
+## User permissions for "Issue Fields"
+
+| Endpoint | Access | Tokens | Additional Permissions |
+|----------|--------|--------|------------------------|
+| `POST /user/issue-fields` | write | PAT | ✗ |
+| `PATCH /user/issue-fields/{issue_field_id}` | write | PAT | ✗ |
+| `DELETE /user/issue-fields/{issue_field_id}` | write | PAT | ✗ |
+| `GET /user/issue-fields` | read | PAT | ✗ |
+
+## User permissions for "Issue Types"
+
+| Endpoint | Access | Tokens | Additional Permissions |
+|----------|--------|--------|------------------------|
+| `POST /user/issue-types` | write | PAT | ✗ |
+| `PUT /user/issue-types/{issue_type_id}` | write | PAT | ✗ |
+| `DELETE /user/issue-types/{issue_type_id}` | write | PAT | ✗ |
+| `GET /user/issue-types` | read | PAT | ✗ |
 
 ## User permissions for "Plan"
 

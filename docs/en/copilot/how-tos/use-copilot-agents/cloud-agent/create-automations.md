@@ -74,17 +74,17 @@ You can work with Copilot to design your automation, setting up the triggers, to
 
 Copilot can even help you create self-improving groups of automations which learn from outcomes and suggest improvements to themselves.
 
+Group members with the same ownership share persistent artifact storage, while access to other information depends on each automation's tools and permissions. See [Proposed improvements](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automations#proposed-improvements).
+
 ### Creating an automation manually
 
 1. Enter a **name** for the automation.
-
 2. Under **Type**, choose the kind of automation you want to create:
 
    * **Personal**: Only you can see the automation. AI credits are charged to you, and actions taken on GitHub use your identity.
    * **Shared**: Everyone with access to the repository can see the automation. AI credits are charged to the organization or user that owns the repository, and actions taken on GitHub use Copilot's identity.
 
    You can't change the type after you create the automation. See [Copilot automations](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automations#personal-and-shared-automations).
-
 3. Select one or more **triggers** that determine when the automation runs. You can optionally configure filters for triggers to control when they fire.
 
    For issues and pull request triggers, you can choose:
@@ -93,21 +93,24 @@ Copilot can even help you create self-improving groups of automations which lear
    * **Whether activity from Copilot in the cloud can trigger this automation**: From the **Can be triggered by** dropdown, pick **Anyone except Copilot in the cloud** to ignore events triggered by Copilot, including automations. Pick **Anyone** to listen for all events, including events triggered by Copilot.
    * **Whether users with only read access to the repository can trigger this automation**: By default, automations ignore activity from users who don't have write access to the repository. Uncheck the **Ignore events triggered by users without write access to this repository** box to listen for these events. Depending on your repository configuration, the **Ignore events triggered by users without write access to this repository** option may be locked in an enabled state.
 
-4. In the **prompt** field, describe the task you want Copilot to perform each time the automation runs.
+> [!NOTE]
+> Some events created by GitHub Apps cannot trigger automations. An app-authored label, assignment, closure, comment, and review events are filtered out, regardless of the app's repository permissions. Granting the app write access does not allow the event to trigger automations.
+
+1. In the **prompt** field, describe the task you want Copilot to perform each time the automation runs.
 
    For example, `Label this issue as a bug, an enhancement, or other, based on its content.`
 
-5. Optionally, select the **model** and **reasoning level** you want Copilot to use. See [Changing the AI model for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model).
+2. Optionally, select the **model** and **reasoning level** you want Copilot to use. See [Changing the AI model for GitHub Copilot cloud agent](/en/copilot/how-tos/use-copilot-agents/cloud-agent/changing-the-ai-model).
 
-6. Select the **tools** Copilot can use when the automation runs, such as pushing changes, updating issue labels, or creating a pull request.
+3. Select the **tools** Copilot can use when the automation runs, such as pushing changes, updating issue labels, or creating a pull request.
 
    You can select GitHub tools, and tools from any MCP servers configured in the repository's MCP settings. To make an external system's tools available, a repository administrator must first configure its MCP server for the repository. See [Configure MCP servers for your repository](/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers).
 
    Select only the tools the task requires. The tools you select control what actions Copilot can take in your repository. Optionally, you can use the **Suggest tools** button to ask Copilot to suggest tools based on your prompt. See [Copilot automations](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/about-automations#tools-and-actions).
 
-7. Optionally, under **AI credit limits**, set limits on how many AI credits the automation can consume. See [Setting AI credits limits](#setting-ai-credits-limits).
+4. Optionally, under **AI credit limits**, set limits on how many AI credits the automation can consume. See [Setting AI credits limits](#setting-ai-credits-limits).
 
-8. Save the automation by clicking **Create automation**.
+5. Save the automation by clicking **Create automation**.
 
 ## Setting AI credits limits
 

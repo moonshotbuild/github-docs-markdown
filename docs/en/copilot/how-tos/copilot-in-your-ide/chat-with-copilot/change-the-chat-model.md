@@ -139,7 +139,7 @@ For reasoning models that support configurable thinking effort, you can control 
 > If you select **Copilot Fusion** and then an effort level, Copilot Fusion will select the best model and execution pattern based on the task. See [About GitHub Copilot Fusion](/en/copilot/concepts/models/copilot-fusion).
 
 > [!TIP]
-> Model selection is also available when using Copilot through JetBrains AI Assistant. For more information, see [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides).
+> Model selection is also available when using Copilot as an agent in Jetbrains Air. For more information, see [GitHub Copilot in IDEs](/en/copilot/concepts/copilot-surfaces/copilot-in-ides).
 
 </div>
 

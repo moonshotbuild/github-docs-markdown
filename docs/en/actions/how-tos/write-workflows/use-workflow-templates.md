@@ -39,7 +39,7 @@ GitHub provides workflow templates for a variety of languages and tooling.
 
 7. Optionally, make additional changes. For example, you might want to change the value of `on` when the workflow runs.
 
-8. Click **Start commit**.
+8. Click **Commit changes...**.
 
 9. Write a commit message and decide whether to commit directly to the default branch or to open a pull request.
 

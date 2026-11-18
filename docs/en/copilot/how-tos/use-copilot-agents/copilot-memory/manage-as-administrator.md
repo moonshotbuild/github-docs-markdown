@@ -36,7 +36,7 @@ Repository-level facts are controlled separately through repository access setti
 
 For defaults by plan and surface, see [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory#default-settings).
 
-Users on supported paid plans can opt out of user-level preferences in their personal Copilot settings. This affects only their sessions. It does not disable repository-level facts or change other users' sessions.
+Users on supported paid plans can allow user memories, repository memories, both, or neither in their personal Copilot settings. This choice restricts memory use in work they start, including agent sessions and user-initiated code reviews, without changing shared repository settings or other users' choices. Organization-triggered work does not use a personal scope preference. Disabling only user memories can leave repository memories enabled. Copilot code review never uses user-level preferences.
 
 Local client settings, such as `/memory off` in Copilot CLI, can disable both types of memory for that client. See [Managing Copilot Memory for your personal account](/en/copilot/how-tos/use-copilot-agents/copilot-memory/manage-for-yourself).
 
@@ -60,6 +60,8 @@ The procedure below sets the enterprise policy for **user-level preferences**—
 
 Organization owners can enable or disable Copilot Memory for storing and using user-level preferences, for all members of the organization with a Copilot license.
 
+The organization's Copilot Memory section has separate **User memories** and **Repository memories** controls. Each controls its own type of memory independently.
+
 If the organization belongs to an enterprise, the ability for organization owners to enable or disable Copilot Memory may be controlled by the enterprise-level policy.
 
 1. In the upper-right corner of GitHub, click your profile picture, then click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-organization" aria-label="organization" role="img"><path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path></svg> Organizations**.
@@ -69,11 +71,11 @@ If the organization belongs to an enterprise, the ability for organization owner
    ![Screenshot of the tabs in an organization's profile. The "Settings" tab is outlined in dark orange.](/assets/images/help/discussions/org-settings-global-nav-update.png)
 4. In the sidebar, under "Code, planning, and automation", click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-copilot" aria-label="copilot" role="img"><path d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z"></path><path d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z"></path></svg> Copilot**, then click **Policies**.
 5. Under "Features", scroll down to the setting for **Copilot Memory**.
-6. Click the dropdown button and select **Enabled**.
+6. In the **User memories** dropdown, select **Enabled**.
 
-   User-level preferences are enabled for all members of the organization who have a Copilot license.
+   User-level preferences are allowed for members of the organization who have a Copilot license, subject to their personal settings and other applicable restrictions.
 
-   Configure repository-level facts separately with the **Repository access** controls. See [Managing Copilot Memory for repositories from an organization's settings](#managing-copilot-memory-for-repositories-from-an-organizations-settings) later in this article.
+   Configure repository-level facts separately with the **Repository memories** control. See [Managing Copilot Memory for repositories from an organization's settings](#managing-copilot-memory-for-repositories-from-an-organizations-settings) later in this article.
 
 ## Enabling Copilot Dreaming
 
@@ -115,7 +117,7 @@ If your organization belongs to an enterprise, the enterprise must select **Let 
    ![Screenshot of the tabs in an organization's profile. The "Settings" tab is outlined in dark orange.](/assets/images/help/discussions/org-settings-global-nav-update.png)
 4. In the sidebar, under "Code, planning, and automation", click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-copilot" aria-label="copilot" role="img"><path d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z"></path><path d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z"></path></svg> Copilot**, then click **Policies**.
 5. Find the "Memory" section.
-6. Review the **Repository access** setting before enabling Copilot Dreaming. When you enable Copilot Dreaming, it will be enabled for all of the repositories covered by the current repository access setting.
+6. Review the **Repository memories** setting before enabling Copilot Dreaming. When you enable Copilot Dreaming, it will be enabled for all of the repositories covered by that setting.
 7. In the **Dreaming** dropdown, select **Enabled**.
 
    The **Enabled** option only applies to repositories in the Copilot Memory repository selection. Removing a repository from this selection disables both Copilot Memory and Copilot Dreaming for that repository.
@@ -310,13 +312,13 @@ Organization owners can allow storage and use of repository-level facts for all,
 
 5. Under "Features", scroll down to the setting for **Copilot Memory**.
 
-6. Click the dropdown button for "Repository access" and choose one of the options:
+6. In the **Repository memories** dropdown, choose one of the options:
 
    * **No repositories**: Repository-level facts are not stored or used for any repositories owned by this organization.
    * **All repositories**: Repository-level facts are stored and used for all repositories owned by this organization.
    * **Selected repositories**: Repository-level facts are only stored and used for the repositories you select.
 
-7. If you chose **Selected repositories**, click the button beside "Selected repositories" and choose the repositories for which you want to enable repository-level facts.
+7. If you chose **Selected repositories**, use the repository picker in the **Repository memories** row to choose the repositories for which you want to enable repository-level facts.
 
 ### Managing Copilot Memory from a repository's settings
 
@@ -340,7 +342,7 @@ When you disable Copilot Memory for a repository, Copilot stops creating and app
 
 #### Viewing and deleting repository-level facts
 
-To view or delete repository-level facts in the repository's settings, you must have write access to the repository and user-level preferences enabled for your account, including permission from any applicable enterprise or organization policy. This requirement applies to the settings page. Whether agents can use repository-level facts is controlled separately by repository access settings and applicable client settings.
+To view or delete repository-level facts in the repository's settings, you must have write access and be eligible to use repository memories. Your personal scope choice must allow repository memories, and applicable repository, organization, and enterprise restrictions must also allow them. User-level preferences do not need to be enabled. See [About GitHub Copilot Memory](/en/copilot/concepts/prompting-and-context/copilot-memory#summary-of-when-copilot-memory-is-used).
 
 You can review the stored facts and delete any that are inappropriate, misleading, or incorrect. Only repository administrators can change the repository's Copilot Memory setting.
 

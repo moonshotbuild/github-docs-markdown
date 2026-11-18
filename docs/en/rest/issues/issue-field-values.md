@@ -102,7 +102,7 @@ Array of `Issue Field Value`:
 POST /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values
 ```
 
-Add custom field values to an issue. You can set values for organization-level issue fields that have been defined for the repository's organization.
+Add custom field values to an issue. You can set values for issue fields that have been defined for the repository's owner.
 Adding an empty array will clear all existing field values for the issue.
 This endpoint supports the following field data types:
 
@@ -200,7 +200,7 @@ Same response schema as [List issue field values for an issue](#list-issue-field
 PUT /repos/{owner}/{repo}/issues/{issue_number}/issue-field-values
 ```
 
-Set custom field values for an issue, replacing any existing values. You can set values for organization-level issue fields that have been defined for the repository's organization.
+Set custom field values for an issue, replacing any existing values. You can set values for issue fields that have been defined for the repository's owner.
 This endpoint supports the following field data types:
 
 text: String values for text fields

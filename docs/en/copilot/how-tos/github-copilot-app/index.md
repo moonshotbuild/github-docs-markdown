@@ -47,6 +47,10 @@ A desktop application for agent-driven development that brings parallel workstre
 
   Use a project to give Copilot an ongoing goal and let it coordinate the work across repositories, sessions, and recurring tasks.
 
+* [Using the GitHub Copilot app to interact with your browser](/en/copilot/how-tos/github-copilot-app/browser-use)
+
+  Test web applications and complete browser-based tasks from the GitHub Copilot app.
+
 * [Using the GitHub Copilot app to interact with desktop applications](/en/copilot/how-tos/github-copilot-app/computer-use)
 
   With computer use, allow Copilot to interact with local desktop applications from the GitHub Copilot app.
@@ -62,6 +66,10 @@ A desktop application for agent-driven development that brings parallel workstre
 * [Managing issues and pull requests with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/managing-issues-and-pull-requests)
 
   Pick up an issue, direct an agent to implement changes, and land a pull request—all without leaving the GitHub Copilot app.
+
+* [Managing Azure DevOps work with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/manage-azure-devops-work)
+
+  Work with Azure DevOps repositories and pull requests without leaving the GitHub Copilot app.
 
 * [Using automations in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/using-automations)
 

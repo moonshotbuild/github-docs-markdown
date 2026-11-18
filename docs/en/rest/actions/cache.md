@@ -33,9 +33,6 @@ GET /enterprises/{enterprise}/actions/cache/retention-limit
 Gets GitHub Actions cache retention limit for an enterprise. All organizations and repositories under this
 enterprise may not set a higher cache retention limit.
 OAuth tokens and personal access tokens (classic) need the admin:enterprise scope to use this endpoint.
-Note
-
-The "Enterprise administration" fine-grained permission is not available to callers. To use this API, you must use an OAuth app token or a personal access token (classic).
 
 ### Parameters
 
@@ -82,9 +79,6 @@ PUT /enterprises/{enterprise}/actions/cache/retention-limit
 Sets GitHub Actions cache retention limit for an enterprise. All organizations and repositories under this
 enterprise may not set a higher cache retention limit.
 OAuth tokens and personal access tokens (classic) need the admin:enterprise scope to use this endpoint.
-Note
-
-The "Enterprise administration" fine-grained permission is not available to callers. To use this API, you must use an OAuth app token or a personal access token (classic).
 
 ### Parameters
 
@@ -139,9 +133,6 @@ GET /enterprises/{enterprise}/actions/cache/storage-limit
 Gets GitHub Actions cache storage limit for an enterprise. All organizations and repositories under this
 enterprise may not set a higher cache storage limit.
 OAuth tokens and personal access tokens (classic) need the admin:enterprise scope to use this endpoint.
-Note
-
-The "Enterprise administration" fine-grained permission is not available to callers. To use this API, you must use an OAuth app token or a personal access token (classic).
 
 ### Parameters
 
@@ -188,9 +179,6 @@ PUT /enterprises/{enterprise}/actions/cache/storage-limit
 Sets GitHub Actions cache storage limit for an enterprise. All organizations and repositories under this
 enterprise may not set a higher cache storage limit.
 OAuth tokens and personal access tokens (classic) need the admin:enterprise scope to use this endpoint.
-Note
-
-The "Enterprise administration" fine-grained permission is not available to callers. To use this API, you must use an OAuth app token or a personal access token (classic).
 
 ### Parameters
 

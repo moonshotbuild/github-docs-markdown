@@ -593,6 +593,7 @@ curl -L \
 * `severity_filter`: required, string, enum: `no_filter`, `low`, `low_and_medium`
 * `custom_instructions_enabled`: required, boolean
 * `mcp_enabled`: required, boolean
+* `cross_repo_context_enabled`: required, boolean
 
 ## Update Copilot code review settings for a repository
 
@@ -639,6 +640,9 @@ OAuth app tokens and personal access tokens (classic) need the repo scope to use
 
 - **`mcp_enabled`** (boolean)
   Whether reviews can use MCP servers.
+
+- **`cross_repo_context_enabled`** (boolean)
+  Whether reviews can use public repository search. Can only be set when the public repository search setting is available for the repository.
 
 ### HTTP response status codes
 

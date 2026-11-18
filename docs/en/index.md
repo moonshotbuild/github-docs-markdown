@@ -149,3 +149,8 @@ document_type: "homepage"
 
   Thanks for coming to Mo's Diner!
   Now enjoy the recipes to help you get the most out of GitHub, from planning your projects to maintaining main.
+
+* [Chez Mona](/en/ignite26)
+
+  Thanks for visiting Chez Mona at Microsoft Ignite!
+  Explore the latest releases and keep building on what you started in the labs.

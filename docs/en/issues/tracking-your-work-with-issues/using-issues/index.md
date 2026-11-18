@@ -78,3 +78,7 @@ Learn about using issues in your repositories.
 * [Adding and managing issue fields](/en/issues/tracking-your-work-with-issues/using-issues/adding-and-managing-issue-fields)
 
   You can set, edit, and clear issue field values on individual issues to capture structured metadata for your team.
+
+* [Issue status webhooks and workflows](/en/issues/tracking-your-work-with-issues/using-issues/issue-status-webhooks-and-workflows)
+
+  Use webhooks and GitHub Actions workflows to respond when the status of an issue changes.

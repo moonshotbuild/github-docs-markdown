@@ -113,6 +113,12 @@ Array of `Migration`:
 * `exclude_releases`: required, boolean
 * `exclude_owner_projects`: required, boolean
 * `org_metadata_only`: required, boolean
+* `url`: required, string, format: uri
+* `created_at`: required, string, format: date-time
+* `updated_at`: required, string, format: date-time
+* `node_id`: required, string
+* `archive_url`: string, format: uri
+* `exclude`: array of string
 * `repositories`: required, array of `Simple Repository`:
   * `id`: required, integer, format: int64
   * `node_id`: required, string
@@ -160,12 +166,6 @@ Array of `Migration`:
   * `teams_url`: required, string, format: uri
   * `trees_url`: required, string
   * `hooks_url`: required, string, format: uri
-* `url`: required, string, format: uri
-* `created_at`: required, string, format: date-time
-* `updated_at`: required, string, format: date-time
-* `node_id`: required, string
-* `archive_url`: string, format: uri
-* `exclude`: array of string
 
 ## Start an organization migration
 
@@ -287,6 +287,12 @@ curl -L \
 * `exclude_releases`: required, boolean
 * `exclude_owner_projects`: required, boolean
 * `org_metadata_only`: required, boolean
+* `url`: required, string, format: uri
+* `created_at`: required, string, format: date-time
+* `updated_at`: required, string, format: date-time
+* `node_id`: required, string
+* `archive_url`: string, format: uri
+* `exclude`: array of string
 * `repositories`: required, array of `Simple Repository`:
   * `id`: required, integer, format: int64
   * `node_id`: required, string
@@ -334,12 +340,6 @@ curl -L \
   * `teams_url`: required, string, format: uri
   * `trees_url`: required, string
   * `hooks_url`: required, string, format: uri
-* `url`: required, string, format: uri
-* `created_at`: required, string, format: date-time
-* `updated_at`: required, string, format: date-time
-* `node_id`: required, string
-* `archive_url`: string, format: uri
-* `exclude`: array of string
 
 ## Get an organization migration status
 

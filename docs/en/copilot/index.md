@@ -155,6 +155,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Tool search keeps your context small by letting Copilot CLI load external tools only when a task needs them.
 
+* [About browser use in GitHub Copilot](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/browser-use)
+
+  Copilot can interact with your browser to help you test web applications and complete browser-based tasks.
+
 * [About computer use in GitHub Copilot](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/computer-use)
 
   Copilot can interact with desktop applications to automate tasks that cannot be completed with a more direct tool.
@@ -314,6 +318,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [GitHub Copilot policies for enterprises and organizations](/en/copilot/concepts/enterprise/policies)
 
   Control the availability of GitHub Copilot features and models for your users.
+
+* [Governance controls for GitHub Copilot](/en/copilot/concepts/enterprise/governance-controls)
+
+  Prepare to build your governance framework by understanding the tools at your disposal.
 
 * [About default availability of Copilot features and models](/en/copilot/concepts/enterprise/default-availability)
 
@@ -591,6 +599,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   You can create specialized agents with tailored expertise for specific development tasks, and invoke them from chat in your IDE.
 
+* [Using GitHub Copilot in your IDE to interact with your browser](/en/copilot/how-tos/copilot-in-your-ide/use-copilot-agents/browser-use)
+
+  Test web applications and complete browser-based tasks from your IDE with Copilot.
+
 * [Using Copilot cloud agent in your IDE](/en/copilot/how-tos/copilot-in-your-ide/use-copilot-agents/use-cloud-agent-in-your-ide)
 
   Start and track Copilot cloud agent sessions from Visual Studio Code, JetBrains IDEs, Eclipse, and Visual Studio.
@@ -626,6 +638,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Choosing a model in GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/use-copilot-cli/choose-a-model)
 
   Choose which large language model you want Copilot CLI to use for a task.
+
+* [Using GitHub Copilot CLI to interact with your browser](/en/copilot/how-tos/copilot-cli/use-copilot-cli/browser-use)
+
+  Test web applications and complete browser-based tasks from GitHub Copilot CLI.
 
 * [Using GitHub Copilot CLI to interact with desktop applications](/en/copilot/how-tos/copilot-cli/use-copilot-cli/computer-use)
 
@@ -751,6 +767,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Use a project to give Copilot an ongoing goal and let it coordinate the work across repositories, sessions, and recurring tasks.
 
+* [Using the GitHub Copilot app to interact with your browser](/en/copilot/how-tos/github-copilot-app/browser-use)
+
+  Test web applications and complete browser-based tasks from the GitHub Copilot app.
+
 * [Using the GitHub Copilot app to interact with desktop applications](/en/copilot/how-tos/github-copilot-app/computer-use)
 
   With computer use, allow Copilot to interact with local desktop applications from the GitHub Copilot app.
@@ -766,6 +786,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Managing issues and pull requests with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/managing-issues-and-pull-requests)
 
   Pick up an issue, direct an agent to implement changes, and land a pull request—all without leaving the GitHub Copilot app.
+
+* [Managing Azure DevOps work with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/manage-azure-devops-work)
+
+  Work with Azure DevOps repositories and pull requests without leaving the GitHub Copilot app.
 
 * [Using automations in the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/using-automations)
 
@@ -1251,6 +1275,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Monitor adoption trends and use of Copilot to support long-term enablement.
 
+* [Viewing repository insights](/en/copilot/how-tos/administer-copilot/view-repository-insights)
+
+  Use Repository insights to understand how your team acts on Copilot code review feedback and identify opportunities to improve review practices.
+
 * [Viewing the code generation dashboard](/en/copilot/how-tos/administer-copilot/view-code-generation)
 
   The code generation dashboard shows how Copilot generates code across your enterprise, including activity from both users and agents.
@@ -1426,6 +1454,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 * [Interpreting usage and adoption metrics for GitHub Copilot](/en/copilot/reference/copilot-usage-metrics/interpret-copilot-metrics)
 
   Copilot usage and adoption metrics reveal patterns in how developers engage with Copilot across your enterprise.
+
+* [Repository insights metrics](/en/copilot/reference/copilot-usage-metrics/repository-insights-metrics)
+
+  Use repository-level review outcomes to identify gaps in Copilot code review coverage and opportunities to improve review practices.
 
 * [Reconciling Copilot usage metrics across dashboards, APIs, and reports](/en/copilot/reference/copilot-usage-metrics/reconciling-usage-metrics)
 

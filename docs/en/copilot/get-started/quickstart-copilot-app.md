@@ -44,12 +44,18 @@ Download and install the GitHub Copilot app for your operating system. For other
 ## Opening the GitHub Copilot app for the first time
 
 1. Open the GitHub Copilot app.
+
 2. Click **Sign in to GitHub** and follow the prompts to authenticate.
 
-   If you use GitHub Enterprise Cloud with data residency, choose **Use GitHub Enterprise** and enter your `*.ghe.com` hostname when prompted. GitHub Enterprise Server is not supported by the GitHub Copilot app.
+   * If you use GitHub Enterprise Cloud with data residency, choose **GitHub Enterprise Cloud** and enter your `*.ghe.com` hostname when prompted.
+   * If you work on GitHub Enterprise Server, sign in with a cloud account first. You can add your GitHub Enterprise Server account later to access repositories, pull requests, and issues for that account.
+
 3. If you do not have a Copilot plan, choose whether to sign up for a plan or continue with your own model provider.
-   * If you choose to use your own model provider, select a provider, enter any required credentials, then click **Save and continue**.
+
+   If you choose to use your own model provider, select a provider, enter any required credentials, then click **Save and continue**.
+
 4. When prompted, select one or more repositories based on your recent GitHub activity. You can also add a local folder or repository, or skip this step and add repositories later.
+
 5. Choose a theme, then complete onboarding to open the app.
 
 ## Connecting a repository or folder
@@ -61,7 +67,11 @@ To work on code, you need at least one repository or local folder connected to t
 
 * **Open local folder** — Select a folder already on your machine, including one that contains a repository you've already cloned locally.
 * **Add GitHub repository** — Browse and clone a repository from GitHub.
-* **Clone repository** — Clone from a Git URL for repositories hosted outside GitHub (for example, on Azure DevOps) or for private repositories without app access.
+* **Clone repository** — Clone from a Git URL for repositories hosted outside GitHub or for private repositories without app access.
+
+To browse and add Azure DevOps repositories, enable the Azure DevOps integration in the app settings and connect your Microsoft account. See [Managing Azure DevOps work with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/manage-azure-devops-work).
+
+To add repositories hosted on GitHub Enterprise Server, sign in to your account. See [Signing in to GitHub Enterprise Server in the GitHub Copilot app](/en/enterprise-server@3.22/copilot/copilot-on-ghes/sign-in-on-copilot-app).
 
 ## Making your first code changes
 

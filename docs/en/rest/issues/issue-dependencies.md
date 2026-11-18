@@ -95,6 +95,10 @@ Array of `Issue`:
   * `html_url`: required, string, format: uri
   * `number`: required, integer
   * `state`: required, string
+  * `status`: object or null:
+    * `id`: required, integer, format: int64
+    * `name`: required, string
+    * `category`: required, string
   * `state_reason`: string or null, enum: `completed`, `reopened`, `not_planned`, `duplicate`, `null`
   * `title`: required, string
   * `body`: string or null
@@ -484,6 +488,10 @@ curl -L \
 * `html_url`: required, string, format: uri
 * `number`: required, integer
 * `state`: required, string
+* `status`: object or null:
+  * `id`: required, integer, format: int64
+  * `name`: required, string
+  * `category`: required, string
 * `state_reason`: string or null, enum: `completed`, `reopened`, `not_planned`, `duplicate`, `null`
 * `title`: required, string
 * `body`: string or null

@@ -137,6 +137,10 @@ Learn how you can use GitHub Issues to plan and track your work.
 
   You can set, edit, and clear issue field values on individual issues to capture structured metadata for your team.
 
+* [Issue status webhooks and workflows](/en/issues/tracking-your-work-with-issues/using-issues/issue-status-webhooks-and-workflows)
+
+  Use webhooks and GitHub Actions workflows to respond when the status of an issue changes.
+
 * [Triaging an issue with AI](/en/issues/tracking-your-work-with-issues/administering-issues/triaging-an-issue-with-ai)
 
   Use AI to triage new issues and determine whether the issue is actionable or needs more information.

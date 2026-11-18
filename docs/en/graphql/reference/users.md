@@ -1440,6 +1440,10 @@ GitHub Sponsors. Does not include sponsorships paid via Patreon.
   * `types` ([PinnableItemType!]): Filter the types of pinned items that are returned.
 
 * `pinnedItemsRemaining` (Int!): Returns how many more items this profile owner can pin to their profile.
+* `planningStatuses` (PlanningStatusConnection): The planning statuses issues in the user's repositories can be in, or null
+when issue statuses aren't available. Planning statuses are returned in
+display order. Issue statuses are in preview and only available to accounts
+enrolled in the preview. _(Pagination: `after`, `before`, `first`, `last`)_
 * `project` (Project): Find project by number. **Deprecated:** Projects (classic) is being deprecated in favor of the new Projects experience, see: https://github.blog/changelog/2024-05-23-sunset-notice-projects-classic/. Removal on 2025-04-01 UTC.
   * `number` (Int!): The project number to find.
 

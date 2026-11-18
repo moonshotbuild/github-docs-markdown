@@ -41,6 +41,10 @@ Use the REST API to create, manage and control the workflow of public and privat
 
   Use the REST API to manage issue types for a repository.
 
+* [REST API endpoints for planning statuses](/en/rest/repos/planning-statuses)
+
+  Use the REST API to list the planning statuses that issues in a repository can have. Issue statuses are in preview and only available to accounts enrolled in the preview.
+
 * [REST API endpoints for repositories](/en/rest/repos/repos)
 
   Use the REST API to manage repositories on GitHub.

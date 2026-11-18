@@ -323,9 +323,9 @@ jobs:
 
 ## `issues`
 
-| Webhook event payload                                       | Activity types                                                                                                                                                                                                                                                                                                                                           | `GITHUB_SHA`                  | `GITHUB_REF`   |
-| ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | -------------- |
-| [`issues`](/en/webhooks/webhook-events-and-payloads#issues) | - `opened`<br/>- `edited`<br/>- `deleted`<br/>- `transferred`<br/>- `pinned`<br/>- `unpinned`<br/>- `closed`<br/>- `reopened`<br/>- `assigned`<br/>- `unassigned`<br/>- `labeled`<br/>- `unlabeled`<br/>- `locked`<br/>- `unlocked`<br/>- `milestoned`<br/> - `demilestoned`<br/> - `typed`<br/> - `untyped`<br/> - `field_added`<br/> - `field_removed` | Last commit on default branch | Default branch |
+| Webhook event payload                                       | Activity types                                                                                                                                                                                                                                                                                                                                                                   | `GITHUB_SHA`                  | `GITHUB_REF`   |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | -------------- |
+| [`issues`](/en/webhooks/webhook-events-and-payloads#issues) | - `opened`<br/>- `edited`<br/>- `deleted`<br/>- `transferred`<br/>- `pinned`<br/>- `unpinned`<br/>- `closed`<br/>- `reopened`<br/>- `assigned`<br/>- `unassigned`<br/>- `labeled`<br/>- `unlabeled`<br/>- `locked`<br/>- `unlocked`<br/>- `milestoned`<br/> - `demilestoned`<br/> - `typed`<br/> - `untyped`<br/> - `field_added`<br/> - `field_removed`<br/> - `status_changed` | Last commit on default branch | Default branch |
 
 > [!NOTE]
 >
@@ -348,6 +348,62 @@ You can also run a workflow when an issue field value is set, changed, or cleare
 on:
   issues:
     types: [field_added, field_removed]
+```
+
+> [!NOTE]
+> Issue statuses are in preview and only available to accounts enrolled in the preview. Webhook payloads and the `status_changed` activity type are subject to change.
+
+You can also run a workflow when the status of an issue changes. A workflow that uses the `status_changed` activity type runs whenever an issue's status changes, including when an issue is created, closed, or reopened. In the workflow, the following properties of the `github.event` context describe the change.
+
+* `github.event.status` contains the status the issue changed to.
+* `github.event.changes.status.from` contains the previous status, or `null` if the issue didn't have one.
+* `github.event.issue.status` contains the status of the issue when the payload was built. Payloads for every `issues` activity type include this property.
+
+For more information, see [Issue status webhooks and workflows](/en/issues/tracking-your-work-with-issues/using-issues/issue-status-webhooks-and-workflows).
+
+> [!IMPORTANT]
+> Workflows that use the `issues` event without `types` also run for `status_changed`. These workflows run whenever someone changes the status of an issue, and run an extra time when an issue is created, closed, or reopened, because GitHub sends `status_changed` as well as `opened`, `closed`, or `reopened`. To avoid unexpected runs, list the activity types that your workflow needs.
+
+During the preview, editors that validate workflow files, such as the workflow editor on GitHub, may report `status_changed` as an invalid activity type. You can ignore this error.
+
+To match one status, use its ID. You can find the ID of a status in the `status` object of a `status_changed` payload. For example, if the ID of the In review status is `8`, the following workflow runs when an issue moves to In review.
+
+```yaml
+on:
+  issues:
+    types: [status_changed]
+
+jobs:
+  in-review:
+    if: ${{ github.event.status.id == 8 }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Issue #$NUMBER moved to $STATUS"
+        env:
+          NUMBER: ${{ github.event.issue.number }}
+          STATUS: ${{ github.event.status.name }}
+```
+
+To match every status in a category, use the status's `category`. For example, the following workflow runs when an issue moves into the `started` category from a status in another category, or from no status. It doesn't run again when the issue moves between two statuses in the `started` category, such as from In progress to In review.
+
+```yaml
+on:
+  issues:
+    types: [status_changed]
+
+jobs:
+  work-started:
+    if: >-
+      ${{ github.event.status.category == 'started' &&
+      (github.event.changes.status.from == null ||
+      github.event.changes.status.from.category != 'started') }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Work started on issue #$NUMBER"
+        env:
+          NUMBER: ${{ github.event.issue.number }}
 ```
 
 ## `label`

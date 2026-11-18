@@ -37,6 +37,10 @@ Use agent mode in your IDE to complete multi-step tasks, and delegate work to Co
 
   You can create specialized agents with tailored expertise for specific development tasks, and invoke them from chat in your IDE.
 
+* [Using GitHub Copilot in your IDE to interact with your browser](/en/copilot/how-tos/copilot-in-your-ide/use-copilot-agents/browser-use)
+
+  Test web applications and complete browser-based tasks from your IDE with Copilot.
+
 * [Using Copilot cloud agent in your IDE](/en/copilot/how-tos/copilot-in-your-ide/use-copilot-agents/use-cloud-agent-in-your-ide)
 
   Start and track Copilot cloud agent sessions from Visual Studio Code, JetBrains IDEs, Eclipse, and Visual Studio.

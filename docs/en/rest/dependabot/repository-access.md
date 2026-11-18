@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/dependabot/repository-access"
 ---
 
-# REST API endpoints for Dependabot repository access
+# REST API endpoints for {% data variables.product.prodname_dependabot %} repository access
 
 Use the REST API to manage which repositories Dependabot can access within an organization.
 
@@ -32,9 +32,6 @@ GET /enterprises/{enterprise}/dependabot/repository-access
 
 Lists repositories that enterprise admins have allowed Dependabot to access when updating dependencies across organizations in the enterprise.
 The authenticated user must be an enterprise owner to use this endpoint.
-Note
-
-The "Enterprise administration" fine-grained permission is not available to callers. To use this API, you must use an OAuth app token or a personal access token (classic).
 
 ### Parameters
 
@@ -166,10 +163,6 @@ Example request body:
   "repository_ids_to_remove": [789]
 }
 
-Note
-
-The "Enterprise administration" fine-grained permission is not available to callers. To use this API, you must use an OAuth app token or a personal access token (classic).
-
 ### Parameters
 
 #### Headers
@@ -224,9 +217,6 @@ Sets the default level of repository access Dependabot will have while performin
 'internal' - Dependabot will only have access to public and internal repositories, unless access is explicitly granted to private repositories.
 
 The authenticated user must be an enterprise owner to use this endpoint.
-Note
-
-The "Enterprise administration" fine-grained permission is not available to callers. To use this API, you must use an OAuth app token or a personal access token (classic).
 
 ### Parameters
 

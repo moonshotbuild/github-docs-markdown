@@ -93,6 +93,10 @@ Learn how to connect, extend, and customize GitHub with apps and tools.
 
   Set up reminders for pending pull request reviews in Teams.
 
+* [Using GitHub Event Streams](/en/integrations/how-tos/using-github-event-streams)
+
+  GitHub Event Streams lets agents and integrations subscribe to changes on a resource instead of polling for them.
+
 * [Permissions for GitHub in Slack](/en/integrations/reference/slack-permissions)
 
   Learn about the permissions required for the GitHub integration in Slack.

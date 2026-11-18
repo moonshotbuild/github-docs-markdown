@@ -63,6 +63,10 @@ Find information to apply to your work with Dependabot and the dependency graph.
 
   Resolve dependency security issues with error codes, diagnostic information, and solutions for common problems.
 
+* [Troubleshooting GitHub package firewall](/en/code-security/reference/supply-chain-security/troubleshooting-github-package-firewall)
+
+  Check whether cached packages or configuration issues explain unexpected installation results with GitHub package firewall.
+
 * [Java package metadata for Dependabot updates](/en/code-security/reference/supply-chain-security/java-package-metadata-dependabot)
 
   Include metadata in your pom.xml file to provide helpful links and context in Dependabot pull requests for Java package updates.

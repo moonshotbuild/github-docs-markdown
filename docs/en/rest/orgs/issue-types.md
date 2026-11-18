@@ -99,7 +99,7 @@ personal access tokens (classic) need the admin:org scope to use this endpoint.
   Name of the issue type.
 
 - **`is_enabled`** (boolean) (required)
-  Whether or not the issue type is enabled at the organization level.
+  Whether or not the issue type is enabled.
 
 - **`description`** (string or null)
   Description of the issue type.
@@ -177,7 +177,7 @@ personal access tokens (classic) need the admin:org scope to use this endpoint.
   Name of the issue type.
 
 - **`is_enabled`** (boolean) (required)
-  Whether or not the issue type is enabled at the organization level.
+  Whether or not the issue type is enabled.
 
 - **`description`** (string or null)
   Description of the issue type.

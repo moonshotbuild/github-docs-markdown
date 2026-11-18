@@ -32,4 +32,5 @@ For more information, see [Using the activity view to see changes to a repositor
 2. Under your repository name, click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-graph" aria-label="graph" role="img"><path d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.28 9.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.25-3.25a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path></svg> Insights**.
 
    ![Screenshot of the main page of a repository. In the horizontal navigation bar, a tab, labeled with a graph icon and "Insights," is outlined in orange.](/assets/images/help/repository/repo-nav-insights-tab.png)
-3. Optionally, to choose a different time period, select the **Period** dropdown menu in the upper-right corner of the Pulse overview. By default, Pulse shows the last seven days of repository activity.
+3. In the left sidebar, click **Pulse**.
+4. Optionally, to choose a different time period, select the **Period** dropdown menu in the upper-right corner of the Pulse overview. By default, Pulse shows the last seven days of repository activity.

@@ -63,7 +63,7 @@ In general, GitHub Apps and OAuth apps can make the same API requests. However, 
 
 * The REST API to manage check runs and check suites is only available to GitHub Apps.
 * Enterprise-level resources such as the enterprise object itself are not available to GitHub Apps. This means that GitHub Apps cannot call endpoints like `GET /enterprise/settings/license`. However, enterprise-owned organization and repository resources are available.
-* Some requests may return incomplete data depending on the permissions and repository access that was granted to an GitHub App. For example, if your app makes a request to get all repositories that a user can access, the response will only include the repositories that the app was also granted access to.
+* Some requests may return incomplete data depending on the permissions and repository access that was granted to a GitHub App. For example, if your app makes a request to get all repositories that a user can access, the response will only include the repositories that the app was also granted access to.
 
 For more information about the REST API endpoints that are available to GitHub Apps, see [Endpoints available for GitHub App installation access tokens](/en/rest/authentication/endpoints-available-for-github-app-installation-access-tokens).
 

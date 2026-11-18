@@ -57,6 +57,10 @@ Learn how agents work autonomously, use tools to act on your behalf, and operate
 
   Tool search keeps your context small by letting Copilot CLI load external tools only when a task needs them.
 
+* [About browser use in GitHub Copilot](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/browser-use)
+
+  Copilot can interact with your browser to help you test web applications and complete browser-based tasks.
+
 * [About computer use in GitHub Copilot](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/computer-use)
 
   Copilot can interact with desktop applications to automate tasks that cannot be completed with a more direct tool.

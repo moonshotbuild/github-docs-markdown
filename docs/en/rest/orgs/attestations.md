@@ -225,8 +225,8 @@ curl -L \
 GET /orgs/{org}/attestations/repositories
 ```
 
-List repositories owned by the provided organization that have created at least one attested artifact
-Results will be sorted in ascending order by repository ID
+List repositories owned by the provided organization that have created at least one attested artifact.
+Results will be sorted in ascending order by repository ID.
 
 ### Parameters
 

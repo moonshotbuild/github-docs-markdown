@@ -35,6 +35,10 @@ Interpret and validate GitHub Copilot usage metrics with guidance on data reconc
 
   Copilot usage and adoption metrics reveal patterns in how developers engage with Copilot across your enterprise.
 
+* [Repository insights metrics](/en/copilot/reference/copilot-usage-metrics/repository-insights-metrics)
+
+  Use repository-level review outcomes to identify gaps in Copilot code review coverage and opportunities to improve review practices.
+
 * [Reconciling Copilot usage metrics across dashboards, APIs, and reports](/en/copilot/reference/copilot-usage-metrics/reconciling-usage-metrics)
 
   Copilot usage metrics are derived from the same underlying telemetry but are aggregated and presented differently across dashboards, APIs, and exported reports.

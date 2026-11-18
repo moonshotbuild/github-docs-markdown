@@ -23,7 +23,7 @@ Moderating conversations creates a welcoming community for all contributors to y
 
 * [Locking conversations](/en/communities/moderating-comments-and-conversations/locking-conversations)
 
-  Repository owners and collaborators, and people with write access to a repository, can lock conversations on issues, pull requests, and commits permanently or temporarily to defuse a heated interaction.
+  Repository owners and collaborators, and people with moderate access to a repository for issues, or write access to a repository for pull requests and commits, can lock conversations permanently or temporarily to defuse a heated interaction.
 
 * [Archive pull requests](/en/communities/moderating-comments-and-conversations/archive-pull-requests)
 

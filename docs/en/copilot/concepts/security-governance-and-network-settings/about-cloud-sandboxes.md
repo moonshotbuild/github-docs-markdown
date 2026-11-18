@@ -40,12 +40,12 @@ Cloud sandboxes and local sandboxing solve different problems. A cloud sandbox m
 > [!NOTE]
 > Cloud sandboxes and local sandboxing are separate technologies. A cloud sandbox is a GitHub-hosted environment that runs the whole session. Local sandboxing is a set of operating system restrictions on your own machine. Settings, policies, and commands for one don't apply to the other.
 
-|                        | Cloud sandboxes                                                                                                                                                          | Local sandboxing                                                                        |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
-| Where Copilot runs     | In an isolated Linux environment that GitHub hosts                                                                                                                       | On your machine                                                                         |
-| What it's for          | Running sessions without using your machine                                                                                                                              | Limiting which resources Copilot's commands can access on your machine                  |
-| Where you use it       | Cloud sessions that you start with Copilot on the GitHub website, GitHub Mobile, Slack, Microsoft Teams, the GitHub Copilot app, Visual Studio Code, and the Copilot SDK | Copilot CLI and the GitHub Copilot app                                                  |
-| How you start using it | No separate setup. It's available when you use the Copilot features that run in it.                                                                                      | Turn it on in Copilot CLI or the GitHub Copilot app, or your enterprise can require it. |
+|                        | Cloud sandboxes                                                                                                                                                                          | Local sandboxing                                                                        |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Where Copilot runs     | In an isolated Linux environment that GitHub hosts                                                                                                                                       | On your machine                                                                         |
+| What it's for          | Running sessions without using your machine                                                                                                                                              | Limiting which resources Copilot's commands can access on your machine                  |
+| Where you use it       | Cloud sessions that you start with Copilot on the GitHub website, GitHub Mobile, Slack, Microsoft Teams, the GitHub Copilot app, Visual Studio Code, JetBrains IDEs, and the Copilot SDK | Copilot CLI and the GitHub Copilot app                                                  |
+| How you start using it | No separate setup. It's available when you use the Copilot features that run in it.                                                                                                      | Turn it on in Copilot CLI or the GitHub Copilot app, or your enterprise can require it. |
 
 For more information about local sandboxing, see [About local sandboxing for GitHub Copilot](/en/copilot/concepts/security-governance-and-network-settings/about-cloud-and-local-sandboxes).
 
@@ -61,6 +61,8 @@ By default, Copilot runs a cloud session in a cloud sandbox when you start it fr
 * Cloud sessions in the Copilot SDK
 
 In Copilot CLI, sessions run on your machine by default. You can also start a session in a cloud sandbox. See [Starting a cloud session from Copilot CLI](#starting-a-cloud-session-from-copilot-cli).
+
+In JetBrains IDEs, you can choose to run a session in a cloud sandbox (public preview). See [Asking GitHub Copilot questions in your IDE](/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide?tool=jetbrains#running-a-session-in-a-cloud-sandbox).
 
 ## Choosing where Copilot runs
 

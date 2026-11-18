@@ -43,6 +43,10 @@ Manage GitHub Copilot for your team by configuring settings, monitoring usage, a
 
   Monitor adoption trends and use of Copilot to support long-term enablement.
 
+* [Viewing repository insights](/en/copilot/how-tos/administer-copilot/view-repository-insights)
+
+  Use Repository insights to understand how your team acts on Copilot code review feedback and identify opportunities to improve review practices.
+
 * [Viewing the code generation dashboard](/en/copilot/how-tos/administer-copilot/view-code-generation)
 
   The code generation dashboard shows how Copilot generates code across your enterprise, including activity from both users and agents.

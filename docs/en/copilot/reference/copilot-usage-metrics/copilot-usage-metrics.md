@@ -24,7 +24,7 @@ The Copilot usage metrics dashboard and APIs display and export data using a con
 * The Copilot usage metrics dashboards are available at the **enterprise** and **organization** level.
 * The Copilot usage metrics APIs return reports at the **enterprise** or **organization** scope, with aggregated, **repository-level**, and **individual user-level** report granularities. Shapes vary by scope and granularity.
 * Team-level metrics are not pre-aggregated; you construct them by joining the user-teams report with the per-user usage metrics report. See [Team-level Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/team-level-metrics).
-* Repository-level reports contain one record per repository with pull request activity on the requested day. See [Repository-level fields (API only)](#repository-level-fields-api-only) later in this article.
+* Repository-level reports contain one record per repository with pull request activity on the requested day. Repository insights displays repository-level pull request activity and Copilot code review outcomes. See [Repository-level fields](#repository-level-fields) later in this article.
 
 For guidance on how to read and interpret these metrics, see [Interpreting usage and adoption metrics for GitHub Copilot](/en/copilot/reference/copilot-usage-metrics/interpret-copilot-metrics).
 
@@ -274,13 +274,19 @@ Teams with fewer than 5 seated Copilot users on a given day are excluded from th
 | `team_id`         | `integer` | No       | Unique ID of the team the user belongs to.                                                                                                              |
 | `slug`            | `string`  | No       | URL-friendly identifier for the team.                                                                                                                   |
 
-### Repository-level fields (API only)
+<!-- Anchor to preserve existing links to this section. -->
+
+<a name="repository-level-fields-api-only"></a>
+
+### Repository-level fields
 
 Repository-level reports cover repositories in an organization or enterprise. They show daily pull request creation, review, merge, and suggestion activity. They also show pull request review stage durations and Copilot code review outcomes. Reports include pull requests created by Copilot cloud agent and reviewed by Copilot code review.
 
 Each row represents one repository that had pull request activity on the requested day; repositories with no activity are omitted. These reports focus on pull request lifecycle activity and can contain data even when IDE usage metrics are absent.
 
 These fields are returned by the daily repository-level report (`repos-1-day`), available via the REST API at the organization and enterprise scopes. For the endpoint URLs, response envelope, permissions, and download workflow, see [REST API endpoints for Copilot usage metrics](/en/rest/copilot/copilot-usage-metrics). For example rows, see [Example schema for Copilot usage metrics](/en/copilot/reference/copilot-usage-metrics/example-schema#repository-level-schema-example).
+
+Repository insights uses repository-level data to show pull request activity and review outcomes. For dashboard calculations, reporting periods, and interpretation limits, see [Repository insights metrics](/en/copilot/reference/copilot-usage-metrics/repository-insights-metrics).
 
 | Field                       | Type      | Nullable | Description                                                                                                                                                                                                                                                                                                                                                |
 | :-------------------------- | :-------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -527,7 +533,7 @@ The `pull_requests` object appears in aggregated enterprise and organization rep
 | `pull_requests.total_created_by_copilot`                 | `integer` | No       | Number of pull requests created by Copilot cloud agent on this specific day.                                                                                                                                                                                                       |
 | `pull_requests.total_reviewed_by_copilot`                | `integer` | No       | Number of pull requests reviewed by Copilot code review on this specific day. <br/><br/>A pull request may be counted on multiple days if Copilot code review reviews it on multiple days.                                                                                         |
 | `pull_requests.total_merged_created_by_copilot`          | `integer` | No       | Number of pull requests created by Copilot cloud agent that were merged on this specific day. Each pull request is counted only on the day it is merged.                                                                                                                           |
-| `pull_requests.total_merged_reviewed_by_copilot`         | `integer` | No       | Number of pull requests that were both merged and reviewed by Copilot code review during the reporting period.                                                                                                                                                                     |
+| `pull_requests.total_merged_reviewed_by_copilot`         | `integer` | No       | Number of pull requests merged on this specific day that received at least one Copilot code review review before they merged. Each pull request is counted only on the day it is merged.                                                                                           |
 | `pull_requests.median_minutes_to_merge_copilot_authored` | `number`  | Yes      | Median time, in minutes, between pull request creation and merge for pull requests created by Copilot cloud agent and merged on this specific day. Null when no such pull requests were merged that day.                                                                           |
 | `pull_requests.median_minutes_to_merge_copilot_reviewed` | `number`  | Yes      | Median time, in minutes, between pull request creation and merge, calculated only for pull requests reviewed by Copilot code review. Null when no such pull requests were merged that day.                                                                                         |
 | `pull_requests.total_copilot_suggestions`                | `integer` | No       | Number of pull request review suggestions generated by Copilot code review on this specific day.                                                                                                                                                                                   |
@@ -580,15 +586,14 @@ The `copilot_code_review` object appears only in repository-level reports. It sh
 #### How comments are counted
 
 * Only comments that Copilot code review posts on pull requests count. Comments from people or other review tools, and Copilot code review reviews in the IDE, are not included.
-* Comments are evaluated when their pull request merges. Each comment counts on the day its pull request merged, not the day Copilot code review posted it.
-* Copilot code review usually does not evaluate comments on pull requests opened by bots, such as Copilot cloud agent.
+* An AI model evaluates comments when their pull request merges to judge whether the issue each comment raised was addressed. Each comment counts on the day its pull request merged, not the day Copilot code review posted it.
 * A comment is addressed when the developer takes any of these actions:
   * Applies the suggested change
   * Asks Copilot code review to make the fix
-  * Edits the code by hand
-  * Replies that the fix will come in a later pull request
+  * Pushes a fix made manually or with any agent
+  * Accepts the feedback and explicitly defers the fix to a later pull request
 
-Comments that were ignored, or that Copilot code review later found to be wrong, count as evaluated but not addressed.
+Comments that were not addressed remain in the evaluated total but not the addressed total.
 
 These counts differ from the suggestion counts in `pull_requests`. Suggestion counts include only comments with a ready-to-apply code suggestion. A suggestion counts as applied only when someone applies it. The `copilot_code_review` counts include every evaluated comment, regardless of whether or how the developer acted on it.
 
@@ -599,7 +604,9 @@ Each `review_comments_by_*` array splits the evaluated and addressed comments by
 * Each comment counts once in the severity, review tier, and comment type arrays. A comment whose severity, review tier, or type was not recorded counts only in the totals, so these arrays can add up to less than the totals.
 * A comment that drew on more than one customization counts once for each, so `review_comments_by_customization` can add up to more than the totals.
 
-To calculate the addressed rate, divide `total_comments_addressed` by `total_comments_evaluated`.
+To calculate the address rate, divide `total_comments_addressed` by `total_comments_evaluated`. For a severity, review tier, customization, or comment type, use both counts from the same array entry. Across days, sum the counts before dividing rather than averaging daily percentages. A zero evaluated count means the rate has no denominator.
+
+For the share of merged pull requests with no subsequent human change request, divide `total_merged_no_human_change_request_after_review` by `pull_requests.total_merged_reviewed_by_copilot`. The number merged without Copilot review is `pull_requests.total_merged` minus `pull_requests.total_merged_reviewed_by_copilot`.
 
 | Field                                                                   | Type      | Nullable | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | :---------------------------------------------------------------------- | :-------- | :------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

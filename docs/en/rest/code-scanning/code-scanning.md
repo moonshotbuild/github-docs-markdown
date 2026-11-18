@@ -628,6 +628,78 @@ Array of objects:
   * **null**
   * **Simple User** (see above)
 * `assignees`: array of `Simple User` (see above)
+* `linked_pull_requests`: array of `Pull Requests on Alerts`:
+  * `number`: required, integer
+  * `id`: required, integer, format: int64
+  * `repository`: required, `Simple Repository`:
+    * `id`: required, integer, format: int64
+    * `node_id`: required, string
+    * `name`: required, string
+    * `full_name`: required, string
+    * `owner`: required, `Simple User` (see above)
+    * `private`: required, boolean
+    * `html_url`: required, string, format: uri
+    * `description`: required, string or null
+    * `fork`: required, boolean
+    * `url`: required, string, format: uri
+    * `archive_url`: required, string
+    * `assignees_url`: required, string
+    * `blobs_url`: required, string
+    * `branches_url`: required, string
+    * `collaborators_url`: required, string
+    * `comments_url`: required, string
+    * `commits_url`: required, string
+    * `compare_url`: required, string
+    * `contents_url`: required, string
+    * `contributors_url`: required, string, format: uri
+    * `deployments_url`: required, string, format: uri
+    * `downloads_url`: required, string, format: uri
+    * `events_url`: required, string, format: uri
+    * `forks_url`: required, string, format: uri
+    * `git_commits_url`: required, string
+    * `git_refs_url`: required, string
+    * `git_tags_url`: required, string
+    * `issue_comment_url`: required, string
+    * `issue_events_url`: required, string
+    * `issues_url`: required, string
+    * `keys_url`: required, string
+    * `labels_url`: required, string
+    * `languages_url`: required, string, format: uri
+    * `merges_url`: required, string, format: uri
+    * `milestones_url`: required, string
+    * `notifications_url`: required, string
+    * `pulls_url`: required, string
+    * `releases_url`: required, string
+    * `stargazers_url`: required, string, format: uri
+    * `statuses_url`: required, string
+    * `subscribers_url`: required, string, format: uri
+    * `subscription_url`: required, string, format: uri
+    * `tags_url`: required, string, format: uri
+    * `teams_url`: required, string, format: uri
+    * `trees_url`: required, string
+    * `hooks_url`: required, string, format: uri
+  * `title`: required, string
+  * `state`: required, string, enum: `open`, `closed`, `merged`
+  * `merged_at`: required, string or null, format: date-time
+  * `html_url`: required, string, format: uri
+  * `url`: required, string, format: uri
+  * `draft`: required, boolean
+* `linked_issues`: array of objects:
+  * `number`: required, integer
+  * `title`: required, string
+  * `state`: required, string
+  * `url`: required, string, format: uri
+  * `html_url`: required, string, format: uri
+  * `repository`: required, `Simple Repository` (see above)
+  * `issue_type`: required, `Issue Type`:
+    * `id`: required, integer
+    * `node_id`: required, string
+    * `name`: required, string
+    * `description`: required, string or null
+    * `color`: string or null, enum: `gray`, `blue`, `green`, `yellow`, `orange`, `red`, `pink`, `purple`, `null`
+    * `created_at`: string, format: date-time
+    * `updated_at`: string, format: date-time
+    * `is_enabled`: boolean
 
 ## Get a code scanning alert
 
@@ -1006,6 +1078,68 @@ curl -L \
     * `id`: integer
     * `number`: integer
   * `draft`: boolean
+* `linked_issues`: array of objects:
+  * `number`: required, integer
+  * `title`: required, string
+  * `state`: required, string
+  * `url`: required, string, format: uri
+  * `html_url`: required, string, format: uri
+  * `repository`: required, `Simple Repository`:
+    * `id`: required, integer, format: int64
+    * `node_id`: required, string
+    * `name`: required, string
+    * `full_name`: required, string
+    * `owner`: required, `Simple User` (see above)
+    * `private`: required, boolean
+    * `html_url`: required, string, format: uri
+    * `description`: required, string or null
+    * `fork`: required, boolean
+    * `url`: required, string, format: uri
+    * `archive_url`: required, string
+    * `assignees_url`: required, string
+    * `blobs_url`: required, string
+    * `branches_url`: required, string
+    * `collaborators_url`: required, string
+    * `comments_url`: required, string
+    * `commits_url`: required, string
+    * `compare_url`: required, string
+    * `contents_url`: required, string
+    * `contributors_url`: required, string, format: uri
+    * `deployments_url`: required, string, format: uri
+    * `downloads_url`: required, string, format: uri
+    * `events_url`: required, string, format: uri
+    * `forks_url`: required, string, format: uri
+    * `git_commits_url`: required, string
+    * `git_refs_url`: required, string
+    * `git_tags_url`: required, string
+    * `issue_comment_url`: required, string
+    * `issue_events_url`: required, string
+    * `issues_url`: required, string
+    * `keys_url`: required, string
+    * `labels_url`: required, string
+    * `languages_url`: required, string, format: uri
+    * `merges_url`: required, string, format: uri
+    * `milestones_url`: required, string
+    * `notifications_url`: required, string
+    * `pulls_url`: required, string
+    * `releases_url`: required, string
+    * `stargazers_url`: required, string, format: uri
+    * `statuses_url`: required, string
+    * `subscribers_url`: required, string, format: uri
+    * `subscription_url`: required, string, format: uri
+    * `tags_url`: required, string, format: uri
+    * `teams_url`: required, string, format: uri
+    * `trees_url`: required, string
+    * `hooks_url`: required, string, format: uri
+  * `issue_type`: required, `Issue Type`:
+    * `id`: required, integer
+    * `node_id`: required, string
+    * `name`: required, string
+    * `description`: required, string or null
+    * `color`: string or null, enum: `gray`, `blue`, `green`, `yellow`, `orange`, `red`, `pink`, `purple`, `null`
+    * `created_at`: string, format: date-time
+    * `updated_at`: string, format: date-time
+    * `is_enabled`: boolean
 
 ## Update a code scanning alert
 

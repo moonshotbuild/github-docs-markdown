@@ -1242,6 +1242,10 @@ visibility argument.
 
 * `pinnedIssues` (PinnedIssueConnection): A list of pinned issues for this repository. _(Pagination: `after`, `before`, `first`, `last`)_
 * `planFeatures` (RepositoryPlanFeatures!): Returns information about the availability of certain features and limits based on the repository's billing plan.
+* `planningStatuses` (PlanningStatusConnection): The planning statuses issues in this repository can be in, or null when issue
+statuses aren't available for this repository or viewer. Planning statuses are
+returned in display order. Issue statuses are in preview and only available to
+accounts enrolled in the preview. _(Pagination: `after`, `before`, `first`, `last`)_
 * `primaryLanguage` (Language): The primary language of the repository's code.
 * `project` (Project): Find project by number. **Deprecated:** Projects (classic) is being deprecated in favor of the new Projects experience, see: https://github.blog/changelog/2024-05-23-sunset-notice-projects-classic/. Removal on 2025-04-01 UTC.
   * `number` (Int!): The project number to find.

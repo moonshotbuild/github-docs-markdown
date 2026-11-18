@@ -42,7 +42,13 @@ A pull request can qualify for automatic review from several independent sources
 
 ## Configuring your Copilot review effort
 
-You can choose the Copilot review effort that Copilot code review uses for the reviews you request. Your choice applies to automatic reviews and to reviews you request manually. For an overview of the levels and how Copilot decides which to use, see [GitHub Copilot code review](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level).
+You can choose the Copilot review effort (**Lite**, **Balanced**, or **Max**) that Copilot code review uses for the reviews you request.
+
+Alternatively, you can set **Adaptive** and let Copilot choose the review effort level based on the complexity and risk of your pull request. Adaptive never picks a level above the maximum review effort level set for your enterprise, organization, or repository. Unless you set a different default, the review effort level defaults to Balanced, not Adaptive.
+
+> [!NOTE] Adaptive is currently in public preview and subject to change.
+
+Your choice applies to automatic reviews and to reviews you request manually. For an overview of the levels and how Copilot decides which to use, see [GitHub Copilot code review](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level).
 
 1. In the upper-right corner of any page on GitHub, click your profile picture, then click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-copilot" aria-label="copilot" role="img"><path d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z"></path><path d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z"></path></svg> Copilot settings**.
 2. In the sidebar, under **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-copilot" aria-label="copilot" role="img"><path d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z"></path><path d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z"></path></svg> Copilot**, click **Code review**.
@@ -50,6 +56,7 @@ You can choose the Copilot review effort that Copilot code review uses for the r
    * **Lite**: Standard review.
    * **Balanced**: Deeper analysis of complex logic, security-sensitive code, and cross-service changes.
    * **Max**: The highest-effort review. Uses multiple high-reasoning models for the most intensive review of pull requests that require the most scrutiny.
+   * **Adaptive**: Let Copilot choose the review effort level based on the complexity and risk of your pull request.
 
 To return to the built-in default, select the **Default** option at the top of the menu. Until you choose a specific level, the control shows the built-in default, **Default (Balanced)**.
 
@@ -110,10 +117,13 @@ You can configure how Copilot code review completes code reviews in your reposit
    * **Lite**: Standard review.
    * **Balanced**: Deeper analysis of complex logic, security-sensitive code, and cross-service changes.
    * **Max**: The highest-effort review. Uses multiple high-reasoning models for the most intensive review of pull requests that require the most scrutiny.
+   * **Adaptive**: Let Copilot choose the review effort level based on the complexity and risk of your pull request.
 
    Balanced and Max reviews use more AI credits, and may consume marginally more GitHub Actions minutes. See [GitHub Copilot code review](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#estimated-consumption).
 
 5. To limit the review effort available within the repository, next to "Maximum review effort," select **No limit**, **Lite**, **Balanced**, or **Max**.
+
+   If Adaptive is the default for the repository, Copilot won't select a review effort level above the configured maximum.
 
 6. To choose whether Copilot can approve pull requests in your repository, configure the settings under "Auto-approval."
    * **Allow Copilot to approve pull requests**: Toggle on to let Copilot submit approving reviews.
@@ -121,6 +131,11 @@ You can configure how Copilot code review completes code reviews in your reposit
    * **File paths**: Optionally, limit which pull requests count toward merge requirements. Enter one file glob per line to count approvals only on pull requests where every changed file matches one of the globs. Leave blank to count approvals for all files. Up to 15 globs are supported.
 
 7. To prevent people from using an external Copilot license to request reviews in this repository, enable **Block reviews requested with an external Copilot license**. If this setting is enabled for your organization, you cannot turn it off for the repository. See [GitHub Copilot code review](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#reviews-requested-with-an-external-copilot-license).
+
+8. To prevent Copilot from searching public repositories for context during reviews, turn off **Search public repositories**. This setting is on by default.
+
+   > [!NOTE]
+   > Cross-repository context for Copilot code review is in public preview and subject to change.
 
 ## Configuring automatic code review for repositories in an organization
 
@@ -192,10 +207,13 @@ You can configure how Copilot code review completes code reviews in repositories
    * **Lite**: Standard review.
    * **Balanced**: Deeper analysis of complex logic, security-sensitive code, and cross-service changes.
    * **Max**: The highest-effort review. Uses multiple high-reasoning models for the most intensive review of pull requests that require the most scrutiny.
+   * **Adaptive**: Let Copilot choose the review effort level based on the complexity and risk of your pull request.
 
    Balanced and Max reviews use more AI credits, and may consume marginally more GitHub Actions minutes. See [GitHub Copilot code review](/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#estimated-consumption).
 
 6. To limit the review effort available across the organization, next to "Maximum review effort," select **No limit**, **Lite**, **Balanced**, or **Max**. This maximum applies to every repository in the organization. Repositories can choose the selected effort level or a lower level, but cannot exceed the maximum.
+
+   If Adaptive is the default, Copilot won't select a review effort level above the configured maximum.
 
 7. To choose how AI credits usage associated with members who have paid Copilot licenses is billed, next to **Choose how members with a Copilot license are billed**, select an option.
 
@@ -233,8 +251,10 @@ You can configure how Copilot code review completes code reviews for your enterp
 3. In the sidebar, click **<svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-copilot" aria-label="copilot" role="img"><path d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z"></path><path d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z"></path></svg> Copilot**.
 4. Under "Features & clients", click **Configure features & clients**.
 5. Next to "Copilot code review", select a policy.
-6. To choose the depth of Copilot code reviews, next to "Default review effort level," select the default effort level for your enterprise. Organizations and repositories can override this default.
+6. To choose the depth of Copilot code reviews, next to "Default review effort level," select the default effort level for your enterprise. Organizations and repositories can override this default. Alternatively, select **Adaptive** to let Copilot choose the review effort level based on the risk and complexity of the pull request.
 7. To limit the review effort available across the enterprise, next to "Maximum review effort," select **No limit**, **Lite**, **Balanced**, or **Max**. Organizations and repositories can choose the selected effort level or a lower level, but cannot exceed the maximum.
+
+   If Adaptive is the default, Copilot won't select a review effort level above the configured maximum.
 8. To choose who is billed for Copilot code review usage by members with a paid Copilot license, next to "Choose how members with a Copilot license are billed," select a policy.
 
    * **Member**: Use the member's Copilot entitlement for organizations in the enterprise.
@@ -255,4 +275,4 @@ You can use the GitHub REST and GraphQL APIs to manage some Copilot code review 
 * **Organization**: Enable or disable Copilot code review when the enterprise lets organization owners decide, set the default review effort level, and configure the runner that Copilot code review uses.
 * **Repository**: Set the review effort level and choose whether reviews use custom instructions and MCP servers.
 
-Other settings on this page, such as maximum review effort, billing, and approvals, are not available through the API. For more information, see [GraphQL API reference for Copilot](/en/graphql/reference/copilot).
+Other settings on this page, such as maximum review effort, billing, and approvals, are not available through the API. For more information, see [REST API endpoints for Copilot code review](/en/rest/copilot/copilot-code-review) and [GraphQL API reference for Copilot](/en/graphql/reference/copilot).

@@ -24,3 +24,7 @@ Learn how to use GitHub Integrations.
 * [GitHub integration in Teams](/en/integrations/how-tos/teams)
 
   Learn how to use the GitHub integration in Teams.
+
+* [Using GitHub Event Streams](/en/integrations/how-tos/using-github-event-streams)
+
+  GitHub Event Streams lets agents and integrations subscribe to changes on a resource instead of polling for them.

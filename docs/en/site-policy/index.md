@@ -41,6 +41,8 @@ Review GitHub's terms of service, acceptable use policies, privacy practices, co
 
 * [GitHub Terms for Additional Products and Features](/en/site-policy/github-terms/github-terms-for-additional-products-and-features)
 
+* [GitHub Partner Success Offering Terms](/en/site-policy/github-terms/github-partner-success-offering-terms)
+
 * [GitHub Community Guidelines](/en/site-policy/github-terms/github-community-guidelines)
 
 * [GitHub Community Code of Conduct](/en/site-policy/github-terms/github-community-code-of-conduct)

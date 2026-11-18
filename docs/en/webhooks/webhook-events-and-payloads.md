@@ -1426,7 +1426,7 @@ To subscribe to this event, a GitHub App must have at least read-level access fo
 
 ### Webhook payload object
 
-**Action type:** `assigned`, `closed`, `deleted`, `demilestoned`, `edited`, `field_added`, `field_removed`, `labeled`, `locked`, `milestoned`, `opened`, `pinned`, `reopened`, `transferred`, `typed`, `unassigned`, `unlabeled`, `unlocked`, `unpinned`, `untyped`
+**Action type:** `assigned`, `closed`, `deleted`, `demilestoned`, `edited`, `field_added`, `field_removed`, `labeled`, `locked`, `milestoned`, `opened`, `pinned`, `reopened`, `status_changed`, `transferred`, `typed`, `unassigned`, `unlabeled`, `unlocked`, `unpinned`, `untyped`
 
 #### `assigned`
 
@@ -1569,6 +1569,20 @@ A closed issue was reopened.
 | Name    | Type     | Description                     |
 | ------- | -------- | ------------------------------- |
 | `issue` | `object` | **Required.** The issue itself. |
+
+#### `status_changed`
+
+The status of an issue was changed. When the change also closes or reopens the issue, the closed or reopened action is sent too.
+
+Issue statuses are in preview and subject to change. They're only available to accounts enrolled in the preview.
+
+##### Webhook payload object parameters
+
+| Name      | Type     | Description                                                                                                                                                                      |
+| --------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `changes` | `object` | **Required.** The changes to the issue. state and state\_reason are only included when the status change also closed or reopened the issue, or changed the reason it was closed. |
+| `issue`   | `object` | **Required.** The issue itself.                                                                                                                                                  |
+| `status`  | `object` | **Required.** The status the issue changed to.                                                                                                                                   |
 
 #### `transferred`
 

@@ -19,20 +19,6 @@ Your GitHub App can make requests to the following REST endpoints with an instal
 
 ## actions
 
-* [`GET /enterprises/{enterprise}/actions/cache/retention-limit`](/en/rest/actions/cache#get-github-actions-cache-retention-limit-for-an-enterprise)
-
-* [`PUT /enterprises/{enterprise}/actions/cache/retention-limit`](/en/rest/actions/cache#set-github-actions-cache-retention-limit-for-an-enterprise)
-
-* [`GET /enterprises/{enterprise}/actions/cache/storage-limit`](/en/rest/actions/cache#get-github-actions-cache-storage-limit-for-an-enterprise)
-
-* [`PUT /enterprises/{enterprise}/actions/cache/storage-limit`](/en/rest/actions/cache#set-github-actions-cache-storage-limit-for-an-enterprise)
-
-* [`GET /enterprises/{enterprise}/actions/oidc/customization/properties/repo`](/en/rest/actions/oidc#list-oidc-custom-property-inclusions-for-an-enterprise)
-
-* [`POST /enterprises/{enterprise}/actions/oidc/customization/properties/repo`](/en/rest/actions/oidc#create-an-oidc-custom-property-inclusion-for-an-enterprise)
-
-* [`DELETE /enterprises/{enterprise}/actions/oidc/customization/properties/repo/{custom_property_name}`](/en/rest/actions/oidc#delete-an-oidc-custom-property-inclusion-for-an-enterprise)
-
 * [`GET /organizations/{org}/actions/cache/retention-limit`](/en/rest/actions/cache#get-github-actions-cache-retention-limit-for-an-organization)
 
 * [`PUT /organizations/{org}/actions/cache/retention-limit`](/en/rest/actions/cache#set-github-actions-cache-retention-limit-for-an-organization)
@@ -1920,6 +1906,8 @@ Your GitHub App can make requests to the following REST endpoints with an instal
 * [`GET /repos/{owner}/{repo}/issue-types`](/en/rest/repos/issue-types#list-issue-types-for-a-repository)
 
 * [`GET /repos/{owner}/{repo}/languages`](/en/rest/repos/repos#list-repository-languages)
+
+* [`GET /repos/{owner}/{repo}/planning-statuses`](/en/rest/repos/planning-statuses#list-planning-statuses-for-a-repository)
 
 * [`GET /repos/{owner}/{repo}/private-vulnerability-reporting`](/en/rest/repos/repos#check-if-private-vulnerability-reporting-is-enabled-for-a-repository)
 

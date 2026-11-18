@@ -630,9 +630,9 @@ Enterprise billing information visible to enterprise billing managers and owners
 
 * `allLicensableUsersCount` (Int!): The number of licenseable users/emails across the enterprise.
 * `assetPacks` (Int!): The number of data packs used by all organizations owned by the enterprise. Data packs are deprecated, always returns 0. **Deprecated:** LFS data packs have been removed. Always returns 0.
-* `bandwidthQuota` (Float!): The bandwidth quota in GB for all organizations owned by the enterprise.
-* `bandwidthUsage` (Float!): The bandwidth usage in GB for all organizations owned by the enterprise.
-* `bandwidthUsagePercentage` (Int!): The bandwidth usage as a percentage of the bandwidth quota.
+* `bandwidthQuota` (Float!): The bandwidth quota in GB for all organizations owned by the enterprise. May return 0 while deprecation in progress. **Deprecated:** Quotas based on LFS data packs have been removed. May return 0.
+* `bandwidthUsage` (Float!): The bandwidth usage in GB for all organizations owned by the enterprise. May return 0 while deprecation in progress. **Deprecated:** LFS bandwidth usage is now reported through the REST API. May return 0.
+* `bandwidthUsagePercentage` (Int!): The bandwidth usage as a percentage of the bandwidth quota. May return 0 while deprecation in progress. **Deprecated:** Quotas based on LFS data packs have been removed. May return 0.
 * `storageQuota` (Float!): The storage quota in GB for all organizations owned by the enterprise.
 * `storageUsage` (Float!): The storage usage in GB for all organizations owned by the enterprise.
 * `storageUsagePercentage` (Int!): The storage usage as a percentage of the storage quota.

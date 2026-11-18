@@ -49,6 +49,8 @@ You cannot fork a private repository to an organization using GitHub Free. For m
 
 Repository, organization, and enterprise policies can limit whether repositories can be forked and where forks can be created. For private repositories, access to forks also depends on repository visibility, organization membership, and administrator settings.
 
+On GitHub.com, if you see “You cannot fork this repository at this time” when trying to fork a public repository to your personal account, an account restriction can prevent you from creating a fork, even if you can sign in. The error alone doesn't identify the cause. If you believe your account has been restricted, you can request a review through the [GitHub Appeal and Reinstatement form](https://support.github.com/contact/reinstatement).
+
 If you're a member of an enterprise with managed users, additional restrictions apply to the repositories you can fork.  See [About Enterprise Managed Users](/en/enterprise-cloud@latest/admin/concepts/identity-and-access-management/enterprise-managed-users) in the GitHub Enterprise Cloud documentation.
 
 See [Managing the forking policy for your organization](/en/organizations/managing-organization-settings/managing-the-forking-policy-for-your-organization).

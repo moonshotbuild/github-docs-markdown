@@ -59,20 +59,20 @@ You can also run GitHub Copilot CLI in an IDE's integrated terminal if the termi
 
 ### Entry points in JetBrains IDEs
 
-In JetBrains IDEs, there are three primary entry points for accessing Copilot to choose from: the GitHub Copilot plugin, the JetBrains AI Assistant, or GitHub Copilot CLI in the integrated terminal.
+In JetBrains IDEs, there are three primary entry points for accessing Copilot to choose from: the GitHub Copilot plugin, JetBrains Air, or GitHub Copilot CLI in the integrated terminal.
 
-| Entry point                           | Best for                                                             | Main capabilities                                                                                                 |
-| ------------------------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **GitHub Copilot plugin**             | A complete AI-assisted development workflow                          | Inline and next edit suggestions, chat, agentic features, inline chat, code review, and commit message generation |
-| **Copilot in JetBrains AI Assistant** | Using chat and an agent without installing a separate Copilot plugin | Chat, agentic tasks, and model selection                                                                          |
-| **Copilot CLI**                       | Terminal-first development workflows                                 | Agentic assistance and model selection in the integrated terminal                                                 |
+| Entry point                  | Best for                                                    | Main capabilities                                                                                                 |
+| ---------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **GitHub Copilot plugin**    | A complete AI-assisted development workflow                 | Inline and next edit suggestions, chat, agentic features, inline chat, code review, and commit message generation |
+| **Copilot in JetBrains Air** | Using an agent without installing a separate Copilot plugin | Chat, agentic tasks, and model selection                                                                          |
+| **Copilot CLI**              | Terminal-first development workflows                        | Agentic assistance and model selection in the integrated terminal                                                 |
 
 The GitHub Copilot plugin also supports
 multiple agent harnesses and OpenTelemetry monitoring. Enterprise administrators can use managed settings to control plugin marketplaces, MCP servers, OpenTelemetry configuration, and whether users can bypass permission checks. For more information, see [OpenTelemetry for agent monitoring](/en/copilot/concepts/enterprise/opentelemetry) and [Getting started with enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/get-started).
 
 The GitHub Copilot plugin provides the broadest integration with the editor and is the recommended entry point when you want code suggestions and the full set of IDE features.
 
-Copilot is also available as an agent in JetBrains AI Assistant through the Agent Client Protocol (ACP). For more information about ACP, see the [ACP documentation](https://agentclientprotocol.com/get-started/introduction). For technical details on running Copilot CLI as an ACP server, see [Copilot CLI ACP server](/en/copilot/reference/copilot-cli-reference/acp-server).
+Copilot is also available as an agent in [JetBrains Air](https://plugins.jetbrains.com/plugin/33314-air) through the Agent Client Protocol (ACP). For more information about ACP, see the [ACP documentation](https://agentclientprotocol.com/get-started/introduction). For technical details on running Copilot CLI as an ACP server, see [Copilot CLI ACP server](/en/copilot/reference/copilot-cli-reference/acp-server).
 
 ## References to matching public code
 

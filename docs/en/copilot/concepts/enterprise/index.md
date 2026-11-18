@@ -23,6 +23,10 @@ Understand how to govern and manage GitHub Copilot across your enterprise.
 
   Control the availability of GitHub Copilot features and models for your users.
 
+* [Governance controls for GitHub Copilot](/en/copilot/concepts/enterprise/governance-controls)
+
+  Prepare to build your governance framework by understanding the tools at your disposal.
+
 * [About default availability of Copilot features and models](/en/copilot/concepts/enterprise/default-availability)
 
   Policies control whether unconfigured features and models default to enabled or disabled.

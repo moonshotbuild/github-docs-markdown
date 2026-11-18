@@ -33,7 +33,7 @@ with an organization.
 This endpoint allows you to record information about a specific
 artifact, such as its name, digest, environments, cluster, and
 deployment.
-The deployment name has to be uniqe within a cluster (i.e a
+The deployment name has to be unique within a cluster (i.e a
 combination of logical, physical environment and cluster) as it
 identifies unique deployment.
 Multiple requests for the same combination of logical, physical

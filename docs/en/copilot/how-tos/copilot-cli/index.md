@@ -89,6 +89,10 @@ Use Copilot directly from your terminal to answer questions, write and debug cod
 
   Choose which large language model you want Copilot CLI to use for a task.
 
+* [Using GitHub Copilot CLI to interact with your browser](/en/copilot/how-tos/copilot-cli/use-copilot-cli/browser-use)
+
+  Test web applications and complete browser-based tasks from GitHub Copilot CLI.
+
 * [Using GitHub Copilot CLI to interact with desktop applications](/en/copilot/how-tos/copilot-cli/use-copilot-cli/computer-use)
 
   With computer use, allow Copilot to interact with local desktop applications from GitHub Copilot CLI.

@@ -1,7 +1,7 @@
 ---
 source_path: "/en/communities/moderating-comments-and-conversations/locking-conversations"
 title: "Locking conversations"
-intro: "Repository owners and collaborators, and people with write access to a repository, can lock conversations on issues, pull requests, and commits permanently or temporarily to defuse a heated interaction."
+intro: "Repository owners and collaborators, and people with moderate access to a repository for issues, or write access to a repository for pull requests and commits, can lock conversations permanently or temporarily to defuse a heated interaction."
 product: "Building communities"
 document_type: "article"
 breadcrumbs:
@@ -15,20 +15,20 @@ breadcrumbs:
 
 # Locking conversations
 
-Repository owners and collaborators, and people with write access to a repository, can lock conversations on issues, pull requests, and commits permanently or temporarily to defuse a heated interaction.
+Repository owners and collaborators, and people with moderate access to a repository for issues, or write access to a repository for pull requests and commits, can lock conversations permanently or temporarily to defuse a heated interaction.
 
 It's appropriate to lock a conversation when the entire conversation is not constructive or violates your community's code of conduct or GitHub's [Community Guidelines](/en/site-policy/github-terms/github-community-guidelines). When you lock a conversation, you can also specify a reason, which is publicly visible.
 
 Locking a conversation creates a timeline event that is visible to anyone with read access to the repository. However, the username of the person who locked the conversation is only visible to the following group of people:
 
-* People with write access to the repository.
+* People with moderate access to a repository for issues, or write access to the repository for pull requests and commits.
 * Collaborators added to the repository.
 * Organization members with read access where the repository is owned by an organization.
 
 For anyone not meeting this criteria the locking actor will be anonymized.
 ![Screenshot of a timeline event, which says "octo-org locked as too heated and limited conversation to collaborators 2 minutes ago."](/assets/images/help/issues/anonymized-timeline-entry-for-locked-conversation.png)
 
-While a conversation is locked, only [people with write access](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization) and [repository owners and collaborators](/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/permission-levels-for-a-personal-account-repository#collaborator-access-for-a-repository-owned-by-a-personal-account) can add, hide, and delete comments. Reactions and votes in a locked conversation are disabled for all users.
+While a conversation is locked, only [people with moderate or write access](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization) and [repository owners and collaborators](/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/permission-levels-for-a-personal-account-repository#collaborator-access-for-a-repository-owned-by-a-personal-account) can add, hide, and delete comments. Reactions and votes in a locked conversation are disabled for all users.
 
 To search for locked conversations in a repository that is not archived, you can use the search qualifiers `is:locked` and `archived:false`. Conversations are automatically locked in archived repositories. For more information, see [Searching issues and pull requests](/en/search-github/searching-on-github/searching-issues-and-pull-requests#search-based-on-whether-a-conversation-is-locked).
 

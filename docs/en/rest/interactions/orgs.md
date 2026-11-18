@@ -220,7 +220,7 @@ curl -L \
 
 * `enabled`: required, boolean
 * `max_open_pull_requests`: required, integer, minimum: 1, maximum: 1000
-* `include_drafts`: boolean
+* `include_drafts`: required, boolean
 
 ## Update pull request creation cap for an org
 

@@ -126,6 +126,10 @@ Array of `Issue`:
   * `html_url`: required, string, format: uri
   * `number`: required, integer
   * `state`: required, string
+  * `status`: object or null:
+    * `id`: required, integer, format: int64
+    * `name`: required, string
+    * `category`: required, string
   * `state_reason`: string or null, enum: `completed`, `reopened`, `not_planned`, `duplicate`, `null`
   * `title`: required, string
   * `body`: string or null
@@ -579,10 +583,10 @@ application/vnd.github.full+json: Returns raw, text, and HTML representations. R
 - **`issue_field_values`** (string)
   A comma-separated list of issue field filters in field_slug:value format.
   Only issues matching all specified field values are returned.
-  Requires issue fields to be enabled for the repository. Issue fields are
-  not available for user-owned repositories, and field availability for
-  organization-owned public repositories depends on the organization's
-  visibility settings. For example, priority:Urgent,severity:High filters
+  Requires issue fields to be enabled for the repository. Supports both
+  user-owned and organization-owned repositories. Field availability depends
+  on the owner's issue field visibility settings and the caller's access.
+  For example, priority:Urgent,severity:High filters
   issues where the priority field is Urgent AND the severity field is
   High.
 
@@ -675,6 +679,9 @@ application/vnd.github.full+json: Returns raw, text, and HTML representations. R
 - **`body`** (string)
   The contents of the issue.
 
+- **`status`** (string)
+  The initial status of the issue. Can be Backlog, Todo, In progress, or In review. If omitted, the issue starts in Backlog. If you do not have permission to set the status, the supplied value is ignored and the issue starts in Backlog. Cannot be null or an empty string. Ignored when issue statuses aren't available in the repository. Issue statuses are in preview and only available to accounts enrolled in the preview.
+
 - **`milestone`** (null or string or integer)
   The number of the milestone to associate this issue with. NOTE: Only users with push access can set the milestone for new issues. The milestone is silently dropped otherwise.
 
@@ -685,7 +692,7 @@ application/vnd.github.full+json: Returns raw, text, and HTML representations. R
   Logins for Users to assign to this issue. NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise.
 
 - **`issue_field_values`** (array of objects)
-  An array of issue field values to set on this issue. Each field value must include the field ID and the value to set. Issue fields are only available for organization-owned repositories with the feature enabled. Field values are silently dropped otherwise.
+  An array of issue field values to set on this issue. Each field value must include the field ID and the value to set. Issue fields must be enabled for the repository owner. Field values are silently dropped otherwise.
   - **`field_id`** (integer) (required)
     The ID of the issue field to set
   - **`value`** (string or number or array) (required)
@@ -748,6 +755,10 @@ curl -L \
 * `html_url`: required, string, format: uri
 * `number`: required, integer
 * `state`: required, string
+* `status`: object or null:
+  * `id`: required, integer, format: int64
+  * `name`: required, string
+  * `category`: required, string
 * `state_reason`: string or null, enum: `completed`, `reopened`, `not_planned`, `duplicate`, `null`
 * `title`: required, string
 * `body`: string or null
@@ -1183,6 +1194,9 @@ application/vnd.github.full+json: Returns raw, text, and HTML representations. R
   The open or closed state of the issue.
   Can be one of: `open`, `closed`
 
+- **`status`** (string)
+  The status to give the issue. Can be Backlog, Todo, In progress, In review, Done, Not planned, or Duplicate. If omitted, the current status is preserved unless state or state_reason changes. Setting a status also updates state and state_reason as needed. If provided, state and state_reason must be consistent with the requested status. Changing the status to Duplicate requires duplicate_issue_id. Cannot be null or an empty string. The status and other applied field changes are saved together. If the status cannot be saved, those field changes are rolled back. Ignored when issue statuses aren't available in the repository. Issue statuses are in preview and only available to accounts enrolled in the preview.
+
 - **`state_reason`** (string or null)
   The reason for the state change. Ignored unless state is changed.
   Can be one of: `completed`, `not_planned`, `duplicate`, `reopened`, `null`
@@ -1270,6 +1284,10 @@ curl -L \
     * `html_url`: required, string, format: uri
     * `number`: required, integer
     * `state`: required, string
+    * `status`: object or null:
+      * `id`: required, integer, format: int64
+      * `name`: required, string
+      * `category`: required, string
     * `state_reason`: string or null, enum: `completed`, `reopened`, `not_planned`, `duplicate`, `null`
     * `title`: required, string
     * `body`: string or null

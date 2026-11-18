@@ -780,6 +780,10 @@ curl -L \
 * `total_count`: required, integer
 * `incomplete_results`: required, boolean
 * `items`: required, array of `Issue Search Result Item`:
+  * `status`: object or null:
+    * `id`: required, integer, format: int64
+    * `name`: required, string
+    * `category`: required, string
   * `url`: required, string, format: uri
   * `repository_url`: required, string, format: uri
   * `labels_url`: required, string
@@ -1118,6 +1122,10 @@ curl -L \
 * `total_count`: required, integer
 * `incomplete_results`: required, boolean
 * `items`: required, array of `Issue Search Result Item`:
+  * `status`: object or null:
+    * `id`: required, integer, format: int64
+    * `name`: required, string
+    * `category`: required, string
   * `url`: required, string, format: uri
   * `repository_url`: required, string, format: uri
   * `labels_url`: required, string

@@ -221,6 +221,7 @@ An object with an ID.
 * PinnedEvent
 * PinnedIssue
 * PinnedIssueComment
+* PlanningStatus
 * ReferencedEvent
 * RenamedTitleEvent
 * ReopenedEvent

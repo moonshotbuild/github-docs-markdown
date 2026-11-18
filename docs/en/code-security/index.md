@@ -1709,6 +1709,10 @@ Build security and code quality into your GitHub workflow with integrated toolin
 
   Dependabot automatically maintains your dependencies, keeping your code secure and current. This reference helps you diagnose and resolve issues so automated updates can continue.
 
+* [Troubleshooting GitHub package firewall](/en/code-security/reference/supply-chain-security/troubleshooting-github-package-firewall)
+
+  Check whether cached packages or configuration issues explain unexpected installation results with GitHub package firewall.
+
 * [Java package metadata for Dependabot updates](/en/code-security/reference/supply-chain-security/java-package-metadata-dependabot)
 
   Include metadata in your `pom.xml` file to provide helpful links and context in Dependabot pull requests for Java package updates.
@@ -1764,6 +1768,10 @@ Build security and code quality into your GitHub workflow with integrated toolin
 * [Common security incident investigation areas](/en/code-security/reference/security-incident-response/investigation-areas)
 
   Reference for investigating security incidents across multiple attack vectors, including the key surfaces and tools to check on GitHub.
+
+* [Secure code from an agent's first commit to production](/en/code-security/tutorials/secure-code-from-commit-to-production)
+
+  AI agents ship code faster than security teams can review it by hand. GitHub closes that gap with security built into every stage of the software development lifecycle, from local review to organization-wide detection and automated remediation, all without leaving GitHub.
 
 * [Secure your secrets at scale with GitHub](/en/code-security/tutorials/secret-protection-adoption-path)
 

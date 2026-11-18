@@ -19,7 +19,7 @@ breadcrumbs:
 
 To move an issue to a better fitting repository, you can transfer open issues to other repositories.
 
-To transfer an open issue to another repository, you must have write access to the repository the issue is in and the repository you're transferring the issue to. For more information, see [Repository roles for an organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization).
+To transfer an open issue to another repository, you must have at least moderate access to the repository the issue is in and the repository you're transferring the issue to. For more information, see [Repository roles for an organization](/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization).
 
 > [!NOTE]
 > You can only transfer issues between repositories owned by the same user or organization account. A private repository issue cannot be transferred to a public repository.

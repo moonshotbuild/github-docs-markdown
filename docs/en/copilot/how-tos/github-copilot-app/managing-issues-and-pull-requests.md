@@ -19,6 +19,10 @@ breadcrumbs:
 
 Pick up an issue, direct an agent to implement changes, and land a pull request—all without leaving the GitHub Copilot app.
 
+The procedures in this article describe issues and pull requests hosted on GitHub.
+
+With the Azure DevOps integration enabled, you can also manage Azure DevOps pull requests in the app, address review feedback, and complete pull requests with Agent Merge. For setup and the Azure DevOps workflow, see [Managing Azure DevOps work with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/manage-azure-devops-work).
+
 ## Browsing your issues and pull requests
 
 Click **Issues** or **Pull requests** in the sidebar to browse the corresponding items from your repositories.

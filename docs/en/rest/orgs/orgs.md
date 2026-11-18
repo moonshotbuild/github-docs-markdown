@@ -601,7 +601,7 @@ GET /orgs/{org}/settings/immutable-releases
 ```
 
 Gets the immutable releases policy for repositories in an organization.
-OAuth tokens and personal access tokens (classic) need the admin:org scope to use this endpoint.
+OAuth tokens and personal access tokens (classic) need the admin:org or repo scope to use this endpoint.
 
 ### Parameters
 
@@ -643,7 +643,7 @@ PUT /orgs/{org}/settings/immutable-releases
 ```
 
 Sets the immutable releases policy for repositories in an organization.
-OAuth tokens and personal access tokens (classic) need the admin:org scope to use this endpoint.
+OAuth tokens and personal access tokens (classic) need the admin:org or repo scope to use this endpoint.
 
 ### Parameters
 
@@ -694,7 +694,7 @@ GET /orgs/{org}/settings/immutable-releases/repositories
 ```
 
 List all of the repositories that have been selected for immutable releases enforcement in an organization.
-OAuth tokens and personal access tokens (classic) need the admin:org scope to use this endpoint.
+OAuth tokens and personal access tokens (classic) need the admin:org or repo scope to use this endpoint.
 
 ### Parameters
 
@@ -893,7 +893,7 @@ PUT /orgs/{org}/settings/immutable-releases/repositories
 ```
 
 Replaces all repositories that have been selected for immutable releases enforcement in an organization. To use this endpoint, the organization immutable releases policy for enforced_repositories must be configured to selected.
-OAuth tokens and personal access tokens (classic) need the admin:org scope to use this endpoint.
+OAuth tokens and personal access tokens (classic) need the admin:org or repo scope to use this endpoint.
 
 ### Parameters
 
@@ -942,7 +942,7 @@ PUT /orgs/{org}/settings/immutable-releases/repositories/{repository_id}
 ```
 
 Adds a repository to the list of selected repositories that are enforced for immutable releases in an organization. To use this endpoint, the organization immutable releases policy for enforced_repositories must be configured to selected.
-OAuth tokens and personal access tokens (classic) need the admin:org scope to use this endpoint.
+OAuth tokens and personal access tokens (classic) need the admin:org or repo scope to use this endpoint.
 
 ### Parameters
 
@@ -984,7 +984,7 @@ DELETE /orgs/{org}/settings/immutable-releases/repositories/{repository_id}
 ```
 
 Removes a repository from the list of selected repositories that are enforced for immutable releases in an organization. To use this endpoint, the organization immutable releases policy for enforced_repositories must be configured to selected.
-OAuth tokens and personal access tokens (classic) need the admin:org scope to use this endpoint.
+OAuth tokens and personal access tokens (classic) need the admin:org or repo scope to use this endpoint.
 
 ### Parameters
 

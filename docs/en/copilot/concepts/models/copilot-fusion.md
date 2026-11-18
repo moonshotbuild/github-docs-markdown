@@ -90,6 +90,10 @@ While this is in public preview, you must enable experimental features to use it
 
 As an alternative to Copilot Fusion, you can configure a custom agent to use a specific local model, and then, in your prompt, instruct Copilot to use that custom agent for the task, or for a specific part of the task. See [Creating and using custom agents for GitHub Copilot CLI](/en/copilot/how-tos/copilot-cli/customize-copilot/create-custom-agents-for-cli#delegating-focused-tasks-to-a-specific-model).
 
+### Extend local coding with custom agents and skills
+
+Explore the [Local Coding plugin in Awesome Copilot](https://github.com/github/awesome-copilot/tree/main/plugins/local-coding) to enable additional on-device coding scenarios through custom agents and skills.
+
 ## Policies and availability
 
 Copilot Fusion is generally available in:
@@ -98,6 +102,7 @@ Copilot Fusion is generally available in:
 * Copilot CLI
 * GitHub Copilot app
 * JetBrains IDEs
+* Copilot in the cloud on GitHub.com
 
 ### Copilot Fusion effort level availability by Copilot plan
 
@@ -114,7 +119,7 @@ Copilot Fusion is generally available in:
 
 ### Policies
 
-When you use Copilot Fusion, it chooses from the models available, subject to your policies and subscription type. Available models may change over time.
+When you use Copilot Fusion, it chooses from a defined list of supported models. See [Supported AI models in GitHub Copilot](/en/copilot/reference/ai-models/supported-models#supported-ai-models-for-copilot-auto-model-selection-and-copilot-fusion). The models available to you depend on your policies and subscription type, and may change over time.
 
 Copilot Fusion, **won't** include these models:
 

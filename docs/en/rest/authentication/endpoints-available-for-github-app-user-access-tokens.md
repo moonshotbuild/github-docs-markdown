@@ -19,20 +19,6 @@ Your GitHub App can make requests to the following REST endpoints with a user ac
 
 ## actions
 
-* [`GET /enterprises/{enterprise}/actions/cache/retention-limit`](/en/rest/actions/cache#get-github-actions-cache-retention-limit-for-an-enterprise)
-
-* [`PUT /enterprises/{enterprise}/actions/cache/retention-limit`](/en/rest/actions/cache#set-github-actions-cache-retention-limit-for-an-enterprise)
-
-* [`GET /enterprises/{enterprise}/actions/cache/storage-limit`](/en/rest/actions/cache#get-github-actions-cache-storage-limit-for-an-enterprise)
-
-* [`PUT /enterprises/{enterprise}/actions/cache/storage-limit`](/en/rest/actions/cache#set-github-actions-cache-storage-limit-for-an-enterprise)
-
-* [`GET /enterprises/{enterprise}/actions/oidc/customization/properties/repo`](/en/rest/actions/oidc#list-oidc-custom-property-inclusions-for-an-enterprise)
-
-* [`POST /enterprises/{enterprise}/actions/oidc/customization/properties/repo`](/en/rest/actions/oidc#create-an-oidc-custom-property-inclusion-for-an-enterprise)
-
-* [`DELETE /enterprises/{enterprise}/actions/oidc/customization/properties/repo/{custom_property_name}`](/en/rest/actions/oidc#delete-an-oidc-custom-property-inclusion-for-an-enterprise)
-
 * [`GET /organizations/{org}/actions/cache/retention-limit`](/en/rest/actions/cache#get-github-actions-cache-retention-limit-for-an-organization)
 
 * [`PUT /organizations/{org}/actions/cache/retention-limit`](/en/rest/actions/cache#set-github-actions-cache-retention-limit-for-an-organization)
@@ -2059,6 +2045,8 @@ Your GitHub App can make requests to the following REST endpoints with a user ac
 
 * [`GET /repos/{owner}/{repo}/languages`](/en/rest/repos/repos#list-repository-languages)
 
+* [`GET /repos/{owner}/{repo}/planning-statuses`](/en/rest/repos/planning-statuses#list-planning-statuses-for-a-repository)
+
 * [`GET /repos/{owner}/{repo}/private-vulnerability-reporting`](/en/rest/repos/repos#check-if-private-vulnerability-reporting-is-enabled-for-a-repository)
 
 * [`PUT /repos/{owner}/{repo}/private-vulnerability-reporting`](/en/rest/repos/repos#enable-private-vulnerability-reporting-for-a-repository)
@@ -2310,6 +2298,22 @@ Your GitHub App can make requests to the following REST endpoints with a user ac
 * [`GET /user/gpg_keys/{gpg_key_id}`](/en/rest/users/gpg-keys#get-a-gpg-key-for-the-authenticated-user)
 
 * [`DELETE /user/gpg_keys/{gpg_key_id}`](/en/rest/users/gpg-keys#delete-a-gpg-key-for-the-authenticated-user)
+
+* [`GET /user/issue-fields`](/en/rest/users/issue-fields#list-issue-fields)
+
+* [`POST /user/issue-fields`](/en/rest/users/issue-fields#create-an-issue-field)
+
+* [`PATCH /user/issue-fields/{issue_field_id}`](/en/rest/users/issue-fields#update-an-issue-field)
+
+* [`DELETE /user/issue-fields/{issue_field_id}`](/en/rest/users/issue-fields#delete-an-issue-field)
+
+* [`GET /user/issue-types`](/en/rest/users/issue-types#list-issue-types)
+
+* [`POST /user/issue-types`](/en/rest/users/issue-types#create-an-issue-type)
+
+* [`PUT /user/issue-types/{issue_type_id}`](/en/rest/users/issue-types#update-an-issue-type)
+
+* [`DELETE /user/issue-types/{issue_type_id}`](/en/rest/users/issue-types#delete-an-issue-type)
 
 * [`GET /user/keys`](/en/rest/users/keys#list-public-ssh-keys-for-the-authenticated-user)
 

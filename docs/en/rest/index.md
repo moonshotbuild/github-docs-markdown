@@ -793,6 +793,10 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 
   Use the REST API to manage issue types for a repository.
 
+* [REST API endpoints for planning statuses](/en/rest/repos/planning-statuses)
+
+  Use the REST API to list the planning statuses that issues in a repository can have. Issue statuses are in preview and only available to accounts enrolled in the preview.
+
 * [REST API endpoints for repositories](/en/rest/repos/repos)
 
   Use the REST API to manage repositories on GitHub.
@@ -860,6 +864,14 @@ Create integrations, retrieve data, and automate your workflows with the GitHub 
 * [REST API endpoints for GPG keys](/en/rest/users/gpg-keys)
 
   Use the REST API to manage GPG keys of authenticated users.
+
+* [REST API endpoints for issue fields](/en/rest/users/issue-fields)
+
+  Use the REST API to create and manage issue fields for the authenticated user.
+
+* [REST API endpoints for issue types](/en/rest/users/issue-types)
+
+  Use the REST API to create and manage issue types for the authenticated user.
 
 * [REST API endpoints for Git SSH keys](/en/rest/users/keys)
 

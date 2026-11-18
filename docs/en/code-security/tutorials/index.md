@@ -17,6 +17,10 @@ Build skills and knowledge about GitHub's security and code quality features thr
 
 ## Links
 
+* [Secure code from an agent's first commit to production](/en/code-security/tutorials/secure-code-from-commit-to-production)
+
+  AI agents ship code faster than security teams can review it by hand. GitHub closes that gap with security built into every stage of the software development lifecycle, from local review to organization-wide detection and automated remediation, all without leaving GitHub.
+
 * [Secure your secrets at scale with GitHub](/en/code-security/tutorials/secret-protection-adoption-path)
 
   Leaked credentials expose your organization to data breaches. GitHub Secret Protection detects and prevents secret leaks automatically. Follow this five-phase adoption path to assess your current risk, evaluate GitHub Secret Protection, run a pilot, monitor its value, and scale protection across your organization.

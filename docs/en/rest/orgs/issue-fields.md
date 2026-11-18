@@ -66,7 +66,7 @@ Array of `Issue Field`:
   * `name`: required, string
   * `description`: string or null
   * `data_type`: required, string, enum: `text`, `date`, `single_select`, `multi_select`, `number`
-  * `visibility`: string, enum: `organization_members_only`, `all`
+  * `visibility`: string, enum: `organization_members_only`, `all`, `restricted`
   * `options`: array of objects or null:
     * `id`: required, integer
     * `name`: required, string
@@ -114,8 +114,8 @@ personal access tokens (classic) need the admin:org scope to use this endpoint.
   Can be one of: `text`, `date`, `single_select`, `multi_select`, `number`
 
 - **`visibility`** (string)
-  The visibility of the issue field. Can be organization_members_only (visible only within the organization) or all (visible to all users who can see issues). Only used when the visibility settings feature is enabled. Defaults to organization_members_only.
-  Can be one of: `organization_members_only`, `all`
+  The visibility of the issue field. Can be restricted (visible to organization members and to collaborators on the repository the field is read through) or all (visible to all users who can see issues). organization_members_only is deprecated. Use restricted instead. Removal will be announced for a future REST API version; existing REST API versions will continue to support this value. Only used when the visibility settings feature is enabled. Defaults to organization_members_only.
+  Can be one of: `organization_members_only`, `all`, `restricted`
 
 - **`options`** (array of objects or null)
   Options for select fields. Required when data_type is 'single_select' or 'multi_select'.
@@ -151,21 +151,25 @@ curl -L \
   "name": "Priority",
   "description": "Level of importance for the issue",
   "data_type": "single_select",
+  "visibility": "all",
   "options": [
     {
       "name": "High",
       "description": "High priority",
-      "color": "red"
+      "color": "red",
+      "priority": 1
     },
     {
       "name": "Medium",
       "description": "Medium priority",
-      "color": "yellow"
+      "color": "yellow",
+      "priority": 2
     },
     {
       "name": "Low",
       "description": "Low priority",
-      "color": "green"
+      "color": "green",
+      "priority": 3
     }
   ]
 }'
@@ -178,7 +182,7 @@ curl -L \
 * `name`: required, string
 * `description`: string or null
 * `data_type`: required, string, enum: `text`, `date`, `single_select`, `multi_select`, `number`
-* `visibility`: string, enum: `organization_members_only`, `all`
+* `visibility`: string, enum: `organization_members_only`, `all`, `restricted`
 * `options`: array of objects or null:
   * `id`: required, integer
   * `name`: required, string
@@ -225,8 +229,8 @@ personal access tokens (classic) need the admin:org scope to use this endpoint.
   Description of the issue field.
 
 - **`visibility`** (string)
-  The visibility of the issue field. Can be organization_members_only (visible only within the organization) or all (visible to all users who can see issues). Only used when the visibility settings feature is enabled.
-  Can be one of: `organization_members_only`, `all`
+  The visibility of the issue field. Can be restricted (visible to organization members and to collaborators on the repository the field is read through) or all (visible to all users who can see issues). organization_members_only is deprecated. Use restricted instead. Removal will be announced for a future REST API version; existing REST API versions will continue to support this value. Only used when the visibility settings feature is enabled.
+  Can be one of: `organization_members_only`, `all`, `restricted`
 
 - **`options`** (array of objects)
   Options for select fields. Only applicable when updating single_select or multi_select fields. When provided, this array replaces the entire existing set of options rather than adding to or updating individual options. To retain or update an existing option, include it in the array with its id. Options sent without an id are treated as new options and may cause existing options to be deleted and recreated.

@@ -35,13 +35,13 @@ Adopt the latest GitHub Copilot features without compromising on control and gov
 
 ### Establishing governance controls
 
+* [Governance controls for GitHub Copilot](/en/copilot/concepts/enterprise/governance-controls)
+
+  Prepare to build your governance framework by understanding the tools at your disposal.
+
 * [Governing Copilot to support developer productivity](/en/copilot/tutorials/roll-out-at-scale/govern-at-scale/govern-for-adoption)
 
   Set a governance posture that balances compliance requirements with developer productivity, so your rollout succeeds from day one.
-
-* [GitHub Copilot policies for enterprises and organizations](/en/copilot/concepts/enterprise/policies)
-
-  Control the availability of GitHub Copilot features and models for your users.
 
 * [Getting started with enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/get-started)
 

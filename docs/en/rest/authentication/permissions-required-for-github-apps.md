@@ -52,9 +52,9 @@ Some endpoints require more than one permission. Other endpoints work with any o
 
 | Endpoint | Access | Tokens | Additional Permissions |
 |----------|--------|--------|------------------------|
-| `PATCH /enterprises/{enterprise}/dependabot/repository-access` | write | UAT, IAT | ✓ |
-| `PUT /enterprises/{enterprise}/dependabot/repository-access/default-level` | write | UAT, IAT | ✓ |
-| `GET /enterprises/{enterprise}/dependabot/repository-access` | read | UAT, IAT | ✓ |
+| `PATCH /enterprises/{enterprise}/dependabot/repository-access` | write | UAT, IAT | ✗ |
+| `PUT /enterprises/{enterprise}/dependabot/repository-access/default-level` | write | UAT, IAT | ✗ |
+| `GET /enterprises/{enterprise}/dependabot/repository-access` | read | UAT, IAT | ✗ |
 
 ## Organization permissions for "API Insights"
 
@@ -1196,6 +1196,7 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `GET /repos/{owner}/{repo}/milestones` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/milestones/{milestone_number}` | read | UAT, IAT | ✓ |
 | `GET /repos/{owner}/{repo}/milestones/{milestone_number}/labels` | read | UAT, IAT | ✓ |
+| `GET /repos/{owner}/{repo}/planning-statuses` | read | UAT, IAT | ✗ |
 
 ## Repository permissions for "Metadata"
 
@@ -1507,6 +1508,24 @@ Some endpoints require more than one permission. Other endpoints work with any o
 | `PUT /user/interaction-limits` | write | UAT | ✗ |
 | `DELETE /user/interaction-limits` | write | UAT | ✗ |
 | `GET /user/interaction-limits` | read | UAT | ✗ |
+
+## User permissions for "Issue Fields"
+
+| Endpoint | Access | Tokens | Additional Permissions |
+|----------|--------|--------|------------------------|
+| `POST /user/issue-fields` | write | UAT | ✗ |
+| `PATCH /user/issue-fields/{issue_field_id}` | write | UAT | ✗ |
+| `DELETE /user/issue-fields/{issue_field_id}` | write | UAT | ✗ |
+| `GET /user/issue-fields` | read | UAT | ✗ |
+
+## User permissions for "Issue Types"
+
+| Endpoint | Access | Tokens | Additional Permissions |
+|----------|--------|--------|------------------------|
+| `POST /user/issue-types` | write | UAT | ✗ |
+| `PUT /user/issue-types/{issue_type_id}` | write | UAT | ✗ |
+| `DELETE /user/issue-types/{issue_type_id}` | write | UAT | ✗ |
+| `GET /user/issue-types` | read | UAT | ✗ |
 
 ## User permissions for "Plan"
 

@@ -65,6 +65,8 @@ Set the minimum age to a value between 1 and 365 days, or set it to 0 to disable
 
 Configure your package manager to fetch packages from the firewall's URL instead of the default public registry.
 
+If packages install when you expect the firewall to block them, see [Troubleshooting GitHub package firewall](/en/code-security/reference/supply-chain-security/troubleshooting-github-package-firewall).
+
 ### Authentication token
 
 The registry URL is specific to your enterprise. Each request must include an authentication token associated with a user or bot account that is a member of the enterprise. The token does not need any elevated permission beyond **Read-only access to public repositories**. For more information, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
@@ -117,6 +119,10 @@ By default, enterprise administrators and enterprise security managers can modif
 
 If the firewall blocks a package you need, you can request an exception to the policy. For example, a new package version that includes a security fix could be blocked by the minimum package age policy.
 
+For npm overrides, specify an exact version such as `1.2.3` or use `*` as a wildcard. For example, `1.*` matches version text beginning with `1.`, `1.2.*` matches version text beginning with `1.2.`, and `*` matches all versions.
+
+Every character other than `*` is matched literally. Semantic version ranges such as `^1.2.3`, `~1.2.3`, `1.x`, and `>=1.0.0 <2.0.0` are not evaluated as ranges. The same version matching applies to manually added exceptions and approved bypass requests.
+
 ### Requesting an exception
 
 When the firewall blocks a package, the npm output or CI/CD log includes a URL for requesting an exception. For example:
@@ -132,7 +138,7 @@ npm notice testcontainers: 1 version blocked by package-firewall due to security
    * "Repository": The repository where the block occurred
    * "Ecosystem": The package ecosystem (currently, only npm is supported)
    * "Package name": The package name, including the `@scope` prefix if applicable
-   * "Version": The version you attempted to install
+   * "Version": The version you attempted to install. If the field is editable, you can request a version pattern instead.
    * "Reason": Why the package should be unblocked
    * "Add a comment": Additional context for reviewers
 
@@ -147,7 +153,7 @@ Enterprise administrators and enterprise security managers can review exception 
 3. In the sidebar, click **Package firewall bypass**.
 4. In the "Package firewall bypass requests" list, use the search bar to find a request, then click the request.
 5. In the "Review package allow override" dialog, review the requested exception.
-6. Optionally, to allow all versions of the package, replace the requested version in the "Version or range to allow" field with `*`. This broadens the exception beyond the requested version.
+6. Optionally, to allow all versions of the package, replace the requested version in the "Version or pattern to allow" field with `*`. This broadens the exception beyond the requested version.
 7. Add a comment explaining your decision, then click **Approve request**.
 
 For example, you might allow all versions of an enterprise-owned package rather than require a separate exception each time the minimum package age policy blocks a new version.
@@ -161,6 +167,8 @@ Approved bypass requests are added to the firewall policy. Enterprise administra
 3. In the sidebar, click **Package firewall**.
 4. Under "Overrides", click **Package overrides**.
 5. To remove an exception from the policy, next to the exception, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-trash" aria-label="Delete exception" role="img"><path d="M11 1.75V3h2.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75ZM4.496 6.675l.66 6.6a.25.25 0 0 0 .249.225h5.19a.25.25 0 0 0 .249-.225l.66-6.6a.75.75 0 0 1 1.492.149l-.66 6.6A1.748 1.748 0 0 1 10.595 15h-5.19a1.75 1.75 0 0 1-1.741-1.575l-.66-6.6a.75.75 0 1 1 1.492-.15ZM6.5 1.75V3h3V1.75a.25.25 0 0 0-.25-.25h-2.5a.25.25 0 0 0-.25.25Z"></path></svg>.
+
+If a package still installs after you remove an exception, see [Troubleshooting GitHub package firewall](/en/code-security/reference/supply-chain-security/troubleshooting-github-package-firewall#a-package-still-installs-after-a-policy-change).
 
 ## Further reading
 

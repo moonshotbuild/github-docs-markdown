@@ -328,7 +328,7 @@ OAuth app tokens and personal access tokens (classic) need the public_repo or re
   Default: `false`
 
 - **`use_squash_pr_title_as_default`** (boolean)
-  Either true to allow squash-merge commits to use pull request title, or false to use commit message. **This property is closing down. Please use squash_merge_commit_title instead.
+  Either true to allow squash-merge commits to use pull request title, or false to use commit message. This property is closing down. Please use squash_merge_commit_title instead.
   Default: `false`
 
 - **`squash_merge_commit_title`** (string)
@@ -880,7 +880,7 @@ Note: To edit a repository's topics, use the Replace all repository topics endpo
   Default: `false`
 
 - **`use_squash_pr_title_as_default`** (boolean)
-  Either true to allow squash-merge commits to use pull request title, or false to use commit message. **This property is closing down. Please use squash_merge_commit_title instead.
+  Either true to allow squash-merge commits to use pull request title, or false to use commit message. This property is closing down. Please use squash_merge_commit_title instead.
   Default: `false`
 
 - **`squash_merge_commit_title`** (string)

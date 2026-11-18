@@ -47,7 +47,7 @@ Public monitoring must be enabled for your enterprise. See [Enabling public moni
    * Who the leak is attributed to and in which public repository
    * How long ago the secret was detected
 
-4. Click an alert to open the detail panel. The panel includes:
+4. Click an alert to open the detail panel, or click the alert number to open the alert on its own page. Each alert has a unique URL, which you can bookmark or share with people who have access to it. Alert details include:
    * The date the secret was committed
    * The full secret literal
    * Attribution details, including the committer's username and email
