@@ -478,6 +478,16 @@ has access to Copilot code review and AI credits.
 * `reviewDraftPullRequests` (Boolean): Copilot automatically reviews draft pull requests before they are marked as ready for review.
 * `reviewOnPush` (Boolean): Copilot automatically reviews each new push to the pull request.
 
+## CopilotCodeReviewSeverity - enum
+
+The severity Copilot code review assigned to a review comment.
+
+### Values for `CopilotCodeReviewSeverity`
+
+* `HIGH`: High severity.
+* `LOW`: Low severity.
+* `MEDIUM`: Medium severity.
+
 ## CopilotCodeReviewSource - object
 
 A validated source reported as contributing to a Copilot code review comment.
@@ -1618,6 +1628,7 @@ A review comment associated with a given repository pull request.
 * `bodyHTML` (HTML!): The body rendered to HTML.
 * `bodyText` (String!): The comment body of this review comment rendered as plain text.
 * `commit` (Commit): Identifies the commit associated with the comment.
+* `copilotCodeReviewSeverity` (CopilotCodeReviewSeverity): The Copilot code review severity of this comment, or null if unavailable.
 * `copilotCodeReviewSources` ([CopilotCodeReviewSource!]!): Sources reported as contributing to this comment; may be incomplete.
 * `createdAt` (DateTime!): Identifies when the comment was created.
 * `createdViaEmail` (Boolean!): Check if this comment was created via an email reply.
