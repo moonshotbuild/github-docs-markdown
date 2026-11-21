@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/dependabot/runner-settings"
 ---
 
-# REST API endpoints for {% data variables.product.prodname_dependabot %} runner settings
+# REST API endpoints for Dependabot runner settings
 
 Use the REST API to get and set Dependabot runner settings.
 

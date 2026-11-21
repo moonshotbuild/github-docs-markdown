@@ -46,6 +46,7 @@ The following options are currently available:
 * Gemini 4 Argon
 * Gemini 4 Carbon
 * Gemini 4 Hydrogen
+* Gemini 4 Neon
 * GPT-5.6 Luna
 * GPT-5.6 Sol
 * GPT-6 Astra

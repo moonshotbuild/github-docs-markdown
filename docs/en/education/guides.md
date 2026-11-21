@@ -39,15 +39,6 @@ For teachers:
 Administer a classroom, assign and review work from your students, and teach the new generation of software developers with GitHub Classroom.
 
 * [About GitHub Education for teachers](/en/education/about-github-education/github-education-for-teachers/about-github-education-for-teachers)
-* [Manage classrooms](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/manage-classrooms)
-* [About assignments](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/about-assignments)
-* [Use the Git and GitHub starter assignment](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/use-the-git-and-github-starter-assignment)
-* [Create an individual assignment](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/create-an-individual-assignment)
-* [Create a group assignment](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/create-a-group-assignment)
-* [Create an assignment from a template repository](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/create-an-assignment-from-a-template-repository)
-* [Monitor students' progress with the assignment overview page](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/monitor-students-progress-with-the-assignment-overview-page)
-* [Leave feedback with pull requests](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/leave-feedback-with-pull-requests)
-* [Use autograding](/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/use-autograding)
 
 ## Learn to develop software
 

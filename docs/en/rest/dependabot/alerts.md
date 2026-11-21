@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/dependabot/alerts"
 ---
 
-# REST API endpoints for Dependabot alerts
+# REST API endpoints for {% data variables.product.prodname\_dependabot\_alerts %}
 
 Use the REST API to interact with Dependabot alerts for a repository.
 
@@ -887,6 +887,8 @@ OAuth app tokens and personal access tokens (classic) need the security\_events 
 * **410** - Gone
 
 * **422** - Validation failed, or the endpoint has been spammed.
+
+* **503** - Service unavailable
 
 ### Code examples
 

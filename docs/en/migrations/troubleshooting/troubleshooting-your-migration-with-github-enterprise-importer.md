@@ -31,7 +31,7 @@ Before you investigate further, try these troubleshooting steps that commonly re
 
 2. Verify that you meet all the access requirements. For more information, see the appropriate article for your migration path.
 
-   * [Manage access](/en/migrations/ado/manage-access)
+   * [Manage access](/en/migrations/using-github-enterprise-importer/ado/manage-access)
 
    * [Managing access for a migration from Bitbucket Server](/en/migrations/using-github-enterprise-importer/migrating-from-bitbucket-server-to-github-enterprise-cloud/managing-access-for-a-migration-from-bitbucket-server)
 
@@ -75,7 +75,7 @@ This error indicates that a personal access token you provided to the GitHub CLI
 
 Failures that include a `401` status code usually indicate that the personal access token you provided to the GitHub CLI does not have the required scopes. Verify the scopes on the personal access tokens you provided. For more information about required scopes, see the appropriate article for your migration path.
 
-* [Manage access](/en/migrations/ado/manage-access)
+* [Manage access](/en/migrations/using-github-enterprise-importer/ado/manage-access)
 
 * [Managing access for a migration from Bitbucket Server](/en/migrations/using-github-enterprise-importer/migrating-from-bitbucket-server-to-github-enterprise-cloud/managing-access-for-a-migration-from-bitbucket-server#required-scopes-for-personal-access-tokens)
 
@@ -93,7 +93,7 @@ First, try excluding releases from the migration by using the `--skip-releases` 
 
 If that doesn't work, we'd recommend upgrading to GitHub Enterprise Server 3.8.0 or later. If you're unable to upgrade, another option is to generate your repository archives manually using `ghe-migrator`:
 
-1. Generate a migration archive for your repository. You must only export one repository at a time. For instructions, see [Exporting migration data from your enterprise](/en/enterprise-server@3.22/migrations/using-ghe-migrator/exporting-migration-data-from-github-enterprise-server) in the GitHub Enterprise Server documentation.
+1. Generate a migration archive for your repository. You must only export one repository at a time. For instructions, see [Exporting migration data from your enterprise](/en/enterprise-server@3.23/migrations/using-ghe-migrator/exporting-migration-data-from-github-enterprise-server) in the GitHub Enterprise Server documentation.
 2. Upload your migration archive to your choice of blob storage provider.
 3. Generate a short-lived URL for your migration archive which is accessible to GitHub, such as an AWS S3 pre-signed URL or Azure Blob Storage SAS URL.
 4. Call the `migrate-repo` command with the `--git-archive-url` and `--metadata-archive-url` flags both set to the URL of your archive from the previous step.
@@ -199,7 +199,7 @@ After a migration, you may find that your source or destination repositories are
 
 The process for unlocking a repository depends on the GitHub product where the repository is stored.
 
-* If the locked repository is on GitHub Enterprise Server, a site administrator can unlock the repository using the site admin dashboard. For more information, see [Locking a repository](/en/enterprise-server@3.22/admin/managing-accounts-and-repositories/managing-repositories-in-your-enterprise/locking-a-repository) in the GitHub Enterprise Server documentation.
+* If the locked repository is on GitHub Enterprise Server, a site administrator can unlock the repository using the site admin dashboard. For more information, see [Locking a repository](/en/enterprise-server@3.23/admin/managing-accounts-and-repositories/managing-repositories-in-your-enterprise/locking-a-repository) in the GitHub Enterprise Server documentation.
 * If the locked repository is on GitHub.com, you can contact us through the [GitHub Support portal](https://support.github.com) to unlock the repository.
 
 > [!NOTE]

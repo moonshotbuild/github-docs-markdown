@@ -46,9 +46,6 @@ To allow a user to create codespaces for a repository owned by your organization
 * Give the user **read access** to the repository and permit forking. This allows the user to create a codespace, push changes to a fork, and open a pull request. For more information, see [Managing the forking policy for your organization](/en/organizations/managing-organization-settings/managing-the-forking-policy-for-your-organization).
 * Give the user **write access** to the repository so that they can push changes directly to the repository without forking.
 
-> [!NOTE]
-> If you are a verified educator or a teacher, you must enable GitHub Codespaces from a GitHub Classroom to use your Codespaces Education benefit. For more information, see [Using GitHub Codespaces with GitHub Classroom](/en/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom#about-the-codespaces-education-benefit-for-verified-teachers).
-
 ## What happens when I remove a user's access to GitHub Codespaces?
 
 Before removing users' access to GitHub Codespaces, you should **alert the affected users.**

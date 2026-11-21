@@ -84,7 +84,7 @@ If your organization is owned by an enterprise that has a Copilot subscription, 
 
 Choose a plan and prepare policies, budgets, and access assignment for your enterprise. See [Setting up GitHub Copilot for your enterprise](/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-enterprise).
 
-If you are on **GitHub Enterprise Server**, see [About GitHub Copilot on GitHub Enterprise Server](/en/enterprise-server@3.22/copilot/copilot-on-ghes/about-copilot-on-ghes).
+If you are on **GitHub Enterprise Server**, see [About GitHub Copilot on GitHub Enterprise Server](/en/enterprise-server@3.23/copilot/copilot-on-ghes/about-copilot-on-ghes).
 
 ## Control for organizations and enterprises
 

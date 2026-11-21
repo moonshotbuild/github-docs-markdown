@@ -240,7 +240,7 @@ Copilot CLI features **infinite sessions**. You don't need to worry about runnin
 To view information about the current CLI session, enter:
 
 ```copilot
-/session
+/session info
 ```
 
 To view a list of any session checkpoints, enter:

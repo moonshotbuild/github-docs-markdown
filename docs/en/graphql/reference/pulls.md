@@ -1795,6 +1795,7 @@ A threaded list of comments for a given pull request.
 * `path` (String!): Identifies the file path of this thread.
 * `pullRequest` (PullRequest!): Identifies the pull request associated with this thread.
 * `repository` (Repository!): Identifies the repository associated with this thread.
+* `resolutionReason` (PullRequestReviewThreadResolutionReason): The reason this thread was resolved, if one was recorded. Currently only Copilot code review threads record a reason.
 * `resolvedBy` (User): The user who resolved this thread.
 * `startDiffSide` (DiffSide): The side of the diff that the first line of the thread starts on (multi-line only).
 * `startLine` (Int): The start line in the file to which this thread refers (multi-line only).

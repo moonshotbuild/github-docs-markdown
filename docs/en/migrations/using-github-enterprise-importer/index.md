@@ -21,6 +21,10 @@ You can migrate your enterprise to GitHub Enterprise Cloud with GitHub Enterpris
 
   Learn about how GitHub Enterprise Importer can help you migrate to GitHub.
 
+* [Migrating from Azure DevOps](/en/migrations/using-github-enterprise-importer/ado)
+
+  Plan and execute a migration from Azure DevOps to GitHub Enterprise Cloud. This six-part guide explains how to configure access, migrate, and the follow-up tasks needed to get your repositories ready for work.
+
 * [Migrating from Bitbucket Server to GitHub Enterprise Cloud](/en/migrations/using-github-enterprise-importer/migrating-from-bitbucket-server-to-github-enterprise-cloud)
 
   You can migrate repositories to GitHub with GitHub Enterprise Importer.

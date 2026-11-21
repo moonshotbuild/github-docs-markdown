@@ -53,6 +53,7 @@ In addition, alerts that fall into this category:
 * Are limited in quantity to 5000 alerts per repository (this includes open and closed alerts).
 * Are not shown in the summary views for security overview, only in the "Secret scanning" view.
 * Only have the first five detected locations shown on GitHub for generic patterns, and only the first detected location shown for AI-detected secrets.
+* Can appear after a delay for existing secrets, because enabling AI-detected secrets for a repository queues a historical scan of existing code.
 
 For GitHub to scan for generic patterns and AI-detected secrets, you must first enable the features for your repository or organization. For more information, see [Enabling secret scanning for generic patterns](/en/code-security/how-tos/secure-your-secrets/detect-secret-leaks/enabling-secret-scanning-for-generic-patterns) and [Enabling scanning for AI-detected secrets](/en/code-security/how-tos/secure-your-secrets/detect-secret-leaks/enabling-secret-scanning-for-ai-detected-secrets).
 

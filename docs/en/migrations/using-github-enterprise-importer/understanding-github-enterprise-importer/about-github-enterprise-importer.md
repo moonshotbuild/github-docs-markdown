@@ -50,13 +50,13 @@ GitHub Enterprise Importer supports migrations **to** GitHub Enterprise Cloud (G
 
 ### Alternative tooling for GitHub Enterprise Server to GHE.com
 
-In supported patch releases in version 3.17 and later, Enterprise Live Migrations is available as an alternative tool for migrations from GitHub Enterprise Server to GHE.com. Enterprise Live Migrations reduces downtime for developers during the migration and offers better support for large monorepos. See [About live migrations from GitHub Enterprise Server to GHE.com](/en/migrations/elm/about-live-migrations).
+In supported patch releases in version 3.17 and later, Enterprise Live Migrations is available as an alternative tool for migrations from GitHub Enterprise Server to GHE.com. Enterprise Live Migrations reduces downtime for developers during the migration and offers better support for large monorepos. See [About live migrations](/en/migrations/elm/about-live-migrations).
 
 ## Getting started
 
 To learn more about the migration path you require, and the data that GitHub Enterprise Importer migrates, see the following articles.
 
-* [Understand migrations from Azure DevOps to GitHub](/en/migrations/ado/understand-migrations-from-azure-devops-to-github)
+* [Understand migrations from Azure DevOps to GitHub](/en/migrations/using-github-enterprise-importer/ado/understand-migrations-from-azure-devops-to-github)
 
 * [About migrations from Bitbucket Server to GitHub Enterprise Cloud](/en/migrations/using-github-enterprise-importer/migrating-from-bitbucket-server-to-github-enterprise-cloud/about-migrations-from-bitbucket-server-to-github-enterprise-cloud)
 

@@ -1209,7 +1209,7 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
 * [Managing plugin marketplaces and plugins with enterprise-managed settings](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/manage-plugin-marketplaces-and-plugins)
 
-  Control which plugin marketplaces are available to enterprise members and which plugins are required or blocked.
+  Choose where enterprise members get customizations and distribute approved tools through shared plugin marketplaces.
 
 * [Using enterprise-managed settings without organizations](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/copilot-business-only)
 

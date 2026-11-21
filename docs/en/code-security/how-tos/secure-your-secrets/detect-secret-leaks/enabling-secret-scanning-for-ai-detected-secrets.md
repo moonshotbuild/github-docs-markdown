@@ -23,7 +23,7 @@ You can enable scanning for AI-detected secrets for your repository or organizat
 
 ## Enabling scanning for AI-detected secrets
 
-You can enable scanning for AI-detected secrets in the security settings page of your repository or organization.
+Enabling scanning for AI-detected secrets queues a historical scan of existing code. Findings appear in the **Generic** alerts list. Disabling AI-detected secrets doesn't disable standard secret scanning.
 
 > [!NOTE]
 > You do not need a subscription to GitHub Copilot to use scanning for AI-detected secrets. The feature is available to repositories owned by organizations and enterprises with GitHub Secret Protection enabled.

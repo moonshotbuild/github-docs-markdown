@@ -47,6 +47,8 @@ After you have installed GitHub Desktop, you can authenticate the application wi
    ![Screenshot of the menu bar on a Mac. Under the open "GitHub Desktop" dropdown menu, the cursor hovers over "Settings", which is highlighted in blue.](/assets/images/help/desktop/mac-choose-settings.png)
 3. In the "Settings" window, on the **Accounts** pane, click the appropriate "Sign Into" button. Use **Sign Into GitHub Enterprise** to sign into GitHub Enterprise Server or GitHub Enterprise Cloud with data residency.
 
+   If you're already signed in to an account in that section, click **Add GitHub.com account** or **Add GitHub Enterprise account** instead.
+
    ![Screenshot of the "Accounts" pane in the "Settings" window. Blue buttons labeled "Sign Into GitHub.com" and "Sign Into GitHub Enterprise" are shown.](/assets/images/help/desktop/sign-in-github.png)
 4. Follow the steps to sign in. For more information about authentication, see [Authenticating to GitHub in GitHub Desktop](/en/desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github-in-github-desktop).
 
@@ -59,6 +61,8 @@ After you have installed GitHub Desktop, you can authenticate the application wi
 
    ![Screenshot of the "GitHub Desktop" menu bar on Windows. In the expanded "File" dropdown menu, the "Options" item is outlined in orange.](/assets/images/help/desktop/windows-choose-options.png)
 3. In the "Options" window, on the **Accounts** pane, click the appropriate "Sign Into" button. Use **Sign Into GitHub Enterprise** to sign into GitHub Enterprise Server or GitHub Enterprise Cloud with data residency.
+
+   If you're already signed in to an account in that section, click **Add GitHub.com account** or **Add GitHub Enterprise account** instead.
 
    ![Screenshot of the "Accounts" pane in the "Options" window. Blue buttons labeled "Sign Into GitHub.com" and "Sign Into GitHub Enterprise" are shown.](/assets/images/help/desktop/windows-sign-in-github.png)
 4. Follow the steps to sign in. For more information about authentication, see [Authenticating to GitHub in GitHub Desktop](/en/desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github-in-github-desktop).

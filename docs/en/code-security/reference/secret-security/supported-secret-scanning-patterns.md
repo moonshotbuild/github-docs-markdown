@@ -74,7 +74,7 @@ Precision levels are estimated based on the pattern type's typical false positiv
 
 ## Supported AI-detected patterns
 
-Secret scanning uses Copilot to detect generic secrets using AI. See [Application card: GitHub security and quality AI features](/en/code-security/responsible-use/security-and-quality-ai-features).
+GitHub uses an AI model to detect unstructured secrets, such as passwords. See [Application card: GitHub security and quality AI features](/en/code-security/responsible-use/security-and-quality-ai-features).
 
 | Provider | Token    |
 | -------- | :------- |

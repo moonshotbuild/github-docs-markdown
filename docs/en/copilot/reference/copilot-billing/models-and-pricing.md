@@ -143,6 +143,8 @@ Anthropic models include a cache write cost in addition to cached input.
 |                                         |                |           |         |                          |       |              |        |
 | Gemini 4 Hydrogen                       | GA             | Versatile | Default | Not applicable           | $1.50 |       $0.075 |  $7.50 |
 |                                         |                |           |         |                          |       |              |        |
+| Gemini 4 Neon                           | GA             | Versatile | Default | Not applicable           | $3.00 |        $0.15 | $15.00 |
+|                                         |                |           |         |                          |       |              |        |
 
 ### Fine-tuned (GitHub)
 

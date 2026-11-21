@@ -101,6 +101,10 @@ With GitHub Desktop, you can interact with GitHub using a GUI instead of the com
 
   You can securely access your account's resources on GitHub Desktop by authenticating to GitHub.
 
+* [Using multiple accounts in GitHub Desktop](/en/desktop/installing-and-authenticating-to-github-desktop/using-multiple-accounts-in-github-desktop)
+
+  Sign in to more than one account on the same host, and choose which account GitHub Desktop uses for each repository.
+
 * [About connections to GitHub in GitHub Desktop](/en/desktop/installing-and-authenticating-to-github-desktop/about-connections-to-github-in-github-desktop)
 
   GitHub Desktop uses HTTPS to securely exchange data with GitHub.

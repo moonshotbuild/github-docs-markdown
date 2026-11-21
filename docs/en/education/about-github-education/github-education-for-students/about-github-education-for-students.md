@@ -49,10 +49,9 @@ GitHub Education students also receive the following GitHub benefits.
 * **GitHub Codespaces:** Verified students get free use of GitHub Codespaces, up to 180 core hours per month, for their personal accounts. The monthly amount of storage and core hours of usage available to students is equivalent to the amount included with GitHub Pro accounts. For more information, see [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces). For more information on getting started with GitHub Codespaces, see [Quickstart for GitHub Codespaces](/en/codespaces/quickstart).
 
 > [!NOTE]
-> If students use GitHub Codespaces in their assignment repositories for GitHub Classroom, the usage will be charged to the organization that owns the classroom, and will not affect the usage for a student's personal account. For more information, see [Using GitHub Codespaces with GitHub Classroom](/en/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom).
+> If students use GitHub Codespaces in their assignment repositories for GitHub Classroom, the usage will be charged to the organization that owns the classroom, and will not affect the usage for a student's personal account. For more information, see [Manage coursework with GitHub Classroom](/en/education/manage-coursework-with-github-classroom).
 
 ## Further reading
 
 * [About GitHub Education for teachers](/en/education/about-github-education/github-education-for-teachers/about-github-education-for-teachers)
 * [About GitHub Community Exchange](/en/education/about-github-education/github-education-for-students/about-github-community-exchange)
-* [About GitHub Classroom](/en/education/manage-coursework-with-github-classroom/get-started-with-github-classroom/about-github-classroom)

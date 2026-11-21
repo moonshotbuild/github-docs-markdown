@@ -71,7 +71,7 @@ To work on code, you need at least one repository or local folder connected to t
 
 To browse and add Azure DevOps repositories, enable the Azure DevOps integration in the app settings and connect your Microsoft account. See [Managing Azure DevOps work with the GitHub Copilot app](/en/copilot/how-tos/github-copilot-app/manage-azure-devops-work).
 
-To add repositories hosted on GitHub Enterprise Server, sign in to your account. See [Signing in to GitHub Enterprise Server in the GitHub Copilot app](/en/enterprise-server@3.22/copilot/copilot-on-ghes/sign-in-on-copilot-app).
+To add repositories hosted on GitHub Enterprise Server, sign in to your account. See [Signing in to GitHub Enterprise Server in the GitHub Copilot app](/en/enterprise-server@3.23/copilot/copilot-on-ghes/sign-in-on-copilot-app).
 
 ## Making your first code changes
 

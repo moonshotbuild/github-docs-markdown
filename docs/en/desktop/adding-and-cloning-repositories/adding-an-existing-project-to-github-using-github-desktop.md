@@ -31,8 +31,9 @@ You can add an existing Git repository to GitHub using GitHub Desktop.
 3. In the repository bar, click **Publish repository**.
 
    ![Screenshot of the repository bar. A button, labeled "Publish repository", is highlighted with an orange outline.](/assets/images/help/desktop/publish-repository.png)
-4. In the "Publish Repository" window, in the "Name" field, type the desired name of the repository or use the default current local repository name.
-5. Optionally, add a description for the repository.
-6. Optionally, to publish a public repository, deselect **Keep this code private**.
-7. Select the "Organization" dropdown menu, then either click the organization where you want to publish the repository, or, to publish the repository to your personal account, click **None**.
-8. Click **Publish Repository**.
+4. In the "Publish Repository" window, select the **Account** dropdown menu, then click the account you want to publish the repository with. If the repository is assigned to an account that's signed in, that account is selected. For more information, see [Using multiple accounts in GitHub Desktop](/en/desktop/installing-and-authenticating-to-github-desktop/using-multiple-accounts-in-github-desktop).
+5. In the "Name" field, type the desired name of the repository or use the default current local repository name.
+6. Optionally, add a description for the repository.
+7. Optionally, to publish a public repository, deselect **Keep this code private**.
+8. Select the "Organization" dropdown menu, then either click the organization where you want to publish the repository, or, to publish the repository to your personal account, click **None**.
+9. Click **Publish Repository**.

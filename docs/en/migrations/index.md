@@ -27,7 +27,7 @@ If you're moving to GitHub from another code hosting platform or moving between 
 
   See an overview of the paths available for migration to GitHub from other products, or between GitHub products.
 
-* [Migrating from Azure DevOps](/en/migrations/ado)
+* [Migrating from Azure DevOps](/en/migrations/using-github-enterprise-importer/ado)
 
   Plan and execute a migration from Azure DevOps to GitHub Enterprise Cloud. This six-part guide explains how to configure access, migrate, and the follow-up tasks needed to get your repositories ready for work.
 
@@ -93,42 +93,6 @@ If you're moving to GitHub from another code hosting platform or moving between 
 
   You can programmatically import repositories to GitHub.
 
-* [Understand migrations from Azure DevOps to GitHub](/en/migrations/ado/understand-migrations-from-azure-devops-to-github)
-
-  GitHub Enterprise Importer can automate migrating from Azure DevOps.
-
-* [Manage access](/en/migrations/ado/manage-access)
-
-  Set up the required access for migrating from Azure DevOps to GitHub.
-
-* [Install and configure GitHub Enterprise Importer](/en/migrations/ado/install-and-configure-github-enterprise-importer)
-
-  Install the ADO2GH extension of the GitHub CLI and configure your environment for the migration.
-
-* [Prepare for your migration from Azure DevOps to GitHub](/en/migrations/ado/prepare-for-your-migration-from-azure-devops-to-github)
-
-  Plan your migration by understanding your timeline, what data will be migrated, and your organizational structure.
-
-* [Migrate your repositories from Azure DevOps to GitHub](/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github)
-
-  Perform a trial run and then migrate your repositories from Azure DevOps to GitHub.
-
-* [Follow-up tasks](/en/migrations/ado/follow-up-tasks)
-
-  After each migration has finished, you'll need to complete some additional tasks before the repository is ready for work.
-
-* [Key differences between Azure DevOps and GitHub](/en/migrations/ado/key-differences-between-azure-devops-and-github)
-
-  Core workflows like repository access, authentication, and pull requests differ after moving from Azure DevOps to GitHub.
-
-* [Use GraphQL to migrate repositories from Azure DevOps to GitHub Enterprise Cloud](/en/migrations/ado/use-graphql-to-migrate-repositories-from-azure-devops-to-github-enterprise-cloud)
-
-  You can build your own tooling to migrate repositories from Azure DevOps to GitHub Enterprise Cloud using the GraphQL API.
-
-* [Granting the migrator role](/en/migrations/ado/granting-the-migrator-role)
-
-  The migrator role gives a user or team the ability to run migrations on behalf of an organization.
-
 * [About GitHub Importer](/en/migrations/importing-source-code/using-github-importer/about-github-importer)
 
   If your source code is stored on another Git-based hosting service, you can move the code to GitHub.com using GitHub Importer.
@@ -164,6 +128,42 @@ If you're moving to GitHub from another code hosting platform or moving between 
 * [About GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/understanding-github-enterprise-importer/about-github-enterprise-importer)
 
   With GitHub Enterprise Importer, you can migrate your enterprise to GitHub Enterprise Cloud from various sources.
+
+* [Understand migrations from Azure DevOps to GitHub](/en/migrations/using-github-enterprise-importer/ado/understand-migrations-from-azure-devops-to-github)
+
+  GitHub Enterprise Importer can automate migrating from Azure DevOps.
+
+* [Manage access](/en/migrations/using-github-enterprise-importer/ado/manage-access)
+
+  Set up the required access for migrating from Azure DevOps to GitHub.
+
+* [Install and configure GitHub Enterprise Importer](/en/migrations/using-github-enterprise-importer/ado/install-and-configure-github-enterprise-importer)
+
+  Install the ADO2GH extension of the GitHub CLI and configure your environment for the migration.
+
+* [Prepare for your migration from Azure DevOps to GitHub](/en/migrations/using-github-enterprise-importer/ado/prepare-for-your-migration-from-azure-devops-to-github)
+
+  Plan your migration by understanding your timeline, what data will be migrated, and your organizational structure.
+
+* [Migrate your repositories from Azure DevOps to GitHub](/en/migrations/using-github-enterprise-importer/ado/migrate-your-repositories-from-azure-devops-to-github)
+
+  Perform a trial run and then migrate your repositories from Azure DevOps to GitHub.
+
+* [Follow-up tasks](/en/migrations/using-github-enterprise-importer/ado/follow-up-tasks)
+
+  After each migration has finished, you'll need to complete some additional tasks before the repository is ready for work.
+
+* [Key differences between Azure DevOps and GitHub](/en/migrations/using-github-enterprise-importer/ado/key-differences-between-azure-devops-and-github)
+
+  Core workflows like repository access, authentication, and pull requests differ after moving from Azure DevOps to GitHub.
+
+* [Use GraphQL to migrate repositories from Azure DevOps to GitHub Enterprise Cloud](/en/migrations/using-github-enterprise-importer/ado/use-graphql-to-migrate-repositories-from-azure-devops-to-github-enterprise-cloud)
+
+  You can build your own tooling to migrate repositories from Azure DevOps to GitHub Enterprise Cloud using the GraphQL API.
+
+* [Granting the migrator role](/en/migrations/using-github-enterprise-importer/ado/granting-the-migrator-role)
+
+  The migrator role gives a user or team the ability to run migrations on behalf of an organization.
 
 * [About migrations from Bitbucket Server to GitHub Enterprise Cloud](/en/migrations/using-github-enterprise-importer/migrating-from-bitbucket-server-to-github-enterprise-cloud/about-migrations-from-bitbucket-server-to-github-enterprise-cloud)
 
@@ -253,31 +253,31 @@ If you're moving to GitHub from another code hosting platform or moving between 
 
   After your migration, you can assign the history of a placeholder identity, or mannequin, to a member of your organization.
 
-* [About live migrations from GitHub Enterprise Server to GHE.com](/en/migrations/elm/about-live-migrations)
+* [About live migrations](/en/migrations/elm/about-live-migrations)
 
   How do live migrations minimize downtime for developers?
 
-* [Preparing for your live migration from GitHub Enterprise Server to GHE.com](/en/migrations/elm/prepare-for-your-migration)
+* [Preparing for your live migration from GitHub Enterprise Server to GHE.com](/en/migrations/elm/ghes-to-ghecom/prepare-for-your-migration)
 
   Key questions to consider before getting started with Enterprise Live Migrations.
 
-* [Migrating your repository with Enterprise Live Migrations](/en/migrations/elm/migrate-your-repository)
+* [Migrating your repository with Enterprise Live Migrations](/en/migrations/elm/ghes-to-ghecom/migrate-your-repository)
 
   Migrate from GitHub Enterprise Server to GHE.com with minimal downtime.
 
-* [Completing your live migration from GitHub Enterprise Server to GHE.com](/en/migrations/elm/complete-your-migration)
+* [Completing your live migration from GitHub Enterprise Server to GHE.com](/en/migrations/elm/ghes-to-ghecom/complete-your-migration)
 
   Complete follow-up tasks so users can start using the migrated repository.
 
-* [Troubleshooting live migrations from GitHub Enterprise Server to GHE.com](/en/migrations/elm/troubleshooting)
+* [Troubleshooting live migrations from GitHub Enterprise Server to GHE.com](/en/migrations/elm/ghes-to-ghecom/troubleshooting)
 
   Advice for problems you may encounter with your migration.
 
-* [Migrated data for live migrations from GitHub Enterprise Server to GHE.com](/en/migrations/elm/migrated-data-reference)
+* [Migrated data for live migrations from GitHub Enterprise Server to GHE.com](/en/migrations/elm/ghes-to-ghecom/migrated-data-reference)
 
   Which data and live updates are included in a live migration?
 
-* [Enterprise Live Migrations CLI reference](/en/migrations/elm/elm-cli-reference)
+* [Enterprise Live Migrations CLI reference](/en/migrations/elm/ghes-to-ghecom/elm-cli-reference)
 
   Detailed usage information for the ELM CLI tool.
 
