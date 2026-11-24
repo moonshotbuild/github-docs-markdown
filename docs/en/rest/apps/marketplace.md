@@ -13,7 +13,7 @@ breadcrumbs:
     href: "/en/rest/apps/marketplace"
 ---
 
-# REST API endpoints for GitHub Marketplace
+# REST API endpoints for {% data variables.product.prodname\_marketplace %}
 
 Use the REST API to interact with GitHub Marketplace
 

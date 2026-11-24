@@ -121,7 +121,7 @@ You can select **AI Scan for pull requests** to enable the feature for eligible 
 
 You can select **AI Scan for repositories** to enable the feature for eligible repositories in your organization where code scanning is enabled. Repositories inherit the organization setting, but repository administrators can opt out for individual repositories. See [AI Scan for a repository's backlog](/en/code-security/concepts/code-scanning/ai-scan-for-repositories).
 
-After enabling the setting, you can start one-off scans of up to 20 repositories. Enabling the setting alone does not start scans. Alternatively, you can start one-off AI scans in bulk for multiple repositories from the code scanning organization alerts page, or start an AI scan for a single repository from its code scanning repository alerts page.
+After enabling the setting, you can start one-off scans of up to 20 repositories. Enabling the setting alone does not start scans. Alternatively, you can start one-off AI Scans in bulk for multiple repositories from the code scanning organization alerts page, or start an AI Scan for a single repository from its code scanning repository alerts page.
 
 You can also manage this setting with the REST API by using the `repository_scan` property. See [REST API endpoints for code scanning](/en/rest/code-scanning/code-scanning#update-the-ai-scan-setting-for-an-organization).
 

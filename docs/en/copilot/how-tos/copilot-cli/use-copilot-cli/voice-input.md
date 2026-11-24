@@ -78,7 +78,7 @@ Rather than holding down the space bar, you can toggle voice recording on and of
 
 2. Speak your prompt.
 
-3. Press any key to stop recording and insert the transcription.
+3. Press a letter key to stop recording and insert the transcription. Pressing <kbd>Esc</kbd> cancels the recording instead.
 
 ### Cleaning up voice-entered prompts
 

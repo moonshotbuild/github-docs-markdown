@@ -17,6 +17,46 @@ breadcrumbs:
 
 Use the REST API to manage Copilot customizations for a team.
 
+## About Copilot team customizations
+
+A Copilot customization document defines the plugins and plugin marketplaces available to members of an organization team. GitHub stores one document for each team. You can create and manage the document on the team's **Customize Copilot** tab, or with these endpoints.
+
+The customization document supports these top-level keys:
+
+* `pluginAssignments`: Plugins available to the team, keyed by `PLUGIN@MARKETPLACE`. Each plugin is enabled by default.
+* `extraKnownMarketplaces`: Additional plugin marketplaces available to the team, keyed by marketplace name.
+
+The request and response examples below show a plugin and its marketplace.
+
+## Access requirements
+
+The authenticated user must be an organization owner or a maintainer of the team. For an enterprise team assigned to the organization, including one synced with an identity provider group, the authenticated user must be an organization owner. The required scopes and permissions are in addition to these role requirements.
+
+| Token type | Read customizations | Replace or delete customizations |
+| --- | --- | --- |
+| Personal access token (classic) or OAuth app token | `read:org` or `admin:org` scope | `admin:org` scope |
+| Fine-grained personal access token or GitHub App user access token | Organization "Copilot agent settings" permission with read access | Organization "Copilot agent settings" permission with write access |
+
+## Creating and updating customizations
+
+To create a team's customization document, send the complete document as the JSON request body to the `PUT` endpoint. Do not wrap it in another object. A successful request returns `200 OK` with the submitted document.
+
+The `PUT` endpoint replaces the entire document. It does not merge the request with existing customizations. Any plugin or marketplace omitted from the request is removed from the stored document.
+
+To edit an existing document:
+
+1. Get the team's current customization document using the `GET` endpoint.
+1. Edit the document, retaining every plugin and marketplace you want to keep.
+1. Send the complete document to the `PUT` endpoint.
+
+Reading a document before replacing it does not prevent another edit between requests.
+
+The `GET` endpoint returns `404 Not Found` when the team has no document. A `404` can also mean the team is not accessible to the authenticated user.
+
+To remove the team's customization document, use the `DELETE` endpoint. It returns `204 No Content` even if the document does not exist. This does not delete the team.
+
+Invalid documents return `422 Unprocessable Entity` with the reason. A concurrent edit can cause a write or delete to return `409 Conflict`.
+
 > [!NOTE]
 > Most endpoints use `Authorization: Bearer <YOUR-TOKEN>` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`. Curl examples below omit these standard headers for brevity.
 
