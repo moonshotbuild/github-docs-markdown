@@ -22,7 +22,7 @@ breadcrumbs:
 You can view, write, and edit CodeQL model packs in Visual Studio Code.
 
 > [!NOTE]
-> CodeQL model packs are currently in public preview and subject to change. Model packs are supported for C/C++, C#, Java/Kotlin, Python, Ruby, and Rust analysis.
+> CodeQL model packs are currently in public preview and subject to change. Model packs are supported for GitHub Actions, C/C++, C#, Java/Kotlin, Python, Ruby, and Rust analysis.
 >
 > The CodeQL model editor in the CodeQL extension for Visual Studio Code supports modeling dependencies for C#, Java/Kotlin, Python, and Ruby.
 

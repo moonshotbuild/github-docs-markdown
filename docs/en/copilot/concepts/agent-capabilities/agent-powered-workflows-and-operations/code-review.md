@@ -45,7 +45,7 @@ Copilot code review is supported in:
 
 ## Copilot code review without a Copilot license
 
-Organization members **without a Copilot license** can use Copilot code review on GitHub.com. An enterprise administrator or organization owner must enable it. This capability is available to organizations on **Copilot Business** and **Copilot Enterprise** plans.
+Organization members **without a Copilot license** can use Copilot code review on GitHub.com. An enterprise administrator or organization owner must enable it. This capability is available to organizations on **Copilot Business** and **Copilot Enterprise** plans, and to organizations in enterprises that use **Copilot access**. The organization doesn't need to assign any Copilot licenses. For steps, see [Enabling GitHub Copilot code review in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/enable-copilot-code-review) or [Enabling GitHub Copilot code review in your enterprise](/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/enable-copilot-code-review#allowing-reviews-without-a-copilot-license).
 
 ### Enabling code review for users without a license
 
@@ -130,18 +130,6 @@ For pull requests authored by other bots, or when a bot requests the review, usa
 
 For requests associated with organization members who have paid Copilot licenses, the member's entitlement is billed by default. An enterprise or organization owner can instead choose to bill the organization. Billing the organization requires AI credits paid usage, but a budget is optional. This choice applies to both manually requested and automatic code reviews, and changes billing only. On its own, it does not grant access to Copilot code review.
 
-### Reviews requested with an external Copilot license
-
-By default, people can use an external Copilot license to request a review from Copilot. An external Copilot license is one that is not provided by the organization or enterprise that owns the repository, such as a personal license or a license from another enterprise. Licenses assigned by another organization in the same enterprise do **not** count as external.
-
-To prevent people from using an external Copilot license to request reviews, organization owners and repository administrators can enable the **Block reviews requested with an external Copilot license** setting for an organization or a single repository. When the setting is enabled:
-
-* Copilot is not offered as a reviewer to people who are not authorized, and API review requests from those people do not start a review.
-* In personal repositories, only the repository owner or a direct collaborator can request a review.
-* Automatic reviews from personal settings do not run for people who are not authorized. Automatic reviews configured by repository or organization rulesets still run.
-
-For configuration steps, see [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review#customizing-copilot-code-review).
-
 ### Users without a Copilot license or plan that includes Copilot code review
 
 Users without access to Copilot code review do not have a monthly allowance of AI credits for it. This includes users who have no Copilot license and users on the Copilot Free plan, which does not include Copilot code review.
@@ -153,6 +141,12 @@ AI credits consumed by these users are not attributed to any individual user's b
 ### What happens when a budget is reached
 
 For Copilot Business and Copilot Enterprise, code review access is governed by the budgets that apply to the selected billing source. If usage is billed to a user, code reviews are blocked when the user reaches their budget. If usage is billed to an organization, code reviews are blocked when the applicable organization budget, cost center budget, or enterprise spending limit is exhausted. Code reviews are blocked along with other AI credits-consuming features. See [Budgets for usage-based billing](/en/copilot/concepts/billing-and-usage/organizations-and-enterprises/budgets#what-happens-when-a-user-is-blocked).
+
+### Reviews requested with an external Copilot license
+
+An external Copilot license is one that is not provided by the organization or enterprise that owns the repository, such as a personal license or a license from another enterprise. Licenses assigned by another organization in the same enterprise are not external.
+
+Organization owners and repository administrators can optionally block reviews that people request with an external license. This setting does not stop automatic reviews configured by repository or organization rulesets. When the setting is enabled, Copilot is not offered as a reviewer to people using an external license, API review requests from those people do not start a review, and automatic reviews from their personal settings do not run. In personal repositories, only the repository owner or a direct collaborator can request a review. For configuration steps, see [Configuring code review by GitHub Copilot](/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review#customizing-copilot-code-review).
 
 ## Model usage
 

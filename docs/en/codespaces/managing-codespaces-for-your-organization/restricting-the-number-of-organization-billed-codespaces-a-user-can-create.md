@@ -21,15 +21,17 @@ You can specify the maximum number of codespaces that any member of your organiz
 
 By default, if organization members, or collaborators, are permitted to create codespaces that are billable to your organization, they can create multiple such codespaces. The number of organization-billed codespaces someone can create is governed by a limit to the total number of codespaces that they can create across all repositories they can access. This limit is set by GitHub.
 
-As an organization owner, you can restrict the number of codespaces that each user can create, where the costs of the codespace are billable to the organization. This can help to reduce the overall cost of GitHub Codespaces to the organization, as there is a charge for codespace storage. For more information, see [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces).
+As an organization owner, you can use the "Maximum total codespaces per user" constraint to limit the total number of codespaces that each user can have billed to your organization, including both running and stopped codespaces. This can help to reduce the overall cost of GitHub Codespaces to the organization, as there is a charge for codespace storage. For more information, see [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces).
 
-To restrict the maximum number of organization-billed codespaces that users can create, you create a policy in the Codespaces settings for your organization. For example, if you set the maximum to 2, users who already have 2 active or stopped codespaces that are billed to your organization will have to delete one of these before they can create a new codespace that's billed to the organization.
+GitHub sets a separate limit on how many codespaces a user can run at the same time. The "Maximum total codespaces per user" constraint does not change this separate limit, but a lower total limit can still reduce the number of organization-billed codespaces the user can run.
+
+To restrict the maximum number of organization-billed codespaces that users can create, you create a policy in the Codespaces settings for your organization. For example, if you set the maximum to 2, users who already have 2 running or stopped codespaces that are billed to your organization will have to delete one of these before they can create a new codespace that's billed to the organization.
 
 This setting does not restrict users from creating codespaces that are not billed to your organization. For example, they can create additional codespaces for public repositories, using their personal Codespaces usage allowance. However, users who are permitted to create organization-billed codespaces, but have reached the limit for such codespaces, cannot choose to create a codespace for an organization-owned repository using their personal included allowance.
 
 For information about the free use of GitHub Codespaces for personal accounts, see [GitHub Codespaces billing](/en/billing/concepts/product-billing/github-codespaces#free-and-billed-use-by-personal-accounts). For information on how to choose who can create codespaces that are billed to your organization, see [Enabling or disabling GitHub Codespaces for your organization](/en/codespaces/managing-codespaces-for-your-organization/enabling-or-disabling-github-codespaces-for-your-organization).
 
-Policies with the "Maximum codespaces per user" constraint are applied to every repository in your organization. You can't, therefore, add this constraint to an existing policy that is configured to apply only to selected repositories.
+Policies with the "Maximum total codespaces per user" constraint are applied to every repository in your organization. You can't, therefore, add this constraint to an existing policy that is configured to apply only to selected repositories.
 
 ## Adding a policy to define the maximum codespaces per user
 
@@ -47,7 +49,7 @@ Policies with the "Maximum codespaces per user" constraint are applied to every 
 
 6. Enter a name for your new policy.
 
-7. Click **Add constraint** and choose **Maximum codespaces per user**.
+7. Click **Add constraint** and choose **Maximum total codespaces per user**.
 
 8. Click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-pencil" aria-label="Edit policy" role="img"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg> to edit the constraint.
 
@@ -68,7 +70,7 @@ Policies with the "Maximum codespaces per user" constraint are applied to every 
 
     * [Restricting the retention period for codespaces](/en/codespaces/managing-codespaces-for-your-organization/restricting-the-retention-period-for-codespaces)
     > [!NOTE]
-    > When you add a constraint to a policy that already contains the "Maximum codespaces per user" constraint, you won't be able to restrict the additional constraint to specific repositories, as the "Maximum codespaces per user" constraint applies to all repositories in the organization.
+    > When you add a constraint to a policy that already contains the "Maximum total codespaces per user" constraint, you won't be able to restrict the additional constraint to specific repositories, as the "Maximum total codespaces per user" constraint applies to all repositories in the organization.
 
 12. After you've finished adding constraints to your policy, click **Save**.
 
@@ -80,7 +82,7 @@ You can edit an existing policy. For example, you may want to add or remove cons
 
 1. Display the "Codespaces policies" page. For more information, see [Adding a policy to define the maximum codespaces per user](#adding-a-policy-to-define-the-maximum-codespaces-per-user).
 2. Click the name of the policy you want to edit.
-3. Beside the "Maximum codespaces per user" constraint, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-pencil" aria-label="Edit policy" role="img"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg>.
+3. Beside the "Maximum total codespaces per user" constraint, click <svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-pencil" aria-label="Edit policy" role="img"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg>.
 4. Edit the maximum number of codespaces.
 5. Click **Save**.
 

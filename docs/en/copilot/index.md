@@ -1135,6 +1135,10 @@ You can use GitHub Copilot to enhance your productivity and assist as you work o
 
   Enable Copilot in the cloud for your members and control the repositories where it is available.
 
+* [Enabling GitHub Copilot code review in your organization](/en/copilot/how-tos/administer-copilot/manage-for-organization/enable-copilot-code-review)
+
+  Turn on Copilot code review for your organization's pull requests without assigning a Copilot license to any member.
+
 * [Manage GitHub Apps that use your organization's Copilot](/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-app-copilot-access)
 
   Control which GitHub Apps can use your organization's Copilot and attribute their spending.

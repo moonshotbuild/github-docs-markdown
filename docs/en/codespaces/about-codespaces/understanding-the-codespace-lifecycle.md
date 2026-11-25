@@ -42,7 +42,7 @@ Your work will be saved on a virtual machine in the cloud. You can close and sto
 
 ## Timeouts for GitHub Codespaces
 
-If you leave your codespace running without interaction, or if you exit your codespace without explicitly stopping it, the codespace will timeout after a period of inactivity and stop running. By default, a codespace will timeout after 30 minutes of inactivity, but you can customize the duration of the timeout period for new codespaces that you create. For more information about setting the default timeout period for your codespaces, see [Setting your timeout period for GitHub Codespaces](/en/codespaces/setting-your-user-preferences/setting-your-timeout-period-for-github-codespaces). For more information about stopping a codespace, see [Stopping a codespace](#stopping-a-codespace).
+If you leave your codespace running without interaction, or if you exit your codespace without explicitly stopping it, the codespace will time out after a period of inactivity and stop running. By default, a codespace will time out after 30 minutes of inactivity, but you can customize the duration of the timeout period for new codespaces that you create. For more information about setting the default timeout period for your codespaces, see [Setting your timeout period for GitHub Codespaces](/en/codespaces/setting-your-user-preferences/setting-your-timeout-period-for-github-codespaces). For more information about stopping a codespace, see [Stopping a codespace](#stopping-a-codespace).
 
 When a codespace times out, your data is preserved from the last time your changes were saved. For more information, see [Saving changes in a codespace](#saving-changes-in-a-codespace).
 

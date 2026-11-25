@@ -50,12 +50,13 @@ There are three types of CodeQL packs: query packs, library packs, and model pac
 
 * Library packs are designed to be used by query packs (or other library packs) and do not contain queries themselves. The libraries are not compiled separately.
 
-* Model packs can be used to expand code scanning analysis to recognize libraries and frameworks that are not supported by default. Model packs are currently in public preview and subject to change. During the public preview, model packs are available for C/C++, C#, Java/Kotlin, Python, Ruby, and Rust analysis. For more information about creating your own model packs, see [Creating and working with CodeQL packs](/en/code-security/tutorials/customize-code-scanning/create-and-work-with-codeql-packs#creating-a-codeql-model-pack).
+* Model packs can be used to expand code scanning analysis to recognize libraries and frameworks that are not supported by default. Model packs are currently in public preview and subject to change. During the public preview, model packs are available for GitHub Actions, C/C++, C#, Java/Kotlin, Python, Ruby, and Rust analysis. For more information about creating your own model packs, see [Creating and working with CodeQL packs](/en/code-security/tutorials/customize-code-scanning/create-and-work-with-codeql-packs#creating-a-codeql-model-pack).
 
 ## Where to find query packs
 
 The standard CodeQL packs for all supported languages are published in the [Container registry](https://github.com/orgs/codeql/packages). If you installed the CodeQL CLI in the standard way, using the CodeQL CLI bundle, the core query packs are already downloaded and available to you. They are:
 
+* `codeql/actions-queries`
 * `codeql/cpp-queries`
 * `codeql/csharp-queries`
 * `codeql/go-queries`
